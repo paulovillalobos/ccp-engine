@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:artigo-historico:ccp-art474",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:02:41Z",
+  "source": "dr-consolidado",
+  "kind": "artigo-historico",
+  "source_id": "ccp-art474",
+  "sha256": "0ba32e027778a0215982fa5b36d8eb5f5c80a75bf6ae5af0244dd03e07a3a6a0",
+  "bytes": "raw_bytes/0ba32e027778a0215982fa5b36d8eb5f5c80a75bf6ae5af0244dd03e07a3a6a0",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2008-34455475-1167773175",
+  "captured_at": "2026-10-24T16:57:17Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome DevTools (tools/capture_dr_history.mjs): one click per page in a session that loaded the consolidated page once"
+  },
+  "text": {
+    "extractor": "dr-article-history@2",
+    "sha256": "853a79bbbf53d91ac01994d2e51491b05ca69f87ad7cdec36ab062768bcc25d8",
+    "bytes": "raw_bytes/853a79bbbf53d91ac01994d2e51491b05ca69f87ad7cdec36ab062768bcc25d8"
+  }
+}

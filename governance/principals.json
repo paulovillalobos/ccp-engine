@@ -136,7 +136,7 @@
       "versao": 2,
       "code": "engine/extract.py",
       "hash": "1a7e8ebef7f3466497e78a96f22cd3ff40eb207a205550d8bc213460b969c4b8",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:vigente@1",
@@ -158,7 +158,7 @@
       "versao": 1,
       "code": "tools/capture_dr_history.mjs",
       "hash": "942b661877c59c49ef024f51048bc46ff613b63348449b06efd69c87020f6348",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:verify@2",
@@ -293,6 +293,42 @@
       "hash": "79fbe21c7dc7e763893175434b2c4c991cda20422212b75223c10f67604b1cdf",
       "retired": false,
       "nota": "code-written citations: quote = text[start:end] (B1)"
+    },
+    {
+      "id": "ferramenta:capture-dr-history@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/capture_dr_history.mjs",
+      "hash": "4bc50a5e7aa97363c317e2090f0d2482518b061d820941fc06516b708e83da92",
+      "retired": false,
+      "nota": "0.5: walk by Artigo seguinte from the index; named index entries (annexes); failure DOM kept"
+    },
+    {
+      "id": "ferramenta:extract@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "engine/extract.py",
+      "hash": "ef419b6c41936a30638c9aef5f4cd0ed58d19581c663ed95edaa92edf62f8eb3",
+      "retired": false,
+      "nota": "dr-article-history@2: an annex's history view too"
+    },
+    {
+      "id": "ferramenta:record-histories@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/record_histories.py",
+      "hash": "ed66d6fa02854c4553f839f1d762226282524dc8795c4d15cfd52dfce443186d",
+      "retired": false,
+      "nota": "history pages -> raw artigo-historico (B2a.1)"
     }
   ]
 }

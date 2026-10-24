@@ -3,6 +3,7 @@
     EXTRACTORS[id](raw: bytes) -> str      "dr-consolidated-fragments@1": the rendered DR consolidated-legislation page
                                            (headless Chrome DOM dump) -> one line per fragment: title, epigraph, text
                                            "dr-html-blocks@1": a rendered DR detail page -> one line per paragraph block
+                                           "dr-article-history@1" / "@2": an opened history view (@2 also an annex's)
                                            "utf-8@1": the bytes decoded as UTF-8, unchanged
 An extractor raises when the bytes are not what it expects; nothing is stored then. No network, no model.
 Copied from rjue-engine's extract module and versioned here.
@@ -156,5 +157,19 @@ def dr_article_history(raw: bytes) -> str:
     return "\n".join(parser.lines) + "\n"
 
 
+ANNEX_TITLE = re.compile(r"^Anexo [IVXLC]+$")
+
+
+def dr_article_history_v2(raw: bytes) -> str:
+    """dr-article-history@1 with one change: the history view of one of a code's annexes ("Anexo XII", no "Artigo"
+    line) is accepted too. Same lines, same order, same note prefix."""
+    parser = _History()
+    parser.feed(raw.decode("utf-8"))
+    if not any(line.startswith("Artigo ") or ANNEX_TITLE.match(line) for line in parser.lines):
+        raise ValueError("no article or annex fragments: not a rendered DR page")
+    return "\n".join(parser.lines) + "\n"
+
+
 EXTRACTORS = {"dr-consolidated-fragments@1": dr_consolidated_fragments, "dr-article-history@1": dr_article_history,
+              "dr-article-history@2": dr_article_history_v2,
               "dr-html-blocks@1": dr_html_blocks, "utf-8@1": utf8}
