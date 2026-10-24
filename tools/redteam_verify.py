@@ -67,5 +67,17 @@ run("M33 fact read from a source field its adapter maps to another field", lambd
 run("M34 manifest law_version disagrees with its package", lambda s: edit(s, PRAZO, lambda o: o["manifest"].update(law_version="lei:ccp@2026-09-30")))
 run("M35 verdict result flipped to nao_cumpre with the same facts", lambda s: edit(s, PRAZO, lambda o: o.update(result="nao_cumpre", detail="prazo_propostas_dias=9 < 6")))
 run("M36 conflito moved to the child contract (no longer the unit the verdict reads)", lambda s: edit(s, "conflito/proc-base-FX-2026-000001-preco_base.json", lambda o: o.update(unit="contrato:base:99000001")))
+# audit of phase 1 (2026-10-24)
+run("N3 verdict omits an entity with a role on the unit's lineage", lambda s: edit(s, PRAZO, lambda o: o.update(entities=o["entities"][:1])))
+run("N4 verdict lists an entity with no role on the unit", lambda s: edit(s, PRAZO, lambda o: o["entities"].append({"id": "ent:cand:PT:fornecedor-fixture-unipessoal", "type": "privada", "role": "concorrente"})))
+run("N5 verdict cites a passage version marked revoked", lambda s: edit(s, "passagem/ccp-art136.1.json", lambda o: o["versions"][0].update(revoked=True)))
+def _gap(o):
+    v0 = dict(o["versions"][0]); v0.update(version="2020-01-01", valid_from="2020-01-01", valid_to="2024-01-01"); o["versions"].insert(0, v0)
+run("N6 gap between passage versions", lambda s: edit(s, "passagem/ccp-art136.1.json", _gap))
+def _stale_entity(s):
+    e = json.loads((V / "entidade/nif-500000000.json").read_text()); e.update(revision=2, supersedes=1, stale=True, stale_reason="dup", recorded_at="2026-10-24T21:00:00Z")
+    (s / "entidade/nif-500000000-r2.json").write_text(json.dumps(e))
+run("N9 settled link to an entity whose head revision is stale", _stale_entity)
+run("N11 verdict known_at earlier than the log head it claims", lambda s: edit(s, PRAZO, lambda o: o.update(known_at="2026-10-24T19:05:00Z", recorded_at="2026-10-24T19:05:00Z", id=o["id"].replace("19:30:00Z", "19:05:00Z"))))
 print(f"{len(MISSED)} MISSED")
 sys.exit(1 if MISSED else 0)

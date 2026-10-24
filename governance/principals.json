@@ -224,7 +224,7 @@
       "versao": 7,
       "code": "verify.py",
       "hash": "73039357b815aba00ff8b78eb93530781ee33ac7e6cad75bd0a1c86be6744355",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:make-fixtures@2",
@@ -235,6 +235,28 @@
       "versao": 2,
       "code": "tools/make_fixtures.py",
       "hash": "86c3385fe47e2fdca84d95c45e9519401f73b2af155d78bb553032836fcb8aa0",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:verify@8",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 8,
+      "code": "verify.py",
+      "hash": "e61528cc69d62aaff4c45f82d8b93488cd542e629919cdd367da63fd6561d86e",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:make-fixtures@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/make_fixtures.py",
+      "hash": "0ba3d61df28d6497a4b668ee10bc1e476044589a47e9b87dce4cdb8cd887cd02",
       "retired": false
     }
   ]

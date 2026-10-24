@@ -399,6 +399,8 @@ def check_manifest(store, out):
             out.append(("MAN", f"{where}: manifest.log_head {m['log_head'][:12]}... is not the head of any prefix of the governance log"))
         elif heads[m["log_head"]] is not None and heads[m["log_head"]]["at"] > m["produced_at"]:
             out.append(("MAN", f"{where}: manifest.log_head is the log after {heads[m['log_head']]['id']} ({heads[m['log_head']]['at']}), later than produced_at {m['produced_at']}"))
+        elif heads[m["log_head"]] is not None and heads[m["log_head"]]["at"] > v["known_at"]:
+            out.append(("MAN", f"{where}: manifest.log_head is the log after {heads[m['log_head']]['id']} ({heads[m['log_head']]['at']}), later than the verdict's known_at {v['known_at']}"))
         pk = store.current(m["package"])
         if pk is None:
             out.append(("MAN", f"{where}: manifest.package {m['package']} is not in the store"))
@@ -437,6 +439,10 @@ def check_states(store, rp, out):
         replayed = rp.state_of("link", l["id"])
         if replayed != l["state"]:
             out.append(("STATE", f"{l['id']}: stored state {l['state']} but the log replays {replayed}"))
+    for l in current_of(store, "link").values():
+        target = store.current(l["to"])
+        if l["state"] != "stale" and not l.get("stale") and target is not None and target.get("stale"):
+            out.append(("STATE", f"{l['id']}: {l['state']} link to {l['to']}, whose head revision is stale; mark the link stale or link the replacement"))
     for a in current_of(store, "adaptador").values():
         replayed = rp.state_of("adaptador", a["id"]) or "proposed"
         if replayed != a["state"]:
@@ -487,7 +493,7 @@ def check_law_time(store, out):
     opens and only the last may be open. A vigencia starts a version of its passage. A rule's validity is the validity
     of the text it cites (DECISIONS D26): its valid_from is the latest valid_from among the versions it cites, it lies
     inside every cited version, and it does not outlive a closed one. The version a verdict cites is in force on the
-    verdict's valid_at."""
+    verdict's valid_at and is not revoked; versions are contiguous."""
     for p in current_of(store, "passagem").values():
         vs = p["versions"]
         if [v["valid_from"] for v in vs] != sorted(v["valid_from"] for v in vs) or len({v["valid_from"] for v in vs}) != len(vs):
@@ -499,6 +505,8 @@ def check_law_time(store, out):
         for a, b in zip(ordered, ordered[1:]):
             if a["valid_to"] is None or a["valid_to"] > b["valid_from"]:
                 out.append(("TIME", f"{p['id']}: version {a['version']} ({a['valid_from']}..{a['valid_to']}) overlaps version {b['version']} from {b['valid_from']}"))
+            elif a["valid_to"] < b["valid_from"]:
+                out.append(("TIME", f"{p['id']}: gap between version {a['version']} (ends {a['valid_to']}) and version {b['version']} (starts {b['valid_from']}); versions are contiguous"))
     for vg in current_of(store, "vigencia").values():
         p = store.current(vg["passage"])
         if p and not any(v["valid_from"] == vg["valid_from"] for v in p["versions"]):
@@ -521,6 +529,8 @@ def check_law_time(store, out):
         v = _version(store, c["passage"], c["version"]) if c else None
         if v and not _in_force(v, vd["valid_at"]):
             out.append(("TIME", f"{vd['id']}: cites {c['passage']}@{c['version']} ({v['valid_from']}..{v['valid_to']}), not in force on valid_at {vd['valid_at']}"))
+        if v and v.get("revoked"):
+            out.append(("TIME", f"{vd['id']}: cites {c['passage']}@{c['version']}, a revoked version; a revoked text grounds no verdict"))
 
 
 UNIT_ORDER = ("proc", "lote", "contrato", "mod")
@@ -593,8 +603,8 @@ def check_rederive(store, out):
     """RED (invariant 3): every current, non-stale verdict is re-computed by engine.evaluate from the store and must come
     out the same. Inputs, all read from the store: the facts of the verdict's unit and its ancestors (store.facts_of,
     as known at the verdict's known_at), the conflitos and documentos of that chain, the afirmações of the unit, the
-    entidades with a role in the unit, the rules of manifest.package at the revisions it names, and the coverage of the
-    manifest's adapters. Compared: id, rule, result, reason, citation, assertions_compared, set(facts_used); and the
+    entidades with a role in the unit's lineage (ancestors and descendants), the rules of manifest.package at the revisions it names, and the coverage of the
+    manifest's adapters. Compared: id, rule, result, reason, citation, assertions_compared, set(facts_used), entities; and the
     unit's kind must be one the rule applies_to. detail is free text and is not compared."""
     for v in current_of(store, "veredicto").values():
         if v.get("stale"):
@@ -606,6 +616,7 @@ def check_rederive(store, out):
             out.append(("RED", f"{where}: cannot re-derive: unit {v['unit']} " + ("is unknown" if unit is None else "sits in a parent cycle")))
             continue
         rules, _ = package_rules(store, v["manifest"]["package"])
+        lineage = set(chain) | {u["id"] for u in current_of(store, "unidade").values() if unit["id"] in unit_chain(store, u["id"])[0]}
         rule_rec = next((r for r in store.revisions(v["rule"]["id"]) if r["revision"] == v["rule"]["revision"]), None)
         if rule_rec and unit["kind"] not in rule_rec["applies_to"]:
             out.append(("RED", f"{where}: unit {unit['id']} is a {unit['kind']}; rule {rule_rec['id']} applies to {rule_rec['applies_to']}"))
@@ -614,7 +625,7 @@ def check_rederive(store, out):
                 unit, rules, facts_of(store, unit["id"], known_at=v["known_at"]), v["known_at"], v["valid_at"], manifest=v["manifest"],
                 conflicts=[c for c in current_of(store, "conflito").values() if c["unit"] in chain],
                 assertions=[a for a in current_of(store, "afirmacao").values() if a["unit"] == unit["id"]],
-                entities=[e for e in current_of(store, "entidade").values() if any(r["unit"] == unit["id"] for r in e["roles"])],
+                entities=[e for e in current_of(store, "entidade").values() if any(r["unit"] in lineage for r in e["roles"])],
                 documents=[d for d in current_of(store, "documento").values() if d["origin"]["unit"] in chain],
                 coverage=coverage_of(store, v["manifest"]["adapters"]))
         except Exception as exc:  # an incomplete manifest or an unknown rule type: the verdict cannot be replayed
@@ -627,6 +638,9 @@ def check_rederive(store, out):
         diffs = [k for k in RED_FIELDS if got.get(k) != v.get(k)]
         if set(got["facts_used"]) != set(v["facts_used"]):
             diffs.append("facts_used")
+        key = lambda e: (e["id"], e["type"], e["role"], e.get("name"))  # noqa: E731
+        if sorted(map(key, got["entities"])) != sorted(map(key, v["entities"])):
+            diffs.append("entities")
         if diffs:
             shown = ", ".join(f"{k}: stored {v.get(k)!r} re-derived {got.get(k)!r}" for k in diffs if k in ("result", "reason", "rule", "id"))
             out.append(("RED", f"{where}: re-derived verdict differs in {', '.join(diffs)}" + (f" ({shown})" if shown else "")))

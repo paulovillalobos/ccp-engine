@@ -1,0 +1,21 @@
+{
+  "id": "ent:nif:500000000",
+  "revision": 2,
+  "recorded_at": "2026-10-24T21:00:00Z",
+  "type": "publica",
+  "country": "PT",
+  "nif": "500000000",
+  "name": "Município Fixture",
+  "roles": [
+    {
+      "unit": "proc:base:FX-2026-000001",
+      "role": "adjudicante"
+    }
+  ],
+  "raw": [
+    "raw:base-dump:anuncio:FX-2026-000001"
+  ],
+  "supersedes": 1,
+  "stale": true,
+  "stale_reason": "fixture: duplicate record"
+}

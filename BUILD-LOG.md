@@ -153,3 +153,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   ferramenta:verify@7, ferramenta:make-fixtures@2. No schema JSON, no engine/ signature, nothing in adapters/ or data/.
 - Next: the independent review's audit of A3b; then phase B per FILL-PLAN (B1 copied modules, B2 the CCP capture).
 - Why: a check without a broken fixture is a check nobody has seen fail; the red team is the list of gaps to keep at 0.
+
+## 2026-10-24 audit of phase 1 (commit: Audit of phase 1: five more cross-object checks ...)
+- Done: AUDIT-2026-10-24-PHASE-1.md; the filler's six commits accepted; five gaps found with new mutations and closed
+  (entities reconciled in RED; revoked and non-contiguous versions in TIME; live link to stale entity in STATE; log head
+  after known_at in MAN); five overlays generated; redteam 43/43; tools re-registered. Rating 8/10.
+- Next: phase 2 (the builder): B1 then B2 per FILL-PLAN.md; the independent review audits at the end.
+- Why: a gate audited only by the person who wrote it is not audited.

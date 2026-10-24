@@ -388,4 +388,16 @@ overlay("bench-held-out-not-frozen", "BENCH", {"caso_referencia/fx-1.json": muta
 overlay("i01-orphan-raw-bytes", "I01", {f"raw_bytes/{'b' * 64}": "orphan bytes no raw record names\n"})
 def relabelled(o): o["entities"][1].update(type="privada", name="Fornecedor Fixture Unipessoal")
 overlay("i11-entity-type-from-record", "I11", {PRAZO_V: mutate(PRAZO_V, relabelled)})
+# audit of phase 1 (the independent review, 2026-10-24): five more
+def drop_entity(o): o["entities"] = o["entities"][:1]
+overlay("red-entity-omitted", "RED", {PRAZO_V: mutate(PRAZO_V, drop_entity)})
+def revoked(o): o["versions"][0]["revoked"] = True
+overlay("time-cited-version-revoked", "TIME", {"passagem/ccp-art136.1.json": mutate("passagem/ccp-art136.1.json", revoked)})
+def with_gap(o):
+    v0 = dict(o["versions"][0]); v0.update(version="2020-01-01", valid_from="2020-01-01", valid_to="2024-01-01"); o["versions"].insert(0, v0)
+overlay("time-gap-between-versions", "TIME", {"passagem/ccp-art136.1.json": mutate("passagem/ccp-art136.1.json", with_gap)})
+stale_ent = load("entidade/nif-500000000.json"); stale_ent.update(revision=2, supersedes=1, stale=True, stale_reason="fixture: duplicate record", recorded_at="2026-10-24T21:00:00Z")
+overlay("state-link-to-stale-entity", "STATE", {"entidade/nif-500000000-r2.json": stale_ent})
+def knew_too_early(o): o.update(known_at="2026-10-24T19:05:00Z", recorded_at="2026-10-24T19:05:00Z", id=o["id"].replace(KNOWN_V, "2026-10-24T19:05:00Z"))
+overlay("man-verdict-before-log-head", "MAN", {PRAZO_V: mutate(PRAZO_V, knew_too_early)})
 print("valid objects:", sum(1 for p in V.rglob("*.json")), "events:", len(EVENTS), "broken overlays:", len(list(B.iterdir())))

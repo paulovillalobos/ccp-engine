@@ -20,7 +20,7 @@ def test_empty_stores_pass():
 
 def test_every_broken_overlay_is_refused_with_its_code():
     results = verify.run_broken(ROOT / "fixtures/valid", ROOT / "fixtures/broken")
-    assert len(results) == 21, [r[0] for r in results]
+    assert len(results) == 26, [r[0] for r in results]
     for name, expect, codes in results:
         assert expect and expect <= codes, (name, expect, codes)
     assert {next(iter(e)) for _, e, _ in results} == {f"I{n:02d}" for n in range(1, 13)} | {"RED", "MAN", "STATE", "TIME", "GRAPH", "FIELD", "BENCH"}
