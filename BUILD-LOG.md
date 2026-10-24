@@ -19,3 +19,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: A3, verify.py v0: load the three stores, validate, run checks I01–I12 + references + uniqueness, require every
   broken overlay to fail with its code; CI green.
 - Why: the extractor starts from schemas/ and fixtures/ alone (§14); the broken overlays are what proves verify bites.
+
+## 2026-10-24 A3 — verify.py v0 (commit: verify v0: ...)
+- Done: verify.py loads three stores (fixtures/valid; law/+rules/+governance/; data/) through engine/store.py (read side,
+  I09 at load), checks REF, I01, I02, I04 (engine/governance.py replay), I05, I06 (engine/manifest.is_complete), I07,
+  I08, I10, I11, I12, PACK, LAYOUT, and the static code guard I03/I10 over engine/, tools/ and itself; runs every broken
+  overlay and requires its EXPECT code among the failures. Result: 0 failures on the three stores, 12/12 overlays refused.
+  tests/test_verify.py (5 tests). Dispute events now carry payload.disputa so the replay can match the adjudication.
+- Next: A4, the write side and the core signatures: store.append/revise/mark_stale/query(known_at, valid_at),
+  rules.py (eight types as data, order, diff), evaluate.py, entities.py, governance.py Log (propose, review, approve,
+  dispute, adjudicate), manifest.build; a test that evaluate reproduces the three fixture verdicts.
+- Why: the gate had to exist before any engine code so that A4 is written against it, not the other way round.
