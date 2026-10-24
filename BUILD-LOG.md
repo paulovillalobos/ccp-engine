@@ -827,3 +827,24 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - verify: ok (37 events). test_b3 green. Registered: read-rules, run-engine (code in the B4 commit). DECISIONS D37, D38.
 - Next: B4 engine over notices (data/facts is empty: blocked, implemented on fixtures).
 - Why: a rule enters a package only when two families read the same passages the same way; the log says which did.
+
+## 2026-10-24 B4 engine v0 — BLOCKED on the extractor (commit: B4: run_engine over a store of facts, tested on fixtures; blocked: data/facts is empty)
+- Done: tools/run_engine.py (ccp-run-engine-0.1, ferramenta): every proc of the stores, its facts (facts_of, known at a
+  fixed known_at), the package its data_inicio_procedimento selects (the settled seletor_regime's regimes), the
+  package's rules for that unit kind, engine.evaluate with valid_at = the procedure's start; manifest by
+  engine.manifest.build (law version, package, the facts' adapters, one source snapshot per source, repository +
+  commit + engine version, log head, produced_at = known_at); verdicts written as a store to --verdicts so verify
+  re-derives them (RED); report: per prazo_minimo rule cumpre / nao_cumpre / nao_avaliado by reason, declarado vs
+  avaliado. tests/test_run_engine.py: over fixtures/valid the report is byte-identical across runs and verify finds 0
+  failures over the fixture store plus the verdicts written (4 verdicts). verify gains a store "engine" (data + law +
+  rules + governance + reports/veredictos) once reports/veredictos exists, and "measure" (B5).
+- Blocked: `ls data/facts` is empty (the extractor has not delivered); test_b4 stays red as designed; no
+  reports/prazos-minimos.json is written (it would count 0 units). Also blocking a real run on the law side: no
+  seletor_regime is settled (B3: the two readings disagree), so the packages cannot route a procedure yet.
+- What the extractor must deliver as facts of each proc (the canonical fields the 18 rules read, from regra.conditions
+  and params): data_inicio_procedimento, tipo_procedimento, tipo_contrato, preco_base, publicado_joue,
+  prazo_propostas_dias, data_envio_anuncio (both readers count the deadline from the sending of the anúncio, as arts.
+  135.º and 136.º say, not from data_publicacao_anuncio), territorio, tipo_entidade; and adjudicante (NIF) for the
+  held-out split. Value vocabulary as in tools/read_rules.py VOCAB and adapters' enum maps (bens / servicos / obras ...).
+- Next: B5 measurement on fixtures/measure.
+- Why: the engine is ready to count; the count waits for notices and for a settled selector.

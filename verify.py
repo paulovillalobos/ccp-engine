@@ -74,6 +74,10 @@ STORES = {
     "repo": [ROOT / "law", ROOT / "rules", ROOT / "governance"],
     "data": [ROOT / "data"],
 }
+if (ROOT / "reports/veredictos").exists():  # B4: real verdicts are re-derived with the facts, law, rules and log they used
+    STORES["engine"] = [ROOT / "data", ROOT / "law", ROOT / "rules", ROOT / "governance", ROOT / "reports/veredictos"]
+if (ROOT / "fixtures/measure").exists():  # B5: reference cases measured while data/ is empty
+    STORES["measure"] = [ROOT / "fixtures/measure", ROOT / "law", ROOT / "rules", ROOT / "governance"]
 MODEL_MODULES = {"openai", "anthropic", "modal", "vllm", "transformers", "torch", "peft", "google.generativeai", "mistralai", "cohere", "ollama", "litellm", "langchain"}
 NETWORK_MODULES = {"requests", "httpx", "aiohttp", "urllib.request", "urllib3", "socket", "http.client", "ftplib", "smtplib", "websocket", "websockets"}
 SEND_PATTERNS = [re.compile(r"\.post\("), re.compile(r"method\s*=\s*[\"']POST[\"']"), re.compile(r"urlopen\([^)]*\bdata\s*="), re.compile(r"\.put\("), re.compile(r"\.delete\(")]
