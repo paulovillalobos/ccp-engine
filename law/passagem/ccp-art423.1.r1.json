@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art423.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art423",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Sem prejuízo dos fundamentos gerais de resolução do contrato e de outros neste previstos e do direito de indemnização nos termos gerais, o concedente só pode resolver o contrato quando se verifique:\na) Desvio do objecto da concessão;\nb) Cessação ou suspensão, total ou parcial, pelo concessionário da execução ou exploração de obras públicas ou da gestão do serviço público, sem que tenham sido tomadas medidas adequadas à remoção da respectiva causa;\nc) Recusa ou impossibilidade do concessionário em retomar a concessão na sequência de sequestro;\nd) Repetição, após a retoma da concessão, das situações que motivaram o sequestro;\ne) Ocorrência de deficiência grave na organização e desenvolvimento pelo concessionário das actividades concedidas, em termos que possam comprometer a sua continuidade ou regularidade nas condições exigidas pela lei e pelo contrato;\nf) Obstrução ao sequestro;\ng) Sequestro da concessão pelo prazo máximo permitido pela lei ou pelo contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 665230,
+        "end": 666206
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

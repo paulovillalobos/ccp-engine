@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art444.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art444",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O prazo das obrigações de reposição da conformidade dos bens fornecidos conta-se a partir de cada recepção individualmente considerada ou da data em que ocorrer a recepção dos últimos bens fornecidos, consoante esteja em causa contrato que estabeleça entregas faseadas de bens com ou sem autonomia funcional entre si, respectivamente.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 679410,
+        "end": 679748
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

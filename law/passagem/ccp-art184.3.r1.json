@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art184.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art184",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O júri só pode propor a exclusão de candidaturas que contenham irregularidades supríveis nos termos do n.º 3 do artigo 72.º quando, depois de solicitados a fazê-lo, os candidatos não tiverem efetuado o suprimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 387444,
+        "end": 387661
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art10.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art10",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 85853,
+        "end": 85868
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

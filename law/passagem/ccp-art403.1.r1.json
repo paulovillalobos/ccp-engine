@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art403.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art403",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Em caso de atraso no início ou na conclusão da execução da obra por facto imputável ao empreiteiro, o dono da obra pode aplicar uma sanção contratual, por cada dia de atraso, em valor correspondente a 1 (por mil) do preço contratual inicial, sem prejuízo de o contrato poder prever valor mais elevado, até ao dobro daquele valor.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 641185,
+        "end": 641518
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

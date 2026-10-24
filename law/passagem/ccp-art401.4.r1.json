@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art401.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art401",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Independentemente da assinatura da conta final da empreitada, a não apresentação, no prazo fixado no n.º 1, de reclamação pelo empreiteiro equivale à aceitação da mesma, sem prejuízo das reclamações pendentes.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 640227,
+        "end": 640440
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

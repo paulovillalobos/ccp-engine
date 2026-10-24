@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art299.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) 30 dias após a data de recepção efectiva dos bens ou da prestação dos serviços quando a data de recepção da factura ou de documento equivalente seja incerta;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 524359,
+        "end": 524519
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

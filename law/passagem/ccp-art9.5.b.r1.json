@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art9.5.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art9.5",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Outros serviços afins, tais como:\ni) A gestão de serviços postais, designadamente os serviços pré e pós envio, incluindo os serviços de gestão e de preparação interna do correio;\nii) Os serviços relativos a envios postais não incluídos na alínea anterior, tais como a publicidade postal sem endereço.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 83940,
+        "end": 84243
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art168.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art168",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A candidatura é constituída por uma declaração na qual o candidato manifesta a sua vontade de ser qualificado ou pelo Documento Europeu Único de Contratação Pública nos procedimentos com publicação de anúncio no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 368597,
+        "end": 368846
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

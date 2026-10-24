@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art410.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art410",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Na falta de estipulação contratual, o prazo a que se refere o número anterior é de 30 anos, nele se incluindo a duração de qualquer prorrogação contratualmente prevista, sem prejuízo de lei especial que fixe prazo supletivo diferente, ou prazo máximo.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 651114,
+        "end": 651369
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

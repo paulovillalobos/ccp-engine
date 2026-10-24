@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art5.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A parte ii não é aplicável à formação de contratos cujo objeto abranja prestações que não estão nem sejam suscetíveis de estar submetidas à concorrência de mercado, designadamente em razão da sua natureza ou das suas características, bem como da posição relativa das partes no contrato ou do contexto da sua formação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 67253,
+        "end": 67574
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

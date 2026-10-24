@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art404.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art404",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Sem prejuízo do disposto nos números anteriores, o empreiteiro é responsável perante o dono da obra ou perante terceiros pelos danos decorrentes do desvio injustificado do plano de trabalhos, quer no que respeita ao conteúdo da respectiva prestação quer no que respeita ao prazo de execução da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 643358,
+        "end": 643661
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

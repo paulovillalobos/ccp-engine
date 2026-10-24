@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art143",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 143.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 143.º\nRegras do leilão electrónico\n1 - Não pode ser dado início ao leilão electrónico antes de decorridos, pelo menos, dois dias a contar da data do envio dos convites.\n2 - O dispositivo electrónico utilizado deve permitir informar permanentemente todos os concorrentes acerca da pontuação global e da ordenação de todas as propostas, bem como dos novos valores relativos aos atributos das propostas objecto do leilão.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 339595,
+        "end": 340020
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

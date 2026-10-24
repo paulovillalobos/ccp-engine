@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art55.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As entidades adjudicantes podem autorizar a participação nos procedimentos de formação de contratos públicos de operadores económicos que não tenham a situação tributária ou contributiva regularizada, desde que se verifiquem, de forma cumulativa, as seguintes condições:\na) A dívida não exceda 10 000 €;\nb) O operador económico apresente declaração sob compromisso de honra de que, caso celebre contrato, cede o crédito à segurança social ou à administração tributária, autorizando a entidade adjudicante a reter as quantias em dívida, devendo esta entregá-las à segurança social e ou administração tributária, consoante o caso e até à integral satisfação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 196194,
+        "end": 196854
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

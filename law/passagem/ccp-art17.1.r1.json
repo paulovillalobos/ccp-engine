@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art17.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O valor estimado do contrato corresponde ao preço estimado a pagar pela entidade adjudicante e por terceiros, bem como ao valor de quaisquer contraprestações a efetuar em favor do adjudicatário e ainda ao valor das vantagens que decorram diretamente para este da execução do contrato e que possam ser configuradas como contrapartidas das prestações que lhe incumbem.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 97830,
+        "end": 98200
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

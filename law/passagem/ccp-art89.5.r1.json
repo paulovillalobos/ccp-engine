@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art89.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art89",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - No caso de contratos de execução duradoura superior a cinco anos, o valor de referência para a aplicação das percentagens referidas nos n.ºs 1 e 2 limita-se ao primeiro terço da duração do contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 269801,
+        "end": 270003
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

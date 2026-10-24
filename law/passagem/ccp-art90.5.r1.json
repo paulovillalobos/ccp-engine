@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art90.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art90",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O programa do procedimento deve conter os modelos referentes à caução que venha a ser prestada por garantia bancária, por seguro-caução ou por depósito em dinheiro ou títulos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 271463,
+        "end": 271642
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

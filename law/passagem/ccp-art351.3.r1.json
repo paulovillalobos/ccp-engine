@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art351.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art351",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O pagamento das indemnizações devidas por expropriação, constituição de servidões e ocupação de prédios é da responsabilidade do dono da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 585549,
+        "end": 585695
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art471.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art471.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Não se inclui na contagem do prazo o dia em que ocorrer o evento a partir do qual o mesmo começa a correr;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 706218,
+        "end": 706327
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

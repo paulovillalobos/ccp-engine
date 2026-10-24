@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art139.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art139",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Na elaboração do modelo de avaliação das propostas não podem ser utilizados quaisquer dados que dependam, directa ou indirectamente, dos atributos das propostas a apresentar, com excepção dos da proposta a avaliar.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 336549,
+        "end": 336767
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

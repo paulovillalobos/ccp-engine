@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art142.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art142",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O convite previsto no número anterior deve indicar:\na) A pontuação global e a ordenação da proposta do concorrente convidado;\nb) A data e a hora de início do leilão;\nc) O modo de encerramento do leilão.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 339388,
+        "end": 339594
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

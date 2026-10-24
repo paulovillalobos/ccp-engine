@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art353.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art353",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Para reforço da caução prestada com vista a garantir o exacto e pontual cumprimento das obrigações contratuais, às importâncias que o empreiteiro tiver a receber em cada um dos pagamentos parciais previstos é deduzido o montante correspondente a 5 % desse pagamento, salvo se o contrato fixar percentagem inferior ou dispensar tal dedução.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 586826,
+        "end": 587169
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

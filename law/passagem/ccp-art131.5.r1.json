@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art131.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art131",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Deve ser junto ao processo de concurso documento comprovativo da data do envio do anúncio para publicação no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 325082,
+        "end": 325228
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

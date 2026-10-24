@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art417.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art417",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O concessionário deve disponibilizar ao concedente todos os projectos, planos, plantas e outros elementos, de qualquer natureza, que se revelem necessários ou úteis ao exercício dos direitos ou ao desempenho de funções atribuídas pela lei ou pelo contrato ao concedente.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 655687,
+        "end": 655961
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

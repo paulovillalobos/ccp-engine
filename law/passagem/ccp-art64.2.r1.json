@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art64.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art64",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando o anúncio do procedimento tiver sido publicado no Jornal Oficial da União Europeia, o período de prorrogação não pode ser inferior a seis dias ou, nas situações previstas no n.º 3 do artigo 136.º e nos n.os 2 e 3 do artigo 174.º, a quatro dias.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 216924,
+        "end": 217179
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

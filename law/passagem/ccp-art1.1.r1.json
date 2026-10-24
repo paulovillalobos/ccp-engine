@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art1.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O presente Código estabelece a disciplina aplicável à contratação pública e o regime substantivo dos contratos públicos que revistam a natureza de contrato administrativo.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 54601,
+        "end": 54776
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

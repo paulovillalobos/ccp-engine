@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art80-a.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art80-a.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Todas as propostas tenham sido excluídas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 254768,
+        "end": 254812
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

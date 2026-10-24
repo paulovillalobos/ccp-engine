@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art400.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art400",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Uma conta corrente à qual são levados, por verbas globais, os valores de todas as medições e revisões ou acertos decorrentes de reclamações decididas, o prémio por cumprimento antecipado do contrato e as sanções contratuais aplicadas;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 639055,
+        "end": 639292
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art469.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art469",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - As notificações e as comunicações consideram-se feitas:\na) Na data da respectiva expedição, quando efectuadas através de correio electrónico ou de outro meio de transmissão escrita e electrónica de dados, salvo o disposto no número seguinte;\nb) Na data constante do relatório de transmissão bem sucedido, quando efectuado através de telecópia, salvo o disposto no número seguinte;\nc) Na data indicada pelos serviços postais, quando efectuadas por carta registada;\nd) Na data da assinatura do aviso, quando efectuadas por carta registada com aviso de recepção.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 704427,
+        "end": 704990
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

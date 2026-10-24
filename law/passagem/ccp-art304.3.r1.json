@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art304.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art304",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As ordens, directivas ou instruções devem ser emitidas por escrito ou, quando as circunstâncias impuserem a forma oral, reduzidas a escrito e notificadas ao co-contratante no prazo de cinco dias, salvo justo impedimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 533648,
+        "end": 533872
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

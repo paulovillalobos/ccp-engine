@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art83-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art83-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - As entidades adjudicantes devem aceitar como prova bastante de que o adjudicatário não se encontra abrangido por nenhuma das situações referidas nas alíneas d) e e) do n.º 1 do artigo 55.º um certificado emitido pela entidade competente ou informação obtida através de ferramentas de interoperabilidade do Estado, incluindo soluções que permitam a agregação e consulta centralizada de documentos, nomeadamente carteiras digitais, que evidencie que o adjudicatário não se encontra em nenhuma daquelas situações.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 259100,
+        "end": 259614
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art402.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art402",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - No prazo de 10 dias a contar da data da assinatura da conta final ou da data em que a conta final se considera aceite pelo empreiteiro, o dono da obra deve enviar ao Instituto da Construção e do Imobiliário, I. P., o relatório final da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 640478,
+        "end": 640723
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

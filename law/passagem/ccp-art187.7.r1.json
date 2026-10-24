@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art187.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art187",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - O procedimento extingue-se por impossibilidade de qualificação, quando:\na) Nenhum candidato se haja apresentado;\nb) Todas as candidaturas tenham sido excluídas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 390580,
+        "end": 390744
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

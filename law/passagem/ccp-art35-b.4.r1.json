@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art35-b.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-b",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Na ausência de resposta da entidade adjudicante, considera-se que a pretensão não é atendida.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 145686,
+        "end": 145783
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

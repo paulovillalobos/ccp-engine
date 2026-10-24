@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art388.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art388",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Os métodos e os critérios a adoptar para realização das medições devem ser definidos no contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 623603,
+        "end": 623704
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

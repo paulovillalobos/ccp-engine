@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art378.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art378",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O dono da obra é responsável pelo pagamento dos trabalhos complementares cuja execução ordene ao empreiteiro.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 613380,
+        "end": 613493
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

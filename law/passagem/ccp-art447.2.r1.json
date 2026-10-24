@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art447.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art447",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Se o contraente público vier a ser demandado por ter infringido, na execução do contrato ou na posterior utilização dos bens objecto do mesmo, qualquer dos direitos referidos no número anterior, terá direito de regresso contra o fornecedor por quaisquer quantias pagas, seja a que título for.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 682643,
+        "end": 682939
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

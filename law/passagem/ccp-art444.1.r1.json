@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art444.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art444",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - É aplicável, com as necessárias adaptações, aos contratos regulados no presente capítulo o disposto na lei que disciplina os aspectos relativos à venda de bens de consumo e das garantias a ela relativas no que respeita à responsabilidade e obrigações do fornecedor e do produtor e aos direitos do consumidor.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 679097,
+        "end": 679409
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

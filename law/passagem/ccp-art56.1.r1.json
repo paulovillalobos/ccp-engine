@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art56.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art56",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A proposta é a declaração pela qual o concorrente manifesta à entidade adjudicante a sua vontade de contratar e o modo pelo qual se dispõe a fazê-lo.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 200149,
+        "end": 200302
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

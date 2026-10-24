@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art34.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art34",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O período abrangido pelo anúncio de pré-informação não pode ser superior a 12 meses a contar da data em que o anúncio é enviado para publicação, exceto no caso dos contratos de serviços sociais e outros serviços específicos, em que o referido período pode ser superior a 12 meses.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 139111,
+        "end": 139395
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

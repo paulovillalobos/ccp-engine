@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art395.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art395",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Da vistoria é lavrado auto, assinado pelos intervenientes, que deve declarar se a obra está, no todo ou em parte, em condições de ser recebida.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 631121,
+        "end": 631268
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art32.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art32",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando o contrato for composto por prestações típicas pertencentes a um ou mais contratos abrangidos, e a um ou mais contratos não abrangidos pela parte ii, aplica-se a todo o contrato o regime previsto para o tipo contratual que caracteriza o objeto principal do mesmo, determinado em função do valor estimado mais elevado das prestações respetivas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 134647,
+        "end": 135001
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

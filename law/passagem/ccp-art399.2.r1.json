@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art399.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art399",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Se não houver lugar à revisão ordinária de preços, o prazo a que se refere o número anterior inicia-se na data da recepção provisória.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 638656,
+        "end": 638794
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

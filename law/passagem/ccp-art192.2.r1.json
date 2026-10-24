@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art192.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art192",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O prazo previsto no número anterior não pode, em qualquer caso, ser inferior a 10 dias a contar da data do envio do convite.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 398910,
+        "end": 399038
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -12,7 +12,7 @@
     "valid_to": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]},
     "altered_by": {"$ref": "defs.schema.json#/$defs/id_norma", "description": "The amending act (norma:dl-177-2026)."},
     "note": {"$ref": "defs.schema.json#/$defs/raw_citation", "description": "The DR validity note, quoted at offsets in the raw capture."},
-    "effect": {"type": "string", "enum": ["altera", "adita", "revoga", "republica", "retifica", "transitoria"]}
+    "effect": {"type": "string", "enum": ["altera", "adita", "revoga", "republica", "retifica", "transitoria", "entra_em_vigor"]}
   },
   "required": ["id", "revision", "recorded_at", "passage", "valid_from", "valid_to", "altered_by", "note", "effect"],
   "unevaluatedProperties": false

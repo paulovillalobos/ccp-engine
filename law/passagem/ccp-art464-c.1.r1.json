@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art464-c.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art464-c",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Nos termos da lei, podem ser constituídos tribunais arbitrais para a resolução de litígios emergentes de procedimentos ou contratos aos quais se aplique o presente Código.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 697921,
+        "end": 698096
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

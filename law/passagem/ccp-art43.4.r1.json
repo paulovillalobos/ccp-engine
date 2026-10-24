@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art43.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O projeto de execução deve ser acompanhado de:\na) Uma descrição dos trabalhos preparatórios ou acessórios, tal como previstos no artigo 350.º;\nb) Uma lista completa de todas as espécies de trabalhos necessárias à execução da obra a realizar e do respectivo mapa de quantidades.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 164814,
+        "end": 165095
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

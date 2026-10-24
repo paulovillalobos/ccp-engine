@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art36.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando o valor estimado do contrato for igual ou superior a 5 000 000 € ou, no caso de parceria para a inovação, a 2 500 000 €, a fundamentação prevista no n.º 1 deve basear-se numa avaliação de custo-benefício e deve conter, quando aplicável:\na) A identificação do tipo de beneficiários do contrato a celebrar;\nb) A taxa prevista de utilização da infraestrutura, serviço ou bem;\nc) A análise da rentabilidade;\nd) Os custos de manutenção;\ne) A avaliação dos riscos potenciais e formas de mitigação dos mesmos;\nf) O impacto previsível para a melhoria da organização;\ng) O impacto previsível no desenvolvimento ou na reconversão do país ou da região coberta pelo investimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 151052,
+        "end": 151730
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

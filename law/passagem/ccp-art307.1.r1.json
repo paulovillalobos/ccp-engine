@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art307.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art307",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Com exceção dos casos previstos no número seguinte, as declarações do contraente público sobre interpretação e validade do contrato ou sobre a sua execução são meras declarações negociais, pelo que, na falta de acordo do cocontratante, o contraente público apenas pode obter os efeitos pretendidos através do recurso à ação administrativa.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 535441,
+        "end": 535784
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

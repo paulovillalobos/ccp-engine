@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art90.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art90",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - Tratando-se de seguro-caução, o programa do procedimento pode exigir a apresentação de apólice pela qual uma entidade legalmente autorizada a realizar este seguro assuma, até ao limite do valor da caução, o encargo de satisfazer de imediato quaisquer importâncias exigidas pela entidade adjudicante em virtude do incumprimento de quaisquer obrigações a que o seguro respeita.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 272005,
+        "end": 272384
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

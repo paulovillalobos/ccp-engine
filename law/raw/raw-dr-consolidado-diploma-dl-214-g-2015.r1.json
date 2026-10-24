@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-214-g-2015",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:04:01Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-214-g-2015",
+  "sha256": "8681bb4e77c4cd799a349fc9459dd9fa7f6b09a68b8a1068cd5adda986c5061a",
+  "bytes": "raw_bytes/8681bb4e77c4cd799a349fc9459dd9fa7f6b09a68b8a1068cd5adda986c5061a",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/214-g-2015-70423756",
+  "captured_at": "2026-10-24T17:03:57Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "dcb3af2375e54284e978f3cd0564f7349fe5c8cf6c387c9f061066696ed7a993",
+    "bytes": "raw_bytes/dcb3af2375e54284e978f3cd0564f7349fe5c8cf6c387c9f061066696ed7a993"
+  }
+}

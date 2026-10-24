@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art361.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art361",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O plano de trabalhos ajustado carece de aprovação pelo dono da obra, no prazo de cinco dias após a notificação do mesmo pelo empreiteiro, equivalendo o silêncio a aceitação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 593664,
+        "end": 593841
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

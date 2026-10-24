@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art365.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art365",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Verificação da necessidade de estudar alterações a introduzir ao projecto;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 598619,
+        "end": 598696
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

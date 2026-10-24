@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art75.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - Quando o custo seja calculado com base no ciclo de vida, o modelo de avaliação das propostas pode abranger custos suportados ou não pela entidade adjudicante, como sejam:\na) Custos relacionados com a aquisição propriamente dita;\nb) Custos de utilização, tais como consumo de energia, de consumíveis e de outros recursos;\nc) Custos de manutenção e assistência técnica;\nd) Custos de fim de vida, tais como custos de recolha e reciclagem;\ne) Custos imputados a externalidades ambientais ligadas ao bem, serviço ou obra durante o seu ciclo de vida, desde que seja possível determinar e confirmar o seu valor monetário, os quais podem incluir o custo das emissões de gases com efeito de estufa e de outras emissões poluentes, assim como outros custos de atenuação das alterações climáticas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 242054,
+        "end": 242843
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

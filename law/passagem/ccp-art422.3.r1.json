@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art422.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art422",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Em caso de resgate, o concedente assume automaticamente os direitos e obrigações do concessionário directamente relacionados com as actividades concedidas desde que constituídos em data anterior à da notificação referida no número anterior.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 663943,
+        "end": 664187
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

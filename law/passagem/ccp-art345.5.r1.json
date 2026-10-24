@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art345.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art345",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O dono da obra decide a reclamação ou pronuncia-se sobre as reservas apresentadas e notifica o empreiteiro no prazo de 15 dias a contar da data da assinatura do auto ou da entrega da reclamação ou da exposição escrita referida no número anterior, equivalendo o silêncio a deferimento da reclamação ou aceitação da reserva.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 581193,
+        "end": 581519
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

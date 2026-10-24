@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art55-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - [Revogado.]",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 198302,
+        "end": 198317
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:parte-ii.titulo-iii.capitulo-i.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-i",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Secção I\nRegime geral",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 296878,
+        "end": 296899
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

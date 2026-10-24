@@ -1,0 +1,23 @@
+{
+  "id": "ccp:dl.art14.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art14",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - É igualmente revogada toda a legislação relativa às matérias reguladas pelo Código dos Contratos Públicos, seja ou não com ele incompatível.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 51030,
+        "end": 51174
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

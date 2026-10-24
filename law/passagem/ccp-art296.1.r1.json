@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art296.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art296",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - As cauções prestadas pelo co-contratante podem ser executadas pelo contraente público, sem necessidade de prévia decisão judicial ou arbitral, para satisfação de quaisquer importâncias que se mostrem devidas por força do não cumprimento por aquele das obrigações legais ou contratuais, designadamente as seguintes:\na) Sanções pecuniárias aplicadas nos termos previstos no contrato;\nb) Prejuízos incorridos pelo contraente público, por força do incumprimento do contrato;\nc) Importâncias fixadas no contrato a título de cláusulas penais.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 521847,
+        "end": 522387
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

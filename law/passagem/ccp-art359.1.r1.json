@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art359.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art359",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Na falta de estipulação contratual, a consignação deve estar concluída em prazo não superior a 30 dias após a data da celebração do contrato, no caso de consignação total ou da primeira consignação parcial, ou logo que o dono da obra tenha acesso aos prédios, com a faculdade de os entregar a terceiros, no caso das demais consignações parciais.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 590843,
+        "end": 591192
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

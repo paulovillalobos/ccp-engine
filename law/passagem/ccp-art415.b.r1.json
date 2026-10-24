@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art415.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art415",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Receber a retribuição prevista no contrato;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 654690,
+        "end": 654736
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

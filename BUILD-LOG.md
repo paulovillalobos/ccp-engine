@@ -535,3 +535,39 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 2026-10-24T17:00:32Z  ccp-anexo-xii          sha256 042a42f7ead1f9f2d26258ff40d9dea67c3ced35c47bd8b9e6fd8ece858be629  730307 bytes
 2026-10-24T17:00:40Z  ccp-anexo-xiii         sha256 b5c346a921f288fdf6edb8e3b2525b620c2c1b3ffea137da9a78c4501351534e  727545 bytes
 ```
+
+## 2026-10-24 B2a.2 structure, normas and vigencias (commit: B2a.2: CCP structured into passages, every act a note names registered, notes into vigencias)
+- Done: tools/build_law.py (ccp-build-law-0.1, run with --no-history for this step). The consolidated raw got
+  revision 2 (same bytes, working text by dr-article-history@1 so passages and notes share offsets, D29); verify's
+  orphan rule now counts every revision's bytes. engine/structure 0.2 over that text: 3427 ccp passages, 596 artigo
+  (570 code + 18 decree + 8 quoted; the two the DR prints without "º", "Artigo 410-A" and "Artigo 464-A", are now
+  articles: before, their notes fell on arts. 410 and 464), 14 anexo, 1647 numero, 995 alinea, 61 subalinea, 114
+  headings. notes_to_vigencias: 689 vigencias of the CCP (altera 513, adita 106, revoga 53, retifica 17 ... one per
+  passage and date), each quoting its note at offsets of the consolidated text; the four dateless notes resolved by
+  D28 (18-A/2008 -> 2008-07-30, 42/2017 -> 2018-01-01 by siblings; DL 214-G/2015 -> 2015-12-01 by its art. 15.º, «60
+  dias após a sua publicação»; DL 278/2009 -> 2009-10-07: it fixes no day and its other notes carry two dates, so the
+  general rule of Lei n.º 74/98, art. 2.º, n.º 2, «no 5.º dia após a publicação», read from its captured passage, D31).
+  Normas: 28, all PT: norma:ccp, the 22 acts the notes name (title, DR address from the note's own link), and the
+  captured acts dl-177-2026, dl-214-g-2015, dl-278-2009, lei-74-1998 (title and scope read from their pages). Acts'
+  own passages: dl-177-2026 1440, dl-214-g-2015 1295, dl-278-2009 192, lei-74-1998 136, each dated by the act's entry
+  into force, with an `entra_em_vigor` vigencia quoting the article that fixes it (D32, schema enum + one value).
+- Captured in this step (one GET each, 3 s apart; nothing sent):
+```
+2026-10-24T17:03:57Z  dl-214-g-2015 (detail)   sha256 8681bb4e77c4cd799a349fc9459dd9fa7f6b09a68b8a1068cd5adda986c5061a  756879 bytes
+2026-10-24T17:04:05Z  dl-278-2009 (detail)     sha256 83582a465c84b23347b36c1c4b01b4268b0bd2040b0eed8b741f9d19486bc968  751325 bytes
+2026-10-24T17:05:13Z  lei-74-1998 (consol.)    sha256 5500ca94a7d0c31467fc9985828b7c3c69ee8c06d1451d0654a1f83e4771eb7b  237978 bytes
+2026-10-24T17:08:18Z  ccp-art410-a (history)   sha256 536b84403bd0da8d788b8d662aa3151c620fdba4bc1b37650a611a7068ae783f  361073 bytes
+2026-10-24T17:08:26Z  ccp-art464-a (history)   sha256 4ebf3e871aa0a3eed7dd06bf5bdf6363083802828a931a968e844ed6d053d1e2  363358 bytes
+```
+  The two histories complete B2a.1: the walk visited arts. 410-A and 464-A but could not name them (DR title without
+  "º"); capture_dr_history 0.6 reads them and opens a given detail address (one GET, one click).
+- DR data as read, not corrected: art. 132 dates its DL 278/2009 change from 2008-07-30; Anexo II dates its 36-A/2017
+  retificação from 2008-07-30; art. 410's newest history version is titled "Artigo 410".
+- verify at this commit: FAILED with 657 TIME (vigencias whose date starts no version yet: B2a.3 builds them). New
+  decisions: D29, D30 (written before B2a.3), D31, D32 (schema: vigencia.effect + entra_em_vigor).
+- Registered: verify@9, vigente@3, structure@2, capture-dr-history@3, build-law@1.
+- Slip, disclosed: the B2a.1 commit also carried the bytes (and working texts) of the four EU threshold regulations
+  read for B2b (8 files in law/raw_bytes); their raw records land with B2b, so until then verify lists them as orphans
+  (I01), as it does at this commit.
+- Next: B2a.3 versions from the histories.
+- Why: a verdict cites a passage and a version; this step gives every article an id and every note a date.

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art49.13",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "13",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "13 - [Revogado.]",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 180757,
+        "end": 180773
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

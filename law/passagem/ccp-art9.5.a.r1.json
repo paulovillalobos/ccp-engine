@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art9.5.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art9.5",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Os serviços que consistam na aceitação, no tratamento, no transporte e na distribuição de envios postais;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 83831,
+        "end": 83939
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art301.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art301",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Salvo quando a natureza do contrato ou a lei não o permitam, o contraente público pode atribuir ao co-contratante prémios por cumprimento antecipado das prestações objecto do contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 528267,
+        "end": 528455
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art57-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O documento identifica os custos que resultem de prestações impostas por lei ou por instrumentos de regulamentação coletiva de trabalho, expressando os seus valores certos ou médios, bem como o respetivo peso relativo, indicado em percentagem.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 205834,
+        "end": 206081
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

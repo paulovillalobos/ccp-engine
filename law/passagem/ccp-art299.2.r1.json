@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art299.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O período máximo de duração do procedimento de aceitação ou verificação referido na alínea d) do número anterior não pode exceder os 30 dias, salvo disposição em contrário devidamente justificada no contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 524975,
+        "end": 525187
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

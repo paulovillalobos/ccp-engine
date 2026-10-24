@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art395.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art395",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O auto a que se refere o número anterior deve conter informação sobre:\na) O modo como se encontram cumpridas as obrigações contratuais e legais do empreiteiro, identificando, nomeadamente, os defeitos da obra;\nb) O modo como foi executado o plano de prevenção e gestão de resíduos de construção e demolição, nos termos da legislação aplicável;\nc) Quaisquer condições que o dono da obra julgue necessário impor, nos termos do presente Código ou da lei, bem como o prazo para o seu cumprimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 631269,
+        "end": 631765
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

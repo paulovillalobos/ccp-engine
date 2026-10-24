@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art332.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art332",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Sem prejuízo de outras situações de grave violação das obrigações assumidas pelo contraente público especialmente previstas no contrato e independentemente do direito de indemnização, o co-contratante tem o direito de resolver o contrato nas seguintes situações:\na) Alteração anormal e imprevisível das circunstâncias;\nb) Incumprimento definitivo do contrato por facto imputável ao contraente público;\nc) Incumprimento de obrigações pecuniárias pelo contraente público por período superior a seis meses ou quando o montante em dívida exceda 25 % do preço contratual, excluindo juros;\nd) Exercício ilícito dos poderes tipificados no capítulo sobre conformação da relação contratual pelo contraente público, quando tornem contrária à boa fé a exigência pela parte pública da manutenção do contrato;\ne) Incumprimento pelo contraente público de decisões judiciais ou arbitrais respeitantes ao contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 567372,
+        "end": 568274
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

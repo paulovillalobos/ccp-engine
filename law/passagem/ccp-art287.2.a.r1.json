@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art287.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art287.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Não seja proibida por lei;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 509179,
+        "end": 509208
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

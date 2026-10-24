@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art326.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art326",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Em caso de atraso do contraente público no cumprimento de obrigações pecuniárias, tem o co-contratante direito aos juros de mora sobre o montante em dívida à taxa legalmente fixada para o efeito pelo período correspondente à mora.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 562091,
+        "end": 562325
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

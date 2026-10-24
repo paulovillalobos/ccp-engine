@@ -33,14 +33,14 @@ import re
 
 from engine.sources import now_utc
 
-VERSION = "ccp-structure-0.1"
+VERSION = "ccp-structure-0.2"
 
 ACT_SHORT = re.compile(r"^(dl|lei|ret|lo|dlr|port|dreg)-")
 ANNEX_LINE = re.compile(r"^(ANEXO|Anexo)(?: [IVXLC]+(?:-[A-Z])?)?$")
 HEADING = re.compile(r"^(Parte|Título|Capítulo|Secção|Subsecção|PARTE|TÍTULO|CAPÍTULO|SECÇÃO|SUBSECÇÃO) ([IVXLC]+|ÚNICO|ÚNICA|[0-9]+)(?:-([A-Z]))?$")
 HEADING_KIND = {"parte": ("parte", 1), "título": ("titulo", 2), "capítulo": ("capitulo", 3), "secção": ("secao", 4), "subsecção": ("secao", 5)}
 HEADING_SLUG = {"parte": "parte", "título": "titulo", "capítulo": "capitulo", "secção": "seccao", "subsecção": "subseccao"}
-ARTICLE = re.compile(r"^Artigo ([0-9]+)\.º(?:-([A-Z]+))?$")
+ARTICLE = re.compile(r"^Artigo ([0-9]+)(?:\.º)?(?:-([A-Z]+))?$")  # the DR also prints "Artigo 410-A" (no º)
 NUMBER = re.compile(r"^([0-9]+(?:-[A-Z])?) - ")
 LETTER = re.compile(r"^([a-z]{1,4})\) ")
 ROMAN = re.compile(r"^(?:x{0,1}(?:ix|iv|v?i{0,3}))$")

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art397.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art397",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O prazo de garantia varia de acordo com o defeito da obra, nos seguintes termos:\na) 10 anos, no caso de defeitos relativos a elementos construtivos estruturais;\nb) 5 anos, no caso de defeitos relativos a elementos construtivos não estruturais ou a instalações técnicas;\nc) 3 anos, no caso de defeitos relativos a equipamentos afetos à obra, mas dela autonomizáveis.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 634716,
+        "end": 635085
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

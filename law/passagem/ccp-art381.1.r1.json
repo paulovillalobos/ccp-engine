@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art381.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art381",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Quando, por virtude da ordem de supressão de trabalhos ou de outros atos ou factos imputáveis ao dono da obra, os trabalhos executados pelo empreiteiro tenham um valor inferior em mais de 20 % ao preço contratual inicial, este tem direito a uma indemnização correspondente a 10 % do valor da diferença verificada.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 617244,
+        "end": 617561
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

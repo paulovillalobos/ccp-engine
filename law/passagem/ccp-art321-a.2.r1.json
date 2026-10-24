@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art321-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art321-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O contraente público notifica o cocontratante para proceder à liquidação ou apresentar motivo justificativo para o não pagamento, devendo neste caso indicar o prazo, não superior a 30 dias, no qual se propõe liquidar a dívida ao subcontratado.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 556545,
+        "end": 556792
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

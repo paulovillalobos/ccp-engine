@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art78.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art78",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - A publicação referida no n.º 1 é igualmente aplicável aos contratos celebrados ao abrigo de um acordo-quadro, ou de um sistema de aquisição dinâmico quando o preço contratual acumulado por trimestre ultrapassar os limiares referidos nas alíneas do n.º 2, no prazo de 30 dias após o fim de cada trimestre.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 249249,
+        "end": 249557
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

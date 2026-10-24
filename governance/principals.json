@@ -246,7 +246,7 @@
       "versao": 8,
       "code": "verify.py",
       "hash": "e61528cc69d62aaff4c45f82d8b93488cd542e629919cdd367da63fd6561d86e",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:make-fixtures@3",
@@ -268,7 +268,7 @@
       "versao": 2,
       "code": "engine/vigente.py",
       "hash": "0fed9881925d4cc36162f1a1dff68a75357b4fbeec19aa9ba26817b16fd4fdd1",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:structure@1",
@@ -279,7 +279,7 @@
       "versao": 1,
       "code": "engine/structure.py",
       "hash": "1eff308460123e788938ee22675f4b31dffd3905b63abdcf5d6cd3e710924b75",
-      "retired": false,
+      "retired": true,
       "nota": "DR working text -> passages with offsets (B1)"
     },
     {
@@ -303,7 +303,7 @@
       "versao": 2,
       "code": "tools/capture_dr_history.mjs",
       "hash": "4bc50a5e7aa97363c317e2090f0d2482518b061d820941fc06516b708e83da92",
-      "retired": false,
+      "retired": true,
       "nota": "0.5: walk by Artigo seguinte from the index; named index entries (annexes); failure DOM kept"
     },
     {
@@ -329,6 +329,66 @@
       "hash": "ed66d6fa02854c4553f839f1d762226282524dc8795c4d15cfd52dfce443186d",
       "retired": false,
       "nota": "history pages -> raw artigo-historico (B2a.1)"
+    },
+    {
+      "id": "ferramenta:verify@9",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 9,
+      "code": "verify.py",
+      "hash": "05250bf9ba94c4cd6c2609d65acfe981b4add64f7673b3755d6ab67612dd2c73",
+      "retired": false,
+      "nota": "I01 orphans: bytes named by any raw revision (D29)"
+    },
+    {
+      "id": "ferramenta:vigente@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "engine/vigente.py",
+      "hash": "04d633a5ff1d7116e58be04e48786a4c5ae41d0ef36f5e7583eeb9eea62bb622",
+      "retired": false,
+      "nota": "D31 general rule; Série I-A; produz efeitos; two-digit years; Artigo N without º"
+    },
+    {
+      "id": "ferramenta:structure@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "engine/structure.py",
+      "hash": "ca242f7edceea7c4ad05f92be03900a8fdd7eb398e84fee98d248077b9b28dc6",
+      "retired": false,
+      "nota": "0.2: Artigo 410-A (no º) is an article"
+    },
+    {
+      "id": "ferramenta:capture-dr-history@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/capture_dr_history.mjs",
+      "hash": "aa3e80540dccfa423b2dac6b496a0635b108f67191086b41a3f1f39c5ffcc18b",
+      "retired": false,
+      "nota": "0.6: --urls, Artigo N-A ids"
+    },
+    {
+      "id": "ferramenta:build-law@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/build_law.py",
+      "hash": "b253403a93d9c73bf8fddbc5e879fe09bcb6cf0eef0b5cb060efb1c8f80cc3f3",
+      "retired": false,
+      "nota": "captures -> normas, passages, versions, vigencias (B2a/B2b)"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art19.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art19",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 105572,
+        "end": 105655
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

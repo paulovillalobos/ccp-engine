@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art403.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art403",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O empreiteiro tem direito ao reembolso das quantias pagas a título de sanção contratual por incumprimento de prazos parciais de execução da obra quando recupere o atraso na execução dos trabalhos e a obra seja concluída dentro do prazo de execução do contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 641735,
+        "end": 641999
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

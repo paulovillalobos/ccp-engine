@@ -587,7 +587,7 @@ def check_cross(store, out):
         if c["held_out"] and not c["frozen_at"]:
             out.append(("BENCH", f"{c['id']}: held out without frozen_at; a held-out case is frozen before any rule is measured on it"))
     named = set()
-    for r in current_of(store, "raw").values():
+    for r in store.objects["raw"]:  # every revision: a superseded working text stays (nothing is deleted, D29)
         named.add(r["sha256"])
         if r.get("text"):
             named.add(r["text"]["sha256"])

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art42.10",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "10 - [Revogado.]",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 162917,
+        "end": 162933
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

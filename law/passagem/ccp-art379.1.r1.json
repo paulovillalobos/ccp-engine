@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art379.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art379",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Salvo em caso de impossibilidade de cumprimento, o empreiteiro só pode deixar de executar quaisquer trabalhos previstos no contrato desde que o dono da obra emita uma ordem com esse conteúdo, especificando os trabalhos a menos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 616239,
+        "end": 616470
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

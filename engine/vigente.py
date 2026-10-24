@@ -5,7 +5,8 @@ What the DR gives (read 2026-10-24, DECISIONS D24):
   - one history page per altered article (opened by a click, tools/capture_dr_history.mjs): per version, title +
     epigraph + text, then the note that produced that version; the oldest version is "Versão inicial" and has no note.
   - a note reads: "<Efeito> pelo/a [Artigo N.º do/a] <diploma> - Diário da República n.º <n>/<ano>[, <k>º Suplemento],
-    Série I de <AAAA-MM-DD>, em vigor a partir de <AAAA-MM-DD>[.]"  (NOTE_RE)
+    Série I[-A|-B] de <AAAA-MM-DD>, em vigor a partir de <AAAA-MM-DD>[, produz efeitos a partir de <AAAA-MM-DD>][.]"
+    (NOTE_RE; valid_from is the date in force, the effects date stays in the quoted note)
 
     parse_note(text) -> dict | None       {effect, article_of_act, diploma, dr_issue, published, valid_from}; None if not a note
     EFFECTS                               Alterado -> altera, Aditado -> adita, Revogado -> revoga, Retificado -> retifica,
@@ -19,9 +20,11 @@ What the DR gives (read 2026-10-24, DECISIONS D24):
     notes_to_vigencias(text, raw_id, passages, normas) -> list[vigencia]      one per (passage, valid_from); see its docstring
     vigente(store, date) -> dict[passage_id, version]                          the version of every passage in force at date
     entry_into_force(published, article_text) -> str | None                    an act's own entry-into-force article, read
+    resolve_note_dates(notes, passages) -> {(diploma, published): date}       the dates of dateless notes (D28)
     norma_slug(diploma) -> str            "Decreto-Lei n.º 177/2026" -> "dl-177-2026"; "Lei n.º 30/2021" -> "lei-30-2021";
                                           "Declaração de Retificação n.º 42/2017" -> "ret-42-2017";
-                                          "Resolução da Assembleia da República n.º 16/2020" -> "rar-16-2020"
+                                          "Resolução da Assembleia da República n.º 16/2020" -> "rar-16-2020";
+                                          "Lei n.º 98/97" -> "lei-98-1997" (two-digit years are 19xx)
     A note's amending provision may be "Artigo N.º", "Parte III" or "Anexo [N]" of the act (article_of_act carries it).
 No network, no model.
 """
@@ -36,7 +39,8 @@ EFFECTS = {"Alterado": "altera", "Aditado": "adita", "Revogado": "revoga", "REVO
 NOTE_RE = re.compile(
     r"^(?:NOTA: )?(?P<effect>Alterado|Aditado|Revogado|REVOGADO|Retificado|Rectificado|Republicado) pelo/a "
     r"(?:(?P<article>Artigo [0-9]+\.º(?:-[A-Z])?|Parte [IVXLC]+|Anexo(?: [IVXLC]+)?) do/a )?(?P<diploma>.+?) - Diário da República n\.º (?P<issue>[0-9]+(?:-[A-Z])?/[0-9]{4})"
-    r"(?:, (?P<supl>[0-9]+º Suplemento))?, Série I de (?P<published>[0-9]{4}-[0-9]{2}-[0-9]{2})(?:, em vigor a partir de (?P<valid_from>[0-9]{4}-[0-9]{2}-[0-9]{2}))?\.?$")
+    r"(?:, (?P<supl>[0-9]+º Suplemento))?, Série I(?:-[AB])? de (?P<published>[0-9]{4}-[0-9]{2}-[0-9]{2})(?:, em vigor a partir de (?P<valid_from>[0-9]{4}-[0-9]{2}-[0-9]{2}))?"
+    r"(?:, produz efeitos a partir de [0-9]{4}-[0-9]{2}-[0-9]{2})?\.?$")
 ACT_KINDS = {"decreto-lei": "dl", "lei": "lei", "declaração de retificação": "ret", "declaração de rectificação": "ret", "lei orgânica": "lo",
              "decreto legislativo regional": "dlr", "portaria": "port", "decreto regulamentar": "dreg",
              "resolução da assembleia da república": "rar"}
@@ -52,16 +56,17 @@ def parse_note(text):
 
 
 def norma_slug(diploma: str) -> str:
-    m = re.match(r"^(?P<kind>.+?) n\.º (?P<num>[0-9]+(?:-[A-Z])?)/(?P<year>[0-9]{4})(?:/(?P<reg>[A-Z]))?$", diploma.strip())
+    m = re.match(r"^(?P<kind>.+?) n\.º (?P<num>[0-9]+(?:-[A-Z])?)/(?P<year>[0-9]{4}|[0-9]{2})(?:/(?P<reg>[A-Z]))?$", diploma.strip())
     if not m:
         raise ValueError(f"not a DR act reference: {diploma!r}")
     kind = ACT_KINDS.get(m["kind"].lower())
     if not kind:
         raise ValueError(f"unknown act kind in {diploma!r}")
-    return f"{kind}-{m['num'].lower()}-{m['year']}" + (f"-{m['reg'].lower()}" if m["reg"] else "")
+    year = m["year"] if len(m["year"]) == 4 else "19" + m["year"]  # the DR prints acts before 2000 as n.º 98/97
+    return f"{kind}-{m['num'].lower()}-{year}" + (f"-{m['reg'].lower()}" if m["reg"] else "")
 
 
-ART_RE = re.compile(r"^Artigo [0-9]+\.º(?:-[A-Z])?$")
+ART_RE = re.compile(r"^Artigo [0-9]+(?:\.º)?(?:-[A-Z])?$")
 
 
 def versions_from_history(text: str, initial_valid_from: str) -> list:
@@ -102,6 +107,7 @@ def versions_from_history(text: str, initial_valid_from: str) -> list:
     return merged
 
 
+GENERAL_RULE = "lei-74-1998:art2.2"  # "Na falta de fixação do dia, ... entram em vigor ... no 5.º dia após a publicação."
 EFFECT_PRIORITY = {"revoga": 0, "adita": 1, "altera": 2, "republica": 3, "retifica": 4}
 MONTHS_PT = {"um": 1, "dois": 2, "três": 3, "quatro": 4, "cinco": 5, "seis": 6, "sete": 7, "oito": 8, "nove": 9, "dez": 10, "onze": 11, "doze": 12}
 NUMBERS_PT = {"cinco": 5, "dez": 10, "quinze": 15, "vinte": 20, "trinta": 30, "sessenta": 60, "noventa": 90, "cento e vinte": 120, "cento e oitenta": 180}
@@ -113,11 +119,15 @@ def entry_into_force(published: str, article_text: str):
         "entra em vigor no dia seguinte ao da sua publicação"            published + 1 day
         "entra em vigor no primeiro dia do mês seguinte ao da sua publicação"   the 1st of the next month
         "entra em vigor <n> dias após a (data da) sua publicação"        published + n days (digits or words)
+        "entram em vigor ... no 5.º dia após a publicação"               published + 5 days (Lei 74/98, art. 2.º, n.º 2)
         "entra em vigor (no dia|em) <AAAA-MM-DD | d de mês de aaaa>"      that date"""
     t = " ".join(article_text.split()).lower()
     d = date.fromisoformat(published)
     if "no dia seguinte ao da sua publicação" in t:
         return (d + timedelta(days=1)).isoformat()
+    m = re.search(r"no ([0-9]+)\.º dia após a (?:sua )?publicação", t)
+    if m:
+        return (d + timedelta(days=int(m.group(1)))).isoformat()
     if "no primeiro dia do mês seguinte ao da sua publicação" in t:
         return (date(d.year + (d.month == 12), d.month % 12 + 1, 1)).isoformat()
     m = re.search(r"entra(?:m)? em vigor (?:([0-9]+)|(" + "|".join(sorted(NUMBERS_PT, key=len, reverse=True)) + r")) dias após a (?:data da )?sua publicação", t)
@@ -128,6 +138,40 @@ def entry_into_force(published: str, article_text: str):
     if m and m.group(2) in months:
         return date(int(m.group(3)), months.index(m.group(2)) + 1, int(m.group(1))).isoformat()
     return None
+
+
+def resolve_note_dates(notes, passages) -> dict:
+    """{(diploma, published): valid_from} for every note in `notes` (parse_note dicts) that carries no "em vigor a
+    partir de" (DECISIONS D28, D31): the single date the other notes of the same act carry among `notes`; else the act's
+    own "Entrada em vigor" article among `passages`, read by entry_into_force; else, when the act's own articles are
+    among `passages` and none is an entry-into-force article, the general rule of Lei n.º 74/98, art. 2.º, n.º 2
+    (passage GENERAL_RULE, read the same way); else ValueError."""
+    siblings = {}
+    for n in notes:
+        if n["valid_from"]:
+            siblings.setdefault((n["diploma"], n["published"]), set()).add(n["valid_from"])
+    out = {}
+    for n in notes:
+        key = (n["diploma"], n["published"])
+        if n["valid_from"] or key in out:
+            continue
+        known = siblings.get(key, set())
+        if len(known) == 1:
+            out[key] = next(iter(known))
+            continue
+        slug = norma_slug(n["diploma"])
+        art = next((p for p in passages if p["id"].startswith(slug + ":") and p["kind"] == "artigo" and ".q" not in p["id"]
+                    and "\nEntrada em vigor\n" in p["versions"][-1]["text"] + "\n"), None)
+        found = entry_into_force(n["published"], art["versions"][-1]["text"]) if art else None
+        own = [p for p in passages if p["id"].startswith(slug + ":") and p["kind"] == "artigo" and ".q" not in p["id"]]
+        if not found and own and art is None:
+            # the act was read and fixes no day: the general rule (Lei n.º 74/98, art. 2.º, n.º 2), read from its passage
+            rule = next((p for p in passages if p["id"] == GENERAL_RULE), None)
+            found = entry_into_force(n["published"], rule["versions"][-1]["text"]) if rule else None
+        if not found:
+            raise ValueError(f"note of {n['diploma']} without a date: no single sibling date ({sorted(known)}) and no readable entry-into-force article of {slug}")
+        out[key] = found
+    return out
 
 
 def notes_to_vigencias(text: str, raw_id: str, passages: list, normas: dict) -> list:
@@ -159,24 +203,9 @@ def notes_to_vigencias(text: str, raw_id: str, passages: list, normas: dict) -> 
             k = bisect.bisect_left(starts, pos) - 1
             notes.append({"owner": owners[k][1] if k >= 0 else None, "start": pos + len("NOTA: "), "end": pos + len(line), "quote": body, **parsed})
         pos += len(line) + 1
-    siblings = {}
+    resolved = resolve_note_dates(notes, passages)
     for n in notes:
-        if n["valid_from"]:
-            siblings.setdefault((n["diploma"], n["published"]), set()).add(n["valid_from"])
-    for n in notes:
-        if n["valid_from"]:
-            continue
-        known = siblings.get((n["diploma"], n["published"]), set())
-        if len(known) == 1:
-            n["valid_from"] = next(iter(known))
-            continue
-        slug = norma_slug(n["diploma"])
-        art = next((p for p in passages if p["id"].startswith(slug + ":") and p["kind"] == "artigo" and ".q" not in p["id"]
-                    and "\nEntrada em vigor\n" in p["versions"][-1]["text"] + "\n"), None)
-        found = entry_into_force(n["published"], art["versions"][-1]["text"]) if art else None
-        if not found:
-            raise ValueError(f"note of {n['diploma']} without a date: no single sibling date ({sorted(known)}) and no readable entry-into-force article of {slug}")
-        n["valid_from"] = found
+        n["valid_from"] = n["valid_from"] or resolved[(n["diploma"], n["published"])]
     groups = {}
     for n in notes:
         if n["owner"] is None:

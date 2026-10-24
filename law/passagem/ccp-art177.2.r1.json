@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art177.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art177",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Mediante a atribuição de um login e de uma password, aos candidatos incluídos na lista é facultada a consulta, directamente na plataforma electrónica referida no número anterior, de todas as candidaturas apresentadas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 379147,
+        "end": 379368
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

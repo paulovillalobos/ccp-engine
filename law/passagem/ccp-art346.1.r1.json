@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art346.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art346",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O empreiteiro deve manter a boa ordem no local dos trabalhos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 582084,
+        "end": 582149
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

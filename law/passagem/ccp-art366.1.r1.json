@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art366.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art366",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Nos contratos que prevejam um prazo de execução da obra igual ou superior a um ano, o empreiteiro pode suspender, uma vez em cada ano, no todo ou em parte, a execução dos trabalhos por um período não superior a 10 dias seguidos desde que o dono da obra não se oponha de forma expressa e não fiquem comprometidos os prazos parciais e o termo final de execução da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 598855,
+        "end": 599226
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

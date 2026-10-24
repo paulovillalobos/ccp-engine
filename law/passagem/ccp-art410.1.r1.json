@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art410.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art410",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O prazo de vigência do contrato é fixado em função do período de tempo necessário para amortização e remuneração, em normais condições de rendibilidade da exploração, do capital investido pelo concessionário.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 650901,
+        "end": 651113
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

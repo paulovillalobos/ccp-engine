@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art89.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art89",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando o contrato previr prorrogações, o valor da caução tem por referência o preço do seu período de vigência inicial e cada prorrogação deve ser condicionada à prestação de nova caução, que terá por referência o preço de cada um dos respetivos períodos de vigência.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 269529,
+        "end": 269800
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

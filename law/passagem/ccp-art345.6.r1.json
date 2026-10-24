@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art345.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art345",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Se o empreiteiro se recusar a assinar o auto, nele se fará menção desse facto e da razão invocada para a recusa, devendo o representante do dono da obra promover a assinatura do auto por duas testemunhas que confirmem a ocorrência.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 581520,
+        "end": 581755
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art354.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art354",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - A decisão, ou a sua omissão no prazo devido, pode ser objeto de impugnação nos tribunais administrativos, nos termos do Código de Processo nos Tribunais Administrativos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 588537,
+        "end": 588710
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

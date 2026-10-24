@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art404.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art404",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Realizada a notificação prevista no número anterior, se o empreiteiro não apresentar um plano de trabalhos modificado em moldes considerados adequados pelo dono da obra, este pode elaborar novo plano de trabalhos, acompanhado de uma memória justificativa da sua viabilidade, devendo notificá-lo ao empreiteiro.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 642560,
+        "end": 642874
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

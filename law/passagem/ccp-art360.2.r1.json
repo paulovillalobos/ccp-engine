@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art360.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art360",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A contagem do prazo referido no n.º 1 do artigo anterior só é retomada depois de terem sido notificadas ao empreiteiro as alterações introduzidas no projecto.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 592238,
+        "end": 592400
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

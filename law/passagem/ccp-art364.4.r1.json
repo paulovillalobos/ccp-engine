@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art364.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art364",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - No caso de serem detectados restos humanos, o empreiteiro deve comunicar imediatamente o facto às autoridades policiais competentes, dando conhecimento ao dono da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 598136,
+        "end": 598308
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

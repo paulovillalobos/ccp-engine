@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art3.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art3.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) As entidades referidas no n.º 1 do artigo anterior;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 63549,
+        "end": 63603
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art422.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art422",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Em caso de resgate, o concessionário tem direito a uma indemnização correspondente aos danos emergentes e aos lucros cessantes, devendo, quanto a estes, deduzir-se o benefício que resulte da antecipação dos ganhos previstos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 664371,
+        "end": 664599
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

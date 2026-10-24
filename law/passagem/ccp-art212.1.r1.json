@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art212.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art212",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Após a apresentação das soluções, o júri elabora um relatório preliminar onde deve propor fundamentadamente a admissão e a exclusão das soluções apresentadas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 409779,
+        "end": 409941
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

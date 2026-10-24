@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art241-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art241-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - São admitidos todos os candidatos que satisfaçam os requisitos mínimos exigidos nos termos do artigo 165.º durante o período de vigência do sistema.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 445492,
+        "end": 445644
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

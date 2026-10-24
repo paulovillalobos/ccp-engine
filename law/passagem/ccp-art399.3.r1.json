@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art399.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art399",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Os trabalhos e os valores em relação aos quais existam reclamações pendentes de decisão são liquidados à medida que aquelas forem definitivamente decididas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 638795,
+        "end": 638955
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

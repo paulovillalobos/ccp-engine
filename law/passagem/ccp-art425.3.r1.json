@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art425.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art425",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - No termo da concessão, revertem gratuitamente para o concedente todos os seus bens que integram o estabelecimento da concessão, obrigando-se o concessionário a entregá-los em bom estado de conservação e funcionamento, sem prejuízo do normal desgaste resultante do seu uso para efeitos de execução do contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 668181,
+        "end": 668494
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

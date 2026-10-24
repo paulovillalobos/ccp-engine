@@ -1,0 +1,23 @@
+{
+  "id": "ccp:dl.art5.q1.art2.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art5.q1.art2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O presente decreto-lei aplica-se, ainda, aos contratos referidos no artigo anterior, relativos a aquisições destinadas à Guarda Nacional Republicana, nos termos definidos na Lei da Defesa Nacional e das Forças Armadas e no respectivo estatuto orgânico.»",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 38027,
+        "end": 38284
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

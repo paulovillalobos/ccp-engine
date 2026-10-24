@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art68.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art68",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As deliberações do júri, que devem ser sempre fundamentadas, são tomadas por maioria de votos, não sendo admitida a abstenção.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 222984,
+        "end": 223114
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

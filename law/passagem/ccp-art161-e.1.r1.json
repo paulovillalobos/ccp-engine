@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art161-e.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art161-e",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A avaliação faseada das propostas consiste na separação entre a avaliação técnica, que abrange todas as propostas apresentadas, e a avaliação global, que abrange as propostas que atinjam uma pontuação mínima na avaliação técnica.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 357033,
+        "end": 357266
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

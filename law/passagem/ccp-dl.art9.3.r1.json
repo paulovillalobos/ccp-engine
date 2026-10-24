@@ -1,0 +1,23 @@
+{
+  "id": "ccp:dl.art9.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art9",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O disposto no número anterior aplica-se às propostas variantes, devendo no rosto do respectivo invólucro ser escrita a expressão «Proposta variante n.º...».",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 44613,
+        "end": 44773
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:dl.art16.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art16",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O Código dos Contratos Públicos não se aplica a prorrogações, expressas ou tácitas, do prazo de execução das prestações que constituem o objecto de contratos públicos cujo procedimento tenha sido iniciado previamente à data de entrada em vigor daquele.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 52291,
+        "end": 52547
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

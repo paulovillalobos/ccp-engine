@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art345.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art345",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - As reclamações ou reservas exaradas no próprio auto podem limitar-se ao enunciado genérico do respectivo objecto, podendo o empreiteiro, neste caso, apresentar por escrito exposição fundamentada, no prazo de 15 dias.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 580972,
+        "end": 581192
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

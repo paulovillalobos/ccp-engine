@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art90.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art90",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando o depósito for efectuado em títulos, estes são avaliados pelo respectivo valor nominal, salvo se, nos últimos três meses, a média da cotação na bolsa de valores ficar abaixo do par, caso em que a avaliação é feita em 90 % dessa média.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 271217,
+        "end": 271462
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

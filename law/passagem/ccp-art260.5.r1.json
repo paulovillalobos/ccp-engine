@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art260.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art260",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Os contratos celebrados pelas centrais de compras situadas noutros Estados da União Europeia regem-se pelas disposições nacionais do respetivo Estado.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 480860,
+        "end": 481014
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

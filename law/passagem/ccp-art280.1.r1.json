@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art280.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art280",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A parte iii aplica-se aos contratos administrativos, entendendo-se como tal aqueles em que pelo menos uma das partes seja um contraente público e que se integrem em qualquer uma das seguintes categorias:\na) Contratos que, por força do presente Código, da lei ou da vontade das partes, sejam qualificados como contratos administrativos ou submetidos a um regime substantivo de direito público;\nb) Contratos com objeto passível de ato administrativo e demais contratos sobre o exercício de poderes públicos;\nc) Contratos que confiram ao cocontratante direitos especiais sobre coisas públicas ou o exercício de funções dos órgãos do contraente público;\nd) Contratos que a lei submeta, ou que admita que sejam submetidos, a um procedimento de formação regulado por normas de direito público e em que a prestação do cocontratante possa condicionar ou substituir, de forma relevante, a realização das atribuições do contraente público.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 496568,
+        "end": 497501
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

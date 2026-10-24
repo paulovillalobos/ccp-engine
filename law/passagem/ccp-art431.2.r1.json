@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art431.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art431",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para efeitos do presente capítulo, a locação de bens móveis compreende a locação financeira e a locação que envolva a opção de compra dos bens locados.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 673158,
+        "end": 673313
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

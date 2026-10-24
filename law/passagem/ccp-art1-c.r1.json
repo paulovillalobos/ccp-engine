@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art1-c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1.º-C",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 1.º-C\nContratação pública digital\n1 - No planeamento, na preparação e na condução do procedimento de formação, bem como na execução de contratos públicos, as entidades adjudicantes devem utilizar sistemas digitais, incluindo de inteligência artificial, com o objetivo de garantir a máxima eficiência do procedimento e da execução dos contratos.\n2 - Na utilização de sistemas digitais, as entidades adjudicantes devem respeitar os seguintes princípios:\na) Transparência e explicabilidade, de modo a garantir o direito ao conhecimento da utilização de sistemas digitais e ao seu modo de funcionamento;\nb) Segurança, mediante a adoção de soluções que minimizem os riscos de erros e de efeitos discriminatórios;\nc) Garantia da proteção de dados pessoais, bem como de segredos comerciais e industriais e de outras informações confidenciais;\nd) Supervisão e contributo humano, não dispensando a intervenção dos titulares dos órgãos competentes na verificação dos resultados produzidos pelos sistemas digitais;\ne) Garantia de interoperabilidade entre os sistemas digitais utilizados e plataformas agregadoras do Estado.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 59624,
+        "end": 60743
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

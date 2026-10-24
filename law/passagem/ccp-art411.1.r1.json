@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art411.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art411",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Na falta de estipulação contratual, o concessionário deve manter a sua sede em Portugal e a forma de sociedade anónima.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 652231,
+        "end": 652354
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

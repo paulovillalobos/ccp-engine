@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art345.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art345",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os autos são reduzidos a escrito e assinados pelos representantes das partes, sendo um duplicado dos mesmos entregue ao empreiteiro.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 580689,
+        "end": 580825
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

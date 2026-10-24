@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art123.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art123",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Durante a fase de audiência prévia, os concorrentes têm acesso às actas das sessões de negociação com os demais concorrentes e às informações e comunicações escritas de qualquer natureza que estes tenham prestado, bem como às versões finais integrais das propostas apresentadas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 311375,
+        "end": 311657
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

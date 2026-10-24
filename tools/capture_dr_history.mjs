@@ -5,6 +5,8 @@
 // (never retried in the same run). Each history view is written as <out>/<seq>.html with an entry in <out>/manifest.json;
 // tools/record_histories.py records them through engine.sources.record_raw.
 //   node tools/capture_dr_history.mjs --out DIR [--skip ccp-art20,ccp-art113,ccp-art136] [--max 900] [--attach PORT]
+//   node tools/capture_dr_history.mjs --out DIR --urls URL1,URL2     (an article's detail address, read by one GET,
+//        then one click on its "Ver alterações ao texto"; for articles a walk recorded but could not name)
 //   node tools/capture_dr_history.mjs --out DIR --attach PORT --targets "Anexo I,Anexo II"   (named index entries only:
 //        one click on the entry in the open "Índice", one on its "Ver alterações ao texto")
 // Ids: ccp-artN (code), ccp-dl-artN (the approving decree's own articles), ccp-anexo-i (the code's annexes).
@@ -13,7 +15,8 @@
 // the walk leaves it through "Voltar ao detalhe do artigo" and goes on by "Artigo seguinte".
 // Version ccp-capture-dr-history-0.4 (0.1 reloaded the consolidated page per article; 0.2 walks it once; 0.3 keeps the
 // DOM of every failure; 0.4 starts from the act view through its index and can attach to the Chrome a failed run left open; 0.5
-// captures named index entries: the walk by "Artigo seguinte" ends at the last article and never reaches the annexes).
+// captures named index entries: the walk by "Artigo seguinte" ends at the last article and never reaches the annexes;
+// 0.6 reads "Artigo 410-A" (no º) as an article and captures given detail addresses).
 import { spawn } from "node:child_process";
 import { writeFileSync, mkdirSync, mkdtempSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -29,6 +32,7 @@ const SKIP = new Set((arg("--skip", "") || "").split(",").filter(Boolean));
 const MAX = parseInt(arg("--max", "900"), 10);
 const ATTACH = arg("--attach", null);
 const TARGETS = (arg("--targets", "") || "").split(",").map((x) => x.trim()).filter(Boolean);
+const URLS = (arg("--urls", "") || "").split(",").map((x) => x.trim()).filter(Boolean);
 const PORT = ATTACH ? parseInt(ATTACH, 10) : 9334;
 if (!OUT) { console.error("--out DIR is required"); process.exit(2); }
 mkdirSync(OUT, { recursive: true });
@@ -79,7 +83,7 @@ async function waitFor(pred, ms = 25000) {
 const idOf = (s) => {
   const an = /^Anexo ([IVXLC]+)$/.exec(s.title || "");
   if (an) return `ccp-anexo-${an[1].toLowerCase()}`;
-  const m = /^Artigo (\d+)\.º(?:-([A-Z]+))?$/.exec(s.title || "");
+  const m = /^Artigo (\d+)(?:\.º)?(?:-([A-Z]+))?$/.exec(s.title || "");  // the DR prints "Artigo 410-A" too
   if (!m) return null;
   const inCode = /^Anexo\b/.test(s.path);
   return `ccp-${inCode ? "" : "dl-"}art${m[1]}${m[2] ? "-" + m[2].toLowerCase() : ""}`;
@@ -92,11 +96,40 @@ const dumpFailure = async (why, at) => {
   writeFileSync(join(OUT, `failure-${n}.html`), html || "");
   manifest.failures.push({ at, why, dom: `failure-${n}.html` });
 };
-const manifest = { tool: "ccp-capture-dr-history-0.5", consolidated: CONSOLIDADO, started: new Date().toISOString(), pages: [], failures: [], visited: [] };
+const manifest = { tool: "ccp-capture-dr-history-0.6", consolidated: CONSOLIDADO, started: new Date().toISOString(), pages: [], failures: [], visited: [] };
 const save = () => writeFileSync(join(OUT, "manifest.json"), JSON.stringify(manifest, null, 1));
 
 const quit = (code) => { save(); ws.close(); if (chrome) chrome.kill(); process.exit(code); };
 let s;
+if (URLS.length) {
+  let seqU = 0;
+  for (const url of URLS) {
+    if (seqU || manifest.visited.length) await sleep(GAP_MS);
+    await send("Page.navigate", { url });
+    s = await waitFor((x) => x.title && (x.histLink || x.versions > 0 || x.inicial), 60000);
+    manifest.visited.push({ title: s && s.title, path: s && s.path, url, id: s && idOf(s), history_link: s && s.histLink });
+    if (!s || !idOf(s)) { await dumpFailure(`${url}: no article view within 60 s`, url); save(); continue; }
+    if (s.histLink && !(s.versions > 0 || s.inicial)) {
+      await sleep(GAP_MS);
+      await click("/Ver altera/i");
+      s = await waitFor((x) => x.title && (x.versions > 0 || x.inicial) && !x.histLink);
+    }
+    if (s && (s.versions > 0 || s.inicial)) {
+      seqU += 1;
+      const html = await evaluate(`'<!-- captured ' + new Date().toISOString() + ' from ' + location.href + ' (opened history view, live DOM) -->\\n' + document.documentElement.outerHTML`);
+      const file = `${String(seqU).padStart(4, "0")}.html`;
+      writeFileSync(join(OUT, file), html);
+      manifest.pages.push({ seq: seqU, id: idOf(s), title: s.title, path: s.path, url: s.url, captured_at: new Date().toISOString().replace(/\.\d+Z$/, "Z"),
+                            versions_listed: s.versions, has_versao_inicial: s.inicial, file, bytes: Buffer.byteLength(html) });
+    } else {
+      await dumpFailure(`${url}: no history view`, url);
+    }
+    save();
+  }
+  manifest.finished = new Date().toISOString();
+  console.log(JSON.stringify({ pages: manifest.pages.length, visited: manifest.visited.length, failures: manifest.failures.length }));
+  quit(0);
+}
 if (ATTACH) {
   s = await evaluate(STATE);
   manifest.attached = { port: PORT, url: s && s.url, title: s && s.title };

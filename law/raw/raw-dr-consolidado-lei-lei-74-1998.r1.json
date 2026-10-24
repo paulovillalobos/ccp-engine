@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:lei-74-1998",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:05:17Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "lei-74-1998",
+  "sha256": "5500ca94a7d0c31467fc9985828b7c3c69ee8c06d1451d0654a1f83e4771eb7b",
+  "bytes": "raw_bytes/5500ca94a7d0c31467fc9985828b7c3c69ee8c06d1451d0654a1f83e4771eb7b",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/1998-34448175",
+  "captured_at": "2026-10-24T17:05:13Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "950b97e6538583c162d0e9b349d3cf5c4a736cc631ac7ffd7020bf6a0c8d0ec9",
+    "bytes": "raw_bytes/950b97e6538583c162d0e9b349d3cf5c4a736cc631ac7ffd7020bf6a0c8d0ec9"
+  }
+}

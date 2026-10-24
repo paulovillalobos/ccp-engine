@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art360.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art360",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Quando se verifique uma modificação relevante das condições locais existentes por comparação com os elementos da solução da obra ou com os dados que serviram de base à sua elaboração, a qual determine a necessidade de um projecto de alteração, o prazo referido no n.º 1 do artigo anterior é suspenso, salvo se for possível a realização de consignações parciais quanto às zonas da obra não afectadas pelo projecto de alteração, que, nesse caso, devem respeitar os prazos ali estabelecidos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 591745,
+        "end": 592237
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

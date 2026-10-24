@@ -24,6 +24,7 @@ def test_norma_slug():
     assert vigente.norma_slug("Lei n.º 30/2021") == "lei-30-2021"
     assert vigente.norma_slug("Declaração de Retificação n.º 36-A/2017") == "ret-36-a-2017"
     assert vigente.norma_slug("Decreto Legislativo Regional n.º 27/2015/A") == "dlr-27-2015-a"
+    assert vigente.norma_slug("Lei n.º 98/97") == "lei-98-1997"  # the DR prints acts before 2000 with two digits
 
 
 def law_text(source_id):

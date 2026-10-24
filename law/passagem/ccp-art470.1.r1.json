@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art470.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art470",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Os prazos referidos no presente Código relativos aos procedimentos de formação de contratos contam-se nos termos do disposto no artigo 87.º do Código do Procedimento Administrativo e não lhes é aplicável, em caso algum, o disposto no artigo 88.º do mesmo Código.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 705229,
+        "end": 705495
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

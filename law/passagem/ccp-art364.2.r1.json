@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art364.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art364",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando se trate de bens móveis cuja extracção ou desmontagem envolva trabalhos, conhecimentos ou processos especializados, o empreiteiro comunica o achado ao dono da obra e, se necessário, suspende a execução dos trabalhos até receber instruções sobre como proceder.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 597716,
+        "end": 597986
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

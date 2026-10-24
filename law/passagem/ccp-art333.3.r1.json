@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art333.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art333",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Nos casos de resolução sancionatória, havendo lugar a responsabilidade do co-contratante, será o montante respectivo deduzido das quantias devidas, sem prejuízo do contraente público poder executar as garantias prestadas pelo co-contratante.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 570626,
+        "end": 570871
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

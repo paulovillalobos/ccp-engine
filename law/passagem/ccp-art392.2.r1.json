@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art392.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art392",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando não forem liquidados todos os trabalhos medidos, nos termos do disposto no número anterior, menciona-se o facto mediante nota explicativa inserta na respectiva conta corrente.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 627103,
+        "end": 627289
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

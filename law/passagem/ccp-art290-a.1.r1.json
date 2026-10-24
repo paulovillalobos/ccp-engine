@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art290-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art290-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O contraente público deve designar um ou mais gestores do contrato, com a função de acompanhar permanentemente a execução deste.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 512641,
+        "end": 512773
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

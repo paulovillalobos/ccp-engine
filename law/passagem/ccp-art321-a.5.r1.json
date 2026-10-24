@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art321-a.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art321-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O pagamento direto aos subcontratados pelo contraente público está limitado ao valor dos débitos vencidos e não pagos ao cocontratante ou, se futuros, por aquele reconhecidos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 557311,
+        "end": 557490
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

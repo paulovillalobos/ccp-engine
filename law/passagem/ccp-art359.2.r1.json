@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art359.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art359",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A consignação é formalizada em auto e, em caso de consignações parciais, a cada uma deve corresponder um auto autónomo.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 591193,
+        "end": 591316
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

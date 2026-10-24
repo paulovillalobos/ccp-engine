@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art97.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art97",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Não está incluído no preço contratual o acréscimo de preço a pagar em resultado de:\na) Modificação objectiva do contrato;\nb) Reposição do equilíbrio financeiro prevista na lei ou no contrato;\nc) Prémios por antecipação do cumprimento das prestações objecto do contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 283152,
+        "end": 283425
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

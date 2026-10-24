@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art9.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art9",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para efeitos do presente Código, consideram-se atividades do setor da água a disponibilização ou exploração de redes fixas destinadas à prestação de serviços ao público no domínio da produção, do transporte ou da distribuição de água potável, bem como a alimentação dessas redes com água potável, bem como a eliminação ou tratamento de águas residuais.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 82600,
+        "end": 82956
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

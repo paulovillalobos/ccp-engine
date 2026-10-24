@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art9.1.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art9.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) (Revogada.)",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 82555,
+        "end": 82569
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

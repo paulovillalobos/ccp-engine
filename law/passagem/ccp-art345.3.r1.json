@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art345.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art345",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As reclamações ou reservas podem ser exaradas no próprio auto ou apresentadas nos 10 dias subsequentes à notificação do mesmo ao empreiteiro.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 580826,
+        "end": 580971
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

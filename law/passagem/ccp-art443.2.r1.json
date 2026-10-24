@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art443.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art443",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Conjuntamente com os bens objecto do contrato, o fornecedor deve entregar todos os documentos que sejam necessários para a boa e integral utilização, funcionamento ou consumo daqueles.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 678576,
+        "end": 678764
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art7.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art7",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - São ainda entidades adjudicantes:\na) Quaisquer pessoas colectivas não abrangidas pelo artigo 2.º, ainda que criadas especificamente para satisfazer necessidades de interesse geral, com carácter industrial ou comercial, que exerçam uma ou várias actividades nos sectores da água, da energia, dos transportes e dos serviços postais e em relação às quais qualquer das entidades adjudicantes referidas no artigo 2.º possa exercer, directa ou indirectamente, uma influência dominante;\nb) Quaisquer pessoas colectivas não abrangidas pelo artigo 2.º que gozem de direitos especiais ou exclusivos não atribuídos no âmbito de um procedimento de formação de contrato com publicidade internacional e que tenham por efeito:\ni) Reservar-lhes, isolada ou conjuntamente com outras entidades, o exercício de uma ou várias actividades nos sectores da água, da energia, dos transportes e dos serviços postais; e\nii) Afectar substancialmente a capacidade de quaisquer outras entidades exercerem uma ou várias dessas actividades;\nc) Quaisquer pessoas colectivas constituídas exclusivamente por entidades adjudicantes referidas nas alíneas anteriores ou que sejam por elas maioritariamente financiadas, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada por aquelas entidades, desde que se destinem ao exercício em comum de actividade nos sectores da água, da energia, dos transportes e dos serviços postais.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 79540,
+        "end": 81061
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

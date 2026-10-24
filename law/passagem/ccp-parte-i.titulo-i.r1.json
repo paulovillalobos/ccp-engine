@@ -1,0 +1,23 @@
+{
+  "id": "ccp:parte-i.titulo-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-i",
+  "kind": "titulo",
+  "label": "Título I",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Título I\nDisposições gerais",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 54555,
+        "end": 54582
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

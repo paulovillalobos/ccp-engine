@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art321-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art321-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O subcontratado pode reclamar, junto do contraente público, os pagamentos em atraso que lhe sejam devidos pelo cocontratante, exercendo o contraente público o direito de retenção sobre as quantias do mesmo montante devidas ao cocontratante por força do contrato principal.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 556268,
+        "end": 556544
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

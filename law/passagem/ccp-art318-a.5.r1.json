@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art318-a.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Os direitos e obrigações do cocontratante, desde que constituídos em data anterior à da notificação do ato referido no número anterior, transmitem-se automaticamente para o cessionário na data de produção de efeitos daquele ato, sem que este a tal se possa opor.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 551320,
+        "end": 551586
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

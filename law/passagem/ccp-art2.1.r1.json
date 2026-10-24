@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art2.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - São entidades adjudicantes:\na) O Estado;\nb) As Regiões Autónomas;\nc) As autarquias locais;\nd) Os institutos públicos;\ne) As entidades administrativas independentes;\nf) O Banco de Portugal;\ng) As fundações públicas;\nh) As associações públicas;\ni) As associações de que façam parte uma ou várias das pessoas colectivas referidas nas alíneas anteriores, desde que sejam maioritariamente financiadas por estas, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada pelas mesmas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 60932,
+        "end": 61537
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

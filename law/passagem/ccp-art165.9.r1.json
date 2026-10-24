@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art165.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art165",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "9 - Para os efeitos do disposto no número anterior, o volume de negócios anual mínimo exigido não pode exceder o dobro do valor estimado do contrato, salvo em casos devidamente justificados.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 365115,
+        "end": 365305
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

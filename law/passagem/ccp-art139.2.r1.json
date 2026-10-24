@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art139.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art139",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A pontuação global de cada proposta, expressa numericamente, corresponde ao resultado da soma das pontuações parciais obtidas em cada factor ou subfactor elementar, multiplicadas pelos valores dos respectivos coeficientes de ponderação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 335964,
+        "end": 336204
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art139",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 139.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 139.º\nModelo de avaliação das propostas\n1 - Nos casos previstos na alínea a) do n.º 1 do artigo 74.º, deve ser elaborado um modelo de avaliação das propostas que explicite claramente os fatores e os eventuais subfatores relativos aos aspetos da execução do contrato a celebrar submetidos à concorrência pelo caderno de encargos.\n2 - A pontuação global de cada proposta, expressa numericamente, corresponde ao resultado da soma das pontuações parciais obtidas em cada factor ou subfactor elementar, multiplicadas pelos valores dos respectivos coeficientes de ponderação.\n3 - Para cada factor ou subfactor elementar deve ser definida uma escala de pontuação através de uma expressão matemática ou em função de um conjunto ordenado de diferentes atributos susceptíveis de serem propostos para o aspecto da execução do contrato submetido à concorrência pelo caderno de encargos respeitante a esse factor ou subfactor.\n4 - Na elaboração do modelo de avaliação das propostas não podem ser utilizados quaisquer dados que dependam, directa ou indirectamente, dos atributos das propostas a apresentar, com excepção dos da proposta a avaliar.\n5 - As pontuações parciais de cada proposta são atribuídas pelo júri através da aplicação da expressão matemática referida no n.º 3 ou, quando esta não existir, através de um juízo de comparação do respectivo atributo com o conjunto ordenado referido no mesmo número.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 335628,
+        "end": 337035
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

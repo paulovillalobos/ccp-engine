@@ -1,0 +1,23 @@
+{
+  "id": "ccp:dl.art12.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art12",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O presidente do júri inicia o acto público identificando o procedimento através de referência ao respectivo anúncio.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 47838,
+        "end": 47958
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

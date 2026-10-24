@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art389.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:11:18Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art389",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Feita a medição, elabora-se a respectiva conta corrente no prazo de 10 dias, com especificação das quantidades de trabalhos apuradas, dos respectivos preços unitários, do total creditado, dos descontos a efectuar, dos adiantamentos concedidos ao empreiteiro e do saldo a pagar a este.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 624169,
+        "end": 624457
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}
