@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "facto.schema.json",
+  "title": "Facto: a canonical field value of a unit, with origin and two clocks",
+  "description": "facto:... origin is either a raw record and field or a document, page and offsets; never an afirmacao (invariant 7). valid_at: when the value held in the world; known_at: when we captured it, equal to the raw record's captured_at (invariant 8, verify I08). adapter names the mapping that produced it.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_facto"},
+    "unit": {"$ref": "defs.schema.json#/$defs/id_unidade"},
+    "field": {"$ref": "defs.schema.json#/$defs/canonical_field"},
+    "value": {"type": ["string", "number", "boolean", "null", "array"]},
+    "origin": {
+      "oneOf": [
+        {"type": "object", "properties": {"raw": {"$ref": "defs.schema.json#/$defs/id_raw"}, "field": {"type": "string", "minLength": 1}}, "required": ["raw", "field"], "additionalProperties": false},
+        {"type": "object", "properties": {"documento": {"$ref": "defs.schema.json#/$defs/id_documento"}, "page": {"type": "integer", "minimum": 1}, "offsets": {"$ref": "defs.schema.json#/$defs/offsets"}, "quote": {"type": "string", "minLength": 1}}, "required": ["documento", "page", "offsets", "quote"], "additionalProperties": false}
+      ]
+    },
+    "adapter": {"$ref": "defs.schema.json#/$defs/id_adaptador"},
+    "valid_at": {"$ref": "defs.schema.json#/$defs/date"},
+    "known_at": {"$ref": "defs.schema.json#/$defs/datetime"}
+  },
+  "required": ["id", "revision", "recorded_at", "unit", "field", "value", "origin", "adapter", "valid_at", "known_at"],
+  "unevaluatedProperties": false
+}

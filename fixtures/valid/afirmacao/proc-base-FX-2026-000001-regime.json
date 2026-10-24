@@ -1,0 +1,18 @@
+{
+  "id": "afirmacao:proc-base-FX-2026-000001:regime",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "unit": "proc:base:FX-2026-000001",
+  "kind": "regime",
+  "declared_text": "Código dos Contratos Públicos, artigo 20.º, n.º 1, alínea a)",
+  "passages": [
+    "ccp:art20.1.a"
+  ],
+  "converted_by": "ai:amalia-9b",
+  "conversion_evento": "evento:19",
+  "origin": {
+    "raw": "raw:base-dump:anuncio:FX-2026-000001",
+    "field": "regime"
+  },
+  "known_at": "2026-10-24T18:30:00Z"
+}

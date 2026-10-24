@@ -1,0 +1,23 @@
+{
+  "id": "dl-177-2026:art7.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:dl-177-2026",
+  "parent": null,
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - O presente decreto-lei aplica-se aos procedimentos iniciados a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 1101,
+        "end": 1189
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

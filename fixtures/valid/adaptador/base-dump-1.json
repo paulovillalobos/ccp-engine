@@ -1,0 +1,80 @@
+{
+  "id": "adaptador:base-dump@1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "source": "base-dump",
+  "version": 1,
+  "code": "adapters/base-dump/",
+  "mapping": [
+    {
+      "source_field": "nAnuncio",
+      "canonical_field": "n_anuncio",
+      "transform": "identity"
+    },
+    {
+      "source_field": "tipoContrato",
+      "canonical_field": "tipo_contrato",
+      "transform": "enum_map",
+      "enum_map": {
+        "Aquisição de bens móveis": "bens",
+        "Aquisição de serviços": "servicos",
+        "Empreitadas de obras públicas": "obras"
+      }
+    },
+    {
+      "source_field": "precoBase",
+      "canonical_field": "preco_base",
+      "transform": "number_pt"
+    },
+    {
+      "source_field": "prazoPropostas",
+      "canonical_field": "prazo_propostas_dias",
+      "transform": "integer"
+    },
+    {
+      "source_field": "dataPublicacao",
+      "canonical_field": "data_publicacao_anuncio",
+      "transform": "date_pt"
+    },
+    {
+      "source_field": "dataPublicacao",
+      "canonical_field": "data_inicio_procedimento",
+      "transform": "date_pt",
+      "note": "start of procedure taken as the notice date until a better field exists"
+    },
+    {
+      "source_field": "tipoProcedimento",
+      "canonical_field": "tipo_procedimento",
+      "transform": "enum_map",
+      "enum_map": {
+        "Ajuste direto": "ajuste_direto",
+        "Consulta prévia": "consulta_previa",
+        "Concurso público": "concurso_publico"
+      }
+    },
+    {
+      "source_field": "publicadoJOUE",
+      "canonical_field": "publicado_joue",
+      "transform": "boolean"
+    },
+    {
+      "source_field": "nifEntidadeAdjudicante",
+      "canonical_field": "adjudicante",
+      "transform": "nif"
+    }
+  ],
+  "coverage": [
+    {
+      "period": "2026-09",
+      "expected": 1000,
+      "captured": 1000
+    },
+    {
+      "period": "2026-10",
+      "expected": 1000,
+      "captured": 400
+    }
+  ],
+  "proposed_by": "ai:builder",
+  "state": "proposed"
+}

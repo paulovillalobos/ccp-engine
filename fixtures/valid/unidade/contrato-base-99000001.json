@@ -1,0 +1,13 @@
+{
+  "id": "contrato:base:99000001",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "kind": "contrato",
+  "parent": "proc:base:FX-2026-000001",
+  "raw": [
+    "raw:base-api:contrato:99000001"
+  ],
+  "consumer_ids": {
+    "base_id": "99000001"
+  }
+}

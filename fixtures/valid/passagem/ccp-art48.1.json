@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art48.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - É proibido o fracionamento da despesa com o fim de a subtrair ao regime aplicável;",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 707,
+        "end": 793
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "facto:proc-base-FX-2026-000001:preco_base:base-dump",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "unit": "proc:base:FX-2026-000001",
+  "field": "preco_base",
+  "value": 15000,
+  "origin": {
+    "raw": "raw:base-dump:anuncio:FX-2026-000001",
+    "field": "precoBase"
+  },
+  "adapter": "adaptador:base-dump@1",
+  "valid_at": "2026-10-03",
+  "known_at": "2026-10-24T18:30:00Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "facto:proc-base-FX-2026-000001:data_inicio_procedimento:base-dump",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "unit": "proc:base:FX-2026-000001",
+  "field": "data_inicio_procedimento",
+  "value": "2026-10-03",
+  "origin": {
+    "raw": "raw:base-dump:anuncio:FX-2026-000001",
+    "field": "dataPublicacao"
+  },
+  "adapter": "adaptador:base-dump@1",
+  "valid_at": "2026-10-03",
+  "known_at": "2026-10-24T18:30:00Z"
+}

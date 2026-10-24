@@ -1,0 +1,53 @@
+{
+  "principals": [
+    {
+      "id": "human:paulo",
+      "kind": "human",
+      "family": "human",
+      "role": "founder; decides product rules, never legal content",
+      "retired": false
+    },
+    {
+      "id": "human:revisor-fixture",
+      "kind": "human",
+      "family": "human",
+      "role": "fixture: second person for adjudications",
+      "retired": false
+    },
+    {
+      "id": "ai:amalia-9b",
+      "kind": "ai",
+      "family": "amalia",
+      "role": "reader, extractor, writer (Modal)",
+      "retired": false
+    },
+    {
+      "id": "ai:reader-b",
+      "kind": "ai",
+      "family": "reader-b",
+      "role": "blind reader of a second family",
+      "retired": false
+    },
+    {
+      "id": "ai:builder",
+      "kind": "ai",
+      "family": "builder",
+      "role": "builder; proposes product rules and adapters, never readings of the law",
+      "retired": false
+    },
+    {
+      "id": "parser:ccp-link",
+      "kind": "parser",
+      "family": "parser",
+      "role": "exact-NIF entity links",
+      "retired": false
+    },
+    {
+      "id": "system:verify",
+      "kind": "system",
+      "family": "parser",
+      "role": "invalidates on failed re-derivation",
+      "retired": false
+    }
+  ]
+}

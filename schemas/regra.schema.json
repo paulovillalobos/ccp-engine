@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "regra.schema.json",
+  "title": "Regra: a typed rule with conditions, exceptions, validity, passages, readings and state",
+  "description": "regra:ccp:limiar-ajuste-direto-bens@v3. One of the eight types of ARQUITECTURA.md section 5; the type decides which params are required (if/then below). A rule is an assertion: it lives in the governance log, and this record is the replay of its head. The AI picks passages by id in a reading; the code writes the quote (invariant 4). state is settled only with two readings of different families (invariant 5, checked by verify I05).",
+  "type": "object",
+  "allOf": [
+    {"$ref": "defs.schema.json#/$defs/envelope"},
+    {"if": {"properties": {"type": {"const": "limiar"}}}, "then": {"properties": {"params": {"required": ["threshold"]}}}},
+    {"if": {"properties": {"type": {"const": "procedimento_admissivel"}}}, "then": {"properties": {"params": {"required": ["procedures"]}}}},
+    {"if": {"properties": {"type": {"const": "prazo_minimo"}}}, "then": {"properties": {"params": {"required": ["minimum_days", "deadline_field", "counted_from"]}}}},
+    {"if": {"properties": {"type": {"const": "conteudo_obrigatorio"}}}, "then": {"properties": {"params": {"required": ["required_elements", "document_piece"]}}}},
+    {"if": {"properties": {"type": {"const": "proibicao"}}}, "then": {"properties": {"params": {"required": ["forbidden"]}}}},
+    {"if": {"properties": {"type": {"const": "agregada"}}}, "then": {"properties": {"params": {"required": ["window", "group_key", "aggregate", "completeness_threshold"]}}}},
+    {"if": {"properties": {"type": {"const": "seletor_regime"}}}, "then": {"properties": {"params": {"required": ["selects_by", "regimes"]}}}},
+    {"if": {"properties": {"type": {"const": "jurisdicao"}}}, "then": {"properties": {"params": {"required": ["territory", "predicate", "effect"]}}}}
+  ],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_regra"},
+    "type": {"$ref": "defs.schema.json#/$defs/rule_type"},
+    "title": {"type": "string", "minLength": 1},
+    "norma": {"$ref": "defs.schema.json#/$defs/id_norma"},
+    "jurisdiction": {"$ref": "defs.schema.json#/$defs/jurisdiction"},
+    "applies_to": {"type": "array", "items": {"type": "string", "enum": ["proc", "lote", "contrato", "mod"]}, "minItems": 1},
+    "conditions": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/condition"}, "description": "All must hold for the rule to apply; a missing field is facto_ausente, never false."},
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"description": {"type": "string", "minLength": 1}, "conditions": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/condition"}, "minItems": 1}, "citation": {"$ref": "defs.schema.json#/$defs/citation"}},
+        "required": ["description", "conditions", "citation"],
+        "additionalProperties": false
+      }
+    },
+    "valid_from": {"$ref": "defs.schema.json#/$defs/date"},
+    "valid_to": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]},
+    "passages": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/citation"}, "minItems": 1},
+    "params": {
+      "type": "object",
+      "properties": {
+        "threshold": {"type": "object", "properties": {"field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "comparator": {"type": "string", "enum": ["lt", "le"]}, "value": {"type": "number"}, "currency": {"const": "EUR"}}, "required": ["field", "comparator", "value", "currency"], "additionalProperties": false},
+        "procedures": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "description": "Procedure types admissible when conditions hold."},
+        "minimum_days": {"type": "integer", "minimum": 1},
+        "deadline_field": {"$ref": "defs.schema.json#/$defs/canonical_field", "description": "The fact that carries the deadline in days (prazo_propostas_dias) or as a date."},
+        "counted_from": {"$ref": "defs.schema.json#/$defs/canonical_field", "description": "The fact the deadline is counted from (data_publicacao_anuncio)."},
+        "required_elements": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "document_piece": {"type": "string", "enum": ["programa_procedimento", "caderno_encargos", "convite", "anuncio", "outro"]},
+        "forbidden": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/condition"}, "minItems": 1, "description": "If all hold, the rule is breached."},
+        "window": {"type": "object", "properties": {"length": {"type": "integer", "minimum": 1}, "unit": {"type": "string", "enum": ["anos", "meses", "dias"]}, "anchor": {"$ref": "defs.schema.json#/$defs/canonical_field"}}, "required": ["length", "unit", "anchor"], "additionalProperties": false},
+        "group_key": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "minItems": 1},
+        "aggregate": {"type": "object", "properties": {"field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "op": {"type": "string", "enum": ["sum", "count"]}, "comparator": {"type": "string", "enum": ["lt", "le", "gt", "ge"]}, "value": {"type": "number"}}, "required": ["field", "op", "comparator", "value"], "additionalProperties": false},
+        "completeness_threshold": {
+          "type": "object",
+          "description": "Invariant 12: a product rule, decided by a person in the log. Below it the aggregate rule answers cobertura_insuficiente.",
+          "properties": {"ratio": {"type": "number", "minimum": 0, "maximum": 1}, "measured_over": {"type": "string", "enum": ["mes", "trimestre", "ano"]}, "decided_by": {"$ref": "defs.schema.json#/$defs/id_evento"}},
+          "required": ["ratio", "measured_over", "decided_by"],
+          "additionalProperties": false
+        },
+        "selects_by": {"$ref": "defs.schema.json#/$defs/canonical_field", "description": "The fact that fixes the applicable regime (data_inicio_procedimento). Absent: every dependent rule is nao_avaliado / facto_ausente."},
+        "regimes": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"from": {"$ref": "defs.schema.json#/$defs/date"}, "to": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]}, "law_version": {"type": "string", "pattern": "^lei:[a-z0-9-]+@[0-9]{4}-[0-9]{2}-[0-9]{2}$"}, "package": {"$ref": "defs.schema.json#/$defs/id_pacote"}}, "required": ["from", "to", "law_version", "package"], "additionalProperties": false}},
+        "territory": {"$ref": "defs.schema.json#/$defs/jurisdiction"},
+        "predicate": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/condition"}, "minItems": 1},
+        "effect": {"type": "object", "properties": {"multiply_thresholds_by": {"type": "number", "exclusiveMinimum": 0}, "replace_norma": {"$ref": "defs.schema.json#/$defs/id_norma"}}, "minProperties": 1, "additionalProperties": false}
+      },
+      "additionalProperties": false
+    },
+    "readings": {
+      "type": "array",
+      "description": "What each reader proposed: the passage ids it chose (never the quote). Replayed from the log.",
+      "items": {
+        "type": "object",
+        "properties": {"principal": {"$ref": "defs.schema.json#/$defs/id_principal"}, "family": {"$ref": "defs.schema.json#/$defs/model_family"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "chosen_passages": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_passagem"}, "minItems": 1}, "blind": {"type": "boolean"}, "evento": {"$ref": "defs.schema.json#/$defs/id_evento"}},
+        "required": ["principal", "family", "at", "chosen_passages", "blind", "evento"],
+        "additionalProperties": false
+      }
+    },
+    "state": {"$ref": "defs.schema.json#/$defs/assertion_state"}
+  },
+  "required": ["id", "revision", "recorded_at", "type", "title", "norma", "jurisdiction", "applies_to", "conditions", "exceptions", "valid_from", "valid_to", "passages", "params", "readings", "state"],
+  "unevaluatedProperties": false
+}

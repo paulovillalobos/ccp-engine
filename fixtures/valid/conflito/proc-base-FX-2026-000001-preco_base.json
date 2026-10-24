@@ -1,0 +1,24 @@
+{
+  "id": "conflito:proc-base-FX-2026-000001:preco_base",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "unit": "proc:base:FX-2026-000001",
+  "field": "preco_base",
+  "values": [
+    {
+      "facto": "facto:proc-base-FX-2026-000001:preco_base:base-dump",
+      "value": 15000,
+      "source": "base-dump",
+      "known_at": "2026-10-24T18:30:00Z"
+    },
+    {
+      "facto": "facto:proc-base-FX-2026-000001:preco_base:base-api",
+      "value": 18000,
+      "source": "base-api",
+      "known_at": "2026-10-24T18:45:00Z"
+    }
+  ],
+  "resolution": {
+    "kind": "nao_avaliado"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vigencia.schema.json",
+  "title": "Vigência de passagem: one validity interval of a passage, derived from a DR note",
+  "description": "ccp:art20.1@2026-10-01. Each of the 607 notes of the consolidated CCP becomes one or more of these. The note is quoted from the raw capture so verify can re-derive the interval (B2's done criterion).",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_vigencia"},
+    "passage": {"$ref": "defs.schema.json#/$defs/id_passagem"},
+    "valid_from": {"$ref": "defs.schema.json#/$defs/date"},
+    "valid_to": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]},
+    "altered_by": {"$ref": "defs.schema.json#/$defs/id_norma", "description": "The amending act (norma:dl-177-2026)."},
+    "note": {"$ref": "defs.schema.json#/$defs/raw_citation", "description": "The DR validity note, quoted at offsets in the raw capture."},
+    "effect": {"type": "string", "enum": ["altera", "adita", "revoga", "republica", "retifica", "transitoria"]}
+  },
+  "required": ["id", "revision", "recorded_at", "passage", "valid_from", "valid_to", "altered_by", "note", "effect"],
+  "unevaluatedProperties": false
+}

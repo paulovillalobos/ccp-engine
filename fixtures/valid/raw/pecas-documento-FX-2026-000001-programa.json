@@ -1,0 +1,18 @@
+{
+  "id": "raw:pecas:documento:FX-2026-000001-programa",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "source": "pecas",
+  "kind": "documento",
+  "source_id": "FX-2026-000001-programa",
+  "sha256": "53ecac4adb113b4ba92e2e66497eca211dea8850c745ab85474fa46ae143f909",
+  "bytes": "raw_bytes/53ecac4adb113b4ba92e2e66497eca211dea8850c745ab85474fa46ae143f909",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://www.acingov.pt/acingovprod/2/index.php/fixture/programa.pdf",
+  "captured_at": "2026-10-24T18:50:00Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art136.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - O prazo mínimo para a apresentação das propostas é de seis dias a contar da data do envio do anúncio;",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 465,
+        "end": 570
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

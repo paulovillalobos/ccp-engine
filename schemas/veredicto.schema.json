@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "veredicto.schema.json",
+  "title": "Veredicto: one rule applied to one unit at (known_at, valid_at)",
+  "description": "veredicto:... result cumpre / nao_cumpre / nao_avaliado; reason is the closed enumeration and is present exactly when result is nao_avaliado (invariant 6). facts_used lists facto ids only (invariant 7); assertions_compared puts the declared assertion beside the result. entities never carry the name of a pessoa_singular (invariant 11). The manifest is embedded and complete. A verdict is immutable: a correction in BASE produces a new verdict with another known_at (section 7).",
+  "type": "object",
+  "allOf": [
+    {"$ref": "defs.schema.json#/$defs/envelope"},
+    {"if": {"properties": {"result": {"const": "nao_avaliado"}}}, "then": {"properties": {"reason": {"$ref": "defs.schema.json#/$defs/reason_not_assessed"}}}, "else": {"properties": {"reason": {"type": "null"}, "citation": {"$ref": "defs.schema.json#/$defs/citation"}, "facts_used": {"minItems": 1}}, "required": ["citation"]}}
+  ],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_veredicto"},
+    "rule": {"type": "object", "properties": {"id": {"$ref": "defs.schema.json#/$defs/id_regra"}, "revision": {"type": "integer", "minimum": 1}}, "required": ["id", "revision"], "additionalProperties": false},
+    "unit": {"$ref": "defs.schema.json#/$defs/id_unidade"},
+    "result": {"$ref": "defs.schema.json#/$defs/result"},
+    "reason": {},
+    "detail": {"type": "string", "description": "Which field was missing, which coverage ratio fell short: data for the reader, never a legal opinion."},
+    "citation": {"oneOf": [{"$ref": "defs.schema.json#/$defs/citation"}, {"type": "null"}]},
+    "facts_used": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_facto"}},
+    "assertions_compared": {"type": "array", "items": {"type": "object", "properties": {"afirmacao": {"$ref": "defs.schema.json#/$defs/id_afirmacao"}, "declared_passages": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_passagem"}}, "agrees": {"type": ["boolean", "null"]}}, "required": ["afirmacao", "declared_passages", "agrees"], "additionalProperties": false}},
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"id": {"$ref": "defs.schema.json#/$defs/id_entidade"}, "type": {"$ref": "defs.schema.json#/$defs/entity_type"}, "role": {"$ref": "defs.schema.json#/$defs/entity_role"}, "name": {"type": "string"}},
+        "required": ["id", "type", "role"],
+        "if": {"properties": {"type": {"const": "pessoa_singular"}}},
+        "then": {"not": {"required": ["name"]}},
+        "additionalProperties": false
+      }
+    },
+    "valid_at": {"$ref": "defs.schema.json#/$defs/date"},
+    "known_at": {"$ref": "defs.schema.json#/$defs/datetime"},
+    "engine_version": {"type": "string", "pattern": "^ccp-"},
+    "manifest": {"$ref": "manifesto.schema.json"}
+  },
+  "required": ["id", "revision", "recorded_at", "rule", "unit", "result", "reason", "citation", "facts_used", "assertions_compared", "entities", "valid_at", "known_at", "engine_version", "manifest"],
+  "unevaluatedProperties": false
+}

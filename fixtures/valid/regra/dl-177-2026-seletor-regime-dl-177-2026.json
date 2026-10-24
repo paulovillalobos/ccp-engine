@@ -1,0 +1,67 @@
+{
+  "id": "regra:dl-177-2026:seletor-regime-dl-177-2026@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "seletor_regime",
+  "title": "Regime aplicável pela data de início do procedimento (art. 7.º DL 177/2026)",
+  "norma": "norma:dl-177-2026",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "dl-177-2026:art7.1",
+      "version": "2026-10-01",
+      "quote": "aplica-se aos procedimentos iniciados a partir de 2026-10-01",
+      "offsets": {
+        "start": 27,
+        "end": 87
+      }
+    }
+  ],
+  "params": {
+    "selects_by": "data_inicio_procedimento",
+    "regimes": [
+      {
+        "from": "2008-07-30",
+        "to": "2026-09-30",
+        "law_version": "lei:ccp@2026-09-30",
+        "package": "pacote:ccp@2026-09-30"
+      },
+      {
+        "from": "2026-10-01",
+        "to": null,
+        "law_version": "lei:ccp@2026-10-01",
+        "package": "pacote:ccp@2026-10-01"
+      }
+    ]
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:03:00Z",
+      "chosen_passages": [
+        "dl-177-2026:art7.1"
+      ],
+      "blind": false,
+      "evento": "evento:3"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:04:00Z",
+      "chosen_passages": [
+        "dl-177-2026:art7.1"
+      ],
+      "blind": true,
+      "evento": "evento:4"
+    }
+  ],
+  "state": "settled"
+}

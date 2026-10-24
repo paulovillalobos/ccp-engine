@@ -1,0 +1,61 @@
+{
+  "id": "regra:ccp:prazo-minimo-propostas-6-dias@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo de seis dias para propostas (art. 136.º n.º 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": false
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art136.1",
+      "version": "2026-10-01",
+      "quote": "O prazo mínimo para a apresentação das propostas é de seis dias",
+      "offsets": {
+        "start": 4,
+        "end": 67
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 6,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_publicacao_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:07:00Z",
+      "chosen_passages": [
+        "ccp:art136.1"
+      ],
+      "blind": false,
+      "evento": "evento:7"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:08:00Z",
+      "chosen_passages": [
+        "ccp:art136.1"
+      ],
+      "blind": true,
+      "evento": "evento:8"
+    }
+  ],
+  "state": "settled"
+}

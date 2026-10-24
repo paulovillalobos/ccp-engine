@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "caso_referencia.schema.json",
+  "title": "Caso de referência: a hand-checked unit with the expected verdict per rule",
+  "description": "ref:... Two annotators, an adjudication when they differ, and held_out true for the units reserved by entity and period after the method was frozen (section 8). Held-out cases are never used to tune rules; verify refuses a package built after frozen_at that cites one.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_ref"},
+    "unit": {"$ref": "defs.schema.json#/$defs/id_unidade"},
+    "expected": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"rule": {"$ref": "defs.schema.json#/$defs/id_regra"}, "result": {"$ref": "defs.schema.json#/$defs/result"}, "reason": {"oneOf": [{"$ref": "defs.schema.json#/$defs/reason_not_assessed"}, {"type": "null"}]}}, "required": ["rule", "result", "reason"], "additionalProperties": false}},
+    "annotators": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "object", "properties": {"principal": {"$ref": "defs.schema.json#/$defs/id_principal"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "agrees_with_expected": {"type": "boolean"}}, "required": ["principal", "at", "agrees_with_expected"], "additionalProperties": false}},
+    "adjudication": {"oneOf": [{"type": "null"}, {"type": "object", "properties": {"by": {"type": "string", "pattern": "^human:[a-z0-9-]+$"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "reason": {"type": "string", "minLength": 1}, "evento": {"$ref": "defs.schema.json#/$defs/id_evento"}}, "required": ["by", "at", "reason", "evento"], "additionalProperties": false}]},
+    "held_out": {"type": "boolean"},
+    "frozen_at": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]}
+  },
+  "required": ["id", "revision", "recorded_at", "unit", "expected", "annotators", "adjudication", "held_out", "frozen_at"],
+  "unevaluatedProperties": false
+}

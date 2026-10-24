@@ -1,0 +1,23 @@
+{
+  "id": "dlr-27-2015-a:art3.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:dlr-27-2015-a",
+  "parent": null,
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Os limiares previstos no Código aplicam-se na Região com o coeficiente de 1,45.",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 1245,
+        "end": 1328
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

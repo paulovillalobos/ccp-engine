@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "manifesto.schema.json",
+  "title": "Manifesto: everything that makes a verdict reproducible",
+  "description": "Embedded in every verdict (section 7). Complete means every field present and every list non-empty: law version, package, each adapter, the snapshot hash of each source read, the code, and the head of the governance log. verify I06 refuses a verdict whose manifest is incomplete.",
+  "type": "object",
+  "properties": {
+    "law_version": {"type": "string", "pattern": "^lei:[a-z0-9-]+@[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "package": {"$ref": "defs.schema.json#/$defs/id_pacote"},
+    "adapters": {"type": "array", "minItems": 1, "items": {"$ref": "defs.schema.json#/$defs/id_adaptador"}},
+    "source_snapshots": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"source": {"$ref": "defs.schema.json#/$defs/slug"}, "sha256": {"$ref": "defs.schema.json#/$defs/sha256"}, "captured_at": {"$ref": "defs.schema.json#/$defs/datetime"}}, "required": ["source", "sha256", "captured_at"], "additionalProperties": false}},
+    "code": {"type": "object", "properties": {"repository": {"type": "string", "minLength": 1}, "commit": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"}, "engine_version": {"type": "string", "pattern": "^ccp-"}}, "required": ["repository", "commit", "engine_version"], "additionalProperties": false},
+    "log_head": {"$ref": "defs.schema.json#/$defs/sha256"},
+    "produced_at": {"$ref": "defs.schema.json#/$defs/datetime"}
+  },
+  "required": ["law_version", "package", "adapters", "source_snapshots", "code", "log_head", "produced_at"],
+  "additionalProperties": false
+}

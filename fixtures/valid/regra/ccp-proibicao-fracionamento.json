@@ -1,0 +1,50 @@
+{
+  "id": "regra:ccp:proibicao-fracionamento@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "proibicao",
+  "title": "Proibição de fracionamento da despesa (art. 48.º n.º 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc",
+    "contrato"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art48.1",
+      "version": "2026-10-01",
+      "quote": "É proibido o fracionamento da despesa",
+      "offsets": {
+        "start": 4,
+        "end": 41
+      }
+    }
+  ],
+  "params": {
+    "forbidden": [
+      {
+        "field": "fracionamento_detetado",
+        "op": "eq",
+        "value": true
+      }
+    ]
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:13:00Z",
+      "chosen_passages": [
+        "ccp:art48.1"
+      ],
+      "blind": false,
+      "evento": "evento:13"
+    }
+  ],
+  "state": "proposed"
+}

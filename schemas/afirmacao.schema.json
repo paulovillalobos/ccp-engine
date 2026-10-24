@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "afirmacao.schema.json",
+  "title": "Afirmação: what an entity declared, kept apart from facts",
+  "description": "afirmacao:... regime, fundamentação. declared_text is stored verbatim; passages are the ids it was converted to (a proposal in the log, by converted_by); the engine compares it with the verdict and never reads it as a fact (invariant 7).",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_afirmacao"},
+    "unit": {"$ref": "defs.schema.json#/$defs/id_unidade"},
+    "kind": {"type": "string", "enum": ["regime", "fundamentacao", "tipo_procedimento_declarado", "outro"]},
+    "declared_text": {"type": "string", "minLength": 1},
+    "passages": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_passagem"}},
+    "converted_by": {"oneOf": [{"$ref": "defs.schema.json#/$defs/id_principal"}, {"type": "null"}]},
+    "conversion_evento": {"oneOf": [{"$ref": "defs.schema.json#/$defs/id_evento"}, {"type": "null"}]},
+    "origin": {"type": "object", "properties": {"raw": {"$ref": "defs.schema.json#/$defs/id_raw"}, "field": {"type": "string", "minLength": 1}}, "required": ["raw", "field"], "additionalProperties": false},
+    "known_at": {"$ref": "defs.schema.json#/$defs/datetime"}
+  },
+  "required": ["id", "revision", "recorded_at", "unit", "kind", "declared_text", "passages", "converted_by", "conversion_evento", "origin", "known_at"],
+  "unevaluatedProperties": false
+}

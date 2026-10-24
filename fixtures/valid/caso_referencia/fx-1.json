@@ -1,0 +1,33 @@
+{
+  "id": "ref:fx-1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "unit": "proc:base:FX-2026-000001",
+  "expected": [
+    {
+      "rule": "regra:ccp:prazo-minimo-propostas-6-dias@v1",
+      "result": "cumpre",
+      "reason": null
+    },
+    {
+      "rule": "regra:ccp:limiar-ajuste-direto-bens@v1",
+      "result": "nao_avaliado",
+      "reason": "conflito"
+    }
+  ],
+  "annotators": [
+    {
+      "principal": "human:paulo",
+      "at": "2026-10-24T19:40:00Z",
+      "agrees_with_expected": true
+    },
+    {
+      "principal": "human:revisor-fixture",
+      "at": "2026-10-24T19:41:00Z",
+      "agrees_with_expected": true
+    }
+  ],
+  "adjudication": null,
+  "held_out": false,
+  "frozen_at": null
+}

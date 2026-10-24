@@ -1,0 +1,57 @@
+{
+  "id": "regra:ccp:programa-indica-prazo-e-criterios@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "conteudo_obrigatorio",
+  "title": "O programa do procedimento indica prazo e critérios (art. 131.º n.º 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art131.1",
+      "version": "2026-10-01",
+      "quote": "indica o prazo para a apresentação das propostas e os critérios de adjudicação",
+      "offsets": {
+        "start": 31,
+        "end": 109
+      }
+    }
+  ],
+  "params": {
+    "required_elements": [
+      "prazo_apresentacao_propostas",
+      "criterios_adjudicacao"
+    ],
+    "document_piece": "programa_procedimento"
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:11:00Z",
+      "chosen_passages": [
+        "ccp:art131.1"
+      ],
+      "blind": false,
+      "evento": "evento:11"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:12:00Z",
+      "chosen_passages": [
+        "ccp:art131.1"
+      ],
+      "blind": true,
+      "evento": "evento:12"
+    }
+  ],
+  "state": "settled"
+}

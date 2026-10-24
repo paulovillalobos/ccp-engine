@@ -1,0 +1,18 @@
+{
+  "id": "raw:base-api:contrato:99000001",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "source": "base-api",
+  "kind": "contrato",
+  "source_id": "99000001",
+  "sha256": "aaa2110254e5f96a981bdad704f5ba0a610cd064024975aa77570da4a7c0e04f",
+  "bytes": "raw_bytes/aaa2110254e5f96a981bdad704f5ba0a610cd064024975aa77570da4a7c0e04f",
+  "media_type": "application/json",
+  "encoding": "utf-8",
+  "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=99000001",
+  "captured_at": "2026-10-24T18:45:00Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1
+  }
+}

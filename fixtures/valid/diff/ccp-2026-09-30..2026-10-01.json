@@ -1,0 +1,75 @@
+{
+  "id": "diff:pacote:ccp@2026-09-30..pacote:ccp@2026-10-01",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "from": "pacote:ccp@2026-09-30",
+  "to": "pacote:ccp@2026-10-01",
+  "by_rule": [
+    {
+      "rule": "regra:ccp:limiar-ajuste-direto-bens@v1",
+      "change": "added",
+      "fields": []
+    },
+    {
+      "rule": "regra:ccp:limite-acumulado-art113@v1",
+      "change": "added",
+      "fields": []
+    },
+    {
+      "rule": "regra:dl-177-2026:seletor-regime-dl-177-2026@v1",
+      "change": "added",
+      "fields": []
+    }
+  ],
+  "by_consumer_field": [
+    {
+      "field": "adjudicante",
+      "rules": [
+        "regra:ccp:limite-acumulado-art113@v1"
+      ]
+    },
+    {
+      "field": "adjudicatario",
+      "rules": [
+        "regra:ccp:limite-acumulado-art113@v1"
+      ]
+    },
+    {
+      "field": "data_adjudicacao",
+      "rules": [
+        "regra:ccp:limite-acumulado-art113@v1"
+      ]
+    },
+    {
+      "field": "data_inicio_procedimento",
+      "rules": [
+        "regra:dl-177-2026:seletor-regime-dl-177-2026@v1"
+      ]
+    },
+    {
+      "field": "preco_base",
+      "rules": [
+        "regra:ccp:limiar-ajuste-direto-bens@v1"
+      ]
+    },
+    {
+      "field": "preco_contratual",
+      "rules": [
+        "regra:ccp:limite-acumulado-art113@v1"
+      ]
+    },
+    {
+      "field": "tipo_contrato",
+      "rules": [
+        "regra:ccp:limiar-ajuste-direto-bens@v1"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "rules": [
+        "regra:ccp:limiar-ajuste-direto-bens@v1",
+        "regra:ccp:limite-acumulado-art113@v1"
+      ]
+    }
+  ]
+}

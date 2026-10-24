@@ -1,0 +1,27 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:prazo-minimo-propostas-6-dias@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:procedimentos-admissiveis@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:programa-indica-prazo-e-criterios@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:dlr-27-2015-a:coeficiente-acores@v1",
+      "revision": 1
+    }
+  ],
+  "hash": "1eca433a22e8e80fea5ba123d52d9e049f5f95b6a920d8222b2b1480e4b3dccd",
+  "log_head": "d350e45dee8f13f56e5b4de20f39e7933f3863fb4f1edcbfd62f5c45d4a4cae8",
+  "built_at": "2026-10-24T20:00:00Z"
+}

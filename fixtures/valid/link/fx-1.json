@@ -1,0 +1,16 @@
+{
+  "id": "link:fx-1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "from": "alias:base-dump:FX-2026-000001-adjudicante",
+  "to": "ent:nif:500000000",
+  "proponent": "parser:ccp-link",
+  "method": "nif_exact",
+  "evidence": {
+    "source_field": "nifEntidadeAdjudicante",
+    "value": "500000000"
+  },
+  "state": "settled",
+  "at": "2026-10-24T18:30:00Z",
+  "evento": null
+}

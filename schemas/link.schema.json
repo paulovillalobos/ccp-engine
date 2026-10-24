@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "link.schema.json",
+  "title": "Link: from a record or alias to an entity, with provenance and state",
+  "description": "link:... proponent is a registered principal (code by exact NIF: parser; AMALIA by name: ai; a person: human). state proposed -> settled -> stale; a wrong link is marked stale by a new revision, never deleted (invariant 9). Entities are linked, never merged.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_link"},
+    "from": {"oneOf": [{"$ref": "defs.schema.json#/$defs/id_raw"}, {"$ref": "defs.schema.json#/$defs/id_alias"}]},
+    "to": {"$ref": "defs.schema.json#/$defs/id_entidade"},
+    "proponent": {"$ref": "defs.schema.json#/$defs/id_principal"},
+    "method": {"type": "string", "enum": ["nif_exact", "name_ai", "person"]},
+    "evidence": {"type": "object", "properties": {"source_field": {"type": "string"}, "value": {"type": "string"}, "score": {"type": "number", "minimum": 0, "maximum": 1}, "note": {"type": "string"}}, "required": ["source_field", "value"], "additionalProperties": false},
+    "state": {"$ref": "defs.schema.json#/$defs/link_state"},
+    "at": {"$ref": "defs.schema.json#/$defs/datetime"},
+    "evento": {"oneOf": [{"$ref": "defs.schema.json#/$defs/id_evento"}, {"type": "null"}], "description": "The log event that proposed it; null only for nif_exact links made by the parser."}
+  },
+  "required": ["id", "revision", "recorded_at", "from", "to", "proponent", "method", "evidence", "state", "at", "evento"],
+  "unevaluatedProperties": false
+}

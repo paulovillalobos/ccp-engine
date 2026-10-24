@@ -1,0 +1,63 @@
+{
+  "id": "regra:dlr-27-2015-a:coeficiente-acores@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "jurisdicao",
+  "title": "Coeficiente regional dos Açores sobre os limiares (DLR 27/2015/A art. 3.º)",
+  "norma": "norma:dlr-27-2015-a",
+  "jurisdiction": "PT-AC",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "dlr-27-2015-a:art3.1",
+      "version": "2026-10-01",
+      "quote": "aplicam-se na Região com o coeficiente de 1,45",
+      "offsets": {
+        "start": 36,
+        "end": 82
+      }
+    }
+  ],
+  "params": {
+    "territory": "PT-AC",
+    "predicate": [
+      {
+        "field": "territorio",
+        "op": "eq",
+        "value": "PT-AC"
+      }
+    ],
+    "effect": {
+      "multiply_thresholds_by": 1.45
+    }
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:16:00Z",
+      "chosen_passages": [
+        "dlr-27-2015-a:art3.1"
+      ],
+      "blind": false,
+      "evento": "evento:16"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:17:00Z",
+      "chosen_passages": [
+        "dlr-27-2015-a:art3.1"
+      ],
+      "blind": true,
+      "evento": "evento:17"
+    }
+  ],
+  "state": "settled"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "regra:ccp:procedimentos-admissiveis@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "procedimento_admissivel",
+  "title": "Procedimentos para a formação de contratos (art. 16.º n.º 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art16.1",
+      "version": "2026-10-01",
+      "quote": "adotam o concurso público, o concurso limitado por prévia qualificação, a consulta prévia ou o ajuste direto",
+      "offsets": {
+        "start": 59,
+        "end": 167
+      }
+    }
+  ],
+  "params": {
+    "procedures": [
+      "concurso_publico",
+      "concurso_limitado_previa_qualificacao",
+      "consulta_previa",
+      "ajuste_direto"
+    ]
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:09:00Z",
+      "chosen_passages": [
+        "ccp:art16.1"
+      ],
+      "blind": false,
+      "evento": "evento:9"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:10:00Z",
+      "chosen_passages": [
+        "ccp:art16.1"
+      ],
+      "blind": true,
+      "evento": "evento:10"
+    }
+  ],
+  "state": "settled"
+}

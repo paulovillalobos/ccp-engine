@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conflito.schema.json",
+  "title": "Conflito: two or more values for one fact, with provenance and resolution",
+  "description": "conflito:... Either a precedence rule (a product_rule event approved by a person) chooses one value, or the resolution is nao_avaliado and every rule that needs the field answers conflito.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_conflito"},
+    "unit": {"$ref": "defs.schema.json#/$defs/id_unidade"},
+    "field": {"$ref": "defs.schema.json#/$defs/canonical_field"},
+    "values": {"type": "array", "minItems": 2, "items": {"type": "object", "properties": {"facto": {"$ref": "defs.schema.json#/$defs/id_facto"}, "value": {}, "source": {"$ref": "defs.schema.json#/$defs/slug"}, "known_at": {"$ref": "defs.schema.json#/$defs/datetime"}}, "required": ["facto", "value", "source", "known_at"], "additionalProperties": false}},
+    "resolution": {
+      "oneOf": [
+        {"type": "object", "properties": {"kind": {"const": "precedencia"}, "rule_evento": {"$ref": "defs.schema.json#/$defs/id_evento"}, "chosen": {"$ref": "defs.schema.json#/$defs/id_facto"}}, "required": ["kind", "rule_evento", "chosen"], "additionalProperties": false},
+        {"type": "object", "properties": {"kind": {"const": "nao_avaliado"}}, "required": ["kind"], "additionalProperties": false}
+      ]
+    }
+  },
+  "required": ["id", "revision", "recorded_at", "unit", "field", "values", "resolution"],
+  "unevaluatedProperties": false
+}

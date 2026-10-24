@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art20.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art20",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - A escolha do ajuste direto permite a celebração de contratos:",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 71,
+        "end": 136
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

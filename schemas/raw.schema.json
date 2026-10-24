@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "raw.schema.json",
+  "title": "Registro cru: one captured record of one source, by hash",
+  "description": "raw:base-api:contrato:12345678. bytes names the file under <store>/raw_bytes/<sha256>; verify re-hashes it (invariant 1). request.method is GET only: reading is passive (invariant 10).",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_raw"},
+    "source": {"$ref": "defs.schema.json#/$defs/slug", "description": "dr-consolidado, base-api, base-dump, ted, vortal, acingov, pecas"},
+    "kind": {"$ref": "defs.schema.json#/$defs/slug", "description": "contrato, anuncio, modificacao, entidade, lei, nota, documento"},
+    "source_id": {"type": "string", "minLength": 1},
+    "sha256": {"$ref": "defs.schema.json#/$defs/sha256"},
+    "bytes": {"type": "string", "pattern": "^raw_bytes/[0-9a-f]{64}$"},
+    "media_type": {"type": "string", "minLength": 1},
+    "encoding": {"type": "string", "enum": ["utf-8", "latin-1", "binary"]},
+    "url": {"type": "string", "pattern": "^https://"},
+    "captured_at": {"$ref": "defs.schema.json#/$defs/datetime"},
+    "request": {"type": "object", "properties": {"method": {"const": "GET"}, "reads_of_page": {"type": "integer", "minimum": 1, "maximum": 1}}, "required": ["method", "reads_of_page"], "additionalProperties": false}
+  },
+  "required": ["id", "revision", "recorded_at", "source", "kind", "source_id", "sha256", "bytes", "media_type", "encoding", "url", "captured_at", "request"],
+  "unevaluatedProperties": false
+}

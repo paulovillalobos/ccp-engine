@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "entidade.schema.json",
+  "title": "Entidade: a party, keyed by NIF or a per-country name candidate",
+  "description": "ent:nif:500000000 or ent:cand:FR:namsa. The store may hold the name of a pessoa_singular (it is needed to link records); no publishable object may carry it (invariant 11, verify I11 on veredicto.entities and API outputs). Entities are never merged: two ids stay two ids, joined by links.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_entidade"},
+    "type": {"$ref": "defs.schema.json#/$defs/entity_type"},
+    "country": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "nif": {"oneOf": [{"type": "string", "pattern": "^[0-9]{9}$"}, {"type": "null"}]},
+    "name": {"type": "string", "minLength": 1},
+    "roles": {"type": "array", "items": {"type": "object", "properties": {"unit": {"$ref": "defs.schema.json#/$defs/id_unidade"}, "role": {"$ref": "defs.schema.json#/$defs/entity_role"}}, "required": ["unit", "role"], "additionalProperties": false}},
+    "raw": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_raw"}, "minItems": 1}
+  },
+  "required": ["id", "revision", "recorded_at", "type", "country", "nif", "roles", "raw"],
+  "unevaluatedProperties": false
+}

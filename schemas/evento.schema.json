@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evento.schema.json",
+  "title": "Evento de governança: one line of the append-only, hash-chained log",
+  "description": "evento:n. prev is the sha256 of the previous line's canonical JSON (64 zeros for the first). Actions: propose, correct, review, approve, reject, dispute, adjudicate, invalidate. approve, reject, dispute and adjudicate require a reason; approve requires a human principal (invariant 4); a review names its verdict and independence. assertion_type regra is a reading of the law: it is never human_approved and settles when a blind reviewer of another family upholds it (invariant 5). product_rule is how a person's product decision enters the log (invariant 12). The replay (engine/governance.py) enforces every rule again.",
+  "type": "object",
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_evento"},
+    "seq": {"type": "integer", "minimum": 1},
+    "at": {"$ref": "defs.schema.json#/$defs/datetime"},
+    "prev": {"$ref": "defs.schema.json#/$defs/sha256"},
+    "principal": {"$ref": "defs.schema.json#/$defs/id_principal"},
+    "action": {"type": "string", "enum": ["propose", "correct", "review", "approve", "reject", "dispute", "adjudicate", "invalidate"]},
+    "assertion_type": {"type": "string", "enum": ["regra", "adaptador", "link", "afirmacao_conversao", "product_rule", "caso_referencia", "veredicto", "disputa"]},
+    "assertion": {"type": "string", "minLength": 1, "description": "The id the event is about (a regra, link, adaptador, product rule slug, veredicto, disputa...)."},
+    "expected_revision": {"type": ["integer", "null"], "minimum": 1, "description": "For review/correct/approve/reject: the exact revision answered; stale revisions cannot be reviewed."},
+    "payload": {"type": "object"},
+    "reason": {"type": ["string", "null"], "minLength": 1},
+    "question": {"type": ["string", "null"], "minLength": 1, "description": "For review: the exact question answered, showing every value proposed."},
+    "independence": {"type": ["string", "null"], "enum": ["blind", "informed", "transcribed", null]},
+    "verdict": {"type": ["string", "null"], "enum": ["uphold", "reject", "request_evidence", null]},
+    "outcome": {"type": ["string", "null"], "enum": ["upheld", "overturned", "withdrawn", null]}
+  },
+  "required": ["id", "seq", "at", "prev", "principal", "action", "assertion_type", "assertion", "expected_revision", "payload", "reason", "question", "independence", "verdict", "outcome"],
+  "additionalProperties": false,
+  "allOf": [
+    {"if": {"properties": {"action": {"enum": ["approve", "reject", "dispute", "adjudicate"]}}}, "then": {"properties": {"reason": {"type": "string"}}}},
+    {"if": {"properties": {"action": {"const": "approve"}}}, "then": {"properties": {"principal": {"pattern": "^human:"}}}},
+    {"if": {"properties": {"action": {"const": "review"}}}, "then": {"properties": {"verdict": {"type": "string"}, "independence": {"type": "string"}, "question": {"type": "string"}}}},
+    {"if": {"properties": {"action": {"const": "adjudicate"}}}, "then": {"properties": {"outcome": {"type": "string"}, "principal": {"pattern": "^human:"}}}}
+  ]
+}

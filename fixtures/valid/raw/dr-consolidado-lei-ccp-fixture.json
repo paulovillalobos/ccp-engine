@@ -1,0 +1,18 @@
+{
+  "id": "raw:dr-consolidado:lei:ccp-fixture",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "ccp-fixture",
+  "sha256": "8e537c71482b4decb231819b09c1b865e66bcb5177662f98dd59ffad29d7f987",
+  "bytes": "raw_bytes/8e537c71482b4decb231819b09c1b865e66bcb5177662f98dd59ffad29d7f987",
+  "media_type": "text/plain",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2008-34455475",
+  "captured_at": "2026-10-24T18:00:00Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1
+  }
+}

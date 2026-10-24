@@ -1,0 +1,39 @@
+{
+  "id": "pacote:ccp@2026-10-01",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "law_version": "lei:ccp@2026-10-01",
+  "rules": [
+    {
+      "id": "regra:ccp:limiar-ajuste-direto-bens@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:limite-acumulado-art113@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-propostas-6-dias@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:procedimentos-admissiveis@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:programa-indica-prazo-e-criterios@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:dl-177-2026:seletor-regime-dl-177-2026@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:dlr-27-2015-a:coeficiente-acores@v1",
+      "revision": 1
+    }
+  ],
+  "hash": "4ca2ab41df7b71954de4d123857641088bddb3c674b9f0e695ae5be1de53c59f",
+  "log_head": "d350e45dee8f13f56e5b4de20f39e7933f3863fb4f1edcbfd62f5c45d4a4cae8",
+  "built_at": "2026-10-24T20:00:00Z"
+}

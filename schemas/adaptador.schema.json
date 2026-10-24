@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adaptador.schema.json",
+  "title": "Adaptador: a source's field mapping declared as data, with measured coverage",
+  "description": "adaptador:base-api@2. The extractor writes it; it enters the governance log as a proposed object and is reviewed. Every fact names the adapter that produced it, so a mapping error is traceable and re-derivable.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_adaptador"},
+    "source": {"$ref": "defs.schema.json#/$defs/slug"},
+    "version": {"type": "integer", "minimum": 1},
+    "code": {"type": "string", "pattern": "^adapters/[a-z0-9-]+/", "description": "Path of the adapter code inside the repository."},
+    "mapping": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {"source_field": {"type": "string", "minLength": 1}, "canonical_field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "transform": {"type": "string", "enum": ["identity", "date_iso", "date_pt", "number_pt", "integer", "nif", "cpv", "boolean", "enum_map", "days_between"]}, "enum_map": {"type": "object", "additionalProperties": {"type": "string"}}, "note": {"type": "string"}},
+        "required": ["source_field", "canonical_field", "transform"],
+        "additionalProperties": false
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "description": "Per month: records expected in the source (null when the source does not say) and records captured.",
+      "items": {"type": "object", "properties": {"period": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$"}, "expected": {"oneOf": [{"type": "integer", "minimum": 0}, {"type": "null"}]}, "captured": {"type": "integer", "minimum": 0}}, "required": ["period", "expected", "captured"], "additionalProperties": false}
+    },
+    "proposed_by": {"$ref": "defs.schema.json#/$defs/id_principal"},
+    "state": {"$ref": "defs.schema.json#/$defs/assertion_state"}
+  },
+  "required": ["id", "revision", "recorded_at", "source", "version", "code", "mapping", "coverage", "proposed_by", "state"],
+  "unevaluatedProperties": false
+}

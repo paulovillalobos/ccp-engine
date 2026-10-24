@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art20",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 20.º",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 20.º",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 59,
+        "end": 70
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

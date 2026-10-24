@@ -1,0 +1,78 @@
+{
+  "id": "regra:ccp:limite-acumulado-art113@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "agregada",
+  "title": "Limite acumulado por adjudicante e adjudicatário em três anos (art. 113.º n.º 2)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "contrato"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "ajuste_direto"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art113.2",
+      "version": "2026-10-01",
+      "quote": "no ano económico em curso e nos dois anos anteriores, propostas de valor acumulado igual ou superior ao limiar",
+      "offsets": {
+        "start": 92,
+        "end": 202
+      }
+    }
+  ],
+  "params": {
+    "window": {
+      "length": 3,
+      "unit": "anos",
+      "anchor": "data_adjudicacao"
+    },
+    "group_key": [
+      "adjudicante",
+      "adjudicatario"
+    ],
+    "aggregate": {
+      "field": "preco_contratual",
+      "op": "sum",
+      "comparator": "lt",
+      "value": 20000
+    },
+    "completeness_threshold": {
+      "ratio": 0.9,
+      "measured_over": "mes",
+      "decided_by": "evento:1"
+    }
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:14:00Z",
+      "chosen_passages": [
+        "ccp:art113.2"
+      ],
+      "blind": false,
+      "evento": "evento:14"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:15:00Z",
+      "chosen_passages": [
+        "ccp:art113.2"
+      ],
+      "blind": true,
+      "evento": "evento:15"
+    }
+  ],
+  "state": "settled"
+}

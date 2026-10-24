@@ -1,0 +1,23 @@
+{
+  "id": "ccp:art16.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Para a formação de contratos as entidades adjudicantes adotam o concurso público, o concurso limitado por prévia qualificação, a consulta prévia ou o ajuste direto;",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 806,
+        "end": 974
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

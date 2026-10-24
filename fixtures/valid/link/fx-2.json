@@ -1,0 +1,18 @@
+{
+  "id": "link:fx-2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "from": "alias:base-dump:FX-2026-000001-adjudicatario",
+  "to": "ent:cand:PT:fornecedor-fixture-unipessoal",
+  "proponent": "ai:amalia-9b",
+  "method": "name_ai",
+  "evidence": {
+    "source_field": "adjudicatario.nome",
+    "value": "Fornecedor Fixture Unipessoal",
+    "score": 0.82,
+    "note": "name match; the NIF in the API record was not read by the proposer (blind)"
+  },
+  "state": "proposed",
+  "at": "2026-10-24T19:18:00Z",
+  "evento": "evento:18"
+}

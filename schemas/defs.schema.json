@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "defs.schema.json",
+  "title": "Shared definitions: identifiers, clocks, citations, closed enumerations",
+  "description": "Every object schema references these. Identifier prefixes are the stable ids of ARQUITECTURA.md section 3. Field names are English (the code language); domain enumeration values are Portuguese (the API language). See DECISIONS.md D1.",
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "Calendar date, Europe/Lisbon."},
+    "datetime": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$", "description": "UTC instant, second precision."},
+    "slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+
+    "id_norma": {"type": "string", "pattern": "^norma:[a-z0-9][a-z0-9-]*$"},
+    "id_passagem": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9.-]*$", "description": "Norm short code, colon, structural path: ccp:art113.2, ccp:art20.1.a"},
+    "id_vigencia": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9.-]*@[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "Passage id, @, the date the version enters force: ccp:art20.1@2026-10-01"},
+    "id_regra": {"type": "string", "pattern": "^regra:[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9-]*@v[0-9]+$", "description": "regra:<norm>:<slug>@v<n>; the @v suffix is the rule's own version, distinct from the store revision"},
+    "id_pacote": {"type": "string", "pattern": "^pacote:[a-z0-9][a-z0-9-]*@[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "id_diff": {"type": "string", "pattern": "^diff:pacote:[a-z0-9-]+@[0-9]{4}-[0-9]{2}-[0-9]{2}\\.\\.pacote:[a-z0-9-]+@[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "id_raw": {"type": "string", "pattern": "^raw:[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9-]*:[A-Za-z0-9._-]+$", "description": "raw:<source>:<kind>:<id in the source>"},
+    "id_adaptador": {"type": "string", "pattern": "^adaptador:[a-z0-9][a-z0-9-]*@[0-9]+$"},
+    "id_unidade": {"type": "string", "pattern": "^(proc|lote|contrato|mod):[A-Za-z0-9._:-]+$", "description": "<kind>:<source>:<id in the source>, e.g. proc:base:FX-2026-000001"},
+    "id_entidade": {"type": "string", "pattern": "^ent:(nif:[0-9]{9}|cand:[A-Z]{2}:[a-z0-9][a-z0-9-]*)$", "description": "ent:nif:<9 digits> when the NIF is known; ent:cand:<ISO country>:<name slug> otherwise. Never merged: a candidate that turns out to have a NIF gets a settled link, not a rename."},
+    "id_alias": {"type": "string", "pattern": "^alias:[a-z0-9][a-z0-9-]*:[A-Za-z0-9._-]+$"},
+    "id_link": {"type": "string", "pattern": "^link:[A-Za-z0-9._-]+$"},
+    "id_facto": {"type": "string", "pattern": "^facto:[A-Za-z0-9._:-]+$"},
+    "id_afirmacao": {"type": "string", "pattern": "^afirmacao:[A-Za-z0-9._:-]+$"},
+    "id_conflito": {"type": "string", "pattern": "^conflito:[A-Za-z0-9._:-]+$"},
+    "id_documento": {"type": "string", "pattern": "^doc:[0-9a-f]{64}$"},
+    "id_veredicto": {"type": "string", "pattern": "^veredicto:[A-Za-z0-9._:@-]+$"},
+    "id_evento": {"type": "string", "pattern": "^evento:[0-9]+$"},
+    "id_disputa": {"type": "string", "pattern": "^disputa:[A-Za-z0-9._-]+$"},
+    "id_ref": {"type": "string", "pattern": "^ref:[A-Za-z0-9._-]+$"},
+    "id_principal": {"type": "string", "pattern": "^(human|ai|parser|system):[a-z0-9][a-z0-9-]*$"},
+
+    "envelope": {
+      "type": "object",
+      "description": "Record envelope of every stored object. The store is append-only: a change is a new revision of the same id; (id, revision) is never written twice; stale marks a record superseded or withdrawn, nothing is deleted (invariant 9).",
+      "properties": {
+        "revision": {"type": "integer", "minimum": 1},
+        "recorded_at": {"$ref": "#/$defs/datetime", "description": "Record clock: when this revision entered the store."},
+        "stale": {"type": "boolean", "default": false},
+        "stale_reason": {"type": "string", "minLength": 1},
+        "supersedes": {"type": "integer", "minimum": 1, "description": "The revision this one replaces, when revision > 1."}
+      },
+      "required": ["revision", "recorded_at"],
+      "if": {"properties": {"stale": {"const": true}}, "required": ["stale"]},
+      "then": {"required": ["stale_reason"]}
+    },
+
+    "offsets": {
+      "type": "object",
+      "properties": {"start": {"type": "integer", "minimum": 0}, "end": {"type": "integer", "minimum": 1}},
+      "required": ["start", "end"],
+      "additionalProperties": false
+    },
+    "citation": {
+      "type": "object",
+      "description": "Invariant 2: a passage id, the literal quote and its offsets inside that passage version's text. verify re-reads text[start:end] and refuses a mismatch. The AI chooses the passage id; the code writes the quote.",
+      "properties": {
+        "passage": {"$ref": "#/$defs/id_passagem"},
+        "version": {"$ref": "#/$defs/date", "description": "The passage version quoted: its valid_from date."},
+        "quote": {"type": "string", "minLength": 1},
+        "offsets": {"$ref": "#/$defs/offsets"}
+      },
+      "required": ["passage", "version", "quote", "offsets"],
+      "additionalProperties": false
+    },
+    "raw_citation": {
+      "type": "object",
+      "description": "A literal quote located inside a captured raw text (used for DR validity notes, before passages exist).",
+      "properties": {
+        "raw": {"$ref": "#/$defs/id_raw"},
+        "quote": {"type": "string", "minLength": 1},
+        "offsets": {"$ref": "#/$defs/offsets"}
+      },
+      "required": ["raw", "quote", "offsets"],
+      "additionalProperties": false
+    },
+
+    "jurisdiction": {"type": "string", "enum": ["PT", "PT-AC", "PT-MA", "UE"], "description": "Portugal continental, Açores, Madeira, European Union."},
+    "result": {"type": "string", "enum": ["cumpre", "nao_cumpre", "nao_avaliado"]},
+    "reason_not_assessed": {
+      "type": "string",
+      "enum": ["facto_ausente", "regra_ausente", "cobertura_insuficiente", "documento_sem_texto", "conflito"],
+      "description": "Closed enumeration (invariant 6). facto_ausente: a fact the rule needs is missing; regra_ausente: no settled rule covers the case; cobertura_insuficiente: an aggregate rule's source coverage is below the completeness threshold; documento_sem_texto: a required document has no text layer; conflito: an unresolved conflict on a fact the rule needs."
+    },
+    "rule_type": {
+      "type": "string",
+      "enum": ["limiar", "procedimento_admissivel", "prazo_minimo", "conteudo_obrigatorio", "proibicao", "agregada", "seletor_regime", "jurisdicao"],
+      "description": "The eight rule types of ARQUITECTURA.md section 5."
+    },
+    "assertion_state": {"type": "string", "enum": ["proposed", "ai_reviewed", "settled", "rejected", "stale"], "description": "Derived by replaying the governance log; stored copies are the replay, never the source."},
+    "link_state": {"type": "string", "enum": ["proposed", "settled", "stale"]},
+    "entity_type": {"type": "string", "enum": ["publica", "privada", "pessoa_singular"]},
+    "entity_role": {"type": "string", "enum": ["adjudicante", "adjudicatario", "concorrente", "subcontratante"]},
+    "model_family": {"type": "string", "enum": ["amalia", "reader-b", "builder", "reader-c", "reader-d", "parser", "human"], "description": "Invariant 5: a reading settles only when upheld blind by a reader of a different family than its proposer."},
+    "condition": {
+      "type": "object",
+      "description": "A predicate over a canonical fact field, as data. The engine evaluates it; nothing is interpreted at run time.",
+      "properties": {
+        "field": {"$ref": "#/$defs/canonical_field"},
+        "op": {"type": "string", "enum": ["eq", "ne", "lt", "le", "gt", "ge", "in", "not_in", "present", "absent"]},
+        "value": {},
+        "unit": {"type": "string", "enum": ["EUR", "dias", "dias_uteis", "anos", "meses"]}
+      },
+      "required": ["field", "op"],
+      "additionalProperties": false
+    },
+    "canonical_field": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Canonical fact field names (snake_case): tipo_contrato, preco_base, prazo_propostas_dias, data_inicio_procedimento, data_publicacao_anuncio, tipo_procedimento, tipo_entidade, territorio, publicado_joue, cpv, ..."}
+  }
+}

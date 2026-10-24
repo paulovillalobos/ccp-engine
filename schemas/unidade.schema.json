@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "unidade.schema.json",
+  "title": "Unidade: a node of the graph procedimento -> lote -> contrato -> modificacao",
+  "description": "proc:..., lote:..., contrato:..., mod:... The id prefix is the kind. Every node names the raw records it was built from; consumer_ids are the identifiers the API accepts (section 9).",
+  "type": "object",
+  "allOf": [
+    {"$ref": "defs.schema.json#/$defs/envelope"},
+    {"if": {"properties": {"kind": {"const": "proc"}}}, "then": {"properties": {"parent": {"type": "null"}}}, "else": {"properties": {"parent": {"$ref": "defs.schema.json#/$defs/id_unidade"}}}}
+  ],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_unidade"},
+    "kind": {"type": "string", "enum": ["proc", "lote", "contrato", "mod"]},
+    "parent": {},
+    "raw": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_raw"}, "minItems": 1},
+    "consumer_ids": {
+      "type": "object",
+      "properties": {"base_id": {"type": "string"}, "n_anuncio": {"type": "string"}, "vortal_ref": {"type": "string"}, "ted_publication_number": {"type": "string"}, "acingov_procedimento": {"type": "string"}},
+      "additionalProperties": false
+    }
+  },
+  "required": ["id", "revision", "recorded_at", "kind", "parent", "raw", "consumer_ids"],
+  "unevaluatedProperties": false
+}

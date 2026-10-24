@@ -1,0 +1,83 @@
+{
+  "id": "regra:ccp:limiar-ajuste-direto-bens@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "limiar",
+  "title": "Ajuste direto: bens e serviços de valor inferior a 20 000 EUR (art. 20.º n.º 1 a))",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "ajuste_direto"
+    },
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": [
+        "bens",
+        "servicos"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art20.1.a",
+      "version": "2026-10-01",
+      "quote": "De valor inferior a 20 000 EUR",
+      "offsets": {
+        "start": 3,
+        "end": 33
+      }
+    },
+    {
+      "passage": "ccp:art20.1",
+      "version": "2026-10-01",
+      "quote": "A escolha do ajuste direto permite a celebração de contratos",
+      "offsets": {
+        "start": 4,
+        "end": 64
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 20000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "ai:amalia-9b",
+      "family": "amalia",
+      "at": "2026-10-24T19:05:00Z",
+      "chosen_passages": [
+        "ccp:art20.1.a",
+        "ccp:art20.1"
+      ],
+      "blind": false,
+      "evento": "evento:5"
+    },
+    {
+      "principal": "ai:reader-b",
+      "family": "reader-b",
+      "at": "2026-10-24T19:06:00Z",
+      "chosen_passages": [
+        "ccp:art20.1.a",
+        "ccp:art20.1"
+      ],
+      "blind": true,
+      "evento": "evento:6"
+    }
+  ],
+  "state": "settled"
+}

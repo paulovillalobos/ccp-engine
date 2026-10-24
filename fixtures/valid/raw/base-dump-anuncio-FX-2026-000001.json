@@ -1,0 +1,18 @@
+{
+  "id": "raw:base-dump:anuncio:FX-2026-000001",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "source": "base-dump",
+  "kind": "anuncio",
+  "source_id": "FX-2026-000001",
+  "sha256": "a60138a992604c6e99ab3999996c3c36b28c1b03104dd6de368447b81e093f7f",
+  "bytes": "raw_bytes/a60138a992604c6e99ab3999996c3c36b28c1b03104dd6de368447b81e093f7f",
+  "media_type": "application/json",
+  "encoding": "utf-8",
+  "url": "https://dados.gov.pt/pt/datasets/anuncios-2026/",
+  "captured_at": "2026-10-24T18:30:00Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1
+  }
+}

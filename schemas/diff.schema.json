@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "diff.schema.json",
+  "title": "Diff between two packages, by rule and by consumer field",
+  "description": "diff:pacote:ccp@2026-09-30..pacote:ccp@2026-10-01. Derived; verify rebuilds it from the two packages.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_diff"},
+    "from": {"$ref": "defs.schema.json#/$defs/id_pacote"},
+    "to": {"$ref": "defs.schema.json#/$defs/id_pacote"},
+    "by_rule": {"type": "array", "items": {"type": "object", "properties": {"rule": {"$ref": "defs.schema.json#/$defs/id_regra"}, "change": {"type": "string", "enum": ["added", "removed", "changed"]}, "fields": {"type": "array", "items": {"type": "string"}}}, "required": ["rule", "change", "fields"], "additionalProperties": false}},
+    "by_consumer_field": {"type": "array", "items": {"type": "object", "properties": {"field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "rules": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_regra"}, "minItems": 1}}, "required": ["field", "rules"], "additionalProperties": false}}
+  },
+  "required": ["id", "revision", "recorded_at", "from", "to", "by_rule", "by_consumer_field"],
+  "unevaluatedProperties": false
+}

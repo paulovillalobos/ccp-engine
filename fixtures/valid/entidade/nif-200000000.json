@@ -1,0 +1,18 @@
+{
+  "id": "ent:nif:200000000",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "pessoa_singular",
+  "country": "PT",
+  "nif": "200000000",
+  "name": "Fornecedor Fixture Unipessoal",
+  "roles": [
+    {
+      "unit": "contrato:base:99000001",
+      "role": "adjudicatario"
+    }
+  ],
+  "raw": [
+    "raw:base-api:contrato:99000001"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "proc:base:FX-2026-000001",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "kind": "proc",
+  "parent": null,
+  "raw": [
+    "raw:base-dump:anuncio:FX-2026-000001"
+  ],
+  "consumer_ids": {
+    "n_anuncio": "FX-2026-000001"
+  }
+}

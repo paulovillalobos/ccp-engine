@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "disputa.schema.json",
+  "title": "Disputa / adjudicação: a challenge to a verdict and its outcome",
+  "description": "disputa:... raised by a principal with a reason, adjudicated by a human who is neither the disputant nor a reviewer of the rule; every adjudicated dispute enters the regression set under regression_class (section 8).",
+  "type": "object",
+  "allOf": [
+    {"$ref": "defs.schema.json#/$defs/envelope"},
+    {"if": {"properties": {"state": {"const": "adjudicated"}}}, "then": {"properties": {"adjudication": {"type": "object"}}}, "else": {"properties": {"adjudication": {"type": "null"}}}}
+  ],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_disputa"},
+    "veredicto": {"$ref": "defs.schema.json#/$defs/id_veredicto"},
+    "raised_by": {"$ref": "defs.schema.json#/$defs/id_principal"},
+    "reason": {"type": "string", "minLength": 1},
+    "at": {"$ref": "defs.schema.json#/$defs/datetime"},
+    "evento": {"$ref": "defs.schema.json#/$defs/id_evento"},
+    "state": {"type": "string", "enum": ["open", "adjudicated"]},
+    "adjudication": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "object", "properties": {"by": {"type": "string", "pattern": "^human:[a-z0-9-]+$"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "outcome": {"type": "string", "enum": ["upheld", "overturned", "withdrawn"]}, "reason": {"type": "string", "minLength": 1}, "evento": {"$ref": "defs.schema.json#/$defs/id_evento"}}, "required": ["by", "at", "outcome", "reason", "evento"], "additionalProperties": false}
+      ]
+    },
+    "regression_class": {"oneOf": [{"$ref": "defs.schema.json#/$defs/slug"}, {"type": "null"}]}
+  },
+  "required": ["id", "revision", "recorded_at", "veredicto", "raised_by", "reason", "at", "evento", "state", "adjudication", "regression_class"],
+  "unevaluatedProperties": false
+}

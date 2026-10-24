@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "documento.schema.json",
+  "title": "Documento: a procedure piece, by hash",
+  "description": "doc:<sha256>. has_text_layer false means every content rule that needs it answers documento_sem_texto (invariant 6). Documents are fetched only when a conteudo_obrigatorio rule asks (section 11).",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_documento"},
+    "sha256": {"$ref": "defs.schema.json#/$defs/sha256"},
+    "raw": {"$ref": "defs.schema.json#/$defs/id_raw"},
+    "pages": {"type": "integer", "minimum": 1},
+    "has_text_layer": {"type": "boolean"},
+    "origin": {"type": "object", "properties": {"unit": {"$ref": "defs.schema.json#/$defs/id_unidade"}, "piece": {"type": "string", "enum": ["programa_procedimento", "caderno_encargos", "convite", "anuncio", "outro"]}, "url": {"type": "string", "pattern": "^https://"}}, "required": ["unit", "piece", "url"], "additionalProperties": false}
+  },
+  "required": ["id", "revision", "recorded_at", "sha256", "raw", "pages", "has_text_layer", "origin"],
+  "unevaluatedProperties": false
+}

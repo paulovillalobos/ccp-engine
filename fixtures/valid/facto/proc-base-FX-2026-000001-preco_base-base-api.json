@@ -1,0 +1,15 @@
+{
+  "id": "facto:proc-base-FX-2026-000001:preco_base:base-api",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "unit": "proc:base:FX-2026-000001",
+  "field": "preco_base",
+  "value": 18000,
+  "origin": {
+    "raw": "raw:base-api:contrato:99000001",
+    "field": "precoBase"
+  },
+  "adapter": "adaptador:base-api@1",
+  "valid_at": "2026-10-03",
+  "known_at": "2026-10-24T18:45:00Z"
+}

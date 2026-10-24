@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "alias.schema.json",
+  "title": "Alias: a name as it appears in one raw record",
+  "description": "alias:base:... The raw record and field where the name appears; link names the link that joins it to an entity, or null while unlinked.",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_alias"},
+    "raw": {"$ref": "defs.schema.json#/$defs/id_raw"},
+    "field": {"type": "string", "minLength": 1},
+    "name_as_appears": {"type": "string", "minLength": 1},
+    "link": {"oneOf": [{"$ref": "defs.schema.json#/$defs/id_link"}, {"type": "null"}]}
+  },
+  "required": ["id", "revision", "recorded_at", "raw", "field", "name_as_appears", "link"],
+  "unevaluatedProperties": false
+}

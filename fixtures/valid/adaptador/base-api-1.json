@@ -1,0 +1,29 @@
+{
+  "id": "adaptador:base-api@1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "source": "base-api",
+  "version": 1,
+  "code": "adapters/base-api/",
+  "mapping": [
+    {
+      "source_field": "precoBase",
+      "canonical_field": "preco_base",
+      "transform": "identity"
+    },
+    {
+      "source_field": "adjudicatario.nif",
+      "canonical_field": "adjudicatario",
+      "transform": "nif"
+    }
+  ],
+  "coverage": [
+    {
+      "period": "2026-10",
+      "expected": null,
+      "captured": 1
+    }
+  ],
+  "proposed_by": "ai:builder",
+  "state": "proposed"
+}

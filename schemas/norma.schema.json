@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "norma.schema.json",
+  "title": "Norma: a legal act in the registry",
+  "description": "norma:ccp, norma:lei-30-2021, norma:dl-177-2026, norma:dlr-27-2015-a. The CCP is one norm; the acts that amend it are norms too and are what vigencia records point at (altered_by).",
+  "type": "object",
+  "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
+  "properties": {
+    "id": {"$ref": "defs.schema.json#/$defs/id_norma"},
+    "title": {"type": "string", "minLength": 1},
+    "short": {"$ref": "defs.schema.json#/$defs/slug", "description": "The prefix of this norm's passage ids (ccp for norma:ccp)."},
+    "jurisdiction": {"$ref": "defs.schema.json#/$defs/jurisdiction"},
+    "scope": {"type": "string", "minLength": 1},
+    "eli": {"type": "string", "pattern": "^https://"},
+    "source": {
+      "type": "object",
+      "properties": {"url": {"type": "string", "pattern": "^https://"}, "raw": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_raw"}, "minItems": 1}},
+      "required": ["url", "raw"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["id", "revision", "recorded_at", "title", "short", "jurisdiction", "scope", "source"],
+  "unevaluatedProperties": false
+}
