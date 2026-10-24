@@ -8,6 +8,8 @@ V = ROOT / "fixtures/valid"
 PRAZO = "veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json"
 LIM = "regra/ccp-limiar-ajuste-direto-bens.json"
 
+MISSED = []
+
 def run(name, mutate):
     with tempfile.TemporaryDirectory() as tmp:
         s = Path(tmp) / "s"; shutil.copytree(V, s)
@@ -15,6 +17,8 @@ def run(name, mutate):
         _, out = verify.check_store([s])
         codes = sorted({c for c, _ in out})
         print(f"{'CAUGHT ' if out else 'MISSED '} {name}: {codes}")
+        if not out:
+            MISSED.append(name)
 
 def edit(s, rel, fn):
     p = s / rel; o = json.loads(p.read_text()); fn(o); p.write_text(json.dumps(o, ensure_ascii=False))
@@ -49,3 +53,19 @@ run("M20 two current revisions of a rule with different content, same state", la
 run("M21 caso_referencia held_out true with frozen_at null", lambda s: edit(s, "caso_referencia/fx-1.json", lambda o: o.update(held_out=True)))
 run("M22 disputa object says adjudicated by X but log says Y", lambda s: edit(s, "disputa/fx-1.json", lambda o: o["adjudication"].update(by="human:paulo")))
 run("M23 entidade pessoa_singular typed as privada in the verdict", lambda s: edit(s, PRAZO, lambda o: o["entities"][1].update(type="privada", name="Fornecedor Fixture Unipessoal")))
+# Added while implementing A3b (2026-10-24): each is a way around a check that a weaker version would have let through.
+run("M24 disputa adjudicated by a registered pessoa that the log does not name (the disputant)", lambda s: edit(s, "disputa/fx-1.json", lambda o: o["adjudication"].update(by="pessoa:paulo")))
+run("M25 conflito records a value its fact does not carry", lambda s: edit(s, "conflito/proc-base-FX-2026-000001-preco_base.json", lambda o: o["values"][0].update(value=99)))
+run("M26 manifest source snapshot names bytes no raw record has", lambda s: edit(s, PRAZO, lambda o: o["manifest"]["source_snapshots"][0].update(sha256="c" * 64)))
+run("M27 verdict uses base-dump facts but its manifest lists only base-api", lambda s: edit(s, PRAZO, lambda o: o["manifest"].update(adapters=["adaptador:base-api@1"])))
+run("M28 afirmacao conversion_evento points at the link proposal", lambda s: edit(s, "afirmacao/proc-base-FX-2026-000001-regime.json", lambda o: o.update(conversion_evento="evento:17")))
+run("M29 unit kind inversion: the contract's parent relabelled mod", lambda s: edit(s, "unidade/proc-base-FX-2026-000001.json", lambda o: o.update(kind="mod")))
+run("M30 passage version closes before it opens", lambda s: edit(s, "passagem/ccp-art136.1.json", lambda o: o["versions"][0].update(valid_to="2026-09-01")))
+run("M31 rule open-ended while the version it cites closes", lambda s: edit(s, "passagem/ccp-art16.1.json", lambda o: o["versions"][0].update(valid_to="2027-01-01")))
+run("M32 package log_head the log never had", lambda s: edit(s, "pacote/ccp-2026-10-01.json", lambda o: o.update(log_head="d" * 64)))
+run("M33 fact read from a source field its adapter maps to another field", lambda s: edit(s, "facto/proc-base-FX-2026-000001-prazo_propostas_dias-base-dump.json", lambda o: o["origin"].update(field="precoBase")))
+run("M34 manifest law_version disagrees with its package", lambda s: edit(s, PRAZO, lambda o: o["manifest"].update(law_version="lei:ccp@2026-09-30")))
+run("M35 verdict result flipped to nao_cumpre with the same facts", lambda s: edit(s, PRAZO, lambda o: o.update(result="nao_cumpre", detail="prazo_propostas_dias=9 < 6")))
+run("M36 conflito moved to the child contract (no longer the unit the verdict reads)", lambda s: edit(s, "conflito/proc-base-FX-2026-000001-preco_base.json", lambda o: o.update(unit="contrato:base:99000001")))
+print(f"{len(MISSED)} MISSED")
+sys.exit(1 if MISSED else 0)

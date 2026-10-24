@@ -1,0 +1,75 @@
+{
+  "id": "veredicto:regra-ccp-prazo-minimo-propostas-6-dias@v1:proc-base-FX-2026-000001:2026-10-24T19:30:00Z",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "rule": {
+    "id": "regra:ccp:prazo-minimo-propostas-6-dias@v1",
+    "revision": 1
+  },
+  "unit": "proc:base:FX-2026-000001",
+  "result": "cumpre",
+  "reason": null,
+  "detail": "prazo_propostas_dias=9 >= 6",
+  "citation": {
+    "passage": "ccp:art136.1",
+    "version": "2026-10-01",
+    "quote": "O prazo mínimo para a apresentação das propostas é de seis dias",
+    "offsets": {
+      "start": 4,
+      "end": 67
+    }
+  },
+  "facts_used": [
+    "facto:proc-base-FX-2026-000001:prazo_propostas_dias:base-dump",
+    "facto:proc-base-FX-2026-000001:publicado_joue:base-dump"
+  ],
+  "assertions_compared": [],
+  "entities": [
+    {
+      "id": "ent:nif:500000000",
+      "type": "publica",
+      "role": "adjudicante",
+      "name": "Município Fixture"
+    },
+    {
+      "id": "ent:nif:200000000",
+      "type": "pessoa_singular",
+      "role": "adjudicatario"
+    }
+  ],
+  "valid_at": "2026-10-03",
+  "known_at": "2026-10-24T19:30:00Z",
+  "engine_version": "ccp-engine-0.1",
+  "manifest": {
+    "law_version": "lei:ccp@2026-10-01",
+    "package": "pacote:ccp@2026-10-01",
+    "adapters": [
+      "adaptador:base-api@1",
+      "adaptador:base-dump@1"
+    ],
+    "source_snapshots": [
+      {
+        "source": "base-api",
+        "sha256": "aaa2110254e5f96a981bdad704f5ba0a610cd064024975aa77570da4a7c0e04f",
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "source": "base-dump",
+        "sha256": "a60138a992604c6e99ab3999996c3c36b28c1b03104dd6de368447b81e093f7f",
+        "captured_at": "2026-10-24T18:30:00Z"
+      },
+      {
+        "source": "dr-consolidado",
+        "sha256": "8e537c71482b4decb231819b09c1b865e66bcb5177662f98dd59ffad29d7f987",
+        "captured_at": "2026-10-24T18:00:00Z"
+      }
+    ],
+    "code": {
+      "repository": "github.com/paulovillalobos/ccp-engine",
+      "commit": "6b49816",
+      "engine_version": "ccp-engine-0.1"
+    },
+    "log_head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "produced_at": "2026-10-24T19:30:00Z"
+  }
+}

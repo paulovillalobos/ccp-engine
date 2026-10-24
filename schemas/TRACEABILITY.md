@@ -20,6 +20,23 @@ until phase B lands (FILL-PLAN.md). `fixtures/broken/<name>` is the mutation tha
 | 11 | Natural persons never published by name | `veredicto.schema.json` `entities` if/then · `engine/evaluate._verdict` (strips `name`) · `verify.check_verdicts` I11 | `tests/test_evaluate.py::test_natural_person_is_never_named_and_manifest_must_be_complete`, `tests/test_schemas.py::test_natural_person_name_is_refused_in_a_verdict` · `i11-natural-person-named` |
 | 12 | Founder decides product rules, not legal content | `regra.schema.json` `completeness_threshold.decided_by` · `evento.schema.json` `product_rule` · `governance.replay` (regra never human-approved) · `verify.check_governance` I12 | `tests/test_governance.py::test_reading_settles_only_by_blind_other_family` (approve refused), `test_fixture_log_replays_clean...` · `i12-threshold-without-product-rule` |
 
+## Cross-object checks of verify (A3b, audit of 2026-10-24)
+
+Each check reads several objects together; each has a broken overlay and red-team mutations (`tools/redteam_verify.py`
+prints `0 MISSED`).
+
+| Code | Check | File · symbol | Test · broken fixture · red-team |
+|---|---|---|---|
+| RED | Every stored verdict re-derives through `engine.evaluate` from the store | `verify.check_rederive` (`unit_chain`, `package_rules`, `coverage_of`, `RED_FIELDS`) | `tests/test_verify.py::test_every_broken_overlay_is_refused_with_its_code` · `red-cumpre-contradicted-by-its-fact` · M04, M08, M16, M35, M36 |
+| MAN | Manifest and package checked against log prefixes, packages, rule revisions, adapters, raw snapshots (DECISIONS D25) | `verify.check_manifest` (`log_prefix_heads`) | same test · `man-log-head-never-in-the-log` · M01, M01b, M02, M06, M26, M27, M32, M34 |
+| STATE | Stored states of links, adapters, disputes, conversions, package rules and rule heads equal the log's replay | `verify.check_states` | same test · `state-link-settled-without-approval` · M05, M07, M09, M10, M20, M22, M24, M28 |
+| TIME | Law clock across passage versions, vigencias, rules (DECISIONS D26) and verdict citations | `verify.check_law_time` (`_version`, `_in_force`) | same test · `time-passage-versions-overlap` · M03, M11, M15, M19, M30, M31 |
+| GRAPH | Unit parent chains are acyclic and descend proc → lote → contrato → mod | `verify.check_cross` (`UNIT_ORDER`) | same test · `graph-unit-parent-cycle` · M13, M29 |
+| FIELD | Conflicts carry their facts' field, value and unit chain; facts' fields are in their adapter's mapping | `verify.check_cross` | same test · `field-fact-not-in-adapter-mapping` · M12, M18, M25, M33 |
+| BENCH | A held-out reference case is frozen | `verify.check_cross` | same test · `bench-held-out-not-frozen` · M21 |
+| I01 (orphans) | No raw bytes outside a raw record | `verify.check_cross` | same test · `i01-orphan-raw-bytes` · M14 |
+| I11 (record) | A published entity's type is its record's type; a pessoa_singular record is never named | `verify.check_cross` | same test · `i11-entity-type-from-record` · M23 |
+
 ## §3 Objects (one schema, one valid fixture, one loader entry each)
 
 | Object | Schema · engine symbol | Fixture · test |

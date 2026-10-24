@@ -140,3 +140,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: A3b.6 one broken overlay per new check from tools/make_fixtures.py, test count, redteam additions, docstring,
   TRACEABILITY, AUDIT, tool registration.
 - Why: the audit's smaller gaps; facts_of would loop forever on a parent cycle (now guarded by unit_chain in RED).
+
+## 2026-10-24 A3b.6 overlays, red team, docs (commit: Fixtures: one broken overlay per cross-object check; red team 37 mutations, 0 MISSED; docs and tool registration)
+- Done: tools/make_fixtures.py generates nine new overlays (red-cumpre-contradicted-by-its-fact RED,
+  man-log-head-never-in-the-log MAN, state-link-settled-without-approval STATE, time-passage-versions-overlap TIME,
+  graph-unit-parent-cycle GRAPH, field-fact-not-in-adapter-mapping FIELD, bench-held-out-not-frozen BENCH,
+  i01-orphan-raw-bytes I01, i11-entity-type-from-record I11); fixtures regenerated (21 overlays, all refused with
+  their EXPECT). tests/test_verify.py: 21 overlays, first codes I01..I12 + RED MAN STATE TIME GRAPH FIELD BENCH.
+  tools/redteam_verify.py: 13 mutations added while implementing (M24..M36), a final "N MISSED" line and exit code;
+  37 CAUGHT, 0 MISSED. verify.py docstring code block for the new checks; VERSION ccp-verify-0.2.
+  schemas/TRACEABILITY.md: a row per new check; AUDIT.md: criterion 1 (21/21) and 1b (red team 0 MISSED).
+  ferramenta:verify@7, ferramenta:make-fixtures@2. No schema JSON, no engine/ signature, nothing in adapters/ or data/.
+- Next: the independent review's audit of A3b; then phase B per FILL-PLAN (B1 copied modules, B2 the CCP capture).
+- Why: a check without a broken fixture is a check nobody has seen fail; the red team is the list of gaps to keep at 0.

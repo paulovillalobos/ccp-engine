@@ -10,7 +10,8 @@ Run from a clean checkout of `main`:
 
 | # | Check | Pass when |
 |---|---|---|
-| 1 | verify | `verify: ok`; three stores with 0 failures; 12/12 broken overlays refused with their EXPECT code |
+| 1 | verify | `verify: ok`; three stores with 0 failures; 21/21 broken overlays refused with their EXPECT code (12 per-invariant + 9 cross-object of A3b) |
+| 1b | Red team | `.venv/bin/python tools/redteam_verify.py` ends with `0 MISSED` (37 mutations at the end of A3b); a new MISSED is a gap to close before anything else |
 | 2 | Scaffold tests | every test outside `tests/fill` green (44 at the end of phase A) |
 | 3 | FILL-PLAN tests | `tests/fill/test_b1..b4` green; a still-red B4 is acceptable only if `data/facts/` has not been delivered by the extractor and BUILD-LOG says so |
 | 4 | Contract untouched | `git diff <phase-A-tag>..HEAD -- schemas/` is empty, or every changed file has a new row in `schemas/DECISIONS.md` that names it |

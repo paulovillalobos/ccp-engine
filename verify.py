@@ -25,11 +25,32 @@ Check codes (one per invariant of ARQUITECTURA.md §2, plus the structural ones)
   I09     the same (id, revision) twice, revisions with gaps, a revision without supersedes, a broken hash chain
   I10     a raw record not read by a single GET; code in engine/ or verify.py that imports a network module; code in
           tools/ that sends (POST / data=)
-  I11     a pessoa_singular with a name inside a publishable object (veredicto.entities)
+  I11     a pessoa_singular with a name inside a publishable object (veredicto.entities); a published entity whose type is
+          not its record's type (the record decides, not the verdict)
   I12     an aggregate rule's completeness threshold not decided by a pessoa's product_rule decision in the log
   PROV    a ferramenta principal whose code no longer hashes to the hash registered for its version
   PACK    a package's hash is not the hash of its rule list, or it names rules that are not in the store
   DIFF    a stored diff differs from the one rebuilt from its two packages (engine/rules.py once A4 lands; D14)
+Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red-team mutations):
+  RED     a stored verdict is not what engine.evaluate re-derives from the store (facts of the unit chain, conflicts,
+          documents, assertions, entities, the manifest package's rules at their revisions, the adapters' coverage):
+          id, rule, result, reason, citation, assertions_compared or facts_used differ; or the rule does not apply to
+          the unit's kind; or the unit cannot be read (unknown, parent cycle)
+  MAN     a manifest or package log_head that is not the head of a prefix of the log (D25), or whose prefix ends after
+          produced_at; a package that is missing, of another law_version, or does not name the verdict's rule at its
+          revision; a rule revision that does not exist; a fact whose adapter the manifest omits; a source snapshot
+          that names no raw record with that sha256, source and captured_at
+  STATE   a stored state that is not the log's replay: link (an evento-less link only for a ferramenta's nif_exact),
+          adaptador, disputa, afirmação conversion event; a package naming a non-settled rule revision; a reading
+          choosing passages its rule does not cite; a rule whose highest stored revision is not the log's revision
+  TIME    passage versions out of order, overlapping or closing before they open; a vigencia that starts no version of
+          its passage; a rule whose validity is not that of the versions it cites (D26); a verdict citing a version not
+          in force on its valid_at
+  GRAPH   a unit in a parent cycle, or whose parent is not of an earlier kind (proc -> lote -> contrato -> mod)
+  FIELD   a conflito whose facts do not carry its field, value or unit chain; a fact whose field (and, for a raw origin,
+          source field) is not in its adapter's mapping
+  BENCH   a held-out reference case without frozen_at
+  I01 also: raw bytes that no raw record names (orphans)
 """
 import ast
 import hashlib
@@ -47,7 +68,7 @@ from engine import extract, governance, manifest, schema  # noqa: E402
 from engine.canon import content_hash  # noqa: E402
 from engine.store import Store, facts_of  # noqa: E402
 
-VERSION = "ccp-verify-0.1"
+VERSION = "ccp-verify-0.2"
 STORES = {
     "fixtures": [ROOT / "fixtures/valid"],
     "repo": [ROOT / "law", ROOT / "rules", ROOT / "governance"],

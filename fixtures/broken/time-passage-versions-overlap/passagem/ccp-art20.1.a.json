@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art20.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art20.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) De valor inferior a 20 000 EUR, quando se trate de contratos de aquisição de bens ou serviços;",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 137,
+        "end": 234
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    },
+    {
+      "version": "2026-09-01",
+      "text": "a) De valor inferior a 20 000 EUR, quando se trate de contratos de aquisição de bens ou serviços;",
+      "raw": "raw:dr-consolidado:lei:ccp-fixture",
+      "offsets": {
+        "start": 137,
+        "end": 234
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

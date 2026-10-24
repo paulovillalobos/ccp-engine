@@ -368,4 +368,24 @@ def named(o): o["entities"][1]["name"] = "Fornecedor Fixture Unipessoal"
 overlay("i11-natural-person-named", "I11", {"veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json": mutate("veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json", named)})
 def no_product_rule(o): o["params"]["completeness_threshold"]["decided_by"] = "evento:2"  # a leitor's regra proposal, not a product rule
 overlay("i12-threshold-without-product-rule", "I12", {"regra/ccp-limite-acumulado-art113.json": mutate("regra/ccp-limite-acumulado-art113.json", no_product_rule)})
+# ---- broken overlays for the cross-object checks of A3b: one per new check ----------------------------------------
+PRAZO_V = "veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json"
+PRAZO_F = "facto/proc-base-FX-2026-000001-prazo_propostas_dias-base-dump.json"
+def three_days(o): o["value"] = 3
+overlay("red-cumpre-contradicted-by-its-fact", "RED", {PRAZO_F: mutate(PRAZO_F, three_days)})
+def foreign_head(o): o["manifest"] = dict(o["manifest"], log_head="a" * 64)
+overlay("man-log-head-never-in-the-log", "MAN", {PRAZO_V: mutate(PRAZO_V, foreign_head)})
+def settled_by_ai(o): o["state"] = "settled"
+overlay("state-link-settled-without-approval", "STATE", {"link/fx-2.json": mutate("link/fx-2.json", settled_by_ai)})
+def overlapping(o): o["versions"].append(dict(o["versions"][0], version="2026-09-01", valid_from="2026-09-01"))
+overlay("time-passage-versions-overlap", "TIME", {"passagem/ccp-art20.1.a.json": mutate("passagem/ccp-art20.1.a.json", overlapping)})
+def cycle(o): o.update(kind="lote", parent=CONTR)
+overlay("graph-unit-parent-cycle", "GRAPH", {"unidade/proc-base-FX-2026-000001.json": mutate("unidade/proc-base-FX-2026-000001.json", cycle)})
+def unmapped(o): o["field"] = "prazo_inventado"
+overlay("field-fact-not-in-adapter-mapping", "FIELD", {PRAZO_F: mutate(PRAZO_F, unmapped)})
+def unfrozen(o): o["held_out"] = True
+overlay("bench-held-out-not-frozen", "BENCH", {"caso_referencia/fx-1.json": mutate("caso_referencia/fx-1.json", unfrozen)})
+overlay("i01-orphan-raw-bytes", "I01", {f"raw_bytes/{'b' * 64}": "orphan bytes no raw record names\n"})
+def relabelled(o): o["entities"][1].update(type="privada", name="Fornecedor Fixture Unipessoal")
+overlay("i11-entity-type-from-record", "I11", {PRAZO_V: mutate(PRAZO_V, relabelled)})
 print("valid objects:", sum(1 for p in V.rglob("*.json")), "events:", len(EVENTS), "broken overlays:", len(list(B.iterdir())))
