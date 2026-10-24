@@ -15,6 +15,15 @@ jobs:
       - run: pip install -r requirements.txt
       - name: verify.py (schemas, invariants, broken fixtures must fail; no model calls)
         run: python -I verify.py
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
       - name: scaffold tests
         run: python -m pytest tests --ignore=tests/fill -q
   fill:

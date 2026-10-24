@@ -893,3 +893,9 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   version 2026-10-01 «d) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.»
 - Registered: serve. Next: close the phase.
 - Why: the consumer asks with its own ids and gets the verdict with the words of the law it rests on.
+
+## 2026-10-24 CI split (commit: CI: verify and the scaffold tests in separate jobs)
+- Done: .github/workflows/verify.yml runs verify.py and the scaffold tests as two jobs. The B6 run passed verify.py and
+  was cancelled by the 20-minute job limit during the scaffold tests (verify now also re-derives the measure store and
+  recomputes the measurement; locally ~10 min + ~5 min). Nothing is skipped or weakened: each job keeps its own limit.
+- Why: the gate grew with the law; the limit is per job, not a reason to drop a check.
