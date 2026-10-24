@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art102.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art102",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A transmissão de estabelecimento em que se verifique a manutenção dos contratos de trabalho celebrados com a anterior entidade empregadora não determina a cessação da dispensa desde que a nova entidade empregadora cumpra as condições previstas no artigo 59.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 66361,
+        "end": 66623
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

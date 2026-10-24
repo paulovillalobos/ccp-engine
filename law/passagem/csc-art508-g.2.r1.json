@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-g.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-g",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "2 - A demonstração não financeira consolidada a que se refere o número anterior deve conter as informações bastantes para uma compreensão da evolução, do desempenho, da posição e do impacto das atividades do grupo, referentes, no mínimo, às questões ambientais, sociais e relativas aos trabalhadores, à igualdade entre mulheres e homens, à não discriminação, ao respeito dos direitos humanos, ao combate à corrupção e às tentativas de suborno, incluindo:\na) Uma breve descrição do modelo empresarial do grupo;\nb) Uma descrição das políticas seguidas pelo grupo em relação a essas questões, incluindo os processos de diligência devida aplicados;\nc) Os resultados dessas políticas;\nd) Os principais riscos associados a essas questões, ligados às atividades do grupo, incluindo, se relevante e proporcionado, as suas relações empresariais, os seus produtos ou serviços suscetíveis de ter impacto negativo nesses domínios e a forma como esses riscos são geridos pelo grupo;\ne) Indicadores-chave de desempenho relevantes para a sua atividade específica.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 727849,
+        "end": 728897
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

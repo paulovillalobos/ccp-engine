@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art62.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art62",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - O Ministério Público pode, no exercício da acção pública, assumir a posição de autor, requerendo o seguimento de processo que, por decisão ainda não transitada, tenha terminado por desistência ou outra circunstância própria do autor.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 80909,
+        "end": 81146
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

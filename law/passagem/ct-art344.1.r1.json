@@ -1,0 +1,23 @@
+{
+  "id": "ct:art344.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art344",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O contrato de trabalho a termo certo caduca no final do prazo estipulado, ou da sua renovação, desde que o empregador ou o trabalhador comunique à outra parte a vontade de o fazer cessar, por escrito, respectivamente, 15 ou oito dias antes de o prazo expirar.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 442150,
+        "end": 442413
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

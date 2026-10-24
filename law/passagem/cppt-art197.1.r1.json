@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art197.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art197",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - A competência para autorização de pagamento em prestações é do órgão da execução fiscal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 238049,
+        "end": 238141
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

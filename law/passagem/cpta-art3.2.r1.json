@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art3.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art3",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Por forma a assegurar a efetividade da tutela, os tribunais administrativos podem fixar oficiosamente um prazo para o cumprimento dos deveres que imponham à Administração e aplicar, quando tal se justifique, sanções pecuniárias compulsórias.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 10064,
+        "end": 10309
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

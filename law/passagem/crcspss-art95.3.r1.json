@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art95.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art95",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Para efeitos do disposto na presente subsecção, não são considerados trabalhadores de actividades agrícolas os trabalhadores que exerçam a respectiva actividade em explorações que se destinem essencialmente à produção de matérias-primas para indústrias transformadoras que constituam, em si mesmas, objectivos dessas empresas.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 62427,
+        "end": 62757
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

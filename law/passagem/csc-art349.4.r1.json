@@ -1,0 +1,23 @@
+{
+  "id": "csc:art349.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art349",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "4 - O requisito fixado no n.º 1 não se aplica:\na) A sociedades emitentes de acções admitidas à negociação em mercado regulamentado;\nb) A sociedades que apresentem notação de risco da emissão atribuída por sociedade de notação de risco registada na Comissão do Mercado de Valores Mobiliários;\nc) Às emissões cujo reembolso seja assegurado por garantias especiais constituídas a favor dos obrigacionistas.\nd) Às emissões cujo valor nominal unitário seja igual ou superior a euros 100 000,00, ou o seu contravalor em euros, ou cuja subscrição seja efetuada exclusivamente em lotes mínimos de valor igual ou superior a euros 100 000,00, ou o seu contravalor em euros;\ne) Às emissões que sejam integralmente subscritas por investidores qualificados, na aceção do Código dos Valores Mobiliários, e desde que as obrigações emitidas não sejam subsequentemente colocadas, direta ou indiretamente, junto de investidores não qualificados.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 498683,
+        "end": 499610
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

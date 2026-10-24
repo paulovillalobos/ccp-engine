@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art94.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art94",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Durante o período de inactividade a diferença entre a compensação retributiva paga ao trabalhador e a sua remuneração é registada por equivalência à entrada de contribuições.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 61182,
+        "end": 61360
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

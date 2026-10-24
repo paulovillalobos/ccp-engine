@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.11",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "11",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "11 - Em caso de cessação de actividade, o devedor pode requerer à administração tributária, nos 60 dias posteriores, o pagamento em numerário do montante referido no n.º 9, que só lhe será concedido se fizer prova da inexistência de dívidas tributárias àquela entidade.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 254060,
+        "end": 254329
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

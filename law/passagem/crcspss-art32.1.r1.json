@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art32.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art32",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A entidade empregadora é obrigada a declarar à instituição de segurança social competente a cessação, a suspensão do contrato de trabalho e o motivo que lhes deu causa, bem como a alteração da modalidade de contrato de trabalho.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 22975,
+        "end": 23207
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

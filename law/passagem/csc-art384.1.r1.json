@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "1 - Na falta de diferente cláusula contratual, a cada acção corresponde um voto.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 551159,
+        "end": 551239
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

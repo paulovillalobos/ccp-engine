@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art196.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art196",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - Em caso de aceitação da dação em pagamento de bens de valor superior à dívida, o despacho que a autoriza constitui, a favor do contribuinte, um crédito no montante desse excesso, a utilizar em futuros pagamentos de contribuições, quotizações ou no pagamento de rendas.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 125785,
+        "end": 126057
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

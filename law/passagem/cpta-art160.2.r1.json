@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art160.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art160",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Quando a sentença tenha sido objecto de recurso a que tenha sido atribuído efeito meramente devolutivo, os prazos correm com a notificação à Administração da decisão mediante a qual o tribunal tenha atribuído efeito meramente devolutivo ao recurso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 226047,
+        "end": 226299
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

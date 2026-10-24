@@ -1,0 +1,23 @@
+{
+  "id": "cc:art83.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art83",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Se exercer a profissão em lugares diversos, cada um deles constitui domicílio para as relações que lhe correspondem.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 43274,
+        "end": 43393
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

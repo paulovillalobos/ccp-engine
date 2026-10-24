@@ -1,0 +1,23 @@
+{
+  "id": "cc:art221.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art221",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. As estipulações verbais acessórias anteriores ao documento legalmente exigido para a declaração negocial, ou contemporâneas dele, são nulas, salvo quando a razão determinante da forma lhes não seja aplicável e se prove que correspondem à vontade do autor da declaração.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 109934,
+        "end": 110206
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

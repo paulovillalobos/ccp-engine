@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-i.capitulo-v.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-v",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Secção I\nDo valor das causas",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 45552,
+        "end": 45580
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

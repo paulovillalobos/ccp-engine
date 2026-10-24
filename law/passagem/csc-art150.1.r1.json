@@ -1,0 +1,23 @@
+{
+  "id": "csc:art150.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art150",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - A liquidação deve estar encerrada e a partilha aprovada no prazo de dois anos a contar da data em que a sociedade se considere dissolvida, sem prejuízo de prazo inferior convencionado no contrato ou fixado por deliberação dos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 283465,
+        "end": 283702
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

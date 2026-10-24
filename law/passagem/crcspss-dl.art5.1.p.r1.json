@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:dl.art5.1.p",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:dl.art5.1",
+  "kind": "alinea",
+  "label": "p)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "p) O Decreto-Lei n.º 200/99, de 8 de Junho;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 4133,
+        "end": 4176
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

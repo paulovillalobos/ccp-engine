@@ -1,0 +1,23 @@
+{
+  "id": "csc:art75.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art75",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Aqueles cuja responsabilidade estiver em causa não podem votar nas deliberações previstas nos números anteriores.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 123056,
+        "end": 123173
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

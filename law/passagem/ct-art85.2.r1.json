@@ -1,0 +1,23 @@
+{
+  "id": "ct:art85.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art85",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "2 - O Estado deve estimular e apoiar a ação do empregador na contratação de trabalhador com deficiência, doença crónica ou doença oncológica e na sua readaptação profissional.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 135015,
+        "end": 135190
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

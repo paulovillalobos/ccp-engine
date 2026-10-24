@@ -1,0 +1,23 @@
+{
+  "id": "csc:art250.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art250",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1998-11-11",
+      "text": "3 - Salvo disposição diversa da lei ou do contrato, as deliberações consideram-se tomadas se obtiverem a maioria dos votos emitidos, não se considerando como tal as abstenções.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 391092,
+        "end": 391268
+      },
+      "valid_from": "1998-11-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

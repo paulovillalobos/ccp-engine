@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1484.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1484",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1976-03-16",
+      "text": "2. Quando este direito se refere a casas de morada, chama-se direito de habitação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 669209,
+        "end": 669291
+      },
+      "valid_from": "1976-03-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

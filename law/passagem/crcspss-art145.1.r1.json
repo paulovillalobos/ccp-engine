@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art145.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art145",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - No caso de primeiro enquadramento no regime dos trabalhadores independentes, o enquadramento só produz efeitos quando o rendimento relevante anual do trabalhador ultrapasse seis vezes o valor do IAS e após o decurso de pelo menos 12 meses.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 92259,
+        "end": 92502
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

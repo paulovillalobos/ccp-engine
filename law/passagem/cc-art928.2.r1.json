@@ -1,0 +1,23 @@
+{
+  "id": "cc:art928.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art928",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. É igualmente nula, quanto ao excesso, a cláusula que declare o vendedor obrigado a restituir, em caso de resolução, preço superior ao fixado para a venda.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 390311,
+        "end": 390468
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

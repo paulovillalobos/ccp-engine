@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2002-b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iv.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 2002.º-B",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "Artigo 2002.º-B\n(Revogação)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 973058,
+        "end": 973085
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

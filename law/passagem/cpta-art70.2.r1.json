@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art70.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art70",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A faculdade conferida pelo número anterior é extensiva aos casos em que o indeferimento seja anterior, mas só tenha sido notificado ao autor após a propositura da ação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 90530,
+        "end": 90702
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

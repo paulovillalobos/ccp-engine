@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art38.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art38",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Sem prejuízo do disposto no número anterior, não pode ser obtido por outros meios processuais o efeito que resultaria da anulação do ato inimpugnável.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 54861,
+        "end": 55015
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

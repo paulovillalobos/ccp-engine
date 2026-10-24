@@ -1,0 +1,23 @@
+{
+  "id": "ct:livro-i.titulo-iii.subtitulo-iii.capitulo-i.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-iii.subtitulo-iii.capitulo-i",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Secção I\nPrincípio de boa fé",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 635215,
+        "end": 635243
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

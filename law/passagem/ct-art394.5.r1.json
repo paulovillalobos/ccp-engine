@@ -1,0 +1,23 @@
+{
+  "id": "ct:art394.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art394",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - Considera-se culposa a falta de pagamento pontual da retribuição que se prolongue por período de 60 dias, ou quando o empregador, a pedido do trabalhador, declare por escrito a previsão de não pagamento da retribuição em falta, até ao termo daquele prazo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 504585,
+        "end": 504844
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

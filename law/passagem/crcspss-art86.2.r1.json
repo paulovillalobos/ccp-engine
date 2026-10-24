@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art86.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art86",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Nas situações em que o acordo de pré-reforma estabeleça a suspensão da prestação de trabalho, não é reconhecido o direito à protecção nas eventualidades de doença, doenças profissionais, parentalidade e desemprego.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 58003,
+        "end": 58221
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

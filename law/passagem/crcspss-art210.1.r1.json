@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art210.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art210",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O relatório de apreciação anual da situação das empresas privadas, públicas ou cooperativas deve indicar o valor da dívida vencida, caso exista.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 134941,
+        "end": 135089
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

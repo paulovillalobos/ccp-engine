@@ -1,0 +1,23 @@
+{
+  "id": "cc:art183.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art183",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "3. A extinção por virtude da declaração de insolvência dá-se em consequência da própria declaração.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 89252,
+        "end": 89351
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art173.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art173",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A assembleia geral deve ser convocada pela administração nas circunstâncias fixadas pelos estatutos e, em qualquer caso, uma vez em cada ano para aprovação do balanço.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 83841,
+        "end": 84011
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

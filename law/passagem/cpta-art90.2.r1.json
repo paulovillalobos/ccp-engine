@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art90.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art90",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A instrução rege-se pelo disposto na lei processual civil, sendo admissíveis todos os meios de prova nela previstos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 136034,
+        "end": 136154
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

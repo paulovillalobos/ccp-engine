@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1098.1.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1098.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "d) Um terço do prazo de duração inicial do contrato ou da sua renovação, tratando-se de prazo inferior a seis meses.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 483456,
+        "end": 483572
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

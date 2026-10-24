@@ -1,0 +1,23 @@
+{
+  "id": "csc:art528.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art528",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "9 - O produto das coimas reverte para o IRN, I. P.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 755758,
+        "end": 755808
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

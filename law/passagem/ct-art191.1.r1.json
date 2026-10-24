@@ -1,0 +1,23 @@
+{
+  "id": "ct:art191.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art191",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalhador deve reclamar os respectivos créditos no prazo de 30 dias a contar do termo do contrato de trabalho, bem como comunicar tal facto ao serviço público de emprego, para efeitos de pagamento através da caução.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 275223,
+        "end": 275446
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art140.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art140",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "1 - O contrato de trabalho a termo resolutivo só pode ser celebrado para a satisfação de necessidades temporárias, objetivamente definidas pela entidade empregadora e apenas pelo período estritamente necessário à satisfação dessas necessidades.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 199499,
+        "end": 199743
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art111.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art111.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "a) A informação da inspecção tributária sobre a matéria de facto considerada pertinente;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 144189,
+        "end": 144277
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

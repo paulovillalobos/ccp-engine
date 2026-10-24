@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:dl.art3.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:dl.art3",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - No prazo de 30 dias contados a partir da publicação da presente lei, as instituições de segurança social competentes devem solicitar às entidades empregadoras a informação referente aos contratos de trabalho em vigor que se mostre necessária à implementação das disposições previstas no Código, ficando estas obrigadas a fornecer a informação solicitada em igual prazo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 1376,
+        "end": 1749
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

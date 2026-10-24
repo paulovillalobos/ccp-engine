@@ -1,0 +1,23 @@
+{
+  "id": "ct:art255",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-ii.seccao-ii.subseccao-xi",
+  "kind": "artigo",
+  "label": "Artigo 255.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 255.º\nEfeitos de falta justificada\n1 - A falta justificada não afecta qualquer direito do trabalhador, salvo o disposto no número seguinte.\n2 - Sem prejuízo de outras disposições legais, determinam a perda de retribuição as seguintes faltas justificadas:\na) Por motivo de doença, desde que o trabalhador beneficie de um regime de segurança social de protecção na doença;\nb) Por motivo de acidente no trabalho, desde que o trabalhador tenha direito a qualquer subsídio ou seguro;\nc) A prevista no artigo 252.º;\nd) As previstas nas alíneas f) e l) do n.º 2 do artigo 249.º quando excedam 30 dias por ano;\ne) A autorizada ou aprovada pelo empregador.\n3 - A falta prevista no artigo 252.º é considerada como prestação efectiva de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 354812,
+        "end": 355554
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

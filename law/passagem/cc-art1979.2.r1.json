@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1979.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1979",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-08-18",
+      "text": "2 - Pode ainda adotar quem tiver mais de 25 anos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 953015,
+        "end": 953064
+      },
+      "valid_from": "2023-08-18",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

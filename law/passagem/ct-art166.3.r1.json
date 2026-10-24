@@ -1,0 +1,23 @@
+{
+  "id": "ct:art166.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art166",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - O acordo de teletrabalho define o regime de permanência ou de alternância de períodos de trabalho à distância e de trabalho presencial.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 227286,
+        "end": 227425
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

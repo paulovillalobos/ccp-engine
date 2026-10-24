@@ -1,0 +1,23 @@
+{
+  "id": "cc:art294",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 294.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 294.º\n(Negócios celebrados contra a lei)\nOs negócios jurídicos celebrados contra disposição legal de carácter imperativo são nulos, salvo nos casos em que outra solução resulte da lei.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 137682,
+        "end": 137873
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

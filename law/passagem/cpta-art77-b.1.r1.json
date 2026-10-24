@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art77-b.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art77-b",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A invalidade dos contratos com objeto passível de ato administrativo pode ser arguida dentro dos prazos previstos para o ato com o mesmo objeto e idêntica regulamentação da situação concreta.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 101383,
+        "end": 101578
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

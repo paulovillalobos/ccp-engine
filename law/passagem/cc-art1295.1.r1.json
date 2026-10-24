@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1295.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1295",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "1. Não havendo registo do título de aquisição, mas registo da mera posse, a usucapião tem lugar:\na) Se a posse tiver continuado por cinco anos, contados desde a data do registo, e for de boa fé;\nb) Se a posse tiver continuado por dez anos, a contar da mesma data, ainda que não seja de boa fé.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 564941,
+        "end": 565234
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

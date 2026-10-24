@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1815",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1815.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1815.º\n(Caso em que não é admitido o reconhecimento)\nNão é admissível o reconhecimento de maternidade em contrário da que conste do registo do nascimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 838143,
+        "end": 838304
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

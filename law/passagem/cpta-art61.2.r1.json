@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art61.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art61",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O processo impugnatório apensado é carregado ao relator na espécie respectiva quando a apensação se fundamente em conexão ou dependência entre atos impugnados ou na circunstância de pertencerem ao mesmo procedimento administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 80445,
+        "end": 80680
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

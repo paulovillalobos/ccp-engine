@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-d.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-d",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2005-02-22",
+      "text": "3 - A pessoa ou pessoas responsáveis pela certificação legal das contas consolidadas devem também emitir, na respectiva certificação legal das contas, parecer acerca da concordância, ou não, do relatório consolidado de gestão com as contas consolidadas do mesmo exercício.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 722140,
+        "end": 722412
+      },
+      "valid_from": "2005-02-22",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

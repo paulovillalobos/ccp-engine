@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1970.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1970",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "b) Os condenados como autores ou cúmplices dos crimes de furto, roubo, burla, abuso de confiança, falência ou insolvência fraudulenta e, em geral, de crimes dolosos contra a propriedade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 945670,
+        "end": 945856
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

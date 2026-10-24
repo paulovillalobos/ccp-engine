@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art234",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-iv.capitulo-ii.seccao-vii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 234.º",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Artigo 234.º\nPenhora de direitos\nÉ subsidiariamente aplicável à penhora de direitos o disposto na lei para a penhora das coisas móveis e das coisas imóveis.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 293014,
+        "end": 293170
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

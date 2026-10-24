@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iv.titulo-ii.capitulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-ii",
+  "kind": "capitulo",
+  "label": "Capítulo V",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Capítulo V\nInvalidade do casamento",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 728375,
+        "end": 728409
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art85.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art85",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - Em função dos elementos que possa coligir e daqueles que venham a ser carreados para o processo, o Ministério Público pode pronunciar-se sobre o mérito da causa, em defesa dos direitos fundamentais dos cidadãos, de interesses públicos especialmente relevantes ou de algum dos valores ou bens referidos no n.º 2 do artigo 9.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 118973,
+        "end": 119301
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

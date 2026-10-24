@@ -1,0 +1,23 @@
+{
+  "id": "cp:art99.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art99",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "1 - A medida de internamento é executada antes da pena de prisão a que o agente tiver sido condenado e nesta descontada.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 173611,
+        "end": 173731
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

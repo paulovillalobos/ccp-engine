@@ -1,0 +1,23 @@
+{
+  "id": "ct:art62.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art62",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "5 - É vedado o exercício por trabalhadora grávida, puérpera ou lactante de actividades cuja avaliação tenha revelado riscos de exposição a agentes ou condições de trabalho que ponham em perigo a sua segurança ou saúde ou o desenvolvimento do nascituro.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 107120,
+        "end": 107372
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

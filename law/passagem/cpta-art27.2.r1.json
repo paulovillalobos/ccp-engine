@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art27.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art27",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Dos despachos do relator cabe reclamação para a conferência, com exceção dos de mero expediente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 41788,
+        "end": 41888
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

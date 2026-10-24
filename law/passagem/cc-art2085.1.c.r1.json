@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2085.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2085.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2013-09-02",
+      "text": "c) (Revogada.)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1008928,
+        "end": 1008942
+      },
+      "valid_from": "2013-09-02",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

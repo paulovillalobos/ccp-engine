@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2205",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-iv.capitulo-v.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 2205.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2205.º\n(Testamento público)\nÉ público o testamento escrito por notário no seu livro de notas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1052378,
+        "end": 1052478
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

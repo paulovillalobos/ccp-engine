@@ -1,0 +1,23 @@
+{
+  "id": "cc:art83",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 83.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 83.º\n(Domicílio profissional)\n1. A pessoa que exerce uma profissão tem, quanto às relações que a esta se referem, domicílio profissional no lugar onde a profissão é exercida.\n2. Se exercer a profissão em lugares diversos, cada um deles constitui domicílio para as relações que lhe correspondem.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 43092,
+        "end": 43393
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

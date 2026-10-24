@@ -1,0 +1,23 @@
+{
+  "id": "ct:art360.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art360.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "a) Os motivos invocados para o despedimento colectivo;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 462103,
+        "end": 462157
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

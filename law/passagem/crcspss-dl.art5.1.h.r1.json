@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:dl.art5.1.h",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:dl.art5.1",
+  "kind": "alinea",
+  "label": "h)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "h) O Decreto-Lei n.º 102/89, de 29 de Março;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 3374,
+        "end": 3418
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

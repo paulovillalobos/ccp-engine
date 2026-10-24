@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art127.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art127",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "3 - O Ministério Público pronunciar-se-á obrigatoriamente antes da decisão do incidente sobre a matéria nele discutida.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 158204,
+        "end": 158323
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

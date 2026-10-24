@@ -1,0 +1,23 @@
+{
+  "id": "cp:art260.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art260",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "1 - O médico, dentista, enfermeiro, parteira, dirigente ou empregado de laboratório ou de instituição de investigação que sirva fins médicos, ou pessoa encarregada de fazer autópsias, que passar atestado ou certificado que sabe não corresponder à verdade, sobre o estado do corpo ou da saúde física ou mental, o nascimento ou a morte de uma pessoa, destinado a fazer fé perante autoridade pública ou a prejudicar interesses de outra pessoa, é punido com pena de prisão até 2 anos ou com pena de multa até 240 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 350144,
+        "end": 350658
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

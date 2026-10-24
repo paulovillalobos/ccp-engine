@@ -1,0 +1,23 @@
+{
+  "id": "ct:art209.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art209",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Aos trabalhadores abrangidos por regime de horário de trabalho concentrado não pode ser simultaneamente aplicável o regime de adaptabilidade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 302579,
+        "end": 302724
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

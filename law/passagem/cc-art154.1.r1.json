@@ -1,0 +1,23 @@
+{
+  "id": "cc:art154.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art154",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - Os atos praticados pelo maior acompanhado que não observem as medidas de acompanhamento decretadas ou a decretar são anuláveis:\na) Quando posteriores ao registo do acompanhamento;\nb) Quando praticados depois de anunciado o início do processo, mas apenas após a decisão final e caso se mostrem prejudiciais ao acompanhado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 73288,
+        "end": 73613
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

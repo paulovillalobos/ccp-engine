@@ -1,0 +1,23 @@
+{
+  "id": "ct:art243.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art243",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - A interrupção das férias deve permitir o gozo seguido de metade do período a que o trabalhador tem direito.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 340745,
+        "end": 340856
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art28.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art28",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "1 - As entradas em bens diferentes de dinheiro devem ser objeto de um relatório elaborado por um revisor oficial de contas sem interesses na sociedade, designado por deliberação dos sócios na qual estão impedidos de votar os sócios que efetuam as entradas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 52601,
+        "end": 52857
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

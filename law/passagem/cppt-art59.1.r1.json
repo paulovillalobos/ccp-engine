@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art59.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art59",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-01-01",
+      "text": "1 - O procedimento de liquidação instaura-se com as declarações dos contribuintes ou, na falta ou vício destas, com base em todos os elementos de que disponha ou venha a obter a entidade competente.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 74232,
+        "end": 74430
+      },
+      "valid_from": "2017-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

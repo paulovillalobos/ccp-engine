@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art159.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art159",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A inexistência da obrigação de contribuir a que se reporta a alínea d) do número anterior inicia-se a partir da verificação da incapacidade temporária, se a mesma conferir direito ao subsídio sem exigência do período de espera, e no 31.º dia posterior àquela verificação, nas demais situações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 102006,
+        "end": 102303
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

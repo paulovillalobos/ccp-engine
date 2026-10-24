@@ -1,0 +1,23 @@
+{
+  "id": "csc:art413.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art413.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2016-01-01",
+      "text": "a) É obrigatória em relação a sociedades que sejam emitentes de valores mobiliários admitidos à negociação em mercado regulamentado e a sociedades que, não sendo totalmente dominadas por outra sociedade, que adopte este modelo, durante dois anos consecutivos, ultrapassem dois dos seguintes limites:\ni) Total do balanço: (euro) 20 000 000;\nii) Volume de negócios líquido: (euro) 40 000 000;\niii) Número médio de empregados durante o período: 250;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 588622,
+        "end": 589068
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

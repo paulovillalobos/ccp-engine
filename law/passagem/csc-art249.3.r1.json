@@ -1,0 +1,23 @@
+{
+  "id": "csc:art249.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art249",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Os instrumentos de representação voluntária que não mencionem a duração dos poderes conferidos são válidos apenas para o ano civil respectivo.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 390267,
+        "end": 390413
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

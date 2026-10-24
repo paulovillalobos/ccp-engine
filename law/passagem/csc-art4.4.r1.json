@@ -1,0 +1,23 @@
+{
+  "id": "csc:art4.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art4",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "4 - O disposto nos números anteriores não se aplica às sociedades que exerçam actividade em Portugal ao abrigo da liberdade de prestação de serviços conforme previsto na Directiva n.º 2006/123/CE, do Parlamento Europeu e do Conselho, de 12 de Dezembro.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 28996,
+        "end": 29248
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

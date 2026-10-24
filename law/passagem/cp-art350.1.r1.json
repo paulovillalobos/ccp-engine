@@ -1,0 +1,23 @@
+{
+  "id": "cp:art350.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art350",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - O funcionário encarregado da guarda de pessoa legalmente privada da liberdade que a libertar, deixar evadir, ou facilitar, promover ou, por qualquer forma, auxiliar a sua evasão é punido com pena de prisão de 1 a 8 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 426606,
+        "end": 426830
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art3.q1.art112.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art3.q1.art112",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "5 - Se não houver fundamento de rejeição, o requerimento só será indeferido quando a autoridade requerida faça prova da prática do acto devido até ao termo do prazo fixado para a resposta.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 3235,
+        "end": 3423
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

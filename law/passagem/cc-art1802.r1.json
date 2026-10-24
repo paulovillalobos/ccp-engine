@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1802",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1802.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1802.º\n(Prova da filiação)\nSalvo nos casos especificados na lei, a prova da filiação só pode fazer-se pela forma estabelecida nas leis do registo civil.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 830820,
+        "end": 830979
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art327",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-vi.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 327.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 327.º\nCessação da suspensão do contrato de trabalho\nA suspensão do contrato de trabalho cessa:\na) Mediante comunicação do trabalhador, nos termos do n.º 1 do artigo 325.º, de que põe termo à suspensão a partir de determinada data;\nb) Com o pagamento integral das retribuições em dívida e juros de mora;\nc) Por acordo entre trabalhador e empregador para regularização das retribuições em dívida e juros de mora.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 429825,
+        "end": 430242
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

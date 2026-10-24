@@ -1,0 +1,23 @@
+{
+  "id": "ct:art213.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art213",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "1 - O período de trabalho diário deve ser interrompido por um intervalo de descanso, de duração não inferior a uma hora nem superior a duas, de modo a que o trabalhador não preste mais de cinco horas de trabalho consecutivo, ou seis horas de trabalho consecutivo caso aquele período seja superior a 10 horas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 306172,
+        "end": 306480
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

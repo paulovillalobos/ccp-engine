@@ -1,0 +1,23 @@
+{
+  "id": "cp:art82",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-iv.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 82.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 82.º\nMedida processual ou pena sofridas no estrangeiro\nÉ descontada, nos termos dos artigos anteriores, qualquer medida processual ou pena que o agente tenha sofrido, pelo mesmo ou pelos mesmos factos, no estrangeiro.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 148674,
+        "end": 148898
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art100",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-iii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 100.º",
+  "versions": [
+    {
+      "version": "2000-04-09",
+      "text": "Artigo 100.º\nDúvidas sobre o facto tributário e utilização de métodos indirectos\n1 - Sempre que da prova produzida resulte a fundada dúvida sobre a existência e quantificação do facto tributário, deverá o acto impugnado ser anulado.\n2 - Em caso de quantificação da matéria tributável por métodos indirectos não se considera existir dúvida fundada, para efeitos do número anterior, se o fundamento da aplicação daqueles consistir na inexistência ou desconhecimento, por recusa de exibição, da contabilidade ou escrita e de mais documentos legalmente exigidos ou a sua falsificação, ocultação ou destruição, ainda que os contribuintes invoquem razões acidentais.\n3 - O disposto no número anterior não prejudica a possibilidade de na impugnação judicial o impugnante demonstrar erro ou manifesto excesso na matéria tributável quantificada.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 133541,
+        "end": 134377
+      },
+      "valid_from": "2000-04-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

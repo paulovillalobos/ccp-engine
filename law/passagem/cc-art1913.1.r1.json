@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1913.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1913",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - Consideram-se de pleno direito inibidos do exercício das responsabilidades parentais:\na) Os condenados definitivamente por crime a que a lei atribua esse efeito;\nb) Os maiores acompanhados, apenas no casos em que a sentença de acompanhamento assim o declare;\nc) Os ausentes, desde a nomeação do curador provisório.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 912322,
+        "end": 912640
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

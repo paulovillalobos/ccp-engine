@@ -1,0 +1,23 @@
+{
+  "id": "ct:art468.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art468.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "a) Em empresa com menos de 50 trabalhadores sindicalizados, um;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 576015,
+        "end": 576078
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

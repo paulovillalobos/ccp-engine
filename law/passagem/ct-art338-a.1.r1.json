@@ -1,0 +1,23 @@
+{
+  "id": "ct:art338-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art338-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - Não é permitido recorrer à aquisição de serviços externos a entidade terceira para satisfação de necessidades que foram asseguradas por trabalhador cujo contrato tenha cessado nos 12 meses anteriores por despedimento coletivo ou despedimento por extinção de posto de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 439248,
+        "end": 439528
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

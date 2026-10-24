@@ -1,0 +1,23 @@
+{
+  "id": "cc:art61.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art61",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Será igualmente respeitada a exigência do consentimento de terceiro a quem o interessado esteja ligado por qualquer relação jurídica de natureza familiar ou tutelar, se provier da lei reguladora desta relação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 34913,
+        "end": 35125
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

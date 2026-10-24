@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art183.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art183",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "1 - Se houver lugar a qualquer forma de garantia, esta é prestada junto do órgão da execução fiscal onde pender o processo respetivo, nos termos estabelecidos no presente Código.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 208723,
+        "end": 208901
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

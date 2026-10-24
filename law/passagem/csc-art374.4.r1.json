@@ -1,0 +1,23 @@
+{
+  "id": "csc:art374.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art374",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "4 - Na falta ou não comparência do presidente do conselho fiscal, da comissão de auditoria ou do conselho geral e de supervisão, preside à assembleia geral um accionista, por ordem do número de acções de que sejam titulares; caso se verifique igualdade de número de acções, deve atender-se, sucessivamente, à maior antiguidade como accionista e à idade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 535301,
+        "end": 535654
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

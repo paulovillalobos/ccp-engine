@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art91.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art91",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A taxa contributiva relativa aos pensionistas de velhice é de 23,9 %, sendo, respectivamente, de 16,4 % e de 7,5 % para as entidades empregadoras e para os trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 60224,
+        "end": 60398
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art140.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art140",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Os recursos das decisões proferidas pelos tribunais administrativos são ordinários ou extraordinários, sendo ordinários a apelação e a revista e extraordinários o recurso para uniformização de jurisprudência e a revisão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 201633,
+        "end": 201857
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

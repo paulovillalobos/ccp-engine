@@ -1,0 +1,23 @@
+{
+  "id": "csc:art203.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art203",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "3 - Não obstante a fixação de prazos no contrato de sociedade, o sócio só entra em mora depois de interpelado pela sociedade para efectuar o pagamento, em prazo que pode variar entre 30 e 60 dias.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 334442,
+        "end": 334638
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art187.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art187",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O prazo de prescrição interrompe-se pela ocorrência de qualquer diligência administrativa realizada, da qual tenha sido dado conhecimento ao responsável pelo pagamento, conducente à liquidação ou à cobrança da dívida e pela apresentação de requerimento de procedimento extrajudicial de conciliação.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 119931,
+        "end": 120233
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

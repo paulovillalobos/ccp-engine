@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1433.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1433",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "1. As deliberações da assembleia contrárias à lei ou a regulamentos anteriormente aprovados são anuláveis a requerimento de qualquer condómino que as não tenha aprovado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 643519,
+        "end": 643688
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art103.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art103",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A entrega dos bens aos herdeiros do ausente à data das últimas notícias, ou aos herdeiros dos que depois tiverem falecido, só tem lugar depois da partilha.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 50356,
+        "end": 50514
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

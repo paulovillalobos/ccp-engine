@@ -1,0 +1,23 @@
+{
+  "id": "ct:art298.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art298",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "2 - A redução a que se refere o número anterior pode abranger:\na) Um ou mais períodos normais de trabalho, diários ou semanais, podendo dizer respeito a diferentes grupos de trabalhadores, rotativamente;\nb) Diminuição do número de horas correspondente ao período normal de trabalho, diário ou semanal.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 401149,
+        "end": 401450
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

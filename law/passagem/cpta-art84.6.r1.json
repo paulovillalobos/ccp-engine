@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art84.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art84",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - A falta do envio do processo administrativo não obsta ao prosseguimento da causa e determina que os factos alegados pelo autor se considerem provados, se aquela falta tiver tornado a prova impossível ou de considerável dificuldade.\n7- Da junção aos autos do processo administrativo é dado conhecimento a todos os intervenientes no processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 117889,
+        "end": 118233
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

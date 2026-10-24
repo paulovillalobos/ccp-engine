@@ -1,0 +1,23 @@
+{
+  "id": "cp:art75.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art75",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - O crime anterior por que o agente tenha sido condenado não releva para a reincidência se entre a sua prática e a do crime seguinte tiverem decorrido mais de 5 anos; neste prazo não é computado o tempo durante o qual o agente tenha cumprido medida processual, pena ou medida de segurança privativas da liberdade.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 144225,
+        "end": 144540
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

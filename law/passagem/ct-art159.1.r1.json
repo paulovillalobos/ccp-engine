@@ -1,0 +1,23 @@
+{
+  "id": "ct:art159.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art159",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - As partes estabelecem a duração da prestação de trabalho, de modo consecutivo ou interpolado, bem como o início e termo de cada período de trabalho, ou a antecedência com que o empregador deve informar o trabalhador do início daquele.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 219894,
+        "end": 220132
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

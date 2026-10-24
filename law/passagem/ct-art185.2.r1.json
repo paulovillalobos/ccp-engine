@@ -1,0 +1,23 @@
+{
+  "id": "ct:art185.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art185",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Durante a cedência, o trabalhador está sujeito ao regime aplicável ao utilizador no que respeita ao modo, lugar, duração do trabalho e suspensão do contrato de trabalho, segurança e saúde no trabalho e acesso a equipamentos sociais.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 265329,
+        "end": 265565
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

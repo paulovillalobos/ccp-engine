@@ -1,0 +1,23 @@
+{
+  "id": "csc:art242.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art242",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Dentro dos 30 dias posteriores ao trânsito em julgado da sentença de exclusão deve a sociedade amortizar a quota do sócio, adquiri-la ou fazê-la adquirir, sob pena de a exclusão ficar sem efeito.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 376291,
+        "end": 376490
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

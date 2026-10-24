@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1779.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1779",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-01-17",
+      "text": "1 - No processo de divórcio sem consentimento de um dos cônjuges haverá sempre uma tentativa de conciliação dos cônjuges.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 812552,
+        "end": 812673
+      },
+      "valid_from": "2023-01-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art186.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art186",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "7 - O trabalhador exposto a riscos elevados relativos a posto de trabalho particularmente perigoso deve ter vigilância médica especial, a cargo do utilizador, cujo médico do trabalho deve informar o médico do trabalho da empresa de trabalho temporário sobre eventual contra-indicação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 269877,
+        "end": 270161
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

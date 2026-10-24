@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art72.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art72",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - A impugnação de normas no contencioso administrativo tem por objecto a declaração da ilegalidade de normas emanadas ao abrigo de disposições de direito administrativo, por vícios próprios ou derivados da invalidade de actos praticados no âmbito do respectivo procedimento de aprovação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 92894,
+        "end": 93183
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art287.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art287",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-10-16",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 345084,
+        "end": 345099
+      },
+      "valid_from": "2021-10-16",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

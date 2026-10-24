@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1990.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1990",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "3. A revisão não será, contudo, concedida quando os interesses do adoptado possam ser consideravelmente afectados, salvo se razões invocadas pelo adoptante imperiosamente o exigirem.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 966726,
+        "end": 966908
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

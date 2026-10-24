@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2080.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2080",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "3. De entre os herdeiros legais do mesmo grau de parentesco, ou de entre os herdeiros testamentários, preferem os que viviam com o falecido há pelo menos um ano à data da morte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1006056,
+        "end": 1006233
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

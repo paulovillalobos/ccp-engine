@@ -1,0 +1,23 @@
+{
+  "id": "csc:art538.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art538",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1987-05-21",
+      "text": "2 - As sociedades anónimas que, à data da entrada em vigor desta lei, possuírem acções próprias podem conservá-las durante cinco anos a contar da referida data.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 763387,
+        "end": 763547
+      },
+      "valid_from": "1987-05-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

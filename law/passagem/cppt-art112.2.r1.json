@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art112.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art112",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "2 - Compete ao dirigente máximo do serviço revogar, total ou parcialmente, dentro do prazo referido no n.º 1 do artigo anterior, o ato impugnado caso o valor do processo exceda o valor da alçada do tribunal tributário de 1.ª instância.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 146072,
+        "end": 146307
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

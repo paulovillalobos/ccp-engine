@@ -1,0 +1,23 @@
+{
+  "id": "ct:art121",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 121.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 121.º\nInvalidade parcial de contrato de trabalho\n1 - A nulidade ou a anulação parcial não determina a invalidade de todo o contrato de trabalho, salvo quando se mostre que este não teria sido celebrado sem a parte viciada.\n2 - A cláusula de contrato de trabalho que viole norma imperativa considera-se substituída por esta.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 180145,
+        "end": 180475
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

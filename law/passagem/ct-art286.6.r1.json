@@ -1,0 +1,23 @@
+{
+  "id": "ct:art286.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art286",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-04-09",
+      "text": "6 - O pedido a que se refere o número anterior deve ser acompanhado dos elementos de informação referidos no n.º 1.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 388293,
+        "end": 388408
+      },
+      "valid_from": "2021-04-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

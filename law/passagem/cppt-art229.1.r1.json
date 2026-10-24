@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art229.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art229",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Na penhora de rendimentos observar-se-á o seguinte:\na) No acto da penhora, notificar-se-á o devedor dos rendimentos de que não ficará desonerado da obrigação se pagar ao executado, o que se fará constar do auto;\nb) Se o prédio não estiver arrendado à data da penhora ou se o arrendamento findar entretanto, será o mesmo prédio, ou a parte dele que ficar devoluta, arrendado no processo, pela melhor oferta e por prazo não excedente a um ano, renovável até ao pagamento da execução;\nc) Se um imóvel impenhorável estiver ocupado gratuitamente, ser-lhe-á atribuído, para efeitos de penhora, uma renda mensal correspondente a 1/240 ou 1/180 do seu valor patrimonial, conforme se trate, respectivamente, de prédio rústico ou prédio urbano;\nd) Se o estabelecimento comercial ou industrial, ou a concessão mineira, cujo direito à exploração haja sido penhorado, se encontrar paralisado, proceder-se-á à cedência pela melhor oferta e por prazo não excedente a um ano, renovável até ao pagamento da execução;\ne) Se o estabelecimento for concessão mineira, a penhora do direito à exploração, referida na alínea anterior, depende de autorização do ministro competente, que a concederá no prazo de 30 dias;\nf) Se os rendimentos penhorados não forem pagos no seu vencimento, será o respectivo devedor executado no processo pelas importâncias não depositadas.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 286302,
+        "end": 287651
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

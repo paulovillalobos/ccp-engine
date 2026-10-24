@@ -1,0 +1,23 @@
+{
+  "id": "cc:art915",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-i.seccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 915.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 915.º\n(Indemnização em caso de simples erro)\nA indemnização prevista no artigo 909.º também não é devida, se o vendedor se encontrava nas condições a que se refere a parte final do artigo anterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 385295,
+        "end": 385499
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

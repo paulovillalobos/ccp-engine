@@ -1,0 +1,23 @@
+{
+  "id": "cp:art209.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art209",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "2 - Na mesma pena incorre quem se apropriar ilegitimamente de coisa ou de animal alheios que haja encontrado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 301797,
+        "end": 301906
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

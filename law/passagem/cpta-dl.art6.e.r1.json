@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art6.e",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art6",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "e) A Lei de Processo nos Tribunais Administrativos, aprovada pelo Decreto-Lei n.º 267/85, de 16 de Julho;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 5819,
+        "end": 5924
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

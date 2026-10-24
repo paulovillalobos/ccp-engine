@@ -1,0 +1,23 @@
+{
+  "id": "ct:art95.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art95",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - Os direitos do trabalhador-estudante cessam imediatamente em caso de falsas declarações relativamente aos factos de que depende a concessão do estatuto ou a factos constitutivos de direitos, bem como quando estes sejam utilizados para outros fins.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 148319,
+        "end": 148570
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

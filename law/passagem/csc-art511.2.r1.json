@@ -1,0 +1,23 @@
+{
+  "id": "csc:art511.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art511",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "2 - Se for causado dano grave, material ou moral, e que o autor pudesse prever, a algum sócio que não tenha dado o seu assentimento para o facto, à sociedade ou a terceiro, a pena é de prisão até 3 anos ou pena de multa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 735037,
+        "end": 735257
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

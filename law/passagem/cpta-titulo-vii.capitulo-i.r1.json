@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-vii.capitulo-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-vii",
+  "kind": "capitulo",
+  "label": "Capítulo I",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Capítulo I\nDisposições gerais",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 222322,
+        "end": 222351
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

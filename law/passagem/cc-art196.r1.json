@@ -1,0 +1,23 @@
+{
+  "id": "cc:art196",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 196.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 196.º\n(Fundo comum das associações)\n1. As contribuições dos associados e os bens com elas adquiridos constituem o fundo comum da associação.\n2. Enquanto a associação subsistir, nenhum associado pode exigir a divisão do fundo comum e nenhum credor dos associados tem o direito de o fazer excutir.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 99799,
+        "end": 100101
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

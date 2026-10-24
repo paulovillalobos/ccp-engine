@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art208.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art208",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Para efeitos do presente Código, considera-se situação contributiva regularizada a inexistência de dívidas de contribuições, quotizações, juros de mora e de outros valores do contribuinte.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 132818,
+        "end": 133010
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

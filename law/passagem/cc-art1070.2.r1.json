@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1070.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1070",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "2 - Diploma próprio regula o requisito previsto no número anterior e define os elementos que o contrato de arrendamento urbano deve conter.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 452808,
+        "end": 452947
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

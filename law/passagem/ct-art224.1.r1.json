@@ -1,0 +1,23 @@
+{
+  "id": "ct:art224.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art224",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - Considera-se trabalhador nocturno o que presta, pelo menos, três horas de trabalho normal nocturno em cada dia ou que efectua durante o período nocturno parte do seu tempo de trabalho anual correspondente a três horas por dia, ou outra definida por instrumento de regulamentação colectiva de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 317672,
+        "end": 317977
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

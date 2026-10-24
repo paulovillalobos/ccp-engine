@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art190.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art190",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2016-03-31",
+      "text": "5 - A citação poderá ser feita na pessoa do legal representante do executado, nos termos do Código de Processo Civil.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 220828,
+        "end": 220945
+      },
+      "valid_from": "2016-03-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

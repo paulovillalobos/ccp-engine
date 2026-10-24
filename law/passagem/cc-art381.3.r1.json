@@ -1,0 +1,23 @@
+{
+  "id": "cc:art381.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art381",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. A força probatória das notas pode ser contrariada por qualquer meio de prova; mas, quando se trate de quitação no documento ou título em poder do devedor, se a nota estiver assinada pelo credor, são aplicáveis as regras legais acerca dos documentos particulares assinados pelo seu autor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 175361,
+        "end": 175651
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

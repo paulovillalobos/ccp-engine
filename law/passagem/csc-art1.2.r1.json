@@ -1,0 +1,23 @@
+{
+  "id": "csc:art1.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art1",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - São sociedades comerciais aquelas que tenham por objecto a prática de actos de comércio e adoptem o tipo de sociedade em nome colectivo, de sociedade por quotas, de sociedade anónima, de sociedade em comandita simples ou de sociedade em comandita por acções.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 25817,
+        "end": 26079
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

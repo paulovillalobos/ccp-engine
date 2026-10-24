@@ -1,0 +1,23 @@
+{
+  "id": "cc:art236.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art236",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Sempre que o declaratário conheça a vontade real do declarante, é de acordo com ela que vale a declaração emitida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 116282,
+        "end": 116399
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

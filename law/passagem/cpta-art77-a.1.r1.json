@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art77-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art77-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Os pedidos relativos à validade, total ou parcial, de contratos podem ser deduzidos:\na) Pelas partes na relação contratual;\nb) Pelo Ministério Público;\nc) Por quem tenha sido prejudicado pelo facto de não ter sido adotado o procedimento pré-contratual legalmente exigido;\nd) Por quem tenha impugnado um ato administrativo relativo ao respetivo procedimento e alegue que a invalidade decorre das ilegalidades cometidas no âmbito desse procedimento;\ne) Por quem, tendo participado no procedimento que precedeu a celebração do contrato, alegue que o clausulado não corresponde aos termos da adjudicação;\nf) Por quem alegue que o clausulado do contrato não corresponde aos termos inicialmente estabelecidos e que justificadamente o tinham levado a não participar no procedimento pré-contratual, embora preenchesse os requisitos necessários para o efeito;\ng) Pelas pessoas singulares ou coletivas titulares ou defensoras de direitos subjetivos ou interesses legalmente protegidos aos quais a execução do contrato cause ou possa causar prejuízos;\nh) Pelas pessoas e entidades nos termos do n.º 2 do artigo 9.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 99454,
+        "end": 100561
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

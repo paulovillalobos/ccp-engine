@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art86.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art86",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "5 - O pagamento por conta deve ser solicitado à entidade competente para a instauração de processo de execução fiscal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 107820,
+        "end": 107938
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

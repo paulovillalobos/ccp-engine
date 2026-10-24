@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art4.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art4",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - A cumulação de pedidos é possível mesmo quando, nos termos deste Código, a algum dos pedidos cumulados corresponda uma das formas da ação administrativa urgente, que deve ser, nesse caso, observada com as adaptações que se revelem necessárias, devendo as que impliquem menor celeridade do processo cingir-se ao estritamente indispensável.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 12818,
+        "end": 13160
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art30.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art30",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - O processo administrativo é público, com as restrições previstas na lei, processando-se o acesso nos termos e condições previstos na lei processual civil.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 44679,
+        "end": 44837
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

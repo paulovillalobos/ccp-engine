@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1796.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1796",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. A paternidade presume-se em relação ao marido da mãe e, nos casos de filiação fora do casamento, estabelece-se pelo reconhecimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 828027,
+        "end": 828161
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

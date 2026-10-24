@@ -1,0 +1,23 @@
+{
+  "id": "csc:art140-i.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art140-i",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "6 - Os tribunais portugueses serão exclusivamente competentes para as ações respeitantes ao exercício dos direitos dos sócios, os quais serão regulados pelo direito português.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 268215,
+        "end": 268390
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

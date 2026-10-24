@@ -1,0 +1,23 @@
+{
+  "id": "csc:art30.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art30",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - A sociedade pode ilidir o pedido desses credores, satisfazendo-lhes os seus créditos com juros de mora, quando vencidos, ou mediante o desconto correspondente à antecipação, quando por vencer, e com as despesas acrescidas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 57615,
+        "end": 57841
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art195.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art195",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. À organização interna e administração das associações sem personalidade jurídica são aplicáveis as regras estabelecidas pelos associados e, na sua falta, as disposições legais relativas às associações, exceptuadas as que pressupõem a personalidade destas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 99170,
+        "end": 99428
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

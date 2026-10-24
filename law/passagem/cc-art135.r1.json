@@ -1,0 +1,23 @@
+{
+  "id": "cc:art135",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-v.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 135.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 135.º\n(Emancipação resultante de decisão judicial)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 62449,
+        "end": 62506
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

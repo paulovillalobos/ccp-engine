@@ -1,0 +1,23 @@
+{
+  "id": "cp:art43.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art43",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "5 - Não se aplica a liberdade condicional quando a pena de prisão seja executada em regime de permanência na habitação.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 103407,
+        "end": 103526
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

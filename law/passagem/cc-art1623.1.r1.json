@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1623.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1623",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-29",
+      "text": "1 - Lavrada a acta, o funcionário competente decide se o casamento deve ser homologado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 727100,
+        "end": 727187
+      },
+      "valid_from": "2007-09-29",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

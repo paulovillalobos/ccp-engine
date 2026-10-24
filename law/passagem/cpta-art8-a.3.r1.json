@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art8-a.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art8-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Para além dos demais casos de extensão da personalidade judiciária estabelecidos na lei processual civil, os ministérios e os órgãos da Administração Pública têm personalidade judiciária correspondente à legitimidade ativa e passiva que lhes é conferida neste Código.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 19188,
+        "end": 19459
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

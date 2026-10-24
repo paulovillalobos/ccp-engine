@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art103.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art103",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "2 - Para os efeitos do número anterior, os actos tributários consideram-se sempre praticados na área do domicílio ou sede do contribuinte, da situação dos bens ou da liquidação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 136233,
+        "end": 136410
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

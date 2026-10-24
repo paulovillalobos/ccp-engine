@@ -1,0 +1,23 @@
+{
+  "id": "ct:art461.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art461",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - Os trabalhadores podem reunir-se no local de trabalho, mediante convocação por um terço ou 50 trabalhadores do respectivo estabelecimento, ou pela comissão sindical ou intersindical:\na) Fora do horário de trabalho da generalidade dos trabalhadores, sem prejuízo do normal funcionamento de turnos ou de trabalho suplementar;\nb) Durante o horário de trabalho da generalidade dos trabalhadores até um período máximo de quinze horas por ano, que conta como tempo de serviço efectivo, desde que seja assegurado o funcionamento de serviços de natureza urgente e essencial.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 569061,
+        "end": 569631
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

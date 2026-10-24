@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iv.titulo-iii.capitulo-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii",
+  "kind": "capitulo",
+  "label": "Capítulo II",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Capítulo II\nEfeitos da filiação",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 876375,
+        "end": 876406
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art28",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 28.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 28.º\n(Desvios quanto às consequências da incapacidade)\n1. O negócio jurídico celebrado em Portugal por pessoa que seja incapaz segundo a lei pessoal competente não pode ser anulado com fundamento na incapacidade no caso de a lei interna portuguesa, se fosse aplicável, considerar essa pessoa como capaz.\n2. Esta excepção cessa, quando a outra parte tinha conhecimento da incapacidade, ou quando o negócio jurídico for unilateral, pertencer ao domínio do direito da família ou das sucessões ou respeitar à disposição de imóveis situados no estrangeiro.\n3. Se o negócio jurídico for celebrado pelo incapaz em país estrangeiro, será observada a lei desse país, que consagrar regras idênticas às fixadas nos números anteriores.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 19466,
+        "end": 20196
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

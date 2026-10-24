@@ -1,0 +1,23 @@
+{
+  "id": "csc:art168.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art168",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - A sociedade não pode opor a terceiros actos cuja publicação seja obrigatória sem que esta esteja efectuada, salvo se a sociedade provar que o acto está registado e que o terceiro tem conhecimento dele.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 299775,
+        "end": 299980
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

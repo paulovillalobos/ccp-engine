@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1323.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1323",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "4 - Anunciado o achado, o achador faz seu o animal ou a coisa perdida, se não for reclamada pelo dono dentro do prazo de um ano, a contar do anúncio ou aviso.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 575211,
+        "end": 575369
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

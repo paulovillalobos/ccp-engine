@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-ii.titulo-ii.capitulo-iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-ii",
+  "kind": "capitulo",
+  "label": "Capítulo III",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Capítulo III\nDos crimes contra o património em geral",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 308366,
+        "end": 308418
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

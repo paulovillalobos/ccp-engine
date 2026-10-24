@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art219.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art219",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Se a situação contributiva não for regularizada no prazo previsto no número anterior, o beneficiário perde o direito ao pagamento das prestações suspensas.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 139395,
+        "end": 139554
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art65.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art65",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Quando na pendência do processo, seja proferido acto revogatório sem efeitos retroactivos do acto impugnado, o processo prossegue em relação aos efeitos produzidos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 84692,
+        "end": 84860
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

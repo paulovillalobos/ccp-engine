@@ -1,0 +1,23 @@
+{
+  "id": "csc:art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "Artigo 1.º\n(Âmbito geral de aplicação)\n1 - A presente lei aplica-se às sociedades comerciais.\n2 - São sociedades comerciais aquelas que tenham por objecto a prática de actos de comércio e adoptem o tipo de sociedade em nome colectivo, de sociedade por quotas, de sociedade anónima, de sociedade em comandita simples ou de sociedade em comandita por acções.\n3 - As sociedades que tenham por objecto a prática de actos de comércio devem adoptar um dos tipos referidos no número anterior.\n4 - As sociedades que tenham exclusivamente por objecto a prática de actos não comerciais podem adoptar um dos tipos referidos no n.º 2, sendo-lhes, nesse caso, aplicável a presente lei.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 25723,
+        "end": 26395
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

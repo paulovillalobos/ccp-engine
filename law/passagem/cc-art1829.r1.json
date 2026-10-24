@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1829",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-iii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1829.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1829.º\n(Filhos concebidos depois de finda a coabitação)\n1. Cessa a presunção de paternidade se o nascimento do filho ocorrer passados trezentos dias depois de finda a coabitação dos cônjuges, nos termos do número seguinte.\n2. Considera-se finda a coabitação dos cônjuges:\na) Na data da primeira conferência, tratando-se de divórcio ou de separação por mútuo consentimento;\nb) Na data da citação do réu para a acção de divórcio ou separação litigiosos, ou na data que a sentença fixar como a da cessação da coabitação;\nc) Na data em que deixou de haver notícias do marido, conforme decisão proferida em acção de nomeação de curador provisório, justificação de ausência ou declaração de morte presumida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 846608,
+        "end": 847316
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

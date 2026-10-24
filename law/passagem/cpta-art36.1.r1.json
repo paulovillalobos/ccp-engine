@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art36.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art36",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Sem prejuízo dos demais casos previstos na lei, têm caráter urgente os processos relativos a:\na) Contencioso eleitoral, com o âmbito definido neste Código;\nb) Procedimentos de massa, com o âmbito definido neste Código;\nc) Contencioso pré-contratual, com o âmbito definido neste Código;\nd) Intimação para prestação de informações, consulta de documentos ou passagem de certidões;\ne) Intimação para defesa de direitos, liberdades e garantias;\nf) Providências cautelares.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 50249,
+        "end": 50721
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art153.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art153",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2 - Às decisões judiciais de acompanhamento é aplicável o disposto nos artigos 1920.º-B e 1920.º-C.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 73010,
+        "end": 73109
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

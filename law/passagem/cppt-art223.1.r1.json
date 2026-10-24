@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art223.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art223",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-01-14",
+      "text": "1 - À penhora de dinheiro ou de outros valores depositados aplicam-se as regras previstas no Código de Processo Civil, sem prejuízo do disposto nos números seguintes.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 274681,
+        "end": 274847
+      },
+      "valid_from": "2025-01-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

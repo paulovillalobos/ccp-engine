@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art134.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art134",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Os atos de fixação dos valores patrimoniais podem ser impugnados, no prazo de três meses após a sua notificação ao contribuinte, com fundamento em qualquer ilegalidade.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 162516,
+        "end": 162688
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

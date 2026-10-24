@@ -1,0 +1,23 @@
+{
+  "id": "ct:art277.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art277",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Caso a retribuição deva ser paga em lugar diverso do local de trabalho, o tempo que o trabalhador gastar para receber a retribuição considera-se tempo de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 374102,
+        "end": 374269
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

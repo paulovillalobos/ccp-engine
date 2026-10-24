@@ -1,0 +1,23 @@
+{
+  "id": "cp:art328.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art328",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Quem injuriar ou difamar o Presidente da República, ou quem constitucionalmente o substituir é punido com pena de prisão até 3 anos ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 411327,
+        "end": 411484
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

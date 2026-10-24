@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art119.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art119",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Nas fórmulas previstas no número anterior, Rd corresponde ao valor da remuneração diária, IAS ao valor do indexante dos apoios sociais e Rh ao valor da remuneração horária.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 75057,
+        "end": 75233
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art163.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art163",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Constituem escalões de base de incidência contributiva os seguintes escalões de remuneração convencional determinados em função do valor do IAS:\n(ver documento original)",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 104461,
+        "end": 104634
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

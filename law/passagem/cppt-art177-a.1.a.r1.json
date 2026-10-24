@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art177-a.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art177-a.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2016-03-31",
+      "text": "a) Não seja devedor de quaisquer impostos ou outras prestações tributárias e respetivos juros;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 200880,
+        "end": 200974
+      },
+      "valid_from": "2016-03-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art73.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art73",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2016-03-31",
+      "text": "3 - Não haverá instrução, caso a entidade referida no número anterior disponha de todos os elementos necessários para a decisão.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 93500,
+        "end": 93628
+      },
+      "valid_from": "2016-03-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

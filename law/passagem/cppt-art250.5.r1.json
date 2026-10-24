@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art250.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art250",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "5 - O valor base a anunciar para venda é igual a 70 % do determinado nos termos do n.º 1.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 309260,
+        "end": 309349
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

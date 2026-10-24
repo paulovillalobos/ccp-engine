@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art172.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art172",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Quando tenha sido requerida a compensação de créditos entre exequente e Administração obrigada, a compensação decretada pelo juiz funciona como título de pagamento total ou parcial da dívida que o exequente tinha para com a Administração, sendo oponível a eventuais reclamações futuras do respetivo cumprimento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 243219,
+        "end": 243534
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

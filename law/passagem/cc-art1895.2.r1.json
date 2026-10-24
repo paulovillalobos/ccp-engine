@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1895.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1895",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Os pais devem dar ao filho parte nos bens produzidos ou por outra forma compensá-lo do seu trabalho; o cumprimento deste dever não pode, todavia, ser judicialmente exigido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 892676,
+        "end": 892851
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

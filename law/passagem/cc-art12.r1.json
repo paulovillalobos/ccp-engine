@@ -1,0 +1,23 @@
+{
+  "id": "cc:art12",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 12.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 12.º\n(Aplicação das leis no tempo. Princípio geral)\n1. A lei só dispõe para o futuro; ainda que, lhe seja atribuída eficácia retroactiva, presume-se que ficam ressalvados os efeitos já produzidos pelos factos que a lei se destina a regular.\n2. Quando a lei dispõe sobre as condições de validade substancial ou formal de quaisquer factos ou sobre os seus efeitos, entende-se, em caso de dúvida, que só visa os factos novos; mas, quando dispuser directamente sobre o conteúdo de certas relações jurídicas, abstraindo dos factos que lhes deram origem, entender-se-á que a lei abrange as próprias relações já constituídas, que subsistam à data da sua entrada em vigor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 12397,
+        "end": 13068
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

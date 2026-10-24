@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art105.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art105.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "a) Decurso do prazo legalmente estabelecido, sem que a entidade requerida satisfaça o pedido que lhe foi dirigido;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 162183,
+        "end": 162297
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

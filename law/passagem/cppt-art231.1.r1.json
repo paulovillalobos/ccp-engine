@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art231.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art231",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2016-05-24",
+      "text": "1 - A penhora de imóveis ou de figuras parcelares do respectivo direito de propriedade é efectuada por comunicação emitida pelo órgão da execução fiscal à conservatória do registo predial competente, emitindo-se uma comunicação por cada prédio, na qual se reproduzem todos os elementos da caderneta predial, bem como a identificação do devedor, o valor da dívida, o número do processo e o número da penhora, observando-se ainda o seguinte:\na) A penhora deve ser registada no prazo máximo de cinco dias;\nb) Efectuado o registo, a conservatória comunica ao órgão da execução o número da apresentação, os elementos identificativos do registo e a identificação do ónus ou encargos que recaem sobre o bem penhorado, identificando os respectivos beneficiários, bem como o valor dos emolumentos e a conta;\nc) Seguidamente, o órgão da execução fiscal nomeia depositário mediante notificação por carta registada com aviso de recepção, podendo ser escolhido um funcionário da administração tributária, o próprio executado, seja pessoa singular ou colectiva, ou outro, a quem os bens penhorados são entregues;\nd) Revogada;\ne) Revogada.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 288827,
+        "end": 289951
+      },
+      "valid_from": "2016-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1095.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1095",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2024-01-01",
+      "text": "4 - Por cada ano civil, e relativamente a cada fração ou prédio, apenas pode ser celebrado um contrato para fins especiais transitórios por motivos turísticos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 479123,
+        "end": 479282
+      },
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

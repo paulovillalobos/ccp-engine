@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 1.º\nAprovação\nÉ aprovado o Código de Processo nos Tribunais Administrativos, que se publica em anexo à presente lei e que dela faz parte integrante.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 939,
+        "end": 1094
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

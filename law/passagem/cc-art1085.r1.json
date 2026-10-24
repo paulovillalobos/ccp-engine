@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1085",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-iv.seccao-vii.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 1085.º",
+  "versions": [
+    {
+      "version": "2012-11-12",
+      "text": "Artigo 1085.º\nCaducidade do direito de resolução\n1 - A resolução deve ser efectivada dentro do prazo de um ano a contar do conhecimento do facto que lhe serve de fundamento, sob pena de caducidade.\n2 - O prazo referido no número anterior é reduzido para três meses quando o fundamento da resolução seja o previsto nos n.os 3 ou 4 do artigo 1083.º\n3 - Quando se trate de facto continuado ou duradouro, o prazo não se completa antes de decorrido um ano da sua cessação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 468636,
+        "end": 469103
+      },
+      "valid_from": "2012-11-12",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

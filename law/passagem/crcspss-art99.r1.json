@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art99",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-ii.seccao-iii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 99.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 99.º\nTaxa contributiva\nA taxa contributiva relativa aos trabalhadores inscritos marítimos que exercem actividade profissional na pesca local e costeira corresponde a 33,3 %, sendo, respectivamente, de 22,3 % e de 11 % para as entidades empregadoras e trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 64591,
+        "end": 64863
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

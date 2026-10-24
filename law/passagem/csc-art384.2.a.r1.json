@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "a) Fazer corresponder um só voto a um certo número de acções, contanto que sejam abrangidas todas as acções emitidas pela sociedade e fique cabendo um voto, pelo menos, a cada 1000 euros de capital;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 551274,
+        "end": 551472
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art260.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art260",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "5 - As notificações ou declarações de um gerente cujo destinatário seja a sociedade devem ser dirigidas a outro gerente, ou, se não houver outro gerente, ao órgão de fiscalização, ou, não o havendo, a qualquer sócio.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 400987,
+        "end": 401203
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

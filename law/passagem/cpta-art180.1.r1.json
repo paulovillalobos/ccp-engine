@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art180.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art180",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Sem prejuízo do disposto em lei especial, pode ser constituído tribunal arbitral para o julgamento de:\na) Questões respeitantes a contratos, incluindo a anulação ou declaração de nulidade de atos administrativos relativos à respetiva execução;\nb) Questões respeitantes a responsabilidade civil extracontratual, incluindo a efetivação do direito de regresso, ou indemnizações devidas nos termos da lei, no âmbito das relações jurídicas administrativas;\nc) Questões respeitantes à validade de atos administrativos, salvo determinação legal em contrário;\nd) Questões respeitantes a relações jurídicas de emprego público, quando não estejam em causa direitos indisponíveis e quando não resultem de acidente de trabalho ou de doença profissional.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 256526,
+        "end": 257271
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

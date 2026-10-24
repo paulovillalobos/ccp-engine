@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art84.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art84",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - Na falta de envio do processo administrativo sem justificação aceitável, pode o juiz determinar a aplicação de sanções pecuniárias compulsórias, nos termos do artigo 169.º, sem prejuízo do apuramento da responsabilidade civil, disciplinar e criminal a que haja lugar.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 117617,
+        "end": 117888
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

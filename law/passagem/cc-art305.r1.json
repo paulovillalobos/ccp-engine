@@ -1,0 +1,23 @@
+{
+  "id": "cc:art305",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 305.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 305.º\n(Oponibilidade da prescrição por terceiro)\n1. A prescrição é invocável pelos credores e por terceiros com legítimo interesse na sua declaração, ainda que o devedor a ela tenha renunciado.\n2. Se, porém, o devedor tiver renunciado, a prescrição só pode ser invocada pelos credores desde que se verifiquem os requisitos exigidos para a impugnação pauliana.\n3. Se, demandado o devedor, este não alegar a prescrição e for condenado, o caso julgado não afecta o direito reconhecido aos seus credores.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 142145,
+        "end": 142652
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art298.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art298",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "1 - É proibida a emissão de acções abaixo do par ou, no caso de acções sem valor nominal, abaixo do seu valor de emissão.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 455589,
+        "end": 455710
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

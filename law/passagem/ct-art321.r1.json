@@ -1,0 +1,23 @@
+{
+  "id": "ct:art321",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-v.seccao-iii.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 321.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 321.º\nDireitos de trabalhador em situação de pré-reforma\n1 - O trabalhador em situação de pré-reforma pode exercer outra actividade profissional remunerada.\n2 - O acordo de pré-reforma pode atribuir ao trabalhador outros direitos não decorrentes na lei.\n3 - Em caso de falta culposa de pagamento da prestação de pré-reforma ou, independentemente de culpa, se a mora se prolongar por mais de 30 dias, o trabalhador tem direito a retomar o pleno exercício de funções, sem prejuízo da antiguidade, ou a resolver o contrato, com direito a indemnização nos termos dos n.os 2 e 3 do artigo seguinte.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 425872,
+        "end": 426472
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

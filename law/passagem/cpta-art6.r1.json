@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 6.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 6.º\nIgualdade das partes\nO tribunal assegura um estatuto de igualdade efectiva das partes no processo, tanto no que se refere ao exercício de faculdades e ao uso de meios de defesa como no plano da aplicação de cominações ou de sanções processuais, designadamente por litigância de má-fé.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 15101,
+        "end": 15396
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

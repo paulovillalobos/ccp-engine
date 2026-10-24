@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art106.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art106",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Não se verifica o efeito interruptivo quando o tribunal competente para conhecer do meio contencioso que venha a ser utilizado pelo requerente considere que o pedido constituiu expediente manifestamente dilatório ou foi injustificado, por ser claramente desnecessário para permitir o uso dos meios administrativos ou contenciosos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 163107,
+        "end": 163441
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

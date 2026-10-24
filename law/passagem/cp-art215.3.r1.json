@@ -1,0 +1,23 @@
+{
+  "id": "cp:art215.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art215",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2025-11-25",
+      "text": "3 - Quem praticar os atos descritos nos números anteriores atuando profissionalmente ou com intenção lucrativa é punido com pena de prisão de 1 a 4 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 307262,
+        "end": 307415
+      },
+      "valid_from": "2025-11-25",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

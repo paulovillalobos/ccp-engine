@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art210.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art210",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os contribuintes a quem tenha sido autorizado o pagamento prestacional da dívida devem incluir no relatório referido no número anterior as condições do mesmo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 135090,
+        "end": 135252
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

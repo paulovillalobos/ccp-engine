@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1375.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1375",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A reparação ou reconstrução da parede ou muro comum é feita por conta dos consortes, em proporção das suas partes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 600050,
+        "end": 600167
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

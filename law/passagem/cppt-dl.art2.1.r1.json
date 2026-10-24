@@ -1,0 +1,23 @@
+{
+  "id": "cppt:dl.art2.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:dl.art2",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - É revogado a partir da entrada em vigor do Código de Procedimento e de Processo Tributário o Código de Processo Tributário, aprovado pelo artigo 1.º do Decreto-Lei n.º 154/91, de 23 de Abril, bem como toda a legislação contrária ao Código aprovado pelo presente decreto-lei, sem prejuízo das disposições que este expressamente mantenha em vigor.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 7316,
+        "end": 7665
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

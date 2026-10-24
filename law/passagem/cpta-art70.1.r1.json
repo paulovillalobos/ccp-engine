@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art70.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art70",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quando a pretensão do interessado seja indeferida na pendência de processo intentado em situação de inércia ou de recusa de apreciação de requerimento, pode o autor alegar novos fundamentos e oferecer diferentes meios de prova em favor da sua pretensão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 90272,
+        "end": 90529
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

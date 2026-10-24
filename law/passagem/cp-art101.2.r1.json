@@ -1,0 +1,23 @@
+{
+  "id": "cp:art101.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art101",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-09-05",
+      "text": "2 - É susceptível de revelar a inaptidão referida na alínea b) do número anterior a prática, de entre outros, de factos que integrem os crimes de:\na) Omissão de auxílio, nos termos do artigo 200.º, se for previsível que dele pudessem resultar graves danos para a vida, o corpo ou a saúde de alguma pessoa;\nb) Condução perigosa de veículo rodoviário ou condução perigosa de meio de transporte por ar, nos termos dos artigos 291.º e 289.º, respetivamente;\nc) Condução de veículo rodoviário ou pilotagem de aeronave em estado de embriaguez ou sob influência de estupefacientes, substâncias psicotrópicas ou produtos com efeito análogo, nos termos dos artigos 292.º e 292.º-A; ou\nd) Facto ilícito típico cometido em estado de embriaguez, nos termos do artigo 295.º, se o facto praticado for um dos referidos nas alíneas anteriores.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 177443,
+        "end": 178270
+      },
+      "valid_from": "2023-09-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

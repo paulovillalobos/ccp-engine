@@ -1,0 +1,23 @@
+{
+  "id": "cc:art141.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art141",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "3 - O pedido de suprimento da autorização do beneficiário pode ser cumulado com o pedido de acompanhamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 65184,
+        "end": 65291
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art127.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art127",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - O empregador deve afixar nas instalações da empresa toda a informação sobre a legislação referente ao direito de parentalidade ou, se for elaborado regulamento interno a que alude o artigo 99.º, consagrar no mesmo toda essa legislação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 185416,
+        "end": 185655
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

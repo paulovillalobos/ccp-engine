@@ -1,0 +1,23 @@
+{
+  "id": "cp:art101.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art101",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2023-09-05",
+      "text": "6 - Se contra o agente tiver sido já decretada interdição de concessão de título nos cinco anos anteriores à prática do facto, o prazo mínimo de interdição é de dois anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 179137,
+        "end": 179308
+      },
+      "valid_from": "2023-09-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

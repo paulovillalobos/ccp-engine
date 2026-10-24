@@ -1,0 +1,23 @@
+{
+  "id": "cc:art182",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 182.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 182.º\n(Causas de extinção)\n1. As associações extinguem-se:\na) Por deliberação da assembleia geral;\nb) Pelo decurso do prazo, se tiverem sido constituídas temporàriamente;\nc) Pela verificação de qualquer outra causa extintiva prevista no acto de constituição ou nos estatutos;\nd) Pelo falecimento ou desaparecimento de todos os associados;\ne) Por decisão judicial que declare a sua insolvência.\n2. As associações extinguem-se ainda por decisão judicial:\na) Quando o seu fim se tenha esgotado ou se haja tornado impossível;\nb) Quando o seu fim real não coincida com o fim expresso no acto de constituição ou nos estatutos;\nc) Quando o seu fim seja sistematicamente prosseguido por meios ilícitos ou imorais;\nd) Quando a sua existência se torne contrária à ordem pública.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 87859,
+        "end": 88634
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

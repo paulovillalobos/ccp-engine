@@ -1,0 +1,23 @@
+{
+  "id": "csc:art370.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art370",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "4 - A inscrição deste aumento de capital no registo comercial deve ser feita no prazo de dois meses a contar da data das declarações referidas nos n.os 1 e 2, podendo as condições da emissão fixar um prazo mais curto.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 529079,
+        "end": 529296
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

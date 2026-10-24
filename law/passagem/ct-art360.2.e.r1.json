@@ -1,0 +1,23 @@
+{
+  "id": "ct:art360.2.e",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art360.2",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "e) O período de tempo no decurso do qual se pretende efectuar o despedimento;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 462378,
+        "end": 462455
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

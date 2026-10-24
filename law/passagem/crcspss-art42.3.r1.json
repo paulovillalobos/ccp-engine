@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art42.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art42",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Sem prejuízo do disposto no Regime Geral das Infracções Tributárias, a violação do disposto nos n.os 1 e 2 constitui contra-ordenação leve quando seja cumprida nos 30 dias subsequentes ao termo do prazo e constitui contra-ordenação grave nas demais situações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 29839,
+        "end": 30102
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

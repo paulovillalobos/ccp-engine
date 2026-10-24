@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art90-a.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art90-a.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-04-29",
+      "text": "a) A dívida tributária esteja em fase de cobrança coerciva;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 117425,
+        "end": 117484
+      },
+      "valid_from": "2010-04-29",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

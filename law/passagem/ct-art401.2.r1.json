@@ -1,0 +1,23 @@
+{
+  "id": "ct:art401.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art401",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - O disposto no número anterior não é aplicável ao trabalhador a quem tenha sido reconhecido o estatuto de vítima de violência doméstica, nos termos de legislação específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 510370,
+        "end": 510546
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

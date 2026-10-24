@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1848.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1848",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Não é admitido o reconhecimento em contrário da filiação que conste do registo de nascimento enquanto este não for rectificado, declarado nulo ou cancelado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 860947,
+        "end": 861106
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

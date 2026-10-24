@@ -1,0 +1,23 @@
+{
+  "id": "cp:art370.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art370",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - O advogado ou solicitador que intencionalmente prejudicar causa entregue ao seu patrocínio é punido com pena de prisão até 3 anos ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 446741,
+        "end": 446896
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art65.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art65",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - Quando a cessação de efeitos do acto impugnado seja acompanhada de nova regulação da situação, o autor goza da faculdade prevista no artigo anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 85080,
+        "end": 85233
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

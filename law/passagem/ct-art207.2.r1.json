@@ -1,0 +1,23 @@
+{
+  "id": "ct:art207.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art207",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Na situação a que se refere a parte final do número anterior, o período de referência pode ser aumentado para seis meses quando esteja em causa:\na) Trabalhador familiar do empregador;\nb) Trabalhador que ocupe cargo de administração ou de direcção, ou que tenha poder de decisão autónomo;\nc) Actividade caracterizada por implicar afastamento entre o local de trabalho e a residência do trabalhador ou entre diversos locais de trabalho do trabalhador;\nd) Actividade de segurança e vigilância de pessoas ou bens com carácter de permanência, designadamente de guarda, porteiro ou trabalhador de empresa de segurança ou vigilância;\ne) Actividade caracterizada pela necessidade de assegurar a continuidade do serviço ou da produção, nomeadamente:\ni) Recepção, tratamento ou cuidados providenciados por hospital ou estabelecimento semelhante, incluindo a actividade de médico em formação, ou por instituição residencial ou prisão;\nii) Porto ou aeroporto;\niii) Imprensa, rádio, televisão, produção cinematográfica, correios, telecomunicações, serviço de ambulâncias, sapadores bombeiros ou protecção civil;\niv) Produção, transporte ou distribuição de gás, água, electricidade, recolha de lixo ou instalações de incineração;\nv) Indústria cujo processo de trabalho não possa ser interrompido por motivos técnicos;\nvi) Investigação e desenvolvimento;\nvii) Agricultura;\nviii) Transporte de passageiros em serviço regular de transporte urbano;\nf) Acréscimo previsível de actividade, nomeadamente na agricultura, no turismo e nos serviços postais;\ng) Trabalhador de transporte ferroviário que preste trabalho intermitente a bordo de comboios ou tendo por fim assegurar a continuidade e regularidade do tráfego ferroviário;\nh) Caso fortuito ou de força maior;\ni) Acidente ou risco de acidente iminente.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 293150,
+        "end": 294941
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

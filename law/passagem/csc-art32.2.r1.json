@@ -1,0 +1,23 @@
+{
+  "id": "csc:art32.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art32",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-06-07",
+      "text": "2 - Os incrementos decorrentes da aplicação do justo valor através de componentes do capital próprio, incluindo os da sua aplicação através do resultado líquido do exercício, apenas relevam para poderem ser distribuídos aos sócios bens da sociedade, a que se refere o número anterior, quando os elementos ou direitos que lhes deram origem sejam alienados, exercidos, extintos, liquidados ou, também quando se verifique o seu uso, no caso de activos fixos tangíveis e intangíveis.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 60806,
+        "end": 61285
+      },
+      "valid_from": "2015-06-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

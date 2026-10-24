@@ -1,0 +1,23 @@
+{
+  "id": "ct:art210",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-ii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 210.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 210.º\nExcepções aos limites máximos do período normal de trabalho\n1 - Os limites do período normal de trabalho constantes do artigo 203.º só podem ser ultrapassados nos casos expressamente previstos neste Código, ou quando instrumento de regulamentação colectiva de trabalho o permita nas seguintes situações:\na) Em relação a trabalhador de entidade sem fim lucrativo ou estreitamente ligada ao interesse público, desde que a sujeição do período normal de trabalho a esses limites seja incomportável;\nb) Em relação a trabalhador cujo trabalho seja acentuadamente intermitente ou de simples presença.\n2 - Sempre que entidade referida na alínea a) do número anterior prossiga actividade industrial, o período normal de trabalho não deve ultrapassar quarenta horas por semana, na média do período de referência aplicável.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 303089,
+        "end": 303914
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

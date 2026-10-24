@@ -1,0 +1,23 @@
+{
+  "id": "cp:art30",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 30.º",
+  "versions": [
+    {
+      "version": "2010-10-03",
+      "text": "Artigo 30.º\nConcurso de crimes e crime continuado\n1 - O número de crimes determina-se pelo número de tipos de crime efectivamente cometidos, ou pelo número de vezes que o mesmo tipo de crime for preenchido pela conduta do agente.\n2 - Constitui um só crime continuado a realização plúrima do mesmo tipo de crime ou de vários tipos de crime que fundamentalmente protejam o mesmo bem jurídico, executada por forma essencialmente homogénea e no quadro da solicitação de uma mesma situação exterior que diminua consideravelmente a culpa do agente.\n3 - O disposto no número anterior não abrange os crimes praticados contra bens eminentemente pessoais.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 95095,
+        "end": 95740
+      },
+      "valid_from": "2010-10-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art99.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art99",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Para os efeitos do disposto na presente secção, e sem prejuízo de outros casos previstos em lei especial, o contencioso dos atos administrativos praticados no âmbito de procedimentos de massa compreende as ações respeitantes à prática ou omissão de atos administrativos no âmbito de procedimentos com mais de 50 participantes, nos seguintes domínios:\na) Concursos de pessoal;\nb) Procedimentos de realização de provas;\nc) Procedimentos de recrutamento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 150590,
+        "end": 151045
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

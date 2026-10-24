@@ -1,0 +1,23 @@
+{
+  "id": "csc:art342.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art342",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "3 - Se o dividendo prioritário não for integralmente pago durante dois exercícios sociais, as ações preferenciais passam a conferir o direito de voto, nos mesmos termos que as ações ordinárias, e só o perdem no exercício seguinte àquele em que tiverem sido pagos os dividendos prioritários em atraso, sem prejuízo do disposto no número seguinte.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 483644,
+        "end": 483989
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

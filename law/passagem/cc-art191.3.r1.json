@@ -1,0 +1,23 @@
+{
+  "id": "cc:art191.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art191",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2012-07-14",
+      "text": "3 - As fundações só podem aceitar heranças a benefício de inventário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 96575,
+        "end": 96644
+      },
+      "valid_from": "2012-07-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

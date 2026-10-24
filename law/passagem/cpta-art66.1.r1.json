@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art66.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art66",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A ação administrativa pode ser utilizada para obter a condenação da entidade competente à prática, dentro de determinado prazo, de um ato administrativo ilegalmente omitido ou recusado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 85498,
+        "end": 85687
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

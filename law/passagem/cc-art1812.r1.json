@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1812",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1812.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1812.º\n(Carácter secreto da instrução)\nA instrução do processo é secreta e será conduzida por forma a evitar ofensa ao pudor ou dignidade das pessoas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 837040,
+        "end": 837197
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

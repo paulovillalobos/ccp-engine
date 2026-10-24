@@ -1,0 +1,23 @@
+{
+  "id": "ct:art113",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 113.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 113.º\nContagem do período experimental\n1 - O período experimental conta a partir do início da execução da prestação do trabalhador, compreendendo acção de formação determinada pelo empregador, na parte em que não exceda metade da duração daquele período.\n2 - Não são considerados na contagem os dias de falta, ainda que justificada, de licença, de dispensa ou de suspensão do contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 173642,
+        "end": 174034
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

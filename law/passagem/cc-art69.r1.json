@@ -1,0 +1,23 @@
+{
+  "id": "cc:art69",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 69.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 69.º\n(Renúncia à capacidade jurídica)\nNinguém pode renunciar, no todo ou em parte, à sua capacidade jurídica.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 37938,
+        "end": 38054
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1941",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-iii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1941.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1941.º\n(Confirmação dos actos pelo tribunal)\nO tribunal de menores, ouvido o conselho de família, pode confirmar os actos praticados pelo tutor sem a necessária autorização.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 934139,
+        "end": 934319
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art185.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art185",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalhador temporário pode ser cedido a mais de um utilizador, ainda que não seja titular de contrato de trabalho por tempo indeterminado para cedência temporária, se o contrário não for estabelecido no respectivo contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 265098,
+        "end": 265328
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

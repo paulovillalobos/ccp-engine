@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art53.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art53",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Não são impugnáveis os atos confirmativos, entendendo-se como tal os atos que se limitem a reiterar, com os mesmos fundamentos, decisões contidas em atos administrativos anteriores.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 70147,
+        "end": 70332
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

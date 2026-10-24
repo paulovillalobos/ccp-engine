@@ -1,0 +1,23 @@
+{
+  "id": "ct:art51.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art51.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "a) Licença parental alargada, por três meses;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 89792,
+        "end": 89837
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

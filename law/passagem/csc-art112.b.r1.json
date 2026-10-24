@@ -1,0 +1,23 @@
+{
+  "id": "csc:art112.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art112",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "b) Os sócios das sociedades extintas tornam-se sócios da sociedade incorporante ou da nova sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 178295,
+        "end": 178396
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

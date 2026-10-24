@@ -1,0 +1,23 @@
+{
+  "id": "cp:art125",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-v.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 125.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 125.º\nSuspensão da prescrição\n1 - A prescrição da pena e da medida de segurança suspende-se, para além dos casos especialmente previstos na lei, durante o tempo em que:\na) Por força da lei, a execução não puder começar ou continuar a ter lugar;\nb) Vigorar a declaração de contumácia;\nc) O condenado estiver a cumprir outra pena ou medida de segurança privativas da liberdade; ou\nd) Perdurar a dilação do pagamento da multa.\n2 - A prescrição volta a correr a partir do dia em que cessar a causa da suspensão.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 206686,
+        "end": 207200
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

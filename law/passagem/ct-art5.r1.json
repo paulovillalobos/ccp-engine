@@ -1,0 +1,23 @@
+{
+  "id": "ct:art5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 5.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 5.º\nForma e conteúdo de contrato com trabalhador estrangeiro ou apátrida\n1 - O contrato de trabalho celebrado com trabalhador estrangeiro ou apátrida está sujeito a forma escrita e deve conter, sem prejuízo de outras exigíveis no caso de ser a termo, as seguintes indicações:\na) Identificação, assinaturas e domicílio ou sede das partes;\nb) Referência ao visto de trabalho ou ao título de autorização de residência ou permanência do trabalhador em território português;\nc) Actividade do empregador;\nd) Actividade contratada e retribuição do trabalhador;\ne) Local e período normal de trabalho;\nf) Valor, periodicidade e forma de pagamento da retribuição;\ng) Datas da celebração do contrato e do início da prestação de actividade.\n2 - O trabalhador deve ainda anexar ao contrato a identificação e domicílio da pessoa ou pessoas beneficiárias de pensão em caso de morte resultante de acidente de trabalho ou doença profissional.\n3 - O contrato de trabalho deve ser elaborado em duplicado, entregando o empregador um exemplar ao trabalhador.\n4 - O exemplar do contrato que ficar com o empregador deve ter apensos documentos comprovativos do cumprimento das obrigações legais relativas à entrada e à permanência ou residência do cidadão estrangeiro ou apátrida em Portugal, sendo apensas cópias dos mesmos documentos aos restantes exemplares.\n5 - [Revogado.]\n6 - O disposto neste artigo não é aplicável a contrato de trabalho de cidadão nacional de país membro do Espaço Económico Europeu ou de outro Estado que consagre a igualdade de tratamento com cidadão nacional em matéria de livre exercício de actividade profissional.\n7 - Constitui contra-ordenação grave a violação do disposto nos n.os 1, 3, 4 ou 5.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 23579,
+        "end": 25289
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

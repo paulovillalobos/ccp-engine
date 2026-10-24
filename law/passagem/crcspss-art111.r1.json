@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art111",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-ii.seccao-vii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 111.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 111.º\nEntidades abrangidas\nPara efeitos do presente Código consideram-se entidades sem fins lucrativos, nomeadamente, as seguintes:\na) Administração directa e indirecta do Estado;\nb) Instituições personalizadas do Estado;\nc) Instituições de utilidade pública do Estado;\nd) Instituições de segurança social e de previdência social;\ne) Instituições particulares de solidariedade social;\nf) Igrejas, associações e confissões religiosas;\ng) Associações, fundações, comissões especiais e cooperativas;\nh) Associações de empregadores, sindicatos e respectivas uniões, federações e confederações;\ni) Ordens profissionais;\nj) Partidos políticos;\nl) Casas do povo;\nm) Caixas de crédito agrícola mútuo;\nn) Entidades empregadoras do pessoal do serviço doméstico;\no) Condomínios de prédios urbanos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 70158,
+        "end": 70951
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

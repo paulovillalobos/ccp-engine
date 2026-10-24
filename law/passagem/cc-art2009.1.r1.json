@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2009.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2009",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Estão vinculados à prestação de alimentos, pela ordem indicada:\na) O cônjuge ou o ex-cônjuge;\nb) Os descendentes;\nc) Os ascendentes;\nd) Os irmãos;\ne) Os tios, durante a menoridade do alimentando;\nf) O padrasto e a madrasta, relativamente a enteados menores que estejam, ou estivessem no momento da morte do cônjuge, a cargo deste.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 975949,
+        "end": 976282
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art95.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art95",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - A liberdade para prova é revogada quando:\na) O comportamento do agente revelar que o internamento é indispensável; ou\nb) O agente for condenado em pena privativa da liberdade e não se verificarem os pressupostos da suspensão da execução, nos termos do n.º 1 do artigo 50.º",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 171053,
+        "end": 171329
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

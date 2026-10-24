@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-ii.titulo-i.capitulo-vii.seccao-ii.subseccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vii.seccao-ii",
+  "kind": "secao",
+  "label": "Subsecção I",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção I\nImpossibilidade do cumprimento e mora não imputáveis ao devedor",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 337177,
+        "end": 337252
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

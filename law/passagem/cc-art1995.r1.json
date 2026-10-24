@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1995",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iv.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 1995.º",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "Artigo 1995.º\n(Apelidos do adoptado)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 970136,
+        "end": 970172
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

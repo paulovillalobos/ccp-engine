@@ -1,0 +1,23 @@
+{
+  "id": "cc:art265.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art265",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. Mas, se a procuração tiver sido conferida também no interesse do procurador ou de terceiro, não pode ser revogada sem acordo do interessado, salvo ocorrendo justa causa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 126635,
+        "end": 126807
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

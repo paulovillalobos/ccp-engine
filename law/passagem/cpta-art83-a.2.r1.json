@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art83-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art83-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Se na contestação não for declarado o valor da reconvenção, a contestação não deixa de ser recebida, mas o reconvinte é convidado a indicar o valor, sob pena de a reconvenção não ser atendida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 116167,
+        "end": 116363
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

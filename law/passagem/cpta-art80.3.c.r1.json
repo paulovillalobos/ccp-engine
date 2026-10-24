@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art80.3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art80.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "c) Não esteja assinada.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 108986,
+        "end": 109009
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

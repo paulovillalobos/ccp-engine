@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-b.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-b",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1996-01-08",
+      "text": "1 - A elaboração do relatório consolidado de gestão, das contas consolidadas do exercício e dos demais documentos de prestação de contas consolidadas deve obedecer ao disposto na lei, podendo o contrato de sociedade e os contratos entre empresas a consolidar complementar, mas não derrogar, as disposições legais aplicáveis.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 716600,
+        "end": 716924
+      },
+      "valid_from": "1996-01-08",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

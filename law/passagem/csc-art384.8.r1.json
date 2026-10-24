@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "8 - A forma de exercício do voto pode ser determinada pelo contrato, por deliberação dos sócios ou por decisão do presidente da assembleia.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 552761,
+        "end": 552900
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

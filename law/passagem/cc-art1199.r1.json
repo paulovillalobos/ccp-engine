@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1199",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-xi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1199.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1199.º\n(Enumeração)\nO depositante é obrigado:\na) A pagar ao depositário a retribuição devida;\nb) A reembolsá-lo das despesas que ele fundadamente tenha considerado indispensáveis para a conservação da coisa, com juros legais desde que foram efectuadas;\nc) A indemnizá-lo do prejuízo sofrido em consequência do depósito, salvo se o depositante houver procedido sem culpa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 535009,
+        "end": 535386
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

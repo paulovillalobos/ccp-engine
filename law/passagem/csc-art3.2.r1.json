@@ -1,0 +1,23 @@
+{
+  "id": "csc:art3.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art3",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "2 - A sociedade que transfira a sua sede efectiva para Portugal mantém a personalidade jurídica, se a lei pela qual se regia nisso convier, mas deve conformar com a lei portuguesa o respectivo contrato social.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 27042,
+        "end": 27251
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

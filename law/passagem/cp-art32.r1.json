@@ -1,0 +1,23 @@
+{
+  "id": "cp:art32",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 32.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 32.º\nLegítima defesa\nConstitui legítima defesa o facto praticado como meio necessário para repelir a agressão actual e ilícita de interesses juridicamente protegidos do agente ou de terceiro.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 96487,
+        "end": 96685
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1940.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1940",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "2 - Os herdeiros do pupilo podem também requerer a anulação, desde que o façam antes de decorrido igual período sobre o falecimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 933421,
+        "end": 933553
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

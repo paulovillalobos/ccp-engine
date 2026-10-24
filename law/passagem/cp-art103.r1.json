@@ -1,0 +1,23 @@
+{
+  "id": "cp:art103",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-vii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 103.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 103.º\nExtinção das medidas\n1 - Se, decorridos os prazos mínimos das medidas previstas nos artigos 100.º e 102.º, se verificar, a requerimento do interdito, que os pressupostos da aplicação daquelas deixaram de subsistir, o tribunal declara extintas as medidas que houver decretado.\n2 - Em caso de indeferimento, não pode ser apresentado novo requerimento antes de decorrido 1 ano.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 180724,
+        "end": 181111
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

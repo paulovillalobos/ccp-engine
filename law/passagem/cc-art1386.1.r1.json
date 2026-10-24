@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1386.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1386",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. São particulares:\na) As águas que nascerem em prédio particular e as pluviais que nele caírem, enquanto não transpuserem, abandonadas, os limites do mesmo prédio ou daquele para onde o dono dele as tiver conduzido, e ainda as que, ultrapassando esses limites e correndo por prédios particulares, forem consumidas antes de se lançarem no mar ou em outra água pública;\nb) As águas subterrâneas existentes em prédios particulares;\nc) Os lagos e lagoas existentes dentro de um prédio particular, quando não sejam alimentados por corrente pública;\nd) As águas originàriamente públicas que tenham entrado no domínio privado até 21 de Março de 1868, por preocupação, doação régia ou concessão;\ne) As água públicas concedidas perpètuamente para regas ou melhoramentos agrícolas;\nf) As águas subterrâneas existentes em terrenos públicos, municipais ou de freguesia, exploradas mediante licença e destinadas a regas ou melhoramentos agrícolas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 605775,
+        "end": 606711
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

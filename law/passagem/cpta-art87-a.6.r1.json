@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art87-a.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art87-a",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "6 - Os requerimentos probatórios podem ser alterados na audiência prévia.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 128228,
+        "end": 128301
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

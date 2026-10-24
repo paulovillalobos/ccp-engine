@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1077.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1077",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "1 - As partes estipulam, por escrito, a possibilidade de actualização da renda e o respectivo regime.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 458688,
+        "end": 458789
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-200-c-1980",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:08:05Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-200-c-1980",
+  "sha256": "3130d2887f7c03aec647b563d1b1c59d897f8ac34899e1bf8342bf0d60c27581",
+  "bytes": "raw_bytes/3130d2887f7c03aec647b563d1b1c59d897f8ac34899e1bf8342bf0d60c27581",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/200-c-1980-226039",
+  "captured_at": "2026-10-24T20:07:52Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "c46c1ebb74913b2069be6bc346566515f4f6e746d2be9e0350343042daa55b25",
+    "bytes": "raw_bytes/c46c1ebb74913b2069be6bc346566515f4f6e746d2be9e0350343042daa55b25"
+  }
+}

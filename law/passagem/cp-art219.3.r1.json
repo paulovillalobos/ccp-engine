@@ -1,0 +1,23 @@
+{
+  "id": "cp:art219.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art219",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - O procedimento criminal depende de queixa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 310413,
+        "end": 310459
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

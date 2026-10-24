@@ -1,0 +1,23 @@
+{
+  "id": "cc:art938.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art938",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o contrato tiver por objecto coisa em viagem e, mencionada esta circunstância, figurar entre os documentos entregues a apólice de seguro contra os riscos do transporte, observar-se-ão as regras seguintes, na falta de estipulação em contrário:\na) O preço deve ser pago, ainda que a coisa já não existisse quando o contrato foi celebrado, por se haver perdido casualmente depois de ter sido entregue ao transportador;\nb) O contrato não é anulável com fundamento em defeitos da coisa, produzidos casualmente após o momento da entrega;\nc) O risco fica a cargo do comprador desde a data da compra.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 394180,
+        "end": 394778
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

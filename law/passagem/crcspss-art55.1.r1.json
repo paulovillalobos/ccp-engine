@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art55.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art55",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A parcela da taxa contributiva a cargo da entidade empregadora é reduzida em um ponto percentual nos contratos de trabalho por tempo indeterminado.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 39696,
+        "end": 39847
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

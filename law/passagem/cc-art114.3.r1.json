@@ -1,0 +1,23 @@
+{
+  "id": "cc:art114.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art114",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. A declaração de morte presumida do ausente não depende de prévia instalação da curadoria provisória ou definitiva e referir-se-á ao fim do dia das últimas notícias que dele houve.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 53963,
+        "end": 54145
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

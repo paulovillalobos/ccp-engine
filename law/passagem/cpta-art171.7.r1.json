@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art171.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art171",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - Na ausência do acordo referido no número anterior, aplica-se o disposto nos n.os 3 a 9 do artigo 172.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 242591,
+        "end": 242697
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

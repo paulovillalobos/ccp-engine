@@ -1,0 +1,23 @@
+{
+  "id": "cp:art15",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 15.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 15.º\nNegligência\nAge com negligência quem, por não proceder com o cuidado a que, segundo as circunstâncias, está obrigado e de que é capaz:\na) Representar como possível a realização de um facto que preenche um tipo de crime mas actuar sem se conformar com essa realização; ou\nb) Não chegar sequer a representar a possibilidade de realização do facto.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 89422,
+        "end": 89779
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art107.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art107",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Deduzido o pedido de intimação, a secretaria promove oficiosamente a citação da entidade demandada e dos contrainteressados para responder no prazo de 10 dias.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 163466,
+        "end": 163629
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

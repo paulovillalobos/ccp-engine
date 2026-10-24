@@ -1,0 +1,23 @@
+{
+  "id": "cp:art5.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art5",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-08-24",
+      "text": "2 - A lei penal portuguesa é ainda aplicável a factos cometidos fora do território nacional que o Estado Português se tenha obrigado a julgar por tratado ou convenção internacional.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 79682,
+        "end": 79863
+      },
+      "valid_from": "2026-08-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

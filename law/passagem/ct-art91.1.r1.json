@@ -1,0 +1,23 @@
+{
+  "id": "ct:art91.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art91",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "1 - O trabalhador-estudante pode faltar justificadamente por motivo de prestação de prova de avaliação, nos seguintes termos:\na) No dia da prova e no imediatamente anterior;\nb) No caso de provas em dias consecutivos ou de mais de uma prova no mesmo dia, os dias imediatamente anteriores são tantos quantas as provas a prestar;\nc) Os dias imediatamente anteriores referidos nas alíneas anteriores incluem dias de descanso semanal e feriados;\nd) As faltas dadas ao abrigo das alíneas anteriores não podem exceder quatro dias por disciplina em cada ano lectivo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 142654,
+        "end": 143212
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

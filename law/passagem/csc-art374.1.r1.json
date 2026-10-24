@@ -1,0 +1,23 @@
+{
+  "id": "csc:art374.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art374",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - A mesa da assembleia geral é constituída, pelo menos, por um presidente e um secretário.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 534649,
+        "end": 534741
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art396.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art396",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-03-20",
+      "text": "3 - O valor da indemnização pode ser superior ao que resultaria da aplicação do n.º 1 sempre que o trabalhador sofra danos patrimoniais e não patrimoniais de montante mais elevado.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 506670,
+        "end": 506850
+      },
+      "valid_from": "2018-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

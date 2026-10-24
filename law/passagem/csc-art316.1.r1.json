@@ -1,0 +1,23 @@
+{
+  "id": "csc:art316.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art316",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "1 - Uma sociedade não pode subscrever acções próprias, e, por outra causa, só pode adquirir e deter acções próprias nos casos e nas condições previstos na lei.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 462470,
+        "end": 462629
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

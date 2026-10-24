@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art153.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art153",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Podem ser executados no processo de execução fiscal os devedores originários e seus sucessores dos tributos e demais dívidas referidas no artigo 148.º, bem como os garantes que se tenham obrigado como principais pagadores, até ao limite da garantia prestada.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 182486,
+        "end": 182748
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

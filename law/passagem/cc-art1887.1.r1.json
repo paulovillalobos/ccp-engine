@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1887.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1887",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Os menores não podem abandonar a casa paterna ou aquela que os pais lhes destinaram, nem dela ser retirados.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 884329,
+        "end": 884440
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

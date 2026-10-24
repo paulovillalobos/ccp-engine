@@ -1,0 +1,23 @@
+{
+  "id": "cp:art119.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art119",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2024-02-14",
+      "text": "2 - O prazo de prescrição só corre:\na) Nos crimes permanentes, desde o dia em que cessar a consumação;\nb) Nos crimes continuados e nos crimes habituais, desde o dia da prática do último acto;\nc) Nos crimes não consumados, desde o dia do último acto de execução.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 201239,
+        "end": 201500
+      },
+      "valid_from": "2024-02-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

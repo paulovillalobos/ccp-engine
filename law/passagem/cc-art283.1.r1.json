@@ -1,0 +1,23 @@
+{
+  "id": "cc:art283.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art283",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Em lugar da anulação, o lesado pode requerer a modificação do negócio segundo juízos de equidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 133517,
+        "end": 133617
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

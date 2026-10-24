@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art205.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art205",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Haverá duplicação de colecta para efeitos do artigo anterior quando, estando pago por inteiro um tributo, se exigir da mesma ou de diferente pessoa um outro de igual natureza, referente ao mesmo facto tributário e ao mesmo período de tempo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 259856,
+        "end": 260100
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

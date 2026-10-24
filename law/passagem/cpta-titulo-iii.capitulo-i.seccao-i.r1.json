@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-iii.capitulo-i.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-iii.capitulo-i",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Secção I\nContencioso eleitoral",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 148882,
+        "end": 148912
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

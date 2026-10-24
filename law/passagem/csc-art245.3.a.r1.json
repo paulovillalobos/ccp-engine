@@ -1,0 +1,23 @@
+{
+  "id": "csc:art245.3.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art245.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "a) Os suprimentos só podem ser reembolsados aos seus credores depois de inteiramente satisfeitas as dívidas daquela para com terceiros;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 384575,
+        "end": 384710
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

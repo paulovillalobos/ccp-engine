@@ -1,0 +1,23 @@
+{
+  "id": "cp:art200.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art200",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "1 - Quem, em caso de grave necessidade, nomeadamente provocada por desastre, acidente, calamidade pública ou situação de perigo comum, que ponha em perigo a vida, a integridade física ou a liberdade de outra pessoa, deixar de lhe prestar o auxílio necessário ao afastamento do perigo, seja por acção pessoal, seja promovendo o socorro, é punido com pena de prisão até 1 ano ou com pena de multa até 120 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 291253,
+        "end": 291661
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

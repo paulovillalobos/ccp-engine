@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art103.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art103",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Regem-se pelo disposto no presente artigo e no artigo anterior, os processos dirigidos à declaração de ilegalidade de disposições contidas no programa do concurso, no caderno de encargos ou em qualquer outro documento conformador do procedimento de formação de contrato, designadamente com fundamento na ilegalidade das especificações técnicas, económicas ou financeiras que constem desses documentos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 156659,
+        "end": 157064
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

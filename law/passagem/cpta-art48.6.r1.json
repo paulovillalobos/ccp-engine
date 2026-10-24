@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art48.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art48",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - O disposto nos números anteriores também é aplicável quando a situação se verifique no conjunto de diferentes tribunais, podendo o impulso partir do presidente de qualquer dos tribunais envolvidos ou de qualquer das partes nos processos em causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 63650,
+        "end": 63900
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

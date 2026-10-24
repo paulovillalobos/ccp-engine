@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art135.1.e",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art135.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "e) Da sentença não cabe qualquer recurso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 200308,
+        "end": 200349
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

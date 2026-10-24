@@ -1,0 +1,23 @@
+{
+  "id": "cc:art675.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art675",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2003-09-15",
+      "text": "2 - É lícito aos interessados convencionar que a coisa empenhada seja adjudicada ao credor pelo valor que o tribunal fixar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 291345,
+        "end": 291468
+      },
+      "valid_from": "2003-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

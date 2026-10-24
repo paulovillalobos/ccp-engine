@@ -1,0 +1,23 @@
+{
+  "id": "cc:art302.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art302",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. Só tem legitimidade para renunciar à prescrição quem puder dispor do benefício que a prescrição tenha criado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 141034,
+        "end": 141146
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

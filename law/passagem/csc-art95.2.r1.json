@@ -1,0 +1,23 @@
+{
+  "id": "csc:art95.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art95",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - É permitido deliberar a redução do capital a um montante inferior ao mínimo estabelecido nesta lei para o respectivo tipo de sociedade se tal redução ficar expressamente condicionada à efectivação de aumento do capital para montante igual ou superior àquele mínimo, a realizar nos 60 dias seguintes àquela deliberação.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 143824,
+        "end": 144146
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

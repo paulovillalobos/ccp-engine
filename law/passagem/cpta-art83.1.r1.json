@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art83.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art83",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Na contestação, deduzida por forma articulada, os demandados devem:\na) Individualizar a ação;\nb) Expor as razões de facto e de direito por que se opõem à pretensão do autor;\nc) Expor os factos essenciais em que se baseiam as exceções deduzidas, especificando-as separadamente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 113855,
+        "end": 114135
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

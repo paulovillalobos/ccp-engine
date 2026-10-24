@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art150.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art150",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - O erro na apreciação das provas e na fixação dos factos materiais da causa não pode ser objeto de revista, salvo havendo ofensa de uma disposição expressa de lei que exija certa espécie de prova para a existência do facto ou que fixe a força de determinado meio de prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 215348,
+        "end": 215623
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1819.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1819",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. A acção deve ser proposta contra a pretensa mãe ou, se esta tiver falecido, contra o cônjuge sobrevivo não separado judicialmente de pessoas e bens e também, sucessivamente, contra os descendentes, ascendentes ou irmãos; na falta destas pessoas, será nomeado curador especial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 841410,
+        "end": 841689
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

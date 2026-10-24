@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art34.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art34",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Consideram-se de valor indeterminável os processos respeitantes a bens imateriais e a normas emitidas ou omitidas no exercício da função administrativa, incluindo planos urbanísticos e de ordenamento do território.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 48893,
+        "end": 49111
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

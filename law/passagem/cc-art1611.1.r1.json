@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1611.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1611",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-09-15",
+      "text": "1. Até ao momento da celebração do casamento, qualquer pessoa pode declarar os impedimentos de que tenha conhecimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 721898,
+        "end": 722016
+      },
+      "valid_from": "1995-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

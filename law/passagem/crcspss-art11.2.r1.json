@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art11.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art11",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - As contribuições são da responsabilidade das entidades empregadoras, dos trabalhadores independentes, das entidades contratantes e dos beneficiários do seguro social voluntário, consoante os casos, e as quotizações são da responsabilidade dos trabalhadores, nos termos previstos no presente Código.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 11845,
+        "end": 12147
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

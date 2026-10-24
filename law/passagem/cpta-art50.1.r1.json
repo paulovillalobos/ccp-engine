@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art50.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art50",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A impugnação de um ato administrativo tem por objeto a anulação ou a declaração de nulidade desse ato.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 66325,
+        "end": 66431
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

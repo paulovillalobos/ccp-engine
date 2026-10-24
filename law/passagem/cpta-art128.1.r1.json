@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art128.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art128",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Quando seja requerida a suspensão da eficácia de um ato administrativo, a entidade administrativa e os beneficiários do ato não podem, após a citação, iniciar ou prosseguir a execução, salvo se, mediante remessa ao tribunal de resolução fundamentada na pendência do processo cautelar, reconhecer que o diferimento da execução seria gravemente prejudicial para o interesse público.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 190050,
+        "end": 190434
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art110.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art110",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "1 - São declaradas perdidas a favor do Estado as vantagens de facto ilícito típico, considerando-se como tal todos os bens ou direitos que constituam vantagem económica, direta ou indiretamente resultante desse facto, para o agente ou para outrem.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 185285,
+        "end": 185532
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art145.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art145",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os efeitos referidos no número anterior produzem-se:\na) No 1.º dia do 12.º mês posterior ao do início de actividade quando tal ocorra em data posterior a Setembro;\nb) No 1.º dia do mês de Outubro do ano subsequente ao do início de actividade nos restantes casos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 92503,
+        "end": 92769
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

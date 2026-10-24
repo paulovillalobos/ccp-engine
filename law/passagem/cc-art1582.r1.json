@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1582",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1582.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1582.º\n(Limites do parentesco)\nSalvo disposição da lei em contrário, os efeitos do parentesco produzem-se em qualquer grau na linha recta e até ao sexto grau na colateral.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 706712,
+        "end": 706890
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

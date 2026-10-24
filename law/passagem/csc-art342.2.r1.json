@@ -1,0 +1,23 @@
+{
+  "id": "csc:art342.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art342",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - O dividendo prioritário que não for integralmente pago num determinado exercício social deve ser pago nos três exercícios seguintes, antes do dividendo relativo a estes, desde que haja lucros distribuíveis, sem prejuízo do disposto no n.º 4 e de o contrato de sociedade poder prever um número de exercícios superior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 483323,
+        "end": 483643
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

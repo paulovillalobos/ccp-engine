@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1161.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1161",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "d) A prestar contas, findo o mandato ou quando o mandante as exigir;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 522808,
+        "end": 522876
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

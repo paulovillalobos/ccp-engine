@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art79.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art79",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A taxa contributiva relativa aos praticantes desportivos profissionais é de 33,3 %, sendo, respectivamente, de 22,3 % e de 11 % para as entidades empregadoras e para os trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 55152,
+        "end": 55339
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

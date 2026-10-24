@@ -1,0 +1,23 @@
+{
+  "id": "ct:art254.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art254",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A prova da situação de doença do trabalhador é feita por declaração de estabelecimento hospitalar, centro de saúde, de serviço digital do Serviço Nacional de Saúde, ou de serviço digital dos serviços regionais de saúde das regiões autónomas, ou ainda por atestado médico.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 353528,
+        "end": 353803
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

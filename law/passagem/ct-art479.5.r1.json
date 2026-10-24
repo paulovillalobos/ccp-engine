@@ -1,0 +1,23 @@
+{
+  "id": "ct:art479.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art479",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "5 - Caso constate a existência de disposição ilegal na matéria em causa, o magistrado do Ministério Público promove, no prazo de 15 dias, a declaração judicial da nulidade dessas disposições.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 585250,
+        "end": 585441
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

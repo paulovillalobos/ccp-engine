@@ -1,0 +1,23 @@
+{
+  "id": "cp:art90-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art90-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "1 - Pelos crimes previstos no n.º 2 do artigo 11.º, são aplicáveis às pessoas colectivas e entidades equiparadas as penas principais de multa ou de dissolução.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 155162,
+        "end": 155321
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

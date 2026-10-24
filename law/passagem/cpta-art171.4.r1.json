@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art171.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art171",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - A oposição é decidida no prazo de 20 dias.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 241886,
+        "end": 241932
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

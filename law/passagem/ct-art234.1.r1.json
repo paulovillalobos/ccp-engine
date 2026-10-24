@@ -1,0 +1,23 @@
+{
+  "id": "ct:art234.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art234",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2016-04-02",
+      "text": "1 - São feriados obrigatórios os dias 1 de janeiro, de Sexta-Feira Santa, de Domingo de Páscoa, 25 de abril, 1 de maio, de Corpo de Deus, 10 de junho, 15 de agosto, 5 de outubro, 1 de novembro, 1, 8 e 25 de dezembro.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 331689,
+        "end": 331905
+      },
+      "valid_from": "2016-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

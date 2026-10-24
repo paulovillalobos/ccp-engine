@@ -1,0 +1,23 @@
+{
+  "id": "ct:art106.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art106",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - O empregador deve prestar ao trabalhador, pelo menos, as seguintes informações:\na) A respectiva identificação, nomeadamente, sendo sociedade, a existência de uma relação de coligação societária, de participações recíprocas, de domínio ou de grupo, bem como a sede ou domicílio;\nb) O local de trabalho ou, não havendo um fixo ou predominante, a indicação de que o trabalho é prestado em várias localizações;\nc) A categoria do trabalhador ou a descrição sumária das funções correspondentes;\nd) A data de celebração do contrato e a do início dos seus efeitos;\ne) Termo estipulado ou a duração previsível do contrato, quando se trate, respetivamente, de contrato a termo certo ou incerto;\nf) A duração das férias ou o critério para a sua determinação;\ng) Os prazos de aviso prévio e os requisitos formais a observar pelo empregador e pelo trabalhador para a cessação do contrato, ou o critério para a sua determinação;\nh) O valor, a periodicidade e o método de pagamento da retribuição, incluindo a discriminação dos seus elementos constitutivos;\ni) O período normal de trabalho diário e semanal, especificando os casos em que é definido em termos médios, bem como o regime aplicável em caso de trabalho suplementar e de organização por turnos;\nj) O número da apólice de seguro de acidentes de trabalho e a identificação da entidade seguradora;\nl) O instrumento de regulamentação coletiva de trabalho aplicável, se houver, e a designação das respetivas entidades celebrantes;\nm) A identificação do Fundo de Garantia de Compensação do Trabalho (FGCT), previsto em legislação específica;\nn) No caso de trabalhador temporário, a identificação do utilizador;\no) A duração e as condições do período experimental, se aplicável;\np) O direito individual a formação contínua;\nq) No caso de trabalho intermitente, a informação prevista na alínea b) do n.º 1 do artigo 158.º, nos n.os 1, 2 e 4 do artigo 159.º e no n.º 2 do artigo 160.º;\nr) Os regimes de proteção social, incluindo os benefícios complementares ou substitutivos dos assegurados pelo regime geral de segurança social;\ns) Os parâmetros, os critérios, as regras e as instruções em que se baseiam os algoritmos ou outros sistemas de inteligência artificial que afetam a tomada de decisões sobre o acesso e a manutenção do emprego, assim como as condições de trabalho, incluindo a elaboração de perfis e o controlo da atividade profissional.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 162743,
+        "end": 165134
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

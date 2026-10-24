@@ -1,0 +1,23 @@
+{
+  "id": "cc:art699",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 699.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 699.º\n(Hipoteca e usufruto)\n1. Extinguindo-se o usufruto constituído sobre a coisa hipotecada, o direito do credor hipotecário passa a exercer-se sobre a coisa, como se o usufruto nunca tivesse sido constituído.\n2. Se a hipoteca tiver por objecto o direito de usufruto, considera-se extinta com a extinção deste direito.\n3. Porém, se a extinção do usufruto resultar de renúncia, ou da transferência dos direitos do usufrutuário para o proprietário, ou da aquisição da propriedade por parte daquele, a hipoteca subsiste, como se a extinção do direito se não tivesse verificado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 300134,
+        "end": 300717
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

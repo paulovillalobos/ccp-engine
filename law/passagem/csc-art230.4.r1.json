@@ -1,0 +1,23 @@
+{
+  "id": "csc:art230.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art230",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "4 - Se a sociedade não tomar a deliberação sobre o pedido de consentimento nos 60 dias seguintes à sua recepção, a eficácia de cessão deixa de depender dele.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 363306,
+        "end": 363463
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

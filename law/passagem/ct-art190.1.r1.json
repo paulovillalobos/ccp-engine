@@ -1,0 +1,23 @@
+{
+  "id": "ct:art190.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art190",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2013-10-01",
+      "text": "1 - A caução constituída pela empresa de trabalho temporário para o exercício da actividade garante, nos termos de legislação específica, o pagamento de:\na) Crédito do trabalhador temporário relativo a retribuição, indemnização ou compensação devida pelo empregador pela cessação do contrato de trabalho e outras prestações pecuniárias, em mora por período superior a 15 dias;\nb) Contribuições para a segurança social, em mora por período superior a 30 dias.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 274014,
+        "end": 274472
+      },
+      "valid_from": "2013-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

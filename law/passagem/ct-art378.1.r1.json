@@ -1,0 +1,23 @@
+{
+  "id": "ct:art378.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art378",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "1 - Após a receção dos pareceres referidos no artigo anterior ou o termo do prazo para o efeito, o empregador dispõe de 30 dias para proceder ao despedimento, sob pena de caducidade do direito, mediante decisão fundamentada e por escrito de que constem:\na) Motivo da cessação do contrato de trabalho;\nb) Confirmação dos requisitos previstos no artigo 375.º;\nc) Montante, forma, momento e lugar do pagamento da compensação e dos créditos vencidos e dos exigíveis por efeito da cessação do contrato de trabalho;\nd) Data da cessação do contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 489155,
+        "end": 489697
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

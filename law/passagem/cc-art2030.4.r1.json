@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2030.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2030",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "4. O usufrutuário, ainda que o seu direito incida sobre a totalidade do património, é havido como legatário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 986144,
+        "end": 986252
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

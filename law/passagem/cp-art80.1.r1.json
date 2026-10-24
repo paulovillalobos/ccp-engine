@@ -1,0 +1,23 @@
+{
+  "id": "cp:art80.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art80",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "1 - A detenção, a prisão preventiva e a obrigação de permanência na habitação sofridas pelo arguido são descontadas por inteiro no cumprimento da pena de prisão, ainda que tenham sido aplicadas em processo diferente daquele em que vier a ser condenado, quando o facto por que for condenado tenha sido praticado anteriormente à decisão final do processo no âmbito do qual as medidas foram aplicadas.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 147610,
+        "end": 148008
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

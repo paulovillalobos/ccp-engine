@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art152.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art152",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - O recurso não é admitido se a orientação perfilhada no acórdão impugnado estiver de acordo com a jurisprudência mais recentemente consolidada do Supremo Tribunal Administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 219175,
+        "end": 219356
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art122.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art122",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A decisão sobre a adoção de providências cautelares determina a notificação com urgência às partes para cumprimento imediato e, quando seja caso disso, às demais pessoas e entidades que lhe devam dar cumprimento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 183883,
+        "end": 184099
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

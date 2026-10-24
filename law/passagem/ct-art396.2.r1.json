@@ -1,0 +1,23 @@
+{
+  "id": "ct:art396.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art396",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-03-20",
+      "text": "2 - No caso de fracção de ano de antiguidade, o valor da indemnização é calculado proporcionalmente.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 506569,
+        "end": 506669
+      },
+      "valid_from": "2018-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

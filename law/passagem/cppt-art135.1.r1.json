@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art135.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art135",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - São admitidas em processo judicial tributário as seguintes providências cautelares avulsas a favor da administração tributária:\na) O arresto;\nb) O arrolamento.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 164030,
+        "end": 164193
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

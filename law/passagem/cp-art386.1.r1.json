@@ -1,0 +1,23 @@
+{
+  "id": "cp:art386.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art386",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-02-14",
+      "text": "1 - Para efeito da lei penal, a expressão funcionário abrange:\na) O empregado público civil e o militar;\nb) Quem desempenhe cargo público em virtude de vínculo especial;\nc) Quem, mesmo provisória ou temporariamente, mediante remuneração ou a título gratuito, voluntária ou obrigatoriamente, tiver sido chamado a desempenhar ou a participar no desempenho de uma atividade compreendida na função pública administrativa ou jurisdicional;\nd) Os juízes do Tribunal Constitucional, os juízes do Tribunal de Contas, os magistrados judiciais, os magistrados do Ministério Público, o Procurador-Geral da República, o Provedor de Justiça, os membros do Conselho Superior da Magistratura, os membros do Conselho Superior dos Tribunais Administrativos e Fiscais e os membros do Conselho Superior do Ministério Público;\ne) O árbitro, o jurado, o perito, o técnico que auxilie o tribunal em inspeção judicial, o tradutor, o intérprete e o mediador;\nf) O notário;\ng) Quem, mesmo provisória ou temporariamente, mediante remuneração ou a título gratuito, voluntária ou obrigatoriamente, desempenhar ou participar no desempenho de função pública administrativa ou exercer funções de autoridade em pessoa coletiva de utilidade pública, incluindo as instituições particulares de solidariedade social; e\nh) Quem desempenhe ou participe no desempenho de funções públicas em associação pública.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 466245,
+        "end": 467616
+      },
+      "valid_from": "2024-02-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

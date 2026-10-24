@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art180.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art180",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os beneficiários que sejam enquadrados no seguro social voluntário com idade igual ou superior à referida no mapa do anexo i têm como limite da base de incidência o valor correspondente ao 5.º escalão, sem prejuízo do disposto no artigo 183.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 115674,
+        "end": 115920
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

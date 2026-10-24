@@ -1,0 +1,23 @@
+{
+  "id": "csc:art546.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art546",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "2 - Aqueles a quem sejam delegados poderes podem igualmente assinar ou autenticarem-se eletronicamente com recurso ao SCAP, nos termos do número anterior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 767694,
+        "end": 767848
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

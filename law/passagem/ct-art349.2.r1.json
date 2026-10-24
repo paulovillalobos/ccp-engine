@@ -1,0 +1,23 @@
+{
+  "id": "ct:art349.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art349",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-10-01",
+      "text": "2 - O acordo de revogação deve constar de documento assinado por ambas as partes, ficando cada uma com um exemplar.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 449542,
+        "end": 449657
+      },
+      "valid_from": "2017-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

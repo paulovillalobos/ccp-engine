@@ -1,0 +1,23 @@
+{
+  "id": "cc:art237",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 237.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 237.º\n(Casos duvidosos)\nEm caso de dúvida sobre o sentido da declaração, prevalece, nos negócios gratuitos, o menos gravoso para o disponente e, nos onerosos, o que conduzir ao maior equilíbrio das prestações.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 116400,
+        "end": 116616
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art11.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art11",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - Nos processos em que esteja em causa a atuação ou omissão de um órgão subordinado a poderes hierárquicos, a designação do representante em juízo pode ser feita por esse órgão, mas a existência do processo é imediatamente comunicada ao ministro ou ao órgão superior da pessoa coletiva.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 25495,
+        "end": 25783
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

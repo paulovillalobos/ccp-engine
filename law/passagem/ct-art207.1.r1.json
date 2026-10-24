@@ -1,0 +1,23 @@
+{
+  "id": "ct:art207.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art207",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - Em regime de adaptabilidade, a duração média do trabalho é apurada por referência a período estabelecido em instrumento de regulamentação colectiva de trabalho que não seja superior a 12 meses ou, na sua falta, a um período de quatro meses.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 292905,
+        "end": 293149
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:dl.art6.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:dl.art6",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O disposto no artigo 55.º do Código entra em vigor no dia 1 de Janeiro de 2011.\nAprovada em 23 de Julho de 2009.\nO Presidente da Assembleia da República, Jaime Gama.\nPromulgada em 31 de Agosto de 2009.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 6818,
+        "end": 7023
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

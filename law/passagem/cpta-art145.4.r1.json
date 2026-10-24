@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art145.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art145",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Do despacho do relator que não receba o recurso interposto de decisão da Secção de contencioso administrativo do Supremo Tribunal Administrativo para o Pleno do mesmo Tribunal, ou o retenha, cabe reclamação para a conferência e da decisão desta não há recurso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 209203,
+        "end": 209467
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

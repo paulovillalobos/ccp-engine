@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art203.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art203.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "b) Da data em que tiver ocorrido o facto superveniente ou do seu conhecimento pelo executado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 256821,
+        "end": 256914
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

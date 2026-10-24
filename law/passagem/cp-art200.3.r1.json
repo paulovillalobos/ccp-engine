@@ -1,0 +1,23 @@
+{
+  "id": "cp:art200.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art200",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "3 - A omissão de auxílio não é punível quando se verificar grave risco para a vida ou integridade física do omitente ou quando, por outro motivo relevante, o auxílio lhe não for exigível.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 291850,
+        "end": 292037
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

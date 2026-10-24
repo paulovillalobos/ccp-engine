@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art150.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art150",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - A obrigação contributiva das entidades contratantes constitui-se com a prestação do serviço pelo trabalhador independente e efectiva-se com o pagamento de contribuições, nos termos regulados no presente capítulo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 95271,
+        "end": 95487
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

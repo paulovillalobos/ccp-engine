@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art68.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art68",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Para além da entidade responsável pela situação de ilegalidade, são obrigatoriamente demandados os contrainteressados a quem a prática do ato pretendido possa diretamente prejudicar ou que tenham legítimo interesse em que ele não seja praticado e que possam ser identificados em função da relação material em causa ou dos documentos contidos no processo administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 88960,
+        "end": 89333
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

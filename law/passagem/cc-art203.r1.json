@@ -1,0 +1,23 @@
+{
+  "id": "cc:art203",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 203.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 203.º\n(Classificação das coisas)\nAs coisas são imóveis ou móveis, simples ou compostas, fungíveis ou não fungíveis, consumíveis ou não consumíveis, divisíveis ou indivisíveis, principais ou acessórias, presentes ou futuras.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 104475,
+        "end": 104705
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

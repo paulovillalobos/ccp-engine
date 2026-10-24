@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art230.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art230",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2005-01-01",
+      "text": "2 - O serviço competente efectuará o registo no prazo de 15 dias e, dentro deste prazo, remeterá o respectivo certificado e a certidão de ónus, a fim de serem juntos ao processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 287954,
+        "end": 288132
+      },
+      "valid_from": "2005-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art2.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art2",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - Se tiver sido determinada a suspensão, administrativa ou judicial, do procedimento, o Estado Português deve dar conhecimento do facto à Comissão no prazo referido no n.º 1, assim como deve informá-la do eventual levantamento da suspensão ou do início de outro procedimento de formação de contrato, total ou parcialmente relacionado com o procedimento anterior, esclarecendo se a alegada violação foi corrigida ou expondo as razões por que não o foi.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 1821,
+        "end": 2274
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

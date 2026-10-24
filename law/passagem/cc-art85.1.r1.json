@@ -1,0 +1,23 @@
+{
+  "id": "cc:art85.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art85",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1. O menor tem domicílio no lugar da residência da família; se ela não existir, tem por domicílio o do progenitor a cuja guarda estiver.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 43617,
+        "end": 43753
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

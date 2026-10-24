@@ -1,0 +1,23 @@
+{
+  "id": "cc:art127.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art127",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. São excepcionalmente válidos, além de outros previstos na lei:\na)Os actos de administração ou disposição de bens que o maior de dezasseis anos haja adquirido por seu trabalho;\nb) Os negócios jurídicos próprios da vida corrente do menor que, estando ao alcance da sua capacidade natural, só impliquem despesas, ou disposições de bens, de pequena importância;\nc) Os negócios jurídicos relativos à profissão, arte ou ofício que o menor tenha sido autorizado a exercer, ou os praticados no exercício dessa profissão, arte ou ofício.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 59253,
+        "end": 59784
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

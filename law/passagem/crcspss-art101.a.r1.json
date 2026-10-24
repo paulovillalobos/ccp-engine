@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art101.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art101",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) As entidades empregadoras, no que respeita a trabalhadores abrangidos por esquemas contributivos com taxas inferiores à estabelecida para a generalidade dos trabalhadores por conta de outrem, com excepção das entidades cuja redução de taxa resulte do facto de serem pessoas colectivas sem fins lucrativos ou por pertencerem a sectores considerados no presente Código como economicamente débeis;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 65399,
+        "end": 65796
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

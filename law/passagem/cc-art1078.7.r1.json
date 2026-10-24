@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1078.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1078",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "7 - Se as partes acordarem uma quantia fixa mensal a pagar por conta dos encargos e despesas, os acertos são feitos semestralmente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 460829,
+        "end": 460960
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

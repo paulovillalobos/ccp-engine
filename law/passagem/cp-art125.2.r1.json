@@ -1,0 +1,23 @@
+{
+  "id": "cp:art125.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art125",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - A prescrição volta a correr a partir do dia em que cessar a causa da suspensão.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 207117,
+        "end": 207200
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art265.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art265",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "1 - O pagamento pode ser efectuado a qualquer tempo, mediante a emissão do respectivo documento único de pagamento.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 326614,
+        "end": 326729
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

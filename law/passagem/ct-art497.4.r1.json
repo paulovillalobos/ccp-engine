@@ -1,0 +1,23 @@
+{
+  "id": "ct:art497.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art497",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - O trabalhador pode revogar a escolha, cessando a aplicação da convenção seis meses após a comunicação dessa revogação ou antes se, entretanto, se esgotar o prazo referido no número anterior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 602565,
+        "end": 602759
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

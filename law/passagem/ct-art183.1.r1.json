@@ -1,0 +1,23 @@
+{
+  "id": "ct:art183.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art183",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O contrato de trabalho por tempo indeterminado para cedência temporária está sujeito a forma escrita, é celebrado em dois exemplares e deve conter:\na) Identificação, assinaturas, domicílio ou sede das partes e número e data do alvará da licença da empresa de trabalho temporário;\nb) Menção expressa de que o trabalhador aceita que a empresa de trabalho temporário o ceda temporariamente a utilizadores;\nc) Actividade contratada ou descrição genérica das funções a exercer e da qualificação profissional adequada, bem como a área geográfica na qual o trabalhador está adstrito a exercer funções;\nd) Retribuição mínima durante as cedências que ocorram, nos termos do artigo 185.º",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 262850,
+        "end": 263531
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

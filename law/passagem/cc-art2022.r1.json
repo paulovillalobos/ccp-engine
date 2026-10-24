@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2022",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-v.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 2022.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 2022.º\n(Irmãos)\nO direito a alimentos é recíproco entre irmãos legítimos e entre irmãos germanos ilegítimos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 983164,
+        "end": 983279
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

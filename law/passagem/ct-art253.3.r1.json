@@ -1,0 +1,23 @@
+{
+  "id": "ct:art253.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art253",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - A falta de candidato a cargo público durante o período legal da campanha eleitoral é comunicada ao empregador com a antecedência mínima de quarenta e oito horas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 352815,
+        "end": 352980
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

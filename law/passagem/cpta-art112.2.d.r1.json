@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art112.2.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art112.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "d) Autorização provisória ao interessado para iniciar ou prosseguir uma atividade ou adoptar uma conduta;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 169812,
+        "end": 169917
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

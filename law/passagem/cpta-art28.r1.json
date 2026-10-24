@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art28",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iv",
+  "kind": "artigo",
+  "label": "Artigo 28.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 28.º\nApensação de processos\n1 - Quando sejam separadamente propostas acções que, por se verificarem os pressupostos de admissibilidade previstos para a coligação e a cumulação de pedidos, possam ser reunidas num único processo, deve ser ordenada a apensação delas, ainda que se encontrem pendentes em tribunais diferentes, a não ser que o estado do processo ou outra razão torne especialmente inconveniente a apensação.\n2 - Os processos são apensados ao que tiver sido intentado em primeiro lugar, considerando-se como tal o de numeração inferior, salvo se os pedidos forem dependentes uns dos outros, caso em que a apensação é feita na ordem da dependência.\n3 - A apensação pode ser requerida ao tribunal perante o qual se encontre pendente o processo a que os outros tenham de ser apensados e, quando se trate de processos que estejam pendentes perante o mesmo juiz, deve ser por este oficiosamente determinada, ouvidas as partes.\n4 - Importa baixa na distribuição a apensação de processo distribuído a juiz diferente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 42060,
+        "end": 43087
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

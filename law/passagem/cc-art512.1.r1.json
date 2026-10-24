@@ -1,0 +1,23 @@
+{
+  "id": "cc:art512.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art512",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A obrigação é solidária, quando cada um dos devedores responde pela prestação integral e esta a todos libera, ou quando cada um dos credores tem a faculdade de exigir, por si só, a prestação integral e esta libera o devedor para com todos eles.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 230473,
+        "end": 230720
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

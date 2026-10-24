@@ -1,0 +1,23 @@
+{
+  "id": "cp:art204.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art204",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "4 - Não há lugar à qualificação se a coisa ou o animal furtados forem de diminuto valor.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 297235,
+        "end": 297323
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

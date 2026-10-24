@@ -1,0 +1,23 @@
+{
+  "id": "ct:art63.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art63",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "6 - Se o parecer for desfavorável ao despedimento, o empregador só o pode efectuar após decisão judicial que reconheça a existência de motivo justificativo, devendo a acção ser intentada nos 30 dias subsequentes à notificação do parecer.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 109442,
+        "end": 109679
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

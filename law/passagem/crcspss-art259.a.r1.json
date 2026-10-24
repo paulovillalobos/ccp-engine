@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art259.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art259",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) Ao valor médio das remunerações registadas no sistema previdencial nos últimos 12 meses anteriores ao do requerimento, tomando-se em consideração a remuneração mais elevada em cada mês nas situações de registo de remunerações correspondentes às diversas actividades;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 158700,
+        "end": 158969
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

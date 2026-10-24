@@ -1,0 +1,23 @@
+{
+  "id": "ct:art256.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art256",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "1 - A falta injustificada constitui violação do dever de assiduidade e determina perda da retribuição correspondente ao período de ausência, que não é contado na antiguidade do trabalhador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 355888,
+        "end": 356077
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

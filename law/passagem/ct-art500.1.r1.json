@@ -1,0 +1,23 @@
+{
+  "id": "ct:art500.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art500",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "1 - Qualquer das partes pode denunciar a convenção colectiva, mediante comunicação escrita dirigida à outra parte, acompanhada de proposta negocial global.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 606807,
+        "end": 606962
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

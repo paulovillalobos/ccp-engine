@@ -1,0 +1,23 @@
+{
+  "id": "cc:art68",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 68.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 68.º\n(Termo da personalidade)\n1. A personalidade cessa com a morte.\n2. Quando certo efeito jurídico depender da sobrevivência de uma a outra pessoa, presume-se, em caso de dúvida, que uma e outra faleceram ao mesmo tempo.\n3. Tem-se por falecida a pessoa cujo cadáver não foi encontrado ou reconhecido, quando o desaparecimento se tiver dado em circunstâncias que não permitam duvidar da morte dela.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 37532,
+        "end": 37937
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

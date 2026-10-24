@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-h",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-x",
+  "kind": "artigo",
+  "label": "Artigo 101.º-H",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 101.º-H\nAcumulação de regimes\nO trabalhador cuidador que seja titular de direitos de parentalidade relativamente à pessoa cuidada não pode acumular o previsto na subsecção iv com o disposto na presente subsecção.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 160361,
+        "end": 160580
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:parte-ii.titulo-i.capitulo-i.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-i",
+  "kind": "secao",
+  "label": "SECÇÃO I",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "SECÇÃO I\nÂmbito de aplicação",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 17944,
+        "end": 17972
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

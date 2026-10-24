@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art104.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art104",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quando não seja dada integral satisfação a pedidos formulados no exercício do direito à informação procedimental ou do direito de acesso aos arquivos e registos administrativos, o interessado pode requerer a correspondente intimação, nos termos e com os efeitos previstos na presente secção.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 161044,
+        "end": 161339
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

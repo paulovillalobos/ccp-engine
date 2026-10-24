@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art8.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art8",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Todas as entidades públicas ou privadas devem fornecer os elementos e prestar a colaboração necessária ao exercício da ação pública pelo Ministério Público, podendo este, em caso de recusa, solicitar ao tribunal competente para o julgamento da ação proposta ou a propor a aplicação das sanções previstas na lei processual civil para as situações de recusa ilegítima de colaboração para a descoberta da verdade.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 18134,
+        "end": 18548
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

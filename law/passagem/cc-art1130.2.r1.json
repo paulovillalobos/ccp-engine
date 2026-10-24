@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1130.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1130",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. É aplicável ao comodato constituído pelo usufrutuário o disposto nas alíneas a) e b) do artigo 1052.º",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 512653,
+        "end": 512757
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

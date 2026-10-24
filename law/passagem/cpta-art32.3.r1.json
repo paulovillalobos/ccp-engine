@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art32.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art32",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - Quando a acção tenha por objecto a apreciação da existência, validade, cumprimento, modificação ou resolução de um contrato, atende-se ao valor do mesmo, determinado pelo preço ou estipulado pelas partes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 46645,
+        "end": 46853
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

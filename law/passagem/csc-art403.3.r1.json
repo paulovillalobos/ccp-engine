@@ -1,0 +1,23 @@
+{
+  "id": "csc:art403.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art403",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "3 - Um ou mais accionistas titulares de acções correspondentes, pelo menos, a 10% do capital social podem, enquanto não tiver sido convocada a assembleia geral para deliberar sobre o assunto, requerer a destituição judicial de um administrador, com fundamento em justa causa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 576729,
+        "end": 577004
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art196.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art196",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2022-07-01",
+      "text": "5 - Nos casos em que se demonstre notória dificuldade financeira e previsíveis consequências económicas para os devedores, poderá ser alargado o número de prestações mensais até 5 anos, se a dívida exequenda exceder 500 unidades de conta no momento da autorização, não podendo então\nnenhuma delas ser inferior a 10 unidades de conta.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 233700,
+        "end": 234033
+      },
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

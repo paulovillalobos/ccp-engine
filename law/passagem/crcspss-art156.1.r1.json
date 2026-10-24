@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art156.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art156",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Quando, no decurso do mesmo mês, se verificar, sucessivamente, o exercício de actividade independente e situação determinante do registo de remunerações por equivalência à entrada de contribuições, a obrigação de contribuir reporta-se ao número de dias em que não haja lugar ao registo de remunerações por equivalência.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 98506,
+        "end": 98829
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1209.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1209",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A fiscalização feita pelo dono da obra, ou por comissário, não impede aquele, findo o contrato, de fazer valer os seus direitos contra o empreiteiro, embora sejam aparentes os vícios da coisa ou notória a má execução do contrato, excepto se tiver havido da sua parte concordância expressa com a obra executada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 537405,
+        "end": 537718
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

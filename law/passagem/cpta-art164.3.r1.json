@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art164.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art164",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Na petição, o exequente pode pedir a declaração de nulidade dos atos desconformes com a sentença, bem como a anulação daqueles que mantenham, sem fundamento válido, a situação ilegal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 231756,
+        "end": 231943
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1920-c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii.subseccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 1920.º-C",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1920.º-C\n(Consequência da falta do registo)\nAs decisões judiciais a que se refere o artigo anterior não podem ser invocadas contra terceiro de boa fé enquanto se não mostre efectuado o registo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 920608,
+        "end": 920808
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

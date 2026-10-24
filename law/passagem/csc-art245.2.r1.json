@@ -1,0 +1,23 @@
+{
+  "id": "csc:art245.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art245",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Os credores por suprimentos não podem requerer, por esses créditos, a falência da sociedade. Todavia, a concordata concluída no processo de falência produz efeitos a favor dos credores de suprimentos e contra eles.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 384285,
+        "end": 384503
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

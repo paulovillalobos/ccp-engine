@@ -1,0 +1,23 @@
+{
+  "id": "cp:art115.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art115",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-10-01",
+      "text": "2 - O direito de queixa previsto no n.º 6 do artigo 113.º extingue-se no prazo de seis meses a contar da data em que o ofendido perfizer 18 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 195351,
+        "end": 195496
+      },
+      "valid_from": "2023-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

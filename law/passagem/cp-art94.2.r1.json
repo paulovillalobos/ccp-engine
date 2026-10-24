@@ -1,0 +1,23 @@
+{
+  "id": "cp:art94.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art94",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - O período de liberdade para prova é fixado entre um mínimo de 2 anos e um máximo de 5, não podendo ultrapassar, todavia, o tempo que faltar para o limite máximo de duração do internamento.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 170356,
+        "end": 170548
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-379-1986",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:07:49Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-379-1986",
+  "sha256": "beb9cd2ef0eb6aa60ee724e5a131a459fb8a06d63a0fbdc8869efda42976a31b",
+  "bytes": "raw_bytes/beb9cd2ef0eb6aa60ee724e5a131a459fb8a06d63a0fbdc8869efda42976a31b",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/379-1986-220772",
+  "captured_at": "2026-10-24T20:07:37Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "7ce48cedaa7e4dd41a2cdb8d11f9329f3fa870916eac3111bfbb8dc045b4cba7",
+    "bytes": "raw_bytes/7ce48cedaa7e4dd41a2cdb8d11f9329f3fa870916eac3111bfbb8dc045b4cba7"
+  }
+}

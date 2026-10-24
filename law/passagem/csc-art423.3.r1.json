@@ -1,0 +1,23 @@
+{
+  "id": "csc:art423.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art423",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "3 - De cada reunião deve ser lavrada a acta no livro respectivo ou nas folhas soltas, assinada por todos os que nela tenham participado.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 615929,
+        "end": 616065
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

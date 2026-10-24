@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art275.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art275",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) Os advogados e solicitadores que se encontrem, à data da entrada em vigor do presente Código, facultativamente enquadrados naquele regime;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 170264,
+        "end": 170405
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

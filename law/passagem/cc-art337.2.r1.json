@@ -1,0 +1,23 @@
+{
+  "id": "cc:art337.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art337",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. O acto considera-se igualmente justificado, ainda que haja excesso de legítima defesa, se o excesso for devido a perturbação ou medo não culposo do agente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 156385,
+        "end": 156543
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

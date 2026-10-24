@@ -1,0 +1,23 @@
+{
+  "id": "ct:art199-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art199-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-01-01",
+      "text": "1 - O empregador tem o dever de se abster de contactar o trabalhador no período de descanso, ressalvadas as situações de força maior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 284938,
+        "end": 285071
+      },
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

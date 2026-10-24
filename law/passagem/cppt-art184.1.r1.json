@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art184.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art184",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - O registo dos processos será efectuado:\na) Nas relações que acompanham as certidões de dívidas ao Estado ou em livro de modelo a aprovar;\nb) No livro, de modelo a aprovar, de outras execuções ou então nas relações que acompanham as certidões;\nc) No livro, de modelo a aprovar, das cartas precatórias recebidas.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 213120,
+        "end": 213434
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

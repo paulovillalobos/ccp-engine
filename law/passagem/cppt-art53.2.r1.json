@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art53.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art53",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - A administração tributária deve, até 15 dias antes do termo do prazo referido no n.º 1, notificar o contribuinte, por carta registada, e informá-lo sobre os efeitos do incumprimento dos seus deveres de cooperação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 70025,
+        "end": 70242
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

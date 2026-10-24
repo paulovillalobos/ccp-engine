@@ -1,0 +1,23 @@
+{
+  "id": "cp:art22",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 22.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 22.º\nTentativa\n1 - Há tentativa quando o agente praticar actos de execução de um crime que decidiu cometer, sem que este chegue a consumar-se.\n2 - São actos de execução:\na) Os que preencherem um elemento constitutivo de um tipo de crime;\nb) Os que forem idóneos a produzir o resultado típico; ou\nc) Os que, segundo a experiência comum e salvo circunstâncias imprevisíveis, forem de natureza a fazer esperar que se lhes sigam actos das espécies indicadas nas alíneas anteriores.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 91858,
+        "end": 92342
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

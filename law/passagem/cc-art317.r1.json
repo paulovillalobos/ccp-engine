@@ -1,0 +1,23 @@
+{
+  "id": "cc:art317",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 317.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 317.º\n(Prescrição de dois anos)\nPrescrevem no prazo de dois anos:\na) Os créditos dos estabelecimentos que forneçam alojamento, ou alojamento e alimentação, a estudantes, bem como os créditos dos estabelecimentos de ensino, educação, assistência ou tratamento, relativamente aos serviços prestados;\nb) Os créditos dos comerciantes pelos objectos vendidos a quem não seja comerciante ou os não destine ao seu comércio, e bem assim os créditos daqueles que exerçam profissionalmente uma indústria, pelo fornecimento de mercadorias ou produtos, execução de trabalhos ou gestão de negócios alheios, incluindo as despesas que hajam efectuado, a menos que a prestação se destine ao exercício industrial do devedor;\nc) Os créditos pelos serviços prestados no exercício de profissões liberais e pelo reembolso das despesas correspondentes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 146164,
+        "end": 147001
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

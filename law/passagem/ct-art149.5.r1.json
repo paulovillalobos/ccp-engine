@@ -1,0 +1,23 @@
+{
+  "id": "ct:art149.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art149",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - Considera-se como único contrato aquele que seja objecto de renovação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 212549,
+        "end": 212623
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

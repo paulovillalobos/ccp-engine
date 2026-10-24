@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art221.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art221",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2016-07-02",
+      "text": "1 - Na penhora de móveis observar-se-á designadamente o seguinte:\na) Os bens serão efectivamente apreendidos e entregues a um depositário idóneo, salvo se puderem ser removidos, sem inconveniente, para os serviços ou para qualquer depósito público;\nb) O depositário é escolhido pelo funcionário, podendo a escolha recair no executado;\nc) Na penhora lavra-se um auto, que é assinado pelo depositário ou por duas testemunhas, onde se regista o dia, a hora e o local da diligência, se menciona o valor da execução, se relacionam os bens por verbas numeradas, se indica o seu estado de conservação e o valor aproximado e se referem as obrigações e responsabilidades a que fica sujeito o depositário, a quem é entregue uma cópia;\nd) Se o executado estiver presente e se recuse a assinar, mencionar-se-á o facto.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 272324,
+        "end": 273130
+      },
+      "valid_from": "2016-07-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

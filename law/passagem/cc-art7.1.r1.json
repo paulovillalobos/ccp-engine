@@ -1,0 +1,23 @@
+{
+  "id": "cc:art7.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art7",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Quando se não destine a ter vigência temporária, a lei só deixa de vigorar se for revogada por outra lei.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 10191,
+        "end": 10299
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-e.1.c.i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101-e.1.c",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "i) Declaração da qual conste que não está esgotado o período máximo de duração;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 158051,
+        "end": 158130
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

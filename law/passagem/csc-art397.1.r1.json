@@ -1,0 +1,23 @@
+{
+  "id": "csc:art397.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art397",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "1 - É proibido à sociedade conceder empréstimos ou crédito a administradores, efectuar pagamentos por conta deles, prestar garantias a obrigações por eles contraídas e facultar-lhes adiantamentos de remunerações superiores a um mês.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 570328,
+        "end": 570560
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

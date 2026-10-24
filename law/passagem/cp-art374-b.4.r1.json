@@ -1,0 +1,23 @@
+{
+  "id": "cp:art374-b.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art374-b",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "4 - Ressalvam-se do disposto no número anterior os crimes praticados contra bens eminentemente pessoais.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 455844,
+        "end": 455948
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

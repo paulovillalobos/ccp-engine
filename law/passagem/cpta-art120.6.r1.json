@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art120.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art120",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - Quando no processo principal esteja apenas em causa o pagamento da quantia certa, sem natureza sancionatória, as providências cautelares são adotadas, independentemente da verificação dos requisitos previstos nos números anteriores, se tiver sido prestada garantia por uma das formas previstas na lei tributária.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 182311,
+        "end": 182627
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

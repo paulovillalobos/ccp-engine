@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art45",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-i.seccao-iii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 45.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 45.º\nBases de incidência convencionais\n1 - As bases de incidência convencionais são fixadas por referência ao valor do indexante dos apoios sociais (IAS).\n2 - Para efeitos do número anterior, a actualização da base de incidência produz efeitos a partir do 1.º dia do mês seguinte ao da publicação do diploma que concretize a actualização do IAS.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 30896,
+        "end": 31248
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

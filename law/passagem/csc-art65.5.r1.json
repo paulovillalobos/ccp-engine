@@ -1,0 +1,23 @@
+{
+  "id": "csc:art65.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art65",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "5 - O relatório de gestão, o relatório separado com a informação não financeira, quando aplicável, as contas do exercício e demais documentos de prestação de contas devem ser apresentados ao órgão competente e por este apreciados, salvo casos particulares previstos na lei, no prazo de três meses a contar da data do encerramento de cada exercício anual, ou no prazo de cinco meses a contar da mesma data quando se trate de sociedades que devam apresentar contas consolidadas ou que apliquem o método da equivalência patrimonial.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 95484,
+        "end": 96013
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art376.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art376",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. Se o documento contiver notas marginais, palavras entrelinhadas, rasuras, emendas ou outros vícios externos, sem a devida ressalva, cabe ao julgador fixar livremente a medida em que esses vícios excluem ou reduzem a força probatória do documento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 173080,
+        "end": 173329
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

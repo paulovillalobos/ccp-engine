@@ -1,0 +1,23 @@
+{
+  "id": "cp:art65.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art65",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Nenhuma pena envolve como efeito necessário a perda de direitos civis, profissionais ou políticos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 128991,
+        "end": 129093
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

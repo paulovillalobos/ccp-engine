@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art78.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art78.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "a) Designar o tribunal em que a acção é proposta;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 102520,
+        "end": 102569
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art5.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art5",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O contrato de trabalho celebrado com trabalhador estrangeiro ou apátrida está sujeito a forma escrita e deve conter, sem prejuízo de outras exigíveis no caso de ser a termo, as seguintes indicações:\na) Identificação, assinaturas e domicílio ou sede das partes;\nb) Referência ao visto de trabalho ou ao título de autorização de residência ou permanência do trabalhador em território português;\nc) Actividade do empregador;\nd) Actividade contratada e retribuição do trabalhador;\ne) Local e período normal de trabalho;\nf) Valor, periodicidade e forma de pagamento da retribuição;\ng) Datas da celebração do contrato e do início da prestação de actividade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 23659,
+        "end": 24314
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

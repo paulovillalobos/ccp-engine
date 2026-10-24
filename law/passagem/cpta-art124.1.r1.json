@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art124.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art124",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - A decisão de adotar ou recusar providências cautelares pode ser revogada ou alterada, oficiosamente ou mediante requerimento, com fundamento em alteração dos pressupostos de facto e de direito inicialmente existentes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 186496,
+        "end": 186717
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

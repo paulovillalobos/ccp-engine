@@ -1,0 +1,23 @@
+{
+  "id": "cc:art93",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 93.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 93.º\n(Relação dos bens e caução)\n1. Os bens do ausente serão relacionados e só depois entregues ao curador provisório, ao qual será fixada caução pelo tribunal.\n2. Em caso de urgência, pode ser autorizada a entrega dos bens antes de estes serem relacionados ou de o curador prestar a caução exigida.\n3. Se o curador não prestar a caução, será nomeado outro em lugar dele.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 46935,
+        "end": 47313
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

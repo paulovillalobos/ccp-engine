@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art35.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art35",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - O processo declarativo nos Tribunais Administrativos rege-se pelo disposto nos títulos II e III e pelas disposições gerais, sendo-lhe subsidiariamente aplicável o disposto na lei processual civil.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 49830,
+        "end": 50030
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

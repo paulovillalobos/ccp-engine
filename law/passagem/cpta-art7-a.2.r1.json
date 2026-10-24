@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art7-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art7-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O juiz providencia oficiosamente pelo suprimento da falta de pressupostos processuais suscetíveis de sanação, determinando a realização dos atos necessários à regularização da instância ou, quando a sanação dependa de ato que deva ser praticado pelas partes, convidando-as a praticá-lo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 16114,
+        "end": 16404
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art119.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art119",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - O juiz profere decisão no prazo de cinco dias contado da data da apresentação da última oposição ou do decurso do respetivo prazo, ou da produção de prova, quando esta tenha tido lugar.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 179856,
+        "end": 180045
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

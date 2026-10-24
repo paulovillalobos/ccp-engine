@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art136.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art136",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "2 - Nos tributos periódicos considera-se que o tributo está em fase de liquidação a partir do final do ano civil ou de outro período de tributação a que os respectivos rendimentos se reportem.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 164837,
+        "end": 165029
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

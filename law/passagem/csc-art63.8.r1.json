@@ -1,0 +1,23 @@
+{
+  "id": "csc:art63.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art63",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "8 - Nenhum sócio tem o dever de assinar as actas que não estejam consignadas no respectivo livro ou nas folhas soltas, devidamente numeradas e rubricadas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 92061,
+        "end": 92215
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

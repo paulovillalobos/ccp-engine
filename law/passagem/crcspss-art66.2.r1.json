@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art66.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art66",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O limite mínimo fixado no número anterior não se aplica nos casos de acumulação da actividade de membro de órgão estatutário com outra actividade remunerada que determine a inscrição em regime obrigatório de protecção social.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 49675,
+        "end": 49904
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

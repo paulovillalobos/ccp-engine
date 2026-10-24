@@ -1,0 +1,23 @@
+{
+  "id": "csc:art222.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art222",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - Os contitulares de quota devem exercer os direitos a ela inerentes através de representante comum.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 354172,
+        "end": 354274
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

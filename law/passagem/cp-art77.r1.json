@@ -1,0 +1,23 @@
+{
+  "id": "cp:art77",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-iv.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 77.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 77.º\nRegras da punição do concurso\n1 - Quando alguém tiver praticado vários crimes antes de transitar em julgado a condenação por qualquer deles é condenado numa única pena. Na medida da pena são considerados, em conjunto, os factos e a personalidade do agente.\n2 - A pena aplicável tem como limite máximo a soma das penas concretamente aplicadas aos vários crimes, não podendo ultrapassar 25 anos tratando-se de pena de prisão e 900 dias tratando-se de pena de multa; e como limite mínimo a mais elevada das penas concretamente aplicadas aos vários crimes.\n3 - Se as penas aplicadas aos crimes em concurso forem umas de prisão e outras de multa, a diferente natureza destas mantém-se na pena única resultante da aplicação dos critérios estabelecidos nos números anteriores.\n4 - As penas acessórias e as medidas de segurança são sempre aplicadas ao agente, ainda que previstas por uma só das leis aplicáveis.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 145284,
+        "end": 146199
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

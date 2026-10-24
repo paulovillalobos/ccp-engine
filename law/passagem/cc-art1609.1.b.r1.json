@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1609.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1609.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "b) O vínculo de tutela, curatela ou administração legal de bens, se as respectivas contas estiverem já aprovadas;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 720574,
+        "end": 720687
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

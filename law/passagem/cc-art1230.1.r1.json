@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1230.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1230",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O contrato de empreitada não se extingue por morte do dono da obra, nem por morte ou incapacidade do empreiteiro, a não ser que, neste último caso, tenham sido tomadas em conta, no acto da celebração, as qualidades pessoais deste.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 546607,
+        "end": 546840
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art345.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art345",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - Na falta da comunicação a que se refere o n.º 1, o empregador deve pagar ao trabalhador o valor da retribuição correspondente ao período de aviso prévio em falta.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 444341,
+        "end": 444507
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

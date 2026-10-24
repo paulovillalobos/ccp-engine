@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1675.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1675",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. O dever de assistência mantém-se durante a separação de facto se esta não for imputável a qualquer dos cônjuges.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 750544,
+        "end": 750659
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

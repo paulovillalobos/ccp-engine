@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1305-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1305-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-05-01",
+      "text": "2 - Para efeitos do disposto no número anterior, o dever de assegurar o bem-estar inclui, nomeadamente:\na) A garantia de acesso a água e alimentação de acordo com as necessidades da espécie em questão;\nb) A garantia de acesso a cuidados médico-veterinários sempre que justificado, incluindo as medidas profiláticas, de identificação e de vacinação previstas na lei.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 569384,
+        "end": 569749
+      },
+      "valid_from": "2015-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

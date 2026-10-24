@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art179.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art179",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "5 - Quando, estando em causa a prática de um acto administrativo legalmente devido de conteúdo vinculado, expire o prazo a que se refere o n.º 1 sem que a Administração o tenha praticado, pode o interessado requerer ao tribunal a emissão de sentença que produza os efeitos do acto ilegalmente omitido.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 255783,
+        "end": 256084
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

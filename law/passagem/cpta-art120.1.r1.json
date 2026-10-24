@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art120.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art120",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Sem prejuízo do disposto nos números seguintes, as providências cautelares são adotadas quando haja fundado receio da constituição de uma situação de facto consumado ou da produção de prejuízos de difícil reparação para os interesses que o requerente visa assegurar no processo principal e seja provável que a pretensão formulada ou a formular nesse processo venha a ser julgada procedente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 180522,
+        "end": 180916
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

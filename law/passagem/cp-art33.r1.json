@@ -1,0 +1,23 @@
+{
+  "id": "cp:art33",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 33.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 33.º\nExcesso de legítima defesa\n1 - Se houver excesso dos meios empregados em legítima defesa, o facto é ilícito mas a pena pode ser especialmente atenuada.\n2 - O agente não é punido se o excesso resultar de perturbação, medo ou susto, não censuráveis.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 96686,
+        "end": 96945
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

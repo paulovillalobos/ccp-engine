@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art91",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-ii.seccao-i.subseccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 91.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 91.º\nTaxa contributiva\n1 - A taxa contributiva relativa aos pensionistas de invalidez é de 28,2 %, sendo, respectivamente, de 19,3 % e de 8,9 % para as entidades empregadoras e para os trabalhadores.\n2 - A taxa contributiva relativa aos pensionistas de velhice é de 23,9 %, sendo, respectivamente, de 16,4 % e de 7,5 % para as entidades empregadoras e para os trabalhadores.\n3 - À taxa contributiva a cargo das entidades empregadoras dos pensionistas em actividade não se aplica o disposto no artigo 55.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 60017,
+        "end": 60528
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

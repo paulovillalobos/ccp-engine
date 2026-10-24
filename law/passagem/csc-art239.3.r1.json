@@ -1,0 +1,23 @@
+{
+  "id": "csc:art239.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art239",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - A sociedade ou o sócio que satisfaça o exequente fica sub-rogado no crédito, nos termos do artigo 593.º do Código Civil.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 372692,
+        "end": 372816
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

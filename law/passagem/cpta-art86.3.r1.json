@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art86.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art86",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Quando o novo articulado se funde na junção ao processo de elementos até aí desconhecidos ou aos quais não tinha sido possível o acesso, ele deve ser oferecido nos 10 dias posteriores à notificação da junção dos referidos elementos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 122811,
+        "end": 123047
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

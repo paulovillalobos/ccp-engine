@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1805.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1805",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. No caso de declaração de nascimento ocorrido há um ano ou mais, a maternidade indicada considera-se estabelecida se a mãe for o declarante, estiver presente no acto ou nele se achar representada por procurador com poderes especiais.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 832169,
+        "end": 832404
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

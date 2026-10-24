@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art93.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art93",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - Em tribunais onde o quadro de juízes seja superior a nove, a intervenção de todos os juízes prevista na alínea a) do número anterior é limitada a dois terços do número de juízes, incluindo o juiz da causa, tendo o Presidente do Tribunal voto de desempate.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 141271,
+        "end": 141530
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

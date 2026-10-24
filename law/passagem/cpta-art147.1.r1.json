@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art147.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art147",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Nos processos urgentes, os recursos são interpostos no prazo de 15 dias e sobem imediatamente, no processo principal ou no apenso em que a decisão tenha sido proferida, quando o processo esteja findo no tribunal recorrido, ou sobem em separado, no caso contrário.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 211378,
+        "end": 211645
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

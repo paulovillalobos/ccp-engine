@@ -1,0 +1,23 @@
+{
+  "id": "cp:art96.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art96",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-08-20",
+      "text": "2 - O tribunal pode confirmar, suspender ou revogar a medida decretada.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 171711,
+        "end": 171782
+      },
+      "valid_from": "2023-08-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

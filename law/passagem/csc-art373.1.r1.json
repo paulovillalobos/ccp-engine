@@ -1,0 +1,23 @@
+{
+  "id": "csc:art373.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art373",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - Os accionistas deliberam ou nos termos do artigo 54.º ou em assembleias gerais regularmente convocadas e reunidas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 534178,
+        "end": 534296
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

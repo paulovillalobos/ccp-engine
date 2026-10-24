@@ -1,0 +1,23 @@
+{
+  "id": "csc:art148.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art148",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - O contrato de sociedade ou uma deliberação dos sócios pode determinar que todo o património, activo e passivo, da sociedade dissolvida seja transmitido para algum ou alguns sócios, inteirando-se os outros a dinheiro, contanto que a transmissão seja precedida de acordo escrito de todos os credores da sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 282437,
+        "end": 282752
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

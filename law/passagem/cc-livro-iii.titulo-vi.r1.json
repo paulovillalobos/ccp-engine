@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iii.titulo-vi",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iii",
+  "kind": "titulo",
+  "label": "Título VI",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Título VI\nDas servidões prediais",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 688903,
+        "end": 688935
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

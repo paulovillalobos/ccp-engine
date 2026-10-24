@@ -1,0 +1,23 @@
+{
+  "id": "cp:art45.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art45",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "2 - Se a multa não for paga, o condenado cumpre a pena de prisão aplicada na sentença. É correspondentemente aplicável o disposto no n.º 3 do artigo 49.º",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 105504,
+        "end": 105657
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

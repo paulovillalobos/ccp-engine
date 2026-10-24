@@ -1,0 +1,23 @@
+{
+  "id": "csc:art514.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art514",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "1 - O gerente ou administrador de sociedade que propuser à deliberação dos sócios, reunidos em assembleia, distribuição ilícita de bens da sociedade é punido com pena de prisão até 1 ano ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 738335,
+        "end": 738543
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

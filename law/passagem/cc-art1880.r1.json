@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1880",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1880.º",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "Artigo 1880.º\nDespesas com os filhos maiores\nSe, no momento em que atingir a maioridade, o filho não houver completado a sua formação profissional, manter-se-á a obrigação a que se refere o artigo anterior na medida em que seja razoável exigir aos pais o seu cumprimento e pelo tempo normalmente requerido para que aquela formação se complete.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 880150,
+        "end": 880493
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

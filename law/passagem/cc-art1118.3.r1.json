@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1118.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1118",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "3. O trespasse só é válido se for celebrado por escritura pública.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 509108,
+        "end": 509174
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

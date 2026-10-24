@@ -1,0 +1,23 @@
+{
+  "id": "csc:art317.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art317",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "1 - O contrato de sociedade pode proibir totalmente a aquisição de acções próprias ou reduzir os casos em que ela é permitida por esta lei.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 464228,
+        "end": 464367
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

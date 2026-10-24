@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art16.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art16",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Havendo pluralidade de autores, a ação pode ser proposta no tribunal da área da residência habitual ou da sede da maioria deles, ou, no caso de não haver maioria, no tribunal da área da residência habitual ou da sede de qualquer deles.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 30184,
+        "end": 30423
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

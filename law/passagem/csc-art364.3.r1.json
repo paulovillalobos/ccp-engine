@@ -1,0 +1,23 @@
+{
+  "id": "csc:art364.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art364",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "3 - O prémio de reembolso é integralmente pago na data da amortização das obrigações referidas nas alíneas a) e b) do n.º 1 do artigo 360.º, a qual não pode ser fixada para o momento anterior à data limite para a aprovação das contas anuais.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 520085,
+        "end": 520326
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

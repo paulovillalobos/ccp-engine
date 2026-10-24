@@ -1,0 +1,23 @@
+{
+  "id": "csc:art399.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art399",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - Compete à assembleia geral de accionistas ou a uma comissão por aquela nomeada fixar as remunerações de cada um dos administradores, tendo em conta as funções desempenhadas e a situação económica da sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 573290,
+        "end": 573503
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

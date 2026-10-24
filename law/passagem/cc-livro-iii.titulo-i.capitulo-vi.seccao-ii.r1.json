@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iii.titulo-i.capitulo-vi.seccao-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iii.titulo-i.capitulo-vi",
+  "kind": "secao",
+  "label": "Secção II",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Secção II\nUsucapião de imóveis",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 564428,
+        "end": 564458
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art18.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art18",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o direito internacional privado da lei designada pela norma de conflitos devolver para o direito interno português, é este o direito aplicável.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 15353,
+        "end": 15502
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art305.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art305",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - A compensação retributiva é paga em 30 % do seu montante pelo empregador e em 70 % pelo serviço público competente da área da segurança social.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 412202,
+        "end": 412349
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

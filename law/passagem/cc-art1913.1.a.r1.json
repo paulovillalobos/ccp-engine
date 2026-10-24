@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1913.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1913.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "a) Os condenados definitivamente por crime a que a lei atribua esse efeito;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 912412,
+        "end": 912487
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

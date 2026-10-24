@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art114.3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art114.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "c) Identificar a entidade demandada;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 172390,
+        "end": 172426
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

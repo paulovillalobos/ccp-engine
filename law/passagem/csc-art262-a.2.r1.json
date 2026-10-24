@@ -1,0 +1,23 @@
+{
+  "id": "csc:art262-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art262-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1997-01-05",
+      "text": "2 - A gerência deve, nos 30 dias seguintes à recepção da carta, responder pela mesma via.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 404065,
+        "end": 404154
+      },
+      "valid_from": "1997-01-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

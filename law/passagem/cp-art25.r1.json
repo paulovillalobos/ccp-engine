@@ -1,0 +1,23 @@
+{
+  "id": "cp:art25",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 25.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 25.º\nDesistência em caso de comparticipação\nSe vários agentes comparticiparem no facto, não é punível a tentativa daquele que voluntariamente impedir a consumação ou a verificação do resultado, nem a daquele que se esforçar seriamente por impedir uma ou outra, ainda que os outros comparticipantes prossigam na execução do crime ou o consumem.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 93232,
+        "end": 93582
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

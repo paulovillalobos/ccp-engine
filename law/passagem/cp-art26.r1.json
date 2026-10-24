@@ -1,0 +1,23 @@
+{
+  "id": "cp:art26",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 26.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 26.º\nAutoria\nÉ punível como autor quem executar o facto, por si mesmo ou por intermédio de outrem, ou tomar parte directa na sua execução, por acordo ou juntamente com outro ou outros, e ainda quem, dolosamente, determinar outra pessoa à prática do facto, desde que haja execução ou começo de execução.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 93583,
+        "end": 93892
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

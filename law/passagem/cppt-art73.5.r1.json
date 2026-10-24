@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art73.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art73",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2016-03-31",
+      "text": "5 - (Revogado).",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 93645,
+        "end": 93660
+      },
+      "valid_from": "2016-03-31",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

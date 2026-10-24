@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art21.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art21",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Quando forem cumulados pedidos para cuja apreciação sejam territorialmente competentes diversos tribunais, o autor pode escolher qualquer deles para a propositura da acção, mas se a cumulação disser respeito a pedidos entre os quais haja uma relação de dependência ou de subsidiariedade, a acção deve ser proposta no tribunal competente para apreciar o pedido principal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 34057,
+        "end": 34431
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art73.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art73",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "1 - Sempre que houver lugar à atenuação especial da pena, observa-se o seguinte relativamente aos limites da pena aplicável:\na) O limite máximo da pena de prisão é reduzido de um terço;\nb) O limite mínimo da pena de prisão é reduzido a um quinto se for igual ou superior a 3 anos e ao mínimo legal se for inferior;\nc) O limite máximo da pena de multa é reduzido de um terço e o limite mínimo reduzido ao mínimo legal;\nd) Se o limite máximo da pena de prisão não for superior a 3 anos pode a mesma ser substituída por multa, dentro dos limites gerais.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 142008,
+        "end": 142558
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

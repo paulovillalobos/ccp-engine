@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art88.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art88",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A taxa contributiva relativa aos trabalhadores em situação de pré-reforma com o âmbito de protecção previsto no n.º 2 do artigo 86.º é de 26,9 %, sendo, respectivamente, de 18,3 % e de 8,6 % para as entidades empregadoras e para os trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 58984,
+        "end": 59234
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

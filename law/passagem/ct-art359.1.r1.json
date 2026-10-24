@@ -1,0 +1,23 @@
+{
+  "id": "ct:art359.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art359",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - Considera-se despedimento colectivo a cessação de contratos de trabalho promovida pelo empregador e operada simultânea ou sucessivamente no período de três meses, abrangendo, pelo menos, dois ou cinco trabalhadores, conforme se trate, respectivamente, de microempresa ou de pequena empresa, por um lado, ou de média ou grande empresa, por outro, sempre que aquela ocorrência se fundamente em encerramento de uma ou várias secções ou estrutura equivalente ou redução do número de trabalhadores determinada por motivos de mercado, estruturais ou tecnológicos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 460453,
+        "end": 461014
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art18.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art18",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - O tratamento de dados biométricos só é permitido se os dados a utilizar forem necessários, adequados e proporcionais aos objectivos a atingir.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 44804,
+        "end": 44950
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

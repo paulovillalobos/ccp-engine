@@ -1,0 +1,23 @@
+{
+  "id": "csc:art360.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art360",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - Sem prejuízo dos instrumentos sujeitos a regras especiais e dos limites previstos nos artigos 348.º e 349.º, podem ser emitidos valores mobiliários representativos de dívida, sendo-lhes aplicáveis, com as devidas adaptações, as regras previstas para as obrigações, nomeadamente com as seguintes características:\na) Confiram direitos de crédito sobre a emitente com prazo de vencimento associado à duração da sociedade, desde que tal seja expressamente consagrado nas condições da emissão e nos documentos, registos e inscrições que lhes correspondam;\nb) Sejam convertidos em ações por iniciativa do emitente ou obrigatoriamente convertíveis em ações nos termos fixados nas condições de emissão.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 513726,
+        "end": 514424
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

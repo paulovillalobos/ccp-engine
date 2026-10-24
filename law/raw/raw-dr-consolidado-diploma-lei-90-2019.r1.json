@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-90-2019",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:07:02Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-90-2019",
+  "sha256": "a8e0e92a781119f29f1c4a0b88e7e24ece24a9a2820956dc622871b40b7e940f",
+  "bytes": "raw_bytes/a8e0e92a781119f29f1c4a0b88e7e24ece24a9a2820956dc622871b40b7e940f",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/lei/90-2019-124417103",
+  "captured_at": "2026-10-24T20:06:50Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "a7a26c037c8fdad6c1a3a6c2b7e5a92b69b205f27b1b52a48d7ab158e8dd2e6e",
+    "bytes": "raw_bytes/a7a26c037c8fdad6c1a3a6c2b7e5a92b69b205f27b1b52a48d7ab158e8dd2e6e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art503.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art503",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Se forem dadas instruções para a administração da sociedade subordinada efectuar um negócio que, por lei ou pelo contrato de sociedade, dependa de parecer ou consentimento de outro órgão da sociedade subordinada e este não for dado, devem as instruções ser acatadas se, verificada a recusa, elas forem repetidas, acompanhadas do consentimento ou parecer favorável do órgão correspondente da sociedade directora, caso esta o tenha.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 710708,
+        "end": 711142
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

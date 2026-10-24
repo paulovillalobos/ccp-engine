@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "7 - Quando a notificação for efectuada por telefax ou via Internet, presume-se que foi feita na data de emissão, servindo de prova, respectivamente, a cópia do aviso de onde conste a menção de que a mensagem foi enviada com sucesso, bem como a data, hora e número de telefax do receptor ou o extracto da mensagem efectuado pelo funcionário, o qual será incluído no processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 56786,
+        "end": 57160
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1067.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1067",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "1 - O arrendamento urbano pode ter fim habitacional ou não habitacional.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 449662,
+        "end": 449734
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

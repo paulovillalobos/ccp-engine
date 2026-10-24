@@ -1,0 +1,23 @@
+{
+  "id": "ct:art535.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art535",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - A tarefa a cargo de trabalhador em greve não pode, durante esta, ser realizada por empresa contratada para esse fim, salvo em caso de incumprimento dos serviços mínimos necessários à satisfação das necessidades sociais impreteríveis ou à segurança e manutenção de equipamento e instalações e na estrita medida necessária à prestação desses serviços.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 643736,
+        "end": 644089
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

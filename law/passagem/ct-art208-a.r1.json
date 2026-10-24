@@ -1,0 +1,23 @@
+{
+  "id": "ct:art208-a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-ii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 208.º-A",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "Artigo 208.º-A\nBanco de horas individual",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 297272,
+        "end": 297312
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

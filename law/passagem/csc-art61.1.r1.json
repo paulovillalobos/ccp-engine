@@ -1,0 +1,23 @@
+{
+  "id": "csc:art61.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art61",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A sentença que declarar nula ou anular uma deliberação é eficaz contra e a favor de todos os sócios e órgãos da sociedade, mesmo que não tenham sido parte ou não tenham intervindo na acção.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 88483,
+        "end": 88676
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

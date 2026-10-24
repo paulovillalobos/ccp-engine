@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art10.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art10.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "a) Liquidar e cobrar ou colaborar na cobrança dos tributos, nos termos das leis tributárias;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 21681,
+        "end": 21773
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

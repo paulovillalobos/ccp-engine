@@ -1,0 +1,23 @@
+{
+  "id": "ct:art208-b.11",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art208-b",
+  "kind": "numero",
+  "label": "11",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "11 - No caso referido no número anterior, a aplicação do regime do banco de horas cessa 60 dias após a realização do referendo, devendo a compensação do trabalho prestado em acréscimo efetuar-se neste prazo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 300165,
+        "end": 300372
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

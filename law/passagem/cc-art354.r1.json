@@ -1,0 +1,23 @@
+{
+  "id": "cc:art354",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 354.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 354.º\n(Inadmissibilidade da confissão)\nA confissão não faz prova contra o confitente:\na) Se for declarada insuficiente por lei ou recair sobre facto cujo reconhecimento ou investigação a lei proíba;\nb) Se recair sobre factos relativos a direitos indisponíveis;\nc) Se o facto confessado for impossível ou notòriamente inexistente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 162361,
+        "end": 162697
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

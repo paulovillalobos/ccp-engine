@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1432.12",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1432",
+  "kind": "numero",
+  "label": "12",
+  "versions": [
+    {
+      "version": "2022-04-10",
+      "text": "12 - Os condóminos não residentes devem comunicar, por escrito, ao administrador o seu domicílio ou o do seu representante.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 643054,
+        "end": 643177
+      },
+      "valid_from": "2022-04-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

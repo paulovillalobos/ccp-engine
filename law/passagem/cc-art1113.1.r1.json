@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1113.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1113",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "1 - O arrendamento não caduca por morte do arrendatário, mas os sucessores podem renunciar à transmissão, comunicando a renúncia ao senhorio no prazo de três meses, com cópia dos documentos comprovativos da ocorrência.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 505101,
+        "end": 505319
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art310",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 310.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 310.º\n(Prescrição de cinco anos)\nPrescrevem no prazo de cinco anos:\na) As anuidades de rendas perpétuas ou vitalícias;\nb) As rendas e alugueres devidos pelo locatário, ainda que pagos por uma só vez;\nc) Os foros;\nd) Os juros convencionais ou legais, ainda que ilíquidos, e os dividendos das sociedades;\ne) As quotas de amortização do capital pagáveis com os juros;\nf) As pensões alimentícias vencidas;\ng) Quaisquer outras prestações periòdicamente renováveis.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 144157,
+        "end": 144623
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

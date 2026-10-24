@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art16.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art16",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Sem prejuízo do disposto nos artigos seguintes e das soluções que resultem da distribuição das competências em função da hierarquia, os processos são intentados no tribunal da área da residência habitual ou da sede do autor.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 29955,
+        "end": 30183
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

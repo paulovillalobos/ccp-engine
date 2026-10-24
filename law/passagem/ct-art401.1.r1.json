@@ -1,0 +1,23 @@
+{
+  "id": "ct:art401.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art401",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalhador que não cumpra, total ou parcialmente, o prazo de aviso prévio estabelecido no artigo anterior deve pagar ao empregador uma indemnização de valor igual à retribuição base e diuturnidades correspondentes ao período em falta, sem prejuízo de indemnização por danos causados pela inobservância do prazo de aviso prévio ou de obrigação assumida em pacto de permanência.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 509986,
+        "end": 510369
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art118.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art118",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2001-07-05",
+      "text": "1 - O número de testemunhas a inquirir não poderá exceder 3 por cada facto nem o total de 10 por cada acto tributário impugnado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 151690,
+        "end": 151818
+      },
+      "valid_from": "2001-07-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

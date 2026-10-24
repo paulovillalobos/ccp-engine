@@ -1,0 +1,23 @@
+{
+  "id": "csc:art382.2.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art382.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "c) O número, a categoria e o valor nominal das acções pertencentes a cada accionista presente ou representado.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 549568,
+        "end": 549678
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

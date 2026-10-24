@@ -1,0 +1,23 @@
+{
+  "id": "cc:art57",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 57.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 57.º\n(Relações entre pais e filhos)\n1. As relações entre pais e filhos são reguladas pela lei nacional comum dos pais e, na falta desta, pela lei da sua residência habitual comum; se os pais residirem habitualmente em Estados diferentes, é aplicável a lei pessoal do filho.\n2. Se a filiação apenas se achar estabelecida relativamente a um dos progenitores, aplica-se a lei pessoal deste; se um dos progenitores tiver falecido, é competente a lei pessoal do sobrevivo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 32578,
+        "end": 33052
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

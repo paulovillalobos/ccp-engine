@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1979.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1979",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-08-18",
+      "text": "3 - Só pode adotar quem não tiver mais de 60 anos à data em que a criança lhe tenha sido confiada, mediante confiança administrativa ou medida de promoção e proteção de confiança com vista a futura adoção, sendo que a partir dos 50 anos a diferença de idades entre o adotante e o adotando não pode ser superior a 50 anos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 953065,
+        "end": 953386
+      },
+      "valid_from": "2023-08-18",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art38-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art38-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - O pai tem direito a faltar ao trabalho até três dias consecutivos, quando se verifique o gozo da licença prevista no artigo anterior ou a falta prevista no número anterior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 69628,
+        "end": 69804
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

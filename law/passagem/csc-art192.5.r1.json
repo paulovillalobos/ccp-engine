@@ -1,0 +1,23 @@
+{
+  "id": "csc:art192.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art192",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "5 - A gerência presume-se remunerada; o montante da remuneração de cada gerente, quando não excluída pelo contrato, é fixado por deliberação dos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 325568,
+        "end": 325720
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art239.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art239",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "4 - No caso de a duração do contrato de trabalho ser inferior a seis meses, o trabalhador tem direito a dois dias úteis de férias por cada mês completo de duração do contrato, contando-se para o efeito todos os dias seguidos ou interpolados de prestação de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 335573,
+        "end": 335839
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

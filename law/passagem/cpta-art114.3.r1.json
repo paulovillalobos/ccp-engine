@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art114.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art114",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - No requerimento, deve o requerente:\na) Indicar o tribunal a que o requerimento é dirigido;\nb) Indicar o seu nome e residência ou sede;\nc) Identificar a entidade demandada;\nd) Indicar a identidade e residência dos contrainteressados a quem a adoção da providência cautelar possa diretamente prejudicar;\ne) Indicar a ação de que o processo depende ou irá depender;\nf) Indicar a providência ou as providências que pretende ver adotadas;\ng) Especificar, de forma articulada, os fundamentos do pedido, oferecendo prova sumária da respetiva existência;\nh) Quando for o caso, fazer prova do ato ou norma cuja suspensão pretende e da sua notificação ou publicação;\ni) Identificar o processo principal, quando o requerimento seja apresentado na sua pendência.\nj) Indicar o valor da causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 172251,
+        "end": 173034
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

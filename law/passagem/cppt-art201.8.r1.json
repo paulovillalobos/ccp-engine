@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "8 - O despacho que autorizar a dação em pagamento definirá os termos de entrega dos bens oferecidos, podendo seleccionar, entre os propostos, os bens a entregar em cumprimento da dívida exequenda e acrescido.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 253158,
+        "end": 253366
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

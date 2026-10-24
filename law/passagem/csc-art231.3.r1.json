@@ -1,0 +1,23 @@
+{
+  "id": "csc:art231.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art231",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "3 - O disposto nos números anteriores só é aplicável se a quota estiver há mais de três anos na titularidade do cedente, do seu cônjuge ou de pessoa a quem tenham, um ou outro, sucedido por morte.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 365257,
+        "end": 365453
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

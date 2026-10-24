@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art69.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art69",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A taxa contributiva relativa aos membros dos órgãos estatutários é de 29,6 %, sendo, respectivamente, de 20,3 % e de 9,3 % para as entidades empregadoras e para os trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 51207,
+        "end": 51389
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

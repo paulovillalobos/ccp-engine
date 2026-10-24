@@ -1,0 +1,23 @@
+{
+  "id": "cc:art610",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-v.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 610.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 610.º\n(Requisitos gerais)\nOs actos que envolvam diminuição da garantia patrimonial do crédito e não sejam de natureza pessoal podem ser impugnados pelo credor, se concorrerem as circunstâncias seguintes:\na) Ser o crédito anterior ao acto ou, sendo posterior, ter sido o acto realizado dolosamente com o fim de impedir a satisfação do direito do futuro credor;\nb) Resultar do acto a impossibilidade, para o credor, de obter a satisfação integral do seu crédito, ou agravamento dessa impossibilidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 266689,
+        "end": 267194
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

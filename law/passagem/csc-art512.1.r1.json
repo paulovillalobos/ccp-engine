@@ -1,0 +1,23 @@
+{
+  "id": "csc:art512.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art512",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "1 - O gerente de sociedade que, em violação da lei, propuser à deliberação dos sócios amortizar, total ou parcialmente, quota sobre a qual incida direito de usufruto ou de penhor, sem consentimento do titular deste direito, é punido com pena de prisão até 2 anos ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 735642,
+        "end": 735926
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

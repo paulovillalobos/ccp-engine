@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art58.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art58",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Salvo disposição legal em contrário, a impugnação de atos nulos não está sujeita a prazo e a de atos anuláveis tem lugar no prazo de:\na) Um ano, se promovida pelo Ministério Público;\nb) Três meses, nos restantes casos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 74683,
+        "end": 74905
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art95.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art95",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Deferida a curadoria definitiva nos termos da subsecção seguinte, as contas do curador provisório são prestadas aos curadores definitivos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 48348,
+        "end": 48489
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

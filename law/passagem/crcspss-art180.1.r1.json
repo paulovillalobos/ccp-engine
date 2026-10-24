@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art180.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art180",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Sem prejuízo do disposto nos números seguintes, a base de incidência contributiva corresponde a uma remuneração convencional e é escolhida pelo beneficiário, de acordo com os seguintes escalões, indexados ao valor do IAS:\n(ver documento original)",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 115423,
+        "end": 115673
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

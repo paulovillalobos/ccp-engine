@@ -1,0 +1,23 @@
+{
+  "id": "cc:art376.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art376",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O documento particular cuja autoria seja reconhecida nos termos dos artigos antecedentes faz prova plena quanto às declarações atribuídas ao seu autor, sem prejuízo da arguição e prova da falsidade do documento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 172655,
+        "end": 172869
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

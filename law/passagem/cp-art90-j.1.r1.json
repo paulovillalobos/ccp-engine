@@ -1,0 +1,23 @@
+{
+  "id": "cp:art90-j.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art90-j",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "1 - A interdição do exercício de certas actividades pode ser ordenada pelo tribunal, pelo prazo de três meses a cinco anos, quando o crime tiver sido cometido no exercício dessas actividades.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 165184,
+        "end": 165375
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

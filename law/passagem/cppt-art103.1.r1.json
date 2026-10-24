@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art103.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art103",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "1 - A petição é apresentada no tribunal tributário competente ou no serviço periférico local onde haja sido ou deva legalmente considerar-se praticado o acto.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 136074,
+        "end": 136232
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art908",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-i.seccao-v",
+  "kind": "artigo",
+  "label": "Artigo 908.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 908.º\n(Indemnização em caso de dolo)\nEm caso de dolo, o vendedor, anulado o contrato, deve indemnizar o comprador do prejuízo que este não sofreria se a compra e venda não tivesse sido celebrada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 382513,
+        "end": 382715
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art78.2.b.ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art78.2.b",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "ii) Quanto às demais partes, o seu nome, o seu domicílio ou que se encontra ausente em parte incerta, ou sede, bem como, sem prejuízo de poder declarar a impossibilidade de obter esta informação, o local de trabalho, o número de identificação fiscal e o número de identificação civil ou o número de identificação de pessoa coletiva.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 102827,
+        "end": 103159
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

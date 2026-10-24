@@ -1,0 +1,23 @@
+{
+  "id": "ct:art298.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art298",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "1 - O empregador pode reduzir temporariamente os períodos normais de trabalho ou suspender os contratos de trabalho, por motivos de mercado, estruturais ou tecnológicos, catástrofes ou outras ocorrências que tenham afectado gravemente a actividade normal da empresa, desde que tal medida seja indispensável para assegurar a viabilidade da empresa e a manutenção dos postos de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 400763,
+        "end": 401148
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

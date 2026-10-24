@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art10.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art10",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Quando, na situação prevista no número anterior, a citação for feita no órgão indicado na petição, considera-se citada a pessoa coletiva, o ministério ou a secretaria regional a que o órgão pertence.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 22403,
+        "end": 22606
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

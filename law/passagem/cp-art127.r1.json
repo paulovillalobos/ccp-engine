@@ -1,0 +1,23 @@
+{
+  "id": "cp:art127",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-v.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 127.º",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "Artigo 127.º\nMorte, amnistia, perdão genérico, indulto e extinção\n1- A responsabilidade criminal extingue-se ainda pela morte, pela amnistia, pelo perdão genérico e pelo indulto.\n2 - No caso de extinção de pessoa colectiva ou entidade equiparada, o respectivo património responde pelas multas e indemnizações em que aquela for condenada.\n3 - A morte do agente e a amnistia extinguem o procedimento criminal, mas não obstam ao prosseguimento do processo autónomo, nos termos do artigo 398.º-K do Código de Processo Penal, para efeitos de declarar como perdidos os instrumentos, produtos e vantagens que resultem de facto ilícito típico.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 207673,
+        "end": 208308
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

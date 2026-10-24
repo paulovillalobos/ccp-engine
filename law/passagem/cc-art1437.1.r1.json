@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1437.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1437",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-01-11",
+      "text": "1 - O condomínio é sempre representado em juízo pelo seu administrador, devendo demandar e ser demandado em nome daquele.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 650592,
+        "end": 650713
+      },
+      "valid_from": "2022-01-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

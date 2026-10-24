@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art132.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art132",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "2 - O imposto entregue a mais será descontado nas entregas seguintes da mesma natureza a efectuar no ano do pagamento indevido.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 160147,
+        "end": 160274
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

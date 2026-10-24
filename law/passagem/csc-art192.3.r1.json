@@ -1,0 +1,23 @@
+{
+  "id": "csc:art192.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art192",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "3 - A sociedade não pode impugnar negócios celebrados em seu nome, mas com falta de poderes, pelos gerentes, no caso de tais negócios terem sido confirmados, expressa ou tacitamente, por deliberação unânime dos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 325074,
+        "end": 325292
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

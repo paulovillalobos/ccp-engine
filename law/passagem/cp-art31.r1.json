@@ -1,0 +1,23 @@
+{
+  "id": "cp:art31",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 31.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 31.º\nExclusão da ilicitude\n1 - O facto não é punível quando a sua ilicitude for excluída pela ordem jurídica considerada na sua totalidade.\n2 - Nomeadamente, não é ilícito o facto praticado:\na) Em legítima defesa;\nb) No exercício de um direito;\nc) No cumprimento de um dever imposto por lei ou por ordem legítima da autoridade; ou\nd) Com o consentimento do titular do interesse jurídico lesado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 96085,
+        "end": 96486
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

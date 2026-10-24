@@ -1,0 +1,23 @@
+{
+  "id": "cp:art10.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art10",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "1 - Quando um tipo legal de crime compreender um certo resultado, o facto abrange não só a acção adequada a produzi-lo como a omissão da acção adequada a evitá-lo, salvo se outra for a intenção da lei.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 83212,
+        "end": 83413
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

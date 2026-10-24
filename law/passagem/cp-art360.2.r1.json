@@ -1,0 +1,23 @@
+{
+  "id": "cp:art360.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art360",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - Na mesma pena incorre quem, sem justa causa, se recusar a depor ou a apresentar relatório, informação ou tradução.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 432826,
+        "end": 432944
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

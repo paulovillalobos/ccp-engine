@@ -21,6 +21,7 @@ What the DR gives (read 2026-10-24, DECISIONS D24):
     vigente(store, date) -> dict[passage_id, version]                          the version of every passage in force at date
     entry_into_force(published, article_text) -> str | None                    an act's own entry-into-force article, read
     resolve_note_dates(notes, passages) -> {(diploma, published): date}       the dates of dateless notes (D28)
+    whole_act_clause(article_text) -> bool    the entry-into-force article dates the act as a whole (else D31)
     norma_slug(diploma) -> str            "Decreto-Lei n.º 177/2026" -> "dl-177-2026"; "Lei n.º 30/2021" -> "lei-30-2021";
                                           "Declaração de Retificação n.º 42/2017" -> "ret-42-2017";
                                           "Resolução da Assembleia da República n.º 16/2020" -> "rar-16-2020";
@@ -142,6 +143,16 @@ def entry_into_force(published: str, article_text: str):
     return None
 
 
+WHOLE_ACT = re.compile(r"(?:o|a) presente (?:lei|decreto-lei|decreto|diploma|portaria|regulamento)[^.;]{0,120}entra(?:m)? em vigor", re.I)
+
+
+def whole_act_clause(article_text: str) -> bool:
+    """True when an act's entry-into-force article fixes a day for the act as a whole («O presente decreto-lei entra em
+    vigor ...»); an article that only dates some of its provisions (Lei 7/2009, art. 14.º) leaves the rest to the
+    general rule of Lei 74/98, art. 2.º, n.º 2 (D31)."""
+    return bool(WHOLE_ACT.search(" ".join(article_text.split())))
+
+
 def resolve_note_dates(notes, passages) -> dict:
     """{(diploma, published): valid_from} for every note in `notes` (parse_note dicts) that carries no "em vigor a
     partir de" (DECISIONS D28, D31): the single date the other notes of the same act carry among `notes`; else the act's
@@ -166,7 +177,7 @@ def resolve_note_dates(notes, passages) -> dict:
                     and "\nEntrada em vigor\n" in p["versions"][-1]["text"] + "\n"), None)
         found = entry_into_force(n["published"], art["versions"][-1]["text"]) if art else None
         own = [p for p in passages if p["id"].startswith(slug + ":") and p["kind"] == "artigo" and ".q" not in p["id"]]
-        if not found and own and art is None:
+        if not found and own and (art is None or not whole_act_clause(art["versions"][-1]["text"])):
             # the act was read and fixes no day: the general rule (Lei n.º 74/98, art. 2.º, n.º 2), read from its passage
             rule = next((p for p in passages if p["id"] == GENERAL_RULE), None)
             found = entry_into_force(n["published"], rule["versions"][-1]["text"]) if rule else None

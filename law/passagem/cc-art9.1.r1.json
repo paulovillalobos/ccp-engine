@@ -1,0 +1,23 @@
+{
+  "id": "cc:art9.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art9",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A interpretação não deve cingir-se à letra da lei, mas reconstituir a partir dos textos o pensamento legislativo, tendo sobretudo em conta a unidade do sistema jurídico, as circunstâncias em que a lei foi elaborada e as condições específicas do tempo em que é aplicada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 11227,
+        "end": 11499
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

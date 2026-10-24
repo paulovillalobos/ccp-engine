@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art121.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art121",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Quando o âmbito material de protecção integrar a eventualidade de desemprego, a taxa contributiva é de 33,3 %, sendo, respectivamente, de 22,3 % e de 11 % para as entidades empregadoras e para os trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 77059,
+        "end": 77273
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

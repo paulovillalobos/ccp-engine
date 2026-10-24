@@ -1,0 +1,23 @@
+{
+  "id": "ct:art530.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art530",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - Compete aos trabalhadores definir o âmbito de interesses a defender através da greve.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 641127,
+        "end": 641216
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

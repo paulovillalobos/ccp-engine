@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art33.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art33",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "c) Quando esteja em causa a aplicação de sanções sem conteúdo pecuniário, o valor da causa é determinado pelo montante dos danos patrimoniais sofridos;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 48557,
+        "end": 48708
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

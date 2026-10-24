@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art77-a.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art77-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Os pedidos relativos à execução de contratos podem ser deduzidos:\na) Pelas partes na relação contratual;\nb) Pelas pessoas singulares e coletivas portadoras ou defensoras de direitos subjetivos ou interesses legalmente protegidos em função dos quais as cláusulas contratuais tenham sido estabelecidas;\nc) Pelo Ministério Público;\nd) Pelas pessoas e entidades nos termos do n.º 2 do artigo 9.º;\ne) Por quem tenha sido preterido no procedimento que precedeu a celebração do contrato.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 100707,
+        "end": 101191
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

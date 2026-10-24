@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art117.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art117",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Não havendo fundamento para rejeição, o requerimento é admitido, sendo citados para deduzir oposição a entidade requerida e os contrainteressados, se os houver, no prazo de 10 dias.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 176644,
+        "end": 176829
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

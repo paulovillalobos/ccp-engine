@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1970",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-iii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1970.º",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "Artigo 1970.º\n(Quem não pode ser administrador)\nAlém das pessoas que a lei impede de serem tutores, não podem ser administradores:\na) Os insolventes e, bem assim, os inibidos ou suspensos das responsabilidades parentais ou removidos da tutela, quanto à administração de bens;\nb) Os condenados como autores ou cúmplices dos crimes de furto, roubo, burla, abuso de confiança, falência ou insolvência fraudulenta e, em geral, de crimes dolosos contra a propriedade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 945394,
+        "end": 945856
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

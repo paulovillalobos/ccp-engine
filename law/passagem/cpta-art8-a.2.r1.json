@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art8-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art8-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Tem personalidade judiciária quem tenha personalidade jurídica, e capacidade judiciária quem tenha capacidade de exercício de direitos, sendo aplicável ao processo administrativo o regime de suprimento da incapacidade previsto na lei processual civil.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 18932,
+        "end": 19187
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

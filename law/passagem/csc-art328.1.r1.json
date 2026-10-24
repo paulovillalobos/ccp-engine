@@ -1,0 +1,23 @@
+{
+  "id": "csc:art328.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art328",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2000-03-01",
+      "text": "1 - O contrato de sociedade não pode excluir a transmissibilidade das acções nem limitá-la além do que a lei permitir.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 475328,
+        "end": 475446
+      },
+      "valid_from": "2000-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art112-d.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art112-d",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "2 - A prescrição do procedimento autónomo de perda suspende-se, para além dos casos especialmente previstos na lei, durante o tempo em que:\na) Não puder legalmente iniciar-se ou continuar o procedimento de perda, por falta de autorização legal ou de sentença a proferir por outro tribunal;\nb) A decisão que condene na perda, após notificação ao visado, não transitar em julgado, não podendo a suspensão durar mais de cinco anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 191606,
+        "end": 192034
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

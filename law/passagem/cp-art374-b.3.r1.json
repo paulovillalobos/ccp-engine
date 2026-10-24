@@ -1,0 +1,23 @@
+{
+  "id": "cp:art374-b.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art374-b",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "3 - A dispensa de pena abrange os crimes que sejam efeito dos crimes previstos nos artigos 372.º a 374.º, ou que se tenham destinado a continuar ou a ocultar estes crimes ou as vantagens provenientes dos mesmos, desde que o agente os tenha denunciado ou tenha contribuído decisivamente para a sua descoberta.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 455535,
+        "end": 455843
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

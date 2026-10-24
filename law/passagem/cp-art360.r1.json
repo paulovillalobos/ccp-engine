@@ -1,0 +1,23 @@
+{
+  "id": "cp:art360",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-v.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 360.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 360.º\nFalsidade de testemunho, perícia, interpretação ou tradução\n1 - Quem, como testemunha, perito, técnico, tradutor ou intérprete, perante tribunal ou funcionário competente para receber como meio de prova, depoimento, relatório, informação ou tradução, prestar depoimento, apresentar relatório, der informações ou fizer traduções falsos, é punido com pena de prisão de 6 meses a 3 anos ou com pena de multa não inferior a 60 dias.\n2 - Na mesma pena incorre quem, sem justa causa, se recusar a depor ou a apresentar relatório, informação ou tradução.\n3 - Se o facto referido no n.º 1 for praticado depois de o agente ter prestado juramento e ter sido advertido das consequências penais a que se expõe, a pena é de prisão até 5 anos ou de multa até 600 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 432384,
+        "end": 433151
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

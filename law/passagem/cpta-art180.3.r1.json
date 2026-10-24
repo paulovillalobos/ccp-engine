@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art180.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art180",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - Quando esteja em causa a impugnação de atos administrativos relativos à formação de algum dos contratos previstos no artigo 100.º, o recurso à arbitragem seguirá os termos previstos no Código dos Contratos Públicos, com as seguintes especialidades:\na) O regime processual a aplicar deve ser estabelecido em conformidade com o regime de urgência previsto no presente Código para o contencioso pré-contratual;\nb) Em litígios de valor igual ou inferior ao previsto no n.º 5 do artigo 476.º do Código dos Contratos Públicos, da decisão arbitral cabe recurso urgente para o tribunal administrativo competente, com efeito meramente devolutivo, se essa possibilidade tiver sido salvaguardada pela entidade adjudicante nas peças do procedimento ou declarada por algum dos concorrentes ou candidatos nas respetivas propostas ou candidaturas.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 257413,
+        "end": 258249
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

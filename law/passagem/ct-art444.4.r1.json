@@ -1,0 +1,23 @@
+{
+  "id": "ct:art444.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art444",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "4 - O empresário que não empregue trabalhadores pode inscrever-se em associação de empregadores, não podendo, contudo, intervir nas decisões respeitantes a relações de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 552194,
+        "end": 552371
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

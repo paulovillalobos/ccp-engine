@@ -1,0 +1,23 @@
+{
+  "id": "ct:art344.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art344",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - (Revogado).",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 442792,
+        "end": 442807
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

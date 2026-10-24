@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1702.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1702",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Se a instituição tiver por objecto a totalidade da herança, pode o doador dispor gratuitamente, em vida ou por morte, de uma terça parte dela, calculada nos termos do número anterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 774503,
+        "end": 774689
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1041.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1041",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "2. Cessa o direito à indemnização ou à resolução do contrato, se o locatário fizer cessar a mora no prazo de oito dias a contar do seu começo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 435888,
+        "end": 436030
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

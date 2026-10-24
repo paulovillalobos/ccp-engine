@@ -1,0 +1,23 @@
+{
+  "id": "csc:art467.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art467",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A firma da sociedade é formada pelo nome ou firma de um, pelo menos, dos sócios comanditados e o aditamento «em Comandita» ou «& Comandita», «em Comandita por Acções» ou «& Comandita por Acções».",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 682335,
+        "end": 682534
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

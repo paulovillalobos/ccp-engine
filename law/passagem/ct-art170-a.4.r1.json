@@ -1,0 +1,23 @@
+{
+  "id": "ct:art170-a.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art170-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2022-01-01",
+      "text": "4 - O trabalhador faculta o acesso ao local onde presta trabalho aos profissionais designados pelo empregador que, nos termos da lei, têm a seu cargo a avaliação e o controlo das condições de segurança e saúde no trabalho, em período previamente acordado, entre as 9 e as 19 horas, dentro do horário de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 244881,
+        "end": 245193
+      },
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

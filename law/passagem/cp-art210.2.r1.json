@@ -1,0 +1,23 @@
+{
+  "id": "cp:art210.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art210",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "2 - A pena é a de prisão de 3 a 15 anos se:\na) Qualquer dos agentes produzir perigo para a vida da vítima ou lhe infligir, pelo menos por negligência, ofensa à integridade física grave; ou\nb) Se verificarem, singular ou cumulativamente, quaisquer requisitos referidos nos n.os 1 e 2 do artigo 204.º, sendo correspondentemente aplicável o disposto no n.º 4 do mesmo artigo.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 302543,
+        "end": 302915
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

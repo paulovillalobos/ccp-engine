@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1052.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1052",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "a) Se for celebrado pelo usufrutuário e a propriedade se consolidar na sua mão;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 443229,
+        "end": 443308
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

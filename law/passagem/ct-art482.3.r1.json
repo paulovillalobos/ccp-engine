@@ -1,0 +1,23 @@
+{
+  "id": "ct:art482.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art482",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "3 - Na ausência de escolha pelos trabalhadores, é aplicável:\na) O instrumento de publicação mais recente;\nb) Sendo os instrumentos em concorrência publicados na mesma data, o que regular a principal actividade da empresa.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 587296,
+        "end": 587517
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

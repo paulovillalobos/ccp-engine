@@ -1,0 +1,23 @@
+{
+  "id": "csc:art156.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art156",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "5 - Os liquidatários podem excluir da partilha as importâncias estimadas para encargos da liquidação até à extinção da sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 290092,
+        "end": 290221
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

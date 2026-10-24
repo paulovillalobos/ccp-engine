@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art76.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art76",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O tribunal pode, no entanto, determinar que os efeitos da decisão se produzam apenas a partir da data do trânsito em julgado da sentença quando razões de segurança jurídica, de equidade ou de interesse público de excepcional relevo, devidamente fundamentadas, o justifiquem.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 97202,
+        "end": 97480
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

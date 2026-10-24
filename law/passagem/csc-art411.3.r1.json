@@ -1,0 +1,23 @@
+{
+  "id": "csc:art411.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art411",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - São anuláveis as deliberações que violem disposições quer da lei, quando ao caso não caiba a nulidade, quer do contrato de sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 586706,
+        "end": 586843
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

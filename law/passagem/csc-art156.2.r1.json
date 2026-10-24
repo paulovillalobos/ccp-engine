@@ -1,0 +1,23 @@
+{
+  "id": "csc:art156.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art156",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - O activo restante é destinado em primeiro lugar ao reembolso do montante das entradas efectivamente realizadas; esse montante é a fracção de capital correspondente a cada sócio, sem prejuízo do que dispuser o contrato para o caso de os bens com que o sócio realizou a entrada terem valor superior àquela fracção nominal.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 289326,
+        "end": 289650
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

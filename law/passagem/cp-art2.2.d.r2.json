@@ -1,0 +1,26 @@
+{
+  "id": "cp:art2.2.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:26:09Z",
+  "norma": "norma:cp",
+  "parent": "cp:art2.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "d) O Decreto-Lei n.º 101-A/88, de 26 de Março;",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 16517,
+        "end": 16563
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "stale": true,
+  "stale_reason": "no longer produced by ccp-build-law-0.1 from the captures (D34)",
+  "supersedes": 1
+}

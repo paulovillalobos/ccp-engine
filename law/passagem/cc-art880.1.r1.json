@@ -1,0 +1,23 @@
+{
+  "id": "cc:art880.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art880",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Na venda de bens futuros, de frutos pendentes ou de partes componentes ou integrantes de uma coisa, o vendedor fica obrigado a exercer as diligências necessárias para que o comprador adquira os bens vendidos, segundo o que for estipulado ou resultar das circunstâncias do contrato.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 371889,
+        "end": 372173
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

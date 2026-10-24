@@ -1,0 +1,23 @@
+{
+  "id": "cc:art952.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art952",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Na doação feita a nascituro presume-se que o doador reserva para si o usufruto dos bens doados até ao nascimento do donatário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 399472,
+        "end": 399601
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

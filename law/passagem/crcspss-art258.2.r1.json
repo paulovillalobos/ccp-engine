@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art258.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art258",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Sempre que o beneficiário, no momento do requerimento, seja titular de pensão por velhice a protecção é conferida nas eventualidades de velhice e morte.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 158241,
+        "end": 158397
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

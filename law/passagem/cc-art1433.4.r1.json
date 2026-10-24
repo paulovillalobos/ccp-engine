@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1433.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1433",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "4 - O direito de propor a acção de anulação caduca no prazo de 20 dias contados sobre a deliberação da assembleia extraordinária ou, caso esta não tenha sido solicitada, no prazo de 60 dias sobre a data da deliberação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 644135,
+        "end": 644353
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

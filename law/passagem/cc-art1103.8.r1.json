@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1103.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1103",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "8 - Metade da indemnização deve ser paga após a confirmação da denúncia e o restante no ato da entrega do locado, sob pena de ineficácia.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 492625,
+        "end": 492762
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-vii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii",
+  "kind": "secao",
+  "label": "Subsecção VII",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Subsecção VII\nTrabalhador com deficiência ou doença crónica",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 134522,
+        "end": 134581
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

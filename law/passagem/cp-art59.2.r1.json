@@ -1,0 +1,23 @@
+{
+  "id": "cp:art59.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art59",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "2 - O tribunal revoga a pena de prestação de trabalho a favor da comunidade e ordena o cumprimento da pena de prisão determinada na sentença se o agente, após a condenação:\na) Se colocar intencionalmente em condições de não poder trabalhar;\nb) Se recusar, sem justa causa, a prestar trabalho, ou infringir grosseiramente os deveres decorrentes da pena a que foi condenado; ou\nc) Cometer crime pelo qual venha a ser condenado, e revelar que as finalidades da pena de prestação de trabalho a favor da comunidade não puderam, por meio dela, ser alcançadas.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 122092,
+        "end": 122645
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

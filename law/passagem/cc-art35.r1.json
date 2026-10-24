@@ -1,0 +1,23 @@
+{
+  "id": "cc:art35",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 35.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 35.º\n(Declaração negocial)\n1. A perfeição, interpretação e integração da declaração negocial são reguladas pela lei aplicável à substância do negócio, a qual é igualmente aplicável à falta e vícios da vontade.\n2. O valor de um comportamento como declaração negocial é determinado pela lei da residência habitual comum do declarante e do destinatário e, na falta desta, pela lei do lugar onde o comportamento se verificou.\n3. O valor do silêncio como meio declaratório é igualmente determinado pela lei da residência habitual comum e, na falta desta, pela lei do lugar onde a proposta foi recebida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 22379,
+        "end": 22983
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

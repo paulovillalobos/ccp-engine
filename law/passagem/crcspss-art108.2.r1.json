@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art108.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art108",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Para efeitos do disposto no número anterior são trabalhadores com deficiência os trabalhadores que possuam capacidade de trabalho inferior a 80 % da capacidade normal exigida a um trabalhador não deficiente no mesmo posto de trabalho.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 68910,
+        "end": 69148
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1379.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1379",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-09-26",
+      "text": "1 - São nulos os atos de fracionamento ou troca contrários ao disposto nos artigos 1376.º e 1378.º",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 602588,
+        "end": 602686
+      },
+      "valid_from": "2015-09-26",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

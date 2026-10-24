@@ -1,0 +1,23 @@
+{
+  "id": "csc:art157.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art157",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Os liquidatários devem declarar expressamente no relatório que estão satisfeitos ou acautelados todos os direitos dos credores e que os respectivos recibos e documentos probatórios podem ser examinados pelos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 290439,
+        "end": 290658
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art179.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art179",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Sendo caso disso, o tribunal também declara a nulidade dos actos desconformes com a sentença e anula os que mantenham, sem fundamento válido, a situação ilegal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 255191,
+        "end": 255355
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

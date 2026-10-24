@@ -1,0 +1,23 @@
+{
+  "id": "ct:art191.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art191",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "6 - No caso de a caução ser insuficiente face aos créditos cujo pagamento é solicitado, este é feito de acordo com os seguintes critérios de precedência:\na) Créditos retributivos dos trabalhadores relativos aos últimos 30 dias da actividade, com o limite correspondente ao montante de três vezes a retribuição mínima mensal garantida;\nb) Outros créditos retributivos por ordem de pedido;\nc) Indemnizações e compensações pela cessação do contrato de trabalho temporário;\nd) Demais encargos com os trabalhadores.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 276516,
+        "end": 277026
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

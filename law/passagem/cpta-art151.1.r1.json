@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art151.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art151",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Os recursos interpostos de decisões de mérito proferidas por tribunais administrativos de círculo são da competência do Supremo Tribunal Administrativo quando as partes, nas alegações, suscitem apenas questões de direito e o valor da causa seja superior a 500 000 (euro) ou seja indeterminada, designadamente nos processos de declaração de ilegalidade ou de condenação à emissão de normas.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 216684,
+        "end": 217077
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "5 - A violação de requisitos indicados nos n.os 1 ou 2 confere ao trabalhador o direito de optar pelo empregador ao qual fica vinculado.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 152970,
+        "end": 153106
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art485.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art485",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "5 - Sempre que a lei imponha a publicação ou declaração de participações, deve ser mencionado se existem participações recíprocas, o seu montante e as quotas ou acções cujos direitos não podem ser exercidos por uma ou por outra das sociedades.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 693374,
+        "end": 693617
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

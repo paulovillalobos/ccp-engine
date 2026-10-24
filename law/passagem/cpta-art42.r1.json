@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art42",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 42.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 42.º\nTramitação",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 56863,
+        "end": 56885
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

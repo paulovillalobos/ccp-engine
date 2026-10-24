@@ -1,0 +1,23 @@
+{
+  "id": "cc:art141.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art141",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - O acompanhamento é requerido pelo próprio ou, mediante autorização deste, pelo cônjuge, pelo unido de facto, por qualquer parente sucessível ou, independentemente de autorização, pelo Ministério Público.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 64775,
+        "end": 64982
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

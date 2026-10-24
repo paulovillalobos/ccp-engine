@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art31.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art31",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A toda a causa deve ser atribuído um valor certo, expresso em moeda legal, o qual representa a utilidade económica imediata do pedido.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 45634,
+        "end": 45772
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

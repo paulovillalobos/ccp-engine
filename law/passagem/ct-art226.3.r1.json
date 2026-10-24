@@ -1,0 +1,23 @@
+{
+  "id": "ct:art226.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art226",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "3 - Não se compreende na noção de trabalho suplementar:\na) O prestado por trabalhador isento de horário de trabalho em dia normal de trabalho, sem prejuízo do disposto no número anterior;\nb) O prestado para compensar suspensão de actividade, independentemente da sua causa, de duração não superior a quarenta e oito horas, seguidas ou interpoladas por um dia de descanso ou feriado, mediante acordo entre o empregador e o trabalhador;\nc) A tolerância de quinze minutos prevista no n.º 3 do artigo 203.º;\nd) A formação profissional realizada fora do horário de trabalho que não exceda duas horas diárias;\ne) O trabalho prestado nas condições previstas na alínea b) do n.º 1 do artigo 257.º;\nf) O trabalho prestado para compensação de períodos de ausência ao trabalho, efectuada por iniciativa do trabalhador, desde que uma e outra tenham o acordo do empregador.\ng) O trabalho prestado para compensar encerramento para férias previsto na alínea b) do n.º 2 do artigo 242.º, por decisão do empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 321817,
+        "end": 322815
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

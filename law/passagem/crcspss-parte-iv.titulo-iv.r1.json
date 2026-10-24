@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:parte-iv.titulo-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-iv",
+  "kind": "titulo",
+  "label": "TÍTULO IV",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "TÍTULO IV\nDa prescrição",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 150162,
+        "end": 150185
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art141.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art141",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Nos processos impugnatórios, considera-se designadamente vencido, para o efeito do disposto no número anterior, o autor que, tendo invocado várias causas de invalidade contra o mesmo ato administrativo, tenha decaído relativamente à verificação de alguma delas, na medida em que o reconhecimento, pelo tribunal de recurso, da existência dessa causa de invalidade impeça ou limite a possibilidade de renovação do ato anulado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 202599,
+        "end": 203027
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

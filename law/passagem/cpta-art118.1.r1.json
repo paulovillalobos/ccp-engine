@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art118.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art118",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Juntas as oposições ou decorrido o respetivo prazo, o processo é concluso ao juiz, podendo haver lugar a produção de prova, quando este a considere necessária.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 178535,
+        "end": 178698
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

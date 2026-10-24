@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "c) Quanto à matéria procedimental, o Código do Procedimento Administrativo;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 8066,
+        "end": 8141
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

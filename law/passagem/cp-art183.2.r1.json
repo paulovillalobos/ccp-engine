@@ -1,0 +1,23 @@
+{
+  "id": "cp:art183.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art183",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - Se o crime for cometido através de meio de comunicação social, o agente é punido com pena de prisão até 2 anos ou com pena de multa não inferior a 120 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 280706,
+        "end": 280866
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

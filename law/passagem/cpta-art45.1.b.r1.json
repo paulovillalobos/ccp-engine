@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art45.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art45.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "b) Reconhece a existência da circunstância que obsta, no todo ou em parte, à emissão da pronúncia solicitada;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 58021,
+        "end": 58130
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

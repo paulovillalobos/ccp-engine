@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art163.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art163",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Ao duodécimo do rendimento relevante, convertido em percentagem do IAS, corresponde o escalão de remuneração convencional cujo valor seja imediatamente inferior.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 104295,
+        "end": 104460
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

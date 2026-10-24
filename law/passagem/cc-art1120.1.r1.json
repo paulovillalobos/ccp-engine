@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1120.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1120",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "1. A posição do arrendatário é transmissível por acto entre vivos, sem autorização do senhorio, a pessoas que no prédio arrendado continuem a exercer a mesma profissão.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 509631,
+        "end": 509799
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

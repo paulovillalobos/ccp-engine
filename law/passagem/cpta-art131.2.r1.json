@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art131.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art131",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O decretamento provisório também pode ter lugar durante a pendência do processo cautelar, com fundamento em alteração superveniente dos pressupostos de facto ou de direito.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 193737,
+        "end": 193913
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

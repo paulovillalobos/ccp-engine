@@ -1,0 +1,23 @@
+{
+  "id": "csc:art250.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art250",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1998-11-11",
+      "text": "2 - É, no entanto, permitido que o contrato de sociedade atribua, como direito especial, dois votos por cada cêntimo de valor nominal da quota ou quotas de sócios que, no total, não correspondam a mais de 20% do capital.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 390871,
+        "end": 391091
+      },
+      "valid_from": "1998-11-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

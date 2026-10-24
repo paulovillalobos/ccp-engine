@@ -1,0 +1,23 @@
+{
+  "id": "cp:art142.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art142",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-08-20",
+      "text": "1 - Não é punível a interrupção da gravidez efectuada por médico, ou sob a sua direcção, em estabelecimento de saúde oficial ou oficialmente reconhecido e com o consentimento da mulher grávida, quando:\na) Constituir o único meio de remover perigo de morte ou de grave e irreversível lesão para o corpo ou para a saúde física ou psíquica da mulher grávida;\nb) Se mostrar indicada para evitar perigo de morte ou de grave e duradoura lesão para o corpo ou para a saúde física ou psíquica da mulher grávida e for realizada nas primeiras 12 semanas de gravidez;\nc) Houver seguros motivos para prever que o nascituro virá a sofrer, de forma incurável, de grave doença ou malformação congénita, e for realizada nas primeiras 24 semanas de gravidez, excepcionando-se as situações de fetos inviáveis, caso em que a interrupção poderá ser praticada a todo o tempo;\nd) A gravidez tenha resultado de crime contra a liberdade e autodeterminação sexual e a interrupção for realizada nas primeiras 16 semanas.\ne) For realizada, por opção da mulher, nas primeiras 10 semanas de gravidez.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 219224,
+        "end": 220295
+      },
+      "valid_from": "2023-08-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

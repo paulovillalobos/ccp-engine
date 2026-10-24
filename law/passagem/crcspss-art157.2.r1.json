@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art157.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art157",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O reconhecimento da isenção, prevista no número anterior, é oficioso sempre que as condições que a determinam sejam do conhecimento directo da instituição de segurança social competente, dependendo da apresentação de requerimento do interessado nos demais casos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 100207,
+        "end": 100473
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

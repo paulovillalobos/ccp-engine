@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art114.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art114",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A adoção de uma ou mais providências cautelares é solicitada em requerimento próprio, apresentado:\na) Previamente à instauração do processo principal;\nb) Juntamente com a petição inicial do processo principal;\nc) Na pendência do processo principal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 171908,
+        "end": 172160
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

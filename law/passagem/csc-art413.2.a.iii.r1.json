@@ -1,0 +1,23 @@
+{
+  "id": "csc:art413.2.a.iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art413.2.a",
+  "kind": "subalinea",
+  "label": "iii)",
+  "versions": [
+    {
+      "version": "2016-01-01",
+      "text": "iii) Número médio de empregados durante o período: 250;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 589013,
+        "end": 589068
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

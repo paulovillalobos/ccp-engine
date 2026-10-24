@@ -1,0 +1,23 @@
+{
+  "id": "ct:art190.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art190",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2013-10-01",
+      "text": "2 - Os créditos referidos na alínea a) do número anterior não incluem os valores devidos a título de compensação por cessação do contrato de trabalho, calculada nos termos do artigo 366.º, para os novos contratos de trabalho.\n3- A existência de crédito do trabalhador em mora pode ser verificada mediante decisão definitiva de aplicação de coima por falta do respectivo pagamento, ou decisão condenatória transitada em julgado.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 274473,
+        "end": 274900
+      },
+      "valid_from": "2013-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

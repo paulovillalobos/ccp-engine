@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art85.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art85",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - No momento da citação dos demandados, é remetida a petição e os documentos que a instruem ao Ministério Público, salvo nos processos em que este figure como autor ou como representante de alguma das partes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 118762,
+        "end": 118972
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

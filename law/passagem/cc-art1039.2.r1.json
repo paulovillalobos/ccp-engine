@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1039.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1039",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Se a renda ou aluguer houver de ser pago no domicílio, geral ou particular, do locatário ou de procurador seu, e o pagamento não tiver sido efectuado, presume-se que o locador não veio nem mandou receber a prestação no dia do vencimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 434716,
+        "end": 434956
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

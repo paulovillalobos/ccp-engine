@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art199.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art199",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "6 - A garantia é prestada pelo valor da dívida exequenda, juros de mora contados até ao termo do prazo de pagamento voluntário ou à data do pedido, quando posterior, com o limite de cinco anos, e custas na totalidade, acrescida de 25 % da soma daqueles valores, exceto no caso dos planos prestacionais onde a garantia é prestada pelo valor da dívida exequenda, juros de mora contados até ao termo do prazo do plano de pagamento concedido e custas na totalidade, sem prejuízo do disposto no n.º 14 do artigo 169.º",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 243685,
+        "end": 244197
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art215.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art215",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2016-03-31",
+      "text": "5 - A administração tributária acede a informação relativa à existência de bens ou direitos do devedor, suscetíveis de penhora, incluindo todos os dados existentes nos registos que possui, bem como na contabilidade da empresa.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 266817,
+        "end": 267043
+      },
+      "valid_from": "2016-03-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

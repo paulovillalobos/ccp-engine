@@ -1,0 +1,23 @@
+{
+  "id": "cp:art205.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art205",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "5 - Se o agente tiver recebido a coisa ou o animal em depósito imposto por lei em razão de ofício, emprego ou profissão, ou na qualidade de tutor, curador ou depositário judicial, é punido com pena de prisão de 1 a 8 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 298303,
+        "end": 298525
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

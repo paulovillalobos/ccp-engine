@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1102.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1102",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-11-12",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 489326,
+        "end": 489341
+      },
+      "valid_from": "2012-11-12",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

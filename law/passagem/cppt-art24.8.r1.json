@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art24.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art24",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2025-07-01",
+      "text": "8 - As cartas precatórias serão cumpridas nos 60 dias posteriores ao da sua entrada nos serviços deprecados.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 34103,
+        "end": 34211
+      },
+      "valid_from": "2025-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

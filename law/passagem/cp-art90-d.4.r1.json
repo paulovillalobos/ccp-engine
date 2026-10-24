@@ -1,0 +1,23 @@
+{
+  "id": "cp:art90-d.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art90-d",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "4 - O tribunal revoga a pena de caução de boa conduta e ordena o cumprimento da pena de multa determinada na sentença se a pessoa colectiva ou entidade equiparada não prestar a caução no prazo fixado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 160486,
+        "end": 160686
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-i.titulo-iii.capitulo-iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii",
+  "kind": "capitulo",
+  "label": "Capítulo III",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Capítulo III\nPenas acessórias e efeitos das penas",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 128911,
+        "end": 128960
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

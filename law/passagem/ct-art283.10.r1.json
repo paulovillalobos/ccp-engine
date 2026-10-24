@@ -1,0 +1,23 @@
+{
+  "id": "ct:art283.10",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art283",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2017-10-01",
+      "text": "10 - O empregador deve assegurar a trabalhador afectado de lesão provocada por acidente de trabalho ou doença profissional que reduza a sua capacidade de trabalho ou de ganho a ocupação em funções compatíveis.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 381076,
+        "end": 381285
+      },
+      "valid_from": "2017-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

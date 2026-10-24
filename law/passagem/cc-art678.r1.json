@@ -1,0 +1,23 @@
+{
+  "id": "cc:art678",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-iv.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 678.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 678.º\n(Remissão)\nSão aplicáveis ao penhor, com as necessárias adaptações, os artigos 692.º, 694.º a 699.º, 701.º e 702.º",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 292207,
+        "end": 292334
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art63.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art63",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - A entidade competente deve comunicar o parecer referido no n.º 1 ao empregador e ao trabalhador, nos 30 dias subsequentes à recepção do processo, considerando-se em sentido favorável ao despedimento quando não for emitido dentro do referido prazo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 109111,
+        "end": 109362
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art325",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-v.capitulo-i.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 325.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 325.º\nAlteração violenta do Estado de direito\n1 - Quem, por meio de violência ou ameaça de violência, tentar destruir, alterar ou subverter o Estado de direito constitucionalmente estabelecido é punido com pena de prisão de 3 a 12 anos.\n2 - Se o facto descrito no número anterior for praticado por meio de violência armada, o agente é punido com pena de prisão de 5 a 15 anos.\n3 - No caso previsto no número anterior a pena é especialmente atenuada se o agente, não tendo exercido funções de comando, se render sem opor resistência, ou entregar ou abandonar as armas antes ou imediatamente depois de advertência da autoridade.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 409652,
+        "end": 410285
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

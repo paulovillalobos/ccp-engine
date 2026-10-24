@@ -1,0 +1,23 @@
+{
+  "id": "csc:art7.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art7",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-12-31",
+      "text": "2 - O número mínimo de partes de um contrato de sociedade é de dois, excepto quando a lei exija número superior ou permita que a sociedade seja constituída por uma só pessoa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 32240,
+        "end": 32414
+      },
+      "valid_from": "2008-12-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

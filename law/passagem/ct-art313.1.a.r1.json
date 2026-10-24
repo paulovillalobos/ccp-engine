@@ -1,0 +1,23 @@
+{
+  "id": "ct:art313.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art313.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "a) Distribuir lucros ou dividendos, pagar suprimentos e respectivos juros ou amortizar quotas sob qualquer forma;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 420323,
+        "end": 420436
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

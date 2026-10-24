@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art59.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art59",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "8 - A retificação do ato administrativo ou da sua notificação ou publicação não determina o início de novo prazo, salvo quando diga respeito à indicação do autor, do sentido ou dos fundamentos da decisão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 78420,
+        "end": 78624
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

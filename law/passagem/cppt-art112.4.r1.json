@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art112.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art112",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "4 - A revogação total do acto impugnado é notificada ao representante da Fazenda Pública nos 3 dias subsequentes, cabendo a este promover a extinção do processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 146598,
+        "end": 146759
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

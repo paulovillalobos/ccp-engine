@@ -1,0 +1,23 @@
+{
+  "id": "ct:art49.5.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art49.5",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "c) Em caso de hospitalização, declaração comprovativa passada pelo estabelecimento hospitalar.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 87435,
+        "end": 87529
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

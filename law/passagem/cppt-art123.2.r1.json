@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art123.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art123",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - O juiz discriminará também a matéria provada da não provada, fundamentando as suas decisões.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 156308,
+        "end": 156404
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art196.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art196",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2022-07-01",
+      "text": "3 - É excepcionalmente admitida a possibilidade de pagamento em prestações das dívidas referidas no número anterior, sem prejuízo da responsabilidade contra-ordenacional ou criminal que ao caso couber, quando:\na) O pagamento em prestações se inclua em plano de recuperação no âmbito de processo de insolvência ou de processo especial de revitalização, ou em acordo sujeito ao regime extrajudicial de recuperação de empresas em execução ou em negociação, e decorra do plano ou do acordo, consoante o caso, a imprescindibilidade da medida, podendo neste caso haver lugar a dispensa da obrigação de substituição dos administradores ou gerentes, se tal for tido como adequado pela entidade competente para autorizar o plano; ou\nb) Se demonstre a dificuldade financeira excecional e previsíveis consequências económicas gravosas, não podendo o número das prestações mensais exceder 24 e o valor de qualquer delas ser inferior a 1 unidade de conta no momento da autorização.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 232338,
+        "end": 233306
+      },
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art58.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art58",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - A impugnação é admitida, para além do prazo previsto na alínea b) do n.º 1:\na) Nas situações em que ocorra justo impedimento, nos termos previstos na lei processual civil;\nb) No prazo de três meses, contado da data da cessação do erro, quando se demonstre, com respeito pelo contraditório, que, no caso concreto, a tempestiva apresentação da petição não era exigível a um cidadão normalmente diligente, em virtude de a conduta da Administração ter induzido o interessado em erro; ou\nc) Quando, não tendo ainda decorrido um ano sobre a data da prática do ato ou da sua publicação, quando obrigatória, o atraso deva ser considerado desculpável, atendendo à ambiguidade do quadro normativo aplicável ou às dificuldades que, no caso concreto, se colocavam quanto à identificação do ato impugnável, ou à sua qualificação como ato administrativo ou como norma.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 75216,
+        "end": 76074
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

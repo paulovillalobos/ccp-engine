@@ -1,0 +1,23 @@
+{
+  "id": "cc:art999",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-iii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 999.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 999.º\n(Credor particular do sócio)\n1. Enquanto se não dissolver a sociedade, e sendo suficientes outros bens do devedor, o credor particular do sócio apenas pode executar o direito deste aos lucros e à quota de liquidação.\n2. Se os outros bens do devedor forem insuficientes, o credor pode exigir a liquidação da quota do devedor nos termos do artigo 1021.º",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 416619,
+        "end": 416983
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

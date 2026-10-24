@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2009",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-v.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 2009.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 2009.º\n(Pessoas obrigadas a alimentos)\n1. Estão vinculados à prestação de alimentos, pela ordem indicada:\na) O cônjuge ou o ex-cônjuge;\nb) Os descendentes;\nc) Os ascendentes;\nd) Os irmãos;\ne) Os tios, durante a menoridade do alimentando;\nf) O padrasto e a madrasta, relativamente a enteados menores que estejam, ou estivessem no momento da morte do cônjuge, a cargo deste.\n2. Entre as pessoas designadas nas alíneas b) e c) do número anterior, a obrigação defere-se segundo a ordem da sucessão legítima.\n3. Se algum dos vinculados não puder prestar os alimentos ou não puder saldar integralmente a sua responsabilidade, o encargo recai sobre os onerados subsequentes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 975903,
+        "end": 976577
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

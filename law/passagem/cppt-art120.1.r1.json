@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art120.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art120",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Quando tenha sido produzida prova que não conste do processo administrativo, ou quando o tribunal o entenda necessário, ordena a notificação das partes para apresentarem alegações escritas, por prazo simultâneo, a fixar entre 10 a 30 dias.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 153963,
+        "end": 154206
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

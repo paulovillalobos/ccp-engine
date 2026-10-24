@@ -1,0 +1,23 @@
+{
+  "id": "cp:art85.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art85",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - O prazo referido no n.º 3 do artigo 83.º é, para efeito do disposto neste artigo, de 3 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 152016,
+        "end": 152112
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

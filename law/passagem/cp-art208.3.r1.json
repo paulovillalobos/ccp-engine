@@ -1,0 +1,23 @@
+{
+  "id": "cp:art208.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art208",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - O procedimento criminal depende de queixa ou, nos casos previstos no artigo 207.º, de acusação particular.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 301320,
+        "end": 301430
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

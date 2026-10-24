@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-d.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-d",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2005-02-22",
+      "text": "2 - Caso tal entidade não tenha órgão de fiscalização, deve mandar fiscalizar as contas consolidadas, nos termos do número anterior, por um revisor oficial de contas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 721973,
+        "end": 722139
+      },
+      "valid_from": "2005-02-22",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

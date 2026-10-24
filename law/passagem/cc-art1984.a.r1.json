@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1984.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1984",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "1998-06-08",
+      "text": "a) Os filhos do adoptante maiores de doze anos;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 960931,
+        "end": 960978
+      },
+      "valid_from": "1998-06-08",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

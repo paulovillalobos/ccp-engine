@@ -1,0 +1,23 @@
+{
+  "id": "ct:art192.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art192",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A empresa de trabalho temporário pode ainda ser punida com a sanção acessória de interdição do exercício da actividade até dois anos em caso de reincidência na prática das seguintes infracções:\na) Não constituição de seguro de acidentes de trabalho de trabalhador temporário;\nb) Atraso por período superior a 30 dias no pagamento da retribuição devida a trabalhadores temporários.\nc) Não cumprimento da obrigação de contribuição para o FGCT, previsto em legislação específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 277918,
+        "end": 278398
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1678.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1678",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Cada um do cônjuges tem a administração dos seus bens próprios.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 755449,
+        "end": 755515
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

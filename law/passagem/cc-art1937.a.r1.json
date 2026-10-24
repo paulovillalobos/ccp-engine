@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1937.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1937",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "1995-03-01",
+      "text": "a) Dispor a título gratuito dos bens do menor;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 930152,
+        "end": 930198
+      },
+      "valid_from": "1995-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art87.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art87.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "b) Entre as 20 horas de um dia e as 7 horas do dia seguinte.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 137161,
+        "end": 137221
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

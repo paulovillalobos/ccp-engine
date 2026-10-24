@@ -1,0 +1,23 @@
+{
+  "id": "ct:art109.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art109",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - O trabalhador deve prestar ao empregador informação sobre todas as alterações relevantes para a prestação da actividade laboral, no prazo previsto no n.º 1.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 169581,
+        "end": 169741
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

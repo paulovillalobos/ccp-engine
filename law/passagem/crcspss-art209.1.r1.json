@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art209.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art209",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - No momento da realização do registo de cessão de quota ou de quotas que signifique a alienação a novos sócios da maioria do capital social, o respectivo acto é instruído com declaração comprovativa da situação contributiva da empresa.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 134415,
+        "end": 134653
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

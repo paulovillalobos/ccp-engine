@@ -1,0 +1,23 @@
+{
+  "id": "cp:art34",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 34.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 34.º\nDireito de necessidade\nNão é ilícito o facto praticado como meio adequado para afastar um perigo actual que ameace interesses juridicamente protegidos do agente ou de terceiro, quando se verificarem os seguintes requisitos:\na) Não ter sido voluntariamente criada pelo agente a situação de perigo, salvo tratando-se de proteger o interesse de terceiro;\nb) Haver sensível superioridade do interesse a salvaguardar relativamente ao interesse sacrificado; e\nc) Ser razoável impor ao lesado o sacrifício do seu interesse em atenção à natureza ou ao valor do interesse ameaçado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 96946,
+        "end": 97530
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2209.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2209",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O testador pode conservar o testamento cerrado em seu poder, cometê-lo à guarda de terceiro ou depositá-lo em qualquer repartição notarial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1053481,
+        "end": 1053623
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art103-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art103-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "2 - Durante a pendência da ação, a entidade demandada e os contrainteressados podem requerer ao juiz o levantamento do efeito suspensivo previsto no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 158464,
+        "end": 158629
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

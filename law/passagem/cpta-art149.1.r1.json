@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art149.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art149",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Ainda que declare nula a sentença, o tribunal de recurso não deixa de decidir o objeto da causa, conhecendo do fato e do direito.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 213306,
+        "end": 213439
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

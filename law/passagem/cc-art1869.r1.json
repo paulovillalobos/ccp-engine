@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1869",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-iii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1869.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1869.º\n(Investigação da paternidade)\nA paternidade pode ser reconhecida em acção especialmente intentada pelo filho se a maternidade já se achar estabelecida ou for pedido conjuntamente o reconhecimento de uma e outra.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 873656,
+        "end": 873881
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

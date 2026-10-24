@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art57.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art57",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - As medidas excepcionais previstas no número anterior são estabelecidas nos termos do disposto na secção iv do capítulo ii desta parte e por diploma legal próprio.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 43209,
+        "end": 43375
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

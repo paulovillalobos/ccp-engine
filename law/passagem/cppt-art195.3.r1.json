@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art195.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art195",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "3 - (Revogado).",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 231138,
+        "end": 231153
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

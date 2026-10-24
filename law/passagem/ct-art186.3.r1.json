@@ -1,0 +1,23 @@
+{
+  "id": "ct:art186.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art186",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - A empresa de trabalho temporário deve comunicar ao trabalhador temporário a informação prevista no número anterior, por escrito e antes da sua cedência ao utilizador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 269109,
+        "end": 269279
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

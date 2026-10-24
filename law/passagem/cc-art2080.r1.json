@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2080",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-i.capitulo-viii",
+  "kind": "artigo",
+  "label": "Artigo 2080.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 2080.º\n(A quem incumbe o cargo)\n1. O cargo de cabeça-de-casal defere-se pela ordem seguinte:\na) Ao cônjuge sobrevivo, não separado judicialmente de pessoas e bens, se for herdeiro ou tiver meação nos bens do casal;\nb) Ao testamenteiro, salvo declaração do testador em contrário;\nc) Aos parentes que sejam herdeiros legais;\nd) Aos herdeiros testamentários.\n2. De entre os parentes que sejam herdeiros legais, preferem os mais próximos em grau.\n3. De entre os herdeiros legais do mesmo grau de parentesco, ou de entre os herdeiros testamentários, preferem os que viviam com o falecido há pelo menos um ano à data da morte.\n4. Em igualdade de circunstâncias, prefere o herdeiro mais velho.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1005606,
+        "end": 1006299
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

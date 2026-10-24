@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1323.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1323",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "5 - Restituído o animal ou a coisa, o achador tem direito à indemnização do prejuízo havido e das despesas realizadas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 575370,
+        "end": 575488
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art90-m.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art90-m",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "1 - A decisão condenatória é sempre publicada nos casos em que sejam aplicadas as penas previstas nos artigos 90.º-C, 90.º-J e 90.º-L, podendo sê-lo nos restantes casos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 167385,
+        "end": 167554
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

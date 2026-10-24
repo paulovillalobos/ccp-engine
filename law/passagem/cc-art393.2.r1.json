@@ -1,0 +1,23 @@
+{
+  "id": "cc:art393.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art393",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Também não é admitida prova por testemunhas, quando o facto estiver plenamente provado por documento ou por outro meio com força probatória plena.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 179153,
+        "end": 179302
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

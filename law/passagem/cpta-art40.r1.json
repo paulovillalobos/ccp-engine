@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art40",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 40.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 40.º\nLegitimidade em acções relativas a contratos",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 56119,
+        "end": 56175
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

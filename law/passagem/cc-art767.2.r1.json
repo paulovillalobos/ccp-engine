@@ -1,0 +1,23 @@
+{
+  "id": "cc:art767.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art767",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. O credor não pode, todavia, ser constrangido a receber de terceiro a prestação, quando se tenha acordado expressamente em que esta deve ser feita pelo devedor, ou quando a substituição o prejudique.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 327926,
+        "end": 328127
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

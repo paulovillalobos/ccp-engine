@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1804",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1804.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1804.º\n(Nascimento ocorrido há menos de um ano)\n1. No caso de declaração de nascimento ocorrido há menos de um ano, a maternidade indicada considera-se estabelecida.\n2. Lavrado o registo, deve o conteúdo do assento ser comunicado à mãe do registado sempre que possível, mediante notificação pessoal, salvo se a declaração tiver sido feita por ela ou pelo marido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 831577,
+        "end": 831946
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

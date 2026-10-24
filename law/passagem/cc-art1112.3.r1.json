@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1112.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1112",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "3 - A transmissão deve ser celebrada por escrito e comunicada ao senhorio.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 504413,
+        "end": 504487
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

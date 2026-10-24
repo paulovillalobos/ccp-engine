@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1536.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1536",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. No título constitutivo pode também estipular-se a extinção do direito de superfície em consequência da destruição da obra ou das árvores, ou da verificação de qualquer condição resolutiva.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 686449,
+        "end": 686640
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

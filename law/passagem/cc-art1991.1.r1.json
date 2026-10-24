@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1991.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1991",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - A revisão nos termos do n.º 1 do artigo 1990.º pode ser pedida:\na) No caso das alíneas a) e b), pelas pessoas cujo consentimento faltou, no prazo de seis meses a contar da data em que tiveram conhecimento da adopção;\nb) No caso das alíneas c) e d), pelas pessoas cujo consentimento foi viciado, dentro dos seis meses subsequentes à cessação do vício;\nc) No caso da alínea e), pelo adotado, até seis meses a contar da data em que ele atingiu a maioridade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 967564,
+        "end": 968022
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

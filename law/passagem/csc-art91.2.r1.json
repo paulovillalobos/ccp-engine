@@ -1,0 +1,23 @@
+{
+  "id": "csc:art91.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art91",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-04-11",
+      "text": "2 - Este aumento de capital só pode ser realizado depois de aprovadas as contas do exercício anterior à deliberação, mas, se já tiverem decorrido mais de seis meses sobre essa aprovação, a existência de reservas a incorporar só pode ser aprovada por um balanço especial, organizado e aprovado nos termos prescritos para o balanço anual.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 139695,
+        "end": 140031
+      },
+      "valid_from": "2022-04-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

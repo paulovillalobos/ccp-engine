@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2058.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2058",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A transmissão só se verifica se os herdeiros aceitarem a herança do falecido, o que os não impede de repudiar, querendo a herança a que este fora chamado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 998191,
+        "end": 998348
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

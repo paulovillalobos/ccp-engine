@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art33.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art33",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "a) Quando esteja em causa a autorização ou licenciamento de obras e, em geral, a apreciação de decisões respeitantes à realização de empreendimentos públicos ou privados, o valor da causa afere-se pelo custo previsto da obra projectada;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 48182,
+        "end": 48418
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

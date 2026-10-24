@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art20.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art20",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - O conhecimento dos pedidos de intimação para prestação de informações, consulta de documentos e passagem de certidões é da competência do tribunal da área onde deva ter lugar a prestação, consulta ou passagem pretendida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 32479,
+        "end": 32703
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

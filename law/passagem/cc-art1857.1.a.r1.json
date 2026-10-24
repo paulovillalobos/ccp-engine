@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1857.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1857.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "a) Por declaração prestada perante o funcionário do registo civil, averbada no assento de nascimento, e no de perfilhação, se existir;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 865019,
+        "end": 865153
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

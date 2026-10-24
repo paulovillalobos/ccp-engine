@@ -1,0 +1,23 @@
+{
+  "id": "cp:art200.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art200",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "2 - Se a situação referida no número anterior tiver sido criada por aquele que omite o auxílio devido, o omitente é punido com pena de prisão até 2 anos ou com pena de multa até 240 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 291662,
+        "end": 291849
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

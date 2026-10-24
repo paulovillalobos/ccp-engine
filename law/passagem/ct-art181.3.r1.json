@@ -1,0 +1,23 @@
+{
+  "id": "ct:art181.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art181",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "3 - O contrato que não contenha a menção do seu termo considera-se celebrado pelo prazo de um mês, não sendo permitida a sua renovação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 259933,
+        "end": 260068
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

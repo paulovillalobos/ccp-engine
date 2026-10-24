@@ -1,0 +1,23 @@
+{
+  "id": "csc:art33.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art33",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - As reservas cuja existência e cujo montante não figuram expressamente no balanço não podem ser utilizadas para distribuição aos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 62562,
+        "end": 62701
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

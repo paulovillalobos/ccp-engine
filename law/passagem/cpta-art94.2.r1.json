@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art94.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art94",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - A sentença começa por identificar as partes e o objeto do litígio, enunciando as questões de mérito que ao tribunal cumpra solucionar, ao que se segue a exposição dos fundamentos de facto e de direito, a decisão e a condenação dos responsáveis pelas custas processuais, com indicação da proporção da respetiva responsabilidade.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 142808,
+        "end": 143139
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

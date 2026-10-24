@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art111.l",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art111",
+  "kind": "alinea",
+  "label": "l)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "l) Casas do povo;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 70803,
+        "end": 70820
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

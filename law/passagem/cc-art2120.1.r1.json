@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2120.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2120",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Finda a partilha, são entregues a cada um dos co-herdeiros os documentos relativos aos bens que lhe couberem.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1023216,
+        "end": 1023328
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art191.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art191",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A falta de pagamento pontual de crédito do trabalhador que se prolongue por período superior a 15 dias deve ser declarada, a pedido deste, pelo empregador, no prazo de cinco dias ou, em caso de recusa, pelo serviço com competência inspectiva do ministério responsável pela área laboral, no prazo de 10 dias.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 275447,
+        "end": 275758
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

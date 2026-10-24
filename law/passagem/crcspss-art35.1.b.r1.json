@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art35.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art35.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "b) Na situação prevista no n.º 4, à data do início do exercício da actividade do primeiro trabalhador.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 25410,
+        "end": 25512
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

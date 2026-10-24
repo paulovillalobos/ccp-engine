@@ -1,0 +1,23 @@
+{
+  "id": "cc:art716",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 716.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 716.º\n(Hipotecas gerais)\n1. São nulas as hipotecas voluntárias que incidam sobre todos os bens do devedor ou de terceiro sem os especificar.\n2. A especificação deve constar do título constitutivo da hipoteca.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 307069,
+        "end": 307284
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

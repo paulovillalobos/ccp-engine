@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art84.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art84",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "4 - O original do processo administrativo pode ser substituído por fotocópias autenticadas e devidamente ordenadas, sem prejuízo da sua requisição, quando tal se mostre necessário.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 117436,
+        "end": 117616
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

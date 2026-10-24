@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art36.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art36",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Os processos urgentes e respetivos incidentes correm em férias, com dispensa de vistos prévios, mesmo em fase de recurso jurisdicional, e os atos da secretaria são praticados no próprio dia, com precedência sobre quaisquer outros.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 50722,
+        "end": 50956
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

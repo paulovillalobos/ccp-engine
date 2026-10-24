@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art102.5.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art102.5",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "c) 5 dias para os restantes casos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 155357,
+        "end": 155391
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

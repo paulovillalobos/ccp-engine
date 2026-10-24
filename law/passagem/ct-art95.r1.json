@@ -1,0 +1,23 @@
+{
+  "id": "ct:art95",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-viii",
+  "kind": "artigo",
+  "label": "Artigo 95.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 95.º\nCessação e renovação de direitos\n1 - O direito a horário de trabalho ajustado ou a dispensa de trabalho para frequência de aulas, a marcação do período de férias de acordo com as necessidades escolares ou a licença sem retribuição cessa quando o trabalhador-estudante não tenha aproveitamento no ano em que beneficie desse direito.\n2 - Os restantes direitos cessam quando o trabalhador-estudante não tenha aproveitamento em dois anos consecutivos ou três interpolados.\n3 - Os direitos do trabalhador-estudante cessam imediatamente em caso de falsas declarações relativamente aos factos de que depende a concessão do estatuto ou a factos constitutivos de direitos, bem como quando estes sejam utilizados para outros fins.\n4 - O trabalhador-estudante pode exercer de novo os direitos no ano lectivo subsequente àquele em que os mesmos cessaram, não podendo esta situação ocorrer mais de duas vezes.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 147838,
+        "end": 148746
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

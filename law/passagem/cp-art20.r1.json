@@ -1,0 +1,23 @@
+{
+  "id": "cp:art20",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 20.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 20.º\nInimputabilidade em razão de anomalia psíquica\n1 - É inimputável quem, por força de uma anomalia psíquica, for incapaz, no momento da prática do facto, de avaliar a ilicitude deste ou de se determinar de acordo com essa avaliação.\n2 - Pode ser declarado inimputável quem, por força de uma anomalia psíquica grave, não acidental e cujos efeitos não domina, sem que por isso possa ser censurado, tiver, no momento da prática do facto, a capacidade para avaliar a ilicitude deste ou para se determinar de acordo com essa avaliação sensivelmente diminuída.\n3 - A comprovada incapacidade do agente para ser influenciado pelas penas pode constituir índice da situação prevista no número anterior.\n4 - A imputabilidade não é excluída quando a anomalia psíquica tiver sido provocada pelo agente com intenção de praticar o facto.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 90893,
+        "end": 91725
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art88.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art88",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - As questões prévias referidas na alínea a) do número anterior que não tenham sido apreciadas no despacho saneador não podem ser suscitadas nem decididas em momento posterior do processo e as que sejam decididas no despacho saneador não podem vir a ser reapreciadas.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 131846,
+        "end": 132115
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

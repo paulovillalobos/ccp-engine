@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art171.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art171",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Apresentada a petição, é ordenada a notificação da entidade obrigada para pagar, no prazo de 20 dias, ou deduzir oposição fundada na invocação de facto superveniente, modificativo ou extintivo da obrigação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 241221,
+        "end": 241431
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art174.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art174",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A falta de pagamento atempado de contribuições faz presumir a vontade de fazer cessar o enquadramento, salvo se o mesmo pagamento for retomado antes de decorrido o prazo de um ano.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 113316,
+        "end": 113500
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

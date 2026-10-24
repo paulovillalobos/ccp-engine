@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1860.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1860",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - A perfilhação é anulável judicialmente a requerimento do perfilhante quando viciada por erro ou coacção moral.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 867564,
+        "end": 867678
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

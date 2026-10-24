@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art141.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art141",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Pode ainda recorrer das decisões dos tribunais administrativos quem seja direta e efetivamente prejudicado por elas, ainda que não seja parte na causa ou seja apenas parte acessória.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 203385,
+        "end": 203571
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

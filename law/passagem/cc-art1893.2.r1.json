@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1893.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1893",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "2 - A anulação pode ser requerida depois de findar o prazo se o filho ou seus herdeiros mostrarem que só tiveram conhecimento do acto impugnado nos seis meses anteriores à proposição da acção.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 891229,
+        "end": 891421
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

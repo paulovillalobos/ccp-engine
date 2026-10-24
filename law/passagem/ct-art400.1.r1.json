@@ -1,0 +1,23 @@
+{
+  "id": "ct:art400.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art400",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalhador pode denunciar o contrato independentemente de justa causa, mediante comunicação ao empregador, por escrito, com a antecedência mínima de 30 ou 60 dias, conforme tenha, respectivamente, até dois anos ou mais de dois anos de antiguidade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 508658,
+        "end": 508912
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

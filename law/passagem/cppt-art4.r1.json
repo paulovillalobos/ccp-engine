@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-i.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 4.º",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Artigo 4.º\nIntervenção das sucursais\nAs sucursais, agências, delegações ou representações podem intervir, no procedimento ou no processo judicial tributário, mediante autorização expressa da administração principal, quando o facto tributário lhes respeitar.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 17572,
+        "end": 17829
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

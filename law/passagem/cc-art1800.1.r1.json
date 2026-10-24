@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1800.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1800",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. É admitida acção judicial destinada a fixar a data provável da concepção dentro do período referido no artigo 1798.º, ou a provar que o período de gestação do filho foi inferior a cento e oitenta dias ou superior a trezentos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 829837,
+        "end": 830065
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art113.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art113",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Quando assuma a posição de autor num processo principal, nos termos do artigo 62.º, o Ministério Público pode requerer o seguimento de eventual processo cautelar, que, com relação a esse processo, se encontre pendente, nele assumindo também a posição de requerente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 171432,
+        "end": 171701
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

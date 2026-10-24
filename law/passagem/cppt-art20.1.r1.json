@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art20.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art20",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "1 - Os prazos do procedimento tributário e interposição da impugnação judicial contam-se de modo contínuo e nos termos do artigo 279.º do Código Civil, transferindo-se o seu termo, quando os prazos terminarem em dia em que os serviços ou os tribunais estiverem encerrados, para o primeiro dia útil seguinte.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 30162,
+        "end": 30469
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

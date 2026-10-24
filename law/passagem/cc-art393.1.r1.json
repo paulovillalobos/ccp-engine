@@ -1,0 +1,23 @@
+{
+  "id": "cc:art393.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art393",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se a declaração negocial, por disposição da lei ou estipulação das partes, houver de ser reduzida a escrito ou necessitar de ser provada por escrito, não é admitida prova testemunhal.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 178966,
+        "end": 179152
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

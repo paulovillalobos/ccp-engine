@@ -1,0 +1,23 @@
+{
+  "id": "cp:art61.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art61",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "3 - O tribunal coloca o condenado a prisão em liberdade condicional quando se encontrarem cumpridos dois terços da pena e no mínimo 6 meses, desde que se revele preenchido o requisito constante da alínea a) do número anterior.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 125421,
+        "end": 125647
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art28.3.e",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art28.3",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "e) No caso de ações sem valor nominal, declarar se os valores encontrados atingem ou não o montante do capital social correspondentemente emitido.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 53572,
+        "end": 53718
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

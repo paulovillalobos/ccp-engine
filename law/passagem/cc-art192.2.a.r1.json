@@ -1,0 +1,23 @@
+{
+  "id": "cc:art192.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art192.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2012-07-14",
+      "text": "a) Quando o seu fim se tenha esgotado ou se haja tornado impossível;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 97202,
+        "end": 97270
+      },
+      "valid_from": "2012-07-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

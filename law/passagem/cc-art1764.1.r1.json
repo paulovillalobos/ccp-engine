@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1764.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1764",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1. Só podem ser doados bens próprios do doador.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 799485,
+        "end": 799532
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

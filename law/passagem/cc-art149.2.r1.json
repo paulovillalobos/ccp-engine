@@ -1,0 +1,23 @@
+{
+  "id": "cc:art149.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art149",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2 - Os efeitos da decisão podem retroagir à data em que se verificou a cessação ou modificação referidas no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 71037,
+        "end": 71161
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

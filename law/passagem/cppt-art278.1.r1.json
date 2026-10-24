@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art278.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art278",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "1 - O tribunal só conhecerá das reclamações quando, depois de realizadas a penhora e a venda, o processo lhe for remetido a final.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 332534,
+        "end": 332664
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

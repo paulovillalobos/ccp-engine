@@ -1,0 +1,23 @@
+{
+  "id": "ct:art485.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art485",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O Estado deve promover a contratação colectiva, de modo que as convenções colectivas sejam aplicáveis ao maior número de trabalhadores e empregadores.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 589277,
+        "end": 589431
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

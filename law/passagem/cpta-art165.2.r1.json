@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art165.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art165",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - O recebimento da oposição suspende a execução, sendo o exequente notificado para replicar no prazo de 10 dias.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 233656,
+        "end": 233770
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

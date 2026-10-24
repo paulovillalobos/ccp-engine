@@ -1,0 +1,23 @@
+{
+  "id": "csc:art342.4.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art342.4",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "b) Prever que o dividendo prioritário correspondente a exercícios em que não tenham sido gerados lucros distribuíveis seja considerado perdido;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 484397,
+        "end": 484540
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

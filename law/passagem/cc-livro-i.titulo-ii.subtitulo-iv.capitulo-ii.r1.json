@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv",
+  "kind": "capitulo",
+  "label": "Capítulo II",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Capítulo II\nProvas",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 157788,
+        "end": 157806
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art20.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art20",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Para efeitos da arrecadação e da cobrança previstas no número anterior a instituição de segurança social competente pode celebrar contratos de prestação de serviços com instituições de crédito ou outras entidades devidamente habilitadas para esse efeito, através dos quais se regulem as condições da prestação dos serviços de arrecadação e cobrança por parte destas e, designadamente, as receitas abrangidas, o custo do serviço, a forma e o prazo de entrega.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 15685,
+        "end": 16147
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

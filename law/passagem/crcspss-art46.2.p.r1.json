@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art46.2.p",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art46.2",
+  "kind": "alinea",
+  "label": "p)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "p) As importâncias atribuídas a título de ajudas de custo, abonos de viagem, despesas de transporte e outras equivalentes;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 33138,
+        "end": 33260
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art94.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art94",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - As sentenças e os acórdãos finais são registados no sistema informático de suporte à atividade dos tribunais administrativos e fiscais, nos termos a definir por portaria do membro do Governo responsável pela área da justiça.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 144017,
+        "end": 144245
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

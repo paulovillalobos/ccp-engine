@@ -1,0 +1,26 @@
+{
+  "id": "cp:art2.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:26:09Z",
+  "norma": "norma:cp",
+  "parent": "cp:art2.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "b) O artigo 190.º do Decreto-Lei n.º 314/78, de 27 de Outubro;",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 16406,
+        "end": 16468
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "stale": true,
+  "stale_reason": "no longer produced by ccp-build-law-0.1 from the captures (D34)",
+  "supersedes": 1
+}

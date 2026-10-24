@@ -1,0 +1,23 @@
+{
+  "id": "ct:livro-i.titulo-ii.capitulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii",
+  "kind": "capitulo",
+  "label": "Capítulo V",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Capítulo V\nVicissitudes contratuais",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 381547,
+        "end": 381582
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

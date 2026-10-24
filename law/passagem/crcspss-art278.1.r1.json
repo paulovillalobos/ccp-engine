@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art278.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art278",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A base de incidência contributiva dos trabalhadores do serviço doméstico prevista no n.º 1 do artigo 120.º é fixada em 85 % do valor do IAS para o ano de 2010 e no valor de um IAS a partir de 2011.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 172785,
+        "end": 172986
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

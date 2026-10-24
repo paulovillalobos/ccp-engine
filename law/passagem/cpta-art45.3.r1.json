@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art45.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art45",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Na hipótese prevista no número anterior, o autor pode optar por pedir a reparação de todos os danos resultantes da atuação ilegítima da entidade demandada, hipótese na qual esta é notificada para contestar o novo pedido no prazo de 30 dias, findo o que a ação segue os subsequentes termos da ação administrativa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 58764,
+        "end": 59080
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1115.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1115",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "1. Caducando o contrato em consequência de expropriação por utilidade pública, o arrendamento é considerado como encargo autónomo para o efeito de o arrendatário ser indemnizado pelo expropriante.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 506479,
+        "end": 506675
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

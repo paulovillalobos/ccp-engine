@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.12",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "12",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "12 - A dação em pagamento operar-se-á através de auto lavrado no processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 254330,
+        "end": 254404
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

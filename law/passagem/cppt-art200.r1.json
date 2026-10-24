@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art200",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-iv.capitulo-ii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 200.º",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "Artigo 200.º\nConsequências da falta de pagamento\n1 - A falta de pagamento sucessivo de três prestações, ou de seis interpoladas, importa o vencimento das seguintes se, no prazo de 30 dias a contar da notificação para o efeito, o executado não proceder ao pagamento das prestações incumpridas, prosseguindo o processo de execução fiscal os seus termos.\n2 - A entidade que tiver prestado a garantia será citada para, no prazo de 30 dias, efectuar o pagamento da dívida ainda existente e acrescido até ao montante da garantia prestada, sob pena de ser executada no processo.\n3 - No processo far-se-ão constar os bens que foram dados em garantia.\n4 - Nos casos de dispensa de garantia, nos termos do n.º 5 do artigo 198.º, a falta de pagamento de uma prestação importa o vencimento imediato das seguintes, prosseguindo o processo de execução fiscal os seus termos.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 249196,
+        "end": 250056
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

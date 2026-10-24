@@ -1,0 +1,23 @@
+{
+  "id": "csc:art161.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art161",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "2 - A deliberação deve ser tomada pelo número de votos que a lei ou o contrato de sociedade exija para a deliberação de dissolução, a não ser que se tenha estipulado para este efeito maioria superior ou outros requisitos.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 292773,
+        "end": 292994
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

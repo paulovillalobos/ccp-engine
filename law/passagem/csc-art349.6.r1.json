@@ -1,0 +1,23 @@
+{
+  "id": "csc:art349.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art349",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "6 - [Revogado].",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 499627,
+        "end": 499642
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

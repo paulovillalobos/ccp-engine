@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1991.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1991",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "2 - No caso das alíneas a) e b) do número anterior, o pedido de revisão não poderá ser deduzido decorridos três anos sobre a data do trânsito em julgado da sentença que tiver decretado a adopção.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 968023,
+        "end": 968218
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

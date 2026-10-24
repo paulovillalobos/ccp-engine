@@ -1,0 +1,23 @@
+{
+  "id": "ct:art456.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art456",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "4 - O serviço referido no número anterior procede ao cancelamento do registo dos estatutos da associação em causa e promove a publicação imediata de aviso no Boletim do Trabalho e Emprego.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 564249,
+        "end": 564437
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art166.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art166",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - A forma escrita é exigida apenas para prova da estipulação do regime de teletrabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 228176,
+        "end": 228265
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

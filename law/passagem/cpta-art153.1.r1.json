@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art153.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art153",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quando, no pleno da secção, o relator fique vencido quanto à decisão ou a todos os fundamentos desta, o acórdão é lavrado por juiz a determinar por sorteio, de entre os que tenham feito vencimento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 220429,
+        "end": 220630
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art82.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art82",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "1 - Os demandados podem contestar no prazo de 30 dias a contar da citação, começando o prazo a correr desde o termo da dilação, quando a esta houver lugar.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 112101,
+        "end": 112256
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

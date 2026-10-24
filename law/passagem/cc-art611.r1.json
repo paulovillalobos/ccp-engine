@@ -1,0 +1,23 @@
+{
+  "id": "cc:art611",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-v.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 611.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 611.º\n(Prova)\nIncumbe ao credor a prova do montante das dívidas, e ao devedor ou a terceiro interessado na manutenção do acto a prova de que o obrigado possui bens penhoráveis de igual ou maior valor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 267195,
+        "end": 267402
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1078.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1078",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "5 - Sendo o arrendatário responsável por um encargo ou despesa contratado em nome do senhorio, este apresenta, no prazo de um mês, o comprovativo do pagamento feito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 460465,
+        "end": 460630
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

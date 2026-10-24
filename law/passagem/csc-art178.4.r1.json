@@ -1,0 +1,23 @@
+{
+  "id": "csc:art178.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art178",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "4 - (Revogado).",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 309694,
+        "end": 309709
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

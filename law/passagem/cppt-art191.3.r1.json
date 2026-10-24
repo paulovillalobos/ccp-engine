@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art191.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art191",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "3 - A citação é pessoal:\na) Nos casos não referidos nos números anteriores;\nb) Na efetivação da responsabilidade solidária ou subsidiária;\nc) Quando houver necessidade de proceder à venda de bens;\nd) Quando o órgão de execução fiscal a considerar mais eficaz para a cobrança da dívida.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 222940,
+        "end": 223225
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

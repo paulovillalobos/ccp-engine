@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art88.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art88",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - O despacho saneador pode ser logo ditado para a ata da audiência prévia mas, quando não seja proferido nesse contexto ou quando a complexidade das questões a resolver o exija, o juiz pode proferi-lo por escrito e, se for caso disso, suspendendo-se a audiência prévia e fixando-se logo data para a sua continuação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 132116,
+        "end": 132433
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

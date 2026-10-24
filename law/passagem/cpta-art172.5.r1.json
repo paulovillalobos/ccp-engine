@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art172.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art172",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - No caso de insuficiência de dotação, o Presidente do Conselho Superior dos Tribunais Administrativos e Fiscais oficia ao Presidente da Assembleia da República e ao Primeiro-Ministro para que se promova a abertura de créditos extraordinários.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 244195,
+        "end": 244440
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

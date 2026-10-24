@@ -1,0 +1,23 @@
+{
+  "id": "cp:art201.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art201",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - Na mesma pena incorre quem, pelos mesmos meios, impedir outra pessoa de abandonar a situação de perigo referida no número anterior ou a forçar a nela permanecer.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 292696,
+        "end": 292861
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

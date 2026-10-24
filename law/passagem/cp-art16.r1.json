@@ -1,0 +1,23 @@
+{
+  "id": "cp:art16",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 16.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 16.º\nErro sobre as circunstâncias do facto\n1 - O erro sobre elementos de facto ou de direito de um tipo de crime, ou sobre proibições cujo conhecimento for razoavelmente indispensável para que o agente possa tomar consciência da ilicitude do facto, exclui o dolo.\n2 - O preceituado no número anterior abrange o erro sobre um estado de coisas que, a existir, excluiria a ilicitude do facto ou a culpa do agente.\n3 - Fica ressalvada a punibilidade da negligência nos termos gerais.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 89780,
+        "end": 90266
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

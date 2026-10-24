@@ -1,0 +1,23 @@
+{
+  "id": "cp:art98.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art98",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - O tribunal que ordenar o internamento determina, em vez dele, a suspensão da sua execução se for razoavelmente de esperar que com a suspensão se alcance a finalidade da medida.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 172268,
+        "end": 172448
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

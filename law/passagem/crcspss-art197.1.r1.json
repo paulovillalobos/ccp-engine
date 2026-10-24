@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art197.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art197",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Sempre que, no âmbito da relação jurídica contributiva, um contribuinte seja simultaneamente credor e devedor da segurança social, este pode requerer à entidade de segurança social competente a compensação de créditos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 126782,
+        "end": 127004
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

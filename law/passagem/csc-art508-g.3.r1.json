@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-g.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-g",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "3 - Caso o grupo não aplique políticas em relação a uma ou mais questões referidas no número anterior, a demonstração não financeira consolidada deve apresentar uma explicação clara e fundamentada para esse facto.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 728898,
+        "end": 729111
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

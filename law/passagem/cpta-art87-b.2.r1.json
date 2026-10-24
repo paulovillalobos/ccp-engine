@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art87-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art87-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - O juiz pode dispensar a realização de audiência prévia quando esta se destine apenas ao fim previsto na alínea b) do n.º 1 do artigo anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 128664,
+        "end": 128810
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

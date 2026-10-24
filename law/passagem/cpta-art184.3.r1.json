@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art184.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art184",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - No caso das Regiões Autónomas e das autarquias locais, a competência referida nos números anteriores pertence, respetivamente, ao governo regional e ao órgão autárquico que desempenha funções executivas.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 261203,
+        "end": 261410
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

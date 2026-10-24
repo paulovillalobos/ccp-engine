@@ -1,0 +1,23 @@
+{
+  "id": "cc:art350.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art350",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Quem tem a seu favor a presunção legal escusa de provar o facto a que ela conduz.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 161398,
+        "end": 161482
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

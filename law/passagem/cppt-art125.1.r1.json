@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art125.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art125",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Constituem causas de nulidade da sentença a falta de assinatura do juiz, a não especificação dos fundamentos de facto e de direito da decisão, a oposição dos fundamentos com a decisão, a falta de pronúncia sobre questões que o juiz deva apreciar ou a pronúncia sobre questões que não deva conhecer.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 157160,
+        "end": 157462
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

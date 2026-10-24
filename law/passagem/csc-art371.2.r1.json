@@ -1,0 +1,23 @@
+{
+  "id": "csc:art371.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art371",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - Não é necessário proceder à emissão a que se refere o número anterior quando os pedidos de conversão possam ser satisfeitos com ações já emitidas e que se encontrem disponíveis para o efeito, salvo se as condições da emissão dispuserem diferentemente.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 530137,
+        "end": 530392
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

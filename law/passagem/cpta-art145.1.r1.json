@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art145.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art145",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Findos os prazos concedidos às partes, o juiz ou relator aprecia os requerimentos apresentados e pronuncia-se sobre as nulidades arguidas e os pedidos de reforma, ordenando a subida do recurso se a tal nada obstar.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 208464,
+        "end": 208682
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

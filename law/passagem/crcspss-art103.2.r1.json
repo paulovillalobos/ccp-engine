@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art103.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art103",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O disposto no número anterior só se aplica quando a cessação ocorra dentro dos 24 meses seguintes ao termo do período de concessão da dispensa.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 67009,
+        "end": 67156
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

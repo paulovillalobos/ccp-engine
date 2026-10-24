@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art89.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art89",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - As exceções dilatórias são de conhecimento oficioso e obstam a que o tribunal conheça do mérito da causa, dando lugar à absolvição da instância ou à remessa do processo para outro tribunal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 133084,
+        "end": 133277
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

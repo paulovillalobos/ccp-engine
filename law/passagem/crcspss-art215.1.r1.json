@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art215.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art215",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Quando, por motivos imputáveis aos serviços, tenham sido liquidados juros superiores aos devidos, procede-se à sua anulação oficiosa se ainda não tiverem decorrido cinco anos sobre o pagamento e desde que o seu quantitativo seja igual ou superior a (euro) 5.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 137163,
+        "end": 137425
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

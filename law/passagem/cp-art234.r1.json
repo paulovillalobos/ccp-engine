@@ -1,0 +1,23 @@
+{
+  "id": "cp:art234",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-ii.capitulo-v",
+  "kind": "artigo",
+  "label": "Artigo 234.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 234.º\nApropriação ilegítima\n1 - Quem, por força do cargo que desempenha, detiver a administração, gerência ou simples capacidade de dispor de bens do sector público ou cooperativo, e por qualquer forma deles se apropriar ilegitimamente ou permitir intencionalmente que outra pessoa ilegitimamente se aproprie, é punido com a pena que ao respectivo crime corresponder agravada de um terço nos seus limites mínimo e máximo.\n2 - A tentativa é punível.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 326766,
+        "end": 327221
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

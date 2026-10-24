@@ -1,0 +1,23 @@
+{
+  "id": "cc:art23",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 23.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 23.º\n(Interpretação e averiguação do direito estrangeiro)\n1. A lei estrangeira é interpretada dentro do sistema a que pertence e de acordo com as regras interpretativas nele fixadas.\n2. Na impossibilidade de averiguar o conteúdo da lei estrangeira aplicável, recorrer-se-á à lei que for subsidiàriamente competente, devendo adoptar-se igual procedimento sempre que não for possível determinar os elementos de facto ou de direito de que dependa a designação da lei aplicável.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 17617,
+        "end": 18098
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

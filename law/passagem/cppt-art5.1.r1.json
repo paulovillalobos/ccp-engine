@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art5.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art5",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Os interessados ou seus representantes legais podem conferir mandato, sob a forma prevista na lei, para a prática de actos de natureza procedimental ou processual tributária que não tenham carácter pessoal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 17860,
+        "end": 18070
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

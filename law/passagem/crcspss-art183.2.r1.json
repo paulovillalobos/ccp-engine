@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art183.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art183",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os beneficiários que após cessação de enquadramento no seguro social voluntário tenham contribuído, por período superior a 12 meses, para um regime obrigatório de segurança social sobre uma base de incidência contributiva de valor superior à anteriormente considerada no seguro social voluntário, podem optar pelo escalão de valor igual ou imediatamente superior ao da base de incidência contributiva daquele regime ao retomarem o enquadramento no seguro social voluntário, independentemente da idade.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 117521,
+        "end": 118026
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

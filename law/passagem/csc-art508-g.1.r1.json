@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-g.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-g",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "1 - As empresas-mãe de um grande grupo que sejam entidades de interesse público, que à data de encerramento do seu balanço consolidado excedam um número médio de 500 trabalhadores durante o exercício anual, devem incluir no seu relatório de gestão consolidado uma demonstração não financeira consolidada, nos termos do presente artigo.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 727513,
+        "end": 727848
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

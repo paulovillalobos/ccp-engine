@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art217.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art217",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - É condição geral do pagamento das prestações aos trabalhadores independentes e aos beneficiários do seguro social voluntário que os mesmos tenham a sua situação contributiva regularizada até ao termo do 3.º mês imediatamente anterior ao do evento determinante da atribuição da prestação.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 138150,
+        "end": 138441
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

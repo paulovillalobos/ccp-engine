@@ -1,0 +1,23 @@
+{
+  "id": "cc:art241",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 241.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 241.º\n(Simulação relativa)\n1. Quando sob o negócio simulado exista um outro que as partes quiseram realizar, é aplicável a este o regime que lhe corresponderia se fosse concluído sem dissimulação, não sendo a sua validade prejudicada pela nulidade do negócio simulado.\n2. Se, porém, o negócio dissimulado for de natureza formal, só é válido se tiver sido observada a forma exigida por lei.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 117548,
+        "end": 117944
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

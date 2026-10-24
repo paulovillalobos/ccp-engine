@@ -1,0 +1,23 @@
+{
+  "id": "cp:art41.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art41",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "1 - A pena de prisão tem, em regra, a duração mínima de 1 mês e a duração máxima de 20 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 100517,
+        "end": 100609
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

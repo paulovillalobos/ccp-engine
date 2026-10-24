@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art88.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art88",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - No caso previsto na alínea a) do n.º 1, o despacho constitui, logo que transite, caso julgado formal e, na hipótese prevista na alínea b), fica tendo, para todos os efeitos, o valor de sentença.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 132434,
+        "end": 132632
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

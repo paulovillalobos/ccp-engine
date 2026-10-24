@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art137.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art137",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2005-01-01",
+      "text": "3 - O arresto caducará ainda na medida do que exceder o montante suficiente para garantir o tributo, juros compensatórios liquidados e o acrescido relativo aos 6 meses posteriores.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 166828,
+        "end": 167008
+      },
+      "valid_from": "2005-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

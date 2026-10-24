@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1098.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1098",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "5 - A denúncia do contrato, nos termos dos n.os 3 e 4, produz efeitos no final de um mês do calendário gregoriano, a contar da comunicação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 484386,
+        "end": 484525
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

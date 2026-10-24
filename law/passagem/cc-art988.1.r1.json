@@ -1,0 +1,23 @@
+{
+  "id": "cc:art988.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art988",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Nenhum sócio pode ser privado, nem sequer por cláusula do contrato, do direito de obter dos administradores as informações de que necessite sobre os negócios da sociedade, de consultar os documentos a eles pertinentes e de exigir a prestação de contas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 411765,
+        "end": 412020
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art251.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art251.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "b) No caso dos beneficiários que à data da passagem à situação de pensionista por velhice se encontram a receber prestações determinantes do direito à equivalência à entrada de contribuições, corresponde à remuneração de referência que serve de base ao cálculo das referidas prestações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 153866,
+        "end": 154152
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

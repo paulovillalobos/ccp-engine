@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1041.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1041",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "6 - O senhorio apenas pode exigir do fiador a satisfação dos seus direitos de crédito após efetuar a notificação prevista no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 436581,
+        "end": 436722
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

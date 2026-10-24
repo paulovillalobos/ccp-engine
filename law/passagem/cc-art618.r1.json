@@ -1,0 +1,23 @@
+{
+  "id": "cc:art618",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-v.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 618.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 618.º\n(Caducidade)\nO direito de impugnação caduca ao fim de cinco anos, contados da data do acto impugnável.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 270064,
+        "end": 270179
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

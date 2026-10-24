@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art142.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art142",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Para os efeitos do disposto no número anterior, consideram-se incluídas nas decisões sobre o mérito da causa as que, em sede executiva, declarem a existência de causa legítima de inexecução, pronunciem a invalidade de atos desconformes ou fixem indemnizações fundadas na existência de causa legítima de inexecução.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 204179,
+        "end": 204497
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

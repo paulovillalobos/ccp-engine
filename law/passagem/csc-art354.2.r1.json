@@ -1,0 +1,23 @@
+{
+  "id": "csc:art354.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art354",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Enquanto as obrigações pertencerem à sociedade emitente são suspensos os respectivos direitos, mas podem elas ser convertidas ou amortizadas nos termo gerais.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 503118,
+        "end": 503280
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

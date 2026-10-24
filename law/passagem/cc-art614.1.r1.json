@@ -1,0 +1,23 @@
+{
+  "id": "cc:art614.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art614",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Não obsta ao exercício da impugnação o facto de o direito do credor não ser ainda exigível.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 268335,
+        "end": 268429
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

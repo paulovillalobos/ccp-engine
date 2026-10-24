@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art278.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art278",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "5 - Em caso de subida imediata, a administração tributária remete por via eletrónica a reclamação e o processo executivo que a acompanha.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 333731,
+        "end": 333868
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

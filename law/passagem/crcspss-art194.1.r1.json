@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art194.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art194",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Sem prejuízo do disposto no artigo 885.º do Código do Processo Civil, a decisão de autorização do pagamento da dívida em prestações e a decisão de resolução do respectivo acordo determinam, respectivamente, a suspensão e o prosseguimento da instância de processo executivo pendente.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 124087,
+        "end": 124373
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

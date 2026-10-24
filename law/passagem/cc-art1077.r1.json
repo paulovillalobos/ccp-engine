@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1077",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-iv.seccao-vii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1077.º",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "Artigo 1077.º\nActualização de rendas\n1 - As partes estipulam, por escrito, a possibilidade de actualização da renda e o respectivo regime.\n2 - Na falta de estipulação, aplica-se o seguinte regime:\na) A renda pode ser actualizada anualmente, de acordo com os coeficientes de actualização vigentes;\nb) A primeira actualização pode ser exigida um ano após o início da vigência do contrato e as seguintes, sucessivamente, um ano após a actualização anterior;\nc) O senhorio comunica, por escrito e com a antecedência mínima de 30 dias, o coeficiente de actualização e a nova renda dele resultante;\nd) A não actualização prejudica a recuperação dos aumentos não feitos, podendo, todavia, os coeficientes ser aplicados em anos posteriores, desde que não tenham passado mais de três anos sobre a data em que teria sido inicialmente possível a sua aplicação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 458651,
+        "end": 459500
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

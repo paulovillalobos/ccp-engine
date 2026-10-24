@@ -1,0 +1,23 @@
+{
+  "id": "cc:art724.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art724",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o adquirente da coisa hipotecada tinha, anteriormente à aquisição, algum direito real sobre ela, esse direito renasce no caso de venda em processo de execução ou de expurgação da hipoteca e é atendido em harmonia com as regras legais relativas a essa venda.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 310832,
+        "end": 311095
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

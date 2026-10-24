@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art12.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art12",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Podem coligar-se vários autores contra um ou vários demandados e pode um autor dirigir a ação conjuntamente contra vários demandados, por pedidos diferentes, quando:\na) A causa de pedir seja a mesma e única ou os pedidos estejam entre si numa relação de prejudicialidade ou de dependência, nomeadamente por se inscreverem no âmbito da mesma relação jurídica material;\nb) Sendo diferente a causa de pedir, a procedência dos pedidos principais depende essencialmente da apreciação dos mesmos fatos ou da interpretação e aplicação dos mesmos princípios ou regras de direito.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 26248,
+        "end": 26823
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

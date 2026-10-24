@@ -1,0 +1,23 @@
+{
+  "id": "cc:art728",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-vii",
+  "kind": "artigo",
+  "label": "Artigo 728.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 728.º\n(Valor da hipoteca cedida)\n1. A hipoteca cedida garante o novo crédito nos limites do crédito originàriamente garantido.\n2. Registada a cessão, a extinção do crédito originário não afecta a subsistência da hipoteca.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 312311,
+        "end": 312539
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art65",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-ii.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 65.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 65.º\nRevogação do acto impugnado sem efeitos retroactivos\n1 - Quando na pendência do processo, seja proferido acto revogatório sem efeitos retroactivos do acto impugnado, o processo prossegue em relação aos efeitos produzidos.\n2 - O disposto no número anterior é aplicável aos casos em que, por forma diversa da revogação, cesse ou se esgote a produção de efeitos do acto impugnado, designadamente pela sua integral execução no plano dos factos.\n3 - Quando a cessação de efeitos do acto impugnado seja acompanhada de nova regulação da situação, o autor goza da faculdade prevista no artigo anterior.\n4 - O disposto no n.º 1 é aplicável aos casos em que o acto revogatório já tinha sido praticado no momento em que o processo foi intentado, sem que o autor disso tivesse ou devesse ter conhecimento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 84627,
+        "end": 85432
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

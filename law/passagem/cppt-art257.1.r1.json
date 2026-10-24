@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art257.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art257",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "1 - A anulação da venda só poderá ser requerida dentro dos prazos seguintes:\na) De 90 dias, no caso de a anulação se fundar na existência de algum ónus real que não tenha sido tomado em consideração e não haja caducado ou em erro sobre o objecto transmitido ou sobre as qualidades por falta de conformidade com o que foi anunciado;\nb) De 30 dias, quando for invocado fundamento de oposição à execução que o executado não tenha podido apresentar no prazo da alínea a) do n.º 1 do artigo 203.º;\nc) De 15 dias, nos restantes casos previstos no Código de Processo Civil.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 318771,
+        "end": 319337
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

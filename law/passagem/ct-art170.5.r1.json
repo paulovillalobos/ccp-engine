@@ -1,0 +1,23 @@
+{
+  "id": "ct:art170.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art170",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2022-01-01",
+      "text": "5 - É vedada a captura e utilização de imagem, de som, de escrita, de histórico, ou o recurso a outros meios de controlo que possam afetar o direito à privacidade do trabalhador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 243175,
+        "end": 243353
+      },
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

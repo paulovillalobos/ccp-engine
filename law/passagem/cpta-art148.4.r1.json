@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art148.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art148",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "4 - O acórdão é publicado na 1.ª ou na 2.ª série do Diário da República, consoante seja proferido pelo Supremo Tribunal Administrativo ou pelo Tribunal Central Administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 212907,
+        "end": 213082
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

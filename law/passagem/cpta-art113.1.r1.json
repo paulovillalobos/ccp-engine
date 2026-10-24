@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art113.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art113",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - O processo cautelar depende da causa que tem por objeto a decisão sobre o mérito, podendo ser intentado como preliminar ou como incidente do processo respetivo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 170616,
+        "end": 170780
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

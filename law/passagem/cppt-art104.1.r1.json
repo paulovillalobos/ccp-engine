@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art104.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art104",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-04-01",
+      "text": "1 - Na impugnação judicial é admitida a cumulação de pedidos, ainda que relativos a diferentes atos, e a coligação de autores, desde que, cumulativamente:\na) Aos pedidos corresponda a mesma forma processual; e\nb) A sua apreciação tenha por base as mesmas circunstâncias de facto ou o mesmo relatório de inspeção tributária, ou sejam suscetíveis de ser decididos com base na aplicação das mesmas normas a situações de facto do mesmo tipo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 137645,
+        "end": 138082
+      },
+      "valid_from": "2020-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

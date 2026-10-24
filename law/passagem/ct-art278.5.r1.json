@@ -1,0 +1,23 @@
+{
+  "id": "ct:art278.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art278",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - O empregador fica constituído em mora se o trabalhador, por facto que não lhe seja imputável, não puder dispor do montante da retribuição na data do vencimento.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 375047,
+        "end": 375211
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

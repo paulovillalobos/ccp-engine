@@ -1,0 +1,23 @@
+{
+  "id": "cp:art84",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-v.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 84.º",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "Artigo 84.º\nOutros casos de aplicação da pena\n1 - Quem praticar crime doloso a que devesse aplicar-se concretamente prisão efectiva e tiver cometido anteriormente quatro ou mais crimes dolosos, a cada um dos quais tenha sido ou seja aplicada pena de prisão efectiva, é punido com uma pena relativamente indeterminada sempre que se verificarem os restantes pressupostos fixados no n.º 1 do artigo anterior.\n2 - A pena relativamente indeterminada tem um mínimo correspondente a dois terços da pena de prisão que concretamente caberia ao crime e um máximo correspondente a esta pena acrescida de 4 anos, sem exceder 25 anos no total.\n3 - É correspondentemente aplicável o disposto no n.º 3 do artigo anterior.\n4 - São tomados em conta, nos termos dos números anteriores, os factos julgados em país estrangeiro que tiverem conduzido à aplicação de prisão efectiva, desde que a eles seja aplicável, segundo a lei portuguesa, pena de prisão.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 150468,
+        "end": 151403
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art503.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art503",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "4 - É proibido à sociedade directora determinar a transferência de bens do activo da sociedade subordinada para outras sociedades do grupo sem justa contrapartida, a não ser no caso do artigo 502.º",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 711143,
+        "end": 711340
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

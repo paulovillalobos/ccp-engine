@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art186.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art186",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-03-14",
+      "text": "2 - As decisões proferidas por tribunal arbitral também podem ser objecto de recurso para o Tribunal Central Administrativo, nos moldes em que a lei sobre arbitragem voluntária prevê o recurso para o Tribunal da Relação, quando o tribunal arbitral não tenha decidido segundo a equidade.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 265019,
+        "end": 265305
+      },
+      "valid_from": "2012-03-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art160.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art160",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Quando a execução reverta contra responsáveis subsidiários, o órgão da execução fiscal mandá-los-á citar todos, depois de obtida informação no processo sobre as quantias por que respondem.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 186736,
+        "end": 186928
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

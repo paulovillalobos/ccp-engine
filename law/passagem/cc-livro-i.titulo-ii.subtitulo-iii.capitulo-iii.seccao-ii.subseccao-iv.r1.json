@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii",
+  "kind": "secao",
+  "label": "Subsecção IV",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção IV\nSuspensão da prescrição",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 147002,
+        "end": 147038
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

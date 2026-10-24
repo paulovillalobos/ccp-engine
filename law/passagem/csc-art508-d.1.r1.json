@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-d.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-d",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2005-02-22",
+      "text": "1 - A entidade que elabora as contas consolidadas deve submetê-las a exame pelo revisor oficial de contas e pelo seu órgão de fiscalização, nos termos dos artigos 451.º a 454.º, com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 721764,
+        "end": 721972
+      },
+      "valid_from": "2005-02-22",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

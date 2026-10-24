@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1817.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1817",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - A ação de investigação de maternidade só pode ser proposta durante a menoridade do investigante ou nos 10 anos posteriores à sua maioridade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 839159,
+        "end": 839303
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

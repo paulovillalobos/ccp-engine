@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1200",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-xi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1200.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1200.º\n(Remuneração do depositário)\n1. A remuneração do depositário, quando outra coisa se não tenha convencionado, deve ser paga no termo do depósito; mas, se for fixada por períodos de tempo, pagar-se-á no fim de cada um deles.\n2. Findando o depósito antes do prazo convencionado, pode o depositário exigir uma parte proporcional ao tempo decorrido, sem prejuízo do preceituado no artigo 1194.º",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 535387,
+        "end": 535790
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

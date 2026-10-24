@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2030",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 2030.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2030.º\n(Espécies de sucessores)\n1. Os sucessores são herdeiros ou legatários.\n2. Diz-se herdeiro o que sucede na totalidade ou numa quota do património do falecido e legatário o que sucede em bens ou valores determinados.\n3. É havido como herdeiro o que sucede no remanescente dos bens do falecido, não havendo especificação destes.\n4. O usufrutuário, ainda que o seu direito incida sobre a totalidade do património, é havido como legatário.\n5. A qualificação dada pelo testador aos seus sucessores não lhes confere o título de herdeiro ou legatário em contravenção do disposto nos números anteriores.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 985804,
+        "end": 986412
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

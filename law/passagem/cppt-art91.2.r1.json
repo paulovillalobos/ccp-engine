@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art91.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art91",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Se estiver pendente a execução, o pedido será feito ao órgão competente, e o pagamento, quando autorizado, compreenderá a quantia exequenda acrescida de juros de mora e custas.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 119457,
+        "end": 119637
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

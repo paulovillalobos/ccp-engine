@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art156.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art156",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - O processo tem o seguimento estabelecido para aquele em que tenha sido proferida a decisão a rever, sendo a questão novamente julgada e mantida ou revogada, a final, a decisão recorrida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 222098,
+        "end": 222288
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

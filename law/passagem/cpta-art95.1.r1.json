@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art95.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art95",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A sentença deve decidir todas as questões que as partes tenham submetido à sua apreciação e não pode ocupar-se senão das questões suscitadas, salvo quando a lei lhe permita ou imponha o conhecimento oficioso de outras.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 144603,
+        "end": 144825
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

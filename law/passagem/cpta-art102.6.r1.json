@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art102.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art102",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "6 - O objecto do processo pode ser ampliado à impugnação do contrato, segundo o disposto no artigo 63.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 155392,
+        "end": 155495
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

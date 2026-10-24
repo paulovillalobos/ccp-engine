@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art293.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art293",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - A decisão transitada em julgado pode ser objeto de revisão, com qualquer dos fundamentos previstos no Código de Processo Civil, no prazo de quatro anos, correndo o respetivo processo por apenso ao processo em que a decisão foi proferida.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 348065,
+        "end": 348306
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

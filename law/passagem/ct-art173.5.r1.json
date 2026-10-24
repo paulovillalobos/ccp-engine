@@ -1,0 +1,23 @@
+{
+  "id": "ct:art173.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art173",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - No caso de o trabalhador ser cedido a utilizador por empresa de trabalho temporário licenciada sem que tenha celebrado contrato de trabalho temporário ou contrato de trabalho por tempo indeterminado para cedência temporária, considera-se que o trabalho é prestado à empresa utilizadora em regime de contrato de trabalho sem termo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 248337,
+        "end": 248671
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

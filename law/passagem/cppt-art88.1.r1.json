@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art88.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art88",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Findo o prazo de pagamento voluntário estabelecido nas leis tributárias, será extraída pelos serviços competentes certidão de dívida com base nos elementos que tiverem ao seu dispor.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 110381,
+        "end": 110567
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art200.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art200",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "1 - A falta de pagamento sucessivo de três prestações, ou de seis interpoladas, importa o vencimento das seguintes se, no prazo de 30 dias a contar da notificação para o efeito, o executado não proceder ao pagamento das prestações incumpridas, prosseguindo o processo de execução fiscal os seus termos.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 249245,
+        "end": 249547
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

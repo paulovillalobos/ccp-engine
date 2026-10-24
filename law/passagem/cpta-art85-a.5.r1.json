@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art85-a.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art85-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - No caso previsto no número anterior, o autor, no final da réplica, deve apresentar o rol de testemunhas, juntar documentos e requerer outros meios de prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 121779,
+        "end": 121939
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

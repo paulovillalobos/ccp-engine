@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art169.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art169",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A sanção pecuniária compulsória prevista no n.º 1 é fixada segundo critérios de razoabilidade, podendo o seu montante diário oscilar entre 5% e 10% do salário mínimo nacional mais elevado em vigor no momento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 238460,
+        "end": 238672
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

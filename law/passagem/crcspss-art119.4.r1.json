@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art119.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art119",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - Para determinação das contribuições devidas por trabalho prestado por trabalhadores não contratados ao mês em regime de tempo completo é considerado o valor da remuneração horária.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 75234,
+        "end": 75418
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

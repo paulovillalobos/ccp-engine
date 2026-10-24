@@ -1,0 +1,23 @@
+{
+  "id": "ct:art394.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art394",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "1 - Ocorrendo justa causa, o trabalhador pode fazer cessar imediatamente o contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 503066,
+        "end": 503150
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

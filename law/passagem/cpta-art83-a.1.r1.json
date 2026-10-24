@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art83-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art83-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quando na contestação seja deduzida reconvenção, esta deve ser expressamente identificada e deduzida em separado do restante articulado, e conter:\na) Exposição dos factos essenciais que constituem a causa de pedir e das razões de direito que servem de fundamento à reconvenção;\nb) Formulação do pedido;\nc) Declaração do valor da reconvenção.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 115821,
+        "end": 116166
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

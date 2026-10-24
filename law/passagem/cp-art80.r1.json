@@ -1,0 +1,23 @@
+{
+  "id": "cp:art80",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-iv.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 80.º",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "Artigo 80.º\nMedidas processuais\n1 - A detenção, a prisão preventiva e a obrigação de permanência na habitação sofridas pelo arguido são descontadas por inteiro no cumprimento da pena de prisão, ainda que tenham sido aplicadas em processo diferente daquele em que vier a ser condenado, quando o facto por que for condenado tenha sido praticado anteriormente à decisão final do processo no âmbito do qual as medidas foram aplicadas.\n2 - Se for aplicada pena de multa, a detenção, a prisão preventiva e a obrigação de permanência na habitação são descontadas à razão de 1 dia de privação da liberdade por, pelo menos, 1 dia de multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 147578,
+        "end": 148208
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

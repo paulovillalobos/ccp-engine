@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art21",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 21.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 21.º\nCumulação de pedidos\n1 - Nas situações de cumulação em que a competência para a apreciação de qualquer dos pedidos pertença a um tribunal superior, este também é competente para conhecer dos demais pedidos.\n2 - Quando forem cumulados pedidos para cuja apreciação sejam territorialmente competentes diversos tribunais, o autor pode escolher qualquer deles para a propositura da acção, mas se a cumulação disser respeito a pedidos entre os quais haja uma relação de dependência ou de subsidiariedade, a acção deve ser proposta no tribunal competente para apreciar o pedido principal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 33838,
+        "end": 34431
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

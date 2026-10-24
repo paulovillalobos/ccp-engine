@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art80.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art80",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "2 - O sistema de informação de suporte à atividade dos tribunais não permite a submissão da petição inicial se não forem preenchidos os campos do formulário relativos às informações obrigatórias previstas nas alíneas a), b), c), d) e h) do n.º 2 do artigo 78.º, sem prejuízo do artigo 78.º-A.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 108446,
+        "end": 108738
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

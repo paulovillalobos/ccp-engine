@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art158.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art158",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Os trabalhadores a quem seja reconhecida a isenção da obrigação de contribuir devem declarar à instituição da segurança social competente a cessação das condições de que depende a referida isenção, salvo se as mesmas forem do conhecimento oficioso desta.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 100837,
+        "end": 101095
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

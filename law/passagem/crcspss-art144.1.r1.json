@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art144.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art144",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A partir dos elementos constantes da comunicação referida no artigo anterior a instituição de segurança social competente procede à inscrição do trabalhador, quando necessário, e ao respectivo enquadramento no regime dos trabalhadores independentes.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 91485,
+        "end": 91738
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

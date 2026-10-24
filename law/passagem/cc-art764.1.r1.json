@@ -1,0 +1,23 @@
+{
+  "id": "cc:art764.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art764",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O devedor tem de ser capaz, se a prestação constituir um acto de disposição; mas o credor que a haja recebido do devedor incapaz pode opor-se ao pedido de anulação, se o devedor não tiver tido prejuízo com o cumprimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 326375,
+        "end": 326598
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

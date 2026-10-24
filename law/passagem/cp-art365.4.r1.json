@@ -1,0 +1,23 @@
+{
+  "id": "cp:art365.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art365",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "4 - Se do facto resultar privação da liberdade do ofendido, o agente é punido com pena de prisão de 1 a 8 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 436568,
+        "end": 436679
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

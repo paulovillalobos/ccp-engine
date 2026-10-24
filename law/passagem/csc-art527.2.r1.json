@@ -1,0 +1,23 @@
+{
+  "id": "csc:art527.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art527",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "2 - A tentativa dos factos descritos nos artigos anteriores é punível.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 752681,
+        "end": 752751
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

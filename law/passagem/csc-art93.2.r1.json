@@ -1,0 +1,23 @@
+{
+  "id": "csc:art93.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art93",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "2 - O órgão de administração e, quando deva existir, o órgão de fiscalização devem declarar por escrito não ter conhecimento de que, no período compreendido entre o dia a que se reporta o balanço que serviu de base à deliberação e a data em que esta foi tomada, haja ocorrido diminuição patrimonial que obste ao aumento de capital.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 142140,
+        "end": 142471
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

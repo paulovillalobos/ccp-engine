@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art190.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art190",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A autorização do pagamento prestacional de dívida à segurança social, a isenção ou redução dos respectivos juros vencidos e vincendos, só é permitida nos termos do presente artigo, sem prejuízo das regras aplicáveis ao processo de execução fiscal.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 121140,
+        "end": 121391
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:parte-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": null,
+  "kind": "parte",
+  "label": "PARTE II",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "PARTE II\nRegimes contributivos do sistema previdencial",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 17799,
+        "end": 17853
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

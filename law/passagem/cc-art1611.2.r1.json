@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1611.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1611",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-09-15",
+      "text": "2. A declaração é obrigatória para o Ministério Público e para os funcionários do registo civil logo que tenham conhecimento do impedimento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 722017,
+        "end": 722157
+      },
+      "valid_from": "1995-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

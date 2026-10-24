@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iv.titulo-ii.capitulo-ix.seccao-iv.subseccao-iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-ii.capitulo-ix.seccao-iv",
+  "kind": "secao",
+  "label": "Subsecção III",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção III\nRegime da comunhão geral",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 790408,
+        "end": 790446
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art66.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art66",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-06-07",
+      "text": "1 - O relatório da gestão deve conter, pelo menos, uma exposição fiel e clara da evolução dos negócios, do desempenho e da posição da sociedade, bem como uma descrição dos principais riscos e incertezas com que a mesma se defronta.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 97201,
+        "end": 97432
+      },
+      "valid_from": "2015-06-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

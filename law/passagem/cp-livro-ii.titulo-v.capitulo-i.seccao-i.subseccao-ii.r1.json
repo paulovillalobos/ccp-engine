@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-ii.titulo-v.capitulo-i.seccao-i.subseccao-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-v.capitulo-i.seccao-i",
+  "kind": "secao",
+  "label": "Subsecção II",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Subsecção II\nDos crimes contra Estados estrangeiros e organizações internacionais",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 406681,
+        "end": 406762
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

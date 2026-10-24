@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art91.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art91",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Salvo em tribunal superior, a audiência decorre perante juiz singular e rege-se pelos princípios da plenitude da assistência do juiz e da publicidade e continuidade da audiência, segundo o disposto na lei processual civil, gozando o juiz de todos os poderes necessários para tornar útil e breve a discussão e para assegurar a justa decisão da causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 137457,
+        "end": 137810
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

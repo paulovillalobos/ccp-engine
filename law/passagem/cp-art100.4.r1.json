@@ -1,0 +1,23 @@
+{
+  "id": "cp:art100.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art100",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "4 - O decurso do período de interdição suspende-se durante o tempo em que o agente estiver privado da liberdade por força de medida de coacção processual, pena ou medida de segurança. Se a suspensão durar 2 anos ou mais, o tribunal reexamina a situação que fundamentou a aplicação da medida, confirmando-a ou revogando-a.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 176304,
+        "end": 176625
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

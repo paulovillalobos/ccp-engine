@@ -1,0 +1,23 @@
+{
+  "id": "cc:art342",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 342.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 342.º\n(Ónus da prova)\n1. Àquele que invocar um direito cabe fazer a prova dos factos constitutivos do direito alegado.\n2. A prova dos factos impeditivos, modificativos ou extintivos do direito invocado compete àquele contra quem a invocação é feita.\n3. Em caso de dúvida, os factos devem ser considerados como constitutivos do direito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 157933,
+        "end": 158275
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

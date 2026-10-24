@@ -1,0 +1,23 @@
+{
+  "id": "csc:art70-b.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art70-b",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "3 - As informações previstas no número anterior são:\na) Transmitidas num formato que permita a extração de dados, na aceção do ponto 3 do artigo 2.º do Regulamento (UE) 2023/2859, do Parlamento Europeu e do Conselho, de 13 de dezembro de 2023, ou, quando tal for exigido pelo direito da União Europeia ou nacional, num formato legível por máquina, na aceção do ponto 4 do artigo 2.º desse regulamento;\nb) Acompanhadas dos seguintes metadados:\ni) A denominação social da sociedade à qual as informações dizem respeito e, quando a sociedade que comunica as informações for uma filial isenta da obrigação de relato de sustentabilidade, o nome da sociedade-mãe que comunica informações a nível do grupo;\nii) O identificador designado por Legal Entity Identifier, conforme definido no Decreto-Lei n.º 202/2015, de 17 de setembro, da sociedade e, quando a sociedade que comunica as informações for uma filial isenta, o identificador da sociedade-mãe que comunica informações a nível do grupo;\niii) A dimensão da sociedade, por categoria, especificada nos termos da alínea d) do n.º 4 do artigo 7.º do Regulamento (UE) 2023/2859, do Parlamento Europeu e do Conselho, de 13 de dezembro de 2023;\niv) Os setores das atividades económicas da sociedade, especificados nos termos da alínea e) do n.º 4 do mesmo artigo;\nv) O tipo de informação, classificado nos termos da alínea c) do n.º 4 do mesmo artigo;\nvi) A indicação sobre se as informações contêm dados pessoais.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 115287,
+        "end": 116743
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

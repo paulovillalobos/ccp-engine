@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-ii.titulo-i.capitulo-ii.seccao-i.subseccao-vii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-ii.seccao-i",
+  "kind": "secao",
+  "label": "Subsecção VII",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção VII\nResolução ou modificação do contrato por alteração das circunstâncias",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 195817,
+        "end": 195900
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

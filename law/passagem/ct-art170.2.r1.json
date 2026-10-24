@@ -1,0 +1,23 @@
+{
+  "id": "ct:art170.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art170",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-01-01",
+      "text": "2 - Sempre que o teletrabalho seja realizado no domicílio do trabalhador, a visita ao local de trabalho requer aviso prévio de 24 horas e concordância do trabalhador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 242577,
+        "end": 242743
+      },
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

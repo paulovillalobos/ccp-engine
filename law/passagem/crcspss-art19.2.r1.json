@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art19.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art19",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O elenco das eventualidades protegidas pode ser reduzido em função de determinadas situações e categorias de beneficiários nos termos e condições previstas no presente Código ou alargado em função da necessidade de dar cobertura a novos riscos sociais.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 15060,
+        "end": 15316
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art702",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 702.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 702.º\n(Seguro)\n1. Quando o devedor se comprometa a segurar a coisa hipotecada e não a segure no prazo devido ou deixe rescindir o contrato por falta de pagamento dos respectivos prémios, tem o credor a faculdade de segura-la à custa do devedor; mas, se o fizer por um valor excessivo, pode o devedor exigir a redução do contrato aos limites convenientes.\n2. Nos casos previstos no número anterior, pode o credor reclamar, em lugar do seguro, o imediato cumprimento da obrigação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 301890,
+        "end": 302375
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

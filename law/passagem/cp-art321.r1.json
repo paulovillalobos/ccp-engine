@@ -1,0 +1,23 @@
+{
+  "id": "cp:art321",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-v.capitulo-i.seccao-i.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 321.º",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "Artigo 321.º\nEntrega ilícita de pessoa a entidade estrangeira\nQuem, em território português, praticar factos conducentes à entrega ilícita de pessoa, nacional ou estrangeira, a Estado estrangeiro, a agente deste ou a qualquer entidade pública ou particular existente nesse Estado, usando para tal fim de violência ou de fraude, é punido com pena de prisão até 5 anos, se pena mais grave lhe não couber por força de outra disposição legal.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 406763,
+        "end": 407201
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

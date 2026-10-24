@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art134.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art134",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - O pedido de correcção da inscrição nos termos do número anterior pode ser apresentado a todo o tempo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 163220,
+        "end": 163325
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

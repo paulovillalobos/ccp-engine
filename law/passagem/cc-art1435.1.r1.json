@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1435.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1435",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "1. O administrador é eleito e exonerado pela assembleia.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 645278,
+        "end": 645334
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

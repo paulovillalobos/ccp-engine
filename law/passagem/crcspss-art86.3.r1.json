@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art86.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art86",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Nas situações de redução da prestação de trabalho, o trabalhador mantém o direito à protecção prevista no n.º 1, com base na remuneração auferida referente ao trabalho prestado.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 58222,
+        "end": 58403
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

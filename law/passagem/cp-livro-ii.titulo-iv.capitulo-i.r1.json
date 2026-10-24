@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-ii.titulo-iv.capitulo-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-iv",
+  "kind": "capitulo",
+  "label": "Capítulo I",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Capítulo I\nDos crimes contra a família, os sentimentos religiosos e o respeito devido aos mortos",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 339382,
+        "end": 339478
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

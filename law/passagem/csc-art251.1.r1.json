@@ -1,0 +1,23 @@
+{
+  "id": "csc:art251.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art251",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "1 - O sócio não pode votar nem por si, nem por representante, nem em representação de outrem, quando, relativamente à matéria da deliberação, se encontre em situação de conflito de interesses com a sociedade. Entende-se que a referida situação de conflito de interesses se verifica designadamente quando se tratar de deliberação que recaia sobre:\na) Liberação de uma obrigação ou responsabilidade própria do sócio, quer nessa qualidade quer como gerente ou membro do órgão de fiscalização;\nb) Litígio sobre pretensão da sociedade contra o sócio ou deste contra aquela, em qualquer das qualidades referidas na alínea anterior, tanto antes como depois do recurso a tribunal;\nc) Perda pelo sócio de parte da sua quota, na hipótese prevista no artigo 204.º, n.º 2;\nd) Exclusão do sócio;\ne) Consentimento previsto no artigo 254.º, n.º 1;\nf) Destituição, por justa causa, da gerência que estiver exercendo ou de membro do órgão de fiscalização;\ng) Qualquer relação, estabelecida ou a estabelecer, entre a sociedade e o sócio estranha ao contrato de sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 391764,
+        "end": 392817
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

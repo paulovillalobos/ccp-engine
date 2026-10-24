@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "9 - Em caso de aceitação da dação em pagamento de bens de valor superior à dívida exequenda e acrescido, o despacho que a autoriza constitui, a favor do devedor, um crédito no montante desse excesso, a utilizar em futuros pagamentos de impostos ou outras prestações tributárias, na aquisição de bens ou de serviços no prazo de 5 anos ou no pagamento de rendas, desde que as receitas correspondentes estejam sob a administração do ministério ou órgão executivo por onde corra o processo de dação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 253367,
+        "end": 253862
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

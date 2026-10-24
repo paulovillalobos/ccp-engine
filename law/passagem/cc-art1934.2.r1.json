@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1934.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1934",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. O que for escusado da tutela pode ser compelido a aceitá-la, desde que cesse o motivo da escusa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 929049,
+        "end": 929148
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

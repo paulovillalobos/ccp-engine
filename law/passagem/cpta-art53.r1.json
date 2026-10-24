@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art53",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-ii.seccao-i.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 53.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 53.º\nImpugnação de atos confirmativos e de execução\n1 - Não são impugnáveis os atos confirmativos, entendendo-se como tal os atos que se limitem a reiterar, com os mesmos fundamentos, decisões contidas em atos administrativos anteriores.\n2 - Excetuam-se do disposto no número anterior os casos em que o interessado não tenha tido o ónus de impugnar o ato confirmado, por não se ter verificado, em relação a este ato, qualquer dos factos previstos nos n.os 2 e 3 do artigo 59.º\n3 - Os atos jurídicos de execução de atos administrativos só são impugnáveis por vícios próprios, na medida em que tenham um conteúdo decisório de caráter inovador.\n4 - Quando seja admitida a impugnação do ato confirmativo, nos termos do n.º 2, os efeitos da sentença que conheça do objeto do processo são extensivos ao ato confirmado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 70088,
+        "end": 70907
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

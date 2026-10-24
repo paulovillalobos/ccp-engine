@@ -1,0 +1,23 @@
+{
+  "id": "cc:art95",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 95.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 95.º\n(Prestação de contas)\n1. O curador provisório deve prestar contas do seu mandato perante o tribunal, anualmente ou quando este o exigir.\n2. Deferida a curadoria definitiva nos termos da subsecção seguinte, as contas do curador provisório são prestadas aos curadores definitivos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 48199,
+        "end": 48489
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

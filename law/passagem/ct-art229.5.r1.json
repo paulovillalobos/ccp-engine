@@ -1,0 +1,23 @@
+{
+  "id": "ct:art229.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art229",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "5 - O descanso compensatório é marcado por acordo entre trabalhador e empregador ou, na sua falta, pelo empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 325852,
+        "end": 325967
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

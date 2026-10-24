@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art98.4.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art98.4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "a) Cinco dias para a contestação;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 149910,
+        "end": 149943
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1970.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1970",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "a) Os insolventes e, bem assim, os inibidos ou suspensos das responsabilidades parentais ou removidos da tutela, quanto à administração de bens;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 945525,
+        "end": 945669
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

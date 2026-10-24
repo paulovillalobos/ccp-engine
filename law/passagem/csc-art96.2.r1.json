@@ -1,0 +1,23 @@
+{
+  "id": "csc:art96.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art96",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "2 - A faculdade conferida aos credores no número anterior apenas pode ser exercida se estes tiverem solicitado à sociedade a satisfação do seu crédito ou a prestação de garantia adequada, há pelo menos 15 dias, sem que o seu pedido tenha sido atendido.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 145336,
+        "end": 145588
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1985.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1985",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1993-08-22",
+      "text": "1 - A identidade do adoptante não pode ser revelada aos pais naturais do adoptado, salvo se aquele declarar expressamente que não se opõe a essa revelação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 961954,
+        "end": 962109
+      },
+      "valid_from": "1993-08-22",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

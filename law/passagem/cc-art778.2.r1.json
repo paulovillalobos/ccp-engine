@@ -1,0 +1,23 @@
+{
+  "id": "cc:art778.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art778",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Quando o prazo for deixado ao arbítrio do devedor, só dos seus herdeiros tem o credor o direito de exigir que satisfaçam a prestação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 332084,
+        "end": 332220
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

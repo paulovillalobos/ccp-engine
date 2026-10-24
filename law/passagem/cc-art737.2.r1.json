@@ -1,0 +1,23 @@
+{
+  "id": "cc:art737.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art737",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. O prazo de seis meses referido nas alíneas b), c) e d) do número anterior conta-se a partir da morte do devedor ou do pedido de pagamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 316485,
+        "end": 316626
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

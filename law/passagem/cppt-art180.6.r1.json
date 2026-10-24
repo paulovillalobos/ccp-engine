@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art180.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art180",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "6 - O disposto neste artigo não se aplica aos créditos vencidos após a declaração de insolvência ou despacho de prosseguimento da ação de recuperação da empresa, que seguirão os termos normais até à extinção da execução.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 206404,
+        "end": 206624
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

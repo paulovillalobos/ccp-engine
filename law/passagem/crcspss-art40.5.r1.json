@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art40.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art40",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "5 - A não inclusão de trabalhador na declaração de remunerações constitui contra-ordenação muito grave.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 28378,
+        "end": 28481
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

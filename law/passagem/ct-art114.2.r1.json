@@ -1,0 +1,23 @@
+{
+  "id": "ct:art114.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art114",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Tendo o período experimental durado mais de 60 dias, a denúncia do contrato por parte do empregador depende de aviso prévio de sete dias.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 174290,
+        "end": 174431
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

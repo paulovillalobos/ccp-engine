@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art169.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art169",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A imposição de sanção pecuniária compulsória consiste na condenação dos titulares dos órgãos incumbidos da execução, que para o efeito devem ser individualmente identificados, ao pagamento de uma quantia pecuniária por cada dia de atraso que, para além do prazo limite estabelecido, se possa vir a verificar na execução da sentença.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 238123,
+        "end": 238459
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

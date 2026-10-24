@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art193.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art193",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "1 - Se a citação for efectuada por via postal ou por transmissão electrónica de dados, conforme previsto no artigo 191.º, e o postal não vier devolvido ou, sendo devolvido, não indicar a nova morada do executado e ainda em caso de não acesso à caixa postal electrónica, procede-se à penhora.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 228735,
+        "end": 229026
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

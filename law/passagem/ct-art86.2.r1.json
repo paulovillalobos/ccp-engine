@@ -1,0 +1,23 @@
+{
+  "id": "ct:art86.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art86",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "2 - O Estado deve estimular e apoiar, pelos meios convenientes, a acção do empregador na realização dos objectivos referidos no número anterior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 135831,
+        "end": 135975
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

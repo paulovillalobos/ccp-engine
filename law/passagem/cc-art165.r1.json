@@ -1,0 +1,23 @@
+{
+  "id": "cc:art165",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 165.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 165.º\n(Responsabilidade civil das pessoas colectivas)\nAs pessoas colectivas respondem civilmente pelos actos ou omissões dos seus representantes, agentes ou mandatários nos mesmos termos em que os comitentes respondem pelos actos ou omissões dos seus comissários.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 78837,
+        "end": 79107
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art2.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - Os instrumentos de regulamentação colectiva de trabalho negociais são a convenção colectiva, o acordo de adesão e a decisão arbitral em processo de arbitragem voluntária.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 19905,
+        "end": 20079
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

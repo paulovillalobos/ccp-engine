@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-i.titulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i",
+  "kind": "titulo",
+  "label": "Título V",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Título V\nExtinção da responsabilidade criminal",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 197588,
+        "end": 197634
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

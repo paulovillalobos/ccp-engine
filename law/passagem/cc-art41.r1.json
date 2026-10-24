@@ -1,0 +1,23 @@
+{
+  "id": "cc:art41",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 41.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 41.º\n(Obrigações provenientes de negócios jurídicos)\n1. As obrigações provenientes de negócio jurídico, assim como a própria substância dele, são reguladas pela lei que os respectivos sujeitos tiverem designado ou houverem tido em vista.\n2. A designação ou referência das partes só pode, todavia, recair sobre lei cuja aplicabilidade corresponda a um interesse sério dos declarantes ou esteja em conexão com algum dos elementos do negócio jurídico atendíveis no domínio do direito internacional privado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 24862,
+        "end": 25372
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

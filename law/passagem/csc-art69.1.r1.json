@@ -1,0 +1,23 @@
+{
+  "id": "csc:art69.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art69",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "1 - A violação dos preceitos legais relativos à elaboração do relatório de gestão, das contas do exercício e de demais documentos de prestação de contas torna anuláveis as deliberações tomadas pelos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 110829,
+        "end": 111035
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

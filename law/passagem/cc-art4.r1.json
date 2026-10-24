@@ -1,0 +1,23 @@
+{
+  "id": "cc:art4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 4.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 4.º\n(Valor da equidade)\nOs tribunais só podem resolver segundo a equidade:\na) Quando haja disposição legal que o permita;\nb) Quando haja acordo das partes e a relação jurídica não seja indisponível;\nc) Quando as partes tenham prèviamente convencionado o recurso à equidade, nos termos aplicáveis à cláusula compromissória.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 9311,
+        "end": 9640
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

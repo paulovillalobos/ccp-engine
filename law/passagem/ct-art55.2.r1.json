@@ -1,0 +1,23 @@
+{
+  "id": "ct:art55.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art55",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-09-06",
+      "text": "2 - O direito pode ser exercido por qualquer dos progenitores ou por ambos em períodos sucessivos, depois da licença parental complementar, em qualquer das suas modalidades.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 96639,
+        "end": 96812
+      },
+      "valid_from": "2015-09-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

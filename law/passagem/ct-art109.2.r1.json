@@ -1,0 +1,23 @@
+{
+  "id": "ct:art109.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art109",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - O disposto no número anterior não é aplicável quando a alteração resulte de lei, de instrumento de regulamentação colectiva de trabalho ou de regulamento interno de empresa.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 169403,
+        "end": 169580
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art267.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art267",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Se o pagamento for requerido perante o órgão da execução fiscal deprecante, este mandará depositar à sua ordem, em operações de tesouraria, a quantia que repute suficiente para o pagamento da dívida e do acrescido.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 327398,
+        "end": 327616
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

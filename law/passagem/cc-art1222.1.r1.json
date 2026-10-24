@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1222.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1222",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Não sendo eliminados os defeitos ou construída de novo a obra, o dono pode exigir a redução do preço ou a resolução do contrato, se os defeitos tornarem a obra inadequada ao fim a que se destina.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 543228,
+        "end": 543426
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2191",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-iv.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 2191.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2191.º\n(Momento da determinação da capacidade)\nA capacidade do testador determina-se pela data do testamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1047925,
+        "end": 1048041
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

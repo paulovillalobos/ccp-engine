@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1018.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1018",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Se não puder ser feito o reembolso integral, o activo existente é distribuído pelos sócios, por forma que a diferença para menos recaia em cada um deles na proporção da parte que lhe competir nas perdas da sociedade; se houver saldo depois de feito o reembolso, será repartido por eles na proporção da parte que lhes caiba nos lucros.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 425442,
+        "end": 425779
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

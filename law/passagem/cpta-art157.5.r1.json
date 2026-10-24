@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art157.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art157",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - As execuções contra particulares das sentenças proferidas pelos tribunais administrativos, assim como dos demais títulos executivos produzidos no âmbito de relações jurídico-administrativas que careçam de execução jurisdicional, correm termos nos tribunais administrativos, mas, na ausência de legislação especial, regem-se pelo disposto na lei processual civil.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 223405,
+        "end": 223771
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

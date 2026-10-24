@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art186.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art186",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-03-14",
+      "text": "1 - As decisões proferidas por tribunal arbitral podem ser anuladas pelo Tribunal Central Administrativo com qualquer dos fundamentos que, na lei sobre arbitragem voluntária, permitem a anulação da decisão dos árbitros.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 264799,
+        "end": 265018
+      },
+      "valid_from": "2012-03-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art86.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art86",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Os factos constitutivos, modificativos ou extintivos supervenientes podem ser deduzidos em novo articulado, pela parte a que aproveitem, até ao encerramento da discussão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 122350,
+        "end": 122524
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

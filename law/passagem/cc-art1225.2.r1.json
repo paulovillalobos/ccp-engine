@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1225.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1225",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "2 - A denúncia, em qualquer dos casos, deve ser feita dentro do prazo de um ano e a indemnização deve ser pedida no ano seguinte à denúncia.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 544781,
+        "end": 544921
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

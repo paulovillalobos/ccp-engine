@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art120.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art120",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Mediante acordo escrito entre o trabalhador e a entidade empregadora, pode ser considerada como base de incidência a remuneração efectivamente auferida nos termos do disposto nos artigos 44.º e seguintes.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 75853,
+        "end": 76061
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

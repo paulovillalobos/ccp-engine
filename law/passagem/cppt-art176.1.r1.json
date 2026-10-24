@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art176.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art176",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "1 - O processo de execução fiscal extingue-se:\na) Por pagamento da quantia exequenda e do acrescido;\nb) Por anulação da dívida ou do processo;\nc) Por qualquer outra forma prevista na lei.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 199711,
+        "end": 199898
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

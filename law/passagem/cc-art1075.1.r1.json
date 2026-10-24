@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1075.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1075",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "1 - A renda corresponde a uma prestação pecuniária periódica.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 457248,
+        "end": 457309
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

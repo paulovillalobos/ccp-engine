@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2222",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-iv.capitulo-v.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 2222.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2222.º\n(Prazo de eficácia)\n1. O testamento celebrado por alguma das formas especiais previstas na presente secção fica sem efeito decorridos dois meses sobre a cessação da causa que impedia o testador de testar segundo as formas comuns.\n2. Se no decurso deste prazo o testador for colocado de novo em circunstâncias impeditivas, o prazo é interrompido, devendo começar a contar-se por inteiro a partir da cessação das novas circunstâncias.\n3. A entidade perante quem for feito o testamento deve esclarecer o testador acerca do disposto no n.º 1, fazendo menção do facto no próprio testamento; a falta de cumprimento deste preceito não determina a nulidade do acto.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1058998,
+        "end": 1059669
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

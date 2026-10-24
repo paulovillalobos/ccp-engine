@@ -1,0 +1,23 @@
+{
+  "id": "csc:art199.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art199",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "a) O montante de cada quota de capital e a identificação do respectivo titular;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 330467,
+        "end": 330546
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

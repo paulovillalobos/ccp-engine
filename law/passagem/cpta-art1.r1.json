@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 1.º\nDireito aplicável\nO processo nos tribunais administrativos rege-se pela presente lei, pelo Estatuto dos Tribunais Administrativos e Fiscais e, supletivamente, pelo disposto na lei de processo civil, com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 6622,
+        "end": 6862
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

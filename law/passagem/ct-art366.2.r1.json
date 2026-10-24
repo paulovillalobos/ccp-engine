@@ -1,0 +1,23 @@
+{
+  "id": "ct:art366.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art366",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A compensação prevista no número anterior é determinada do seguinte modo:\na) O valor da retribuição base mensal e diuturnidades do trabalhador a considerar para efeitos de cálculo da compensação não pode ser superior a 20 vezes a retribuição mínima mensal garantida;\nb) O montante global da compensação não pode ser superior a 12 vezes a retribuição base mensal e diuturnidades do trabalhador ou, quando seja aplicável o limite previsto na alínea anterior, a 240 vezes a retribuição mínima mensal garantida;\nc) O valor diário de retribuição base e diuturnidades é o resultante da divisão por 30 da retribuição base mensal e diuturnidades;\nd) Em caso de fração de ano, o montante da compensação é calculado proporcionalmente.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 470608,
+        "end": 471336
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

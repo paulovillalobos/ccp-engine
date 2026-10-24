@@ -1,0 +1,23 @@
+{
+  "id": "csc:art348.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art348",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "4 - As obrigações não podem ser emitidas antes de o capital estar inteiramente liberado ou de, pelo menos, estarem colocados em mora todos os accionistas que não hajam liberado oportunamente as suas acções.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 496367,
+        "end": 496573
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

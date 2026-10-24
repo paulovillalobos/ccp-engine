@@ -1,0 +1,23 @@
+{
+  "id": "csc:art370.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art370",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "1 - O aumento do capital social resultante da conversão de obrigações em ações é objeto de declaração escrita de qualquer administrador da sociedade, sob sua responsabilidade, a emitir no seguinte prazo, salvo se as condições da emissão especificarem um prazo mais curto:\na) Dentro dos 30 dias posteriores ao termo do prazo para a apresentação do pedido de conversão, quando, nos termos da emissão a conversão houver de ser feita de uma só vez e em determinado momento;\nb) Dentro dos 30 dias posteriores ao termo de cada prazo para a apresentação do pedido de conversão, quando, nos termos da emissão, a conversão puder ser feita em mais do que um momento.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 527669,
+        "end": 528325
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

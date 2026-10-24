@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art55.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art55",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - O disposto no número anterior não se aplica aos contratos de trabalho a termo resolutivo celebrados para:\na) Substituição de trabalhador que se encontre no gozo de licença de parentalidade;\nb) Substituição de trabalhador com incapacidade temporária para o trabalho, por doença, por período igual ou superior a 90 dias.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 40000,
+        "end": 40322
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

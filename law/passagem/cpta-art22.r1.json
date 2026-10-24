@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art22",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 22.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 22.º\nCompetência supletiva\nQuando não seja possível determinar a competência territorial por aplicação dos artigos anteriores, é competente o Tribunal Administrativo de Círculo de Lisboa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 34432,
+        "end": 34626
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

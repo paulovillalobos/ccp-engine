@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art32.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art32",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "9 - No caso de pedidos alternativos, atende-se unicamente ao pedido de valor mais elevado e, no caso de pedidos subsidiários, ao pedido formulado em primeiro lugar.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 47781,
+        "end": 47945
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

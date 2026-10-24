@@ -1,0 +1,23 @@
+{
+  "id": "cc:art139",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-v.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 139.º",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "Artigo 139.º\nDecisão judicial\n1 - O acompanhamento é decidido pelo tribunal, após audição pessoal e direta do beneficiário, e ponderadas as provas.\n2 - Em qualquer altura do processo, podem ser determinadas as medidas de acompanhamento provisórias e urgentes, necessárias para providenciar quanto à pessoa e bens do requerido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 63727,
+        "end": 64053
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

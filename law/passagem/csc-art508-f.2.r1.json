@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-f.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-f",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-08-17",
+      "text": "2 - As sociedades que não elaboram as suas contas de acordo com as normas internacionais de contabilidade adoptadas nos termos de regulamento comunitário devem ainda proceder à divulgação, no anexo às contas, de informações sobre as operações, com excepção das operações intragrupo, realizadas pela sociedade mãe, ou por outras sociedades incluídas no perímetro de consolidação, com partes relacionadas, incluindo, nomeadamente, os montantes dessas operações, a natureza da relação com a parte relacionada e outras informações necessárias à avaliação da situação financeira das sociedades incluídas no perímetro de consolidação, se tais operações forem relevantes e não tiverem sido realizadas em condições normais de mercado.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 726073,
+        "end": 726799
+      },
+      "valid_from": "2009-08-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art28.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art28",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - A apensação pode ser requerida ao tribunal perante o qual se encontre pendente o processo a que os outros tenham de ser apensados e, quando se trate de processos que estejam pendentes perante o mesmo juiz, deve ser por este oficiosamente determinada, ouvidas as partes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 42726,
+        "end": 42999
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

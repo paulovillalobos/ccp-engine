@@ -1,0 +1,23 @@
+{
+  "id": "ct:art415.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art415",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - Qualquer trabalhador da empresa, independentemente da idade ou função, tem o direito de participar na constituição das estruturas previstas nos números anteriores e na aprovação dos respectivos estatutos, bem como o direito de eleger e ser eleito.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 520935,
+        "end": 521186
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

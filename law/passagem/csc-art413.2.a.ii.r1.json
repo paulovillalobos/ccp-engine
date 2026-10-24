@@ -1,0 +1,23 @@
+{
+  "id": "csc:art413.2.a.ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art413.2.a",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2016-01-01",
+      "text": "ii) Volume de negócios líquido: (euro) 40 000 000;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 588962,
+        "end": 589012
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

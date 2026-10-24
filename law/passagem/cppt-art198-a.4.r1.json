@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art198-a.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art198-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2022-07-01",
+      "text": "4 - As prestações são mensais, iguais e sucessivas, não podendo o seu número exceder 36 e o seu valor ser inferior a um quarto da unidade de conta.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 241259,
+        "end": 241406
+      },
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

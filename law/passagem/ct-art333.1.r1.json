@@ -1,0 +1,23 @@
+{
+  "id": "ct:art333.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art333",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - Os créditos do trabalhador emergentes de contrato de trabalho, ou da sua violação ou cessação gozam dos seguintes privilégios creditórios:\na) Privilégio mobiliário geral;\nb) Privilégio imobiliário especial sobre bem imóvel do empregador no qual o trabalhador presta a sua actividade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 436040,
+        "end": 436327
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

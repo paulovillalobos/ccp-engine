@@ -1,0 +1,23 @@
+{
+  "id": "csc:art92.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art92",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "4 - A deliberação de aumento de capital deve indicar se são criadas novas quotas ou acções ou se é aumentado o valor nominal das existentes, caso exista, sendo que na falta de indicação, se mantém inalterado o número de acções.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 141392,
+        "end": 141619
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

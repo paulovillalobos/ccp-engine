@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "6 - As despesas efectuadas com as avaliações referidas nos n.os 3 e 4 entram em regra de custas do processo de execução fiscal, devendo o devedor efectuar o respectivo preparo no prazo de 5 dias a contar da data da notificação, sob pena de não prosseguimento do pedido.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 252558,
+        "end": 252827
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

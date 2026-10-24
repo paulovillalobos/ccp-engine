@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art144.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art144",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O recurso é interposto mediante requerimento dirigido ao tribunal que proferiu a decisão, que inclui ou junta a respetiva alegação e no qual são enunciados os vícios imputados à decisão e formuladas conclusões.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 207616,
+        "end": 207830
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

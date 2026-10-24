@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art256.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art256",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "1 - A venda obedece ainda aos seguintes requisitos:\na) Não podem ser adquirentes, por si, por interposta pessoa ou por entidade jurídica em que participem, os magistrados e os funcionários da administração tributária;\nb) Não podem ser adquirentes entidades não residentes submetidas a um regime fiscal claramente mais favorável ou aquelas cujos regimes jurídicos não permitam identificar os titulares efectivos do capital;\nc) Das vendas de bens móveis, efectuadas no mesmo dia e no mesmo processo, lavrar-se-á um único auto, mencionando-se o nome de cada adquirente, os objectos ou lotes vendidos e o preço;\nd) Nas vendas de bens imóveis lavrar-se-á um auto por cada prédio;\ne) O funcionário competente passa guia para o adquirente depositar a totalidade do preço à ordem do órgão da execução fiscal, no prazo de 15 dias a contar da decisão de adjudicação, sob pena das sanções previstas legalmente;\nf) Nas aquisições de valor superior a 500 vezes a unidade de conta, mediante requerimento fundamentado do adquirente, entregue no prazo máximo de cinco dias a contar da decisão de adjudicação, pode ser autorizado o depósito, no prazo referido na alínea anterior, de apenas parte do preço, não inferior a um quinto, obrigando-se à entrega da parte restante no prazo máximo de 12 meses;\ng) Efectuado o depósito, juntar-se-á ao processo um duplicado da guia;\nh) O adquirente, ainda que demonstre a sua qualidade de credor, nunca será dispensado do depósito do preço;\ni) O Estado, os institutos públicos e as instituições de segurança social não estão sujeitos à obrigação do depósito do preço, enquanto tal não for necessário para pagamento de credores mais graduados no processo de reclamação de créditos.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 315726,
+        "end": 317429
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

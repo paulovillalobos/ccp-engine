@@ -1,0 +1,23 @@
+{
+  "id": "cp:art359.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art359",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "1 - Quem prestar depoimento de parte, fazendo falsas declarações relativamente a factos sobre os quais deve depor, depois de ter prestado juramento e de ter sido advertido das consequências penais a que se expõe com a prestação de depoimento falso, é punido com pena de prisão até 3 anos ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 431116,
+        "end": 431425
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

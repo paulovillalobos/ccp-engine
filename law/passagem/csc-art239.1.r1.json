@@ -1,0 +1,23 @@
+{
+  "id": "csc:art239.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art239",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A penhora de uma quota abrange os direitos patrimoniais a ela inerentes, com ressalva do direito a lucros já atribuídos por deliberação dos sócios à data da penhora e sem prejuízo da penhora deste crédito; o direito de voto continua a ser exercido pelo titular da quota penhorada.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 372124,
+        "end": 372408
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

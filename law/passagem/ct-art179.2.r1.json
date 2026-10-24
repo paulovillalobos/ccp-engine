@@ -1,0 +1,23 @@
+{
+  "id": "ct:art179.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art179",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - O disposto no número anterior não é aplicável nos seguintes casos:\na) Nova ausência do trabalhador substituído, quando o contrato de utilização tenha sido celebrado para sua substituição;\nb) Acréscimo excepcional de necessidade de mão-de-obra em actividade sazonal.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 257051,
+        "end": 257320
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

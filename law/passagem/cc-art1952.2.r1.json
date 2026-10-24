@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1952.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1952",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Na falta de parentes ou afins que possam ser designados nos termos do número anterior, cabe ao tribunal escolher os vogais de entre os amigos dos pais, vizinhos ou outras pessoas que possam interessar-se pelo menor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 938367,
+        "end": 938585
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

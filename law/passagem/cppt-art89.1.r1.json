@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art89.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art89",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "1 - Os créditos do executado resultantes de reembolso, revisão oficiosa, reclamação ou impugnação judicial de qualquer acto tributário são aplicados na compensação das suas dívidas cobradas pela administração tributária, excepto nos casos seguintes:\na) Estar a correr prazo para interposição de reclamação graciosa, recurso hierárquico, impugnação judicial, recurso judicial ou oposição à execução;\nb) Estar pendente qualquer dos meios graciosos ou judiciais referidos na alínea anterior ou estar a dívida a ser paga em prestações, desde que a dívida exequenda se mostre garantida nos termos do artigo 169.º",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 112910,
+        "end": 113517
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

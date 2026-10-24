@@ -1,0 +1,23 @@
+{
+  "id": "cp:art29",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 29.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 29.º\nCulpa na comparticipação\nCada comparticipante é punido segundo a sua culpa, independentemente da punição ou do grau de culpa dos outros comparticipantes.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 94929,
+        "end": 95094
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

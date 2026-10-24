@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art150.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art150",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A revista só pode ter como fundamento a violação de lei substantiva ou processual.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 215119,
+        "end": 215205
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

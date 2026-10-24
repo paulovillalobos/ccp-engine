@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art118.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art118",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - Sem prejuízo do disposto no número anterior, e estando a parte impossibilitada de apresentar certa testemunha, pode requerer ao tribunal a sua convocação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 179492,
+        "end": 179650
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

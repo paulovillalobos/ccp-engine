@@ -1,0 +1,23 @@
+{
+  "id": "cc:art577.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art577",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O credor pode ceder a terceiro uma parte ou a totalidade do crédito, independentemente do consentimento do devedor, contanto que a cessão não seja interdita por determinação da lei ou convenção das partes e o crédito não esteja, pela própria natureza da prestação, ligado à pessoa do credor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 254928,
+        "end": 255222
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

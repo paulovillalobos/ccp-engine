@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art198.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art198",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O Estado, as outras pessoas colectivas de direito público e as entidades de capitais exclusiva ou maioritariamente públicos, só podem conceder algum subsídio ou proceder a pagamentos superiores a (euro) 5000, líquido de IVA, a contribuintes da segurança social, mediante a apresentação de declaração comprovativa da situação contributiva destes perante a segurança social.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 127108,
+        "end": 127484
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

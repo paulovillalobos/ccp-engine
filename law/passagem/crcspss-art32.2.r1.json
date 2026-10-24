@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art32.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art32",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Sem prejuízo do disposto no número seguinte, enquanto não for cumprido o disposto no número anterior, presume-se a existência da relação laboral, mantendo-se a obrigação contributiva.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 23208,
+        "end": 23395
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

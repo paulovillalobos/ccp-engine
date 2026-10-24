@@ -1,0 +1,23 @@
+{
+  "id": "cc:art82",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 82.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 82.º\n(Domicílio voluntário geral)\n1. A pessoa tem domicílio no lugar da sua residência habitual; se residir alternadamente, em diversos lugares, tem-se por domiciliada em qualquer deles.\n2. Na falta de residência habitual, considera-se domiciliada no lugar da sua residência ocasional ou, se esta não puder ser determinada, no lugar onde se encontrar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 42733,
+        "end": 43091
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art451.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art451",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "3 - Em consequência do exame das contas, o revisor oficial de contas deve emitir documento de certificação legal das contas, o qual deve incluir:\na) Uma introdução que identifique, pelo menos, as contas do exercício que são objecto da revisão legal, bem como a estrutura de relato financeiro utilizada na sua elaboração;\nb) Uma descrição do âmbito da revisão legal das contas que identifique, pelo menos, as normas segundo as quais a revisão foi realizada;\nc) Um parecer sobre se as contas do exercício dão uma imagem verdadeira e apropriada de acordo com a estrutura do relato financeiro e, quando apropriado, se as contas do exercício estão em conformidade com os requisitos legais aplicáveis, sendo que o parecer de revisão pode traduzir uma opinião sem ou com reservas, uma opinião adversa ou, se o revisor oficial de contas não estiver em condições de expressar uma opinião, revestir a forma de escusa de opinião;\nd) Uma referência a quaisquer questões para as quais o revisor oficial de contas chame a atenção mediante ênfases, sem qualificar a opinião de revisão;\ne) Um parecer em que se indique se o relatório de gestão é ou não concordante com as contas do exercício, se o relatório de gestão foi elaborado de acordo com os requisitos legais aplicáveis e se, tendo em conta o conhecimento e a apreciação da empresa, identificou incorreções materiais no relatório de gestão, dando indicações quanto à natureza das mesmas;\nf) Data e assinatura do revisor oficial de contas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 663324,
+        "end": 664804
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

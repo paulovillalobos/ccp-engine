@@ -1,0 +1,23 @@
+{
+  "id": "cp:art221.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art221",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "5 - Se o prejuízo for:\na) De valor elevado, o agente é punido com pena de prisão até 5 anos ou com pena de multa até 600 dias;\nb) De valor consideravelmente elevado, o agente é punido com pena de prisão de 2 a 8 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 312351,
+        "end": 312568
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

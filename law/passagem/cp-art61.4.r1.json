@@ -1,0 +1,23 @@
+{
+  "id": "cp:art61.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art61",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "4 - Sem prejuízo do disposto nos números anteriores, o condenado a pena de prisão superior a 6 anos é colocado em liberdade condicional logo que houver cumprido cinco sextos da pena.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 125648,
+        "end": 125830
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

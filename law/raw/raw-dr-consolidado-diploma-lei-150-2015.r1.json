@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-150-2015",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:07:34Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-150-2015",
+  "sha256": "b6450db25488343f4f823c7180c05802b7f942ccdfe835cce0e8a78010c1a8f1",
+  "bytes": "raw_bytes/b6450db25488343f4f823c7180c05802b7f942ccdfe835cce0e8a78010c1a8f1",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/lei/150-2015-70241301",
+  "captured_at": "2026-10-24T20:07:21Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "702891adf5b6bd8d6ba4015591978bfe4363e7fe30b7c06db2499c99efef76e1",
+    "bytes": "raw_bytes/702891adf5b6bd8d6ba4015591978bfe4363e7fe30b7c06db2499c99efef76e1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art185.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art185",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Não pode ser objeto de compromisso arbitral a responsabilidade civil por prejuízos decorrentes do exercício da função política e legislativa ou da função jurisdicional.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 261782,
+        "end": 261954
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

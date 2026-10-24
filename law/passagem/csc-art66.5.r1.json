@@ -1,0 +1,23 @@
+{
+  "id": "csc:art66.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art66",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-06-07",
+      "text": "5 - O relatório deve indicar, em especial:\na) A evolução da gestão nos diferentes sectores em que a sociedade exerceu actividade, designadamente no que respeita a condições do mercado, investimentos, custos, proveitos e actividades de investigação e desenvolvimento;\nb) Os factos relevantes ocorridos após o termo do exercício;\nc) A evolução previsível da sociedade;\nd) O número e o valor nominal ou, na falta de valor nominal, o valor contabilístico das quotas ou ações próprias adquiridas ou alienadas durante o período, a fração do capital subscrito que representam, os motivos desses atos e o respetivo preço, bem como o número e valor nominal ou contabilístico de todas as quotas e ações próprias detidas no fim do período;\ne) As autorizações concedidas a negócios entre a sociedade e os seus administradores, nos termos do artigo 397.º;\nf) Uma proposta de aplicação de resultados devidamente fundamentada.\ng) A existência de sucursais da sociedade.\nh) Os objectivos e as políticas da sociedade em matéria de gestão dos riscos financeiros, incluindo as políticas de cobertura de cada uma das principais categorias de transacções previstas para as quais seja utilizada a contabilização de cobertura, e a exposição por parte da sociedade aos riscos de preço, de crédito, de liquidez e de fluxos de caixa, quando materialmente relevantes para a avaliação dos elementos do activo e do passivo, da posição financeira e dos resultados, em relação com a utilização dos instrumentos financeiros.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 98280,
+        "end": 99772
+      },
+      "valid_from": "2015-06-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art123.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art123",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - À invocação de invalidade pela parte de má fé, estando a outra de boa fé, seguida de imediata cessação da prestação de trabalho, aplica-se o regime da indemnização prevista no n.º 3 do artigo 392.º ou no artigo 401.º para o despedimento ilícito ou para a denúncia sem aviso prévio, conforme o caso.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 181249,
+        "end": 181551
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

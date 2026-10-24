@@ -1,0 +1,23 @@
+{
+  "id": "cc:art865.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art865",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Sendo a remissão concedida por um dos credores ao devedor, este não fica exonerado para com os outros credores; mas estes não podem exigir do devedor a prestação senão entregando-lhe o valor da parte daquele concredor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 366696,
+        "end": 366917
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art526.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art526",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se um dos devedores estiver insolvente ou não puder por outro motivo cumprir a prestação a que está adstrito, é a sua quota-parte repartida proporcionalmente entre todos os demais, incluindo o credor de regresso e os devedores que pelo credor hajam sido exonerados da obrigação ou apenas do vínculo da solidariedade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 235622,
+        "end": 235941
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

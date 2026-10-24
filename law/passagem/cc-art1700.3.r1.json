@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1700.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1700",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-09-01",
+      "text": "3 - A estipulação referida na alínea c) do n.º 1 apenas é admitida caso o regime de bens, convencional ou imperativo, seja o da separação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 772939,
+        "end": 773077
+      },
+      "valid_from": "2018-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

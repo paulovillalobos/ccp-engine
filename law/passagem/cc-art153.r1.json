@@ -1,0 +1,23 @@
+{
+  "id": "cc:art153",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-v.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 153.º",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "Artigo 153.º\nPublicidade\n1 - A publicidade a dar ao início, ao decurso e à decisão final do processo de acompanhamento é limitada ao estritamente necessário para defender os interesses do beneficiário ou de terceiros, sendo decidida, em cada caso, pelo tribunal.\n2 - Às decisões judiciais de acompanhamento é aplicável o disposto nos artigos 1920.º-B e 1920.º-C.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 72747,
+        "end": 73109
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

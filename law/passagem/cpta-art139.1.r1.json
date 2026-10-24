@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art139.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art139",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - A decisão que resolva o conflito, além de especificar a autoridade ou tribunal competente, determina a invalidade do acto ou decisão da autoridade ou tribunal incompetente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 201167,
+        "end": 201343
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

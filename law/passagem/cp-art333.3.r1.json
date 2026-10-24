@@ -1,0 +1,23 @@
+{
+  "id": "cp:art333.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art333",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - Se os factos descritos no n.º 1 forem praticados contra órgão de autarquia local, o agente é punido com pena de prisão até 3 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 415500,
+        "end": 415634
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

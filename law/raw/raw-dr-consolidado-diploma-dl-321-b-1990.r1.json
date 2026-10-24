@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-321-b-1990",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:06:31Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-321-b-1990",
+  "sha256": "f5e3147179955864b93b9b64d326fe115a31f9ac5d74fc1b8f5080ca77ab102a",
+  "bytes": "raw_bytes/f5e3147179955864b93b9b64d326fe115a31f9ac5d74fc1b8f5080ca77ab102a",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/321-b-1990-667147",
+  "captured_at": "2026-10-24T20:06:18Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "f03c1c50761467038b8c7c41d0b6d3a64f33093d82ab27cc46c0853cf63e2856",
+    "bytes": "raw_bytes/f03c1c50761467038b8c7c41d0b6d3a64f33093d82ab27cc46c0853cf63e2856"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 9.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 9.º\nContrato de trabalho com regime especial\nAo contrato de trabalho com regime especial aplicam-se as regras gerais deste Código que sejam compatíveis com a sua especificidade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 29109,
+        "end": 29293
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

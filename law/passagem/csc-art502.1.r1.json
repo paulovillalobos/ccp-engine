@@ -1,0 +1,23 @@
+{
+  "id": "csc:art502.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art502",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A sociedade subordinada tem o direito de exigir que a sociedade directora compense as perdas anuais que, por qualquer razão, se verifiquem durante a vigência do contrato de subordinação, sempre que estas não forem compensadas pelas reservas constituídas durante o mesmo período.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 709621,
+        "end": 709903
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

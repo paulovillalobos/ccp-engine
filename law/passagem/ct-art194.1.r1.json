@@ -1,0 +1,23 @@
+{
+  "id": "ct:art194.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art194",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "1 - O empregador pode transferir o trabalhador para outro local de trabalho, temporária ou definitivamente, nas seguintes situações:\na) Em caso de mudança ou extinção, total ou parcial, do estabelecimento onde aquele presta serviço;\nb) Quando outro motivo do interesse da empresa o exija e a transferência não implique prejuízo sério para o trabalhador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 279858,
+        "end": 280211
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

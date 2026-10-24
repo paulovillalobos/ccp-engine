@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art111.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art111",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Na decisão, o juiz determina o comportamento concreto a adotar e, sendo caso disso, o prazo para o cumprimento e o responsável pelo mesmo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 168326,
+        "end": 168468
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

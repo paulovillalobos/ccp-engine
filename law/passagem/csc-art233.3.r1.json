@@ -1,0 +1,23 @@
+{
+  "id": "csc:art233.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art233",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - A amortização pode ser consentida pelo sócio ou na própria deliberação ou por documento anterior ou posterior a esta.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 367312,
+        "end": 367433
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

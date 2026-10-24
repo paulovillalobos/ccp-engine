@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1889.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1889",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-01",
+      "text": "2. Não se considera abrangida na restrição da alínea a) do número anterior a aplicação de dinheiro ou capitais do menor na aquisição de bens.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 887200,
+        "end": 887341
+      },
+      "valid_from": "1995-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art56.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art56",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - A execução ou acatamento por funcionário ou agente não se considera aceitação tácita do ato executado ou acatado, salvo quando dependa da vontade daqueles a escolha da oportunidade da execução.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 73856,
+        "end": 74053
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

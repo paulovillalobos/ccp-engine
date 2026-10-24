@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2315.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2315",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o testamento cerrado aparecer dilacerado ou feito em pedaços, considerar-se-á revogado, excepto quando se prove que o facto foi praticado por pessoa diversa do testador, ou que este não teve intenção de o revogar ou se encontrava privado do uso da razão.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1091575,
+        "end": 1091835
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

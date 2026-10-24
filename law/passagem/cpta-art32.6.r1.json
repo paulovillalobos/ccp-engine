@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art32.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art32",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "6 - O valor dos processos cautelares é determinado pelo valor do prejuízo que se quer evitar, dos bens que se querem conservar ou da prestação pretendida a título provisório.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 47128,
+        "end": 47302
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

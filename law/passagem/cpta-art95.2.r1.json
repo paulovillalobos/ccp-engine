@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art95.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art95",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A sentença não pode condenar em quantidade superior ou em objeto diverso do que se pedir, mas, se não houver elementos para fixar o objeto ou a quantidade, o tribunal condena no que vier a ser liquidado, sem prejuízo de condenação imediata na parte que já seja líquida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 144826,
+        "end": 145099
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

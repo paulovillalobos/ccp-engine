@@ -1,0 +1,23 @@
+{
+  "id": "ct:art60.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art60",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - A trabalhadora tem direito a ser dispensada de prestar trabalho entre as 20 horas de um dia e as 7 horas do dia seguinte:\na) Durante um período de 112 dias antes e depois do parto, dos quais pelo menos metade antes da data previsível do mesmo;\nb) Durante o restante período de gravidez, se for necessário para a sua saúde ou para a do nascituro;\nc) Durante todo o tempo que durar a amamentação, se for necessário para a sua saúde ou para a da criança.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 103780,
+        "end": 104235
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

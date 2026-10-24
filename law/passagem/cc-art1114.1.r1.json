@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1114.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1114",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "1. Salvo no caso de perda da coisa, se o arrendamento cessar por motivo de caducidade ou por denúncia do senhorio, o arrendatário tem direito, sem prejuízo da indemnização referida no artigo 1099.º, a uma compensação em dinheiro, sempre que por facto seu o prédio arrendado tenha aumentado de valor locativo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 505860,
+        "end": 506168
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

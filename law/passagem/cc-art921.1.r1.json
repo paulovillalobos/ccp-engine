@@ -1,0 +1,23 @@
+{
+  "id": "cc:art921.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art921",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o vendedor estiver obrigado, por convenção das partes ou por força dos usos, a garantir o bom funcionamento da coisa vendida, cabe-lhe repará-la, ou substituí-la quando a substituição for necessária e a coisa tiver natureza fungível, independentemente de culpa sua ou de erro do comprador.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 387115,
+        "end": 387410
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

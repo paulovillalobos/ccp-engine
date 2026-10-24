@@ -1,0 +1,23 @@
+{
+  "id": "csc:art520.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art520",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "3 - Se o facto for praticado com intenção de causar dano, material ou moral, à sociedade ou a algum sócio, a pena é de prisão até 2 anos ou pena de multa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 748150,
+        "end": 748304
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

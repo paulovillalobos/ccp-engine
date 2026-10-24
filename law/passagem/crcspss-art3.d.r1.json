@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art3.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art3",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "d) Quanto à matéria substantiva contra-ordenacional, o Regime Geral das Infracções Tributárias.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 8142,
+        "end": 8237
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

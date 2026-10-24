@@ -1,0 +1,23 @@
+{
+  "id": "cc:art114",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 114.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 114.º\n(Requisitos)\n1. Decorridos dez anos sobre a data das últimas noticias, ou passados cinco anos, se entretanto o ausente houver completado oitenta anos de idade, podem os interessados a que se refere o artigo 100.º requerer a declaração de morte presumida.\n2. A declaração de morte presumida não será proferida antes de haverem decorrido cinco anos sobre a data em que o ausente, se fosse vivo, atingiria a maioridade.\n3. A declaração de morte presumida do ausente não depende de prévia instalação da curadoria provisória ou definitiva e referir-se-á ao fim do dia das últimas notícias que dele houve.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 53533,
+        "end": 54145
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art31",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-v.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 31.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 31.º\nAtribuição de valor e suas consequências\n1 - A toda a causa deve ser atribuído um valor certo, expresso em moeda legal, o qual representa a utilidade económica imediata do pedido.\n2 - Atende-se ao valor da causa para determinar se cabe recurso da sentença proferida em primeira instância e que tipo de recurso.\n3 - Para o efeito das custas e demais encargos legais, o valor da causa é fixado segundo as regras estabelecidas na legislação respetiva.\n4 - É aplicável o disposto na lei processual civil quanto aos poderes das partes e à intervenção do juiz na fixação do valor da causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 45581,
+        "end": 46176
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

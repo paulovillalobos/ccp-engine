@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-ii.titulo-i.capitulo-viii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i",
+  "kind": "capitulo",
+  "label": "Capítulo VIII",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Capítulo VIII\nCausas de extinção das obrigações além do cumprimento",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 358280,
+        "end": 358347
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

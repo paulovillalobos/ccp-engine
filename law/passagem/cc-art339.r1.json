@@ -1,0 +1,23 @@
+{
+  "id": "cc:art339",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 339.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 339.º\n(Estado de necessidade)\n1. É lícita a acção daquele que destruir ou danificar coisa alheia com o fim de remover o perigo actual de um dano manifestamente superior, quer do agente, quer de terceiro.\n2. O autor da destruição ou do dano é, todavia, obrigado a indemnizar o lesado pelo prejuízo sofrido, se o perigo for provocado por sua culpa exclusiva; em qualquer outro caso, o tribunal pode fixar uma indemnização equitativa e condenar nela não só o agente, como aqueles que tiraram proveito do acto ou contribuíram para o estado de necessidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 156841,
+        "end": 157399
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

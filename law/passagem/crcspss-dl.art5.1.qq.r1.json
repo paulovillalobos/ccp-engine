@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:dl.art5.1.qq",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:dl.art5.1",
+  "kind": "alinea",
+  "label": "qq)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "qq) A Portaria n.º 292/2009, de 23 de Março;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 6388,
+        "end": 6432
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

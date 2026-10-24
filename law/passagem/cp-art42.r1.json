@@ -1,0 +1,23 @@
+{
+  "id": "cp:art42",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 42.º",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "Artigo 42.º\nExecução da pena de prisão\n1 - A execução da pena de prisão, servindo a defesa da sociedade e prevenindo a prática de crimes, deve orientar-se no sentido da reintegração social do recluso, preparando-o para conduzir a sua vida de modo socialmente responsável, sem cometer crimes.\n2 - A execução da pena de prisão é regulada em legislação própria, na qual são fixados os deveres e os direitos dos reclusos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 101057,
+        "end": 101474
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art234",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-ii.seccao-ii.subseccao-ix",
+  "kind": "artigo",
+  "label": "Artigo 234.º",
+  "versions": [
+    {
+      "version": "2016-04-02",
+      "text": "Artigo 234.º\nFeriados obrigatórios\n1 - São feriados obrigatórios os dias 1 de janeiro, de Sexta-Feira Santa, de Domingo de Páscoa, 25 de abril, 1 de maio, de Corpo de Deus, 10 de junho, 15 de agosto, 5 de outubro, 1 de novembro, 1, 8 e 25 de dezembro.\n2 - O feriado de Sexta-Feira Santa pode ser observado em outro dia com significado local no período da Páscoa.\n3 - Mediante legislação específica, determinados feriados obrigatórios podem ser observados na segunda-feira da semana subsequente.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 331654,
+        "end": 332148
+      },
+      "valid_from": "2016-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

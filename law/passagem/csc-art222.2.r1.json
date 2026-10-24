@@ -1,0 +1,23 @@
+{
+  "id": "csc:art222.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art222",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - As comunicações e declarações da sociedade que interessem aos contitulares devem ser dirigidas ao representante comum e, na falta deste, a um dos contitulares.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 354275,
+        "end": 354438
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

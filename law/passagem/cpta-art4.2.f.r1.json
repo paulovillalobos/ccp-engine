@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art4.2.f",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art4.2",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "f) O pedido de condenação da Administração à reparação de danos causados com qualquer dos pedidos mencionados nas alíneas anteriores;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 12502,
+        "end": 12635
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

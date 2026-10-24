@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art111.2.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art111.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "b) A informação prestada pelos serviços da administração tributária sobre os elementos oficiais que digam respeito à colecta impugnada e sobre a restante matéria do pedido;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 144278,
+        "end": 144450
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

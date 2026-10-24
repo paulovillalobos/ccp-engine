@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "6 - Um accionista não pode votar, nem por si, nem por representante, nem em representação de outrem, quando a lei expressamente o proíba e ainda quando a deliberação incida sobre:\na) Liberação de uma obrigação ou responsabilidade própria do accionista, quer nessa qualidade quer na de membro de órgão de administração ou de fiscalização;\nb) Litígio sobre pretensão da sociedade contra o accionista ou deste contra aquela, quer antes quer depois do recurso a tribunal;\nc) Destituição, por justa causa, do seu cargo de titular de órgão social;\nd) Qualquer relação, estabelecida ou a estabelecer, entre a sociedade e o accionista, estranha ao contrato de sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 552013,
+        "end": 552675
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

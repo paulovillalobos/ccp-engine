@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art256.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art256",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O reconhecimento de períodos de actividade profissional é requerido pelas entidades empregadoras faltosas ou pelos trabalhadores interessados e só é autorizado desde que o exercício de actividade profissional seja comprovado por algum dos seguintes meios de prova:\na) Duplicados das declarações para efeitos fiscais, mesmo que de impostos já abolidos, devidamente autenticadas pelos serviços fiscais, ou das respectivas certidões;\nb) Cópia autenticada dos mapas de pessoal, desde que tempestivamente apresentados aos serviços oficiais competentes;\nc) Certidão de sentença resultante de acção do foro laboral intentada nos prazos legalmente fixados para a impugnação de despedimento, impugnação de justa causa de resolução do contrato de trabalho ou reclamação de créditos laborais;\nd) Certidão de sentença resultante de acção do foro laboral intentada contra a entidade empregadora e a instituição gestora da segurança social para reconhecimento da relação de trabalho, respectivo período e remuneração auferida.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 156388,
+        "end": 157404
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

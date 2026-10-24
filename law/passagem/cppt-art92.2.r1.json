@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art92.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art92",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - O sub-rogado pode requerer a instauração ou o prosseguimento da execução fiscal para cobrar do executado o que por ele tiver pago, salvo tratando-se de segunda sub-rogação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 120221,
+        "end": 120397
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

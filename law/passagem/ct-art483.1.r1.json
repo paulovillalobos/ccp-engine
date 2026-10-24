@@ -1,0 +1,23 @@
+{
+  "id": "ct:art483.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art483",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - Sempre que exista concorrência entre instrumentos de regulamentação colectiva de trabalho não negociais, são observados os seguintes critérios de preferência:\na) A decisão de arbitragem obrigatória afasta a aplicação de outro instrumento;\nb) A portaria de extensão afasta a aplicação de portaria de condições de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 588355,
+        "end": 588680
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

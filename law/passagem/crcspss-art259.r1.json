@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art259",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-v.capitulo-i.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 259.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 259.º\nBase de incidência contributiva\nA base de incidência contributiva a considerar para efeitos de pagamento de contribuições prescritas corresponde, consoante os trabalhadores se encontrem abrangidos pelo sistema de segurança social ou por outro sistema de protecção social, respectivamente:\na) Ao valor médio das remunerações registadas no sistema previdencial nos últimos 12 meses anteriores ao do requerimento, tomando-se em consideração a remuneração mais elevada em cada mês nas situações de registo de remunerações correspondentes às diversas actividades;\nb) Ao valor mensal correspondente a três vezes o valor do IAS dos apoios sociais, salvo se o interessado fizer prova, através de declaração emitida pela entidade gestora do sistema de protecção social que o abrange, de qual o valor das remunerações auferidas nos últimos 12 meses anteriores ao do requerimento, caso em que será a média desta a considerada.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 158398,
+        "end": 159326
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

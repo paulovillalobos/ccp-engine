@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art136.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art136",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Presumem-se trabalhadores independentes os trabalhadores intelectuais, sendo como tais considerados os autores de obras protegidas nos termos do Código do Direito de Autor e dos Direitos Conexos, qualquer que seja o género, a forma de expressão e o modo de divulgação e utilização das respectivas obras.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 85666,
+        "end": 85973
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

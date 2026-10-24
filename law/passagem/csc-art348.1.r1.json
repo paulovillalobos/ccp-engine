@@ -1,0 +1,23 @@
+{
+  "id": "csc:art348.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art348",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "1 - As sociedades anónimas podem emitir valores mobiliários que, numa mesma emissão, conferem direitos de crédito iguais e que se denominam obrigações.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 495299,
+        "end": 495450
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

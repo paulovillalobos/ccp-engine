@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art293.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art293",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - O requerimento da revisão é apresentado no tribunal que proferiu a decisão a rever, no prazo de 30 dias a contar dos factos referidos no número anterior, juntamente com a documentação necessária.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 348323,
+        "end": 348522
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

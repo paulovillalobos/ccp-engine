@@ -1,0 +1,23 @@
+{
+  "id": "cc:art178.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art178",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Tratando-se de associado que não foi convocado regularmente para a reunião da assembleia, o prazo só começa a correr a partir da data em que ele teve conhecimento da deliberação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 86891,
+        "end": 87072
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

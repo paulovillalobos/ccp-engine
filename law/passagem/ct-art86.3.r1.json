@@ -1,0 +1,23 @@
+{
+  "id": "ct:art86.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art86",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "3 - Os encargos referidos no n.º 1 não são considerados desproporcionados quando forem compensados por apoios do Estado, nos termos previstos em legislação específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 135976,
+        "end": 136143
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

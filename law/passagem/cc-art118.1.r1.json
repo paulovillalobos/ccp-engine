@@ -1,0 +1,23 @@
+{
+  "id": "cc:art118.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art118",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Quando se prove que o ausente morreu em data diversa da fixada na sentença de declaração de morte presumida, o direito à herança compete aos que naquela data lhe deveriam suceder, sem prejuízo das regras da usucapião.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 55254,
+        "end": 55474
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

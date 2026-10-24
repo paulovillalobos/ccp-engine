@@ -1,0 +1,23 @@
+{
+  "id": "cp:art93.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art93",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-08-20",
+      "text": "1 - Se for invocada a existência de causa justificativa da cessação do internamento, o tribunal aprecia a questão a todo o tempo.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 169591,
+        "end": 169720
+      },
+      "valid_from": "2023-08-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

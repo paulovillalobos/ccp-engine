@@ -1,0 +1,23 @@
+{
+  "id": "ct:art179.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art179",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - No caso de se ter completado a duração máxima de contrato de utilização de trabalho temporário, é proibida a sucessão no mesmo posto de trabalho ou atividade profissional de trabalhador temporário ou de trabalhador contratado a termo, ou ainda de contrato de prestação de serviços para o mesmo objeto ou atividade, celebrado com o mesmo empregador ou sociedade que com este se encontre em relação de domínio ou de grupo, ou mantenha estruturas organizativas comuns, antes de decorrer um período de tempo igual a um terço da duração do referido contrato, incluindo renovações.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 256471,
+        "end": 257050
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

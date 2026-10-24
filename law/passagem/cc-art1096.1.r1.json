@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1096.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1096",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "1 - Salvo estipulação em contrário, o contrato celebrado com prazo certo renova-se automaticamente no seu termo e por períodos sucessivos de igual duração ou de três anos se esta for inferior, sem prejuízo do disposto no número seguinte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 480036,
+        "end": 480273
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

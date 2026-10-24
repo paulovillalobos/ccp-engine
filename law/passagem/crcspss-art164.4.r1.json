@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art164.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art164",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - O disposto no número anterior só é aplicável ao trabalhador em início ou no reinício de actividade e tem a duração máxima de três anos civis seguidos ou interpolados por trabalhador.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 105703,
+        "end": 105889
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

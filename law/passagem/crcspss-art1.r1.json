@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 1.º\nÂmbito de aplicação\nO presente Código regula os regimes abrangidos pelo sistema previdencial aplicáveis aos trabalhadores por conta de outrem ou em situação legalmente equiparada para efeitos de segurança social, aos trabalhadores independentes, bem como o regime de inscrição facultativa.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 7331,
+        "end": 7631
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

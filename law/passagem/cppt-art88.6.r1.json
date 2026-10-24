@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art88.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art88",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - A extracção das certidões de dívidas poderá ser cometida, pelo órgão dirigente da administração tributária, aos serviços que disponham dos elementos necessários para essa actividade.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 112321,
+        "end": 112507
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

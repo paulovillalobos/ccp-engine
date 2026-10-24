@@ -1,0 +1,23 @@
+{
+  "id": "csc:art245.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art245",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "5 - O reembolso de suprimentos efectuado no ano anterior à sentença declaratória da falência é resolúvel nos termos dos artigos 1200.º, 1203.º e 1204.º do Código de Processo Civil.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 384979,
+        "end": 385159
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

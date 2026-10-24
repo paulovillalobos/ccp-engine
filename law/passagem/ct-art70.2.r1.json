@@ -1,0 +1,23 @@
+{
+  "id": "ct:art70.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art70",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-09-03",
+      "text": "2 - O contrato celebrado por menor que não tenha completado 16 anos de idade, não tenha concluído a escolaridade obrigatória ou não esteja matriculado e a frequentar o nível secundário de educação só é válido mediante autorização escrita dos seus representantes legais.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 122140,
+        "end": 122409
+      },
+      "valid_from": "2012-09-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

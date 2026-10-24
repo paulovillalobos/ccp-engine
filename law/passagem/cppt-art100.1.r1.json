@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art100.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art100",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2000-04-09",
+      "text": "1 - Sempre que da prova produzida resulte a fundada dúvida sobre a existência e quantificação do facto tributário, deverá o acto impugnado ser anulado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 133622,
+        "end": 133773
+      },
+      "valid_from": "2000-04-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art123",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:titulo-i.capitulo-x.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 123.º",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "Artigo 123.º\n(Requisitos da cisão simples)\n1 - A cisão prevista no artigo 118.º, n.º 1, alínea a), não é possível:\na) Se o valor do património da sociedade cindida se tornar inferior à soma das importâncias do capital social e da reserva legal e não se proceder, antes da cisão ou juntamente com ela, à correspondente redução do capital social;\nb) Se o capital da sociedade a cindir não estiver inteiramente liberado.\n2 - Nas sociedades por quotas adicionar-se-á, para os efeitos da alínea a) do número anterior, a importância das prestações suplementares efectuadas pelos sócios e ainda não reembolsadas.\n3 - A verificação das condições exigidas nos números precedentes constará expressamente dos pareceres e relatórios dos órgãos de administração e de fiscalização das sociedades, bem como do revisor oficial de contas ou sociedade de revisores.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 215491,
+        "end": 216338
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

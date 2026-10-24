@@ -1,0 +1,23 @@
+{
+  "id": "csc:art100.3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art100.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "c) A data designada para a reunião da assembleia geral.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 158067,
+        "end": 158122
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art2.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art2",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "4 - Quando as disposições penais vigentes no momento da prática do facto punível forem diferentes das estabelecidas em leis posteriores, é sempre aplicado o regime que concretamente se mostrar mais favorável ao agente; se tiver havido condenação, ainda que transitada em julgado, cessam a execução e os seus efeitos penais logo que a parte da pena que se encontrar cumprida atinja o limite máximo da pena prevista na lei posterior.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 76279,
+        "end": 76710
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

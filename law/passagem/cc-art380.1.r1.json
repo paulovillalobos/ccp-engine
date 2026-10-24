@@ -1,0 +1,23 @@
+{
+  "id": "cc:art380.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art380",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Os registos e outros escritos onde habitualmente alguém tome nota dos pagamentos que lhe são efectuados fazem prova contra o seu autor, se indicarem inequìvocamente, posto que mediante um simples sinal, a recepção de algum pagamento; mas o autor do escrito pode provar, por qualquer meio, que a nota não corresponde à realidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 174287,
+        "end": 174618
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

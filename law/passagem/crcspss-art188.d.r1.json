@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art188.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art188",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "d) Por retenção de valores por entidades públicas;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 120649,
+        "end": 120699
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

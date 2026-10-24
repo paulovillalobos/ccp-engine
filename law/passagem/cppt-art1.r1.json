@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "Artigo 1.º\nÂmbito\nO presente Código aplica-se, sem prejuízo do disposto no direito da União Europeia, noutras normas de direito internacional que vigorem diretamente na ordem interna, na lei geral tributária ou em legislação especial, incluindo as normas que regulam a liquidação e cobrança dos tributos parafiscais:\na) Ao procedimento tributário;\nb) Ao processo judicial tributário;\nc) À cobrança coerciva das dívidas exigíveis em processo de execução fiscal;\nd) Aos recursos jurisdicionais.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 15845,
+        "end": 16337
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

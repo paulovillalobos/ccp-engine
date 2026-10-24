@@ -1,0 +1,23 @@
+{
+  "id": "cc:art325.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art325",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. O reconhecimento tácito só é relevante quando resulte de factos que inequivocamente o exprimam.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 151293,
+        "end": 151391
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

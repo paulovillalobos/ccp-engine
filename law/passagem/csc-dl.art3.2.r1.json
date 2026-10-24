@@ -1,0 +1,23 @@
+{
+  "id": "csc:dl.art3.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:dl.art3",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "2 - As disposições do Código das Sociedades Comerciais não revogam os preceitos de lei que consagram regimes especiais para certas sociedades.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 24467,
+        "end": 24609
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -23,7 +23,8 @@ Steps:
        (D30). Every part's version that starts
        on a date the article has a vigencia for gets a vigencia quoting the same note (same act, same effect)
     6. writes: a new id is appended; a changed object becomes a new revision; an equal one is left alone (the store
-       is append-only: nothing is rewritten). Prints the counts and writes <store>/build-report.json: the captured acts
+       is append-only: nothing is rewritten); an object the build no longer produces gets a stale revision. Prints the
+       counts and writes <store>/build-report.json: the captured acts
        not structured and why, the articles left out and why (read by tools/coverage.py).
 No network, no model.
 """
@@ -45,6 +46,7 @@ from engine.store import Store, Writer  # noqa: E402
 VERSION = "ccp-build-law-0.1"
 CONSOLIDATED = "raw:dr-consolidado:lei:ccp"
 TEXT_EXTRACTOR = "dr-article-history@1"
+EU_EXTRACTOR = "eurlex-html@1"
 INITIAL = "2008-07-30"  # the CCP's (and DL 18/2008's) entry into force: the date of every "Versão inicial"
 DR = "https://diariodarepublica.pt"
 NOTE_LINK = re.compile(r'<a [^>]*href="(/dr/detalhe/[^"]+)"[^>]*>([^<]+)</a>')
@@ -142,7 +144,8 @@ def header(store, raw):
         out["scope"] = next((l for l in lines if l.startswith("que altera") or l.startswith("relativ")), out["title"])
         elis = re.findall(r"ELI: (http://data\.europa\.eu/eli/\S+?/oj)", text)
         out["eli"] = elis[-1].replace("http://", "https://", 1) if elis else None  # the schema's https form of the same ELI
-        out["published"] = None
+        m = re.search(r"^([0-9]{2})\.([0-9]{2})\.([0-9]{4})$", text, re.M)  # the Official Journal date line
+        out["published"] = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else None
     return out
 
 
@@ -278,6 +281,8 @@ def act_start(ps, published, rule, norma_id=None):
         # «seis meses após a data da sua publicação»: the day the DR's consolidated page gives as the "Versão inicial"
         # of the decree and the code it approves (INITIAL, D24), quoted from art. 18.º
         return INITIAL, art["versions"][0]
+    if art and not vigente.whole_act_clause(art["versions"][0]["text"]):
+        art = None  # it dates only some provisions: the rest follow the general rule (D31)
     src = art["versions"][0] if art else rule
     return (vigente.entry_into_force(published, src["text"]), src) if src else (None, None)
 
@@ -321,17 +326,53 @@ def drop_owners_of_masked(ps, text):
     return [p for p in ps if not any(p["id"] == d or p["id"].startswith(d + ".") for d in drop)], drop
 
 
-def consolidated_act(store, raw, norma, normas, rule):
+LAYOUT = {}  # norma id -> the structure layout its passages come from, when not the CCP's (D34)
+EU_APPLIES = re.compile(r"é aplicável a partir de ([0-9]{1,2}) de ([a-zç]+) de ([0-9]{4})")
+MONTHS = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+
+def structure_any(norma, text, raw_id, version):
+    """The CCP layout first; the second layout (D34) when the first refuses the text or reads clearly fewer articles
+    than the second (a code after its decree's closing formula: the first stops there). Recorded in LAYOUT."""
+    arts = lambda ps: sum(1 for p in ps if p["kind"] == "artigo" and ".q" not in p["id"])  # noqa: E731
+    try:
+        first, err = structure.structure(norma, text, raw_id, version), None
+    except ValueError as exc:
+        first, err = None, exc
+    try:
+        second = structure.structure_codigo(norma, text, raw_id, version)
+    except ValueError:
+        if err:
+            raise err
+        return first
+    if first is None or arts(first) < 0.9 * arts(second):
+        LAYOUT[norma["id"]] = "dr-codigo"
+        return second
+    return first
+
+
+def eu_start(ps):
+    """(date, the article that says it) for an EU act: the day it applies from, «é aplicável a partir de» (D35)."""
+    for p in ps:
+        if p["kind"] != "artigo":
+            continue
+        m = EU_APPLIES.search(p["versions"][0]["text"])
+        if m and m.group(2) in MONTHS:
+            return f"{m.group(3)}-{MONTHS.index(m.group(2)) + 1:02d}-{int(m.group(1)):02d}", p["versions"][0]
+    return None, None
+
+
+def consolidated_act(store, raw, norma, normas, rule, known=()):
     """Another act's consolidated page (no history captured): one version per passage, the text in force at capture,
     from the date of its article's newest note (else the act's entry into force); the vigencia of that date only."""
     text, bad = masked(store.raw_text(raw))
-    ps = structure.structure(norma, text, raw["id"], "0001-01-01")
+    ps = structure_any(norma, text, raw["id"], "0001-01-01")
     if bad:  # an article followed by a note that cannot be read is left out: its date would be a guess (D33)
         ps, drop = drop_owners_of_masked(ps, text)
         SKIPPED_PARTS[norma["id"]] = sorted(drop)
     for _ in range(50):
         try:
-            vg = vigente.notes_to_vigencias(text, raw["id"], ps, normas)
+            vg = vigente.notes_to_vigencias(text, raw["id"], ps + list(known), normas)  # known: acts read before, for D28
             break
         except ValueError as exc:  # a dateless note nothing dates: masked like an unreadable one, its article left out
             m = re.match(r"note of (.+?) without a date", str(exc))
@@ -386,11 +427,17 @@ def build_passages(store, normas):
             continue
         try:
             if raw["kind"] == "regulamento":
-                raise ValueError("EU layout (\"Artigo 1.o\", points \"1)\" on their own line) has no grammar in engine/structure yet")
-            if raw["kind"] == "lei":
-                ps, vg = consolidated_act(store, raw, norma, public(normas), rule)
+                ps = structure.structure_codigo(norma, store.raw_text(raw), raw["id"], INITIAL)
+                LAYOUT[norma["id"]] = "dr-codigo"
+                start, src = eu_start(ps)
+                if not start:
+                    raise ValueError("no «aplicável a partir de <date>» in the enacting terms")
+                ps = dated(ps, start)
+                vg = in_force_vigencias(ps, norma, start, src, now_utc())
+            elif raw["kind"] == "lei":
+                ps, vg = consolidated_act(store, raw, norma, public(normas), rule, [p for p in out.values() if not p["id"].startswith("ccp:")])
             else:
-                ps = structure.structure(norma, store.raw_text(raw), raw["id"], INITIAL)
+                ps = structure_any(norma, store.raw_text(raw), raw["id"], INITIAL)
                 if not ps:
                     raise ValueError("no articles of its own (a declaração de retificação lists corrections)")
                 start, src = act_start(ps, norma["_header"]["published"], rule, norma["id"])  # read, never guessed
@@ -586,6 +633,9 @@ def main():
     writer = Writer(root, store)
     recorded_at = now_utc()
     ensure_text(root, store, writer, CONSOLIDATED, TEXT_EXTRACTOR, False)
+    for r in sorted({r["id"] for r in store.objects["raw"] if r["source"] == "eur-lex"}):
+        store = Store([root]).load()
+        ensure_text(root, store, Writer(root, store), r, EU_EXTRACTOR, False)  # D29 pattern: a revision with the new text
     store = Store([root]).load()
     writer = Writer(root, store)
     ccp_raw = store.current(CONSOLIDATED)
@@ -600,7 +650,13 @@ def main():
     counts = {}
     for name, objs in (("norma", public(normas).values()), ("passagem", passages.values()), ("vigencia", vigencias.values())):
         counts[name] = dict(write_all(store, writer, sorted(objs, key=lambda o: o["id"]), recorded_at, False))
-    (root / "build-report.json").write_text(json.dumps({"tool": VERSION, "not_structured": skipped, "articles_left_out": SKIPPED_PARTS},
+        produced = {o["id"] for o in objs}
+        gone = sorted(i for i in {o["id"] for o in store.objects[name]} if i not in produced and not store.current(i).get("stale"))
+        for i in gone:  # no longer produced (an act read by another layout, D34): a stale revision, nothing deleted
+            writer.mark_stale(store.current(i), f"no longer produced by {VERSION} from the captures (D34)", recorded_at)
+        counts[name]["stale"] = len(gone)
+    (root / "build-report.json").write_text(json.dumps({"tool": VERSION, "not_structured": skipped, "articles_left_out": SKIPPED_PARTS,
+                                                       "layouts": LAYOUT},
                                                       ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     kinds = Counter(p["kind"] for p in passages.values() if p["norma"] == "norma:ccp")
     print(json.dumps({"tool": VERSION, "store": str(root), "normas": len(normas), "passages": len(passages),

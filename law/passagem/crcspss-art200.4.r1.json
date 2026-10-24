@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art200.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art200",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - A alienação prevista no presente artigo não pode fazer-se a favor:\na) Do contribuinte devedor;\nb) Dos membros dos órgãos sociais do contribuinte devedor, quando respeite ao período de exercício do seu cargo;\nc) De entidades com interesse patrimonial equiparável.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 129921,
+        "end": 130187
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

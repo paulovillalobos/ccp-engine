@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art90-a.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art90-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-04-29",
+      "text": "4 - A entidade devedora, em prazo igual ao do número anterior, pronuncia-se sobre o carácter certo, líquido e exigível do crédito, indicando o seu valor e data de vencimento, de forma a permitir o processamento da compensação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 118082,
+        "end": 118308
+      },
+      "valid_from": "2010-04-29",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

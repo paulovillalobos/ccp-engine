@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art9.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art9",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Sem prejuízo do disposto no número seguinte e no capítulo II do título II, o autor é considerado parte legítima quando alegue ser parte na relação material controvertida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 19987,
+        "end": 20161
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

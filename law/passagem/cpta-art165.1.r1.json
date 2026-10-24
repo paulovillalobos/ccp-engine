@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art165.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art165",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Apresentada a petição, é ordenada a notificação da entidade ou entidades obrigadas para, no prazo de 20 dias, executarem a sentença ou deduzirem a oposição que tenham, podendo o fundamento da oposição consistir na invocação da existência de causa legítima de inexecução da sentença ou da circunstância de esta ter sido entretanto executada.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 233311,
+        "end": 233655
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

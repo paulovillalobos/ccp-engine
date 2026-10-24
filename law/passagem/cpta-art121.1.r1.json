@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art121.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art121",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quando, existindo processo principal já intentado, se verifique que foram trazidos ao processo cautelar todos os elementos necessários para o efeito e a simplicidade do caso ou a urgência na sua resolução definitiva o justifique, o tribunal pode, ouvidas as partes pelo prazo de 10 dias, antecipar o juízo sobre a causa principal, proferindo decisão que constituirá a decisão final desse processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 183150,
+        "end": 183551
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art199.11",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art199",
+  "kind": "numero",
+  "label": "11",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "11 - A garantia poderá ser reduzida, oficiosamente ou a requerimento dos contribuintes, à medida que os pagamentos forem efectuados e se tornar manifesta a desproporção entre o montante daquela e a dívida restante.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 245346,
+        "end": 245560
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

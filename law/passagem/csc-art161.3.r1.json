@@ -1,0 +1,23 @@
+{
+  "id": "csc:art161.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art161",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "3 - A deliberação não pode ser tomada:\na) Antes de o passivo ter sido liquidado, nos termos do artigo 154.º, exceptuados os créditos cujo reembolso na liquidação for dispensado expressamente pelos respectivos titulares;\nb) Enquanto se mantiver alguma causa de dissolução;\nc) Se o saldo de liquidação não cobrir o capital social, salvo redução deste.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 292995,
+        "end": 293344
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

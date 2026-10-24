@@ -1,0 +1,23 @@
+{
+  "id": "cc:art461.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art461",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Não tendo prazo de validade, a promessa pública é revogável a todo o tempo pelo promitente; se houver prazo, só é revogável ocorrendo justa causa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 205914,
+        "end": 206063
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

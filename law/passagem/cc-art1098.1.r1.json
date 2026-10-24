@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1098.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1098",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "1 - O arrendatário pode impedir a renovação automática do contrato mediante comunicação ao senhorio com a antecedência mínima seguinte:\na) 120 dias, se o prazo de duração inicial do contrato ou da sua renovação for igual ou superior a seis anos;\nb) 90 dias, se o prazo de duração inicial do contrato ou da sua renovação for igual ou superior a um ano e inferior a seis anos;\nc) 60 dias, se o prazo de duração inicial do contrato ou da sua renovação for igual ou superior a seis meses e inferior a um ano;\nd) Um terço do prazo de duração inicial do contrato ou da sua renovação, tratando-se de prazo inferior a seis meses.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 482951,
+        "end": 483572
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art91.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art91",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-04-11",
+      "text": "1 - A sociedade pode aumentar o seu capital por incorporação de reservas disponíveis para o efeito.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 139595,
+        "end": 139694
+      },
+      "valid_from": "2022-04-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art127.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art127",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A execução da decisão cautelar corre termos nos próprios autos do processo cautelar, sob as formas previstas neste Código para os processos executivos, ou sob as formas previstas na lei processual civil, quando se trate de uma execução contra particulares, sendo-lhe aplicável o regime dos processos urgentes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 188917,
+        "end": 189230
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art109.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art109",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - A intimação também pode ser dirigida contra particulares, designadamente concessionários, nomeadamente para suprir a omissão, por parte da Administração, das providências adequadas a prevenir ou reprimir condutas lesivas dos direitos, liberdades e garantias do interessado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 164935,
+        "end": 165212
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

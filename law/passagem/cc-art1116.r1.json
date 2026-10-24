@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1116",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-iv.seccao-viii",
+  "kind": "artigo",
+  "label": "Artigo 1116.º",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "Artigo 1116.º\n(Desocupação do prédio)\n1. Quando o arrendamento tiver durado um ou mais anos e cessar pelos motivos referidos no artigo 1114.º, o arrendatário só é obrigado a desocupar o prédio decorrido um ano após o termo do contrato ou da renovação.\n2. Se o arrendamento tiver durado dez ou mais anos, o prazo para a desocupação é de dois anos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 507193,
+        "end": 507539
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

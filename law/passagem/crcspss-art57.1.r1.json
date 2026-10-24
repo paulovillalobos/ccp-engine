@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art57.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art57",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Podem ser estabelecidas medidas excepcionais e temporárias de incentivo ao emprego que determinam a isenção ou redução da taxa contributiva tendo em vista:\na) O aumento de postos de trabalho;\nb) A reinserção profissional de pessoas afastadas do mercado de trabalho;\nc) A permanência dos trabalhadores em condições de acesso à pensão de velhice nos seus postos de trabalho.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 42832,
+        "end": 43208
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

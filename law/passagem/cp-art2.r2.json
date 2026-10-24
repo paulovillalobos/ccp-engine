@@ -1,0 +1,24 @@
+{
+  "id": "cp:art2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 2.º",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "Artigo 2.º\nAplicação no tempo\n1 - As penas e as medidas de segurança são determinadas pela lei vigente no momento da prática do facto ou do preenchimento dos pressupostos de que dependem.\n2 - O facto punível segundo a lei vigente no momento da sua prática deixa de o ser se uma lei nova o eliminar do número das infracções; neste caso, e se tiver havido condenação, ainda que transitada em julgado, cessam a execução e os seus efeitos penais.\n3 - Quando a lei valer para um determinado período de tempo, continua a ser punível o facto praticado durante esse período.\n4 - Quando as disposições penais vigentes no momento da prática do facto punível forem diferentes das estabelecidas em leis posteriores, é sempre aplicado o regime que concretamente se mostrar mais favorável ao agente; se tiver havido condenação, ainda que transitada em julgado, cessam a execução e os seus efeitos penais logo que a parte da pena que se encontrar cumprida atinja o limite máximo da pena prevista na lei posterior.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 75712,
+        "end": 76710
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

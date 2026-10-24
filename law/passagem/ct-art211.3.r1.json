@@ -1,0 +1,23 @@
+{
+  "id": "ct:art211.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art211",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - Os dias de ausência por doença, bem como os dias de licença parental, inicial ou complementar, e de licença para assistência a filho com deficiência ou doença crónica são considerados com base no correspondente período normal de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 304529,
+        "end": 304771
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

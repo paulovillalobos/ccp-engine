@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art12.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art12",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-08-29",
+      "text": "1 - Os processos da competência dos tribunais tributários são julgados em 1.ª instância pelo tribunal da área do serviço periférico local onde se praticou o ato objeto da impugnação ou no caso da execução fiscal, no tribunal da área do domicílio ou sede do executado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 25446,
+        "end": 25713
+      },
+      "valid_from": "2017-08-29",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

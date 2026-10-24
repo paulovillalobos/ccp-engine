@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art95.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art95",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Nos processos impugnatórios, o tribunal deve pronunciar-se sobre todas as causas de invalidade que tenham sido invocadas contra o ato impugnado, exceto quando não possa dispor dos elementos indispensáveis para o efeito, assim como deve identificar a existência de causas de invalidade diversas das que tenham sido alegadas, ouvidas as partes para alegações complementares pelo prazo comum de 10 dias, quando o exija o respeito pelo princípio do contraditório.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 145100,
+        "end": 145563
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art70.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art70",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-09-03",
+      "text": "1 - É válido o contrato de trabalho celebrado por menor que tenha completado 16 anos de idade e tenha concluído a escolaridade obrigatória ou esteja matriculado e a frequentar o nível secundário de educação, salvo oposição escrita dos seus representantes legais.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 121877,
+        "end": 122139
+      },
+      "valid_from": "2012-09-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

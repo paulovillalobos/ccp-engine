@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art2.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art2",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - O princípio da tutela jurisdicional efetiva compreende o direito de obter, em prazo razoável, e mediante um processo equitativo, uma decisão judicial que aprecie, com força de caso julgado, cada pretensão regularmente deduzida em juízo, bem como a possibilidade de a fazer executar e de obter as providências cautelares, antecipatórias ou conservatórias, destinadas a assegurar o efeito útil da decisão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 6903,
+        "end": 7310
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art97",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 97.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 97.º\n(Substituição do curador provisório)\nO curador pode ser substituído, a requerimento do Ministério Público ou de qualquer interessado, logo que se mostre inconveniente a sua permanência no cargo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 48591,
+        "end": 48797
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

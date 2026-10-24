@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1323.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1323",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "1 - Aquele que encontrar animal ou coisa móvel perdida e souber a quem pertence deve restituir o animal ou a coisa a seu dono ou avisá-lo do achado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 574633,
+        "end": 574781
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

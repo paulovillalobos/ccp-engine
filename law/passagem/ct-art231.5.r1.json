@@ -1,0 +1,23 @@
+{
+  "id": "ct:art231.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art231",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "5 - A violação do disposto nos números anteriores confere ao trabalhador, por cada dia em que tenha prestado actividade fora do horário de trabalho, o direito a retribuição correspondente a duas horas de trabalho suplementar.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 327989,
+        "end": 328214
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

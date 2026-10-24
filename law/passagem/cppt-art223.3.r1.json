@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art223.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art223",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2025-01-14",
+      "text": "3 - A penhora de depósito existente em instituição legalmente autorizada a recebê-lo é realizada mediante notificação efetuada por transmissão eletrónica de dados, para o domicílio fiscal eletrónico da depositária, na respetiva área reservada do Portal das Finanças ou na área reservada da Segurança Social Direta, com expressa menção do processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 275063,
+        "end": 275410
+      },
+      "valid_from": "2025-01-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

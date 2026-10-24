@@ -1,0 +1,23 @@
+{
+  "id": "csc:art240.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art240",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - Um sócio pode exonerar-se da sociedade nos casos previstos na lei e no contrato e ainda quando, contra o voto expresso daquele:\na) A sociedade deliberar um aumento de capital a subscrever total ou parcialmente por terceiros, a mudança do objecto social, a prorrogação da sociedade, a transferência da sede para o estrangeiro, o regresso à actividade da sociedade dissolvida;\nb) Havendo justa causa de exclusão de um sócio, a sociedade não deliberar excluí-lo ou não promover a sua exclusão judicial.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 373196,
+        "end": 373699
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

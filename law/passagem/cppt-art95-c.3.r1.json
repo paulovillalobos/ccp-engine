@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art95-c.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art95-c",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-01-01",
+      "text": "3 - O prazo máximo de decisão do pedido é de 15 dias.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 124901,
+        "end": 124954
+      },
+      "valid_from": "2009-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

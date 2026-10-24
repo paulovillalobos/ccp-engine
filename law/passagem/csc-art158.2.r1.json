@@ -1,0 +1,23 @@
+{
+  "id": "csc:art158.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art158",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Os liquidatários cuja responsabilidade tenha sido efectivada, nos termos do número anterior, gozam de direito de regresso contra os antigos sócios, salvo se tiverem agido com dolo.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 291565,
+        "end": 291749
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

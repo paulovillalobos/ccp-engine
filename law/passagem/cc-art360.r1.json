@@ -1,0 +1,23 @@
+{
+  "id": "cc:art360",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 360.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 360.º\n(Indivisibilidade da confissão)\nSe a declaração confessória, judicial ou extrajudicial, for acompanhada da narração de outros factos ou circunstâncias tendentes a infirmar a eficácia do facto confessado ou a modificar ou extinguir os seus efeitos, a parte que dela quiser aproveitar-se como prova plena tem de aceitar também como verdadeiros os outros factos ou circunstâncias, salvo se provar a sua inexactidão.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 165236,
+        "end": 165661
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

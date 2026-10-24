@@ -1,0 +1,23 @@
+{
+  "id": "cp:art59.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art59",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "1 - A prestação de trabalho a favor da comunidade pode ser provisoriamente suspensa por motivo grave de ordem médica, familiar, profissional, social ou outra, não podendo, no entanto, o tempo de execução da pena ultrapassar 30 meses.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 121858,
+        "end": 122091
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art26.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art26",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "3 - No caso de remessa de petições ou outros documentos dirigidos à administração tributária por telefax ou por via eletrónica, considera-se que a mesma foi efetuada na data de emissão, servindo de prova, respetivamente, a cópia do aviso de onde conste a menção de que a mensagem foi enviada com sucesso, bem como a data, hora e número de telefax do recetor ou o extrato da mensagem efetuado pelo funcionário, o qual será incluído no processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 36283,
+        "end": 36726
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

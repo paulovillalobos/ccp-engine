@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1799.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1799",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Se dentro dos trezentos dias anteriores ao nascimento tiver sido interrompida ou completada outra gravidez, não são considerados para a determinação do momento da concepção os dias que tiverem decorrido até à interrupção da gravidez ou ao parto.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 829181,
+        "end": 829429
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

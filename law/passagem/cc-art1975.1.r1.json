@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1975.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1975",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "1 - Enquanto subsistir uma adoção, não pode constituir-se outra quanto ao mesmo adotado, exceto se os adotantes forem casados um com o outro.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 948268,
+        "end": 948409
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

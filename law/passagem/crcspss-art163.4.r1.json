@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art163.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art163",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - A base de incidência contributiva é fixada anualmente em Outubro e produz efeitos nos 12 meses seguintes.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 104635,
+        "end": 104744
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

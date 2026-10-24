@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art225.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art225",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - A penhora de parte social ou de quota em sociedade será feita mediante auto em que se especificará o objecto da penhora e o valor resultante do último balanço, nomeando-se depositário um dos administradores, directores ou gerentes.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 281355,
+        "end": 281590
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

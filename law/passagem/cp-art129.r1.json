@@ -1,0 +1,23 @@
+{
+  "id": "cp:art129",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-vi",
+  "kind": "artigo",
+  "label": "Artigo 129.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 129.º\nResponsabilidade civil emergente de crime\nA indemnização de perdas e danos emergentes de crime é regulada pela lei civil.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 209655,
+        "end": 209789
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

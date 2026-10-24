@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1916.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1916",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-11-30",
+      "text": "2. O levantamento pode ser pedido pelo Ministério Público, a todo o tempo, ou por qualquer dos pais, passado um ano sobre o trânsito em julgado da sentença de inibição ou da que houver desatendido outro pedido de levantamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 915612,
+        "end": 915838
+      },
+      "valid_from": "2008-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art102.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art102",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "5 - Os prazos a observar são os seguintes:\na) 20 dias para a contestação e para as alegações, quando estas tenham lugar;\nb) 10 dias para a decisão do juiz ou relator, ou para este submeter o processo a julgamento;\nc) 5 dias para os restantes casos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 155143,
+        "end": 155391
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

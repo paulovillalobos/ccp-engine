@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:parte-ii.titulo-i.capitulo-ii.seccao-i.subseccao-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-ii.seccao-i",
+  "kind": "secao",
+  "label": "SUBSECÇÃO II",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "SUBSECÇÃO II\nTrabalhadores no domicílio",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 52050,
+        "end": 52089
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

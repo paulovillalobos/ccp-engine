@@ -1,0 +1,23 @@
+{
+  "id": "csc:art387.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art387",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "3 - A assembleia só pode deliberar suspender a mesma sessão duas vezes.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 556934,
+        "end": 557005
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

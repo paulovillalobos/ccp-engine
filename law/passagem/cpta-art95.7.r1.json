@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art95.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art95",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - Quando, tendo sido formulado pedido de indemnização por danos, do processo não resultem os elementos necessários à liquidação do montante da indemnização devida, terá lugar uma fase complementar de audição das partes, por 10 dias cada, e eventual realização de diligências complementares, destinada a permitir essa liquidação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 146994,
+        "end": 147324
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

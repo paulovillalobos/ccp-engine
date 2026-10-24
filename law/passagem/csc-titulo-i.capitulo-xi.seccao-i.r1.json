@@ -1,0 +1,23 @@
+{
+  "id": "csc:titulo-i.capitulo-xi.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:titulo-i.capitulo-xi",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "Secção I\nTransformação interna",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 244422,
+        "end": 244452
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

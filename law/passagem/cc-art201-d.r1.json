@@ -1,0 +1,23 @@
+{
+  "id": "cc:art201-d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i-a",
+  "kind": "artigo",
+  "label": "Artigo 201.º-D",
+  "versions": [
+    {
+      "version": "2015-05-01",
+      "text": "Artigo 201.º-D\nRegime subsidiário\nNa ausência de lei especial, são aplicáveis subsidiariamente aos animais as disposições relativas às coisas, desde que não sejam incompatíveis com a sua natureza.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 103790,
+        "end": 103986
+      },
+      "valid_from": "2015-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

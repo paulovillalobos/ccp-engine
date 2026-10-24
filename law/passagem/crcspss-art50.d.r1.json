@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art50.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art50",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "d) Encargos com políticas activas de emprego e valorização profissional.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 37860,
+        "end": 37932
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

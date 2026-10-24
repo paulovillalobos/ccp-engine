@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "2 - Apresentado o requerimento, o órgão da execução fiscal enviará ao dirigente máximo do serviço, no prazo de 10 dias, cópia do requerimento, bem como o resumo do processo e dos encargos que incidam sobre os bens, com conhecimento, no mesmo prazo, ao imediato superior hierárquico, quando exista.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 251208,
+        "end": 251505
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

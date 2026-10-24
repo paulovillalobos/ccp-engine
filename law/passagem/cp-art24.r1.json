@@ -1,0 +1,23 @@
+{
+  "id": "cp:art24",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 24.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 24.º\nDesistência\n1 - A tentativa deixa de ser punível quando o agente voluntariamente desistir de prosseguir na execução do crime, ou impedir a consumação, ou, não obstante a consumação, impedir a verificação do resultado não compreendido no tipo de crime.\n2 - Quando a consumação ou a verificação do resultado forem impedidas por facto independente da conduta do desistente, a tentativa não é punível se este se esforçar seriamente por evitar uma ou outra.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 92767,
+        "end": 93231
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

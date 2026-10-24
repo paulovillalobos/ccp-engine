@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art150.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art150",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Na falta de designação referida no número anterior, a instauração e os atos da execução são praticados no órgão periférico regional da área do domicílio ou sede do devedor.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 179895,
+        "end": 180071
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

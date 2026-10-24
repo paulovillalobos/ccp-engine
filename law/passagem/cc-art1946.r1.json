@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1946",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-iii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1946.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1946.º\n(Direito do tutor a ser indemnizado)\n1. Serão abonadas ao tutor as despesas que legalmente haja feito, ainda que delas, sem culpa sua, nenhum proveito tenha provindo ao menor.\n2. O saldo a favor do tutor é satisfeito pelos primeiros rendimentos do menor; ocorrendo, porém, despesas urgentes, de forma que o tutor se não possa inteirar, vence juros o saldo, se não se prover de outro modo ao pronto pagamento da dívida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 935902,
+        "end": 936334
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

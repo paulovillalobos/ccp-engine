@@ -1,0 +1,23 @@
+{
+  "id": "csc:art385.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art385",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - Um accionista que disponha de mais de um voto não pode fraccionar os seus votos para votar em sentidos diversos sobre a mesma proposta ou para deixar de votar com todas as suas acções providas de direito de voto.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 554367,
+        "end": 554583
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

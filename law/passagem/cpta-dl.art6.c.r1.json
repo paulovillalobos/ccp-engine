@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art6.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art6",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "c) O Decreto-Lei n.º 41234, de 20 de Agosto de 1957;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 5719,
+        "end": 5771
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

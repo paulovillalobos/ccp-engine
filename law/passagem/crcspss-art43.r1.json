@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art43",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-i.seccao-iii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 43.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 43.º\nPagamento das contribuições e das quotizações\nO pagamento das contribuições e das quotizações é mensal e é efectuado do dia 10 até ao dia 20 do mês seguinte àquele a que as contribuições e as quotizações dizem respeito.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 30103,
+        "end": 30334
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

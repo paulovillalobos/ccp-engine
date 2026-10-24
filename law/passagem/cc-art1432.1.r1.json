@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1432.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1432",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-04-10",
+      "text": "1 - A assembleia é convocada por meio de carta registada, enviada com 10 dias de antecedência, ou mediante aviso convocatório feito com a mesma antecedência, desde que haja recibo de recepção assinado pelos condóminos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 640620,
+        "end": 640838
+      },
+      "valid_from": "2022-04-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

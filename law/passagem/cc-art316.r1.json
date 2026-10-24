@@ -1,0 +1,23 @@
+{
+  "id": "cc:art316",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 316.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 316.º\n(Prescrição de seis meses)\nPrescrevem no prazo de seis meses os créditos de estabelecimentos de alojamento, comidas ou bebidas, pelo alojamento, comidas ou bebidas que forneçam, sem prejuízo do disposto na alínea a) do artigo seguinte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 145915,
+        "end": 146163
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art125.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art125",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os beneficiários referidos no artigo 122.º podem optar por um âmbito de protecção material que inclui a doença, parentalidade, doenças profissionais, invalidez, velhice e morte.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 79609,
+        "end": 79790
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

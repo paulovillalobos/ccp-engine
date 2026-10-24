@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art95-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art95-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-01-01",
+      "text": "2 - O pedido de correcção de erros é deduzido no prazo de 10 dias posteriores ao conhecimento efectivo pelo contribuinte do acto lesivo em causa.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 123987,
+        "end": 124132
+      },
+      "valid_from": "2009-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

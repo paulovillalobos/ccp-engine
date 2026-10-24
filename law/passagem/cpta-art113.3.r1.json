@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art113.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art113",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Quando requerida a adoção de providências antes de proposta a causa principal, o processo é apensado aos autos logo que aquela seja intentada.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 170910,
+        "end": 171056
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

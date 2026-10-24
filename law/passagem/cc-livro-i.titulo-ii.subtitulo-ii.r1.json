@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-i.titulo-ii.subtitulo-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii",
+  "kind": "titulo",
+  "label": "Subtítulo II",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subtítulo II\nDas coisas",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 104129,
+        "end": 104152
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

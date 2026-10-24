@@ -1,0 +1,23 @@
+{
+  "id": "ct:art182.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art182",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - A duração do contrato de trabalho temporário a termo certo, incluindo renovações, não pode exceder dois anos, ou seis ou 12 meses quando aquele seja celebrado, respectivamente, em caso de vacatura de posto de trabalho quando decorra processo de recrutamento para o seu preenchimento ou de acréscimo excepcional de actividade da empresa.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 261080,
+        "end": 261420
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

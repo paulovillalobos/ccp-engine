@@ -1,0 +1,23 @@
+{
+  "id": "cc:art239",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 239.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 239.º\n(Integração)\nNa falta de disposição especial, a declaração negocial deve ser integrada de harmonia com a vontade que as partes teriam tido se houvessem previsto o ponto omisso, ou de acordo com os ditames da boa fé, quando outra seja a solução por eles imposta.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 116988,
+        "end": 117262
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

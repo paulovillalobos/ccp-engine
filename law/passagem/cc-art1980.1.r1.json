@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1980.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1980",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - Podem ser adotadas as crianças:\na) Que tenham sido confiadas ao adotante mediante confiança administrativa ou medida de promoção e proteção de confiança com vista a futura adoção;\nb) Filhas do cônjuge do adotante.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 955002,
+        "end": 955219
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

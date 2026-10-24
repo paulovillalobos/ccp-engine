@@ -1,0 +1,23 @@
+{
+  "id": "cc:art253",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 253.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 253.º\n(Dolo)\n1. Entende-se por dolo qualquer sugestão ou artifício que alguém empregue com a intenção ou consciência de induzir ou manter em erro o autor da declaração, bem como a dissimulação, pelo declaratário ou terceiro, do erro do declarante.\n2. Não constituem dolo ilícito as sugestões ou artifícios usuais, considerados legítimos segundo as concepções dominantes no comércio jurídico, nem a dissimulação do erro, quando nenhum dever de elucidar o declarante resulte da lei, de estipulação negocial ou daquelas concepções.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 121494,
+        "end": 122029
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "9 - [Revogado.]",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 57287,
+        "end": 57302
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art84.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art84",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - O regime previsto na presente subsecção aplica-se aos trabalhadores a que se refere o número anterior até ao momento em que completem a idade normal de acesso à pensão por velhice acrescida do número de meses necessários à compensação do factor de sustentabilidade nos termos previstos no Decreto-Lei n.º 187/2007, de 10 de Maio, alterado pela Lei n.º 64-A/2008, de 31 de Dezembro, salvo se até essa data ocorrer a extinção do acordo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 57178,
+        "end": 57616
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art150.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art150",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - A instauração e os actos da execução são praticados no órgão da administração tributária designado, mediante despacho, pelo dirigente máximo do serviço.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 179738,
+        "end": 179894
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

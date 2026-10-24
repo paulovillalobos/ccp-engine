@@ -1,0 +1,23 @@
+{
+  "id": "csc:art349.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art349",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - O balanço utilizado para o cálculo referido no número anterior deve ser um dos seguintes e, existindo mais do que um, deve ser o mais recente:\na) O balanço do último exercício, desde que tenha sido encerrado nos seis meses anteriores à data da emissão de obrigações;\nb) Às sociedades que apresentem notação de risco da emissão ou do programa da emissão ou da sociedade, neste caso para uma espécie de crédito que inclua as obrigações a emitir, atribuída por sociedade de notação de risco registada na Autoridade Europeia dos Valores Mobiliários e dos Mercados (ESMA) ou reconhecida como Agência de Notação Externa pelo Banco de Portugal;\nc) O balanço do primeiro semestre do exercício em curso à data da emissão de obrigações, caso a sociedade esteja obrigada a divulgar contas semestrais nos termos do n.º 1 do artigo 246.º do Código dos Valores Mobiliários.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 497664,
+        "end": 498527
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

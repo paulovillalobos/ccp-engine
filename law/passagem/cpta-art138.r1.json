@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art138",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-v",
+  "kind": "artigo",
+  "label": "Artigo 138.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 138.º\nDecisão provisória\nSe da inacção das autoridades em conflito puder resultar grave prejuízo, o relator designa a autoridade que deve exercer provisoriamente a competência em tudo o que seja urgente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 200935,
+        "end": 201145
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

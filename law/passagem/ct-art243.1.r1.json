@@ -1,0 +1,23 @@
+{
+  "id": "ct:art243.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art243",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O empregador pode alterar o período de férias já marcado ou interromper as já iniciadas por exigências imperiosas do funcionamento da empresa, tendo o trabalhador direito a indemnização pelos prejuízos sofridos por deixar de gozar as férias no período marcado.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 340480,
+        "end": 340744
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

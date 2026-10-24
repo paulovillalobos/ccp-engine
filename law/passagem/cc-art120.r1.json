@@ -1,0 +1,23 @@
+{
+  "id": "cc:art120",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 120.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 120.º\n(Direitos que sobrevierem ao ausente)\nOs direitos que eventualmente sobrevierem ao ausente desde que desapareceu sem dele haver notícias e que sejam dependentes da condição da sua existência passam às pessoas que seriam chamadas à titularidade deles se o ausente fosse falecido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 56226,
+        "end": 56517
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

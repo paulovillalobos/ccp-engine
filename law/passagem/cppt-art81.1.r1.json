@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art81.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art81",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - O remanescente do produto de quaisquer bens vendidos ou liquidados em processo de execução ou das importâncias nele penhoradas poderá ser aplicado no prazo de 30 dias após a conclusão do processo para o pagamento de quaisquer dívidas tributárias de que o executado seja devedor à Fazenda Nacional e que não tenham sido reclamadas nem impugnadas.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 101879,
+        "end": 102228
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

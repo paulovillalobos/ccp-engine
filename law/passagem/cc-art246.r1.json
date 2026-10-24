@@ -1,0 +1,23 @@
+{
+  "id": "cc:art246",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 246.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 246.º\n(Falta de consciência da declaração e coacção física)\nA declaração não produz qualquer efeito, se o declarante não tiver a consciência de fazer uma declaração negocial ou for coagido pela força física a emiti-la; mas, se a falta de consciência da declaração foi devida a culpa, fica o declarante obrigado a indemnizar o declaratário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 119433,
+        "end": 119779
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

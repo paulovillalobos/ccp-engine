@@ -1,0 +1,23 @@
+{
+  "id": "cp:art30.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art30",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-10-03",
+      "text": "3 - O disposto no número anterior não abrange os crimes praticados contra bens eminentemente pessoais.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 95638,
+        "end": 95740
+      },
+      "valid_from": "2010-10-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

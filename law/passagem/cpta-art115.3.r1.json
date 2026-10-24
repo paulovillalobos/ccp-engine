@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art115.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art115",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Se a certidão não for passada, o interessado, no requerimento cautelar, junta prova de que a requereu, indica a identidade e residência dos contrainteressados que conheça e requer a intimação judicial da entidade demandada para fornecer ao tribunal a identidade e residência dos contrainteressados em falta.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 174115,
+        "end": 174426
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

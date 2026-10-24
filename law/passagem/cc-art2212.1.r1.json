@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2212.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2212",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o militar, ou o civil a ele equiparado, souber e puder escrever, pode fazer o testamento por seu próprio punho.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1054991,
+        "end": 1055108
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

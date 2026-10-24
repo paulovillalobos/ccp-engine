@@ -1,0 +1,23 @@
+{
+  "id": "ct:art185.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art185",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "7 - A retribuição do período de férias e os subsídios de férias e de Natal de trabalhador contratado por tempo indeterminado para cedência temporária são calculados com base na média das retribuições auferidas nos últimos 12 meses, ou no período de execução do contrato se este for inferior, excluindo as compensações referidas no artigo 184.º e os períodos correspondentes.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 266346,
+        "end": 266720
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

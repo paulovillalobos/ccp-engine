@@ -1,0 +1,23 @@
+{
+  "id": "csc:art322.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art322",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1997-01-05",
+      "text": "3 - Os contratos ou actos unilaterais da sociedade que violem o disposto no n.º 1 ou na parte final do n.º 2 são nulos.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 469410,
+        "end": 469529
+      },
+      "valid_from": "1997-01-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

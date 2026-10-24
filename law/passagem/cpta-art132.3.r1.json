@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art132.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art132",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - A autoridade requerida e os contrainteressados dispõem do prazo de sete dias para responderem.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 195620,
+        "end": 195718
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

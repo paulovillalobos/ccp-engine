@@ -1,0 +1,23 @@
+{
+  "id": "csc:art52.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art52",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A declaração de nulidade e a anulação do contrato de sociedade determinam a entrada da sociedade em liquidação, nos termos do artigo 165.º, devendo este efeito ser mencionado na sentença.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 79932,
+        "end": 80123
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

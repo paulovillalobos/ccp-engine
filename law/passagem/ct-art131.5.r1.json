@@ -1,0 +1,23 @@
+{
+  "id": "ct:art131.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art131",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - O empregador deve assegurar, em cada ano, formação contínua a pelo menos 10 % dos trabalhadores da empresa.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 192953,
+        "end": 193064
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

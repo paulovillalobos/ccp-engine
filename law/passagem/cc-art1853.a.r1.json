@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1853.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1853",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "a) Por declaração prestada perante o funcionário do registo civil;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 863306,
+        "end": 863372
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-ii.capitulo-iii.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-iii",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Secção I\nArticulados",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 102184,
+        "end": 102204
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

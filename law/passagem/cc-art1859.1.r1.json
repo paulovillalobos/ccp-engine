@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1859.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1859",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. A perfilhação que não corresponda à verdade é impugnável em juízo mesmo depois da morte do perfilhado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 866826,
+        "end": 866931
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

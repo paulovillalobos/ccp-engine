@@ -1,0 +1,23 @@
+{
+  "id": "cc:art192.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art192",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-07-14",
+      "text": "1. As fundações extinguem-se:\na) Pelo decurso do prazo, se tiverem sido constituídas temporàriamente;\nb) Pela verificação de qualquer outra causa extintiva prevista no acto de instituição;\nc) Com o encerramento do processo de insolvência, se não for admissível a continuidade da fundação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 96824,
+        "end": 97112
+      },
+      "valid_from": "2012-07-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

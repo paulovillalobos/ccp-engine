@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art96",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-iii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 96.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 96.º\nDiferimento do acórdão\nNos tribunais superiores, quando não possa ser lavrado acórdão na sessão em que seja julgado o processo, o resultado é anotado, datado e assinado pelos juízes vencedores e vencidos e o juiz que tire o acórdão fica com o processo para lavrar a decisão respetiva que, sem embargo de o resultado ser logo publicado, será lida em conferência na sessão seguinte e aí datada e assinada pelos juízes que nela tenham intervindo, se estiverem presentes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 147496,
+        "end": 147975
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

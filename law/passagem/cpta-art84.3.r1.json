@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art84.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art84",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - Quando o processo administrativo se encontre já apensado a outros autos, a entidade demandada deve dar conhecimento do facto ao tribunal, indicando a que autos se refere.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 117261,
+        "end": 117435
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

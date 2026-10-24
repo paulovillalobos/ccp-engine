@@ -1,0 +1,23 @@
+{
+  "id": "cp:art132.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art132",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-18",
+      "text": "1 - Se a morte for produzida em circunstâncias que revelem especial censurabilidade ou perversidade, o agente é punido com pena de prisão de 12 a 25 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 211212,
+        "end": 211366
+      },
+      "valid_from": "2025-04-18",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

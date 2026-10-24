@@ -1,0 +1,23 @@
+{
+  "id": "cp:art115",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iv",
+  "kind": "artigo",
+  "label": "Artigo 115.º",
+  "versions": [
+    {
+      "version": "2023-10-01",
+      "text": "Artigo 115.º\nExtinção do direito de queixa\n1 - O direito de queixa extingue-se no prazo de seis meses a contar da data em que o titular tiver tido conhecimento do facto e dos seus autores, ou a partir da morte do ofendido, ou da data em que ele se tiver tornado incapaz, exceto no caso do direito de queixa previsto no n.º 1 do artigo 178.º, que se extingue no prazo de um ano.\n2 - O direito de queixa previsto no n.º 6 do artigo 113.º extingue-se no prazo de seis meses a contar da data em que o ofendido perfizer 18 anos.\n3 - O não exercício tempestivo do direito de queixa relativamente a um dos comparticipantes no crime aproveita aos restantes, nos casos em que também estes não puderem ser perseguidos sem queixa.\n4 - Sendo vários os titulares do direito de queixa, o prazo conta-se autonomamente para cada um deles.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 194973,
+        "end": 195795
+      },
+      "valid_from": "2023-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

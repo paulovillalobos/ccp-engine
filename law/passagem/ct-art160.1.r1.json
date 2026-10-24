@@ -1,0 +1,23 @@
+{
+  "id": "ct:art160.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art160",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "1 - Durante o período de inatividade, o trabalhador pode exercer outra atividade, devendo informar o empregador desse facto.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 221020,
+        "end": 221144
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

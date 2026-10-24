@@ -1,0 +1,23 @@
+{
+  "id": "cp:art37",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 37.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 37.º\nObediência indevida desculpante\nAge sem culpa o funcionário que cumpre uma ordem sem conhecer que ela conduz à prática de um crime, não sendo isso evidente no quadro das circunstâncias por ele representadas.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 98458,
+        "end": 98677
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1920-a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 1920.º-A",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1920.º-A\n(Revogação ou alteração de decisões)\nAs decisões que decretem providências ao abrigo do disposto nos artigos 1918.º a 1920.º podem ser revogadas ou alteradas a todo o tempo pelo tribunal que as proferiu, a requerimento do Ministério Público ou de qualquer dos pais.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 919113,
+        "end": 919394
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art141.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art141",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Ainda que um ato administrativo tenha sido anulado com fundamento na verificação de diferentes causas de invalidade, a sentença pode ser impugnada com base na inexistência de apenas uma dessas causas de invalidade, na medida em que do reconhecimento da inexistência dessa causa de invalidade dependa a possibilidade de o ato anulado vir a ser renovado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 203028,
+        "end": 203384
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

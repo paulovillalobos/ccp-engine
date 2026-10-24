@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.10",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "10 - As notificações efetuadas para o domicílio fiscal eletrónico consideram-se efetuadas no décimo quinto dia posterior ao registo de disponibilização daquelas, sendo que a contagem só se inicia no primeiro dia útil seguinte, no sistema de suporte ao serviço público de notificações eletrónicas associado à morada única digital ou na caixa postal eletrónica da pessoa a notificar.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 57303,
+        "end": 57684
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art45-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art45-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - O disposto no artigo anterior é aplicável quando, tendo sido deduzido pedido respeitante à invalidade de contrato por violação das regras relativas ao respetivo procedimento de formação, o tribunal:\na) Verifique que já não é possível reinstruir o procedimento pré-contratual, por entretanto ter sido celebrado e executado o contrato;\nb) Proceda, segundo o disposto na lei substantiva, ao afastamento da invalidade do contrato, em resultado da ponderação dos interesses públicos e privados em presença.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 59908,
+        "end": 60413
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

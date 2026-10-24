@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art134.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art134",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2003-02-22",
+      "text": "1 - Havendo justo receio de vir a tornar-se impossível ou muito difícil o depoimento de certas pessoas ou a verificação de certos factos por meio de prova pericial ou por inspecção, pode o depoimento, o arbitramento ou a inspecção realizar-se antes de intentado o processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 198001,
+        "end": 198274
+      },
+      "valid_from": "2003-02-22",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

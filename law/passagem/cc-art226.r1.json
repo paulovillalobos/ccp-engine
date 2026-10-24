@@ -1,0 +1,23 @@
+{
+  "id": "cc:art226",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 226.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 226.º\n(Morte, incapacidade ou indisponibilidade superveniente)\n1. A morte ou incapacidade do declarante, posterior à emissão da declaração, não prejudica a eficácia desta, salvo se o contrário resultar da própria declaração.\n2. A declaração é ineficaz, se o declarante, enquanto o destinatário não a receber ou dela não tiver conhecimento, perder o poder de disposição do direito a que ela se refere.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 112077,
+        "end": 112484
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

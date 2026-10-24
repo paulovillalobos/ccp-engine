@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art53.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art53",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Os atos jurídicos de execução de atos administrativos só são impugnáveis por vícios próprios, na medida em que tenham um conteúdo decisório de caráter inovador.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 70572,
+        "end": 70736
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

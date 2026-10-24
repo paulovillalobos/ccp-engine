@@ -1,0 +1,23 @@
+{
+  "id": "cc:art723",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 723.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 723.º\n(Direitos dos credores quanto à expurgação)\n1. A sentença que declarar os bens livres de hipotecas em consequência de expurgação não será proferida sem se mostrar que foram citados todos os credores hipotecários.\n2. O credor que, tendo a hipoteca registada, não for citado nem comparecer espontâneamente em juízo não perde os seus direitos de credor hipotecário, seja qual for a sentença proferida em relação aos outros credores.\n3. Se o requerente da expurgação não depositar a importância devida, nos termos da lei de processo, fica o requerimento sem efeito e não pode ser renovado, sem prejuízo da responsabilidade do requerente pelos danos causados aos credores.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 310088,
+        "end": 310768
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1002",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-iii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 1002.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1002.º\n(Exoneração)\n1. Todo o sócio tem o direito de se exonerar da sociedade, se a duração desta não tiver sido fixada no contrato; não se considera, para este efeito, fixada no contrato a duração da sociedade, se esta tiver sido constituída por toda a vida de um sócio ou por período superior a trinta anos.\n2. Havendo fixação de prazo, o direito de exoneração só pode ser exercido nas condições previstas no contrato ou quando ocorra justa causa.\n3. A exoneração só se torna efectiva no fim do ano social em que é feita a comunicação respectiva, mas nunca antes de decorridos três meses sobre esta comunicação.\n4. As causas legais de exoneração não podem ser suprimidas ou modificadas; a supressão ou modificação das causas contratuais depende do acordo de todos os sócios.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 418067,
+        "end": 418850
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

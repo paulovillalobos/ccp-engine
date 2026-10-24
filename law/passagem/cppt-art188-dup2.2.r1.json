@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art188-dup2.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art188-dup2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "2 - Serão autuadas conjuntamente todas as certidões de dívidas que se encontrem no órgão da execução fiscal à data da instauração e que tenham sido extraídas contra o mesmo devedor.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 217452,
+        "end": 217633
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

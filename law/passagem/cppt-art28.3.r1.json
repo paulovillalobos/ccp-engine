@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art28.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art28",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "3 - Apenas em caso de impossibilidade de processamento dos índices por meios informáticos, poderão estes ser processados manualmente.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 39631,
+        "end": 39764
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

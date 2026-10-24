@@ -1,0 +1,23 @@
+{
+  "id": "cp:art124.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art124",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - As medidas de segurança prescrevem no prazo de 15 ou de 10 anos, consoante se trate de medidas de segurança privativas ou não privativas da liberdade.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 206440,
+        "end": 206594
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

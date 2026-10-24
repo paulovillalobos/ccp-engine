@@ -1,0 +1,23 @@
+{
+  "id": "cp:art49.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art49",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "2 - O condenado pode a todo o tempo evitar, total ou parcialmente, a execução da prisão subsidiária, pagando, no todo ou em parte, a multa a que foi condenado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 110240,
+        "end": 110399
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art130.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art130",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "1 - As sociedades constituídas segundo um dos tipos enumerados no artigo 1.º, n.º 2, podem adoptar posteriormente um outro desses tipos, salvo proibição da lei ou do contrato.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 244488,
+        "end": 244663
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

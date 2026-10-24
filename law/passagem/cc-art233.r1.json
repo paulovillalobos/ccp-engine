@@ -1,0 +1,23 @@
+{
+  "id": "cc:art233",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 233.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 233.º\n(Aceitação com modificações)\nA aceitação com aditamentos, limitações ou outras modificações importa rejeição da proposta; mas, se a modificação for suficientemente precisa, equivale a nova proposta, contanto que outro sentido não resulte da declaração.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 115038,
+        "end": 115303
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

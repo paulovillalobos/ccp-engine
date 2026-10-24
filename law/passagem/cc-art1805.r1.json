@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1805",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1805.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1805.º\n(Nascimento ocorrido há um ano ou mais)\n1. No caso de declaração de nascimento ocorrido há um ano ou mais, a maternidade indicada considera-se estabelecida se a mãe for o declarante, estiver presente no acto ou nele se achar representada por procurador com poderes especiais.\n2. Fora dos casos previstos no número anterior, a pessoa indicada como mãe será notificada pessoalmente para, no prazo de quinze dias, vir declarar se confirma a maternidade, sob a cominação de o filho ser havido como seu; o facto da notificação e a confirmação são averbados ao registo do nascimento.\n3. Se a pretensa mãe negar a maternidade ou não puder ser notificada, a menção da maternidade fica sem efeito.\n4. Das certidões extraídas do registo de nascimento não pode constar qualquer referência à menção que tenha ficado sem efeito nem aos averbamentos que lhe respeitem.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 832115,
+        "end": 832983
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

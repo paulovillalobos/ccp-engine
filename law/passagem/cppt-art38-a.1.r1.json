@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art38-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art38-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "1 - As notificações e citações são efetuadas por transmissão eletrónica de dados, na respetiva área reservada no Portal das Finanças, relativamente aos sujeitos passivos:\na) Que sendo obrigados a possuir caixa postal eletrónica, nos termos do n.º 12 do artigo 19.º da lei geral tributária, não a tenham comunicado à administração tributária no prazo legal para o efeito;\nb) Residentes em Estado fora da União Europeia ou do Espaço Económico Europeu, que não tenham designado representante com residência em território nacional;\nc) Que não sendo obrigados a possuir e a comunicar a caixa postal eletrónica, optem pelas notificações e citações eletrónicas no Portal das Finanças;\nd) Que embora possuam caixa postal eletrónica e a tenham comunicado à administração tributária, optem pelas notificações e citações eletrónicas no Portal das Finanças;\ne) Não residentes de, ou residentes que se ausentem para, Estado-Membro da União Europeia ou do Espaço Económico Europeu, cuja designação de representante seja meramente facultativa, optem pelas notificações e citações eletrónicas no Portal das Finanças.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 52195,
+        "end": 53295
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

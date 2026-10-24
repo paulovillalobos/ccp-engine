@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art8.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art8",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - As entidades administrativas têm o dever de remeter ao tribunal, em tempo oportuno, o processo administrativo e demais documentos respeitantes à matéria do litígio, bem como o dever de dar conhecimento, ao longo do processo, de superveniências resultantes da sua atuação, para que a respetiva existência seja comunicada aos demais intervenientes processuais.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 17183,
+        "end": 17545
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

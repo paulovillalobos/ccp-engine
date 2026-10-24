@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art111.o",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art111",
+  "kind": "alinea",
+  "label": "o)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "o) Condomínios de prédios urbanos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 70917,
+        "end": 70951
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

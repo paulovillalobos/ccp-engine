@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art201.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art201",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2002-01-01",
+      "text": "1 - Nos processos de execução fiscal o executado ou terceiro podem, no prazo de oposição, requerer ao ministro ou órgão executivo de quem dependa a administração tributária legalmente competente para a liquidação e cobrança da dívida a extinção da dívida exequenda e acrescido, com a dação em pagamento de bens móveis ou imóveis, nas condições seguintes:\na) Descrição pormenorizada dos bens dados em pagamento;\nb) Os bens dados em pagamento não terem valor superior à dívida exequenda e acrescido, salvo os casos de se demonstrar a possibilidade de imediata utilização dos referidos bens para fins de interesse público ou social, ou de a dação se efectuar no âmbito do processo conducente à celebração de acordo de recuperação de créditos do Estado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 250458,
+        "end": 251207
+      },
+      "valid_from": "2002-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art95.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art95",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Nas sentenças que condenem à emissão de atos administrativos ou normas ou imponham o cumprimento de outros tipos de deveres à Administração, o tribunal tem o poder de fixar oficiosamente um prazo para o respetivo cumprimento, que, em casos justificados, pode ser prorrogado, bem como, quando tal se justifique, o poder de impor sanção pecuniária compulsória, destinada a prevenir o incumprimento, segundo o disposto no artigo 169.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 145564,
+        "end": 145999
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art88.2.i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art88.2",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) Nomes e moradas das entidades garantes da dívida e tipo e montante da garantia prestada;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 111380,
+        "end": 111471
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

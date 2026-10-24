@@ -1,0 +1,23 @@
+{
+  "id": "cc:art180",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 180.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 180.º\n(Natureza pessoal da qualidade de associado)\nSalvo disposição estatutária em contrário, a qualidade de associado não é transmissível, quer por acto entre vivos, quer por sucessão; o associado não pode incumbir outrem de exercer os seus direitos pessoais.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 87268,
+        "end": 87535
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

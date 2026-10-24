@@ -1,0 +1,23 @@
+{
+  "id": "ct:art281.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art281",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "7 - Os trabalhadores devem cumprir as prescrições de segurança e saúde no trabalho estabelecidas na lei ou em instrumentos de regulamentação colectiva de trabalho, ou determinadas pelo empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 378438,
+        "end": 378634
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art515.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art515",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "2 - Se tiver sido presente ao autor do facto, nos termos da lei ou do contrato social, requerimento de convocação de assembleia que devesse ser deferido, a pena é de multa até 360 dias.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 740297,
+        "end": 740482
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

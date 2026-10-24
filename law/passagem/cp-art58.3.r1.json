@@ -1,0 +1,23 @@
+{
+  "id": "cp:art58.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art58",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "3 - Para efeitos do disposto no n.º 1, cada dia de prisão fixado na sentença é substituído por uma hora de trabalho, no máximo de 480 horas.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 120767,
+        "end": 120907
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

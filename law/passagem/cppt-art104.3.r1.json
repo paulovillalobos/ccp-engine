@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art104.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art104",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2020-04-01",
+      "text": "3 - Quando forem cumulados pedidos para cuja apreciação sejam territorialmente competentes diversos tribunais, o autor pode escolher qualquer deles para a propositura da ação, mas se a cumulação disser respeito a pedidos entre os quais haja uma relação de dependência ou de subsidiariedade, a ação deve ser proposta no tribunal competente para apreciar o pedido principal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 138347,
+        "end": 138719
+      },
+      "valid_from": "2020-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

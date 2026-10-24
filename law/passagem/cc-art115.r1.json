@@ -1,0 +1,23 @@
+{
+  "id": "cc:art115",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 115.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 115.º\n(Efeitos)\nA declaração de morte presumida produz os mesmos efeitos que a morte, mas não dissolve o casamento, sem prejuízo do disposto no artigo seguinte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 54146,
+        "end": 54313
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

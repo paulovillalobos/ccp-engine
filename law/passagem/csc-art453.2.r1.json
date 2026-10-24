@@ -1,0 +1,23 @@
+{
+  "id": "csc:art453.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art453",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "2 - O revisor oficial de contas deve apreciar o relatório de gestão e completar o exame das contas com vista à sua certificação legal.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 668971,
+        "end": 669105
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

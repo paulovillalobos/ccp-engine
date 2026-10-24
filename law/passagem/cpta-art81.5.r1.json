@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art81.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art81",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Nos processos em que haja contrainteressados em número superior a 10, o juiz, sem prejuízo de outros meios de publicitação, pode promover a respetiva citação mediante a publicação de anúncio, com a advertência de que os interessados dispõem do prazo de 15 dias para se constituírem como contrainteressados no processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 110797,
+        "end": 111119
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

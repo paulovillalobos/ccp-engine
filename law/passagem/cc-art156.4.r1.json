@@ -1,0 +1,23 @@
+{
+  "id": "cc:art156.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art156",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "4 - O tribunal pode fazer cessar o mandato quando seja razoável presumir que a vontade do mandante seria a de o revogar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 74921,
+        "end": 75041
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

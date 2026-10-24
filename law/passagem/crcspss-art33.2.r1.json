@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art33.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art33",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A declaração referida no número anterior determina, para efeitos de acesso ou de cálculo das prestações de segurança social, a relevância dos períodos de actividade profissional não declarados que sejam anteriores ao período de tempo previsto no n.º 4 do artigo 29.º quando se verifique que:\na) Não tenha sido efectuada a comunicação prevista no artigo 29.º;\nb) Não tenha dado entrada a correspondente declaração de remunerações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 23738,
+        "end": 24171
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

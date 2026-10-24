@@ -1,0 +1,23 @@
+{
+  "id": "csc:art509.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art509",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "1 - O gerente ou administrador de sociedade que omitir ou fizer omitir por outrem atos que sejam necessários para a realização de entradas de capital é punido com pena de prisão até um 1 ano ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 732386,
+        "end": 732598
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

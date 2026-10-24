@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1675.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1675",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. O dever de assistência compreende a obrigação de prestar alimentos e a de contribuir para os encargos da vida familiar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 750421,
+        "end": 750543
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

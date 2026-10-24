@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art153.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art153",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A declaração referida no número anterior é efectuada por referência aos serviços prestados em cada trimestre do ano civil em curso e deve ser apresentada até ao dia 10 do mês seguinte ao fim do trimestre a que respeita.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 96917,
+        "end": 97140
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

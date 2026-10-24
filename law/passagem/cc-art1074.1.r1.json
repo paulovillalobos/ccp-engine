@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1074.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1074",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "1 - Cabe ao senhorio executar todas as obras de conservação, ordinárias ou extraordinárias, requeridas pelas leis vigentes ou pelo fim do contrato, salvo estipulação em contrário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 455993,
+        "end": 456172
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

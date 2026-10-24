@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art172.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art172",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - No Orçamento do Estado é anualmente inscrita uma dotação à ordem do Conselho Superior dos Tribunais Administrativos e Fiscais, afeta ao pagamento de quantias devidas a título de cumprimento de decisões jurisdicionais, a qual corresponde, no mínimo, ao montante acumulado das condenações decretadas no ano anterior e respetivos juros de mora.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 243535,
+        "end": 243880
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

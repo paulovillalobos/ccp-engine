@@ -1,0 +1,23 @@
+{
+  "id": "cp:art77.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art77",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Quando alguém tiver praticado vários crimes antes de transitar em julgado a condenação por qualquer deles é condenado numa única pena. Na medida da pena são considerados, em conjunto, os factos e a personalidade do agente.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 145326,
+        "end": 145552
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

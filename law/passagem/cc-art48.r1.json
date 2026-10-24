@@ -1,0 +1,23 @@
+{
+  "id": "cc:art48",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 48.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 48.º\n(Propriedade intelectual)\n1. Os direitos de autor são regulados pela lei do lugar da primeira publicação da obra e, não estando esta publicada, pela lei pessoal do autor, sem prejuízo do disposto em legislação especial.\n2. A propriedade industrial é regulada pela lei do país da sua criação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 27958,
+        "end": 28261
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

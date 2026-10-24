@@ -1,0 +1,23 @@
+{
+  "id": "ct:art331.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art331",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - Em caso de sanção pecuniária ou suspensão do trabalho, a indemnização não deve ser inferior a 10 vezes a importância daquela ou da retribuição perdida.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 434711,
+        "end": 434866
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art192.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art192",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "5 - O funcionário que verificar os factos previstos no número anterior passará certidão, que fará assinar pela pessoa de quem tenha recebido a informação respectiva.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 227124,
+        "end": 227289
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

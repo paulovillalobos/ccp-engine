@@ -1,0 +1,23 @@
+{
+  "id": "csc:art262.2.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art262.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "1998-11-11",
+      "text": "c) Número de trabalhadores empregados em média durante o exercício: 50.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 402702,
+        "end": 402773
+      },
+      "valid_from": "1998-11-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

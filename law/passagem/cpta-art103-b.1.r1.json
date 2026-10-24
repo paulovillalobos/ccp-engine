@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art103-b.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art103-b",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Nas ações de contencioso pré-contratual em que não se aplique ou tenha sido levantado o efeito suspensivo automático previsto no artigo anterior, o autor pode requerer ao juiz a adoção de medidas provisórias, destinadas a prevenir o risco de, no momento em que a sentença venha a ser proferida, se ter constituído uma situação de facto consumado ou já não ser possível retomar o procedimento pré-contratual para determinar quem nele seria escolhido como adjudicatário.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 159620,
+        "end": 160092
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

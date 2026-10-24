@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1077.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1077.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "a) A renda pode ser actualizada anualmente, de acordo com os coeficientes de actualização vigentes;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 458848,
+        "end": 458947
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

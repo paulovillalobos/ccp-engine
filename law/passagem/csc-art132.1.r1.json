@@ -1,0 +1,23 @@
+{
+  "id": "csc:art132.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art132",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "1 - A administração da sociedade organiza um relatório justificativo da transformação, o qual é acompanhado:\na) Do balanço do último exercício, desde que tenha sido encerrado nos seis meses anteriores à data da deliberação de transformação ou de um balanço reportado a uma data que não anteceda o 1.º dia do 3.º mês anterior à data da deliberação de transformação;\na) Do balanço da sociedade a transformar, que será ou o balanço do último exercício, devidamente aprovado, encerrado menos de seis meses antes da deliberação de transformação, ou um balanço elaborado especialmente para o efeito;\nb) Do projecto do contrato pelo qual a sociedade passará a reger-se.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 246723,
+        "end": 247385
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

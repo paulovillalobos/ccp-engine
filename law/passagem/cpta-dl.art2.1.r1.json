@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art2.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art2",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - No caso de a Comissão das Comunidades Europeias notificar o Estado Português e a entidade adjudicante de que considera existir violação clara e manifesta de disposições comunitárias em qualquer procedimento de formação de contratos, deve o Estado, no prazo de 20 dias, comunicar à Comissão que a violação foi corrigida ou responder em exposição de que constem os fundamentos pelos quais não procede à correcção.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 1155,
+        "end": 1570
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

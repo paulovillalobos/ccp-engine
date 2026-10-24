@@ -1,0 +1,23 @@
+{
+  "id": "cc:art970",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-ii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 970.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 970.º\n(Revogação da doação)\nAs doações são revogáveis por ingratidão do donatário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 404805,
+        "end": 404894
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

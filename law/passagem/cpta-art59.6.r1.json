@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art59.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art59",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "6 - O prazo para a impugnação pelo Ministério Público conta-se a partir da data da prática do ato ou da sua publicação, quando obrigatória.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 78129,
+        "end": 78268
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

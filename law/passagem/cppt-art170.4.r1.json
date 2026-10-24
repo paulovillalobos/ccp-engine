@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art170.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art170",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "4 - O pedido de dispensa de garantia será resolvido no prazo de 10 dias após a sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 197951,
+        "end": 198047
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

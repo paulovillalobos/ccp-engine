@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art133.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art133",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - A regulação provisória é decretada quando:\na) Esteja adequadamente comprovada a situação de grave carência económica;\nb) Seja de prever que o prolongamento dessa situação possa acarretar consequências graves e dificilmente reparáveis;\nc) Seja provável que a pretensão formulada ou a formular nesse processo venha a ser julgada procedente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 197353,
+        "end": 197695
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

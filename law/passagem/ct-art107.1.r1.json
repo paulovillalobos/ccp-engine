@@ -1,0 +1,23 @@
+{
+  "id": "ct:art107.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art107",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - A informação prevista no artigo anterior deve ser prestada por escrito, podendo constar de um ou de vários documentos, assinados pelo empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 166108,
+        "end": 166257
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art176.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art176",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - No contrato de sociedade em nome colectivo devem especialmente figurar:\na) A espécie e a caracterização da entrada de cada sócio, em indústria ou bens, assim como o valor atribuído aos bens;\nb) O valor atribuído à indústria com que os sócios contribuam, para o efeito da repartição de lucros e perdas;\nc) A parte de capital correspondente à entrada com bens de cada sócio.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 308265,
+        "end": 308641
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

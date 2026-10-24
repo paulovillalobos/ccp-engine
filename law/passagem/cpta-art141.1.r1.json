@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art141.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art141",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Pode interpor recurso ordinário de uma decisão jurisdicional proferida por um tribunal administrativo quem nela tenha ficado vencido e o Ministério Público, se a decisão tiver sido proferida com violação de disposições ou princípios constitucionais ou legais.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 202335,
+        "end": 202598
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

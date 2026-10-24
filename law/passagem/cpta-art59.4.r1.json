@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art59.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art59",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - A utilização de meios de impugnação administrativa suspende o prazo de impugnação contenciosa do ato administrativo, que só retoma o seu curso com a notificação da decisão proferida sobre a impugnação administrativa ou com o decurso do respetivo prazo legal, consoante o que ocorra em primeiro lugar.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 77601,
+        "end": 77905
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

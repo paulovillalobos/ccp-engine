@@ -1,0 +1,23 @@
+{
+  "id": "csc:art538.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art538",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1987-05-21",
+      "text": "1 - As quotas amortizadas anteriormente à entrada em vigor desta lei podem continuar a figurar no balanço como tais, independentemente da existência de estipulação contratual.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 763211,
+        "end": 763386
+      },
+      "valid_from": "1987-05-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

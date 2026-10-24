@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art168.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art168",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "6 - Considera-se que o trabalhador é prestador de serviços sempre que mais de 25 % do seu rendimento relevante seja resultado dessa actividade.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 109004,
+        "end": 109147
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

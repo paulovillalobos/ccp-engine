@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art143.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art143",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "5 - Sempre que as leis tributárias exijam a notificação dos actos de apreensão às pessoas referidas no número anterior, o prazo da impugnação conta-se a partir dessa notificação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 169039,
+        "end": 169217
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

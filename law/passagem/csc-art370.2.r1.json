@@ -1,0 +1,23 @@
+{
+  "id": "csc:art370.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art370",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - Fixando a deliberação da emissão apenas um momento a partir do qual o direito de conversão pode ser exercido, deve o administrador declarar por escrito, durante os meses de julho e janeiro de cada ano, o aumento resultante das conversões pedidas no decurso do semestre imediatamente anterior, salvo se as condições da emissão previrem uma periodicidade diversa, mas não superior a um ano.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 528326,
+        "end": 528718
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

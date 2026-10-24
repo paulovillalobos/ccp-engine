@@ -1,0 +1,23 @@
+{
+  "id": "ct:art142.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art142",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - Em caso de violação do disposto em qualquer dos números anteriores, o contrato considera-se celebrado pelo prazo de seis meses, contando-se neste prazo a duração de contratos anteriores celebrados ao abrigo dos mesmos preceitos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 204043,
+        "end": 204275
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

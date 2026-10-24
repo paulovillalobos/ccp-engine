@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art8.4.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art8.4",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "d) A revogação ou anulação do ato impugnado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 18089,
+        "end": 18133
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

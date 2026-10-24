@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art181.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art181",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - (Revogado).",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 206842,
+        "end": 206857
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

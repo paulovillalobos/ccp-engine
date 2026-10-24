@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art82.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art82",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "2 - Quando, por erro cometido na petição inicial, na hipótese prevista no n.º 4 do artigo 78.º, seja citado um órgão diferente daquele que praticou ou devia ter emitido a norma ou o ato administrativo, o órgão citado deve dar imediato conhecimento àquele que o deveria ter sido, beneficiando, nesse caso, a entidade demandada de um prazo suplementar de 15 dias para apresentar a contestação e enviar o processo administrativo, quando exista.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 112257,
+        "end": 112698
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

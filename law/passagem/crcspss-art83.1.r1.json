@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art83.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art83",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A taxa contributiva relativa aos trabalhadores em regime de trabalho de muito curta duração é de 26,1 % da responsabilidade das entidades empregadoras.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 56488,
+        "end": 56643
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art360.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art360",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - Na falta das entidades referidas no n.º 1:\na) O empregador comunica a intenção de proceder ao despedimento coletivo, por escrito, a cada um dos trabalhadores que possam ser abrangidos;\nb) Os trabalhadores abrangidos pelo despedimento coletivo podem designar, de entre eles, no prazo de cinco dias úteis a contar da receção da comunicação, uma comissão representativa com o máximo de três ou cinco membros, consoante o despedimento abranja até cinco ou mais trabalhadores.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 462683,
+        "end": 463158
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

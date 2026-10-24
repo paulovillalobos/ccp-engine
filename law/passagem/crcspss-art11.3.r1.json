@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art11.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art11",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - As contribuições e quotizações destinam-se ao financiamento do sistema previdencial que tem por base uma relação sinalagmática directa entre a obrigação legal de contribuir e o direito às prestações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 12148,
+        "end": 12351
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

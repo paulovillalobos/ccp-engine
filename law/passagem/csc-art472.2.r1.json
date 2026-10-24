@@ -1,0 +1,23 @@
+{
+  "id": "csc:art472.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art472",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "2 - O contrato de sociedade deve regular, em função do capital, a atribuição de votos aos sócios, mas os sócios comanditados, em conjunto, não podem ter menos de metade dos votos pertencentes aos sócios comanditários, também em conjunto.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 685839,
+        "end": 686076
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

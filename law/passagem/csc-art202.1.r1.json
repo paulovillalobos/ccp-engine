@@ -1,0 +1,23 @@
+{
+  "id": "csc:art202.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art202",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "1 - Não são admitidas contribuições de indústria.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 332392,
+        "end": 332441
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

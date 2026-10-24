@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-ii.titulo-v.capitulo-i.seccao-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-v.capitulo-i",
+  "kind": "secao",
+  "label": "Secção IV",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Secção IV\nDisposições comuns",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 422177,
+        "end": 422205
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

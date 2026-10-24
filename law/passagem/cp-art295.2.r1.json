@@ -1,0 +1,23 @@
+{
+  "id": "cp:art295.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art295",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - A pena não pode ser superior à prevista para o facto ilícito típico praticado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 393887,
+        "end": 393969
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

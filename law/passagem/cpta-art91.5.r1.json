@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art91.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art91",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Quando a complexidade da matéria o justifique ou qualquer das partes não prescinda da sua apresentação, o juiz, no termo da audiência, determina que as alegações previstas na alínea e) do n.º 3 sejam apresentadas por escrito pelo prazo simultâneo de 20 dias.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 138861,
+        "end": 139123
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

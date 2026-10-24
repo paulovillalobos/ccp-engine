@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1433.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1433",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "5. Pode também ser requerida a suspensão das deliberações nos termos da lei de processo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 644354,
+        "end": 644442
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

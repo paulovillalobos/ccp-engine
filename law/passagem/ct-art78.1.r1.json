@@ -1,0 +1,23 @@
+{
+  "id": "ct:art78.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art78",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O menor tem direito a descanso diário, entre os períodos de trabalho de dois dias sucessivos, com a duração mínima de catorze horas consecutivas se tiver idade inferior a 16 anos, ou doze horas consecutivas se tiver idade igual ou superior a 16 anos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 128611,
+        "end": 128865
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

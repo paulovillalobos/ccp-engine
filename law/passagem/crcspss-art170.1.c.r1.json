@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art170.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art170.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "c) Os tripulantes que se encontrem a exercer actividade profissional em navios inscritos no Registo Internacional de Navios da Madeira (MAR).",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 110419,
+        "end": 110560
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

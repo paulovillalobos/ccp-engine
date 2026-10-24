@@ -1,0 +1,23 @@
+{
+  "id": "cppt:titulo-iv.capitulo-ii.seccao-x.subseccao-iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-iv.capitulo-ii.seccao-x",
+  "kind": "secao",
+  "label": "Subsecção III",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Subsecção III\nDa declaração em falhas",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 329919,
+        "end": 329956
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

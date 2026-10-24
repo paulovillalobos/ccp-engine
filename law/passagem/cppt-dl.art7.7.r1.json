@@ -1,0 +1,23 @@
+{
+  "id": "cppt:dl.art7.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:dl.art7",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "7 - A informação sobre a identificação do executado referida no número anterior apenas inclui o domicílio fiscal, mediante indicação à Autoridade Tributária e Aduaneira do número de identificação fiscal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 12357,
+        "end": 12560
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

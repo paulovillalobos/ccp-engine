@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art145.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art145.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) No 1.º dia do 12.º mês posterior ao do início de actividade quando tal ocorra em data posterior a Setembro;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 92560,
+        "end": 92670
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

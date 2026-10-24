@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art70.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art70",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "4 - Em caso de documento ou sentença superveniente, bem como de qualquer outro facto que não tivesse sido possível invocar no prazo previsto no n.º 1, este conta-se a partir da data em que se tornou possível ao reclamante obter o documento ou conhecer o facto.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 90903,
+        "end": 91163
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

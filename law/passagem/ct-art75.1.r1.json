@@ -1,0 +1,23 @@
+{
+  "id": "ct:art75.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art75",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O trabalhador menor não pode prestar trabalho suplementar.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 125841,
+        "end": 125903
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

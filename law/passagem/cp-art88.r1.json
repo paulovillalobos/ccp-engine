@@ -1,0 +1,23 @@
+{
+  "id": "cp:art88",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-v.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 88.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 88.º\nAbuso de estupefacientes\nO disposto nos artigos 86.º e 87.º é correspondentemente aplicável aos agentes que abusarem de estupefacientes.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 153246,
+        "end": 153394
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

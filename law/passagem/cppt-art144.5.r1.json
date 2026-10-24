@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art144.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art144",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "5 - Antes da decisão, é obrigatoriamente ouvida a administração tributária sobre a necessidade e legalidade da providência.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 170520,
+        "end": 170643
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

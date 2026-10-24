@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art132.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art132",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - A concessão da providência depende do juízo de probabilidade do tribunal quanto a saber se, ponderados os interesses suscetíveis de serem lesados, os danos que resultariam da adoção da providência se mostrem superiores aos prejuízos que podem resultar da sua não adoção, sem que tal lesão possa ser evitada ou atenuada pela adoção de outras providências.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 195719,
+        "end": 196077
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

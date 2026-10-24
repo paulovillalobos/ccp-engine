@@ -1,0 +1,23 @@
+{
+  "id": "cc:art130",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-v.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 130.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 130.º\n(Efeitos da maioridade)\nAquele que perfizer dezoito anos de idade adquire plena capacidade de exercício de direitos, ficando habilitado a reger a sua pessoa e a dispor dos seus bens.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 60762,
+        "end": 60957
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

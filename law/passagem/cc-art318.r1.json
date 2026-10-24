@@ -1,0 +1,23 @@
+{
+  "id": "cc:art318",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 318.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 318.º\n(Causas bilaterais da suspensão)\nA prescrição não começa nem corre:\na) Entre os cônjuges, ainda que separados judicialmente de pessoas e bens;\nb) Entre quem exerça o poder paternal e as pessoas a ele sujeitas, entre o tutor e o tutelado ou entre o curador e o curatelado;\nc) Entre as pessoas cujos bens estejam sujeitos, por lei ou por determinação judicial ou de terceiro, à administração de outrem e aquelas que exercem a administração, até serem aprovadas as contas finais;\nd) Entre as pessoas colectivas e os respectivos administradores, relativamente à responsabilidade destes pelo exercício dos seus cargos, enquanto neles se mantiverem;\ne) Entre quem presta o trabalho doméstico e o respectivo patrão, enquanto o contrato durar;\nf) Enquanto o devedor for usufrutuário do crédito ou tiver direito de penhor sobre ele.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 147039,
+        "end": 147875
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

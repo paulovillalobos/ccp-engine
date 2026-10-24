@@ -1,0 +1,23 @@
+{
+  "id": "csc:art202.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art202",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 332442,
+        "end": 332457
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art3.q1.art112.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art3.q1.art112",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "7 - Ao pedido de intimação é aplicável o disposto no Código de Processo nos Tribunais Administrativos quanto aos processos urgentes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 3654,
+        "end": 3786
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

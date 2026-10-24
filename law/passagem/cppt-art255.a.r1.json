@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art255.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art255",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "a) Até ao valor da dívida exequenda e do acrescido, salvo se o valor real dos bens for inferior ao total da dívida, caso em que o preço não deverá exceder dois terços desse valor;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 314565,
+        "end": 314744
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1816.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1816",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Na acção de investigação de maternidade o filho deve provar que nasceu da pretensa mãe.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 838510,
+        "end": 838600
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:dl.art3.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:dl.art3",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-09-03",
+      "text": "2 - À celebração do contrato previsto no número anterior aplicam-se as regras gerais previstas no Código Civil.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 3647,
+        "end": 3758
+      },
+      "valid_from": "2012-09-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

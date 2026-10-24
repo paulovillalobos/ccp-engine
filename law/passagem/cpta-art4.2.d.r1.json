@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art4.2.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art4.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "d) O pedido de anulação ou declaração de nulidade ou inexistência de um acto administrativo com o pedido de anulação ou declaração de nulidade de contrato cuja validade dependa desse acto;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 12153,
+        "end": 12341
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

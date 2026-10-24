@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 3.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 3.º\nDireito subsidiário\nSão subsidiariamente aplicáveis:\na) Quanto à relação jurídica contributiva, a Lei Geral Tributária;\nb) Quanto à responsabilidade civil, o Código Civil;\nc) Quanto à matéria procedimental, o Código do Procedimento Administrativo;\nd) Quanto à matéria substantiva contra-ordenacional, o Regime Geral das Infracções Tributárias.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 7883,
+        "end": 8237
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

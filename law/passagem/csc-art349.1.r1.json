@@ -1,0 +1,23 @@
+{
+  "id": "csc:art349.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art349",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "1 - A emissão de obrigações por sociedades anónimas depende de a sociedade emitente apresentar, após a emissão, um rácio de autonomia financeira igual ou superior a 35 %, calculado a partir do balanço da sociedade, através da seguinte fórmula:\nAutonomia financeira = CP/AL x 100\nEm que:\n- Capitais próprios (CP), corresponde ao somatório do capital realizado, deduzidas as ações próprias, com as reservas, os resultados transitados e os ajustamentos em ativos financeiros;\n- Ativos líquidos (AL), corresponde aos ativos reconhecidos de acordo com o normativo contabilístico aplicável.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 497079,
+        "end": 497663
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

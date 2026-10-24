@@ -1,0 +1,23 @@
+{
+  "id": "csc:dl.art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "Artigo 1.º\n(Aprovação do Código das Sociedades Comerciais)\nÉ aprovado o Código das Sociedades Comerciais, que faz parte do presente decreto-lei.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 23500,
+        "end": 23644
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art123.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art123",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Os processos cautelares extinguem-se e, quando decretadas, as providências cautelares caducam:\na) Se o requerente não fizer uso, no respectivo prazo, do meio contencioso adequado à tutela dos interesses a que o pedido de adoção de providência cautelar se destinou;\nb) Se, tendo o requerente feito uso desses meios, o correspondente processo estiver parado durante mais de três meses por negligência sua em promover os respetivos termos ou de algum incidente de que dependa o andamento do processo;\nc) Se esse processo findar por extinção da instância e o requerente não intentar novo processo, nos casos em que a lei o permita, dentro do prazo fixado para o efeito;\nd) Se se extinguir o direito ou interesse a cuja tutela a providência se destina;\ne) Se se verificar o trânsito em julgado da decisão que ponha termo ao processo principal, no caso de ser desfavorável ao requerente;\nf) Se ocorrer termo final ou se preencher condição resolutiva a que a providência cautelar estivesse sujeita;\ng) [Revogada].",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 184547,
+        "end": 185557
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

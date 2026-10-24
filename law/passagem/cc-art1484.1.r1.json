@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1484.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1484",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1976-03-16",
+      "text": "1. O direito de uso consiste na faculdade de se servir de certa coisa alheia e haver os respectivos frutos, na medida das necessidades, quer do titular, quer da sua família.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 669035,
+        "end": 669208
+      },
+      "valid_from": "1976-03-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

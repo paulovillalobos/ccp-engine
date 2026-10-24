@@ -1,0 +1,23 @@
+{
+  "id": "cp:art52.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art52",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "1 - O tribunal pode impor ao condenado o cumprimento, pelo tempo de duração da suspensão, de regras de conduta de conteúdo positivo, susceptíveis de fiscalização e destinadas a promover a sua reintegração na sociedade, nomeadamente:\na) Residir em determinado lugar;\nb) Frequentar certos programas ou actividades;\nc) Cumprir determinadas obrigações.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 113786,
+        "end": 114134
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

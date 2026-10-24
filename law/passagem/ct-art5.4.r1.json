@@ -1,0 +1,23 @@
+{
+  "id": "ct:art5.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art5",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - O exemplar do contrato que ficar com o empregador deve ter apensos documentos comprovativos do cumprimento das obrigações legais relativas à entrada e à permanência ou residência do cidadão estrangeiro ou apátrida em Portugal, sendo apensas cópias dos mesmos documentos aos restantes exemplares.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 24624,
+        "end": 24923
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

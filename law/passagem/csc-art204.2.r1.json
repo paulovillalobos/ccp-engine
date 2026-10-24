@@ -1,0 +1,23 @@
+{
+  "id": "csc:art204.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art204",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "2 - Não sendo o pagamento efectuado no prazo referido no número anterior e deliberando a sociedade excluir o sócio, deve comunicar-lhe, por carta registada, a sua exclusão, com a consequente perda a favor da sociedade da respectiva quota e pagamentos já realizados, salvo se os sócios, por sua iniciativa ou a pedido do sócio remisso, deliberarem limitar a perda à parte da quota correspondente à prestação não efectuada; neste caso, deverão ser indicados na declaração dirigida ao sócio os valores nominais da parte perdida por este e da parte por ele conservada.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 335107,
+        "end": 335671
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

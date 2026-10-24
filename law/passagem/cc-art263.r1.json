@@ -1,0 +1,23 @@
+{
+  "id": "cc:art263",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 263.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 263.º\n(Capacidade do procurador)\nO procurador não necessita de ter mais do que a capacidade de entender e querer exigida pela natureza do negócio que haja de efectuar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 125451,
+        "end": 125625
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

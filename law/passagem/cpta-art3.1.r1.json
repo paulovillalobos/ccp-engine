@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art3.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art3",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - No respeito pelo princípio da separação e interdependência dos poderes, os tribunais administrativos julgam do cumprimento pela Administração das normas e princípios jurídicos que a vinculam e não da conveniência ou oportunidade da sua atuação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 9815,
+        "end": 10063
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

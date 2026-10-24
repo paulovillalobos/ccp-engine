@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:dl.art5.1.v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:dl.art5.1",
+  "kind": "alinea",
+  "label": "v)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "v) O Decreto-Lei n.º 98/2005, de 16 de Junho;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 4820,
+        "end": 4865
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

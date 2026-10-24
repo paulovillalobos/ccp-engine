@@ -1,0 +1,23 @@
+{
+  "id": "ct:art354.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art354",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - Com a notificação da nota de culpa, o empregador pode suspender preventivamente o trabalhador cuja presença na empresa se mostrar inconveniente, mantendo o pagamento da retribuição.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 454658,
+        "end": 454843
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

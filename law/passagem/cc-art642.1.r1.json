@@ -1,0 +1,23 @@
+{
+  "id": "cc:art642.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art642",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Ao fiador é lícito recusar o cumprimento enquanto o direito do credor puder ser satisfeito por compensação com um crédito do devedor ou este tiver a possibilidade de se valer da compensação com uma dívida do credor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 278581,
+        "end": 278799
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art581",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-iv.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 581.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 581.º\n(Excepções)\nA proibição da cessão dos créditos ou direitos litigiosos não tem lugar nos casos seguintes:\na) Quando a cessão for feita ao titular de um direito de preferência ou de remição relativo ao direito cedido;\nb) Quando a cessão se realizar para defesa de bens possuídos pelo cessionário;\nc) Quando a cessão se fizer ao credor em cumprimento do que lhe é devido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 257040,
+        "end": 257421
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

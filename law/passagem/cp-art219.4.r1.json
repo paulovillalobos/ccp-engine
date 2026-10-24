@@ -1,0 +1,23 @@
+{
+  "id": "cp:art219.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art219",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "4 - Se o prejuízo patrimonial provocado for:\na) De valor elevado, o agente é punido com pena de prisão até 5 anos ou com pena de multa até 600 dias;\nb) De valor consideravelmente elevado, o agente é punido com pena de prisão de 2 a 8 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 310460,
+        "end": 310699
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

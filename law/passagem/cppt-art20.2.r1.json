@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art20.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art20",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "2 - Os prazos para a prática de actos no processo judicial contam-se nos termos do Código de Processo Civil.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 30470,
+        "end": 30578
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

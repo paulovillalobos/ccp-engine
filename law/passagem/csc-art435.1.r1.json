@@ -1,0 +1,23 @@
+{
+  "id": "csc:art435.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art435",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-12-10",
+      "text": "1 - Os membros do conselho geral e de supervisão são designados no contrato de sociedade ou eleitos pela assembleia geral ou constitutiva.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 638589,
+        "end": 638727
+      },
+      "valid_from": "2021-12-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

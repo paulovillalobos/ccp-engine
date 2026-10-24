@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1834",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-iii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1834.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1834.º\n(Dupla presunção de paternidade)\n1. Se o filho nasceu depois de a mãe ter contraído novo casamento sem que o primeiro se achasse dissolvido ou dentro dos trezentos dias após a sua dissolução, presume-se que o pai é o segundo marido.\n2. Julgada procedente a acção de impugnação de paternidade, renasce a presunção relativa ao anterior marido da mãe.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 850981,
+        "end": 851343
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

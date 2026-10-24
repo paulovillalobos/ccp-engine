@@ -1,0 +1,23 @@
+{
+  "id": "cp:art33.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art33",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - O agente não é punido se o excesso resultar de perturbação, medo ou susto, não censuráveis.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 96850,
+        "end": 96945
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art45.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art45",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - O contribuinte é ouvido oralmente ou por escrito, conforme o objectivo do procedimento.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 66590,
+        "end": 66681
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

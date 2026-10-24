@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art170.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art170",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Podem enquadrar-se no seguro social voluntário os seguintes trabalhadores:\na) Os trabalhadores marítimos e os vigias, nacionais, que se encontrem a exercer actividade profissional em navios de empresas estrangeiras;\nb) Os trabalhadores marítimos nacionais que exerçam actividade a bordo de navios de empresas comuns de pesca constituídas ao abrigo dos Decretos-Leis n.os 1/81, de 7 de Janeiro, e 193/84, de 11 de Junho;\nc) Os tripulantes que se encontrem a exercer actividade profissional em navios inscritos no Registo Internacional de Navios da Madeira (MAR).",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 109995,
+        "end": 110560
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

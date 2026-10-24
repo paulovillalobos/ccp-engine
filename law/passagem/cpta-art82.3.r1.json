@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art82.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art82",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "3 - Se a um contrainteressado não tiver sido facultada, em tempo útil, a consulta ao processo administrativo, ele pode dar conhecimento disso ao juiz do processo, podendo, nesse caso, apresentar a contestação no prazo de 15 dias, contado desde o momento em que venha a ser notificado de que o processo administrativo foi junto aos autos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 112699,
+        "end": 113036
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

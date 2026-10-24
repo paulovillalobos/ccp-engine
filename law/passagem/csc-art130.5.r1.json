@@ -1,0 +1,23 @@
+{
+  "id": "csc:art130.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art130",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "5 - No caso de ter sido deliberada a dissolução, aplicam-se os preceitos legais ou contratuais que a regulam, se forem mais exigentes do que os preceitos relativos à transformação. A nova sociedade sucede automática e globalmente à sociedade anterior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 245104,
+        "end": 245355
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

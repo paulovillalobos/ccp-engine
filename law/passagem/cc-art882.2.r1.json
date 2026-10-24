@@ -1,0 +1,23 @@
+{
+  "id": "cc:art882.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art882",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A obrigação de entrega abrange, salvo estipulação em contrário, as partes integrantes, os frutos pendentes e os documentos relativos à coisa ou direito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 372727,
+        "end": 372882
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

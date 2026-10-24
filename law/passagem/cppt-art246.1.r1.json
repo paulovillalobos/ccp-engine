@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art246.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art246",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "1 - Na reclamação de créditos observam-se as disposições do Código de Processo Civil, exceto no que respeita à reclamação da decisão de verificação e graduação, que é efetuada exclusivamente nos termos dos artigos 276.º a 278.º deste código.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 302414,
+        "end": 302655
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

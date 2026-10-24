@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art157.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art157",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Os trabalhadores independentes estão isentos da obrigação de contribuir:\na) Quando acumulem actividade independente com actividade profissional por conta de outrem, desde que se verifiquem cumulativamente as seguintes condições:\ni) O exercício da actividade independente e a outra actividade sejam prestadas a empresas distintas e que não tenham entre si uma relação de domínio ou de grupo;\nii) O exercício de actividade por conta de outrem determine o enquadramento obrigatório noutro regime de protecção social que cubra a totalidade das eventualidades abrangidas pelo regime dos trabalhadores independentes;\niii) O valor da remuneração anual considerada para o outro regime de protecção social seja igual ou superior a 12 vezes o valor do IAS.\nb) Quando seja simultaneamente pensionista de invalidez ou de velhice de regimes de protecção social, nacionais ou estrangeiros, e a actividade profissional seja legalmente cumulável com as respectivas pensões.\nc) Quando seja simultaneamente titular de pensão resultante da verificação de risco profissional que sofra de incapacidade para o trabalho igual ou superior a 70 %.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 99080,
+        "end": 100206
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

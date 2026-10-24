@@ -1,0 +1,23 @@
+{
+  "id": "cp:art77.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art77",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - A pena aplicável tem como limite máximo a soma das penas concretamente aplicadas aos vários crimes, não podendo ultrapassar 25 anos tratando-se de pena de prisão e 900 dias tratando-se de pena de multa; e como limite mínimo a mais elevada das penas concretamente aplicadas aos vários crimes.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 145553,
+        "end": 145848
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

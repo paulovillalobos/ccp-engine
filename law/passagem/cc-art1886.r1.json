@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1886",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 1886.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1886.º\n(Educação religiosa)\nPertence aos pais decidir sobre a educação religiosa dos filhos menores de dezasseis anos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 884003,
+        "end": 884128
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

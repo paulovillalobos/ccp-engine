@@ -490,7 +490,7 @@ def _in_force(v, date):
 
 def check_law_time(store, out):
     """TIME (invariant 8, the law clock). A passage's versions are ordered by valid_from, each closes before the next
-    opens and only the last may be open. A vigencia starts a version of its passage. A rule's validity is the validity
+    opens and only the last may be open. A vigencia that is not stale starts a version of its passage. A rule's validity is the validity
     of the text it cites (DECISIONS D26): its valid_from is the latest valid_from among the versions it cites, it lies
     inside every cited version, and it does not outlive a closed one. The version a verdict cites is in force on the
     verdict's valid_at and is not revoked; versions are contiguous."""
@@ -508,6 +508,8 @@ def check_law_time(store, out):
             elif a["valid_to"] < b["valid_from"]:
                 out.append(("TIME", f"{p['id']}: gap between version {a['version']} (ends {a['valid_to']}) and version {b['version']} (starts {b['valid_from']}); versions are contiguous"))
     for vg in current_of(store, "vigencia").values():
+        if vg.get("stale"):
+            continue  # withdrawn with its reason (a stale revision): it no longer claims a version start
         p = store.current(vg["passage"])
         if p and not any(v["valid_from"] == vg["valid_from"] for v in p["versions"]):
             out.append(("TIME", f"{vg['id']}: valid_from {vg['valid_from']} starts no version of {vg['passage']}"))

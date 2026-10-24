@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art60.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art60",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - A apresentação, no prazo de 30 dias, de requerimento dirigido ao autor do acto, ao abrigo do disposto no número anterior, interrompe o prazo de impugnação, mantendo-se a interrupção se vier a ser pedida a intimação judicial a que se refere o mesmo número.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 79593,
+        "end": 79852
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

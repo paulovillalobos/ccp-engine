@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art87.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art87",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - As alterações à matéria de facto alegada não podem implicar convolação do objeto do processo para relação jurídica diversa da controvertida, devendo conformar-se com os limites traçados pelo pedido e pela causa de pedir, se forem introduzidas pelo autor, e pelos limites impostos pelo artigo 83.º, quando o sejam pelo demandado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 124861,
+        "end": 125193
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

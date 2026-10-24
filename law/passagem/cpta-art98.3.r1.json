@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art98.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art98",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Nos processos abrangidos pelo contencioso eleitoral, a ausência de reação contra os atos relativos à exclusão, inclusão ou omissão de eleitores ou elegíveis nos cadernos eleitorais, e demais atos com eficácia externa anteriores ao ato eleitoral, assim como de cada ato eleitoral adotado no âmbito de procedimentos encadeados impede o interessado de reagir contra as decisões subsequentes com fundamento em ilegalidades de que enfermem os atos anteriormente praticados.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 149361,
+        "end": 149833
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "9 - Se os estatutos não proibirem o voto por correspondência, devem regular o seu exercício, estabelecendo, nomeadamente, a forma de verificar a autenticidade do voto e de assegurar, até ao momento da votação, a sua confidencialidade, e escolher entre uma das seguintes opções para o seu tratamento:\na) Determinar que os votos assim emitidos valham como votos negativos em relação a propostas de deliberação apresentadas ulteriormente à emissão do voto;\nb) Autorizar a emissão de votos até ao máximo de cinco dias seguintes ao da realização da assembleia, caso em que o cômputo definitivo dos votos é feito até ao 8.º dia posterior ao da realização da assembleia e se assegura a divulgação imediata do resultado da votação.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 552901,
+        "end": 553624
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

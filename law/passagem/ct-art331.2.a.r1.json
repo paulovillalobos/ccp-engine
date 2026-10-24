@@ -1,0 +1,23 @@
+{
+  "id": "ct:art331.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art331.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "a) Até seis meses após qualquer dos factos mencionados no número anterior;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 434220,
+        "end": 434294
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

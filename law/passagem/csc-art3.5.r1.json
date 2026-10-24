@@ -1,0 +1,23 @@
+{
+  "id": "csc:art3.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art3",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "5 - A deliberação de transferência da sede prevista no número anterior deve obedecer aos requisitos para as alterações do contrato de sociedade, não podendo em caso algum ser tomada por menos de 75% dos votos correspondentes ao capital social. Os sócios que não tenham votado a favor da deliberação podem exonerar-se da sociedade, devendo notificá-la da sua decisão no prazo de 60 dias após a publicação da referida deliberação.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 27568,
+        "end": 27996
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

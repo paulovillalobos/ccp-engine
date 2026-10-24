@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art158.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art158",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A cessação das condições para a isenção constitui o trabalhador na obrigação de pagar as contribuições para o regime dos trabalhadores independentes a partir do mês seguinte ao da sua ocorrência, nos termos previstos no presente Código.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 101096,
+        "end": 101336
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

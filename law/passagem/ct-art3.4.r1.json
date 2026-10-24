@@ -1,0 +1,23 @@
+{
+  "id": "ct:art3.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art3",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - As normas legais reguladoras de contrato de trabalho só podem ser afastadas por contrato individual que estabeleça condições mais favoráveis para o trabalhador, se delas não resultar o contrário.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 22251,
+        "end": 22450
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

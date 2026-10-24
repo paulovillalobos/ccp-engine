@@ -1,0 +1,23 @@
+{
+  "id": "ct:art106.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art106",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - O trabalhador deve informar o empregador sobre aspectos relevantes para a prestação da actividade laboral.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 162632,
+        "end": 162742
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

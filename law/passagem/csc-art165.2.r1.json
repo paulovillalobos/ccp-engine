@@ -1,0 +1,23 @@
+{
+  "id": "csc:art165.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art165",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Nos casos previstos no número anterior qualquer sócio, credor da sociedade ou credor de sócio de responsabilidade ilimitada pode requerer a liquidação judicial, antes de ter sido iniciada a liquidação pelos sócios, ou a continuação judicial da liquidação iniciada, se esta não tiver terminado no prazo legal.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 298207,
+        "end": 298519
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

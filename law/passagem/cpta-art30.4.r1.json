@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art30.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art30",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "4 - [Revogado].",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 45099,
+        "end": 45114
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

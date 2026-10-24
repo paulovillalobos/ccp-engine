@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art172.6.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art172.6",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "b) O direito de requerer a fixação à entidade obrigada de um prazo limite para proceder ao pagamento, com imposição de uma sanção pecuniária compulsória aos titulares do órgão competente para determinar tal pagamento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 244803,
+        "end": 245020
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

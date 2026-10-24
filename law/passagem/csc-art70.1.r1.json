@@ -1,0 +1,23 @@
+{
+  "id": "csc:art70.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art70",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-08-17",
+      "text": "1 - A informação respeitante às contas do exercício e aos demais documentos de prestação de contas, devidamente aprovados, está sujeita a registo comercial, nos termos da lei respectiva.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 111688,
+        "end": 111874
+      },
+      "valid_from": "2009-08-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

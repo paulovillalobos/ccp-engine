@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art80.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art80",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "5 - Sendo a petição inicial apresentada por uma das formas previstas nas alíneas a) e b) do n.º 5 do artigo 24.º, compete à secretaria recusá-la, por um dos fundamentos previstos nos números anteriores ou por o papel utilizado não obedecer aos requisitos regulamentares, indicando por escrito o fundamento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 109026,
+        "end": 109332
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

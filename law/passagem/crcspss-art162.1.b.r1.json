@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art162.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art162.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "b) 20 % dos rendimentos associados à produção e venda de bens no ano civil imediatamente anterior ao momento de fixação da base de incidência contributiva.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 103721,
+        "end": 103876
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

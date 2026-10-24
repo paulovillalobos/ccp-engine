@@ -1,0 +1,23 @@
+{
+  "id": "cp:art98.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art98",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - A decisão de suspensão impõe ao agente regras de conduta, em termos correspondentes aos referidos no artigo 52.º, necessárias à prevenção da perigosidade, bem como o dever de se submeter a tratamentos e regimes de cura ambulatórios apropriados e de se prestar a exames e observações nos lugares que lhe forem indicados.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 172565,
+        "end": 172888
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

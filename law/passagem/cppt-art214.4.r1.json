@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art214.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art214",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2025-01-14",
+      "text": "4 - Para efeitos de arresto ou penhora dos bens do contribuinte, pode ser requerida às instituições bancárias informação acerca do número das suas contas e respectivos saldos.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 265126,
+        "end": 265301
+      },
+      "valid_from": "2025-01-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

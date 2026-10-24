@@ -1,0 +1,23 @@
+{
+  "id": "csc:art247.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art247",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "8 - Não pode ser tomada deliberação por voto escrito quando algum sócio esteja impedido de votar, em geral ou no caso de espécie.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 388290,
+        "end": 388419
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

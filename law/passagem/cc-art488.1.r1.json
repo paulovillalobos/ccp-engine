@@ -1,0 +1,23 @@
+{
+  "id": "cc:art488.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art488",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1. Não responde pelas consequências do facto danoso quem, no momento em que o facto ocorreu, estava, por qualquer causa, incapacitado de entender ou querer, salvo se o agente se colocou culposamente nesse estado, sendo este transitório.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 216019,
+        "end": 216255
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

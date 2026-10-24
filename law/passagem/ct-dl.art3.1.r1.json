@@ -1,0 +1,23 @@
+{
+  "id": "ct:dl.art3.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:dl.art3",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-09-03",
+      "text": "1 - O menor com idade inferior a 16 anos não pode ser contratado para realizar uma atividade remunerada prestada com autonomia, exceto caso tenha concluído a escolaridade obrigatória ou esteja matriculado e a frequentar o nível secundário de educação e se trate de trabalhos leves.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 3365,
+        "end": 3646
+      },
+      "valid_from": "2012-09-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

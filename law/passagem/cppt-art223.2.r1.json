@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art223.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art223",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2025-01-14",
+      "text": "2 - A penhora de dinheiro ou de outros valores depositados será precedida de informação do funcionário competente sobre a identidade do depositário, a quantia ou os objectos depositados e o valor presumível destes.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 274848,
+        "end": 275062
+      },
+      "valid_from": "2025-01-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art231.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art231",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2016-05-24",
+      "text": "5 - A penhora de imóveis pode também ser efetuada nos termos do Código de Processo Civil, com as especificidades previstas na presente lei.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 290410,
+        "end": 290549
+      },
+      "valid_from": "2016-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

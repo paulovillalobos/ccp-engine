@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art254.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art254",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Excepcionalmente, nas condições previstas na presente secção, pode ser autorizado o pagamento de contribuições com efeitos retroactivos quando a obrigação contributiva se encontre prescrita ou não existiu por, à data da prestação de trabalho, a actividade não se encontrar obrigatoriamente abrangida pelo sistema de segurança social.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 155299,
+        "end": 155636
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

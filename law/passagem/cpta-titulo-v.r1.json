@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": null,
+  "kind": "titulo",
+  "label": "Título V",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Título V\nDos conflitos de competência jurisdicional e de atribuições",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 199671,
+        "end": 199739
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

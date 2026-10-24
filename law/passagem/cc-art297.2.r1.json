@@ -1,0 +1,23 @@
+{
+  "id": "cc:art297.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art297",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A lei que fixar um prazo mais longo é igualmente aplicável aos prazos que já estejam em curso, mas computar-se-á neles todo o tempo decorrido desde o seu momento inicial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 138756,
+        "end": 138929
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

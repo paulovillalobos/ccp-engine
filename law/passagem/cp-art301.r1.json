@@ -1,0 +1,23 @@
+{
+  "id": "cp:art301",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-iv.capitulo-v.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 301.º",
+  "versions": [
+    {
+      "version": "2003-08-27",
+      "text": "Artigo 301.º\nTerrorismo",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 396909,
+        "end": 396932
+      },
+      "valid_from": "2003-08-27",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

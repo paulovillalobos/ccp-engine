@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1978.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1978",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "3 - Considera-se que a criança se encontra em perigo quando se verificar alguma das situações assim qualificadas pela legislação relativa à proteção e à promoção dos direitos das crianças.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 950868,
+        "end": 951056
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

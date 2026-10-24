@@ -1,0 +1,23 @@
+{
+  "id": "cc:art56.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art56",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Tratando-se de filho de mulher casada, a constituição da filiação relativamente ao pai é regulada pela lei nacional comum da mãe e do marido; na falta desta, é aplicável a lei da residência habitual comum dos cônjuges e, se esta também faltar, a lei pessoal do filho.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 31981,
+        "end": 32251
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

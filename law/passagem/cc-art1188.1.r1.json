@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1188.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1188",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o depositário for privado da detenção da coisa por causa que lhe não seja imputável, fica exonerado das obrigações de guarda e restituição, mas deve dar conhecimento imediato da privação ao depositante.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 531665,
+        "end": 531873
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

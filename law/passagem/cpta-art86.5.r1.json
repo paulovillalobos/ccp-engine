@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art86.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art86",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - As provas são oferecidas com o articulado e com a resposta e os factos articulados que interessem à decisão da causa são incluídos nos temas da prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 123160,
+        "end": 123314
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

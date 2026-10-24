@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art120.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art120",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A base de incidência contributiva dos trabalhadores contratados ao mês em regime de tempo completo corresponde a uma vez o valor do IAS, sem prejuízo do disposto nos números seguintes.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 75664,
+        "end": 75852
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

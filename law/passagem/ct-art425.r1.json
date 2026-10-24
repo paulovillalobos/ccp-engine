@@ -1,0 +1,23 @@
+{
+  "id": "ct:art425",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-iii.subtitulo-i.capitulo-i.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 425.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 425.º\nObrigatoriedade de consulta da comissão de trabalhadores\nO empregador deve solicitar o parecer da comissão de trabalhadores antes de praticar os seguintes actos, sem prejuízo de outros previstos na lei:\na) Modificação dos critérios de classificação profissional e de promoções dos trabalhadores;\nb) Mudança de local de actividade da empresa ou do estabelecimento;\nc) Qualquer medida de que resulte ou possa resultar, de modo substancial, diminuição do número de trabalhadores, agravamento das condições de trabalho ou mudanças na organização de trabalho;\nd) Dissolução ou pedido de declaração de insolvência da empresa.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 529915,
+        "end": 530547
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

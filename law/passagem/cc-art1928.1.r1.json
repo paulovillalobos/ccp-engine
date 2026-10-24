@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1928.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1928",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Os pais podem nomear tutor ao filho menor para o caso de virem a falecer ou se tornarem incapazes; se apenas um dos progenitores exercer o poder paternal, a ele pertencerá esse poder.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 924108,
+        "end": 924294
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

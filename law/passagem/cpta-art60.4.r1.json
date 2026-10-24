@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art60.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art60",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "4 - Não são oponíveis ao interessado eventuais erros contidos na notificação ou na publicação, no que se refere à indicação do autor, da data, do sentido ou dos fundamentos da decisão, bem como eventual erro ou omissão quanto à existência de delegação ou subdelegação de poderes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 79853,
+        "end": 80132
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

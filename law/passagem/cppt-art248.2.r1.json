@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art248.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art248",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "2 - A venda é realizada por leilão electrónico, que decorre durante 15 dias, sendo o valor base o correspondente a 70 % do determinado nos termos do artigo 250.º",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 303913,
+        "end": 304074
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

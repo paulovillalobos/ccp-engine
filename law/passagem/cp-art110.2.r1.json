@@ -1,0 +1,23 @@
+{
+  "id": "cp:art110.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art110",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "2 - O disposto no número anterior abrange a recompensa dada ou prometida aos agentes de um facto ilícito típico, já cometido ou a cometer, para eles ou para outrem.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 185533,
+        "end": 185697
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

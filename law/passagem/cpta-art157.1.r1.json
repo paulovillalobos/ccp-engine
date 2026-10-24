@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art157.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art157",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A execução das sentenças proferidas pelos tribunais administrativos contra entidades públicas é regulada nos termos do presente título.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 222385,
+        "end": 222524
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

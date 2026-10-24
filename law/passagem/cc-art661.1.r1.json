@@ -1,0 +1,23 @@
+{
+  "id": "cc:art661.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art661",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Na consignação é possível estipular:\na) Que continuem em poder do concedente os bens cujos rendimentos são consignados;\nb) Que os bens passem para o poder do credor, o qual fica, na parte aplicável, equiparado ao locatário, sem prejuízo da faculdade de por seu turno os locar;\nc) Que os bens passem para o poder de terceiro, por título de locação ou por outro, ficando o credor com o direito de receber os respectivos frutos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 286030,
+        "end": 286458
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

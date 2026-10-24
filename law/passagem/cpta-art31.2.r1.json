@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art31.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art31",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Atende-se ao valor da causa para determinar se cabe recurso da sentença proferida em primeira instância e que tipo de recurso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 45773,
+        "end": 45903
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

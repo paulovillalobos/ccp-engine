@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art14",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 14.º",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "Artigo 14.º\nPetição a tribunal incompetente\n1 - Quando a petição seja dirigida a tribunal incompetente, o processo é oficiosamente remetido ao tribunal administrativo ou tributário competente.\n2 - Quando a petição seja dirigida a tribunal incompetente, sem que o tribunal competente pertença à jurisdição administrativa e fiscal, pode o interessado, no prazo de 30 dias a contar do trânsito em julgado da decisão que declare a incompetência, requerer a remessa do processo ao tribunal competente, com indicação do mesmo.\n3 - Em ambos os casos previstos nos números anteriores, a petição considera-se apresentada na data do primeiro registo de entrada, para efeitos da tempestividade da sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 28145,
+        "end": 28848
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

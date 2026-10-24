@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art112.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art112",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quem possua legitimidade para intentar um processo junto dos tribunais administrativos pode solicitar a adoção da providência ou das providências cautelares, antecipatórias ou conservatórias, que se mostrem adequadas a assegurar a utilidade da sentença a proferir nesse processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 169201,
+        "end": 169484
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

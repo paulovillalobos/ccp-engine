@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art10.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art10",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A relação jurídica contributiva consubstancia-se no vínculo de natureza obrigacional que liga ao sistema previdencial:\na) Os trabalhadores e as respectivas entidades empregadoras;\nb) Os trabalhadores independentes e quando aplicável as pessoas colectivas e as pessoas singulares com actividade empresarial que com eles contratam;\nc) Os beneficiários do regime de seguro social voluntário.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 11013,
+        "end": 11405
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1952.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1952",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Os vogais do conselho de família são escolhidos entre os parentes ou afins do menor, tomando em conta, nomeadamente, a proximidade do grau, as relações de amizade, as aptidões, a idade, o lugar de residência e o interesse manifestado pela pessoa do menor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 938108,
+        "end": 938366
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

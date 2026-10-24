@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1760",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-ii.capitulo-x.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1760.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1760.º\n(Caducidade)\n1. As doações para casamento caducam:\na) Se o casamento não for celebrado dentro de um ano, ou se, tendo-o sido, vier a ser declarado nulo ou anulado, salvo o disposto em matéria de casamento putativo;\nb) Se ocorrer divórcio ou separação judicial de pessoas e bens por culpa do donatário, se este for considerado único ou principal culpado.\n2. Se a doação tiver sido feita por terceiro a ambos os esposados ou os bens doados tiverem entrado na comunhão, e um dos cônjuges for declarado único ou principal culpado no divórcio ou separação, a caducidade atinge apenas a parte dele.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 797909,
+        "end": 798515
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

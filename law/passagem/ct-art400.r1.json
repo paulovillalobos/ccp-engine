@@ -1,0 +1,23 @@
+{
+  "id": "ct:art400",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-vii.seccao-v.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 400.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 400.º\nDenúncia com aviso prévio\n1 - O trabalhador pode denunciar o contrato independentemente de justa causa, mediante comunicação ao empregador, por escrito, com a antecedência mínima de 30 ou 60 dias, conforme tenha, respectivamente, até dois anos ou mais de dois anos de antiguidade.\n2 - O instrumento de regulamentação colectiva de trabalho e o contrato de trabalho podem aumentar o prazo de aviso prévio até seis meses, relativamente a trabalhador que ocupe cargo de administração ou direcção, ou com funções de representação ou de responsabilidade.\n3 - No caso de contrato de trabalho a termo, a denúncia pode ser feita com a antecedência mínima de 30 ou 15 dias, consoante a duração do contrato seja de pelo menos seis meses ou inferior.\n4 - No caso de contrato a termo incerto, para efeito do prazo de aviso prévio a que se refere o número anterior, atende-se à duração do contrato já decorrida.\n5 - É aplicável à denúncia o disposto no n.º 4 do artigo 395.º\n6 - O trabalhador a quem tenha sido reconhecido o estatuto de vítima de violência doméstica, nos termos de legislação específica, fica dispensado do cumprimento do aviso prévio previsto nos números anteriores.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 508619,
+        "end": 509802
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art89.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art89",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-07-01",
+      "text": "2 - Se a deliberação for omissa quanto à exigibilidade das entradas em dinheiro que a lei permite diferir, são elas exigíveis a partir do registo definitivo do aumento de capital.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 137727,
+        "end": 137906
+      },
+      "valid_from": "2017-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

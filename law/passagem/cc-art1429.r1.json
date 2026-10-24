@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1429",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iii.titulo-ii.capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1429.º",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "Artigo 1429.º\n(Seguro obrigatório)\n1 - É obrigatório o seguro contra o risco de incêndio do edifício, quer quanto às fracções autónomas, quer relativamente às partes comuns.\n2 - O seguro deve ser celebrado pelos condóminos; o administrador deve, no entanto, efectuá-lo quando os condóminos o não hajam feito dentro do prazo e pelo valor que, para o efeito, tenha sido fixado em assembleia; nesse caso, ficará com o direito de reaver deles o respectivo prémio.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 638117,
+        "end": 638576
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

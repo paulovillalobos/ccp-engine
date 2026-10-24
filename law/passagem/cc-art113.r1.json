@@ -1,0 +1,23 @@
+{
+  "id": "cc:art113",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 113.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 113.º\n(Restituição dos bens ao ausente)\n1. Nos casos previstos nas alíneas a) e b) do artigo anterior, os bens do ausente ser-lhe-ão entregues logo que ele o requeira.\n2. Enquanto não for requerida a entrega, mantém-se o regime da curadoria nos termos desta subsecção.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 53227,
+        "end": 53502
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art183.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art183",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "5 - Se o levantamento for requerido pelos sucessores de quem tenha prestado a caução, deverão estes provar essa qualidade e que se encontra pago ou assegurado o imposto devido pela transmissão da quantia ou valores a levantar.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 209315,
+        "end": 209541
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

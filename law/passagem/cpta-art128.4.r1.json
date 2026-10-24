@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art128.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art128",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "4 - O interessado pode requerer ao tribunal onde penda o processo de suspensão da eficácia, até ao trânsito em julgado da sua decisão, a declaração de ineficácia dos actos de execução indevida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 190798,
+        "end": 190991
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

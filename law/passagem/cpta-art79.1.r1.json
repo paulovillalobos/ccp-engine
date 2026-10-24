@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art79.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art79",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - O autor deve, na apresentação da petição inicial e nos termos previstos em portaria do membro do Governo responsável pela área da Justiça, comprovar o prévio pagamento da taxa de justiça devida, a concessão do benefício de apoio judiciário ou, ocorrendo razão de urgência, a apresentação do pedido de apoio judiciário requerido mas ainda não concedido.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 106180,
+        "end": 106536
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

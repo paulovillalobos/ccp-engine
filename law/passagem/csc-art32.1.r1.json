@@ -1,0 +1,23 @@
+{
+  "id": "csc:art32.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art32",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-06-07",
+      "text": "1 - Sem prejuízo do preceituado quanto à redução do capital social, não podem ser distribuídos aos sócios bens da sociedade quando o capital próprio desta, incluindo o resultado líquido do exercício, tal como resulta das contas elaboradas e aprovadas nos termos legais, seja inferior à soma do capital social e das reservas que a lei ou o contrato não permitem distribuir aos sócios ou se tornasse inferior a esta soma em consequência da distribuição.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 60354,
+        "end": 60805
+      },
+      "valid_from": "2015-06-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

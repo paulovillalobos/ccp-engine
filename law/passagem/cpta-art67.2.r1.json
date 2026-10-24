@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art67.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art67",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Para os efeitos do disposto na alínea a) do número anterior, a falta de resposta a requerimento dirigido a delegante ou subdelegante é imputada ao delegado ou subdelegado, mesmo que a este não tenha sido remetido o requerimento.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 86839,
+        "end": 87071
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

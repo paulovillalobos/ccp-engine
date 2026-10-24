@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art38",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 38.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 38.º\nActo administrativo inimpugnável\n1 - Nos casos em que a lei substantiva o admita, designadamente no domínio da responsabilidade civil da Administração por actos administrativos ilegais, o tribunal pode conhecer, a título incidental, da ilegalidade de um acto administrativo que já não possa ser impugnado.\n2 - Sem prejuízo do disposto no número anterior, não pode ser obtido por outros meios processuais o efeito que resultaria da anulação do ato inimpugnável.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 54543,
+        "end": 55015
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

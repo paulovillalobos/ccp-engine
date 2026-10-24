@@ -1,0 +1,24 @@
+{
+  "id": "cp:art10",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 10.º",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "Artigo 10.º\nComissão por acção e por omissão\n1 - Quando um tipo legal de crime compreender um certo resultado, o facto abrange não só a acção adequada a produzi-lo como a omissão da acção adequada a evitá-lo, salvo se outra for a intenção da lei.\n2 - A comissão de um resultado por omissão só é punível quando sobre o omitente recair um dever jurídico que pessoalmente o obrigue a evitar esse resultado.\n3 - No caso previsto no número anterior, a pena pode ser especialmente atenuada.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 83167,
+        "end": 83651
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

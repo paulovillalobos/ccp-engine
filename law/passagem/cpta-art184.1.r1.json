@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art184.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art184",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A outorga de compromisso arbitral por parte do Estado é objeto de despacho do membro do Governo responsável em razão da matéria, a proferir no prazo de 30 dias, contado desde a apresentação do requerimento do interessado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 260829,
+        "end": 261054
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

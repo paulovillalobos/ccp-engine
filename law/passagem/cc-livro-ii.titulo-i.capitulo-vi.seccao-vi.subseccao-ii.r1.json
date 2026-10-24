@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-ii.titulo-i.capitulo-vi.seccao-vi.subseccao-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-vi",
+  "kind": "secao",
+  "label": "Subsecção II",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção II\nPrivilégios mobiliários gerais",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 315306,
+        "end": 315349
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

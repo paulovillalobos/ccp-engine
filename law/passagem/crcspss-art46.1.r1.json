@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art46.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art46",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Para efeitos de delimitação da base de incidência contributiva consideram-se remunerações as prestações pecuniárias ou em espécie que nos termos do contrato de trabalho, das normas que o regem ou dos usos são devidas pelas entidades empregadoras aos trabalhadores como contrapartida do seu trabalho.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 31308,
+        "end": 31611
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

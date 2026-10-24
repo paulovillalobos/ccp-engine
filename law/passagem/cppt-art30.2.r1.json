@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art30.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art30",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - Os mandatários judiciais constituídos podem requerer que os processos pendentes ou arquivados nos tribunais lhes sejam confiados para exame fora da secretaria, com observância das normas do Código de Processo Civil.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 41305,
+        "end": 41524
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

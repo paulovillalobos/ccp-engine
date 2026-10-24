@@ -1,0 +1,23 @@
+{
+  "id": "csc:art268.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art268",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "3 - A declaração prevista no n.º 2 do artigo 88.º apenas pode ser prestada depois de todos os novos sócios terem dado cumprimento ao disposto no número anterior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 410775,
+        "end": 410936
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

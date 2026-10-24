@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-b.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101-b",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - No termo da licença, o trabalhador cuidador tem direito a retomar a atividade contratada.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 154741,
+        "end": 154834
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

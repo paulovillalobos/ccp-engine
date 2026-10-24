@@ -1,0 +1,23 @@
+{
+  "id": "ct:art395.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art395",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O trabalhador deve comunicar a resolução do contrato ao empregador, por escrito, com indicação sucinta dos factos que a justificam, nos 30 dias subsequentes ao conhecimento dos factos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 505349,
+        "end": 505537
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

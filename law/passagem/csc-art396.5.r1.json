@@ -1,0 +1,23 @@
+{
+  "id": "csc:art396.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art396",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "5 - É dispensada a prestação de caução aos administradores não executivos e não remunerados.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 569706,
+        "end": 569798
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

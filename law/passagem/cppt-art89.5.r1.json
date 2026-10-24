@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art89.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art89",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "5 - Se o crédito for insuficiente para o pagamento da totalidade das dívidas, dentro da mesma hierarquia de preferência, esta efectua-se segundo a seguinte ordem:\na) Com as dívidas mais antigas;\nb) Dentro das dívidas com igual antiguidade, com as de maior valor;\nc) Em igualdade de circunstâncias, com qualquer das dívidas.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 114578,
+        "end": 114901
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2315",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-iv.capitulo-vii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 2315.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2315.º\n(Inutilização do testamento cerrado)\n1. Se o testamento cerrado aparecer dilacerado ou feito em pedaços, considerar-se-á revogado, excepto quando se prove que o facto foi praticado por pessoa diversa do testador, ou que este não teve intenção de o revogar ou se encontrava privado do uso da razão.\n2. Presume-se que o facto foi praticado por pessoa diversa do testador, se o testamento não se encontrava no espólio deste à data da sua morte.\n3. A simples obliteração ou cancelamento do testamento, no todo ou em parte, ainda que com ressalva e assinatura, não é havida como revogação, desde que possa ler-se a primitiva disposição.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1091524,
+        "end": 1092169
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

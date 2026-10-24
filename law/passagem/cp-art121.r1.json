@@ -1,0 +1,23 @@
+{
+  "id": "cp:art121",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-v.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 121.º",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "Artigo 121.º\nInterrupção da prescrição\n1 - A prescrição do procedimento criminal interrompe-se:\na) Com a constituição de arguido;\nb) Com a notificação da acusação ou, não tendo esta sido deduzida, com a notificação da decisão instrutória que pronunciar o arguido ou com a notificação do requerimento para aplicação da sanção em processo sumaríssimo;\nc) Com a declaração de contumácia.\nd) Com a notificação do despacho que designa dia para audiência na ausência do arguido.\n2 - Depois de cada interrupção começa a correr novo prazo de prescrição.\n3 - Sem prejuízo do disposto no n.º 5 do artigo 118.º, a prescrição do procedimento criminal tem sempre lugar quando, desde o seu início e ressalvado o tempo de suspensão, tiver decorrido o prazo normal de prescrição acrescido de metade. Quando, por força de disposição especial, o prazo de prescrição for inferior a dois anos o limite máximo da prescrição corresponde ao dobro desse prazo.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 204246,
+        "end": 205182
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

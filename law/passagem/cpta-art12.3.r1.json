@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art12.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art12",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Havendo coligação sem que entre os pedidos exista a conexão exigida pelo n.º 1, o juiz notificará o autor ou autores para, no prazo de 10 dias, indicarem o pedido que pretendem ver apreciado no processo, sob cominação de, não o fazendo, haver absolvição da instância quanto a todos os pedidos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 27048,
+        "end": 27345
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

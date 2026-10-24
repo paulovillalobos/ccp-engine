@@ -1,0 +1,23 @@
+{
+  "id": "ct:art155.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art155",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O trabalhador a tempo parcial pode passar a trabalhar a tempo completo, ou o inverso, a título definitivo ou por período determinado, mediante acordo escrito com o empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 216826,
+        "end": 217005
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

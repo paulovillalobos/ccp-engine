@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1999",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iv.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 1999.º",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "Artigo 1999.º\n(Direitos sucessórios)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 971443,
+        "end": 971479
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

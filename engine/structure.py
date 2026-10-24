@@ -1,6 +1,7 @@
 """The structure of a Diário da República text: the working text of a capture -> passagem objects with offsets.
 
-    structure(norma, raw_text, raw_id, version) -> list[passagem]
+    structure(norma, raw_text, raw_id, version) -> list[passagem]          layout "dr-ccp"
+    structure_codigo(norma, raw_text, raw_id, version) -> list[passagem]   layout "dr-codigo" (D34), see parse()
         one passage per structural node: anexo (a code's own annexes, D27), parte, titulo, capitulo, secao (Secção and
         Subsecção), artigo, numero ("1 - "),
         alinea ("a) "), subalinea ("i) "), each with ONE version keyed `version` (= valid_from, valid_to None) whose text
@@ -33,7 +34,7 @@ import re
 
 from engine.sources import now_utc
 
-VERSION = "ccp-structure-0.2"
+VERSION = "ccp-structure-0.3"
 
 ACT_SHORT = re.compile(r"^(dl|lei|ret|lo|dlr|port|dreg)-")
 ANNEX_LINE = re.compile(r"^(ANEXO|Anexo)(?: [IVXLC]+(?:-[A-Z])?)?$")
@@ -46,6 +47,15 @@ LETTER = re.compile(r"^([a-z]{1,4})\) ")
 ROMAN = re.compile(r"^(?:x{0,1}(?:ix|iv|v?i{0,3}))$")
 REVOKED = re.compile(r"^[\(\[]?Revogad[oa]s?\.?[\)\]]?\.?$")
 CLOSING = re.compile(r"^(Visto e aprovado em Conselho de Ministros|Promulgado em|Publique-se\.|Referendado em)")
+# layout "dr-codigo" (structure_codigo): the codes the CCP grammar cannot read (CC, CPPT, CSC, CT, Lei 98/97, CRCSPSS)
+# and the EU acts read by eurlex-html@1
+HEADING_C = re.compile(r"^(Livro|Parte|Título|Subtítulo|Capítulo|Secção|Subsecção|LIVRO|PARTE|TÍTULO|SUBTÍTULO|CAPÍTULO|SECÇÃO|SUBSECÇÃO) "
+                       r"([IVXLC]+|ÚNICO|ÚNICA|[0-9]+)(?:-([A-Z]))?$")
+HEADING_KIND_C = dict(HEADING_KIND, livro=("parte", 0), subtítulo=("titulo", 2.5))
+HEADING_SLUG_C = dict(HEADING_SLUG, livro="livro", subtítulo="subtitulo")
+NUMBER_C = re.compile(r"^([0-9]+(?:-[A-Z])?)(?: - |\. |\) )")
+CLOSING_C = re.compile(r"^(Visto e aprovado em Conselho de Ministros|Promulgado em|Publique-se\.|Referendado em|Feito em |ELI: )")
+LAYOUTS = ("dr-ccp", "dr-codigo")
 NOTE_PREFIX = "NOTA: "
 RANK = {"anexo": 10, "artigo": 10, "numero": 20, "alinea": 30, "subalinea": 40}
 LETTERS = "abcdefghijklmnopqrstuvwxyz"
@@ -74,15 +84,30 @@ class _Ctx:
         self.letters = {}    # holder path -> expected next alínea letters
 
 
-def _regions(norma, lines):
-    """[(first line, last line + 1, path prefix, annexes are passages)] to structure, per the module docstring."""
+CODE_TITLE = re.compile(r"^CÓDIGO [A-ZÁÉÍÓÚÂÊÔÃÕÇ ]+$")
+
+
+def _regions(norma, lines, layout="dr-ccp"):
+    """[(first line, last line + 1, path prefix, annexes are passages)] to structure, per the module docstring. In the
+    "dr-codigo" layout a code's own text starts at the first "Anexo" or "CÓDIGO ..." title line that follows the
+    approving act's closing formula, whatever quotation the act left open (CPTA, Código Penal)."""
     is_act = bool(ACT_SHORT.match(norma["short"]))
     depth, annex = 0, None
-    for i, line in enumerate(lines):
-        if depth == 0 and ANNEX_LINE.match(line.strip()):
-            annex = i
-            break
-        depth += line.count("«") - line.count("»")
+    if layout == "dr-codigo" and not is_act:
+        closed = False
+        for i, line in enumerate(lines):
+            t = line.strip()
+            if CLOSING.match(t):
+                closed = True
+            elif closed and (ANNEX_LINE.match(t) or CODE_TITLE.match(t)):
+                annex = i
+                break
+    if annex is None:
+        for i, line in enumerate(lines):
+            if depth == 0 and ANNEX_LINE.match(line.strip()):
+                annex = i
+                break
+            depth += line.count("«") - line.count("»")
     if is_act:
         return [(0, annex if annex is not None else len(lines), "", False)]
     if annex is None:
@@ -90,9 +115,17 @@ def _regions(norma, lines):
     return [(0, annex, "dl.", False), (annex + 1, len(lines), "", True)]
 
 
-def parse(lines, first, last, prefix, annexes=False):
+def parse(lines, first, last, prefix, annexes=False, layout="dr-ccp"):
     """The nodes of lines[first:last]: dicts {path, kind, label, parent, start_line, last_line, quoted}. With annexes, an
-    "Anexo N" line outside a quotation opens an anexo passage (DECISIONS D27) that holds numbers and alíneas."""
+    "Anexo N" line outside a quotation opens an anexo passage (DECISIONS D27) that holds numbers and alíneas.
+    layout "dr-codigo" (D34) reads, besides the CCP grammar: numbers "1." and "1)", headings Livro and Subtítulo, a
+    roman subalínea "i)" right after an alínea "h)" (it is one when the next line opens "ii)"), the EU closing lines;
+    a label the DR prints twice in one holder (a consolidation slip: two "a)", or an article title printed with the
+    next article's number, CPPT "Artigo 188.º" twice) keeps both, the second as "<label>-dup2" (listed in COVERAGE);
+    a note inside an open quotation closes the quotation (the DR left it unbalanced)."""
+    codigo = layout == "dr-codigo"
+    heading_re, heading_kind, heading_slug = (HEADING_C, HEADING_KIND_C, HEADING_SLUG_C) if codigo else (HEADING, HEADING_KIND, HEADING_SLUG)
+    number_re, closing_re = (NUMBER_C, CLOSING_C) if codigo else (NUMBER, CLOSING)
     nodes, by_path = [], {}
     root = _Ctx(prefix, False, None)
     contexts = [root]
@@ -102,6 +135,11 @@ def parse(lines, first, last, prefix, annexes=False):
         return f"{base}{part}" if base.endswith(".") or not base else f"{base}.{part}"
 
     def add(i, path, kind, label, parent, quoted):
+        if path in by_path and codigo and kind in ("artigo", "numero", "alinea", "subalinea"):
+            k = 2
+            while f"{path}-dup{k}" in by_path:
+                k += 1
+            path = f"{path}-dup{k}"
         if path in by_path:
             raise ValueError(f"line {i + 1}: duplicate passage {path!r} ({lines[i][:80]!r})")
         node = {"path": path, "kind": kind, "label": label, "parent": parent, "start_line": i, "last_line": i, "quoted": quoted}
@@ -123,12 +161,15 @@ def parse(lines, first, last, prefix, annexes=False):
             continue
         ctx = contexts[-1]
         if line.startswith(NOTE_PREFIX):
+            if depth != 0 and codigo:
+                depth, contexts = 0, [root]
+                ctx = root
             if depth != 0:
                 raise ValueError(f"line {i + 1}: a validity note inside a quotation")
             for c in contexts:
                 c.stack.clear()  # a note closes the article it follows
             continue
-        if depth == 0 and CLOSING.match(line):
+        if depth == 0 and closing_re.match(line):
             break
         opens, closes = raw.count("«"), raw.count("»")
         if depth == 0 and line.startswith("«") and opens > closes:
@@ -140,7 +181,7 @@ def parse(lines, first, last, prefix, annexes=False):
             contexts.append(ctx)
         text = re.sub(r"»+\.?$", "", line.lstrip("«")).strip() if ctx.quoted else line
         depth += opens - closes
-        h, a, nm, lt = HEADING.match(text), ARTICLE.match(text), NUMBER.match(text), LETTER.match(text)
+        h, a, nm, lt = heading_re.match(text), ARTICLE.match(text), number_re.match(text), LETTER.match(text)
         an = ANNEX_LINE.match(text) if annexes and not ctx.quoted else None
         if an:
             started = True
@@ -152,17 +193,17 @@ def parse(lines, first, last, prefix, annexes=False):
             touch(i, ctx)
         elif h:
             started = True
-            kind, rank = HEADING_KIND[h.group(1).lower()]
+            kind, rank = heading_kind[h.group(1).lower()]
             ctx.stack.clear()
             while ctx.headings and ctx.headings[-1][0] >= rank:
                 ctx.headings.pop()
             parent = ctx.headings[-1][1] if ctx.headings else ctx.parent_path
             label_slug = _slug(h.group(2)) + (f"-{h.group(3).lower()}" if h.group(3) else "")
             base = ctx.headings[-1][1] if ctx.headings else ctx.prefix
-            path = join(base, f"{HEADING_SLUG[h.group(1).lower()]}-{label_slug}")
+            path = join(base, f"{heading_slug[h.group(1).lower()]}-{label_slug}")
             node = add(i, path, kind, text, parent, ctx.quoted)
             nxt = lines[i + 1].strip() if i + 1 < last else ""
-            if nxt and not (HEADING.match(nxt) or ARTICLE.match(nxt) or nxt.startswith(NOTE_PREFIX)):
+            if nxt and not (heading_re.match(nxt) or ARTICLE.match(nxt) or nxt.startswith(NOTE_PREFIX)):
                 node["last_line"] = i + 1  # the heading's name
             ctx.headings.append((rank, path))
             touch(i, ctx)
@@ -189,7 +230,9 @@ def parse(lines, first, last, prefix, annexes=False):
             label = lt.group(1)
             holder = next((n for n in reversed(ctx.stack) if n["kind"] in ("numero", "artigo", "anexo")), None)
             expected = ctx.letters.get(holder["path"], {"a"})
-            if label in expected or not ROMAN.match(label) or not any(n["kind"] == "alinea" for n in ctx.stack):
+            roman_next = codigo and label == "i" and any(n["kind"] == "alinea" for n in ctx.stack) and \
+                next((l.strip() for l in lines[i + 1:last] if l.strip()), "").startswith("ii) ")
+            if not roman_next and (label in expected or not ROMAN.match(label) or not any(n["kind"] == "alinea" for n in ctx.stack)):
                 while ctx.stack and RANK[ctx.stack[-1]["kind"]] >= RANK["alinea"]:
                     ctx.stack.pop()
                 node = add(i, join(holder["path"], label), "alinea", f"{label})", holder["path"], ctx.quoted)
@@ -223,6 +266,16 @@ def _revoked(kind, text):
 
 
 def structure(norma: dict, raw_text: str, raw_id: str, version: str) -> list:
+    return _structure(norma, raw_text, raw_id, version, "dr-ccp")
+
+
+def structure_codigo(norma: dict, raw_text: str, raw_id: str, version: str) -> list:
+    """structure() with the second layout, "dr-codigo" (D34): for the codes and EU acts the CCP grammar cannot read.
+    Same output, same offsets rule; the CCP and every act structure() reads keep that function."""
+    return _structure(norma, raw_text, raw_id, version, "dr-codigo")
+
+
+def _structure(norma, raw_text, raw_id, version, layout):
     lines = raw_text.split("\n")
     starts, pos = [], 0
     for line in lines:
@@ -231,8 +284,8 @@ def structure(norma: dict, raw_text: str, raw_id: str, version: str) -> list:
     out = []
     recorded_at = now_utc()
     short = norma["short"]
-    for first, last, prefix, annexes in _regions(norma, lines):
-        for n in parse(lines, first, last, prefix, annexes):
+    for first, last, prefix, annexes in _regions(norma, lines, layout):
+        for n in parse(lines, first, last, prefix, annexes, layout):
             s, e = starts[n["start_line"]], starts[n["last_line"]] + len(lines[n["last_line"]])
             text = raw_text[s:e]
             revoked = _revoked(n["kind"], text)

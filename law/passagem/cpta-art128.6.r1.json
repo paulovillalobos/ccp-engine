@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art128.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art128",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - Requerida a declaração de ineficácia dos atos de execução indevida, o juiz ou relator ouve a entidade administrativa e os contrainteressados no prazo de cinco dias, tomando de imediato a decisão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 191069,
+        "end": 191268
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

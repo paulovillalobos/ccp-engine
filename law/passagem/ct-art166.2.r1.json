@@ -1,0 +1,23 @@
+{
+  "id": "ct:art166.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art166",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A implementação do regime de teletrabalho depende sempre de acordo escrito, que pode constar do contrato de trabalho inicial ou ser autónomo em relação a este.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 227122,
+        "end": 227285
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

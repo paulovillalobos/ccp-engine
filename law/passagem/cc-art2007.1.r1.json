@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2007.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2007",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Enquanto se não fixarem definitivamente os alimentos, pode o tribunal, a requerimento do alimentando, ou oficiosamente se este for menor, conceder alimentos provisórios, que serão taxados segundo o seu prudente arbítrio.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 975246,
+        "end": 975469
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

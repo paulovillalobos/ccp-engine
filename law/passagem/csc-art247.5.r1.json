@@ -1,0 +1,23 @@
+{
+  "id": "csc:art247.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art247",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "5 - O voto escrito deve identificar a proposta e conter a aprovação ou rejeição desta; qualquer modificação da proposta ou condicionamento do voto implica rejeição da proposta.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 387722,
+        "end": 387898
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art27.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art27",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "6 - A falta de realização pontual de uma prestação relativa a uma entrada importa o vencimento de todas as demais prestações em dívida pelo mesmo sócio, ainda que respeitem a outras partes, quotas ou acções.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 52345,
+        "end": 52552
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

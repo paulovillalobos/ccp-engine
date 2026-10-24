@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art181.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art181",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - A alteração do valor da base de incidência contributiva só é permitida para escalão imediatamente superior desde que se verifiquem cumulativamente as seguintes condições:\na) Terem sido pagas contribuições em função do mesmo escalão durante pelo menos 12 meses consecutivos;\nb) O beneficiário ter idade inferior à prevista no mapa do anexo i do presente Código.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 116198,
+        "end": 116562
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

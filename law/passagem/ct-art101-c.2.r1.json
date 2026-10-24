@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-c.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101-c",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Salvo acordo em contrário, o período normal de trabalho a tempo parcial corresponde a metade do praticado a tempo completo numa situação comparável e, conforme o pedido do trabalhador cuidador, é prestado diariamente, de manhã ou de tarde, ou em três dias por semana.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 155677,
+        "end": 155948
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

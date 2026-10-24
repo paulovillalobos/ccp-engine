@@ -1,0 +1,23 @@
+{
+  "id": "csc:art204.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art204",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "1 - Se o sócio não efectuar, no prazo fixado na interpelação, a prestação a que está obrigado, deve a sociedade avisá-lo por carta registada de que, a partir do 30.º dia seguinte à recepção da carta, fica sujeito a exclusão e a perda total ou parcial da quota.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 334846,
+        "end": 335106
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

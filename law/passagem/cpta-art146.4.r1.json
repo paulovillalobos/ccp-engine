@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art146.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art146",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "4 - Quando o recorrente, na alegação de recurso contra sentença proferida em processo impugnatório, se tenha limitado a reafirmar os vícios imputados ao acto impugnado, sem formular conclusões ou sem que delas seja possível deduzir quais os concretos aspectos de facto que considera incorrectamente julgados ou as normas jurídicas que considera terem sido violadas pelo tribunal recorrido, o relator deve convidá-lo a apresentar, completar ou esclarecer as conclusões formuladas, no prazo de 10 dias, sob pena de não se conhecer do recurso na parte afectada.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 210611,
+        "end": 211169
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

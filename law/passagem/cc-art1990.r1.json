@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1990",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iv.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 1990.º",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "Artigo 1990.º\n(Revisão da sentença)\n1 - Sem prejuízo da impugnação da sentença através de recurso extraordinário de revisão previsto na lei processual civil, a sentença que tiver decretado a adoção só é suscetível de revisão:\na) Se tiver faltado o consentimento do adoptante ou dos pais do adoptado, quando necessário e não dispensado;\nb) Se o consentimento dos pais do adoptado tiver sido indevidamente dispensado, por não se verificarem as condições do n.º 3 do artigo 1981.º;\nc) Se o consentimento do adoptante tiver sido viciado por erro desculpável e essencial sobre a pessoa do adoptado;\nd) Se o consentimento do adoptante ou dos pais do adoptado tiver sido determinado por coacção moral, contanto que seja grave o mal com que eles foram ilicitamente ameaçados e justificado o receio da sua consumação;\ne) Se tiver faltado o consentimento do adoptado, quando necessário.\n2. O erro só se considera essencial quando for de presumir que o conhecimento da realidade excluiria razoavelmente a vontade de adoptar.\n3. A revisão não será, contudo, concedida quando os interesses do adoptado possam ser consideravelmente afectados, salvo se razões invocadas pelo adoptante imperiosamente o exigirem.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 965712,
+        "end": 966908
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

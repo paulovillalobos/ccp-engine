@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art19.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art19",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - As ações que tenham por objeto litígios emergentes de vínculos de emprego público intentadas por trabalhador contra o empregador público podem ser propostas no tribunal do lugar da prestação de trabalho ou do domicílio do autor.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 31605,
+        "end": 31837
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art424.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art424",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. No contrato com prestações recíprocas, qualquer das partes tem a faculdade de transmitir a terceiro a sua posição contratual, desde que o outro contraente, antes ou depois da celebração do contrato, consinta na transmissão.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 191902,
+        "end": 192128
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

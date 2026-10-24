@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art223.12",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art223",
+  "kind": "numero",
+  "label": "12",
+  "versions": [
+    {
+      "version": "2025-01-14",
+      "text": "12 - O executado pode solicitar à instituição detentora do depósito penhorado que proceda ao depósito das quantias e valores penhorados à ordem do órgão de execução fiscal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 277649,
+        "end": 277821
+      },
+      "valid_from": "2025-01-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

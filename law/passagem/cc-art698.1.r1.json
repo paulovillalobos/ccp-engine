@@ -1,0 +1,23 @@
+{
+  "id": "cc:art698.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art698",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Sempre que o dono da coisa ou o titular do direito hipotecado seja pessoa diferente do devedor, é-lhe lícito opor ao credor, ainda que o devedor a eles tenha renunciado, os meios de defesa que o devedor tiver contra o crédito, com exclusão das excepções que são recusadas ao fiador.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 299520,
+        "end": 299805
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

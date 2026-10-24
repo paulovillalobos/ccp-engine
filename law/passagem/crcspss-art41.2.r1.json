@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art41.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art41",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - As entidades contribuintes que sejam pessoas singulares e que tenham ao seu serviço apenas um trabalhador podem optar pelo envio da declaração em suporte de papel ou através da transmissão electrónica de dados, sendo a opção por esta última irrevogável.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 28950,
+        "end": 29207
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

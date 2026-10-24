@@ -1,0 +1,23 @@
+{
+  "id": "csc:art258.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art258",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A renúncia de gerentes deve ser comunicada por escrito à sociedade e torna-se efectiva oito dias depois de recebida a comunicação.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 399648,
+        "end": 399782
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

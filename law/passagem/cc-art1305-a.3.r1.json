@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1305-a.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1305-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-05-01",
+      "text": "3 - O direito de propriedade de um animal não abrange a possibilidade de, sem motivo legítimo, infligir dor, sofrimento ou quaisquer outros maus-tratos que resultem em sofrimento injustificado, abandono ou morte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 569750,
+        "end": 569962
+      },
+      "valid_from": "2015-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

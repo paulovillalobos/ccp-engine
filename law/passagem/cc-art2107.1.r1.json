@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2107.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2107",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Não estão sujeitos a colação os bens ou valores doados ao cônjuge do presuntivo herdeiro legitimário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1019573,
+        "end": 1019677
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

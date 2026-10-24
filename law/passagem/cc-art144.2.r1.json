@@ -1,0 +1,23 @@
+{
+  "id": "cc:art144.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art144",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2 - Os descendentes podem ser exonerados, a seu pedido, ao fim de cinco anos, se existirem outros descendentes igualmente idóneos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 67323,
+        "end": 67453
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

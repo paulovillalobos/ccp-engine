@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art25",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iv",
+  "kind": "artigo",
+  "label": "Artigo 25.º",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "Artigo 25.º\nCitações e notificações\n1 - Salvo disposição em contrário, as citações editais são realizadas mediante a publicação de anúncio em página informática de acesso público, nos termos a definir em portaria do membro do Governo responsável pela área da justiça.\n2 - Em todas as formas de processo, todos os articulados e requerimentos autónomos e demais documentos apresentados após a notificação ao autor da contestação do demandado são notificados pelo mandatário judicial do apresentante ao mandatário judicial da contraparte nos termos da lei processual civil.\n3 - A notificação determinada no número anterior realiza-se por via eletrónica, nos termos a definir por portaria do membro do Governo responsável pela área da justiça.\n4 - Quando seja demandado o Estado, ou na mesma ação sejam demandados diversos ministérios, a citação é dirigida unicamente ao Centro de Competências Jurídicas do Estado, que assegura a sua transmissão aos serviços competentes e coordena os termos da respetiva intervenção em juízo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 38274,
+        "end": 39296
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

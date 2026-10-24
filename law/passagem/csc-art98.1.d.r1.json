@@ -1,0 +1,23 @@
+{
+  "id": "csc:art98.1.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art98.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "d) O balanço de cada uma das sociedades intervenientes, donde conste designadamente o valor dos elementos do ativo e do passivo a transferir para a sociedade incorporante ou para a nova sociedade;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 149252,
+        "end": 149448
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

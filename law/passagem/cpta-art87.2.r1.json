@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art87.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art87",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O juiz convida as partes a suprir as irregularidades dos articulados, fixando prazo para o suprimento ou correção do vício, designadamente quando careçam de requisitos legais ou a parte não haja apresentado documento essencial ou de que a lei faça depender o prosseguimento da causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 124189,
+        "end": 124476
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

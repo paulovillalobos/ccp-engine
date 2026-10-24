@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art82",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-ii.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 82.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 82.º\nBase de incidência contributiva\n1 - Constitui base de incidência contributiva a remuneração convencional calculada com base no número de horas de trabalho prestado e na remuneração horária determinada nos termos do número seguinte.\n2 - A remuneração horária é calculada de acordo com a seguinte fórmula:\nRh = (IAS x 12)/(52x40)\n3 - Na fórmula prevista no número anterior, Rh corresponde ao valor da remuneração horária e IAS ao valor do indexante dos apoios sociais.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 55979,
+        "end": 56457
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

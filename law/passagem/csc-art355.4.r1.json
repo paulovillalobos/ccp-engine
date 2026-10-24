@@ -1,0 +1,23 @@
+{
+  "id": "csc:art355.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art355",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "4 - A assembleia dos obrigacionistas delibera sobre todos os assuntos que por lei lhe são atribuídos ou que sejam de interesse comum dos obrigacionistas e nomeadamente sobre:\na) Nomeação, remuneração e destituição do representante comum dos obrigacionistas;\nb) Modificação das condições dos créditos dos obrigacionistas;\nc) Propostas de planos de recuperação de empresas ou de insolvência;\nd) Reclamação de créditos dos obrigacionistas em acções executivas, salvo o caso de urgência;\ne) Constituição de um fundo para as despesas necessárias à tutela dos interesses comuns e sobre a prestação das respectivas contas;\nf) Autorização do representante comum para a proposição de acções judiciais.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 504089,
+        "end": 504781
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

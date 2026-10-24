@@ -1,0 +1,23 @@
+{
+  "id": "cc:art303",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 303.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 303.º\n(Invocação da prescrição)\nO tribunal não pode suprir, de ofício, a prescrição; esta necessita, para ser eficaz, de ser invocada, judicial ou extrajudicialmente, por aquele a quem aproveita, pelo seu representante ou, tratando-se de incapaz, pelo Ministério Público.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 141147,
+        "end": 141425
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

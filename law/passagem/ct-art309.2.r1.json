@@ -1,0 +1,23 @@
+{
+  "id": "ct:art309.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art309",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - Ao valor da retribuição deduz-se o que o trabalhador receba no período em causa por outra actividade que tenha passado a exercer por efeito do encerramento ou diminuição de actividade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 416895,
+        "end": 417083
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

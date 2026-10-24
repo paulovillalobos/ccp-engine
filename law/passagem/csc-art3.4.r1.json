@@ -1,0 +1,23 @@
+{
+  "id": "csc:art3.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art3",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "4 - A sociedade que tenha sede efectiva em Portugal pode transferi-la para outro país, mantendo a sua personalidade jurídica, se a lei desse país nisso convier.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 27407,
+        "end": 27567
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

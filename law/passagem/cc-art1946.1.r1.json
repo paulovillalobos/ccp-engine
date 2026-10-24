@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1946.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1946",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Serão abonadas ao tutor as despesas que legalmente haja feito, ainda que delas, sem culpa sua, nenhum proveito tenha provindo ao menor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 935953,
+        "end": 936091
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art90-g.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art90-g",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "2 - O tribunal determina o prazo em que a injunção deve ser cumprida a partir do trânsito em julgado da sentença.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 163779,
+        "end": 163892
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

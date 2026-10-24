@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art19.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art19",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - As pretensões relativas a contratos são deduzidas no tribunal do lugar de cumprimento do contrato.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 31313,
+        "end": 31415
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

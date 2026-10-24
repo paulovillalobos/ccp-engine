@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1890.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1890",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-01",
+      "text": "3. Se os pais nada declararem dentro do prazo fixado, a liberalidade tem-se por aceite, salvo se o tribunal julgar mais conveniente para o menor a rejeição.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 888360,
+        "end": 888516
+      },
+      "valid_from": "1995-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

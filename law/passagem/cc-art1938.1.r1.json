@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1938.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1938",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-01",
+      "text": "1 - O tutor, como representante do pupilo, necessita de autorização do tribunal:\na) Para praticar qualquer dos actos mencionados no n.º 1 do artigo 1889.º;\nb) Para adquirir bens, móveis ou imóveis, como aplicação de capitais do menor;\nc) Para aceitar herança, doação ou legado, ou convencionar partilha extrajudicial;\nd) Para contrair ou solver obrigações, salvo quando respeitem a alimentos do menor ou se mostrem necessárias à administração do seu património;\ne) Para intentar acções, salvas as destinadas à cobrança de prestações periódicas e aquelas cuja demora possa causar prejuízo;\nf) Para continuar a exploração do estabelecimento comercial ou industrial que o menor haja recebido por sucessão ou doação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 931241,
+        "end": 931953
+      },
+      "valid_from": "1995-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

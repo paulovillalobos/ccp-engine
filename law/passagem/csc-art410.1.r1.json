@@ -1,0 +1,23 @@
+{
+  "id": "csc:art410.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art410",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - O conselho de administração reúne sempre que for convocado pelo presidente ou por outros dois administradores.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 584391,
+        "end": 584505
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art16",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 16.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 16.º\n(Referência à lei estrangeira. Princípio geral)\nA referência das normas de conflitos a qualquer lei estrangeira determina apenas, na falta de preceito em contrário, a aplicação do direito interno dessa lei.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 14178,
+        "end": 14396
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

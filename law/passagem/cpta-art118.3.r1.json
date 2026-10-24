@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art118.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art118",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - O juiz pode ordenar as diligências de prova que considere necessárias, não sendo admissível a prova pericial.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 178786,
+        "end": 178899
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

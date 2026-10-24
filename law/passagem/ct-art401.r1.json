@@ -1,0 +1,23 @@
+{
+  "id": "ct:art401",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-vii.seccao-v.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 401.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 401.º\nDenúncia sem aviso prévio\n1 - O trabalhador que não cumpra, total ou parcialmente, o prazo de aviso prévio estabelecido no artigo anterior deve pagar ao empregador uma indemnização de valor igual à retribuição base e diuturnidades correspondentes ao período em falta, sem prejuízo de indemnização por danos causados pela inobservância do prazo de aviso prévio ou de obrigação assumida em pacto de permanência.\n2 - O disposto no número anterior não é aplicável ao trabalhador a quem tenha sido reconhecido o estatuto de vítima de violência doméstica, nos termos de legislação específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 509947,
+        "end": 510546
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

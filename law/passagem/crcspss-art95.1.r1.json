@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art95.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art95",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - São abrangidos pelo regime geral, com as especificidades previstas na presente subsecção, os trabalhadores que exercem actividades agrícolas ou equiparadas, sob a autoridade de uma entidade empregadora, prestadas em explorações que tenham por objecto principal a produção agrícola, sem prejuízo do disposto no artigo 80.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 61765,
+        "end": 62090
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

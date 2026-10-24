@@ -1,0 +1,23 @@
+{
+  "id": "ct:art300.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art300",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "2 - A acta das reuniões de negociação deve conter a matéria acordada e, bem assim, as posições divergentes das partes, com as opiniões, sugestões e propostas de cada uma.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 404672,
+        "end": 404842
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

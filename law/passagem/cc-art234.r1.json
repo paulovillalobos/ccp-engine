@@ -1,0 +1,23 @@
+{
+  "id": "cc:art234",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 234.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 234.º\n(Dispensa da declaração de aceitação)\nQuando a proposta, a própria natureza ou circunstâncias do negócio, ou os usos tornem dispensável a declaração de aceitação, tem-se o contrato por concluído logo que a conduta da outra parte mostre a intenção de aceitar a proposta.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 115304,
+        "end": 115586
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

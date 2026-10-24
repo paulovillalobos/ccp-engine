@@ -1,0 +1,23 @@
+{
+  "id": "ct:art170-a.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art170-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2022-01-01",
+      "text": "5 - O regime legal de reparação dos acidentes de trabalho e doenças profissionais aplica-se às situações de teletrabalho, considerando-se local de trabalho o local escolhido pelo trabalhador para exercer habitualmente a sua atividade e tempo de trabalho todo aquele em que, comprovadamente, esteja a prestar o seu trabalho ao empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 245194,
+        "end": 245531
+      },
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

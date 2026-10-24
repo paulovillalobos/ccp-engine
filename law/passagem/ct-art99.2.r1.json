@@ -1,0 +1,23 @@
+{
+  "id": "ct:art99.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art99",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "2 - Na elaboração do regulamento interno de empresa é ouvida a comissão de trabalhadores ou, na sua falta, as comissões intersindicais, as comissões sindicais ou os delegados sindicais.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 150590,
+        "end": 150775
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

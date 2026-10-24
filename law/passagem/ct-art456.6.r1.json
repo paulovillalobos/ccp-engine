@@ -1,0 +1,23 @@
+{
+  "id": "ct:art456.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art456",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "6 - No caso de a deliberação de extinção da associação ser desconforme com a lei ou os estatutos, o magistrado do Ministério Público promove, no prazo de 15 dias a contar da recepção, a declaração judicial de nulidade da deliberação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 564750,
+        "end": 564983
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

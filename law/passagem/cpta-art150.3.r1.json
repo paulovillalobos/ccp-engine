@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art150.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art150",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Aos factos materiais fixados pelo tribunal recorrido, o tribunal de revista aplica definitivamente o regime jurídico que julgue adequado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 215206,
+        "end": 215347
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

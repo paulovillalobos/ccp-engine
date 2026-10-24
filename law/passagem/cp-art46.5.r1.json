@@ -1,0 +1,23 @@
+{
+  "id": "cp:art46.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art46",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "5 - Se, nos casos do n.º 3, o condenado tiver de cumprir pena de prisão, mas houver já cumprido tempo de proibição do exercício de profissão, função ou atividade, o tribunal desconta no tempo de prisão a cumprir o tempo de proibição já cumprido.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 107040,
+        "end": 107285
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

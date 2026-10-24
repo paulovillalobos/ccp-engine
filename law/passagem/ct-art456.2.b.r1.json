@@ -1,0 +1,23 @@
+{
+  "id": "ct:art456.2.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art456.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "b) Pelo presidente da mesa da assembleia geral, mediante certidão ou cópia certificada da acta da assembleia que delibere a extinção, com as folhas de presenças e respectivos termos de abertura e encerramento.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 563855,
+        "end": 564064
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

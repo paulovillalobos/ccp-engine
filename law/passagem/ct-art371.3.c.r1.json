@@ -1,0 +1,23 @@
+{
+  "id": "ct:art371.3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art371.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "c) 60 dias, no caso de trabalhador com antiguidade igual ou superior a cinco anos e inferior a 10 anos;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 479532,
+        "end": 479635
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

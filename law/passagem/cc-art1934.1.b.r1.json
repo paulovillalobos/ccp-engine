@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1934.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1934.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "b) Os bispos e sacerdotes que tenham cura de almas, bem como os religiosos que vivam em comunidade;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 928316,
+        "end": 928415
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

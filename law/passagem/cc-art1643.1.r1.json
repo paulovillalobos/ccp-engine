@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1643.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1643",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - A ação de anulação fundada em impedimento dirimente deve ser instaurada:\na) Nos casos de menoridade, de demência notória ou de acompanhamento de maior judicialmente impeditivo, quando proposta pelo próprio incapaz, até seis meses depois de ter atingido a maioridade, de a incapacidade natural ter cessado ou de cessar ou ser revisto, nesse sentido, o acompanhamento; quando proposta por outra pessoa, dentro dos três anos seguintes à celebração do casamento, mas nunca depois da maioridade ou da cessação da incapacidade natural;\nb) No caso de condenação por homicídio contra o cônjuge de um dos nubentes, no prazo de três anos a contar da celebração do casamento;\nc) Nos outros casos, até seis meses depois da dissolução do casamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 737650,
+        "end": 738389
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

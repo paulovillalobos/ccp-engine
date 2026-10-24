@@ -1,0 +1,23 @@
+{
+  "id": "cp:art43.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art43",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "2 - O regime de permanência na habitação consiste na obrigação de o condenado permanecer na habitação, com fiscalização por meios técnicos de controlo à distância, pelo tempo de duração da pena de prisão, sem prejuízo das ausências autorizadas.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 102282,
+        "end": 102526
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art773.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art773",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A disposição do número anterior é ainda aplicável, quando se trate de coisa genérica que deva ser escolhida de um conjunto determinado ou de coisa que deva ser produzida em certo lugar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 330008,
+        "end": 330196
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

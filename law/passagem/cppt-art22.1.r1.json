@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art22.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art22",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - No processo judicial tributário, os prazos para a prática de actos pelo Ministério Público e pelo representante da Fazenda Pública têm a natureza de prazos peremptórios.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 31301,
+        "end": 31474
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

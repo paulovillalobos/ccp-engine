@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - Em caso de o aviso de recepção ser devolvido ou não vier assinado por o destinatário se ter recusado a recebê-lo ou não o ter levantado no prazo previsto no regulamento dos serviços postais e não se comprovar que entretanto o contribuinte comunicou a alteração do seu domicílio fiscal, a notificação será efectuada nos 15 dias seguintes à devolução por nova carta registada com aviso de recepção, presumindo-se a notificação se a carta não tiver sido recebida ou levantada, sem prejuízo de o notificando poder provar justo impedimento ou a impossibilidade de comunicação da mudança de residência no prazo legal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 55940,
+        "end": 56555
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

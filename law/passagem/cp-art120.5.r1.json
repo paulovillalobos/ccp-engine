@@ -1,0 +1,23 @@
+{
+  "id": "cp:art120.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art120",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "5 - Os prazos a que alude o número anterior são elevados para o dobro se tiver havido recurso para o Tribunal Constitucional.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 203601,
+        "end": 203726
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

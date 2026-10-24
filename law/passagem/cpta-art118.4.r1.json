@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art118.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art118",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - O requerente não pode oferecer mais de cinco testemunhas para prova dos fundamentos da pretensão cautelar, aplicando-se a mesma limitação aos requeridos que deduzam a mesma oposição.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 178900,
+        "end": 179086
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

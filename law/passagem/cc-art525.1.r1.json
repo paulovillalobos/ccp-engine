@@ -1,0 +1,23 @@
+{
+  "id": "cc:art525.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art525",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Os condevedores podem opor ao que satisfez o direito do credor a falta de decurso do prazo que lhes tenha sido concedido para o cumprimento da obrigação, bem como qualquer outro meio de defesa, quer este seja comum, quer respeite pessoalmente ao demandado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 235046,
+        "end": 235305
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

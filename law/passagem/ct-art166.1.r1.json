@@ -1,0 +1,23 @@
+{
+  "id": "ct:art166.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art166",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - Pode exercer a atividade em regime de teletrabalho um trabalhador da empresa ou outro admitido para o efeito.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 227008,
+        "end": 227121
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

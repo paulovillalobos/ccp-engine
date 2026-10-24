@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1890.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1890",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-01",
+      "text": "1. Se ao filho for deixada herança ou legado, ou for feita proposta de doação que necessite de ser aceite, devem os pais aceitar a liberalidade, se o puderem fazer legalmente, ou requerer ao tribunal, no prazo de trinta dias, autorização para aceitar ou rejeitar.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 887718,
+        "end": 887981
+      },
+      "valid_from": "1995-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1829.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1829",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Cessa a presunção de paternidade se o nascimento do filho ocorrer passados trezentos dias depois de finda a coabitação dos cônjuges, nos termos do número seguinte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 846671,
+        "end": 846837
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art85.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art85",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "4 - Os poderes de intervenção previstos nos números anteriores podem ser exercidos até 30 dias após a notificação da junção do processo administrativo aos autos ou, não tendo esta lugar, da apresentação da última contestação, disso sendo, de imediato, notificadas as partes para se pronunciarem.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 119524,
+        "end": 119819
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

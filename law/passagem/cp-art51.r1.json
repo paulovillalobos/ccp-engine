@@ -1,0 +1,23 @@
+{
+  "id": "cp:art51",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 51.º",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "Artigo 51.º\nDeveres\n1 - A suspensão da execução da pena de prisão pode ser subordinada ao cumprimento de deveres impostos ao condenado e destinados a reparar o mal do crime, nomeadamente:\na) Pagar dentro de certo prazo, no todo ou na parte que o tribunal considerar possível, a indemnização devida ao lesado, ou garantir o seu pagamento por meio de caução idónea;\nb) Dar ao lesado satisfação moral adequada;\nc) Entregar a instituições, públicas ou privadas, de solidariedade social ou ao Estado, uma contribuição monetária ou prestação de valor equivalente.\n2 - Os deveres impostos não podem em caso algum representar para o condenado obrigações cujo cumprimento não seja razoavelmente de lhe exigir.\n3 - Os deveres impostos podem ser modificados até ao termo do período de suspensão sempre que ocorrerem circunstâncias relevantes supervenientes ou de que o tribunal só posteriormente tiver tido conhecimento.\n4 - O tribunal pode determinar que os serviços de reinserção social apoiem e fiscalizem o condenado no cumprimento dos deveres impostos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 112564,
+        "end": 113610
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

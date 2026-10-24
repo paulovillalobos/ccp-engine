@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art166.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art166",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - São admitidos no processo de execução fiscal os seguintes incidentes:\na) Embargos de terceiros;\nb) Habilitação de herdeiros;\nc) Apoio judiciário.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 191608,
+        "end": 191757
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

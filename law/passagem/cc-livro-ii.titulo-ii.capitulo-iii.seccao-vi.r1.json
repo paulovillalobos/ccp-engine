@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-ii.titulo-ii.capitulo-iii.seccao-vi",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-iii",
+  "kind": "secao",
+  "label": "Secção VI",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Secção VI\nLiquidação da sociedade e de quotas",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 422524,
+        "end": 422569
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

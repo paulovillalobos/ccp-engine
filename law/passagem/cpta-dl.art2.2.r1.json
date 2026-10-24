@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art2.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Constitui fundamento invocável, para efeitos do disposto na parte final do n.º 1, a circunstância de a violação alegada se encontrar sob apreciação dos tribunais, devendo o Estado comunicar à Comissão o resultado do processo, logo que concluído.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 1571,
+        "end": 1820
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art360.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art360",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O empregador que pretenda proceder a um despedimento colectivo comunica essa intenção, por escrito, à comissão de trabalhadores ou, na sua falta, à comissão intersindical ou às comissões sindicais da empresa representativas dos trabalhadores a abranger.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 461777,
+        "end": 462034
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

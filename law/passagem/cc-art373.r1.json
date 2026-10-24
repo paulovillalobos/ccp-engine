@@ -1,0 +1,23 @@
+{
+  "id": "cc:art373",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-iv.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 373.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 373.º\n(Assinatura)\n1. Os documentos particulares devem ser assinados pelo seu autor, ou por outrem a seu rogo, se o rogante não souber ou não puder assinar.\n2. Nos títulos emitidos em grande número ou nos demais casos em que o uso o admita, pode a assinatura ser substituída por simples reprodução mecânica.\n3. Se o documento for subscrito por pessoa que não saiba ou não possa ler, a subscrição só obriga quando feita ou confirmada perante notário, depois de lido o documento ao subscritor.\n4. O rogo deve igualmente ser dado ou confirmado perante notário, depois de lido o documento ao rogante.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 170902,
+        "end": 171505
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

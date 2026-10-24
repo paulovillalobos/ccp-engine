@@ -1,0 +1,23 @@
+{
+  "id": "cc:art170",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 170.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 170.º\n(Titulares dos órgãos da associação e revogação dos seus poderes)\n1. É a assembleia geral que elege os titulares dos órgãos da associação, sempre que os estatutos não estabeleçam outro processo de escolha.\n2. As funções dos titulares eleitos ou designados são revogáveis, mas a revogação não prejudica os direitos fundados no acto de constituição.\n3. O direito de revogação pode ser condicionado pelos estatutos à existência de justa causa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 82418,
+        "end": 82871
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

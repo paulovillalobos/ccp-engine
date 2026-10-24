@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art113.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art113",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O processo cautelar é um processo urgente e tem tramitação autónoma em relação ao processo principal, sendo apensado a este.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 170781,
+        "end": 170909
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

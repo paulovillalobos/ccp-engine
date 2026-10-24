@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art121.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art121",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A taxa contributiva relativa aos trabalhadores do serviço doméstico, quando o âmbito material da protecção não integre a eventualidade de desemprego, é de 28,3 %, sendo, respectivamente, de 18,9 % e de 9,4 % para as entidades empregadoras e para os trabalhadores.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 76791,
+        "end": 77058
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art66-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art66-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-08-17",
+      "text": "1 - As sociedades devem prestar informação, no anexo às contas:\na) Sobre a natureza e o objectivo comercial das operações não incluídas no balanço e o respectivo impacte financeiro, quando os riscos ou os benefícios resultantes de tais operações sejam relevantes e na medida em que a divulgação de tais riscos ou benefícios seja necessária para efeitos de avaliação da situação financeira da sociedade;\nb) Separadamente, sobre os honorários totais facturados durante o exercício financeiro pelo revisor oficial de contas ou pela sociedade de revisores oficiais de contas relativamente à revisão legal das contas anuais, e os honorários totais facturados relativamente a outros serviços de garantia de fiabilidade, os honorários totais facturados a título de consultoria fiscal e os honorários totais facturados a título de outros serviços que não sejam de revisão ou auditoria.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 101179,
+        "end": 102056
+      },
+      "valid_from": "2009-08-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

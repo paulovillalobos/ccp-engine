@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1078.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1078",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "6 - No caso previsto no número anterior, a obrigação do arrendatário vence-se no final do mês seguinte ao da comunicação pelo senhorio, devendo ser cumprida simultaneamente com a renda subsequente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 460631,
+        "end": 460828
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

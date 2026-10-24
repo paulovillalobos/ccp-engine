@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art205.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art205",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - A duplicação de colecta só poderá ser alegada uma vez, salvo baseando-se em documento superveniente demonstrativo do pagamento ou de nova liquidação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 260101,
+        "end": 260254
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-ii.capitulo-ii.seccao-i.subseccao-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-ii.seccao-i",
+  "kind": "secao",
+  "label": "Subsecção II",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Subsecção II\nDa legitimidade",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 72032,
+        "end": 72060
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

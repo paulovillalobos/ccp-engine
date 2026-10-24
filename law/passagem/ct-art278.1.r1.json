@@ -1,0 +1,23 @@
+{
+  "id": "ct:art278.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art278",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O crédito retributivo vence-se por períodos certos e iguais, que, salvo estipulação ou uso diverso, são a semana, a quinzena e o mês do calendário.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 374527,
+        "end": 374678
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

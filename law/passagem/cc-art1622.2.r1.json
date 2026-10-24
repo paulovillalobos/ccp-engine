@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1622.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1622",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-09-29",
+      "text": "2 - Do casamento urgente é redigida uma acta, nas condições previstas na lei do registo civil.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 726794,
+        "end": 726888
+      },
+      "valid_from": "2007-09-29",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

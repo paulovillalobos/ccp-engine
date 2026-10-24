@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art133.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art133",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - As quantias percebidas não podem exceder as que resultariam do reconhecimento dos direitos invocados pelo requerente, considerando-se o respectivo processamento como feito por conta das prestações alegadamente devidas em função das prestações não realizadas.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 197696,
+        "end": 197958
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

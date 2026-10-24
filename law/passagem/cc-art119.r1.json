@@ -1,0 +1,23 @@
+{
+  "id": "cc:art119",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 119.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 119.º\n(Regresso do ausente)\n1. Se o ausente regressar ou dele houver notícias, ser-lhe-á devolvido o património no estado em que se encontrar, com o preço dos bens alienados ou com os bens directamente sub-rogados, e bem assim com os bens adquiridos mediante o preço dos alienados, quando no título de aquisição se declare expressamente a proveniência do dinheiro.\n2. Havendo má fé dos sucessores, o ausente tem direito a ser indemnizado do prejuízo, sofrido.\n3. A má fé, neste caso, consiste no conhecimento de que o ausente sobreviveu à data da morte presumida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 55612,
+        "end": 56182
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

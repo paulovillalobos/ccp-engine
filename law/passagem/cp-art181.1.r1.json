@@ -1,0 +1,23 @@
+{
+  "id": "cp:art181.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art181",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "1 - Quem injuriar outra pessoa, imputando-lhe factos, mesmo sob a forma de suspeita, ou dirigindo-lhe palavras, ofensivos da sua honra ou consideração, é punido com pena de prisão até 3 meses ou com pena de multa até 120 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 279664,
+        "end": 279890
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art163.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art163",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "1 - São requisitos essenciais dos títulos executivos:\na) Menção da entidade emissora ou promotora da execução;\nb) Assinatura da entidade emissora ou promotora da execução, por chancela nos termos do presente Código ou, preferencialmente, através de aposição de assinatura electrónica avançada;\nc) Data em que foi emitido;\nd) Nome e número de contribuinte do ou dos devedores;\ne) Natureza e proveniência da dívida e indicação do seu montante.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 188729,
+        "end": 189170
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

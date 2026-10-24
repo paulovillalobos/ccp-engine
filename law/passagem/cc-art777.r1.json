@@ -1,0 +1,23 @@
+{
+  "id": "cc:art777",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vii.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 777.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 777.º\n(Determinação do prazo)\n1. Na falta de estipulação ou disposição especial da lei, o credor tem o direito de exigir a todo o tempo o cumprimento da obrigação, assim como o devedor pode a todo o tempo exonerar-se dela.\n2. Se, porém, se tornar necessário o estabelecimento de um prazo, quer pela própria natureza da prestação, quer por virtude das circunstâncias que a determinaram, quer por força dos usos, e as partes não acordarem na sua determinação, a fixação dele é deferida ao tribunal.\n3. Se a determinação do prazo for deixada ao credor e este não usar da faculdade que lhe foi concedida, compete ao tribunal fixar o prazo, a requerimento do devedor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 331051,
+        "end": 331720
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art162.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art162",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Extinto o órgão ao qual competiria dar execução à sentença ou tendo-lhe sido retirada a competência na matéria, o dever recai sobre o órgão que lhe tenha sucedido ou sobre aquele ao qual tenha sido atribuída aquela competência.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 229852,
+        "end": 230083
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

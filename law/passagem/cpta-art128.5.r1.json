@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art128.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art128",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - O incidente é processado nos autos do processo de suspensão da eficácia.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 190992,
+        "end": 191068
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

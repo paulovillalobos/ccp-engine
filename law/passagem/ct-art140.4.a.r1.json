@@ -1,0 +1,23 @@
+{
+  "id": "ct:art140.4.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art140.4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "a) Lançamento de nova atividade de duração incerta, bem como início do funcionamento de empresa ou de estabelecimento pertencente a empresa com menos de 250 trabalhadores, nos dois anos posteriores a qualquer um desses factos;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 201280,
+        "end": 201506
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

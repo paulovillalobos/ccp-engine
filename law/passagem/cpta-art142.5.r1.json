@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art142.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art142",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - As decisões proferidas em despacho interlocutório podem ser impugnadas no recurso que venha a ser interposto da decisão final, exceto nos casos em que é admitida apelação autónoma nos termos da lei processual civil.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 204969,
+        "end": 205188
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

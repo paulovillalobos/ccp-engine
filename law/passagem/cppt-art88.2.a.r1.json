@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art88.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art88.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Identificação do devedor, incluindo o número fiscal de contribuinte;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 110729,
+        "end": 110800
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

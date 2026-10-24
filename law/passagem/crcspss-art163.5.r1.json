@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art163.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art163",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "5 - A actualização da base de incidência resultante da actualização do IAS produz efeitos a partir do 1.º dia do mês seguinte ao da publicação do diploma que proceda àquela actualização.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 104745,
+        "end": 104931
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

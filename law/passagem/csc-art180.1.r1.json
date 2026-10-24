@@ -1,0 +1,23 @@
+{
+  "id": "csc:art180.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art180",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - Nenhum sócio pode exercer, por conta própria ou alheia, actividade concorrente com a da sociedade nem ser sócio de responsabilidade ilimitada noutra sociedade, salvo expresso consentimento de todos os outros sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 310249,
+        "end": 310468
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art155.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art155",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - A violação do disposto nos números anteriores constitui contra-ordenação leve quando seja cumprida nos 30 dias subsequentes ao termo do prazo e constitui contra-ordenação grave nas demais situações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 98210,
+        "end": 98412
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

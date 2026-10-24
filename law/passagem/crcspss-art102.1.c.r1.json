@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art102.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art102.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "c) Se verifique a falta de entrega, no prazo legal, das declarações de remuneração ou falta de inclusão de quaisquer trabalhadores nas referidas declarações;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 66170,
+        "end": 66327
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

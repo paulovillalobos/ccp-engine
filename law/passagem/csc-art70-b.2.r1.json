@@ -1,0 +1,23 @@
+{
+  "id": "csc:art70-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art70-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "2 - O relatório de gestão e o relatório consolidado de gestão incluem, sempre que aplicável:\na) As informações exigidas pelo artigo 8.º do Regulamento (UE) 2020/852, do Parlamento Europeu e do Conselho, de 18 de junho de 2020;\nb) As demonstrações financeiras anuais e as demonstrações financeiras consolidadas;\nc) O relatório de auditoria;\nd) O relatório de garantia de fiabilidade;\ne) Os relatos de sustentabilidade relativos a sociedades de países terceiros e pareceres de garantia de fiabilidade conexos;\nf) A declaração de que a sociedade do país terceiro não disponibilizou as informações necessárias ao relato de sustentabilidade exigido;\ng) O relatório sobre os pagamentos a administrações públicas e o relatório consolidado sobre os pagamentos a administrações públicas, consoante aplicável.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 114487,
+        "end": 115286
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

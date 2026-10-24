@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1082.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1082",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "2 - O acordo referido no número anterior é celebrado por escrito, quando não seja imediatamente executado ou quando contenha cláusulas compensatórias ou outras cláusulas acessórias.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 463599,
+        "end": 463780
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

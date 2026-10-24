@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art176.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art176.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "a) Por morte do infractor;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 199999,
+        "end": 200025
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

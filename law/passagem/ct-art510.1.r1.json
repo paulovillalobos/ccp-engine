@@ -1,0 +1,23 @@
+{
+  "id": "ct:art510.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art510",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "1 - Caso, após a caducidade de uma ou mais convenções colectivas aplicáveis a uma empresa, grupo de empresas ou sector de actividade, não seja celebrada nova convenção nos 12 meses subsequentes, e não haja outra convenção aplicável a pelo menos 50 % dos trabalhadores da mesma empresa, grupo de empresas ou sector de actividade, pode ser determinada uma arbitragem necessária.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 625199,
+        "end": 625575
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

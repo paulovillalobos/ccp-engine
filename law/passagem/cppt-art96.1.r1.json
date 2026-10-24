@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art96.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art96",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2001-07-05",
+      "text": "1 - O processo judicial tributário tem por função a tutela plena, efectiva e em tempo útil dos direitos e interesses legalmente protegidos em matéria tributária.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 125841,
+        "end": 126002
+      },
+      "valid_from": "2001-07-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

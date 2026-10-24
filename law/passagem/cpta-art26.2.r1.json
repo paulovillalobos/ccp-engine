@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art26.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art26",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-10-15",
+      "text": "2 - Na distribuição há as espécies de processos definidas pelo Conselho Superior dos Tribunais Administrativos e Fiscais, sob proposta do presidente do tribunal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 40174,
+        "end": 40335
+      },
+      "valid_from": "2021-10-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art168.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art168",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "5 - Considera-se que o trabalhador é produtor ou comerciante sempre que, pelo menos, 75 % do seu rendimento relevante seja resultado desta actividade.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 108853,
+        "end": 109003
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

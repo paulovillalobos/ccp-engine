@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1580.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1580",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A linha recta é descendente ou ascendente: descendente, quando se considera como partindo do ascendente para o que dele procede; ascendente, quando se considera como partindo deste para o progenitor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 706222,
+        "end": 706424
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

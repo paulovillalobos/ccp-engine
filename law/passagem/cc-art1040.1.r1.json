@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1040.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1040",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se, por motivo não atinente à sua pessoa ou à dos seus familiares, o locatário sofrer privação ou diminuição do gozo da coisa locada, haverá lugar a uma redução da renda ou aluguer proporcional ao tempo da privação ou diminuição e à extensão desta, sem prejuízo do disposto na secção anterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 435001,
+        "end": 435297
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

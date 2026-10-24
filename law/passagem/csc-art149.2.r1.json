@@ -1,0 +1,23 @@
+{
+  "id": "csc:art149.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art149",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - A administração deve dar cumprimento ao disposto no número anterior dentro dos 60 dias seguintes à dissolução da sociedade; caso o não faça, esse dever cabe aos liquidatários.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 283036,
+        "end": 283215
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

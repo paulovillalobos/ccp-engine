@@ -1,0 +1,23 @@
+{
+  "id": "cc:art80",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 80.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 80.º\n(Direito à reserva sobre a intimidade da vida privada)\n1. Todos devem guardar reserva quanto à intimidade da vida privada de outrem.\n2. A extensão da reserva é definida conforme a natureza do caso e a condição das pessoas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 42117,
+        "end": 42351
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

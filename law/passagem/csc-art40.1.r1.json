@@ -1,0 +1,23 @@
+{
+  "id": "csc:art40.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art40",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - Pelos negócios realizados em nome de uma sociedade por quotas, anónima ou em comandita por acções, no período compreendido entre a celebração do contrato de sociedade e o seu registo definitivo, respondem ilimitada e solidariamente todos os que no negócio agirem em representação dela, bem como os sócios que tais negócios autorizarem, sendo que os restantes sócios respondem até às importâncias das entradas a que se obrigaram, acrescidas das importâncias que tenham recebido a título de lucros ou de distribuição de reservas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 70282,
+        "end": 70813
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

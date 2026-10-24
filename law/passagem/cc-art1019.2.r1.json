@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1019.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1019",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. Se, porém, a dissolução tiver resultado de causa imperativa, é necessário que tenham cessado as circunstâncias que a determinaram.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 426238,
+        "end": 426371
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

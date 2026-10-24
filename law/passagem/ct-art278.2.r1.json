@@ -1,0 +1,23 @@
+{
+  "id": "ct:art278.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art278",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A retribuição deve ser paga em dia útil, durante o período de trabalho ou imediatamente a seguir a este.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 374679,
+        "end": 374787
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

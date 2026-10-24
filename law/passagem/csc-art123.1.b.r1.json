@@ -1,0 +1,23 @@
+{
+  "id": "csc:art123.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art123.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "b) Se o capital da sociedade a cindir não estiver inteiramente liberado.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 215836,
+        "end": 215908
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

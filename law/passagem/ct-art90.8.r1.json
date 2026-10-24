@@ -1,0 +1,23 @@
+{
+  "id": "ct:art90.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art90",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "8 - O trabalhador estudante que preste trabalho suplementar tem direito a descanso compensatório com duração de metade do número de horas prestadas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 142219,
+        "end": 142367
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

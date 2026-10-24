@@ -1,0 +1,23 @@
+{
+  "id": "csc:art403.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art403",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "2 - A deliberação de destituição sem justa causa do administrador eleito ao abrigo das regras especiais estabelecidas no artigo 392.º não produz quaisquer efeitos se contra ela tiverem votado accionistas que representem, pelo menos, 20% do capital social.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 576473,
+        "end": 576728
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

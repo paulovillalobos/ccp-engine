@@ -1,0 +1,23 @@
+{
+  "id": "ct:art453.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art453",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - São impenhoráveis os bens móveis e imóveis de associação sindical ou associação de empregadores cuja utilização seja estritamente indispensável ao seu funcionamento.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 561569,
+        "end": 561738
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

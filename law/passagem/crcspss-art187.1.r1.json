@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art187.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art187",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A obrigação do pagamento das contribuições e das quotizações, respectivos juros de mora e outros valores devidos à segurança social, no âmbito da relação jurídico-contributiva, prescreve no prazo de cinco anos a contar da data em que aquela obrigação deveria ter sido cumprida.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 119649,
+        "end": 119930
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

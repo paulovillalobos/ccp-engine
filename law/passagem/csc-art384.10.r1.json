@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.10",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "10 - Na falta de previsão dos estatutos aplica-se a alínea a) do número anterior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 553625,
+        "end": 553706
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art177.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art177",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "6 - Caso não exista verba ou cabimento orçamental que permita o pagamento imediato de quantia devida, a entidade obrigada deve dar conhecimento da situação ao tribunal, que convida as partes a chegarem a acordo, no prazo de 20 dias, quanto aos termos em que se pode proceder a um pagamento escalonado da quantia em dívida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 253531,
+        "end": 253853
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

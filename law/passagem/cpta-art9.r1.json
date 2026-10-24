@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 9.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 9.º\nLegitimidade ativa\n1 - Sem prejuízo do disposto no número seguinte e no capítulo II do título II, o autor é considerado parte legítima quando alegue ser parte na relação material controvertida.\n2 - Independentemente de ter interesse pessoal na demanda, qualquer pessoa, bem como as associações e fundações defensoras dos interesses em causa, as autarquias locais e o Ministério Público têm legitimidade para propor e intervir, nos termos previstos na lei, em processos principais e cautelares destinados à defesa de valores e bens constitucionalmente protegidos, como a saúde pública, o ambiente, o urbanismo, o ordenamento do território, a qualidade de vida, o património cultural e os bens do Estado, das Regiões Autónomas e das autarquias locais, assim como para promover a execução das correspondentes decisões jurisdicionais.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 19957,
+        "end": 20798
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art955.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art955",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A coisa deve ser entregue no estado em que se encontrava ao tempo da aceitação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 400048,
+        "end": 400130
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

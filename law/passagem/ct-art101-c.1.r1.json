@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-c.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101-c",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalhador cuidador tem direito a trabalhar a tempo parcial, de modo consecutivo ou interpolado, pelo período máximo de quatro anos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 155537,
+        "end": 155676
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

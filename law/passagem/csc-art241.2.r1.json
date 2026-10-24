@@ -1,0 +1,23 @@
+{
+  "id": "csc:art241.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art241",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Quando houver lugar à exclusão por força do contrato, são aplicáveis os preceitos relativos à amortização de quotas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 375591,
+        "end": 375711
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

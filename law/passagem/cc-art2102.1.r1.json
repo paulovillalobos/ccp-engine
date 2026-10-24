@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2102.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2102",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2013-09-02",
+      "text": "1 - Havendo acordo dos interessados, a partilha é realizada nas conservatórias ou por via notarial, e, em qualquer outro caso, por meio de inventário, nos termos previstos em lei especial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1015895,
+        "end": 1016083
+      },
+      "valid_from": "2013-09-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

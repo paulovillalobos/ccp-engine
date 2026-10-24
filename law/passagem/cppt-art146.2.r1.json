@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art146.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art146",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - O prazo para a execução espontânea das sentenças e acórdãos dos tribunais tributários conta-se a partir da data do seu trânsito em julgado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 172206,
+        "end": 172349
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

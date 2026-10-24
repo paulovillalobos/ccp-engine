@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art95-a.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art95-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-01-01",
+      "text": "3 - O procedimento é caracterizado pela dispensa de formalidades essenciais e simplicidade de termos.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 123154,
+        "end": 123255
+      },
+      "valid_from": "2009-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

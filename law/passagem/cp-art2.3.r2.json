@@ -1,0 +1,24 @@
+{
+  "id": "cp:art2.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art2",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "3 - Quando a lei valer para um determinado período de tempo, continua a ser punível o facto praticado durante esse período.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 76155,
+        "end": 76278
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1429.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1429",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "1 - É obrigatório o seguro contra o risco de incêndio do edifício, quer quanto às fracções autónomas, quer relativamente às partes comuns.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 638152,
+        "end": 638290
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art196.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art196",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-07-01",
+      "text": "2 - O disposto no número anterior não é aplicável às dívidas resultantes da falta de entrega, dentro dos respetivos prazos legais, de imposto retido na fonte ou legalmente repercutido a terceiros, salvo em caso de falecimento do executado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 232098,
+        "end": 232337
+      },
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

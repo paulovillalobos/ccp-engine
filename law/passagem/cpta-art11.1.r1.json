@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art11.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art11",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Nos tribunais administrativos é obrigatória a constituição de mandatário, nos termos previstos no Código do Processo Civil, podendo as entidades públicas fazer-se patrocinar em todos os processos por advogado, solicitador ou licenciado em direito ou em solicitadoria com funções de apoio jurídico, sem prejuízo da possibilidade de representação do Estado pelo Ministério Público.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 24203,
+        "end": 24586
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

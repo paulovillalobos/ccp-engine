@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1084.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1084",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2017-06-15",
+      "text": "4 - O arrendatário só pode fazer uso da faculdade referida no número anterior uma única vez, com referência a cada contrato.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 467770,
+        "end": 467894
+      },
+      "valid_from": "2017-06-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

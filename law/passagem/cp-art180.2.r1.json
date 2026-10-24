@@ -1,0 +1,23 @@
+{
+  "id": "cp:art180.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art180",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "2 - A conduta não é punível quando:\na) A imputação for feita para realizar interesses legítimos; e\nb) O agente provar a verdade da mesma imputação ou tiver tido fundamento sério para, em boa fé, a reputar verdadeira.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 278717,
+        "end": 278933
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

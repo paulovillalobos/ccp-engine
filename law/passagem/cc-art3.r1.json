@@ -1,0 +1,23 @@
+{
+  "id": "cc:art3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 3.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 3.º\n(Valor jurídico dos usos)\n1. Os usos que não forem contrários aos princípios da boa fé são jurìdicamente atendíveis quando a lei o determine.\n2. As normas corporativas prevalecem sobre os usos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 9106,
+        "end": 9310
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

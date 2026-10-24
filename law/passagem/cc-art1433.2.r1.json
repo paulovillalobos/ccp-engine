@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1433.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1433",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "2 - No prazo de 10 dias contado da deliberação, para os condóminos presentes, ou contado da sua comunicação, para os condóminos ausentes, pode ser exigida ao administrador a convocação de uma assembleia extraordinária, a ter lugar no prazo de 20 dias, para revogação das deliberações inválidas ou ineficazes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 643689,
+        "end": 643997
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

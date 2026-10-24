@@ -1,0 +1,23 @@
+{
+  "id": "csc:art213.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art213",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "5 - Para o cálculo do montante da obrigação vigente de efectuar prestações suplementares não serão computadas as prestações restituídas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 344935,
+        "end": 345071
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

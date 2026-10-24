@@ -1,0 +1,23 @@
+{
+  "id": "cc:art60.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art60",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. À constituição da filiação adoptiva é aplicável a lei pessoal do adoptante, sem prejuízo do disposto no número seguinte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 33645,
+        "end": 33768
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

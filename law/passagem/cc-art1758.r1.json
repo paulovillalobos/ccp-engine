@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1758",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-ii.capitulo-x.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1758.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1758.º\n(Revogação)\nAs doações entre esposados não são revogáveis por mútuo consentimento dos contraentes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 797495,
+        "end": 797607
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

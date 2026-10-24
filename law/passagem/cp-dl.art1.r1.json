@@ -1,0 +1,23 @@
+{
+  "id": "cp:dl.art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 1.º\nO Código Penal, aprovado pelo Decreto-Lei n.º 400/82, de 23 de Setembro, é revisto e publicado em anexo.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 16053,
+        "end": 16168
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

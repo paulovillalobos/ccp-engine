@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1003.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1003",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "b) Em caso de benefício do acompanhamento, precedendo decisão do tribunal que o tenha decretado;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 419048,
+        "end": 419144
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

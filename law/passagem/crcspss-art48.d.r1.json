@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art48.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art48",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "d) Os subsídios eventuais destinados ao pagamento de despesas com assistência médica e medicamentosa do trabalhador e seus familiares;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 36331,
+        "end": 36465
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

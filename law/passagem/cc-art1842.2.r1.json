@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1842.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1842",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "2 - Se o registo for omisso quanto à maternidade, os prazos a que se referem as alíneas a) e c) do número anterior contam-se a partir do estabelecimento da maternidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 856854,
+        "end": 857022
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art82.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art82",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Na fórmula prevista no número anterior, Rh corresponde ao valor da remuneração horária e IAS ao valor do indexante dos apoios sociais.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 56319,
+        "end": 56457
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

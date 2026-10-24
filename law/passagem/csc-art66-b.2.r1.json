@@ -1,0 +1,23 @@
+{
+  "id": "csc:art66-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art66-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "2 - A demonstração não financeira a que se refere o número anterior deve conter as informações bastantes para uma compreensão da evolução, do desempenho, da posição e do impacto das suas atividades, referentes, no mínimo, às questões ambientais, sociais e relativas aos trabalhadores, à igualdade entre mulheres e homens, à não discriminação, ao respeito dos direitos humanos, ao combate à corrupção e às tentativas de suborno, incluindo:\na) Uma breve descrição do modelo empresarial da empresa;\nb) Uma descrição das políticas seguidas pela empresa em relação a essas questões, incluindo os processos de diligência devida aplicados;\nc) Os resultados dessas políticas;\nd) Os principais riscos associados a essas questões, ligados às atividades da empresa, incluindo, se relevante e proporcionado, as suas relações empresariais, os seus produtos ou serviços suscetíveis de ter impactos negativos nesses domínios e a forma como esses riscos são geridos pela empresa;\ne) Indicadores-chave de desempenho relevantes para a sua atividade específica.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 103562,
+        "end": 104604
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

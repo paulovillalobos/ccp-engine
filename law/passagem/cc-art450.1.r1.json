@@ -1,0 +1,23 @@
+{
+  "id": "cc:art450.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art450",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Só no que respeita à contribuição do promissário para a prestação a terceiro são aplicáveis as disposições relativas à colação, imputação e redução das doações e à impugnação pauliana.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 202071,
+        "end": 202258
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

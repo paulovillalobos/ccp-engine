@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art169.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art169",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os cidadãos nacionais que exerçam actividade profissional em território estrangeiro e que não estejam abrangidos por instrumento internacional a que Portugal se encontre vinculado podem igualmente enquadrar-se neste regime.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 109544,
+        "end": 109771
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

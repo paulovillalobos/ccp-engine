@@ -1,0 +1,23 @@
+{
+  "id": "cp:art284",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-iv.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 284.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 284.º\nRecusa de médico\nO médico que recusar o auxílio da sua profissão em caso de perigo para a vida ou de perigo grave para a integridade física de outra pessoa, que não possa ser removido de outra maneira, é punido com pena de prisão até 5 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 381410,
+        "end": 381664
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

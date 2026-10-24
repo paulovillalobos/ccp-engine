@@ -1,0 +1,23 @@
+{
+  "id": "cc:art215",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 215.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 215.º\n(Restituição de frutos)\n1. Quem for obrigado por lei à restituição de frutos percebidos tem direito a ser indemnizado das despesas de cultura, sementes e matérias-primas e dos restantes encargos de produção e colheita, desde que não sejam superiores ao valor desses frutos.\n2. Quando se trate de frutos pendentes, o que é obrigado à entrega da coisa não tem direito a qualquer indemnização, salvo nos casos especialmente previstos na lei.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 107841,
+        "end": 108292
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

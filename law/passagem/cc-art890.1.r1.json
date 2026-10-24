@@ -1,0 +1,23 @@
+{
+  "id": "cc:art890.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art890",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O direito ao recebimento da diferença de preço caduca dentro de seis meses ou um ano após a entrega da coisa, consoante esta for móvel ou imóvel; mas, se a diferença só se tornar exigível em momento posterior à entrega, o prazo contar-se-á a partir desse momento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 375822,
+        "end": 376088
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art60.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art60",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - O acto administrativo não é oponível ao interessado quando a notificação ou a publicação, quando exigível, não dêem a conhecer o sentido da decisão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 79011,
+        "end": 79163
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

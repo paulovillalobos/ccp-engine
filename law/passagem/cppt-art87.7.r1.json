@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art87.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art87",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "7 - As despesas de avaliação entram em regra de custas do procedimento de dação em pagamento, salvo se já tiver sido instaurado processo de execução fiscal, caso em que serão consideradas custas deste processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 110124,
+        "end": 110334
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

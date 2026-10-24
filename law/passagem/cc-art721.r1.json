@@ -1,0 +1,23 @@
+{
+  "id": "cc:art721",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 721.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 721.º\n(Expurgação da hipoteca)\nAquele que adquiriu bens hipotecados, registou o título de aquisição e não é pessoalmente responsável pelo cumprimento das obrigações garantidas tem o direito de expurgar a hipoteca por qualquer dos modos seguintes:\na) Pagando integralmente aos credores hipotecários as dívidas a que os bens estão hipotecados;\nb) Declarando que está pronto a entregar aos credores, para pagamento dos seus créditos, até à quantia pela qual obteve os bens, ou aquela em que os estima, quando a aquisição tenha sido feita por título gratuito ou não tenha havido fixação de preço.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 309003,
+        "end": 309602
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

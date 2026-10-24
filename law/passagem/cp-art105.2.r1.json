@@ -1,0 +1,23 @@
+{
+  "id": "cp:art105.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art105",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - Ao internamento referido no número anterior, resultante de anomalia psíquica com os efeitos previstos no artigo 104.º, aplica-se o regime previsto no n.º 2 desse artigo.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 182225,
+        "end": 182398
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

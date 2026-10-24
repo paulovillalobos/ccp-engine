@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art117.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art117",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - São excluídas do âmbito de aplicação da presente subsecção as pessoas ligadas à entidade empregadora pelos seguintes vínculos familiares:\na) O cônjuge;\nb) Os descendentes até ao 2.º grau ou equiparados e afins;\nc) Os ascendentes ou equiparados e afins;\nd) Os irmãos e afins.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 73584,
+        "end": 73862
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

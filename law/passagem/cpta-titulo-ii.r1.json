@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": null,
+  "kind": "titulo",
+  "label": "Título II",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Título II\nDa acção administrativa",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 51594,
+        "end": 51627
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

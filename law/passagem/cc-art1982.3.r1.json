@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1982.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1982",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "3 - A mãe não pode dar o seu consentimento antes de decorridas seis semanas após o parto.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 959162,
+        "end": 959251
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

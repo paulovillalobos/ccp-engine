@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 5.º",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "Artigo 5.º\nCumulação de pedidos em processos urgentes",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 14729,
+        "end": 14782
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

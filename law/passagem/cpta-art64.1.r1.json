@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art64.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art64",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Quando, na pendência do processo, o ato impugnado seja objeto de anulação administrativa acompanhada ou sucedida de nova regulação, pode o autor requerer que o processo prossiga contra o novo ato com fundamento na reincidência nas mesmas ilegalidades, sendo aproveitada a prova produzida e dispondo o autor da faculdade de oferecer novos meios de prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 82640,
+        "end": 82997
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

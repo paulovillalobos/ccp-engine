@@ -1,0 +1,23 @@
+{
+  "id": "cp:art207",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-ii.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 207.º",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "Artigo 207.º\nAcusação particular\n1 - No caso do artigo 203.º e do n.º 1 do artigo 205.º, o procedimento criminal depende de acusação particular se:\na) O agente for cônjuge, ascendente, descendente, adoptante, adoptado, parente ou afim até ao 2.º grau da vítima, ou com ela viver em condições análogas às dos cônjuges; ou\nb) A coisa ou o animal furtados ou ilegitimamente apropriados forem de valor diminuto e destinados a utilização imediata e indispensável à satisfação de uma necessidade do agente ou de outra pessoa mencionada na alínea a).\n2 - No caso do artigo 203.º, o procedimento criminal depende de acusação particular quando a conduta ocorrer em estabelecimento comercial, durante o período de abertura ao público, relativamente à subtração de coisas móveis ou animais expostos de valor diminuto e desde que tenha havido recuperação imediata destas, salvo quando cometida por duas ou mais pessoas.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 299793,
+        "end": 300700
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

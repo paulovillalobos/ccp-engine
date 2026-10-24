@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art146.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art146",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Recebido o processo no tribunal de recurso e efectuada a distribuição, a secretaria notifica o Ministério Público, quando este não se encontre na posição de recorrente ou recorrido, para, querendo, se pronunciar, no prazo de 10 dias, sobre o mérito do recurso, em defesa dos direitos fundamentais dos cidadãos, de interesses públicos especialmente relevantes ou de algum dos valores ou bens referidos no n.º 2 do artigo 9.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 209751,
+        "end": 210178
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

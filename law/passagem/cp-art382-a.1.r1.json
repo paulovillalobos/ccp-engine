@@ -1,0 +1,23 @@
+{
+  "id": "cp:art382-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art382-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2011-03-01",
+      "text": "1 - O funcionário que informe ou decida favoravelmente processo de licenciamento ou de autorização ou preste neste informação falsa sobre as leis ou regulamentos aplicáveis, consciente da desconformidade da sua conduta com as normas urbanísticas, é punido com pena de prisão até três anos ou multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 463124,
+        "end": 463422
+      },
+      "valid_from": "2011-03-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

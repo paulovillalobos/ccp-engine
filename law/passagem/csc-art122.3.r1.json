@@ -1,0 +1,23 @@
+{
+  "id": "csc:art122.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art122",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "3 - A sociedade que, por motivo de solidariedade prescrita nos números anteriores, pague dívidas que não lhe hajam sido atribuídas tem direito de regresso contra a devedora principal.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 214632,
+        "end": 214815
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

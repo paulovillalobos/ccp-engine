@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art43.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art43",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "1 - Os interessados que intervenham ou possam intervir em quaisquer procedimentos ou processos nos serviços da administração tributária ou nos tribunais tributários comunicam, no prazo de 15 dias, qualquer alteração do seu domicílio, sede ou caixa postal electrónica.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 63688,
+        "end": 63955
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

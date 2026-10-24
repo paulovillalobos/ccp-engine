@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art222",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-iv",
+  "kind": "artigo",
+  "label": "Artigo 222.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 222.º\nPrincípio da legalidade\nSó é punido como contra-ordenação o facto descrito e declarado passível de coima por lei anterior ao momento da sua prática.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 140628,
+        "end": 140789
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

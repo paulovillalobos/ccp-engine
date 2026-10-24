@@ -1,0 +1,23 @@
+{
+  "id": "ct:art142.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art142",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Nos casos previstos no número anterior, a duração total de contratos de trabalho a termo celebrados entre o mesmo trabalhador e empregador não pode exceder 70 dias de trabalho no ano civil.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 203849,
+        "end": 204042
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

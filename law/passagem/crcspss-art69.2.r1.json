@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art69.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art69",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - À taxa contributiva a cargo das entidades empregadoras dos membros dos órgãos estatutários não se aplica o disposto no artigo 55.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 51390,
+        "end": 51524
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

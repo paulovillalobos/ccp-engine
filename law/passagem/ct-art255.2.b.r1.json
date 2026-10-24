@@ -1,0 +1,23 @@
+{
+  "id": "ct:art255.2.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art255.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "b) Por motivo de acidente no trabalho, desde que o trabalhador tenha direito a qualquer subsídio ou seguro;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 355190,
+        "end": 355297
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

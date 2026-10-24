@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art88.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art88",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - As certidões de dívida serão assinadas e autenticadas e conterão, sempre que possível e sem prejuízo do disposto no presente Código, os seguintes elementos:\na) Identificação do devedor, incluindo o número fiscal de contribuinte;\nb) Descrição sucinta, situações e artigos matriciais dos prédios que originaram as colectas;\nc) Estabelecimento, local e objecto da actividade tributada;\nd) Número dos processos;\ne) Proveniência da dívida e seu montante;\nf) Número do processo de liquidação do tributo sobre a transmissão, identificação do transmitente, número e data do termo da declaração prestada para a liquidação;\ng) Rendimentos que serviram de base à liquidação, com indicação das fontes, nos termos das alíneas b) e c);\nh) Nomes e moradas dos administradores ou gerentes da empresa ou sociedade executada;\ni) Nomes e moradas das entidades garantes da dívida e tipo e montante da garantia prestada;\nj) Nomes e moradas de outras pessoas solidária ou subsidiariamente responsáveis;\nk) Quaisquer outras indicações úteis para o eficaz seguimento da execução.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 110568,
+        "end": 111627
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

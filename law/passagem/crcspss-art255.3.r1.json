@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art255.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art255",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - A inscrição com efeitos retroactivos prevista no n.º 1 não se aplica aos trabalhadores abrangidos pelos regimes especiais dos trabalhadores rurais.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 156208,
+        "end": 156359
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

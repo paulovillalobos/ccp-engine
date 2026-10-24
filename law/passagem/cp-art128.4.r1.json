@@ -1,0 +1,23 @@
+{
+  "id": "cp:art128.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art128",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "4 - O indulto extingue a pena, no todo ou em parte, ou substitui-a por outra mais favorável prevista na lei.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 209203,
+        "end": 209311
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

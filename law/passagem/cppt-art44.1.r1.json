@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art44.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art44",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2014-01-01",
+      "text": "1 - O procedimento tributário compreende, para efeitos do presente Código:\na) As acções preparatórias ou complementares da liquidação dos tributos, incluindo parafiscais, ou de confirmação dos factos tributários declarados pelos sujeitos passivos ou outros obrigados tributários;\nb) A liquidação dos tributos, quando efectuada pela administração tributária;\nc) A revisão, oficiosa ou por iniciativa dos interessados, dos actos tributários;\nd) A emissão, rectificação, revogação, ratificação, reforma ou conversão de quaisquer outros actos administrativos em matéria tributária, incluindo sobre benefícios fiscais;\ne) As reclamações, incluindo as que tenham por fundamento a classificação pautal, a origem ou o valor aduaneiro das mercadorias e os recursos hierárquicos;\nf) A avaliação directa ou indirecta dos rendimentos ou valores patrimoniais;\ng) A cobrança das obrigações tributárias, na parte que não tiver natureza judicial;\nh) (Revogada);\ni) Todos os demais actos dirigidos à declaração dos direitos tributários.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 65007,
+        "end": 66026
+      },
+      "valid_from": "2014-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

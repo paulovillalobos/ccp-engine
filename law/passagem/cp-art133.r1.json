@@ -1,0 +1,23 @@
+{
+  "id": "cp:art133",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 133.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 133.º\nHomicídio privilegiado\nQuem matar outra pessoa dominado por compreensível emoção violenta, compaixão, desespero ou motivo de relevante valor social ou moral, que diminuam sensivelmente a sua culpa, é punido com pena de prisão de 1 a 5 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 215065,
+        "end": 215318
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

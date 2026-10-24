@@ -1,0 +1,23 @@
+{
+  "id": "cp:art61.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art61",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "6 - (Revogado.)",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 126027,
+        "end": 126042
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

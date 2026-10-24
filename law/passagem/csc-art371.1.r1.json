@@ -1,0 +1,23 @@
+{
+  "id": "csc:art371.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art371",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "1 - A administração da sociedade deve, imediatamente após o registo comercial do aumento de capital resultante da emissão:\na) Em relação a ações tituladas, emitir os títulos das novas ações e entregá-los aos seus titulares;\nb) Em relação a ações escriturais, proceder ao registo em conta das novas ações.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 529832,
+        "end": 530136
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

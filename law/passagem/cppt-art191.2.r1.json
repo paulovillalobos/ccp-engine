@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art191.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art191",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "2 - A citação referida no número anterior é feita por via postal registada quando a dívida exequenda for superior a 50 vezes a unidade de conta.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 222795,
+        "end": 222939
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

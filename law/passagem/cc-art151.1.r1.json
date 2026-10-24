@@ -1,0 +1,23 @@
+{
+  "id": "cc:art151.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art151",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - As funções do acompanhante são gratuitas, sem prejuízo da alocação de despesas, consoante a condição do acompanhado e a do acompanhante.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 71981,
+        "end": 72121
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

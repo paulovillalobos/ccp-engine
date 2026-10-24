@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1256.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1256",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Aquele que houver sucedido na posse de outrem por título diverso da sucessão por morte pode juntar à sua a posse do antecessor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 553543,
+        "end": 553673
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

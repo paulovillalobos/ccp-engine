@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art169.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art169",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - A liquidação das importâncias devidas em consequência da imposição de sanções pecuniárias compulsórias, nos termos deste artigo, é feita pelo tribunal, a cada período de três meses, e, a final, uma vez cessada a aplicação da medida, podendo o exequente solicitar a liquidação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 239362,
+        "end": 239642
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

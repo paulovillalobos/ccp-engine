@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art50",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-i.capitulo-i.seccao-iii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 50.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 50.º\nElementos integrantes da taxa contributiva global\nA taxa contributiva global integra o custo correspondente a cada uma das eventualidades referidas no artigo 28.º, sendo este calculado em função do valor de cada uma das seguintes parcelas:\na) Custo técnico das prestações;\nb) Encargos de administração;\nc) Encargos de solidariedade laboral;\nd) Encargos com políticas activas de emprego e valorização profissional.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 37507,
+        "end": 37932
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

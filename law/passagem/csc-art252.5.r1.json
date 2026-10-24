@@ -1,0 +1,23 @@
+{
+  "id": "csc:art252.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art252",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-12-10",
+      "text": "5 - A gerência não é transmissível por acto entre vivos ou por morte, nem isolada, nem juntamente com a quota.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 393933,
+        "end": 394043
+      },
+      "valid_from": "2021-12-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

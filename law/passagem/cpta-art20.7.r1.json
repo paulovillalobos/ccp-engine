@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art20.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art20",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - Os pedidos de produção antecipada de prova são deduzidos no tribunal em que a prova tenha de ser efetuada ou da área em que se situe o tribunal de comarca a que a diligência deva ser deprecada.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 32969,
+        "end": 33166
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

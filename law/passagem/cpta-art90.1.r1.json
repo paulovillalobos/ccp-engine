@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art90.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art90",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A instrução tem por objeto os factos relevantes para o exame e decisão da causa que devam considerar-se controvertidos ou necessitados de prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 135885,
+        "end": 136033
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

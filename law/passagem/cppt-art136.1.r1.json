@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art136.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art136",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "1 - O representante da Fazenda Pública pode requerer arresto de bens do devedor de tributos ou do responsável solidário ou subsidiário quando ocorram, simultaneamente, as circunstâncias seguintes:\na) Haver fundado receio da diminuição de garantia de cobrança de créditos tributáveis;\nb) O tributo estar liquidado ou em fase de liquidação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 164498,
+        "end": 164836
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

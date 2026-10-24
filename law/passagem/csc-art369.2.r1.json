@@ -1,0 +1,23 @@
+{
+  "id": "csc:art369.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art369",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - Das condições de emissão deve constar o regime de atribuição de dividendos que será aplicado às ações em que as obrigações se converterem no exercício durante o qual a conversão tiver lugar.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 527074,
+        "end": 527268
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

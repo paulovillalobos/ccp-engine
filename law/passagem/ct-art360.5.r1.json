@@ -1,0 +1,23 @@
+{
+  "id": "ct:art360.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art360",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - O empregador, na data em que procede à comunicação prevista nos n.os 1, 3 ou 4, envia cópia da mesma ao serviço do ministério responsável pela área laboral com competência para o acompanhamento e fomento da contratação coletiva.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 463296,
+        "end": 463528
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

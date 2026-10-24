@@ -1,0 +1,23 @@
+{
+  "id": "cc:art590.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art590",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O terceiro que cumpre a obrigação pode ser igualmente sub-rogado pelo devedor até ao momento do cumprimento, sem necessidade do consentimento do credor.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 259787,
+        "end": 259942
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art99.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art99",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "5 - É correspondentemente aplicável o disposto nos n.os 1 e 4 do artigo 61.º",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 174877,
+        "end": 174953
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

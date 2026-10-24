@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art150.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art150",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Das decisões proferidas em segunda instância pelo Tribunal Central Administrativo pode haver, excecionalmente, revista para o Supremo Tribunal Administrativo quando esteja em causa a apreciação de uma questão que, pela sua relevância jurídica ou social, se revista de importância fundamental ou quando a admissão do recurso seja claramente necessária para uma melhor aplicação do direito.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 214726,
+        "end": 215118
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

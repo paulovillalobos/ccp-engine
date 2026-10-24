@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art14.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art14",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - Em ambos os casos previstos nos números anteriores, a petição considera-se apresentada na data do primeiro registo de entrada, para efeitos da tempestividade da sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 28666,
+        "end": 28848
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

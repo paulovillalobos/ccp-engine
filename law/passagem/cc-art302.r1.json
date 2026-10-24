@@ -1,0 +1,23 @@
+{
+  "id": "cc:art302",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 302.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 302.º\n(Renúncia da prescrição)\n1. A renúncia da prescrição só é admitida depois de haver decorrido o prazo prescricional.\n2. A renúncia pode ser tácita e não necessita de ser aceita pelo beneficiário.\n3. Só tem legitimidade para renunciar à prescrição quem puder dispor do benefício que a prescrição tenha criado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 140826,
+        "end": 141146
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

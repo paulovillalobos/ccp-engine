@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art122.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art122",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Na falta de determinação em contrário, as providências cautelares subsistem até caducarem ou até que seja proferida decisão sobre a sua alteração ou revogação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 184171,
+        "end": 184334
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1875.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1875",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "3. Se a maternidade ou paternidade forem estabelecidas posteriormente ao registo do nascimento, os apelidos do filho poderão ser alterados nos termos dos números anteriores.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 877143,
+        "end": 877316
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

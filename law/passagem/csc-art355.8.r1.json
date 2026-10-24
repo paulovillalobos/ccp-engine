@@ -1,0 +1,23 @@
+{
+  "id": "csc:art355.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art355",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "8 - As deliberações tomadas pela assembleia vinculam os obrigacionistas ausentes ou discordantes.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 505317,
+        "end": 505414
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

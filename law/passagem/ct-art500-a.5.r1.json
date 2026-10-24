@@ -1,0 +1,23 @@
+{
+  "id": "ct:art500-a.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art500-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "5 - A parte destinatária da denúncia informa o serviço competente do ministério responsável pela área laboral do requerimento referido no n.º 1 e o tribunal arbitral informa o mesmo serviço do teor da decisão arbitral na data da notificação às partes.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 608584,
+        "end": 608835
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

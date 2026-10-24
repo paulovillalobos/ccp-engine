@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1432.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1432",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2022-04-10",
+      "text": "4 - A convocatória deve indicar o dia, hora, local e ordem de trabalhos da reunião e informar sobre os assuntos cujas deliberações só podem ser aprovadas por unanimidade dos votos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 641275,
+        "end": 641455
+      },
+      "valid_from": "2022-04-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

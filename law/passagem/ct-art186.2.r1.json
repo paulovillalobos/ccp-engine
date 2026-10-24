@@ -1,0 +1,23 @@
+{
+  "id": "ct:art186.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art186",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Antes da cedência do trabalhador temporário, o utilizador deve informar, por escrito, a empresa de trabalho temporário sobre:\na) Os resultados da avaliação dos riscos para a segurança e saúde do trabalhador temporário inerentes ao posto de trabalho a que vai ser afecto e, em caso de riscos elevados relativos a posto de trabalho particularmente perigoso, a necessidade de qualificação profissional adequada e de vigilância médica especial;\nb) As instruções sobre as medidas a adoptar em caso de perigo grave e iminente;\nc) As medidas de primeiros socorros, de combate a incêndios e de evacuação dos trabalhadores em caso de sinistro, assim como os trabalhadores ou serviços encarregados de as pôr em prática;\nd) O modo de o médico do trabalho ou o técnico de higiene e segurança da empresa de trabalho temporário aceder a posto de trabalho a ocupar.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 268254,
+        "end": 269108
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

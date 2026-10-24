@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2035.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2035",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A condenação a que se referem as alíneas a) e b) do artigo anterior pode ser posterior à abertura da sucessão, mas só o crime anterior releva para o efeito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 988611,
+        "end": 988770
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

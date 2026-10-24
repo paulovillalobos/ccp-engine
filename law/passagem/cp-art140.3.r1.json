@@ -1,0 +1,23 @@
+{
+  "id": "cp:art140.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art140",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - A mulher grávida que der consentimento ao aborto praticado por terceiro, ou que, por facto próprio ou alheio, se fizer abortar, é punida com pena de prisão até 3 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 218578,
+        "end": 218749
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

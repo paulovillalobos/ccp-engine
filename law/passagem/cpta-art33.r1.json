@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art33",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-v.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 33.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 33.º\nCritérios especiais\nNos processos relativos a actos administrativos, atende-se ao conteúdo económico do acto, designadamente por apelo aos seguintes critérios, para além daqueles que resultam do disposto no artigo anterior:\na) Quando esteja em causa a autorização ou licenciamento de obras e, em geral, a apreciação de decisões respeitantes à realização de empreendimentos públicos ou privados, o valor da causa afere-se pelo custo previsto da obra projectada;\nb) Quando esteja em causa a aplicação de sanções de conteúdo pecuniário, o valor da causa é determinado pelo montante da sanção aplicada;\nc) Quando esteja em causa a aplicação de sanções sem conteúdo pecuniário, o valor da causa é determinado pelo montante dos danos patrimoniais sofridos;\nd) Quando estejam em causa actos ablativos da propriedade ou de outros direitos reais, o valor da causa é determinado pelo valor do direito sacrificado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 47946,
+        "end": 48861
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

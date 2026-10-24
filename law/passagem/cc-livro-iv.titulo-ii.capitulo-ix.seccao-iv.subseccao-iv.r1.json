@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iv.titulo-ii.capitulo-ix.seccao-iv.subseccao-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-ii.capitulo-ix.seccao-iv",
+  "kind": "secao",
+  "label": "Subsecção IV",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção IV\nRegime da separação",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 791989,
+        "end": 792021
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

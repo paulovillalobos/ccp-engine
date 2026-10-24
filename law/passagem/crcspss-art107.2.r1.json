@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art107.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art107",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - À taxa contributiva a cargo das entidades empregadoras dos trabalhadores referidos no artigo 105.º não se aplica o disposto no artigo 55.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 68547,
+        "end": 68689
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

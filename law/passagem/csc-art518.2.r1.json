@@ -1,0 +1,23 @@
+{
+  "id": "csc:art518.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art518",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "2 - O gerente ou administrador de sociedade que recusar ou fizer recusar por outrem, em reunião de assembleia social, informações que esteja por lei obrigado a prestar, ou, noutras circunstâncias, informações que por lei deva prestar e que lhe tenham sido pedidas por escrito, é punido com pena de prisão até 1 ano e 6 meses ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 743976,
+        "end": 744322
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

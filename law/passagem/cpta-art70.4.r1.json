@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art70.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art70",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Em todas as situações previstas nos números anteriores, o autor deve apresentar articulado próprio no prazo de 30 dias, contado desde a data da notificação do ato, considerando-se como tal, quando não tenha havido notificação, a data do conhecimento do ato obtido no processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 91055,
+        "end": 91335
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

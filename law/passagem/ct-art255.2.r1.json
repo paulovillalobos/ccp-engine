@@ -1,0 +1,23 @@
+{
+  "id": "ct:art255.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art255",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Sem prejuízo de outras disposições legais, determinam a perda de retribuição as seguintes faltas justificadas:\na) Por motivo de doença, desde que o trabalhador beneficie de um regime de segurança social de protecção na doença;\nb) Por motivo de acidente no trabalho, desde que o trabalhador tenha direito a qualquer subsídio ou seguro;\nc) A prevista no artigo 252.º;\nd) As previstas nas alíneas f) e l) do n.º 2 do artigo 249.º quando excedam 30 dias por ano;\ne) A autorizada ou aprovada pelo empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 354959,
+        "end": 355466
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

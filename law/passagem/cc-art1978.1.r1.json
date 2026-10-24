@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1978.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1978",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "1 - O tribunal, no âmbito de um processo de promoção e proteção, pode confiar a criança com vista a futura adoção quando não existam ou se encontrem seriamente comprometidos os vínculos afetivos próprios da filiação, pela verificação objetiva de qualquer das seguintes situações:\na) Se a criança for filha de pais incógnitos ou falecidos;\nb) Se tiver havido consentimento prévio para a adopção;\nc) Se os pais tiverem abandonado a criança;\nd) Se os pais, por ação ou omissão, mesmo que por manifesta incapacidade devida a razões de doença mental, puserem em perigo grave a segurança, a saúde, a formação, a educação ou o desenvolvimento da criança;\ne) Se os pais da criança acolhida por um particular, por uma instituição ou por família de acolhimento tiverem revelado manifesto desinteresse pelo filho, em termos de comprometer seriamente a qualidade e a continuidade daqueles vínculos, durante, pelo menos, os três meses que precederam o pedido de confiança.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 949766,
+        "end": 950725
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

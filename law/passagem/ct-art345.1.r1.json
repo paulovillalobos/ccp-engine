@@ -1,0 +1,23 @@
+{
+  "id": "ct:art345.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art345",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O contrato de trabalho a termo incerto caduca quando, prevendo-se a ocorrência do termo, o empregador comunique a cessação do mesmo ao trabalhador, com a antecedência mínima de sete, 30 ou 60 dias conforme o contrato tenha durado até seis meses, de seis meses a dois anos ou por período superior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 443665,
+        "end": 443965
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

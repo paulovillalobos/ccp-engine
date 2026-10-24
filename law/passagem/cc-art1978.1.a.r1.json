@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1978.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1978.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "a) Se a criança for filha de pais incógnitos ou falecidos;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 950046,
+        "end": 950104
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

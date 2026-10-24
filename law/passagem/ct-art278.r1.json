@@ -1,0 +1,23 @@
+{
+  "id": "ct:art278",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-iii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 278.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 278.º\nTempo do cumprimento\n1 - O crédito retributivo vence-se por períodos certos e iguais, que, salvo estipulação ou uso diverso, são a semana, a quinzena e o mês do calendário.\n2 - A retribuição deve ser paga em dia útil, durante o período de trabalho ou imediatamente a seguir a este.\n3 - Em caso de retribuição variável com período de cálculo superior a 15 dias, o trabalhador pode exigir o pagamento em prestações quinzenais.\n4 - O montante da retribuição deve estar à disposição do trabalhador na data do vencimento ou em dia útil anterior.\n5 - O empregador fica constituído em mora se o trabalhador, por facto que não lhe seja imputável, não puder dispor do montante da retribuição na data do vencimento.\n6 - Constitui contraordenação grave a violação do disposto nos n.os 2, 3 ou 4.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 374493,
+        "end": 375290
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

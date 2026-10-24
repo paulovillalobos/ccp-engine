@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art90.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art90",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-04-29",
+      "text": "1 - A compensação com créditos tributários pode ser efectuada a pedido do contribuinte quando, nos termos e condições do artigo anterior, a administração tributária esteja impedida de a fazer.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 116011,
+        "end": 116203
+      },
+      "valid_from": "2010-04-29",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

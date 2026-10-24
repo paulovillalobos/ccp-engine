@@ -1,0 +1,23 @@
+{
+  "id": "cp:art120.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art120",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "1 - A prescrição do procedimento criminal suspende-se, para além dos casos especialmente previstos na lei, durante o tempo em que:\na) O procedimento criminal não puder legalmente iniciar-se ou continuar por falta de autorização legal ou de sentença a proferir por tribunal não penal, ou por efeito da devolução de uma questão prejudicial a juízo não penal;\nb) O procedimento criminal estiver pendente a partir da notificação da acusação ou, não tendo esta sido deduzida, a partir da notificação da decisão instrutória que pronunciar o arguido ou do requerimento para aplicação de sanção em processo sumaríssimo;\nc) Vigorar a declaração de contumácia; ou\nd) A sentença não puder ser notificada ao arguido julgado na ausência;\ne) A sentença condenatória, após notificação ao arguido, não transitar em julgado;\nf) O delinquente cumprir no estrangeiro pena ou medida de segurança privativas da liberdade.\ng) O debate instrutório, a audiência ou o ato em que a assistência for necessária esteja interrompido ou adiado por força da substituição do defensor do arguido.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 202160,
+        "end": 203222
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

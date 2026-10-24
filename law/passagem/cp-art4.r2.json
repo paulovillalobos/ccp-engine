@@ -1,0 +1,24 @@
+{
+  "id": "cp:art4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 4.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 4.º\nAplicação no espaço: princípio geral\nSalvo tratado ou convenção internacional em contrário, a lei penal portuguesa é aplicável a factos praticados:\na) Em território português, seja qual for a nacionalidade do agente; ou\nb) A bordo de navios ou aeronaves portugueses.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 77080,
+        "end": 77357
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art173.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art173",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - É nulo o contrato de utilização, o contrato de trabalho temporário ou o contrato de trabalho por tempo indeterminado para cedência temporária celebrado por empresa de trabalho temporário não titular de licença para o exercício da respectiva actividade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 247634,
+        "end": 247890
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

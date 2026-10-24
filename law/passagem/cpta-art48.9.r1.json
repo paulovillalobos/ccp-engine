@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art48.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art48",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "9 - A decisão emitida no processo ou nos processos selecionados é notificada às partes nos processos suspensos para, no prazo de 30 dias, o autor nestes processos desistir do pedido ou qualquer das partes recorrer da sentença proferida no processo ou nos processos selecionados.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 64708,
+        "end": 64986
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

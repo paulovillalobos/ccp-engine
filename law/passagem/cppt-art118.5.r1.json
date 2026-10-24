@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art118.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art118",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2001-07-05",
+      "text": "5 - O impugnante e o representante da Fazenda Pública podem interrogar directamente as testemunhas.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 152303,
+        "end": 152402
+      },
+      "valid_from": "2001-07-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

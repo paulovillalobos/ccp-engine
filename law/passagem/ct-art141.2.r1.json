@@ -1,0 +1,23 @@
+{
+  "id": "ct:art141.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art141",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Na falta da referência exigida pela alínea d) do número anterior, considera-se que o contrato tem início na data da sua celebração.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 202527,
+        "end": 202662
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

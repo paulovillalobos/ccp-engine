@@ -1,0 +1,23 @@
+{
+  "id": "ct:art371.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art371",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - O pagamento da compensação, dos créditos vencidos e dos exigíveis por efeito da cessação do contrato de trabalho deve ser efectuado até ao termo do prazo de aviso prévio.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 479716,
+        "end": 479890
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

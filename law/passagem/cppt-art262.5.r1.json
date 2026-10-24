@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art262.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art262",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "5 - Se a dívida exequenda abranger vários títulos de cobrança e a quantia arrecadada perfizer a importância de um deles, é satisfeito esse documento, salvo se um dos títulos for decorrente de dívidas de recursos próprios tradicionais da União Europeia, caso em que as importâncias arrecadadas são aplicadas proporcionalmente entre estes recursos próprios tradicionais e os restantes impostos.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 323642,
+        "end": 324034
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

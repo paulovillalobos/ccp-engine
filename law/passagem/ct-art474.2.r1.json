@@ -1,0 +1,23 @@
+{
+  "id": "ct:art474.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art474",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - O parecer da entidade que se pronuncia deve conter:\na) Identificação do projecto ou proposta;\nb) Identificação da comissão de trabalhadores, comissão coordenadora, associação sindical ou associação de empregadores que se pronuncia;\nc) Âmbito subjectivo, objectivo e geográfico ou, tratando-se de comissão de trabalhadores ou comissão coordenadora, o sector de actividade e a área geográfica da empresa ou empresas;\nd) Número de trabalhadores ou de empregadores representados;\ne) Data, assinatura de quem legalmente represente a entidade ou de todos os seus membros e carimbo da mesma.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 581410,
+        "end": 581998
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

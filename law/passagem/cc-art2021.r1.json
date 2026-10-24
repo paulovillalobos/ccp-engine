@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2021",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-v.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 2021.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 2021.º\n(Reconhecimento judicial)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 982955,
+        "end": 982994
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art645.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art645",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O fiador que cumprir a obrigação deve avisar do cumprimento o devedor, sob pena de perder o seu direito contra este no caso de o devedor, por erro, efectuar de novo a prestação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 279308,
+        "end": 279488
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

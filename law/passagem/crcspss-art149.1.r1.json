@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art149.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art149",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Sempre que os elementos obtidos com base na troca de informação com a administração fiscal suscitem dúvidas, a instituição de segurança social competente deve solicitar aos trabalhadores os elementos necessários à sua comprovação.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 94348,
+        "end": 94582
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

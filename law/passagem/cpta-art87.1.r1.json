@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art87.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art87",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Findos os articulados, o processo é concluso ao juiz, que, sendo caso disso, profere despacho pré-saneador destinado a:\na) Providenciar pelo suprimento de exceções dilatórias;\nb) Providenciar pelo aperfeiçoamento dos articulados, nos termos dos números seguintes;\nc) Determinar a junção de documentos com vista a permitir a apreciação de exceções dilatórias ou o conhecimento, no todo ou em parte, do mérito da causa no despacho saneador.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 123746,
+        "end": 124188
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

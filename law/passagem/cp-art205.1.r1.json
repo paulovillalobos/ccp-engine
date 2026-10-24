@@ -1,0 +1,23 @@
+{
+  "id": "cp:art205.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art205",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "1 - Quem ilegitimamente se apropriar de coisa móvel ou animal que lhe tenha sido entregue por título não translativo da propriedade é punido com pena de prisão até 3 anos ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 297788,
+        "end": 297980
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

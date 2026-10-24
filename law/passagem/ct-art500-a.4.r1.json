@@ -1,0 +1,23 @@
+{
+  "id": "ct:art500-a.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art500-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "4 - A declaração de improcedência da fundamentação da denúncia, pelo tribunal arbitral, determina que a mesma não produz efeitos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 608454,
+        "end": 608583
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

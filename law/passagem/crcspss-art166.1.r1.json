@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art166.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art166",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A base de incidência contributiva dos trabalhadores enquadrados exclusivamente por força da sua qualidade de cônjuges de trabalhadores independentes pode ser escolhida entre o 1.º escalão e aquele que for fixado ao trabalhador independente.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 107083,
+        "end": 107327
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art191.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art191",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - A declaração referida no número anterior deve especificar a natureza, o montante e o período a que o crédito respeita.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 275759,
+        "end": 275881
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

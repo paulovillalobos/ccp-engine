@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1041.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1041",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "1 - Constituindo-se o locatário em mora, o locador tem o direito de exigir, além das rendas ou alugueres em atraso, uma indemnização igual a 20 % do que for devido, salvo se o contrato for resolvido com base na falta de pagamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 435657,
+        "end": 435887
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

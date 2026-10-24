@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art26.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art26",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "2 - No caso de remessa pelo correio, sob registo, de requerimentos, petições ou outros documentos dirigidos à administração tributária, considera-se que a mesma foi efectuada na data do respectivo registo, salvo o especialmente estabelecido nas leis tributárias.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 36020,
+        "end": 36282
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

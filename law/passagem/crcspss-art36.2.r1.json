@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art36.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art36",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - As comunicações previstas no número anterior consideram-se cumpridas perante a segurança social sempre que sejam efectuadas à administração fiscal ou possam ser oficiosamente obtidas nos termos legalmente previstos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 25949,
+        "end": 26168
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

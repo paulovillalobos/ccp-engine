@@ -1,0 +1,23 @@
+{
+  "id": "csc:art235.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art235",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - Se a amortização recair sobre quotas arroladas, arrestadas, penhoradas ou incluídas em massa falida ou insolvente, a determinação e o pagamento da contrapartida obedecerão aos termos previstos nas alíneas a) e b) do número anterior, salvo se os estipulados no contrato forem menos favoráveis para a sociedade.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 368563,
+        "end": 368876
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

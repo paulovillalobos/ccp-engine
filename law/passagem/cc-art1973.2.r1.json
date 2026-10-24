@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1973.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1973",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "2 - O processo de adoção é regulado em diploma próprio.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 946880,
+        "end": 946935
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

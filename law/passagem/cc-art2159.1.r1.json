@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2159.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2159",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. A legítima do cônjuge e dos filhos, em caso de concurso, é de dois terços da herança.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1036399,
+        "end": 1036487
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

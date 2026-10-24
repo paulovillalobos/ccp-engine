@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art126.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art126",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os beneficiários referidos no artigo 122.º podem requerer que a base de incidência contributiva seja fixada de acordo com um dos escalões previstos para o regime de seguro social voluntário.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 80110,
+        "end": 80304
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

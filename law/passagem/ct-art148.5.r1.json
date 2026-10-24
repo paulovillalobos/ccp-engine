@@ -1,0 +1,23 @@
+{
+  "id": "ct:art148.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art148",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - A duração do contrato de trabalho a termo incerto não pode ser superior a quatro anos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 211168,
+        "end": 211258
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

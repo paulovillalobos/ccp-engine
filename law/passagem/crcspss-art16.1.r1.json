@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art16.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art16",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A instituição de segurança social competente procede ao registo das remunerações sobre as quais incidiram as contribuições e as quotizações, bem como dos respectivos períodos contributivos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 13492,
+        "end": 13685
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

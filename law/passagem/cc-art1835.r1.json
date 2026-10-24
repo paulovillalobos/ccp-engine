@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1835",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-iii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1835.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1835.º\n(Menção obrigatória da paternidade)\n1. A paternidade presumida nos termos dos artigos anteriores constará obrigatoriamente do registo do nascimento do filho, não sendo admitidas menções que a contrariem, salvo o disposto nos artigos 1828.º e 1832.º\n2. Se o registo do casamento dos pais só vier a ser efectuado depois do registo do nascimento, e deste não constar a paternidade do marido da mãe, será a paternidade mencionada oficiosamente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 851512,
+        "end": 851966
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

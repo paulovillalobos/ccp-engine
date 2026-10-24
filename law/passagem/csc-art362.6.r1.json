@@ -1,0 +1,23 @@
+{
+  "id": "csc:art362.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art362",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "6 - Se no próprio ano da emissão e de acordo com as condições desta houver lugar à distribuição de juro suplementar ou à afectação de qualquer importância a prémio de reembolso, o montante respectivo calcular-se-á com base nos critérios para o efeito estabelecidos na emissão.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 517934,
+        "end": 518210
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

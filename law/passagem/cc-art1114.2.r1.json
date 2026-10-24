@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1114.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1114",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "2. A importância da compensação é fixada pelo tribunal, segundo juízos de equidade, mas não pode exceder dez vezes a renda anual.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 506169,
+        "end": 506298
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art67.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art67",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - A condenação à prática de ato administrativo pode ser pedida quando, tendo sido apresentado requerimento que constitua o órgão competente no dever de decidir:\na) Não tenha sido proferida decisão dentro do prazo legalmente estabelecido;\nb) Tenha sido praticado ato administrativo de indeferimento ou de recusa de apreciação do requerimento;\nc) Tenha sido praticado ato administrativo de conteúdo positivo que não satisfaça integralmente a pretensão do interessado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 86371,
+        "end": 86838
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

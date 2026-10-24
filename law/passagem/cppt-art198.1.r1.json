@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art198.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art198",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-07-01",
+      "text": "1 - No requerimento para pagamento em prestações o executado indicará a forma como se propõe efectuar o pagamento e os fundamentos da proposta.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 238338,
+        "end": 238481
+      },
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

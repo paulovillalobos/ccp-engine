@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1909.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1909",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-04-01",
+      "text": "1 - As disposições dos artigos 1905.º a 1908.º são aplicáveis aos cônjuges separados de facto.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 908458,
+        "end": 908552
+      },
+      "valid_from": "2017-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

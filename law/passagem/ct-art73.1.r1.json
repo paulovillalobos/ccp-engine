@@ -1,0 +1,23 @@
+{
+  "id": "ct:art73.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art73",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O período normal de trabalho de menor não pode ser superior a oito horas em cada dia e a quarenta horas em cada semana.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 124735,
+        "end": 124858
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

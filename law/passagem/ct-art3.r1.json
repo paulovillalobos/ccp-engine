@@ -1,0 +1,23 @@
+{
+  "id": "ct:art3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 3.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 3.º\nRelações entre fontes de regulação\n1 - As normas legais reguladoras de contrato de trabalho podem ser afastadas por instrumento de regulamentação colectiva de trabalho, salvo quando delas resultar o contrário.\n2 - As normas legais reguladoras de contrato de trabalho não podem ser afastadas por portaria de condições de trabalho.\n3 - As normas legais reguladoras de contrato de trabalho só podem ser afastadas por instrumento de regulamentação colectiva de trabalho que, sem oposição daquelas normas, disponha em sentido mais favorável aos trabalhadores quando respeitem às seguintes matérias:\na) Direitos de personalidade, igualdade e não discriminação;\nb) Protecção na parentalidade;\nc) Trabalho de menores;\nd) Trabalhador com capacidade de trabalho reduzida, com deficiência ou doença crónica;\ne) Trabalhador-estudante;\nf) Dever de informação do empregador;\ng) Limites à duração dos períodos normais de trabalho diário e semanal;\nh) Duração mínima dos períodos de repouso, incluindo a duração mínima do período anual de férias;\ni) Duração máxima do trabalho dos trabalhadores nocturnos;\nj) Forma de cumprimento e garantias da retribuição, bem como pagamento de trabalho suplementar;\nk) Teletrabalho;\nl) Capítulo sobre prevenção e reparação de acidentes de trabalho e doenças profissionais e legislação que o regulamenta;\nm) Transmissão de empresa ou estabelecimento;\nn) Direitos dos representantes eleitos dos trabalhadores;\no) Uso de algoritmos, inteligência artificial e matérias conexas, nomeadamente no âmbito do trabalho nas plataformas digitais.\n4 - As normas legais reguladoras de contrato de trabalho só podem ser afastadas por contrato individual que estabeleça condições mais favoráveis para o trabalhador, se delas não resultar o contrário.\n5 - Sempre que uma norma legal reguladora de contrato de trabalho determine que a mesma pode ser afastada por instrumento de regulamentação colectiva de trabalho entende-se que o não pode ser por contrato de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 20685,
+        "end": 22668
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

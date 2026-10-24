@@ -1,0 +1,23 @@
+{
+  "id": "cc:art177",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 177.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 177.º\n(Deliberações contrárias à lei ou aos estatutos)\nAs deliberações da assembleia geral contrárias à lei ou aos estatutos, seja pelo seu objecto, seja por virtude de irregularidades havidas na convocação dos associados ou no funcionamento da assembleia, são anuláveis.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 86383,
+        "end": 86661
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art410.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art410",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "5 - O contrato de sociedade pode permitir que qualquer administrador se faça representar numa reunião por outro administrador, mediante carta dirigida ao presidente, mas cada instrumento de representação não pode ser utilizado mais do que uma vez.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 584911,
+        "end": 585158
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

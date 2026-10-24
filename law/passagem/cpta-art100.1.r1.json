@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art100.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art100",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Para os efeitos do disposto na presente secção, o contencioso pré-contratual compreende as ações de impugnação ou de condenação à prática de atos administrativos relativos à formação de contratos de empreitada de obras públicas, de concessão de obras públicas, de concessão de serviços públicos, de aquisição ou locação de bens móveis e de aquisição de serviços.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 153039,
+        "end": 153405
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

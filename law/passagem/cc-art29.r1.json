@@ -1,0 +1,23 @@
+{
+  "id": "cc:art29",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 29.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 29.º\n(Maioridade)\nA mudança da lei pessoal não prejudica a maioridade adquirida segundo a lei pessoal anterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 20197,
+        "end": 20315
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

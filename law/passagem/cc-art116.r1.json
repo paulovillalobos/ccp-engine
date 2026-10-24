@@ -1,0 +1,23 @@
+{
+  "id": "cc:art116",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 116.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 116.º\n(Novo casamento do cônjuge do ausente)\nO cônjuge do ausente casado civilmente pode contrair novo casamento; neste caso, se o ausente regressar, ou houver notícia de que era vivo quando foram celebradas as novas núpcias, considera-se o primeiro matrimónio dissolvido por divórcio à data da declaração de morte presumida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 54482,
+        "end": 54814
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

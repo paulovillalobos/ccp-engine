@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art143.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art143",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Com base na comunicação efectuada, nos termos do número anterior, a instituição de segurança social competente procede à identificação do trabalhador independente no sistema de segurança social, ou à actualização dos respectivos dados, caso este já se encontre identificado.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 91167,
+        "end": 91445
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

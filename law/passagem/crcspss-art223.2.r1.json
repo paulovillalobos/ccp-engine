@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art223.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art223",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Se a lei vigente ao tempo da prática do facto for posteriormente modificada, aplica-se a lei mais favorável ao arguido, salvo se este já tiver sido condenado por decisão definitiva ou transitada em julgado.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 140971,
+        "end": 141181
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

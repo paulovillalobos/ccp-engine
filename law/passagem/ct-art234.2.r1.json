@@ -1,0 +1,23 @@
+{
+  "id": "ct:art234.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art234",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2016-04-02",
+      "text": "2 - O feriado de Sexta-Feira Santa pode ser observado em outro dia com significado local no período da Páscoa.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 331906,
+        "end": 332016
+      },
+      "valid_from": "2016-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art198.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art198",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "5 - As retenções operadas nos termos do presente artigo exoneram o contribuinte do pagamento das respectivas importâncias.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 128285,
+        "end": 128407
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

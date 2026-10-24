@@ -1,0 +1,23 @@
+{
+  "id": "cc:art299",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 299.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 299.º\n(Alteração de qualificação)\n1. Se a lei considerar de caducidade um prazo que a lei anterior tratava como prescricional, ou se, ao contrário, considerar como prazo de prescrição o que a lei antiga tratava como caso de caducidade, a nova qualificação é também aplicável aos prazos em curso.\n2. No primeiro caso, porém, se a prescrição estiver suspensa ou tiver sido interrompida no domínio da lei antiga, nem a suspensão nem a interrupção serão atingidas pela aplicação da nova lei; no segundo, o prazo passa a ser susceptível de suspensão e interrupção nos termos gerais da prescrição.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 139792,
+        "end": 140390
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

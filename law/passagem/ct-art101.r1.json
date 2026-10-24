@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-ix",
+  "kind": "artigo",
+  "label": "Artigo 101.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 101.º\nPluralidade de empregadores\n1 - O trabalhador pode obrigar-se a prestar trabalho a vários empregadores entre os quais exista uma relação societária de participações recíprocas, de domínio ou de grupo, ou que tenham estruturas organizativas comuns.\n2 - O contrato de trabalho com pluralidade de empregadores está sujeito a forma escrita e deve conter:\na) Identificação, assinaturas e domicílio ou sede das partes;\nb) Indicação da actividade do trabalhador, do local e do período normal de trabalho;\nc) Indicação do empregador que representa os demais no cumprimento dos deveres e no exercício dos direitos emergentes do contrato de trabalho.\n3 - Os empregadores são solidariamente responsáveis pelo cumprimento das obrigações decorrentes do contrato de trabalho, cujo credor seja o trabalhador ou terceiro.\n4 - Cessando a situação referida no n.º 1, considera-se que o trabalhador fica apenas vinculado ao empregador a que se refere a alínea c) do n.º 2, salvo acordo em contrário.\n5 - A violação de requisitos indicados nos n.os 1 ou 2 confere ao trabalhador o direito de optar pelo empregador ao qual fica vinculado.\n6 - Constitui contra-ordenação grave a violação do disposto nos n.os 1 ou 2, sendo responsáveis pela mesma todos os empregadores, os quais são representados para este efeito por aquele a que se refere a alínea c) do n.º 2.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 151976,
+        "end": 153329
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

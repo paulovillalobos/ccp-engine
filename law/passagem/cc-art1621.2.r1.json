@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1621.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1621",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2. O constituinte pode revogar a todo o tempo a procuração, mas é responsável pelo prejuízo que causar se, por culpa sua, o não fizer a tempo de evitar a celebração do casamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 726176,
+        "end": 726354
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

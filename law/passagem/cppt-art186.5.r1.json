@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art186.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art186",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "5 - Nos processos informatizados, a emissão da carta precatória, quando a ela haja lugar, resulta de procedimento electrónico onde fica registado o acto de emissão pelo órgão deprecante e todos os actos praticados no órgão deprecado, operando este directamente no processo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 216315,
+        "end": 216588
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

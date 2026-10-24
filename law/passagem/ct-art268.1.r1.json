@@ -1,0 +1,23 @@
+{
+  "id": "ct:art268.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art268",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalho suplementar até 100 horas anuais é pago pelo valor da retribuição horária com os seguintes acréscimos:\na) 25 % pela primeira hora ou fração desta e 37,5 % por hora ou fração subsequente, em dia útil;\nb) 50 % por cada hora ou fração, em dia de descanso semanal, obrigatório ou complementar, ou em feriado.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 366218,
+        "end": 366537
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

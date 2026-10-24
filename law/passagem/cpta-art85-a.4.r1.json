@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art85-a.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art85-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Quando tenha havido reconvenção, o autor, na réplica, deve:\na) Expor as razões de facto e de direito por que se opõe à reconvenção;\nb) Expor os factos essenciais em que se baseiam as exceções deduzidas, especificando-as separadamente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 121540,
+        "end": 121778
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

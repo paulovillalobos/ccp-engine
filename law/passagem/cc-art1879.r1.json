@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1879",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1879.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1879.º\n(Despesas com o sustento, segurança, saúde e educação dos filhos)\nOs pais ficam desobrigados de prover ao sustento dos filhos e de assumir as despesas relativas à sua segurança, saúde e educação na medida em que os filhos estejam em condições de suportar, pelo produto do seu trabalho ou outros rendimentos, aqueles encargos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 879642,
+        "end": 879981
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

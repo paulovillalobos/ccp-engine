@@ -1,0 +1,23 @@
+{
+  "id": "cp:art219.4.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art219.4",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "b) De valor consideravelmente elevado, o agente é punido com pena de prisão de 2 a 8 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 310609,
+        "end": 310699
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

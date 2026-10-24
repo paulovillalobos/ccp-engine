@@ -1,0 +1,23 @@
+{
+  "id": "cc:art131",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-v.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 131.º",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "Artigo 131.º\nPendência de ação de acompanhamento de maior\nEstando pendente contra o menor, ao atingir a maioridade, ação de acompanhamento, mantêm-se as responsabilidades parentais ou a tutela até ao trânsito em julgado da respetiva sentença.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 61126,
+        "end": 61368
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art68.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art68",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-09-03",
+      "text": "2 - A idade mínima de admissão para prestar trabalho é de 16 anos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 118488,
+        "end": 118554
+      },
+      "valid_from": "2012-09-03",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

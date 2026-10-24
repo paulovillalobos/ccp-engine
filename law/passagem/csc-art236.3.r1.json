@@ -1,0 +1,23 @@
+{
+  "id": "csc:art236.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art236",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Se ao tempo do vencimento da obrigação de pagar a contrapartida da amortização se verificar que, depois de feito este pagamento, a situação líquida da sociedade passaria a ser inferior à soma do capital e da reserva legal, a amortização fica sem efeito e o interessado deve restituir à sociedade as quantias porventura já recebidas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 369553,
+        "end": 369889
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

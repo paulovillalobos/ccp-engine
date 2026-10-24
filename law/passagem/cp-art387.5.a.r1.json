@@ -1,0 +1,23 @@
+{
+  "id": "cp:art387.5.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art387.5",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2020-10-01",
+      "text": "a) O crime ser de especial crueldade, designadamente por empregar tortura ou ato de crueldade que aumente o sofrimento do animal;",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 471211,
+        "end": 471340
+      },
+      "valid_from": "2020-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

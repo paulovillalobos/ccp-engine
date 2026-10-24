@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2066",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-i.capitulo-v",
+  "kind": "artigo",
+  "label": "Artigo 2066.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2066.º\n(Irrevogabilidade)\nO repúdio é irrevogável.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 999644,
+        "end": 999701
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

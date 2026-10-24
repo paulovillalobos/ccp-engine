@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art209.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art209",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Recebido o processo, o juiz rejeitará logo a oposição por um dos seguintes fundamentos:\na) Ter sido deduzida fora do prazo;\nb) Não ter sido alegado algum dos fundamentos admitidos no n.º 1 do artigo 204.º;\nc) Ser manifesta a improcedência.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 262853,
+        "end": 263096
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

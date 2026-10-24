@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "6 - No caso da recusa de recebimento ou não levantamento da carta, previstos no número anterior, a notificação presume-se feita no 3.º dia posterior ao do registo ou no 1.º dia útil seguinte a esse, quando esse dia não seja útil.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 56556,
+        "end": 56785
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

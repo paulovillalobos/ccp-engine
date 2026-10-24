@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-i.capitulo-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i",
+  "kind": "capitulo",
+  "label": "Capítulo IV",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Capítulo IV\nDos actos processuais",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 34627,
+        "end": 34660
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

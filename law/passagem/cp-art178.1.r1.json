@@ -1,0 +1,23 @@
+{
+  "id": "cp:art178.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art178",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-10-01",
+      "text": "1 - O procedimento criminal pelos crimes previstos nos artigos 163.º a 165.º, 167.º, 168.º e 170.º depende de queixa, salvo se forem praticados contra menor ou deles resultar suicídio ou morte da vítima.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 275509,
+        "end": 275712
+      },
+      "valid_from": "2023-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

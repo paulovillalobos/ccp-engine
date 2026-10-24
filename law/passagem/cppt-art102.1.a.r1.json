@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art102.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art102.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "a) Termo do prazo para pagamento voluntário das prestações tributárias legalmente notificadas ao contribuinte;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 134891,
+        "end": 135001
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

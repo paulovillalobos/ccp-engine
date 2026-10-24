@@ -1,0 +1,23 @@
+{
+  "id": "csc:dl.art2.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:dl.art2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - A data da entrada em vigor do artigo 35.º será fixada em diploma legal.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 23802,
+        "end": 23877
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

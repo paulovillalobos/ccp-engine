@@ -1,0 +1,23 @@
+{
+  "id": "ct:art160.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art160",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "3 - Se o trabalhador exercer outra atividade durante o período de inatividade, o montante da correspondente retribuição é deduzido à compensação retributiva calculada de acordo com o número anterior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 221425,
+        "end": 221624
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art55.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art55",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-09-06",
+      "text": "5 - Durante o período de trabalho em regime de tempo parcial, o trabalhador não pode exercer outra actividade incompatível com a respectiva finalidade, nomeadamente trabalho subordinado ou prestação continuada de serviços fora da sua residência habitual.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 97279,
+        "end": 97533
+      },
+      "valid_from": "2015-09-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

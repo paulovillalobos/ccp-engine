@@ -1,0 +1,23 @@
+{
+  "id": "cc:art183",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 183.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 183.º\n(Declaração da extinção)\n1. Nos casos previstos nas alíneas b) e c) do n.º 1 do artigo anterior, a extinção só se produzirá se, nos trinta dias subsequentes à data em que devia operar-se, a assembleia geral não decidir a prorrogação da associação ou a modificação dos estatutos.\n2. Nos casos previstos no n.º 2 do artigo precedente, a declaração da extinção pode ser pedida em juízo pelo Ministério Público ou por qualquer interessado.\n3. A extinção por virtude da declaração de insolvência dá-se em consequência da própria declaração.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 88803,
+        "end": 89351
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

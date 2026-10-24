@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art260.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art260",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A taxa contributiva relativa ao pagamento voluntário de contribuições para o âmbito material de protecção previsto no n.º 1 do artigo 258.º é de 26,9 %.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 159358,
+        "end": 159514
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

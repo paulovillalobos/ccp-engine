@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1804.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1804",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. No caso de declaração de nascimento ocorrido há menos de um ano, a maternidade indicada considera-se estabelecida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 831632,
+        "end": 831749
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art90.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art90",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - No âmbito da instrução, o juiz ou relator ordena as diligências de prova que considere necessárias para o apuramento da verdade, podendo indeferir, por despacho fundamentado, requerimentos dirigidos à produção de prova sobre certos factos ou recusar a utilização de certos meios de prova, quando o considere claramente desnecessário.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 136155,
+        "end": 136492
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

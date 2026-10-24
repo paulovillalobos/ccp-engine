@@ -1,0 +1,23 @@
+{
+  "id": "cp:art98.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art98",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "5 - A suspensão da execução do internamento não pode ser decretada se o agente for simultaneamente condenado em pena privativa da liberdade e não se verificarem os pressupostos da suspensão da execução desta.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 173085,
+        "end": 173293
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

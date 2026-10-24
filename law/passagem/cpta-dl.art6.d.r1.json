@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art6.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art6",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "d) O Decreto-Lei n.º 256-A/77, de 17 de Junho;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 5772,
+        "end": 5818
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

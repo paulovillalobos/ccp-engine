@@ -1,0 +1,23 @@
+{
+  "id": "ct:art463.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art463",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Para efeito da alínea e) do número anterior, n é o número de trabalhadores sindicalizados.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 571879,
+        "end": 571973
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

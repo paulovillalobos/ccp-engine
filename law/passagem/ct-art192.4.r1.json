@@ -1,0 +1,23 @@
+{
+  "id": "ct:art192.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art192",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "4 - A sanção acessória referida nos números anteriores é averbada no registo nacional das empresas de trabalho temporário, previsto em legislação específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 278707,
+        "end": 278864
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

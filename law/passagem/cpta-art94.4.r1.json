@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art94.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art94",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "4 - O juiz aprecia livremente as provas segundo a sua prudente convicção acerca de cada facto, ressalvados os factos para cuja prova a lei exija formalidade especial e aqueles que só possam ser provados por documentos ou que estejam plenamente provados, quer por documentos, quer por acordo ou confissão das partes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 143352,
+        "end": 143667
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

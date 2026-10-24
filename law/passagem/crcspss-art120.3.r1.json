@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art120.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art120",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Nas situações em que os trabalhadores com contrato mensal não prestem serviço durante todo o mês, por motivo de admissão, cessação de contrato de trabalho, baixa por doença ou qualquer outra causa, é considerada a remuneração correspondente ao número de dias de trabalho efectivamente prestado.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 76062,
+        "end": 76360
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art105.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art105",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Quando, num mesmo tribunal, sejam intentados mais de 10 processos, ou interpostos recursos de decisões relativas a mais de 10 processos, que, embora referentes a diferentes atos tributários, sejam respeitantes ao mesmo tributo, arguam os mesmos vícios, e sejam suscetíveis de ser decididos com base na aplicação das mesmas normas a situações de facto do mesmo tipo, o presidente do tribunal deve determinar, ouvidas as partes, que seja dado andamento apenas a um deles e se suspenda a tramitação dos demais, nos termos da lei de processo administrativo.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 139214,
+        "end": 139771
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

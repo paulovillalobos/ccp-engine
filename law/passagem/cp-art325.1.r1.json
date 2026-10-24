@@ -1,0 +1,23 @@
+{
+  "id": "cp:art325.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art325",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Quem, por meio de violência ou ameaça de violência, tentar destruir, alterar ou subverter o Estado de direito constitucionalmente estabelecido é punido com pena de prisão de 3 a 12 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 409705,
+        "end": 409895
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

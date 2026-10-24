@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art4.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art4",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "7 - No caso de absolvição da instância por cumulação ilegal de pedidos, podem ser apresentadas novas petições no prazo de 30 dias a contar do trânsito em julgado, considerando-se estas apresentadas na data de entrada da primeira, para efeitos de tempestividade da sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 13793,
+        "end": 14074
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art100.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art100",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2000-04-09",
+      "text": "2 - Em caso de quantificação da matéria tributável por métodos indirectos não se considera existir dúvida fundada, para efeitos do número anterior, se o fundamento da aplicação daqueles consistir na inexistência ou desconhecimento, por recusa de exibição, da contabilidade ou escrita e de mais documentos legalmente exigidos ou a sua falsificação, ocultação ou destruição, ainda que os contribuintes invoquem razões acidentais.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 133774,
+        "end": 134201
+      },
+      "valid_from": "2000-04-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

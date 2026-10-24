@@ -1,0 +1,23 @@
+{
+  "id": "cc:art195.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art195",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. As limitações impostas aos poderes normais dos administradores só são oponíveis a terceiro quando este as conhecia ou devia conhecer.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 99429,
+        "end": 99565
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

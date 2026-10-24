@@ -1,0 +1,24 @@
+{
+  "id": "cp:art9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 9.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 9.º\nDisposições especiais para jovens\nAos maiores de 16 anos e menores de 21 são aplicáveis normas fixadas em legislação especial.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 82975,
+        "end": 83112
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

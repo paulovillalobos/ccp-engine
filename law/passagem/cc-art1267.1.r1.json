@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1267.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1267",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O possuidor perde a posse:\na) Pelo abandono;\nb) Pela perda ou destruição material da coisa ou por esta ser posta fora do comércio;\nc) Pela cedência;\nd) Pela posse de outrem, mesmo contra a vontade do antigo possuidor, se a nova posse houver durado por mais de um ano.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 556373,
+        "end": 556643
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

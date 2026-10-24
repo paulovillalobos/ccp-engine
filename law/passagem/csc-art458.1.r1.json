@@ -1,0 +1,23 @@
+{
+  "id": "csc:art458.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art458",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "1 - Em cada aumento de capital por entradas em dinheiro, as pessoas que, à data da deliberação de aumento de capital, forem accionistas podem subscrever as novas acções com preferência relativamente a quem não for accionista.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 673735,
+        "end": 673960
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

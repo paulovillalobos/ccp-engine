@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art118.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art118",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Os trabalhadores do serviço doméstico têm direito à protecção nas eventualidades de doença, parentalidade, doenças profissionais, invalidez, velhice e morte.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 74092,
+        "end": 74253
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

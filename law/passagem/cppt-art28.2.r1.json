@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art28.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art28",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "2 - À medida que os processos administrativos ou judiciais findarem, serão os verbetes retirados do índice geral vivo e com eles organizar-se-ão, de acordo com as características do serviço e a natureza de cada um dele, os seguintes índices históricos:\na) Processos administrativos de reclamação graciosa;\nb) Processos administrativos de cobrança a posteriori dos tributos;\nc) Processos administrativos de reembolso ou dispensa de pagamento dos tributos;\nd) Processos de impugnação judicial;\ne) Execuções extintas por cobrança;\nf) Execuções extintas por dação;\ng) Execuções extintas por confusão;\nh) Execuções extintas por conversão de créditos em capital;\ni) Execuções extintas por transferência de titularidade dos créditos;\nj) Execuções extintas por perdão ou amnistia;\nk) Execuções extintas por prescrição;\nl) Execuções extintas por anulação das dívidas;\nm) Execuções extintas por declaração em falhas;\nn) Cartas precatórias cumpridas;\no) Outros processos administrativos;\np) Outros processos judiciais.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 38623,
+        "end": 39630
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

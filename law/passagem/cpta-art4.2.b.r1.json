@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art4.2.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art4.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "b) O pedido de declaração da ilegalidade de uma norma com qualquer dos pedidos mencionados na alínea anterior;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 11894,
+        "end": 12004
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

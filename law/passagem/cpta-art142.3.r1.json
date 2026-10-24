@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art142.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art142",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Para além dos casos previstos na lei processual civil, é sempre admissível recurso, independentemente do valor da causa e da sucumbência, das decisões:\na) De improcedência de pedidos de intimação para proteção de direitos, liberdades e garantias;\nb) Proferidas em matéria sancionatória;\nc) Proferidas contra jurisprudência uniformizada pelo Supremo Tribunal Administrativo;\nd) Que ponham termo ao processo sem se pronunciarem sobre o mérito da causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 204498,
+        "end": 204952
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

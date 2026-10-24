@@ -1,0 +1,23 @@
+{
+  "id": "ct:art160.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art160",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "2 - Durante o período de inatividade, o trabalhador tem direito a compensação retributiva, a pagar pelo empregador com periodicidade igual à da retribuição, em valor estabelecido em instrumento de regulamentação coletiva de trabalho ou, na sua falta, de 20 % da retribuição base.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 221145,
+        "end": 221424
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

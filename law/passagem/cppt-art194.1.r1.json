@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art194.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art194",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "1 - Nas execuções de valor superior a 500 unidades de conta, quando o executado não for encontrado, o funcionário encarregue de proceder à citação começa por averiguar se é conhecida a atual morada do executado e se possui bens penhoráveis.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 229746,
+        "end": 229986
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

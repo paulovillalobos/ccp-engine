@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art5.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art5",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Podem ser requeridas providências cautelares ao abrigo do novo Código, como incidentes, de acções já pendentes à data da sua entrada em vigor.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 4955,
+        "end": 5101
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art405.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art405",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - O Estado pode apoiar as estruturas de representação colectiva dos trabalhadores nos termos previstos na lei.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 513388,
+        "end": 513500
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

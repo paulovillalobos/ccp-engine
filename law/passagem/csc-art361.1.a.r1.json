@@ -1,0 +1,23 @@
+{
+  "id": "csc:art361.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art361.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "a) Ser estabelecidos como percentagem fixa do lucro de cada exercício, independentemente do montante deste e das oscilações que registe durante o período de vida do empréstimo;",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 515032,
+        "end": 515208
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

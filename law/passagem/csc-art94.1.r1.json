@@ -1,0 +1,23 @@
+{
+  "id": "csc:art94.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art94",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A convocatória da assembleia geral para redução do capital deve mencionar:\na) A finalidade da redução, indicando, pelo menos, se esta se destina à cobertura de prejuízos, a libertação de excesso de capital ou a finalidade especial;\nb) A forma da redução, mencionando se será reduzido o valor nominal das participações ou se haverá reagrupamento ou extinção de participações.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 142866,
+        "end": 143244
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

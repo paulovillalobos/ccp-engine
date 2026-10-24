@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art262.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art262",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "6 - Se a execução não respeitar a dívidas de recursos próprios tradicionais e se a quantia não chegar para pagar um título de cobrança ou se, pago um por inteiro, sobrar qualquer importância, é dado pagamento por conta ao documento mais antigo; se forem da mesma data, é imputado no documento de menor valor e, em igualdade de circunstâncias, em qualquer deles.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 324035,
+        "end": 324396
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art81",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-iv.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 81.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 81.º\nPena anterior\n1 - Se a pena imposta por decisão transitada em julgado for posteriormente substituída por outra, é descontada nesta a pena anterior, na medida em que já estiver cumprida.\n2 - Se a pena anterior e a posterior forem de diferente natureza, é feito na nova pena o desconto que parecer equitativo.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 148354,
+        "end": 148673
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

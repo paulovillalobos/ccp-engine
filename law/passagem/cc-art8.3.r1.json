@@ -1,0 +1,23 @@
+{
+  "id": "cc:art8.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art8",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. Nas decisões que proferir, o julgador terá em consideração todos os casos que mereçam tratamento análogo, a fim de obter uma interpretação e aplicação uniformes do direito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 11017,
+        "end": 11192
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

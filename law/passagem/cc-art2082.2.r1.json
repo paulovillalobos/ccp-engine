@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2082.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2082",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2 - O acompanhante é tido como representante do acompanhado para o efeito do número anterior, quando assim resulte da sentença de acompanhamento ou de decisão judicial ulterior.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1007088,
+        "end": 1007265
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

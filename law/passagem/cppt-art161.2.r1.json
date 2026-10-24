@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art161.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art161",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - A responsabilidade subsidiária do funcionário só poderá ser exercida após condenação em processo disciplinar pelos factos referidos no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 188050,
+        "end": 188205
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

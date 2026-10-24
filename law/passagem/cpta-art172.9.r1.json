@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art172.9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art172",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "9 - A satisfação do crédito pelo Orçamento do Estado, na hipótese prevista no número anterior, constitui o Estado em direito de regresso, incluindo juros de mora, sobre a entidade responsável, a exercer mediante uma das seguintes formas:\na) Desconto nas transferências a efetuar para a entidade em causa no Orçamento do Estado do ano seguinte;\nb) Tratando-se de entidade pertencente à Administração indireta do Estado, inscrição oficiosa no respetivo orçamento privativo pelo órgão tutelar ao qual caiba a aprovação do orçamento; ou\nc) Ação de regresso a intentar no tribunal competente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 245939,
+        "end": 246526
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art78.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art78",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "6 - Quando o autor pretenda apresentar rol de testemunhas e requerer outros meios de prova, deve fazê-lo no final da petição, podendo indicar, quando seja caso disso, que os documentos necessários à prova constam do processo administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 104155,
+        "end": 104395
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

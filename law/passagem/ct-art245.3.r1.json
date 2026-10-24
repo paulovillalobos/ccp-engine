@@ -1,0 +1,23 @@
+{
+  "id": "ct:art245.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art245",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - Em caso de cessação de contrato no ano civil subsequente ao da admissão ou cuja duração não seja superior a 12 meses, o cômputo total das férias ou da correspondente retribuição a que o trabalhador tenha direito não pode exceder o proporcional ao período anual de férias tendo em conta a duração do contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 342733,
+        "end": 343045
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

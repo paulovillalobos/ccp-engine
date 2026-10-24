@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "3 - Havendo aviso de recepção, a notificação considera-se efectuada na data em que ele for assinado e tem-se por efectuada na própria pessoa do notificando, mesmo quando o aviso de recepção haja sido assinado por terceiro presente no domicílio do contribuinte, presumindo-se neste caso que a carta foi oportunamente entregue ao destinatário.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 55427,
+        "end": 55768
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art91.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art91",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - O juiz pode, nos casos em que tal se justifique, alterar a ordem de produção de prova referida no número anterior e, quando o considere conveniente para a descoberta da verdade, determinar a audição em simultâneo, sobre determinados factos, de testemunhas de ambas as partes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 138581,
+        "end": 138860
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art225.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art225",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "5 - Na falta de pagamento tempestivo da contrapartida os interessados poderão escolher entre a efectivação do seu crédito e a ineficácia da alienação, considerando-se neste último caso transmitida a quota para os sucessores do sócio falecido a quem tenha cabido o direito àquela contrapartida.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 358724,
+        "end": 359017
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

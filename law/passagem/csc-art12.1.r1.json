@@ -1,0 +1,23 @@
+{
+  "id": "csc:art12.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art12",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - A sede da sociedade deve ser estabelecida em local concretamente definido.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 38732,
+        "end": 38810
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

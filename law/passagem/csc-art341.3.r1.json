@@ -1,0 +1,23 @@
+{
+  "id": "csc:art341.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art341",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "3 - O dividendo referido no número anterior atribui aos titulares de ações sem direito de voto uma prioridade no seu recebimento face aos demais acionistas, exceto se o contrato de sociedade estabelecer que o mesmo atribui o direito a um dividendo adicional, o qual, além de ser pago com prioridade, deve acrescer aos dividendos a atribuir a cada acionista.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 481264,
+        "end": 481621
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

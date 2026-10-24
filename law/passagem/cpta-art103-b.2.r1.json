@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art103-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art103-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - O requerimento de adoção de medidas provisórias é processado como um incidente da ação de contencioso pré-contratual, devendo a respetiva tramitação ser determinada pelo juiz, no respeito pelo contraditório e em função da complexidade e urgência do caso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 160093,
+        "end": 160351
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

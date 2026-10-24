@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-ii.capitulo-ii.seccao-i.subseccao-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-ii.seccao-i",
+  "kind": "secao",
+  "label": "Subsecção IV",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Subsecção IV\nDa instância",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 80133,
+        "end": 80158
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

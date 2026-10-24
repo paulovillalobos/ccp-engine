@@ -1,0 +1,23 @@
+{
+  "id": "cp:art4.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art4",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "b) A bordo de navios ou aeronaves portugueses.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 77311,
+        "end": 77357
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

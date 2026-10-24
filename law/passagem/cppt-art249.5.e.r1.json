@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art249.5.e",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art249.5",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "e) Valor base da venda;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 306503,
+        "end": 306526
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

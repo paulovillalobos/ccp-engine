@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1895.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1895",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Pertence aos pais a propriedade dos bens que o filho menor, vivendo em sua companhia, produza por trabalho prestado aos seus progenitores e com meios ou capitais pertencentes a estes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 892489,
+        "end": 892675
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

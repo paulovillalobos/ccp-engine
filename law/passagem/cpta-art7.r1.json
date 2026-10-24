@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 7.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 7.º\nPromoção do acesso à justiça\nPara efectivação do direito de acesso à justiça, as normas processuais devem ser interpretadas no sentido de promover a emissão de pronúncias sobre o mérito das pretensões formuladas.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 15397,
+        "end": 15620
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

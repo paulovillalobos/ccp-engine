@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art222.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art222",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - O órgão da execução fiscal comunicará a venda às autoridades competentes para efeito de eventual concessão de nova licença.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 274479,
+        "end": 274606
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

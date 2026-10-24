@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art93.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art93",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "3 - As entidades intervenientes na cobrança deverão exigir sempre a inscrição do número fiscal do devedor nos documentos referidos no número anterior e comprovar a exactidão da inscrição por conferência com o respectivo cartão que, para o efeito, será exibido ou por conferência com o constante dos registos dos serviços para esse devedor cuja identidade será provada pelo documento legal adequado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 120927,
+        "end": 121325
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

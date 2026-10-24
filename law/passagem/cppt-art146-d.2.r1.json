@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art146-d.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art146-d",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - A decisão judicial deve ser proferida no prazo de três meses a contar da data de apresentação do requerimento inicial.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 175571,
+        "end": 175693
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1801",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-i.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 1801.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 1801.º\n(Exames de sangue e outros métodos científicos)\nNas acções relativas à filiação são admitidos como meios de prova os exames de sangue e quaisquer outros métodos cientificamente comprovados.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 830448,
+        "end": 830651
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

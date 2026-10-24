@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art202.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art202",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A sub-rogação carece de autorização do membro do Governo responsável pela área da segurança social, podendo ser delegada nos termos do Código do Procedimento Administrativo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 130770,
+        "end": 130947
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

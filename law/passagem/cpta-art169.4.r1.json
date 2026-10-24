@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art169.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art169",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - A sanção pecuniária compulsória cessa quando se mostre ter sido realizada a execução integral da sentença, quando o exequente desista do pedido ou quando a execução já não possa ser realizada pelos destinatários da medida, por terem cessado ou sido suspensos do exercício das respetivas funções.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 239062,
+        "end": 239361
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

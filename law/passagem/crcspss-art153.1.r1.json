@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art153.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art153",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - As entidades contratantes são obrigadas a declarar à instituição de segurança social competente, em relação a cada um dos trabalhadores independentes a que adquiram serviços, o valor do respectivo serviço.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 96707,
+        "end": 96916
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

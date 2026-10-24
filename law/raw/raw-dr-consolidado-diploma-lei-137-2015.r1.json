@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-137-2015",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:08:21Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-137-2015",
+  "sha256": "ace2ded0c88be98c3e51065ea30c4bc7f801253d99fddfa1daf04324383cf669",
+  "bytes": "raw_bytes/ace2ded0c88be98c3e51065ea30c4bc7f801253d99fddfa1daf04324383cf669",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/lei/137-2015-70196964",
+  "captured_at": "2026-10-24T20:08:08Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "f02ff3c112afb55da7953ab2fdaa2c548528cdfbe676eec8ae0aef3cecf6bd70",
+    "bytes": "raw_bytes/f02ff3c112afb55da7953ab2fdaa2c548528cdfbe676eec8ae0aef3cecf6bd70"
+  }
+}

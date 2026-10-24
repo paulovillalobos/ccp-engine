@@ -1,0 +1,23 @@
+{
+  "id": "csc:art348.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art348",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "3 - Por portaria dos Ministros das Finanças e da Justiça podem ser dispensados, no todo ou em parte, os requisitos previstos no número anterior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 496222,
+        "end": 496366
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

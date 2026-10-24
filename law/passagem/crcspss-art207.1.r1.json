@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art207.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art207",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O pagamento dos créditos da segurança social por contribuições, quotizações e respectivos juros de mora poderá ser garantido por hipoteca legal sobre os bens imóveis ou móveis sujeitos a registo, existentes no património do contribuinte.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 132228,
+        "end": 132469
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art369.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art369",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "3 - Caso não conste das condições da emissão o regime referido no número anterior, as novas ações atribuem direito a dividendos nos mesmos termos das ações da mesma categoria já existentes.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 527269,
+        "end": 527458
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

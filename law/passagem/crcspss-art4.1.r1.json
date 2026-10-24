@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art4.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art4",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O regime aplicável à generalidade dos trabalhadores por conta de outrem, designado no presente Código por regime geral, constitui o quadro legal de referência dos restantes regimes contributivos do sistema previdencial.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 8276,
+        "end": 8499
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

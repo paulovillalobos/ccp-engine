@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1302.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1302",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "1 - As coisas corpóreas, móveis ou imóveis, podem ser objeto do direito de propriedade regulado neste código.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 567601,
+        "end": 567710
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

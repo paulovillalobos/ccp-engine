@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-e.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101-e",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - No termo do período autorizado ou considerado aceite para a prática de regime de trabalho a tempo parcial ou horário flexível, o trabalhador cuidador regressa ao regime de trabalho que anteriormente praticava.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 158604,
+        "end": 158817
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

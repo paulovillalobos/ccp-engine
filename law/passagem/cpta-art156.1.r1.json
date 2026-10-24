@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art156.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art156",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Uma vez admitido o recurso, o juiz ou relator manda apensá-lo ao processo a que respeita, que para o efeito é avocado ao arquivo onde se encontre, e ordena a notificação de todos os que tenham intervindo no processo em que foi proferida a decisão a rever.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 221838,
+        "end": 222097
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

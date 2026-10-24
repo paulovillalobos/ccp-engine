@@ -1,0 +1,23 @@
+{
+  "id": "cc:art32.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art32",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - A lei pessoal do apátrida é a do lugar onde ele tiver a sua residência habitual.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 20770,
+        "end": 20854
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

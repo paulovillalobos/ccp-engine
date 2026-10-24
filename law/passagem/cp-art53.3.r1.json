@@ -1,0 +1,23 @@
+{
+  "id": "cp:art53.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art53",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "3 - O regime de prova é ordenado sempre que o condenado não tiver ainda completado, ao tempo do crime, 21 anos de idade.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 115368,
+        "end": 115488
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

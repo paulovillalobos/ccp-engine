@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art85.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art85",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - Nos processos impugnatórios, o Ministério Público pode invocar causas de invalidade diversas das que tenham sido arguidas na petição inicial e solicitar a realização de diligências instrutórias para a respetiva prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 119302,
+        "end": 119523
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

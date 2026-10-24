@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art25.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art25",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - Em todas as formas de processo, todos os articulados e requerimentos autónomos e demais documentos apresentados após a notificação ao autor da contestação do demandado são notificados pelo mandatário judicial do apresentante ao mandatário judicial da contraparte nos termos da lei processual civil.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 38542,
+        "end": 38844
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

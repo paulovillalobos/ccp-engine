@@ -1,0 +1,23 @@
+{
+  "id": "cc:art168.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art168",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-10-10",
+      "text": "1 - O acto de constituição da associação, os estatutos e as suas alterações devem constar de escritura pública, sem prejuízo do disposto em lei especial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 81077,
+        "end": 81230
+      },
+      "valid_from": "2015-10-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

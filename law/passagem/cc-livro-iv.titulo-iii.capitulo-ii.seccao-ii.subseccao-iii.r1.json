@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii.subseccao-iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii.capitulo-ii.seccao-ii",
+  "kind": "secao",
+  "label": "Subsecção III",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Subsecção III\nResponsabilidades parentais relativamente aos bens dos filhos",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 885088,
+        "end": 885163
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

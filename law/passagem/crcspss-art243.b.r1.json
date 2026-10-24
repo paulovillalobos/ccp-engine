@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art243.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art243",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "b) A não inclusão na declaração de remunerações de trabalhadores que se encontram a receber prestações de desemprego ou de doença.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 149612,
+        "end": 149742
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

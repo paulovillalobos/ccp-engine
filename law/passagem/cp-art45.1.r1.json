@@ -1,0 +1,23 @@
+{
+  "id": "cp:art45.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art45",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "1 - A pena de prisão aplicada em medida não superior a um ano é substituída por pena de multa ou por outra pena não privativa da liberdade aplicável, exceto se a execução da prisão for exigida pela necessidade de prevenir o cometimento de futuros crimes. É correspondentemente aplicável o disposto no artigo 47.º",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 105191,
+        "end": 105503
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

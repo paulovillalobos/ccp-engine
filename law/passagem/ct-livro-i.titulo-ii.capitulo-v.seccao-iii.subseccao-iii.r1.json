@@ -1,0 +1,23 @@
+{
+  "id": "ct:livro-i.titulo-ii.capitulo-v.seccao-iii.subseccao-iii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-v.seccao-iii",
+  "kind": "secao",
+  "label": "Subsecção III",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Subsecção III\nRedução temporária do período normal de trabalho ou suspensão do contrato de trabalho por facto respeitante ao empregador",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 400520,
+        "end": 400655
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

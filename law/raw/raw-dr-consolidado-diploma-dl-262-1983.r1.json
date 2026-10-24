@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-262-1983",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:07:18Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-262-1983",
+  "sha256": "bba255dd4ead74f291ac6682f1aca1fc4e2989344a6f380c67c61cddd72b6c0a",
+  "bytes": "raw_bytes/bba255dd4ead74f291ac6682f1aca1fc4e2989344a6f380c67c61cddd72b6c0a",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/262-1983-452042",
+  "captured_at": "2026-10-24T20:07:06Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "7933a3c17465f7b29f4eab84efb9fc6c8a0cba1478d8b4c7774520cfe01429e8",
+    "bytes": "raw_bytes/7933a3c17465f7b29f4eab84efb9fc6c8a0cba1478d8b4c7774520cfe01429e8"
+  }
+}

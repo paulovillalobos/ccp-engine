@@ -1,0 +1,23 @@
+{
+  "id": "cp:art303.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art303",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Os limites mínimo e máximo das penas previstas nos n.os 1 e 2 do artigo anterior são elevados ao dobro se o motim for armado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 397678,
+        "end": 397807
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

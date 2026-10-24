@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art49",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 49.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 49.º\nNorma remissiva",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 66000,
+        "end": 66027
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

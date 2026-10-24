@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1990.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1990",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "1 - Sem prejuízo da impugnação da sentença através de recurso extraordinário de revisão previsto na lei processual civil, a sentença que tiver decretado a adoção só é suscetível de revisão:\na) Se tiver faltado o consentimento do adoptante ou dos pais do adoptado, quando necessário e não dispensado;\nb) Se o consentimento dos pais do adoptado tiver sido indevidamente dispensado, por não se verificarem as condições do n.º 3 do artigo 1981.º;\nc) Se o consentimento do adoptante tiver sido viciado por erro desculpável e essencial sobre a pessoa do adoptado;\nd) Se o consentimento do adoptante ou dos pais do adoptado tiver sido determinado por coacção moral, contanto que seja grave o mal com que eles foram ilicitamente ameaçados e justificado o receio da sua consumação;\ne) Se tiver faltado o consentimento do adoptado, quando necessário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 965748,
+        "end": 966588
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

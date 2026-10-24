@@ -1,0 +1,23 @@
+{
+  "id": "cp:art93.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art93",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-08-20",
+      "text": "3 - Fica ressalvado, em qualquer caso, o prazo mínimo de internamento fixado no n.º 2 do artigo 91.º",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 169876,
+        "end": 169976
+      },
+      "valid_from": "2023-08-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

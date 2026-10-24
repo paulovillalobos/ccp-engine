@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art78.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art78",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "2 - Na petição inicial, deduzida por forma articulada, deve o autor:\na) Designar o tribunal em que a acção é proposta;\nb) Identificar as partes, incluindo eventuais contrainteressados, indicando:\ni) Quanto ao autor, o seu nome, domicílio ou sede, local de trabalho, número de identificação fiscal e número de identificação civil ou número de identificação de pessoa coletiva;\nii) Quanto às demais partes, o seu nome, o seu domicílio ou que se encontra ausente em parte incerta, ou sede, bem como, sem prejuízo de poder declarar a impossibilidade de obter esta informação, o local de trabalho, o número de identificação fiscal e o número de identificação civil ou o número de identificação de pessoa coletiva.\nc) Indicar o domicílio profissional do mandatário judicial;\nd) Indicar a forma do processo;\ne) Identificar o acto jurídico impugnado, quando seja o caso;\nf) Expor os factos essenciais que constituem a causa de pedir e as razões de direito que servem de fundamento à ação;\ng) Formular o pedido;\nh) Declarar o valor da causa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 102451,
+        "end": 103483
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

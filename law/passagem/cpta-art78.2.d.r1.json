@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art78.2.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art78.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2026-12-01",
+      "text": "d) Indicar a forma do processo;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 103220,
+        "end": 103251
+      },
+      "valid_from": "2026-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

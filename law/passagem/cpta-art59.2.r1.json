@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art59.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art59",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O prazo para a impugnação pelos destinatários a quem o ato administrativo deva ser notificado só corre a partir da data da notificação ao interessado ou ao seu mandatário, quando este tenha sido como tal constituído no procedimento, ou da data da notificação efetuada em último lugar caso ambos tenham sido notificados, ainda que o ato tenha sido objeto de publicação, mesmo que obrigatória.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 76815,
+        "end": 77210
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

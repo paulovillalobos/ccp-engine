@@ -1,0 +1,23 @@
+{
+  "id": "cc:art39",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 39.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 39.º\n(Representação voluntária)\n1. A representação voluntária é regulada, quanto à existência, extensão, modificação, efeitos e extinção dos poderes representativos, pela lei do Estado em que os poderes são exercidos.\n2. Porém, se o representante exercer os poderes representativos em país diferente daquele que o representado indicou e o facto for conhecido do terceiro com quem contrate, é aplicável a lei do país da residência habitual do representado.\n3. Se o representante exercer profissionalmente a representação e o facto for conhecido do terceiro contratante, é aplicável a lei do domicílio profissional.\n4. Quando a representação se refira à disposição ou administração de bens imóveis, é aplicável a lei do país da situação desses bens.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 23923,
+        "end": 24677
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

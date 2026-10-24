@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art6.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art6",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "a) A parte IV do Código Administrativo, aprovado pelo Decreto-Lei n.º 31095, de 31 de Dezembro de 1940;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 5561,
+        "end": 5664
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

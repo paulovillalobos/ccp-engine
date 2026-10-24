@@ -1,0 +1,23 @@
+{
+  "id": "csc:art355.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art355",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "7 - As deliberações são tomadas por maioria dos votos emitidos; as modificações das condições dos créditos dos obrigacionistas devem, porém, ser aprovadas, na primeira data fixada, por metade dos votos correspondentes a todos os obrigacionistas e, na segunda data fixada, por dois terços dos votos emitidos.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 505009,
+        "end": 505316
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

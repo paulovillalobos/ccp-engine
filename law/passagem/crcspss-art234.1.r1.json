@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art234.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art234",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A determinação da medida da coima faz-se em função da gravidade da contra-ordenação, para o que deve atender-se ao tempo de incumprimento da obrigação e ao número de trabalhadores prejudicados com a actuação do agente, da culpa do agente e dos seus antecedentes na prática de infracções ao presente Código.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 145126,
+        "end": 145436
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art92.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art92",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Nos tribunais superiores, uma vez concluso o processo ao relator, tem lugar a vista simultânea aos juízes-adjuntos, que, no caso de evidente simplicidade da causa, pode ser dispensada pelo relator.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 139811,
+        "end": 140012
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

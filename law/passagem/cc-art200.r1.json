@@ -1,0 +1,23 @@
+{
+  "id": "cc:art200",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 200.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 200.º\n(Responsabilidade dos organizadores e administradores)\n1. Os membros da comissão e os encarregados de administrar os seus fundos são pessoal e solidàriamente responsáveis pela conservação dos fundos recolhidos e pela sua afectação ao fim anunciado.\n2. Os membros da comissão respondem ainda, pessoal e solidàriamente, pelas obrigações contraídas em nome dela.\n3. Os subscritores só podem exigir o valor que tiverem subscrito quando se não cumpra, por qualquer motivo, o fim para que a comissão foi constituída.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 101761,
+        "end": 102284
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

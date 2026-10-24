@@ -1,0 +1,23 @@
+{
+  "id": "cc:art331",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 331.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 331.º\n(Causas impeditivas da caducidade)\n1. Só impede a caducidade a prática, dentro do prazo legal ou convencional, do acto a que a lei ou convenção atribua efeito impeditivo.\n2. Quando, porém, se trate de prazo fixado por contrato ou disposição legal relativa a direito disponível, impede também a caducidade o reconhecimento do direito por parte daquele contra quem deva ser exercido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 153405,
+        "end": 153799
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

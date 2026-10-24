@@ -1,0 +1,23 @@
+{
+  "id": "ct:art185.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art185",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "8 - O trabalhador temporário cedido a utilizador no estrangeiro por período inferior a oito meses tem direito ao pagamento de um abono mensal a título de ajudas de custo até ao limite de 25 % do valor da retribuição base.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 266721,
+        "end": 266942
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

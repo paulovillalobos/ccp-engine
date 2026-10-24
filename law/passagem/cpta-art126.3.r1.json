@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art126.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art126",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Decorrido o prazo referido no número anterior sem que tenha sido pedida qualquer indemnização, é autorizado o levantamento da garantia, quando exista.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 188554,
+        "end": 188708
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

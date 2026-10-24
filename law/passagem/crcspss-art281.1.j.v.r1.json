@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art281.1.j.v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art281.1.j",
+  "kind": "subalinea",
+  "label": "v)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "v) 2014 em 27,4 %.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 180010,
+        "end": 180028
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

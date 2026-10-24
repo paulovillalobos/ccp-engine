@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art32.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art32",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "5 - Quando esteja em causa a cessação de situações causadoras de dano, ainda que fundadas em acto administrativo ilegal, o valor da causa é determinado pela importância do dano causado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 46942,
+        "end": 47127
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

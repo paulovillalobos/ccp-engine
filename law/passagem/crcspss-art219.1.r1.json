@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art219.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art219",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O beneficiário readquire o direito ao pagamento das prestações suspensas desde que regularize a sua situação contributiva nos três meses civis subsequentes ao mês em que tenha ocorrido a suspensão.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 139193,
+        "end": 139394
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

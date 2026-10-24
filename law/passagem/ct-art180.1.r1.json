@@ -1,0 +1,23 @@
+{
+  "id": "ct:art180.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art180",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2011-11-01",
+      "text": "1 - O contrato de trabalho temporário só pode ser celebrado a termo resolutivo, certo ou incerto, nas situações previstas para a celebração de contrato de utilização.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 257896,
+        "end": 258062
+      },
+      "valid_from": "2011-11-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

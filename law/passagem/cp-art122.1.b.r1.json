@@ -1,0 +1,23 @@
+{
+  "id": "cp:art122.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art122.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "b) 15 anos, se forem iguais ou superiores a 5 anos de prisão;",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 205676,
+        "end": 205737
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

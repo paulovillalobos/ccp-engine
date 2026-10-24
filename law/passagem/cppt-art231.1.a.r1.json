@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art231.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art231.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2016-05-24",
+      "text": "a) A penhora deve ser registada no prazo máximo de cinco dias;",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 289267,
+        "end": 289329
+      },
+      "valid_from": "2016-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

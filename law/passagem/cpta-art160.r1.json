@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art160",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-vii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 160.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 160.º\nEficácia da sentença\n1 - Os prazos dentro dos quais se impõe à Administração a execução das sentenças proferidas pelos tribunais administrativos correm a partir do respectivo trânsito em julgado.\n2 - Quando a sentença tenha sido objecto de recurso a que tenha sido atribuído efeito meramente devolutivo, os prazos correm com a notificação à Administração da decisão mediante a qual o tribunal tenha atribuído efeito meramente devolutivo ao recurso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 225838,
+        "end": 226299
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

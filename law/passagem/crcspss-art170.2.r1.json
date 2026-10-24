@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art170.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art170",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Podem ainda enquadrar-se no seguro social voluntário as pessoas que integrem grupos de actividades específicos que, de acordo com os respectivos estatutos, prevejam a inscrição no regime, designadamente:\na) Os voluntários sociais que de forma organizada exerçam actividade de tipo profissional não remunerada em favor de instituições particulares de solidariedade social e de entidades detentoras de corpos de bombeiros, nomeadamente os bombeiros voluntários;\nb) Os bolseiros de investigação que reúnam as condições definidas no Estatuto do Bolseiro de Investigação e não se encontrem enquadradas em regime de protecção social obrigatório;\nc) Os agentes da cooperação que, reunindo as condições definidas no respectivo estatuto, se obriguem, mediante contrato, a prestar serviço no quadro das relações do cooperante, de que não resulte o seu enquadramento em regime de protecção social obrigatório de outro país;\nd) Os praticantes desportivos de alto rendimento.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 110561,
+        "end": 111527
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

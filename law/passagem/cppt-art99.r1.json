@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art99",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-iii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 99.º",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Artigo 99.º\nFundamentos da impugnação\nConstitui fundamento de impugnação qualquer ilegalidade, designadamente:\na) Errónea qualificação e quantificação dos rendimentos, lucros, valores patrimoniais e outros factos tributários;\nb) Incompetência;\nc) Ausência ou vício da fundamentação legalmente exigida;\nd) Preterição de outras formalidades legais.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 133194,
+        "end": 133540
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

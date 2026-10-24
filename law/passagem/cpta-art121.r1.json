@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art121",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 121.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 121.º\nDecisão da causa principal\n1 - Quando, existindo processo principal já intentado, se verifique que foram trazidos ao processo cautelar todos os elementos necessários para o efeito e a simplicidade do caso ou a urgência na sua resolução definitiva o justifique, o tribunal pode, ouvidas as partes pelo prazo de 10 dias, antecipar o juízo sobre a causa principal, proferindo decisão que constituirá a decisão final desse processo.\n2 - O recurso da decisão final do processo principal, proferida nos termos do número anterior, tem efeito meramente devolutivo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 183110,
+        "end": 183679
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

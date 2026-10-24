@@ -1,0 +1,23 @@
+{
+  "id": "cc:art185.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art185",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-10-10",
+      "text": "1 - As fundações visam a prossecução de fins de interesse social, podendo ser instituídas por ato entre vivos ou por testamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 90143,
+        "end": 90271
+      },
+      "valid_from": "2015-10-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

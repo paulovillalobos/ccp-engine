@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1677-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1677-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. O consentimento do ex-cônjuge pode ser prestado por documento autêntico ou autenticado, termo lavrado em juízo ou declaração perante o funcionário do registo civil.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 753827,
+        "end": 753994
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

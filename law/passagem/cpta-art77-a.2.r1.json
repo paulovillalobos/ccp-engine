@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art77-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art77-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A anulabilidade de quaisquer contratos por falta e vícios da vontade só pode ser arguida pelas pessoas em cujo interesse a lei a estabelece.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 100562,
+        "end": 100706
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

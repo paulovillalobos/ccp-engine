@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-i.capitulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i",
+  "kind": "capitulo",
+  "label": "Capítulo V",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Capítulo V\nDo valor das causas e das formas do processo",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 45496,
+        "end": 45551
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

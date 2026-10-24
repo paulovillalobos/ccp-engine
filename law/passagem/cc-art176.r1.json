@@ -1,0 +1,23 @@
+{
+  "id": "cc:art176",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 176.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 176.º\n(Privação do direito de voto)\n1. O associado não pode votar, por si ou como representante de outrem, nas matérias em que haja conflito de interesses entre a associação e ele, seu cônjuge, ascendentes ou descendentes.\n2. As deliberações tomadas com infracção do disposto no número anterior são anuláveis, se o voto do associado impedido for essencial à existência da maioria necessária.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 85984,
+        "end": 86382
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art65.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art65",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2005-01-01",
+      "text": "3 - Os pedidos referidos no número anterior são apresentados nos seguintes prazos:\na) Se se tratar de benefícios fiscais relativos a factos tributários sujeitos a retenção na fonte a título definitivo, até ao limite do prazo para entrega do respectivo imposto nos cofres do Estado;\nb) Nos restantes casos, até ao limite do prazo para a entrega da declaração de rendimentos relativa ao período em que se verificarem os pressupostos da atribuição do benefício fiscal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 86314,
+        "end": 86779
+      },
+      "valid_from": "2005-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

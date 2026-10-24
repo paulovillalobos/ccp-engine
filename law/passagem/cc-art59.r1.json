@@ -1,0 +1,23 @@
+{
+  "id": "cc:art59",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 59.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 59.º\n(Filiação ilegítima)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 33413,
+        "end": 33445
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art102.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art102",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "1 - Os processos do contencioso pré-contratual obedecem à tramitação estabelecida no capítulo III do título II, salvo o preceituado nos números\nseguintes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 154411,
+        "end": 154565
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

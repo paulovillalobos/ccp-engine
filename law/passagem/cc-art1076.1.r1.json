@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1076.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1076",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-01-01",
+      "text": "1 - O pagamento da renda pode ser antecipado, havendo acordo escrito, por período não superior a dois meses.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 457921,
+        "end": 458029
+      },
+      "valid_from": "2023-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

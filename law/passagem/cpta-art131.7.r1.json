@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art131.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art131",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - As decisões proferidas ao abrigo do número anterior são passíveis de impugnação nos termos gerais.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 194772,
+        "end": 194874
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

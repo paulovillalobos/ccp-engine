@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art155.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art155",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - As contribuições das entidades contratantes reportam-se a trimestres do ano civil e o prazo para o seu pagamento é fixado do dia 10 ao dia 20 do mês seguinte ao trimestre a que respeita.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 98019,
+        "end": 98209
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

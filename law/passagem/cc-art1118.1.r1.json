@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1118.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1118",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "1. É permitida a transmissão por acto entre vivos da posição do arrendatário, sem dependência de autorização do senhorio, em caso de trespasse do estabelecimento comercial ou industrial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 508568,
+        "end": 508754
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art150.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art150",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A obrigação contributiva dos trabalhadores independentes constitui-se com o início dos efeitos do enquadramento e efectiva-se com o pagamento de contribuições, nos termos regulados no presente capítulo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 94938,
+        "end": 95144
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

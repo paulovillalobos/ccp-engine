@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art272.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art272",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O direito à restituição de valores referentes a contribuições e a quotizações indevidamente pagas à segurança social prescrevem no prazo de cinco anos a contar da data do pagamento.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 163574,
+        "end": 163759
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

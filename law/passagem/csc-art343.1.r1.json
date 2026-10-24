@@ -1,0 +1,23 @@
+{
+  "id": "csc:art343.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art343",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "1 - Se o contrato de sociedade não permitir que os acionistas sem direito de voto participem na assembleia geral, os titulares de ações preferenciais sem direito de voto de uma mesma emissão são representados na assembleia por um deles.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 485674,
+        "end": 485910
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

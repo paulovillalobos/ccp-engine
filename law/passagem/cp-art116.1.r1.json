@@ -1,0 +1,23 @@
+{
+  "id": "cp:art116.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art116",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "1 - O direito de queixa não pode ser exercido se o titular a ele expressamente tiver renunciado ou tiver praticado factos donde a renúncia necessariamente se deduza.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 196132,
+        "end": 196297
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

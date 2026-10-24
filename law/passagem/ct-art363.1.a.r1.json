@@ -1,0 +1,23 @@
+{
+  "id": "ct:art363.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art363.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "a) 15 dias, no caso de trabalhador com antiguidade inferior a um ano;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 467390,
+        "end": 467459
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

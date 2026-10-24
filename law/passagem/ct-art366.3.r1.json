@@ -1,0 +1,23 @@
+{
+  "id": "ct:art366.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art366",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - O empregador é responsável pelo pagamento da totalidade da compensação, sem prejuízo do direito do trabalhador a acionar o FGCT, nos termos previstos em legislação específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 471337,
+        "end": 471516
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

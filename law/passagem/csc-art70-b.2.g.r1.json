@@ -1,0 +1,23 @@
+{
+  "id": "csc:art70-b.2.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art70-b.2",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "g) O relatório sobre os pagamentos a administrações públicas e o relatório consolidado sobre os pagamentos a administrações públicas, consoante aplicável.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 115132,
+        "end": 115286
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

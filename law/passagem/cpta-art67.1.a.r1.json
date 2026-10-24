@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art67.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art67.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "a) Não tenha sido proferida decisão dentro do prazo legalmente estabelecido;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 86534,
+        "end": 86610
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

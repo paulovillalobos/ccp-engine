@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art55.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art55",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A parcela da taxa contributiva a cargo da entidade empregadora é acrescida em três pontos percentuais nos contratos de trabalho a termo resolutivo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 39848,
+        "end": 39999
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

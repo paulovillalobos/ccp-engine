@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art76.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art76",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - Não integra o conceito de remuneração mensal efectiva as importâncias despendidas pela entidade empregadora, a favor do trabalhador, na constituição de seguros de doença, de acidentes pessoais e de seguros de vida que garantam exclusivamente o risco de morte, invalidez ou reforma por velhice, no último caso desde que o benefício seja garantido após os 55 anos de idade, desde que não garantam o pagamento e este se não verifique nomeadamente por resgate ou adiantamento de qualquer capital em vida durante os primeiros cinco anos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 54013,
+        "end": 54549
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

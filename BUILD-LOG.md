@@ -730,3 +730,34 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   phase) and asked for 20 article references; it now counts Portuguese acts (11 measured).
 - Next: D0.2, D0.1, D0.3 (in that order: the EU acts use the second layout).
 - Why: the audit listed them as what phase 3 must clear before rules cite the law around the CCP.
+
+## 2026-10-24 D0.2 a second structure layout for the codes (commit: D0.2: second structure layout (dr-codigo) for the codes the CCP grammar cannot read)
+- Done: engine/structure.py 0.3 adds `structure_codigo` (layout dr-codigo, D34) beside the unchanged `structure`;
+  tools/build_law.py picks it per act (the CCP layout refuses the text or reads under 90 % of its articles), records the
+  layout in law/build-report.json, gives an object it no longer produces a stale revision, and dates a consolidated
+  act's notes against the acts already read; engine/vigente.py: `whole_act_clause` (D36: Lei 7/2009's art. 14.º dates
+  only some provisions); verify TIME skips a stale vigencia (withdrawn, with its reason). Captured, one GET each, 3 s
+  apart, to date the dateless notes on the codes' pages (D28): DL 114-D/2023, DL 321-B/90, Lei 143/2015, Lei 90/2019,
+  DL 262/83, Lei 150/2015, DL 379/86, DL 200-C/80, Lei 137/2015, DL 605/76.
+- Result: articles as passages: CC 2082 (of 2405; 323 left out by D33, notes nothing dates), CPPT 323, CSC 550, CT 575,
+  Lei 98/97 117, CRCSPSS 290; also CPTA 216 (was 8) and Código Penal 442 (was 13), whose code text follows the decree's
+  closing formula; DL 197/99 199. DR slips kept as -dupN: 7 passages (cppt:art188-dup2 = the article printed with the
+  next one's number, cppt:art89.5-dup2, csc:art132.1.a-dup2 ...). Store: 36524 passages, 28193 vigencias; 9 passages and
+  13 vigencias of CP's decree articles (now cp:dl.artN) marked stale. verify ok; redteam 0 MISSED; test_d0 (2) green.
+- Pages (captured_at, id, sha256, bytes):
+```
+2026-10-24T20:06:02Z  dl-114-d-2023    sha256 16ec4c72648917cdefcce8e63450c2edcaab16a9ef36cac4ccc3978934f875ca  224121 bytes
+2026-10-24T20:06:18Z  dl-321-b-1990    sha256 f5e3147179955864b93b9b64d326fe115a31f9ac5d74fc1b8f5080ca77ab102a  228779 bytes
+2026-10-24T20:06:34Z  lei-143-2015     sha256 c8566e247d8864d452314fbdcf40ae38c38db2202a3bb8014ee51e450be33444  227571 bytes
+2026-10-24T20:06:50Z  lei-90-2019      sha256 a8e0e92a781119f29f1c4a0b88e7e24ece24a9a2820956dc622871b40b7e940f  150060 bytes
+2026-10-24T20:07:06Z  dl-262-1983      sha256 bba255dd4ead74f291ac6682f1aca1fc4e2989344a6f380c67c61cddd72b6c0a  90331 bytes
+2026-10-24T20:07:21Z  lei-150-2015     sha256 b6450db25488343f4f823c7180c05802b7f942ccdfe835cce0e8a78010c1a8f1  230923 bytes
+2026-10-24T20:07:37Z  dl-379-1986      sha256 beb9cd2ef0eb6aa60ee724e5a131a459fb8a06d63a0fbdc8869efda42976a31b  97116 bytes
+2026-10-24T20:07:52Z  dl-200-c-1980    sha256 3130d2887f7c03aec647b563d1b1c59d897f8ac34899e1bf8342bf0d60c27581  83742 bytes
+2026-10-24T20:08:08Z  lei-137-2015     sha256 ace2ded0c88be98c3e51065ea30c4bc7f801253d99fddfa1daf04324383cf669  91560 bytes
+2026-10-24T20:08:24Z  dl-605-1976      sha256 b2bcf79d2c70785dbd666238461b94f515658f48af846c735b9fb0e5181ab25b  92177 bytes
+```
+- Registered: structure, extract, build-law, vigente, coverage, verify (new versions). DECISIONS D34, D36 (and D35,
+  written with them, used by D0.1).
+- Next: D0.1 EU acts.
+- Why: a rule that points to the Civil Code or the CPTA must find the article it points to.

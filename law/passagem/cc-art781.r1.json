@@ -1,0 +1,23 @@
+{
+  "id": "cc:art781",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vii.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 781.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 781.º\n(Dívida liquidável em prestações)\nSe a obrigação puder ser liquidada em duas ou mais prestações, a falta de realização de uma delas importa o vencimento de todas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 332948,
+        "end": 333123
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art472.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art472",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - As separatas referidas no número anterior contêm, obrigatoriamente:\na) O texto integral das propostas ou projectos, com os respectivos números;\nb) A designação sintética da matéria da proposta ou projecto;\nc) O prazo para apreciação pública.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 580222,
+        "end": 580467
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

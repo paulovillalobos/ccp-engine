@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1081.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1081",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "1 - A cessação do contrato torna imediatamente exigível, salvo se outro for o momento legalmente fixado ou acordado pelas partes, a desocupação do local e a sua entrega, com as reparações que incumbam ao arrendatário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 462396,
+        "end": 462613
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

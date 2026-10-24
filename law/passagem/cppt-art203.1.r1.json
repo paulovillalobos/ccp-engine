@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art203.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art203",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - A oposição deve ser deduzida no prazo de 30 dias a contar:\na) Da citação pessoal ou, não a tendo havido, da primeira penhora;\nb) Da data em que tiver ocorrido o facto superveniente ou do seu conhecimento pelo executado.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 256691,
+        "end": 256914
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

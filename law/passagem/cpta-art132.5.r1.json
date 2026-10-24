@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art132.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art132",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Quando, no processo cautelar, o juiz considere demonstrada a ilegalidade de especificações contidas nos documentos conformadores do procedimento que era invocada como fundamento do processo principal, pode determinar a sua imediata correção, decidindo, desse modo, o mérito da causa, segundo o disposto no artigo 121.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 196078,
+        "end": 196400
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

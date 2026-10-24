@@ -1,0 +1,23 @@
+{
+  "id": "csc:art65.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art65",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "4 - O relatório de gestão, o relatório separado com a informação não financeira, quando aplicável, e as contas do exercício são elaborados e assinados pelos gerentes ou administradores que estiverem em funções ao tempo da apresentação, mas os antigos membros da administração devem prestar todas as informações que para esse efeito lhes forem solicitadas, relativamente ao período em que exerceram aquelas funções.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 95069,
+        "end": 95483
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

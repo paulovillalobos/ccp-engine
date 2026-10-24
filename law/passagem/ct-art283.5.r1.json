@@ -1,0 +1,23 @@
+{
+  "id": "ct:art283.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art283",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2017-10-01",
+      "text": "5 - O empregador é obrigado a transferir a responsabilidade pela reparação prevista neste capítulo para entidades legalmente autorizadas a realizar este seguro.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 380079,
+        "end": 380239
+      },
+      "valid_from": "2017-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

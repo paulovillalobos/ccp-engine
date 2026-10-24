@@ -1,0 +1,23 @@
+{
+  "id": "ct:art512.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art512",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "1 - Compete ao presidente do Conselho Económico e Social participar na constituição das listas de árbitros nos termos de lei específica.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 627567,
+        "end": 627703
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

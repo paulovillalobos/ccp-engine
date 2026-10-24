@@ -1,0 +1,23 @@
+{
+  "id": "cc:art727.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art727",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A hipoteca que não for inseparável da pessoa do devedor pode ser cedida sem o crédito assegurado, para garantia de crédito pertencente a outro credor do mesmo devedor, com observância das regras próprias da cessão de créditos; se, porém, a coisa ou direito hipotecado pertencer a terceiro, é necessário o consentimento deste.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 311870,
+        "end": 312198
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art87.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art87",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "8 - A absolvição da instância sem prévia emissão de despacho pré-saneador, em casos em que podia haver lugar ao suprimento de exceções dilatórias ou de irregularidades, não impede o autor de, no prazo de 15 dias, contado da notificação da decisão, apresentar nova petição, com observância das prescrições em falta, a qual se considera apresentada na data em que o tinha sido a primeira, para efeitos da tempestividade da sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 125506,
+        "end": 125944
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art233.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art233",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "5 - Só com consentimento do sócio pode uma quota ser parcialmente amortizada, salvo nos casos previstos na lei.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 367573,
+        "end": 367684
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

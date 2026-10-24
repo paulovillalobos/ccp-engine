@@ -1,0 +1,23 @@
+{
+  "id": "csc:art7.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art7",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-12-31",
+      "text": "1 - O contrato de sociedade deve ser reduzido a escrito e as assinaturas dos seus subscritores devem ser reconhecidas presencialmente, salvo se forma mais solene for exigida para a transmissão dos bens com que os sócios entram para a sociedade, devendo, neste caso, o contrato revestir essa forma, sem prejuízo do disposto em lei especial.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 31900,
+        "end": 32239
+      },
+      "valid_from": "2008-12-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

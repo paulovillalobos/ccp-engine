@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art142.3.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art142.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "b) Proferidas em matéria sancionatória;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 204749,
+        "end": 204788
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

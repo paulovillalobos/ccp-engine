@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 7.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 7.º\nEntrada em vigor\nA presente lei entra em vigor em 1 de Janeiro de 2004.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 5969,
+        "end": 6051
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

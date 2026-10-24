@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art93.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art93",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Os devedores de tributos de qualquer natureza apresentarão no acto de pagamento, relativamente às liquidações efectuadas pelos serviços da administração tributária, o respectivo documento de cobrança ou, nos restantes casos, a guia de pagamento oficial ou título equivalente.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 120461,
+        "end": 120740
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

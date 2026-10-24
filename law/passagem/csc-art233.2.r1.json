@@ -1,0 +1,23 @@
+{
+  "id": "csc:art233.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art233",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - A amortização de uma quota só é permitida se o facto permissivo já figurava no contrato de sociedade ao tempo da aquisição dessa quota pelo seu actual titular ou pela pessoa a quem este sucedeu por morte ou se a introdução desse facto no contrato foi unanimemente deliberada pelos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 367019,
+        "end": 367311
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

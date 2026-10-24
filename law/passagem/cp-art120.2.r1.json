@@ -1,0 +1,23 @@
+{
+  "id": "cp:art120.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art120",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-09-01",
+      "text": "2 - No caso previsto na alínea b) do número anterior a suspensão não pode ultrapassar 3 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 203223,
+        "end": 203316
+      },
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

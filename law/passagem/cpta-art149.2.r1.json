@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art149.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art149",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Se o tribunal recorrido tiver julgado do mérito da causa, mas deixado de conhecer de certas questões, designadamente por as considerar prejudicadas pela solução dada ao litígio, o tribunal superior, se entender que o recurso procede e que nada obsta à apreciação daquelas questões, conhece delas no mesmo acórdão em que revoga a decisão recorrida.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 213440,
+        "end": 213791
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

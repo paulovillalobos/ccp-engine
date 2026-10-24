@@ -1,0 +1,23 @@
+{
+  "id": "ct:art209.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art209",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O período normal de trabalho diário pode ter aumento até quatro horas diárias:\na) Por acordo entre empregador e trabalhador ou por instrumento de regulamentação colectiva, para concentrar o período normal de trabalho semanal no máximo de quatro dias de trabalho;\nb) Por instrumento de regulamentação colectiva para estabelecer um horário de trabalho que contenha, no máximo, três dias de trabalho consecutivos, seguidos no mínimo de dois dias de descanso, devendo a duração do período normal de trabalho semanal ser respeitado, em média, num período de referência de 45 dias.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 301999,
+        "end": 302578
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

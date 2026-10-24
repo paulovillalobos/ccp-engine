@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art179.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art179",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "4 - Quando seja devido o pagamento de uma quantia, o tribunal determina que o pagamento seja realizado no prazo de 30 dias, seguindo-se, em caso de incumprimento, os termos do processo executivo para pagamento de quantia certa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 255555,
+        "end": 255782
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

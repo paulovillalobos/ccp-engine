@@ -1,0 +1,23 @@
+{
+  "id": "cc:art297",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 297.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 297.º\n(Alteração de prazos)\n1. A lei que estabelecer, para qualquer efeito, um prazo mais curto do que o fixado na lei anterior é também aplicável aos prazos que já estiverem em curso, mas o prazo só se conta a partir da entrada em vigor da nova lei, a não ser que, segundo a lei antiga, falte menos tempo para o prazo se completar.\n2. A lei que fixar um prazo mais longo é igualmente aplicável aos prazos que já estejam em curso, mas computar-se-á neles todo o tempo decorrido desde o seu momento inicial.\n3. A doutrina dos números anteriores é extensiva, na parte aplicável, aos prazos fixados pelos tribunais ou por qualquer autoridade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 138416,
+        "end": 139062
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1225.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1225",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "1 - Sem prejuízo do disposto nos artigos 1219.º e seguintes, se a empreitada tiver por objecto a construção, modificação ou reparação de edifícios ou outros imóveis destinados por sua natureza a longa duração e, no decurso de cinco anos a contar da entrega, ou no decurso do prazo de garantia convencionado, a obra, por vício do solo ou da construção, modificação ou reparação, ou por erros na execução dos trabalhos, ruir total ou parcialmente, ou apresentar defeitos, o empreiteiro é responsável pelo prejuízo causado ao dono da obra ou a terceiro adquirente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 544219,
+        "end": 544780
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

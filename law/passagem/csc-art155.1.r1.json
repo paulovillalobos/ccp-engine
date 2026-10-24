@@ -1,0 +1,23 @@
+{
+  "id": "csc:art155.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art155",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - Os liquidatários devem prestar, nos três primeiros meses de cada ano civil, contas da liquidação, as quais devem ser acompanhadas por um relatório pormenorizado do estado da mesma.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 288644,
+        "end": 288828
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

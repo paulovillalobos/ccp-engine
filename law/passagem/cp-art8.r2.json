@@ -1,0 +1,24 @@
+{
+  "id": "cp:art8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 8.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 8.º\nAplicação subsidiária do Código Penal\nAs disposições deste diploma são aplicáveis aos factos puníveis pelo direito penal militar e da marinha mercante e pela restante legislação de carácter especial, salvo disposição em contrário.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 82733,
+        "end": 82974
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

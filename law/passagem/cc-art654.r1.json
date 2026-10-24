@@ -1,0 +1,23 @@
+{
+  "id": "cc:art654",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-ii.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 654.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 654.º\n(Obrigação futura)\nSendo a fiança prestada para garantia de obrigação futura, tem o fiador, enquanto a obrigação se não constituir, a possibilidade de liberar-se da garantia, se a situação patrimonial do devedor se agravar em termos de pôr em risco os seus direitos eventuais contra este, ou se tiverem decorrido cinco anos sobre a prestação da fiança, quando outro prazo não resulte da convenção.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 283599,
+        "end": 284009
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

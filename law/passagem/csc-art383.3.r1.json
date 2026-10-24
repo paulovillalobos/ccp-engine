@@ -1,0 +1,23 @@
+{
+  "id": "csc:art383.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art383",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Em segunda convocação, a assembleia pode deliberar seja qual for o número de accionistas presentes ou representados e o capital por eles representado.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 550558,
+        "end": 550712
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

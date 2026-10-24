@@ -1,0 +1,23 @@
+{
+  "id": "cc:art492.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art492",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A pessoa obrigada, por lei ou negócio jurídico, a conservar o edifício ou obra responde, em lugar do proprietário ou possuidor, quando os danos forem devidos exclusivamente a defeito de conservação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 217938,
+        "end": 218139
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

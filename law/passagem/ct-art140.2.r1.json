@@ -1,0 +1,23 @@
+{
+  "id": "ct:art140.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art140",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "2 - Considera-se, nomeadamente, necessidade temporária da empresa:\na) Substituição directa ou indirecta de trabalhador ausente ou que, por qualquer motivo, se encontre temporariamente impedido de trabalhar;\nb) Substituição directa ou indirecta de trabalhador em relação ao qual esteja pendente em juízo acção de apreciação da licitude de despedimento;\nc) Substituição directa ou indirecta de trabalhador em situação de licença sem retribuição;\nd) Substituição de trabalhador a tempo completo que passe a prestar trabalho a tempo parcial por período determinado;\ne) Actividade sazonal ou outra cujo ciclo anual de produção apresente irregularidades decorrentes da natureza estrutural do respectivo mercado, incluindo o abastecimento de matéria-prima;\nf) Acréscimo excepcional de actividade da empresa;\ng) Execução de tarefa ocasional ou serviço determinado precisamente definido e não duradouro;\nh) Execução de obra, projecto ou outra actividade definida e temporária, incluindo a execução, direcção ou fiscalização de trabalhos de construção civil, obras públicas, montagens e reparações industriais, em regime de empreitada ou em administração directa, bem como os respectivos projectos ou outra actividade complementar de controlo e acompanhamento.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 199744,
+        "end": 200994
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

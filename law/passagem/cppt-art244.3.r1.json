@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art244.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art244",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "3 - O disposto no número anterior não é aplicável aos imóveis cujo valor tributável se enquadre, no momento da penhora, na taxa máxima prevista para a aquisição de prédio urbano ou de fração autónoma de prédio urbano destinado exclusivamente a habitação própria e permanente, em sede de imposto sobre as transmissões onerosas de imóveis.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 299393,
+        "end": 299730
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

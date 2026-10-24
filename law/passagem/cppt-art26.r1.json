@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art26",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-i.capitulo-ii.seccao-iv.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 26.º",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "Artigo 26.º\nRecibos\n1 - Os serviços da administração tributária passarão obrigatoriamente recibo das petições e de quaisquer outros requerimentos, exposições ou reclamações, com menção dos documentos que os instruam e da data da apresentação, independentemente da natureza do processo administrativo ou judicial.\n2 - No caso de remessa pelo correio, sob registo, de requerimentos, petições ou outros documentos dirigidos à administração tributária, considera-se que a mesma foi efectuada na data do respectivo registo, salvo o especialmente estabelecido nas leis tributárias.\n3 - No caso de remessa de petições ou outros documentos dirigidos à administração tributária por telefax ou por via eletrónica, considera-se que a mesma foi efetuada na data de emissão, servindo de prova, respetivamente, a cópia do aviso de onde conste a menção de que a mensagem foi enviada com sucesso, bem como a data, hora e número de telefax do recetor ou o extrato da mensagem efetuado pelo funcionário, o qual será incluído no processo.\n4 - A presunção referida no número anterior poderá ser ilidida por informação do operador sobre o conteúdo e a data da emissão.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 35707,
+        "end": 36854
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art303.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art303.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "c) Não distribuir lucros, sob qualquer forma, nomeadamente a título de levantamento por conta;",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 408953,
+        "end": 409047
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

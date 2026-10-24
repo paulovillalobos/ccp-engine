@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art262.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art262",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2021-07-01",
+      "text": "8 - Os juros de mora são devidos relativamente à parte que for paga até ao mês, inclusive, em que se tiver concluído a venda dos bens ou, se a penhora for de dinheiro, até ao mês em que esta se efectuou.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 324413,
+        "end": 324616
+      },
+      "valid_from": "2021-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

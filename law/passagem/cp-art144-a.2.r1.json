@@ -1,0 +1,23 @@
+{
+  "id": "cp:art144-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art144-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-09-04",
+      "text": "2 - Os atos preparatórios do crime previsto no número anterior são punidos com pena de prisão até 3 anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 225298,
+        "end": 225403
+      },
+      "valid_from": "2015-09-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art67.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art67",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A opção prevista no número anterior só é válida se for aprovada pelo órgão da pessoa colectiva competente para a designação do membro do órgão estatutário interessado e a capacidade se encontre atestada pelo médico assistente do beneficiário.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 50494,
+        "end": 50740
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art84.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art84",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Com a contestação, ou dentro do respetivo prazo, a entidade demandada é obrigada a proceder ao envio do processo administrativo, quando exista, assim como de todos os demais documentos respeitantes à matéria do processo de que seja detentora.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 116809,
+        "end": 117055
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

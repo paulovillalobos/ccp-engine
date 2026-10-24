@@ -1,0 +1,23 @@
+{
+  "id": "cc:art364",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-iv.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 364.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 364.º\n(Exigência legal de documento escrito)\n1. Quando a lei exigir, como forma da declaração negocial, documento autêntico, autenticado ou particular, não pode este ser substituído por outro meio de prova ou por outro documento que não seja de força probatória superior.\n2. Se, porém, resultar claramente da lei que o documento é exigido apenas para prova da declaração, pode ser substituído por confissão expressa, judicial ou extrajudicial, contanto que, neste último caso, a confissão conste de documento de igual ou superior valor probatório.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 166668,
+        "end": 167222
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art360.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art360",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "3 - Se o facto referido no n.º 1 for praticado depois de o agente ter prestado juramento e ter sido advertido das consequências penais a que se expõe, a pena é de prisão até 5 anos ou de multa até 600 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 432945,
+        "end": 433151
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

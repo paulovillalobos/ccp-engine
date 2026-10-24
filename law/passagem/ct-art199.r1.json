@@ -1,0 +1,23 @@
+{
+  "id": "ct:art199",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-ii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 199.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 199.º\nPeríodo de descanso\nEntende-se por período de descanso o que não seja tempo de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 284790,
+        "end": 284891
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

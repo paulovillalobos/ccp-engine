@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-ii.titulo-iv",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii",
+  "kind": "titulo",
+  "label": "Título IV",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Título IV\nDos crimes contra a vida em sociedade",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 339334,
+        "end": 339381
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

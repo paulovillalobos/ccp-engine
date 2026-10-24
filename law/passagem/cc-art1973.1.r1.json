@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1973.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1973",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "1. O vínculo da adopção constitui-se por sentença judicial.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 946820,
+        "end": 946879
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

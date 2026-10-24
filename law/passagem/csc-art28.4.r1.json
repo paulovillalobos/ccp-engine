@@ -1,0 +1,23 @@
+{
+  "id": "csc:art28.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art28",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "4 - O relatório deve reportar-se a uma data não anterior em 90 dias à do contrato de sociedade, mas o seu autor deve informar os fundadores da sociedade de alterações relevantes de valores, ocorridas durante aquele período, de que tenha conhecimento.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 53719,
+        "end": 53969
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

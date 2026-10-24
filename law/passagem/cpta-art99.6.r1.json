@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art99.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art99",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - Nos processos da competência de tribunal superior, quando não seja decidido pelo relator, o processo é julgado, independentemente de vistos, na primeira sessão que tenha lugar após o despacho referido na alínea b) do número anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 151974,
+        "end": 152211
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

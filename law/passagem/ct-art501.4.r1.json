@@ -1,0 +1,23 @@
+{
+  "id": "ct:art501.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art501",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "4 - Sempre que se verifique uma interrupção da negociação, incluindo conciliação, mediação ou arbitragem voluntária, por um período superior a 30 dias, o prazo de sobrevigência suspende-se.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 609900,
+        "end": 610089
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

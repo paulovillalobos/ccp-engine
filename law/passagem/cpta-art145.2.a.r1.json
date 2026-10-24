@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art145.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art145.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "a) Se entenda que a decisão não admite recurso, que este foi interposto fora do prazo ou que o requerente não tem as condições necessárias para recorrer;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 208723,
+        "end": 208876
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

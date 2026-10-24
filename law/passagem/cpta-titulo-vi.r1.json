@@ -1,0 +1,23 @@
+{
+  "id": "cpta:titulo-vi",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": null,
+  "kind": "titulo",
+  "label": "Título VI",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Título VI\nDos recursos jurisdicionais",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 201512,
+        "end": 201549
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

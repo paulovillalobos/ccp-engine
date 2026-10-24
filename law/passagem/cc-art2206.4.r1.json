@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2206.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2206",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "4. O testamento cerrado deve ser aprovado por notário, nos termos da lei do notariado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1052961,
+        "end": 1053047
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

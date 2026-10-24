@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art48.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art48",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - O tribunal pode igualmente determinar, ouvidas as partes, a suspensão dos processos que venham a ser intentados na pendência do processo selecionado e que preencham os pressupostos previstos no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 62499,
+        "end": 62713
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

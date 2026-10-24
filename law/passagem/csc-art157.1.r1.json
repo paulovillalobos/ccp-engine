@@ -1,0 +1,23 @@
+{
+  "id": "csc:art157.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art157",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - As contas finais dos liquidatários devem ser acompanhadas por um relatório completo da liquidação e por um projecto de partilha do activo restante.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 290287,
+        "end": 290438
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

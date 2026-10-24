@@ -1,0 +1,23 @@
+{
+  "id": "cp:art11.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art11",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "1 - Salvo o disposto no número seguinte e nos casos especialmente previstos na lei, só as pessoas singulares são susceptíveis de responsabilidade criminal.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 83862,
+        "end": 84017
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

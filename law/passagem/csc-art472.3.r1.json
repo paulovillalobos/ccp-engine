@@ -1,0 +1,23 @@
+{
+  "id": "csc:art472.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art472",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "3 - Ao voto de sócios de indústria aplica-se o disposto no artigo 190.º, n.º 2.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 686077,
+        "end": 686156
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

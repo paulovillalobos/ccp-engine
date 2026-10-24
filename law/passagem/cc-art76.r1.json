@@ -1,0 +1,23 @@
+{
+  "id": "cc:art76",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 76.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 76.º\n(Publicação de cartas confidenciais)\n1. As cartas-missivas confidenciais só podem ser publicadas com o consentimento do seu autor ou com o suprimento judicial desse consentimento; mas não há lugar ao suprimento quando se trate de utilizar as cartas como documento literário, histórico ou biográfico.\n2. Depois da morte do autor, a autorização compete às pessoas designadas no n.º 2 do artigo 71.º, segundo a ordem nele indicada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 40435,
+        "end": 40875
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

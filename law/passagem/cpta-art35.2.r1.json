@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art35.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art35",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - [Revogado].",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 50031,
+        "end": 50046
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

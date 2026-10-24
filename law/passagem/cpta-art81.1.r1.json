@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art81.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art81",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Recebida a petição, incumbe à secretaria promover oficiosamente a citação dos demandados.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 110200,
+        "end": 110293
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

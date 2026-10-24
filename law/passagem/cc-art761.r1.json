@@ -1,0 +1,23 @@
+{
+  "id": "cc:art761",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-vii",
+  "kind": "artigo",
+  "label": "Artigo 761.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 761.º\n(Extinção)\nO direito de retenção extingue-se pelas mesmas causas por que cessa o direito de hipoteca, e ainda pela entrega da coisa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 325479,
+        "end": 325624
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

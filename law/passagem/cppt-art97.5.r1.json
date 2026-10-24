@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art97.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art97",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - No contencioso associado à execução fiscal o disposto no número anterior é aplicável apenas a partir da receção dos autos em tribunal.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 129866,
+        "end": 130004
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

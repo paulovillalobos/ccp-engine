@@ -1,0 +1,23 @@
+{
+  "id": "cc:art916.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art916",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "3 - Os prazos referidos no número anterior são, respectivamente, de um e de cinco anos, caso a coisa vendida seja um imóvel.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 385776,
+        "end": 385900
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

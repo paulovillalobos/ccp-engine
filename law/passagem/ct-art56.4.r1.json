@@ -1,0 +1,23 @@
+{
+  "id": "ct:art56.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art56",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-09-06",
+      "text": "4 - O trabalhador que trabalhe em regime de horário flexível pode efectuar até seis horas consecutivas de trabalho e até dez horas de trabalho em cada dia e deve cumprir o correspondente período normal de trabalho semanal, em média de cada período de quatro semanas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 99223,
+        "end": 99489
+      },
+      "valid_from": "2015-09-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

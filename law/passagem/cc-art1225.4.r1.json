@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1225.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1225",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "1995-01-01",
+      "text": "4 - O disposto nos números anteriores é aplicável ao vendedor de imóvel que o tenha construído, modificado ou reparado.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 545056,
+        "end": 545175
+      },
+      "valid_from": "1995-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

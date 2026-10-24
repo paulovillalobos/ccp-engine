@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art12.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art12",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - No caso previsto no número anterior, bem como quando haja coligação ilegal de autores, podem ser apresentadas novas petições, no prazo de 30 dias a contar do trânsito em julgado da decisão, considerando-se estas apresentadas na data de entrada da primeira, para efeitos da tempestividade da sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 27346,
+        "end": 27658
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

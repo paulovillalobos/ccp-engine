@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art125.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art125",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Sem prejuízo do disposto no número seguinte, os beneficiários referidos no artigo 122.º têm direito à protecção nas eventualidades de invalidez e velhice.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 79450,
+        "end": 79608
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

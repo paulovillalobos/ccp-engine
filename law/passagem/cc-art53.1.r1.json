@@ -1,0 +1,23 @@
+{
+  "id": "cc:art53.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art53",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. A substância e efeitos das convenções antenupciais e do regime de bens, legal ou convencional, são definidos pela lei nacional dos nubentes ao tempo da celebração do casamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 30518,
+        "end": 30697
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art218",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 218.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 218.º\n(O silêncio como meio declarativo)\nO silêncio vale como declaração negocial, quando esse valor lhe seja atribuído por lei, uso ou convenção.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 109404,
+        "end": 109557
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

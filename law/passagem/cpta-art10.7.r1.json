@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art10.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art10",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - Quando o pedido principal deva ser deduzido contra um Ministério, este também tem legitimidade passiva em relação aos pedidos que com aquele sejam cumulados.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 22817,
+        "end": 22978
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

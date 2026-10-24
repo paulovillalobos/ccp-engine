@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art86.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art86",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Consideram-se supervenientes tanto os factos ocorridos posteriormente ao termo dos prazos estabelecidos nos artigos precedentes como os factos anteriores de que a parte só tenha conhecimento depois de findarem esses prazos, devendo, neste caso, produzir-se prova da superveniência.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 122525,
+        "end": 122810
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

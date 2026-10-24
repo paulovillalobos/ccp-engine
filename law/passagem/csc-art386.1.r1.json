@@ -1,0 +1,23 @@
+{
+  "id": "csc:art386.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art386",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "1 - A assembleia geral delibera por maioria dos votos emitidos, seja qual for a percentagem do capital social nela representado, salvo disposição diversa da lei ou do contrato; as abstenções não são contadas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 555221,
+        "end": 555429
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

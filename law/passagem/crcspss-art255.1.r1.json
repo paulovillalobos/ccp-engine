@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art255.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art255",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O reconhecimento de períodos de actividade profissional pode determinar a inscrição com efeitos retroactivos nas situações em que ainda não fosse aplicável a obrigação de entrega de declaração de início de exercício da actividade.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 155828,
+        "end": 156062
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art120.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art120",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - Para efeitos do número anterior, tratando-se de remuneração convencional, a remuneração diária é determinada nos termos do disposto no n.º 2 do artigo anterior.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 76361,
+        "end": 76525
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

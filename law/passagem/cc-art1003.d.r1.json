@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1003.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1003",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "d) Quando, por causa não imputável aos administradores, se verifique o perecimento da coisa ou direito que constituía a entrada do sócio, nos termos do artigo seguinte.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 419256,
+        "end": 419424
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

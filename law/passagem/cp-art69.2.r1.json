@@ -1,0 +1,23 @@
+{
+  "id": "cp:art69.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art69",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-09-05",
+      "text": "2 - A proibição produz efeito a partir do trânsito em julgado da decisão e pode abranger a condução de veículos com motor de qualquer categoria ou a pilotagem de quaisquer aeronaves, consoante os casos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 133486,
+        "end": 133688
+      },
+      "valid_from": "2023-09-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

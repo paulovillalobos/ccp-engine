@@ -1,0 +1,23 @@
+{
+  "id": "csc:art508-g.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art508-g",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "4 - A demonstração não financeira consolidada referida no n.º 1 deve incluir também, se adequado, uma referência aos montantes inscritos nas contas consolidadas e explicações adicionais relativas a esses montantes.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 729112,
+        "end": 729326
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

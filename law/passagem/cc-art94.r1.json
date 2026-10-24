@@ -1,0 +1,23 @@
+{
+  "id": "cc:art94",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 94.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 94.º\n(Direitos e obrigações do curador provisório)\n1. O curador fica sujeito ao regime do mandato geral em tudo o que não contrariar as disposições desta subsecção.\n2. Compete ao curador provisório requerer os procedimentos cautelares necessários e intentar as acções que não possam ser retardadas sem prejuízo dos interesses do ausente; cabe-lhe ainda representar o ausente em todas as acções contra este propostas.\n3. Só com autorização judicial pode o curador alienar ou onerar bens imóveis, objectos preciosos, títulos de crédito, estabelecimentos comerciais e quaisquer outros bens cuja alienação ou oneração não constitua acto de administração.\n4. A autorização judicial só será concedida quando o acto se justifique para evitar a deterioração ou ruína dos bens, solver dívidas do ausente, custear benfeitorias necessárias ou úteis ou ocorrer a outra necessidade urgente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 47314,
+        "end": 48198
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

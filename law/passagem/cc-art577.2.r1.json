@@ -1,0 +1,23 @@
+{
+  "id": "cc:art577.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art577",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. A convenção pela qual se proíba ou restrinja a possibilidade da cessão não é oponível ao cessionário, salvo se este a conhecia no momento da cessão.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 255223,
+        "end": 255374
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

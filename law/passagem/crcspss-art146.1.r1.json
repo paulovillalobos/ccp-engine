@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art146.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art146",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Os trabalhadores independentes podem requerer que o enquadramento neste regime produza efeitos:\na) Quando o rendimento relevante anual seja igual ou inferior a seis vezes o valor do IAS;\nb) Em data anterior às datas previstas no n.º 2 do artigo anterior.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 93214,
+        "end": 93472
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

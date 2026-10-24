@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art183.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art183",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Os beneficiários que, no âmbito do regime geral de segurança dos trabalhadores por conta de outrem, tenham contribuído, por período superior a 12 meses, sobre montantes superiores ao escalão mais elevado da base de incidência para o regime de seguro social voluntário podem optar pelo escalão mais elevado independentemente da idade.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 117183,
+        "end": 117520
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

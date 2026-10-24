@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art86.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art86",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "4 - Antes da extracção da certidão de dívida, nos termos e para efeitos do artigo 88.º, pode o contribuinte efectuar um pagamento por conta de dívidas por tributos constantes das notas de cobrança, desde que se verifiquem cumulativamente as seguintes condições:\na) Ter sido deduzida reclamação graciosa ou impugnação judicial da liquidação ou apresentado pedido de revisão oficiosa da liquidação do tributo com fundamento em erro imputável aos serviços;\nb) Abranger o pagamento por conta a parte da colecta que não for objecto de reclamação graciosa ou impugnação judicial.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 107246,
+        "end": 107819
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

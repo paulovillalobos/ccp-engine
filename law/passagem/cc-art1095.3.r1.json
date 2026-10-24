@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1095.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1095",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2024-01-01",
+      "text": "3 - O limite mínimo previsto no número anterior não se aplica aos contratos para habitação não permanente ou para fins especiais transitórios, designadamente por motivos profissionais, de educação e formação ou turísticos, neles exarados.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 478884,
+        "end": 479122
+      },
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

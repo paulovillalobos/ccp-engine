@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art178.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art178",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Quando julgue procedente a invocação da existência de causa legítima de inexecução, o tribunal ordena a notificação da Administração e do requerente para, no prazo de 20 dias, acordarem no montante da indemnização devida pelo facto da inexecução, podendo o prazo ser prorrogado quando seja previsível que o acordo se possa vir a concretizar em momento próximo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 254029,
+        "end": 254393
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

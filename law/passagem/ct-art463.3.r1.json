@@ -1,0 +1,23 @@
+{
+  "id": "ct:art463.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art463",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - O resultado apurado nos termos da alínea e) do número anterior é arredondado para a unidade imediatamente superior.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 571974,
+        "end": 572093
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art125.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art125",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - A alteração e a revogação das providências cautelares, bem como a declaração da respectiva caducidade, são imediatamente notificadas ao requerente, à entidade requerida e aos contra-interessados.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 187404,
+        "end": 187603
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

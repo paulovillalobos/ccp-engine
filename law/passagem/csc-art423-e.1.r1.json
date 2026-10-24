@@ -1,0 +1,23 @@
+{
+  "id": "csc:art423-e.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art423-e",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-01-04",
+      "text": "1 - A assembleia geral só pode destituir os membros da comissão de auditoria desde que ocorra justa causa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 620282,
+        "end": 620388
+      },
+      "valid_from": "2024-01-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

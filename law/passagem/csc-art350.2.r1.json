@@ -1,0 +1,23 @@
+{
+  "id": "csc:art350.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art350",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1987-07-13",
+      "text": "2 - Não pode ser tomada deliberação de emissão de obrigações enquanto não estiver subscrita e realizada uma emissão anterior.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 500292,
+        "end": 500417
+      },
+      "valid_from": "1987-07-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

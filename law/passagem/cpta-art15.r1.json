@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art15",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 15.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 15.º\nExtensão da competência à decisão de questões prejudiciais\n1 - Quando o conhecimento do objecto da acção dependa, no todo ou em parte, da decisão de uma ou mais questões da competência de tribunal pertencente a outra jurisdição, pode o juiz sobrestar na decisão até que o tribunal competente se pronuncie.\n2 - A suspensão fica sem efeito se a acção da competência do tribunal pertencente a outra jurisdição não for proposta no prazo de dois meses ou se ao respectivo processo não for dado andamento, por negligência das partes, durante o mesmo prazo.\n3 - No caso previsto no número anterior, deve prosseguir o processo do contencioso administrativo, sendo a questão prejudicial decidida com efeitos a ele restritos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 29166,
+        "end": 29893
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

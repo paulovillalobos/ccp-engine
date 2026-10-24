@@ -1,0 +1,23 @@
+{
+  "id": "cc:art60.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art60",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Se a adopção for realizada por marido e mulher ou o adoptando for filho do cônjuge do adoptante, é competente a lei nacional comum dos cônjuges e, na falta desta, a lei da sua residência habitual comum; se também esta faltar, será aplicável a lei do país com o qual a vida familiar dos adoptantes se ache mais estreitamente conexa.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 33769,
+        "end": 34103
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

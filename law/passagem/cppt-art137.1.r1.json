@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art137.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art137",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2005-01-01",
+      "text": "1 - O arresto fica sem efeito com o pagamento da dívida, ou quando, no processo de liquidação do ou dos tributos para cuja garantia é destinado, se apure até ao fim do ano posterior àquele em que se efectuou não haver lugar a qualquer acto tributário e, ainda, se, a todo o tempo, for prestada garantia nos termos previstos no presente Código.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 165996,
+        "end": 166339
+      },
+      "valid_from": "2005-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

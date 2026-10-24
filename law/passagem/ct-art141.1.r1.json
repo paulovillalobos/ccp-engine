@@ -1,0 +1,23 @@
+{
+  "id": "ct:art141.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art141",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O contrato de trabalho a termo está sujeito a forma escrita e deve conter:\na) Identificação, assinaturas e domicílio ou sede das partes;\nb) Actividade do trabalhador e correspondente retribuição;\nc) Local e período normal de trabalho;\nd) Data de início do trabalho;\ne) Indicação do termo estipulado, ou da duração previsível do contrato, e do respetivo motivo justificativo, consoante se trate, respetivamente, de contrato a termo certo ou incerto;\nf) Datas de celebração do contrato e, sendo a termo certo, da respectiva cessação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 201991,
+        "end": 202526
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

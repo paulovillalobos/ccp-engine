@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art77-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art77-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A anulabilidade, total ou parcial, dos demais contratos pode ser arguida no prazo de seis meses, contado desde a data da celebração do contrato, em relação às partes, ou do respetivo conhecimento, quanto a terceiros e ao Ministério Público.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 101579,
+        "end": 101823
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art11.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art11",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A obrigação contributiva tem por objecto o pagamento regular de contribuições e de quotizações por parte das pessoas singulares e colectivas que se relacionam com o sistema previdencial de segurança social.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 11634,
+        "end": 11844
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

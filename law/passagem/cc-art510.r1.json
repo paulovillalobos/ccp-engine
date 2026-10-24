@@ -1,0 +1,23 @@
+{
+  "id": "cc:art510",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-ii.seccao-v.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 510.º",
+  "versions": [
+    {
+      "version": "2004-03-24",
+      "text": "Artigo 510.º\n(Limites da responsabilidade)\nA indemnização fundada na responsabilidade a que se refere o artigo precedente, quando não haja culpa do responsável, tem, para cada acidente, como limite máximo o estabelecido no n.º 1 do artigo 508.º, salvo se, havendo seguro obrigatório, diploma especial estabelecer um capital mínimo de seguro, caso em que a indemnização tem como limite máximo esse capital.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 229345,
+        "end": 229750
+      },
+      "valid_from": "2004-03-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

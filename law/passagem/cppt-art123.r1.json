@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art123",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-iii.capitulo-ii.seccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 123.º",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Artigo 123.º\nSentença. Objecto\n1 - A sentença identificará os interessados e os factos objecto de litígio, sintetizará a pretensão do impugnante e respectivos fundamentos, bem como a posição do representante da Fazenda Pública e do Ministério Público, e fixará as questões que ao tribunal cumpre solucionar.\n2 - O juiz discriminará também a matéria provada da não provada, fundamentando as suas decisões.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 156000,
+        "end": 156404
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

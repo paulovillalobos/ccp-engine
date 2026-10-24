@@ -1,0 +1,23 @@
+{
+  "id": "cp:art50.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art50",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2017-11-21",
+      "text": "5 - O período de suspensão é fixado entre um e cinco anos.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 112215,
+        "end": 112273
+      },
+      "valid_from": "2017-11-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

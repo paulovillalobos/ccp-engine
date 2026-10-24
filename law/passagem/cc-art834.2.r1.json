@@ -1,0 +1,23 @@
+{
+  "id": "cc:art834.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art834",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. O devedor conserva, porém, o direito de fiscalizar a gestão dos credores, e tem o direito à prestação de contas no fim da liquidação ou, se a cessão se prolongar por mais de um ano, no termo de cada ano.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 357666,
+        "end": 357872
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1323.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1323",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "3 - Para efeitos do disposto no número anterior, deve o achador de animal, quando possível, recorrer aos meios de identificação acessíveis através de médico veterinário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 575041,
+        "end": 575210
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

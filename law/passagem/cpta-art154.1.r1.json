@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art154.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art154",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - A revisão de sentença transitada em julgado pode ser pedida ao tribunal que a tenha proferido, sendo subsidiariamente aplicável o disposto no Código de Processo Civil, no que não colida com o que se estabelece nos artigos seguintes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 220886,
+        "end": 221122
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

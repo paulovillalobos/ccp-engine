@@ -1,0 +1,23 @@
+{
+  "id": "ct:art196.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art196",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O empregador deve comunicar a transferência ao trabalhador, por escrito, com oito ou 30 dias de antecedência, consoante esta seja temporária ou definitiva.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 282433,
+        "end": 282592
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

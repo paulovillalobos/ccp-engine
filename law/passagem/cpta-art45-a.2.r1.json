@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art45-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art45-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - O disposto no artigo anterior também é aplicável quando, na pendência de ação de condenação à prática de ato devido, se verifique que a entidade demandada devia ter satisfeito a pretensão do autor em conformidade com o quadro normativo aplicável, mas a alteração superveniente desse quadro normativo impeça a procedência da ação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 60414,
+        "end": 60747
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

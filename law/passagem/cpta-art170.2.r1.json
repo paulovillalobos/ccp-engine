@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art170.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art170",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Caso a Administração não dê execução à sentença no prazo estabelecido no número anterior, dispõe o interessado do prazo de um ano para pedir a respetiva execução ao tribunal competente, podendo, para o efeito, solicitar:\na) A compensação do seu crédito com eventuais dívidas que o onerem para com a mesma pessoa coletiva ou o mesmo ministério;\nb) A execução do seu crédito, nos termos dos n.os 3 e seguintes do artigo 172.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 240589,
+        "end": 241016
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

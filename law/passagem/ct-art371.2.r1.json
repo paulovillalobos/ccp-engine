@@ -1,0 +1,23 @@
+{
+  "id": "ct:art371.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art371",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - A decisão de despedimento é proferida por escrito, dela constando:\na) Motivo da extinção do posto de trabalho;\nb) Confirmação dos requisitos previstos no n.º 1 do artigo 368.º;\nc) Prova da aplicação dos critérios de determinação do posto de trabalho a extinguir, caso se tenha verificado oposição a esta;\nd) Montante, forma, momento e lugar do pagamento da compensação e dos créditos vencidos e dos exigíveis por efeito da cessação do contrato de trabalho;\ne) Data da cessação do contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 478578,
+        "end": 479071
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art93.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art93",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - A pronúncia emitida pelo Supremo Tribunal Administrativo não o vincula relativamente a novas pronúncias, que, em sede de consulta ou em via de recurso, venha a emitir no futuro, sobre a mesma matéria, fora do âmbito do mesmo processo.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 141998,
+        "end": 142236
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

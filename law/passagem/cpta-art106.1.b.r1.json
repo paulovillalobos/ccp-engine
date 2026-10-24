@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art106.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art106.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "b) O trânsito em julgado da decisão que extinga a instância por satisfação do requerido na pendência do pedido de intimação.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 162982,
+        "end": 163106
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

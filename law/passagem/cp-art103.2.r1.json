@@ -1,0 +1,23 @@
+{
+  "id": "cp:art103.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art103",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - Em caso de indeferimento, não pode ser apresentado novo requerimento antes de decorrido 1 ano.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 181013,
+        "end": 181111
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

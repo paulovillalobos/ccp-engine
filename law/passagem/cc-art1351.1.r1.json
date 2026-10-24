@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1351.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1351",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Os prédios inferiores estão sujeitos a receber as águas que, naturalmente e sem obra do homem, decorrem dos prédios superiores, assim como a terra e entulhos que elas arrastam na sua corrente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 589017,
+        "end": 589212
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

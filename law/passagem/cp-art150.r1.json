@@ -1,0 +1,23 @@
+{
+  "id": "cp:art150",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii.titulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 150.º",
+  "versions": [
+    {
+      "version": "1998-09-07",
+      "text": "Artigo 150.º\nIntervenções e tratamentos médico-cirúrgicos\n1 - As intervenções e os tratamentos que, segundo o estado dos conhecimentos e da experiência da medicina, se mostrarem indicados e forem levados a cabo, de acordo com as leges artis, por um médico ou por outra pessoa legalmente autorizada, com intenção de prevenir, diagnosticar, debelar ou minorar doença, sofrimento, lesão ou fadiga corporal, ou perturbação mental, não se consideram ofensa à integridade física.\n2 - As pessoas indicadas no número anterior que, em vista das finalidades nele apontadas, realizarem intervenções ou tratamentos violando as leges artis e criarem, desse modo, um perigo para a vida ou perigo de grave ofensa para o corpo ou para a saúde são punidas com pena de prisão até 2 anos ou com pena de multa até 240 dias, se pena mais grave lhes não couber por força de outra disposição legal.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 231175,
+        "end": 232050
+      },
+      "valid_from": "1998-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

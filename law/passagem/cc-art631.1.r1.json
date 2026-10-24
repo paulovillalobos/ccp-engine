@@ -1,0 +1,23 @@
+{
+  "id": "cc:art631.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art631",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. A fiança não pode exceder a dívida principal nem ser contraída em condições mais onerosas, mas pode ser contraída por quantidade menor ou em menos onerosas condições.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 273899,
+        "end": 274068
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

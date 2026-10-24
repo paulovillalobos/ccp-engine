@@ -1,0 +1,23 @@
+{
+  "id": "ct:art16",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 16.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 16.º\nReserva da intimidade da vida privada\n1 - O empregador e o trabalhador devem respeitar os direitos de personalidade da contraparte, cabendo-lhes, designadamente, guardar reserva quanto à intimidade da vida privada.\n2 - O direito à reserva da intimidade da vida privada abrange quer o acesso, quer a divulgação de aspectos atinentes à esfera íntima e pessoal das partes, nomeadamente relacionados com a vida familiar, afectiva e sexual, com o estado de saúde e com as convicções políticas e religiosas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 42812,
+        "end": 43325
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

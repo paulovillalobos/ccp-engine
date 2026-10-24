@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2004",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-v.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 2004.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2004.º\n(Medida dos alimentos)\n1. Os alimentos serão proporcionados aos meios daquele que houver de prestá-los e à necessidade daquele que houver de recebê-los.\n2. Na fixação dos alimentos atender-se-á, outrossim, à possibilidade de o alimentando prover à sua subsistência.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 974294,
+        "end": 974573
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art360.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art360",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Quem, como testemunha, perito, técnico, tradutor ou intérprete, perante tribunal ou funcionário competente para receber como meio de prova, depoimento, relatório, informação ou tradução, prestar depoimento, apresentar relatório, der informações ou fizer traduções falsos, é punido com pena de prisão de 6 meses a 3 anos ou com pena de multa não inferior a 60 dias.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 432457,
+        "end": 432825
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

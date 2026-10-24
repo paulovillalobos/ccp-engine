@@ -1,0 +1,23 @@
+{
+  "id": "cc:art465",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-ii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 465.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 465.º\n(Deveres do gestor)\nO gestor deve:\na) Conformar-se com o interesse e a vontade, real ou presumível, do dono do negócio, sempre que esta não seja contrária à lei ou à ordem pública, ou ofensiva dos bons costumes;\nb) Avisar o dono do negócio, logo que seja possível, de que assumiu a gestão;\nc) Prestar contas, findo o negócio ou interrompida a gestão, ou quando o dono as exigir;\nd) Prestar a este todas as informações relativas à gestão;\ne) Entregar-lhe tudo o que tenha recebido de terceiros no exercício da gestão ou o saldo das respectivas contas, com os juros legais, relativamente às quantias em dinheiro, a partir do momento em que a entrega haja de ser efectuada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 207119,
+        "end": 207802
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

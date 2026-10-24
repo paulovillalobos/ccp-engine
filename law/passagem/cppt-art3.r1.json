@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-i.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 3.º",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Artigo 3.º\nPersonalidade e capacidade tributárias\n1 - A personalidade judiciária tributária resulta da personalidade tributária.\n2 - A capacidade judiciária e para o exercício de quaisquer direitos no procedimento tributário tem por base e por medida a capacidade de exercício dos direitos tributários.\n3 - Os incapazes só podem estar em juízo e no procedimento por intermédio dos seus representantes, ou autorizados pelo seu curador, excepto quanto aos actos que possam exercer pessoal e livremente.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 17071,
+        "end": 17571
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

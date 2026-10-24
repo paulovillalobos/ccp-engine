@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-ii.titulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-ii",
+  "kind": "titulo",
+  "label": "Título V",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Título V\nDos crimes contra o Estado",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 400285,
+        "end": 400320
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

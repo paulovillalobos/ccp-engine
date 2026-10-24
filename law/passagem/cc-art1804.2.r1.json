@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1804.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1804",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Lavrado o registo, deve o conteúdo do assento ser comunicado à mãe do registado sempre que possível, mediante notificação pessoal, salvo se a declaração tiver sido feita por ela ou pelo marido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 831750,
+        "end": 831946
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

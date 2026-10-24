@@ -1,0 +1,23 @@
+{
+  "id": "cc:art31",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-iii.seccao-ii.subseccao-i",
+  "kind": "artigo",
+  "label": "Artigo 31.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 31.º\n(Determinação da lei pessoal)\n1. A lei pessoal é a da nacionalidade do indivíduo.\n2. São, porém, reconhecidos em Portugal os negócios jurídicos celebrados no país da residência habitual do declarante, em conformidade com a lei desse país, desde que esta se considere competente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 20455,
+        "end": 20745
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

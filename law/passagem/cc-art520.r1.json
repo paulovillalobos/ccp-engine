@@ -1,0 +1,23 @@
+{
+  "id": "cc:art520",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-iii.seccao-ii.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 520.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 520.º\n(Impossibilidade da prestação)\nSe a prestação se tornar impossível por facto imputável a um dos devedores, todos eles são solidàriamente responsáveis pelo seu valor; mas só o devedor a quem o facto é imputável responde pela reparação dos danos que excedam esse valor, e, sendo vários, é solidária a sua responsabilidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 233511,
+        "end": 233844
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

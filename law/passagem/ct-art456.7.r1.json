@@ -1,0 +1,23 @@
+{
+  "id": "ct:art456.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art456",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "7 - O tribunal comunica a declaração judicial de nulidade da deliberação de extinção da associação, transitada em julgado, ao serviço referido nos números anteriores, o qual revoga o cancelamento e promove a publicação imediata de aviso no Boletim do Trabalho e Emprego.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 564984,
+        "end": 565254
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

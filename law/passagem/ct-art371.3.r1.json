@@ -1,0 +1,23 @@
+{
+  "id": "ct:art371.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art371",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "3 - O empregador comunica a decisão, por cópia ou transcrição, ao trabalhador, às entidades referidas no n.º 1 do artigo 369.º e, bem assim, ao serviço com competência inspectiva do ministério responsável pela área laboral, com antecedência mínima, relativamente à data da cessação, de:\na) 15 dias, no caso de trabalhador com antiguidade inferior a um ano;\nb) 30 dias, no caso de trabalhador com antiguidade igual ou superior a um ano e inferior a cinco anos;\nc) 60 dias, no caso de trabalhador com antiguidade igual ou superior a cinco anos e inferior a 10 anos;\nd) 75 dias, no caso de trabalhador com antiguidade igual ou superior a 10 anos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 479072,
+        "end": 479715
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-g.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art101-g",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - O trabalhador cuidador não é obrigado a prestar trabalho suplementar enquanto se verificar a necessidade de assistência.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 160019,
+        "end": 160143
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

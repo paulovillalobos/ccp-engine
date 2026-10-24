@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art15.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art15",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "1 - Quando o conhecimento do objecto da acção dependa, no todo ou em parte, da decisão de uma ou mais questões da competência de tribunal pertencente a outra jurisdição, pode o juiz sobrestar na decisão até que o tribunal competente se pronuncie.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 29237,
+        "end": 29483
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

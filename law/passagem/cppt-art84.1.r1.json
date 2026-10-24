@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art84.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art84",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "1 - Constitui pagamento voluntário de dívidas de impostos e demais prestações tributárias o efectuado dentro do prazo estabelecido nas leis tributárias.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 105273,
+        "end": 105425
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

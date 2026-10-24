@@ -1,0 +1,23 @@
+{
+  "id": "ct:art320.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art320",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O montante inicial da prestação de pré-reforma não pode ser superior à retribuição do trabalhador na data do acordo, nem inferior a 25 % desta ou à retribuição do trabalho, caso a pré-reforma consista na redução da prestação de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 425253,
+        "end": 425494
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

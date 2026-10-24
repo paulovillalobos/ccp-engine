@@ -1,0 +1,23 @@
+{
+  "id": "cp:art372.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art372",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "3 - Excluem-se dos números anteriores as condutas socialmente adequadas e conformes aos usos e costumes.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 448874,
+        "end": 448978
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

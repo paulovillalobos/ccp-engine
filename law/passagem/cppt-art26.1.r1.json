@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art26.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art26",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "1 - Os serviços da administração tributária passarão obrigatoriamente recibo das petições e de quaisquer outros requerimentos, exposições ou reclamações, com menção dos documentos que os instruam e da data da apresentação, independentemente da natureza do processo administrativo ou judicial.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 35727,
+        "end": 36019
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

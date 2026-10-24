@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1933.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1933",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - Não podem ser tutores:\na) Os menores;\nb) Os afetados por perturbação mental notória, ainda que não estejam em situação de acompanhamento com limitação para o exercício de direitos pessoais;\nc) As pessoas de mau procedimento ou que não tenham modo de vida conhecido;\nd) Os que tiverem sido inibidos ou se encontrarem total ou parcialmente suspensos do poder paternal;\ne) Os que tiverem sido removidos ou se encontrarem suspensos de outra tutela ou do cargo de vogal de conselho de família por falta de cumprimento das respectivas obrigações;\nf) Os divorciados e os separados judicialmente de pessoas e bens por sua culpa;\ng) Os que tenham demanda pendente com o menor ou com seus pais, ou a tenham tido há menos de cinco anos;\nh) Aqueles cujos pais, filhos ou cônjuges tenham, ou hajam tido há menos de cinco anos, demanda com o menor ou seus pais;\ni) Os que sejam inimigos pessoais do menor ou dos seus pais;\nj) Os que tenham sido excluídos pelo pai ou mãe do menor, nos mesmos termos em que qualquer deles pode designar tutor;\nl) Os magistrados judiciais ou do Ministério Público que exerçam funções na comarca do domicílio do menor ou na da situação dos seus bens.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 926422,
+        "end": 927592
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

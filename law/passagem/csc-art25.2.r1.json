@@ -1,0 +1,23 @@
+{
+  "id": "csc:art25.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art25",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "2 - No caso de acções sem valor nominal, o valor da entrada do sócio deve ser pelo menos igual ao montante do capital social correspondentemente emitido.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 49595,
+        "end": 49748
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

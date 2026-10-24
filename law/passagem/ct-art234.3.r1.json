@@ -1,0 +1,23 @@
+{
+  "id": "ct:art234.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art234",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2016-04-02",
+      "text": "3 - Mediante legislação específica, determinados feriados obrigatórios podem ser observados na segunda-feira da semana subsequente.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 332017,
+        "end": 332148
+      },
+      "valid_from": "2016-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

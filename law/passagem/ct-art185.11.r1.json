@@ -1,0 +1,23 @@
+{
+  "id": "ct:art185.11",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art185",
+  "kind": "numero",
+  "label": "11",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "11 - O utilizador deve informar o trabalhador temporário dos postos de trabalho disponíveis na empresa ou estabelecimento para funções idênticas às exercidas por este, com vista à sua candidatura.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 267414,
+        "end": 267610
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

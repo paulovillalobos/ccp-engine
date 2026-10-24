@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art29.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art29",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Sem prejuízo do disposto nos números seguintes, são aplicáveis aos processos nos tribunais administrativos, em primeira instância ou em via de recurso, os prazos estabelecidos na lei processual civil para juízes, magistrados do Ministério Público e funcionários, com as devidas consequências legais.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 43213,
+        "end": 43516
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art36.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art36",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - Os actos em matéria tributária que afectem os direitos e interesses legítimos dos contribuintes só produzem efeitos em relação a estes quando lhes sejam validamente notificados.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 45768,
+        "end": 45949
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

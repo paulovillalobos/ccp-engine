@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art118.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art118",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - Os trabalhadores do serviço doméstico têm ainda direito à protecção na eventualidade de desemprego quando a base de incidência contributiva corresponde a remuneração efectivamente auferida em regime de contrato de trabalho mensal a tempo completo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 74254,
+        "end": 74505
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

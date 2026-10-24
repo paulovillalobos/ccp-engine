@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1115.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1115",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "2. A indemnização não excederá quarenta por cento do valor do prédio ou da parte do prédio ocupada pelo arrendatário, se a ocupação tiver durado mais de cinco anos, e trinta ou vinte por cento, respectivamente, se tiver durado mais de três anos ou mais de um ano; se a ocupação tiver durado menos de um ano, a indemnização limitar-se-á ao valor das obras feitas pelo arrendatário.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 506676,
+        "end": 507056
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art24.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art24",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2025-07-01",
+      "text": "2 - Nos procedimentos e processos não informatizados, as certidões e termos são passados mediante a apresentação de pedido escrito ou oral, no prazo máximo de cinco dias.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 32789,
+        "end": 32959
+      },
+      "valid_from": "2025-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

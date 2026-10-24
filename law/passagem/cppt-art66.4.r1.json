@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art66.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art66",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "4 - No prazo referido no número anterior pode o autor do acto recorrido revogá-lo total ou parcialmente.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 88077,
+        "end": 88181
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art110.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art110",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "5 - O juiz pode, a todo o tempo, ordenar ao serviço periférico local a remessa, por via eletrónica, do processo administrativo, mesmo na falta de contestação do representante da Fazenda Pública.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 143106,
+        "end": 143300
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art101-f",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-x",
+  "kind": "artigo",
+  "label": "Artigo 101.º-F",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 101.º-F\nProteção em caso de despedimento de trabalhador cuidador\n1 - O despedimento de trabalhador cuidador carece de parecer prévio da entidade competente na área da igualdade de oportunidades entre homens e mulheres.\n2 - O despedimento por facto imputável a trabalhador que se encontre na situação referida no número anterior presume-se feito sem justa causa.\n3 - Para efeitos do disposto no presente artigo, aplica-se o procedimento definido nos n.os 3 a 9 do artigo 63.º",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 159332,
+        "end": 159813
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art17",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-i.capitulo-iii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 17.º",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "Artigo 17.º\nProcessos relacionados com bens imóveis\nOs processos relacionados com bens imóveis ou direitos a eles referentes são intentados no tribunal da situação dos bens.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 30595,
+        "end": 30768
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

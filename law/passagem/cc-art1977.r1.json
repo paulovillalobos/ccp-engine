@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1977",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1977.º",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "Artigo 1977.º\n(Espécies de adopção)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 949397,
+        "end": 949432
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

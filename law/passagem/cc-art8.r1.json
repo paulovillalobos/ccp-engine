@@ -1,0 +1,23 @@
+{
+  "id": "cc:art8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 8.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 8.º\n(Obrigação de julgar e dever de obediência à lei)\n1. O tribunal não pode abster-se de julgar, invocando a falta ou obscuridade da lei ou alegando dúvida insanável acerca dos factos em litígio.\n2. O dever de obediência à lei não pode ser afastado sob pretexto de ser injusto ou imoral o conteúdo do preceito legislativo.\n3. Nas decisões que proferir, o julgador terá em consideração todos os casos que mereçam tratamento análogo, a fim de obter uma interpretação e aplicação uniformes do direito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 10686,
+        "end": 11192
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

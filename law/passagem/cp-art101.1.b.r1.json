@@ -1,0 +1,23 @@
+{
+  "id": "cp:art101.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art101.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2023-09-05",
+      "text": "b) Dever ser considerado inapto para a condução de veículo com motor ou para a pilotagem de aeronave com ou sem motor.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 177324,
+        "end": 177442
+      },
+      "valid_from": "2023-09-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art214.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art214",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "5 - O sócio pode inspeccionar os bens sociais nas condições referidas nos números anteriores.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 346434,
+        "end": 346527
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

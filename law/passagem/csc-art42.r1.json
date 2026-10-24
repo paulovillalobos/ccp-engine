@@ -1,0 +1,23 @@
+{
+  "id": "csc:art42",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:titulo-i.capitulo-iii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 42.º",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "Artigo 42.º\n(Nulidade do contrato de sociedade por quotas, anónima ou em comandita por acções registado)\n1 - Depois de efectuado o registo definitivo do contrato de sociedade por quotas, anónima ou em comandita por acções, o contrato só pode ser declarado nulo por algum dos seguintes vícios:\na) Falta do mínimo de dois sócios fundadores, salvo quando a lei permita a constituição da sociedade por uma só pessoa;\nb) Falta de menção da firma, da sede, do objecto ou do capital da sociedade, bem como do valor da entrada de algum sócio ou de prestações realizadas por conta desta;\nc) Menção de um objecto ilícito ou contrário à ordem pública;\nd) Falta de cumprimento dos preceitos legais que exigem a liberação mínima do capital social;\ne) Não ter sido observada a forma legalmente exigida para o contrato de sociedade.\n2 - São sanáveis por deliberação dos sócios, tomada nos termos estabelecidos para as deliberações sobre alteração do contrato, os vícios decorrentes de falta ou nulidade da firma e da sede da sociedade, bem como do valor da entrada de algum sócio e das prestações realizadas por conta desta.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 71854,
+        "end": 72963
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

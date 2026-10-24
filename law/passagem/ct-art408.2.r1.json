@@ -1,0 +1,23 @@
+{
+  "id": "ct:art408.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art408",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - O crédito de horas é referido ao período normal de trabalho e conta como tempo de serviço efectivo, inclusivamente para efeito de retribuição.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 515096,
+        "end": 515242
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

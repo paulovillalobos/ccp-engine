@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art198-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art198-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-07-01",
+      "text": "2 - O plano elaborado é disponibilizado na área reservada do executado do Portal das Finanças para consulta e emissão das guias de pagamento, devendo o pagamento da primeira prestação ser efetuado no mês seguinte àquele em que for notificado o plano.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 240838,
+        "end": 241088
+      },
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

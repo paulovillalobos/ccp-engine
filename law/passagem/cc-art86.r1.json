@@ -1,0 +1,23 @@
+{
+  "id": "cc:art86",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 86.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 86.º\n(Domicílio legal da mulher casada)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 44797,
+        "end": 44843
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

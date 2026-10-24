@@ -1,0 +1,23 @@
+{
+  "id": "csc:art413.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art413",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2016-01-01",
+      "text": "2 - A fiscalização da sociedade nos termos previstos na alínea b) do número anterior:\na) É obrigatória em relação a sociedades que sejam emitentes de valores mobiliários admitidos à negociação em mercado regulamentado e a sociedades que, não sendo totalmente dominadas por outra sociedade, que adopte este modelo, durante dois anos consecutivos, ultrapassem dois dos seguintes limites:\ni) Total do balanço: (euro) 20 000 000;\nii) Volume de negócios líquido: (euro) 40 000 000;\niii) Número médio de empregados durante o período: 250;\nb) É facultativa, nos restantes casos.\n3- O fiscal único terá sempre um suplente, que será igualmente revisor oficial de contas ou sociedade de revisores oficiais de contas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 588536,
+        "end": 589242
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

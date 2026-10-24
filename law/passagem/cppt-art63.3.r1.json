@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art63.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art63",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-05-04",
+      "text": "3 - A fundamentação do projecto e da decisão de aplicação da disposição antiabuso referida no n.º 1 contém necessariamente:\na) A descrição da construção ou série de construções que foram realizadas com abuso das formas jurídicas ou que não foram realizadas por razões económicas válidas que reflitam a substância económica;\nb) A demonstração de que a construção ou série de construções foi realizada com a finalidade principal ou uma das finalidades principais de obter uma vantagem fiscal não conforme com o objeto ou a finalidade do direito fiscal aplicável;\nc) A identificação dos negócios ou atos que correspondam à substância ou realidade económica, bem como a indicação das normas de incidência que se lhes aplicam;\nd) A demonstração de que o sujeito passivo sobre o qual recairia a obrigação de efetuar a retenção na fonte, ou de reter um montante de imposto superior, tinha ou deveria ter conhecimento da construção ou série de construções, quando aplicável.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 80681,
+        "end": 81647
+      },
+      "valid_from": "2019-05-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

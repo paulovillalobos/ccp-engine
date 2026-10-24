@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art10.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art10",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Cada ação deve ser proposta contra a outra parte na relação material controvertida e, quando for caso disso, contra as pessoas ou entidades titulares de interesses contrapostos aos do autor.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 21158,
+        "end": 21352
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

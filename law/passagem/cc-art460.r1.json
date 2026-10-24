@@ -1,0 +1,23 @@
+{
+  "id": "cc:art460",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 460.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 460.º\n(Prazo de validade)\nA promessa pública sem prazo de validade fixado pelo promitente ou imposto pela natureza ou fim da promessa mantém-se enquanto não for revogada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 205711,
+        "end": 205888
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

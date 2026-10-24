@@ -1,0 +1,23 @@
+{
+  "id": "ct:art32",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 32.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 32.º\nRegisto de processos de recrutamento\n1 - Todas as entidades devem manter durante cinco anos o registo dos processos de recrutamento efectuados, devendo constar do mesmo, com desagregação por sexo, os seguintes elementos:\na) Convites para o preenchimento de lugares;\nb) Anúncios de oferta de emprego;\nc) Número de candidaturas para apreciação curricular;\nd) Número de candidatos presentes em entrevistas de pré-selecção;\ne) Número de candidatos aguardando ingresso;\nf) Resultados de testes ou provas de admissão ou selecção;\ng) Balanços sociais relativos a dados, que permitam analisar a existência de eventual discriminação de pessoas de um dos sexos no acesso ao emprego, formação e promoção profissionais e condições de trabalho.\n2 - Constitui contra-ordenação leve a violação do disposto neste artigo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 61150,
+        "end": 61966
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

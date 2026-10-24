@@ -1,0 +1,23 @@
+{
+  "id": "cp:art1.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art1",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Só pode ser punido criminalmente o facto descrito e declarado passível de pena por lei anterior ao momento da sua prática.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 75261,
+        "end": 75387
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

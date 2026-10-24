@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2129.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2129",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O alienante por título oneroso que tiver disposto de bens da herança é obrigado a entregar o respectivo valor ao adquirente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1026326,
+        "end": 1026453
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art3.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art3",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - As sociedades comerciais têm como lei pessoal a lei do Estado onde se encontre situada a sede principal e efectiva da sua administração. A sociedade que tenha em Portugal a sede estatutária não pode, contudo, opor a terceiros a sua sujeição a lei diferente da lei portuguesa.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 26762,
+        "end": 27041
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

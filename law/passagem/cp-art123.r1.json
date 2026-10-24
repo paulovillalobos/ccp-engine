@@ -1,0 +1,23 @@
+{
+  "id": "cp:art123",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-v.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 123.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 123.º\nEfeitos da prescrição da pena principal\nA prescrição da pena principal envolve a prescrição da pena acessória que não tiver sido executada bem como dos efeitos da pena que ainda se não tiverem verificado.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 206163,
+        "end": 206380
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

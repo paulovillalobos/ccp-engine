@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art89",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-ii.capitulo-iii.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 89.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 89.º\nExceções\n1 - As exceções são dilatórias ou perentórias.\n2 - As exceções dilatórias são de conhecimento oficioso e obstam a que o tribunal conheça do mérito da causa, dando lugar à absolvição da instância ou à remessa do processo para outro tribunal.\n3 - As exceções perentórias consistem na invocação de factos que impedem, modificam ou extinguem o efeito jurídico dos factos articulados pelo autor, são de conhecimento oficioso quando a lei não faz depender a sua invocação da vontade do interessado e importam a absolvição total ou parcial do pedido.\n4 - São dilatórias, entre outras, as exceções seguintes:\na) Incompetência do tribunal;\nb) Nulidade de todo o processo;\nc) Falta de personalidade ou de capacidade judiciária de alguma das partes;\nd) Falta de autorização ou deliberação que o autor devesse obter;\ne) Ilegitimidade de alguma das partes, designadamente por falta da identificação dos contrainteressados;\nf) Coligação de autores ou demandados, quando entre os pedidos não exista a conexão exigida no artigo 12.º\ng) Pluralidade subjetiva subsidiária, salvo caso de dúvida fundamentada sobre o sujeito da relação controvertida;\nh) Falta de constituição de advogado ou de representante legal por parte do autor e a falta, insuficiência ou irregularidade de mandato judicial por parte do mandatário que propôs a ação;\ni) Inimpugnabilidade do ato impugnado;\nj) Ilegalidade da cumulação de pretensões;\nk) Intempestividade da prática do ato processual;\nl) Litispendência e caso julgado.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 133016,
+        "end": 134521
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

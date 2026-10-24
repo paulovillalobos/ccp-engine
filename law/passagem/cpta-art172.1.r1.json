@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art172.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art172",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - O tribunal dá provimento à pretensão executiva do autor quando, dentro do prazo concedido para a oposição, a Administração não dê execução à sentença nem deduza oposição ou a eventual alegação da existência de factos supervenientes, modificativos ou extintivos da obrigação venha a ser julgada improcedente.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 242907,
+        "end": 243218
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

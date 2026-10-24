@@ -1,0 +1,23 @@
+{
+  "id": "csc:art174.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art174",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - Os direitos da sociedade contra os fundadores, os sócios, os gerentes, os administradores, os membros do conselho fiscal e do conselho geral e de supervisão, os revisores oficiais de contas e os liquidatários, bem como os direitos destes contra a sociedade, prescrevem no prazo de cinco anos contados a partir da verificação dos seguintes factos:\na) O início da mora, quanto à obrigação de entrada de capital ou de prestações suplementares;\nb) O termo da conduta dolosa ou culposa do fundador, gerente, administrador, membro do conselho fiscal ou do conselho geral e de supervisão, revisor ou liquidatário ou a sua revelação, se aquela houver sido ocultada, e a produção do dano, sem necessidade de que este se tenha integralmente verificado, relativamente à obrigação de indemnizar a sociedade;\nc) A data em que a transmissão de quotas ou acções se torne eficaz para com a sociedade quanto à responsabilidade dos transmitentes;\nd) O vencimento de qualquer outra obrigação;\ne) A prática do acto em relação aos actos praticados em nome de sociedade irregular por falta de forma ou de registo.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 304960,
+        "end": 306055
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

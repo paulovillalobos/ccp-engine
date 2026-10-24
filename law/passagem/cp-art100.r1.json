@@ -1,0 +1,23 @@
+{
+  "id": "cp:art100",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-vii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 100.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 100.º\nInterdição de actividades\n1 - Quem for condenado por crime cometido com grave abuso de profissão, comércio ou indústria que exerça, ou com grosseira violação dos deveres inerentes, ou dele for absolvido só por falta de imputabilidade, é interdito do exercício da respectiva actividade quando, em face do facto praticado e da personalidade do agente, houver fundado receio de que possa vir a praticar outros factos da mesma espécie.\n2 - O período de interdição é fixado entre 1 e 5 anos; mas pode ser prorrogado por outro período até 3 anos se, findo o prazo fixado na sentença, o tribunal considerar que aquele não foi suficiente para remover o perigo que fundamentou a medida.\n3 - O período de interdição conta-se a partir do trânsito em julgado da decisão, sem prejuízo de nele ser imputada a duração de qualquer interdição decretada, pelo mesmo facto, a título provisório.\n4 - O decurso do período de interdição suspende-se durante o tempo em que o agente estiver privado da liberdade por força de medida de coacção processual, pena ou medida de segurança. Se a suspensão durar 2 anos ou mais, o tribunal reexamina a situação que fundamentou a aplicação da medida, confirmando-a ou revogando-a.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 175415,
+        "end": 176625
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

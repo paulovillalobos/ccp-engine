@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1103.10",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1103",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "10 - Da denúncia pelo senhorio não pode resultar uma duração total do contrato inferior a dois anos.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 493055,
+        "end": 493155
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art2.2.i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art2.2",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "i) A condenação da Administração à adoção das condutas necessárias ao restabelecimento de direitos ou interesses violados, incluindo em situações de via de facto, desprovidas de título que as legitime;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 8320,
+        "end": 8521
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

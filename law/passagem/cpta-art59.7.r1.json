@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art59.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art59",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "7 - O Ministério Público pode impugnar o ato em momento anterior ao da publicação obrigatória, caso tenha sido entretanto desencadeada a sua execução.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 78269,
+        "end": 78419
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

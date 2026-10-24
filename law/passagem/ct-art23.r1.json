@@ -1,0 +1,23 @@
+{
+  "id": "ct:art23",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 23.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 23.º\nConceitos em matéria de igualdade e não discriminação\n1 - Para efeitos do presente Código, considera-se:\na) Discriminação directa, sempre que, em razão de um factor de discriminação, uma pessoa seja sujeita a tratamento menos favorável do que aquele que é, tenha sido ou venha a ser dado a outra pessoa em situação comparável;\nb) Discriminação indirecta, sempre que uma disposição, critério ou prática aparentemente neutro seja susceptível de colocar uma pessoa, por motivo de um factor de discriminação, numa posição de desvantagem comparativamente com outras, a não ser que essa disposição, critério ou prática seja objectivamente justificado por um fim legítimo e que os meios para o alcançar sejam adequados e necessários;\nc) Trabalho igual, aquele em que as funções desempenhadas ao serviço do mesmo empregador são iguais ou objectivamente semelhantes em natureza, qualidade e quantidade;\nd) Trabalho de valor igual, aquele em que as funções desempenhadas ao serviço do mesmo empregador são equivalentes, atendendo nomeadamente à qualificação ou experiência exigida, às responsabilidades atribuídas, ao esforço físico e psíquico e às condições em que o trabalho é efectuado.\n2 - Constitui discriminação a mera ordem ou instrução que tenha por finalidade prejudicar alguém em razão de um factor de discriminação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 49194,
+        "end": 50522
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art213.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art213",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "5 - Não é permitida a alteração de intervalo de descanso prevista nos números anteriores que implicar mais de seis horas de trabalho consecutivo, excepto quanto a actividades de pessoal operacional de vigilância, transporte e tratamento de sistemas electrónicos de segurança e indústrias em que o processo de laboração não possa ser interrompido por motivos técnicos e, bem assim, quanto a trabalhadores que ocupem cargos de administração e de direcção e outras pessoas com poder de decisão autónomo que estejam isentos de horário de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 307440,
+        "end": 307983
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

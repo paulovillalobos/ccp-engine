@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art22.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art22",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) As falsas declarações ou a utilização de qualquer outro meio de que resulte enquadramento em regime de segurança social sem que se verifiquem as condições legalmente exigidas;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 16444,
+        "end": 16622
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

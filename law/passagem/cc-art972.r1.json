@@ -1,0 +1,23 @@
+{
+  "id": "cc:art972",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-ii.capitulo-ii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 972.º",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "Artigo 972.º\n(Exclusão da revogação)",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 405268,
+        "end": 405304
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

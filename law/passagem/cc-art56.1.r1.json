@@ -1,0 +1,23 @@
+{
+  "id": "cc:art56.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art56",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. À constituição da filiação é aplicável a lei pessoal do progenitor à data do estabelecimento da relação.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 31873,
+        "end": 31980
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

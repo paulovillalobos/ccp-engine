@@ -1,0 +1,23 @@
+{
+  "id": "csc:art384.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art384",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-05-24",
+      "text": "2 - O contrato de sociedade pode:\na) Fazer corresponder um só voto a um certo número de acções, contanto que sejam abrangidas todas as acções emitidas pela sociedade e fique cabendo um voto, pelo menos, a cada 1000 euros de capital;\nb) Estabelecer que não sejam contados votos acima de certo número, quando emitidos por um só accionista, em nome próprio ou também como representante de outro.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 551240,
+        "end": 551632
+      },
+      "valid_from": "2010-05-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2125.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art2125",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. Presumem-se igualmente excluídos da alienação os diplomas e a correspondência do falecido, bem como as recordações de família de diminuto valor económico.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 1025153,
+        "end": 1025310
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

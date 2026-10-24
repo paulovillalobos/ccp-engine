@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art171",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:parte-ii.titulo-iii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 171.º",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "Artigo 171.º\nPessoas excluídas\nSão excluídos do regime os pensionistas de invalidez e de velhice.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 111667,
+        "end": 111764
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

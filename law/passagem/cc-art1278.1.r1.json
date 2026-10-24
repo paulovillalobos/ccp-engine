@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1278.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1278",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. No caso de recorrer ao tribunal, o possuidor perturbado ou esbulhado será mantido ou restituído enquanto não for convencido na questão da titularidade do direito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 560168,
+        "end": 560333
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

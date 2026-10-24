@@ -1,0 +1,23 @@
+{
+  "id": "cc:art32.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art32",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2 - A lei pessoal do apátrida é, porém, a do seu domicílio legal quando o apátrida seja menor ou quando seja maior acompanhado com domicílio legal determinado por sentença.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 20855,
+        "end": 21027
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

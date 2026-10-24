@@ -1,0 +1,23 @@
+{
+  "id": "ct:art460.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art460",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "1 - Os trabalhadores e os sindicatos têm direito a desenvolver actividade sindical na empresa, nomeadamente através de delegados sindicais, comissões sindicais e comissões intersindicais.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 568336,
+        "end": 568523
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

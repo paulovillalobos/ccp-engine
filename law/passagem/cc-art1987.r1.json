@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1987",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iv.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 1987.º",
+  "versions": [
+    {
+      "version": "2015-12-07",
+      "text": "Artigo 1987.º\n(Estabelecimento e prova da filiação natural)\nDepois de decretada a adoção, não é possível estabelecer a filiação natural do adotado nem fazer a prova dessa filiação fora do processo preliminar de casamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 963850,
+        "end": 964071
+      },
+      "valid_from": "2015-12-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

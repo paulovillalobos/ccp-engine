@@ -1,0 +1,23 @@
+{
+  "id": "ct:art248.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art248",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - Em caso de ausência do trabalhador por períodos inferiores ao período normal de trabalho diário, os respectivos tempos são adicionados para determinação da falta.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 344650,
+        "end": 344816
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

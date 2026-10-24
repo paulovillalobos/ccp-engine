@@ -1,0 +1,23 @@
+{
+  "id": "cc:art236",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 236.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 236.º\n(Sentido normal da declaração)\n1. A declaração negocial vale com o sentido que um declaratário normal, colocado na posição do real declaratário, possa deduzir do comportamento do declarante, salvo se este não puder razoàvelmente contar com ele.\n2. Sempre que o declaratário conheça a vontade real do declarante, é de acordo com ela que vale a declaração emitida.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 116024,
+        "end": 116399
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

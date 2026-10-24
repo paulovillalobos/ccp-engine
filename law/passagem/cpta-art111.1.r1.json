@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art111.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art111",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "1 - Sem prejuízo do disposto na alínea c) do n.º 3 do artigo 110.º, o juiz decide o processo no prazo necessário para assegurar o efeito útil da decisão, o qual não pode ser superior a cinco dias após a realização das diligências que se mostrem necessárias à tomada da decisão.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 168048,
+        "end": 168325
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

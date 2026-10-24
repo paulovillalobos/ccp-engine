@@ -1,0 +1,23 @@
+{
+  "id": "cp:livro-i.titulo-iii.capitulo-ii.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-ii",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Secção I\nPenas de prisão, de multa e de proibição do exercício de profissão, função ou atividade",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 100360,
+        "end": 100456
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

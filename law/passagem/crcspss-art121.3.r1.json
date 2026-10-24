@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art121.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art121",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "3 - À taxa contributiva a cargo das entidades empregadoras dos trabalhadores do serviço doméstico não se aplica o disposto no artigo 55.º",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 77274,
+        "end": 77411
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

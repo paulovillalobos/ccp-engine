@@ -1,0 +1,23 @@
+{
+  "id": "cc:art140.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art140",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - O acompanhamento do maior visa assegurar o seu bem-estar, a sua recuperação, o pleno exercício de todos os seus direitos e o cumprimento dos seus deveres, salvo as exceções legais ou determinadas por sentença.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 64237,
+        "end": 64450
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

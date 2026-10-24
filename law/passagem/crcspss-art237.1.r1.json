@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art237.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art237",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Considera-se reincidente quem pratica uma contra-ordenação grave com dolo ou uma contra-ordenação muito grave, no prazo de dois anos após ter sido condenado por outra contra-ordenação grave praticada com dolo ou contra-ordenação muito grave.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 146668,
+        "end": 146913
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

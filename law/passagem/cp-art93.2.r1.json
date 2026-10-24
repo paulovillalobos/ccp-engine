@@ -1,0 +1,23 @@
+{
+  "id": "cp:art93.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art93",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-08-20",
+      "text": "2 - A apreciação é obrigatória, independentemente de requerimento, decorrido um ano sobre o início do internamento ou sobre a decisão que o tiver mantido.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 169721,
+        "end": 169875
+      },
+      "valid_from": "2023-08-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

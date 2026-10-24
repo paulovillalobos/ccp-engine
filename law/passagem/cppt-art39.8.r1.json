@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art39.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art39",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "8 - A presunção referida no número anterior poderá ser ilidida por informação do operador sobre o conteúdo e data da emissão.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 57161,
+        "end": 57286
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

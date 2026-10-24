@@ -1,0 +1,23 @@
+{
+  "id": "cc:art182.1.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art182.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "d) Pelo falecimento ou desaparecimento de todos os associados;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 88142,
+        "end": 88204
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

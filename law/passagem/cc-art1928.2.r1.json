@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1928.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1928",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Quando, falecido um dos progenitores que houver nomeado tutor ao filho menor, lhe sobreviver o outro, a designação considera-se eficaz se não for revogada por este no exercício do poder paternal.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 924295,
+        "end": 924493
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cp:art3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 3.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 3.º\nMomento da prática do facto\nO facto considera-se praticado no momento em que o agente actuou ou, no caso de omissão, deveria ter actuado, independentemente do momento em que o resultado típico se tenha produzido.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 76856,
+        "end": 77079
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

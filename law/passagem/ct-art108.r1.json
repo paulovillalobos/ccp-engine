@@ -1,0 +1,23 @@
+{
+  "id": "ct:art108",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-i.seccao-iii.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 108.º",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "Artigo 108.º\nInformação relativa a prestação de trabalho no estrangeiro\n1 - Se o trabalhador cujo contrato de trabalho seja regulado pela lei portuguesa exercer a sua actividade no território de outro Estado por período superior a um mês, o empregador deve prestar-lhe, por escrito e até à sua partida, as seguintes informações complementares:\na) Identificação do Estado ou Estados onde o trabalho deve ser prestado e a duração previsível do período de trabalho a prestar;\nb) Moeda e lugar do pagamento das prestações pecuniárias e, se aplicável, das prestações em espécie;\nc) Possibilidade de repatriamento e respetivas condições;\nd) Acesso a cuidados de saúde.\ne) Retribuição a que tem direito nos termos da lei aplicável no Estado de acolhimento, em situações de destacamento;\nf) Subsídios inerentes ao destacamento e reembolso de despesas de viagem, de alojamento e de alimentação, quando aplicável;\ng) Sítio oficial na Internet do Estado de acolhimento, criado nos termos da legislação específica aplicável ao destacamento.\n2 - A informação referida nas alíneas b), c) ou e) do número anterior pode ser substituída por referência a disposições de lei, instrumento de regulamentação coletiva de trabalho ou regulamento interno de empresa que regulem a matéria nela referida.\n3 - Constitui contra-ordenação grave a violação do disposto neste artigo.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 167629,
+        "end": 168981
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art201-a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 201.º-A",
+  "versions": [
+    {
+      "version": "2007-10-31",
+      "text": "Artigo 201.º-A\nPublicidade\nAs associações e comissões especiais sem personalidade jurídica promovem a publicação da sua constituição, da sua sede e do seu programa nos termos legalmente previstos para os actos das sociedades comerciais.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 102813,
+        "end": 103049
+      },
+      "valid_from": "2007-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

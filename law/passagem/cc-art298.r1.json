@@ -1,0 +1,23 @@
+{
+  "id": "cc:art298",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-iii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 298.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 298.º\n(Prescrição, caducidade e não uso do direito)\n1. Estão sujeitos a prescrição, pelo seu não exercício durante o lapso de tempo estabelecido na lei, os direitos que não sejam indisponíveis ou que a lei não declare isentos de prescrição.\n2. Quando, por força da lei ou por vontade das partes, um direito deva ser exercido dentro de certo prazo, são aplicáveis as regras da caducidade, a menos que a lei se refira expressamente à prescrição.\n3. Os direitos de propriedade, usufruto, uso e habitação, enfiteuse, superfície e servidão não prescrevem, mas podem extinguir-se pelo não uso nos casos especialmente previstos na lei, sendo aplicáveis nesses casos, na falta de disposição em contrário, as regras da caducidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 139063,
+        "end": 139791
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art79.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art79",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - Sem prejuízo dos demais requisitos exigidos pela lei processual civil, a petição inicial deve ser instruída com a prova documental e designadamente:\na) Quando seja deduzida pretensão impugnatória, com documento comprovativo da emissão da norma ou do ato impugnados;\nb) Quando seja pedida a declaração de inexistência de ato administrativo, com a eventual prova da aparência de tal ato;\nc) Quando a pretensão do autor dirigida à prática de um ato administrativo tenha sido indeferida ou rejeitada, com documento comprovativo do indeferimento ou da rejeição;\nd) Quando a pretensão do autor dirigida à prática de um ato administrativo não tenha sido respondida, com cópia do requerimento apresentado, ou com recibo ou outro documento comprovativo da entrada do original nos serviços competentes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 106765,
+        "end": 107561
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art38-a.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art38-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-01-01",
+      "text": "3 - A opção de adesão prevista no número anterior pode ser exercida a qualquer momento, produzindo efeitos no 1.º dia do mês seguinte, desde que entre a data da opção e a data da respetiva produção de efeitos decorra um período mínimo de 10 dias, caso contrário, a adesão só produz efeitos no 1.º dia do 2.º mês seguinte.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 53436,
+        "end": 53757
+      },
+      "valid_from": "2019-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

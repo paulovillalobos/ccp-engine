@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art118.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art118",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "5 - Mediante despacho fundamentado, o juiz pode recusar a utilização de meios de prova quando considere assentes ou irrelevantes os factos sobre os quais eles recaem ou quando entenda que os mesmos são manifestamente dilatórios.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 179087,
+        "end": 179315
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

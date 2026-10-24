@@ -1,0 +1,23 @@
+{
+  "id": "csc:art322.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art322",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1997-01-05",
+      "text": "1 - Uma sociedade não pode conceder empréstimos ou por qualquer forma fornecer fundos ou prestar garantias para que um terceiro subscreva ou por outro meio adquira acções representativas do seu capital.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 468700,
+        "end": 468902
+      },
+      "valid_from": "1997-01-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

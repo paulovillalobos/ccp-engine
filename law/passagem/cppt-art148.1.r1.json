@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art148.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art148",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-04-27",
+      "text": "1 - O processo de execução fiscal abrange a cobrança coerciva das seguintes dívidas:\na) Tributos, incluindo impostos aduaneiros, especiais e extrafiscais, taxas, demais contribuições financeiras a favor do Estado, adicionais cumulativamente cobrados, juros e outros encargos legais;\nb) Coimas e outras sanções pecuniárias fixadas em decisões, sentenças ou acórdãos relativos a contra-ordenações tributárias, salvo quando aplicadas pelos tribunais comuns.\nc) Coimas e outras sanções pecuniárias decorrentes da responsabilidade civil determinada nos termos do Regime Geral das Infracções Tributárias.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 177908,
+        "end": 178506
+      },
+      "valid_from": "2019-04-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

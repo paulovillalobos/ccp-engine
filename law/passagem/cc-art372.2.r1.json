@@ -1,0 +1,23 @@
+{
+  "id": "cc:art372.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art372",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "2. O documento é falso, quando nele se atesta como tendo sido objecto da percepção da autoridade ou oficial público qualquer facto que na realidade se não verificou, ou como tendo sido praticado pela entidade responsável qualquer acto que na realidade o não foi.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 170476,
+        "end": 170738
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

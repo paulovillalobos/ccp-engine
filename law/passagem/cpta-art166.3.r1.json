@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art166.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art166",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - Se a Administração não ordenar o pagamento devido no prazo de 30 dias contado da data do acordo ou da notificação da decisão judicial que tenha fixado a indemnização devida, seguem-se os termos do processo executivo para pagamento de quantia certa.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 235092,
+        "end": 235344
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

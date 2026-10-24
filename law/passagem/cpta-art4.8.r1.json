@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art4.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art4",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "8 - Quando algum dos pedidos cumulados não pertença ao âmbito da competência dos tribunais administrativos, há lugar à absolvição da instância relativamente a esse pedido.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 14075,
+        "end": 14246
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

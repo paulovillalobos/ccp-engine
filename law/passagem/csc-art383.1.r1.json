@@ -1,0 +1,23 @@
+{
+  "id": "csc:art383.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art383",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "1 - A assembleia geral pode deliberar, em primeira convocação, qualquer que seja o número de accionistas presentes ou representados, salvo o disposto no número seguinte ou no contrato.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 549988,
+        "end": 550172
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

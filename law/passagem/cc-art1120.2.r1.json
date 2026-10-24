@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1120.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1120",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1990-11-14",
+      "text": "2. A cessão só é válida se for celebrada por escritura pública.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 509800,
+        "end": 509863
+      },
+      "valid_from": "1990-11-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art88.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art88",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - Relativamente aos trabalhadores em situação de pré-reforma com o âmbito de protecção previsto no n.º 1 do artigo 86.º é mantida a taxa contributiva que lhe era aplicada no momento da passagem à situação de pré-reforma.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 58761,
+        "end": 58983
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

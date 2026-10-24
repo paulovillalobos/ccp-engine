@@ -1,0 +1,23 @@
+{
+  "id": "cp:art38",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-ii.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 38.º",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "Artigo 38.º\nConsentimento\n1 - Além dos casos especialmente previstos na lei, o consentimento exclui a ilicitude do facto quando se referir a interesses jurídicos livremente disponíveis e o facto não ofender os bons costumes.\n2 - O consentimento pode ser expresso por qualquer meio que traduza uma vontade séria, livre e esclarecida do titular do interesse juridicamente protegido, e pode ser livremente revogado até à execução do facto.\n3 - O consentimento só é eficaz se for prestado por quem tiver mais de 16 anos e possuir o discernimento necessário para avaliar o seu sentido e alcance no momento em que o presta.\n4 - Se o consentimento não for conhecido do agente, este é punível com a pena aplicável à tentativa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 98678,
+        "end": 99396
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

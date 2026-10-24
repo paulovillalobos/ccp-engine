@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art269.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art269",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - As contribuições e as quotizações indevidamente pagas são restituídas às entidades empregadores e aos beneficiários, a requerimento dos interessados, quer directamente, quer por compensação com débitos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 162307,
+        "end": 162513
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1175.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1175",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "1 - A morte do mandante ou a sentença de acompanhamento a ele relativa não faz caducar o mandato quando este tenha sido conferido também no interesse do mandatário ou de terceiro.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 527366,
+        "end": 527545
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

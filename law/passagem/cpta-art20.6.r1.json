@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art20.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art20",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "6 - Os pedidos dirigidos à adoção de providências cautelares são julgados pelo tribunal competente para decidir a causa principal.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 32838,
+        "end": 32968
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art273.1.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art273.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "d) A taxa contributiva relativa aos trabalhadores abrangidos pela Caixa de Previdência do Pessoal da Companhia Portuguesa Rádio Marconi, admitidos até à publicação do Decreto-Lei n.º 357/97, de 16 de Dezembro, é de 5,7 %, sendo, respectivamente, de 4 % e de 1,7 % para a entidade empregadora e para os trabalhadores;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 165205,
+        "end": 165521
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

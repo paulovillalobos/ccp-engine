@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art180.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art180",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2021-02-27",
+      "text": "2 - O tribunal judicial competente avoca os processos de execução fiscal pendentes, os quais são apensados ao processo de recuperação ou ao processo de insolvência, onde o Ministério Público reclama o pagamento dos respetivos créditos pelos meios aí previstos, se não estiver constituído mandatário especial.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 205460,
+        "end": 205768
+      },
+      "valid_from": "2021-02-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

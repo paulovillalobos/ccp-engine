@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art112.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art112",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "1 - Compete ao dirigente do órgão periférico regional da administração tributária revogar, total ou parcialmente, dentro do prazo referido no n.º 1 do artigo anterior, o ato impugnado caso o valor do processo não exceda o valor da alçada do tribunal tributário de 1.ª instância.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 145793,
+        "end": 146071
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

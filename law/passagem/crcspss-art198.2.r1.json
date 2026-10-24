@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art198.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art198",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A declaração prevista no número anterior é dispensada sempre que o contribuinte preste consentimento à entidade pagadora para consultar a sua situação contributiva perante a segurança social, no sítio da segurança social directa, nos termos legalmente estatuídos.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 127485,
+        "end": 127752
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

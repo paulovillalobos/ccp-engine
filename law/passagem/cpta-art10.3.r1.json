@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art10.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art10",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "3 - Os processos que tenham por objeto atos ou omissões de entidade administrativa independente, destituída de personalidade jurídica, são intentados contra o Estado ou a outra pessoa coletiva de direito público a que essa entidade pertença.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 21890,
+        "end": 22131
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

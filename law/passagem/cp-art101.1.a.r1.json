@@ -1,0 +1,23 @@
+{
+  "id": "cp:art101.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art101.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2023-09-05",
+      "text": "a) Houver fundado receio de que possa vir a praticar outros factos da mesma espécie; ou",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 177236,
+        "end": 177323
+      },
+      "valid_from": "2023-09-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

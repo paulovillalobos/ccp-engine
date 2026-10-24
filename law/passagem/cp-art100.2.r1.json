@@ -1,0 +1,23 @@
+{
+  "id": "cp:art100.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art100",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - O período de interdição é fixado entre 1 e 5 anos; mas pode ser prorrogado por outro período até 3 anos se, findo o prazo fixado na sentença, o tribunal considerar que aquele não foi suficiente para remover o perigo que fundamentou a medida.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 175860,
+        "end": 176105
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -315,7 +315,7 @@
       "versao": 3,
       "code": "engine/extract.py",
       "hash": "ef419b6c41936a30638c9aef5f4cd0ed58d19581c663ed95edaa92edf62f8eb3",
-      "retired": false,
+      "retired": true,
       "nota": "dr-article-history@2: an annex's history view too"
     },
     {
@@ -339,7 +339,7 @@
       "versao": 9,
       "code": "verify.py",
       "hash": "05250bf9ba94c4cd6c2609d65acfe981b4add64f7673b3755d6ab67612dd2c73",
-      "retired": false,
+      "retired": true,
       "nota": "I01 orphans: bytes named by any raw revision (D29)"
     },
     {
@@ -363,7 +363,7 @@
       "versao": 2,
       "code": "engine/structure.py",
       "hash": "ca242f7edceea7c4ad05f92be03900a8fdd7eb398e84fee98d248077b9b28dc6",
-      "retired": false,
+      "retired": true,
       "nota": "0.2: Artigo 410-A (no º) is an article"
     },
     {
@@ -399,7 +399,7 @@
       "versao": 4,
       "code": "engine/vigente.py",
       "hash": "9976e733633a6d51c45871196b662528808ca3960ab671b469be0a5c27d37fe2",
-      "retired": false,
+      "retired": true,
       "nota": "note grammar: Diário do Governo, suplemento forms, Artigo único, 00:00:00; actc; two-letter suffix"
     },
     {
@@ -423,7 +423,7 @@
       "versao": 3,
       "code": "tools/build_law.py",
       "hash": "d3841f27e5dfea6be412c0ecf3732d068e9bf6a996da1d6d06e66255275f3d70",
-      "retired": false,
+      "retired": true,
       "nota": "timeline acts registered; build-report.json"
     },
     {
@@ -435,7 +435,7 @@
       "versao": 1,
       "code": "tools/coverage.py",
       "hash": "4ceafce2482bbc36e1832210ec3360e190b32c5f05c08bc6e4dc9e0829bf678f",
-      "retired": false,
+      "retired": true,
       "nota": "law/COVERAGE.md from the store (B2b)"
     },
     {
@@ -458,6 +458,83 @@
       "versao": 1,
       "code": "tools/pilot_municipios.py",
       "hash": "a15e0699b85d6a598b7316111b19c9629cdf2d4fd3a9105be5f1fe67b4835ed0",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:structure@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "engine/structure.py",
+      "hash": "61e31fdb02b75f3c5ef37684bc7badcf5e2a3a0dcb2aa01b7c8c007671bdefdc",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:extract@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "engine/extract.py",
+      "hash": "f8ffd47efee94226f678896f7f1e22fbe4aa2a0970c681a29fd18ac0af761625",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:build-law@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/build_law.py",
+      "hash": "68ef099d7997c548ce3afe140ed61785cab87b0053a4cf6e3bc943eca9ade6de",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:vigente@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "engine/vigente.py",
+      "hash": "0d89c397db457a1b979a6410fc8c63b81b4fbfb074f76dd70698e2ed74b892bb",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:coverage@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/coverage.py",
+      "hash": "3d36150e6ecde4d963b35c1fda5372205fce32176cbac6597d229ec6b1cfe72a",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:build-law@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/build_law.py",
+      "hash": "f62ffe1e3fe74ca5a27a573bea81f03f25a6e0383d85280df212cc546011459a",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@10",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 10,
+      "code": "verify.py",
+      "hash": "819ffd39bb1ebdc43b487a6b0da9058b57e52a2d8661b92e4208b71f1e8f85f2",
       "retired": false
     }
   ]

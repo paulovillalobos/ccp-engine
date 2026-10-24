@@ -1,0 +1,23 @@
+{
+  "id": "ct:dl.art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 1.º\nAprovação do Código do Trabalho\nÉ aprovado o Código do Trabalho, que se publica em anexo à presente lei e dela faz parte integrante.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 338,
+        "end": 481
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

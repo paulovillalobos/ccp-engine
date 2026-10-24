@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art130.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art130",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - O interessado na declaração da ilegalidade de norma emitida ao abrigo de disposições de direito administrativo cujos efeitos se produzam imediatamente, sem dependência de um ato administrativo ou jurisdicional de aplicação, pode requerer a suspensão da eficácia dessa norma, com efeitos circunscritos ao seu caso.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 191958,
+        "end": 192275
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

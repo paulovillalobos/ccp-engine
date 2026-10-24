@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1760.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1760",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "2. Se a doação tiver sido feita por terceiro a ambos os esposados ou os bens doados tiverem entrado na comunhão, e um dos cônjuges for declarado único ou principal culpado no divórcio ou separação, a caducidade atinge apenas a parte dele.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 798277,
+        "end": 798515
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

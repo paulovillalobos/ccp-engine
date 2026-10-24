@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art8.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art8",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Qualquer das partes deve abster-se de requerer a realização de diligências inúteis e de adotar expedientes dilatórios.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 17060,
+        "end": 17182
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

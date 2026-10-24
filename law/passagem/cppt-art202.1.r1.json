@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art202.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art202",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2001-07-05",
+      "text": "1 - No despacho que autorizar a dação, pode o Ministro ou o órgão executivo competente determinar a venda, por proposta em carta fechada, dos bens dados em pagamento, em prazo a fixar.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 255589,
+        "end": 255773
+      },
+      "valid_from": "2001-07-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

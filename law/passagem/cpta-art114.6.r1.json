@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art114.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art114",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "6 - A falta da designação do tribunal a que o requerimento é dirigido deve ser oficiosamente suprida, com remessa para o tribunal competente, quando não seja o próprio.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 173447,
+        "end": 173615
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

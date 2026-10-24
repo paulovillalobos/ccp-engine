@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art38.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art38",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2025-01-14",
+      "text": "5 - As notificações serão pessoais nos casos previstos na lei ou quando a entidade que a elas proceder o entender necessário.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 48568,
+        "end": 48693
+      },
+      "valid_from": "2025-01-14",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

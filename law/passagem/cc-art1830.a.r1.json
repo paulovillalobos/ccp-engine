@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1830.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1830",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "a) A reconciliação dos cônjuges separados judicialmente de pessoas e bens;",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 847625,
+        "end": 847699
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

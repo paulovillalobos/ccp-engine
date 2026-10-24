@@ -1,0 +1,23 @@
+{
+  "id": "cp:art61.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art61",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-12-24",
+      "text": "5 - Em qualquer das modalidades a liberdade condicional tem uma duração igual ao tempo de prisão que falte cumprir, até ao máximo de cinco anos, considerando-se então extinto o excedente da pena.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 125831,
+        "end": 126026
+      },
+      "valid_from": "2021-12-24",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1096.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1096",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-02-13",
+      "text": "3 - Qualquer das partes pode opor-se à renovação, nos termos dos artigos seguintes.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 480396,
+        "end": 480479
+      },
+      "valid_from": "2019-02-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

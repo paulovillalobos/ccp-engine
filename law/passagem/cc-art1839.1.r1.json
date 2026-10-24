@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1839.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1839",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. A paternidade do filho pode ser impugnada pelo marido da mãe, por esta, pelo filho ou, nos termos do artigo 1841.º, pelo Ministério Público.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 853748,
+        "end": 853891
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

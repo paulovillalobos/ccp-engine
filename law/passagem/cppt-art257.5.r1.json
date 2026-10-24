@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art257.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art257",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "5 - Decorrido o prazo previsto no número anterior sem qualquer decisão expressa, o pedido de anulação da venda é considerado indeferido.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 320111,
+        "end": 320247
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

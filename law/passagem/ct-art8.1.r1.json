@@ -1,0 +1,23 @@
+{
+  "id": "ct:art8.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art8",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O trabalhador contratado por uma empresa estabelecida em Portugal, que preste actividade no território de outro Estado em situação a que se refere o artigo 6.º, tem direito às condições de trabalho previstas no artigo anterior, sem prejuízo de regime mais favorável constante da lei aplicável ou do contrato.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 28426,
+        "end": 28738
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

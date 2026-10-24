@@ -1,0 +1,23 @@
+{
+  "id": "csc:art245.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art245",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "6 - São nulas as garantias reais prestadas pela sociedade relativas a obrigações de reembolso de suprimentos e extinguem-se as de outras obrigações, quando estas ficarem sujeitas ao regime de suprimentos.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 385160,
+        "end": 385364
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

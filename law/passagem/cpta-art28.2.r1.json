@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art28.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art28",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "2 - Os processos são apensados ao que tiver sido intentado em primeiro lugar, considerando-se como tal o de numeração inferior, salvo se os pedidos forem dependentes uns dos outros, caso em que a apensação é feita na ordem da dependência.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 42487,
+        "end": 42725
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

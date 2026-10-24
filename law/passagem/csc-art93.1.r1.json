@@ -1,0 +1,23 @@
+{
+  "id": "csc:art93.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art93",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2006-06-30",
+      "text": "1 - O pedido de registo de aumento do capital por incorporação de reservas deve ser acompanhado do balanço que serviu de base à deliberação, caso este não se encontre já depositado na conservatória.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 141941,
+        "end": 142139
+      },
+      "valid_from": "2006-06-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

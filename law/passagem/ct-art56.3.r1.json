@@ -1,0 +1,23 @@
+{
+  "id": "ct:art56.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art56",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-09-06",
+      "text": "3 - O horário flexível, a elaborar pelo empregador, deve:\na) Conter um ou dois períodos de presença obrigatória, com duração igual a metade do período normal de trabalho diário;\nb) Indicar os períodos para início e termo do trabalho normal diário, cada um com duração não inferior a um terço do período normal de trabalho diário, podendo esta duração ser reduzida na medida do necessário para que o horário se contenha dentro do período de funcionamento do estabelecimento;\nc) Estabelecer um período para intervalo de descanso não superior a duas horas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 98669,
+        "end": 99222
+      },
+      "valid_from": "2015-09-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

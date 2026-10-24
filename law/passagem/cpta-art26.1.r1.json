@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art26.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art26",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-10-15",
+      "text": "1 - A distribuição dos processos e demais documentos sujeitos a distribuição é realizada por meios eletrónicos, através do sistema informático dos tribunais administrativos e fiscais, aplicando-se, com as necessárias adaptações, o disposto no Código de Processo Civil quanto à distribuição, incluindo os procedimentos a respeitar na atribuição de um processo a um juiz.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 39804,
+        "end": 40173
+      },
+      "valid_from": "2021-10-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art500",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-iii.subtitulo-ii.capitulo-ii.seccao-v",
+  "kind": "artigo",
+  "label": "Artigo 500.º",
+  "versions": [
+    {
+      "version": "2023-04-04",
+      "text": "Artigo 500.º\nDenúncia de convenção colectiva\n1 - Qualquer das partes pode denunciar a convenção colectiva, mediante comunicação escrita dirigida à outra parte, acompanhada de proposta negocial global.\n2 - A denúncia deve ser acompanhada de fundamentação quanto a motivos de ordem económica, estrutural ou a desajustamentos do regime da convenção denunciada.\n3 - No prazo de 10 dias a contar da data da denúncia, a parte autora da denúncia deve remeter ao serviço competente do ministério responsável pela área laboral cópia da mesma e da proposta negocial global referida no n.º 1.\n4 - Não se considera denúncia a mera proposta de revisão de convenção, não determinando a aplicação do regime de sobrevigência e caducidade.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 606762,
+        "end": 607484
+      },
+      "valid_from": "2023-04-04",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

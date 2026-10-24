@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art185-b.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art185-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - As decisões arbitrais apenas podem ser executadas depois de depositadas, pelo tribunal arbitral, devidamente expurgadas de quaisquer elementos suscetíveis de identificar a pessoa ou pessoas a que dizem respeito, junto do Ministério da Justiça para publicação informática, nos termos a definir por portaria do membro do Governo responsável pela área da justiça.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 264074,
+        "end": 264438
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

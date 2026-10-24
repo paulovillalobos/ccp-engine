@@ -1,0 +1,23 @@
+{
+  "id": "cc:art2048",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 2048.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 2048.º\n(Curador da herança jacente)\n1. Quando se torne necessário, para evitar a perda ou deterioração dos bens, por não haver quem legalmente os administre, o tribunal nomeará curador à herança jacente, a requerimento do Ministério Público ou de qualquer interessado.\n2. À curadoria da herança é aplicável, com as necessárias adaptações, o disposto sobre a curadoria provisória dos bens do ausente.\n3. A curadoria termina logo que cessem as razões que a determinaram.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 994101,
+        "end": 994576
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

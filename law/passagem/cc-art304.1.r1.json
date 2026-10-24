@@ -1,0 +1,23 @@
+{
+  "id": "cc:art304.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art304",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Completada a prescrição, tem o beneficiário a faculdade de recusar o cumprimento da prestação ou de se opor, por qualquer modo, ao exercício do direito prescrito.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 141463,
+        "end": 141628
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

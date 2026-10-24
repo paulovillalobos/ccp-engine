@@ -1,0 +1,23 @@
+{
+  "id": "csc:art24.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art24",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1997-01-05",
+      "text": "5 - Os direitos especiais não podem ser suprimidos ou coarctados sem o consentimento do respectivo titular, salvo regra legal ou estipulação contratual expressa em contrário.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 48682,
+        "end": 48856
+      },
+      "valid_from": "1997-01-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art50.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art50",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - O trabalhador pode faltar até 30 dias consecutivos, a seguir ao nascimento de neto que consigo viva em comunhão de mesa e habitação e que seja filho de adolescente com idade inferior a 16 anos.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 87858,
+        "end": 88055
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

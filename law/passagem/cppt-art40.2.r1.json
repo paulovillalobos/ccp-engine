@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art40.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art40",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "2 - Quando a notificação se destine a chamar o interessado para a prática de ato pessoal, além de ser notificado o mandatário, será enviado pelo correio um aviso registado ao próprio interessado, indicando a data, o local e o fim da comparência.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 60012,
+        "end": 60257
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

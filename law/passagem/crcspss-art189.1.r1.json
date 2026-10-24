@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art189.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art189",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - O diferimento do pagamento da dívida à segurança social, incluindo os créditos por juros de mora vencidos e vincendos, assume a forma de pagamento em prestações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 120811,
+        "end": 120976
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

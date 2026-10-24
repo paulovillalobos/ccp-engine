@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art80.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art80",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Salvo nos casos expressamente previstos na lei, em processo de execução que não tenha natureza tributária, é obrigatoriamente citado o diretor do órgão periférico regional da área do domicílio fiscal ou da sede do executado, para apresentar, no prazo de 15 dias, certidão de quaisquer dívidas de tributos à Fazenda Pública imputadas ao executado que possam ser objeto de reclamação de créditos, sob pena de nulidade dos atos posteriores à data em que a citação devia ter sido efetuada.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 100437,
+        "end": 100926
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:titulo-ii.capitulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-ii",
+  "kind": "capitulo",
+  "label": "Capítulo V",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "Capítulo V\nDos recursos hierárquicos",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 87382,
+        "end": 87418
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art417.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art417",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "2 - O número de membros de subcomissão de trabalhadores não pode exceder os seguintes:\na) Em estabelecimento com 50 a 200 trabalhadores, três;\nb) Em estabelecimento com mais de 200 trabalhadores, cinco.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 522338,
+        "end": 522540
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

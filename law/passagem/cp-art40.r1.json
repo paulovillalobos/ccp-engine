@@ -1,0 +1,23 @@
+{
+  "id": "cp:art40",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:livro-i.titulo-iii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 40.º",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "Artigo 40.º\nFinalidades das penas e das medidas de segurança\n1 - A aplicação de penas e de medidas de segurança visa a protecção de bens jurídicos e a reintegração do agente na sociedade.\n2 - Em caso algum a pena pode ultrapassar a medida da culpa.\n3 - A medida de segurança só pode ser aplicada se for proporcionada à gravidade do facto e à perigosidade do agente.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 99976,
+        "end": 100341
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

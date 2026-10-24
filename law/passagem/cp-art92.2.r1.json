@@ -1,0 +1,23 @@
+{
+  "id": "cp:art92.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art92",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-08-20",
+      "text": "2 - O internamento não pode exceder o limite máximo da pena correspondente ao tipo do crime cometido pelo inimputável.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 169265,
+        "end": 169383
+      },
+      "valid_from": "2023-08-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

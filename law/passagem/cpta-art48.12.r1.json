@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art48.12",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art48",
+  "kind": "numero",
+  "label": "12",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "12 - A cumulação de pedidos não obsta à aplicação do regime previsto nos números anteriores, desde que a instrução e a decisão do pedido principal possam ser antecipadas, nos termos do n.º 4 do artigo 90.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 65312,
+        "end": 65517
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

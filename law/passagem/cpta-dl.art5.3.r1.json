@@ -1,0 +1,23 @@
+{
+  "id": "cpta:dl.art5.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:dl.art5",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-01-01",
+      "text": "3 - Não são aplicáveis aos processos pendentes as disposições que excluem recursos que eram admitidos na vigência da legislação anterior, tal como também não o são as disposições que introduzem novos recursos que não eram admitidos na vigência da legislação anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 5102,
+        "end": 5369
+      },
+      "valid_from": "2004-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

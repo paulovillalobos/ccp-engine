@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art188.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art188",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Até 1 de março de cada ano, o Estado Português informa a Comissão Europeia sobre os processos principais e cautelares que tenham sido intentados durante o ano anterior, no âmbito do contencioso pré-contratual regulado neste Código e relativamente aos quais tenha sido suscitada a questão da violação de disposições europeias, bem como das decisões que tenham sido proferidas nesses processos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 266973,
+        "end": 267369
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

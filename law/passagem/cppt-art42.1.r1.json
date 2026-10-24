@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art42.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art42",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-01-01",
+      "text": "1 - As notificações e citações de autarquia local ou outra entidade de direito público são feitas por via electrónica para a respectiva caixa postal electrónica ou por carta registada com aviso de recepção, dirigida ao seu presidente ou ao membro em que este tenha delegado essa competência.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 62938,
+        "end": 63229
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

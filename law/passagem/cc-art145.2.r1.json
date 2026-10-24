@@ -1,0 +1,23 @@
+{
+  "id": "cc:art145.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art145",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-02-10",
+      "text": "2 - Em função de cada caso e independentemente do que haja sido pedido, o tribunal pode cometer ao acompanhante algum ou alguns dos regimes seguintes:\na) Exercício das responsabilidades parentais ou dos meios de as suprir, conforme as circunstâncias;\nb) Representação geral ou representação especial com indicação expressa, neste caso, das categorias de atos para que seja necessária;\nc) Administração total ou parcial de bens;\nd) Autorização prévia para a prática de determinados atos ou categorias de atos;\ne) Intervenções de outro tipo, devidamente explicitadas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 68012,
+        "end": 68577
+      },
+      "valid_from": "2019-02-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

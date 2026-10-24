@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art123.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art123.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "c) Se esse processo findar por extinção da instância e o requerente não intentar novo processo, nos casos em que a lei o permita, dentro do prazo fixado para o efeito;",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 185049,
+        "end": 185216
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

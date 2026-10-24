@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art175.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art175",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - A existência de causa legítima de inexecução deve ser invocada segundo o disposto no artigo 163.º, mas não se exige, neste caso, que as circunstâncias invocadas sejam supervenientes.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 249828,
+        "end": 250014
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

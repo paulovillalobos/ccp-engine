@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art112.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art112",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-01-01",
+      "text": "5 - A revogação parcial do acto impugnado é notificada ao representante da Fazenda Pública, com simultânea remessa do processo administrativo, no prazo de três dias após a recepção da declaração do impugnante referida no n.º 3 ou do termo do prazo aí previsto, sendo, nesse caso, o prazo para contestar de 30 dias a contar da notificação.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 146760,
+        "end": 147098
+      },
+      "valid_from": "2015-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

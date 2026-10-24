@@ -1,0 +1,23 @@
+{
+  "id": "ct:art256.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art256",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2012-08-01",
+      "text": "2 - A falta injustificada a um ou meio período normal de trabalho diário, imediatamente anterior ou posterior a dia ou meio dia de descanso ou a feriado, constitui infracção grave.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 356078,
+        "end": 356258
+      },
+      "valid_from": "2012-08-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

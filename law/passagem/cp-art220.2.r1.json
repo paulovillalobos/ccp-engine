@@ -1,0 +1,23 @@
+{
+  "id": "cp:art220.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art220",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "2 - O procedimento criminal depende de queixa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 311280,
+        "end": 311326
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

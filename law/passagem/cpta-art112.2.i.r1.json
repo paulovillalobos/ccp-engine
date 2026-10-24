@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art112.2.i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art112.2",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "i) Intimação para adoção ou abstenção de uma conduta por parte da Administração ou de um particular por alegada violação ou fundado receio de violação do direito administrativo nacional ou do direito da União Europeia.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 170183,
+        "end": 170401
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

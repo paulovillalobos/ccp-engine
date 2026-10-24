@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1365.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1365",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. O proprietário deve edificar de modo que a beira do telhado ou outra cobertura não goteje sobre o prédio vizinho, deixando um intervalo mínimo de cinco decímetros entre o prédio e a beira, se de outro modo não puder evitá-lo.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 595204,
+        "end": 595432
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

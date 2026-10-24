@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art134.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art134",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2003-02-22",
+      "text": "2 - O requerimento, a apresentar com tantos duplicados quantas as pessoas a citar ou notificar, deve justificar sumariamente a necessidade da antecipação de prova, mencionar com precisão os factos sobre que esta há-de recair, especificar os meios de prova a produzir, identificar as pessoas que hão-de ser ouvidas, se for caso disso, e indicar, com a possível concretização, o pedido e os fundamentos da causa a propor, bem como a pessoa ou o órgão em relação aos quais se pretende fazer uso da prova.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 198275,
+        "end": 198776
+      },
+      "valid_from": "2003-02-22",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

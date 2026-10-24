@@ -1,0 +1,23 @@
+{
+  "id": "cc:art713",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-vi.seccao-v.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 713.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 713.º\n(Segunda hipoteca)\nA hipoteca não impede o dono dos bens de os hipotecar de novo; neste caso, extinta uma das hipotecas, ficam os bens a garantir, na sua totalidade, as restantes dívidas hipotecárias.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 306163,
+        "end": 306376
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

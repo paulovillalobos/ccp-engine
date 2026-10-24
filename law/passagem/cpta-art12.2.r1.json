@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art12.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art12",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - Nos processos impugnatórios, é possível a coligação de diferentes autores na impugnação, seja de um único, seja de vários atos jurídicos, desde que se preencha qualquer dos pressupostos estabelecidos no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 26824,
+        "end": 27047
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

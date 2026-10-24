@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art112.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art112",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "2 - As providências cautelares regem-se pela tramitação e são adotadas segundo os critérios previstos no presente título, podendo consistir designadamente em:\na) Suspensão da eficácia de um ato administrativo ou de uma norma;\nb) Admissão provisória em concursos e exames;\nc) Atribuição provisória da disponibilidade de um bem;\nd) Autorização provisória ao interessado para iniciar ou prosseguir uma atividade ou adoptar uma conduta;\ne) Regulação provisória de uma situação jurídica, designadamente através da imposição à Administração do pagamento de uma quantia por conta de prestações alegadamente devidas ou a título de reparação provisória;\nf) Arresto;\ng) Embargo de obra nova;\nh) Arrolamento;\ni) Intimação para adoção ou abstenção de uma conduta por parte da Administração ou de um particular por alegada violação ou fundado receio de violação do direito administrativo nacional ou do direito da União Europeia.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 169485,
+        "end": 170401
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

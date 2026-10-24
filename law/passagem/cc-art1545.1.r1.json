@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1545.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1545",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Salvas as excepções previstas na lei, as servidões não podem ser separadas dos prédios a que pertencem, activa ou passivamente.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 689439,
+        "end": 689569
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

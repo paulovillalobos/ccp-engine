@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art198.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art198",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4 - O disposto nos n.os 1 e 3 aplica-se igualmente a financiamentos a médio e longo prazos, excepto para aquisição de habitação própria e permanente, superiores a (euro) 50 000, concedidos por instituições públicas, particulares e cooperativas com capacidade de concessão de crédito.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 128001,
+        "end": 128284
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art366.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art366",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "1 - A deliberação de emissão de obrigações convertíveis em acções deve ser tomada pela maioria que o contrato de sociedade especifique, mas não poderá ser inferior à exigida para a deliberação de aumento de capital por novas entradas.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 521712,
+        "end": 521946
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

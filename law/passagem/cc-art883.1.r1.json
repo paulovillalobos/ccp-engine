@@ -1,0 +1,23 @@
+{
+  "id": "cc:art883.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art883",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "1. Se o preço não estiver fixado por entidade pública, e as partes o não determinarem nem convencionarem o modo de ele ser determinado, vale como preço contratual o que o vendedor normalmente praticar à data da conclusão do contrato ou, na falta dele, o do mercado ou bolsa no momento do contrato e no lugar em que o comprador deva cumprir; na insuficiência destas regras, o preço é determinado pelo tribunal, segundo juízos de equidade.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 373129,
+        "end": 373566
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

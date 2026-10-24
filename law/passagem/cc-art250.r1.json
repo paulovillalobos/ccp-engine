@@ -1,0 +1,23 @@
+{
+  "id": "cc:art250",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iii.capitulo-i.seccao-i.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 250.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 250.º\n(Erro na transmissão da declaração)\n1. A declaração negocial inexactamente transmitida por quem seja incumbido da transmissão pode ser anulada nos termos do artigo 247.º\n2. Quando, porém, a inexactidão for devida a dolo do intermediário, a declaração é sempre anulável.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 120458,
+        "end": 120740
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

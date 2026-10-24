@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art38.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art38",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A obrigação contributiva compreende a declaração dos tempos de trabalho, das remunerações devidas aos trabalhadores e o pagamento das contribuições e das quotizações.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 27012,
+        "end": 27182
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

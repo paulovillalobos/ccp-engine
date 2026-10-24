@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art170.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art170",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2013-01-01",
+      "text": "2 - Caso o fundamento da dispensa da garantia seja superveniente ao termo daquele prazo, deve a dispensa ser requerida no prazo de 30 dias após a sua ocorrência.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 197647,
+        "end": 197808
+      },
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

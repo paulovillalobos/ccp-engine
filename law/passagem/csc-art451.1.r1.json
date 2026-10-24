@@ -1,0 +1,23 @@
+{
+  "id": "csc:art451.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art451",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-08-02",
+      "text": "1 - Até 30 dias antes da data da assembleia geral convocada para apreciar os documentos de prestação de contas, o conselho de administração deve apresentar ao conselho fiscal e ao revisor oficial de contas o relatório da gestão e as contas do exercício.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 662723,
+        "end": 662976
+      },
+      "valid_from": "2017-08-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

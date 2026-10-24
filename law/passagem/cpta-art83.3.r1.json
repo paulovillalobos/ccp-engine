@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art83.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art83",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "3 - Toda a defesa deve ser deduzida na contestação, excetuados os incidentes que a lei mande deduzir em separado, devendo os demandados nela tomar posição definida perante os factos que constituem a causa de pedir invocada pelo autor.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 114270,
+        "end": 114504
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

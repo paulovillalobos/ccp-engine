@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art98.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art98",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Os prazos a observar durante a tramitação do processo são os seguintes:\na) Cinco dias para a contestação;\nb) Cinco dias para a decisão do juiz ou do relator, ou para este submeter o processo a julgamento;\nc) Três dias para os restantes casos.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 149834,
+        "end": 150080
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-iv.titulo-iii.capitulo-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-iii",
+  "kind": "capitulo",
+  "label": "Capítulo I",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Capítulo I\nEstabelecimento da filiação",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 827795,
+        "end": 827833
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

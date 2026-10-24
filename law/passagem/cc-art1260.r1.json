@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1260",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iii.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 1260.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1260.º\n(Posse de boa fé)\n1. A posse diz-se de boa fé, quando o possuidor ignorava, ao adquiri-la, que lesava o direito de outrem.\n2. A posse titulada presume-se de boa fé, e a não titulada, de má fé.\n3. A posse adquirida por violência é sempre considerada de má fé, mesmo quando seja titulada.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 554515,
+        "end": 554815
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

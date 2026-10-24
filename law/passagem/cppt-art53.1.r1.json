@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art53.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art53",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "1 - O procedimento da iniciativa do contribuinte será obrigatoriamente arquivado se ficar parado mais de 90 dias por motivo a este imputável.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 69883,
+        "end": 70024
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

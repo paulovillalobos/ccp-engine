@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art247.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art247",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2011-01-01",
+      "text": "2 - No caso de o tribunal tributário de 1.ª instância não poder efectuar a liquidação por não dispor dos elementos necessários, solicitá-los-á ao órgão da execução fiscal para que lhes forneça no prazo que fixar.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 303250,
+        "end": 303462
+      },
+      "valid_from": "2011-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

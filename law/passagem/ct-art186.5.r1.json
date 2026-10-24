@@ -1,0 +1,23 @@
+{
+  "id": "ct:art186.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art186",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - A empresa de trabalho temporário deve informar o utilizador de que o trabalhador está considerado apto em resultado do exame de saúde, dispõe das qualificações profissionais adequadas e tem a informação referida no n.º 2.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 269478,
+        "end": 269703
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

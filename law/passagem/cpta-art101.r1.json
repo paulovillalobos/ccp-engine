@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art101",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:titulo-iii.capitulo-i.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 101.º",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "Artigo 101.º\nPrazo\nOs processos do contencioso pré-contratual devem ser intentados no prazo de um mês, por qualquer pessoa ou entidade com legitimidade nos termos gerais, sendo aplicável à contagem do prazo o disposto no n.º 3 do artigo 58.º e nos artigos 59.º e 60.º",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 153948,
+        "end": 154215
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

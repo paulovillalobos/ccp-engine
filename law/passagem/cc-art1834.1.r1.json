@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1834.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1834",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1978-04-01",
+      "text": "1. Se o filho nasceu depois de a mãe ter contraído novo casamento sem que o primeiro se achasse dissolvido ou dentro dos trezentos dias após a sua dissolução, presume-se que o pai é o segundo marido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 851028,
+        "end": 851227
+      },
+      "valid_from": "1978-04-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

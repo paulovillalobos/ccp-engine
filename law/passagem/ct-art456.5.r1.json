@@ -1,0 +1,23 @@
+{
+  "id": "ct:art456.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art456",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2019-10-01",
+      "text": "5 - O serviço referido nos números anteriores remete ao magistrado do Ministério Público no tribunal competente certidão ou cópia certificada da acta da assembleia que delibere a extinção, acompanhada de apreciação fundamentada sobre a legalidade da deliberação, nos oito dias posteriores à publicação do aviso.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 564438,
+        "end": 564749
+      },
+      "valid_from": "2019-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

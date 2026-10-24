@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art200.4.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art200.4",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "c) De entidades com interesse patrimonial equiparável.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 130133,
+        "end": 130187
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

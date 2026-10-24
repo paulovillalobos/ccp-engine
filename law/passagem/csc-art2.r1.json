@@ -1,0 +1,23 @@
+{
+  "id": "csc:art2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 2.º",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "Artigo 2.º\n(Direito subsidiário)\nOs casos que a presente lei não preveja são regulados segundo a norma desta lei aplicável aos casos análogos e, na sua falta, segundo as normas do Código Civil sobre o contrato de sociedade no que não seja contrário nem aos princípios gerais da presente lei nem aos princípios informadores do tipo adoptado.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 26396,
+        "end": 26736
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

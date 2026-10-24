@@ -1,0 +1,23 @@
+{
+  "id": "cp:art365.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art365",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Quem, por qualquer meio, perante autoridade ou publicamente, com a consciência da falsidade da imputação, denunciar ou lançar sobre determinada pessoa a suspeita da prática de crime, com intenção de que contra ela se instaure procedimento, é punido com pena de prisão até 3 anos ou com pena de multa.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 435849,
+        "end": 436153
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

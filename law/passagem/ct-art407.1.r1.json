@@ -1,0 +1,23 @@
+{
+  "id": "ct:art407.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art407",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "1 - A entidade que viole o disposto nos n.os 1 ou 2 do artigo 405.º ou no artigo anterior é punida com pena de multa até 120 dias.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 514383,
+        "end": 514513
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

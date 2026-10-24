@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1861.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1861",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2025-04-02",
+      "text": "1 - A perfilhação é anulável por incapacidade do perfilhante a requerimento deste ou de seus pais, tutor ou acompanhante, se assim resultar de medidas de acompanhamento judicialmente decretadas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 868660,
+        "end": 868854
+      },
+      "valid_from": "2025-04-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

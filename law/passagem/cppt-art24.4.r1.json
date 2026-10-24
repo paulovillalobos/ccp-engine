@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art24.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art24",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2025-07-01",
+      "text": "4 - Salvo o disposto em lei especial, a validade das certidões passadas pela administração tributária é de um ano, exceto as certidões comprovativas de situação tributária regularizada, que têm a validade de quatro meses.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 33155,
+        "end": 33376
+      },
+      "valid_from": "2025-07-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

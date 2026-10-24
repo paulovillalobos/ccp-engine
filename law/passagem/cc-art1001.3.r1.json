@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1001.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1001",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "3. Sendo dissolvida a sociedade, os herdeiros assumem todos os direitos inerentes, na sociedade em liquidação, à quota do sócio falecido.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 417782,
+        "end": 417919
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

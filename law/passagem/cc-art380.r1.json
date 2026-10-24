@@ -1,0 +1,23 @@
+{
+  "id": "cc:art380",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-iv.subseccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 380.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 380.º\n(Registos e outros escritos)\n1. Os registos e outros escritos onde habitualmente alguém tome nota dos pagamentos que lhe são efectuados fazem prova contra o seu autor, se indicarem inequìvocamente, posto que mediante um simples sinal, a recepção de algum pagamento; mas o autor do escrito pode provar, por qualquer meio, que a nota não corresponde à realidade.\n2. Têm igual força probatória os mesmos escritos, quando feitos e assinados por outrem, segundo instruções do credor.\n3. É aplicável nestes casos a regra da indivisibilidade, nos termos prescritos para a prova por confissão.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 174245,
+        "end": 174843
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

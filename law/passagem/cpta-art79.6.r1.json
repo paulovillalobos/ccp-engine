@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art79.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art79",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "6 - [Revogado].",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 107700,
+        "end": 107715
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

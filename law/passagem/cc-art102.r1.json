@@ -1,0 +1,23 @@
+{
+  "id": "cc:art102",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-i.capitulo-i.seccao-iv.subseccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 102.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 102.º\n(Entrega de bens aos legatários e outros interessados)\nOs legatários, como todos aqueles que por morte do ausente teriam direito a bens determinados, podem requerer, logo que a ausência esteja justificada, independentemente da partilha, que esses bens lhes sejam entregues.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 50023,
+        "end": 50309
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

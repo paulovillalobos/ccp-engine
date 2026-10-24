@@ -1,0 +1,23 @@
+{
+  "id": "cc:art540",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii.titulo-i.capitulo-iii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 540.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 540.º\n(Não perecimento do género)\nEnquanto a prestação for possível com coisas do género estipulado, não fica o devedor exonerado pelo facto de perecerem aquelas com que se dispunha a cumprir.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 240521,
+        "end": 240720
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

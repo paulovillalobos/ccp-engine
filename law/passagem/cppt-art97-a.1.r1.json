@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art97-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art97-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Os valores atendíveis, para efeitos de custas ou outros previstos na lei, para as acções que decorram nos tribunais tributários, são os seguintes:\na) Quando seja impugnada a liquidação, o da importância cuja anulação se pretende;\nb) Quando se impugne o acto de fixação da matéria colectável, o valor contestado;\nc) Quando se impugne o acto de fixação dos valores patrimoniais, o valor contestado;\nd) No recurso contencioso do indeferimento total ou parcial ou da revogação de isenções ou outros benefícios fiscais, o do valor da isenção ou benefício;\ne) No contencioso associado à execução fiscal, o valor correspondente ao montante da dívida exequenda ou da parte restante, quando haja anulação parcial, exceto nos casos de compensação, penhora ou venda de bens ou direitos, em que corresponde ao valor dos mesmos, se inferior.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 130656,
+        "end": 131488
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

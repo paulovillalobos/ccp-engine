@@ -1,0 +1,23 @@
+{
+  "id": "ct:art3.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art3",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - Sempre que uma norma legal reguladora de contrato de trabalho determine que a mesma pode ser afastada por instrumento de regulamentação colectiva de trabalho entende-se que o não pode ser por contrato de trabalho.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 22451,
+        "end": 22668
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

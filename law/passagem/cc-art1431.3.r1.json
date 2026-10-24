@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1431.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1431",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2022-04-10",
+      "text": "3 - Os condóminos podem fazer-se representar por procurador.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 640095,
+        "end": 640155
+      },
+      "valid_from": "2022-04-10",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csc:art262.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art262",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1998-11-11",
+      "text": "5 - São aplicáveis ao revisor oficial de contas as incompatibilidades estabelecidas para os membros do conselho fiscal.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 403154,
+        "end": 403273
+      },
+      "valid_from": "1998-11-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

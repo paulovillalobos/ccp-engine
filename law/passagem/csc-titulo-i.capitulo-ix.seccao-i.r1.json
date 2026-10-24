@@ -1,0 +1,23 @@
+{
+  "id": "csc:titulo-i.capitulo-ix.seccao-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:titulo-i.capitulo-ix",
+  "kind": "secao",
+  "label": "Secção I",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "Secção I\nFusão interna",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 146601,
+        "end": 146623
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

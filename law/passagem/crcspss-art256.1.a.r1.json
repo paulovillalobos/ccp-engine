@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art256.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art256.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) Duplicados das declarações para efeitos fiscais, mesmo que de impostos já abolidos, devidamente autenticadas pelos serviços fiscais, ou das respectivas certidões;",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 156657,
+        "end": 156822
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-v.titulo-i.capitulo-v",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-v.titulo-i",
+  "kind": "capitulo",
+  "label": "Capítulo V",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Capítulo V\nRepúdio da herança",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 998961,
+        "end": 998990
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

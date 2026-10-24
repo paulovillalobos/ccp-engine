@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art98.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:art98",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "1999-10-31",
+      "text": "5 - Sem prejuízo dos demais casos de regularização da petição, esta pode ser corrigida a convite do tribunal em caso de errada identificação do autor do acto impugnado, salvo se o erro for manifestamente indesculpável.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 132909,
+        "end": 133127
+      },
+      "valid_from": "1999-10-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

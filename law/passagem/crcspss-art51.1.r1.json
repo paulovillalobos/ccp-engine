@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art51.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art51",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A taxa contributiva global é desagregada por cada eventualidade que integra o regime geral dos trabalhadores por conta de outrem nos seguintes termos:\n(ver documento original)",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 37986,
+        "end": 38165
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1646",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-iv.titulo-ii.capitulo-v.seccao-ii.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 1646.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 1646.º\n(Anulação fundada na falta de testemunhas)\nA acção de anulação por falta de testemunhas só pode ser intentada dentro do ano posterior à celebração do casamento.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 739559,
+        "end": 739733
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

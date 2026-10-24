@@ -1,0 +1,23 @@
+{
+  "id": "cc:art377",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-i.titulo-ii.subtitulo-iv.capitulo-ii.seccao-iv.subseccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 377.º",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Artigo 377.º\n(Documentos autenticados)\nOs documentos particulares autenticados nos termos da lei notarial têm a força probatória dos documentos autênticos, mas não os substituem quando a lei exija documento desta natureza para a validade do acto.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 173330,
+        "end": 173576
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

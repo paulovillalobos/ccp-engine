@@ -1,0 +1,23 @@
+{
+  "id": "csc:art156.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art156",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "3 - Se não puder ser feito o reembolso integral, o activo existente é distribuído pelos sócios, por forma que a diferença para menos recaia em cada um deles na proporção da parte que lhe competir nas perdas da sociedade; para esse efeito, haverá que ter em conta a parte das entradas devida pelos sócios.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 289651,
+        "end": 289955
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

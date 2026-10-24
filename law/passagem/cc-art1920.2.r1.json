@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1920.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1920",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-11-30",
+      "text": "2. Atendendo em especial ao valor dos bens, pode nomeadamente o tribunal exigir a prestação de contas e de informações sobre a administração e estado do património do filho e, quando estas providências não sejam suficientes, a prestação de caução.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 918552,
+        "end": 918799
+      },
+      "valid_from": "2008-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

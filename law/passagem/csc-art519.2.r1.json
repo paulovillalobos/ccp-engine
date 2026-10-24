@@ -1,0 +1,23 @@
+{
+  "id": "csc:art519.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art519",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-03-21",
+      "text": "2 - Com a mesma pena será punido aquele que, nas circunstâncias descritas no número anterior, prestar maliciosamente informações incompletas e que possam induzir os destinatários a conclusões erróneas de efeito idêntico ou semelhante ao que teriam informações falsas sobre o mesmo objecto.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 745536,
+        "end": 745825
+      },
+      "valid_from": "2022-03-21",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

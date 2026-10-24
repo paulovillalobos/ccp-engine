@@ -1,0 +1,23 @@
+{
+  "id": "cp:art101.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art101",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-09-05",
+      "text": "1 - Em caso de condenação por crime praticado na condução de veículo com motor ou com ela relacionado, ou na pilotagem de aeronave com ou sem motor, ou com grosseira violação dos deveres que a um condutor ou piloto incumbem, ou de absolvição só por falta de imputabilidade, o tribunal decreta a cassação do título de condução ou do título ou licença de pilotagem quando, em face do facto praticado e da personalidade do agente:\na) Houver fundado receio de que possa vir a praticar outros factos da mesma espécie; ou\nb) Dever ser considerado inapto para a condução de veículo com motor ou para a pilotagem de aeronave com ou sem motor.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 176808,
+        "end": 177442
+      },
+      "valid_from": "2023-09-05",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

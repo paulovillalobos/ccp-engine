@@ -1,0 +1,23 @@
+{
+  "id": "ct:art269.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art269",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "2 - O trabalhador que presta trabalho normal em dia feriado em empresa não obrigada a suspender o funcionamento nesse dia tem direito a descanso compensatório com duração de metade do número de horas prestadas ou a acréscimo de 50 % da retribuição correspondente, cabendo a escolha ao empregador.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 367754,
+        "end": 368050
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

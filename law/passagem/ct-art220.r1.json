@@ -1,0 +1,23 @@
+{
+  "id": "ct:art220",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:livro-i.titulo-ii.capitulo-ii.seccao-ii.subseccao-v",
+  "kind": "artigo",
+  "label": "Artigo 220.º",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "Artigo 220.º\nNoção de trabalho por turnos\nConsidera-se trabalho por turnos qualquer organização do trabalho em equipa em que os trabalhadores ocupam sucessivamente os mesmos postos de trabalho, a um determinado ritmo, incluindo o rotativo, contínuo ou descontínuo, podendo executar o trabalho a horas diferentes num dado período de dias ou semanas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 315017,
+        "end": 315365
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

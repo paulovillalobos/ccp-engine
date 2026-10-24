@@ -1,0 +1,23 @@
+{
+  "id": "csc:art366.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art366",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-03-02",
+      "text": "2 - A proposta de deliberação deve indicar especificamente:\na) O quantitativo global da emissão e os motivos que a justificam, o valor nominal das obrigações e o preço por que serão emitidas e reembolsadas ou o modo de o determinar, a taxa de juro e o plano de amortização do empréstimo;\nb) As bases e os termos da conversão;\nc) Se aos accionistas deve ser retirado o direito previsto no n.º 1 do artigo seguinte e as razões de tal medida;\nd) A identificação dos subscritores e o número de obrigações a subscrever por cada um, quando a sociedade não recorra a subscrição pública.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 521947,
+        "end": 522526
+      },
+      "valid_from": "2015-03-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

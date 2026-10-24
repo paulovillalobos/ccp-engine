@@ -1,0 +1,23 @@
+{
+  "id": "csc:art211.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art211",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "1986-09-07",
+      "text": "2 - A deliberação referida no número anterior não pode ser tomada antes de interpelados todos os sócios para integral liberação das suas quotas de capital.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 343544,
+        "end": 343699
+      },
+      "valid_from": "1986-09-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

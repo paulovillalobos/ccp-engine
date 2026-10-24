@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art69.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art69",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "1 - Em situações de inércia da Administração, o direito de ação caduca no prazo de um ano contado desde o termo do prazo legal estabelecido para a emissão do ato ilegalmente omitido.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 89524,
+        "end": 89706
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

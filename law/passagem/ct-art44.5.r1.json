@@ -1,0 +1,23 @@
+{
+  "id": "ct:art44.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art44",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-05-01",
+      "text": "5 - O candidato a adoptante não tem direito a licença em caso de adopção de filho do cônjuge ou de pessoa com quem viva em união de facto.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 79440,
+        "end": 79578
+      },
+      "valid_from": "2023-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

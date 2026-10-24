@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art95.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art95",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - São ainda abrangidos os trabalhadores que exercem a respectiva actividade em explorações de silvicultura, pecuária, hortofruticultura, floricultura, avicultura e apicultura, e em actividades agrícolas ainda que a terra tenha uma função de mero suporte de instalações, as quais são equiparadas a actividades e explorações agrícolas.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 62091,
+        "end": 62426
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

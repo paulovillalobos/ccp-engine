@@ -1,0 +1,23 @@
+{
+  "id": "cp:art256.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art256",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-09-15",
+      "text": "2 - A tentativa é punível.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 347436,
+        "end": 347462
+      },
+      "valid_from": "2007-09-15",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

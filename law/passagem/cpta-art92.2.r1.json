@@ -1,0 +1,23 @@
+{
+  "id": "cpta:art92.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cpta",
+  "parent": "cpta:art92",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2019-11-16",
+      "text": "2 - Para efeitos do disposto no número anterior, a cada juiz-adjunto é facultado o acesso ao processo eletrónico.",
+      "raw": "raw:dr-consolidado:lei:cpta",
+      "offsets": {
+        "start": 140013,
+        "end": 140126
+      },
+      "valid_from": "2019-11-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ct:art202.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art202",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "3 - O empregador deve assegurar que o trabalhador que preste trabalho no exterior da empresa vise o registo imediatamente após o seu regresso à empresa, ou envie o mesmo devidamente visado, de modo que a empresa disponha do registo devidamente visado no prazo de 15 dias a contar da prestação.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 287002,
+        "end": 287295
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cc:art1081.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:art1081",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2006-06-27",
+      "text": "4 - Na falta de acordo, o horário é, nos dias úteis, das 17 horas e 30 minutos às 19 horas e 30 minutos e, aos sábados e domingos, das 15 às 19 horas.",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 462991,
+        "end": 463141
+      },
+      "valid_from": "2006-06-27",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

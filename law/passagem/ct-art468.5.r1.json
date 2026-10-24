@@ -1,0 +1,23 @@
+{
+  "id": "ct:art468.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art468",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2009-02-17",
+      "text": "5 - Os membros de direcção que excedam o número máximo calculado nos termos dos números anteriores têm direito a faltas justificadas até ao limite de 33 por ano.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 576947,
+        "end": 577108
+      },
+      "valid_from": "2009-02-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

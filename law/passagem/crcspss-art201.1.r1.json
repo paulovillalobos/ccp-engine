@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art201.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art201",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1 - A assunção por terceiro de dívida à segurança social pode ser autorizada por despacho do membro do Governo responsável pela área da segurança social, podendo ser delegada nos termos do Código do Procedimento Administrativo.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 130255,
+        "end": 130482
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

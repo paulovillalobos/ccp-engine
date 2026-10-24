@@ -1,0 +1,23 @@
+{
+  "id": "cp:art104.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art104",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Quando o agente não for declarado inimputável e for condenado em prisão, mas se mostrar que, por virtude de anomalia psíquica de que sofria já ao tempo do crime, o regime dos estabelecimentos comuns lhe será prejudicial, ou que ele perturbará seriamente esse regime, o tribunal ordena o seu internamento em estabelecimento destinado a inimputáveis pelo tempo correspondente à duração da pena.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 181225,
+        "end": 181621
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

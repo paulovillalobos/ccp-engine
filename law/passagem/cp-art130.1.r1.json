@@ -1,0 +1,23 @@
+{
+  "id": "cp:art130.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art130",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2017-05-31",
+      "text": "1 - Legislação especial fixa as condições em que o Estado poderá assegurar a indemnização devida em consequência da prática de actos criminalmente tipificados, sempre que não puder ser satisfeita pelo agente.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 209826,
+        "end": 210034
+      },
+      "valid_from": "2017-05-31",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cp:art14.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art14",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Age com dolo quem, representando um facto que preenche um tipo de crime, actuar com intenção de o realizar.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 88983,
+        "end": 89094
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

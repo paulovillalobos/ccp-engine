@@ -1,0 +1,23 @@
+{
+  "id": "cp:art255.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cp",
+  "parent": "cp:art255",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2017-05-01",
+      "text": "d) Moeda: o papel moeda, compreendendo as notas de banco, e a moeda metálica, que tenham, esteja legalmente previsto que venham a ter ou tenham tido nos últimos 20 anos curso legal em Portugal ou no estrangeiro.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 345952,
+        "end": 346163
+      },
+      "valid_from": "2017-05-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

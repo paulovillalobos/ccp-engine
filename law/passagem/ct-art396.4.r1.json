@@ -1,0 +1,23 @@
+{
+  "id": "ct:art396.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:ct",
+  "parent": "ct:art396",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-03-20",
+      "text": "4 - No caso de contrato a termo, a indemnização não pode ser inferior ao valor das retribuições vincendas.",
+      "raw": "raw:dr-consolidado:lei:ct",
+      "offsets": {
+        "start": 506851,
+        "end": 506957
+      },
+      "valid_from": "2018-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

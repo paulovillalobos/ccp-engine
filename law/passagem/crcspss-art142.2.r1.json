@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art142.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art142",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2 - A cessação ou suspensão do exercício de actividade não prejudica o direito à protecção na eventualidade de parentalidade desde que se encontrem satisfeitas as respectivas condições de atribuição.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 90606,
+        "end": 90805
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

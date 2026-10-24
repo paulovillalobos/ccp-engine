@@ -1,0 +1,23 @@
+{
+  "id": "crcspss:art259.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:crcspss",
+  "parent": "crcspss:art259",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "b) Ao valor mensal correspondente a três vezes o valor do IAS dos apoios sociais, salvo se o interessado fizer prova, através de declaração emitida pela entidade gestora do sistema de protecção social que o abrange, de qual o valor das remunerações auferidas nos últimos 12 meses anteriores ao do requerimento, caso em que será a média desta a considerada.",
+      "raw": "raw:dr-consolidado:diploma:crcspss",
+      "offsets": {
+        "start": 158970,
+        "end": 159326
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cppt:art80",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cppt",
+  "parent": "cppt:titulo-ii.capitulo-vii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 80.º",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 80.º\nCitação para reclamação de créditos tributários\n1 - Salvo nos casos expressamente previstos na lei, em processo de execução que não tenha natureza tributária, é obrigatoriamente citado o diretor do órgão periférico regional da área do domicílio fiscal ou da sede do executado, para apresentar, no prazo de 15 dias, certidão de quaisquer dívidas de tributos à Fazenda Pública imputadas ao executado que possam ser objeto de reclamação de créditos, sob pena de nulidade dos atos posteriores à data em que a citação devia ter sido efetuada.\n2 - Não havendo dívidas, a certidão referida no número anterior será substituída por simples comunicação através de ofício.\n3 - As certidões referidas no n.º 1 serão remetidas, mediante recibo, ao respectivo representante do Ministério Público e delas deverão constar, além da natureza, montante e período de tempo de cada um dos tributos ou outras dívidas, a matéria tributável que produziu esse tributo ou a causa da dívida, a indicação dos artigos matriciais dos prédios sobre que recaiu, o montante das custas, havendo execução, e a data a partir da qual são devidos juros de mora.",
+      "raw": "raw:dr-consolidado:lei:cppt",
+      "offsets": {
+        "start": 100377,
+        "end": 101512
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

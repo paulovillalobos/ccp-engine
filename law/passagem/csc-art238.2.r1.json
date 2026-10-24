@@ -1,0 +1,23 @@
+{
+  "id": "csc:art238.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:csc",
+  "parent": "csc:art238",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2011-04-06",
+      "text": "2 - Dividida a quota, a amortização recairá sobre a quota do contitular relativamente ao qual o fundamento da amortização tenha ocorrido; na falta de divisão, não pode ser amortizada toda a quota.",
+      "raw": "raw:dr-consolidado:lei:csc",
+      "offsets": {
+        "start": 371561,
+        "end": 371757
+      },
+      "valid_from": "2011-04-06",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

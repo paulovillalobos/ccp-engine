@@ -1,0 +1,23 @@
+{
+  "id": "cc:livro-ii.titulo-ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:18:23Z",
+  "norma": "norma:cc",
+  "parent": "cc:livro-ii",
+  "kind": "titulo",
+  "label": "Título II",
+  "versions": [
+    {
+      "version": "1966-11-30",
+      "text": "Título II\nDos contratos em especial",
+      "raw": "raw:dr-consolidado:lei:cc",
+      "offsets": {
+        "start": 369524,
+        "end": 369559
+      },
+      "valid_from": "1966-11-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}
