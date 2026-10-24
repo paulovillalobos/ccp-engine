@@ -774,3 +774,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   green from this commit on.
 - Next: D0.3 remissões to passages.
 - Why: a limiar rule for the JOUE thresholds cites these passages.
+
+## 2026-10-24 D0.3 remissões resolved to passages (commit: D0.3: remissões resolved to the article, number or alínea they name; COVERAGE regenerated)
+- Done: tools/coverage.py reads «alínea x) do n.º N do artigo M.º» before the act's name and resolves to the most
+  specific passage that exists (alínea, number, article); COVERAGE.md lists every resolution.
+- Result: 71 references; 26 name an article (11 of Portuguese acts, 15 of EU directives not captured); the 11
+  Portuguese ones all resolve (cpa:art66, cpa:art87 x3, cpa:art161, ct:art140.2, cc:art566.3, cpta:art100.1,
+  lei-21-2023:art2, crcspss:art208.2, cppt:art177-a.1), 6 down to the number. COVERAGE: 373 normas, 53 captured, 47
+  structured, 256 with vigências. test_d0 green (3/3); verify ok.
+- Next: B3 rules by two families.
+- Why: a rule's exception or remissão cites the passage of the other act, not just its name.

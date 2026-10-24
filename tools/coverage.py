@@ -55,7 +55,7 @@ NUMBERED = re.compile(r"(Decreto-Lei|Lei Orgânica|Lei|Portaria|Decreto Legislat
                       r"([0-9]+(?:-[A-Z])?)/([0-9]{2,4})(?:/([A-Z]))?")
 EU = re.compile(r"(Diretiva|Regulamento(?: Delegado| de Execução)? \((?:UE|CE)\)|Decisão)(?: n\.º)? ([0-9]{2,4}/[0-9]+(?:/(?:UE|CE|CEE))?)")
 NAMED = re.compile("|".join(re.escape(k) for k in sorted(CODES, key=len, reverse=True)))
-ARTIGO_BEFORE = re.compile(r"artigo ([0-9]+)\.º(?:-([A-Z]))? d[oa]s? (?:referid[oa] )?$")
+ARTIGO_BEFORE = re.compile(r"(?:alínea ([a-z])\) do )?(?:n\.º ([0-9]+) do )?artigo ([0-9]+)\.º(?:-([A-Z]))? d[oa]s? (?:referid[oa] )?$")
 # Phase 3 (FILL-PLAN B2b.3): item, norma id, the address read, the finding, and the words in that raw that show it
 PHASE3 = [
     ("Lei 30/2021 (medidas especiais)", "norma:lei-30-2021", None, None, None),
@@ -172,9 +172,10 @@ def remissoes(store):
                 if nxt:
                     end = nxt.end()
             taken.add((start, end))
-            art = ARTIGO_BEFORE.search(own[max(0, start - 60):start])
+            art = ARTIGO_BEFORE.search(own[max(0, start - 90):start])
             out.append({"passage": p["id"], "version": v["version"], "words": text[start:end], "offsets": {"start": start, "end": end},
-                        "target": target, "scope": scope, "artigo": (art[1] + (f"-{art[2].lower()}" if art[2] else "")) if art else None})
+                        "target": target, "scope": scope, "artigo": (art[3] + (f"-{art[4].lower()}" if art[4] else "")) if art else None,
+                        "numero": art[2] if art else None, "alinea": art[1] if art else None})
     return sorted(out, key=lambda r: (r["passage"], r["offsets"]["start"]))
 
 
@@ -188,7 +189,8 @@ def remissoes_report(store):
         a["count"] += 1
         a["passages"].add(r["passage"])
         n = normas.get(r["target"])
-        if n and r["artigo"] and f"{n['short']}:art{r['artigo']}" in passages:
+        r["resolved"] = resolve(n, r, passages) if n and r["artigo"] else None
+        if r["resolved"]:
             a["resolved"] += 1
     for a in acts.values():
         n = normas.get(a["target"])
@@ -200,7 +202,24 @@ def remissoes_report(store):
             "distinct_pt": len(pt), "captured_pt": sum(a["captured"] for a in pt),
             "distinct_eu": sum(a["scope"] == "eu" for a in acts.values()),
             "resolved_to_passage": sum(a["resolved"] for a in acts.values()),
-            "with_artigo": sum(1 for r in rows if r["artigo"])}
+            "with_artigo": sum(1 for r in rows if r["artigo"]),
+            "with_artigo_pt": sum(1 for r in rows if r["artigo"] and r["scope"] == "pt"),
+            "resolved_pt": sum(1 for r in rows if r["resolved"] and r["scope"] == "pt"),
+            "resolved_below_article": sum(1 for r in rows if r["resolved"] and r["resolved"].count(".") > 0),
+            "resolutions": [{"passage": r["passage"], "words": r["words"], "artigo": r["artigo"], "numero": r["numero"], "alinea": r["alinea"],
+                             "to": r["resolved"]} for r in rows if r["artigo"]]}
+
+
+def resolve(norma, r, passages):
+    """The most specific passage of the cited act the words name: alínea of the number of the article, the number, the
+    article; None when the act has no such passage (not structured, or not captured)."""
+    base = f"{norma['short']}:art{r['artigo']}"
+    tries = [f"{base}.{r['numero']}.{r['alinea']}"] if r["numero"] and r["alinea"] else []
+    tries += [f"{base}.{r['numero']}"] if r["numero"] else ([f"{base}.{r['alinea']}"] if r["alinea"] else [])
+    for pid in tries + [base]:
+        if pid in passages:
+            return pid
+    return None
 
 
 def norma_rows(store):
@@ -272,7 +291,12 @@ def render(store):
           f"- atos portugueses distintos: {rep['distinct_pt']}; capturados: {rep['captured_pt']}"
           + (f" ({100 * rep['captured_pt'] // rep['distinct_pt']} %)" if rep["distinct_pt"] else ""),
           f"- atos da UE distintos: {rep['distinct_eu']} (não capturados nesta fase salvo os limiares)",
-          f"- resolvidas a uma passagem do ato citado: {rep['resolved_to_passage']}", "",
+          f"- resolvidas a uma passagem do ato citado: {rep['resolved_to_passage']}; das que nomeiam um artigo de ato "
+          f"português: {rep['resolved_pt']} de {rep['with_artigo_pt']}, {rep['resolved_below_article']} até ao número ou à alínea", "",
+          "| passagem do CCP | palavras | artigo / n.º / alínea | resolvida a |", "|---|---|---|---|"]
+    for x in rep["resolutions"]:
+        L.append(f"| {x['passage']} | {x['words']} | {x['artigo']} / {x['numero'] or '—'} / {x['alinea'] or '—'} | {x['to'] or '—'} |")
+    L += ["",
           "| alvo | âmbito | referências | registado | capturado | resolvidas | onde (primeiras) |", "|---|---|---|---|---|---|---|"]
     for a in rep["acts"]:
         L.append(f"| {a['target']} | {a['scope']} | {a['count']} | {yes(a['registered'])} | {yes(a['captured'])} | {a['resolved']} | {', '.join(a['passages'][:3])} |")
