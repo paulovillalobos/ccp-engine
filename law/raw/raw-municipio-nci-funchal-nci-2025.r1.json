@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:nci:funchal-nci-2025",
+  "revision": 1,
+  "recorded_at": "2026-10-24T16:20:39Z",
+  "source": "municipio",
+  "kind": "nci",
+  "source_id": "funchal-nci-2025",
+  "sha256": "ad447f0f96e84d07f1eb3a46946fe921b87a86370415d971581b3fbf5f3a495b",
+  "bytes": "raw_bytes/ad447f0f96e84d07f1eb3a46946fe921b87a86370415d971581b3fbf5f3a495b",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://cmfdoc.funchal.pt/media/k2/attachments/Norma_De_Controlo_Interno_2025.pdf",
+  "captured_at": "2026-10-24T16:20:37Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

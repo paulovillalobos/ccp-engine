@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:nci:gaia-nci-2024",
+  "revision": 1,
+  "recorded_at": "2026-10-24T16:20:30Z",
+  "source": "municipio",
+  "kind": "nci",
+  "source_id": "gaia-nci-2024",
+  "sha256": "c0b6f49558354f5023de0b76dff1fd40274f427932e1f0ba95febdc3fcd5d5a9",
+  "bytes": "raw_bytes/c0b6f49558354f5023de0b76dff1fd40274f427932e1f0ba95febdc3fcd5d5a9",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://www.cm-gaia.pt/fotos/editor2/pcnta/7_nci_2024.pdf",
+  "captured_at": "2026-10-24T16:20:29Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

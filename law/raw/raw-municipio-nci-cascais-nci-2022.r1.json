@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:nci:cascais-nci-2022",
+  "revision": 1,
+  "recorded_at": "2026-10-24T16:20:34Z",
+  "source": "municipio",
+  "kind": "nci",
+  "source_id": "cascais-nci-2022",
+  "sha256": "5ed2dacfc92b1ac0ececb48575d0fc8e496be040c727bb2c58f0998750ec19d0",
+  "bytes": "raw_bytes/5ed2dacfc92b1ac0ececb48575d0fc8e496be040c727bb2c58f0998750ec19d0",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://www.cascais.pt/sites/default/files/anexos/gerais/new/nci_-_norma_de_controlo_interno_2022_0.pdf",
+  "captured_at": "2026-10-24T16:20:33Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

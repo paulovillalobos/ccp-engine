@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:delegacao:coimbra-edital-414-2025",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:18:15Z",
+  "source": "municipio",
+  "kind": "delegacao",
+  "source_id": "coimbra-edital-414-2025",
+  "sha256": "0c3fe50a1d949938d03a3aec5fa2dd9251acb1f0c89d196b06b43bd9daa6f98c",
+  "bytes": "raw_bytes/0c3fe50a1d949938d03a3aec5fa2dd9251acb1f0c89d196b06b43bd9daa6f98c",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://www.cm-coimbra.pt/wp-content/uploads/2025/12/Edital-N.o-414_2025.pdf",
+  "captured_at": "2026-10-24T17:18:14Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

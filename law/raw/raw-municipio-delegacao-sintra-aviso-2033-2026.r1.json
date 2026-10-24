@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:delegacao:sintra-aviso-2033-2026",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:41:26Z",
+  "source": "municipio",
+  "kind": "delegacao",
+  "source_id": "sintra-aviso-2033-2026",
+  "sha256": "2fb520d735a27b4ffbcd2a530eec5fda9d21eaf0b97377be7b0f4069063376e9",
+  "bytes": "raw_bytes/2fb520d735a27b4ffbcd2a530eec5fda9d21eaf0b97377be7b0f4069063376e9",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://files.diariodarepublica.pt/2s/2026/02/022000000/0066100661.pdf",
+  "captured_at": "2026-10-24T17:41:18Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

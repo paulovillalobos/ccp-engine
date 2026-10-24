@@ -437,6 +437,28 @@
       "hash": "4ceafce2482bbc36e1832210ec3360e190b32c5f05c08bc6e4dc9e0829bf678f",
       "retired": false,
       "nota": "law/COVERAGE.md from the store (B2b)"
+    },
+    {
+      "id": "ferramenta:capture-page@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/capture_page.py",
+      "hash": "1f2dd4b1cda41ef05045448abbf37eed4aa92e7ad24ebf2ef280cc687c0b056a",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:pilot-municipios@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/pilot_municipios.py",
+      "hash": "a15e0699b85d6a598b7316111b19c9629cdf2d4fd3a9105be5f1fe67b4835ed0",
+      "retired": false
     }
   ]
 }

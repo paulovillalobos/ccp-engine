@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:nci:lisboa-nci-2011",
+  "revision": 1,
+  "recorded_at": "2026-10-24T16:21:12Z",
+  "source": "municipio",
+  "kind": "nci",
+  "source_id": "lisboa-nci-2011",
+  "sha256": "2ed32d06e6e96fcb6e477cef2058fb148389b1b25997a5e2d534583502dfd262",
+  "bytes": "raw_bytes/2ed32d06e6e96fcb6e477cef2058fb148389b1b25997a5e2d534583502dfd262",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://www.lisboa.pt/fileadmin/transparencia/prevencao_corrupcao/2.__SUP_894__JORGE_.pdf",
+  "captured_at": "2026-10-24T16:21:11Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

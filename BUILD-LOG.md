@@ -673,3 +673,41 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 2026-10-24T17:26:36Z  dlr-34-2008-m (diploma)      sha256 2db6e476b2eebd18431caef428bec23d67c0949f4fb90fa7c7cec5b286cfb790  133599 bytes
 2026-10-24T17:27:04Z  dlr-34-2008-m (lei)          sha256 9c1d3fd573a8fba033b068423cad4284c75d9792553f3112f66ac1ee027c4da2  224283 bytes
 ```
+
+## 2026-10-24 B2c municipal pilot (commit: B2c: municipal pilot of 10 municípios; law/MUNICIPIOS-PILOTO.md)
+- Done: law/municipios/piloto.json (per município: what was looked for, where, what was found) and
+  tools/pilot_municipios.py, which writes law/MUNICIPIOS-PILOTO.md counting only from the store (found = with a URL,
+  captured = raw in law/, with text = HTML text or a PDF text layer of >= 500 characters per page). data/ holds no BASE
+  anúncios, so the pilot is the default ten. Three record types: norma de controlo interno, delegação de competências
+  (who authorises spending), regulamento de compras / orçamento. Searches restricted to each município's domain and to
+  diariodarepublica.pt; a result counts only when the document names the município (one search summary attributed
+  Famalicão's Edital n.º 1736/2025 to four other municípios).
+- Result: 12 records found, 11 captured, 7 with text, in 10 municípios. Lisboa 2/2/1 (NCI = Deliberação 187/CM/2011,
+  80 pages mostly scanned; budget regulation 2025), Porto 1/1/1 (NCI 2024), Gaia 1/1/0 (NCI 2024, 76 pages, ~200
+  characters of text: a scan), Braga 0, Coimbra 2/2/2 (editais 414 and 406/2025: delegation and subdelegation, on its
+  own site), Sintra 1/1/0 and Cascais 2/2/1 (DR 2.ª série avisos that cite their delegations: the DR's PDFs are
+  encrypted, so their text is not verified here), Loures 1/0/0 (its site's TLS certificate does not verify from here;
+  not bypassed), Funchal 2/2/2 (NCI 2025; an aviso that cites the delegation despacho of 2026-01-08 / Edital n.º
+  19/2026), Ponta Delgada 0. Estimate for 308: ~370 records found, ~339 capturable, ~154 with text usable without OCR,
+  ~370 reads (~1.5 h of capture); searching, not reading, is the cost, and 3 of 10 large municípios gave nothing. No
+  municipal field was added to norma: that is a phase-3 DECISIONS row first.
+- Captured (one GET each, 3 s apart, nothing sent; municipal sites by tools/capture_page.py, plain GET; the Funchal
+  aviso by tools/capture_dr_consolidated.py):
+```
+2026-10-24T16:20:25Z  porto-nci-2024                     sha256 8461a9b7f41516a21da6142b1d5f6111aaa725eccd14655622e75b951d7c8b63  1650047 bytes
+2026-10-24T16:20:29Z  gaia-nci-2024                      sha256 c0b6f49558354f5023de0b76dff1fd40274f427932e1f0ba95febdc3fcd5d5a9  782705 bytes
+2026-10-24T16:20:33Z  cascais-nci-2022                   sha256 5ed2dacfc92b1ac0ececb48575d0fc8e496be040c727bb2c58f0998750ec19d0  514601 bytes
+2026-10-24T16:20:37Z  funchal-nci-2025                   sha256 ad447f0f96e84d07f1eb3a46946fe921b87a86370415d971581b3fbf5f3a495b  4978846 bytes
+2026-10-24T16:21:11Z  lisboa-nci-2011                    sha256 2ed32d06e6e96fcb6e477cef2058fb148389b1b25997a5e2d534583502dfd262  10384396 bytes
+2026-10-24T16:21:15Z  lisboa-regulamento-orcamento-2025  sha256 bce7f5658291cd84255f86ee0e72bdd4b31b2d111b7bc00aeeca4ca37200cc94  398046 bytes
+2026-10-24T17:18:14Z  coimbra-edital-414-2025            sha256 0c3fe50a1d949938d03a3aec5fa2dd9251acb1f0c89d196b06b43bd9daa6f98c  768708 bytes
+2026-10-24T17:18:18Z  coimbra-edital-406-2025            sha256 76881d53496f9c0376c845ed4410ed12a6348872cf26d467f50e83cef46250c3  400697 bytes
+2026-10-24T17:41:18Z  sintra-aviso-2033-2026             sha256 2fb520d735a27b4ffbcd2a530eec5fda9d21eaf0b97377be7b0f4069063376e9  57712 bytes
+2026-10-24T17:41:29Z  cascais-aviso-22089-2025           sha256 c35ed7fe1899a7630e385c8cece13d6d90aacfe121fbcbc273543d232a2a54cf  552420 bytes
+2026-10-24T17:41:41Z  funchal-aviso-6712-2026            sha256 dc0d2c28f04b917a062aa6541cfc80df1b505def19abef94de0647f5119389f4  116587 bytes
+```
+- Correction to the B2b entry: the tools registered there are vigente@4 and build-law@3 (not @5 / @4).
+- Registered: capture-page@1, pilot-municipios@1. verify: ok; tests/fill/test_b2c_pilot.py green.
+- Next: close the phase (four commands, CI, report for the independent review).
+- Why: the 308 municípios are contracting authorities; who may authorise a spend is their own law, and the pilot says
+  where it lives and what reading it costs before any of it enters the engine.

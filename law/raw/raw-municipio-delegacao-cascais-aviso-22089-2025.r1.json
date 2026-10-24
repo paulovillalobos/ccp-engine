@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:delegacao:cascais-aviso-22089-2025",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:41:38Z",
+  "source": "municipio",
+  "kind": "delegacao",
+  "source_id": "cascais-aviso-22089-2025",
+  "sha256": "c35ed7fe1899a7630e385c8cece13d6d90aacfe121fbcbc273543d232a2a54cf",
+  "bytes": "raw_bytes/c35ed7fe1899a7630e385c8cece13d6d90aacfe121fbcbc273543d232a2a54cf",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://files.diariodarepublica.pt/2s/2025/09/171000000/0023600236.pdf",
+  "captured_at": "2026-10-24T17:41:29Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

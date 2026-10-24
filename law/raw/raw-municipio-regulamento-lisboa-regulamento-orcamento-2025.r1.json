@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:regulamento:lisboa-regulamento-orcamento-2025",
+  "revision": 1,
+  "recorded_at": "2026-10-24T16:21:15Z",
+  "source": "municipio",
+  "kind": "regulamento",
+  "source_id": "lisboa-regulamento-orcamento-2025",
+  "sha256": "bce7f5658291cd84255f86ee0e72bdd4b31b2d111b7bc00aeeca4ca37200cc94",
+  "bytes": "raw_bytes/bce7f5658291cd84255f86ee0e72bdd4b31b2d111b7bc00aeeca4ca37200cc94",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://recrutamento.cm-lisboa.pt/cmlisboa-wirerecruit/uploads/writer_file/document/807/regulamento_do_orcamento_do_municipio_de_lisboa.pdf",
+  "captured_at": "2026-10-24T16:21:15Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}

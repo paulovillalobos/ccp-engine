@@ -1,0 +1,24 @@
+{
+  "id": "raw:municipio:delegacao:funchal-aviso-6712-2026",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:41:53Z",
+  "source": "municipio",
+  "kind": "delegacao",
+  "source_id": "funchal-aviso-6712-2026",
+  "sha256": "dc0d2c28f04b917a062aa6541cfc80df1b505def19abef94de0647f5119389f4",
+  "bytes": "raw_bytes/dc0d2c28f04b917a062aa6541cfc80df1b505def19abef94de0647f5119389f4",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/aviso/6712-2026-1076923256",
+  "captured_at": "2026-10-24T17:41:41Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "8abe25457d424be3b226aad9f69ef5473c62065ed8293cfa7806864564406bb7",
+    "bytes": "raw_bytes/8abe25457d424be3b226aad9f69ef5473c62065ed8293cfa7806864564406bb7"
+  }
+}

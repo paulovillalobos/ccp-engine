@@ -1,0 +1,20 @@
+{
+  "id": "raw:municipio:nci:porto-nci-2024",
+  "revision": 1,
+  "recorded_at": "2026-10-24T16:20:26Z",
+  "source": "municipio",
+  "kind": "nci",
+  "source_id": "porto-nci-2024",
+  "sha256": "8461a9b7f41516a21da6142b1d5f6111aaa725eccd14655622e75b951d7c8b63",
+  "bytes": "raw_bytes/8461a9b7f41516a21da6142b1d5f6111aaa725eccd14655622e75b951d7c8b63",
+  "media_type": "application/pdf",
+  "encoding": "binary",
+  "url": "https://www.cm-porto.pt/files/uploads/cms/1%20(1).%20Norma%20de%20Controlo%20Interno",
+  "captured_at": "2026-10-24T16:20:25Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.1: one urllib GET"
+  },
+  "text": null
+}
