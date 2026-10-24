@@ -1,0 +1,25 @@
+{
+  "id": "raw:eur-lex:regulamento:eu-2025-2487",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:19:03Z",
+  "source": "eur-lex",
+  "kind": "regulamento",
+  "source_id": "eu-2025-2487",
+  "sha256": "74ff010cafad382714ef5175a649650a359796bd1f57cccb9c5ba2027f47ec1a",
+  "bytes": "raw_bytes/74ff010cafad382714ef5175a649650a359796bd1f57cccb9c5ba2027f47ec1a",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=OJ:L_202502487",
+  "captured_at": "2026-10-24T16:12:58Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 20000"
+  },
+  "text": {
+    "extractor": "eurlex-html@1",
+    "sha256": "ce91500bada157311ec135254c3451b7069158caaa197f6c498ef57676d8bc5a",
+    "bytes": "raw_bytes/ce91500bada157311ec135254c3451b7069158caaa197f6c498ef57676d8bc5a"
+  },
+  "supersedes": 1
+}

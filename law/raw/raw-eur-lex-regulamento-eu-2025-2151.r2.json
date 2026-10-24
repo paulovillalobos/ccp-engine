@@ -1,0 +1,25 @@
+{
+  "id": "raw:eur-lex:regulamento:eu-2025-2151",
+  "revision": 2,
+  "recorded_at": "2026-10-24T20:18:42Z",
+  "source": "eur-lex",
+  "kind": "regulamento",
+  "source_id": "eu-2025-2151",
+  "sha256": "08a51a63f81c307e89182d374da1e667a90e71a4244f2cf577348815ded1c66a",
+  "bytes": "raw_bytes/08a51a63f81c307e89182d374da1e667a90e71a4244f2cf577348815ded1c66a",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=OJ:L_202502151",
+  "captured_at": "2026-10-24T16:12:51Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 20000"
+  },
+  "text": {
+    "extractor": "eurlex-html@1",
+    "sha256": "6a70f9e081cbf4687fb59a4d683d1c2e52874d36184ea8667c2854266b6dde88",
+    "bytes": "raw_bytes/6a70f9e081cbf4687fb59a4d683d1c2e52874d36184ea8667c2854266b6dde88"
+  },
+  "supersedes": 1
+}

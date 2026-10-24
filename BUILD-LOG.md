@@ -761,3 +761,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   written with them, used by D0.1).
 - Next: D0.1 EU acts.
 - Why: a rule that points to the Civil Code or the CPTA must find the article it points to.
+
+## 2026-10-24 D0.1 the EU threshold regulations structured (commit: D0.1: EUR-Lex extractor eurlex-html@1; the four EU threshold regulations structured)
+- Done: engine/extract.py `eurlex-html@1`: an Official Journal page -> date, title and ELI lines, then the enacting
+  terms (Artigo N.º; each point of a two-cell row as one line "1) ...", "a) ..."; the superscript ordinal "o" written º).
+  The four raw records get revision 2 with that text (bytes unchanged, D29 pattern); structure_codigo (D34) reads them;
+  each passage starts on the day the act applies, 2026-01-01, with an entra_em_vigor vigencia quoting art. 2.º (D35).
+- Result: eu-2025-2152 (Directive 2014/24/UE: 5 404 000 / 140 000 / 216 000 EUR), eu-2025-2150 (2014/25/UE: 432 000 /
+  5 404 000), eu-2025-2151 (2014/23/UE: 5 404 000), eu-2025-2487 (2009/81/CE: 432 000 / 5 404 000): 2 articles each,
+  their points and alíneas as passages; normas carry the https form of the ELI read on the page. test_d0 (1) green.
+- Note: the D0.2 commit registered the extractor's new hash before this commit carried the file; verify's PROV is
+  green from this commit on.
+- Next: D0.3 remissões to passages.
+- Why: a limiar rule for the JOUE thresholds cites these passages.
