@@ -25,7 +25,12 @@ run("M01b limiar verdict with manifest.package = old package (limiar not in it)"
 run("M02 verdict names rule revision 2 that does not exist", lambda s: edit(s, PRAZO, lambda o: o["rule"].update(revision=2)))
 run("M03 verdict valid_at before the cited passage version was in force", lambda s: edit(s, PRAZO, lambda o: o.update(valid_at="2026-09-15")))
 run("M04 verdict uses a fact of another unit", lambda s: edit(s, PRAZO, lambda o: o.update(unit="contrato:base:99000001")))
-run("M05 package includes a rule in state proposed", lambda s: None)  # fixture already does (agregada, proibicao) -> inspect separately
+def m05(s):
+    from engine.canon import content_hash
+    def fn(o):
+        o["rules"].append({"id": "regra:ccp:proibicao-fracionamento@v1", "revision": 1}); o["rules"].sort(key=lambda r: r["id"]); o["hash"] = content_hash(o["rules"])
+    edit(s, "pacote/ccp-2026-10-01.json", fn)
+run("M05 package names a rule whose state is proposed", m05)
 run("M06 manifest.log_head is not the log's head", lambda s: edit(s, PRAZO, lambda o: o["manifest"].update(log_head="a" * 64)))
 run("M07 reading chose passages the rule does not cite", lambda s: edit(s, LIM, lambda o: o["readings"][1].update(chosen_passages=["ccp:art113.2"])))
 run("M08 fact valid_at after the verdict's valid_at", lambda s: edit(s, "facto/proc-base-FX-2026-000001-prazo_propostas_dias-base-dump.json", lambda o: o.update(valid_at="2026-11-01")))

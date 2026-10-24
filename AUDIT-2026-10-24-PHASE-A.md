@@ -1,6 +1,6 @@
 # Audit of phase A (2026-10-24, same day, by the builder) — architecture rating 6/10
 
-Scope: the scaffold at tag `phase-a` (commit 82134e9). Method: the gate re-run from a clean tree; 23 mutations outside
+Scope: the scaffold at tag `phase-a` (commit 82134e9). Method: the gate re-run from a clean tree; 24 mutations outside
 the twelve broken overlays (`tools/redteam_verify.py`); the architecture graded on function, not stack: domain model, where
 the law lives, law in time, explainability, audit, change handling. "Works" is a 5.
 
@@ -17,11 +17,12 @@ the law lives, law in time, explainability, audit, change handling. "Works" is a
 | `evaluate()` | reproduces the three fixture verdicts (result, reason, citation, facts, manifest) and answers `nao_avaliado` with the right reason for selector absent, conflict, coverage, document without text |
 | Governance | human-only approve, no human approval of a reading, blind other-family settlement, no self-review, no self-adjudication, chain tamper detected: all refused by `Log` and by replay |
 
-## What does not hold: 22 of 23 red-team mutations pass verify
+## What does not hold: 22 of 24 red-team mutations pass verify
 
 verify v0 checks each invariant **locally** (one object against its schema, one quote against its passage, one event
 against the replay). It does not check **consistency across objects** and it does not **re-derive verdicts**, which
-invariant 3 says it must. The one caught (M17) was caught for a wrong quote, not for the semantic error.
+invariant 3 says it must. The two caught (M05, M17) were caught by side effects (a stale diff, a wrong quote), not by
+the check that should exist.
 
 | # | Mutation that passes verify | Invariant breached | Severity |
 |---|---|---|---|
@@ -43,7 +44,7 @@ invariant 3 says it must. The one caught (M17) was caught for a wrong quote, not
 | M21 | `held_out: true` without `frozen_at` | §8 | low |
 | M23 | natural person relabelled `privada` in the verdict, with name | 11 | medium: I11 trusts the verdict's own `type`; it must read the entity record |
 | M14 | orphan `raw_bytes` file | 1 | low |
-| M05 | a package naming a non-settled rule | §3 package = replay of settled rules | not demonstrated by a fixture but unchecked |
+| M05 | a package naming a `proposed` rule | §3 package = replay of settled rules | medium; caught only because the stored diff went stale (DIFF), not by a state check |
 
 ## Rating by axis (architecture as code, not as paper)
 
