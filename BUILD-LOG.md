@@ -184,3 +184,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   Registered ferramenta:vigente@2, structure@1, passages@1. test_b1 green; verify ok; 52 tests green.
 - Next: B2a.1 capture the history view of every article with a note (368 on the page: 365 code, 3 decree).
 - Why: the law can only be loaded once the text has a structure with offsets and the notes have a grammar.
+
+## 2026-10-24 red tests for B2b and B2c (commit: Tests: red criteria for B2b (corpus around the CCP) and B2c (municipal pilot))
+- Done: tests/fill/test_b2b_corpus.py (timeline acts 23/23 and every note diploma registered with jurisdiction and
+  scope; DL 111-B/2017, Lei 30/2021, DL 18/2008 with its entry-into-force article and the four retificações captured,
+  the acts with articles structured; >= 90 % of the distinct Portuguese acts the CCP refers to captured; each phase-3
+  norm registered and captured or reported missing in law/COVERAGE.md with the address read; an EU norma with its ELI;
+  Madeira registered or reported; COVERAGE.md equal to what tools/coverage.py renders) and tests/fill/test_b2c_pilot.py
+  (10 município rows with found / captured / with text counts, the default ten unless chosen by BASE volume, and an
+  estimate for 308). All six red. data/ holds no BASE anúncios yet, so the pilot is the default ten.
+- Correction to the B1 entry: the 594 artigo passages of the consolidated page are 568 of the code, 18 of the
+  approving decree (ccp:dl.artN) and 8 inside the decree's quotations (ccp:dl.art5.q1.art1 ...).
+- Next: B2a.1 (the history walk is running).
+- Why: the phase asks for the red tests before the work they judge.
