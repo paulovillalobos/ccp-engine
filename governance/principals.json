@@ -81,7 +81,7 @@
       "versao": 1,
       "code": "verify.py",
       "hash": "3a5adca40fc0b29a4763efe0d9dfd35cc0b9b8cb3c517d6dee6ba6ef7289ff95",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:make-fixtures@1",
@@ -158,6 +158,17 @@
       "versao": 1,
       "code": "tools/capture_dr_history.mjs",
       "hash": "942b661877c59c49ef024f51048bc46ff613b63348449b06efd69c87020f6348",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "verify.py",
+      "hash": "ca784feb842f294f3af87848439183cd5ec3519d2222fb16b9fe5aaf2d71b957",
       "retired": false
     }
   ]

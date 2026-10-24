@@ -86,3 +86,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: A3b (verify re-derives verdicts and reconciles states) if the independent review quota remains; else the builder: B1 (structure,
   passages, serve, package), then B2 per FILL-PLAN with the history capture over ~384 articles.
 - Why: the form of the law is now fixed from the pages themselves, not from a description.
+
+## 2026-10-24 A3b.1 verify re-derives every verdict (commit: verify: re-derive every stored verdict with evaluate (RED))
+- Done: verify.check_rederive (code RED). For each current non-stale veredicto: facts of the unit and its ancestors
+  (store.facts_of at the verdict's known_at), conflitos and documentos of that chain, afirmações of the unit, entidades
+  with a role in the unit, the rules of manifest.package at the revisions it names, coverage of the manifest's adapters;
+  engine.evaluate with the verdict's known_at, valid_at and manifest; id, rule, result, reason, citation,
+  assertions_compared and set(facts_used) must be equal, and the unit's kind must be in the rule's applies_to. detail is
+  free text and is not compared. Helpers unit_chain (cycle-safe), coverage_of, package_rules. Valid fixtures: 0
+  failures (the three stored verdicts re-derive). Red team: M16, M04, M08 now RED (also M01b, M02, M03, M19 by side
+  effect). ferramenta:verify@2 registered.
+- Next: A3b.2 check_manifest (MAN).
+- Why: a `cumpre` contradicted by its own fact (M16) passed the gate; invariant 3 says verify re-derives verdicts.

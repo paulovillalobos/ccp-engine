@@ -42,9 +42,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
+from engine import evaluate as evaluate_mod  # noqa: E402
 from engine import extract, governance, manifest, schema  # noqa: E402
 from engine.canon import content_hash  # noqa: E402
-from engine.store import Store  # noqa: E402
+from engine.store import Store, facts_of  # noqa: E402
 
 VERSION = "ccp-verify-0.1"
 STORES = {
@@ -68,6 +69,37 @@ def current_of(store, type_):
         if ident not in seen or obj["revision"] > seen[ident]["revision"]:
             seen[ident] = obj
     return seen
+
+
+def unit_chain(store, unit_id):
+    """The unit and its ancestors, nearest first; (chain, cycle) where cycle is True when a parent repeats."""
+    chain, u = [], store.current(unit_id)
+    while u is not None:
+        if u["id"] in chain:
+            return chain, True
+        chain.append(u["id"])
+        u = store.current(u["parent"]) if u.get("parent") else None
+    return chain, False
+
+
+def coverage_of(store, adapter_ids):
+    """{(adapter id, "YYYY-MM"): captured / expected | None} for the adapters a manifest names."""
+    out = {}
+    for aid in adapter_ids:
+        a = store.current(aid)
+        for c in (a or {}).get("coverage", []):
+            out[(aid, c["period"])] = c["captured"] / c["expected"] if c.get("expected") else None
+    return out
+
+
+def package_rules(store, package_id):
+    """The regra objects a package names, each at the exact revision it names; (rules, missing ids)."""
+    pk = store.current(package_id)
+    rules, missing = [], []
+    for ref in (pk or {}).get("rules", []):
+        rev = next((r for r in store.revisions(ref["id"]) if r["revision"] == ref["revision"]), None)
+        (rules if rev else missing).append(rev or f"{ref['id']}@r{ref['revision']}")
+    return rules, missing
 
 
 def passage_text(store, passage_id, version):
@@ -318,6 +350,52 @@ def check_verdicts(store, out):
                 out.append(("I11", f"{v['id']}: natural person {e['id']} published with a name"))
 
 
+RED_FIELDS = ("id", "rule", "result", "reason", "citation", "assertions_compared")
+
+
+def check_rederive(store, out):
+    """RED (invariant 3): every current, non-stale verdict is re-computed by engine.evaluate from the store and must come
+    out the same. Inputs, all read from the store: the facts of the verdict's unit and its ancestors (store.facts_of,
+    as known at the verdict's known_at), the conflitos and documentos of that chain, the afirmações of the unit, the
+    entidades with a role in the unit, the rules of manifest.package at the revisions it names, and the coverage of the
+    manifest's adapters. Compared: id, rule, result, reason, citation, assertions_compared, set(facts_used); and the
+    unit's kind must be one the rule applies_to. detail is free text and is not compared."""
+    for v in current_of(store, "veredicto").values():
+        if v.get("stale"):
+            continue
+        where = v["id"]
+        chain, cycle = unit_chain(store, v["unit"])
+        unit = store.current(v["unit"])
+        if unit is None or cycle:
+            out.append(("RED", f"{where}: cannot re-derive: unit {v['unit']} " + ("is unknown" if unit is None else "sits in a parent cycle")))
+            continue
+        rules, _ = package_rules(store, v["manifest"]["package"])
+        rule_rec = next((r for r in store.revisions(v["rule"]["id"]) if r["revision"] == v["rule"]["revision"]), None)
+        if rule_rec and unit["kind"] not in rule_rec["applies_to"]:
+            out.append(("RED", f"{where}: unit {unit['id']} is a {unit['kind']}; rule {rule_rec['id']} applies to {rule_rec['applies_to']}"))
+        try:
+            produced = evaluate_mod.evaluate(
+                unit, rules, facts_of(store, unit["id"], known_at=v["known_at"]), v["known_at"], v["valid_at"], manifest=v["manifest"],
+                conflicts=[c for c in current_of(store, "conflito").values() if c["unit"] in chain],
+                assertions=[a for a in current_of(store, "afirmacao").values() if a["unit"] == unit["id"]],
+                entities=[e for e in current_of(store, "entidade").values() if any(r["unit"] == unit["id"] for r in e["roles"])],
+                documents=[d for d in current_of(store, "documento").values() if d["origin"]["unit"] in chain],
+                coverage=coverage_of(store, v["manifest"]["adapters"]))
+        except Exception as exc:  # an incomplete manifest or an unknown rule type: the verdict cannot be replayed
+            out.append(("RED", f"{where}: evaluate refuses to re-derive it: {exc}"))
+            continue
+        got = next((p for p in produced if p["rule"]["id"] == v["rule"]["id"]), None)
+        if got is None:
+            out.append(("RED", f"{where}: re-derivation produces no verdict for {v['rule']['id']} from package {v['manifest']['package']}"))
+            continue
+        diffs = [k for k in RED_FIELDS if got.get(k) != v.get(k)]
+        if set(got["facts_used"]) != set(v["facts_used"]):
+            diffs.append("facts_used")
+        if diffs:
+            shown = ", ".join(f"{k}: stored {v.get(k)!r} re-derived {got.get(k)!r}" for k in diffs if k in ("result", "reason", "rule", "id"))
+            out.append(("RED", f"{where}: re-derived verdict differs in {', '.join(diffs)}" + (f" ({shown})" if shown else "")))
+
+
 def check_packages(store, out):
     for pk in store.objects["pacote"]:
         rules = sorted(pk["rules"], key=lambda r: r["id"])
@@ -389,6 +467,7 @@ def check_store(roots):
     check_citations(store, out)
     check_governance(store, out)
     check_verdicts(store, out)
+    check_rederive(store, out)
     check_packages(store, out)
     return store, out
 
