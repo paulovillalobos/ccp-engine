@@ -35,14 +35,14 @@
     "law_version": "lei:ccp@2026-10-01",
     "package": "pacote:ccp@2026-10-01",
     "adapters": [
-      "adaptador:base-dump@1",
-      "adaptador:base-api@1"
+      "adaptador:base-api@1",
+      "adaptador:base-dump@1"
     ],
     "source_snapshots": [
       {
-        "source": "dr-consolidado",
-        "sha256": "8e537c71482b4decb231819b09c1b865e66bcb5177662f98dd59ffad29d7f987",
-        "captured_at": "2026-10-24T18:00:00Z"
+        "source": "base-api",
+        "sha256": "aaa2110254e5f96a981bdad704f5ba0a610cd064024975aa77570da4a7c0e04f",
+        "captured_at": "2026-10-24T18:45:00Z"
       },
       {
         "source": "base-dump",
@@ -50,9 +50,9 @@
         "captured_at": "2026-10-24T18:30:00Z"
       },
       {
-        "source": "base-api",
-        "sha256": "aaa2110254e5f96a981bdad704f5ba0a610cd064024975aa77570da4a7c0e04f",
-        "captured_at": "2026-10-24T18:45:00Z"
+        "source": "dr-consolidado",
+        "sha256": "8e537c71482b4decb231819b09c1b865e66bcb5177662f98dd59ffad29d7f987",
+        "captured_at": "2026-10-24T18:00:00Z"
       }
     ],
     "code": {

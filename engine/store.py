@@ -146,3 +146,103 @@ class Store:
         if enc == "binary":
             return None
         return path.read_text(encoding=enc)
+
+
+# ---- write side (append-only) and bitemporal reading ---------------------------------------------------------------
+class WriteError(ValueError):
+    pass
+
+
+class Writer:
+    """Appends objects to one store root. Never rewrites a file; never deletes.
+
+        Writer(root).append(obj)                 validates against its type's schema; refuses an existing (id, revision);
+                                                 refuses revision > 1 unless revision - 1 exists and supersedes names it
+        Writer(root).revise(obj, changes, recorded_at, reason=None) -> new dict   revision + 1, supersedes set, appended
+        Writer(root).mark_stale(obj, reason, recorded_at) -> new dict              a revision with stale true; appended
+    Files: <root>/<type>/<id with ':' -> '-'>.r<revision>.json
+    """
+
+    def __init__(self, root, store=None):
+        self.root = Path(root)
+        self.store = store if store is not None else Store([self.root]).load()
+
+    def append(self, obj) -> Path:
+        type_ = schema.type_of(obj)
+        if type_ is None:
+            raise WriteError(f"cannot tell the type of {obj.get('id')!r}")
+        errors = schema.validate(type_, obj)
+        if errors:
+            raise WriteError(f"{obj['id']}: {errors[0]}")
+        key = (obj["id"], obj["revision"])
+        if key in self.store.files:
+            raise WriteError(f"{obj['id']} revision {obj['revision']} already exists; nothing is overwritten")
+        if obj["revision"] > 1:
+            prev = self.store.current(obj["id"])
+            if prev is None or prev["revision"] != obj["revision"] - 1 or obj.get("supersedes") != prev["revision"]:
+                raise WriteError(f"{obj['id']}: revision {obj['revision']} must follow {obj['revision'] - 1} and name it in supersedes")
+        path = self.root / type_ / f"{obj['id'].replace(':', '-').replace('@', '-at-')}.r{obj['revision']}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if path.exists():
+            raise WriteError(f"{path} exists; nothing is overwritten")
+        path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        self.store.files[key] = path
+        self.store.by_id.setdefault(obj["id"], []).append(obj)
+        self.store.objects[type_].append(obj)
+        return path
+
+    def revise(self, obj, changes, recorded_at, reason=None) -> dict:
+        new = dict(obj, **changes)
+        new.update(revision=obj["revision"] + 1, supersedes=obj["revision"], recorded_at=recorded_at)
+        if reason:
+            new["stale_reason"] = reason if new.get("stale") else new.get("stale_reason", reason)
+        self.append(new)
+        return new
+
+    def mark_stale(self, obj, reason, recorded_at) -> dict:
+        if not reason:
+            raise WriteError("marking stale needs a reason")
+        return self.revise(obj, {"stale": True, "stale_reason": reason}, recorded_at)
+
+
+def query(store, type_, known_at=None, valid_at=None, include_stale=False, **filters) -> list:
+    """Bitemporal read (invariant 8). For each id: the highest revision whose record clock (known_at for facto/veredicto,
+    recorded_at otherwise) is <= known_at; dropped when stale unless include_stale. Then valid_at:
+      facto / veredicto: valid_at <= valid_at
+      passagem: keeps only the versions with valid_from <= valid_at < valid_to (an object with none is dropped)
+      regra / vigencia: valid_from <= valid_at < valid_to
+    filters: field == value on the surviving objects. Nothing is read from the future of either clock."""
+    def clock(o):
+        return o.get("known_at", o["recorded_at"]) if type_ in ("facto", "veredicto") else o["recorded_at"]
+    latest = {}
+    for o in store.objects[type_]:
+        if known_at is not None and clock(o) > known_at:
+            continue
+        if o["id"] not in latest or o["revision"] > latest[o["id"]]["revision"]:
+            latest[o["id"]] = o
+    out = []
+    for o in latest.values():
+        if o.get("stale") and not include_stale:
+            continue
+        if valid_at is not None:
+            if type_ in ("facto", "veredicto") and o["valid_at"] > valid_at:
+                continue
+            if type_ in ("regra", "vigencia") and not (o["valid_from"] <= valid_at and (o["valid_to"] is None or valid_at < o["valid_to"])):
+                continue
+            if type_ == "passagem":
+                versions = [v for v in o["versions"] if v["valid_from"] <= valid_at and (v["valid_to"] is None or valid_at < v["valid_to"])]
+                if not versions:
+                    continue
+                o = dict(o, versions=versions)
+        if all(o.get(k) == v for k, v in filters.items()):
+            out.append(o)
+    return sorted(out, key=lambda o: o["id"])
+
+
+def facts_of(store, unit_id, known_at=None, valid_at=None) -> list:
+    """Facts of a unit and of its ancestors (proc -> lote -> contrato -> mod), bitemporally read."""
+    ids, u = [], store.current(unit_id)
+    while u is not None:
+        ids.append(u["id"])
+        u = store.current(u["parent"]) if u.get("parent") else None
+    return [f for f in query(store, "facto", known_at, valid_at) if f["unit"] in ids]

@@ -30,3 +30,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   rules.py (eight types as data, order, diff), evaluate.py, entities.py, governance.py Log (propose, review, approve,
   dispute, adjudicate), manifest.build; a test that evaluate reproduces the three fixture verdicts.
 - Why: the gate had to exist before any engine code so that A4 is written against it, not the other way round.
+
+## 2026-10-24 A4 — core signatures (commit: Core: append-only bitemporal store, rules as data, evaluate, entities, governance log)
+- Done: engine/store.py Writer (append refuses an existing (id, revision), revise = next revision with supersedes,
+  mark_stale = revision with reason) + query(type, known_at, valid_at) + facts_of(unit) walking up the graph;
+  engine/rules.py (RULE_TYPES, REQUIRED_PARAMS, order by stage, applies() with None for unreadable, package(), diff());
+  engine/evaluate.py (selector → jurisdiction → simple → aggregate with coverage first; typed reasons; manifest required;
+  natural persons unnamed); engine/entities.py (candidate ids, link lifecycle as new revisions, merge raises);
+  engine/governance.py Log (propose/correct/review/approve/reject/dispute/adjudicate/invalidate, each replayed before
+  it is written; human-only approve; readings settle only by blind other-family uphold; write_state);
+  engine/manifest.build; governance/principals.json for production (empty events.jsonl); tools/make_fixtures.py and a
+  test that the committed fixtures re-derive byte for byte. 44 tests green; verify green.
+- Next: A5, FILL-PLAN.md (B1–B4 with their red tests in tests/fill/), AUDIT.md, schemas/TRACEABILITY.md.
+- Why: evaluate() reproduces the three fixture verdicts, so the fixtures are now executable examples, not prose.

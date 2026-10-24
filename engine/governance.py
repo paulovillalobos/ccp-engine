@@ -141,3 +141,116 @@ def replay(events, principals) -> Replay:
         elif action == "invalidate":
             a["state"] = "stale"
     return rp
+
+
+# ---- write side --------------------------------------------------------------------------------------------------
+import fcntl  # noqa: E402
+import json  # noqa: E402
+from contextlib import contextmanager  # noqa: E402
+from pathlib import Path  # noqa: E402
+
+from engine import schema  # noqa: E402
+
+
+class GovernanceError(ValueError):
+    pass
+
+
+class Log:
+    """The write side. Every method builds one event, validates it against evento.schema.json, replays the whole log with
+    it appended and refuses to write if the replay reports a new error. One writer at a time (events.lock).
+
+        Log(directory)                      reads principals.json and events.jsonl (both may be absent: empty log)
+        .propose(principal, assertion_type, assertion, payload, at)
+        .correct(principal, assertion_type, assertion, expected_revision, payload, reason, at)
+        .review(principal, assertion_type, assertion, expected_revision, question, independence, verdict, at, payload=None)
+        .approve(principal, assertion_type, assertion, expected_revision, reason, at)      human only
+        .reject(principal, assertion_type, assertion, expected_revision, reason, at)
+        .dispute(principal, veredicto, disputa, reason, at)                                 human only (capability)
+        .adjudicate(principal, disputa, outcome, reason, at)                                human only, not the disputant
+        .invalidate(principal, assertion_type, assertion, reason, at)                        system or human
+        .head() -> str                       sha256 of the last line (GENESIS when empty) — what manifests record
+        .replay() -> Replay
+        .write_state()                       governance/state.json: the replay, for people to read; never a source
+    Each method returns the event id (evento:n)."""
+
+    def __init__(self, directory):
+        self.dir = Path(directory)
+        self.dir.mkdir(parents=True, exist_ok=True)
+        pfile = self.dir / "principals.json"
+        self.principals = json.loads(pfile.read_text(encoding="utf-8")) if pfile.exists() else {"principals": []}
+        self.events = []
+        efile = self.dir / "events.jsonl"
+        if efile.exists():
+            for line in efile.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    self.events.append((line, json.loads(line)))
+
+    @contextmanager
+    def _lock(self):
+        with open(self.dir / "events.lock", "w") as fh:
+            fcntl.flock(fh, fcntl.LOCK_EX)
+            try:
+                yield
+            finally:
+                fcntl.flock(fh, fcntl.LOCK_UN)
+
+    def head(self) -> str:
+        return head(self.events)
+
+    def replay(self) -> Replay:
+        return replay(self.events, self.principals)
+
+    def _record(self, **fields) -> str:
+        with self._lock():
+            seq = len(self.events) + 1
+            ev = {"id": f"evento:{seq}", "seq": seq, "at": fields.pop("at"), "prev": self.head(), "principal": fields.pop("principal"),
+                  "action": fields.pop("action"), "assertion_type": fields.pop("assertion_type"), "assertion": fields.pop("assertion"),
+                  "expected_revision": fields.pop("expected_revision", None), "payload": fields.pop("payload", None) or {},
+                  "reason": fields.pop("reason", None), "question": fields.pop("question", None), "independence": fields.pop("independence", None),
+                  "verdict": fields.pop("verdict", None), "outcome": fields.pop("outcome", None)}
+            errors = schema.validate("evento", ev)
+            if errors:
+                raise GovernanceError(f"event refused by schema: {errors[0]}")
+            before = {m for _, m in self.replay().errors}
+            line = canonical(ev)
+            after = replay(self.events + [(line, ev)], self.principals).errors
+            new = [m for _, m in after if m not in before]
+            if new:
+                raise GovernanceError(f"event refused: {new[0]}")
+            with open(self.dir / "events.jsonl", "a", encoding="utf-8") as fh:
+                fh.write(line + "\n")
+            self.events.append((line, ev))
+            return ev["id"]
+
+    def propose(self, principal, assertion_type, assertion, payload, at):
+        return self._record(principal=principal, action="propose", assertion_type=assertion_type, assertion=assertion, payload=payload, at=at)
+
+    def correct(self, principal, assertion_type, assertion, expected_revision, payload, reason, at):
+        return self._record(principal=principal, action="correct", assertion_type=assertion_type, assertion=assertion, expected_revision=expected_revision, payload=payload, reason=reason, at=at)
+
+    def review(self, principal, assertion_type, assertion, expected_revision, question, independence, verdict, at, payload=None):
+        return self._record(principal=principal, action="review", assertion_type=assertion_type, assertion=assertion, expected_revision=expected_revision,
+                            question=question, independence=independence, verdict=verdict, payload=payload, at=at)
+
+    def approve(self, principal, assertion_type, assertion, expected_revision, reason, at):
+        return self._record(principal=principal, action="approve", assertion_type=assertion_type, assertion=assertion, expected_revision=expected_revision, reason=reason, at=at)
+
+    def reject(self, principal, assertion_type, assertion, expected_revision, reason, at):
+        return self._record(principal=principal, action="reject", assertion_type=assertion_type, assertion=assertion, expected_revision=expected_revision, reason=reason, at=at)
+
+    def dispute(self, principal, veredicto, disputa, reason, at):
+        return self._record(principal=principal, action="dispute", assertion_type="veredicto", assertion=veredicto, payload={"disputa": disputa}, reason=reason, at=at)
+
+    def adjudicate(self, principal, disputa, outcome, reason, at):
+        return self._record(principal=principal, action="adjudicate", assertion_type="disputa", assertion=disputa, expected_revision=1, outcome=outcome, reason=reason, at=at)
+
+    def invalidate(self, principal, assertion_type, assertion, reason, at):
+        return self._record(principal=principal, action="invalidate", assertion_type=assertion_type, assertion=assertion, reason=reason, at=at)
+
+    def write_state(self) -> Path:
+        rp = self.replay()
+        state = {"head": rp.head, "events": rp.count, "assertions": {f"{t}|{i}": a for (t, i), a in sorted(rp.assertions.items())}, "disputes": rp.disputes, "errors": rp.errors}
+        path = self.dir / "state.json"
+        path.write_text(json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        return path
