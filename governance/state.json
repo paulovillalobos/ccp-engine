@@ -9,10 +9,334 @@
       "reviews": [],
       "revision": 1,
       "state": "settled"
+    },
+    "regra|regra:ccp:limiar-ajuste-direto-bens-servicos@v1": {
+      "events": [
+        2,
+        3
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-ajuste-direto-bens-servicos@v2": {
+      "events": [
+        4,
+        5
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-ajuste-direto-obras@v1": {
+      "events": [
+        6,
+        7
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-ajuste-direto-obras@v2": {
+      "events": [
+        8,
+        9
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "regra|regra:ccp:limiar-concurso-sem-joue-bens-servicos-estado@v1": {
+      "events": [
+        18,
+        19
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-concurso-sem-joue-obras@v1": {
+      "events": [
+        20,
+        21
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-consulta-previa-bens-servicos@v1": {
+      "events": [
+        10,
+        11
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-consulta-previa-bens-servicos@v2": {
+      "events": [
+        12,
+        13
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-consulta-previa-obras@v1": {
+      "events": [
+        14,
+        15
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:limiar-consulta-previa-obras@v2": {
+      "events": [
+        16,
+        17
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:prazo-minimo-concurso-joue@v1": {
+      "events": [
+        28,
+        29
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1": {
+      "events": [
+        24,
+        25
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
+      "events": [
+        26,
+        27
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:procedimentos-admissiveis@v1": {
+      "events": [
+        30,
+        31
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:procedimentos-admissiveis@v2": {
+      "events": [
+        32,
+        33
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:dl-177-2026:seletor-regime@v1": {
+      "events": [
+        34,
+        35
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:dlr-27-2015-a:regime-acores@v1": {
+      "events": [
+        36,
+        37
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:dlr-34-2008-m:coeficiente-madeira@v1": {
+      "events": [
+        22,
+        23
+      ],
+      "family": "A",
+      "proposer": "leitor:a",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
     }
   },
   "disputes": {},
   "errors": [],
-  "events": 1,
-  "head": "1fc983b0bd139a73bf3baf81d630fc086624d1acc09f1aaf285c8d5143457270"
+  "events": 37,
+  "head": "ff9761690ebccd554af85aef9f28ca9583bc765421329f4558f9bd593937bb4a"
 }

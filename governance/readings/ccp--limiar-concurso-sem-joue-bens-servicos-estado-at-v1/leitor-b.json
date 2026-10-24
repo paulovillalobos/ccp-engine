@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:45:33Z",
+ "sha256": "2040a6afcf429caebc0de4482b6e1e6040c186358f0935c91e4eca1906ed0fbc",
+ "answer": "{\"passagens\":[\"ccp:art20.1.b\",\"ccp:art474.3.b\",\"eu-2025-2152:art1.1.b\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_publico\",\"concurso_limitado_previa_qualificacao\"]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\"},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":140000,\"currency\":\"EUR\"}}}"
+}

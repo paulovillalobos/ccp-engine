@@ -1,0 +1,80 @@
+{
+  "id": "regra:ccp:limiar-ajuste-direto-bens-servicos@v2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:55:48Z",
+  "type": "limiar",
+  "title": "Ajuste direto: valor máximo para contratos de locação ou aquisição de bens móveis e de aquisição de serviços",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": "obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": "ajuste_direto"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art20.1",
+      "version": "2026-10-01",
+      "quote": "1 - Para a celebração de contratos de locação ou de aquisição de bens móveis e de aquisição de serviços, pode adotar-se um dos seguintes procedimentos:\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nc) Consulta prévia, quando o valor estimado do contrato seja inferior a 130 000 €;\nd) Ajuste direto, quando o valor estimado do contrato for inferior a 75 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 757
+      }
+    },
+    {
+      "passage": "ccp:art20.1.d",
+      "version": "2026-10-01",
+      "quote": "d) Ajuste direto, quando o valor estimado do contrato for inferior a 75 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 78
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 75000.0,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T20:53:37Z",
+      "chosen_passages": [
+        "ccp:art20.1",
+        "ccp:art20.1.d"
+      ],
+      "blind": false,
+      "evento": "evento:4"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T20:44:00Z",
+      "chosen_passages": [
+        "ccp:art20.1",
+        "ccp:art20.1.d"
+      ],
+      "blind": true,
+      "evento": "evento:5"
+    }
+  ],
+  "state": "proposed"
+}

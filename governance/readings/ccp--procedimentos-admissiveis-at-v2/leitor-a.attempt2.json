@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "573e09f19025d0aa829920a58632803a5562003280a158d1f260e5ca3820e1a8",
+ "answer": "{\n  \"passagens\": [\"ccp:art16\", \"ccp:art16.1\"],\n  \"tipo\": \"procedimento_admissivel\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"not_in\",\n      \"value\": [\"concurso_limitado_previa_qualificacao\"]\n    }\n  ],\n  \"params\": {\n    \"procedures\": [\n      \"ajuste_direto\",\n      \"consulta_previa\",\n      \"concurso_publico\",\n      \"concurso_limitado_previa_qualificacao\",\n      \"procedimento_negociacao\",\n      \"dialogo_concorrencial\",\n      \"parceria_inovacao\"\n    ]\n  }\n}"
+}

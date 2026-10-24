@@ -1,0 +1,125 @@
+{
+  "id": "regra:dlr-27-2015-a:regime-acores@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T21:01:08Z",
+  "type": "jurisdicao",
+  "title": "Região Autónoma dos Açores: regime regional de contratação pública",
+  "norma": "norma:dlr-27-2015-a",
+  "jurisdiction": "PT-AC",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "territorio",
+      "op": "in",
+      "value": "PT-MA"
+    },
+    {
+      "field": "tipo_entidade",
+      "op": "in",
+      "value": "outra"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2016-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "dlr-27-2015-a:art1",
+      "version": "2016-01-01",
+      "quote": "Artigo 1.º\nObjeto e âmbito\n1 - O presente diploma aprova o Regime Jurídico dos Contratos Públicos na Região Autónoma dos Açores, transpondo, parcialmente, e para o ordenamento jurídico regional, a Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro, relativa aos contratos públicos e define a disciplina aplicável à contratação pública e o regime substantivo dos contratos públicos que revistam a natureza de contrato administrativo.\n2 - O regime de contratação pública definido pelo presente diploma é aplicável à formação dos contratos públicos na Região Autónoma dos Açores, entendendo-se por tal todos aqueles que, independentemente da sua designação e natureza, sejam celebrados pelas entidades adjudicantes regionais referidas no artigo seguinte.\n3 - O presente diploma não prejudica a aplicação das normas que integram o regime jurídico da contratação pública e o regime substantivo dos contratos públicos constantes do Código dos Contratos Públicos, aprovado pelo Decreto-Lei n.º 18/2008, de 29 de janeiro, na sua atual versão em vigor.",
+      "offsets": {
+        "start": 0,
+        "end": 1069
+      }
+    },
+    {
+      "passage": "dlr-27-2015-a:art16",
+      "version": "2016-01-01",
+      "quote": "Artigo 16.º\nRegime aplicável à escolha do procedimento\n1 - A escolha dos procedimentos a que se referem as alíneas a) a c) do n.º 1 do artigo 14.º condiciona o valor do contrato a celebrar nos termos do disposto nos artigos seguintes do presente capítulo.\n2 - A escolha do procedimento em função dos critérios materiais previstos nos artigos 23.º a 30.º do Código dos Contratos Públicos permite a celebração de contratos de qualquer valor, sem prejuízo das exceções expressamente aí previstas.\n3 - As regras de escolha do procedimento previstas nos artigos 31.º a 33.º do Código dos Contratos Públicos são expressamente aplicáveis às entidades adjudicantes regionais.",
+      "offsets": {
+        "start": 0,
+        "end": 667
+      }
+    },
+    {
+      "passage": "dlr-27-2015-a:art19",
+      "version": "2016-01-01",
+      "quote": "Artigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nNo caso de contratos de empreitada de obras públicas a adjudicar pelas entidades adjudicantes regionais referidas nos n.os 1 e 2 do artigo 2.º:\na) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 150.000,00;\nb) A escolha do concurso público ou do concurso limitado por prévia qualificação permite a celebração de contratos de qualquer valor, exceto quando os respetivos anúncios não sejam publicados no Jornal Oficial da União Europeia, caso em que só permite a celebração de contratos de valor inferior ao referido na alínea a) do artigo 4.º da Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro.",
+      "offsets": {
+        "start": 0,
+        "end": 758
+      }
+    },
+    {
+      "passage": "dlr-27-2015-a:art19.a",
+      "version": "2016-01-01",
+      "quote": "a) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 150.000,00;",
+      "offsets": {
+        "start": 0,
+        "end": 105
+      }
+    },
+    {
+      "passage": "dlr-27-2015-a:art20",
+      "version": "2016-01-01",
+      "quote": "Artigo 20.º\nEscolha do procedimento de formação de contratos de locação ou de aquisição de bens móveis e de aquisição de serviços\nNo caso de contratos de locação ou de aquisição de bens móveis e de contratos de aquisição de serviços a adjudicar pelas entidades referidas nos n.os 1 e 2 do artigo 2.º:\na) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 75.000,00;\nb) A escolha do concurso público ou do concurso limitado por prévia qualificação permite a celebração de contratos de qualquer valor, exceto quando os respetivos anúncios não sejam publicados no Jornal Oficial da União Europeia, caso em que só permite a celebração de contratos de valor inferior ao referido na alínea c) do artigo 4.º da Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro.",
+      "offsets": {
+        "start": 0,
+        "end": 821
+      }
+    },
+    {
+      "passage": "dlr-27-2015-a:art20.a",
+      "version": "2016-01-01",
+      "quote": "a) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 75.000,00;",
+      "offsets": {
+        "start": 0,
+        "end": 104
+      }
+    }
+  ],
+  "params": {
+    "territory": "PT-MA",
+    "predicate": [
+      {
+        "field": "tipo_entidade",
+        "op": "in",
+        "value": "outra"
+      }
+    ],
+    "effect": {
+      "multiply_thresholds_by": 1,
+      "replace_norma": "norma:dlr-27-2015-a"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T21:00:39Z",
+      "chosen_passages": [
+        "dlr-27-2015-a:art19",
+        "dlr-27-2015-a:art19.a",
+        "dlr-27-2015-a:art20.a"
+      ],
+      "blind": false,
+      "evento": "evento:36"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T20:58:35Z",
+      "chosen_passages": [
+        "dlr-27-2015-a:art1",
+        "dlr-27-2015-a:art16",
+        "dlr-27-2015-a:art19",
+        "dlr-27-2015-a:art20"
+      ],
+      "blind": true,
+      "evento": "evento:37"
+    }
+  ],
+  "state": "proposed"
+}

@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "81d6174d65bfea60df43bca75799696727ebe393cc1fa3e41c6a3bf419ae2aad",
+ "answer": "{\n  \"passagens\": [\"ccp:art20.1.c\"],\n  \"tipo\": \"limiar\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"eq\",\n      \"value\": \"consulta_previa\"\n    },\n    {\n      \"field\": \"tipo_contrato\",\n      \"op\": \"in\",\n      \"value\": [\"locacao\", \"aquisição_bens_moveis\", \"aquisição_servicos\"]\n    },\n    {\n      \"field\": \"preco_base\",\n      \"op\": \"lt\",\n      \"value\": 130000\n    }\n  ],\n  \"params\": {\n    \"threshold\": \n    {\n      \"field\": \"preco_base\",\n      \"comparator\": \"lt\",\n      \"value\": 130000\n    \n    ,\n    \"currency\": \"EUR\"\n  }\n}\n}"
+}

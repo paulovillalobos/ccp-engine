@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "d9d5f8fe78c20a977a8e94817a972d7baf36605ce833c560da3471ae2da0581f",
+ "answer": "{\n  \"passagens\": [\"ccp:art19.b\"],\n  \"tipo\": \"limiar\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"lt\"\n    ,\n    \"value\": \"concurso_publico\"\n    }\n  ],\n  \"params\": {\n    \"threshold\": \n    {\n      \"field\": \"preco_base\",\n      \"comparator\": \"lt\",\n      \"value\": 5404000\n    ,\n    \"currency\": \"EUR\"\n  }\n}\n}"
+}

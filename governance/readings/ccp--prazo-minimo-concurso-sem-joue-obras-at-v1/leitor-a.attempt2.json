@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "102042bf61c6ecbd66ec41b6e7e01f47124f159389417d47ee3164b87281cc6f",
+ "answer": "{\n  \"passagens\": [\"ccp:art135\"],\n  \"tipo\": \"prazo_minimo\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"eq\",\n      \"value\": \"concurso_publico\"\n    },\n    {\n      \"field\": \"territorio\",\n      \"op\": \"eq\",\n      \"value\": \"PT\"\n    },\n    {\n      \"field\": \"tipo_entidade\",\n      \"op\": \"eq\",\n      \"value\": \"estado\"\n    },\n    {\n      \"field\": \"preco_base\",\n      \"op\": \"not_in\",\n      \"value\": [\"número em euros\"]\n    },\n    {\n      \"field\": \"data_inicio_procedimento\",\n      \"op\": \"not_in\",\n      \"value\": [\"AAAA-MM-DD\"]\n    },\n    {\n      \"field\": \"publicado_joue\",\n      \"op\": \"eq\",\n      \"value\": \"false\"\n    },\n    {\n      \"field\": \"tipo_contrato\",\n      \"op\": \"eq\",\n      \"value\": \"obras\"\n    }\n  ],\n  \"params\": {\n    \"minimum_days\": 14,\n    \"deadline_field\": \"prazo_propostas_dias\",\n    \"counted_from\": \"data_envio_anuncio\"\n  }\n}"
+}

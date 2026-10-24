@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "d795fc4e6b8003ef9f769d7fa1cb08afa300fc03ca4dad56d7b433ca6a5a33c0",
+ "answer": "{\n  \"passagens\": [\"dlr-34-2008-m:art4\", \"dlr-34-2008-m:art4.1\", \"dlr-34-2008-m:art4.2\", \"dlr-34-2008-m:art4.3\", \"dlr-34-2008-m:art4.4\"],\n  \"tipo\": \"jurisdicao\",\n  \"condicoes\": [\n    {\n      \"field\": \"territorio\",\n      \"op\": \"eq\"\n    ,\n    \"value\": \"PT-MA\"\n    },\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"eq\",\n      \"value\": \"ajuste_direto\"\n    }\n  ],\n  \"params\": {\n    \"territory\": \"PT-MA\",\n    \"predicate\": [\n      {\n        \"field\": \"tipo_procedimento\",\n        \"op\": \"eq\",\n        \"value\": \"ajuste_direto\"\n      }\n    ],\n    \"effect\": {\n      \"multiply_thresholds_by\": 1.45\n    \n    ,\n    \"replace_norma\": \"norma:dlr-34-2008-m\"\n  }\n}\n}"
+}

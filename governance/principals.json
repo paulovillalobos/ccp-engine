@@ -536,6 +536,63 @@
       "code": "verify.py",
       "hash": "819ffd39bb1ebdc43b487a6b0da9058b57e52a2d8661b92e4208b71f1e8f85f2",
       "retired": false
+    },
+    {
+      "id": "ferramenta:read-rules@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/read_rules.py",
+      "hash": "09306a437b11ca972a664f78ef01e187c3b5d6f20b004ac7301072a5670b7f3c",
+      "retired": true,
+      "nota": "B3 reading protocol: prompts, record (D37)"
+    },
+    {
+      "id": "ferramenta:run-engine@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/run_engine.py",
+      "hash": "6c5260c4a4e7a280051c6d9e286c79562ccb87ed1a7be4ba6f17fa84d6f56eab",
+      "retired": false,
+      "nota": "B4 engine over a store of facts"
+    },
+    {
+      "id": "ferramenta:read-rules@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/read_rules.py",
+      "hash": "0b670c567415cc9a42361d5450f06fec46b3fb3cc5c3c712b8d670dd2b423694",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:read-rules@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/read_rules.py",
+      "hash": "62dd16b03e9dc5418c9cb75a303c7ac54aeda84ca41c4c77d5dbbebaa0d0611a",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:read-rules@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/read_rules.py",
+      "hash": "867882e61b17f788b3ca9162b3a7031841dffcb2ff62956526bd9449d450b690",
+      "retired": false
     }
   ]
 }

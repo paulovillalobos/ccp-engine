@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "a79d2c74f7f46bedaf9169a7a4b46010bc65cf70e1e0046ed3b16f1f66222eae",
+ "answer": "{\n  \"passagens\": [\"ccp:art19.d\"],\n  \"tipo\": \"limiar\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"le\"\n    ,\n    \"value\": \"ajuste_direto\"\n  },\n  {\n    \"field\": \"tipo_contrato\",\n    \"op\": \"le\"\n  ,\n  \"value\": \"obras\"\n  },\n  {\n    \"field\": \"preco_base\",\n    \"op\": \"gt\",\n    \"value\": 30\n  }\n\n  ,\n  {\n    \"field\": \"territorio\",\n    \"op\": \"le\"\n  ,\n  \"value\": \"PT\"\n  }\n\n  ]\n\n  ,\"params\": {\n    \"threshold\": \n    {\n      \"field\": \"preco_base\",\n      \"comparator\": \"lt\",\n      \"value\": 30\n    \n    ,\n    \"currency\": \"EUR\"\n    }\n  }\n}"
+}

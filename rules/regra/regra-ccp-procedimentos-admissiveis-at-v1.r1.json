@@ -1,0 +1,85 @@
+{
+  "id": "regra:ccp:procedimentos-admissiveis@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:55:48Z",
+  "type": "procedimento_admissivel",
+  "title": "Tipos de procedimento para a formação de contratos submetidos à concorrência",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "ajuste_direto",
+        "concurso_limitado_previa_qualificacao",
+        "concurso_publico",
+        "consulta_previa",
+        "dialogo_concorrencial",
+        "parceria_inovacao",
+        "procedimento_negociacao"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": "2026-10-01",
+  "passages": [
+    {
+      "passage": "ccp:art16",
+      "version": "2018-01-01",
+      "quote": "Artigo 16.º\nProcedimentos para a formação de contratos\n1 - Para a formação de contratos cujo objecto abranja prestações que estão ou sejam susceptíveis de estar submetidas à concorrência de mercado, as entidades adjudicantes devem adoptar um dos seguintes tipos de procedimentos:\na) Ajuste directo;\nb) Consulta prévia;\nc) Concurso público;\nd) Concurso limitado por prévia qualificação;\ne) Procedimento de negociação;\nf) Diálogo concorrencial.\ng) Parceria para a inovação.\n2 - Para os efeitos do disposto no número anterior, consideram-se submetidas à concorrência de mercado, designadamente, as prestações típicas abrangidas pelo objecto dos seguintes contratos, independentemente da sua designação ou natureza:\na) Empreitada de obras públicas;\nb) Concessão de obras públicas;\nc) Concessão de serviços públicos;\nd) Locação ou aquisição de bens móveis;\ne) Aquisição de serviços;\nf) Sociedade.",
+      "offsets": {
+        "start": 0,
+        "end": 891
+      }
+    },
+    {
+      "passage": "ccp:art16.1",
+      "version": "2018-01-01",
+      "quote": "1 - Para a formação de contratos cujo objecto abranja prestações que estão ou sejam susceptíveis de estar submetidas à concorrência de mercado, as entidades adjudicantes devem adoptar um dos seguintes tipos de procedimentos:\na) Ajuste directo;\nb) Consulta prévia;\nc) Concurso público;\nd) Concurso limitado por prévia qualificação;\ne) Procedimento de negociação;\nf) Diálogo concorrencial.\ng) Parceria para a inovação.",
+      "offsets": {
+        "start": 0,
+        "end": 416
+      }
+    }
+  ],
+  "params": {
+    "procedures": [
+      "ajuste_direto",
+      "concurso_limitado_previa_qualificacao",
+      "concurso_publico",
+      "consulta_previa",
+      "dialogo_concorrencial",
+      "parceria_inovacao",
+      "procedimento_negociacao"
+    ]
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T20:53:37Z",
+      "chosen_passages": [
+        "ccp:art16",
+        "ccp:art16.1"
+      ],
+      "blind": false,
+      "evento": "evento:30"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T20:46:40Z",
+      "chosen_passages": [
+        "ccp:art16.1"
+      ],
+      "blind": true,
+      "evento": "evento:31"
+    }
+  ],
+  "state": "proposed"
+}

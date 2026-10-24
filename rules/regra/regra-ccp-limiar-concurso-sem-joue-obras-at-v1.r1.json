@@ -1,0 +1,104 @@
+{
+  "id": "regra:ccp:limiar-concurso-sem-joue-obras@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:55:48Z",
+  "type": "limiar",
+  "title": "Concurso sem anúncio no JOUE: limiar europeu para empreitadas de obras públicas",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "data_inicio_procedimento",
+      "op": "eq",
+      "value": "2026-10-01"
+    },
+    {
+      "field": "preco_base",
+      "op": "lt",
+      "value": 5404000
+    },
+    {
+      "field": "territorio",
+      "op": "eq",
+      "value": "PT"
+    },
+    {
+      "field": "tipo_entidade",
+      "op": "eq",
+      "value": "estado"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art19.b",
+      "version": "2026-10-01",
+      "quote": "b) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;",
+      "offsets": {
+        "start": 0,
+        "end": 236
+      }
+    },
+    {
+      "passage": "ccp:art474.3.a",
+      "version": "2026-10-01",
+      "quote": "a) 5 404 000,00 €, para os contratos de empreitada de obras públicas;",
+      "offsets": {
+        "start": 0,
+        "end": 69
+      }
+    },
+    {
+      "passage": "eu-2025-2152:art1.1.a",
+      "version": "2026-01-01",
+      "quote": "a) na alínea a), o montante «5 538 000 EUR» é substituído por «5 404 000 EUR»,",
+      "offsets": {
+        "start": 0,
+        "end": 78
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 5404000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T20:53:37Z",
+      "chosen_passages": [
+        "ccp:art19.b"
+      ],
+      "blind": false,
+      "evento": "evento:20"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T20:45:43Z",
+      "chosen_passages": [
+        "ccp:art19.b",
+        "ccp:art474.3.a",
+        "eu-2025-2152:art1.1.a"
+      ],
+      "blind": true,
+      "evento": "evento:21"
+    }
+  ],
+  "state": "proposed"
+}

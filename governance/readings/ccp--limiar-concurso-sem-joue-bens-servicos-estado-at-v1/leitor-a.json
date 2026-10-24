@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:53:37Z",
+ "sha256": "4af4345a5cc9b6f520727b03fac1fd2aa29c08fbb2537b8fb741dbc24543113a",
+ "answer": "{\"passagens\": [\"ccp:art20.1.b\", \"ccp:art474.3.b\", \"eu-2025-2152:art1.1.b\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_entidade\", \"op\": \"eq\", \"value\": \"estado\"}, {\"field\": \"preco_base\", \"op\": \"lt\", \"value\": 139000}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_publico\"}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 139000, \"currency\": \"EUR\"}}}"
+}

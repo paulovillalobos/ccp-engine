@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:58:35Z",
+ "sha256": "f254ab30c2fd486c4ac98d08f4de3e15bfb2e4dda1e239dd51e1e53415189b4a",
+ "answer": "{\"passagens\":[\"dlr-27-2015-a:art1\",\"dlr-27-2015-a:art16\",\"dlr-27-2015-a:art19\",\"dlr-27-2015-a:art20\"],\"tipo\":\"jurisdicao\",\"condicoes\":[{\"field\":\"territorio\",\"op\":\"eq\",\"value\":\"PT-AC\"}],\"params\":{\"territory\":\"PT-AC\",\"predicate\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"obras\",\"bens\",\"servicos\"]}],\"effect\":{\"multiply_thresholds_by\":null,\"replace_norma\":\"norma:dlr-27-2015-a\"}}}"
+}

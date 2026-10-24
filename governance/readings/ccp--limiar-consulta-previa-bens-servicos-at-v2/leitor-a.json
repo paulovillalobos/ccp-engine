@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:53:37Z",
+ "sha256": "2ba8b6e664315d802727739a35b31ca71a224e1ceb97e101fd352862fb3cbbe2",
+ "answer": "{\"passagens\": [\"ccp:art20.1.c\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": \"consulta_previa\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"obras\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"bens\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"servicos\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"concessao_obras\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"concessao_servicos\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"servicos_sociais\"}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 130000, \"currency\": \"EUR\"}}}"
+}

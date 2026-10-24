@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:47:28Z",
+ "sha256": "229e0d941ee6a97e1a81dbffad7fc5ab4b7450ec149a158d9b23d384f409825b",
+ "answer": "{\n  \"passagens\": [\"ccp:art135\"],\n  \"tipo\": \"prazo_minimo\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"not_in\",\n      \"value\": \"concurso_publico_com_publicidade_internacional\"\n    },\n    {\n      \"field\": \"territorio\",\n      \"op\": \"not_in\",\n      \"value\": \"PT-AC\"\n    },\n    {\n      \"field\": \"tipo_contrato\",\n      \"op\": \"not_in\",\n      \"value\": \"concessao_obras\"\n    }\n  ],\n  \"params\": {\n    \"minimum_days\": 6,\n    \"deadline_field\": \"prazo_propostas_dias\",\n    \"counted_from\": \"data_envio_anuncio\"\n  }\n}"
+}

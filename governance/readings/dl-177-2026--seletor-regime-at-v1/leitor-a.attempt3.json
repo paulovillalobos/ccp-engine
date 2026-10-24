@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:53:37Z",
+ "sha256": "8b970924866b0b71bf8fc858fcd2fd0b114ae70856bec41e840e4611985be91f",
+ "answer": "{\"passagens\": [\"dl-177-2026:art7.2\", \"dl-177-2026:art7.3\"], \"tipo\": \"seletor_regime\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": [\"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"ajuste_direto\"]}, {\"field\": \"territorio\", \"op\": \"in\", \"value\": [\"PT\"]}], \"params\": {\"selects_by\": \"data_inicio_procedimento\", \"regimes\": [{\"from\": \"2026-10-01\", \"to\": \"data_inicio_procedimento\", \"law_version\": \"lei:ccp@2026-10-01\", \"package\": \"pacote:ccp@2026-10-01\"}]}}"
+}

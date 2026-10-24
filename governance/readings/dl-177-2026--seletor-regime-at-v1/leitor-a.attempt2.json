@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:50:48Z",
+ "sha256": "b2dc6eb718549ddd17993121ef84c55eada5865873916e0805c8e7936403dce9",
+ "answer": "{\n  \"passagens\": [\"dl-177-2026:art7.2\", \"dl-177-2026:art7.3\"],\n  \"tipo\": \"seletor_regime\",\n  \"condicoes\": [\n    {\n      \"field\": \"territorio\",\n      \"op\": \"in\"\n    ,\n    \"value\": \"PT\"\n    },\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"in\"\n    ,\n      \"value\": \"concurso_publico\"\n    },\n    {\n      \"field\": \"publicado_joue\",\n      \"op\": \"in\"\n    ,\n      \"value\": true\n    }\n  ],\n  \"params\": {\n    \"selects_by\": \"data_inicio_procedimento\",\n    \"regimes\": [\n      {\n        \"from\": \"2026-10-01\",\n        \"to\": \"data_inicio_procedimento\",\n        \"law_version\": \"lei:ccp@2026-10-01\",\n        \"package\": \"pacote:ccp@2026-10-01\"\n      }\n    ]\n  }\n}"
+}

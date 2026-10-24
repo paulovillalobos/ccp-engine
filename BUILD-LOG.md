@@ -796,3 +796,34 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - In progress outside this commit: the B3 readers are answering (leitor:b by the CLI of family B; leitor:a on Modal).
 - Next: record B3.
 - Why: §8 needs the held-out set fixed before the method meets it; the commit order is the proof.
+
+## 2026-10-24 B3 rules read by two families (commit: B3: 18 rule readings by two families in the governance log; 1 settled, 17 proposed; DESACORDOS, RESUMO)
+- Done: tools/read_rules.py (ccp-read-rules-0.1, ferramenta): 18 targets (selector DL 177/2026 art. 7.º; limiar ajuste
+  direto and consulta prévia for goods/services and works, @v1 = text to 2026-09-30, @v2 = from 2026-10-01 (D5); JOUE
+  thresholds for goods/services (State) and works; Madeira and Açores; prazo mínimo without / with JOUE; procedures
+  @v1/@v2). Each prompt: typed question, candidate passage ids with their text in force on the date and the earlier
+  text, an answer schema (governance/readings/<rule>/prompt.json). Readers in readers/ (D38): leitor:a on Modal (L40S,
+  vLLM 0.30, bf16, temperature 0, guided JSON); leitor:b by its command-line client, read-only, ephemeral, in an empty
+  directory (blind: it never sees leitor:a's answer). Raw answers with at and sha256 in governance/readings/; record:
+  Log.propose (leitor:a) -> rule built with engine.passages.cite (whole passage text, offsets) -> Log.review (leitor:b,
+  blind; uphold only on equal passages, conditions and params, else request_evidence; D37); rules/ is the replay.
+- Result (governance/readings/RESUMO.md): 18 rules in the log (37 events), 1 settled (limiar-ajuste-direto-obras@v2:
+  ccp:art19.d, preco_base < 150 000 EUR), 17 proposed, 0 ai_reviewed (the protocol has no event for it, D37). Exact
+  agreement A vs B 1/18; agreement of direction (the threshold, days, procedure list, regimes, effect) 14/18. Package:
+  pacote:ccp@2026-10-01 with that one rule; no package for 2026-09-30 (no settled rule valid that day; a package names
+  at least one rule), hence no diff. Disagreements: governance/readings/DESACORDOS.md (17), for the pessoa to see:
+  product, never the content of a reading. Most differences are leitor:a's conditions (op "in" with a single string,
+  conditions that do not apply, "AAAA-MM-DD" taken literally); one is the law itself: the JOUE threshold for goods and
+  services awarded by the State is 139 000 EUR in CCP art. 474.º n.º 3 b) (text of 2026-10-01) and 140 000 EUR in
+  Delegated Regulation (EU) 2025/2152 (from 2026-01-01): A chose the first, B the second.
+- Attempts, disclosed: leitor:a attempt 1 (free whitespace in the grammar): 8/18 answers looped on blanks to max_tokens;
+  attempt 2 (whitespace flag per request): 7/18, the flag was not honoured; attempt 3 (flag on the engine): 18/18
+  complete. All kept (leitor-a.attempt1/2.json). The first `record` run wrote two log lines (selector) and then failed
+  on a schema-invalid rule; the unpublished file was restored to its committed state and the tool now validates the
+  rule before any event. Two answer schemas were looser than the regra schema (selector `to` any string; Açores
+  predicate could be empty): both readers were asked again for those two rules with the corrected schema (earlier
+  answers kept as *.attempt*.json); nothing of them had entered the log. leitor:b's first run used the earlier place of
+  its runner (tools/read_rules.py run-b), same command, now readers/leitor_b_cli.py. Modal: four short runs on one L40S.
+- verify: ok (37 events). test_b3 green. Registered: read-rules, run-engine (code in the B4 commit). DECISIONS D37, D38.
+- Next: B4 engine over notices (data/facts is empty: blocked, implemented on fixtures).
+- Why: a rule enters a package only when two families read the same passages the same way; the log says which did.

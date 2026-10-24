@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:46:32Z",
+ "sha256": "b505ad39ac76a38057a0be39909756c234444584860977322f9d355989134b1a",
+ "answer": "{\"passagens\":[\"ccp:art136.1\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\"},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\"}}"
+}

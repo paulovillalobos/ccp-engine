@@ -1,0 +1,205 @@
+{
+ "rule": "regra:dlr-34-2008-m:coeficiente-madeira@v1",
+ "type": "jurisdicao",
+ "date": "2026-10-01",
+ "candidates": [
+  "dlr-34-2008-m:art4",
+  "dlr-34-2008-m:art4.1",
+  "dlr-34-2008-m:art4.2",
+  "dlr-34-2008-m:art4.3",
+  "dlr-34-2008-m:art4.4"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.\nData de referência: 2026-10-01. Tipo de regra pedido: jurisdicao.\n\nPassagens candidatas:\n[dlr-34-2008-m:art4] (versão em vigor a 2026-10-01, desde 2022-12-30)\nArtigo 4.º\nEscolha do procedimento e redução do contrato a escrito\n1 - Aos valores que determinam a escolha do procedimento de formação de contratos previsos nas alíneas c) e d) do artigo 19.º, nas alíneas c) e d) do n.º 1 do artigo 20.º, nas alíneas b) e c) do n.º 1 do artigo 21.º, no n.º 2 do artigo 22.º, no n.º 4 do artigo 31.º, no n.º 3 do artigo 36.º, no n.º 2 do artigo 46.º-A, no n.º 1 do artigo 128.º e na alínea a) do artigo 155.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.\n2 - Da aplicação do coeficiente previsto no nº 1 não pode resultar a violação dos montantes dos limiares para contratos públicos, definidos pela legislação comunitária.\n3 - Todas as referências no Código dos Contratos Públicos às normas mencionadas no nº 1 devem ter em consideração os valores resultantes da aplicação do coeficiente nele previsto.\n4 - Aos valores que determinam a não exigibilidade de redução de contrato, previstos nas alíneas a) e d) do n.º 1 do artigo 95.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.\n\n[dlr-34-2008-m:art4.1] (versão em vigor a 2026-10-01, desde 2022-12-30)\n1 - Aos valores que determinam a escolha do procedimento de formação de contratos previsos nas alíneas c) e d) do artigo 19.º, nas alíneas c) e d) do n.º 1 do artigo 20.º, nas alíneas b) e c) do n.º 1 do artigo 21.º, no n.º 2 do artigo 22.º, no n.º 4 do artigo 31.º, no n.º 3 do artigo 36.º, no n.º 2 do artigo 46.º-A, no n.º 1 do artigo 128.º e na alínea a) do artigo 155.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.\n\n[dlr-34-2008-m:art4.2] (versão em vigor a 2026-10-01, desde 2022-12-30)\n2 - Da aplicação do coeficiente previsto no nº 1 não pode resultar a violação dos montantes dos limiares para contratos públicos, definidos pela legislação comunitária.\n\n[dlr-34-2008-m:art4.3] (versão em vigor a 2026-10-01, desde 2022-12-30)\n3 - Todas as referências no Código dos Contratos Públicos às normas mencionadas no nº 1 devem ter em consideração os valores resultantes da aplicação do coeficiente nele previsto.\n\n[dlr-34-2008-m:art4.4] (versão em vigor a 2026-10-01, desde 2022-12-30)\n4 - Aos valores que determinam a não exigibilidade de redução de contrato, previstos nas alíneas a) e d) do n.º 1 do artigo 95.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.\n\nPergunta: Que efeito tem o regime regional sobre os valores que determinam a escolha do procedimento no Código, para procedimentos na Região Autónoma da Madeira? Dê o território, o predicado que identifica esses procedimentos e o efeito.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "dlr-34-2008-m:art4",
+      "dlr-34-2008-m:art4.1",
+      "dlr-34-2008-m:art4.2",
+      "dlr-34-2008-m:art4.3",
+      "dlr-34-2008-m:art4.4"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "jurisdicao"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "properties": {
+      "field": {
+       "type": "string",
+       "enum": [
+        "tipo_contrato",
+        "tipo_procedimento",
+        "publicado_joue",
+        "territorio",
+        "tipo_entidade",
+        "preco_base",
+        "data_inicio_procedimento"
+       ]
+      },
+      "op": {
+       "type": "string",
+       "enum": [
+        "eq",
+        "ne",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "in",
+        "not_in"
+       ]
+      },
+      "value": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       ]
+      }
+     },
+     "required": [
+      "field",
+      "op",
+      "value"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "territory": {
+      "type": "string",
+      "enum": [
+       "PT-AC",
+       "PT-MA"
+      ]
+     },
+     "predicate": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato",
+          "tipo_procedimento",
+          "publicado_joue",
+          "territorio",
+          "tipo_entidade",
+          "preco_base",
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge",
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "type": "number"
+          },
+          {
+           "type": "boolean"
+          },
+          {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          }
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "effect": {
+      "type": "object",
+      "properties": {
+       "multiply_thresholds_by": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "replace_norma": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "enum": [
+         "norma:dlr-27-2015-a",
+         "norma:dlr-34-2008-m",
+         null
+        ]
+       }
+      },
+      "required": [
+       "multiply_thresholds_by",
+       "replace_norma"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "territory",
+     "predicate",
+     "effect"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ }
+}

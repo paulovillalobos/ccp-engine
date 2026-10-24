@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:53:37Z",
+ "sha256": "a939ee8c40bb99a93afcc1c6b8d6a80f5d6c2e4be7ba90fc970444a8238d8606",
+ "answer": "{\"passagens\": [\"ccp:art19.a\", \"ccp:art19.b\", \"ccp:art19.c\", \"ccp:art19.d\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"ajuste_direto\"}, {\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"obras\"}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 30000.0, \"currency\": \"EUR\"}}}"
+}

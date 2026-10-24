@@ -1,0 +1,129 @@
+{
+ "rule": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+ "type": "prazo_minimo",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art135",
+  "ccp:art135.1",
+  "ccp:art135.2",
+  "ccp:art136",
+  "ccp:art136.1"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.\nData de referência: 2026-10-01. Tipo de regra pedido: prazo_minimo.\n\nPassagens candidatas:\n[ccp:art135] (versão em vigor a 2026-10-01, desde 2018-01-01)\nArtigo 135.º\nPrazo mínimo para a apresentação das propostas em concursos públicos sem publicidade internacional\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a seis dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 14 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 14 dias referido no número anterior pode ser reduzido até um prazo mínimo de seis dias.\n[ccp:art135] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nArtigo 135.º\nPrazo mínimo para a apresentação das propostas em concursos públicos sem publicidade internacional\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 9 dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 20 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 20 dias referido no número anterior pode ser reduzido em até 11 dias.\n\n[ccp:art135.1] (versão em vigor a 2026-10-01, desde 2018-01-01)\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a seis dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 14 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n[ccp:art135.1] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 9 dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 20 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n\n[ccp:art135.2] (versão em vigor a 2026-10-01, desde 2018-01-01)\n2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 14 dias referido no número anterior pode ser reduzido até um prazo mínimo de seis dias.\n[ccp:art135.2] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 20 dias referido no número anterior pode ser reduzido em até 11 dias.\n\n[ccp:art136] (versão em vigor a 2026-10-01, desde 2021-06-20)\nArtigo 136.º\nPrazos mínimos para a apresentação das propostas em concursos públicos com publicidade internacional\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.\n2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º, ou anúncio periódico indicativo, previsto no artigo 35.º, o prazo mínimo referido no número anterior é de 15 dias desde que:\na) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos da parte B do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.\n3 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.\n4 - (Revogado.);\n5 - Na situação prevista no n.º 2 do artigo 133.º, os prazos mínimos referidos nos n.os 1 e 2 do presente artigo são prorrogados por cinco dias.\n[ccp:art136] texto anterior (em vigor de 2018-01-01 a 2021-06-20):\nArtigo 136.º\nPrazos mínimos para a apresentação das propostas em concursos públicos com publicidade internacional\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.\n2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º, ou anúncio periódico indicativo, previsto no artigo 35.º, o prazo mínimo referido no número anterior é de 15 dias desde que:\na) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos da parte B do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.\n3 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.\n4 - (Revogado.)\n\n[ccp:art136.1] (versão em vigor a 2026-10-01, desde 2018-01-01)\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.\n[ccp:art136.1] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 47 dias a contar da data do envio desse anúncio ao Serviço de Publicações Oficiais das Comunidades Europeias.\n\nPergunta: Num concurso público cujo anúncio não é publicado no Jornal Oficial da União Europeia, para empreitada de obras públicas, qual é o prazo mínimo para apresentação das propostas? Dê condições, dias, o campo do prazo e de onde se conta.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art135",
+      "ccp:art135.1",
+      "ccp:art135.2",
+      "ccp:art136",
+      "ccp:art136.1"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "prazo_minimo"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "properties": {
+      "field": {
+       "type": "string",
+       "enum": [
+        "tipo_contrato",
+        "tipo_procedimento",
+        "publicado_joue",
+        "territorio",
+        "tipo_entidade",
+        "preco_base",
+        "data_inicio_procedimento"
+       ]
+      },
+      "op": {
+       "type": "string",
+       "enum": [
+        "eq",
+        "ne",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "in",
+        "not_in"
+       ]
+      },
+      "value": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       ]
+      }
+     },
+     "required": [
+      "field",
+      "op",
+      "value"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "minimum_days": {
+      "type": "integer"
+     },
+     "deadline_field": {
+      "type": "string",
+      "enum": [
+       "prazo_propostas_dias"
+      ]
+     },
+     "counted_from": {
+      "type": "string",
+      "enum": [
+       "data_publicacao_anuncio",
+       "data_envio_anuncio"
+      ]
+     }
+    },
+    "required": [
+     "minimum_days",
+     "deadline_field",
+     "counted_from"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ }
+}

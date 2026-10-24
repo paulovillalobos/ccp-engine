@@ -1,0 +1,209 @@
+{
+ "rule": "regra:dlr-27-2015-a:regime-acores@v1",
+ "type": "jurisdicao",
+ "date": "2026-10-01",
+ "candidates": [
+  "dlr-27-2015-a:art1",
+  "dlr-27-2015-a:art16",
+  "dlr-27-2015-a:art19",
+  "dlr-27-2015-a:art19.a",
+  "dlr-27-2015-a:art20",
+  "dlr-27-2015-a:art20.a"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.\nData de referência: 2026-10-01. Tipo de regra pedido: jurisdicao.\n\nPassagens candidatas:\n[dlr-27-2015-a:art1] (versão em vigor a 2026-10-01, desde 2016-01-01)\nArtigo 1.º\nObjeto e âmbito\n1 - O presente diploma aprova o Regime Jurídico dos Contratos Públicos na Região Autónoma dos Açores, transpondo, parcialmente, e para o ordenamento jurídico regional, a Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro, relativa aos contratos públicos e define a disciplina aplicável à contratação pública e o regime substantivo dos contratos públicos que revistam a natureza de contrato administrativo.\n2 - O regime de contratação pública definido pelo presente diploma é aplicável à formação dos contratos públicos na Região Autónoma dos Açores, entendendo-se por tal todos aqueles que, independentemente da sua designação e natureza, sejam celebrados pelas entidades adjudicantes regionais referidas no artigo seguinte.\n3 - O presente diploma não prejudica a aplicação das normas que integram o regime jurídico da contratação pública e o regime substantivo dos contratos públicos constantes do Código dos Contratos Públicos, aprovado pelo Decreto-Lei n.º 18/2008, de 29 de janeiro, na sua atual versão em vigor.\n\n[dlr-27-2015-a:art16] (versão em vigor a 2026-10-01, desde 2016-01-01)\nArtigo 16.º\nRegime aplicável à escolha do procedimento\n1 - A escolha dos procedimentos a que se referem as alíneas a) a c) do n.º 1 do artigo 14.º condiciona o valor do contrato a celebrar nos termos do disposto nos artigos seguintes do presente capítulo.\n2 - A escolha do procedimento em função dos critérios materiais previstos nos artigos 23.º a 30.º do Código dos Contratos Públicos permite a celebração de contratos de qualquer valor, sem prejuízo das exceções expressamente aí previstas.\n3 - As regras de escolha do procedimento previstas nos artigos 31.º a 33.º do Código dos Contratos Públicos são expressamente aplicáveis às entidades adjudicantes regionais.\n\n[dlr-27-2015-a:art19] (versão em vigor a 2026-10-01, desde 2016-01-01)\nArtigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nNo caso de contratos de empreitada de obras públicas a adjudicar pelas entidades adjudicantes regionais referidas nos n.os 1 e 2 do artigo 2.º:\na) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 150.000,00;\nb) A escolha do concurso público ou do concurso limitado por prévia qualificação permite a celebração de contratos de qualquer valor, exceto quando os respetivos anúncios não sejam publicados no Jornal Oficial da União Europeia, caso em que só permite a celebração de contratos de valor inferior ao referido na alínea a) do artigo 4.º da Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro.\n\n[dlr-27-2015-a:art19.a] (versão em vigor a 2026-10-01, desde 2016-01-01)\na) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 150.000,00;\n\n[dlr-27-2015-a:art20] (versão em vigor a 2026-10-01, desde 2016-01-01)\nArtigo 20.º\nEscolha do procedimento de formação de contratos de locação ou de aquisição de bens móveis e de aquisição de serviços\nNo caso de contratos de locação ou de aquisição de bens móveis e de contratos de aquisição de serviços a adjudicar pelas entidades referidas nos n.os 1 e 2 do artigo 2.º:\na) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 75.000,00;\nb) A escolha do concurso público ou do concurso limitado por prévia qualificação permite a celebração de contratos de qualquer valor, exceto quando os respetivos anúncios não sejam publicados no Jornal Oficial da União Europeia, caso em que só permite a celebração de contratos de valor inferior ao referido na alínea c) do artigo 4.º da Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro.\n\n[dlr-27-2015-a:art20.a] (versão em vigor a 2026-10-01, desde 2016-01-01)\na) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 75.000,00;\n\nPergunta: Que efeito tem o regime regional dos Açores sobre os valores de escolha do procedimento do Código, para entidades adjudicantes regionais? Dê o território, o predicado e o efeito (coeficiente ou norma que substitui).",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "enum": [
+      "dlr-27-2015-a:art1",
+      "dlr-27-2015-a:art16",
+      "dlr-27-2015-a:art19",
+      "dlr-27-2015-a:art19.a",
+      "dlr-27-2015-a:art20",
+      "dlr-27-2015-a:art20.a"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "jurisdicao"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "properties": {
+      "field": {
+       "type": "string",
+       "enum": [
+        "tipo_contrato",
+        "tipo_procedimento",
+        "publicado_joue",
+        "territorio",
+        "tipo_entidade",
+        "preco_base",
+        "data_inicio_procedimento"
+       ]
+      },
+      "op": {
+       "type": "string",
+       "enum": [
+        "eq",
+        "ne",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "in",
+        "not_in"
+       ]
+      },
+      "value": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       ]
+      }
+     },
+     "required": [
+      "field",
+      "op",
+      "value"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "territory": {
+      "type": "string",
+      "enum": [
+       "PT-AC",
+       "PT-MA"
+      ]
+     },
+     "predicate": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato",
+          "tipo_procedimento",
+          "publicado_joue",
+          "territorio",
+          "tipo_entidade",
+          "preco_base",
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge",
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "type": "number"
+          },
+          {
+           "type": "boolean"
+          },
+          {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          }
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "effect": {
+      "type": "object",
+      "properties": {
+       "multiply_thresholds_by": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "replace_norma": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "enum": [
+         "norma:dlr-27-2015-a",
+         "norma:dlr-34-2008-m",
+         null
+        ]
+       }
+      },
+      "required": [
+       "multiply_thresholds_by",
+       "replace_norma"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "territory",
+     "predicate",
+     "effect"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ }
+}

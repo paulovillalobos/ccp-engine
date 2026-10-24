@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:45:43Z",
+ "sha256": "fe80079d39263e909934aa7bddc65e3d167c2646c27050f8ea7e698d9c82a356",
+ "answer": "{\n  \"passagens\": [\n    \"ccp:art19.b\",\n    \"ccp:art474.3.a\",\n    \"eu-2025-2152:art1.1.a\"\n  ],\n  \"tipo\": \"limiar\",\n  \"condicoes\": [\n    {\n      \"field\": \"tipo_contrato\",\n      \"op\": \"eq\",\n      \"value\": \"obras\"\n    },\n    {\n      \"field\": \"tipo_procedimento\",\n      \"op\": \"in\",\n      \"value\": [\n        \"concurso_publico\",\n        \"concurso_limitado_previa_qualificacao\"\n      ]\n    },\n    {\n      \"field\": \"publicado_joue\",\n      \"op\": \"eq\",\n      \"value\": false\n    }\n  ],\n  \"params\": {\n    \"threshold\": {\n      \"field\": \"preco_base\",\n      \"comparator\": \"lt\",\n      \"value\": 5404000,\n      \"currency\": \"EUR\"\n    }\n  }\n}"
+}

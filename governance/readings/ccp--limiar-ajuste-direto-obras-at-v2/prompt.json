@@ -1,0 +1,145 @@
+{
+ "rule": "regra:ccp:limiar-ajuste-direto-obras@v2",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art19",
+  "ccp:art19.a",
+  "ccp:art19.b",
+  "ccp:art19.c",
+  "ccp:art19.d"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art19] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nPara a celebração de contratos de empreitadas de obras públicas pode adotar-se um dos seguintes procedimentos:\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;\nd) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.\n[ccp:art19] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nArtigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nPara a celebração de contratos de empreitadas de obras públicas pode adotar-se um dos seguintes procedimentos:\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Consulta prévia, com convite a pelo menos três entidades, quando o valor do contrato for inferior a (euro) 150 000;\nd) Ajuste direto, quando o valor do contrato for inferior a (euro) 30 000.\n\n[ccp:art19.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\n[ccp:art19.a] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\n\n[ccp:art19.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\n[ccp:art19.b] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\n\n[ccp:art19.c] (versão em vigor a 2026-10-01, desde 2026-10-01)\nc) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;\n[ccp:art19.c] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nc) Consulta prévia, com convite a pelo menos três entidades, quando o valor do contrato for inferior a (euro) 150 000;\n\n[ccp:art19.d] (versão em vigor a 2026-10-01, desde 2026-10-01)\nd) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.\n[ccp:art19.d] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nd) Ajuste direto, quando o valor do contrato for inferior a (euro) 30 000.\n\nPergunta: Para a formação de contratos de empreitada de obras públicas por ajuste direto, qual é o valor (limiar) abaixo do qual esse procedimento pode ser adotado? Dê as condições em que a regra se aplica (tipo de procedimento, tipo de contrato) e o limiar como campo, comparação e valor em euros.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art19",
+      "ccp:art19.a",
+      "ccp:art19.b",
+      "ccp:art19.c",
+      "ccp:art19.d"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "limiar"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "properties": {
+      "field": {
+       "type": "string",
+       "enum": [
+        "tipo_contrato",
+        "tipo_procedimento",
+        "publicado_joue",
+        "territorio",
+        "tipo_entidade",
+        "preco_base",
+        "data_inicio_procedimento"
+       ]
+      },
+      "op": {
+       "type": "string",
+       "enum": [
+        "eq",
+        "ne",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "in",
+        "not_in"
+       ]
+      },
+      "value": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       ]
+      }
+     },
+     "required": [
+      "field",
+      "op",
+      "value"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "threshold": {
+      "type": "object",
+      "properties": {
+       "field": {
+        "type": "string",
+        "enum": [
+         "preco_base"
+        ]
+       },
+       "comparator": {
+        "type": "string",
+        "enum": [
+         "lt",
+         "le"
+        ]
+       },
+       "value": {
+        "type": "number"
+       },
+       "currency": {
+        "type": "string",
+        "enum": [
+         "EUR"
+        ]
+       }
+      },
+      "required": [
+       "field",
+       "comparator",
+       "value",
+       "currency"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "threshold"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ }
+}

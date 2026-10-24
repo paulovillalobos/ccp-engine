@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:45:54Z",
+ "sha256": "0172ab625eec7e566ae8d08e8770b50e26e905050b7ee6089ce882a7f9ebaf98",
+ "answer": "{\"passagens\":[\"dlr-34-2008-m:art4.1\",\"dlr-34-2008-m:art4.2\",\"dlr-34-2008-m:art4.3\"],\"tipo\":\"jurisdicao\",\"condicoes\":[{\"field\":\"territorio\",\"op\":\"eq\",\"value\":\"PT-MA\"}],\"params\":{\"territory\":\"PT-MA\",\"predicate\":[{\"field\":\"territorio\",\"op\":\"eq\",\"value\":\"PT-MA\"}],\"effect\":{\"multiply_thresholds_by\":1.45,\"replace_norma\":null}}}"
+}

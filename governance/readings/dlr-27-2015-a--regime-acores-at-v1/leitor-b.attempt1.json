@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:46:07Z",
+ "sha256": "aa15792fcd9351a52815a285f8e0a83fed28485fcf7904801e4749c9f719d966",
+ "answer": "{\"passagens\":[\"dlr-27-2015-a:art1\",\"dlr-27-2015-a:art16\",\"dlr-27-2015-a:art19\",\"dlr-27-2015-a:art20\"],\"tipo\":\"jurisdicao\",\"condicoes\":[{\"field\":\"territorio\",\"op\":\"eq\",\"value\":\"PT-AC\"}],\"params\":{\"territory\":\"PT-AC\",\"predicate\":[],\"effect\":{\"multiply_thresholds_by\":null,\"replace_norma\":\"norma:dlr-27-2015-a\"}}}"
+}

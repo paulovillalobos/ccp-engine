@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-24T20:44:28Z",
+ "sha256": "e1c6648ce8e7ac40b7e7c0ab44fbc40b6ce24bd9ce49319e75752793d6379b0e",
+ "answer": "{\"passagens\":[\"ccp:art20.1\",\"ccp:art20.1.d\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"ajuste_direto\"},{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"]}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":20000,\"currency\":\"EUR\"}}}"
+}

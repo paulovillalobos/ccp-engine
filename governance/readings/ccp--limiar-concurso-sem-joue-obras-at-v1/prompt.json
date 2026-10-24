@@ -1,0 +1,151 @@
+{
+ "rule": "regra:ccp:limiar-concurso-sem-joue-obras@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art19",
+  "ccp:art19.a",
+  "ccp:art19.b",
+  "ccp:art474.3",
+  "ccp:art474.3.a",
+  "eu-2025-2152:art1",
+  "eu-2025-2152:art1.1",
+  "eu-2025-2152:art1.1.a"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art19] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nPara a celebração de contratos de empreitadas de obras públicas pode adotar-se um dos seguintes procedimentos:\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;\nd) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.\n[ccp:art19] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nArtigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nPara a celebração de contratos de empreitadas de obras públicas pode adotar-se um dos seguintes procedimentos:\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Consulta prévia, com convite a pelo menos três entidades, quando o valor do contrato for inferior a (euro) 150 000;\nd) Ajuste direto, quando o valor do contrato for inferior a (euro) 30 000.\n\n[ccp:art19.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\n[ccp:art19.a] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\n\n[ccp:art19.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\n[ccp:art19.b] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\n\n[ccp:art474.3] (versão em vigor a 2026-10-01, desde 2026-10-01)\n3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:\na) 5 404 000,00 €, para os contratos de empreitada de obras públicas;\nb) 139 000 €, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;\nc) 216 000,00 €, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;\nd) 750 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.\n[ccp:art474.3] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\n3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:\na) (euro) 5 350 000, para os contratos de empreitada de obras públicas;\nb) (euro) 139 000, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;\nc) (euro) 214 000, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;\nd) (euro) 750 000, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.\n\n[ccp:art474.3.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) 5 404 000,00 €, para os contratos de empreitada de obras públicas;\n[ccp:art474.3.a] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\na) (euro) 5 350 000, para os contratos de empreitada de obras públicas;\n\n[eu-2025-2152:art1] (versão em vigor a 2026-10-01, desde 2026-01-01)\nArtigo 1.º\nA Diretiva 2014/24/UE é alterada do seguinte modo:\n1) O artigo 4.º é alterado do seguinte modo:\na) na alínea a), o montante «5 538 000 EUR» é substituído por «5 404 000 EUR»,\nb) na alínea b), o montante «143 000 EUR» é substituído por «140 000 EUR»,\nc) na alínea c), o montante «221 000 EUR» é substituído por «216 000 EUR»;\n2) No artigo 13.º, o primeiro parágrafo é alterado do seguinte modo:\na) na alínea a), o montante «5 538 000 EUR» é substituído por «5 404 000 EUR»,\nb) na alínea b), o montante «221 000 EUR» é substituído por «216 000 EUR».\n\n[eu-2025-2152:art1.1] (versão em vigor a 2026-10-01, desde 2026-01-01)\n1) O artigo 4.º é alterado do seguinte modo:\na) na alínea a), o montante «5 538 000 EUR» é substituído por «5 404 000 EUR»,\nb) na alínea b), o montante «143 000 EUR» é substituído por «140 000 EUR»,\nc) na alínea c), o montante «221 000 EUR» é substituído por «216 000 EUR»;\n\n[eu-2025-2152:art1.1.a] (versão em vigor a 2026-10-01, desde 2026-01-01)\na) na alínea a), o montante «5 538 000 EUR» é substituído por «5 404 000 EUR»,\n\nPergunta: Um concurso público ou limitado por prévia qualificação para empreitada de obras públicas, sem anúncio no Jornal Oficial da União Europeia, só é admissível abaixo de que valor? Escolha as passagens que fixam esse valor hoje e dê condições e limiar.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art19",
+      "ccp:art19.a",
+      "ccp:art19.b",
+      "ccp:art474.3",
+      "ccp:art474.3.a",
+      "eu-2025-2152:art1",
+      "eu-2025-2152:art1.1",
+      "eu-2025-2152:art1.1.a"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "limiar"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "properties": {
+      "field": {
+       "type": "string",
+       "enum": [
+        "tipo_contrato",
+        "tipo_procedimento",
+        "publicado_joue",
+        "territorio",
+        "tipo_entidade",
+        "preco_base",
+        "data_inicio_procedimento"
+       ]
+      },
+      "op": {
+       "type": "string",
+       "enum": [
+        "eq",
+        "ne",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "in",
+        "not_in"
+       ]
+      },
+      "value": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       ]
+      }
+     },
+     "required": [
+      "field",
+      "op",
+      "value"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "threshold": {
+      "type": "object",
+      "properties": {
+       "field": {
+        "type": "string",
+        "enum": [
+         "preco_base"
+        ]
+       },
+       "comparator": {
+        "type": "string",
+        "enum": [
+         "lt",
+         "le"
+        ]
+       },
+       "value": {
+        "type": "number"
+       },
+       "currency": {
+        "type": "string",
+        "enum": [
+         "EUR"
+        ]
+       }
+      },
+      "required": [
+       "field",
+       "comparator",
+       "value",
+       "currency"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "threshold"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ }
+}

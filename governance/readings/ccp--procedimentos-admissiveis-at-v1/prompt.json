@@ -1,0 +1,136 @@
+{
+ "rule": "regra:ccp:procedimentos-admissiveis@v1",
+ "type": "procedimento_admissivel",
+ "date": "2026-09-30",
+ "candidates": [
+  "ccp:art16",
+  "ccp:art16.1",
+  "ccp:art16.1.a",
+  "ccp:art16.1.b",
+  "ccp:art16.1.c",
+  "ccp:art16.1.d",
+  "ccp:art16.1.e",
+  "ccp:art16.1.f",
+  "ccp:art16.1.g",
+  "ccp:art16.2"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.\nData de referência: 2026-09-30. Tipo de regra pedido: procedimento_admissivel.\n\nPassagens candidatas:\n[ccp:art16] (versão em vigor a 2026-09-30, desde 2018-01-01)\nArtigo 16.º\nProcedimentos para a formação de contratos\n1 - Para a formação de contratos cujo objecto abranja prestações que estão ou sejam susceptíveis de estar submetidas à concorrência de mercado, as entidades adjudicantes devem adoptar um dos seguintes tipos de procedimentos:\na) Ajuste directo;\nb) Consulta prévia;\nc) Concurso público;\nd) Concurso limitado por prévia qualificação;\ne) Procedimento de negociação;\nf) Diálogo concorrencial.\ng) Parceria para a inovação.\n2 - Para os efeitos do disposto no número anterior, consideram-se submetidas à concorrência de mercado, designadamente, as prestações típicas abrangidas pelo objecto dos seguintes contratos, independentemente da sua designação ou natureza:\na) Empreitada de obras públicas;\nb) Concessão de obras públicas;\nc) Concessão de serviços públicos;\nd) Locação ou aquisição de bens móveis;\ne) Aquisição de serviços;\nf) Sociedade.\n[ccp:art16] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nArtigo 16.º\nProcedimentos para a formação de contratos\n1 - Para a formação de contratos cujo objecto abranja prestações que estão ou sejam susceptíveis de estar submetidas à concorrência de mercado, as entidades adjudicantes devem adoptar um dos seguintes tipos de procedimentos:\na) Ajuste directo;\nb) Concurso público;\nc) Concurso limitado por prévia qualificação;\nd) Procedimento de negociação;\ne) Diálogo concorrencial.\n2 - Para os efeitos do disposto no número anterior, consideram-se submetidas à concorrência de mercado, designadamente, as prestações típicas abrangidas pelo objecto dos seguintes contratos, independentemente da sua designação ou natureza:\na) Empreitada de obras públicas;\nb) Concessão de obras públicas;\nc) Concessão de serviços públicos;\nd) Locação ou aquisição de bens móveis;\ne) Aquisição de serviços;\nf) Sociedade.\n\n[ccp:art16.1] (versão em vigor a 2026-09-30, desde 2018-01-01)\n1 - Para a formação de contratos cujo objecto abranja prestações que estão ou sejam susceptíveis de estar submetidas à concorrência de mercado, as entidades adjudicantes devem adoptar um dos seguintes tipos de procedimentos:\na) Ajuste directo;\nb) Consulta prévia;\nc) Concurso público;\nd) Concurso limitado por prévia qualificação;\ne) Procedimento de negociação;\nf) Diálogo concorrencial.\ng) Parceria para a inovação.\n[ccp:art16.1] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n1 - Para a formação de contratos cujo objecto abranja prestações que estão ou sejam susceptíveis de estar submetidas à concorrência de mercado, as entidades adjudicantes devem adoptar um dos seguintes tipos de procedimentos:\na) Ajuste directo;\nb) Concurso público;\nc) Concurso limitado por prévia qualificação;\nd) Procedimento de negociação;\ne) Diálogo concorrencial.\n\n[ccp:art16.1.a] (versão em vigor a 2026-09-30, desde 2008-07-30)\na) Ajuste directo;\n\n[ccp:art16.1.b] (versão em vigor a 2026-09-30, desde 2018-01-01)\nb) Consulta prévia;\n[ccp:art16.1.b] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nb) Concurso público;\n\n[ccp:art16.1.c] (versão em vigor a 2026-09-30, desde 2018-01-01)\nc) Concurso público;\n[ccp:art16.1.c] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nc) Concurso limitado por prévia qualificação;\n\n[ccp:art16.1.d] (versão em vigor a 2026-09-30, desde 2018-01-01)\nd) Concurso limitado por prévia qualificação;\n[ccp:art16.1.d] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nd) Procedimento de negociação;\n\n[ccp:art16.1.e] (versão em vigor a 2026-09-30, desde 2018-01-01)\ne) Procedimento de negociação;\n[ccp:art16.1.e] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\ne) Diálogo concorrencial.\n\n[ccp:art16.1.f] (versão em vigor a 2026-09-30, desde 2018-01-01)\nf) Diálogo concorrencial.\n\n[ccp:art16.1.g] (versão em vigor a 2026-09-30, desde 2018-01-01)\ng) Parceria para a inovação.\n\n[ccp:art16.2] (versão em vigor a 2026-09-30, desde 2008-07-30)\n2 - Para os efeitos do disposto no número anterior, consideram-se submetidas à concorrência de mercado, designadamente, as prestações típicas abrangidas pelo objecto dos seguintes contratos, independentemente da sua designação ou natureza:\na) Empreitada de obras públicas;\nb) Concessão de obras públicas;\nc) Concessão de serviços públicos;\nd) Locação ou aquisição de bens móveis;\ne) Aquisição de serviços;\nf) Sociedade.\n\nPergunta: Que tipos de procedimento podem as entidades adjudicantes adotar para formar contratos cujo objeto está submetido à concorrência de mercado? Dê a lista de procedimentos e as condições.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art16",
+      "ccp:art16.1",
+      "ccp:art16.1.a",
+      "ccp:art16.1.b",
+      "ccp:art16.1.c",
+      "ccp:art16.1.d",
+      "ccp:art16.1.e",
+      "ccp:art16.1.f",
+      "ccp:art16.1.g",
+      "ccp:art16.2"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "procedimento_admissivel"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "properties": {
+      "field": {
+       "type": "string",
+       "enum": [
+        "tipo_contrato",
+        "tipo_procedimento",
+        "publicado_joue",
+        "territorio",
+        "tipo_entidade",
+        "preco_base",
+        "data_inicio_procedimento"
+       ]
+      },
+      "op": {
+       "type": "string",
+       "enum": [
+        "eq",
+        "ne",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "in",
+        "not_in"
+       ]
+      },
+      "value": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       ]
+      }
+     },
+     "required": [
+      "field",
+      "op",
+      "value"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "procedures": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "enum": [
+        "ajuste_direto",
+        "consulta_previa",
+        "concurso_publico",
+        "concurso_limitado_previa_qualificacao",
+        "procedimento_negociacao",
+        "dialogo_concorrencial",
+        "parceria_inovacao"
+       ]
+      }
+     }
+    },
+    "required": [
+     "procedures"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ }
+}

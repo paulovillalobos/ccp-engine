@@ -1,0 +1,117 @@
+{
+  "id": "regra:dlr-34-2008-m:coeficiente-madeira@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:55:48Z",
+  "type": "jurisdicao",
+  "title": "Região Autónoma da Madeira: coeficiente aplicado aos valores de escolha do procedimento",
+  "norma": "norma:dlr-34-2008-m",
+  "jurisdiction": "PT-MA",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "territorio",
+      "op": "in",
+      "value": "PT-MA"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2022-12-30",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "dlr-34-2008-m:art4",
+      "version": "2022-12-30",
+      "quote": "Artigo 4.º\nEscolha do procedimento e redução do contrato a escrito\n1 - Aos valores que determinam a escolha do procedimento de formação de contratos previsos nas alíneas c) e d) do artigo 19.º, nas alíneas c) e d) do n.º 1 do artigo 20.º, nas alíneas b) e c) do n.º 1 do artigo 21.º, no n.º 2 do artigo 22.º, no n.º 4 do artigo 31.º, no n.º 3 do artigo 36.º, no n.º 2 do artigo 46.º-A, no n.º 1 do artigo 128.º e na alínea a) do artigo 155.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.\n2 - Da aplicação do coeficiente previsto no nº 1 não pode resultar a violação dos montantes dos limiares para contratos públicos, definidos pela legislação comunitária.\n3 - Todas as referências no Código dos Contratos Públicos às normas mencionadas no nº 1 devem ter em consideração os valores resultantes da aplicação do coeficiente nele previsto.\n4 - Aos valores que determinam a não exigibilidade de redução de contrato, previstos nas alíneas a) e d) do n.º 1 do artigo 95.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.",
+      "offsets": {
+        "start": 0,
+        "end": 1117
+      }
+    },
+    {
+      "passage": "dlr-34-2008-m:art4.1",
+      "version": "2022-12-30",
+      "quote": "1 - Aos valores que determinam a escolha do procedimento de formação de contratos previsos nas alíneas c) e d) do artigo 19.º, nas alíneas c) e d) do n.º 1 do artigo 20.º, nas alíneas b) e c) do n.º 1 do artigo 21.º, no n.º 2 do artigo 22.º, no n.º 4 do artigo 31.º, no n.º 3 do artigo 36.º, no n.º 2 do artigo 46.º-A, no n.º 1 do artigo 128.º e na alínea a) do artigo 155.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.",
+      "offsets": {
+        "start": 0,
+        "end": 473
+      }
+    },
+    {
+      "passage": "dlr-34-2008-m:art4.2",
+      "version": "2022-12-30",
+      "quote": "2 - Da aplicação do coeficiente previsto no nº 1 não pode resultar a violação dos montantes dos limiares para contratos públicos, definidos pela legislação comunitária.",
+      "offsets": {
+        "start": 0,
+        "end": 168
+      }
+    },
+    {
+      "passage": "dlr-34-2008-m:art4.3",
+      "version": "2022-12-30",
+      "quote": "3 - Todas as referências no Código dos Contratos Públicos às normas mencionadas no nº 1 devem ter em consideração os valores resultantes da aplicação do coeficiente nele previsto.",
+      "offsets": {
+        "start": 0,
+        "end": 179
+      }
+    },
+    {
+      "passage": "dlr-34-2008-m:art4.4",
+      "version": "2022-12-30",
+      "quote": "4 - Aos valores que determinam a não exigibilidade de redução de contrato, previstos nas alíneas a) e d) do n.º 1 do artigo 95.º do Código dos Contratos Públicos, é aplicado na Região Autónoma da Madeira um coeficiente de 1,45.",
+      "offsets": {
+        "start": 0,
+        "end": 227
+      }
+    }
+  ],
+  "params": {
+    "territory": "PT-MA",
+    "predicate": [
+      {
+        "field": "tipo_procedimento",
+        "op": "in",
+        "value": "concurso_publico"
+      }
+    ],
+    "effect": {
+      "multiply_thresholds_by": 1.45,
+      "replace_norma": "norma:dlr-34-2008-m"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T20:53:37Z",
+      "chosen_passages": [
+        "dlr-34-2008-m:art4",
+        "dlr-34-2008-m:art4.1",
+        "dlr-34-2008-m:art4.2",
+        "dlr-34-2008-m:art4.3",
+        "dlr-34-2008-m:art4.4"
+      ],
+      "blind": false,
+      "evento": "evento:22"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T20:45:54Z",
+      "chosen_passages": [
+        "dlr-34-2008-m:art4.1",
+        "dlr-34-2008-m:art4.2",
+        "dlr-34-2008-m:art4.3"
+      ],
+      "blind": true,
+      "evento": "evento:23"
+    }
+  ],
+  "state": "proposed"
+}

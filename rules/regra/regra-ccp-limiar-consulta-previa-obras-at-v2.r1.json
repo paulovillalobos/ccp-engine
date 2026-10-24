@@ -1,0 +1,69 @@
+{
+  "id": "regra:ccp:limiar-consulta-previa-obras@v2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:55:48Z",
+  "type": "limiar",
+  "title": "Consulta prévia: valor máximo para contratos de empreitada de obras públicas",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": "obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": "consulta_previa"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art19.c",
+      "version": "2026-10-01",
+      "quote": "c) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;",
+      "offsets": {
+        "start": 0,
+        "end": 83
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 1000000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T20:53:37Z",
+      "chosen_passages": [
+        "ccp:art19.c"
+      ],
+      "blind": false,
+      "evento": "evento:16"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T20:45:21Z",
+      "chosen_passages": [
+        "ccp:art19.c"
+      ],
+      "blind": true,
+      "evento": "evento:17"
+    }
+  ],
+  "state": "proposed"
+}

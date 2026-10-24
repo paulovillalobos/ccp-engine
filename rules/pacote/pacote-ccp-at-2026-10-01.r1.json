@@ -1,0 +1,15 @@
+{
+  "id": "pacote:ccp@2026-10-01",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:57:03Z",
+  "law_version": "lei:ccp@2026-10-01",
+  "rules": [
+    {
+      "id": "regra:ccp:limiar-ajuste-direto-obras@v2",
+      "revision": 1
+    }
+  ],
+  "hash": "e75853cc3848a9c0c92a850bda9871f9d8841e7eba683ecf8373d578b1669888",
+  "log_head": "f2f861ed00ef8d311915c3d5345d6e59244771ea68f7a4d020b37d122fd15748",
+  "built_at": "2026-10-24T20:57:03Z"
+}
