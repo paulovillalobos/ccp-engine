@@ -55,3 +55,9 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Phase A done criterion checked: verify ok (3 stores, 12/12 overlays refused); 44 scaffold tests green; 8 fill tests
   red; TRACEABILITY without gaps; DECISIONS, FILL-PLAN, AUDIT, BUILD-LOG written; an extractor can start from schemas/ +
   fixtures/ (data/README.md says where and in what shape).
+
+## 2026-10-24 audit of phase A (commit: Audit of phase A: 22 of 23 red-team mutations pass verify; rating 6/10)
+- Done: AUDIT-2026-10-24-PHASE-A.md; tools/redteam_verify.py (23 mutations, 22 MISSED). Gate re-run clean; CI green.
+- Next: A3b (six items in the audit) before B1: re-derive every verdict in verify, reconcile every stored state with the
+  log, manifest cross-checks, law-clock consistency; one overlay per new check; redteam prints 0 MISSED.
+- Why: verify v0 checks invariants object by object; a `cumpre` contradicted by its own fact passes today (M16).
