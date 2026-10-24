@@ -1,0 +1,269 @@
+{
+ "agreement": {
+  "answered_by_both": 232,
+  "direction": 223,
+  "direction_rate": 0.9612,
+  "exact": 102,
+  "exact_rate": 0.4397
+ },
+ "cases": 6,
+ "cases_held_out": 5,
+ "date": "2026-10-24",
+ "error_classes": {
+  "note": "error classes of BASE notices (declared regime out of date, etc.) need the extractor's afirmações; data/ is empty, so they are not measured here",
+  "regime_desatualizado": null
+ },
+ "frozen_at": "2026-10-24",
+ "held_out_sha256": "2be68e3fe6da103a5a516399b18dc0149c599fd779dddda56b47268c04451c70",
+ "pairs": 236,
+ "pending_adjudication": 134,
+ "rules": {
+  "regra:ccp:limiar-ajuste-direto-bens-servicos@v1": {
+   "dentro": {
+    "fn": 0,
+    "fp": 0,
+    "n": 1,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 1,
+    "tp": 0
+   },
+   "reservado": {
+    "fn": 0,
+    "fp": 0,
+    "n": 0,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 0,
+    "tp": 0
+   },
+   "state": "proposed"
+  },
+  "regra:ccp:limiar-ajuste-direto-bens-servicos@v2": {
+   "dentro": {
+    "fn": 0,
+    "fp": 0,
+    "n": 0,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 0,
+    "tp": 0
+   },
+   "reservado": {
+    "fn": 0,
+    "fp": 0,
+    "n": 2,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 2,
+    "tp": 0
+   },
+   "state": "proposed"
+  },
+  "regra:ccp:prazo-minimo-concurso-joue@v1": {
+   "dentro": {
+    "fn": 0,
+    "fp": 0,
+    "n": 0,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 0,
+    "tp": 0
+   },
+   "reservado": {
+    "fn": 0,
+    "fp": 0,
+    "n": 1,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 1,
+    "tp": 0
+   },
+   "state": "proposed"
+  },
+  "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1": {
+   "dentro": {
+    "fn": 0,
+    "fp": 0,
+    "n": 0,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 0,
+    "tp": 0
+   },
+   "reservado": {
+    "fn": 0,
+    "fp": 0,
+    "n": 1,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 1,
+    "tp": 0
+   },
+   "state": "proposed"
+  },
+  "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
+   "dentro": {
+    "fn": 0,
+    "fp": 0,
+    "n": 0,
+    "precision": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 0,
+    "tp": 0
+   },
+   "reservado": {
+    "fn": 0,
+    "fp": 1,
+    "n": 1,
+    "precision": {
+     "n": 1,
+     "value": 0.0,
+     "wilson95": [
+      0.0,
+      0.7935
+     ]
+    },
+    "recall": {
+     "n": 0,
+     "value": null,
+     "wilson95": [
+      0.0,
+      1.0
+     ]
+    },
+    "tn": 0,
+    "tp": 0
+   },
+   "state": "proposed"
+  }
+ },
+ "store": "fixtures/measure",
+ "tool": "ccp-measure-0.1"
+}

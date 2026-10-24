@@ -1,0 +1,28 @@
+{
+  "id": "ref:m-20",
+  "revision": 1,
+  "recorded_at": "2026-10-24T21:00:00Z",
+  "unit": "proc:fixture-measure:M-20",
+  "expected": [
+    {
+      "rule": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "result": "nao_avaliado",
+      "reason": "facto_ausente"
+    }
+  ],
+  "annotators": [
+    {
+      "principal": "leitor:a",
+      "at": "2026-10-24T21:09:43Z",
+      "agrees_with_expected": true
+    },
+    {
+      "principal": "leitor:b",
+      "at": "2026-10-24T21:11:36Z",
+      "agrees_with_expected": true
+    }
+  ],
+  "adjudication": null,
+  "held_out": true,
+  "frozen_at": "2026-10-24"
+}

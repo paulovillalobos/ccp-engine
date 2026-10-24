@@ -1,0 +1,15 @@
+{
+ "adapter": "adaptador:fixture-measure@1",
+ "field": "adjudicante",
+ "id": "facto:proc-fixture-measure-M-01:adjudicante:fixture-measure",
+ "known_at": "2026-10-24T21:00:00Z",
+ "origin": {
+  "field": "nifEntidadeAdjudicante",
+  "raw": "raw:fixture-measure:caso:m-01"
+ },
+ "recorded_at": "2026-10-24T21:00:00Z",
+ "revision": 1,
+ "unit": "proc:fixture-measure:M-01",
+ "valid_at": "2026-10-05",
+ "value": "500000011"
+}

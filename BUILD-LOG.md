@@ -848,3 +848,29 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   held-out split. Value vocabulary as in tools/read_rules.py VOCAB and adapters' enum maps (bens / servicos / obras ...).
 - Next: B5 measurement on fixtures/measure.
 - Why: the engine is ready to count; the count waits for notices and for a settled selector.
+
+## 2026-10-24 B5 measurement of §8 on 20 FIXTURE cases (commit: B5: measurement — 20 cases annotated blind by two families, report with Wilson intervals, recomputed by verify)
+- Done: tools/make_measure_fixtures.py (ferramenta): fixtures/measure/, 20 synthetic procedures (FIXTURE, not BASE)
+  on the rules' edges, stratified by procedure type, value and period, 5 adjudicantes. tools/measure.py (ferramenta):
+  prompts (per case: its facts and, for every B3 rule valid on its start date, the rule's id, title and the law it
+  cites, never its params), record (a pair both readers answer alike is an expected verdict; others go to
+  governance/readings/CASOS-DESACORDO.md for a pessoa: nothing adjudicated here), report (engine.evaluate with each rule
+  alone, valid_at = start; positive class "não cumpre"; precision and recall with 95 % Wilson intervals, inside / held
+  out per law/HELD-OUT.json). Readers from readers/ (D38), answers kept with at and sha256 under
+  governance/readings/casos/. verify gains BENCH (HELD-OUT.json hash; no package after frozen_at holding a rule whose
+  events name a held-out unit) and MEAS (every reports/measure/*.json recomputed) plus a "measure" store.
+- Result (reports/measure/2026-10-24.json / .md, frozen_at 2026-10-24, held-out sha256 2be68e3f...): 20 cases annotated
+  by both families; 236 (case, rule) pairs; both answered 232; exact agreement 102 (0.44), agreement of direction
+  (breach or not) 223 (0.96); 134 pairs pending adjudication or unanswered. 6 cases have at least one agreed verdict and
+  are caso_referencia records (5 held out: every case from 2026-10-01 is held out by period, as declared). Figures per
+  rule are thin: most agreed pairs are "não se aplica" (not an expected verdict) or both "não avaliado"; the one rule
+  with a positive count is prazo-minimo-concurso-sem-joue-obras@v1, held out: precision 0.0 [0.0, 0.79] (n = 1). The
+  settled rule has no agreed pair. leitor:a answers "nao_avaliado" for most pairs; leitor:b's answers read the facts
+  (e.g. M-02 80 000 > 75 000 -> não cumpre; M-12 5 days < 6 -> não cumpre). Error classes of BASE notices: not
+  measurable while data/ is empty (they need the extractor's afirmações).
+- Correction to the red test, disclosed: it asked for 20 caso_referencia records, but a record needs one agreed
+  expected verdict (schema); it now counts the 20 cases annotated by both readers and checks every record has both.
+- verify: ok (stores fixtures, repo, data, measure; BENCH/MEAS ok). test_b5 green. Registered: make-measure-fixtures,
+  measure, verify.
+- Next: B6 the local API.
+- Why: a figure is only honest with its interval, its freeze date and the disagreements beside it.

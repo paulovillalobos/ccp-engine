@@ -603,6 +603,41 @@
       "versao": 11,
       "code": "verify.py",
       "hash": "d90fcf1316b91a182e3ed0349d5ffbc6f22c30efc540e247dbe185f9feb046b5",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:make-measure-fixtures@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_measure_fixtures.py",
+      "hash": "da5c42f10ed25d426f4e2abffe4b7aa67e02ad7a0f4275fb633ffadba1682c10",
+      "retired": false,
+      "nota": "20 FIXTURE measurement cases while data/ is empty (B5)"
+    },
+    {
+      "id": "ferramenta:measure@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure.py",
+      "hash": "f74d4f28b382f7d880d5114acdd180c07f389f2fc6102219cfb4400645536237",
+      "retired": false,
+      "nota": "§8 measurement: cases, report (B5)"
+    },
+    {
+      "id": "ferramenta:verify@12",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 12,
+      "code": "verify.py",
+      "hash": "005ecba4e8d87440da397bdd479184249221a9c8173052a57295b31f863eb19e",
       "retired": false
     }
   ]

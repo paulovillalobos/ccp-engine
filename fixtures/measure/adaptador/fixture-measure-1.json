@@ -1,0 +1,74 @@
+{
+ "code": "adapters/fixture-measure/",
+ "coverage": [
+  {
+   "captured": 10,
+   "expected": null,
+   "period": "2026-09"
+  },
+  {
+   "captured": 10,
+   "expected": null,
+   "period": "2026-10"
+  }
+ ],
+ "id": "adaptador:fixture-measure@1",
+ "mapping": [
+  {
+   "canonical_field": "data_inicio_procedimento",
+   "source_field": "dataInicio",
+   "transform": "date_iso"
+  },
+  {
+   "canonical_field": "tipo_procedimento",
+   "source_field": "tipoProcedimento",
+   "transform": "identity"
+  },
+  {
+   "canonical_field": "tipo_contrato",
+   "source_field": "tipoContrato",
+   "transform": "identity"
+  },
+  {
+   "canonical_field": "preco_base",
+   "source_field": "precoBase",
+   "transform": "number_pt"
+  },
+  {
+   "canonical_field": "publicado_joue",
+   "source_field": "publicadoJOUE",
+   "transform": "boolean"
+  },
+  {
+   "canonical_field": "prazo_propostas_dias",
+   "source_field": "prazoPropostas",
+   "transform": "integer"
+  },
+  {
+   "canonical_field": "data_envio_anuncio",
+   "source_field": "dataEnvioAnuncio",
+   "transform": "date_iso"
+  },
+  {
+   "canonical_field": "territorio",
+   "source_field": "territorio",
+   "transform": "identity"
+  },
+  {
+   "canonical_field": "tipo_entidade",
+   "source_field": "tipoEntidade",
+   "transform": "identity"
+  },
+  {
+   "canonical_field": "adjudicante",
+   "source_field": "nifEntidadeAdjudicante",
+   "transform": "nif"
+  }
+ ],
+ "proposed_by": "ferramenta:make-measure-fixtures@1",
+ "recorded_at": "2026-10-24T21:00:00Z",
+ "revision": 1,
+ "source": "fixture-measure",
+ "state": "proposed",
+ "version": 1
+}

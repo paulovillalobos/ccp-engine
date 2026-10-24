@@ -1,0 +1,15 @@
+{
+ "adapter": "adaptador:fixture-measure@1",
+ "field": "prazo_propostas_dias",
+ "id": "facto:proc-fixture-measure-M-16:prazo_propostas_dias:fixture-measure",
+ "known_at": "2026-10-24T21:00:00Z",
+ "origin": {
+  "field": "prazoPropostas",
+  "raw": "raw:fixture-measure:caso:m-16"
+ },
+ "recorded_at": "2026-10-24T21:00:00Z",
+ "revision": 1,
+ "unit": "proc:fixture-measure:M-16",
+ "valid_at": "2026-09-28",
+ "value": 25
+}

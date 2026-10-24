@@ -49,7 +49,9 @@ Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red
   GRAPH   a unit in a parent cycle, or whose parent is not of an earlier kind (proc -> lote -> contrato -> mod)
   FIELD   a conflito whose facts do not carry its field, value or unit chain; a fact whose field (and, for a raw origin,
           source field) is not in its adapter's mapping
-  BENCH   a held-out reference case without frozen_at
+  BENCH   a held-out reference case without frozen_at; law/HELD-OUT.json changed after it was frozen; a package built
+          after frozen_at holding a rule whose log events name a held-out unit
+  MEAS    a reports/measure/<date>.json that tools/measure.py does not recompute from the stored answers
   I01 also: raw bytes that no raw record names (orphans)
 """
 import ast
@@ -755,6 +757,43 @@ def run_broken(valid_root, broken_root):
     return results
 
 
+def check_measure():
+    """BENCH and MEAS (B5), once over the repository: law/HELD-OUT.json still hashes to its sha256; a package built after
+    frozen_at holds no rule whose log events name a held-out unit; every reports/measure/<date>.json is what
+    tools/measure.py recomputes from the stored answers (the gate imports the tool's arithmetic, never a reader)."""
+    out = []
+    held = ROOT / "law/HELD-OUT.json"
+    if not held.exists():
+        return out
+    from engine.canon import canonical, sha256_text
+    doc = json.loads(held.read_text(encoding="utf-8"))
+    if sha256_text(canonical(doc["definition"])) != doc["sha256"]:
+        out.append(("BENCH", "law/HELD-OUT.json: its definition no longer hashes to the sha256 recorded when it was frozen"))
+    sys.path.insert(0, str(ROOT / "tools"))
+    import measure  # noqa: E402  (tools/measure.py: the report's arithmetic; no model)
+    stores = [d for d in ("data", "fixtures/measure") if (ROOT / d).exists()]
+    held_units = set()
+    for d in stores:
+        st = measure.load(d)
+        for u in measure.units(st):
+            if measure.is_held_out(measure.case_values(st, u), doc):
+                held_units.add(u["id"])
+    repo = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    for pk in current_of(repo, "pacote").values():
+        if pk["built_at"][:10] <= doc["frozen_at"]:
+            continue
+        named = {r["id"] for r in pk["rules"]}
+        for _, ev in repo.events:
+            if ev["assertion"] in named and any(u in json.dumps(ev.get("payload") or {}) for u in held_units):
+                out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
+    for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
+        stored = json.loads(f.read_text(encoding="utf-8"))
+        again = measure.report(stored["store"], stored["date"])
+        if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+            out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure.py recomputes from the stored answers"))
+    return out
+
+
 def main(argv) -> int:
     if len(argv) >= 2 and argv[1] == "--store":
         _, out = check_store([Path(p) for p in argv[2:]])
@@ -775,6 +814,11 @@ def main(argv) -> int:
         n = sum(len(v) for v in store.objects.values())
         print(f"store {name}: {n} objects, {len(store.events)} events, {len(out)} failure(s)")
         failed |= bool(out)
+    meas = check_measure()
+    for code, msg in meas:
+        print(f"FAIL {code}  {msg}")
+    print(f"measurement (BENCH/MEAS): {'ok' if not meas else 'FAILED'}")
+    failed |= bool(meas)
     for name, expect, codes in run_broken(ROOT / "fixtures/valid", ROOT / "fixtures/broken"):
         ok = bool(expect) and expect <= codes
         print(f"broken {name}: expected {sorted(expect)} got {sorted(codes)} -> {'ok' if ok else 'NOT REFUSED'}")

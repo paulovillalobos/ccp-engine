@@ -1,6 +1,6 @@
 """leitor:a on Modal: the family-A reader answers the B3 prompts with guided JSON (vLLM, temperature 0, one batch).
 
-    <a Python 3.12 venv with modal>/bin/modal run readers/leitor_a_modal.py [--only SLUG]
+    <a Python 3.12 venv with modal>/bin/modal run readers/leitor_a_modal.py [--only SLUG] [--dir governance/readings/casos]
 
 readers/ holds the code that runs a model (DECISIONS D38): nothing in engine/, tools/ or verify.py imports it, and
 verify's code guard keeps it that way.
@@ -63,9 +63,10 @@ def answer(prompts: list[dict]) -> list[dict]:
 
 
 @app.local_entrypoint()
-def main(only: str = ""):
+def main(only: str = "", dir: str = ""):
+    base = Path(dir).resolve() if dir else READINGS  # --dir governance/readings/casos for the B5 cases
     items = []
-    for d in sorted(READINGS.iterdir()):
+    for d in sorted(base.iterdir()):
         f = d / "prompt.json"
         if not f.exists() or (d / "leitor-a.json").exists() or (only and only not in d.name):
             continue
@@ -81,5 +82,5 @@ def main(only: str = ""):
             print(f"{r['key']}: skipped ({r['skipped']}, {r['prompt_tokens']} tokens)")
             continue
         rec = {"at": at, "sha256": hashlib.sha256(r["text"].encode("utf-8")).hexdigest(), "answer": r["text"]}
-        (READINGS / r["key"] / "leitor-a.json").write_text(json.dumps(rec, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        (base / r["key"] / "leitor-a.json").write_text(json.dumps(rec, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         print(f"{r['key']}: answered ({r['prompt_tokens']} prompt tokens, {r['completion_tokens']} out, {r['finish_reason']})")

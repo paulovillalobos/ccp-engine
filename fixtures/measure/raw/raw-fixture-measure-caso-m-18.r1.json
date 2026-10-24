@@ -1,0 +1,20 @@
+{
+ "bytes": "raw_bytes/a4d6b74de9248153902476d9d2ec19701207d380253602349fcc62e618ea21d9",
+ "captured_at": "2026-10-24T21:00:00Z",
+ "encoding": "utf-8",
+ "id": "raw:fixture-measure:caso:m-18",
+ "kind": "caso",
+ "media_type": "application/json",
+ "recorded_at": "2026-10-24T21:00:00Z",
+ "request": {
+  "method": "GET",
+  "reads_of_page": 1,
+  "renderer": "ccp-make-measure-fixtures-0.1: generated, not read"
+ },
+ "revision": 1,
+ "sha256": "a4d6b74de9248153902476d9d2ec19701207d380253602349fcc62e618ea21d9",
+ "source": "fixture-measure",
+ "source_id": "m-18",
+ "text": null,
+ "url": "https://example.invalid/ccp-engine/fixture-measure/M-18"
+}

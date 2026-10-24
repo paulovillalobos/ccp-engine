@@ -1,0 +1,28 @@
+{
+  "id": "ref:m-03",
+  "revision": 1,
+  "recorded_at": "2026-10-24T21:00:00Z",
+  "unit": "proc:fixture-measure:M-03",
+  "expected": [
+    {
+      "rule": "regra:ccp:limiar-ajuste-direto-bens-servicos@v1",
+      "result": "cumpre",
+      "reason": null
+    }
+  ],
+  "annotators": [
+    {
+      "principal": "leitor:a",
+      "at": "2026-10-24T21:09:43Z",
+      "agrees_with_expected": true
+    },
+    {
+      "principal": "leitor:b",
+      "at": "2026-10-24T21:08:00Z",
+      "agrees_with_expected": true
+    }
+  ],
+  "adjudication": null,
+  "held_out": false,
+  "frozen_at": null
+}
