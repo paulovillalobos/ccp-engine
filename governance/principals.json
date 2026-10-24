@@ -592,7 +592,7 @@
       "versao": 4,
       "code": "tools/read_rules.py",
       "hash": "867882e61b17f788b3ca9162b3a7031841dffcb2ff62956526bd9449d450b690",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:verify@11",
@@ -626,7 +626,7 @@
       "versao": 1,
       "code": "tools/measure.py",
       "hash": "f74d4f28b382f7d880d5114acdd180c07f389f2fc6102219cfb4400645536237",
-      "retired": false,
+      "retired": true,
       "nota": "§8 measurement: cases, report (B5)"
     },
     {
@@ -638,7 +638,7 @@
       "versao": 12,
       "code": "verify.py",
       "hash": "005ecba4e8d87440da397bdd479184249221a9c8173052a57295b31f863eb19e",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:serve@1",
@@ -651,6 +651,50 @@
       "hash": "50874ebd86aea8bb89b8eda631979786a5d10f575f2bc2553b01b7c54283a409",
       "retired": false,
       "nota": "API v1 local (B6)"
+    },
+    {
+      "id": "ferramenta:measure@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure.py",
+      "hash": "e615a2cd3839a3d3ffd327eee8275e7daf7a408543ef363760f0e3045229d5ef",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@13",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 13,
+      "code": "verify.py",
+      "hash": "b1bcce5132cbac7baae9395667186174f2e9ce4158112a111e6fe2764602e35a",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:verify@14",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 14,
+      "code": "verify.py",
+      "hash": "6193fa181649241d0614e9e5390ac8c20525a944ff5de712b7d0e8f0818a68b4",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:read-rules@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/read_rules.py",
+      "hash": "8c252a3ebfcef90138881be64bcdde3dd9067702b5d2eeab481659d28b559c80",
+      "retired": false
     }
   ]
 }

@@ -899,3 +899,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   was cancelled by the 20-minute job limit during the scaffold tests (verify now also re-derives the measure store and
   recomputes the measurement; locally ~10 min + ~5 min). Nothing is skipped or weakened: each job keeps its own limit.
 - Why: the gate grew with the law; the limit is per job, not a reason to drop a check.
+
+## 2026-10-24 audit of phase 3 (commit: Audit of phase 3: evidence anchored in the log; rule replay equals the log; 9/10)
+- Done: AUDIT-2026-10-24-PHASE-3.md; four real-store mutations: three passed and are now refused (READ: reader answers vs
+  answer_sha256; SEAL: annotations + HELD-OUT.json sealed by tools/measure.py seal, evento:38; STATE: rule content =
+  latest propose/correct payload); D39 supersedes D37's union clause, eight rule files regenerated from the log;
+  reading-vs-rule check narrowed to proposer and upholding reviewers; `readers` refused by the code guard;
+  tests/test_evidence.py; tools re-registered (verify@14, read-rules@5, measure@2).
+- Next: the pessoa's four decisions (who proposes, what counts as replication, extractor delivery, adjudications);
+  then B4 and B5 over real data.
+- Why: evidence that can change without the log noticing is not evidence.

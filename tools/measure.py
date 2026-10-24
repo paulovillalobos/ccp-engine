@@ -243,15 +243,35 @@ def render_md(rep):
     return "\n".join(L) + "\n"
 
 
+def cmd_seal():
+    """Seal the raw annotations and the held-out definition in the log (verify SEAL)."""
+    import hashlib
+    from engine.governance import Log
+    from engine.sources import now_utc
+    files = sorted(p for p in CASES_DIR.rglob("*.json") if p.name != "INDEX.json") if CASES_DIR.exists() else []
+    index = {"files": {str(p.relative_to(CASES_DIR)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}}
+    (CASES_DIR / "INDEX.json").write_text(json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    held = ROOT / "law/HELD-OUT.json"
+    log = Log(ROOT / "governance")
+    n = 1 + sum(1 for _, ev in log.events if str(ev["assertion"]).startswith("selo:casos:"))
+    tool = next(p["id"] for p in log.principals["principals"] if p["id"].startswith("ferramenta:measure@") and not p["retired"])
+    ev = log.propose(tool, "caso_referencia", f"selo:casos:{n}", {"index_sha256": sha256_text(canonical(index)), "held_out_sha256": hashlib.sha256(held.read_bytes()).hexdigest() if held.exists() else None,
+                                                                   "files": len(files)}, now_utc())
+    log.write_state()
+    print(ev, len(files), "files sealed")
+
+
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", nargs="?", choices=["prompts", "record"])
+    ap = argparse.ArgumentParser(description="prompts | record | report | seal")
+    ap.add_argument("cmd", nargs="?", choices=["prompts", "record", "seal"])
     ap.add_argument("--store", default="fixtures/measure"); ap.add_argument("--out"); ap.add_argument("--date")
     a = ap.parse_args()
     if a.cmd == "prompts":
         cmd_prompts(load(a.store))
     elif a.cmd == "record":
         cmd_record(a.store)
+    elif a.cmd == "seal":
+        cmd_seal()
     else:
         rep = report(a.store, a.date)
         out = Path(a.out)

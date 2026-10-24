@@ -1,5 +1,15 @@
 {
   "assertions": {
+    "caso_referencia|selo:casos:1": {
+      "events": [
+        38
+      ],
+      "family": null,
+      "proposer": "ferramenta:measure@2",
+      "reviews": [],
+      "revision": 1,
+      "state": "proposed"
+    },
     "product_rule|product_rule:principais-do-log": {
       "events": [
         1
@@ -337,6 +347,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 37,
-  "head": "ff9761690ebccd554af85aef9f28ca9583bc765421329f4558f9bd593937bb4a"
+  "events": 38,
+  "head": "3df4e7bcc511c6a5adc30bbfc97dd3f81565b30133d4cccb1c731d28b0193b55"
 }

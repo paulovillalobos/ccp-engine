@@ -29,6 +29,8 @@ Check codes (one per invariant of ARQUITECTURA.md §2, plus the structural ones)
           not its record's type (the record decides, not the verdict)
   I12     an aggregate rule's completeness threshold not decided by a pessoa's product_rule decision in the log
   PROV    a ferramenta principal whose code no longer hashes to the hash registered for its version
+  READ    a leitor's raw answer file missing or not hashing to the answer_sha256 its log event recorded
+  SEAL    measurement annotations or law/HELD-OUT.json not matching the newest seal event in the log (tools/measure.py seal)
   PACK    a package's hash is not the hash of its rule list, or it names rules that are not in the store
   DIFF    a stored diff differs from the one rebuilt from its two packages (engine/rules.py once A4 lands; D14)
 Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red-team mutations):
@@ -67,7 +69,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from engine import evaluate as evaluate_mod  # noqa: E402
 from engine import extract, governance, manifest, schema  # noqa: E402
-from engine.canon import content_hash  # noqa: E402
+from engine.canon import canonical as canonical_json, content_hash  # noqa: E402
 from engine.store import Store, facts_of  # noqa: E402
 
 VERSION = "ccp-verify-0.2"
@@ -80,7 +82,7 @@ if (ROOT / "reports/veredictos").exists():  # B4: real verdicts are re-derived w
     STORES["engine"] = [ROOT / "data", ROOT / "law", ROOT / "rules", ROOT / "governance", ROOT / "reports/veredictos"]
 if (ROOT / "fixtures/measure").exists():  # B5: reference cases measured while data/ is empty
     STORES["measure"] = [ROOT / "fixtures/measure", ROOT / "law", ROOT / "rules", ROOT / "governance"]
-MODEL_MODULES = {"openai", "anthropic", "modal", "vllm", "transformers", "torch", "peft", "google.generativeai", "mistralai", "cohere", "ollama", "litellm", "langchain"}
+MODEL_MODULES = {"openai", "anthropic", "modal", "vllm", "transformers", "torch", "peft", "google.generativeai", "mistralai", "cohere", "ollama", "litellm", "langchain", "readers"}
 NETWORK_MODULES = {"requests", "httpx", "aiohttp", "urllib.request", "urllib3", "socket", "http.client", "ftplib", "smtplib", "websocket", "websockets"}
 SEND_PATTERNS = [re.compile(r"\.post\("), re.compile(r"method\s*=\s*[\"']POST[\"']"), re.compile(r"urlopen\([^)]*\bdata\s*="), re.compile(r"\.put\("), re.compile(r"\.delete\(")]
 
@@ -474,9 +476,14 @@ def check_states(store, rp, out):
             rec = next((r for r in store.revisions(ref["id"]) if r["revision"] == ref["revision"]), None)
             if rec and rec["state"] != "settled":
                 out.append(("STATE", f"{pk['id']}: names {ref['id']} revision {ref['revision']}, whose state is {rec['state']}; a package holds settled rules only"))
+    events_by_id = {ev["id"]: ev for _, ev in store.events}
     for r in current_of(store, "regra").values():
         cited = {c["passage"] for c in r["passages"]} | {e["citation"]["passage"] for e in r["exceptions"]}
         for rd in r["readings"]:
+            ev = events_by_id.get(rd["evento"])
+            # D39: the proposer's reading is the rule; an upholding review agrees with it; a disagreeing review keeps its own passages
+            if ev and ev["action"] == "review" and ev.get("verdict") != "uphold":
+                continue
             extra = sorted(set(rd["chosen_passages"]) - cited)
             if extra:
                 out.append(("STATE", f"{r['id']}: reading {rd['evento']} chose {extra}, which the rule does not cite"))
@@ -731,6 +738,9 @@ def check_store(roots):
     check_manifest(store, out)
     check_rederive(store, out)
     check_packages(store, out)
+    check_rule_content(store, out)
+    check_readings(store, out)
+    check_seal(store, out)
     return store, out
 
 
@@ -755,6 +765,98 @@ def run_broken(valid_root, broken_root):
                 codes = {c for c, _ in out}
         results.append((overlay.name, expect, codes))
     return results
+
+
+def reading_dir(rule_id: str) -> str:
+    """governance/readings/<dir> for a rule id: regra:ccp:x@v2 -> ccp--x-at-v2 (tools/read_rules.slug)."""
+    return rule_id.split(":", 1)[1].replace(":", "--").replace("@", "-at-")
+
+
+def check_rule_content(store, out):
+    """STATE: a rule file in rules/ is the replay of the log, in content too: its params, conditions and cited passage
+    ids equal the payload of the latest propose/correct event of that rule (where the payload carries them)."""
+    latest = {}
+    for _, ev in store.events:
+        if ev["assertion_type"] == "regra" and ev["action"] in ("propose", "correct"):
+            latest[ev["assertion"]] = ev
+    for r in current_of(store, "regra").values():
+        ev = latest.get(r["id"])
+        if ev is None:
+            continue
+        p = ev.get("payload") or {}
+        if "params" in p and p["params"] != r["params"]:
+            out.append(("STATE", f"{r['id']}: params differ from the log's proposal {ev['id']}"))
+        if "conditions" in p and p["conditions"] != r["conditions"]:
+            out.append(("STATE", f"{r['id']}: conditions differ from the log's proposal {ev['id']}"))
+        if "chosen_passages" in p and set(p["chosen_passages"]) != {c["passage"] for c in r["passages"]}:
+            out.append(("STATE", f"{r['id']}: cited passages differ from the log's proposal {ev['id']}"))
+
+
+def check_readings(store, out, readings_root=None):
+    """READ (invariants 4, 5): every log event that carries payload.answer_sha256 (a leitor's proposal or review of a
+    rule) has its raw answer on disk, governance/readings/<rule>/leitor-<a|b>.json, whose "answer" text hashes to that
+    sha256 and whose own "sha256" field says the same. The log is the anchor; the file is the evidence; neither can
+    change alone."""
+    root = Path(readings_root) if readings_root else (store.governance_dir / "readings" if store.governance_dir else None)
+    if root is None:
+        return
+    for _, ev in store.events:
+        want = (ev.get("payload") or {}).get("answer_sha256")
+        if not want:
+            continue
+        leitor = ev["principal"].split(":")[1]
+        f = root / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
+        if not f.exists():
+            out.append(("READ", f"{ev['id']}: answer file {f.relative_to(root)} missing for {ev['assertion']}"))
+            continue
+        try:
+            doc = json.loads(f.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            out.append(("READ", f"{ev['id']}: {f.relative_to(root)} unreadable: {exc}"))
+            continue
+        got = hashlib.sha256(str(doc.get("answer", "")).encode("utf-8")).hexdigest()
+        if got != want or doc.get("sha256") != want:
+            out.append(("READ", f"{ev['id']}: {f.relative_to(root)} does not hash to the sha256 the log recorded ({want[:12]}...)"))
+
+
+def check_seal(store, out, casos_root=None, held_out=None):
+    """SEAL (§8 replay): the measurement's raw annotations (governance/readings/casos/**) and law/HELD-OUT.json are
+    sealed in the log by a ferramenta (tools/measure.py seal: assertion_type caso_referencia, assertion selo:casos:<n>,
+    payload {index_sha256, held_out_sha256, files}). The newest seal must match governance/readings/casos/INDEX.json
+    (every annotation file listed with its sha256, none unlisted) and the current HELD-OUT.json bytes. Annotations
+    without a seal are not evidence: with files present and no seal, SEAL fails."""
+    gov = store.governance_dir
+    if gov is None:
+        return
+    casos = Path(casos_root) if casos_root else gov / "readings" / "casos"
+    held = Path(held_out) if held_out else ROOT / "law/HELD-OUT.json"
+    files = sorted(p for p in casos.rglob("*.json") if p.name != "INDEX.json") if casos.exists() else []
+    seals = [ev for _, ev in store.events if ev["action"] == "propose" and ev["assertion_type"] == "caso_referencia" and str(ev["assertion"]).startswith("selo:casos:")]
+    if not files and not seals:
+        return
+    if files and not seals:
+        out.append(("SEAL", f"{len(files)} annotation files under {casos.name}/ and no seal event in the log"))
+        return
+    seal = seals[-1]["payload"]
+    index_path = casos / "INDEX.json"
+    if not index_path.exists():
+        out.append(("SEAL", "governance/readings/casos/INDEX.json missing"))
+        return
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    if hashlib.sha256(canonical_json(index).encode("utf-8")).hexdigest() != seal.get("index_sha256"):
+        out.append(("SEAL", f"INDEX.json does not hash to the sealed index_sha256 ({seals[-1]['id']})"))
+    listed = index.get("files", {})
+    for f in files:
+        rel = str(f.relative_to(casos))
+        if rel not in listed:
+            out.append(("SEAL", f"{rel}: annotation file not in the sealed index"))
+        elif hashlib.sha256(f.read_bytes()).hexdigest() != listed[rel]:
+            out.append(("SEAL", f"{rel}: annotation file changed after it was sealed"))
+    for rel in listed:
+        if not (casos / rel).exists():
+            out.append(("SEAL", f"{rel}: sealed annotation file missing"))
+    if held.exists() and hashlib.sha256(held.read_bytes()).hexdigest() != seal.get("held_out_sha256"):
+        out.append(("SEAL", f"{held.name} changed after the newest seal ({seals[-1]['id']})"))
 
 
 def check_measure():

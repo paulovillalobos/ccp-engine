@@ -298,8 +298,7 @@ def cmd_record():
                               payload={"chosen_passages": b["passages"], "conditions": b["conditions"], "params": b["params"], "answer_sha256": rb["sha256"]})
             readings.append({"principal": "leitor:b", "family": "B", "at": rb["at"], "chosen_passages": b["passages"], "blind": True, "evento": ev_b})
             if not row["exact"]:
-                passages = sorted(set(passages) | set(b["passages"]))  # D37: an unsettled rule cites what both readings chose
-                disagreements.append((t, a, b))
+                disagreements.append((t, a, b))  # D39: the rule cites the proposer's passages only; B's reading stays in its review payload
         state = log.replay().state_of("regra", t["rule"])
         row["state"] = state
         writer.append(build_rule(store, t, a, passages, readings, state))
