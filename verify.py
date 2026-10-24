@@ -350,6 +350,56 @@ def check_verdicts(store, out):
                 out.append(("I11", f"{v['id']}: natural person {e['id']} published with a name"))
 
 
+def log_prefix_heads(store):
+    """{head after event n: event n} for every prefix of the governance log (GENESIS for the empty prefix)."""
+    heads = {governance.GENESIS: None}
+    for line, ev in store.events:
+        heads[hashlib.sha256(line.encode("utf-8")).hexdigest()] = ev
+    return heads
+
+
+def check_manifest(store, out):
+    """MAN: a manifest is checked against the store, not trusted (§7). log_head is the head of a prefix of the log whose
+    last event is not after produced_at (DECISIONS D25: the log as it stood; later events do not void a verdict); the
+    package exists, has the manifest's law_version and names the verdict's rule at its exact revision; every adapter of
+    the facts used is listed; every source snapshot names a raw record with that sha256, source and captured_at. A
+    package's own log_head is a prefix head too."""
+    heads = log_prefix_heads(store)
+    facts = current_of(store, "facto")
+    raws_by_sha = {}
+    for r in current_of(store, "raw").values():
+        raws_by_sha.setdefault(r["sha256"], []).append(r)
+    for pk in current_of(store, "pacote").values():
+        if pk["log_head"] not in heads:
+            out.append(("MAN", f"{pk['id']}: log_head {pk['log_head'][:12]}... is not the head of any prefix of the governance log"))
+    for v in current_of(store, "veredicto").values():
+        m, where = v["manifest"], v["id"]
+        if m["log_head"] not in heads:
+            out.append(("MAN", f"{where}: manifest.log_head {m['log_head'][:12]}... is not the head of any prefix of the governance log"))
+        elif heads[m["log_head"]] is not None and heads[m["log_head"]]["at"] > m["produced_at"]:
+            out.append(("MAN", f"{where}: manifest.log_head is the log after {heads[m['log_head']]['id']} ({heads[m['log_head']]['at']}), later than produced_at {m['produced_at']}"))
+        pk = store.current(m["package"])
+        if pk is None:
+            out.append(("MAN", f"{where}: manifest.package {m['package']} is not in the store"))
+        else:
+            if pk["law_version"] != m["law_version"]:
+                out.append(("MAN", f"{where}: manifest.law_version {m['law_version']} but package {pk['id']} is {pk['law_version']}"))
+            named = {r["id"]: r["revision"] for r in pk["rules"]}
+            if v["rule"]["id"] not in named:
+                out.append(("MAN", f"{where}: package {pk['id']} does not name rule {v['rule']['id']}"))
+            elif named[v["rule"]["id"]] != v["rule"]["revision"]:
+                out.append(("MAN", f"{where}: package {pk['id']} names {v['rule']['id']} at revision {named[v['rule']['id']]}, the verdict at {v['rule']['revision']}"))
+        if not any(r["revision"] == v["rule"]["revision"] for r in store.revisions(v["rule"]["id"])):
+            out.append(("MAN", f"{where}: rule {v['rule']['id']} has no revision {v['rule']['revision']} in the store"))
+        for fid in v["facts_used"]:
+            f = facts.get(fid)
+            if f and f["adapter"] not in m["adapters"]:
+                out.append(("MAN", f"{where}: fact {fid} comes from {f['adapter']}, which the manifest does not list"))
+        for snap in m["source_snapshots"]:
+            if not any(r["source"] == snap["source"] and r["captured_at"] == snap["captured_at"] for r in raws_by_sha.get(snap["sha256"], [])):
+                out.append(("MAN", f"{where}: source snapshot {snap['source']} {snap['sha256'][:12]}... names no raw record with that sha256, source and captured_at"))
+
+
 RED_FIELDS = ("id", "rule", "result", "reason", "citation", "assertions_compared")
 
 
@@ -467,6 +517,7 @@ def check_store(roots):
     check_citations(store, out)
     check_governance(store, out)
     check_verdicts(store, out)
+    check_manifest(store, out)
     check_rederive(store, out)
     check_packages(store, out)
     return store, out

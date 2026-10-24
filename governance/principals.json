@@ -169,6 +169,17 @@
       "versao": 2,
       "code": "verify.py",
       "hash": "ca784feb842f294f3af87848439183cd5ec3519d2222fb16b9fe5aaf2d71b957",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:verify@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "verify.py",
+      "hash": "458e9b9f1d30c16f99819b3bd1833f7176ec65ebf4025ca0ea41b6d91e6119a4",
       "retired": false
     }
   ]

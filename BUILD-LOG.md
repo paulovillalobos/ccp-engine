@@ -98,3 +98,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   effect). ferramenta:verify@2 registered.
 - Next: A3b.2 check_manifest (MAN).
 - Why: a `cumpre` contradicted by its own fact (M16) passed the gate; invariant 3 says verify re-derives verdicts.
+
+## 2026-10-24 A3b.2 verify checks manifests against the store (commit: verify: manifests checked against log, packages, adapters and snapshots (MAN))
+- Done: verify.check_manifest (code MAN). log_head is the head of a prefix of the governance log whose last event is not
+  after produced_at (also for each pacote's log_head); manifest.package exists, has the manifest's law_version and names
+  the verdict's rule at its exact revision; the rule revision exists; every adapter of a fact used is in
+  manifest.adapters; every source snapshot names a raw record with that sha256, source and captured_at. Red team: M01,
+  M01b, M02, M06 now MAN. ferramenta:verify@3. Deviation from the A3b wording: DECISIONS D25 (prefix head, not equality
+  with the current head).
+- Next: A3b.3 check_states (STATE).
+- Why: the manifest was trusted; a verdict could name a package without its rule, a revision that does not exist or a
+  log head the log never had.
