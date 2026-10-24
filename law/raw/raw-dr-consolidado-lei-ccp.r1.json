@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:ccp",
+  "revision": 1,
+  "recorded_at": "2026-10-24T14:48:39Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "ccp",
+  "sha256": "30fbc6158d3189950fc26f6c41d984df5b799cc55651fde3e6b516907c54d07b",
+  "bytes": "raw_bytes/30fbc6158d3189950fc26f6c41d984df5b799cc55651fde3e6b516907c54d07b",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2008-34455475",
+  "captured_at": "2026-10-24T14:48:33Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 45000"
+  },
+  "text": {
+    "extractor": "dr-consolidated-fragments@1",
+    "sha256": "df9fcdb2321e7436e356b0024e46a9799018e38d7b7354b44ee74db35b4b0fbf",
+    "bytes": "raw_bytes/df9fcdb2321e7436e356b0024e46a9799018e38d7b7354b44ee74db35b4b0fbf"
+  }
+}
