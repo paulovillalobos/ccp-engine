@@ -711,3 +711,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: close the phase (four commands, CI, report for the independent review).
 - Why: the 308 municípios are contracting authorities; who may authorise a spend is their own law, and the pilot says
   where it lives and what reading it costs before any of it enters the engine.
+
+## 2026-10-24 audit of phase 2 (commit: Audit of phase 2: the law stands; 9/10)
+- Done: AUDIT-2026-10-24-PHASE-2.md; the filler's seven commits accepted without edits; numbers re-derived here; three
+  real-law mutations caught; debts for phase 3 listed (EU thresholds and six codes without passages, remissões at act
+  level, slow fill tests).
+- Next: phase 3 (the builder): B3 rules by two families over the real text, B4 engine over the extractor's notices, §8.
+- Why: the law layer is now data someone can be wrong about, and verify says when.
