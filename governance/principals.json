@@ -191,6 +191,17 @@
       "versao": 4,
       "code": "verify.py",
       "hash": "e2f3e4dd8ab1618f370c74579022f47116974c70131837df62ee4f5319fcba99",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:verify@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "verify.py",
+      "hash": "3c44fe817ac39f1e95f3f81fc724ea65868ddf5dfe5e4c0f5a46876107495889",
       "retired": false
     }
   ]

@@ -120,3 +120,12 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   revision. Red team: M05, M07, M09, M10, M20, M22 now STATE. ferramenta:verify@4.
 - Next: A3b.4 check_law_time (TIME).
 - Why: only regra states were cross-checked (I05); a link, adapter or dispute could claim a state the log never gave it.
+
+## 2026-10-24 A3b.4 verify checks the law clock across objects (commit: verify: law clock across passages, vigencias, rules and verdicts (TIME))
+- Done: verify.check_law_time (code TIME). Passage versions in strictly increasing valid_from, each closed before the
+  next opens, valid_to after valid_from, only the last open. Every vigencia.valid_from starts a version of its passage.
+  Regra: valid_from equals the latest valid_from among the versions it cites (passages + exceptions), lies inside every
+  cited version, and does not outlive a closed one (DECISIONS D26, stricter than the A3b wording). Veredicto: the cited
+  version is in force on valid_at. Red team: M03, M11, M15, M19 now TIME. ferramenta:verify@5.
+- Next: A3b.5 small cross-object checks (GRAPH, FIELD, I11, BENCH, I01 orphans).
+- Why: the law clock was checked per object only; a rule could claim validity its text never had.

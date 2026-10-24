@@ -452,6 +452,56 @@ def check_states(store, rp, out):
             out.append(("STATE", f"{r['id']}: highest stored revision is {r['revision']} but the log is at revision {known['revision']}"))
 
 
+def _version(store, passage_id, version):
+    p = store.current(passage_id)
+    return next((v for v in (p or {}).get("versions", []) if v["version"] == version), None)
+
+
+def _in_force(v, date):
+    return v["valid_from"] <= date and (v["valid_to"] is None or date < v["valid_to"])
+
+
+def check_law_time(store, out):
+    """TIME (invariant 8, the law clock). A passage's versions are ordered by valid_from, each closes before the next
+    opens and only the last may be open. A vigencia starts a version of its passage. A rule's validity is the validity
+    of the text it cites (DECISIONS D26): its valid_from is the latest valid_from among the versions it cites, it lies
+    inside every cited version, and it does not outlive a closed one. The version a verdict cites is in force on the
+    verdict's valid_at."""
+    for p in current_of(store, "passagem").values():
+        vs = p["versions"]
+        if [v["valid_from"] for v in vs] != sorted(v["valid_from"] for v in vs) or len({v["valid_from"] for v in vs}) != len(vs):
+            out.append(("TIME", f"{p['id']}: versions are not in strictly increasing valid_from order"))
+        for v in vs:
+            if v["valid_to"] is not None and v["valid_to"] <= v["valid_from"]:
+                out.append(("TIME", f"{p['id']} version {v['version']}: valid_to {v['valid_to']} is not after valid_from {v['valid_from']}"))
+        ordered = sorted(vs, key=lambda v: v["valid_from"])
+        for a, b in zip(ordered, ordered[1:]):
+            if a["valid_to"] is None or a["valid_to"] > b["valid_from"]:
+                out.append(("TIME", f"{p['id']}: version {a['version']} ({a['valid_from']}..{a['valid_to']}) overlaps version {b['version']} from {b['valid_from']}"))
+    for vg in current_of(store, "vigencia").values():
+        p = store.current(vg["passage"])
+        if p and not any(v["valid_from"] == vg["valid_from"] for v in p["versions"]):
+            out.append(("TIME", f"{vg['id']}: valid_from {vg['valid_from']} starts no version of {vg['passage']}"))
+    for r in current_of(store, "regra").values():
+        cited = [_version(store, c["passage"], c["version"]) for c in r["passages"] + [e["citation"] for e in r["exceptions"]]]
+        cited = [v for v in cited if v]  # a missing version is I02's
+        if not cited:
+            continue
+        latest = max(v["valid_from"] for v in cited)
+        if r["valid_from"] != latest:
+            out.append(("TIME", f"{r['id']}: valid_from {r['valid_from']} but the latest version it cites starts {latest}"))
+        for v in cited:
+            if not _in_force(v, r["valid_from"]):
+                out.append(("TIME", f"{r['id']}: valid_from {r['valid_from']} is outside the cited version {v['version']} ({v['valid_from']}..{v['valid_to']})"))
+            if v["valid_to"] is not None and (r["valid_to"] is None or r["valid_to"] > v["valid_to"]):
+                out.append(("TIME", f"{r['id']}: valid until {r['valid_to']} but cited version {v['version']} ends {v['valid_to']}"))
+    for vd in current_of(store, "veredicto").values():
+        c = vd.get("citation")
+        v = _version(store, c["passage"], c["version"]) if c else None
+        if v and not _in_force(v, vd["valid_at"]):
+            out.append(("TIME", f"{vd['id']}: cites {c['passage']}@{c['version']} ({v['valid_from']}..{v['valid_to']}), not in force on valid_at {vd['valid_at']}"))
+
+
 RED_FIELDS = ("id", "rule", "result", "reason", "citation", "assertions_compared")
 
 
@@ -567,6 +617,7 @@ def check_store(roots):
     check_references(store, out)
     check_sources(store, out)
     check_citations(store, out)
+    check_law_time(store, out)
     rp = check_governance(store, out)
     check_states(store, rp, out)
     check_verdicts(store, out)
