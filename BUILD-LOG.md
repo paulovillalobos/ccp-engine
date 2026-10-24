@@ -129,3 +129,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   version is in force on valid_at. Red team: M03, M11, M15, M19 now TIME. ferramenta:verify@5.
 - Next: A3b.5 small cross-object checks (GRAPH, FIELD, I11, BENCH, I01 orphans).
 - Why: the law clock was checked per object only; a rule could claim validity its text never had.
+
+## 2026-10-24 A3b.5 smaller cross-object checks (commit: verify: unit graph, fact and conflict fields against adapters, entity types from records, frozen held-out cases, orphan bytes)
+- Done: verify.check_cross. GRAPH: a unit in a parent cycle, or whose parent is not of an earlier kind (proc -> lote ->
+  contrato -> mod). FIELD: a conflito's facts carry its field, its recorded value and sit in its unit's chain; a fact's
+  field is in its adapter's mapping and, for a raw origin, the mapping row names the raw's source field. I11 now reads
+  the entidade record: a published type that differs from the record, or a name on a record that is a pessoa_singular.
+  BENCH: held_out implies frozen_at. I01: raw_bytes no raw record (bytes or derived text) names. Red team: M12, M18
+  FIELD; M13 GRAPH; M14 I01; M21 BENCH; M23 I11 — 24 of 24 caught. ferramenta:verify@6.
+- Next: A3b.6 one broken overlay per new check from tools/make_fixtures.py, test count, redteam additions, docstring,
+  TRACEABILITY, AUDIT, tool registration.
+- Why: the audit's smaller gaps; facts_of would loop forever on a parent cycle (now guarded by unit_chain in RED).

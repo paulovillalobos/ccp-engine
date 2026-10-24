@@ -502,6 +502,69 @@ def check_law_time(store, out):
             out.append(("TIME", f"{vd['id']}: cites {c['passage']}@{c['version']} ({v['valid_from']}..{v['valid_to']}), not in force on valid_at {vd['valid_at']}"))
 
 
+UNIT_ORDER = ("proc", "lote", "contrato", "mod")
+
+
+def check_cross(store, out):
+    """The smaller cross-object checks of A3b item 5.
+    GRAPH  a unit sits in a parent cycle, or its parent is not of an earlier kind (proc -> lote -> contrato -> mod)
+    FIELD  a conflito names a field, value or unit its facts do not carry; a fact's field is not in its adapter's mapping
+           (for a fact read from a raw record, the mapping row must also name the record's source field)
+    I11    a verdict's entity whose stored record is a pessoa_singular is published with a name, or under another type
+    BENCH  a held-out reference case without frozen_at
+    I01    a file in raw_bytes/ that no raw record (bytes or derived text) names"""
+    for u in current_of(store, "unidade").values():
+        chain, cycle = unit_chain(store, u["id"])
+        if cycle:
+            out.append(("GRAPH", f"{u['id']}: parent chain {' -> '.join(chain)} returns to itself"))
+        parent = store.current(u["parent"]) if u.get("parent") else None
+        if parent and u["kind"] in UNIT_ORDER and parent.get("kind") in UNIT_ORDER and UNIT_ORDER.index(parent["kind"]) >= UNIT_ORDER.index(u["kind"]):
+            out.append(("GRAPH", f"{u['id']}: a {u['kind']} whose parent {parent['id']} is a {parent['kind']}"))
+    facts = current_of(store, "facto")
+    for c in current_of(store, "conflito").values():
+        chain, _ = unit_chain(store, c["unit"])
+        for val in c["values"]:
+            f = facts.get(val["facto"])
+            if f is None:
+                continue
+            if f["field"] != c["field"]:
+                out.append(("FIELD", f"{c['id']}: conflict on {c['field']} but {f['id']} is a fact of {f['field']}"))
+            if f["value"] != val["value"]:
+                out.append(("FIELD", f"{c['id']}: records {val['value']!r} for {f['id']}, whose value is {f['value']!r}"))
+            if f["unit"] not in chain:
+                out.append(("FIELD", f"{c['id']}: {f['id']} belongs to {f['unit']}, outside {c['unit']} and its ancestors"))
+    for f in facts.values():
+        a = store.current(f["adapter"])
+        if a is None:
+            continue
+        rows = [m for m in a["mapping"] if m["canonical_field"] == f["field"]]
+        src = f["origin"].get("field")
+        if not rows:
+            out.append(("FIELD", f"{f['id']}: field {f['field']} is not in the mapping of {a['id']}"))
+        elif src is not None and not any(m["source_field"] == src for m in rows):
+            out.append(("FIELD", f"{f['id']}: {a['id']} maps {f['field']} from {[m['source_field'] for m in rows]}, not from {src}"))
+    for v in current_of(store, "veredicto").values():
+        for e in v["entities"]:
+            rec = store.current(e["id"])
+            if rec is None:
+                continue
+            if rec["type"] != e.get("type"):
+                out.append(("I11", f"{v['id']}: entity {e['id']} published as {e.get('type')}, stored as {rec['type']}"))
+            if rec["type"] == "pessoa_singular" and e.get("name"):
+                out.append(("I11", f"{v['id']}: natural person {e['id']} (per its record) published with a name"))
+    for c in current_of(store, "caso_referencia").values():
+        if c["held_out"] and not c["frozen_at"]:
+            out.append(("BENCH", f"{c['id']}: held out without frozen_at; a held-out case is frozen before any rule is measured on it"))
+    named = set()
+    for r in current_of(store, "raw").values():
+        named.add(r["sha256"])
+        if r.get("text"):
+            named.add(r["text"]["sha256"])
+    for sha, path in sorted(store.raw_bytes.items()):
+        if sha not in named:
+            out.append(("I01", f"{path}: raw bytes no raw record names (orphan)"))
+
+
 RED_FIELDS = ("id", "rule", "result", "reason", "citation", "assertions_compared")
 
 
@@ -621,6 +684,7 @@ def check_store(roots):
     rp = check_governance(store, out)
     check_states(store, rp, out)
     check_verdicts(store, out)
+    check_cross(store, out)
     check_manifest(store, out)
     check_rederive(store, out)
     check_packages(store, out)
