@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-177-2026",
+  "revision": 1,
+  "recorded_at": "2026-10-24T15:01:53Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-177-2026",
+  "sha256": "c2501ead65532458c4be7095bcecb2ebc4244854b0d45d300c4c38328f80f966",
+  "bytes": "raw_bytes/c2501ead65532458c4be7095bcecb2ebc4244854b0d45d300c4c38328f80f966",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/177-2026-1166969779",
+  "captured_at": "2026-10-24T14:53:11Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "39adfae14fcf82dbda997ebdbde3c2fed36cbe1bc26007b72787981672deb9c4",
+    "bytes": "raw_bytes/39adfae14fcf82dbda997ebdbde3c2fed36cbe1bc26007b72787981672deb9c4"
+  }
+}

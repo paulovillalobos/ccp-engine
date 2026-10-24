@@ -74,3 +74,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the two DR captures into law/ (CCP consolidated; DL 177/2026), inspect notes and per-article history, fit
   passagem/vigencia to the real shape; then A3b.
 - Why: Paulo's product rule for the log; and the DR page is a rendered DOM, so offsets need a re-derivable text.
+
+## 2026-10-24 law as it is served (commit: Law: DR notes grammar, per-article history, DL 177/2026 ...)
+- Done: four more raws in law/ from the builder's passive reads (DL 177/2026 detail page 14:53:11Z; history views of arts. 20,
+  113, 136 at 14:56Z via tools/capture_dr_history.mjs, copied into the repo); extractor dr-article-history@1 (fragments +
+  notes); engine/vigente.py: NOTE_RE parses all 735 notes of the consolidated page (53 REVOGADO in capitals, 4 without
+  date), norma_slug, versions_from_history (rectifications folded; art. 20 -> 4 legal versions, art. 136 -> 3, untouched
+  by DL 177/2026), signatures of notes_to_vigencias and vigente (B2); tests/test_vigente.py against the real strings;
+  FILL-PLAN B2 rewritten to the real shape (selector passage = dl-177-2026:art7.2 Norma transitória n.º 2; the DL page
+  carries the republished CCP after "Republicação"); DECISIONS D24. Tools re-registered (hashes).
+- Next: A3b (verify re-derives verdicts and reconciles states) if the independent review quota remains; else the builder: B1 (structure,
+  passages, serve, package), then B2 per FILL-PLAN with the history capture over ~384 articles.
+- Why: the form of the law is now fixed from the pages themselves, not from a description.

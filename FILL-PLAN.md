@@ -26,22 +26,46 @@ Done when: `test_b1_copied_modules.py` green; `verify.check_code()` empty (tools
 
 ## B2 — capture the consolidated CCP with its validity notes (`tests/fill/test_b2_ccp_capture.py`)
 
-Source: CCP consolidated at diariodarepublica.pt (589 articles, 607 notes with dates) plus the DL 177/2026 text for
-`dl-177-2026:art7`. Output into the repository's store: `law/raw/`, `law/raw_bytes/`, `law/norma/`, `law/passagem/`,
-`law/vigencia/`, all through `engine.store.Writer` (append-only). `norma:ccp` and `norma:dl-177-2026` registered; each
-passage version's `offsets` select its text inside the raw capture (verify I01); each `vigencia` quotes its note (I02).
+What the DR serves (captured 2026-10-24, in `law/raw/`; DECISIONS D24):
+- `raw:dr-consolidado:lei:ccp`: the consolidated page, one rendered DOM (2.6 MB). Working text `dr-consolidated-fragments@1`
+  (591 "Artigo" lines, 4376 lines) and, with `dr-article-history@1`, the same plus 735 notes (`NOTA: ...`), each article's
+  current text followed by its notes newest first. `engine/vigente.parse_note` reads every one of the 735 (53 are
+  `REVOGADO`, 4 have no "em vigor a partir de").
+- `raw:dr-consolidado:artigo-historico:ccp-art20 / -art113 / -art136`: the opened "Ver alterações ao texto" view, one per
+  article, captured by `tools/capture_dr_history.mjs` (DevTools protocol: load the consolidated page, click the article's
+  link, dump the live DOM; a plain `--dump-dom` of the article URL does not bring the history). Working text
+  `dr-article-history@1`: per version, title + epigraph + text, then the note that produced it; oldest = "Versão inicial"
+  with no note. `engine/vigente.versions_from_history` turns it into legal versions (rectifications with the same
+  `valid_from` folded into one version; `tests/test_vigente.py` fixes art. 20 = 4 versions, art. 136 = 3).
+- `raw:dr-consolidado:diploma:dl-177-2026`: the amending act's detail page (`dr-html-blocks@1`). Its own **Artigo 7.º,
+  Norma transitória, n.º 2** is the regime selector's passage (`dl-177-2026:art7.2`); the page also carries the
+  republished CCP after the line "Republicação", so `structure` must stop the act's own articles there.
+  Official PDF: https://files.diariodarepublica.pt/1s/2026/09/17200/0000200283.pdf (sha256 e2c9ae64fe97e336…, 27.8 MB,
+  not stored in git; capture into `law/raw_bytes/` when the edition check is built).
 
-Done when: at least 589 `artigo` passages under `norma:ccp`; at least 607 `vigencia` records; `vigente(store, "2026-09-30")`
-and `vigente(store, "2026-10-01")` differ exactly in the passages whose `vigencia` names `norma:dl-177-2026` with
-`valid_from 2026-10-01`; `python -I verify.py` re-derives everything with 0 failures. Record the capture in `BUILD-LOG.md`
-with the sha256 of each raw page.
+Steps:
+1. `engine/structure.structure(norma, text, raw_id, version)`: the consolidated working text -> passages `ccp:artN`,
+   `ccp:artN.M`, `ccp:artN.M.a` (numbers "1 - ", alíneas "a) ", subalíneas "i) ") with offsets into that text; parts,
+   titles, chapters from the "Anexo > Parte II > Título I > Capítulo II" path lines.
+2. `tools/capture_dr_history.mjs` over every article that has at least one note (count them from the consolidated text;
+   expect about 384), 3 s apart, one click each, stored through `engine.sources.record_raw` as `artigo-historico` raws.
+3. `engine/vigente.notes_to_vigencias`: one `vigencia` per note of the consolidated text, `passage` = the article (or the
+   number/alínea the note's text names), `altered_by` = `norma:` + `norma_slug(diploma)`, `effect` from the note, `note`
+   quoted by offsets in the consolidated working text; register every amending act as a `norma` (title from the note).
+4. Passage versions from the history raws (`versions_from_history`, `initial_valid_from` = 2008-07-30); articles without
+   history have one version; `vigente(store, date)` = the version with `valid_from <= date < valid_to`.
+
+Done when: ≥ 589 `artigo` passages; ≥ 607 vigencias, every quote re-derived by verify; `vigente(2026-09-30)` and
+`vigente(2026-10-01)` differ exactly in the passages whose vigencia names `norma:dl-177-2026` with `valid_from`
+2026-10-01 (211 notes carry that date); `python -I verify.py` 0 failures; the capture log (dates, sha256 per page) in
+BUILD-LOG.md.
 
 ## B3 — rules v0 in the governance log, two families (`tests/fill/test_b3_rules_v0.py`)
 
 Readers: AMALIA on Modal (CONTEXTO.md; scripts in `~/Downloads/foaap-core/amalia-benchmark-2026-10-23/`) proposes by
 choosing passage ids; Reader B reviews blind. Both go through `engine.governance.Log` (`propose` by `ai:amalia-9b`, `review`
 by `ai:reader-b` with `independence: blind`). The code writes every quote with `engine.passages.cite`. Rules:
-`seletor_regime` on `dl-177-2026:art7*`; `limiar` on `ccp:art19*` and `ccp:art20*`; `prazo_minimo` on `ccp:art135*` and
+`seletor_regime` on `dl-177-2026:art7.2` (Norma transitória, n.º 2); `limiar` on `ccp:art19*` and `ccp:art20*`; `prazo_minimo` on `ccp:art135*` and
 `ccp:art136*`. `rules/regra/` is the replay of the log (`regra.readings`, `regra.state`), `rules/pacote/pacote:ccp@2026-10-01`
 names them (`engine.rules.package`).
 

@@ -125,6 +125,39 @@
       "versao": 1,
       "code": "engine/extract.py",
       "hash": "cd43ef627213673cd241e092ba5ba9f63bd9da4dd5c7c542eecfa582f9c70927",
+      "retired": true
+    },
+    {
+      "id": "ferramenta:extract@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "engine/extract.py",
+      "hash": "1a7e8ebef7f3466497e78a96f22cd3ff40eb207a205550d8bc213460b969c4b8",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:vigente@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "engine/vigente.py",
+      "hash": "444d60e6c8e408f54641bde88e256f25ce62b752915a96c1cd3e1980e79e8edc",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:capture-dr-history@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/capture_dr_history.mjs",
+      "hash": "942b661877c59c49ef024f51048bc46ff613b63348449b06efd69c87020f6348",
       "retired": false
     }
   ]
