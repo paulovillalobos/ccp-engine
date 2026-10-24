@@ -639,6 +639,18 @@
       "code": "verify.py",
       "hash": "005ecba4e8d87440da397bdd479184249221a9c8173052a57295b31f863eb19e",
       "retired": false
+    },
+    {
+      "id": "ferramenta:serve@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/serve.py",
+      "hash": "50874ebd86aea8bb89b8eda631979786a5d10f575f2bc2553b01b7c54283a409",
+      "retired": false,
+      "nota": "API v1 local (B6)"
     }
   ]
 }

@@ -874,3 +874,22 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   measure, verify.
 - Next: B6 the local API.
 - Why: a figure is only honest with its interval, its freeze date and the disagreements beside it.
+
+## 2026-10-24 B6 the API v1, local (commit: B6: read-only API v1 served from the store (local, not deployed); tests/test_service.py)
+- Done: tools/serve.py (ccp-serve-1.0, ferramenta): /v1/saude, /v1/openapi.json, /v1/lei.json?data= (passage versions in
+  force, by norma), /v1/manifesto.json (packages with law version, hash, rules, log head; code; verify version),
+  /v1/exemplo/<nome> (examples/<nome>.json computed now), keyed: POST /v1/verificar by consumer id (n_anuncio, base_id)
+  or by facts sent (kept only for the request) -> per rule resultado, motivo, regra (id, revision, state), passagem,
+  citação, versão, manifesto, afirmações declaradas beside the verdict; /v1/regras/<id> and /indice; /v1/diff?de=&a=;
+  /v1/entidade/<nif> without a name for a pessoa_singular. The package applied is the settled selector's, else the
+  package whose law is in force on the start date (said in the answer). JSON only, 64 KB body, 30 s, no trace, no path
+  echoed. tools/package.sh now carries schemas/, verify.py and examples/ and waits for the store to load; its smoke
+  test loads 68 096 objects and 37 events from the package. Nothing deployed, nothing paid.
+- Tests: tests/test_service.py (fixtures): 7 green (public routes, key, verificar by id and by facts with citations and
+  the declared regime beside the verdict, entity without name, 413 / 415 / 400 / 404 without echo, the example).
+- Public example, reproducible from the repo (examples/verificar-empreitada-ajuste-direto.json against law + rules +
+  governance): works by ajuste direto, 140 000 EUR, started 2026-10-07 -> pacote:ccp@2026-10-01 (no settled selector:
+  the package in force on that date), regra:ccp:limiar-ajuste-direto-obras@v2 (settled) cumpre, citing ccp:art19.d
+  version 2026-10-01 «d) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.»
+- Registered: serve. Next: close the phase.
+- Why: the consumer asks with its own ids and gets the verdict with the words of the law it rests on.

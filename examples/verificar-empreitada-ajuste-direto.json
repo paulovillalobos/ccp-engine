@@ -1,0 +1,5 @@
+{
+ "descricao": "Pedido de exemplo reproduzível a partir do repositório: uma empreitada por ajuste direto iniciada a 2026-10-07, enviada como factos (nada é escrito).",
+ "rota": "POST /v1/verificar",
+ "corpo": {"factos": {"data_inicio_procedimento": "2026-10-07", "tipo_procedimento": "ajuste_direto", "tipo_contrato": "obras", "preco_base": 140000, "territorio": "PT"}}
+}
