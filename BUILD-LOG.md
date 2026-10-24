@@ -784,3 +784,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   structured, 256 with vigências. test_d0 green (3/3); verify ok.
 - Next: B3 rules by two families.
 - Why: a rule's exception or remissão cites the passage of the other act, not just its name.
+
+## 2026-10-24 B5 set-up: held-out set declared before any rule (commit: B5: held-out set declared and frozen before any rule enters the log; red test)
+- Done: law/HELD-OUT.json (declared 2026-10-24T20:45:11Z, frozen_at 2026-10-24, sha256 of the canonical definition
+  2be68e3fe6da103a5a516399b18dc0149c599fd779dddda56b47268c04451c70): a proc is held out when its adjudicante's NIF hashes
+  to 0 mod 5 (about 20 % of contracting authorities) or it started on or after 2026-10-01 (the last month, under DL
+  177/2026). Declared while governance/events.jsonl holds one event (the principals product rule): no B3 rule exists
+  yet. tests/fill/test_b5_measure.py, red: the declaration and its hash; >= 100 reference cases from data/ or 20 from
+  fixtures/measure/ with two blind annotators and their raw answers, CASOS-DESACORDO.md; reports/measure/<date> with
+  precision and recall per rule, 95 % Wilson intervals, inside / held out, agreement, recomputed byte for byte.
+- In progress outside this commit: the B3 readers are answering (leitor:b by the CLI of family B; leitor:a on Modal).
+- Next: record B3.
+- Why: §8 needs the held-out set fixed before the method meets it; the commit order is the proof.

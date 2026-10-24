@@ -1,0 +1,26 @@
+{
+ "declared_at": "2026-10-24T20:45:11Z",
+ "frozen_at": "2026-10-24",
+ "declared_before": "any rule of B3 entered the governance log (events.jsonl has 1 event: the principals product rule)",
+ "definition": {
+  "unit_kind": "proc",
+  "by_entity": {
+   "field": "adjudicante",
+   "rule": "int(sha256(nif as UTF-8).hexdigest(), 16) % 5 == 0",
+   "share": "about 20 % of contracting authorities"
+  },
+  "by_period": {
+   "field": "data_inicio_procedimento",
+   "from": "2026-10-01",
+   "to": null,
+   "why": "the last month: procedures started under DL 177/2026"
+  },
+  "held_out_when": "by_entity OR by_period",
+  "applies_to": [
+   "data/ (the extractor's facts, when delivered)",
+   "fixtures/measure/ (the 20 cases measured while data/ is empty)"
+  ],
+  "rule": "a held-out case never tunes a rule; verify BENCH refuses a package built after frozen_at that holds a rule whose log events name a held-out unit"
+ },
+ "sha256": "2be68e3fe6da103a5a516399b18dc0149c599fd779dddda56b47268c04451c70"
+}
