@@ -718,3 +718,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   level, slow fill tests).
 - Next: phase 3 (the builder): B3 rules by two families over the real text, B4 engine over the extractor's notices, §8.
 - Why: the law layer is now data someone can be wrong about, and verify says when.
+
+## 2026-10-24 phase 3 opens: red tests for the phase-2 debts (commit: Tests: red D0, the three debts the phase-2 audit listed)
+- Done: tests/fill/test_d0_phase2_debts.py, red against 6c3115fb: (1) the four EU threshold regulations structured by a
+  versioned EUR-Lex extractor with an entra_em_vigor vigencia and their amounts in the passage text; (2) CC, CPPT, CSC,
+  CT, Lei 98/97 and CRCSPSS with their articles as passages (floors 2000 / 250 / 500 / 500 / 100 / 250); (3) at least
+  90 % of the CCP's references naming an article of a Portuguese act resolved to a passage, COVERAGE.md as the tool
+  writes it. Baseline (commands of the phase prompt): verify ok; 52 passed; fill 3 failed (B3, B4 x2), 11 passed;
+  redteam 0 MISSED; data/facts and data/raw empty, adapters/ holds a README only.
+- Correction before green, disclosed: test (3) first counted the 16 references to EU directives (not captured in this
+  phase) and asked for 20 article references; it now counts Portuguese acts (11 measured).
+- Next: D0.2, D0.1, D0.3 (in that order: the EU acts use the second layout).
+- Why: the audit listed them as what phase 3 must clear before rules cite the law around the CCP.
