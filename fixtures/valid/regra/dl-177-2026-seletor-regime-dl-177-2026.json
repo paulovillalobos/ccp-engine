@@ -43,24 +43,24 @@
   },
   "readings": [
     {
-      "principal": "ai:amalia-9b",
-      "family": "amalia",
-      "at": "2026-10-24T19:03:00Z",
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T19:02:00Z",
       "chosen_passages": [
         "dl-177-2026:art7.1"
       ],
       "blind": false,
-      "evento": "evento:3"
+      "evento": "evento:2"
     },
     {
-      "principal": "ai:reader-b",
-      "family": "reader-b",
-      "at": "2026-10-24T19:04:00Z",
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T19:03:00Z",
       "chosen_passages": [
         "dl-177-2026:art7.1"
       ],
       "blind": true,
-      "evento": "evento:4"
+      "evento": "evento:3"
     }
   ],
   "state": "settled"

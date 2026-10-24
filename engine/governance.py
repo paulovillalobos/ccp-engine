@@ -1,20 +1,23 @@
 """Governance: the append-only, hash-chained log of who proposed, reviewed, approved, disputed and adjudicated (read side:
 replay; the write side — propose, review, approve, dispute, adjudicate — is added in A4).
 
-    governance/principals.json   who may act: id, kind (human | ai | parser | system), family, role, retired
+    governance/principals.json   who may act, by role (product rule 2026-10-24, DECISIONS D22): pessoa (humano), leitor /
+                                 extrator / redator (automatizado, familia A or B, motor), ferramenta (codigo, versioned, hashed)
     governance/events.jsonl      one event per line (canonical JSON), prev = sha256 of the previous line, seq 1, 2, 3 ...
     governance/state.json        the replay, never edited by hand (written by A4's Log.write_state)
 
 Rules, enforced on replay (engine/verify.py code I04 unless stated) and again by the write side:
   - the log is a hash chain with consecutive sequence numbers; nothing is edited or removed (I09)
-  - only registered, non-retired principals act, within their kind's CAPABILITIES
-  - approve and adjudicate are human actions (invariant 4); machines never produce approval
+  - only registered, non-retired principals act, within their role's CAPABILITIES (the id prefix is the role)
+  - approve and adjudicate are a pessoa's actions (invariant 4); nothing automated produces approval
+  - a product_rule proposed by a pessoa with a reason is settled on record (a person's decision with its motive);
+    one proposed by anything else waits for a pessoa's approve
   - approve, reject, dispute and adjudicate carry a reason; a review carries question, independence and verdict
   - a proposer never reviews or approves its own revision; an adjudicator is never the disputant
   - review, approve, reject and correct name the exact current revision (expected_revision)
-  - a reading of the law (assertion_type regra) is never human-approved: it is `settled` when a blind review/uphold
-    comes from a principal whose family differs from the proposer's (invariant 5); any other uphold gives `ai_reviewed`
-  - product_rule, adaptador, link, afirmacao_conversao and caso_referencia settle by human approve (invariant 12 for product_rule)
+  - a reading of the law (assertion_type regra) is never approved by a pessoa: it is `settled` when a blind review/uphold
+    comes from a leitor whose familia differs from the proposer's (invariant 5); any other uphold gives `ai_reviewed`
+  - adaptador, link, afirmacao_conversao and caso_referencia settle by a pessoa's approve
 
     replay(events, principals) -> Replay   state per assertion, open disputes, errors as (code, message)
     head(events) -> str                    sha256 of the last canonical line (64 zeros when empty)
@@ -23,12 +26,14 @@ from engine.canon import canonical, sha256_text
 
 VERSION = "ccp-governance-0.1"
 GENESIS = "0" * 64
-CAPABILITIES = {
-    "parser": {"propose", "correct"},
-    "ai": {"propose", "correct", "review"},
-    "system": {"invalidate"},
-    "human": {"propose", "correct", "review", "approve", "reject", "dispute", "adjudicate", "invalidate"},
+CAPABILITIES = {  # by role (papel); the role is the id prefix
+    "pessoa": {"propose", "correct", "review", "approve", "reject", "dispute", "adjudicate", "invalidate"},
+    "leitor": {"propose", "correct", "review"},
+    "extrator": {"propose", "correct"},
+    "redator": set(),
+    "ferramenta": {"propose", "correct", "invalidate"},
 }
+ROLES = tuple(CAPABILITIES)
 LEGAL_TYPES = {"regra"}
 APPROVABLE_TYPES = {"product_rule", "adaptador", "link", "afirmacao_conversao", "caso_referencia"}
 NEEDS_REASON = {"approve", "reject", "dispute", "adjudicate"}
@@ -76,17 +81,21 @@ def replay(events, principals) -> Replay:
             continue
         if p.get("retired"):
             rp.errors.append(("I04", f"event {n}: principal {pid} is retired"))
-        if action not in CAPABILITIES.get(p["kind"], set()):
-            rp.errors.append(("I04", f"event {n}: {pid} ({p['kind']}) may not {action}"))
+        role = p.get("papel")
+        if role != pid.split(":")[0]:
+            rp.errors.append(("I04", f"event {n}: principal {pid} has role {role}, which is not its id prefix"))
+        if action not in CAPABILITIES.get(role, set()):
+            rp.errors.append(("I04", f"event {n}: {pid} ({role}) may not {action}"))
         if action in NEEDS_REASON and not ev.get("reason"):
             rp.errors.append(("I04", f"event {n}: {action} without a reason"))
-        if action in ("approve", "adjudicate") and p["kind"] != "human":
-            rp.errors.append(("I04", f"event {n}: {action} by {pid}: only a person approves or adjudicates"))
+        if action in ("approve", "adjudicate") and p["kind"] != "humano":
+            rp.errors.append(("I04", f"event {n}: {action} by {pid}: only a pessoa approves or adjudicates"))
         key = (atype, aid)
         if action == "propose":
             if key in rp.assertions:
                 rp.errors.append(("I04", f"event {n}: {aid} proposed twice; use correct for a new revision"))
-            rp.assertions[key] = {"revision": 1, "proposer": pid, "family": p["family"], "reviews": [], "state": "proposed", "events": [n]}
+            state = "settled" if (atype == "product_rule" and p["kind"] == "humano" and ev.get("reason")) else "proposed"
+            rp.assertions[key] = {"revision": 1, "proposer": pid, "family": p.get("familia"), "reviews": [], "state": state, "events": [n]}
             continue
         if action == "dispute":
             did = (ev.get("payload") or {}).get("disputa")
@@ -115,15 +124,15 @@ def replay(events, principals) -> Replay:
         if action in NEEDS_CURRENT_REVISION and ev.get("expected_revision") != a["revision"]:
             rp.errors.append(("I04", f"event {n}: {action} names revision {ev.get('expected_revision')}, current is {a['revision']}"))
         if action == "correct":
-            a.update(revision=a["revision"] + 1, proposer=pid, family=p["family"], reviews=[], state="proposed")
+            a.update(revision=a["revision"] + 1, proposer=pid, family=p.get("familia"), reviews=[], state="proposed")
         elif action == "review":
             if pid == a["proposer"]:
                 rp.errors.append(("I04", f"event {n}: {pid} reviews its own proposal {aid}"))
-            a["reviews"].append({"by": pid, "family": p["family"], "verdict": ev.get("verdict"), "independence": ev.get("independence")})
+            a["reviews"].append({"by": pid, "family": p.get("familia"), "verdict": ev.get("verdict"), "independence": ev.get("independence")})
             if ev.get("verdict") == "reject":
                 a["state"] = "rejected"
             elif ev.get("verdict") == "uphold" and a["state"] != "rejected":
-                blind_other = ev.get("independence") == "blind" and p["family"] != a["family"]
+                blind_other = ev.get("independence") == "blind" and role == "leitor" and p.get("familia") != a["family"]
                 if atype in LEGAL_TYPES:
                     a["state"] = "settled" if blind_other else ("ai_reviewed" if a["state"] != "settled" else "settled")
                 elif a["state"] == "proposed":
@@ -132,7 +141,7 @@ def replay(events, principals) -> Replay:
             if pid == a["proposer"]:
                 rp.errors.append(("I04", f"event {n}: {pid} approves its own proposal {aid}"))
             if atype in LEGAL_TYPES:
-                rp.errors.append(("I04", f"event {n}: a reading of the law ({aid}) is never human-approved; it settles by a blind reader of another family"))
+                rp.errors.append(("I04", f"event {n}: a reading of the law ({aid}) is never approved by a pessoa; it settles by a blind leitor of the other family"))
             elif atype in APPROVABLE_TYPES:
                 a["state"] = "settled"
             a["approved_by"] = pid
@@ -161,7 +170,7 @@ class Log:
     it appended and refuses to write if the replay reports a new error. One writer at a time (events.lock).
 
         Log(directory)                      reads principals.json and events.jsonl (both may be absent: empty log)
-        .propose(principal, assertion_type, assertion, payload, at)
+        .propose(principal, assertion_type, assertion, payload, at, reason=None)
         .correct(principal, assertion_type, assertion, expected_revision, payload, reason, at)
         .review(principal, assertion_type, assertion, expected_revision, question, independence, verdict, at, payload=None)
         .approve(principal, assertion_type, assertion, expected_revision, reason, at)      human only
@@ -223,8 +232,9 @@ class Log:
             self.events.append((line, ev))
             return ev["id"]
 
-    def propose(self, principal, assertion_type, assertion, payload, at):
-        return self._record(principal=principal, action="propose", assertion_type=assertion_type, assertion=assertion, payload=payload, at=at)
+    def propose(self, principal, assertion_type, assertion, payload, at, reason=None):
+        """reason is what makes a pessoa's product_rule proposal her decision (settled on record); optional otherwise."""
+        return self._record(principal=principal, action="propose", assertion_type=assertion_type, assertion=assertion, payload=payload, reason=reason, at=at)
 
     def correct(self, principal, assertion_type, assertion, expected_revision, payload, reason, at):
         return self._record(principal=principal, action="correct", assertion_type=assertion_type, assertion=assertion, expected_revision=expected_revision, payload=payload, reason=reason, at=at)

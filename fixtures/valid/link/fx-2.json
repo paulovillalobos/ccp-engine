@@ -4,7 +4,7 @@
   "recorded_at": "2026-10-24T20:00:00Z",
   "from": "alias:base-dump:FX-2026-000001-adjudicatario",
   "to": "ent:cand:PT:fornecedor-fixture-unipessoal",
-  "proponent": "ai:amalia-9b",
+  "proponent": "extrator:a",
   "method": "name_ai",
   "evidence": {
     "source_field": "adjudicatario.nome",
@@ -13,6 +13,6 @@
     "note": "name match; the NIF in the API record was not read by the proposer (blind)"
   },
   "state": "proposed",
-  "at": "2026-10-24T19:18:00Z",
-  "evento": "evento:18"
+  "at": "2026-10-24T19:17:00Z",
+  "evento": "evento:17"
 }

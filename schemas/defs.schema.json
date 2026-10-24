@@ -29,7 +29,7 @@
     "id_evento": {"type": "string", "pattern": "^evento:[0-9]+$"},
     "id_disputa": {"type": "string", "pattern": "^disputa:[A-Za-z0-9._-]+$"},
     "id_ref": {"type": "string", "pattern": "^ref:[A-Za-z0-9._-]+$"},
-    "id_principal": {"type": "string", "pattern": "^(human|ai|parser|system):[a-z0-9][a-z0-9-]*$"},
+    "id_principal": {"type": "string", "pattern": "^(pessoa|leitor|extrator|redator|ferramenta):[a-z0-9][a-z0-9.-]*(@[0-9]+)?$", "description": "Product rule 2026-10-24 (DECISIONS D22): the prefix is the role. pessoa (humano), leitor / extrator / redator (automatizado, with familia A or B and a motor), ferramenta (codigo, versioned: ferramenta:verify@1)."},
 
     "envelope": {
       "type": "object",
@@ -92,7 +92,7 @@
     "link_state": {"type": "string", "enum": ["proposed", "settled", "stale"]},
     "entity_type": {"type": "string", "enum": ["publica", "privada", "pessoa_singular"]},
     "entity_role": {"type": "string", "enum": ["adjudicante", "adjudicatario", "concorrente", "subcontratante"]},
-    "model_family": {"type": "string", "enum": ["amalia", "reader-b", "builder", "reader-c", "reader-d", "parser", "human"], "description": "Invariant 5: a reading settles only when upheld blind by a reader of a different family than its proposer."},
+    "model_family": {"type": "string", "enum": ["A", "B"], "description": "Invariant 5: a reading settles only when upheld blind by a leitor of the other family. Families are named A and B in the log; which engine is which is a field of the principal (motor), never part of an id or a published output."},
     "condition": {
       "type": "object",
       "description": "A predicate over a canonical fact field, as data. The engine evaluates it; nothing is interpreted at run time.",

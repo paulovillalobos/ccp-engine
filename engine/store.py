@@ -139,6 +139,11 @@ class Store:
         return self.raw_bytes.get(raw_obj.get("sha256"))
 
     def raw_text(self, raw_obj):
+        """The working text of a raw record: its derived text when it has one (raw.text), else its decoded bytes."""
+        text = raw_obj.get("text")
+        if text:
+            path = self.raw_bytes.get(text["sha256"])
+            return path.read_text(encoding="utf-8") if path else None
         path = self.raw_path(raw_obj)
         if path is None:
             return None

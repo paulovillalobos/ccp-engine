@@ -1,11 +1,131 @@
 {
   "principals": [
-    {"id": "human:paulo", "kind": "human", "family": "human", "role": "founder; decides product rules, never legal content", "retired": false},
-    {"id": "ai:amalia-9b", "kind": "ai", "family": "amalia", "role": "reader, extractor, writer; runs on Modal", "retired": false},
-    {"id": "ai:reader-b", "kind": "ai", "family": "reader-b", "role": "blind reader of a second family", "retired": false},
-    {"id": "ai:builder", "kind": "ai", "family": "builder", "role": "builder; proposes product rules and adapters, never readings of the law", "retired": false},
-    {"id": "parser:ccp-structure", "kind": "parser", "family": "parser", "role": "DR consolidated text to passages and validity notes", "retired": false},
-    {"id": "parser:ccp-link", "kind": "parser", "family": "parser", "role": "exact-NIF entity links", "retired": false},
-    {"id": "system:verify", "kind": "system", "family": "parser", "role": "invalidates on failed re-derivation", "retired": false}
+    {
+      "id": "pessoa:paulo",
+      "kind": "humano",
+      "papel": "pessoa",
+      "familia": null,
+      "motor": null,
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "decides product rules and approves with a reason; never legal content"
+    },
+    {
+      "id": "leitor:a",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo",
+        "versao": "c4614b9b5c7b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "proposes readings of the law by choosing passage ids; runs on Modal"
+    },
+    {
+      "id": "leitor:b",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "B",
+      "motor": {
+        "id": "reader-b",
+        "versao": "2026-10"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "blind reader of the other family"
+    },
+    {
+      "id": "extrator:a",
+      "kind": "automatizado",
+      "papel": "extrator",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo",
+        "versao": "c4614b9b5c7b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "proposes facts from documents with position, links by name, assertion conversions"
+    },
+    {
+      "id": "redator:a",
+      "kind": "automatizado",
+      "papel": "redator",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo",
+        "versao": "c4614b9b5c7b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "explains what is already decided, under the citation guard; records nothing in the log"
+    },
+    {
+      "id": "ferramenta:verify@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "verify.py",
+      "hash": "3a5adca40fc0b29a4763efe0d9dfd35cc0b9b8cb3c517d6dee6ba6ef7289ff95",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:make-fixtures@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_fixtures.py",
+      "hash": "999b885a30e2fa82804ccfc0f948caa5c468c7f447673b948a75559097ec2f58",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:ccp-link@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "engine/entities.py",
+      "hash": "bbb4dea65711cb0f3b613c5b44439a92361f18d2a120125642f3401d385a53a3",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:capture-dr@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/capture_dr_consolidated.py",
+      "hash": "171ec2d31939628ef0fb0cf27e6016ec6493cee46ffcedca8d78c9785f819f24",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:extract@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "engine/extract.py",
+      "hash": "cd43ef627213673cd241e092ba5ba9f63bd9da4dd5c7c542eecfa582f9c70927",
+      "retired": false
+    }
   ]
 }

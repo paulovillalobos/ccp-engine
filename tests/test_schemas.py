@@ -65,5 +65,5 @@ def test_natural_person_name_is_refused_in_a_verdict():
 
 def test_machine_approval_is_refused_by_the_event_schema():
     ev = json.loads((VALID / "governance/events.jsonl").read_text(encoding="utf-8").splitlines()[0])
-    ev.update(action="approve", principal="ai:reader-b", reason="x")
+    ev.update(action="approve", principal="leitor:b", reason="x")
     assert schema.validate("evento", ev) != []

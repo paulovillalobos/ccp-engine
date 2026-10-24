@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "link.schema.json",
   "title": "Link: from a record or alias to an entity, with provenance and state",
-  "description": "link:... proponent is a registered principal (code by exact NIF: parser; AMALIA by name: ai; a person: human). state proposed -> settled -> stale; a wrong link is marked stale by a new revision, never deleted (invariant 9). Entities are linked, never merged.",
+  "description": "link:... proponent is a registered principal (code by exact NIF: a ferramenta; a model by name: an extrator; a person: a pessoa). state proposed -> settled -> stale; a wrong link is marked stale by a new revision, never deleted (invariant 9). Entities are linked, never merged.",
   "type": "object",
   "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
   "properties": {

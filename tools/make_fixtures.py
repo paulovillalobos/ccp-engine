@@ -121,14 +121,21 @@ def cite(pid, sub):
     return {"passage": pid, "version": "2026-10-01", "quote": sub, "offsets": {"start": s, "end": s + len(sub)}}
 
 # ---- governance log --------------------------------------------------------------------------------------------
+def principal(id_, kind, papel, familia=None, motor=None, versao=None, code=None, hash_=None, nota=None, retired=False):
+    p = {"id": id_, "kind": kind, "papel": papel, "familia": familia, "motor": motor, "versao": versao, "code": code, "hash": hash_, "retired": retired}
+    if nota: p["nota"] = nota
+    return p
+TOOL_CODE = "tools/make_fixtures.py"
+TOOL_HASH = sha256_bytes(Path(__file__).read_bytes())
 PRINCIPALS = {"principals": [
-    {"id": "human:paulo", "kind": "human", "family": "human", "role": "founder; decides product rules, never legal content", "retired": False},
-    {"id": "human:revisor-fixture", "kind": "human", "family": "human", "role": "fixture: second person for adjudications", "retired": False},
-    {"id": "ai:amalia-9b", "kind": "ai", "family": "amalia", "role": "reader, extractor, writer (Modal)", "retired": False},
-    {"id": "ai:reader-b", "kind": "ai", "family": "reader-b", "role": "blind reader of a second family", "retired": False},
-    {"id": "ai:builder", "kind": "ai", "family": "builder", "role": "builder; proposes product rules and adapters, never readings of the law", "retired": False},
-    {"id": "parser:ccp-link", "kind": "parser", "family": "parser", "role": "exact-NIF entity links", "retired": False},
-    {"id": "system:verify", "kind": "system", "family": "parser", "role": "invalidates on failed re-derivation", "retired": False},
+    principal("pessoa:paulo", "humano", "pessoa", nota="decides product rules and approves with a reason; never legal content"),
+    principal("pessoa:revisor-fixture", "humano", "pessoa", nota="fixture: second person for adjudications"),
+    principal("leitor:a", "automatizado", "leitor", "A", {"id": "fixture-engine-a", "versao": "0"}, nota="proposes readings by choosing passage ids"),
+    principal("leitor:b", "automatizado", "leitor", "B", {"id": "fixture-engine-b", "versao": "0"}, nota="blind reader of the other family"),
+    principal("extrator:a", "automatizado", "extrator", "A", {"id": "fixture-engine-a", "versao": "0"}, nota="proposes facts, links and conversions from records and documents"),
+    principal("redator:a", "automatizado", "redator", "A", {"id": "fixture-engine-a", "versao": "0"}, nota="explains what is decided; records nothing"),
+    principal("ferramenta:ccp-link@1", "codigo", "ferramenta", versao=1, code=TOOL_CODE, hash_=TOOL_HASH, nota="exact-NIF entity links (fixture: hashed to this generator)"),
+    principal("ferramenta:verify@1", "codigo", "ferramenta", versao=1, code=TOOL_CODE, hash_=TOOL_HASH, nota="invalidates on failed re-derivation (fixture: hashed to this generator)"),
 ]}
 assert not schema.validate("principals", PRINCIPALS)
 (V / "governance/principals.json").write_text(json.dumps(PRINCIPALS, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -145,22 +152,21 @@ def event(principal, action, atype, assertion, *, payload=None, reason=None, que
 
 def read_pair(rule_id, passages, second=True):
     """propose by AMALIA, blind uphold by Reader B -> settled."""
-    e1 = event("ai:amalia-9b", "propose", "regra", rule_id, payload={"chosen_passages": passages}, expected_revision=None)
+    e1 = event("leitor:a", "propose", "regra", rule_id, payload={"chosen_passages": passages}, expected_revision=None)
     e2 = None
     if second:
-        e2 = event("ai:reader-b", "review", "regra", rule_id, payload={"chosen_passages": passages}, expected_revision=1,
+        e2 = event("leitor:b", "review", "regra", rule_id, payload={"chosen_passages": passages}, expected_revision=1,
                    question=f"Blind: which passages ground {rule_id}? Proposed: {', '.join(passages)}", independence="blind", verdict="uphold")
     return e1, e2
 
 def readings(rule_id, passages, e1, e2):
-    r = [{"principal": "ai:amalia-9b", "family": "amalia", "at": EVENTS[int(e1.split(':')[1]) - 1]["at"], "chosen_passages": passages, "blind": False, "evento": e1}]
+    r = [{"principal": "leitor:a", "family": "A", "at": EVENTS[int(e1.split(':')[1]) - 1]["at"], "chosen_passages": passages, "blind": False, "evento": e1}]
     if e2:
-        r.append({"principal": "ai:reader-b", "family": "reader-b", "at": EVENTS[int(e2.split(':')[1]) - 1]["at"], "chosen_passages": passages, "blind": True, "evento": e2})
+        r.append({"principal": "leitor:b", "family": "B", "at": EVENTS[int(e2.split(':')[1]) - 1]["at"], "chosen_passages": passages, "blind": True, "evento": e2})
     return r
 
-# product rule: completeness threshold, proposed by the builder, approved by the founder
-E_PR = event("ai:builder", "propose", "product_rule", "product_rule:completude-agregadas", payload={"ratio": 0.9, "measured_over": "mes", "recommendation": "ARQUITECTURA.md section 12"})
-E_PR_OK = event("human:paulo", "approve", "product_rule", "product_rule:completude-agregadas", expected_revision=1,
+# product rule: completeness threshold, a pessoa's decision with its reason (settled on record)
+E_PR_OK = event("pessoa:paulo", "propose", "product_rule", "product_rule:completude-agregadas", payload={"ratio": 0.9, "measured_over": "mes", "recommendation": "ARQUITECTURA.md section 12"},
                 reason="Product rule: aggregate rules answer cobertura_insuficiente below 90 percent monthly coverage of BASE for the period.")
 
 RULES = []
@@ -207,11 +213,11 @@ R_JUR = rule("coeficiente-acores", "jurisdicao", "Coeficiente regional dos Açor
     {"territory": "PT-AC", "predicate": [{"field": "territorio", "op": "eq", "value": "PT-AC"}], "effect": {"multiply_thresholds_by": 1.45}})
 
 # entity link by name (AMALIA), assertion conversion, dispute + adjudication
-E_LINK = event("ai:amalia-9b", "propose", "link", "link:fx-2", payload={"from": "alias:base-dump:FX-2026-000001-adjudicatario", "to": "ent:cand:PT:fornecedor-fixture-unipessoal", "score": 0.82})
-E_CONV = event("ai:amalia-9b", "propose", "afirmacao_conversao", "afirmacao:proc-base-FX-2026-000001:regime", payload={"passages": ["ccp:art20.1.a"]})
+E_LINK = event("extrator:a", "propose", "link", "link:fx-2", payload={"from": "alias:base-dump:FX-2026-000001-adjudicatario", "to": "ent:cand:PT:fornecedor-fixture-unipessoal", "score": 0.82})
+E_CONV = event("extrator:a", "propose", "afirmacao_conversao", "afirmacao:proc-base-FX-2026-000001:regime", payload={"passages": ["ccp:art20.1.a"]})
 VER_LIM = "veredicto:regra-ccp-limiar-ajuste-direto-bens@v1:proc-base-FX-2026-000001:2026-10-24T19:30:00Z"
-E_DISP = event("human:paulo", "dispute", "veredicto", VER_LIM, payload={"disputa": "disputa:fx-1"}, reason="The two sources disagree on preco_base; check whether the dump value is a typo before the conflict stands.")
-E_ADJ = event("human:revisor-fixture", "adjudicate", "disputa", "disputa:fx-1", reason="Both values are as captured; the conflict is real, nao_avaliado stands.", outcome="upheld", expected_revision=1)
+E_DISP = event("pessoa:paulo", "dispute", "veredicto", VER_LIM, payload={"disputa": "disputa:fx-1"}, reason="The two sources disagree on preco_base; check whether the dump value is a typo before the conflict stands.")
+E_ADJ = event("pessoa:revisor-fixture", "adjudicate", "disputa", "disputa:fx-1", reason="Both values are as captured; the conflict is real, nao_avaliado stands.", outcome="upheld", expected_revision=1)
 
 (V / "governance/events.jsonl").write_text("".join(canonical(e) + "\n" for e in EVENTS), encoding="utf-8")
 LOG_HEAD = sha256_text(canonical(EVENTS[-1]))
@@ -259,10 +265,10 @@ AD = write("adaptador", "base-dump-1", env({"id": "adaptador:base-dump@1", "sour
     {"source_field": "publicadoJOUE", "canonical_field": "publicado_joue", "transform": "boolean"},
     {"source_field": "nifEntidadeAdjudicante", "canonical_field": "adjudicante", "transform": "nif"}],
     "coverage": [{"period": "2026-09", "expected": 1000, "captured": 1000}, {"period": "2026-10", "expected": 1000, "captured": 400}],
-    "proposed_by": "ai:builder", "state": "proposed"}))
+    "proposed_by": "extrator:a", "state": "proposed"}))
 AD_API = write("adaptador", "base-api-1", env({"id": "adaptador:base-api@1", "source": "base-api", "version": 1, "code": "adapters/base-api/", "mapping": [
     {"source_field": "precoBase", "canonical_field": "preco_base", "transform": "identity"}, {"source_field": "adjudicatario.nif", "canonical_field": "adjudicatario", "transform": "nif"}],
-    "coverage": [{"period": "2026-10", "expected": None, "captured": 1}], "proposed_by": "ai:builder", "state": "proposed"}))
+    "coverage": [{"period": "2026-10", "expected": None, "captured": 1}], "proposed_by": "extrator:a", "state": "proposed"}))
 
 PROC = "proc:base:FX-2026-000001"; CONTR = "contrato:base:99000001"
 write("unidade", "proc-base-FX-2026-000001", env({"id": PROC, "kind": "proc", "parent": None, "raw": [RAW_DUMP], "consumer_ids": {"n_anuncio": "FX-2026-000001"}}))
@@ -272,9 +278,9 @@ write("entidade", "nif-200000000", env({"id": "ent:nif:200000000", "type": "pess
 write("entidade", "cand-PT-fornecedor-fixture-unipessoal", env({"id": "ent:cand:PT:fornecedor-fixture-unipessoal", "type": "privada", "country": "PT", "nif": None, "roles": [], "raw": [RAW_DUMP]}))
 write("alias", "base-dump-FX-2026-000001-adjudicante", env({"id": "alias:base-dump:FX-2026-000001-adjudicante", "raw": RAW_DUMP, "field": "entidadeAdjudicante", "name_as_appears": "Município Fixture", "link": "link:fx-1"}))
 write("alias", "base-dump-FX-2026-000001-adjudicatario", env({"id": "alias:base-dump:FX-2026-000001-adjudicatario", "raw": RAW_API, "field": "adjudicatario.nome", "name_as_appears": "Fornecedor Fixture Unipessoal", "link": "link:fx-2"}))
-write("link", "fx-1", env({"id": "link:fx-1", "from": "alias:base-dump:FX-2026-000001-adjudicante", "to": "ent:nif:500000000", "proponent": "parser:ccp-link", "method": "nif_exact",
+write("link", "fx-1", env({"id": "link:fx-1", "from": "alias:base-dump:FX-2026-000001-adjudicante", "to": "ent:nif:500000000", "proponent": "ferramenta:ccp-link@1", "method": "nif_exact",
     "evidence": {"source_field": "nifEntidadeAdjudicante", "value": "500000000"}, "state": "settled", "at": CAP_DUMP, "evento": None}))
-write("link", "fx-2", env({"id": "link:fx-2", "from": "alias:base-dump:FX-2026-000001-adjudicatario", "to": "ent:cand:PT:fornecedor-fixture-unipessoal", "proponent": "ai:amalia-9b", "method": "name_ai",
+write("link", "fx-2", env({"id": "link:fx-2", "from": "alias:base-dump:FX-2026-000001-adjudicatario", "to": "ent:cand:PT:fornecedor-fixture-unipessoal", "proponent": "extrator:a", "method": "name_ai",
     "evidence": {"source_field": "adjudicatario.nome", "value": "Fornecedor Fixture Unipessoal", "score": 0.82, "note": "name match; the NIF in the API record was not read by the proposer (blind)"}, "state": "proposed", "at": EVENTS[int(E_LINK.split(':')[1]) - 1]["at"], "evento": E_LINK}))
 
 # ---- facts, assertion, conflict, document ----------------------------------------------------------------------
@@ -293,7 +299,7 @@ F_TP = fact("tipo_procedimento", "ajuste_direto", RAW_DUMP, "tipoProcedimento", 
 F_JOUE = fact("publicado_joue", False, RAW_DUMP, "publicadoJOUE", AD["id"], CAP_DUMP)
 F_ADJ = fact("adjudicante", "500000000", RAW_DUMP, "nifEntidadeAdjudicante", AD["id"], CAP_DUMP)
 AF = write("afirmacao", "proc-base-FX-2026-000001-regime", env({"id": "afirmacao:proc-base-FX-2026-000001:regime", "unit": PROC, "kind": "regime", "declared_text": DUMP["regime"],
-    "passages": ["ccp:art20.1.a"], "converted_by": "ai:amalia-9b", "conversion_evento": E_CONV, "origin": {"raw": RAW_DUMP, "field": "regime"}, "known_at": CAP_DUMP}))
+    "passages": ["ccp:art20.1.a"], "converted_by": "extrator:a", "conversion_evento": E_CONV, "origin": {"raw": RAW_DUMP, "field": "regime"}, "known_at": CAP_DUMP}))
 write("conflito", "proc-base-FX-2026-000001-preco_base", env({"id": "conflito:proc-base-FX-2026-000001:preco_base", "unit": PROC, "field": "preco_base",
     "values": [{"facto": F_PRECO, "value": 15000, "source": "base-dump", "known_at": CAP_DUMP}, {"facto": F_PRECO2, "value": 18000, "source": "base-api", "known_at": CAP_API}], "resolution": {"kind": "nao_avaliado"}}))
 write("documento", SHA_DOC[:16], env({"id": f"doc:{SHA_DOC}", "sha256": SHA_DOC, "raw": RAW_DOC, "pages": 12, "has_text_layer": False, "origin": {"unit": PROC, "piece": "programa_procedimento", "url": "https://www.acingov.pt/acingovprod/2/index.php/fixture/programa.pdf"}}))
@@ -316,10 +322,10 @@ V_PRA = verdict(R_PRA, "cumpre", None, cite("ccp:art136.1", "O prazo mínimo par
 V_LIM = verdict(R_LIM, "nao_avaliado", "conflito", None, [F_TP, F_TIPO], "preco_base in conflict: 15000 (base-dump) vs 18000 (base-api); no precedence rule")
 V_AGG = verdict(R_AGG, "nao_avaliado", "cobertura_insuficiente", None, [F_TP], "base-dump coverage 2026-10 = 0.40 < 0.90 (product_rule:completude-agregadas)", unit=CONTR)
 
-write("disputa", "fx-1", env({"id": "disputa:fx-1", "veredicto": V_LIM["id"], "raised_by": "human:paulo", "reason": EVENTS[int(E_DISP.split(':')[1]) - 1]["reason"], "at": EVENTS[int(E_DISP.split(':')[1]) - 1]["at"], "evento": E_DISP,
-    "state": "adjudicated", "adjudication": {"by": "human:revisor-fixture", "at": EVENTS[int(E_ADJ.split(':')[1]) - 1]["at"], "outcome": "upheld", "reason": EVENTS[int(E_ADJ.split(':')[1]) - 1]["reason"], "evento": E_ADJ}, "regression_class": "conflito-preco-base-entre-fontes"}))
+write("disputa", "fx-1", env({"id": "disputa:fx-1", "veredicto": V_LIM["id"], "raised_by": "pessoa:paulo", "reason": EVENTS[int(E_DISP.split(':')[1]) - 1]["reason"], "at": EVENTS[int(E_DISP.split(':')[1]) - 1]["at"], "evento": E_DISP,
+    "state": "adjudicated", "adjudication": {"by": "pessoa:revisor-fixture", "at": EVENTS[int(E_ADJ.split(':')[1]) - 1]["at"], "outcome": "upheld", "reason": EVENTS[int(E_ADJ.split(':')[1]) - 1]["reason"], "evento": E_ADJ}, "regression_class": "conflito-preco-base-entre-fontes"}))
 write("caso_referencia", "fx-1", env({"id": "ref:fx-1", "unit": PROC, "expected": [{"rule": R_PRA, "result": "cumpre", "reason": None}, {"rule": R_LIM, "result": "nao_avaliado", "reason": "conflito"}],
-    "annotators": [{"principal": "human:paulo", "at": "2026-10-24T19:40:00Z", "agrees_with_expected": True}, {"principal": "human:revisor-fixture", "at": "2026-10-24T19:41:00Z", "agrees_with_expected": True}],
+    "annotators": [{"principal": "pessoa:paulo", "at": "2026-10-24T19:40:00Z", "agrees_with_expected": True}, {"principal": "pessoa:revisor-fixture", "at": "2026-10-24T19:41:00Z", "agrees_with_expected": True}],
     "adjudication": None, "held_out": False, "frozen_at": None}))
 
 # ---- broken overlays: one per invariant ------------------------------------------------------------------------
@@ -342,11 +348,11 @@ def bad_quote(o): o["passages"][0]["quote"] = "De valor inferior a 30 000 EUR"
 overlay("i02-quote-not-in-passage", "I02", {"regra/ccp-limiar-ajuste-direto-bens.json": mutate("regra/ccp-limiar-ajuste-direto-bens.json", bad_quote)})
 overlay("i03-model-call-in-engine", "I03", {"engine_mutation/calls_model.py": '"""A module that would call a model from inside the engine. verify must refuse it."""\nimport openai  # noqa: F401\n\n\ndef read(text):\n    return openai.chat(text)\n'})
 bad_events = list(EVENTS)
-ev = {"id": f"evento:{len(bad_events)+1}", "seq": len(bad_events) + 1, "at": "2026-10-24T19:59:00Z", "prev": sha256_text(canonical(bad_events[-1])), "principal": "ai:reader-b", "action": "approve",
+ev = {"id": f"evento:{len(bad_events)+1}", "seq": len(bad_events) + 1, "at": "2026-10-24T19:59:00Z", "prev": sha256_text(canonical(bad_events[-1])), "principal": "leitor:b", "action": "approve",
       "assertion_type": "product_rule", "assertion": "product_rule:completude-agregadas", "expected_revision": 1, "payload": {}, "reason": "an AI approving: must be refused", "question": None, "independence": None, "verdict": None, "outcome": None}
 bad_events.append(ev)
 overlay("i04-machine-approval", "I04", {"governance/events.jsonl": "".join(canonical(e) + "\n" for e in bad_events)})
-def same_family(o): o["readings"][1]["family"] = "amalia"; o["readings"][1]["principal"] = "ai:amalia-9b"
+def same_family(o): o["readings"][1]["family"] = "A"; o["readings"][1]["principal"] = "leitor:a"
 overlay("i05-settled-by-one-family", "I05", {"regra/ccp-limiar-ajuste-direto-bens.json": mutate("regra/ccp-limiar-ajuste-direto-bens.json", same_family)})
 def no_adapters(o): o["manifest"] = dict(o["manifest"], adapters=[])
 overlay("i06-manifest-incomplete", "I06", {"veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json": mutate("veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json", no_adapters)})
@@ -360,6 +366,6 @@ def post(o): o["request"]["method"] = "POST"
 overlay("i10-active-send", "I10", {"raw/base-dump-anuncio-FX-2026-000001.json": mutate("raw/base-dump-anuncio-FX-2026-000001.json", post)})
 def named(o): o["entities"][1]["name"] = "Fornecedor Fixture Unipessoal"
 overlay("i11-natural-person-named", "I11", {"veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json": mutate("veredicto/prazo-minimo-propostas-6-dias-FX-2026-000001.json", named)})
-def no_product_rule(o): o["params"]["completeness_threshold"]["decided_by"] = "evento:1"
+def no_product_rule(o): o["params"]["completeness_threshold"]["decided_by"] = "evento:2"  # a leitor's regra proposal, not a product rule
 overlay("i12-threshold-without-product-rule", "I12", {"regra/ccp-limite-acumulado-art113.json": mutate("regra/ccp-limite-acumulado-art113.json", no_product_rule)})
 print("valid objects:", sum(1 for p in V.rglob("*.json")), "events:", len(EVENTS), "broken overlays:", len(list(B.iterdir())))

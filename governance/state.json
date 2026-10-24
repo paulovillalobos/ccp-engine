@@ -1,0 +1,18 @@
+{
+  "assertions": {
+    "product_rule|product_rule:principais-do-log": {
+      "events": [
+        1
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    }
+  },
+  "disputes": {},
+  "errors": [],
+  "events": 1,
+  "head": "1fc983b0bd139a73bf3baf81d630fc086624d1acc09f1aaf285c8d5143457270"
+}

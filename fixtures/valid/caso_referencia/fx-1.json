@@ -17,12 +17,12 @@
   ],
   "annotators": [
     {
-      "principal": "human:paulo",
+      "principal": "pessoa:paulo",
       "at": "2026-10-24T19:40:00Z",
       "agrees_with_expected": true
     },
     {
-      "principal": "human:revisor-fixture",
+      "principal": "pessoa:revisor-fixture",
       "at": "2026-10-24T19:41:00Z",
       "agrees_with_expected": true
     }

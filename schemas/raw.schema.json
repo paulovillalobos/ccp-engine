@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "raw.schema.json",
   "title": "Registro cru: one captured record of one source, by hash",
-  "description": "raw:base-api:contrato:12345678. bytes names the file under <store>/raw_bytes/<sha256>; verify re-hashes it (invariant 1). request.method is GET only: reading is passive (invariant 10).",
+  "description": "raw:base-api:contrato:12345678. bytes names the file under <store>/raw_bytes/<sha256>; verify re-hashes it (invariant 1). text, when present, is the working text derived from the bytes by a versioned extractor (engine/extract.py): verify re-runs the extractor and requires the same sha256 (DECISIONS D23); passage offsets point into that text. request.method is GET only: reading is passive (invariant 10).",
   "type": "object",
   "allOf": [{"$ref": "defs.schema.json#/$defs/envelope"}],
   "properties": {
@@ -16,7 +16,8 @@
     "encoding": {"type": "string", "enum": ["utf-8", "latin-1", "binary"]},
     "url": {"type": "string", "pattern": "^https://"},
     "captured_at": {"$ref": "defs.schema.json#/$defs/datetime"},
-    "request": {"type": "object", "properties": {"method": {"const": "GET"}, "reads_of_page": {"type": "integer", "minimum": 1, "maximum": 1}}, "required": ["method", "reads_of_page"], "additionalProperties": false}
+    "request": {"type": "object", "properties": {"method": {"const": "GET"}, "reads_of_page": {"type": "integer", "minimum": 1, "maximum": 1}, "renderer": {"type": "string", "minLength": 1}}, "required": ["method", "reads_of_page"], "additionalProperties": false},
+    "text": {"oneOf": [{"type": "null"}, {"type": "object", "properties": {"extractor": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*@[0-9]+$"}, "sha256": {"$ref": "defs.schema.json#/$defs/sha256"}, "bytes": {"type": "string", "pattern": "^raw_bytes/[0-9a-f]{64}$"}}, "required": ["extractor", "sha256", "bytes"], "additionalProperties": false}]}
   },
   "required": ["id", "revision", "recorded_at", "source", "kind", "source_id", "sha256", "bytes", "media_type", "encoding", "url", "captured_at", "request"],
   "unevaluatedProperties": false

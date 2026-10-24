@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "principals.schema.json",
-  "title": "Principals: who may act in the governance log",
-  "description": "governance/principals.json. kind decides capabilities (engine/governance.py CAPABILITIES): parser proposes; ai proposes, corrects, reviews; human also approves, disputes, adjudicates; system invalidates. family is the model family (invariant 5). A retired principal records nothing new; its past events stay valid.",
+  "title": "Principals: who may act in the governance log (product rule 2026-10-24, DECISIONS D22)",
+  "description": "governance/principals.json. Five roles, each with its own id prefix: pessoa (kind humano: decides product rules, approves with a reason, adjudicates); leitor (kind automatizado: proposes readings of the law by choosing passage ids; familia A or B; motor = technical engine id and version); extrator (automatizado: proposes facts from documents with position); redator (automatizado: explains what is already decided, under the citation guard; records nothing in the log); ferramenta (kind codigo: a versioned tool with the hash of its code, e.g. ferramenta:verify@1). Capabilities per role are in engine/governance.py CAPABILITIES. A retired principal records nothing new; its past events stay valid.",
   "type": "object",
   "properties": {
     "principals": {
@@ -12,13 +12,26 @@
         "type": "object",
         "properties": {
           "id": {"$ref": "defs.schema.json#/$defs/id_principal"},
-          "kind": {"type": "string", "enum": ["human", "ai", "parser", "system"]},
-          "family": {"$ref": "defs.schema.json#/$defs/model_family"},
-          "role": {"type": "string", "minLength": 1},
+          "kind": {"type": "string", "enum": ["humano", "automatizado", "codigo"]},
+          "papel": {"type": "string", "enum": ["pessoa", "leitor", "extrator", "redator", "ferramenta"]},
+          "familia": {"oneOf": [{"$ref": "defs.schema.json#/$defs/model_family"}, {"type": "null"}]},
+          "motor": {"oneOf": [{"type": "object", "properties": {"id": {"type": "string", "minLength": 1}, "versao": {"type": "string", "minLength": 1}}, "required": ["id", "versao"], "additionalProperties": false}, {"type": "null"}]},
+          "versao": {"type": ["integer", "null"], "minimum": 1},
+          "code": {"type": ["string", "null"], "minLength": 1, "description": "ferramenta: path of the tool's code inside the repository; verify checks its sha256 equals hash while the principal is not retired (PROV)."},
+          "hash": {"oneOf": [{"$ref": "defs.schema.json#/$defs/sha256"}, {"type": "null"}]},
+          "nota": {"type": "string"},
           "retired": {"type": "boolean"}
         },
-        "required": ["id", "kind", "family", "role", "retired"],
-        "additionalProperties": false
+        "required": ["id", "kind", "papel", "familia", "motor", "versao", "code", "hash", "retired"],
+        "additionalProperties": false,
+        "allOf": [
+          {"if": {"properties": {"papel": {"const": "pessoa"}}}, "then": {"properties": {"kind": {"const": "humano"}, "id": {"pattern": "^pessoa:"}}}},
+          {"if": {"properties": {"papel": {"enum": ["leitor", "extrator", "redator"]}}}, "then": {"properties": {"kind": {"const": "automatizado"}, "familia": {"type": "string"}, "motor": {"type": "object"}}}},
+          {"if": {"properties": {"papel": {"const": "leitor"}}}, "then": {"properties": {"id": {"pattern": "^leitor:"}}}},
+          {"if": {"properties": {"papel": {"const": "extrator"}}}, "then": {"properties": {"id": {"pattern": "^extrator:"}}}},
+          {"if": {"properties": {"papel": {"const": "redator"}}}, "then": {"properties": {"id": {"pattern": "^redator:"}}}},
+          {"if": {"properties": {"papel": {"const": "ferramenta"}}}, "then": {"properties": {"kind": {"const": "codigo"}, "id": {"pattern": "^ferramenta:[a-z0-9][a-z0-9.-]*@[0-9]+$"}, "versao": {"type": "integer"}, "code": {"type": "string"}, "hash": {"type": "string"}}}}
+        ]
       }
     }
   },

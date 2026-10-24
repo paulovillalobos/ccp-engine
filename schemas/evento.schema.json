@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "evento.schema.json",
   "title": "Evento de governança: one line of the append-only, hash-chained log",
-  "description": "evento:n. prev is the sha256 of the previous line's canonical JSON (64 zeros for the first). Actions: propose, correct, review, approve, reject, dispute, adjudicate, invalidate. approve, reject, dispute and adjudicate require a reason; approve requires a human principal (invariant 4); a review names its verdict and independence. assertion_type regra is a reading of the law: it is never human_approved and settles when a blind reviewer of another family upholds it (invariant 5). product_rule is how a person's product decision enters the log (invariant 12). The replay (engine/governance.py) enforces every rule again.",
+  "description": "evento:n. prev is the sha256 of the previous line's canonical JSON (64 zeros for the first). Actions: propose, correct, review, approve, reject, dispute, adjudicate, invalidate. approve, reject, dispute and adjudicate require a reason; approve and adjudicate require a pessoa (invariant 4); a product_rule proposed by a pessoa with a reason is her decision and is settled on record (DECISIONS D22); a review names its verdict and independence. assertion_type regra is a reading of the law: it is never human_approved and settles when a blind reviewer of another family upholds it (invariant 5). product_rule is how a person's product decision enters the log (invariant 12). The replay (engine/governance.py) enforces every rule again.",
   "type": "object",
   "properties": {
     "id": {"$ref": "defs.schema.json#/$defs/id_evento"},
@@ -25,8 +25,8 @@
   "additionalProperties": false,
   "allOf": [
     {"if": {"properties": {"action": {"enum": ["approve", "reject", "dispute", "adjudicate"]}}}, "then": {"properties": {"reason": {"type": "string"}}}},
-    {"if": {"properties": {"action": {"const": "approve"}}}, "then": {"properties": {"principal": {"pattern": "^human:"}}}},
+    {"if": {"properties": {"action": {"const": "approve"}}}, "then": {"properties": {"principal": {"pattern": "^pessoa:"}}}},
     {"if": {"properties": {"action": {"const": "review"}}}, "then": {"properties": {"verdict": {"type": "string"}, "independence": {"type": "string"}, "question": {"type": "string"}}}},
-    {"if": {"properties": {"action": {"const": "adjudicate"}}}, "then": {"properties": {"outcome": {"type": "string"}, "principal": {"pattern": "^human:"}}}}
+    {"if": {"properties": {"action": {"const": "adjudicate"}}}, "then": {"properties": {"outcome": {"type": "string"}, "principal": {"pattern": "^pessoa:"}}}}
   ]
 }

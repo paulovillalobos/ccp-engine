@@ -1,53 +1,112 @@
 {
   "principals": [
     {
-      "id": "human:paulo",
-      "kind": "human",
-      "family": "human",
-      "role": "founder; decides product rules, never legal content",
-      "retired": false
+      "id": "pessoa:paulo",
+      "kind": "humano",
+      "papel": "pessoa",
+      "familia": null,
+      "motor": null,
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "decides product rules and approves with a reason; never legal content"
     },
     {
-      "id": "human:revisor-fixture",
-      "kind": "human",
-      "family": "human",
-      "role": "fixture: second person for adjudications",
-      "retired": false
+      "id": "pessoa:revisor-fixture",
+      "kind": "humano",
+      "papel": "pessoa",
+      "familia": null,
+      "motor": null,
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "fixture: second person for adjudications"
     },
     {
-      "id": "ai:amalia-9b",
-      "kind": "ai",
-      "family": "amalia",
-      "role": "reader, extractor, writer (Modal)",
-      "retired": false
+      "id": "leitor:a",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "fixture-engine-a",
+        "versao": "0"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "proposes readings by choosing passage ids"
     },
     {
-      "id": "ai:reader-b",
-      "kind": "ai",
-      "family": "reader-b",
-      "role": "blind reader of a second family",
-      "retired": false
+      "id": "leitor:b",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "B",
+      "motor": {
+        "id": "fixture-engine-b",
+        "versao": "0"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "blind reader of the other family"
     },
     {
-      "id": "ai:builder",
-      "kind": "ai",
-      "family": "builder",
-      "role": "builder; proposes product rules and adapters, never readings of the law",
-      "retired": false
+      "id": "extrator:a",
+      "kind": "automatizado",
+      "papel": "extrator",
+      "familia": "A",
+      "motor": {
+        "id": "fixture-engine-a",
+        "versao": "0"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "proposes facts, links and conversions from records and documents"
     },
     {
-      "id": "parser:ccp-link",
-      "kind": "parser",
-      "family": "parser",
-      "role": "exact-NIF entity links",
-      "retired": false
+      "id": "redator:a",
+      "kind": "automatizado",
+      "papel": "redator",
+      "familia": "A",
+      "motor": {
+        "id": "fixture-engine-a",
+        "versao": "0"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "explains what is decided; records nothing"
     },
     {
-      "id": "system:verify",
-      "kind": "system",
-      "family": "parser",
-      "role": "invalidates on failed re-derivation",
-      "retired": false
+      "id": "ferramenta:ccp-link@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_fixtures.py",
+      "hash": "999b885a30e2fa82804ccfc0f948caa5c468c7f447673b948a75559097ec2f58",
+      "retired": false,
+      "nota": "exact-NIF entity links (fixture: hashed to this generator)"
+    },
+    {
+      "id": "ferramenta:verify@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_fixtures.py",
+      "hash": "999b885a30e2fa82804ccfc0f948caa5c468c7f447673b948a75559097ec2f58",
+      "retired": false,
+      "nota": "invalidates on failed re-derivation (fixture: hashed to this generator)"
     }
   ]
 }

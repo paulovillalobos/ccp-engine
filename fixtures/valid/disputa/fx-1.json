@@ -3,17 +3,17 @@
   "revision": 1,
   "recorded_at": "2026-10-24T20:00:00Z",
   "veredicto": "veredicto:regra-ccp-limiar-ajuste-direto-bens@v1:proc-base-FX-2026-000001:2026-10-24T19:30:00Z",
-  "raised_by": "human:paulo",
+  "raised_by": "pessoa:paulo",
   "reason": "The two sources disagree on preco_base; check whether the dump value is a typo before the conflict stands.",
-  "at": "2026-10-24T19:20:00Z",
-  "evento": "evento:20",
+  "at": "2026-10-24T19:19:00Z",
+  "evento": "evento:19",
   "state": "adjudicated",
   "adjudication": {
-    "by": "human:revisor-fixture",
-    "at": "2026-10-24T19:21:00Z",
+    "by": "pessoa:revisor-fixture",
+    "at": "2026-10-24T19:20:00Z",
     "outcome": "upheld",
     "reason": "Both values are as captured; the conflict is real, nao_avaliado stands.",
-    "evento": "evento:21"
+    "evento": "evento:20"
   },
   "regression_class": "conflito-preco-base-entre-fontes"
 }

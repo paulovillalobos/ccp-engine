@@ -10,8 +10,8 @@ builder's), data/ (the extractor's). Each is loaded by engine/store.py and check
 Check codes (one per invariant of ARQUITECTURA.md §2, plus the structural ones):
   SCHEMA  an object fails the schema of the directory it sits in; a JSON file where none belongs (LAYOUT)
   REF     an id named by an object does not exist in the store (passages, facts, units, raw records, adapters, events...)
-  I01     a raw record's bytes hash to something other than its sha256, or the bytes are missing; a passage version's
-          text is not what its offsets select in the raw capture
+  I01     a raw record's bytes hash to something other than its sha256, or the bytes are missing; a derived text is not
+          what its versioned extractor produces from the bytes; a passage version's text is not what its offsets select
   I02     a citation's quote is not the passage version's text at its offsets; a DR note's quote is not in its raw text
   I03     a module of engine/, tools/ or verify.py imports a model client or inference library
   I04     the governance replay refuses an event (unregistered principal, capability, machine approval, missing reason,
@@ -26,7 +26,8 @@ Check codes (one per invariant of ARQUITECTURA.md §2, plus the structural ones)
   I10     a raw record not read by a single GET; code in engine/ or verify.py that imports a network module; code in
           tools/ that sends (POST / data=)
   I11     a pessoa_singular with a name inside a publishable object (veredicto.entities)
-  I12     an aggregate rule's completeness threshold not decided by a human approve of a product_rule event
+  I12     an aggregate rule's completeness threshold not decided by a pessoa's product_rule decision in the log
+  PROV    a ferramenta principal whose code no longer hashes to the hash registered for its version
   PACK    a package's hash is not the hash of its rule list, or it names rules that are not in the store
   DIFF    a stored diff differs from the one rebuilt from its two packages (engine/rules.py once A4 lands; D14)
 """
@@ -41,7 +42,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
-from engine import governance, manifest, schema  # noqa: E402
+from engine import extract, governance, manifest, schema  # noqa: E402
 from engine.canon import content_hash  # noqa: E402
 from engine.store import Store  # noqa: E402
 
@@ -192,6 +193,22 @@ def check_sources(store, out):
             out.append(("I01", f"{r['id']}: bytes {r['bytes']} not in the store"))
         elif hashlib.sha256(path.read_bytes()).hexdigest() != r["sha256"]:
             out.append(("I01", f"{r['id']}: bytes do not hash to {r['sha256'][:12]}..."))
+        text = r.get("text")
+        if text and path is not None:
+            fn = extract.EXTRACTORS.get(text["extractor"])
+            tpath = store.raw_bytes.get(text["sha256"])
+            if fn is None:
+                out.append(("I01", f"{r['id']}: unknown extractor {text['extractor']}"))
+            elif tpath is None:
+                out.append(("I01", f"{r['id']}: derived text {text['bytes']} not in the store"))
+            else:
+                try:
+                    derived = fn(path.read_bytes())
+                except Exception as exc:  # the extractor refuses: the text cannot be re-derived
+                    derived = None
+                    out.append(("I01", f"{r['id']}: {text['extractor']} fails on the stored bytes: {exc}"))
+                if derived is not None and (hashlib.sha256(derived.encode("utf-8")).hexdigest() != text["sha256"] or tpath.read_text(encoding="utf-8") != derived):
+                    out.append(("I01", f"{r['id']}: derived text is not what {text['extractor']} produces from the bytes"))
         req = r.get("request") or {}
         if req.get("method") != "GET" or req.get("reads_of_page", 1) > 1:
             out.append(("I10", f"{r['id']}: captured by {req.get('method')} with {req.get('reads_of_page')} reads; only one passive GET per page"))
@@ -255,11 +272,18 @@ def check_governance(store, out):
         ct = r["params"].get("completeness_threshold")
         if ct:
             ev = events.get(ct["decided_by"])
-            if not ev or ev["action"] != "approve" or ev["assertion_type"] != "product_rule" or not ev["principal"].startswith("human:"):
-                out.append(("I12", f"{r['id']}: completeness threshold decided by {ct['decided_by']}, which is not a human approve of a product_rule"))
+            decided = bool(ev) and ev["assertion_type"] == "product_rule" and ev["principal"].startswith("pessoa:") and (
+                ev["action"] == "approve" or (ev["action"] == "propose" and ev.get("reason")))
+            if not decided:
+                out.append(("I12", f"{r['id']}: completeness threshold decided by {ct['decided_by']}, which is not a pessoa's product_rule decision"))
     for l in store.objects["link"]:
         if not l.get("proponent"):
             out.append(("I04", f"{l['id']}: link without proponent"))
+    for p in (store.principals or {}).get("principals", []):
+        if p.get("papel") == "ferramenta" and not p.get("retired") and p.get("code"):
+            path = ROOT / p["code"]
+            if path.exists() and hashlib.sha256(path.read_bytes()).hexdigest() != p.get("hash"):
+                out.append(("PROV", f"{p['id']}: {p['code']} no longer hashes to the registered hash; register a new version and retire this one"))
     return rp
 
 

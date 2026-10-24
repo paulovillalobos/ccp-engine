@@ -19,7 +19,7 @@
     "adjudication": {
       "oneOf": [
         {"type": "null"},
-        {"type": "object", "properties": {"by": {"type": "string", "pattern": "^human:[a-z0-9-]+$"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "outcome": {"type": "string", "enum": ["upheld", "overturned", "withdrawn"]}, "reason": {"type": "string", "minLength": 1}, "evento": {"$ref": "defs.schema.json#/$defs/id_evento"}}, "required": ["by", "at", "outcome", "reason", "evento"], "additionalProperties": false}
+        {"type": "object", "properties": {"by": {"type": "string", "pattern": "^pessoa:[a-z0-9.-]+$"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "outcome": {"type": "string", "enum": ["upheld", "overturned", "withdrawn"]}, "reason": {"type": "string", "minLength": 1}, "evento": {"$ref": "defs.schema.json#/$defs/id_evento"}}, "required": ["by", "at", "outcome", "reason", "evento"], "additionalProperties": false}
       ]
     },
     "regression_class": {"oneOf": [{"$ref": "defs.schema.json#/$defs/slug"}, {"type": "null"}]}

@@ -12,7 +12,7 @@ def test_candidate_and_nif_ids_are_stable():
 
 
 def test_link_lifecycle_never_deletes():
-    l = en.propose_link("link:t", "alias:base:x", "ent:nif:500000000", "ai:amalia-9b", "name_ai", {"source_field": "nome", "value": "X"}, "2026-10-24T00:00:00Z", "evento:9", "2026-10-24T00:00:00Z")
+    l = en.propose_link("link:t", "alias:base:x", "ent:nif:500000000", "extrator:a", "name_ai", {"source_field": "nome", "value": "X"}, "2026-10-24T00:00:00Z", "evento:9", "2026-10-24T00:00:00Z")
     assert l["state"] == "proposed" and l["revision"] == 1
     s = en.settle(l, "2026-10-25T00:00:00Z")
     assert s["state"] == "settled" and s["revision"] == 2 and s["supersedes"] == 1 and l["state"] == "proposed"
@@ -26,6 +26,6 @@ def test_proponent_and_event_are_required_and_merge_does_not_exist():
     with pytest.raises(ValueError):
         en.propose_link("link:t", "a", "b", None, "person", {"source_field": "x", "value": "y"}, "2026-10-24T00:00:00Z", None, "2026-10-24T00:00:00Z")
     with pytest.raises(ValueError):
-        en.propose_link("link:t", "a", "b", "ai:amalia-9b", "name_ai", {"source_field": "x", "value": "y"}, "2026-10-24T00:00:00Z", None, "2026-10-24T00:00:00Z")
+        en.propose_link("link:t", "a", "b", "extrator:a", "name_ai", {"source_field": "x", "value": "y"}, "2026-10-24T00:00:00Z", None, "2026-10-24T00:00:00Z")
     with pytest.raises(NotImplementedError):
         en.merge("ent:nif:1", "ent:nif:2")

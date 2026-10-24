@@ -61,3 +61,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: A3b (six items in the audit) before B1: re-derive every verdict in verify, reconcile every stored state with the
   log, manifest cross-checks, law-clock consistency; one overlay per new check; redteam prints 0 MISSED.
 - Why: verify v0 checks invariants object by object; a `cumpre` contradicted by its own fact passes today (M16).
+
+## 2026-10-24 product rule: principals by role (commit: Product rule: principals by role ...)
+- Done: schemas/principals.schema.json rewritten to the five roles (pessoa, leitor A/B, extrator, redator, ferramenta
+  with version and code hash); id prefix = role; model_family enum = A/B; approve/adjudicate require `pessoa:`;
+  governance CAPABILITIES by role; a pessoa's product_rule with a reason settles on record; verify PROV checks every
+  non-retired ferramenta's code hash; tools/register_tool.py; production governance/principals.json (pessoa:paulo,
+  leitor:a/b, extrator:a, redator:a, five ferramentas) and event 1 = the product rule in Paulo's words. DECISIONS D22.
+  NORMALISE layer (D23): raw.text derived by a versioned extractor (engine/extract.py), re-derived by verify I01;
+  engine/sources.record_raw; tools/capture_dr_consolidated.py (headless Chrome, one read). Fixtures regenerated;
+  verify ok; 44 tests green.
+- Next: the two DR captures into law/ (CCP consolidated; DL 177/2026), inspect notes and per-article history, fit
+  passagem/vigencia to the real shape; then A3b.
+- Why: Paulo's product rule for the log; and the DR page is a rendered DOM, so offsets need a re-derivable text.

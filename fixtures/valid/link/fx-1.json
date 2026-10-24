@@ -4,7 +4,7 @@
   "recorded_at": "2026-10-24T20:00:00Z",
   "from": "alias:base-dump:FX-2026-000001-adjudicante",
   "to": "ent:nif:500000000",
-  "proponent": "parser:ccp-link",
+  "proponent": "ferramenta:ccp-link@1",
   "method": "nif_exact",
   "evidence": {
     "source_field": "nifEntidadeAdjudicante",

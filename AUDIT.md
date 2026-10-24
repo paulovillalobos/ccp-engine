@@ -19,7 +19,7 @@ Run from a clean checkout of `main`:
 | 7 | Fixtures re-derive | `tests/test_fixtures_rederive.py` green (fixtures equal `tools/make_fixtures.py` output) |
 | 8 | Boundary respected | no commit in phase B touches `adapters/` or `data/` (`git log --stat -- adapters data` shows only the extractor's commits, if any) |
 | 9 | No model in the gate | `verify.check_code()` empty; no module of `engine/` or `verify.py` imports a model or network library |
-| 10 | Governance | `governance/events.jsonl` replays with 0 errors; every B3 rule has two readings of distinct families; no `approve` on a `regra`; every `approve` is `human:` with a reason |
+| 10 | Governance | `governance/events.jsonl` replays with 0 errors; every B3 rule has two readings of distinct families; no `approve` on a `regra`; every `approve` is `pessoa:` with a reason |
 | 11 | Law re-derived | B2's raw pages hash to their sha256; `vigente(2026-09-30)` vs `vigente(2026-10-01)` differ exactly per the DL 177/2026 notes |
 | 12 | BUILD-LOG | one entry per phase-B commit with done / next / why; every deviation from FILL-PLAN named there and in DECISIONS |
 | 13 | No AI attribution | no `Co-Authored-By` or model names in commits, PRs or GitHub-visible prose |

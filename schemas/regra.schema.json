@@ -66,7 +66,7 @@
     },
     "readings": {
       "type": "array",
-      "description": "What each reader proposed: the passage ids it chose (never the quote). Replayed from the log.",
+      "description": "What each leitor proposed: the passage ids it chose (never the quote). family is A or B. Replayed from the log.",
       "items": {
         "type": "object",
         "properties": {"principal": {"$ref": "defs.schema.json#/$defs/id_principal"}, "family": {"$ref": "defs.schema.json#/$defs/model_family"}, "at": {"$ref": "defs.schema.json#/$defs/datetime"}, "chosen_passages": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_passagem"}, "minItems": 1}, "blind": {"type": "boolean"}, "evento": {"$ref": "defs.schema.json#/$defs/id_evento"}},
