@@ -109,3 +109,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: A3b.3 check_states (STATE).
 - Why: the manifest was trusted; a verdict could name a package without its rule, a revision that does not exist or a
   log head the log never had.
+
+## 2026-10-24 A3b.3 verify reconciles every stored state with the log (commit: verify: stored states of links, adapters, disputes, conversions, packages and rule heads are the log's replay (STATE))
+- Done: verify.check_states (code STATE), fed by the replay check_governance already builds. Link with evento: its
+  replayed state; link without evento: only a ferramenta's nif_exact. Adaptador: replayed state, `proposed` when the log
+  has never seen it. Disputa: (raised_by, veredicto, state, adjudicator, outcome) equal to the replayed dispute, and its
+  adjudication event is one of that dispute's events. Afirmação: conversion_evento is the afirmacao_conversao of that
+  afirmação by its converted_by. Pacote: every rule it names is settled at the named revision. Regra: every reading's
+  chosen_passages ⊆ the passages the rule cites (passages + exceptions); the highest stored revision equals the log's
+  revision. Red team: M05, M07, M09, M10, M20, M22 now STATE. ferramenta:verify@4.
+- Next: A3b.4 check_law_time (TIME).
+- Why: only regra states were cross-checked (I05); a link, adapter or dispute could claim a state the log never gave it.

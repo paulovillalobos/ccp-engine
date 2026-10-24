@@ -400,6 +400,58 @@ def check_manifest(store, out):
                 out.append(("MAN", f"{where}: source snapshot {snap['source']} {snap['sha256'][:12]}... names no raw record with that sha256, source and captured_at"))
 
 
+def check_states(store, rp, out):
+    """STATE (invariants 4, 9): every stored state is the log's replay, not a claim. A link with an evento has the
+    replayed state of that link; a link without one is only a ferramenta's nif_exact (deterministic). An adaptador has
+    its replayed state, or `proposed` when the log has never seen it. A disputa is the replayed dispute (disputant,
+    verdict, state, adjudicator, outcome, adjudication event). An afirmação's conversion_evento is the
+    afirmacao_conversao event of that afirmação by its converted_by. A package names only rules whose named revision is
+    settled. A reading chooses only passages its rule cites. A rule's highest stored revision is the log's revision."""
+    events = {ev["id"]: ev for _, ev in store.events}
+    for l in current_of(store, "link").values():
+        if l["evento"] is None:
+            if not (l["method"] == "nif_exact" and l["proponent"].startswith("ferramenta:")):
+                out.append(("STATE", f"{l['id']}: state {l['state']} with no log event; only a ferramenta's nif_exact link stands outside the log"))
+            continue
+        replayed = rp.state_of("link", l["id"])
+        if replayed != l["state"]:
+            out.append(("STATE", f"{l['id']}: stored state {l['state']} but the log replays {replayed}"))
+    for a in current_of(store, "adaptador").values():
+        replayed = rp.state_of("adaptador", a["id"]) or "proposed"
+        if replayed != a["state"]:
+            out.append(("STATE", f"{a['id']}: stored state {a['state']} but the log replays {replayed}"))
+    for d in current_of(store, "disputa").values():
+        r = rp.disputes.get(d["id"])
+        if r is None:
+            out.append(("STATE", f"{d['id']}: no dispute event for it in the log"))
+            continue
+        adj = d.get("adjudication") or {}
+        stored = (d["raised_by"], d["veredicto"], d["state"], adj.get("by"), adj.get("outcome"))
+        log = (r["disputant"], r["veredicto"], r["state"], r["adjudicator"], r.get("outcome"))
+        if stored != log:
+            out.append(("STATE", f"{d['id']}: stored (raised_by, veredicto, state, adjudicator, outcome) {stored} but the log replays {log}"))
+        if adj and int(str(adj.get("evento", "evento:0")).split(":")[1]) not in r["events"]:
+            out.append(("STATE", f"{d['id']}: adjudication names {adj.get('evento')}, which is not this dispute's adjudication in the log"))
+    for a in current_of(store, "afirmacao").values():
+        ev = events.get(a["conversion_evento"])
+        if ev and (ev["assertion_type"] != "afirmacao_conversao" or ev["assertion"] != a["id"] or ev["principal"] != a["converted_by"]):
+            out.append(("STATE", f"{a['id']}: conversion_evento {a['conversion_evento']} is not the afirmacao_conversao of this afirmação by {a['converted_by']}"))
+    for pk in current_of(store, "pacote").values():
+        for ref in pk["rules"]:
+            rec = next((r for r in store.revisions(ref["id"]) if r["revision"] == ref["revision"]), None)
+            if rec and rec["state"] != "settled":
+                out.append(("STATE", f"{pk['id']}: names {ref['id']} revision {ref['revision']}, whose state is {rec['state']}; a package holds settled rules only"))
+    for r in current_of(store, "regra").values():
+        cited = {c["passage"] for c in r["passages"]} | {e["citation"]["passage"] for e in r["exceptions"]}
+        for rd in r["readings"]:
+            extra = sorted(set(rd["chosen_passages"]) - cited)
+            if extra:
+                out.append(("STATE", f"{r['id']}: reading {rd['evento']} chose {extra}, which the rule does not cite"))
+        known = rp.assertions.get(("regra", r["id"]))
+        if known and known["revision"] != r["revision"]:
+            out.append(("STATE", f"{r['id']}: highest stored revision is {r['revision']} but the log is at revision {known['revision']}"))
+
+
 RED_FIELDS = ("id", "rule", "result", "reason", "citation", "assertions_compared")
 
 
@@ -515,7 +567,8 @@ def check_store(roots):
     check_references(store, out)
     check_sources(store, out)
     check_citations(store, out)
-    check_governance(store, out)
+    rp = check_governance(store, out)
+    check_states(store, rp, out)
     check_verdicts(store, out)
     check_manifest(store, out)
     check_rederive(store, out)
