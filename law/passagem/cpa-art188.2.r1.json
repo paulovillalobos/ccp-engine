@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art188.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art188",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O prazo da reclamação e dos recursos por quaisquer outros interessados dos atos que não tenham de ser obrigatoriamente publicados começa a correr do seguinte facto que primeiro se verifique:\na) Notificação;\nb) Publicação;\nc) Conhecimento do ato ou da sua execução.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 185265,
+        "end": 185533
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art47.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art47",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "5 - Se for ultrapassado o número máximo de tentativas de autenticação, a plataforma eletrónica deve bloquear a conta do utilizador, que é notificado, por meio fidedigno, do procedimento estabelecido para o desbloqueio.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 62343,
+        "end": 62561
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

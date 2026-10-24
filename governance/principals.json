@@ -351,7 +351,7 @@
       "versao": 3,
       "code": "engine/vigente.py",
       "hash": "04d633a5ff1d7116e58be04e48786a4c5ae41d0ef36f5e7583eeb9eea62bb622",
-      "retired": false,
+      "retired": true,
       "nota": "D31 general rule; Série I-A; produz efeitos; two-digit years; Artigo N without º"
     },
     {
@@ -387,8 +387,56 @@
       "versao": 1,
       "code": "tools/build_law.py",
       "hash": "b253403a93d9c73bf8fddbc5e879fe09bcb6cf0eef0b5cb060efb1c8f80cc3f3",
-      "retired": false,
+      "retired": true,
       "nota": "captures -> normas, passages, versions, vigencias (B2a/B2b)"
+    },
+    {
+      "id": "ferramenta:vigente@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "engine/vigente.py",
+      "hash": "9976e733633a6d51c45871196b662528808ca3960ab671b469be0a5c27d37fe2",
+      "retired": false,
+      "nota": "note grammar: Diário do Governo, suplemento forms, Artigo único, 00:00:00; actc; two-letter suffix"
+    },
+    {
+      "id": "ferramenta:build-law@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/build_law.py",
+      "hash": "7efdb56fae63a45b50742e7b00d5752d11e3f6eccec101b92b7b0f830de298eb",
+      "retired": true,
+      "nota": "every captured act; masked unreadable notes (D33)"
+    },
+    {
+      "id": "ferramenta:build-law@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/build_law.py",
+      "hash": "d3841f27e5dfea6be412c0ecf3732d068e9bf6a996da1d6d06e66255275f3d70",
+      "retired": false,
+      "nota": "timeline acts registered; build-report.json"
+    },
+    {
+      "id": "ferramenta:coverage@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/coverage.py",
+      "hash": "4ceafce2482bbc36e1832210ec3360e190b32c5f05c08bc6e4dc9e0829bf678f",
+      "retired": false,
+      "nota": "law/COVERAGE.md from the store (B2b)"
     }
   ]
 }

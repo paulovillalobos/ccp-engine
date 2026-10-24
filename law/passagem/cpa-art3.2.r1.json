@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art3.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art3",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os atos administrativos praticados em estado de necessidade, com preterição das regras estabelecidas no presente Código, são válidos, desde que os seus resultados não pudessem ter sido alcançados de outro modo, mas os lesados têm o direito de ser indemnizados nos termos gerais da responsabilidade da Administração.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 41669,
+        "end": 41988
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art84.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art84",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os serviços competentes são obrigados a passar aos interessados, independentemente de despacho e no prazo máximo de 10 dias, a contar da apresentação do requerimento, certidão, reprodução ou declaração autenticada de documentos de que constem, consoante o pedido, todos ou alguns dos seguintes elementos:\na) Data de apresentação de requerimentos, petições, reclamações, recursos ou documentos semelhantes;\nb) Conteúdo dos documentos referidos na alínea anterior ou pretensão nestes formulada;\nc) Andamento que tiveram ou situação em que se encontram os documentos a que se refere o n.º 1;\nd) Resolução tomada ou falta de resolução.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 104707,
+        "end": 105342
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

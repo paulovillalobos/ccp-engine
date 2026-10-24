@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:dlr-34-2008-m",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:27:12Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "dlr-34-2008-m",
+  "sha256": "9c1d3fd573a8fba033b068423cad4284c75d9792553f3112f66ac1ee027c4da2",
+  "bytes": "raw_bytes/9c1d3fd573a8fba033b068423cad4284c75d9792553f3112f66ac1ee027c4da2",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2008-61725773",
+  "captured_at": "2026-10-24T17:27:04Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 45000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "bb7e6921f498133035ba22740b1826e2c80c25fad000e7a5b43d2868bfb791c8",
+    "bytes": "raw_bytes/bb7e6921f498133035ba22740b1826e2c80c25fad000e7a5b43d2868bfb791c8"
+  }
+}

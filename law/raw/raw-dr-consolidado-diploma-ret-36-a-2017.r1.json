@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:ret-36-a-2017",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:20:43Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "ret-36-a-2017",
+  "sha256": "44300c49e9de5a88f8587136f06d15249f914b520f7b1c7f7faaa96c4e3ec4bb",
+  "bytes": "raw_bytes/44300c49e9de5a88f8587136f06d15249f914b520f7b1c7f7faaa96c4e3ec4bb",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/declaracao-retificacao/36-a-2017-114132971",
+  "captured_at": "2026-10-24T17:20:35Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "20fd447c56b8eb27f25e820f9d5c953444fc73b28402e206ae0be2ad792b92a3",
+    "bytes": "raw_bytes/20fd447c56b8eb27f25e820f9d5c953444fc73b28402e206ae0be2ad792b92a3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art90.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art90",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "d) A decisão final não seja proferida dentro dos 180 dias seguintes à instauração do procedimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 110238,
+        "end": 110336
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

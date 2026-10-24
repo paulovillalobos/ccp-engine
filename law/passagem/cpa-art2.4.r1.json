@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art2.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art2",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Para efeitos do disposto no presente Código, integram a Administração Pública:\na) Os órgãos do Estado e das regiões autónomas que exercem funções administrativas a título principal;\nb) As autarquias locais e suas associações e federações de direito público;\nc) As entidades administrativas independentes;\nd) Os institutos públicos e as associações públicas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 40854,
+        "end": 41215
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

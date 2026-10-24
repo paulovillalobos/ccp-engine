@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art117.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art117",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "4 - As situações previstas no n.º 2 só suspendem a contagem de prazos a partir do décimo dia após a sua receção pelo interessado sem que este as observe.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 134537,
+        "end": 134690
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

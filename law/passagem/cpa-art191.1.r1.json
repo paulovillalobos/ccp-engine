@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art191.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art191",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Salvo disposição legal em contrário, pode reclamar-se, para o autor, da prática ou omissão de qualquer ato administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 187624,
+        "end": 187750
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

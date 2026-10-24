@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art190.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art190",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Nos demais casos, a reclamação não suspende o prazo de interposição dos recursos administrativos que no caso couberem.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 186913,
+        "end": 187035
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

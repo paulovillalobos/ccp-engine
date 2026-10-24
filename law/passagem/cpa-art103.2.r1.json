@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art103.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art103",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os requerimentos dirigidos aos órgãos centrais podem ser apresentados nos serviços locais desconcentrados do mesmo ministério ou organismo, quando os interessados residam na área da competência destes, ou nos gabinetes de apoio aos representantes da República nas regiões autónomas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 118039,
+        "end": 118325
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art153.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art153",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A fundamentação deve ser expressa, através de sucinta exposição dos fundamentos de facto e de direito da decisão, podendo consistir em mera declaração de concordância com os fundamentos de anteriores pareceres, informações ou propostas, que constituem, neste caso, parte integrante do respetivo ato.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 157694,
+        "end": 157997
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

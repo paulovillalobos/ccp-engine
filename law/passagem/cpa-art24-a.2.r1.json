@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - A utilização de meios telemáticos nas reuniões deve constar de forma expressa na respetiva ata.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 54282,
+        "end": 54381
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

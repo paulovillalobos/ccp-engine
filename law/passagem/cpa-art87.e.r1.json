@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art87.e",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art87",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "e) É havido como prazo de um ou dois dias o designado, respetivamente, por 24 ou 48 horas;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 107147,
+        "end": 107237
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

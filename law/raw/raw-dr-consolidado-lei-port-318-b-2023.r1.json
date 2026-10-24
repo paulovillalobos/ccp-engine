@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:port-318-b-2023",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:18:05Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "port-318-b-2023",
+  "sha256": "5fb5b1764eea6cb243cc3e4e015c8538c9ed8d2c18f551a132ef7b9047ab320a",
+  "bytes": "raw_bytes/5fb5b1764eea6cb243cc3e4e015c8538c9ed8d2c18f551a132ef7b9047ab320a",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2023-223383895",
+  "captured_at": "2026-10-24T17:17:56Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 45000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "d953e779fb6c6f0f740ab90c6cbd92caa0176a6ef68016e9b13efa7f8e4bb1f7",
+    "bytes": "raw_bytes/d953e779fb6c6f0f740ab90c6cbd92caa0176a6ef68016e9b13efa7f8e4bb1f7"
+  }
+}

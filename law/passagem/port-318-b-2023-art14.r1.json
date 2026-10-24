@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art14",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 14.º",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "Artigo 14.º\nCorreção de bloco de dados anteriormente submetido\n1 - Se, em casos excecionais, ocorrer a necessidade de a entidade adjudicante fazer correções depois de ter submetido um determinado bloco de dados, deve aquela solicitar fundamentadamente ao portal BASE, através das opções tecnológicas disponibilizadas pelo próprio sistema.\n2 - Caso a correção referida no número anterior seja autorizada, o sistema de validação e correção de dados instalado no portal BASE deve permitir a um utilizador certificado e reconhecido como representante da entidade adjudicante, ou à plataforma eletrónica de contratação pública utilizada para a comunicação dos dados de origem, no prazo de 10 dias úteis, a edição e correção do bloco de dados, dando origem a uma nova versão.\n3 - No caso de alterações provenientes de anúncio de retificação ou alteração, de acordo com o previsto no artigo 6.º da portaria dos modelos de anúncios, bem como as provenientes das plataformas eletrónicas de contratação pública, são validadas automaticamente pelo sistema do portal BASE, que as publicita.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 27297,
+        "end": 28375
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

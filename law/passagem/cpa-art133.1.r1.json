@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art133.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art133",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O procedimento extingue-se pela falta de pagamento, no prazo devido, de quaisquer taxas ou despesas de que a lei faça depender a realização dos atos procedimentais, salvo nos casos previstos no n.º 2 do artigo 15.º",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 145790,
+        "end": 146008
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.1.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "d) Por edital, quando seja esta a forma de notificação prescrita por lei ou regulamento ou quando os notificandos forem incertos ou de paradeiro desconhecido;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 125392,
+        "end": 125550
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

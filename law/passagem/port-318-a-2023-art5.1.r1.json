@@ -1,0 +1,23 @@
+{
+  "id": "port-318-a-2023:art5.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-a-2023",
+  "parent": "port-318-a-2023:art5",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2024-01-23",
+      "text": "1 - O pagamento do anúncio só pode ter lugar após reconhecimento, por parte do sistema, de que a introdução de todos os dados se encontra completa.",
+      "raw": "raw:dr-consolidado:diploma:port-318-a-2023",
+      "offsets": {
+        "start": 9289,
+        "end": 9436
+      },
+      "valid_from": "2024-01-23",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

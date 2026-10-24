@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art196.1.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art196.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "d) Quando ocorra qualquer outra causa que obste ao conhecimento do recurso.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 191769,
+        "end": 191844
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art161.2.f",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art161.2",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "f) Os atos praticados sob coação física ou sob coação moral;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 162345,
+        "end": 162405
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

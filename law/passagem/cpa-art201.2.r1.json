@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art201.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art201",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - À formação dos contratos a que se refere o número anterior são especialmente aplicáveis os princípios da transparência, da igualdade e da concorrência.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 196204,
+        "end": 196359
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

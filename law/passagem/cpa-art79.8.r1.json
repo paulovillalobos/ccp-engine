@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art79.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art79",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "8 - O interessado pode ser convocado para estar presente nas reuniões, sem direito de voto, quando tal se revele necessário a uma boa decisão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 99926,
+        "end": 100068
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art90",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-i.capitulo-vi",
+  "kind": "artigo",
+  "label": "Artigo 90.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 90.º\nCaducidade das medidas provisórias\nSalvo disposição especial, as medidas provisórias caducam quando:\na) Seja proferida decisão definitiva no procedimento;\nb) Expire o prazo que lhes tenha sido fixado ou a respetiva prorrogação;\nc) Expire o prazo fixado na lei para a decisão final;\nd) A decisão final não seja proferida dentro dos 180 dias seguintes à instauração do procedimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 109944,
+        "end": 110336
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

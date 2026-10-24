@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art185.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art185",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Sempre que a lei não determine o contrário, as reclamações e os recursos de atos administrativos podem ter por fundamento a ilegalidade ou inconveniência do ato praticado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 184250,
+        "end": 184425
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.3.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "b) No caso de incerteza do lugar onde se encontram as pessoas a notificar, por afixação de três editais, um, na entrada do serviço da Administração por onde corre o procedimento, outro, na porta da casa do último domicílio conhecido do notificando no país e, outro, na entrada da sede da respetiva junta de freguesia.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 126479,
+        "end": 126796
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

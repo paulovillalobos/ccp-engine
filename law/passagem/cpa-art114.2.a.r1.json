@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art114.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art114.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "a) O texto integral do ato administrativo, incluindo a respetiva fundamentação, quando deva existir;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 130523,
+        "end": 130623
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art74.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art74",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Nos casos previstos no artigo anterior, o pedido deve ser dirigido à entidade competente para dele conhecer, indicando com precisão os factos que o justifiquem.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 93004,
+        "end": 93168
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

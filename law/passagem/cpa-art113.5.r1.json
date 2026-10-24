@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art113.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art113",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "5 - A notificação por meios eletrónicos considera-se efetuada, no caso de correio eletrónico, no momento em que o destinatário aceda ao específico correio enviado para a sua caixa postal eletrónica, e, no caso de outras notificações por via de transmissão eletrónica de dados, no momento em que o destinatário aceda ao específico correio enviado para a sua conta eletrónica aberta junto da plataforma informática disponibilizada pelo sítio eletrónico institucional do órgão competente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 128395,
+        "end": 128880
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art114.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art114.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "a) Decidam sobre quaisquer pretensões por eles formuladas;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 130200,
+        "end": 130258
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

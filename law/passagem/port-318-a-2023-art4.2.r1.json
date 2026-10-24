@@ -1,0 +1,23 @@
+{
+  "id": "port-318-a-2023:art4.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-a-2023",
+  "parent": "port-318-a-2023:art4",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2024-01-23",
+      "text": "2 - Após a submissão do anúncio, este mantém-se pendente, a aguardar pagamento durante o período máximo de cinco dias seguidos.",
+      "raw": "raw:dr-consolidado:diploma:port-318-a-2023",
+      "offsets": {
+        "start": 8586,
+        "end": 8713
+      },
+      "valid_from": "2024-01-23",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

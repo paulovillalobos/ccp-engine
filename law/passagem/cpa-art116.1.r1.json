@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art116.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art116",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Cabe aos interessados provar os factos que tenham alegado, sem prejuízo do dever cometido ao responsável pela direção do procedimento nos termos do n.º 1 do artigo anterior.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 132395,
+        "end": 132572
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

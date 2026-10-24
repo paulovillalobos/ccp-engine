@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art87.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art87",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) O prazo começa a correr independentemente de quaisquer formalidades;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 106799,
+        "end": 106870
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

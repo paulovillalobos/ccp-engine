@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art2.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art2",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "1 - O portal BASE disponibiliza, publicamente, informação sobre a formação e execução dos contratos públicos sujeitos ao CCP e legislação conexa, contendo igualmente uma parte reservada com dados relevantes para efeitos de auditoria e controlo da atividade contratual da Administração Pública.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 5563,
+        "end": 5856
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

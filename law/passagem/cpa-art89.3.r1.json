@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art89.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art89",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - A revogação das medidas provisórias deve ser fundamentada.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 109756,
+        "end": 109818
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art89.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art89",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Os atos administrativos que ordenem medidas provisórias são passíveis de impugnação junto dos tribunais administrativos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 109819,
+        "end": 109943
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

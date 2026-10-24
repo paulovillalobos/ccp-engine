@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art34.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art34",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - De cada reunião é lavrada ata, que contém um resumo de tudo o que nela tenha ocorrido e seja relevante para o conhecimento e a apreciação da legalidade das deliberações tomadas, designadamente a data e o local da reunião, a ordem do dia, os membros presentes, os assuntos apreciados, as deliberações tomadas, a forma e o resultado das respetivas votações e as decisões do presidente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 59548,
+        "end": 59935
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

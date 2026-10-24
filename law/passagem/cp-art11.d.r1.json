@@ -1,0 +1,23 @@
+{
+  "id": "cp:art11.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cp",
+  "parent": "cp:art11",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "d) Com a marcação do dia para o julgamento no processo de ausentes.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 19263,
+        "end": 19330
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

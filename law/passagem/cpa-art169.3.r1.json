@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art169.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art169",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Os atos administrativos podem ser objeto de anulação administrativa pelo órgão que os praticou e pelo respetivo superior hierárquico.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 171869,
+        "end": 172006
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "port-318-a-2023:art6.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-a-2023",
+  "parent": "port-318-a-2023:art6",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2024-01-23",
+      "text": "4 - Para efeito de contagem de prazos, é considerada como data de envio do anúncio a data do pagamento do mesmo.",
+      "raw": "raw:dr-consolidado:diploma:port-318-a-2023",
+      "offsets": {
+        "start": 10360,
+        "end": 10472
+      },
+      "valid_from": "2024-01-23",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art11",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 11.º",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "Artigo 11.º\nExigências de reporte previstas no Código dos Contratos Públicos\n1 - O formulário relativo a um contrato celebrado na sequência de consulta prévia ou de ajuste direto, previsto no n.º 1 do artigo 127.º do CCP, é construído automaticamente no portal BASE a partir dos dados incluídos no relatório de formação do contrato, bem como dos dados relativos ao valor total pago e ao prazo efetivo de duração do contrato, constantes no relatório de execução ou no relatório final de obra.\n2 - Os relatórios estatísticos previstos no n.º 1 do artigo 472.º do CCP são construídos automaticamente no Portal BASE, a partir dos dados incluídos nos blocos de dados.\n3 - A publicitação das modificações objetivas do contrato, prevista no n.º 1 do artigo 315.º do CCP, é realizada automaticamente no portal BASE a partir dos dados incluídos no relatório de modificação contratual.\n4 - A publicitação dos contratos, prevista no n.º 1 do artigo 465.º do CCP, é realizada automaticamente no portal BASE a partir dos dados incluídos no relatório de formação do contrato e no relatório de execução do contrato ou de final de obra e relatório sumário anual, caso aplicável.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 24013,
+        "end": 25175
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

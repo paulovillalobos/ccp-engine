@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art69.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art69",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Sempre que a situação de incompatibilidade prevista no n.º 3 ocorrer já após o início do procedimento, deve a entidade prestadora de serviços comunicar desde logo o facto ao responsável pela direção do procedimento e cessar toda a sua atividade relacionada com o mesmo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 88253,
+        "end": 88526
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art156.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art156",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Têm eficácia retroativa os atos administrativos:\na) Que se limitem a interpretar atos anteriores;\nb) A que a lei atribua efeito retroativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 159263,
+        "end": 159406
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

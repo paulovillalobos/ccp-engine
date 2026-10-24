@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - Sempre que as condições técnicas o permitam, as reuniões podem ser realizadas por meios telemáticos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 54177,
+        "end": 54281
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

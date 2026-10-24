@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art52.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art52",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A resolução dos conflitos de atribuições entre ministérios ou entre secretarias regionais diferentes, bem como dos conflitos de competência, pode ser solicitada por qualquer interessado, mediante requerimento fundamentado dirigido à entidade competente para a decisão do procedimento, e deve ser oficiosamente suscitada pelos órgãos em conflito logo que dele tenham conhecimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 69896,
+        "end": 70279
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

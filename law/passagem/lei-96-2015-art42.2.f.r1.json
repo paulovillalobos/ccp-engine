@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.2.f",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42.2",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "f) As senhas, os identificadores de sessão e outras credenciais sejam enviados apenas através do protocolo TLS (Transport Layer Security).",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 56820,
+        "end": 56958
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

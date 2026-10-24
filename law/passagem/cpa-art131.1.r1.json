@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art131.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art131",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os interessados podem, mediante requerimento escrito, desistir do procedimento ou de alguns dos pedidos formulados, bem como renunciar aos seus direitos ou interesses legalmente protegidos, salvo nos casos previstos na lei.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 145070,
+        "end": 145297
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

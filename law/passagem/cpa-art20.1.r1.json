@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art20.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art20",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - São órgãos da Administração Pública os centros institucionalizados titulares de poderes e deveres para efeitos da prática de atos jurídicos imputáveis à pessoa coletiva.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 49782,
+        "end": 49955
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

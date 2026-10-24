@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "4 - Da convocatória devem constar, de forma expressa e especificada, os assuntos a tratar na reunião, o local, o dia e hora da reunião e, quando aplicável, a indicação dos meios telemáticos disponibilizados para participação dos membros.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 53163,
+        "end": 53400
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

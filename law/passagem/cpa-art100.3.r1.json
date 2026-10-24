@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art100.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art100",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - O responsável pela direção do procedimento pode não proceder à audiência quando:\na) A emissão do regulamento seja urgente;\nb) Seja razoavelmente de prever que a diligência possa comprometer a execução ou a utilidade do regulamento;\nc) O número de interessados seja de tal forma elevado que a audiência se torne incompatível, devendo nesse caso proceder-se a consulta pública;\nd) Os interessados já se tenham pronunciado no procedimento sobre as questões que importam à decisão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 115076,
+        "end": 115557
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

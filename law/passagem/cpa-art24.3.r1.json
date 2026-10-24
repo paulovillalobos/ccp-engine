@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "3 - A convocatória da reunião deve ser feita para um dos 15 dias seguintes à apresentação do pedido, mas sempre com uma antecedência mínima de 48 horas sobre a data da reunião extraordinária.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 52971,
+        "end": 53162
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

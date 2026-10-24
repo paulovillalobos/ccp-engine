@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art118.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art118",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A prestação de informações ou a apresentação de provas pelos interessados faz-se por escrito, podendo também ser feita oralmente, quando tal seja admitido, nos termos e condições que para o efeito forem fixados.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 134959,
+        "end": 135174
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

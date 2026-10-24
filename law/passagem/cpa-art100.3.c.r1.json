@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art100.3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art100.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "c) O número de interessados seja de tal forma elevado que a audiência se torne incompatível, devendo nesse caso proceder-se a consulta pública;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 115312,
+        "end": 115455
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

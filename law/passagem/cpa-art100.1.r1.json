@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art100.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art100",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Tratando-se de regulamento que contenha disposições que afetem de modo direto e imediato direitos ou interesses legalmente protegidos dos cidadãos, o responsável pela direção do procedimento submete o projeto de regulamento por prazo razoável, mas não inferior a 30 dias, a audiência dos interessados que como tal se tenham constituído no procedimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 114584,
+        "end": 114940
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

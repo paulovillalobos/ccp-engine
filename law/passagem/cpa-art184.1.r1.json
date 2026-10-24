@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art184.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art184",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os interessados têm o direito de:\na) Impugnar os atos administrativos perante a Administração Pública, solicitando a sua revogação, anulação, modificação ou substituição;\nb) Reagir contra a omissão ilegal de atos administrativos, em incumprimento do dever de decisão solicitando a emissão do ato pretendido.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 183227,
+        "end": 183538
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

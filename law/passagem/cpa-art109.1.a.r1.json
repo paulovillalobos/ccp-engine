@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art109.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art109.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) Incompetência do órgão administrativo;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 123242,
+        "end": 123283
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

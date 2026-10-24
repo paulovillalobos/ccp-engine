@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art163.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art163",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O ato anulável produz efeitos jurídicos, que podem ser destruídos com eficácia retroativa se o ato vier a ser anulado por decisão proferida pelos tribunais administrativos ou pela própria Administração.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 163836,
+        "end": 164042
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

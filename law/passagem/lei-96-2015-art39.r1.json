@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art39",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 39.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 39.º\nImplementação e gestão da segurança\n1 - No desenvolvimento da sua atividade, as empresas gestoras implementam um sistema de gestão de segurança da informação baseado na Norma ISO/IEC 27001.\n2 - Para efeitos do disposto no número anterior, as empresas gestoras fornecem ao GNS documentação comprovativa, nomeadamente:\na) Da realização de uma avaliação exaustiva dos riscos que identifique o âmbito de aplicação do sistema e assinale o impacto na atividade em caso de violação da garantia da informação;\nb) Da identificação das ameaças e vulnerabilidades da plataforma eletrónica, e a produção de um documento de análise de riscos onde se enumerem igualmente contramedidas para evitar tais ameaças, e as medidas corretivas a tomar caso a ameaça se concretize, bem como a apresentação de uma lista hierarquizada de melhorias a introduzir;\nc) Da identificação dos riscos residuais por escrito.\n3 - As empresas gestoras selecionam os controlos de segurança adequados com base na análise de riscos prevista na alínea a) do número anterior, e na norma ISO/IEC 27002, nas seguintes áreas da segurança:\na) Avaliação de risco, adotando-se para o efeito a norma ISO/IEC 27005 ou outra metodologia de avaliação de riscos equivalente;\nb) Segurança física e ambiental;\nc) Segurança dos recursos humanos;\nd) Gestão de comunicações e operações;\ne) Medidas normalizadas de controlo do acesso;\nf) Aquisição, desenvolvimento e manutenção dos sistemas de informação;\ng) Gestão de incidentes no domínio da segurança das informações;\nh) Medidas para corrigir e mitigar violações dos sistemas de informação suscetíveis de causar a destruição, a perda acidental, a alteração, ou a divulgação ou acesso não autorizados dos dados pessoais a tratar;\ni) Conformidade;\nj) Segurança de redes informáticas, recomendando-se para o efeito a norma ISO/IEC 27033.\n4 - A aplicação destas normas pode cingir-se apenas às partes da organização que são relevantes para a atividade das plataformas eletrónicas.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 51004,
+        "end": 52986
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

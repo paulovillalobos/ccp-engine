@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art51",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 51.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 51.º\nArquivo\n1 - As plataformas eletrónicas devem garantir que conseguem gerar arquivos em suporte lógico adequado.\n2 - As plataformas eletrónicas devem garantir a guarda e o processamento dos arquivos de modo a poderem vir a constituir-se como meio de prova.\n3 - Os registos de acesso e toda a documentação relativa aos procedimentos de formação de contratos públicos devem ser arquivados.\n4 - As plataformas eletrónicas devem garantir a manutenção e o arquivo dos registos de utilização e acesso dos documentos nela carregados.\n5 - O registo dos arquivos de auditoria deve ser realizado de preferência em texto com codificação UTF-8 (unicode transformation format) e exportável.\n6 - Os arquivos devem ser armazenados e organizados de forma sequencial, diariamente, sendo assinados eletronicamente e com aposição de selo temporal emitido por uma entidade certificadora que preste serviços de validação cronológica.\n7 - A plataforma eletrónica deve garantir, do ponto de vista tecnológico, que a destruição de um arquivo só pode ser levado a cabo com a autorização expressa por escrito do administrador de sistema, do administrador de segurança e do auditor de sistemas.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 67026,
+        "end": 68203
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

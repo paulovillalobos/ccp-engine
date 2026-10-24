@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art177.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art177",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os órgãos da Administração Pública não podem praticar qualquer ato jurídico ou operação material de execução sem terem praticado previamente o ato administrativo exequendo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 178895,
+        "end": 179071
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

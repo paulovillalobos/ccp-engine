@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art50.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art50",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "3 - No mínimo, sempre que um utilizador com perfil de administrador de segurança ou administrador de sistemas exceda o número máximo de tentativas de autenticação deve ser gerado o referido alarme para os utilizadores com o perfil de administrador de segurança.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 65644,
+        "end": 65905
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

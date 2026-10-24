@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-41-2015",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:25:42Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-41-2015",
+  "sha256": "1dd4030bd85b460afc3f4997e87e18e330fb0ec99230888574dca0c5d8793c76",
+  "bytes": "raw_bytes/1dd4030bd85b460afc3f4997e87e18e330fb0ec99230888574dca0c5d8793c76",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://data.dre.pt/eli/lei/41/2015/06/03/p/dre",
+  "captured_at": "2026-10-24T17:25:35Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "d73c40b78ec2d44c721273d5c53e10874d047ffe8f389cf220cc2e6dba617162",
+    "bytes": "raw_bytes/d73c40b78ec2d44c721273d5c53e10874d047ffe8f389cf220cc2e6dba617162"
+  }
+}

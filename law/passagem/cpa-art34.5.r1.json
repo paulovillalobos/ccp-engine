@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art34.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art34",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - O conjunto das atas é autuado e paginado de modo a facilitar a sucessiva inclusão das novas atas e a impedir o seu extravio.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 60473,
+        "end": 60601
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

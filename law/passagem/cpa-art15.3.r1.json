@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art15.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art15",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - A insuficiência económica deve ser provada nos termos da lei sobre apoio judiciário, com as devidas adaptações.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 48205,
+        "end": 48320
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art130.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art130",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "2 - Considera-se que há deferimento tácito se a notificação do ato não for expedida até ao primeiro dia útil seguinte ao termo do prazo da decisão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 143846,
+        "end": 143993
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art66.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art66",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Para além dos casos em que a lei imponha a intervenção de outros órgãos no procedimento, o órgão competente para a decisão final deve, por iniciativa própria, por proposta do responsável pela direção do procedimento ou a requerimento de um sujeito privado da relação jurídica procedimental, solicitar o auxílio de quaisquer outros órgãos da Administração Pública, indicando um prazo útil, quando:\na) O melhor conhecimento da matéria relevante exija uma investigação para a qual o órgão a quem é dirigida a solicitação disponha de competência exclusiva ou de conhecimentos aprofundados aos quais o órgão solicitante não tenha acesso;\nb) Só o órgão a quem é dirigida a solicitação tenha em seu poder documentos ou dados cujo conhecimento seja necessário à preparação da decisão;\nc) A instrução requeira a intervenção de pessoal ou o emprego de meios técnicos de que o órgão competente para a decisão final não disponha.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 81558,
+        "end": 82479
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

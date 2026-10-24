@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art185.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art185",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - As reclamações e os recursos são necessários ou facultativos, conforme dependa, ou não, da sua prévia utilização a possibilidade de acesso aos meios contenciosos de impugnação ou condenação à prática de ato devido.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 183927,
+        "end": 184145
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

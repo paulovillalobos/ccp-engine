@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art94.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art94",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Na decisão final, o órgão competente deve resolver todas as questões pertinentes suscitadas durante o procedimento e que não hajam sido decididas em momento anterior.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 112045,
+        "end": 112215
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art197.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art197",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O órgão competente para conhecer do recurso pode, salvas as exceções previstas na lei, confirmar ou anular o ato recorrido e, se a competência do autor do ato recorrido não for exclusiva, pode também revogá-lo, modificá-lo ou substituí-lo, ainda que em sentido desfavorável ao recorrente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 191971,
+        "end": 192263
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

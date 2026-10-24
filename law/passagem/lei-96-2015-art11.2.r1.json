@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art11.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art11",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "2 - O relatório inicial de segurança deve ser elaborado de acordo com as Normas ISO/IEC 20000 e 27001 e englobar obrigatoriamente:\na) A identificação dos perfis dos técnicos que operam as plataformas eletrónicas, com descrição das respetivas funções;\nb) Uma descrição técnica detalhada da arquitetura e dos sistemas da plataforma eletrónica, contendo uma análise e verificação:\ni) Da conformidade dos certificados digitais utilizados e disponibilizados pelas plataformas eletrónicas;\nii) Do desempenho dos processos de autenticação e validação de utilizadores;\niii) Da conformidade dos requisitos de assinatura eletrónica utilizados;\niv) Dos processos de validação cronológica;\nv) Dos níveis de segurança verificados nos processos de encriptação e desencriptação;\nvi) Dos processos de recuperação de chaves privadas de encriptação;\nvii) Dos processos de custódia de chaves privadas;\nviii) Dos mecanismos de controlo de acessos às plataformas eletrónicas e do funcionamento dos registos de acesso;\nix) Da operabilidade da plataforma eletrónica em múltiplos sistemas operativos e múltiplos navegadores (browsers);\nx) Do formato standard utilizado para os ficheiros carregados nas plataformas eletrónicas;\nxi) Dos processos de carregamento de documentos;\nxii) Do funcionamento dos mecanismos e meios de segurança, garantia da confidencialidade e integridade das propostas, candidaturas e soluções apresentadas em procedimentos concorrenciais;\nxiii) Da sincronização dos serviços das plataformas eletrónicas com o serviço de tempo de rede (NTP) definido a partir do tempo universal coordenado (UTC);\nxiv) Das funcionalidades utilizadas para o arquivo e preservação digital, bem como para a interoperabilidade das plataformas eletrónicas, nos termos decorrentes do n.º 3 do artigo 36.º",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 11247,
+        "end": 13027
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

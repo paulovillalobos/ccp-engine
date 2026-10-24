@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art92.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art92",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "3 - Na falta de disposição especial, os pareceres são emitidos no prazo de 15 dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 111160,
+        "end": 111243
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

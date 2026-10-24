@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art5.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art5",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - No prazo de um ano, a contar da data da entrada em vigor do presente decreto-lei, o Governo aprova, por Resolução do Conselho de Ministros, um «Guia de boas práticas administrativas».",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 37657,
+        "end": 37844
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

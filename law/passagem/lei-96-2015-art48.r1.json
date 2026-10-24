@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art48",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 48.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 48.º\nControlo de acessos\n1 - As plataformas eletrónicas devem garantir a capacidade de controlar e limitar o acesso aos diversos recursos, identificando os utilizadores, associando o perfil às respetivas permissões e restrições.\n2 - Para o efeito, as entidades gestoras de plataformas devem garantir a identificação correta e fiável dos utilizadores e do operador económico através de processo de verificação.\n3 - O processo de verificação de identidade inicia-se após solicitação do operador económico, devendo a entidade gestora disponibilizar um certificado de autenticação provisório e gratuito em 24 horas, garantindo a sua conclusão com a entrega do certificado de autenticação definitivo no prazo máximo de 30 dias.\n4 - O processo de verificação de identidade é dispensado para procedimentos de formação de contratos celebrados ao abrigo de acordo-quadro.\n5 - As plataformas devem ter mecanismos para garantir o controlo de perfis e acesso restrito às peças concursais para os procedimentos que exigem um nível de proteção elevado e verificação dos utilizadores que podem ter acesso.\n6 - As aplicações devem operar com o menor conjunto de privilégios de que necessitam para esse fim.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 62806,
+        "end": 64003
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

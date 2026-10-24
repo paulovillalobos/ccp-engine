@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art163.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art163",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Os atos anuláveis podem ser anulados pela Administração nos prazos legalmente estabelecidos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 164211,
+        "end": 164307
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

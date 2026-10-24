@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:csc",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:19:17Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "csc",
+  "sha256": "1d8a350a88996732888b04c6c19c43a6e217ec63b2e96722d10608564fed41dc",
+  "bytes": "raw_bytes/1d8a350a88996732888b04c6c19c43a6e217ec63b2e96722d10608564fed41dc",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975",
+  "captured_at": "2026-10-24T17:19:06Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 90000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "5e28dff4e638e4adcc316b10f6cdc1a8d0fd2c507bcb4cf2366e06f11b8490c0",
+    "bytes": "raw_bytes/5e28dff4e638e4adcc316b10f6cdc1a8d0fd2c507bcb4cf2366e06f11b8490c0"
+  }
+}

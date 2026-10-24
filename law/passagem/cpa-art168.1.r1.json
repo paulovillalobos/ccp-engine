@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art168.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art168",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os atos administrativos podem ser objeto de anulação administrativa no prazo de seis meses, a contar da data do conhecimento pelo órgão competente da causa de invalidade, ou, nos casos de invalidade resultante de erro do agente, desde o momento da cessação do erro, em qualquer dos casos desde que não tenham decorrido cinco anos, a contar da respetiva emissão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 168801,
+        "end": 169166
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

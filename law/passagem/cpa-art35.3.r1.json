@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art35.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art35",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Quando se trate de pareceres a dar a outros órgãos administrativos, as deliberações são sempre acompanhadas das declarações de voto apresentadas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 61190,
+        "end": 61339
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

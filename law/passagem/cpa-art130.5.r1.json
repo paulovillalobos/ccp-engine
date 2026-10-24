@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art130.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art130",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "5 - A interpelação a que se refere o número anterior deve ser efetuada decorridos 10 dias, a contar do termo do prazo para a autorização ou aprovação, devendo o órgão competente, nesse caso, emiti-las no prazo de 20 dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 144529,
+        "end": 144750
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

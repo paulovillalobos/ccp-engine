@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art124.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art124",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Nas situações previstas no número anterior, a decisão final deve indicar as razões da não realização da audiência.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 140560,
+        "end": 140678
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

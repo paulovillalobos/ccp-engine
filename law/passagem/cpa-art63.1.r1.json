@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art63.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art63",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Salvo disposição legal em contrário, as comunicações da Administração com os interessados ao longo do procedimento só podem processar-se através de telefax, telefone ou correio eletrónico mediante seu prévio consentimento, prestado por escrito, devendo o interessado, na sua primeira intervenção no procedimento ou posteriormente, indicar, para o efeito, o seu número de telefax, telefone ou a identificação da caixa postal eletrónica de que é titular, nos termos previstos no serviço público de caixa postal eletrónica.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 78113,
+        "end": 78637
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

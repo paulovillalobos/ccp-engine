@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art15",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 15.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 15.º\nPrincípio da gratuitidade\n1 - O procedimento administrativo é tendencialmente gratuito, na medida em que leis especiais não imponham o pagamento de taxas por despesas, encargos ou outros custos suportados pela Administração.\n2 - Em caso de insuficiência económica, a Administração isenta, total ou parcialmente, o interessado do pagamento das taxas ou das despesas referidas no número anterior.\n3 - A insuficiência económica deve ser provada nos termos da lei sobre apoio judiciário, com as devidas adaptações.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 47798,
+        "end": 48320
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

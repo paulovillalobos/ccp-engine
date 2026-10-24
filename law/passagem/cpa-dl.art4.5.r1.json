@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art4.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art4",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Verificada a situação prevista na parte inicial do número anterior, o procedimento administrativo referido no n.º 1 segue os termos previstos no respetivo regime.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 37449,
+        "end": 37615
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

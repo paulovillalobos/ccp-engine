@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art54",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 54.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 54.º\nLíngua do procedimento\nA língua do procedimento é a língua portuguesa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 70644,
+        "end": 70726
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-21-2023",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:25:08Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-21-2023",
+  "sha256": "8da9abfd6bb66ec2482d8db858d699fc0cb91859c1f23b81f00069e0543c6000",
+  "bytes": "raw_bytes/8da9abfd6bb66ec2482d8db858d699fc0cb91859c1f23b81f00069e0543c6000",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://data.dre.pt/eli/lei/21/2023/05/25/p/dre",
+  "captured_at": "2026-10-24T17:25:00Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "33546fe637f805ee0fa944e9cbe74d46da02c2550bc7dddd331e7e6098f872b4",
+    "bytes": "raw_bytes/33546fe637f805ee0fa944e9cbe74d46da02c2550bc7dddd331e7e6098f872b4"
+  }
+}

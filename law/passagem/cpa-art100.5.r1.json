@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art100.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art100",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - A realização da audiência suspende a contagem dos prazos do procedimento administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 115682,
+        "end": 115774
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

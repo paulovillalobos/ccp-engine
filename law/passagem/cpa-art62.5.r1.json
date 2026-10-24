@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art62.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art62",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "5 - Sem prejuízo do exercício imediato dos direitos ou interesses legalmente protegidos do interessado no procedimento, não são devidas taxas quando, sempre que tal esteja legalmente previsto, os respetivos valores ou fórmulas de cálculo não sejam introduzidos nas plataformas eletrónicas no âmbito das quais correm os procedimentos a que dizem respeito.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 77049,
+        "end": 77403
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art4.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art4",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "2 - O portal BASE disponibiliza:\na) Base de dados de legislação, regulamentação e jurisprudência, nacional e comunitária, relacionada com contratos públicos;\nb) Guias de boas práticas, orientações técnicas e outras formas de divulgação de informação sobre contratação pública;\nc) Informação estatística, incluindo relatórios anuais e sínteses mensais de contratação pública;\nd) Comunicados, notícias e eventos sobre contratação pública;\ne) A ferramenta de preenchimento do Documento Europeu Único de Contratação Pública (DEUCP) e o endereço da Comissão Europeia com indicação dos demais endereços onde o DEUCP pode ser preenchido;\nf) Informação, em secção específica, referente aos procedimentos e contratos precedidos de procedimentos ao abrigo de regimes especiais de contratação pública.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 8191,
+        "end": 8981
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

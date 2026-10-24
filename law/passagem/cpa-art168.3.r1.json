@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art168.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art168",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Quando o ato tenha sido objeto de impugnação jurisdicional, a anulação administrativa só pode ter lugar até ao encerramento da discussão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 169367,
+        "end": 169508
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

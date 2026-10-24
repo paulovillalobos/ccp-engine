@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "3 - O sistema deve possuir uma configuração de segurança adequada, o que exige, no mínimo, que:\na) Todos os elementos de software sejam atualizados, na medida do necessário para mitigar eventuais vulnerabilidades, nomeadamente o SO, o servidor web e o servidor de aplicações, o sistema de gestão de bases de dados (DBMS), as aplicações, e todas as bibliotecas de códigos;\nb) Os serviços e processos desnecessários do SO, servidor web e servidor de aplicações, sejam desativados, retirados ou não sejam instalados;\nc) As senhas da conta por defeito sejam alteradas ou desativadas.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 56959,
+        "end": 57538
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art14.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art14",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os meios eletrónicos utilizados devem garantir a disponibilidade, o acesso, a integridade, a autenticidade, a confidencialidade, a conservação e a segurança da informação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 46512,
+        "end": 46687
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

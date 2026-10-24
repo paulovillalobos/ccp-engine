@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art169.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art169",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Nos casos expressamente permitidos por lei, os atos administrativos praticados por órgãos sujeitos a superintendência ou tutela administrativa podem ser objeto de revogação ou de anulação administrativa pelos órgãos com poderes de superintendência ou tutela.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 172270,
+        "end": 172532
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

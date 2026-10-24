@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art4.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art4",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "4 - O portal BASE possibilita a busca automática da identificação das entidades adjudicantes, dos adjudicatários, dos demais concorrentes e candidatos e a sua relação com o objeto do contrato, a partir de palavras ou termos, designadamente denominações e número fiscal.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 9241,
+        "end": 9510
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

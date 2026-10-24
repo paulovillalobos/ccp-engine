@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art33.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art33",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Em caso de empate na votação, o presidente tem voto de qualidade, ou, sendo caso disso, de desempate, salvo se a votação se tiver efetuado por escrutínio secreto.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 59043,
+        "end": 59209
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

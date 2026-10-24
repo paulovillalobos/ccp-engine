@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art114.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art114",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "5 - Quando não exista prazo fixado na lei, os atos administrativos devem ser notificados no prazo de cinco dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 131410,
+        "end": 131522
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

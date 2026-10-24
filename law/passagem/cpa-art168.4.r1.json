@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art168.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art168",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Salvo se a lei ou o direito da União Europeia prescreverem prazo diferente, os atos constitutivos de direitos podem ser objeto de anulação administrativa no prazo de cinco anos, a contar da data da respetiva emissão, nas seguintes circunstâncias:\na) Quando o respetivo beneficiário tenha utilizado artifício fraudulento com vista à obtenção da sua prática;\nb) Apenas com eficácia para o futuro, quando se trate de atos constitutivos de direitos à obtenção de prestações periódicas, no âmbito de uma relação continuada;\nc) Quando se trate de atos constitutivos de direitos de conteúdo pecuniário cuja legalidade, nos termos da legislação aplicável, possa ser objeto de fiscalização administrativa para além do prazo de um ano, com imposição do dever de restituição das quantias indevidamente auferidas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 169509,
+        "end": 170314
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art111",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-ii.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 111.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 111.º\nDestinatários das notificações\n1 - As notificações são efetuadas na pessoa do interessado, salvo quando este tenha constituído mandatário no procedimento, caso em que devem ser efetuadas a este.\n2 - Para efeitos do disposto no número anterior, devem os interessados ou os mandatários, quando constituídos, comunicar ao responsável pelo procedimento quaisquer alterações dos respetivos domicílios que venham a acorrer na pendência do procedimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 124325,
+        "end": 124784
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

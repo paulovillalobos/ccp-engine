@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art13.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art13",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "3 - Os blocos de dados são introduzidos através da respetiva interface com o portal BASE, via processo de preenchimento interativo.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 26201,
+        "end": 26332
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

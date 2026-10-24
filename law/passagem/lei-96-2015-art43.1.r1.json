@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art43.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art43",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "1 - As plataformas eletrónicas não devem partilhar hardware e recursos do SO, nem quaisquer dados, nomeadamente, credenciais de acesso e de cifragem, com qualquer outra aplicação ou sistema.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 58859,
+        "end": 59049
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

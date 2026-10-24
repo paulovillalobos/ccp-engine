@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art49.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art49",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O órgão delegante ou subdelegante pode emitir diretivas ou instruções vinculativas para o delegado ou subdelegado sobre o modo como devem ser exercidos os poderes delegados ou subdelegados.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 68178,
+        "end": 68371
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

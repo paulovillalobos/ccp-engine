@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art47.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art47",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - No ato de delegação ou subdelegação, deve o órgão delegante ou subdelegante especificar os poderes que são delegados ou subdelegados ou os atos que o delegado ou subdelegado pode praticar, bem como mencionar a norma atributiva do poder delegado e aquela que habilita o órgão a delegar.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 67255,
+        "end": 67544
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

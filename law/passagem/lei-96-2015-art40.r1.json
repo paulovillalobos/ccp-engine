@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art40",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 40.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 40.º\nGestão de utilizadores, perfil de acesso e privilégios\n1 - A plataforma eletrónica deve suportar perfis com diferentes privilégios, incluindo, no mínimo, os seguintes:\na) Administrador de segurança;\nb) Administrador de sistemas;\nc) Operador de sistemas;\nd) Auditor de sistemas.\n2 - A plataforma eletrónica deve ser capaz de associar e atribuir os utilizadores aos perfis definidos no número anterior.\n3 - A plataforma eletrónica deve garantir que um utilizador não pode ser associado a múltiplos perfis, de acordo com o seguinte critério:\na) Um utilizador com o perfil de «administrador de segurança» não é autorizado a assumir o perfil de «auditor de sistemas»;\nb) Um utilizador com o perfil de «administrador de sistemas» não é autorizado a assumir o perfil de «administrador de segurança» ou de «auditor de sistemas».",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 52987,
+        "end": 53819
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art114.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art114",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - Os atos administrativos devem ser notificados aos destinatários, designadamente os que:\na) Decidam sobre quaisquer pretensões por eles formuladas;\nb) Imponham deveres, encargos, ónus, sujeições ou sanções, ou causem prejuízos;\nc) Criem, extingam, aumentem ou diminuam direitos ou interesses legalmente protegidos, ou afetem as condições do seu exercício.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 130108,
+        "end": 130466
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

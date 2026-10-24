@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art155.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art155",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O ato considera-se praticado quando seja emitida uma decisão que identifique o autor e indique o destinatário, se for o caso, e o objeto a que se refere o seu conteúdo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 159057,
+        "end": 159229
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

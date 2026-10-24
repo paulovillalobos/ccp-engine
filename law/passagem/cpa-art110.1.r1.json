@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art110.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art110",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O início do procedimento é notificado às pessoas cujos direitos ou interesses legalmente protegidos possam ser lesados pelos atos a praticar e que possam ser desde logo nominalmente identificadas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 123585,
+        "end": 123785
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

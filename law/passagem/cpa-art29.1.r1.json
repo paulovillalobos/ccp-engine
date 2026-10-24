@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art29.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art29",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - Os órgãos colegiais só podem, em regra, deliberar quando a maioria do número legal dos seus membros com direito a voto esteja fisicamente presente ou a participar através de meios telemáticos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 56617,
+        "end": 56813
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

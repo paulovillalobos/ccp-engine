@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art119.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art119",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Quando as informações, documentos ou atos solicitados ao interessado sejam necessários à apreciação do pedido por ele formulado, não deve ser dado seguimento ao procedimento, disso se notificando o particular.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 136076,
+        "end": 136289
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

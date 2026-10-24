@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art133.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art133",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os interessados podem obstar à extinção do procedimento se realizarem o pagamento em dobro da quantia em falta nos 10 dias seguintes ao termo do prazo fixado para o seu pagamento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 146009,
+        "end": 146192
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

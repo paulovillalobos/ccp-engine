@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art162.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art162",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Salvo disposição legal em contrário, a nulidade é invocável a todo o tempo por qualquer interessado e pode, também a todo o tempo, ser conhecida por qualquer autoridade e declarada pelos tribunais administrativos ou pelos órgãos administrativos competentes para a anulação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 163003,
+        "end": 163280
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

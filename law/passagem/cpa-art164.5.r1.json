@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art164.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art164",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Desde que não tenha havido alteração ao regime legal, a ratificação, a reforma e a conversão retroagem os seus efeitos à data dos atos a que respeitam, mas não prejudicam a possibilidade de anulação dos efeitos lesivos produzidos durante o período de tempo que as tiver precedido, quando ocorram na pendência de processo impugnatório e respeitem a atos que envolvam a imposição de deveres, encargos, ónus ou sujeições, a aplicação de sanções ou a restrição de direitos e interesses legalmente protegidos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 165240,
+        "end": 165748
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

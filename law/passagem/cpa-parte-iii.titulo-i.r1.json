@@ -1,0 +1,23 @@
+{
+  "id": "cpa:parte-iii.titulo-i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii",
+  "kind": "titulo",
+  "label": "Título I",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Título I\nRegime comum",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 70480,
+        "end": 70501
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

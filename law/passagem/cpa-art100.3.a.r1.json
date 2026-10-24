@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art100.3.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art100.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) A emissão do regulamento seja urgente;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 115161,
+        "end": 115202
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

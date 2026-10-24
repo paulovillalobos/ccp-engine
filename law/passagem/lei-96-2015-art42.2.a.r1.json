@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "a) As credenciais sejam sempre protegidas quando armazenadas com recurso a técnicas de controlo da integridade dos dados (hashing) ou de cifragem dos dados;",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 56105,
+        "end": 56261
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

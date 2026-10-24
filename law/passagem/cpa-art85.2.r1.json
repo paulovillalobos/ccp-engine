@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art85.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art85",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O exercício dos direitos previstos no número anterior depende de despacho do dirigente do serviço, exarado em requerimento escrito, instruído com os documentos probatórios do interesse legítimo invocado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 106024,
+        "end": 106231
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

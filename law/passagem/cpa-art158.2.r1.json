@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art158.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art158",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A falta de publicação do ato, quando legalmente exigida, implica a sua ineficácia.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 160897,
+        "end": 160983
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

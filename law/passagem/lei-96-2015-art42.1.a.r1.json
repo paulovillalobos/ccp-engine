@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "a) Falhas de injeção, nomeadamente, interrogações SQL (Structured Query Language), LDAP (Lightweight Directory Access Protocol) ou XPath (XML Path Language), comandos do sistema operativo (SO) e alteração de argumentos de programa;",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 55739,
+        "end": 55970
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

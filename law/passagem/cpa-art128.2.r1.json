@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art128.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art128",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "2 - A decisão de prorrogação referida no número anterior é notificada ao interessado pelo responsável pela direção do procedimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 142093,
+        "end": 142224
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

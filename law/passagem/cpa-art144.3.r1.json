@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art144.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art144",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - A declaração administrativa de invalidade produz efeitos desde a data de emissão do regulamento e determina a repristinação das normas que ele haja revogado, salvo quando estas sejam ilegais ou tenham deixado por outro motivo de vigorar, devendo o órgão competente reconhecer o afastamento do efeito repristinatório, quando este se verifique.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 152109,
+        "end": 152455
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

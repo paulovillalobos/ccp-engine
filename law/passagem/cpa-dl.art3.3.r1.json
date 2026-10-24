@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art3.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art3",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - As impugnações administrativas necessárias previstas na legislação existente à data da entrada em vigor do presente decreto-lei têm sempre efeitos suspensivos da eficácia do ato impugnado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 35617,
+        "end": 35809
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

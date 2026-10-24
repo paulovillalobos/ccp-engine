@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art131.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art131",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A desistência ou renúncia dos interessados não prejudica a continuação do procedimento, se a Administração entender que o interesse público assim o exige.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 145298,
+        "end": 145456
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

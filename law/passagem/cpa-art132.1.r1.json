@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art132.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art132",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - É declarado deserto o procedimento que, por causa imputável ao interessado, esteja parado por mais de seis meses, salvo se houver interesse público na decisão do procedimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 145479,
+        "end": 145658
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

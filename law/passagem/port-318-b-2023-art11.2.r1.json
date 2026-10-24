@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art11.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art11",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "2 - Os relatórios estatísticos previstos no n.º 1 do artigo 472.º do CCP são construídos automaticamente no Portal BASE, a partir dos dados incluídos nos blocos de dados.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 24505,
+        "end": 24675
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

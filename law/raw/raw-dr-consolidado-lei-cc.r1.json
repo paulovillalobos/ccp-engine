@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:cc",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:19:59Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "cc",
+  "sha256": "4a6289cd3aea2defbecb4befe4b277d3a2e18969412e7839b60d18ff3976f8cc",
+  "bytes": "raw_bytes/4a6289cd3aea2defbecb4befe4b277d3a2e18969412e7839b60d18ff3976f8cc",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075",
+  "captured_at": "2026-10-24T17:19:45Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 120000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "d6d69357a7063572da61f16b6f3dbc5f5851018c0264c9685171450b05f73b82",
+    "bytes": "raw_bytes/d6d69357a7063572da61f16b6f3dbc5f5851018c0264c9685171450b05f73b82"
+  }
+}

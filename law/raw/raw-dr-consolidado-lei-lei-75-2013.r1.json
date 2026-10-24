@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:lei-75-2013",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:18:28Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "lei-75-2013",
+  "sha256": "729211c2aae09d6ca317ded977fad30fece9f9c7d229d711d08f2ea321f1d9a7",
+  "bytes": "raw_bytes/729211c2aae09d6ca317ded977fad30fece9f9c7d229d711d08f2ea321f1d9a7",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2013-56366098",
+  "captured_at": "2026-10-24T17:18:19Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 60000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "c6b18527d0394bb2b68a133424e4779b7ce87f791d2f22bc0c26ae5cc143bd0f",
+    "bytes": "raw_bytes/c6b18527d0394bb2b68a133424e4779b7ce87f791d2f22bc0c26ae5cc143bd0f"
+  }
+}

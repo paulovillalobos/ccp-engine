@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art104.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art104",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - O requerimento eletrónico deve observar o formato definido, para cada caso, no sítio institucional da entidade pública.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 120125,
+        "end": 120248
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

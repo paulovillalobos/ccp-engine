@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - O presidente é obrigado a proceder à convocação sempre que pelo menos um terço dos vogais lho solicitem por escrito, indicando o assunto que desejam ver tratado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 52805,
+        "end": 52970
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

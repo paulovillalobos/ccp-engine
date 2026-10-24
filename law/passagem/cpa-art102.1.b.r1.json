@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art102.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art102.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "b) A identificação do requerente, pela indicação do nome, domicílio, bem como, se possível, dos números de identificação civil e identificação fiscal;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 116879,
+        "end": 117029
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

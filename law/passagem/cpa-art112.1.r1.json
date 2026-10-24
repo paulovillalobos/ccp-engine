@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - As notificações podem ser efetuadas:\na) Por carta registada, dirigida para o domicílio do notificando ou, no caso de este o ter escolhido para o efeito, para outro domicílio por si indicado;\nb) Por contacto pessoal com o notificando, se esta forma de notificação não prejudicar a celeridade do procedimento ou se for inviável a notificação por outra via;\nc) Por telefax, telefone, correio eletrónico ou notificação eletrónica automaticamente gerada por sistema incorporado em sítio eletrónico pertencente ao serviço do órgão competente ou ao balcão único eletrónico;\nd) Por edital, quando seja esta a forma de notificação prescrita por lei ou regulamento ou quando os notificandos forem incertos ou de paradeiro desconhecido;\ne) Por anúncio, quando os notificandos forem em número superior a 25.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 124821,
+        "end": 125620
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

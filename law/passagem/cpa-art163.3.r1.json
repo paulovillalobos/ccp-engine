@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art163.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art163",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Os atos anuláveis podem ser impugnados perante a própria Administração ou perante o tribunal administrativo competente, dentro dos prazos legalmente estabelecidos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 164043,
+        "end": 164210
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

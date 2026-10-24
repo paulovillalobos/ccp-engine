@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art60.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art60",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os interessados devem concorrer para a economia de meios na realização de diligências instrutórias e para a tomada da decisão num prazo razoável, abstendo-se de requerer diligências inúteis e de recorrer a expedientes dilatórios.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 73907,
+        "end": 74140
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

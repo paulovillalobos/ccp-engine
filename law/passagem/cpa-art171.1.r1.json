@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art171.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art171",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Por regra, a revogação apenas produz efeitos para o futuro, mas o autor da revogação pode, no próprio ato, atribuir-lhe eficácia retroativa quando esta seja favorável aos interessados ou quando estes concordem expressamente com a retroatividade e não estejam em causa direitos ou interesses indisponíveis.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 173516,
+        "end": 173825
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

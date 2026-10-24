@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art52.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art52",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "3 - Um utilizador que pertença a um perfil com suficientes privilégios deve ser capaz de invocar a função de cópia de segurança.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 68504,
+        "end": 68632
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

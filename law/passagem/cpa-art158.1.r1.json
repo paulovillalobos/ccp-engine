@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art158.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art158",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A publicação dos atos administrativos só é obrigatória quando exigida por lei.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 160814,
+        "end": 160896
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

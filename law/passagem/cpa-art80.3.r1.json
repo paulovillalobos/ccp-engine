@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art80.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art80",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Nos procedimentos em que seja obrigatória a audiência pública, a realização desta na pendência da conferência procedimental suspende o prazo para a conclusão da mesma.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 100610,
+        "end": 100781
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

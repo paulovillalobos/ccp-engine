@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art185.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art185",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - As reclamações e os recursos têm caráter facultativo, salvo se a lei os denominar como necessários.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 184146,
+        "end": 184249
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

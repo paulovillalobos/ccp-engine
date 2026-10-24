@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art104.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art104",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os requerimentos enviados por telefax ou transmissão eletrónica de dados podem ser apresentados em qualquer dia e independentemente da hora da abertura e do encerramento dos serviços.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 119578,
+        "end": 119765
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

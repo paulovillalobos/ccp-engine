@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art105.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art105",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A apresentação de requerimentos, qualquer que seja o modo por que se efetue, é sempre objeto de registo, que menciona o respetivo número de ordem, a data, o objeto do requerimento, o número de documentos juntos e o nome do requerente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 120548,
+        "end": 120786
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

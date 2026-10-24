@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:cppt",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:19:03Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "cppt",
+  "sha256": "6abbf6cea3d4a0216943312cbcad85ca7ecc73dc7ed4e15f08c0ecb18637db1f",
+  "bytes": "raw_bytes/6abbf6cea3d4a0216943312cbcad85ca7ecc73dc7ed4e15f08c0ecb18637db1f",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1999-34577575",
+  "captured_at": "2026-10-24T17:18:54Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 60000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "9a44e38ba84a800bf9ef385389cf4c836a0c0637fc3853310c4e58b645576cf7",
+    "bytes": "raw_bytes/9a44e38ba84a800bf9ef385389cf4c836a0c0637fc3853310c4e58b645576cf7"
+  }
+}

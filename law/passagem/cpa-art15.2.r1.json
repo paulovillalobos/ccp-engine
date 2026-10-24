@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art15.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art15",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Em caso de insuficiência económica, a Administração isenta, total ou parcialmente, o interessado do pagamento das taxas ou das despesas referidas no número anterior.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 48035,
+        "end": 48204
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

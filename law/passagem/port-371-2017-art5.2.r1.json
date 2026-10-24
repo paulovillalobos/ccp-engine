@@ -1,0 +1,23 @@
+{
+  "id": "port-371-2017:art5.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-371-2017",
+  "parent": "port-371-2017:art5",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O sistema de preenchimento de anúncios preserva o formulário preenchido correspondente a cada anúncio publicado durante o período máximo de um ano.",
+      "raw": "raw:dr-consolidado:diploma:port-371-2017",
+      "offsets": {
+        "start": 9583,
+        "end": 9734
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

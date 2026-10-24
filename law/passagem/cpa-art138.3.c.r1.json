@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art138.3.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art138.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "c) Portarias;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 149588,
+        "end": 149601
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

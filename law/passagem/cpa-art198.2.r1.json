@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art198.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art198",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - O prazo referido no número anterior é elevado até ao máximo de 60 dias, quando haja lugar à realização de nova instrução ou de diligências complementares.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 193204,
+        "end": 193362
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

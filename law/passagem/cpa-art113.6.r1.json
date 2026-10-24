@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art113.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art113",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "6 - Em caso de ausência de acesso à caixa postal eletrónica ou à conta eletrónica aberta junto da plataforma informática disponibilizada pelo sítio eletrónico institucional do órgão competente, a notificação considera-se efetuada no quinto dia útil posterior ao seu envio ou no primeiro dia útil seguinte a esse quando esse dia não seja útil, salvo quando se comprove que o notificando comunicou a alteração daquela, se demonstre ter sido impossível essa comunicação ou que o serviço de comunicações eletrónicas tenha impedido a correta receção, designadamente através de um sistema de filtragem não imputável ao interessado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 128881,
+        "end": 129506
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art146.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art146",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os regulamentos necessários à execução das leis em vigor ou de direito da União Europeia não podem ser objeto de revogação sem que a matéria seja simultaneamente objeto de nova regulamentação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 153187,
+        "end": 153383
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

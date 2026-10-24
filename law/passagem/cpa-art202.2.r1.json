@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art202.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art202",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - No âmbito dos contratos sujeitos a um regime de direito privado são aplicáveis aos órgãos da Administração Pública as disposições do presente Código que concretizam preceitos constitucionais e os princípios gerais da atividade administrativa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 196833,
+        "end": 197079
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

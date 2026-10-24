@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art56",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 56.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 56.º\nLista de serviços de certificação eletrónica de confiança\n1 - As plataformas eletrónicas devem garantir a compatibilidade com mecanismos para validação da habilitação dos fornecedores de serviços de certificação eletrónica qualificados, requeridos no âmbito da presente lei, nomeadamente, a capacidade de interpretação das Trusted-Status Services List (TSL) de todos os Estados membros e da Comissão Europeia, segundo a norma ETSI TS 119 612, na versão mais recente.\n2 - Nos casos em que através da interpretação da TSL resultar alguma não conformidade sobre a habilitação do prestador de serviços de certificação eletrónica, a plataforma deve apenas fornecer tal informação, não podendo ser feita de forma automática a exclusão de qualquer proposta.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 77001,
+        "end": 77763
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art113.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art113",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - A presunção prevista no número anterior só pode ser ilidida pelo notificando quando não lhe seja imputável o facto de a notificação ocorrer em data posterior à presumida, devendo para o efeito a Administração ou o tribunal, a requerimento do interessado, solicitar aos correios informação sobre a data efetiva da receção.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 127729,
+        "end": 128054
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art81.8",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art81",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "8 - Em caso de repetição da conferência, são aproveitados os atos praticados no decurso da primeira cuja atualidade se mantenha.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 102766,
+        "end": 102894
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

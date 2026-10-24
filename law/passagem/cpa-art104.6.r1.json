@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art104.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art104",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "6 - Quando a lei admita a formulação verbal do requerimento, é lavrado termo para este efeito, o qual deve conter as menções previstas no n.º 1 do artigo 102.º e ser assinado, depois de datado, pelo requerente e pelo agente que receba o pedido.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 120249,
+        "end": 120493
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art44.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art44",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Para efeitos do disposto no número anterior, considera-se agente aquele que, a qualquer título, exerça funções públicas ao serviço da pessoa coletiva, em regime de subordinação jurídica.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 65793,
+        "end": 65983
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

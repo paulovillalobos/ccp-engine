@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art106",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 106.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 106.º\nRecibo de entrega de requerimentos\n1 - Os interessados podem exigir recibo comprovativo da entrega dos requerimentos apresentados.\n2 - O recibo pode ser passado em duplicado ou em fotocópia do requerimento que o requerente apresente para esse fim.\n3 - O registo eletrónico emite automaticamente um recibo comprovativo da entrega dos requerimentos apresentados por transmissão eletrónica de dados, contendo a indicação da data e hora da apresentação e o número de registo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 121191,
+        "end": 121675
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

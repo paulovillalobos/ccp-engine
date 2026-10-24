@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art81.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art81",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Em caso de falta de acordo, os órgãos participantes emitem uma declaração para constar da ata, na qual especificam as razões da sua discordância e, sempre que possível, as alterações que consideram necessárias à viabilização do projeto, atividade, regulação de um bem ou situação que constitua o objeto da conferência.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 101577,
+        "end": 101899
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art19.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art19",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Sempre que o direito da União Europeia imponha à Administração Pública a obrigação de prestar informações, apresentar propostas ou de, por alguma outra forma, colaborar com a Administração Pública de outros Estados-membros, essa obrigação deve ser cumprida no prazo para tal estabelecido.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 49201,
+        "end": 49493
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

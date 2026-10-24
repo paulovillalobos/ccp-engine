@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art182.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art182",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os executados podem impugnar administrativa e contenciosamente o ato exequendo e, por vícios próprios, a decisão de proceder à execução administrativa ou outros atos administrativos praticados no âmbito do procedimento de execução, assim como requerer a suspensão contenciosa dos respetivos efeitos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 181525,
+        "end": 181828
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

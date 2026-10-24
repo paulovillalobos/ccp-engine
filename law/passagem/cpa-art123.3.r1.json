@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art123.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art123",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - No caso de se verificar o adiamento a que se refere o número anterior, o órgão responsável pela direção do procedimento deve tentar chegar a acordo com o interessado sobre a nova data da audiência, que, em qualquer caso, se deve realizar dentro dos 20 dias seguintes.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 139188,
+        "end": 139459
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art142.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art142",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os regulamentos não podem ser derrogados por atos administrativos de caráter individual e concreto.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 150630,
+        "end": 150733
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

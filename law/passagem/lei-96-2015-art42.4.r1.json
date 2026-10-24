@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "4 - O sistema deve limitar o acesso ao URL com base nos níveis e autorizações de acesso do utilizador, exigindo-se, no mínimo, que:\na) Se forem utilizados mecanismos de segurança externos, para fins de autenticação e verificação das autorizações de acesso às páginas, os mesmos devem estar devidamente configurados para cada página;\nb) Se for utilizada proteção ao nível dos códigos, a mesma deve existir para cada página pretendida.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 57539,
+        "end": 57972
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

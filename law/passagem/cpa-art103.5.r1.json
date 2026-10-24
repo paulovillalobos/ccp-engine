@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art103.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art103",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - As representações diplomáticas ou consulares remetem os requerimentos aos órgãos a quem sejam dirigidos, com a indicação da data em que se verificou o recebimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 118749,
+        "end": 118916
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

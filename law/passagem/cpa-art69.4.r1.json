@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art69.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art69",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - As entidades prestadoras de serviços no âmbito de um procedimento devem juntar uma declaração de que se não encontram abrangidas pela previsão do número anterior.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 88086,
+        "end": 88252
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

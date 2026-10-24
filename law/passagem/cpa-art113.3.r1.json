@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art113.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art113",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "3 - A notificação por telefax presume-se efetuada na data da emissão, servindo de prova a cópia da remessa com a menção de que a mensagem foi enviada com êxito, bem como da data, hora e número de telefax do recetor.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 128055,
+        "end": 128270
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

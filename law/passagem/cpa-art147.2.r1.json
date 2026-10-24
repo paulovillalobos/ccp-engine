@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art147.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art147",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os direitos reconhecidos no número anterior podem ser exercidos, consoante os casos, mediante reclamação para o autor do regulamento ou recurso para o órgão com competência para o efeito, caso exista.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 154116,
+        "end": 154320
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

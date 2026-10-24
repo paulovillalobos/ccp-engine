@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.3.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "a) No caso de incerteza das pessoas a notificar, por afixação de um edital na entrada do serviço da Administração por onde corre o procedimento administrativo;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 126319,
+        "end": 126478
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

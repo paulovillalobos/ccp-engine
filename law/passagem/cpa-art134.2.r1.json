@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art134.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art134",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A lei também pode estabelecer um regime de comunicação prévia com prazo, determinando que a comunicação prévia do interessado só produza os efeitos visados se o órgão competente não se pronunciar em sentido contrário dentro de determinado prazo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 146589,
+        "end": 146838
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

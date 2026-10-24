@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art75.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art75",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Sendo reconhecida procedência ao pedido, é observado o disposto nos artigos 71.º e 72.º",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 93783,
+        "end": 93874
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

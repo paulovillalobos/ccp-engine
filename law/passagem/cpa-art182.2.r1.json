@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art182.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art182",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Sem prejuízo da aplicabilidade das garantias previstas na lei processual tributária, durante a tramitação dos procedimentos de execução de obrigações pecuniárias não são admitidos embargos, administrativos ou judiciais, em relação à execução coerciva de atos administrativos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 181829,
+        "end": 182108
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

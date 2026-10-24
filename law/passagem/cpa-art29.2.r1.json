@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art29.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art29",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - Quando se não verifique na primeira convocação o quórum previsto no número anterior, deve ser convocada nova reunião com um intervalo mínimo de 24 horas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 56814,
+        "end": 56971
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

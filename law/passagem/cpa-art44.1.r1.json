@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art44.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art44",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os órgãos administrativos normalmente competentes para decidir em determinada matéria podem, sempre que para tal estejam habilitados por lei, permitir, através de um ato de delegação de poderes, que outro órgão ou agente da mesma pessoa coletiva ou outro órgão de diferente pessoa coletiva pratique atos administrativos sobre a mesma matéria.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 65446,
+        "end": 65792
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

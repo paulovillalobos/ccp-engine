@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art66.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art66",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - À comunicação de documentos ou dados solicitados nos termos do número anterior aplicam-se as restrições fixadas na legislação sobre o acesso aos documentos administrativos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 82480,
+        "end": 82656
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

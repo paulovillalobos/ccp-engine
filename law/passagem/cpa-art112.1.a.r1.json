@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "a) Por carta registada, dirigida para o domicílio do notificando ou, no caso de este o ter escolhido para o efeito, para outro domicílio por si indicado;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 124862,
+        "end": 125015
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

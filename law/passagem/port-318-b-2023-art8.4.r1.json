@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art8.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art8",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "4 - Não é possível a introdução ou a alteração de dados cujo primeiro bloco de dados tenha sido introduzidos há mais de 10 anos.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 20938,
+        "end": 21066
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

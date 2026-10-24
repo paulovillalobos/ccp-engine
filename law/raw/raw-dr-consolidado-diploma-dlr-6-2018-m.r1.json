@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dlr-6-2018-m",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:21:38Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dlr-6-2018-m",
+  "sha256": "bc09414f67ee5c9c2430f9394fb839cbef5b0434db13a83a37985fb657168287",
+  "bytes": "raw_bytes/bc09414f67ee5c9c2430f9394fb839cbef5b0434db13a83a37985fb657168287",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/6-2018-114866946",
+  "captured_at": "2026-10-24T17:21:31Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "954cc8ca4728cf4af325362537b40beff3f43d30e13d1ba3d281013b8e83efe4",
+    "bytes": "raw_bytes/954cc8ca4728cf4af325362537b40beff3f43d30e13d1ba3d281013b8e83efe4"
+  }
+}

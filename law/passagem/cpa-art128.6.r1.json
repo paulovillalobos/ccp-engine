@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art128.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art128",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "6 - Os procedimentos de iniciativa oficiosa, passíveis de conduzir à emissão de uma decisão com efeitos desfavoráveis para os interessados caducam, na ausência de decisão, no prazo de 120 dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 142701,
+        "end": 142894
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

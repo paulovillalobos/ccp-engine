@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art117.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art117",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "3 - É legítima a recusa às determinações previstas no número anterior, quando a obediência às mesmas:\na) Envolver a violação de sigilo profissional ou segredo comercial ou industrial;\nb) Implicar o esclarecimento de factos cuja revelação esteja proibida ou dispensada por lei;\nc) Importar a revelação de factos puníveis, praticados pelo próprio interessado, pelo seu cônjuge ou por seu ascendente ou descendente, irmão ou afim nos mesmos graus;\nd) For suscetível de causar dano moral ou material ao próprio interessado ou a alguma das pessoas referidas na alínea anterior.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 133964,
+        "end": 134536
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

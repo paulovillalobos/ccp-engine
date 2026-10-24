@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art55.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art55",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - A identidade do responsável pela direção do procedimento é notificada aos participantes e comunicada a quaisquer outras pessoas que, demonstrando interesse legítimo, requeiram essa informação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 71532,
+        "end": 71728
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 6.º",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "Artigo 6.º\nAcesso à informação\n1 - A informação de natureza pública do portal BASE encontra-se visível pelo prazo de 10 anos, findo os quais, o acesso aos mesmos fica dependente de autorização do IMPIC, I. P., enquanto entidade gestora do portal, e do pagamento de taxa prevista em regulamento aprovado pelo conselho diretivo do IMPIC, I. P., publicitado no Diário da República e no portal BASE.\n2 - Os dados de natureza pública constantes do portal BASE são passíveis de extração automática, de forma gratuita e em formatos abertos, através do próprio portal e de outros portais públicos, designadamente do portal dados.gov.pt.\n3 - A extração prevista no número anterior, diretamente do portal BASE, é limitada à extração por ficheiro e condicionada a um número de linhas definido no sistema.\n4 - O IMPIC, I. P., disponibiliza uma interface de programação de aplicativos (API) para a extração de grandes volumes de dados, condicionado ao registo e à prévia autorização por parte do daquele Instituto.\n5 - O IMPIC, I. P., poderá condicionar a extração agregada de dados do portal BASE quando tal extração, pelo seu volume, possa pôr em causa o próprio funcionamento e a disponibilidade permanente do portal BASE.\n6 - As entidades públicas com funções de auditoria, fiscalização e regulação podem ter acesso direto às bases de dados que suportam o portal BASE, para o desempenho da respetiva missão, conforme previsto no artigo 454.º-C do CCP, sendo os termos que regulam o referido acesso estabelecidos na sequência de protocolo a celebrar ou celebrado entre o IMPIC, I. P., e cada entidade.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 10370,
+        "end": 11961
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

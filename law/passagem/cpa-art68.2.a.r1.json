@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art68.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art68.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) Os cidadãos no gozo dos seus direitos civis e políticos e os demais eleitores recenseados no território português;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 84366,
+        "end": 84483
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

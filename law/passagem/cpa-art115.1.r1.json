@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art115.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art115",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O responsável pela direção do procedimento deve procurar averiguar todos os factos cujo conhecimento seja adequado e necessário à tomada de uma decisão legal e justa dentro de prazo razoável, podendo, para o efeito, recorrer a todos os meios de prova admitidos em direito.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 131729,
+        "end": 132005
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

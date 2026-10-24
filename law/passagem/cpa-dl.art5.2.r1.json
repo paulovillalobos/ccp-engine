@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art5.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art5",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O guia referido no número anterior tem caráter orientador e enuncia padrões de conduta a assumir pela Administração Pública.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 37845,
+        "end": 37973
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

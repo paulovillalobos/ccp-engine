@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art77.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art77",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - As conferências procedimentais destinam-se ao exercício em comum ou conjugado das competências de diversos órgãos da Administração Pública, no sentido de promover a eficiência, a economicidade e a celeridade da atividade administrativa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 95016,
+        "end": 95256
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

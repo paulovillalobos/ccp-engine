@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art88.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art88",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A dilação prevista na alínea a) do número anterior é igualmente aplicável se o procedimento correr em serviço localizado numa Região Autónoma e os interessados residirem ou se encontrarem noutra ilha da mesma Região Autónoma, na outra Região Autónoma ou no continente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 108143,
+        "end": 108415
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

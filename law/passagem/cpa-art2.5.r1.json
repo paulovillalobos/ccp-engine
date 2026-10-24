@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art2.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art2",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - As disposições do presente Código, designadamente as garantias nele reconhecidas aos particulares, aplicam-se subsidiariamente aos procedimentos administrativos especiais.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 41216,
+        "end": 41391
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

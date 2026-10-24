@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art87.f",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art87",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "f) O termo do prazo que coincida com dia em que o serviço perante o qual deva ser praticado o ato não esteja aberto ao público, ou não funcione durante o período normal, transfere-se para o primeiro dia útil seguinte;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 107238,
+        "end": 107455
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

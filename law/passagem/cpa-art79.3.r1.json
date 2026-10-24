@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art79.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art79",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - A convocatória da primeira reunião da conferência deve ser feita com a antecedência mínima de cinco dias em relação à data da reunião, podendo os órgãos participantes, em caso de impossibilidade fundamentada, propor um adiamento não superior a 10 dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 98600,
+        "end": 98856
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

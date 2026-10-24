@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art31.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art31",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - As deliberações que envolvam um juízo de valor sobre comportamentos ou qualidades de pessoas são tomadas por escrutínio secreto, devendo o presidente, em caso de dúvida fundada, determinar que seja essa a forma para a votação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 57937,
+        "end": 58167
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

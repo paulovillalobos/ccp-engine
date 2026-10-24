@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art199.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art199",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - No recurso tutelar, a modificação ou a substituição do ato recorrido ou omitido só é possível se a lei conferir poderes de tutela substitutiva e no âmbito destes.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 194858,
+        "end": 195024
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

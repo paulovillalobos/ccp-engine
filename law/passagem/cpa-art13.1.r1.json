@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art13.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art13",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os órgãos da Administração Pública têm o dever de se pronunciar sobre todos os assuntos da sua competência que lhes sejam apresentados e, nomeadamente, sobre os assuntos que aos interessados digam diretamente respeito, bem como sobre quaisquer petições, representações, reclamações ou queixas formuladas em defesa da Constituição, das leis ou do interesse público.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 45463,
+        "end": 45831
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

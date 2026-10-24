@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "2 - O sistema deve assegurar a autenticação forte e a gestão das sessões, o que exige, no mínimo, que:\na) As credenciais sejam sempre protegidas quando armazenadas com recurso a técnicas de controlo da integridade dos dados (hashing) ou de cifragem dos dados;\nb) As credenciais não possam ser adivinhadas nem alteradas através de funções de gestão da conta pouco sólidas, nomeadamente, através da criação de conta, alteração da senha, recuperação da senha ou identificadores de sessão frágeis;\nc) Os identificadores de sessão e os dados da sessão não se encontrem expostos no localizador uniforme de recursos (URL);\nd) Os identificadores de sessão não sejam vulneráveis a ataques de fixação de sessão;\ne) Os identificadores de sessão tenham um tempo limite de operação, o que assegura que o utilizador sai do sistema;\nf) As senhas, os identificadores de sessão e outras credenciais sejam enviados apenas através do protocolo TLS (Transport Layer Security).",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 56002,
+        "end": 56958
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

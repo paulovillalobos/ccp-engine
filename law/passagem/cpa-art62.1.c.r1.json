@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art62.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art62.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "c) Meios de pagamento por via eletrónica das taxas devidas, quando seja caso disso;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 76002,
+        "end": 76085
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

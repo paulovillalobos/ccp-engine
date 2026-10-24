@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "5 - Sempre que a notificação seja feita por telefone, a mesma é confirmada nos termos da alínea a) do n.º 1, no dia útil imediato, sem prejuízo de a notificação se considerar feita na data da primeira comunicação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 127158,
+        "end": 127371
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

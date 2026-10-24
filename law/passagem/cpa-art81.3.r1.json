@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art81.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art81",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - No termo da conferência procedimental, o órgão que a ela presidiu elabora uma ata, na qual são registados os sucessivos passos da conferência e, quando for o caso, o ato ou atos decisórios nela praticados, com a respetiva fundamentação, e os restantes atos nela autonomamente praticados por cada órgão participante.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 101257,
+        "end": 101576
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

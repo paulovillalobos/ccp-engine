@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art64.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art64",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "3 - As ferramentas eletrónicas devem assegurar a autenticação dos intervenientes no procedimento e, nos casos em que tal não seja possível, o órgão responsável pela direção do procedimento deve assinar digitalmente o processo, de forma a garantir a integridade e a inviolabilidade do mesmo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 79761,
+        "end": 80051
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

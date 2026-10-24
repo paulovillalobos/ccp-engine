@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art104.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art104",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - A Administração pode estabelecer modelos e sistemas normalizados de requerimentos, disponibilizando aos interessados os respetivos formulários.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 119766,
+        "end": 119913
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

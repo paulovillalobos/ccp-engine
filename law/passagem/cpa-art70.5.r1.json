@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art70.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art70",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Tratando-se do impedimento do presidente do órgão colegial, a decisão do incidente compete ao próprio órgão, sem intervenção do presidente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 89483,
+        "end": 89626
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

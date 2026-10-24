@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art136.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art136",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A emissão de regulamentos depende sempre de lei habilitante.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 147596,
+        "end": 147660
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

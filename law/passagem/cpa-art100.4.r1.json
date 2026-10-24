@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art100.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art100",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Nas situações previstas no número anterior, a decisão final deve indicar os fundamentos da não realização da audiência.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 115558,
+        "end": 115681
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

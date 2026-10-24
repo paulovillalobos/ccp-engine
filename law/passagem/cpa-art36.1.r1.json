@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art36.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art36",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A competência é definida por lei ou por regulamento e é irrenunciável e inalienável, sem prejuízo do disposto quanto à delegação de poderes, à suplência e à substituição.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 61418,
+        "end": 61592
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

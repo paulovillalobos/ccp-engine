@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art47",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 47.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 47.º\nIdentificação e autenticação\n1 - A plataforma eletrónica deve garantir a existência de uma conta individual por utilizador e que os dados de autenticação são únicos.\n2 - Sempre que o utilizador sai da sua conta (logout), para voltar a entrar a plataforma eletrónica deve requerer novamente a apresentação dos dados de autenticação.\n3 - A plataforma eletrónica deve garantir que o utilizador tem capacidade para definir as suas senhas ou códigos de acesso, gerir os seus certificados de autenticação, gerir os seus selos de validação cronológica e autenticar-se de forma segura, designadamente através do cartão do cidadão ou da chave móvel digital.\n4 - Nos casos em que os dados de autenticação são criados pela plataforma eletrónica ou por um sistema exterior, a plataforma eletrónica deve garantir que na primeira utilização o utilizador é obrigado a definir novos dados de autenticação, exceto quando aquela seja feita através da interligação com os mecanismos referidos na alínea f) do n.º 1 do artigo 35.º\n5 - Se for ultrapassado o número máximo de tentativas de autenticação, a plataforma eletrónica deve bloquear a conta do utilizador, que é notificado, por meio fidedigno, do procedimento estabelecido para o desbloqueio.\n6 - A plataforma pode permitir o acesso dos utilizadores por método de autenticação através do nome de utilizador e senha, de acordo com o n.º 3, e deve alertar os utilizadores para o nível de segurança associado a esse método de autenticação.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 61320,
+        "end": 62805
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

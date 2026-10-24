@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art84.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art84",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O dever estabelecido no número anterior não abrange os documentos classificados ou que revelem segredo comercial ou industrial ou segredo relativo à propriedade literária, artística ou científica.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 105343,
+        "end": 105543
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

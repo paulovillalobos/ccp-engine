@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "6 - A convocatória efetuada de acordo com o disposto no número anterior deve ser feita com a antecedência mínima de 48 horas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 53859,
+        "end": 53984
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

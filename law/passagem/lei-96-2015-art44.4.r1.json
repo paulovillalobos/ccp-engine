@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art44.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art44",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "4 - A plataforma eletrónica deve estar alojada num segmento da rede de produção devidamente protegido, separado de eventuais segmentos utilizados para alojar sistemas que não são de produção, como ambientes de desenvolvimento ou de testes.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 60042,
+        "end": 60281
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art72.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art72",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Declarado o impedimento, é o impedido imediatamente substituído no procedimento pelo respetivo suplente, salvo se houver avocação pelo órgão competente para o efeito.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 90446,
+        "end": 90616
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

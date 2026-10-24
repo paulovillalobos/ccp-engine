@@ -1,0 +1,23 @@
+{
+  "id": "port-372-2017:art3.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-372-2017",
+  "parent": "port-372-2017:art3",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A titularidade dos alvarás e certificados referidos no número anterior é confirmada pela entidade adjudicante mediante consulta à base de dados de empresas de construção do IMPIC, I. P.",
+      "raw": "raw:dr-consolidado:diploma:port-372-2017",
+      "offsets": {
+        "start": 4895,
+        "end": 5084
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

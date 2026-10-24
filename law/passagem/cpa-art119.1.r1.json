@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art119.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art119",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Se os interessados regularmente notificados para a prestação verbal de informações ou apresentação de provas não derem cumprimento à notificação, pode proceder-se a nova notificação ou prescindir-se da prática do ato, conforme as circunstâncias aconselharem.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 135589,
+        "end": 135851
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

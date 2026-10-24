@@ -1,0 +1,23 @@
+{
+  "id": "port-371-2017:art3.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-371-2017",
+  "parent": "port-371-2017:art3",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - O sistema de preenchimento assegura, a todo o tempo, a possibilidade de gravação dos dados já introduzidos, sendo permanentemente recuperáveis pela entidade adjudicante, salvo no caso de anulação do procedimento.",
+      "raw": "raw:dr-consolidado:diploma:port-371-2017",
+      "offsets": {
+        "start": 8226,
+        "end": 8442
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

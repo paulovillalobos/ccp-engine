@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art3.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art3",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - As impugnações administrativas existentes à data da entrada em vigor do presente decreto-lei só são necessárias quando previstas em lei que utilize uma das seguintes expressões:\na) A impugnação administrativa em causa é «necessária»;\nb) Do ato em causa «existe sempre» reclamação ou recurso;\nc) A utilização de impugnação administrativa «suspende» ou «tem efeito suspensivo» dos efeitos do ato impugnado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 34963,
+        "end": 35371
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

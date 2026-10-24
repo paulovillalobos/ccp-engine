@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art82.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art82",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os interessados têm o direito de ser informados pelo responsável pela direção do procedimento, sempre que o requeiram, sobre o andamento dos procedimentos que lhes digam diretamente respeito, bem como o direito de conhecer as resoluções definitivas que sobre eles forem tomadas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 102981,
+        "end": 103263
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

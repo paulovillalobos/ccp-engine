@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art82.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art82",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - As informações a prestar abrangem a indicação do serviço onde o procedimento se encontra, os atos e diligências praticados, as deficiências a suprir pelos interessados, as decisões adotadas e quaisquer outros elementos solicitados.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 103264,
+        "end": 103499
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

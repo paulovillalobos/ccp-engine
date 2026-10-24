@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-107-2001",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:25:31Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-107-2001",
+  "sha256": "b5691caf55c28058a5801619f7e3699b10c8c62794ea14da9dce357e7c2e4d11",
+  "bytes": "raw_bytes/b5691caf55c28058a5801619f7e3699b10c8c62794ea14da9dce357e7c2e4d11",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://data.dre.pt/eli/lei/107/2001/09/08/p/dre",
+  "captured_at": "2026-10-24T17:25:23Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "ee730d7e9cd2a4d0ba4e2efb18f82d8847016852a9b8794c11ebfebfe8c875bd",
+    "bytes": "raw_bytes/ee730d7e9cd2a4d0ba4e2efb18f82d8847016852a9b8794c11ebfebfe8c875bd"
+  }
+}

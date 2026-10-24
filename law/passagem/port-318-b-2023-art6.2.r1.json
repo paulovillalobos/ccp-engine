@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art6.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art6",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "2 - Os dados de natureza pública constantes do portal BASE são passíveis de extração automática, de forma gratuita e em formatos abertos, através do próprio portal e de outros portais públicos, designadamente do portal dados.gov.pt.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 10766,
+        "end": 10998
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

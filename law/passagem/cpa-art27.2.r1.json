@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art27.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art27",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Quando as reuniões hajam de ser públicas, deve ser dada publicidade aos dias, horas e locais da sua realização, de forma a garantir o conhecimento dos interessados com uma antecedência de, pelo menos, 48 horas sobre a data da reunião.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 55785,
+        "end": 56023
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art3.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art3",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O prazo mínimo para a utilização de impugnações administrativas necessárias é de 10 dias, passando a ser esse o prazo a observar quando seja previsto prazo inferior na legislação existente à data da entrada em vigor do presente decreto-lei.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 35372,
+        "end": 35616
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

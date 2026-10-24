@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art112.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art112",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - As notificações previstas na alínea c) do número anterior podem ter lugar nos seguintes casos:\na) Por iniciativa da Administração, sem necessidade de prévio consentimento, para plataformas informáticas com acesso restrito ou para os endereços de correio eletrónico ou número de telefax ou telefone indicados em qualquer documento apresentado no procedimento administrativo, quando se trate de pessoas coletivas;\nb) Mediante o consentimento prévio do notificando, prestado no decurso do procedimento, nos restantes casos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 125621,
+        "end": 126145
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

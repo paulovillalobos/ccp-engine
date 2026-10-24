@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art35.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art35",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os membros do órgão colegial podem fazer constar da ata o seu voto de vencido, enunciando as razões que o justifiquem.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 60886,
+        "end": 61008
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

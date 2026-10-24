@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art41.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art41",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "6 - Todos os serviços das plataformas eletrónicas devem estar sincronizados com o NTP (Network Time Protocol) definido a partir do UTC (Universal Time Coordinated), devendo ser utilizadas duas fontes de tempo diferentes, em que uma delas é obrigatoriamente a hora legal portuguesa.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 54924,
+        "end": 55205
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

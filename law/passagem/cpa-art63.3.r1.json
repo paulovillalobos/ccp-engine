@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art63.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art63",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - As comunicações da Administração com pessoas coletivas podem processar-se através de telefax, de telefone ou de meios eletrónicos, sem necessidade de consentimento, quando sejam efetuadas para plataformas informáticas com acesso restrito ou para os endereços de correio eletrónico ou número de telefax ou de telefone indicados em qualquer documento por elas apresentado no procedimento administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 78896,
+        "end": 79301
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art92.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art92",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "5 - Quando um parecer obrigatório não for emitido dentro dos prazos previstos no n.º 3, deve o procedimento prosseguir e ser decidido.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 111260,
+        "end": 111394
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

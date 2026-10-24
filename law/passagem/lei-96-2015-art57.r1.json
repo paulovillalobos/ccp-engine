@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art57",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 57.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 57.º\nAutenticação de utilizadores na plataforma eletrónica\n1 - A identificação dos utilizadores perante as plataformas eletrónicas efetua-se mediante a utilização de nome de utilizador e da palavra-chave, podendo ainda ser utilizados certificados digitais próprios ou certificados disponibilizados pelas plataformas eletrónicas, bem como o cartão de cidadão ou a chave móvel digital referidos na alínea f) do n.º 1 do artigo 35.º\n2 - No caso de entidades que devem utilizar assinaturas eletrónicas emitidas por entidades certificadoras integradas no Sistema de Certificação Eletrónica do Estado, o nível de segurança exigido é o que consta do Decreto-Lei n.º 116-A/2006, de 16 de junho, alterado e republicado pelo Decreto-Lei n.º 161/2012, de 31 de julho.\n3 - O mecanismo de validação de certificados dos utilizadores é efetuado tendo por base o certificado e a respetiva cadeia de certificação completa.\n4 - As plataformas eletrónicas devem garantir a integração com o Sistema de Certificação de Atributos Profissionais.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 77764,
+        "end": 78793
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

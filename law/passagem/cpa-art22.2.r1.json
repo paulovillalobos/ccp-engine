@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art22.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art22",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - No caso de os vogais possuírem a mesma antiguidade reportada ao momento da assunção do cargo, intervêm como suplentes, respetivamente, o vogal de mais idade e o vogal mais jovem.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 51655,
+        "end": 51837
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

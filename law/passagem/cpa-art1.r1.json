@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 1.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 1.º\nDefinições\n1 - Entende-se por procedimento administrativo a sucessão ordenada de atos e formalidades relativos à formação, manifestação e execução da vontade dos órgãos da Administração Pública.\n2 - Entende-se por processo administrativo o conjunto de documentos devidamente ordenados em que se traduzem os atos e formalidades que integram o procedimento administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 39775,
+        "end": 40156
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

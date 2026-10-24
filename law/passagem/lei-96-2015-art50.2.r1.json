@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art50.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art50",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "2 - A plataforma eletrónica deve:\na) Disponibilizar um interface amigável que permita analisar a informação constante dos registos de auditoria, com capacidade para efetuar pesquisas, pelo menos, baseado na data e hora do evento, no tipo de evento e na identidade do utilizador/processo;\nb) Garantir a segurança dos dados de registo, bem como suficiente espaço para guardar esses dados;\nc) Garantir que os dados de registo não podem ser automaticamente reescritos;\nd) Garantir que é vedada a leitura no registo de acessos a todo e qualquer utilizador, com exceção dos que, possuindo perfil de auditores de sistemas, estejam expressamente autorizados para o efeito;\ne) Gerar alarmes, designadamente, por correio eletrónico e por SMS (short message service), sempre que se detete eventual violação de segurança.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 64834,
+        "end": 65643
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

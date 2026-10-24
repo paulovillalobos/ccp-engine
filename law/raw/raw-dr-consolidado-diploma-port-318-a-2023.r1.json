@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:port-318-a-2023",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:22:13Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "port-318-a-2023",
+  "sha256": "a45ca266ceead82cccb93c9c9805a6beb9d4661770ea3ebfc4976f66ba4a77da",
+  "bytes": "raw_bytes/a45ca266ceead82cccb93c9c9805a6beb9d4661770ea3ebfc4976f66ba4a77da",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/portaria/318-a-2023-223338606",
+  "captured_at": "2026-10-24T17:22:05Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "1688460e2e02289ab91725dbf4b78c0c7c7d8e9a401f1a41f52880ef9a7ff3c6",
+    "bytes": "raw_bytes/1688460e2e02289ab91725dbf4b78c0c7c7d8e9a401f1a41f52880ef9a7ff3c6"
+  }
+}

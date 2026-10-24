@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art138.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art138",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os regulamentos governamentais, no domínio das atribuições concorrentes do Estado, das regiões autónomas e das autarquias locais, prevalecem sobre os regulamentos regionais e autárquicos e das demais entidades dotadas de autonomia regulamentar, salvo se estes configurarem normas especiais.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 148988,
+        "end": 149282
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

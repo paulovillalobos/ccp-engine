@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 42.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 42.º\nSegurança aplicacional\n1 - A empresa gestora deve garantir que o sistema se encontra devidamente protegido contra vulnerabilidades e ataques, impedindo, designadamente:\na) Falhas de injeção, nomeadamente, interrogações SQL (Structured Query Language), LDAP (Lightweight Directory Access Protocol) ou XPath (XML Path Language), comandos do sistema operativo (SO) e alteração de argumentos de programa;\nb) XSS (Cross-Site Scripting).\n2 - O sistema deve assegurar a autenticação forte e a gestão das sessões, o que exige, no mínimo, que:\na) As credenciais sejam sempre protegidas quando armazenadas com recurso a técnicas de controlo da integridade dos dados (hashing) ou de cifragem dos dados;\nb) As credenciais não possam ser adivinhadas nem alteradas através de funções de gestão da conta pouco sólidas, nomeadamente, através da criação de conta, alteração da senha, recuperação da senha ou identificadores de sessão frágeis;\nc) Os identificadores de sessão e os dados da sessão não se encontrem expostos no localizador uniforme de recursos (URL);\nd) Os identificadores de sessão não sejam vulneráveis a ataques de fixação de sessão;\ne) Os identificadores de sessão tenham um tempo limite de operação, o que assegura que o utilizador sai do sistema;\nf) As senhas, os identificadores de sessão e outras credenciais sejam enviados apenas através do protocolo TLS (Transport Layer Security).\n3 - O sistema deve possuir uma configuração de segurança adequada, o que exige, no mínimo, que:\na) Todos os elementos de software sejam atualizados, na medida do necessário para mitigar eventuais vulnerabilidades, nomeadamente o SO, o servidor web e o servidor de aplicações, o sistema de gestão de bases de dados (DBMS), as aplicações, e todas as bibliotecas de códigos;\nb) Os serviços e processos desnecessários do SO, servidor web e servidor de aplicações, sejam desativados, retirados ou não sejam instalados;\nc) As senhas da conta por defeito sejam alteradas ou desativadas.\n4 - O sistema deve limitar o acesso ao URL com base nos níveis e autorizações de acesso do utilizador, exigindo-se, no mínimo, que:\na) Se forem utilizados mecanismos de segurança externos, para fins de autenticação e verificação das autorizações de acesso às páginas, os mesmos devem estar devidamente configurados para cada página;\nb) Se for utilizada proteção ao nível dos códigos, a mesma deve existir para cada página pretendida.\n5 - O sistema deve utilizar o protocolo TLS de modo a garantir uma proteção suficiente, devendo estar criadas todas as medidas que se seguem ou outras de eficácia equivalente:\na) O sistema deve exigir a versão mais atualizada do protocolo HTTPS (Hypertext Transfer Protocol Secure) para aceder a quaisquer recursos sensíveis utilizando certificados que sejam válidos, não caducados, não revogados e compatíveis com todos os domínios utilizados pelo sítio;\nb) O sistema deve apor a indicação «seguro» em todos os cookies sensíveis;\nc) O servidor deve configurar o fornecedor do TLS de modo a que este apenas aceite algoritmos de cifragem de dados conformes com as melhores práticas;\nd) Os utilizadores devem ser informados de que devem ativar a funcionalidade TLS no seu navegador.\n6 - O sistema deve impedir reencaminhamentos e reenvios não validados.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 55558,
+        "end": 58824
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

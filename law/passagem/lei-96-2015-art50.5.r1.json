@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art50.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art50",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "5 - As plataformas eletrónicas devem, obrigatoriamente, registar os seguintes eventos:\na) Ligar e desligar os servidores;\nb) Tentativas com sucesso ou fracassadas de alteração dos parâmetros de segurança do SO;\nc) Tentativas com sucesso ou fracassadas de criar, modificar, apagar contas do sistema;\nd) Ligar e desligar as aplicações e sistemas utilizados pela plataforma eletrónica;\ne) Tentativas com sucesso ou fracassadas de início e fim de sessão;\nf) Tentativas com sucesso ou fracassadas de consulta de dados;\ng) Tentativas com sucesso ou fracassadas de alteração de configurações;\nh) Tentativas com sucesso ou fracassadas de modificação de dados;\ni) Tentativas com sucesso ou fracassadas de criar, modificar ou apagar informação relativa às permissões;\nj) Tentativas com sucesso ou fracassadas de acesso às instalações onde estão alojados os sistemas das plataformas eletrónicas;\nk) Cópias de segurança, recuperação ou arquivo dos dados;\nl) Alterações ou atualizações de software e hardware;\nm) Manutenção do sistema.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 66003,
+        "end": 67025
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

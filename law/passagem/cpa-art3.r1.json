@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 3.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 3.º\nPrincípio da legalidade\n1 - Os órgãos da Administração Pública devem atuar em obediência à lei e ao direito, dentro dos limites dos poderes que lhes forem conferidos e em conformidade com os respetivos fins.\n2 - Os atos administrativos praticados em estado de necessidade, com preterição das regras estabelecidas no presente Código, são válidos, desde que os seus resultados não pudessem ter sido alcançados de outro modo, mas os lesados têm o direito de ser indemnizados nos termos gerais da responsabilidade da Administração.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 41450,
+        "end": 41988
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

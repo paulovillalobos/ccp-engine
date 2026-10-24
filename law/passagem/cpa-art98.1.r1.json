@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art98.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art98",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O início do procedimento é publicitado na Internet, no sítio institucional da entidade pública, com a indicação do órgão que decidiu desencadear o procedimento, da data em que o mesmo se iniciou, do seu objeto e da forma como se pode processar a constituição como interessados e a apresentação de contributos para a elaboração do regulamento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 113652,
+        "end": 113998
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

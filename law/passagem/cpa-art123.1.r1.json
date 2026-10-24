@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art123.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art123",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Quando o órgão responsável pela direção do procedimento opte pela realização de audiência oral, esta realiza-se presencialmente, podendo ter lugar por teleconferência, quando tal se justifique e existam os meios necessários para o efeito.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 138732,
+        "end": 138974
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

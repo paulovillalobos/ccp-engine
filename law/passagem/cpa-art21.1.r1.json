@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art21.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art21",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Sempre que a lei não disponha de forma diferente, cada órgão colegial da Administração Pública tem um presidente e um secretário, a eleger pelos membros que o compõem.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 50275,
+        "end": 50446
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

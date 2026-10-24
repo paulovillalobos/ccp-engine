@@ -1,0 +1,49 @@
+{
+ "articles_left_out": {
+  "norma:cp": [
+   "cp:art13"
+  ],
+  "norma:dl-197-1999": [
+   "dl-197-1999:art15",
+   "dl-197-1999:art16",
+   "dl-197-1999:art17",
+   "dl-197-1999:art18",
+   "dl-197-1999:art19",
+   "dl-197-1999:art20",
+   "dl-197-1999:art21",
+   "dl-197-1999:art22",
+   "dl-197-1999:art22-a",
+   "dl-197-1999:art28",
+   "dl-197-1999:art29"
+  ],
+  "norma:lei-75-2013": [
+   "lei-75-2013:art4",
+   "lei-75-2013:art5"
+  ],
+  "norma:port-318-b-2023": [
+   "port-318-b-2023:art18",
+   "port-318-b-2023:art20"
+  ]
+ },
+ "not_structured": {
+  "norma:cc": "line 955: duplicate passage 'art182.a' ('a) Quando o seu fim se tenha esgotado ou se haja tornado impossível;')",
+  "norma:cppt": "line 862: duplicate passage 'art89.5' ('5 - A compensação é efectuada através da emissão de título de crédito destinado ')",
+  "norma:cpta": "line 31: a validity note inside a quotation",
+  "norma:crcspss": "line 1712: duplicate passage 'art281.1.i.i' ('i) 2010 em 17,5 %;')",
+  "norma:csc": "line 1594: duplicate passage 'art132.1.a' ('a) Do balanço da sociedade a transformar, que será ou o balanço do último exercí')",
+  "norma:ct": "line 4640: duplicate passage 'titulo-iii.capitulo-i' ('Capítulo I')",
+  "norma:dl-197-1999": "norma:dl-197-1999: dl-197-1999:capitulo-i has no note and the act's entry into force is not readable",
+  "norma:dl-74-1999": "no readable entry-into-force article nor general rule; its passages would have no date",
+  "norma:eu-2025-2150": "EU layout (\"Artigo 1.o\", points \"1)\" on their own line) has no grammar in engine/structure yet",
+  "norma:eu-2025-2151": "EU layout (\"Artigo 1.o\", points \"1)\" on their own line) has no grammar in engine/structure yet",
+  "norma:eu-2025-2152": "EU layout (\"Artigo 1.o\", points \"1)\" on their own line) has no grammar in engine/structure yet",
+  "norma:eu-2025-2487": "EU layout (\"Artigo 1.o\", points \"1)\" on their own line) has no grammar in engine/structure yet",
+  "norma:lei-107-2001": "no readable entry-into-force article nor general rule; its passages would have no date",
+  "norma:lei-98-1997": "line 174: duplicate passage 'art19.1.b' ('b) Mestres ou licenciados em Direito, Economia, Finanças ou Organização e Gestão')",
+  "norma:ret-18-a-2008": "line 186: a quotation with no passage quoting it ('«1 - As decisões de instauração e de arquivamento dos processos e de aplicação d')",
+  "norma:ret-25-2021": "line 39: a quotation with no passage quoting it ('«4 - A decisão referida no número anterior não pode afastar o efeito anulatório ')",
+  "norma:ret-36-a-2017": "no articles of its own (a declaração de retificação lists corrections)",
+  "norma:ret-42-2017": "no articles of its own (a declaração de retificação lists corrections)"
+ },
+ "tool": "ccp-build-law-0.1"
+}

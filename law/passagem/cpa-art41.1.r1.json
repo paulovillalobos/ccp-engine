@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art41.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art41",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Quando seja apresentado requerimento, petição, reclamação ou recurso a órgão incompetente, o documento recebido é enviado oficiosamente ao órgão titular da competência, disso se notificando o particular.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 64213,
+        "end": 64420
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

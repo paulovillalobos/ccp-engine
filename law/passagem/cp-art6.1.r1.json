@@ -1,0 +1,23 @@
+{
+  "id": "cp:art6.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cp",
+  "parent": "cp:art6",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "1995-03-20",
+      "text": "1 - Enquanto vigorarem normas que prevejam penas cumulativas de prisão e multa, sempre que a pena de prisão for substituída por multa será aplicada uma só pena equivalente à soma da multa directamente imposta e da que resultar da substituição da prisão.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 17565,
+        "end": 17818
+      },
+      "valid_from": "1995-03-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

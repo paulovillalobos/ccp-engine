@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art46.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art46",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O subdelegado pode subdelegar as competências que lhe tenham sido subdelegadas, salvo disposição legal em contrário ou reserva expressa do delegante ou subdelegante.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 67042,
+        "end": 67211
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

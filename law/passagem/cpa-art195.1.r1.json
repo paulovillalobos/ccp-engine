@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art195.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art195",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Recebido o requerimento, o autor do ato ou da omissão deve notificar aqueles que possam ser prejudicados pela sua procedência para alegarem, no prazo de 15 dias, o que tiverem por conveniente sobre o pedido e os seus fundamentos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 189819,
+        "end": 190052
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

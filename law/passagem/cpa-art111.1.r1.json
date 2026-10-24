@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art111.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art111",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - As notificações são efetuadas na pessoa do interessado, salvo quando este tenha constituído mandatário no procedimento, caso em que devem ser efetuadas a este.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 124369,
+        "end": 124532
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

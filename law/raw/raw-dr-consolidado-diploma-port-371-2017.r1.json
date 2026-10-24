@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:port-371-2017",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:24:24Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "port-371-2017",
+  "sha256": "249aa9cf6b9d20e25e799a7fd3a0ca6a9b441de1efa2ac32f8e529e5baec1d79",
+  "bytes": "raw_bytes/249aa9cf6b9d20e25e799a7fd3a0ca6a9b441de1efa2ac32f8e529e5baec1d79",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://data.dre.pt/eli/port/371/2017/12/14/p/dre",
+  "captured_at": "2026-10-24T17:24:15Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "39fcbc7fa3516b0445044f25bedf89e2b2659d9d4022ae545edd76bc6b5dd948",
+    "bytes": "raw_bytes/39fcbc7fa3516b0445044f25bedf89e2b2659d9d4022ae545edd76bc6b5dd948"
+  }
+}

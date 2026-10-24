@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art9.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art9",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "1 - A estrutura organizativa da empresa gestora, a comprovar perante o GNS, deve contemplar, pelo menos, os seguintes cargos e funções necessários à operação dos sistemas:\na) Administrador de segurança, com a responsabilidade global de implementar as políticas e práticas de segurança;\nb) Administrador de sistemas, autorizado a instalar, configurar e manter os sistemas, mas com acesso limitado às configurações e aspetos relacionadas com a segurança;\nc) Operador de sistemas, sendo responsável por operar diariamente os sistemas, autorizado a realizar cópias de segurança e operações de rotina;\nd) Auditor de sistemas, autorizado a monitorizar os arquivos de atividade dos sistemas e registo de eventos para auditoria.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 7727,
+        "end": 8447
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

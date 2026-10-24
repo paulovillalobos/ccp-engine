@@ -593,3 +593,83 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   their normas come with B2b.
 - Next: B2b, the law around the CCP.
 - Why: a verdict on a procedure is checked against the text in force on its date; this step makes that a lookup.
+
+## 2026-10-24 B2b the law around the CCP (commit: B2b: the corpus around the CCP registered, captured and structured; law/COVERAGE.md)
+- Done: 39 pages read (one GET each, 3 s apart, nothing sent): 4 EU threshold regulations from EUR-Lex (PT), 12
+  consolidated DR pages (Lei 30/2021, CPA, Portaria 318-B/2023, DL 197/99, Lei 75/2013, Lei 98/97, CPTA, CPPT, CSC,
+  CT, CP, CC), 21 DR detail pages and DLR 34/2008/M twice (detail + consolidated, the address read from the links of
+  the DLR 6/2018/M page). Addresses came from note links, the ELI links printed on the DL 177/2026 page, the
+  timeline, and searches restricted to diariodarepublica.pt; each page's title line was checked against the act
+  meant (all matched). tools/build_law.py now builds every captured act (D33), registers the 24 timeline items and
+  writes law/build-report.json; tools/coverage.py writes law/COVERAGE.md from the store.
+- Report (law/COVERAGE.md): normas registered 373 / captured 43 / structured 25 / with vigências 54; timeline 24 items
+  (23 amending acts + DL 18/2008), 24 registered; acts named in the CCP's notes 22, 22 registered; cited by the
+  applicable law and captured: DL 111-B/2017, Lei 30/2021, DL 18/2008 (art. 18.º structured), the four retificações.
+  Remissões of the CCP's text: 71 references, 14 distinct Portuguese acts, 14 captured (100 %), 6 resolved to a passage
+  of the act cited; 17 distinct EU acts (not captured, except the thresholds). Phase 3: every item registered and
+  captured; findings checked against the captured words: Madeira's 1,45 is DLR 34/2008/M art. 4.º n.os 1 and 4 (DLR
+  26/2022/M art. 75.º, in force 2022-12-30; originally 1,35; its n.º 1 cites CCP articles by the pre-DL 177/2026
+  numbering), not the 2026 budget (DLR 8/2025/M only amends art. 7.º); Portaria 371/2017 revoked by 318-A/2023;
+  Portaria 372/2017 is about habilitação documents, BASE is Portaria 318-B/2023; EU thresholds 2026–2027 are
+  Delegated Regulations 2025/2150, 2151, 2152 and 2487 (ELI stored in its https form, the schema's pattern).
+- Not structured, with the reason recorded: CC, CPPT, CSC, CT, Lei 98/97, CRCSPSS (structure finds a duplicate path:
+  their alínea / heading patterns are outside the grammar), CPTA (a note inside a quotation), DL 197/99 (its articles
+  without notes cannot be dated: no readable entry into force), DL 74/99 and Lei 107/2001 (entry into force not in a
+  phrasing entry_into_force reads), the EU acts (no EU grammar), the retificações (no articles of their own). Left out
+  under D33: DL 197/99 arts. 15–22-A, 28, 29 (notes "Reposto em Vigor": the autorização-de-despesa articles phase 3
+  needs; a decision, not a guess), CP art. 13, Lei 75/2013 arts. 4–5, Portaria 318-B/2023 arts. 18 and 20.
+- Engine: vigente note grammar reads "Diário do Governo", supplement forms, "Artigo único", "00:00:00", Acórdãos do
+  Tribunal Constitucional (actc-), two-letter suffixes (n.º 20-AS/2001); DL 18/2008's own articles dated 2008-07-30, the
+  consolidated page's "Versão inicial" (INITIAL), quoting its art. 18.º. DECISIONS D33.
+- Reads, disclosed: 8 detail pages were read with an http ELI address the raw schema refuses, so nothing was recorded;
+  they were read again with the https form (a second read each: Portaria 371/2017, Lei 96/2015, DL 104/2011, Lei
+  45/2011, Lei 21/2023, Lei 110/2009, Lei 107/2001, Lei 41/2015). The first reads' bytes were left in law/raw_bytes by
+  the refused writes; they are moved out of the store (no record names them).
+- Tests: the B2b red tests are green. Two of their assertions were set before measuring and are corrected here: the
+  timeline has 24 items (23 amending acts and the original act, which the DR prints last) and the floor of distinct
+  Portuguese remissões is 10 (14 measured; the first floor, 20, was a guess); captured() now requires the act's own page.
+- Registered: vigente@5, build-law@4, coverage@1. verify: ok.
+- Next: B2c municipal pilot.
+- Why: a verdict on a procedure also cites the law the CCP points to and the regional and EU numbers that change it.
+- Pages (captured_at, id, sha256, bytes):
+```
+2026-10-24T16:12:24Z  eu-2025-2152 (regulamento)   sha256 1162d1496dbbac6723276882138fb757ad6a123ef0461019c4c7646c1284ca43  19348 bytes
+2026-10-24T16:12:44Z  eu-2025-2150 (regulamento)   sha256 d396e76527ac286eaa9456ac31b53bd108d7689d4d1aaba7f3f33983229ba336  15865 bytes
+2026-10-24T16:12:51Z  eu-2025-2151 (regulamento)   sha256 08a51a63f81c307e89182d374da1e667a90e71a4244f2cf577348815ded1c66a  14005 bytes
+2026-10-24T16:12:58Z  eu-2025-2487 (regulamento)   sha256 74ff010cafad382714ef5175a649650a359796bd1f57cccb9c5ba2027f47ec1a  18546 bytes
+2026-10-24T17:17:33Z  lei-30-2021 (lei)            sha256 d93eaf9f1c15510e03b9f15671f5980c5122f312f5d8cab75392b29b57b4b29f  315184 bytes
+2026-10-24T17:17:44Z  cpa (lei)                    sha256 73e281bff097ebf1fce88ebbc7c39e9c3ee59e813574a4360c52b7cd43b5fb25  734979 bytes
+2026-10-24T17:17:56Z  port-318-b-2023 (lei)        sha256 5fb5b1764eea6cb243cc3e4e015c8538c9ed8d2c18f551a132ef7b9047ab320a  1286652 bytes
+2026-10-24T17:18:08Z  dl-197-1999 (lei)            sha256 d2acd5385514bd4e354caf6ae74257afbf104a1fc2488acdd3aaacb8a73d7d2b  1028341 bytes
+2026-10-24T17:18:19Z  lei-75-2013 (lei)            sha256 729211c2aae09d6ca317ded977fad30fece9f9c7d229d711d08f2ea321f1d9a7  562355 bytes
+2026-10-24T17:18:31Z  lei-98-1997 (lei)            sha256 a368148a55b519041ebcff0470fb5c938c19841936d494a97b9dae31ff223b3c  571086 bytes
+2026-10-24T17:18:43Z  cpta (lei)                   sha256 a554338c7f6d1f986d55307eae33a536f3ab83ea6bc80d1b412741732c61ae89  1007530 bytes
+2026-10-24T17:18:54Z  cppt (lei)                   sha256 6abbf6cea3d4a0216943312cbcad85ca7ecc73dc7ed4e15f08c0ecb18637db1f  1435677 bytes
+2026-10-24T17:19:06Z  csc (lei)                    sha256 1d8a350a88996732888b04c6c19c43a6e217ec63b2e96722d10608564fed41dc  2808548 bytes
+2026-10-24T17:19:20Z  ct (lei)                     sha256 55ff901bae9c53c61217fc5dc11cf210f6abab07259624327882150044655405  2156067 bytes
+2026-10-24T17:19:33Z  cp (lei)                     sha256 f4a6bfcb90e93b9f0d019a93ad55bef973913e0d21aa64f07d05c0ece2b5ef7c  1888474 bytes
+2026-10-24T17:19:45Z  cc (lei)                     sha256 4a6289cd3aea2defbecb4befe4b277d3a2e18969412e7839b60d18ff3976f8cc  5954338 bytes
+2026-10-24T17:20:02Z  dl-111-b-2017 (diploma)      sha256 62464e3357ba4050b7fbb337f029720c356017bba17160502fc72a49a85401b6  1161980 bytes
+2026-10-24T17:20:13Z  dl-18-2008 (diploma)         sha256 ae58d108c5f1f747c1c5a4fb42dd9e50998935808794e7a90bf4e5ecb2e5b261  974270 bytes
+2026-10-24T17:20:24Z  ret-18-a-2008 (diploma)      sha256 feb96e27fa5bc232b7d3dca497e23736410924e2ae30c7355bd37e3cf9b90195  128616 bytes
+2026-10-24T17:20:35Z  ret-36-a-2017 (diploma)      sha256 44300c49e9de5a88f8587136f06d15249f914b520f7b1c7f7faaa96c4e3ec4bb  128198 bytes
+2026-10-24T17:20:46Z  ret-42-2017 (diploma)        sha256 c148e9312539b1bfe2be6d766451c16dd729ef6c39a4e65d99d33f84431addbf  122932 bytes
+2026-10-24T17:20:58Z  ret-25-2021 (diploma)        sha256 fb74b05300949b2a3cf2c764bd9660e9c739ee24bb9c37cf848937f03865e939  89638 bytes
+2026-10-24T17:21:09Z  dl-60-2018 (diploma)         sha256 a2eef1ca41933d422ccf4fe7941f2a9ab0e499bda97918ae77bcc7455a8f10e9  113593 bytes
+2026-10-24T17:21:20Z  dlr-27-2015-a (diploma)      sha256 82f7329621336f9824cd91517b297c384ebb0f96daec6000e8cf090da1b19219  291774 bytes
+2026-10-24T17:21:31Z  dlr-6-2018-m (diploma)       sha256 bc09414f67ee5c9c2430f9394fb839cbef5b0434db13a83a37985fb657168287  147087 bytes
+2026-10-24T17:21:41Z  dlr-8-2025-m (diploma)       sha256 e3f67e0d0ab1a4001e09e9f0b9441e5957fb66b2553b061cb5efaf0ad1a73c7e  440459 bytes
+2026-10-24T17:21:53Z  port-372-2017 (diploma)      sha256 26df667df4306960a5871a2c9673852d68dd106f1821e59570a4652a9a20d7a5  98554 bytes
+2026-10-24T17:22:05Z  port-318-a-2023 (diploma)    sha256 a45ca266ceead82cccb93c9c9805a6beb9d4661770ea3ebfc4976f66ba4a77da  908296 bytes
+2026-10-24T17:22:27Z  dl-74-1999 (diploma)         sha256 b43043bc9a6948c3e29f9bbc547722d725e8b665db3e10dcec3ca9e128e00563  104315 bytes
+2026-10-24T17:24:15Z  port-371-2017 (diploma)      sha256 249aa9cf6b9d20e25e799a7fd3a0ca6a9b441de1efa2ac32f8e529e5baec1d79  213336 bytes
+2026-10-24T17:24:27Z  lei-96-2015 (diploma)        sha256 d4db84f52103a9ae954ad5c7435e3ecc32db6d948445fefab89766b34dbffdbd  272533 bytes
+2026-10-24T17:24:37Z  dl-104-2011 (diploma)        sha256 5f742418231bcf05c34f88a83dc1f8e9f674e2950f78e1613b6994d1f77130e2  193557 bytes
+2026-10-24T17:24:49Z  lei-45-2011 (diploma)        sha256 272e2b5b824be365cab7e55b0cbfc1544d8b028f70b10cb5146b4a64cf5ca6b7  111104 bytes
+2026-10-24T17:25:00Z  lei-21-2023 (diploma)        sha256 8da9abfd6bb66ec2482d8db858d699fc0cb91859c1f23b81f00069e0543c6000  120353 bytes
+2026-10-24T17:25:11Z  crcspss (diploma)            sha256 f91857d829eaff322ae37acf0f3c571f2a406c79d1a5a7b6911a7a0468c540d2  401841 bytes
+2026-10-24T17:25:23Z  lei-107-2001 (diploma)       sha256 b5691caf55c28058a5801619f7e3699b10c8c62794ea14da9dce357e7c2e4d11  263648 bytes
+2026-10-24T17:25:35Z  lei-41-2015 (diploma)        sha256 1dd4030bd85b460afc3f4997e87e18e330fb0ec99230888574dca0c5d8793c76  210188 bytes
+2026-10-24T17:26:36Z  dlr-34-2008-m (diploma)      sha256 2db6e476b2eebd18431caef428bec23d67c0949f4fb90fa7c7cec5b286cfb790  133599 bytes
+2026-10-24T17:27:04Z  dlr-34-2008-m (lei)          sha256 9c1d3fd573a8fba033b068423cad4284c75d9792553f3112f66ac1ee027c4da2  224283 bytes
+```

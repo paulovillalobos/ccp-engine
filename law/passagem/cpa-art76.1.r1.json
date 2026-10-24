@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art76.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art76",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - São anuláveis nos termos gerais os atos ou contratos em que tenham intervindo titulares de órgãos ou agentes impedidos ou em cuja preparação tenha ocorrido prestação de serviços à Administração Pública em violação do disposto nos n.os 3 a 5 do artigo 69.º",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 93895,
+        "end": 94154
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

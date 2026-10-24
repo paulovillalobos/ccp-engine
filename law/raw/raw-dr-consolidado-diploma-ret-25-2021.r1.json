@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:ret-25-2021",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:21:06Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "ret-25-2021",
+  "sha256": "fb74b05300949b2a3cf2c764bd9660e9c739ee24bb9c37cf848937f03865e939",
+  "bytes": "raw_bytes/fb74b05300949b2a3cf2c764bd9660e9c739ee24bb9c37cf848937f03865e939",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/declaracao-retificacao/25-2021-167923975",
+  "captured_at": "2026-10-24T17:20:58Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "b4652eadb4567a18f8c0ee6d2f813a83caac60af558ff11ad4a10205060d95e0",
+    "bytes": "raw_bytes/b4652eadb4567a18f8c0ee6d2f813a83caac60af558ff11ad4a10205060d95e0"
+  }
+}

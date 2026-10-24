@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art101.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art101",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os interessados devem dirigir, por escrito, as suas sugestões ao órgão com competência regulamentar, no prazo de 30 dias, a contar da data da publicação do projeto de regulamento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 116251,
+        "end": 116434
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

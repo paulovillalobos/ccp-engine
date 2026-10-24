@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art150.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art150",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os atos administrativos devem ser praticados por escrito, desde que outra forma não seja prevista por lei ou imposta pela natureza e circunstâncias do ato.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 155470,
+        "end": 155629
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art3.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:dl.art3",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - São revogadas as disposições incompatíveis com o disposto nos n.os 2 e 3.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 35810,
+        "end": 35887
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

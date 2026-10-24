@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.2.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "b) As credenciais não possam ser adivinhadas nem alteradas através de funções de gestão da conta pouco sólidas, nomeadamente, através da criação de conta, alteração da senha, recuperação da senha ou identificadores de sessão frágeis;",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 56262,
+        "end": 56495
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

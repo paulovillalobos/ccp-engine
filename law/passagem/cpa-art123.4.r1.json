@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art123.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art123",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Da audiência é lavrada ata da qual consta o extrato das alegações feitas pelo interessado, podendo este juntar alegações escritas, durante a diligência ou posteriormente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 139460,
+        "end": 139634
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

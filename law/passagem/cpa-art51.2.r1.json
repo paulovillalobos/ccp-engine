@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art51.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art51",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os conflitos de competência são resolvidos pelo órgão de menor categoria hierárquica que exerça poderes de supervisão sobre os órgãos envolvidos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 69695,
+        "end": 69844
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

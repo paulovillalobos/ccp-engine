@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art1.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art1",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Entende-se por processo administrativo o conjunto de documentos devidamente ordenados em que se traduzem os atos e formalidades que integram o procedimento administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 39981,
+        "end": 40156
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

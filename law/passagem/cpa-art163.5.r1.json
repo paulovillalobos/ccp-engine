@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art163.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art163",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Não se produz o efeito anulatório quando:\na) O conteúdo do ato anulável não possa ser outro, por o ato ser de conteúdo vinculado ou a apreciação do caso concreto permita identificar apenas uma solução como legalmente possível;\nb) O fim visado pela exigência procedimental ou formal preterida tenha sido alcançado por outra via;\nc) Se comprove, sem margem para dúvidas, que, mesmo sem o vício, o ato teria sido praticado com o mesmo conteúdo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 164308,
+        "end": 164753
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

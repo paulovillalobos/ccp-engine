@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art53",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-i.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 53.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 53.º\nIniciativa\nO procedimento administrativo inicia-se oficiosamente ou a solicitação dos interessados.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 70532,
+        "end": 70643
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

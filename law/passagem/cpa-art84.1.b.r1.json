@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art84.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art84.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "b) Conteúdo dos documentos referidos na alínea anterior ou pretensão nestes formulada;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 105117,
+        "end": 105203
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

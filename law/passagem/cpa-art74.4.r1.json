@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art74.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art74",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Os pedidos devem ser formulados logo que haja conhecimento da circunstância que determina a escusa ou a suspeição.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 93444,
+        "end": 93562
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

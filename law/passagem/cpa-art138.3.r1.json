@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art138.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art138",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Entre os regulamentos governamentais estabelece-se a seguinte ordem de prevalência:\na) Decretos regulamentares;\nb) Resoluções de Conselho de Ministros com conteúdo normativo;\nc) Portarias;\nd) Despachos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 149409,
+        "end": 149615
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

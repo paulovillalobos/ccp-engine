@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art92.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art92",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "6 - (Revogado.)",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 111395,
+        "end": 111410
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

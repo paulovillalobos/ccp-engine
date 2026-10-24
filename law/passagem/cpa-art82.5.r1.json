@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art82.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art82",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Salvo disposição legal em contrário, a informação eletrónica sobre o andamento dos procedimentos abrange os elementos mencionados no n.º 2.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 103881,
+        "end": 104024
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

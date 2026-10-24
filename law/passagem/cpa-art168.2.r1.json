@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art168.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art168",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Salvo nos casos previstos nos números seguintes, os atos constitutivos de direitos só podem ser objeto de anulação administrativa dentro do prazo de um ano, a contar da data da respetiva emissão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 169167,
+        "end": 169366
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

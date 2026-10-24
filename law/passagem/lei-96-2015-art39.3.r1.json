@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art39.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art39",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "3 - As empresas gestoras selecionam os controlos de segurança adequados com base na análise de riscos prevista na alínea a) do número anterior, e na norma ISO/IEC 27002, nas seguintes áreas da segurança:\na) Avaliação de risco, adotando-se para o efeito a norma ISO/IEC 27005 ou outra metodologia de avaliação de riscos equivalente;\nb) Segurança física e ambiental;\nc) Segurança dos recursos humanos;\nd) Gestão de comunicações e operações;\ne) Medidas normalizadas de controlo do acesso;\nf) Aquisição, desenvolvimento e manutenção dos sistemas de informação;\ng) Gestão de incidentes no domínio da segurança das informações;\nh) Medidas para corrigir e mitigar violações dos sistemas de informação suscetíveis de causar a destruição, a perda acidental, a alteração, ou a divulgação ou acesso não autorizados dos dados pessoais a tratar;\ni) Conformidade;\nj) Segurança de redes informáticas, recomendando-se para o efeito a norma ISO/IEC 27033.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 51906,
+        "end": 52844
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

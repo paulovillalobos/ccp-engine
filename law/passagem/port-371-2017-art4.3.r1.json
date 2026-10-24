@@ -1,0 +1,23 @@
+{
+  "id": "port-371-2017:art4.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-371-2017",
+  "parent": "port-371-2017:art4",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - O procedimento de envio do anúncio para publicação considera-se concluído com o reconhecimento, por parte da INCM, da efetivação do respetivo pagamento.",
+      "raw": "raw:dr-consolidado:diploma:port-371-2017",
+      "offsets": {
+        "start": 8810,
+        "end": 8966
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

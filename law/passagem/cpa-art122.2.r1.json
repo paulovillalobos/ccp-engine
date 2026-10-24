@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art122.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art122",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A notificação fornece o projeto de decisão e demais elementos necessários para que os interessados possam conhecer todos os aspetos relevantes para a decisão, em matéria de facto e de direito, indicando também as horas e o local onde o processo pode ser consultado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 138165,
+        "end": 138434
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

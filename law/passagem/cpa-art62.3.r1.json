@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art62.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art62",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "3 - Os prazos procedimentais iniciam a sua contagem com a submissão do requerimento no balcão eletrónico.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 76727,
+        "end": 76832
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

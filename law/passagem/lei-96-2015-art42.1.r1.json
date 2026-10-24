@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "1 - A empresa gestora deve garantir que o sistema se encontra devidamente protegido contra vulnerabilidades e ataques, impedindo, designadamente:\na) Falhas de injeção, nomeadamente, interrogações SQL (Structured Query Language), LDAP (Lightweight Directory Access Protocol) ou XPath (XML Path Language), comandos do sistema operativo (SO) e alteração de argumentos de programa;\nb) XSS (Cross-Site Scripting).",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 55593,
+        "end": 56001
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

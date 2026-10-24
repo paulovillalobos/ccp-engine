@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dl-18-2008",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:20:21Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dl-18-2008",
+  "sha256": "ae58d108c5f1f747c1c5a4fb42dd9e50998935808794e7a90bf4e5ecb2e5b261",
+  "bytes": "raw_bytes/ae58d108c5f1f747c1c5a4fb42dd9e50998935808794e7a90bf4e5ecb2e5b261",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/18-2008-248178",
+  "captured_at": "2026-10-24T17:20:13Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 45000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "fdf1d175eff9e40e1a99da6948fb3aa1bcab565445167d30a27886408040bd1b",
+    "bytes": "raw_bytes/fdf1d175eff9e40e1a99da6948fb3aa1bcab565445167d30a27886408040bd1b"
+  }
+}

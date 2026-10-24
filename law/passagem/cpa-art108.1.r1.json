@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art108.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art108",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "1 - Se o requerimento inicial não satisfizer o disposto no artigo 102.º, o requerente é convidado a suprir as deficiências existentes.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 121957,
+        "end": 122091
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

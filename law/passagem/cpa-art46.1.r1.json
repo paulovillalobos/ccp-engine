@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art46.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art46",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Salvo disposição legal em contrário, o delegante pode autorizar o delegado a subdelegar.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 66949,
+        "end": 67041
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

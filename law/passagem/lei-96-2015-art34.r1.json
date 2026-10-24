@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art34",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 34.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 34.º\nInteroperabilidade e compatibilidade\n1 - As plataformas eletrónicas devem cumprir os requisitos de interoperabilidade e compatibilidade previstos no RNID.\n2 - As plataformas eletrónicas devem ter a capacidade para permitir o intercâmbio generalizado de dados, nomeadamente entre diferentes formatos e aplicações ou entre níveis diferentes de desempenho, respeitando os requisitos fixados e atualizados, sempre que razões de ordem tecnológica tal justifique, mediante portaria dos membros do Governo que tutelam o IMPIC, I. P., a ESPAP, I. P., e a Agência para a Modernização Administrativa, I. P. (AMA, I. P.), e de que depende o GNS, designadamente:\na) A linguagem de scripting para página web;\nb) O nível de acessibilidade para as páginas públicas;\nc) O acesso remoto a sistemas de ficheiros (se aplicável);\nd) O envio seguro de correio eletrónico;\ne) A representação gráfica para a especificação de processos de negócio;\nf) O protocolo para a garantia de entrega de mensagens na integração entre dois ou mais sistemas de informação interorganismos da Administração Pública;\ng) A segurança de integridade e confidencialidade da comunicação na integração entre dois ou mais sistemas de informação interorganismos da Administração Pública;\nh) A segurança de autenticação da comunicação na integração entre dois ou mais sistemas de informação interorganismos da Administração Pública;\ni) A possibilidade de utilização de WS-Addressing na troca de informação entre sistemas de informação;\nj) A definição do standard universal utilizado para todos os ficheiros carregados nas plataformas eletrónicas;\nk) O tipo de assinatura eletrónica que todos os documentos assinados eletronicamente devem utilizar.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 44546,
+        "end": 46256
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

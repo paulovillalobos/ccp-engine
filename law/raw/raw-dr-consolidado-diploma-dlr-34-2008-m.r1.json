@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:dlr-34-2008-m",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:26:45Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "dlr-34-2008-m",
+  "sha256": "2db6e476b2eebd18431caef428bec23d67c0949f4fb90fa7c7cec5b286cfb790",
+  "bytes": "raw_bytes/2db6e476b2eebd18431caef428bec23d67c0949f4fb90fa7c7cec5b286cfb790",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/34-2008-455621",
+  "captured_at": "2026-10-24T17:26:36Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "b0b3d879e11f9e4efe43e0486b55932632ee056022b35e04d58c47260d929207",
+    "bytes": "raw_bytes/b0b3d879e11f9e4efe43e0486b55932632ee056022b35e04d58c47260d929207"
+  }
+}

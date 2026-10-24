@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art161.2.k",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art161.2",
+  "kind": "alinea",
+  "label": "k)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "k) Os atos que criem obrigações pecuniárias não previstas na lei;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 162693,
+        "end": 162758
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

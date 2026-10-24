@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art151.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art151",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Sem prejuízo de outras referências especialmente exigidas por lei, devem constar do ato:\na) A indicação da autoridade que o pratica e a menção da delegação ou subdelegação de poderes, quando exista;\nb) A identificação adequada do destinatário ou destinatários;\nc) A enunciação dos factos ou atos que lhe deram origem, quando relevantes;\nd) A fundamentação, quando exigível;\ne) O conteúdo ou o sentido da decisão e o respetivo objeto;\nf) A data em que é praticado;\ng) A assinatura do autor do ato ou do presidente do órgão colegial que o emana.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 155860,
+        "end": 156407
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

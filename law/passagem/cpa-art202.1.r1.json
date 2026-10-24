@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art202.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art202",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - As relações contratuais administrativas são regidas pelo Código dos Contratos Públicos ou por lei especial, sem prejuízo da aplicação subsidiária daquele quando os tipos dos contratos não afastem as razões justificativas da disciplina em causa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 196584,
+        "end": 196832
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

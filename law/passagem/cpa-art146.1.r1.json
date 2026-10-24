@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art146.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art146",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os regulamentos podem ser revogados pelos órgãos competentes para a respetiva emissão, sem prejuízo do disposto nos números seguintes.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 153048,
+        "end": 153186
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

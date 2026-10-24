@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art87.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art87",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "g) Considera-se que o serviço não está aberto ao público quando for concedida tolerância de ponto, total ou parcial.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 107456,
+        "end": 107572
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

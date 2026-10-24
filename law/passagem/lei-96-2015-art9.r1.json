@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art9",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 9.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 9.º\nEstrutura organizativa da empresa gestora\n1 - A estrutura organizativa da empresa gestora, a comprovar perante o GNS, deve contemplar, pelo menos, os seguintes cargos e funções necessários à operação dos sistemas:\na) Administrador de segurança, com a responsabilidade global de implementar as políticas e práticas de segurança;\nb) Administrador de sistemas, autorizado a instalar, configurar e manter os sistemas, mas com acesso limitado às configurações e aspetos relacionadas com a segurança;\nc) Operador de sistemas, sendo responsável por operar diariamente os sistemas, autorizado a realizar cópias de segurança e operações de rotina;\nd) Auditor de sistemas, autorizado a monitorizar os arquivos de atividade dos sistemas e registo de eventos para auditoria.\n2 - Os postos de trabalho ou funções referidos nas alíneas a), b) e d) do número anterior não podem ser assegurados pela mesma pessoa.\n3 - Todos aqueles que desempenhem funções relacionadas com os procedimentos das plataformas eletrónicas, em especial, os cargos definidos no número anterior, devem estar livres de conflitos de interesse que possam prejudicar a sua imparcialidade no exercício das funções.\n4 - A empresa gestora é responsável por todos os serviços incluídos no âmbito da sua plataforma eletrónica, bem como dos meios humanos pertencentes à sua estrutura organizativa, mesmo quando prestados por terceiros por ela contratados.\n5 - A empresa gestora pode contratar a prestação de serviços tecnológicos e o fornecimento dos respetivos componentes e meios humanos assumindo e mantendo a inteira responsabilidade pelo cumprimento de todos os requisitos exigidos na presente lei.\n6 - São obrigatoriamente reduzidos a escrito os contratos celebrados entre a empresa gestora e qualquer prestador de serviços, onde se estabelecem as obrigações das partes e se identificam os serviços e funções prestadas pelo contratado.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 7674,
+        "end": 9576
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art188.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art188",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O prazo da reclamação e dos recursos pelos interessados a quem o ato administrativo deva ser notificado só corre a partir da data da notificação, ainda que o ato tenha sido objeto de publicação obrigatória.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 185054,
+        "end": 185264
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art190.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art190",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - A utilização de meios de impugnação administrativa facultativos contra atos administrativos suspende o prazo de propositura de ações nos tribunais administrativos, que só retoma o seu curso com a notificação da decisão proferida sobre a impugnação administrativa ou com o decurso do respetivo prazo legal.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 187036,
+        "end": 187345
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

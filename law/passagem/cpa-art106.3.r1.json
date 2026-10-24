@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art106.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art106",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - O registo eletrónico emite automaticamente um recibo comprovativo da entrega dos requerimentos apresentados por transmissão eletrónica de dados, contendo a indicação da data e hora da apresentação e o número de registo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 121452,
+        "end": 121675
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

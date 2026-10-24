@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art128.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art128",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "1 - Os procedimentos de iniciativa particular devem ser decididos no prazo de 60 dias, salvo se outro prazo decorrer da lei, podendo o prazo, em circunstâncias excecionais devidamente fundamentadas, ser prorrogado pelo responsável pela direção do procedimento, por um ou mais períodos, até ao limite máximo de 90 dias, mediante autorização do órgão competente para a decisão final, quando as duas funções não coincidam no mesmo órgão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 141658,
+        "end": 142092
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

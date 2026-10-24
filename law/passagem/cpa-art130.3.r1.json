@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art130.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art130",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "3 - O prazo legal de produção de deferimento tácito suspende-se se o procedimento estiver parado por motivo imputável ao interessado e só se interrompe com a notificação de decisão expressa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 143994,
+        "end": 144184
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

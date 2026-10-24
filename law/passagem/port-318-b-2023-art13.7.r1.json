@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art13.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art13",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "7 - Sem prejuízo do disposto no número anterior, podem ser criados sistemas de alerta ao utilizador, ativados durante o preenchimento dos dados, em função de incorreções ou incoerências automaticamente detetadas.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 27084,
+        "end": 27296
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art118.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art118",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Se o interessado não residir no município da sede do órgão responsável pela direção do procedimento, a prestação verbal de informações ou a apresentação de provas pode ter lugar através de órgão ou serviço com sede no município do seu domicílio, determinado pelo órgão responsável pela direção do procedimento, salvo se o interessado preferir comparecer perante este.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 135175,
+        "end": 135546
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

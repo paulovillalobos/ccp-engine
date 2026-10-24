@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art110.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art110",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Não há lugar à notificação determinada no número anterior nos casos em que a lei a dispense e naqueles em que a mesma possa prejudicar a natureza secreta ou confidencial da matéria, como tal classificada nos termos legais, ou a oportuna adoção das providências a que o procedimento se destina.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 123786,
+        "end": 124083
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

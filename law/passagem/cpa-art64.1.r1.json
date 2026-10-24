@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art64.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art64",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - Das diligências realizadas oralmente são lavrados autos e termos, que devem conter a menção dos elementos essenciais e da data e lugar da realização da diligência a que respeitam.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 79384,
+        "end": 79567
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

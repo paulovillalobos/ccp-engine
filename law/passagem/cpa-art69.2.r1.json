@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art69.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art69",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Excluem-se do disposto no número anterior:\na) As intervenções que se traduzam em atos de mero expediente, designadamente atos certificativos;\nb) A emissão de parecer, na qualidade de membro do órgão colegial competente para a decisão final, quando tal formalidade seja requerida pelas normas aplicáveis;\nc) A pronúncia do autor do ato recorrido, nos termos do n.º 2 do artigo 195.º",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 87163,
+        "end": 87548
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

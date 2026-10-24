@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art81.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art81.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) Com a prática do ato ou dos atos que visa preparar;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 101113,
+        "end": 101167
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

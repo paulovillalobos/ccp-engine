@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art114.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art114",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "3 - O texto integral do ato pode ser substituído pela indicação resumida do seu conteúdo e objeto, quando o ato tiver deferido integralmente a pretensão formulada pelo interessado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 130905,
+        "end": 131085
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

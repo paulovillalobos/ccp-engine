@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art113.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art113",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - A notificação por carta registada presume-se efetuada no terceiro dia útil posterior ao registo ou no primeiro dia útil seguinte a esse, quando esse dia não seja útil.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 127557,
+        "end": 127728
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art138.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art138",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os regulamentos municipais prevalecem sobre os regulamentos das freguesias, salvo se estes configurarem normas especiais.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 149283,
+        "end": 149408
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

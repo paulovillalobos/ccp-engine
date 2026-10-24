@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art61.3.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art61.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) A conhecer por meios eletrónicos o estado da tramitação dos procedimentos que lhes digam diretamente respeito;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 75130,
+        "end": 75243
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

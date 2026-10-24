@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art81.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art81",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A conferência procedimental finda:\na) Com a prática do ato ou dos atos que visa preparar;\nb) No termo do prazo, sem que o ato ou os atos que visa preparar tenham sido praticados.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 101074,
+        "end": 101256
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

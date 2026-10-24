@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art169.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art169",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "6 - Os atos administrativos praticados por órgão incompetente podem ser objeto de revogação ou de anulação administrativa pelo órgão competente para a sua prática.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 172533,
+        "end": 172696
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

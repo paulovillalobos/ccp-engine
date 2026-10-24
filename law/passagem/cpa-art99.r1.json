@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art99",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-ii.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 99.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 99.º\nProjeto de regulamento\nOs regulamentos são aprovados com base num projeto, acompanhado de uma nota justificativa fundamentada, que deve incluir uma ponderação dos custos e benefícios das medidas projetadas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 114325,
+        "end": 114543
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

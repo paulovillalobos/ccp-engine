@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art104.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art104",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os requerimentos dirigidos a órgãos administrativos podem ser apresentados por uma das seguintes formas:\na) Entrega nos serviços, valendo como data da apresentação a da respetiva entrega;\nb) Remessa pelo correio, sob registo, valendo como data da apresentação a da efetivação do respetivo registo postal;\nc) Envio através de telefax ou transmissão eletrónica de dados, valendo como data da apresentação a do termo da expedição;\nd) Envio por transmissão eletrónica de dados, valendo como data da apresentação a da respetiva expedição;\ne) Formulação verbal, quando a lei admita essa forma de apresentação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 118970,
+        "end": 119577
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

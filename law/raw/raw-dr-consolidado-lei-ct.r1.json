@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:ct",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:19:30Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "ct",
+  "sha256": "55ff901bae9c53c61217fc5dc11cf210f6abab07259624327882150044655405",
+  "bytes": "raw_bytes/55ff901bae9c53c61217fc5dc11cf210f6abab07259624327882150044655405",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475",
+  "captured_at": "2026-10-24T17:19:20Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 90000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "d65db0eb565d9ad60caf1461b37df04a7bcb16d4ccc540f0985f2182c486caeb",
+    "bytes": "raw_bytes/d65db0eb565d9ad60caf1461b37df04a7bcb16d4ccc540f0985f2182c486caeb"
+  }
+}

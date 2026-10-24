@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art50.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art50.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "a) Disponibilizar um interface amigável que permita analisar a informação constante dos registos de auditoria, com capacidade para efetuar pesquisas, pelo menos, baseado na data e hora do evento, no tipo de evento e na identidade do utilizador/processo;",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 64868,
+        "end": 65121
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

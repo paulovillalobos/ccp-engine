@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art30.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art30",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "1 - As plataformas eletrónicas devem garantir, no mínimo, os seguintes requisitos funcionais:\na) Basear-se em normas abertas, de acordo com o RNID, que não envolvam custos específicos de licenciamento por parte dos utilizadores, disponibilizando as aplicações que permitam efetuar o carregamento dos documentos na plataforma eletrónica;\nb) Garantir que todas as mensagens entre interessados, candidatos, concorrentes e adjudicatários, relativas a pedidos de esclarecimentos, lista de erros e omissões, pronúncias, incluindo os documentos anexos às mesmas, ficam automaticamente disponíveis para visualização daqueles que tenham acesso à fase do procedimento em curso;\nc) Garantir o envio de mensagens de correio eletrónico para todos os intervenientes na fase do procedimento de formação do contrato público em curso, sempre que, nos termos do CCP, tais comunicações sejam obrigatórias;\nd) Garantir o registo do envio das mensagens de correio eletrónico;\ne) Garantir o registo de qualquer ação efetuada pelos diversos utilizadores registados;\nf) Listar, ordenar e exportar para formato XML (Extensible Markup Language) e ou para folha de cálculo em formato ODF (Open Document Format), em todas as fases do procedimento, a informação relevante para a gestão, o reporte e a monitorização, incluindo os metadados;\ng) Disponibilizar um relatório para verificação e controlo do fluxo do procedimento de acordo com o artigo seguinte;\nh) Permitir a parametrização de procedimentos com diferentes critérios de adjudicação em cada lote;\ni) Suportar a realização de todos os procedimentos de formação de contratos públicos, nos termos previstos no CCP;\nj) Permitir o descarregamento agregado de todos os documentos anexos a mensagens submetidas pelos operadores económicos;\nk) Permitir o descarregamento agregado de todos os documentos, incluindo peças do procedimento, pedidos de esclarecimento sobre as peças, esclarecimentos prestados sobre as peças, listas de erros e omissões, pronúncias sobre erros e omissões, propostas dos concorrentes, pedidos de esclarecimentos sobre as propostas, esclarecimentos prestados sobre as propostas, relatórios do júri e dos serviços competentes da entidade adjudicante, pronúncias em sede de audiência prévia e todas as notificações da entidade adjudicante, por procedimento;\nl) Permitir a utilização de mecanismos de autenticação e assinatura eletrónica com certificados qualificados emitidos por entidades que constem na Trusted-Service Status List, nomeadamente, o constante do cartão de cidadão;\nm) Facultar o acesso ao registo de atividades realizadas nas diversas etapas do processo de contratação, com possibilidade de definição de notificações automáticas de eventos;\nn) Permitir importar mapas de quantidades com múltiplos requisitos (matriz n*m) e múltiplos lotes e exportar para formatos XML e ou para folha de cálculo em formato ODF;\no) Dispor de um «relógio/contador» relativo à hora oficial portuguesa indicativo do prazo restante, contado nos termos do CCP, para cada fase do procedimento, designadamente, para efetuar pedidos de esclarecimentos, para identificar erros e omissões, para apresentação de propostas, para audiência prévia, para entrega dos documentos de habilitação e aceitação da minuta do contrato e para prestação da caução;\np) Suportar a realização de leilões eletrónicos invertidos mono e multivariáveis, com uma ou várias rondas, ocultando a identificação dos concorrentes participantes;\nq) Permitir a integração bidirecional com sistemas de informação de gestão das entidades adquirentes, através da plataforma de interoperabilidade da Administração Pública, permitindo o envio de informação para a plataforma de contratação pública e o envio de informação em sentido contrário;\nr) Garantir a possibilidade de auditoria em qualquer momento do processo;\ns) Garantir processo de verificação das características do certificado qualificado para assinatura eletrónica de documentos;\nt) Possibilitar o acesso, por parte da Autoridade da Concorrência, aos dados que permitam a monitorização dos preços apresentados pelos operadores económicos.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 36522,
+        "end": 40623
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

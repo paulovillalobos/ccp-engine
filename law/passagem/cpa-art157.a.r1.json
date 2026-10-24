@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art157.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art157",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "a) Quando estiver sujeito a aprovação ou a referendo;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 160453,
+        "end": 160506
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

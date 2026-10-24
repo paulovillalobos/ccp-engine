@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art11.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art11",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "1 - O formulário relativo a um contrato celebrado na sequência de consulta prévia ou de ajuste direto, previsto no n.º 1 do artigo 127.º do CCP, é construído automaticamente no portal BASE a partir dos dados incluídos no relatório de formação do contrato, bem como dos dados relativos ao valor total pago e ao prazo efetivo de duração do contrato, constantes no relatório de execução ou no relatório final de obra.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 24090,
+        "end": 24504
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

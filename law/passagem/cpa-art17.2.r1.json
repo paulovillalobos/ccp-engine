@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art17.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art17",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O acesso aos arquivos e registos administrativos é regulado por lei.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 48841,
+        "end": 48913
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

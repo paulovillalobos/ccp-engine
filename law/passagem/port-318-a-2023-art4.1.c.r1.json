@@ -1,0 +1,23 @@
+{
+  "id": "port-318-a-2023:art4.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-a-2023",
+  "parent": "port-318-a-2023:art4.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2024-01-23",
+      "text": "c) Tenha ocorrido o respetivo pagamento.",
+      "raw": "raw:dr-consolidado:diploma:port-318-a-2023",
+      "offsets": {
+        "start": 8545,
+        "end": 8585
+      },
+      "valid_from": "2024-01-23",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

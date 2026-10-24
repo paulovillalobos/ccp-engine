@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art81.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art81",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - O prazo para a realização da conferência procedimental é de 60 dias, prorrogável por mais 30 dias, e, no seu decurso, suspendem-se os prazos para a conclusão dos procedimentos nos quais deveriam ser praticados os vários atos envolvidos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 100833,
+        "end": 101073
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

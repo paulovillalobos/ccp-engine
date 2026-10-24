@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art41",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 41.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 41.º\nSistemas e operações\n1 - A empresa gestora garante que a plataforma eletrónica é fiável, nomeadamente:\na) Os procedimentos de operação e segurança estão definidos;\nb) A plataforma eletrónica foi desenhada e desenvolvida de modo a que o risco de falha dos sistemas seja mínimo;\nc) A plataforma eletrónica está protegida de vírus e software malicioso de modo a assegurar a integridades dos sistemas e da informação nestes incluídos.\n2 - As plataformas eletrónicas devem assegurar a disponibilidade da informação para todos os seus utilizadores, exceto nos períodos de manutenção, de acordo com o disposto nos n.os 5 e 6 do artigo 28.º\n3 - As plataformas eletrónicas devem implementar soluções de modo a inibir e minimizar os efeitos de ataques distribuídos de negação de serviços.\n4 - A ligação da plataforma eletrónica à rede pública deve ser assegurada, no mínimo, por duas origens fisicamente independentes.\n5 - Os vários sistemas que compõem a plataforma eletrónica devem estar atualizados e ser corrigidos (patched), de forma expedita, à medida que são descobertas novas vulnerabilidades.\n6 - Todos os serviços das plataformas eletrónicas devem estar sincronizados com o NTP (Network Time Protocol) definido a partir do UTC (Universal Time Coordinated), devendo ser utilizadas duas fontes de tempo diferentes, em que uma delas é obrigatoriamente a hora legal portuguesa.\n7 - Em caso de desastre, as plataformas eletrónicas devem disponibilizar meios capazes de continuar as operações usando sistemas alternativos e assegurar o backup para garantir a integridade e a possibilidade de recuperação da informação.\n8 - A empresa gestora deve especificar na sua política qual o tempo máximo aceitável, na reposição dos serviços.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 53820,
+        "end": 55557
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

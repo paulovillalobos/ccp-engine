@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art161.2.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art161.2",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "g) Os atos que careçam em absoluto de forma legal;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 162406,
+        "end": 162456
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

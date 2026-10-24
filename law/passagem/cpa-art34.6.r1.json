@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art34.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art34",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "6 - As deliberações dos órgãos colegiais só se tornam eficazes depois de aprovadas as respetivas atas ou depois de assinadas as minutas e a eficácia das deliberações constantes da minuta cessa se a ata da mesma reunião não as reproduzir.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 60602,
+        "end": 60839
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

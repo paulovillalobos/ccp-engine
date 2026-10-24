@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art32.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art32",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - As deliberações são tomadas por maioria absoluta de votos dos membros presentes à reunião, salvo nos casos em que, por disposição legal ou estatutária, se exija maioria qualificada ou seja suficiente maioria relativa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 58540,
+        "end": 58761
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

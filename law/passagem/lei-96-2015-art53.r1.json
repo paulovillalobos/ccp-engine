@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art53",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 53.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 53.º\nConfidencialidade da informação\n1 - Nas diferentes fases do procedimento, o acesso aos documentos que constituem as candidaturas, as soluções e as propostas só deve ser possível na data fixada nos termos das regras do procedimento.\n2 - Os documentos que constituem as candidaturas, as soluções e as propostas carregados nas plataformas eletrónicas devem ser encriptados com recurso a técnicas de criptografia assimétrica.\n3 - Para cada procedimento as plataformas eletrónicas devem emitir um certificado próprio e único que permite a encriptação de documentos.\n4 - A entidade adjudicante pode disponibilizar um certificado próprio para a encriptação no âmbito do seu procedimento.\n5 - A plataforma eletrónica deve garantir que todos os documentos que constituem as candidaturas, as soluções e as propostas são cifrados com recurso ao certificado referido no n.º 3 ou no número anterior.\n6 - Nos casos referidos no n.º 3, quando emitidos, os certificados são alvo de procedimentos de retenção da chave privada (key escrow), com controlo multipessoal de duas das três seguintes funções: administrador de sistemas, administrador de segurança e auditor de segurança.\n7 - As plataformas eletrónicas devem assegurar a custódia de chaves privadas e atribuir acesso às mesmas aos membros do júri ou, caso este não exista, a um utilizador da entidade adjudicante devidamente autorizado, para efeitos da desencriptação dos documentos.\n8 - A plataforma eletrónica deve garantir que o acesso à chave privada referido no número anterior é efetuado de forma automatizada, não podendo ser conhecido o segredo de acesso à chave privada por qualquer pessoa ou entidade, incluindo a entidade gestora, que não os membros do júri ou, caso este não exista, um utilizador da entidade adjudicante devidamente autorizado.\n9 - As plataformas eletrónicas devem disponibilizar aos interessados os programas e aplicações que permitem utilizar certificados digitais para cifrar os documentos.\n10 - A circunstância de os documentos serem encriptados não dispensa os interessados do requerimento de classificação de documentos a que alude o n.º 1 do artigo 66.º do CCP para efeitos de restrição ou de limitação do acesso aos mesmos para salvaguarda de direitos do interessado.\n11 - Nos casos referidos no número anterior, a plataforma eletrónica deve garantir que os documentos cuja classificação tenha sido autorizada pela entidade adjudicante apenas sejam visíveis pelos membros do júri, sem prejuízo do disposto no n.º 4 do artigo 66.º do CCP.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 69682,
+        "end": 72209
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

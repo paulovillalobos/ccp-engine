@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art101.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art101",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - No preâmbulo do regulamento, é feita menção de que o respetivo projeto foi objeto de consulta pública, quando tenha sido o caso.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 116435,
+        "end": 116567
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

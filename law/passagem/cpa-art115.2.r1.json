@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art115.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art115",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Não carecem de prova nem de alegação os factos notórios, bem como os factos de que o responsável pela direção do procedimento tenha conhecimento em virtude do exercício das suas funções.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 132006,
+        "end": 132196
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

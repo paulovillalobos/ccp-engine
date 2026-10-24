@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art145.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art145",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os regulamentos sujeitos a termo ou condição resolutiva caducam com a verificação destes.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 152748,
+        "end": 152841
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

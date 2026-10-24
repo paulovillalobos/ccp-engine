@@ -1,0 +1,23 @@
+{
+  "id": "port-371-2017:art3.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-371-2017",
+  "parent": "port-371-2017:art3",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Após a submissão do anúncio, este mantém-se em estado pendente, a aguardar pagamento durante o período máximo de cinco dias seguidos, findo o qual o procedimento de envio é anulado, de forma automática e irreversível, caso o pagamento não seja efetuado.",
+      "raw": "raw:dr-consolidado:diploma:port-371-2017",
+      "offsets": {
+        "start": 7968,
+        "end": 8225
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

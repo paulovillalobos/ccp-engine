@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:dl-197-1999",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:18:16Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "dl-197-1999",
+  "sha256": "d2acd5385514bd4e354caf6ae74257afbf104a1fc2488acdd3aaacb8a73d7d2b",
+  "bytes": "raw_bytes/d2acd5385514bd4e354caf6ae74257afbf104a1fc2488acdd3aaacb8a73d7d2b",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1999-34471675",
+  "captured_at": "2026-10-24T17:18:08Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 45000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "4bbb299bf1caa79ca15dd1df8884226f8980fbd83b92eac5345f95bfce6b24cb",
+    "bytes": "raw_bytes/4bbb299bf1caa79ca15dd1df8884226f8980fbd83b92eac5345f95bfce6b24cb"
+  }
+}

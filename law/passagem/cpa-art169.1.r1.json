@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art169.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art169",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os atos administrativos podem ser objeto de revogação ou anulação administrativas por iniciativa dos órgãos competentes, ou a pedido dos interessados, mediante reclamação ou recurso administrativo.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 171402,
+        "end": 171603
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

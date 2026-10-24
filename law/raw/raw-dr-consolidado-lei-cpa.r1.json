@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:cpa",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:17:53Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "cpa",
+  "sha256": "73e281bff097ebf1fce88ebbc7c39e9c3ee59e813574a4360c52b7cd43b5fb25",
+  "bytes": "raw_bytes/73e281bff097ebf1fce88ebbc7c39e9c3ee59e813574a4360c52b7cd43b5fb25",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322",
+  "captured_at": "2026-10-24T17:17:44Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 60000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "a7011797165212f80575c279a71ebc888bde0fff767d47ca75162c08a2c943d9",
+    "bytes": "raw_bytes/a7011797165212f80575c279a71ebc888bde0fff767d47ca75162c08a2c943d9"
+  }
+}

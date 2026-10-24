@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art42.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art42",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Nos casos de ausência, falta ou impedimento do titular do órgão ou do agente, cabe ao suplente designado na lei, nos estatutos ou no regimento, agir no exercício da competência desse órgão ou agente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 64579,
+        "end": 64782
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

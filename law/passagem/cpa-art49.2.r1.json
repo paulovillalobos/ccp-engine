@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art49.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art49",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O órgão delegante ou subdelegante tem o poder de avocar, bem como o de anular, revogar ou substituir o ato praticado pelo delegado ou subdelegado ao abrigo da delegação ou subdelegação.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 68372,
+        "end": 68561
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

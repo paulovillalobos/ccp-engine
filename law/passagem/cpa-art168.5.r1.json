@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art168.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art168",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "5 - Quando, nos casos previstos nos n.os 1 e 4, o ato se tenha tornado inimpugnável por via jurisdicional, o mesmo só pode ser objeto de anulação administrativa oficiosa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 170315,
+        "end": 170485
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

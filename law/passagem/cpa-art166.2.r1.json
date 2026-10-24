@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art166.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art166",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Os atos cujos efeitos tenham caducado ou se encontrem esgotados só podem ser objeto de anulação administrativa ou de revogação com eficácia retroativa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 166375,
+        "end": 166530
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

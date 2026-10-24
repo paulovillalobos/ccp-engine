@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art163.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art163",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - São anuláveis os atos administrativos praticados com ofensa dos princípios ou outras normas jurídicas aplicáveis, para cuja violação se não preveja outra sanção.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 163670,
+        "end": 163835
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

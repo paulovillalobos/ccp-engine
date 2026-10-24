@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art41.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art41",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "5 - Os vários sistemas que compõem a plataforma eletrónica devem estar atualizados e ser corrigidos (patched), de forma expedita, à medida que são descobertas novas vulnerabilidades.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 54741,
+        "end": 54923
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

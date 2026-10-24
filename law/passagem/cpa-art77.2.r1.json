@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art77.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art77",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - As conferências procedimentais podem dizer respeito a um único procedimento ou a vários procedimentos conexos, e dirigir-se à tomada de uma única decisão ou de várias decisões conjugadas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 95257,
+        "end": 95448
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

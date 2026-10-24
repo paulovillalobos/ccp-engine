@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-96-2015",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:24:34Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-96-2015",
+  "sha256": "d4db84f52103a9ae954ad5c7435e3ecc32db6d948445fefab89766b34dbffdbd",
+  "bytes": "raw_bytes/d4db84f52103a9ae954ad5c7435e3ecc32db6d948445fefab89766b34dbffdbd",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://data.dre.pt/eli/lei/96/2015/08/17/p/dre",
+  "captured_at": "2026-10-24T17:24:27Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "ec416ad1856102a5705e3131072cc67bd5bebfd8a3722a944bdc57883035b878",
+    "bytes": "raw_bytes/ec416ad1856102a5705e3131072cc67bd5bebfd8a3722a944bdc57883035b878"
+  }
+}

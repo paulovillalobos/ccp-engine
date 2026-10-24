@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art114.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art114",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - Da notificação do ato administrativo devem constar:\na) O texto integral do ato administrativo, incluindo a respetiva fundamentação, quando deva existir;\nb) A identificação do procedimento administrativo, incluindo a indicação do autor do ato e a data deste;\nc) A indicação do órgão competente para apreciar a impugnação administrativa do ato e o respetivo prazo, no caso de o ato estar sujeito a impugnação administrativa necessária.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 130467,
+        "end": 130904
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

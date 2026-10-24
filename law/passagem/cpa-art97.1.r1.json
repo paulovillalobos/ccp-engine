@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art97.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art97",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os interessados podem apresentar aos órgãos competentes petições em que solicitem a elaboração, modificação ou revogação de regulamentos, as quais devem ser fundamentadas, sem o que a Administração não toma conhecimento delas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 113147,
+        "end": 113377
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

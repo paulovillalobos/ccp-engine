@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art4.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art4",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "1 - O portal BASE disponibiliza publicamente informação sobre:\na) Os anúncios publicados no Diário da República relativos a procedimentos de formação de contratos públicos;\nb) Os anúncios publicados no Jornal Oficial da União Europeia relativos a procedimentos de formação e de execução de contratos públicos;\nc) Acesso às peças do procedimento;\nd) A formação e a execução dos contratos públicos, incluindo:\ni) A explicitação precisa e completa dos bens, serviços ou obras objeto do contrato;\nii) Código CPV;\niii) Preço base do procedimento;\niv) Identificação dos convidados nos procedimentos não concursais;\nv) Identificação do adjudicatário e dos restantes concorrentes;\nvi) Identificação dos candidatos;\nvii) Preço contratual;\nviii) Data da decisão de adjudicação, da celebração do contrato, de início de execução e de fecho do contrato;\nix) Prazo de execução;\nx) Compra pública estratégica;\nxi) Preço total efetivo;\nxii) A identificação de impugnações do procedimento;\nxiii) A publicitação dos contratos, incluindo anexos e aditamentos, com exceção das informações que se relacionem com segredos de natureza comercial, industrial ou outra e das informações respeitantes a dados pessoais;\nxiv) A identificação das partes do contrato;\nxv) A identificação das entidades concessionárias;\nxvi) Prazo de execução do contrato;\nxvii) Causas de extinção do contrato;\ne) A disponibilização e alienação de bens móveis;\nf) As decisões definitivas de aplicação da sanção de proibição de participação previstas nos artigos 460.º e 464.º-A do CCP, durante o período da respetiva proibição;\ng) As modificações objetivas de contratos, as quais ficam disponibilizadas até seis meses após a extinção do contrato, nos termos do n.º 1 do artigo 315.º do CCP.\nh) Causas de não celebração de contrato;\ni) As alterações aos blocos de dados comunicados.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 6358,
+        "end": 8190
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

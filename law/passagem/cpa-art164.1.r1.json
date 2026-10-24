@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art164.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art164",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - São aplicáveis à ratificação, reforma e conversão dos atos administrativos as normas que regulam a competência para a anulação administrativa dos atos inválidos e a sua tempestividade.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 164800,
+        "end": 164988
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

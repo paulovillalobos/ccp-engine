@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:lei:cp",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:19:42Z",
+  "source": "dr-consolidado",
+  "kind": "lei",
+  "source_id": "cp",
+  "sha256": "f4a6bfcb90e93b9f0d019a93ad55bef973913e0d21aa64f07d05c0ece2b5ef7c",
+  "bytes": "raw_bytes/f4a6bfcb90e93b9f0d019a93ad55bef973913e0d21aa64f07d05c0ece2b5ef7c",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34437675",
+  "captured_at": "2026-10-24T17:19:33Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 90000"
+  },
+  "text": {
+    "extractor": "dr-article-history@1",
+    "sha256": "06a2dcb9a511a46595e5d846e39e73f452f57232f94c663b314de45c968424d6",
+    "bytes": "raw_bytes/06a2dcb9a511a46595e5d846e39e73f452f57232f94c663b314de45c968424d6"
+  }
+}

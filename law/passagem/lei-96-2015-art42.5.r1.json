@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art42.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:art42",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "5 - O sistema deve utilizar o protocolo TLS de modo a garantir uma proteção suficiente, devendo estar criadas todas as medidas que se seguem ou outras de eficácia equivalente:\na) O sistema deve exigir a versão mais atualizada do protocolo HTTPS (Hypertext Transfer Protocol Secure) para aceder a quaisquer recursos sensíveis utilizando certificados que sejam válidos, não caducados, não revogados e compatíveis com todos os domínios utilizados pelo sítio;\nb) O sistema deve apor a indicação «seguro» em todos os cookies sensíveis;\nc) O servidor deve configurar o fornecedor do TLS de modo a que este apenas aceite algoritmos de cifragem de dados conformes com as melhores práticas;\nd) Os utilizadores devem ser informados de que devem ativar a funcionalidade TLS no seu navegador.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 57973,
+        "end": 58753
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

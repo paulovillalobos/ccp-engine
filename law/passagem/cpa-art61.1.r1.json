@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art61.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art61",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Salvo disposição legal em contrário, na instrução dos procedimentos devem ser preferencialmente utilizados meios eletrónicos, tendo em vista:\na) Facilitar o exercício de direitos e o cumprimento de deveres através de sistemas que, de forma segura, fácil, célere e compreensível, sejam acessíveis a todos os interessados;\nb) Tornar mais simples e rápido o acesso dos interessados ao procedimento e à informação;\nc) Simplificar e reduzir a duração dos procedimentos, promovendo a rapidez das decisões, com as devidas garantias legais.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 74185,
+        "end": 74721
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

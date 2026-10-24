@@ -38,25 +38,27 @@ EFFECTS = {"Alterado": "altera", "Aditado": "adita", "Revogado": "revoga", "REVO
 # B2 decides from the act's own entry-into-force article and records the decision in the vigencia's note).
 NOTE_RE = re.compile(
     r"^(?:NOTA: )?(?P<effect>Alterado|Aditado|Revogado|REVOGADO|Retificado|Rectificado|Republicado) pelo/a "
-    r"(?:(?P<article>Artigo [0-9]+\.º(?:-[A-Z])?|Parte [IVXLC]+|Anexo(?: [IVXLC]+)?) do/a )?(?P<diploma>.+?) - Diário da República n\.º (?P<issue>[0-9]+(?:-[A-Z])?/[0-9]{4})"
-    r"(?:, (?P<supl>[0-9]+º Suplemento))?, Série I(?:-[AB])? de (?P<published>[0-9]{4}-[0-9]{2}-[0-9]{2})(?:, em vigor a partir de (?P<valid_from>[0-9]{4}-[0-9]{2}-[0-9]{2}))?"
+    r"(?:(?P<article>Artigo [0-9]+\.º(?:-[A-Z])?|Artigo único|Parte [IVXLC]+|Anexo(?: [IVXLC]+)?) do/a )?(?P<diploma>.+?) - "
+    r"Diário d(?:a República|o Governo) n\.º (?P<issue>[0-9]+(?:-[A-Z])?/[0-9]{4})"
+    r"(?:, (?P<supl>[0-9]+º Suplemento|Suplemento(?: n\.º [0-9]+)?))?, Série I(?:-[AB])? de (?P<published>[0-9]{4}-[0-9]{2}-[0-9]{2})"
+    r"(?:, em vigor a partir de (?P<valid_from>[0-9]{4}-[0-9]{2}-[0-9]{2})(?: 00:00:00)?)?"
     r"(?:, produz efeitos a partir de [0-9]{4}-[0-9]{2}-[0-9]{2})?\.?$")
 ACT_KINDS = {"decreto-lei": "dl", "lei": "lei", "declaração de retificação": "ret", "declaração de rectificação": "ret", "lei orgânica": "lo",
              "decreto legislativo regional": "dlr", "portaria": "port", "decreto regulamentar": "dreg",
-             "resolução da assembleia da república": "rar"}
+             "resolução da assembleia da república": "rar", "acórdão do tribunal constitucional": "actc"}
 
 
 def parse_note(text):
     m = NOTE_RE.match(text.strip())
     if not m:
         return None
-    art = m["article"][len("Artigo "):] if m["article"] and m["article"].startswith("Artigo ") else m["article"]
+    art = m["article"][len("Artigo "):] if m["article"] and m["article"].startswith("Artigo ") else m["article"]  # "único" too
     return {"effect": EFFECTS[m["effect"]], "article_of_act": art, "diploma": m["diploma"], "dr_issue": m["issue"] + (f" {m['supl']}" if m["supl"] else ""),
             "published": m["published"], "valid_from": m["valid_from"]}
 
 
 def norma_slug(diploma: str) -> str:
-    m = re.match(r"^(?P<kind>.+?) n\.º (?P<num>[0-9]+(?:-[A-Z])?)/(?P<year>[0-9]{4}|[0-9]{2})(?:/(?P<reg>[A-Z]))?$", diploma.strip())
+    m = re.match(r"^(?P<kind>.+?) n\.º (?P<num>[0-9]+(?:-[A-Z]{1,2})?)/(?P<year>[0-9]{4}|[0-9]{2})(?:/(?P<reg>[A-Z]))?$", diploma.strip())
     if not m:
         raise ValueError(f"not a DR act reference: {diploma!r}")
     kind = ACT_KINDS.get(m["kind"].lower())

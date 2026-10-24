@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art64.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art64",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "2 - O processo administrativo é preferencialmente desmaterializado, através de ferramentas que permitam a inclusão dos documentos que nele são incorporados e impeçam a sua violação e extravio.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 79568,
+        "end": 79760
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

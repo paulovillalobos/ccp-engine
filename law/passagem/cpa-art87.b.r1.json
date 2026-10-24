@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art87.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art87",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "b) Não se inclui na contagem o dia em que ocorra o evento a partir do qual o prazo começa a correr;",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 106871,
+        "end": 106970
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

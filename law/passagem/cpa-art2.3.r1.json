@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art2.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art2",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Os princípios gerais da atividade administrativa e as disposições do presente Código que concretizam preceitos constitucionais são aplicáveis a toda e qualquer atuação da Administração Pública, ainda que meramente técnica ou de gestão privada.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 40606,
+        "end": 40853
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

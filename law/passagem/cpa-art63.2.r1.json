@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art63.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art63",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Presume-se que o interessado consentiu na utilização de telefax, de telefone ou de meios eletrónicos de comunicação quando, apesar de não ter procedido à indicação constante do número anterior, tenha estabelecido contacto regular através daqueles meios.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 78638,
+        "end": 78895
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

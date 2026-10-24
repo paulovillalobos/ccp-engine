@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art13",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 13.º",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "Artigo 13.º\nResponsabilidade pela informação\n1 - Quando o preenchimento dos blocos de dados é realizado diretamente por um utilizador, este terá de se encontrar certificado e reconhecido como representante da entidade adjudicante em causa no portal BASE.\n2 - A condição de utilizador mencionado no número anterior, é pessoal e intransmissível.\n3 - Os blocos de dados são introduzidos através da respetiva interface com o portal BASE, via processo de preenchimento interativo.\n4 - A finalização do preenchimento por parte do utilizador, após a introdução dos diversos dados e das eventuais revisões e correções que entenda necessárias, ocorre no momento da submissão do documento no portal BASE.\n5 - Sempre que o IMPIC, I. P., verificar a existência de incorreções ou incoerências nos dados fornecidos, informa, através de meios eletrónicos, a entidade adjudicante para que proceda à correção dos mesmos no prazo de 10 dias úteis, findo os quais, procede à comunicação dos factos às entidades fiscalizadoras.\n6 - A informação constante do portal BASE é da exclusiva responsabilidade das entidades adjudicantes, independentemente da via de transmissão ao portal, não podendo a entidade gestora do portal substituir-se às mesmas.\n7 - Sem prejuízo do disposto no número anterior, podem ser criados sistemas de alerta ao utilizador, ativados durante o preenchimento dos dados, em função de incorreções ou incoerências automaticamente detetadas.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 25857,
+        "end": 27296
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

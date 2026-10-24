@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art144.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art144",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - A retroatividade da declaração de invalidade não afeta os casos julgados nem os atos administrativos que se tenham tornado inimpugnáveis, salvo, neste último caso, quando se trate de atos desfavoráveis para os destinatários.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 152456,
+        "end": 152684
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

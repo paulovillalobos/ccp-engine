@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art61.3.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art61.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "b) A obter os instrumentos necessários à comunicação por via eletrónica com os serviços da Administração, designadamente nome de utilizador e palavra-passe para acesso a plataformas eletrónicas simples e, quando legalmente previsto, conta de correio eletrónico e assinatura digital certificada.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 75244,
+        "end": 75538
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

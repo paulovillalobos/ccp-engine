@@ -23,7 +23,8 @@ Steps:
        (D30). Every part's version that starts
        on a date the article has a vigencia for gets a vigencia quoting the same note (same act, same effect)
     6. writes: a new id is appended; a changed object becomes a new revision; an equal one is left alone (the store
-       is append-only: nothing is rewritten). Prints the counts.
+       is append-only: nothing is rewritten). Prints the counts and writes <store>/build-report.json: the captured acts
+       not structured and why, the articles left out and why (read by tools/coverage.py).
 No network, no model.
 """
 import argparse
@@ -55,7 +56,7 @@ def act_links(html: str) -> dict:
     out = {}
     for href, label in NOTE_LINK.findall(html):
         name = " ".join(unescape(label).split()).split(" - Diário da República")[0].strip()
-        if re.match(r"^.+ n\.º [0-9]+(?:-[A-Z])?/[0-9]{4}$", name):
+        if re.match(r"^.+ n\.º [0-9]+(?:-[A-Z]{1,2})?/(?:[0-9]{4}|[0-9]{2})(?:/[A-Z0-9])?$", name):
             out.setdefault(name, DR + href)
     return out
 
@@ -111,6 +112,11 @@ def own_pages(store):
     return [store.current(i) for i in ids]
 
 
+def structured_page(store, raws, raw):
+    """The page an act's passages come from: its consolidated page when both were read (it holds the text in force)."""
+    return not (raw["kind"] == "diploma" and any(r["kind"] == "lei" and r["source_id"] == raw["source_id"] for r in raws))
+
+
 def header(store, raw):
     """{title, scope, status, published, eli} as the page prints them; scope is the page's own summary line."""
     text = store.raw_text(raw)
@@ -140,19 +146,41 @@ def header(store, raw):
     return out
 
 
+def masked(text):
+    """(text, lines masked): a note the grammar cannot read, or whose act has no DR number, is written "nota: " (same
+    length, so every offset stays) and so is not a note to notes_to_vigencias. Only for other acts' pages: the CCP's
+    735 notes all read (D33)."""
+    out, bad = [], []
+    for line in text.split("\n"):
+        if line.startswith("NOTA: "):
+            n = vigente.parse_note(line[len("NOTA: "):])
+            ok = n is not None
+            if ok:
+                try:
+                    vigente.norma_slug(n["diploma"])
+                except ValueError:
+                    ok = False
+            if not ok:
+                bad.append(line)
+                line = "nota: " + line[len("NOTA: "):]
+        out.append(line)
+    return "\n".join(out), bad
+
+
 def register_from_notes(normas, raw, text, recorded_at, of_title):
     """Every act a note of this consolidated page names, registered from the note (title, its own DR link)."""
     links = act_links(store_html(raw))
     effects = {}
-    for _, n, _, _ in note_lines(text):
+    for _, n, _, _ in note_lines(masked(text)[0] if raw["id"] != CONSOLIDATED else text):
         effects.setdefault(n["diploma"], set()).add(n["effect"])
     for diploma in sorted(effects):
         slug = vigente.norma_slug(diploma)
         nid = f"norma:{slug}"
-        if diploma not in links:
+        if diploma not in links and raw["id"] == CONSOLIDATED:
             raise ValueError(f"{diploma}: no DR link in the notes of {raw['id']}")
+        # a note with no link of its own: the address is the page the note was read on
         n = normas.setdefault(nid, {"id": nid, "revision": 1, "recorded_at": recorded_at, "title": diploma, "short": slug,
-                                    "jurisdiction": jurisdiction(slug), "scope": "", "source": {"url": links[diploma], "raw": []}})
+                                    "jurisdiction": jurisdiction(slug), "scope": "", "source": {"url": links.get(diploma, raw["url"]), "raw": []}})
         if raw["id"] not in n["source"]["raw"]:
             n["source"]["raw"].append(raw["id"])
         if not n.get("_own"):
@@ -162,6 +190,7 @@ def register_from_notes(normas, raw, text, recorded_at, of_title):
 
 
 _HTML = {}
+SKIPPED_PARTS = {}  # norma id -> articles left out because a note after them cannot be read (D33)
 
 
 def store_html(raw):
@@ -185,13 +214,38 @@ def build_normas(store, recorded_at):
         if nid == "norma:ccp":
             n["source"]["raw"] += sorted(r["id"] for r in store.objects["raw"] if r["kind"] == "artigo-historico" and r["revision"] == 1)
         prev = normas.get(nid)
-        if prev:  # a page registered from notes before its own capture was read
-            n["source"]["raw"] += [r for r in prev["source"]["raw"] if r not in n["source"]["raw"]]
+        if prev and prev.get("_own"):  # the same act read twice: its detail page and its consolidated page
+            prev["source"]["raw"].append(raw["id"])
+            if raw["kind"] == "lei":
+                prev["source"]["url"] = raw["url"]
+            continue
         normas[nid] = n
     for raw in own_pages(store):
         if raw["kind"] == "lei":
             register_from_notes(normas, raw, texts[raw["id"]], recorded_at, normas[f"norma:{raw['source_id']}"]["title"])
+    register_timeline(store, normas, recorded_at)
     return normas
+
+
+def register_timeline(store, normas, recorded_at):
+    """Every act of the CCP's timeline as the DR prints it on a history page (Navigation.TimelineItem): title and
+    address from the item's own link; an act already registered only gains that page among its sources."""
+    pages = sorted(r["id"] for r in store.objects["raw"] if r["kind"] == "artigo-historico")
+    if not pages:
+        return
+    raw = store.current(pages[0])
+    html = store.raw_path(raw).read_text(encoding="utf-8")
+    for item in html.split('data-block="Navigation.TimelineItem"')[1:]:
+        link = re.search(r'<a [^>]*href="(/dr/detalhe/[^"]+)"[^>]*>(.*?)</a>', item, re.S)
+        if not link:
+            continue
+        title = " ".join(unescape(re.sub("<[^>]+>", "", link.group(2))).split()).split(" - ")[0].strip()
+        slug = vigente.norma_slug(title)
+        nid = f"norma:{slug}"
+        if nid in normas:
+            continue
+        normas[nid] = {"id": nid, "revision": 1, "recorded_at": recorded_at, "title": title, "short": slug, "jurisdiction": jurisdiction(slug),
+                       "scope": "ato da linha temporal do Código dos Contratos Públicos no DR", "source": {"url": DR + link.group(1), "raw": [raw["id"]]}}
 
 
 def public(normas):
@@ -214,12 +268,16 @@ def general_rule(store, normas):
     return None
 
 
-def act_start(ps, published, rule):
+def act_start(ps, published, rule, norma_id=None):
     """(date, the passage version that says it) for an act's own articles: its "Entrada em vigor" article; when it has
     none, the general rule of Lei n.º 74/98, art. 2.º, n.º 2 (D31). Read, never guessed: (None, None) when neither."""
     if not published:
         return None, None
     art = entry_article(ps)
+    if norma_id == "norma:dl-18-2008" and art:
+        # «seis meses após a data da sua publicação»: the day the DR's consolidated page gives as the "Versão inicial"
+        # of the decree and the code it approves (INITIAL, D24), quoted from art. 18.º
+        return INITIAL, art["versions"][0]
     src = art["versions"][0] if art else rule
     return (vigente.entry_into_force(published, src["text"]), src) if src else (None, None)
 
@@ -244,12 +302,51 @@ def dated(ps, start):
     return ps
 
 
+def drop_owners_of_masked(ps, text):
+    """(passages without the articles a masked note follows, the ids left out)."""
+    import bisect
+    lines = text.split("\n")
+    starts, pos = [], 0
+    for line in lines:
+        starts.append(pos)
+        pos += len(line) + 1
+    owners = sorted((p["versions"][0]["offsets"]["start"], p["id"]) for p in ps if p["kind"] in ("artigo", "anexo") and ".q" not in p["id"])
+    keys = [o for o, _ in owners]
+    drop = set()
+    for i, line in enumerate(lines):
+        if line.startswith("nota: "):
+            k = bisect.bisect_left(keys, starts[i]) - 1
+            if k >= 0:
+                drop.add(owners[k][1])
+    return [p for p in ps if not any(p["id"] == d or p["id"].startswith(d + ".") for d in drop)], drop
+
+
 def consolidated_act(store, raw, norma, normas, rule):
     """Another act's consolidated page (no history captured): one version per passage, the text in force at capture,
     from the date of its article's newest note (else the act's entry into force); the vigencia of that date only."""
-    text = store.raw_text(raw)
+    text, bad = masked(store.raw_text(raw))
     ps = structure.structure(norma, text, raw["id"], "0001-01-01")
-    vg = vigente.notes_to_vigencias(text, raw["id"], ps, normas)
+    if bad:  # an article followed by a note that cannot be read is left out: its date would be a guess (D33)
+        ps, drop = drop_owners_of_masked(ps, text)
+        SKIPPED_PARTS[norma["id"]] = sorted(drop)
+    for _ in range(50):
+        try:
+            vg = vigente.notes_to_vigencias(text, raw["id"], ps, normas)
+            break
+        except ValueError as exc:  # a dateless note nothing dates: masked like an unreadable one, its article left out
+            m = re.match(r"note of (.+?) without a date", str(exc))
+            if not m:
+                raise
+            lines = text.split("\n")
+            for i, line in enumerate(lines):
+                if line.startswith("NOTA: "):
+                    n = vigente.parse_note(line[len("NOTA: "):])
+                    if n and n["diploma"] == m.group(1) and not n["valid_from"]:
+                        lines[i] = "nota: " + line[len("NOTA: "):]
+            text = "\n".join(lines)
+            ps, dropped = drop_owners_of_masked(ps, text)
+            SKIPPED_PARTS.setdefault(norma["id"], [])
+            SKIPPED_PARTS[norma["id"]] = sorted(set(SKIPPED_PARTS[norma["id"]]) | dropped)
     latest = {}
     for v in vg:
         if v["valid_to"] is None:
@@ -282,9 +379,10 @@ def build_passages(store, normas):
     text = store.raw_text(ccp)
     for p in structure.structure(normas["norma:ccp"], text, ccp["id"], INITIAL):
         out[p["id"]] = p
-    for raw in own_pages(store):
+    pages = own_pages(store)
+    for raw in pages:
         norma = normas[f"norma:{raw['source_id']}"]
-        if raw["id"] == CONSOLIDATED:
+        if raw["id"] == CONSOLIDATED or not structured_page(store, pages, raw):
             continue
         try:
             if raw["kind"] == "regulamento":
@@ -295,7 +393,7 @@ def build_passages(store, normas):
                 ps = structure.structure(norma, store.raw_text(raw), raw["id"], INITIAL)
                 if not ps:
                     raise ValueError("no articles of its own (a declaração de retificação lists corrections)")
-                start, src = act_start(ps, norma["_header"]["published"], rule)  # read, never guessed
+                start, src = act_start(ps, norma["_header"]["published"], rule, norma["id"])  # read, never guessed
                 if not start:
                     raise ValueError("no readable entry-into-force article nor general rule; its passages would have no date")
                 ps = dated(ps, start)
@@ -502,11 +600,14 @@ def main():
     counts = {}
     for name, objs in (("norma", public(normas).values()), ("passagem", passages.values()), ("vigencia", vigencias.values())):
         counts[name] = dict(write_all(store, writer, sorted(objs, key=lambda o: o["id"]), recorded_at, False))
+    (root / "build-report.json").write_text(json.dumps({"tool": VERSION, "not_structured": skipped, "articles_left_out": SKIPPED_PARTS},
+                                                      ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     kinds = Counter(p["kind"] for p in passages.values() if p["norma"] == "norma:ccp")
     print(json.dumps({"tool": VERSION, "store": str(root), "normas": len(normas), "passages": len(passages),
                       "ccp_passages_by_kind": dict(kinds.most_common()), "ccp_artigos": kinds["artigo"],
                       "vigencias": len(vigencias), "versions": sum(len(p["versions"]) for p in passages.values()),
-                      "not_structured": skipped, "writes": counts,
+                      "not_structured": skipped, "articles_left_out": {k: {"count": len(v), "ids": v[:6]} for k, v in SKIPPED_PARTS.items()},
+                      "writes": counts,
                       "history": {k: (v if isinstance(v, int) else {"count": len(v), "first": v[:8]}) for k, v in report.items()}},
                      ensure_ascii=False, indent=1))
 

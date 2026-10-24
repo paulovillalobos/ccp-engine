@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art179.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art179",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Quando, por força de um ato administrativo, devam ser pagas prestações pecuniárias a uma pessoa coletiva pública, ou por ordem desta, segue-se, na falta de pagamento voluntário no prazo fixado, o processo de execução fiscal, tal como regulado na legislação do processo tributário.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 180129,
+        "end": 180413
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

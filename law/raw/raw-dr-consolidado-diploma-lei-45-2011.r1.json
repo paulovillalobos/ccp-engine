@@ -1,0 +1,24 @@
+{
+  "id": "raw:dr-consolidado:diploma:lei-45-2011",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:24:57Z",
+  "source": "dr-consolidado",
+  "kind": "diploma",
+  "source_id": "lei-45-2011",
+  "sha256": "272e2b5b824be365cab7e55b0cbfc1544d8b028f70b10cb5146b4a64cf5ca6b7",
+  "bytes": "raw_bytes/272e2b5b824be365cab7e55b0cbfc1544d8b028f70b10cb5146b4a64cf5ca6b7",
+  "media_type": "text/html",
+  "encoding": "utf-8",
+  "url": "https://data.dre.pt/eli/lei/45/2011/06/24/p/dre",
+  "captured_at": "2026-10-24T17:24:49Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "headless Chrome --dump-dom virtual-time-budget 30000"
+  },
+  "text": {
+    "extractor": "dr-html-blocks@1",
+    "sha256": "adf8903eebb217c6a600201240f623181dfdbf101fd8f7c175992cbf3fda3524",
+    "bytes": "raw_bytes/adf8903eebb217c6a600201240f623181dfdbf101fd8f7c175992cbf3fda3524"
+  }
+}

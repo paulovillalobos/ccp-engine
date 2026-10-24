@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art199.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art199",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Nos casos expressamente previstos na lei, há lugar a recursos administrativos:\na) Para órgão da mesma pessoa coletiva que exerça poderes de supervisão;\nb) Para o órgão colegial, de atos ou omissões de qualquer dos seus membros, comissões ou secções;\nc) Para órgão de outra pessoa coletiva que exerça poderes de tutela ou superintendência.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 194115,
+        "end": 194457
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

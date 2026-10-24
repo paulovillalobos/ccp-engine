@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art85.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art85",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os direitos reconhecidos nos artigos 82.º a 84.º são extensivos a quaisquer pessoas que provem ter interesse legítimo no conhecimento dos elementos que pretendam.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 105857,
+        "end": 106023
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

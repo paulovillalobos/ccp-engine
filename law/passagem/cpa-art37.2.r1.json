@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art37.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art37",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - São igualmente irrelevantes as modificações de direito, exceto se o órgão a que o procedimento estava afeto for extinto ou deixar de ser competente ou se lhe for atribuída a competência de que inicialmente carecesse.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 61995,
+        "end": 62215
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

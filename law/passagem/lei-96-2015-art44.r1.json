@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art44",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 44.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 44.º\nSegurança de rede\n1 - A ligação da plataforma eletrónica à Internet deve ser protegida por um sistema de proteção de fronteira.\n2 - Todo o tráfego destinado à plataforma eletrónica deve ser inspecionado e registado.\n3 - As regras do sistema de proteção de fronteira devem rejeitar o tráfego que não é necessário à utilização e à administração segura do sistema.\n4 - A plataforma eletrónica deve estar alojada num segmento da rede de produção devidamente protegido, separado de eventuais segmentos utilizados para alojar sistemas que não são de produção, como ambientes de desenvolvimento ou de testes.\n5 - A rede local (LAN) deve cumprir, no mínimo, as seguintes medidas de segurança:\na) Lista de acesso Layer 2/ segurança dos portos (port switch);\nb) Os portos não utilizados/necessários devem ser desativados;\nc) A DMZ (demilitarized zone) deve encontrar-se numa rede local virtual (VLAN) ou LAN própria;\nd) Não devem estar ativas interligações (trunking) L2 em portas desnecessárias.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 59668,
+        "end": 60666
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

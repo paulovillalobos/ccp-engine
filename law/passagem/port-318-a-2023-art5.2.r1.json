@@ -1,0 +1,23 @@
+{
+  "id": "port-318-a-2023:art5.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-a-2023",
+  "parent": "port-318-a-2023:art5",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2024-01-23",
+      "text": "2 - A INCM disponibiliza aos utilizadores meios de pagamento em tempo real, quer por via eletrónica, quer por via presencial, que permitam o reconhecimento imediato do pagamento efetuado.",
+      "raw": "raw:dr-consolidado:diploma:port-318-a-2023",
+      "offsets": {
+        "start": 9437,
+        "end": 9624
+      },
+      "valid_from": "2024-01-23",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

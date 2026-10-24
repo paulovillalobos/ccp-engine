@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art161.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art161",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - São nulos os atos para os quais a lei comine expressamente essa forma de invalidade.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 161777,
+        "end": 161865
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

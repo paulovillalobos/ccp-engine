@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art143.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art143",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - São inválidos os regulamentos que sejam desconformes com a Constituição, a lei e os princípios gerais de direito administrativo ou que infrinjam normas de direito internacional ou de direito da União Europeia.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 150813,
+        "end": 151026
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

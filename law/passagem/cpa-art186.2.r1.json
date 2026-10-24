@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art186.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art186",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Não pode reclamar nem recorrer quem, sem reserva, tenha aceitado, expressa ou tacitamente, um ato administrativo depois de praticado.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 184716,
+        "end": 184853
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

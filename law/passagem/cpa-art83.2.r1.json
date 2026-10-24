@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art83.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art83",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O direito referido no número anterior abrange os documentos relativos a terceiros, sem prejuízo da proteção dos dados pessoais nos termos da lei.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 104299,
+        "end": 104448
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

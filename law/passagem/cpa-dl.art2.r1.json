@@ -1,0 +1,23 @@
+{
+  "id": "cpa:dl.art2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": null,
+  "kind": "artigo",
+  "label": "Artigo 2.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 2.º\nAprovação\nÉ aprovado, em anexo ao presente decreto-lei, que dele faz parte integrante, o novo Código do Procedimento Administrativo, doravante designado por Código.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 34736,
+        "end": 34911
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

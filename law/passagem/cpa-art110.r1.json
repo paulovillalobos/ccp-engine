@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art110",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:parte-iii.titulo-ii.capitulo-ii.seccao-ii",
+  "kind": "artigo",
+  "label": "Artigo 110.º",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "Artigo 110.º\nNotificação do início do procedimento\n1 - O início do procedimento é notificado às pessoas cujos direitos ou interesses legalmente protegidos possam ser lesados pelos atos a praticar e que possam ser desde logo nominalmente identificadas.\n2 - Não há lugar à notificação determinada no número anterior nos casos em que a lei a dispense e naqueles em que a mesma possa prejudicar a natureza secreta ou confidencial da matéria, como tal classificada nos termos legais, ou a oportuna adoção das providências a que o procedimento se destina.\n3 - A notificação deve indicar a entidade que ordenou a instauração do procedimento, ou o facto que lhe deu origem, o órgão responsável pela respetiva direção, a data em que o mesmo se iniciou, o serviço por onde corre e o respetivo objeto.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 123534,
+        "end": 124324
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

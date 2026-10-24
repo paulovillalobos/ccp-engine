@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art24.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art24",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2020-11-17",
+      "text": "1 - As reuniões extraordinárias têm lugar mediante convocação do presidente, salvo disposição especial.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 52701,
+        "end": 52804
+      },
+      "valid_from": "2020-11-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

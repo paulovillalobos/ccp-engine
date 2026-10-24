@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art165.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art165",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - A anulação administrativa é o ato administrativo que determina a destruição dos efeitos de outro ato, com fundamento em invalidade.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 165994,
+        "end": 166129
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

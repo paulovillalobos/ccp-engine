@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art194.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art194",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - O requerimento de interposição do recurso é apresentado ao autor do ato ou da omissão ou à autoridade a quem seja dirigido, que, neste caso, o remete ao primeiro, no prazo de três dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 189605,
+        "end": 189794
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

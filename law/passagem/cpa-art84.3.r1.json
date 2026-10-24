@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art84.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art84",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Quando os elementos constem de procedimentos informatizados, as certidões, reproduções ou declarações previstas no n.º 1 são passadas, com a devida autenticação, no prazo máximo de três dias, por via eletrónica ou mediante impressão nos serviços da Administração.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 105544,
+        "end": 105811
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art144.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art144",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - A invalidade do regulamento pode ser invocada a todo o tempo por qualquer interessado e pode, também a todo o tempo, ser declarada pelos órgãos administrativos competentes, sem prejuízo do disposto no número seguinte.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 151514,
+        "end": 151735
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art13.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art13",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Não existe o dever de decisão quando, há menos de dois anos, contados da data da apresentação do requerimento, o órgão competente tenha praticado um ato administrativo sobre o mesmo pedido, formulado pelo mesmo particular com os mesmos fundamentos.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 45832,
+        "end": 46084
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

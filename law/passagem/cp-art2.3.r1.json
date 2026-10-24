@@ -1,0 +1,23 @@
+{
+  "id": "cp:art2.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cp",
+  "parent": "cp:art2",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "1995-10-01",
+      "text": "3 - São também revogadas as disposições legais que em legislação penal avulsa proíbem ou restringem a substituição da pena de prisão por multa ou a suspensão da pena de prisão.",
+      "raw": "raw:dr-consolidado:lei:cp",
+      "offsets": {
+        "start": 16663,
+        "end": 16839
+      },
+      "valid_from": "1995-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

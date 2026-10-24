@@ -1,0 +1,23 @@
+{
+  "id": "port-318-b-2023:art7.10",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:port-318-b-2023",
+  "parent": "port-318-b-2023:art7",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2023-10-30",
+      "text": "10 - As entidades adjudicantes ou, as plataformas eletrónicas de contratação pública ou, sempre que possível, as entidades gestoras da solução de faturação eletrónica, deverão transmitir ao portal BASE, no bloco de dados da execução de pagamentos, por sistema de interoperabilidade, os dados das faturas eletrónicas pagas no respetivo contrato.",
+      "raw": "raw:dr-consolidado:lei:port-318-b-2023",
+      "offsets": {
+        "start": 15722,
+        "end": 16066
+      },
+      "valid_from": "2023-10-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art41.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art41",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - Nos casos previstos nos números anteriores, vale a data da apresentação inicial do requerimento para efeitos da sua tempestividade.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 64421,
+        "end": 64556
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

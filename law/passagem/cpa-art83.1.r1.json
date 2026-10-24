@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art83.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art83",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os interessados têm o direito de consultar o processo que não contenha documentos classificados ou que revelem segredo comercial ou industrial ou segredo relativo à propriedade literária, artística ou científica.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 104082,
+        "end": 104298
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

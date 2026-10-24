@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art104.4",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art104",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "4 - Os requerentes podem juntar os elementos que considerem convenientes para precisar ou completar os dados do modelo, os quais devem ser admitidos e tidos em conta pelo órgão ao qual se dirige o requerimento.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 119914,
+        "end": 120124
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

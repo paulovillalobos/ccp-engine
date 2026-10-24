@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art43",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 43.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 43.º\nIntegridade dos dados\n1 - As plataformas eletrónicas não devem partilhar hardware e recursos do SO, nem quaisquer dados, nomeadamente, credenciais de acesso e de cifragem, com qualquer outra aplicação ou sistema.\n2 - Cada transação com sucesso que envolva modificação do conteúdo da informação da plataforma eletrónica deve fazer passar a base de dados (BD) de um estado de integridade para outro estado de integridade.\n3 - Deve ser garantido que todos os dados críticos da plataforma eletrónica são seguros e autênticos, devendo para o efeito ser utilizados algoritmos e chaves fortes, de acordo com as normas internacionais.\n4 - Devem ser considerados como dados críticos, no mínimo, todas as configurações de segurança, perfis de utilizador, dados relativos às peças do procedimento e propostas, bem como os respetivos backups.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 58825,
+        "end": 59667
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

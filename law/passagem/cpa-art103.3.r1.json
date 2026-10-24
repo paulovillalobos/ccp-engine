@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art103.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art103",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "3 - Os requerimentos apresentados nos termos previstos no número anterior são remetidos aos órgãos competentes pelo registo do correio, ou por via eletrónica, no prazo de três dias após o seu recebimento, com a indicação da data em que este se verificou.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 118326,
+        "end": 118580
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

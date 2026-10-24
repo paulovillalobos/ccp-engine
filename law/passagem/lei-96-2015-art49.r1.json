@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art49",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 49.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 49.º\nGestão das chaves criptográficas\n1 - Para a cifragem dos dados devem ser utilizados algoritmos correntes fortes e chaves fortes.\n2 - A integridade das senhas deve ser controlada com técnicas hash que utilizam um algoritmo corrente forte e com técnicas salt adequadas.\n3 - Todas as chaves e senhas devem estar protegidas contra qualquer acesso não autorizado.\n4 - Quando as chaves assimétricas sejam emitidas pela plataforma eletrónica e para efeitos de confidencialidade, devem as mesmas ser alvo de mecanismos e procedimentos de retenção da chave privada (key escrow), com controlo multipessoal.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 64004,
+        "end": 64612
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

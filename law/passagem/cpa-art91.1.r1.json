@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art91.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art91",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Os pareceres são obrigatórios ou facultativos, consoante sejam ou não exigidos por lei, e são vinculativos ou não vinculativos, conforme as respetivas conclusões tenham ou não de ser seguidas pelo órgão competente para a decisão.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 110398,
+        "end": 110631
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

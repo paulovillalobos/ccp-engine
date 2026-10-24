@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art86.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art86",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Exceto quanto ao prazo de decisão do procedimento e na falta de disposição especial ou de fixação pela Administração, o prazo para os atos a praticar pelos órgãos administrativos é de 10 dias.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 106278,
+        "end": 106474
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art62.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art62",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2023-02-11",
+      "text": "2 - Os balcões eletrónicos devem poder intermediar nos procedimentos a serem desenvolvidos entre os interessados e as autoridades administrativas competentes, recebendo os atos de uns e outros, mediante a entrega do correspondente recibo, e transmitindo-o imediatamente.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 76456,
+        "end": 76726
+      },
+      "valid_from": "2023-02-11",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

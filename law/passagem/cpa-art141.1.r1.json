@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art141.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art141",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Não pode ser atribuída eficácia retroativa aos regulamentos que imponham deveres, encargos, ónus, sujeições ou sanções, que causem prejuízos ou restrinjam direitos ou interesses legalmente protegidos, ou afetem as condições do seu exercício.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 150118,
+        "end": 150363
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

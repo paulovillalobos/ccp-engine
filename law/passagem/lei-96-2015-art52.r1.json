@@ -1,0 +1,23 @@
+{
+  "id": "lei-96-2015:art52",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:lei-96-2015",
+  "parent": "lei-96-2015:capitulo-vi.seccao-iii",
+  "kind": "artigo",
+  "label": "Artigo 52.º",
+  "versions": [
+    {
+      "version": "2015-10-16",
+      "text": "Artigo 52.º\nCópias de segurança e recuperação\n1 - A plataforma eletrónica deve incluir uma função para efetuar cópia de segurança da informação associada aos procedimentos de contratação eletrónica.\n2 - Os dados guardados na cópia de segurança devem ser suficientes para recriar o estado do sistema.\n3 - Um utilizador que pertença a um perfil com suficientes privilégios deve ser capaz de invocar a função de cópia de segurança.\n4 - As cópias de segurança devem estar protegidas contra modificação com recursos a mecanismos de assinatura digital.\n5 - As plataformas eletrónicas devem assegurar que a informação relativa a parâmetros críticos de segurança da plataforma eletrónica não está armazenada em claro, devendo ser cifrada com recurso a algoritmos correntes fortes e chaves fortes, conformes às normas internacionais, sendo a gestão de chaves parte integrante do sistema.\n6 - A plataforma eletrónica deve incluir uma função para recuperação com capacidade para repor o sistema através da cópia de segurança.\n7 - Um utilizador que pertença a um perfil com suficientes privilégios deve ser capaz de invocar a função de recuperação.\n8 - Os registos de auditoria são considerados informação sensível, devendo ser preservados de acordo com o definido no artigo 44.º\n9 - Qualquer período de tempo em que os arquivos de auditoria possam estar desativados deve ser registado no respetivo arquivo de auditoria, com indicação da data e hora de início e o registo do respetivo fim.",
+      "raw": "raw:dr-consolidado:diploma:lei-96-2015",
+      "offsets": {
+        "start": 68204,
+        "end": 69681
+      },
+      "valid_from": "2015-10-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

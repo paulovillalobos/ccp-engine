@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art36.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art36",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "2 - É nulo todo o ato ou contrato que tenha por objeto a renúncia à titularidade ou ao exercício da competência conferida aos órgãos administrativos, sem prejuízo da delegação de poderes e figuras afins legalmente previstas.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 61593,
+        "end": 61817
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

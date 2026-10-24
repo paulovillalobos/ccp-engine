@@ -1,0 +1,23 @@
+{
+  "id": "cpa:art166.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:32:46Z",
+  "norma": "norma:cpa",
+  "parent": "cpa:art166",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2015-04-07",
+      "text": "1 - Não são suscetíveis de revogação nem de anulação administrativas:\na) Os atos nulos;\nb) Os atos anulados contenciosamente;\nc) Os atos revogados com eficácia retroativa.",
+      "raw": "raw:dr-consolidado:lei:cpa",
+      "offsets": {
+        "start": 166203,
+        "end": 166374
+      },
+      "valid_from": "2015-04-07",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}
