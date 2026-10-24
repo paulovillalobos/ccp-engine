@@ -160,3 +160,27 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   after known_at in MAN); five overlays generated; redteam 43/43; tools re-registered. Rating 8/10.
 - Next: phase 2 (the builder): B1 then B2 per FILL-PLAN.md; the independent review audits at the end.
 - Why: a gate audited only by the person who wrote it is not audited.
+
+## 2026-10-24 phase 2 decision before B1 (no commit of its own; lands with B1)
+- Done: DECISIONS D27 written before touching the schema: `anexo` added to passagem.kind.
+- Next: B1 with engine/structure.py emitting anexo passages for the code's own annexes.
+- Why: the consolidated CCP's Anexos I–XIV carry validity notes (Anexo V revoked by DL 177/2026, art. 8.º); without an
+  anexo kind those notes have no passage and would be lost from the vigencias.
+
+## 2026-10-24 B1 modules with their own version (commit: B1: structure, passages, vigente notes and clock, read-only API skeleton, package)
+- Done: engine/structure.py (ccp-structure-0.1): a DR working text -> passagem objects with offsets (anexo, parte,
+  titulo, capitulo, secao, artigo, numero, alinea, subalinea; amending quotations hang from the quoting passage as
+  .qN; a code approved in a decree's annex keeps the decree's own articles under "dl."; an act stops at its first
+  annex line or closing formula; fails on duplicates, numbers outside articles, unbalanced quotations). On the
+  consolidated CCP page (dr-article-history@1 text): 3425 passages, 594 artigo (570 code + 18 decree + 8 quoted - 2
+  shared numbering noted by kind), 14 anexo, offsets exact, schema-valid. engine/passages.py (ccp-passages-0.1):
+  passage_text, cite (quote written by code as text[start:end]). engine/vigente.py: notes_to_vigencias (one vigencia
+  per (passage, valid_from), highest effect quoted, valid_to = next date; dateless notes per D28), vigente(store,
+  date), entry_into_force; NOTE_RE also reads "Parte III do/a" and "Resolução da Assembleia da República" (rar-).
+  tools/serve.py (ccp-serve-0.1): the §9 routes; saude/openapi 200, the rest 501 until phase 3; keyed routes 401
+  without X-API-Key; 64 KB body (413), JSON only (415), 30 s socket timeout, no trace, no path echoed (404 lists
+  routes). tools/package.sh: dist/ccp-service without data/, fixtures, tests or secrets; smoke test /v1/saude OK.
+  Schema: passagem.kind + anexo (DECISIONS D27, written before the change). DECISIONS D28 (dateless notes).
+  Registered ferramenta:vigente@2, structure@1, passages@1. test_b1 green; verify ok; 52 tests green.
+- Next: B2a.1 capture the history view of every article with a note (368 on the page: 365 code, 3 decree).
+- Why: the law can only be loaded once the text has a structure with offsets and the notes have a grammar.

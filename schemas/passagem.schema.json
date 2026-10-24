@@ -9,7 +9,7 @@
     "id": {"$ref": "defs.schema.json#/$defs/id_passagem"},
     "norma": {"$ref": "defs.schema.json#/$defs/id_norma"},
     "parent": {"oneOf": [{"$ref": "defs.schema.json#/$defs/id_passagem"}, {"type": "null"}]},
-    "kind": {"type": "string", "enum": ["parte", "titulo", "capitulo", "secao", "artigo", "numero", "alinea", "subalinea", "epigrafe"]},
+    "kind": {"type": "string", "enum": ["anexo", "parte", "titulo", "capitulo", "secao", "artigo", "numero", "alinea", "subalinea", "epigrafe"]},
     "label": {"type": "string", "minLength": 1, "description": "As printed: Artigo 20.º, 1, a)"},
     "versions": {
       "type": "array",

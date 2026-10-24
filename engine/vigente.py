@@ -16,13 +16,18 @@ What the DR gives (read 2026-10-24, DECISIONS D24):
         initial_valid_from (the norm's entry into force); valid_to = the next version's valid_from or None.
         Rectifications: versions sharing a valid_from are one legal version; the newest text wins and the others are
         kept in "rectified" (a retificação replaces the text as of the same date).
-    notes_to_vigencias(text, raw_id, passages, normas) -> list[vigencia]      B2 (red: tests/fill/test_b2_ccp_capture.py)
-    vigente(store, date) -> dict[passage_id, version]                          B2 (red)
+    notes_to_vigencias(text, raw_id, passages, normas) -> list[vigencia]      one per (passage, valid_from); see its docstring
+    vigente(store, date) -> dict[passage_id, version]                          the version of every passage in force at date
+    entry_into_force(published, article_text) -> str | None                    an act's own entry-into-force article, read
     norma_slug(diploma) -> str            "Decreto-Lei n.º 177/2026" -> "dl-177-2026"; "Lei n.º 30/2021" -> "lei-30-2021";
-                                          "Declaração de Retificação n.º 42/2017" -> "ret-42-2017"
+                                          "Declaração de Retificação n.º 42/2017" -> "ret-42-2017";
+                                          "Resolução da Assembleia da República n.º 16/2020" -> "rar-16-2020"
+    A note's amending provision may be "Artigo N.º", "Parte III" or "Anexo [N]" of the act (article_of_act carries it).
 No network, no model.
 """
+import bisect
 import re
+from datetime import date, timedelta
 
 VERSION = "ccp-vigente-0.1"
 EFFECTS = {"Alterado": "altera", "Aditado": "adita", "Revogado": "revoga", "REVOGADO": "revoga", "Retificado": "retifica", "Rectificado": "retifica", "Republicado": "republica"}
@@ -30,17 +35,19 @@ EFFECTS = {"Alterado": "altera", "Aditado": "adita", "Revogado": "revoga", "REVO
 # B2 decides from the act's own entry-into-force article and records the decision in the vigencia's note).
 NOTE_RE = re.compile(
     r"^(?:NOTA: )?(?P<effect>Alterado|Aditado|Revogado|REVOGADO|Retificado|Rectificado|Republicado) pelo/a "
-    r"(?:Artigo (?P<article>[0-9]+\.º(?:-[A-Z])?) do/a )?(?P<diploma>.+?) - Diário da República n\.º (?P<issue>[0-9]+(?:-[A-Z])?/[0-9]{4})"
+    r"(?:(?P<article>Artigo [0-9]+\.º(?:-[A-Z])?|Parte [IVXLC]+|Anexo(?: [IVXLC]+)?) do/a )?(?P<diploma>.+?) - Diário da República n\.º (?P<issue>[0-9]+(?:-[A-Z])?/[0-9]{4})"
     r"(?:, (?P<supl>[0-9]+º Suplemento))?, Série I de (?P<published>[0-9]{4}-[0-9]{2}-[0-9]{2})(?:, em vigor a partir de (?P<valid_from>[0-9]{4}-[0-9]{2}-[0-9]{2}))?\.?$")
 ACT_KINDS = {"decreto-lei": "dl", "lei": "lei", "declaração de retificação": "ret", "declaração de rectificação": "ret", "lei orgânica": "lo",
-             "decreto legislativo regional": "dlr", "portaria": "port", "decreto regulamentar": "dreg"}
+             "decreto legislativo regional": "dlr", "portaria": "port", "decreto regulamentar": "dreg",
+             "resolução da assembleia da república": "rar"}
 
 
 def parse_note(text):
     m = NOTE_RE.match(text.strip())
     if not m:
         return None
-    return {"effect": EFFECTS[m["effect"]], "article_of_act": m["article"], "diploma": m["diploma"], "dr_issue": m["issue"] + (f" {m['supl']}" if m["supl"] else ""),
+    art = m["article"][len("Artigo "):] if m["article"] and m["article"].startswith("Artigo ") else m["article"]
+    return {"effect": EFFECTS[m["effect"]], "article_of_act": art, "diploma": m["diploma"], "dr_issue": m["issue"] + (f" {m['supl']}" if m["supl"] else ""),
             "published": m["published"], "valid_from": m["valid_from"]}
 
 
@@ -95,9 +102,117 @@ def versions_from_history(text: str, initial_valid_from: str) -> list:
     return merged
 
 
+EFFECT_PRIORITY = {"revoga": 0, "adita": 1, "altera": 2, "republica": 3, "retifica": 4}
+MONTHS_PT = {"um": 1, "dois": 2, "três": 3, "quatro": 4, "cinco": 5, "seis": 6, "sete": 7, "oito": 8, "nove": 9, "dez": 10, "onze": 11, "doze": 12}
+NUMBERS_PT = {"cinco": 5, "dez": 10, "quinze": 15, "vinte": 20, "trinta": 30, "sessenta": 60, "noventa": 90, "cento e vinte": 120, "cento e oitenta": 180}
+
+
+def entry_into_force(published: str, article_text: str):
+    """The date an act enters into force, from its own entry-into-force article and its publication date, for the
+    phrasings read in the DR; None when the article says something else (the caller then fails, it never guesses).
+        "entra em vigor no dia seguinte ao da sua publicação"            published + 1 day
+        "entra em vigor no primeiro dia do mês seguinte ao da sua publicação"   the 1st of the next month
+        "entra em vigor <n> dias após a (data da) sua publicação"        published + n days (digits or words)
+        "entra em vigor (no dia|em) <AAAA-MM-DD | d de mês de aaaa>"      that date"""
+    t = " ".join(article_text.split()).lower()
+    d = date.fromisoformat(published)
+    if "no dia seguinte ao da sua publicação" in t:
+        return (d + timedelta(days=1)).isoformat()
+    if "no primeiro dia do mês seguinte ao da sua publicação" in t:
+        return (date(d.year + (d.month == 12), d.month % 12 + 1, 1)).isoformat()
+    m = re.search(r"entra(?:m)? em vigor (?:([0-9]+)|(" + "|".join(sorted(NUMBERS_PT, key=len, reverse=True)) + r")) dias após a (?:data da )?sua publicação", t)
+    if m:
+        return (d + timedelta(days=int(m.group(1)) if m.group(1) else NUMBERS_PT[m.group(2)])).isoformat()
+    m = re.search(r"entra(?:m)? em vigor (?:no dia|em|a) ([0-9]{1,2}) de ([a-zç]+) de ([0-9]{4})", t)
+    months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+    if m and m.group(2) in months:
+        return date(int(m.group(3)), months.index(m.group(2)) + 1, int(m.group(1))).isoformat()
+    return None
+
+
 def notes_to_vigencias(text: str, raw_id: str, passages: list, normas: dict) -> list:
-    raise NotImplementedError("FILL-PLAN B2: consolidated working text -> vigencia objects, one per note, quoted by offsets")
+    """The DR validity notes of a consolidated working text (lines "NOTA: ...", engine/extract.dr_article_history) ->
+    vigencia objects.
+        text      the working text of raw_id
+        passages  passagem objects; those whose version sits in raw_id, of kind artigo or anexo and not inside an
+                  amending quotation, own the notes that follow them (a note belongs to the article above it)
+        normas    {norma id: norma}: every amending act a note names must be registered (altered_by = norma:<slug>)
+    One vigencia per (passage, valid_from): several notes of one article with one date (an act and the retificações
+    of it, D24) are one validity interval; the vigencia quotes the note of highest effect (revoga > adita > altera >
+    republica > retifica), the newest first among equals. note = {raw, quote (the DR text, without "NOTA: "),
+    offsets}; valid_to = the passage's next vigencia date or None.
+    A note without "em vigor a partir de" takes, in order (DECISIONS D28): the single date the other notes of the same
+    act (same diploma and publication date) carry in this text; else entry_into_force() over the act's own article
+    whose epigraph is "Entrada em vigor" among `passages`; else ValueError. A note above every owning passage concerns
+    the whole act and is not a passage's vigencia (the caller reports it). Unparsed note -> ValueError."""
+    from engine.sources import now_utc  # engine.sources loads the store; imported here to keep this module light
+    owners = sorted((v["offsets"]["start"], p["id"]) for p in passages if p["kind"] in ("artigo", "anexo") and ".q" not in p["id"]
+                    for v in p["versions"] if v["raw"] == raw_id)
+    starts = [s for s, _ in owners]
+    notes, pos = [], 0
+    for line in text.split("\n"):
+        if line.startswith("NOTA: "):
+            body = line[len("NOTA: "):]
+            parsed = parse_note(body)
+            if parsed is None:
+                raise ValueError(f"unparsed note at offset {pos}: {body[:120]!r}")
+            k = bisect.bisect_left(starts, pos) - 1
+            notes.append({"owner": owners[k][1] if k >= 0 else None, "start": pos + len("NOTA: "), "end": pos + len(line), "quote": body, **parsed})
+        pos += len(line) + 1
+    siblings = {}
+    for n in notes:
+        if n["valid_from"]:
+            siblings.setdefault((n["diploma"], n["published"]), set()).add(n["valid_from"])
+    for n in notes:
+        if n["valid_from"]:
+            continue
+        known = siblings.get((n["diploma"], n["published"]), set())
+        if len(known) == 1:
+            n["valid_from"] = next(iter(known))
+            continue
+        slug = norma_slug(n["diploma"])
+        art = next((p for p in passages if p["id"].startswith(slug + ":") and p["kind"] == "artigo" and ".q" not in p["id"]
+                    and "\nEntrada em vigor\n" in p["versions"][-1]["text"] + "\n"), None)
+        found = entry_into_force(n["published"], art["versions"][-1]["text"]) if art else None
+        if not found:
+            raise ValueError(f"note of {n['diploma']} without a date: no single sibling date ({sorted(known)}) and no readable entry-into-force article of {slug}")
+        n["valid_from"] = found
+    groups = {}
+    for n in notes:
+        if n["owner"] is None:
+            continue
+        altered_by = f"norma:{norma_slug(n['diploma'])}"
+        if altered_by not in normas:
+            raise ValueError(f"{altered_by} is not registered (note on {n['owner']})")
+        groups.setdefault((n["owner"], n["valid_from"]), []).append(n)
+    recorded_at = now_utc()
+    dates = {}
+    for owner, vf in groups:
+        dates.setdefault(owner, []).append(vf)
+    out = []
+    for (owner, vf), group in sorted(groups.items()):
+        n = min(group, key=lambda x: (EFFECT_PRIORITY[x["effect"]], x["start"]))
+        later = sorted(d for d in dates[owner] if d > vf)
+        out.append({"id": f"{owner}@{vf}", "revision": 1, "recorded_at": recorded_at, "passage": owner, "valid_from": vf,
+                    "valid_to": later[0] if later else None, "altered_by": f"norma:{norma_slug(n['diploma'])}",
+                    "note": {"raw": raw_id, "quote": n["quote"], "offsets": {"start": n["start"], "end": n["end"]}}, "effect": n["effect"]})
+    return out
 
 
-def vigente(store, date: str) -> dict:
-    raise NotImplementedError("FILL-PLAN B2: the version of every passage in force at date, from passagem.versions")
+def vigente(store, date: str) -> dict:  # noqa: F811 (the parameter shadows datetime.date inside this function only)
+    """{passage id: version} for every current, non-stale passage that has a version in force on date
+    (valid_from <= date < valid_to; valid_to None = still in force). A revoked version is in force: it says the
+    passage is revoked. Passages with no version on that date are absent."""
+    latest = {}
+    for p in store.objects["passagem"]:
+        if p["id"] not in latest or p["revision"] > latest[p["id"]]["revision"]:
+            latest[p["id"]] = p
+    out = {}
+    for pid, p in latest.items():
+        if p.get("stale"):
+            continue
+        for v in p["versions"]:
+            if v["valid_from"] <= date and (v["valid_to"] is None or date < v["valid_to"]):
+                out[pid] = v["version"]
+                break
+    return out

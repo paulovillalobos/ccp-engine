@@ -147,7 +147,7 @@
       "versao": 1,
       "code": "engine/vigente.py",
       "hash": "444d60e6c8e408f54641bde88e256f25ce62b752915a96c1cd3e1980e79e8edc",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:capture-dr-history@1",
@@ -258,6 +258,41 @@
       "code": "tools/make_fixtures.py",
       "hash": "0ba3d61df28d6497a4b668ee10bc1e476044589a47e9b87dce4cdb8cd887cd02",
       "retired": false
+    },
+    {
+      "id": "ferramenta:vigente@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "engine/vigente.py",
+      "hash": "0fed9881925d4cc36162f1a1dff68a75357b4fbeec19aa9ba26817b16fd4fdd1",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:structure@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "engine/structure.py",
+      "hash": "1eff308460123e788938ee22675f4b31dffd3905b63abdcf5d6cd3e710924b75",
+      "retired": false,
+      "nota": "DR working text -> passages with offsets (B1)"
+    },
+    {
+      "id": "ferramenta:passages@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "engine/passages.py",
+      "hash": "79fbe21c7dc7e763893175434b2c4c991cda20422212b75223c10f67604b1cdf",
+      "retired": false,
+      "nota": "code-written citations: quote = text[start:end] (B1)"
     }
   ]
 }
