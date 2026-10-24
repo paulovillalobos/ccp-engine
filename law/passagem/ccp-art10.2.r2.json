@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art10.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art10",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Exceptua-se igualmente do disposto na alínea a) do n.º 1 do artigo anterior a actividade de alimentação de redes fixas de prestação de serviços ao público no domínio da produção, transporte ou distribuição de gás ou de combustível para aquecimento quando:\na) A produção de gás ou de combustível para aquecimento pela entidade adjudicante seja a consequência inevitável do exercício de uma actividade diferente das referidas no artigo anterior;\nb) A alimentação daquela rede se destine apenas a explorar de maneira mais económica a produção de gás ou de combustível para aquecimento e não represente mais de 20 % do volume de negócios da entidade adjudicante, tomando por referência a média dos três últimos anos, incluindo o ano em curso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art10",
+      "offsets": {
+        "start": 2434,
+        "end": 3176
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Excetua-se igualmente do disposto do n.º 1 do artigo anterior a atividade de alimentação de redes públicas de prestação de serviços ao público no domínio da produção de gás ou de combustível para aquecimento quando:\na) A produção de gás ou de combustível para aquecimento pela entidade adjudicante seja a consequência inevitável do exercício de uma atividade diferente das referidas no artigo anterior;\nb) A alimentação daquela rede se destine apenas a explorar de maneira mais económica a produção de gás ou de combustível para aquecimento e não represente mais de 20 % do volume de negócios da entidade adjudicante, tomando por referência a média dos três últimos anos, incluindo o ano em curso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art10",
+      "offsets": {
+        "start": 764,
+        "end": 1465
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

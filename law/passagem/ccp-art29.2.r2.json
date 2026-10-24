@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art29.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art29",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A decisão de escolha do procedimento de negociação ao abrigo do disposto na alínea a) do número anterior só pode ser tomada no prazo de seis meses a contar da decisão de exclusão de todas as propostas apresentadas, devendo o respectivo anúncio ser enviado para publicação no Diário da República e no Jornal Oficial da União Europeia dentro do mesmo prazo, sob pena de caducidade daquela decisão.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 6562,
+        "end": 6961
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 4200,
+        "end": 4215
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 1197,
+        "end": 1212
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

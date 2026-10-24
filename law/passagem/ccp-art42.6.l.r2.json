@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art42.6.l",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42.6",
+  "kind": "alinea",
+  "label": "l)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "l) O combate ao trabalho precário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 9202,
+        "end": 9236
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "l) O combate ao trabalho precário;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 2416,
+        "end": 2450
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

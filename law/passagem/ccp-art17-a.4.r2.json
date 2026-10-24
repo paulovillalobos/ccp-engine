@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - No caso dos contratos de concessão de obras públicas e de concessão de serviços, o valor estimado do contrato corresponde ao total do volume de negócios do concessionário gerado ao longo da duração do contrato conforme estimado pela entidade adjudicante, em contrapartida das obras e dos serviços que foram objeto da concessão, bem como dos fornecimentos relacionados com tais obras e serviços, devendo o cálculo desse valor ter em conta o seguinte:\na) O valor de qualquer tipo de opção e eventuais prorrogações da duração da concessão;\nb) As receitas provenientes do pagamento de taxas pelos utilizadores das obras ou dos serviços distintas das cobradas em nome da entidade adjudicante;\nc) Os pagamentos ou qualquer vantagem financeira, independentemente da forma, que a entidade adjudicante ou qualquer outra autoridade pública proporcione ao concessionário, incluindo a compensação pelo cumprimento de uma obrigação de serviço público e os subsídios ao investimento público;\nd) O valor das subvenções ou de quaisquer outras vantagens financeiras, independentemente da forma, provenientes de terceiros pela execução da concessão;\ne) A receita da venda de ativos que façam parte do estabelecimento da concessão;\nf) O valor de todos os fornecimentos e serviços postos à disposição do concessionário pelas entidades adjudicantes, desde que sejam necessários à execução das obras ou à prestação dos serviços.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 100258,
+        "end": 101668
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

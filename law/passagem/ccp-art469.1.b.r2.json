@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art469.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art469.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Na data constante do relatório de transmissão bem sucedido, quando efectuado através de telecópia, salvo o disposto no número seguinte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art469",
+      "offsets": {
+        "start": 1097,
+        "end": 1235
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

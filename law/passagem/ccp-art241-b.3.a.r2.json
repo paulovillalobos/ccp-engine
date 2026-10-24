@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art241-b.3.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art241-b.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) A identificação do sistema de aquisição dinâmico;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 447340,
+        "end": 447392
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

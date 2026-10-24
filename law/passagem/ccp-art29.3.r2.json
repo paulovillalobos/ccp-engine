@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art29.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art29",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Não pode ser adoptado o procedimento de negociação ao abrigo do disposto na alínea d) do n.º 1 quando o serviço a adquirir consista na elaboração de um plano, de um projecto ou de uma qualquer criação conceptual nos domínios artístico, do ordenamento do território, do planeamento urbanístico, da arquitectura, da engenharia ou do processamento de dados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 6962,
+        "end": 7320
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 4216,
+        "end": 4231
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 1213,
+        "end": 1228
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

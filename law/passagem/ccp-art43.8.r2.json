@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art43.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "8 - O caderno de encargos é nulo quando:\na) Não seja integrado pelos elementos da solução da obra previstos no n.º 1 e na parte final do n.º 3;\nb) Seja elaborado em violação do disposto no n.º 2;\nc) O projecto de execução nele integrado não esteja acompanhado dos elementos previstos no n.º 5;\nd) Os elementos da solução da obra nele integrados não observem o conteúdo obrigatório previsto na portaria referida no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 18329,
+        "end": 18759
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "8 - O caderno de encargos é nulo quando:\na) Não seja integrado pelo projeto de execução previsto no n.º 1 ou pelo programa preliminar previsto na parte final do n.º 3;\nb) Seja elaborado em violação do disposto no n.º 2;\nc) O projecto de execução nele integrado não esteja acompanhado dos elementos previstos no n.º 5;\nd) Os elementos da solução da obra nele integrados não observem o conteúdo obrigatório previsto na portaria referida no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 10570,
+        "end": 11024
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - O caderno de encargos é nulo quando:\na) Não seja integrado pelo projeto de execução previsto no n.º 1 ou pelo programa preliminar previsto na parte final do n.º 1 do artigo 43.º-A;\nb) Seja elaborado em violação do disposto no n.º 2;\nc) O projecto de execução nele integrado não esteja acompanhado dos elementos previstos no n.º 5;\nd) Os elementos da solução da obra nele integrados não observem o conteúdo obrigatório previsto na portaria referida no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 1869,
+        "end": 2340
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

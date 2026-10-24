@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art1.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Sem prejuízo do disposto em lei especial, reveste a natureza de contrato administrativo o acordo de vontades, independentemente da sua forma ou designação, celebrado entre contraentes públicos e co-contratantes ou somente entre contraentes públicos, que se integre em qualquer uma das seguintes categorias:\na) Contratos que, por força do presente Código, da lei ou da vontade das partes, sejam qualificados como contratos administrativos ou submetidos a um regime substantivo de direito público;\nb) Contratos com objecto passível de acto administrativo e demais contratos sobre o exercício de poderes públicos;\nc) Contratos que confiram ao co-contratante direitos especiais sobre coisas públicas ou o exercício de funções dos órgãos do contraente público;\nd) Contratos que a lei submeta, ou que admita que sejam submetidos, a um procedimento de formação regulado por normas de direito público e em que a prestação do co-contratante possa condicionar ou substituir, de forma relevante, a realização das atribuições do contraente público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1",
+      "offsets": {
+        "start": 5725,
+        "end": 6765
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1",
+      "offsets": {
+        "start": 2138,
+        "end": 2153
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

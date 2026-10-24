@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art13.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art13",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O disposto nas alíneas c) a f) do n.º 1 só é aplicável desde que, pelo menos, 80 % da média do volume de negócios da empresa associada nos últimos três anos, em matéria de obras, de bens móveis ou de serviços, consoante o caso, provenha da realização dessas obras, do fornecimento desses bens ou da prestação desses serviços à entidade à qual aquela se encontra associada ou, caso a empresa associada esteja constituída há menos de três anos, desde que esta demonstre, nomeadamente por recurso a projecções da sua actividade, que o respectivo volume de negócios é credível.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13",
+      "offsets": {
+        "start": 13966,
+        "end": 14543
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O disposto nas alíneas c) a f) do n.º 1 só é aplicável desde que, pelo menos, 80 % da média do volume de negócios da empresa associada nos últimos três anos, em matéria de obras, de bens móveis ou de serviços, consoante o caso, provenha da realização dessas obras, do fornecimento desses bens ou da prestação desses serviços à entidade adjudicante ou a outras empresas com as quais se encontre associada ou, caso a empresa associada esteja constituída há menos de três anos, desde que esta demonstre, nomeadamente por recurso a projeções da sua atividade, que o respetivo volume de negócios é credível.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13",
+      "offsets": {
+        "start": 10164,
+        "end": 10770
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

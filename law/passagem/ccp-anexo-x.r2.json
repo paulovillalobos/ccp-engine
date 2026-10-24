@@ -1,0 +1,24 @@
+{
+  "id": "ccp:anexo-x",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "anexo",
+  "label": "Anexo X",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Anexo X\nLista de serviços de saúde, serviços sociais e serviços culturais que podem participar em procedimentos reservados\n(a que se refere o n.º 1 do artigo 250.º-D)\n(ver documento original)",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 723783,
+        "end": 723974
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

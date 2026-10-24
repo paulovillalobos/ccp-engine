@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art161-d.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art161-d",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - A análise das propostas nos termos do n.º 1 do artigo 70.º contempla a verificação do preenchimento dos requisitos de capacidade exigidos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 356689,
+        "end": 356831
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

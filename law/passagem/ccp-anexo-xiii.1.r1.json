@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-xiii.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-xiii",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "1 - Modelo previsto no n.º 5 do artigo 67.º:\n... (nome, número de documento de identificação e morada), na qualidade de ... (dirigente, trabalhador, ou prestador de serviço atuando em nome da entidade adjudicante) da ... (entidade adjudicante), participando (se for o caso, como membro do júri) no procedimento de formação do contrato n.º ... relativo a ... (objeto do contrato), declara não estar abrangido, na presente data, por quaisquer conflitos de interesses relacionados com o objeto ou com os participantes no procedimento em causa.\nMais declara que se durante o procedimento de formação do contrato tiver conhecimento da participação nele de operadores económicos relativamente aos quais possa existir um conflito de interesses, disso dará imediato conhecimento ao órgão competente da entidade adjudicante, para efeitos de impedimento ou escusa de participação no procedimento, nos termos do disposto nos artigos 69.º a 76.º do Código do Procedimento Administrativo.\n... (local), ... (data), ... (assinatura).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-xiii",
+      "offsets": {
+        "start": 2336,
+        "end": 3354
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 725758,
+        "end": 725906
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

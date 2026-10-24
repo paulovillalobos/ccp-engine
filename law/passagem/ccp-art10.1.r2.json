@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art10.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art10",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Exceptua-se do disposto na alínea a) do n.º 1 do artigo anterior a actividade de alimentação de redes fixas de prestação de serviços ao público no domínio da produção, transporte ou distribuição de água potável ou de electricidade quando:\na) A produção de água potável ou de electricidade pela entidade adjudicante seja necessária ao exercício de uma actividade diferente das referidas no artigo anterior;\nb) A alimentação daquela rede dependa apenas do consumo próprio da entidade adjudicante e não tenha excedido 30 % da produção total de água potável ou de electricidade dessa entidade, consoante o caso, tomando por referência a média dos três últimos anos, incluindo o ano em curso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art10",
+      "offsets": {
+        "start": 1742,
+        "end": 2433
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Excetua-se do disposto nos n.os 1 e 2 do artigo anterior a atividade de alimentação de redes fixas de prestação de serviços ao público no domínio da produção de eletricidade e água potável quando:\na) A produção de água potável ou de eletricidade pela entidade adjudicante seja necessária ao exercício de uma atividade diferente das referidas no artigo anterior;\nb) A alimentação daquela rede dependa apenas do consumo próprio da entidade adjudicante e não tenha excedido 30 % da produção total de água potável ou de eletricidade dessa entidade, consoante o caso, tomando por referência a média dos três últimos anos, incluindo o ano em curso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art10",
+      "offsets": {
+        "start": 117,
+        "end": 763
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

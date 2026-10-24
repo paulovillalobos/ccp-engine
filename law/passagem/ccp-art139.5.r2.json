@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art139.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art139",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - As pontuações parciais de cada proposta são atribuídas pelo júri através da aplicação da expressão matemática referida no n.º 3 ou, quando esta não existir, através de um juízo de comparação do respectivo atributo com o conjunto ordenado referido no mesmo número.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art139",
+      "offsets": {
+        "start": 4221,
+        "end": 4488
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

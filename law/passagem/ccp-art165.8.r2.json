@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art165.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art165",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "8 - As entidades adjudicantes podem também impor requisitos destinados a assegurar que os candidatos dispõem da capacidade financeira necessária para executar o contrato, podendo, nomeadamente, exigir que eles tenham um determinado volume de negócios anual mínimo ou que forneçam informações sobre as suas contas anuais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 2379,
+        "end": 2699
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

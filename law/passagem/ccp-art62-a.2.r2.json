@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art62-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art62-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - As peças do procedimento fixam, ainda que por remissão, as especificações técnicas e outros requisitos adicionais necessários para a interligação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 215321,
+        "end": 215471
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

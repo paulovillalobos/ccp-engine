@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-c.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-c",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - No planeamento, na preparação e na condução do procedimento de formação, bem como na execução de contratos públicos, as entidades adjudicantes devem utilizar sistemas digitais, incluindo de inteligência artificial, com o objetivo de garantir a máxima eficiência do procedimento e da execução dos contratos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 59665,
+        "end": 59975
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art302.e",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art302",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) Resolver unilateralmente o contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art302",
+      "offsets": {
+        "start": 2199,
+        "end": 2238
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "e) Resolver unilateralmente o contrato, a título sancionatório ou por razões de interesse público, nos termos previstos no presente Código;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art302",
+      "offsets": {
+        "start": 480,
+        "end": 619
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

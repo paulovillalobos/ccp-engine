@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art474.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:\na) (euro) 5 225 000, para os contratos de empreitada de obras públicas;\nb) (euro) 135 000, para os contratos públicos de fornecimentos de bens, de prestação de serviços e de concursos de conceção, adjudicados pelo Estado;\nc) (euro) 209 000, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;\nd) (euro) 750 000, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 4763,
+        "end": 5331
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:\na) (euro) 5 350 000, para os contratos de empreitada de obras públicas;\nb) (euro) 139 000, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;\nc) (euro) 214 000, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;\nd) (euro) 750 000, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 2726,
+        "end": 3290
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:\na) 5 404 000,00 €, para os contratos de empreitada de obras públicas;\nb) 139 000 €, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;\nc) 216 000,00 €, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;\nd) 750 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 650,
+        "end": 1200
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

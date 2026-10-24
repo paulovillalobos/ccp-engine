@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art318.1.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Quando haja transmissão universal ou parcial da posição do cocontratante, na sequência de reestruturação societária, nomeadamente, oferta pública de aquisição, aquisição ou fusão, a favor de cessionário que satisfaça os requisitos mínimos de habilitação e de capacidade técnica e de capacidade económica e financeira exigidos ao cocontratante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318",
+      "offsets": {
+        "start": 4542,
+        "end": 4888
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Quando a eventualidade de cessão da posição contratual conste das peças do procedimento em cláusula clara, precisa e inequívoca;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318",
+      "offsets": {
+        "start": 227,
+        "end": 358
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

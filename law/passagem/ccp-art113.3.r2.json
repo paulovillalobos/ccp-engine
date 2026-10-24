@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art113.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art113",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Para os efeitos do disposto no número anterior, quando a entidade adjudicante seja o Estado ou uma Região Autónoma, apenas são tidos em conta os contratos celebrados no âmbito do mesmo gabinete governamental, serviço central ou serviço periférico de cada ministério ou secretaria regional, respectivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 9682,
+        "end": 9992
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Para efeitos do disposto no número anterior:\na) Quando a entidade adjudicante seja o Estado ou uma região autónoma, apenas são tidos em conta os contratos celebrados no âmbito do mesmo gabinete governamental, serviço central ou serviço periférico de cada ministério ou secretaria regional, respetivamente;\nb) Quando a entidade adjudicante seja um município, são tidos em conta, autonomamente, os contratos celebrados no âmbito de cada serviço municipalizado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 3311,
+        "end": 3773
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

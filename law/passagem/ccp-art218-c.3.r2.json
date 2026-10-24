@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art218-c.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art218-c",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Os requisitos mínimos e o critério de adjudicação, incluindo os seus fatores e subfatores, não podem ser objeto de negociação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 418474,
+        "end": 418604
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

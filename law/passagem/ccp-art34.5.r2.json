@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art34.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art34",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Os anúncios de pré-informação relativos aos contratos referidos na alínea b) do n.º 1 são enviados imediatamente após a aprovação do plano de actividades em que se inserem.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34",
+      "offsets": {
+        "start": 11226,
+        "end": 11402
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - O preço contratual estimado de todos os contratos a celebrar para cuja formação as entidades adjudicantes adotem os procedimentos de consulta prévia ou ajuste direto em função de critérios materiais não é contabilizado para efeitos do preço contratual estimado de todos os contratos a celebrar previsto no n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34",
+      "offsets": {
+        "start": 8339,
+        "end": 8655
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

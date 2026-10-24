@@ -1,0 +1,47 @@
+{
+  "id": "ccp:art376.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art376",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - As modificações ao plano de trabalhos referido no número anterior destinam-se estritamente a compatibilizar o plano em vigor com os trabalhos de suprimento de erros e omissões ordenados e apenas podem ter por efeito a alteração do prazo de execução da obra ou do preço contratual nos termos previstos, respectivamente, no n.º 2 do artigo 377.º e no artigo 378.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376",
+      "offsets": {
+        "start": 4992,
+        "end": 5357
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "7 - Quando estejam em causa erros e omissões que prejudiquem o normal desenvolvimento do plano de trabalhos, o empreiteiro propõe ao dono da obra as modificações necessárias ao mesmo, devendo este pronunciar-se sobre o plano de trabalhos modificado e comunicar a sua posição ao empreiteiro, até 15 dias após a notificação da proposta do empreiteiro, equivalendo o silêncio a aceitação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376",
+      "offsets": {
+        "start": 2004,
+        "end": 2389
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 612416,
+        "end": 612581
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

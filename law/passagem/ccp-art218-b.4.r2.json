@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art218-b.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art218-b",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Cada concorrente só pode apresentar uma proposta de projeto de investigação e desenvolvimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 417768,
+        "end": 417866
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

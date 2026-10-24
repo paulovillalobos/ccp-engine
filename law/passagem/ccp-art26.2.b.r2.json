@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art26.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art26.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Se trate de adquirir bens que se encontram disponíveis no mercado por um período de tempo muito curto e cujo preço seja consideravelmente inferior aos preços normalmente praticados no mercado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art26",
+      "offsets": {
+        "start": 12619,
+        "end": 12814
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

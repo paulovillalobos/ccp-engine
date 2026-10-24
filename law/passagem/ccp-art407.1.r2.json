@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art407.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art407",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Entende-se por concessão de obras públicas o contrato pelo qual o co-contratante se obriga à execução ou à concepção e execução de obras públicas, adquirindo em contrapartida o direito de proceder, durante um determinado período, à respectiva exploração, e, se assim estipulado, o direito ao pagamento de um preço.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art407",
+      "offsets": {
+        "start": 1011,
+        "end": 1329
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Entende-se por concessão de obras públicas o contrato pelo qual um contraente público encarrega um cocontratante da execução ou da conceção e execução de obras públicas, cuja contrapartida consiste no direito de exploração da obra que constitui o objeto do contrato ou nesse direito acompanhado do pagamento de um preço.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art407",
+      "offsets": {
+        "start": 74,
+        "end": 398
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

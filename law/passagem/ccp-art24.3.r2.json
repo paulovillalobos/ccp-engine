@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art24.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - No caso previsto no número anterior, a adopção do ajuste directo só permite a celebração de contratos de valor igual ou superior aos referidos nas alíneas do mesmo número, desde que o anúncio do procedimento anterior tenha sido publicado no Jornal Oficial da União Europeia e sejam convidados a apresentar proposta todos, e apenas, os concorrentes cujas propostas tenham sido excluídas apenas com fundamento no n.º 2 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 21510,
+        "end": 21945
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Para efeitos do disposto na alínea a) do n.º 1:\na) A decisão de escolha do ajuste direto só pode ser tomada no prazo de seis meses a contar do termo do prazo fixado para a apresentação de candidatura ou proposta, caducando se, durante esse prazo, não for formulado convite à apresentação de proposta;\nb) As entidades adjudicantes devem comunicar à Comissão Europeia, a pedido desta, um relatório relativo aos contratos celebrados ao seu abrigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 11511,
+        "end": 11959
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "3 - Para efeitos do disposto na alínea a) do número anterior, considera-se que o convite à apresentação de propostas e o caderno de encargos do ajuste direto são substancialmente alterados quando as alterações tivessem sido suscetíveis de impedir a falta de apresentação ou a exclusão de todas as candidaturas ou de todas as propostas no anterior concurso, nomeadamente por envolverem a modificação de aspetos da execução do contrato ou de requisitos mínimos de capacidade técnica e financeira.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 7594,
+        "end": 8088
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

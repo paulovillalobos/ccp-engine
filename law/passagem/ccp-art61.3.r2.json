@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art61.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art61",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A apresentação da lista referida no n.º 1, por qualquer interessado, suspende o prazo fixado para a apresentação das propostas desde o termo do quinto sexto daquele prazo até à publicitação da decisão prevista no n.º 5 ou, não havendo decisão expressa, até ao termo do mesmo prazo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 3834,
+        "end": 4119
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "3 - A apresentação da lista referida no número anterior, por qualquer interessado, suspende o prazo fixado para a apresentação das propostas desde o termo do quinto sexto daquele prazo até à publicitação da decisão prevista no n.º 5 ou, não havendo decisão expressa, até ao termo do mesmo prazo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 1338,
+        "end": 1633
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 212980,
+        "end": 213145
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

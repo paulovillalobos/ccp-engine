@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2010-09-01",
+      "text": "3 - Constando do contrato data ou prazo de pagamento, os pagamentos devidos pelo contraente público devem ser efectuados no prazo de 30 dias após a entrega das respectivas facturas, as quais só podem ser emitidas após o vencimento da obrigação a que se referem.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art299",
+      "offsets": {
+        "start": 1137,
+        "end": 1398
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

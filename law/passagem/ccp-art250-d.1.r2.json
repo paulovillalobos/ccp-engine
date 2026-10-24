@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-d.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - As entidades adjudicantes podem lançar procedimentos de formação de contratos reservados quando estejam em causa os serviços de saúde, serviços sociais, serviços de ensino e serviços culturais que se encontrem incluídos no anexo x ao presente Código, do qual faz parte integrante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d",
+      "offsets": {
+        "start": 2592,
+        "end": 2876
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

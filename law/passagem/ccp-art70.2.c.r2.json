@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art70.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) A impossibilidade de avaliação das mesmas em virtude da forma de apresentação de algum dos respectivos atributos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 17670,
+        "end": 17786
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Que sejam apresentadas por concorrentes relativamente aos quais ou, no caso de agrupamentos concorrentes, relativamente a qualquer dos seus membros, a entidade adjudicante tenha conhecimento que se verifica alguma das situações previstas no artigo 55.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 500,
+        "end": 756
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

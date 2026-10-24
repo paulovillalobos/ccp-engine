@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art266-c.3.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art266-c.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Quando o valor do bem ou do conjunto de bens a alienar seja inferior a (euro) 30 000;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 487919,
+        "end": 488007
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

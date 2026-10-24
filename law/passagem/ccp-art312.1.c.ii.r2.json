@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art312.1.c.ii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art312.1.c",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "ii) Seja altamente inconveniente ou provoque um aumento considerável de custos para o contraente público;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312",
+      "offsets": {
+        "start": 973,
+        "end": 1078
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

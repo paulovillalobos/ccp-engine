@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art105.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art105",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - No caso de se tratar de um contrato de empreitada ou de concessão de obras públicas, a não outorga do contrato por parte do adjudicatário deve ser imediatamente comunicada ao Instituto da Construção e do Imobiliário, I. P., pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art105",
+      "offsets": {
+        "start": 2615,
+        "end": 2869
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art105",
+      "offsets": {
+        "start": 1331,
+        "end": 1346
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

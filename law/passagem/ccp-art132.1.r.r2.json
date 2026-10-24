@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art132.1.r",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art132.1",
+  "kind": "alinea",
+  "label": "r)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "r) A indicação de que se trata de um contrato reservado, nos termos dos artigos 54.º-A ou 250.º-D, se for o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 8128,
+        "end": 8241
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "r) A indicação de que se trata de um contrato reservado, nos termos dos artigos 54.º-A ou 250.º-D, se for o caso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 1938,
+        "end": 2051
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

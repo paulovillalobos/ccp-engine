@@ -571,3 +571,25 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   (I01), as it does at this commit.
 - Next: B2a.3 versions from the histories.
 - Why: a verdict cites a passage and a version; this step gives every article an id and every note a date.
+
+## 2026-10-24 B2a.3 passage versions from the histories (commit: B2a.3: passage versions from the DR history views; vigente diff at 2026-10-01 equals the DL 177/2026 vigencias)
+- Done: tools/build_law.py with histories (D24, D30): each of the 315 articles and annexes with a history page takes one
+  version per date of that page, the newest text of a date winning (retificações folded), ordered by date (Anexo II's
+  36-A/2017 retificação dates its text from 2008-07-30); a noteless repeat of a version (Anexo XII) is dropped; numbers,
+  alíneas and subalíneas are structured inside each version, keep one version while their text is unchanged, and a
+  part a version no longer has is closed by a revoked version quoting that date's note; each part's new version on a
+  date of its article's vigencia gets the same note. The 68 articles added once and never changed keep the
+  consolidated text from the date they were added. Writes: 2515 passages revised (revision 2), 446 parts added that
+  exist only in earlier versions, 3975 unchanged; 3276 vigencias added.
+- Result: CCP 3873 passages, 6304 versions; artigos by number of versions: 1: 297, 2: 157, 3: 77, 4: 45, 5: 15, 6: 4,
+  7: 1; 45 articles revoked today. Vigencias 6912 (CCP 3965: altera 2661, adita 620, retifica 373, revoga 311; acts'
+  own entra_em_vigor 2947). History dates vs note dates per article: 0 only in notes, 0 only in history.
+- Done criterion: vigente(2026-09-30) and vigente(2026-10-01) differ in 2568 passages = exactly the passages whose
+  vigencia names norma:dl-177-2026 from 2026-10-01 (1128 of the CCP, 1440 of DL 177/2026 itself entering into force,
+  D32); first five: ccp:anexo-i, ccp:anexo-i.1, ccp:anexo-i.2, ccp:anexo-i.3, ccp:anexo-i.4. verify: ok.
+  pytest tests/fill/test_b1_copied_modules.py tests/fill/test_b2_ccp_capture.py: 5 passed; tests --ignore=tests/fill:
+  52 passed.
+- The four EU threshold raw records (bytes already in the B2a.1 commit) are added here, so this commit verifies clean;
+  their normas come with B2b.
+- Next: B2b, the law around the CCP.
+- Why: a verdict on a procedure is checked against the text in force on its date; this step makes that a lookup.

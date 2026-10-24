@@ -1,0 +1,36 @@
+{
+  "id": "ccp:anexo-viii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "anexo",
+  "label": "Anexo VIII",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Anexo VIII\nLista de serviços de investigação e de desenvolvimento\n[a que se refere a alínea j) do n.º 4 do artigo 5.º e a alínea e) do n.º 1 do artigo 27.º)\n(ver documento original)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-viii",
+      "offsets": {
+        "start": 226,
+        "end": 407
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2018-05-16",
+      "revoked": false
+    },
+    {
+      "version": "2018-05-16",
+      "text": "Anexo VIII\nLista de serviços de investigação e de desenvolvimento",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-viii",
+      "offsets": {
+        "start": 6,
+        "end": 71
+      },
+      "valid_from": "2018-05-16",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

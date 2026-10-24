@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art39.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art39",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A decisão de contratar, a decisão de escolha do procedimento, a decisão de qualificação dos candidatos e a decisão de adjudicação devem ser tomadas conjuntamente pelos órgãos competentes de todas as entidades adjudicantes que integram o agrupamento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39",
+      "offsets": {
+        "start": 7802,
+        "end": 8055
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - A decisão de contratar, a decisão de escolha do procedimento, a aprovação das peças do procedimento, a designação do júri, a decisão de qualificação dos candidatos e a decisão de adjudicação, bem como os restantes atos cuja competência esteja atribuída ao órgão com competência para a decisão de contratar, devem ser tomadas conjuntamente pelos órgãos competentes de todas as entidades que integram o agrupamento, eventualmente através de conferência procedimental, nos termos gerais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39",
+      "offsets": {
+        "start": 4400,
+        "end": 4888
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art84.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art84",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Quando o adjudicatário for um agrupamento de pessoas singulares ou colectivas:\na) Os documentos previstos no n.º 1 do artigo 81.º devem ser apresentados por todos os seus membros;\nb) O documento referido no n.º 2 do artigo 81.º pode ser apresentado por apenas um dos seus membros, podendo ser substituído pela apresentação de vários alvarás ou títulos de registo dos seus membros que, em conjunto, contenham as habilitações adequadas e necessárias à execução da obra a realizar;\nc) Os documentos referidos nos n.os 4, 6, 7 e 8 do artigo 81.º devem ser apresentados por todos os seus membros cuja actividade careça da sua titularidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art84",
+      "offsets": {
+        "start": 361,
+        "end": 999
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 260561,
+        "end": 260726
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

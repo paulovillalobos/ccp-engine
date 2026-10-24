@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art237.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art237",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para os efeitos do disposto no número anterior, consideram-se bens e serviços de uso corrente aqueles cujas especificações técnicas se encontram totalmente estandardizadas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art237",
+      "offsets": {
+        "start": 2236,
+        "end": 2412
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O sistema de aquisição dinâmico é totalmente eletrónico e deve admitir a apresentação de candidaturas durante toda a sua vigência não podendo ser cobradas quaisquer quantias relacionadas com a instituição ou a operacionalização do sistema aos interessados, candidatos e concorrentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art237",
+      "offsets": {
+        "start": 443,
+        "end": 730
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

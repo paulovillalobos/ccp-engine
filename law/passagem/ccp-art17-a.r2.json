@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 17.º-A",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 17.º-A\nRegras especiais de cálculo do valor estimado do contrato\n1 - No caso de contratos de empreitada de obras públicas, o cálculo do valor estimado do contrato inclui o custo da obra e o valor total dos bens móveis e serviços que são postos à disposição do adjudicatário pela entidade adjudicante, desde que sejam necessários à execução da obra.\n2 - Nos acordos-quadro e nos sistemas de aquisição dinâmicos, o valor estimado do contrato corresponde ao valor estimado máximo de todos os contratos previstos ao seu abrigo durante a vigência do acordo-quadro ou do sistema de aquisição dinâmico.\n3 - No caso das parcerias para a inovação, o valor estimado do contrato corresponde ao valor estimado das atividades de investigação e desenvolvimento que tenham lugar em todas as etapas da parceria prevista, bem como dos bens, dos serviços ou das obras a serem desenvolvidos e adquiridos no final da parceria.\n4 - No caso dos contratos de concessão de obras públicas e de concessão de serviços, o valor estimado do contrato corresponde ao total do volume de negócios do concessionário gerado ao longo da duração do contrato conforme estimado pela entidade adjudicante, em contrapartida das obras e dos serviços que foram objeto da concessão, bem como dos fornecimentos relacionados com tais obras e serviços, devendo o cálculo desse valor ter em conta o seguinte:\na) O valor de qualquer tipo de opção e eventuais prorrogações da duração da concessão;\nb) As receitas provenientes do pagamento de taxas pelos utilizadores das obras ou dos serviços distintas das cobradas em nome da entidade adjudicante;\nc) Os pagamentos ou qualquer vantagem financeira, independentemente da forma, que a entidade adjudicante ou qualquer outra autoridade pública proporcione ao concessionário, incluindo a compensação pelo cumprimento de uma obrigação de serviço público e os subsídios ao investimento público;\nd) O valor das subvenções ou de quaisquer outras vantagens financeiras, independentemente da forma, provenientes de terceiros pela execução da concessão;\ne) A receita da venda de ativos que façam parte do estabelecimento da concessão;\nf) O valor de todos os fornecimentos e serviços postos à disposição do concessionário pelas entidades adjudicantes, desde que sejam necessários à execução das obras ou à prestação dos serviços.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 99344,
+        "end": 101668
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

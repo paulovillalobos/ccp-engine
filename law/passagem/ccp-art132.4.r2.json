@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art132.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art132",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O programa do concurso pode ainda conter quaisquer regras específicas sobre o procedimento de concurso público consideradas convenientes pela entidade adjudicante, desde que não tenham por efeito impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 12065,
+        "end": 12311
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - O programa do concurso pode ainda conter regras destinadas a proteger o caráter confidencial das informações contidas nas peças do procedimento, bem como quaisquer regras específicas consideradas convenientes pela entidade adjudicante, desde que não tenham por efeito impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 2614,
+        "end": 2932
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

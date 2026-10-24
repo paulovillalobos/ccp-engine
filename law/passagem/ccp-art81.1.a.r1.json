@@ -1,0 +1,59 @@
+{
+  "id": "ccp:art81.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Declaração emitida conforme modelo constante do anexo ii ao presente Código e do qual faz parte integrante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 7565,
+        "end": 7675
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) Declaração do anexo ii ao presente Código, do qual faz parte integrante;\n'b) Documentos comprovativos de que não se encontra nas situações previstas nas alíneas b), d), e) e h) do n.º 1 do artigo 55.º'",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 3861,
+        "end": 4065
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "a) Declaração do anexo ii ao presente Código, do qual faz parte integrante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 2079,
+        "end": 2154
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 257050,
+        "end": 257198
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art47.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art47",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Quando o contrato a celebrar implique o pagamento de um preço, o preço base é o preço máximo que a entidade adjudicante se dispõe a pagar pela execução de todas as prestações que constituem o seu objecto, correspondendo ao mais baixo dos seguintes valores:\na) O valor fixado no caderno de encargos como parâmetro base do preço contratual;\nb) O valor máximo do contrato a celebrar permitido pela escolha do procedimento, quando este for adoptado nos termos do disposto nos artigos 19.º, 20.º ou 21.º;\nc) O valor máximo até ao qual o órgão competente, por lei ou por delegação, pode autorizar a despesa inerente ao contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47",
+      "offsets": {
+        "start": 2764,
+        "end": 3401
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - O preço base, que deve ser definido pela entidade adjudicante no caderno de encargos, é o montante máximo que esta entidade se dispõe a pagar pela execução de todas as prestações que constituem o objeto do contrato, incluindo eventuais renovações do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47",
+      "offsets": {
+        "start": 868,
+        "end": 1131
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - A entidade adjudicante pode fixar no convite ou no programa do procedimento um parâmetro base para o preço a pagar, designado preço base, que é o montante máximo que esta entidade se dispõe a pagar pela execução de todas as prestações que constituem o objeto do contrato, incluindo as eventuais prorrogações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47",
+      "offsets": {
+        "start": 67,
+        "end": 379
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

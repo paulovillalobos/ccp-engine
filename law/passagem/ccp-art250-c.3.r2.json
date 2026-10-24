@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art250-c.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-c",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Podem também ser utilizados como critérios, para a aquisição dos serviços abrangidos pela presente secção, fatores como:\na) A qualidade e humanidade dos cuidados a prestar, avaliada através de histórico de satisfação, entrevistas ou qualidade da descrição dos cuidados na proposta;\nb) Os indicadores ou níveis estimados de impacto social positivo a obter com a execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-c",
+      "offsets": {
+        "start": 2310,
+        "end": 2696
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - No caso de a entidade adjudicante utilizar a modalidade do critério de adjudicação prevista na alínea a) do n.º 1 do artigo 74.º, podem ser utilizados fatores como:\na) A qualidade e humanidade dos cuidados a prestar, avaliada através de histórico de satisfação, entrevistas ou qualidade da descrição dos cuidados na proposta;\nb) Os indicadores ou níveis estimados de impacto social positivo a obter com a execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-c",
+      "offsets": {
+        "start": 798,
+        "end": 1228
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

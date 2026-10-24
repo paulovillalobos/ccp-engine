@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art78-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art78-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2011-01-13",
+      "text": "2 - Quando a entidade adjudicante pretenda divulgar a sua intenção de celebrar um contrato no Jornal Oficial da União Europeia, nos termos do número anterior, deve fazê-lo através de um anúncio conforme modelo constante do anexo iii do Regulamento (CE) n.º 1150/2009, da Comissão, de 10 de Novembro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78-a",
+      "offsets": {
+        "start": 2358,
+        "end": 2657
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando a entidade adjudicante pretenda divulgar a sua intenção de celebrar um contrato no Jornal Oficial da União Europeia, nos termos do número anterior, deve fazê-lo através de um anúncio conforme modelo constante do anexo xii do Regulamento de Execução (UE) n.º 2015/1986 da Comissão, de 11 de novembro de 2015, que estabelece os formulários-tipo para publicação de anúncios no âmbito dos processos de adjudicação de contratos públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78-a",
+      "offsets": {
+        "start": 1389,
+        "end": 1832
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Quando a entidade adjudicante pretenda divulgar a sua intenção de celebrar um contrato no Jornal Oficial da União Europeia, nos termos do número anterior, deve fazê-lo através de um anúncio conforme modelo constante do formulário-tipo «Pré-anúncio de adjudicação direta» do Regulamento de Execução (UE) 2019/1780 da Comissão, de 23 de setembro de 2019, que estabelece os formulários-tipo para publicação de anúncios no âmbito dos processos de adjudicação de contratos públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78-a",
+      "offsets": {
+        "start": 398,
+        "end": 879
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

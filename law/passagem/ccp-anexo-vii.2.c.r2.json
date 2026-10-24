@@ -1,0 +1,24 @@
+{
+  "id": "ccp:anexo-vii.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-vii.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) 'Norma nacional': uma norma aprovada por um organismo nacional de normalização e acessível ao público em geral.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 721600,
+        "end": 721714
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

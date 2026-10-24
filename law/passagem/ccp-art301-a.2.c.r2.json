@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art301-a.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art301-a.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Nos casos em que se preveja o pagamento associado a resultados, devem ser previstos indicadores que permitam a quantificação do grau de obtenção dos mesmos e formas adequadas de o fazer, designadamente com recurso a avaliações independentes;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 529558,
+        "end": 529802
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

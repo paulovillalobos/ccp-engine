@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art229",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 229.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 229.º\nApresentação dos trabalhos de concepção\nCada concorrente pode apresentar vários trabalhos de concepção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art229",
+      "offsets": {
+        "start": 267,
+        "end": 383
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 229.º\nApresentação dos trabalhos de concepção",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art229",
+      "offsets": {
+        "start": 42,
+        "end": 94
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

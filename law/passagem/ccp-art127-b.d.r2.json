@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art127-b.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art127-b",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "d) A locação ou a aquisição de equipamentos informáticos, a aquisição, renovação, prorrogação ou manutenção de licenças ou serviços de software, a aquisição de serviços de computação ou de armazenamento em cloud, assim como a aquisição de serviços de consultoria ou assessoria e a realização de obras necessárias ao desenvolvimento de processos de transformação digital;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 316522,
+        "end": 316892
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

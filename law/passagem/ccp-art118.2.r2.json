@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art118.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art118",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - As negociações devem incidir sobre os atributos das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art118",
+      "offsets": {
+        "start": 2944,
+        "end": 3010
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "2 - O número anterior não se aplica às propostas que sejam excluídas por qualquer dos motivos previstos nas alíneas a) a n) do n.º 2 e no n.º 3 do artigo 146.º, aplicáveis com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art118",
+      "offsets": {
+        "start": 2166,
+        "end": 2368
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O número anterior não se aplica às propostas que sejam excluídas por qualquer dos motivos previstos no n.º 2 do artigo 146.º, aplicáveis com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art118",
+      "offsets": {
+        "start": 1309,
+        "end": 1480
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - O número anterior não se aplica às propostas que sejam excluídas por qualquer dos motivos previstos no n.º 2 do artigo 70.º, aplicáveis com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art118",
+      "offsets": {
+        "start": 438,
+        "end": 608
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

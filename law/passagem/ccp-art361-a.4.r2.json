@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art361-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art361-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - O disposto no presente artigo não se aplica nos casos previstos no n.º 2 do artigo 43.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361-a",
+      "offsets": {
+        "start": 1098,
+        "end": 1192
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

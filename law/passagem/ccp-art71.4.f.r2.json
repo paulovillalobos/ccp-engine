@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art71.4.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art71.4",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "f) À verificação da decomposição do respetivo preço, por meio de documentos comprovativos dos preços unitários incorporados no mesmo, nomeadamente folhas de pagamento e declarações de fornecedores, que atestem a conformidade dos preços apresentados e demonstrem a sua racionalidade económica;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art71",
+      "offsets": {
+        "start": 6207,
+        "end": 6499
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

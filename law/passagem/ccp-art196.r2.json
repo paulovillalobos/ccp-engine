@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art196",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-iv.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 196.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 196.º\nPrograma do procedimento de negociação\nPara além dos elementos previstos na alínea a) do n.º 1 do artigo 150.º e no n.º 1 do artigo 164.º, o programa do procedimento de negociação deve ainda indicar:\na) No caso de a qualificação assentar no sistema de selecção, o número mínimo de candidatos a qualificar, que não pode ser inferior a três;\nb) Quais os aspectos da execução do contrato a celebrar que a entidade adjudicante não está disposta a negociar;\nc) Se a negociação decorrerá, parcial ou totalmente, por via electrónica e os respectivos termos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art196",
+      "offsets": {
+        "start": 799,
+        "end": 1362
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 196.º\nPrograma do procedimento de negociação\nPara além dos elementos previstos na alínea a) do n.º 1 do artigo 150.º e nas alíneas a) a s) e u) do n.º 1 do artigo 164.º, o programa do procedimento de negociação deve ainda indicar:\na) No caso de a qualificação assentar no sistema de selecção, o número mínimo de candidatos a qualificar, que não pode ser inferior a três;\nb) Quais os aspectos da execução do contrato a celebrar que a entidade adjudicante não está disposta a negociar;\nc) Se a negociação decorrerá, parcial ou totalmente, por via electrónica e os respectivos termos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art196",
+      "offsets": {
+        "start": 55,
+        "end": 643
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

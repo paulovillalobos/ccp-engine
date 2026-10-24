@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art70.2.g",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) A existência de fortes indícios de actos, acordos, práticas ou informações susceptíveis de falsear as regras de concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 18135,
+        "end": 18263
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "g) Que sejam apresentadas como variantes quando não seja apresentada a proposta base;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 1154,
+        "end": 1239
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

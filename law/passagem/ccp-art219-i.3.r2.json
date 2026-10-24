@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-i.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-i",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A decisão de seleção referida nos números anteriores é notificada simultaneamente a todos os concorrentes e, quando a modalidade escolhida for a de concurso limitado por prévia qualificação, também aos concorrentes excluídos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-i",
+      "offsets": {
+        "start": 541,
+        "end": 770
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

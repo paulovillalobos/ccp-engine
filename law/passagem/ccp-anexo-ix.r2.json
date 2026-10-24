@@ -1,0 +1,36 @@
+{
+  "id": "ccp:anexo-ix",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "anexo",
+  "label": "Anexo IX",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Anexo IX\nLista de serviços de saúde, serviços sociais, serviços de ensino e outros serviços específicos\n[a que se refere o artigo 6.º-A, a subalínea v) da alínea b) do n.º 1 do artigo 11.º, o artigo 250.º-A e a alínea d) do n.º 3 do artigo 474.º]\n(ver documento original)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-ix",
+      "offsets": {
+        "start": 799,
+        "end": 1070
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Anexo IX\nLista de serviços de saúde, serviços sociais, serviços de ensino, serviços artístico-culturais e outros serviços específicos\n[a que se refere o artigo 6.º-A, a subalínea v) da alínea b) do n.º 1 do artigo 11.º, o artigo 250.º-A, a alínea d) do n.º 3 e a alínea c) do n.º 4 do artigo 474.º]\n(ver documento original)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-ix",
+      "offsets": {
+        "start": 330,
+        "end": 653
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

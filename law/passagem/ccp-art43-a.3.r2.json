@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art43-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - Nos casos previstos no número anterior, o projeto de execução elaborado pelo cocontratante não inclui a lista de preços unitários referida na alínea a) do n.º 2 do artigo 57.º",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 169249,
+        "end": 169428
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

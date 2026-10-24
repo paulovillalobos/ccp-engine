@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art16.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art16.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Concurso público;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art16",
+      "offsets": {
+        "start": 2441,
+        "end": 2461
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Consulta prévia;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art16",
+      "offsets": {
+        "start": 1378,
+        "end": 1397
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art333.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art333",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Sem prejuízo de outras situações de grave violação das obrigações assumidas pelo co-contratante especialmente previstas no contrato, o contraente público pode resolver o contrato a título sancionatório nos seguintes casos:\na) Incumprimento definitivo do contrato por facto imputável ao co-contratante;\nb) Incumprimento, por parte do co-contratante, de ordens, directivas ou instruções transmitidas no exercício do poder de direcção sobre matéria relativa à execução das prestações contratuais;\nc) Oposição reiterada do co-contratante ao exercício dos poderes de fiscalização do contraente público;\nd) Cessão da posição contratual ou subcontratação realizadas com inobservância dos termos e limites previstos na lei ou no contrato, desde que a exigência pelo co-contratante da manutenção das obrigações assumidas pelo contraente público contrarie o princípio da boa fé;\ne) Se o valor acumulado das sanções contratuais com natureza pecuniária exceder o limite previsto no n.º 2 do artigo 329.º;\nf) Incumprimento pelo co-contratante de decisões judiciais ou arbitrais respeitantes ao contrato;\ng) Não renovação do valor da caução pelo co-contratante;\nh) O co-contratante se apresente à insolvência ou esta seja declarada pelo tribunal.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art333",
+      "offsets": {
+        "start": 2279,
+        "end": 3515
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

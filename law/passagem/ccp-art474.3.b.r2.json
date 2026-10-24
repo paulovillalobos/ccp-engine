@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art474.3.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) (euro) 135 000, para os contratos públicos de fornecimentos de bens, de prestação de serviços e de concursos de conceção, adjudicados pelo Estado;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 4920,
+        "end": 5069
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) (euro) 139 000, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 2883,
+        "end": 3028
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) 139 000 €, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 805,
+        "end": 945
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

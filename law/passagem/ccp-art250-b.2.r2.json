@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art250-b.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - A adjudicação deve ser publicitada por meio de anúncio do qual constem as informações referidas anexo iii do Regulamento de Execução (UE) n.º 2015/1986, da Comissão, de 11 de novembro de 2015, em conformidade com o modelo aprovado por portaria dos membros do Governo responsáveis pela edição do Diário da República e pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b",
+      "offsets": {
+        "start": 2639,
+        "end": 3006
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - A adjudicação deve ser publicitada por meio de anúncio do qual constem as informações referidas no formulário-tipo «Resultado» do Regulamento de Execução (UE) 2019/1780 da Comissão de 23 de setembro de 2019, em conformidade com o modelo aprovado por portaria dos membros do Governo responsáveis pela edição do Diário da República e pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b",
+      "offsets": {
+        "start": 1000,
+        "end": 1382
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

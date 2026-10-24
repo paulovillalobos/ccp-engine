@@ -1,0 +1,24 @@
+{
+  "id": "ccp:anexo-xiv.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-xiv",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - É conferido aos participantes um prazo razoável antes de a entidade adjudicante efetivar a recolha de informação;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 726565,
+        "end": 726682
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

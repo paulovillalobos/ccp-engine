@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art50.2.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Erros e omissões do projeto de execução que não se incluam nas alíneas anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 4171,
+        "end": 4256
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

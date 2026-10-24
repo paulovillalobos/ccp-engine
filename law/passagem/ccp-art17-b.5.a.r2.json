@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-b.5.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17-b.5",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) No somatório dos preços contratuais de todos os contratos do mesmo tipo adjudicados durante os 12 meses anteriores, corrigido, quando possível, para atender às alterações de quantidades ou de valor que possam ocorrer durante os 12 meses seguintes à celebração do contrato inicial; ou",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 103343,
+        "end": 103629
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

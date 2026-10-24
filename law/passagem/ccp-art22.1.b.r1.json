@@ -1,0 +1,47 @@
+{
+  "id": "ccp:art22.1.b",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art22.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) O somatório dos preços contratuais relativos a todos os contratos já celebrados e dos preços base de todos os procedimentos ainda em curso, quando a formação desses contratos ocorra ao longo do período de um ano a contar do início do primeiro procedimento, seja inferior aos valores mencionados, respectivamente e consoante os casos, nos artigos 19.º, 20.º e 21.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art22",
+      "offsets": {
+        "start": 3688,
+        "end": 4054
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) O somatório dos preços contratuais relativos a todos os contratos já celebrados e do valor de todos os procedimentos ainda em curso, quando a formação desses contratos ocorra ao longo do período de um ano, desde que a entidade adjudicante, aquando do lançamento do primeiro procedimento, devesse ter previsto a necessidade de lançamento dos procedimentos subsequentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art22",
+      "offsets": {
+        "start": 2059,
+        "end": 2430
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 109651,
+        "end": 109799
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

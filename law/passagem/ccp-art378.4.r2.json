@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art378.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art378",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O empreiteiro é ainda responsável pelos trabalhos de suprimento de erros e omissões que, não sendo exigível que tivessem sido detectados na fase de formação do contrato nos termos do disposto nos n.os 1 e 2 do artigo 61.º, também não tenham sido por ele identificados no prazo de 30 dias a contar da data em lhe fosse exigível a sua detecção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 8176,
+        "end": 8522
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "4 - O empreiteiro é ainda responsável pelos trabalhos de suprimento de erros e omissões que, não sendo exigível que tivessem sido detetados na fase de formação do contrato nos termos do disposto no n.º 2 do artigo 61.º, também não tenham sido por ele identificados no prazo de 30 dias a contar da data em que lhe fosse exigível a sua deteção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 5754,
+        "end": 6096
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - O empreiteiro é ainda responsável pelos trabalhos complementares que se destinem ao suprimento de erros e omissões que, não podendo objetivamente ser detetados na fase de formação do contrato, também não tenham sido por ele identificados no prazo de 30 dias a contar da data em que lhe fosse exigível a sua deteção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 3477,
+        "end": 3796
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - Sem prejuízo do disposto no número anterior, o empreiteiro deve, no prazo de 60 dias contados da data da consignação total ou da primeira consignação parcial, reclamar sobre a existência de erros ou omissões só detetáveis nesse momento, sob pena de ser responsável por suportar metade do valor dos trabalhos complementares de suprimento desses erros e omissões.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 859,
+        "end": 1224
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

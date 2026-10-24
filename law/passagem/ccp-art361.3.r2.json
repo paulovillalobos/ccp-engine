@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art361.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art361",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O plano de trabalhos constante do contrato pode ser ajustado pelo empreiteiro ao plano final de consignação apresentado pelo dono da obra nos termos do disposto no artigo 357.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361",
+      "offsets": {
+        "start": 4004,
+        "end": 4184
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "3 - O plano de trabalhos constante do contrato pode ser ajustado pelo empreiteiro ao plano final de consignação apresentado pelo dono da obra nos termos do disposto no artigo 357.º, bem como em caso de prorrogação do prazo de execução, de detecção de erros e omissões reclamados na fase de execução ou quando haja lugar a trabalhos a mais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361",
+      "offsets": {
+        "start": 2212,
+        "end": 2551
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - O plano de trabalhos constante do contrato pode ser ajustado pelo empreiteiro ao plano final de consignação apresentado pelo dono da obra nos termos do disposto no artigo 357.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361",
+      "offsets": {
+        "start": 555,
+        "end": 735
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art50.5.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50.5",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) O órgão competente para a decisão de contratar, ou o órgão para o efeito indicado nas peças do procedimento, deve prestar os esclarecimentos solicitados;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 4939,
+        "end": 5095
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

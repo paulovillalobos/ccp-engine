@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art463",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iv.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 463.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 463.º\nPublicidade da sanção acessória\nAs decisões definitivas de aplicação da sanção acessória prevista no artigo 460.º são publicitadas no portal da Internet dedicado aos contratos públicos durante todo o período da respectiva inabilidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art463",
+      "offsets": {
+        "start": 408,
+        "end": 655
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 463.º\nPublicidade da sanção\nAs decisões definitivas de aplicação da sanção prevista no artigo 460.º são publicitadas no portal dos contratos públicos durante todo o período da respetiva inabilidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art463",
+      "offsets": {
+        "start": 31,
+        "end": 236
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

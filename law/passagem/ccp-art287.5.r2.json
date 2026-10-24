@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art287.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art287",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - São ineficazes os contratos celebrados:\na) Na sequência de um procedimento de formação de contrato sem publicação prévia de anúncio do respetivo procedimento no Jornal Oficial da União Europeia, quando exigível;\nb) Antes de decorrido, quando aplicável, o prazo de suspensão previsto no n.º 3 do artigo 95.º ou na alínea a) do n.º 1 do artigo 104.º, conforme o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287",
+      "offsets": {
+        "start": 4736,
+        "end": 5105
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287",
+      "offsets": {
+        "start": 3265,
+        "end": 3280
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287",
+      "offsets": {
+        "start": 1784,
+        "end": 1799
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

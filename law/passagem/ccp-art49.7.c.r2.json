@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.7.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49.7",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Os rótulos ecológicos sejam desenvolvidos por um procedimento em que possam participar todas as partes interessadas, tais como os organismos governamentais, os consumidores, os fabricantes, os distribuidores e as organizações ambientais; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 26560,
+        "end": 26802
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "c) Em termos do desempenho ou dos requisitos funcionais a que se refere a alínea a), com referência às especificações técnicas a que se refere a alínea b) como meio de presunção de conformidade com esse desempenho ou com esses requisitos funcionais;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 8558,
+        "end": 8807
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

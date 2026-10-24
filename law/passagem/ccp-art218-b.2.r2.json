@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art218-b.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art218-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O convite à apresentação das propostas de projetos de investigação e desenvolvimento deve indicar:\na) A identificação do procedimento de parceria para a inovação;\nb) A referência ao anúncio do procedimento de parceria para a inovação;\nc) O prazo de apresentação das propostas de projetos de investigação e desenvolvimento elaboradas pelos concorrentes qualificados.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 417240,
+        "end": 417609
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

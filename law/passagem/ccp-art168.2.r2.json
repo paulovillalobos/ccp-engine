@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art168.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art168",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A declaração referida no número anterior deve ser assinada pelo candidato ou por representante que tenha poderes para o obrigar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168",
+      "offsets": {
+        "start": 4315,
+        "end": 4447
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - A declaração do anexo v ao presente Código ou o Documento Europeu Único de Contratação Pública referidos no número anterior devem ser assinados pelo candidato ou por representante que tenha poderes para o obrigar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168",
+      "offsets": {
+        "start": 2760,
+        "end": 2977
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - A declaração ou o Documento Europeu Único de Contratação Pública referido no número anterior devem ser assinados pelo candidato ou por representante que tenha poderes para o obrigar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168",
+      "offsets": {
+        "start": 346,
+        "end": 532
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

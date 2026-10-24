@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art81.5.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81.5",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) No caso de se tratar de um procedimento de formação de um contrato de empreitada ou de concessão de obras públicas, uma declaração, emitida pelo Instituto da Construção e do Imobiliário, I. P., comprovativa de que pode executar a prestação objecto do contrato a celebrar por preencher os requisitos que lhe permitiriam ser titular de um alvará ou de um título de registo contendo as habilitações adequadas à execução da obra a realizar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 9688,
+        "end": 10127
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 257673,
+        "end": 257837
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

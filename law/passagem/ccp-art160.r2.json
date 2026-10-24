@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art160",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-vii",
+  "kind": "artigo",
+  "label": "Artigo 160.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 160.º\nAdjudicação\n1 - Da decisão de adjudicação devem constar os motivos da exclusão de propostas enumerados nos n.os 2 e 3 do artigo 146.º\n2 - No caso de o mais baixo preço constar de mais de uma proposta, deve ser adjudicada aquela que tiver sido apresentada mais cedo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art160",
+      "offsets": {
+        "start": 708,
+        "end": 986
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 160.º\nAdjudicação\n1 - Da decisão de adjudicação devem constar os motivos da exclusão de propostas enumerados nos n.os 2 e 3 do artigo 146.º\n2 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art160",
+      "offsets": {
+        "start": 373,
+        "end": 535
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 160.º\nAdjudicação\n1 - Da decisão de adjudicação devem constar os motivos da exclusão de propostas previstos nos n.ºs 2 e 3 do artigo 70.º\n2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art160",
+      "offsets": {
+        "start": 57,
+        "end": 217
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

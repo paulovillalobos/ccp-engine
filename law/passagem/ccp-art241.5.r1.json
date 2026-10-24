@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art241.5",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art241",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Consideram-se rejeitadas as propostas, tanto na versão inicial como na versão alterada, relativamente às quais a entidade adjudicante não proceda à notificação prevista no n.º 3.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art241",
+      "offsets": {
+        "start": 1078,
+        "end": 1260
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 445268,
+        "end": 445433
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

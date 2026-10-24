@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art217.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art217",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O convite à apresentação das propostas deve ser acompanhado do caderno de encargos ou da indicação do endereço do sítio da Internet onde este é disponibilizado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art217",
+      "offsets": {
+        "start": 1455,
+        "end": 1619
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

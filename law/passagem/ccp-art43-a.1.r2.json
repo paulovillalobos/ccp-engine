@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art43-a.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Nos casos em que a entidade adjudicante preveja a elaboração do projeto de execução como aspeto da execução do contrato a celebrar, o caderno de encargos deve ser integrado apenas por um programa preliminar e o valor estimado indicado no convite ou programa do procedimento deve discriminar separadamente os montantes correspondentes à conceção e à execução da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 168642,
+        "end": 169012
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

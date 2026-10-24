@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art83-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art83-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2009-10-07",
+      "text": "3 - No caso de não emissão dos documentos ou certificados referidos nos números anteriores ou se estes não se referirem a todos os casos referidos nas alíneas a), b) e i) do artigo 55.º, podem os mesmos ser substituídos por uma declaração solene, sob compromisso de honra, feita pelo interessado perante a autoridade judicial ou administrativa competente, um notário ou um organismo profissional qualificado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-a",
+      "offsets": {
+        "start": 3748,
+        "end": 4156
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - No caso de não emissão dos documentos ou certificados referidos nos números anteriores ou se estes não se referirem a todos os casos referidos nas alíneas b) e h) do n.º 1 do artigo 55.º, podem os mesmos ser substituídos por uma declaração solene, sob compromisso de honra, feita pelo interessado perante a autoridade judicial ou administrativa competente, um notário, ou um organismo profissional qualificado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-a",
+      "offsets": {
+        "start": 2492,
+        "end": 2906
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art197.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art197",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Quando o procedimento de negociação seja adoptado ao abrigo do disposto nas alíneas a) a d) do n.º 1 do artigo 29.º, independentemente do preço base fixado no caderno de encargos, deve ser sempre publicado anúncio nos termos do disposto no n.º 1 do artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art197",
+      "offsets": {
+        "start": 1547,
+        "end": 1812
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art197",
+      "offsets": {
+        "start": 1021,
+        "end": 1036
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art197",
+      "offsets": {
+        "start": 421,
+        "end": 436
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

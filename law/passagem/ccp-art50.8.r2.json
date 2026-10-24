@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art50.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - Os esclarecimentos, as retificações e as listas com a identificação dos erros e omissões detetados pelos interessados devem ser disponibilizados na plataforma eletrónica utilizada pela entidade adjudicante e juntos às peças do procedimento que se encontrem patentes para consulta, devendo todos os interessados que as tenham obtido ser imediatamente notificados desse facto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 5915,
+        "end": 6293
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

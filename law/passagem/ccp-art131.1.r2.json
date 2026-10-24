@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art131.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art131",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Quando a entidade adjudicante pretenda publicitar o concurso público no Jornal Oficial da União Europeia deve fazê-lo através de um anúncio conforme modelo constante do anexo ii do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131",
+      "offsets": {
+        "start": 3453,
+        "end": 3700
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Quando a entidade adjudicante pretenda publicitar o concurso público no Jornal Oficial da União Europeia deve fazê-lo através de um anúncio contendo as menções previstas na parte C do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131",
+      "offsets": {
+        "start": 1709,
+        "end": 1997
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Quando a entidade adjudicante tenha de publicitar o concurso público no Jornal Oficial da União Europeia deve fazê-lo através de um anúncio contendo as menções previstas na parte C do anexo v da Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131",
+      "offsets": {
+        "start": 112,
+        "end": 396
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

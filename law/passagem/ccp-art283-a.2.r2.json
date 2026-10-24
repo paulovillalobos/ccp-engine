@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art283-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art283-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2011-01-13",
+      "text": "2 - A anulação de um contrato com fundamento na alínea a) do número anterior, não é aplicável, quando, cumulativamente:\na) O procedimento de formação do contrato tenha sido escolhido em função de um critério material previsto no capítulo iii do título i da parte ii do presente Código;\nb) Tenha sido publicado o anúncio voluntário de transparência previsto no artigo 78.º-A;\nc) A outorga do contrato não tenha ocorrido antes de decorridos 10 dias após a data da referida publicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a",
+      "offsets": {
+        "start": 6044,
+        "end": 6526
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 505098,
+        "end": 505263
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": true
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Os contratos não são anuláveis com fundamento na alínea a) do número anterior quando, cumulativamente:\na) O respetivo procedimento de formação tenha sido escolhido em função de um critério material previsto nos artigos 24.º a 27.º;\nb) Tenha sido publicado o anúncio voluntário de transparência previsto no artigo 78.º-A;\nc) A outorga do contrato não tenha ocorrido antes de 10 dias após a data da referida publicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a",
+      "offsets": {
+        "start": 2275,
+        "end": 2696
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

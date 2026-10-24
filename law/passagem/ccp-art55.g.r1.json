@@ -1,0 +1,47 @@
+{
+  "id": "ccp:art55.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) Tenham sido objecto de aplicação da sanção acessória prevista na alínea b) do n.º 1 do artigo 627.º do Código do Trabalho, durante o período de inabilidade fixado na decisão condenatória;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 29659,
+        "end": 29849
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "g) Tenham sido objecto de aplicação da sanção acessória prevista na alínea b) do n.º 2 do artigo 562.º do Código de Trabalho;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 25718,
+        "end": 25843
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 197788,
+        "end": 197952
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art165.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art165",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Os requisitos mínimos de capacidade técnica a que se refere a alínea h) do n.º 1 do artigo anterior devem ser adequados à natureza das prestações objecto do contrato a celebrar, descrevendo situações, qualidades, características ou outros elementos de facto relativos, designadamente:\na) À experiência curricular dos candidatos;\nb) Aos recursos humanos, tecnológicos, de equipamento ou outros utilizados, a qualquer título, pelos candidatos;\nc) Ao modelo e à capacidade organizacionais dos candidatos, designadamente no que respeita à direcção e integração de valências especializadas, aos sistemas de informação de suporte e aos sistemas de controlo de qualidade;\nd) À capacidade dos candidatos adoptarem medidas de gestão ambiental no âmbito da execução do contrato a celebrar;\ne) À informação constante da base de dados do Instituto da Construção e do Imobiliário, I. P., relativa a empreiteiros, quando se tratar da formação de um contrato de empreitadas ou de concessão de obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 5046,
+        "end": 6043
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Os requisitos mínimos de capacidade técnica a que se refere a alínea h) do n.º 1 do artigo anterior devem ser adequados à natureza das prestações objecto do contrato a celebrar, descrevendo situações, qualidades, características ou outros elementos de facto relativos, designadamente:\na) À experiência curricular dos candidatos;\nb) Aos recursos humanos, tecnológicos, de equipamento ou outros utilizados, a qualquer título, pelos candidatos;\nc) Ao modelo e à capacidade organizacionais dos candidatos, designadamente no que respeita à direcção e integração de valências especializadas, aos sistemas de informação de suporte e aos sistemas de controlo de qualidade;\nd) À capacidade dos candidatos adoptarem medidas de gestão ambiental no âmbito da execução do contrato a celebrar;\ne) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 3078,
+        "end": 3876
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - As entidades adjudicantes podem impor requisitos mínimos de capacidade técnica, os quais devem ser adequados à natureza das prestações objeto do contrato a celebrar, descrevendo situações, qualidades, características ou outros elementos de facto relativos, designadamente:\na) À experiência curricular dos candidatos;\nb) Aos recursos humanos, tecnológicos, de equipamento ou outros utilizados, a qualquer título, pelos candidatos;\nc) Ao modelo e à capacidade organizacionais dos candidatos, designadamente no que respeita à direcção e integração de valências especializadas, aos sistemas de informação de suporte e aos sistemas de controlo de qualidade;\nd) À capacidade dos candidatos adoptarem medidas de gestão ambiental no âmbito da execução do contrato a celebrar;\ne) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 123,
+        "end": 909
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

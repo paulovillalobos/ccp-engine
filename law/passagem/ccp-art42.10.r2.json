@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art42.10",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "10 - O caderno de encargos do procedimento de formação de contratos cujas prestações que constituem o seu objecto se destinem, a título principal, a permitir à entidade adjudicante a abertura ou a exploração de redes públicas de telecomunicações ou a prestação ao público de um ou mais serviços de telecomunicações, deve prever os seguintes aspectos da execução dos mesmos:\na) A largura de banda;\nb) A transversalidade funcional, actual ou potencial da solução;\nc) A adequação tecnológica e as capacidades de evolução da solução;\nd) Os níveis de qualidade de serviço, relativamente ao desempenho, à disponibilidade da solução e aos tempos de resposta às solicitações da entidade adjudicante;\ne) Os mecanismos de monitorização dos níveis de qualidade de serviço;\nf) As sanções aplicáveis ao adjudicatário por incumprimento ao nível da instalação e da exploração do serviço;\ng) As condições da resolução contratual pela entidade adjudicante;\nh) A organização e os procedimentos para a gestão da relação contratual por parte do adjudicatário;\ni) A minimização do custo total de propriedade, incluindo a aquisição, a exploração, a manutenção e a desactivação ou alienação;\nj) Os prazos de implementação da solução;\nl) A indicação se o adjudicatário se encontra sujeito a especial dever de sigilo relativamente às informações obtidas no âmbito da execução do contrato;\nm) A redução automática dos preços em função das alterações registadas no mercado durante o prazo de vigência do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 16588,
+        "end": 18074
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "10 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 13957,
+        "end": 13973
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "10 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 2527,
+        "end": 2543
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

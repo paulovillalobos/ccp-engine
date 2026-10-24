@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art129-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art129-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - Com fundamento no presente artigo, o ajuste direto pode ser adotado apenas pelo período de um ano após o termo da vigência da declaração de estado de sítio, de estado de emergência ou de situação de calamidade.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 322239,
+        "end": 322453
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

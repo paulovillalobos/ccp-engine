@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art326.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art326",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Na falta de disposição contratual, o atraso em um ou mais pagamentos não determina o vencimento das restantes obrigações de pagamento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art326",
+      "offsets": {
+        "start": 2253,
+        "end": 2391
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2010-09-01",
+      "revoked": false
+    },
+    {
+      "version": "2010-09-01",
+      "text": "4 - Em caso de desacordo sobre o montante devido, deve o contraente público efectuar o pagamento sobre a importância em que existe concordância do co-contratante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art326",
+      "offsets": {
+        "start": 800,
+        "end": 962
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

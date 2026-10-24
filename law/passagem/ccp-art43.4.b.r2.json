@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art43.4.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43.4",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Uma lista completa de todas as espécies de trabalhos necessárias à execução da obra a realizar e do respectivo mapa de quantidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 17140,
+        "end": 17274
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

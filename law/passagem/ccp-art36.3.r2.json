@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art36.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando o valor do contrato for igual ou superior a (euro) 5 000 000, a fundamentação prevista no n.º 1 deve basear-se numa avaliação de custo/benefício e deve conter, nomeadamente e quando aplicável:\na) A identificação do tipo de beneficiários do contrato a celebrar;\nb) A taxa prevista de utilização da infraestrutura, serviço ou bem;\nc) A análise da rentabilidade;\nd) Os custos de manutenção;\ne) A avaliação dos riscos potenciais e formas de mitigação dos mesmos;\nf) O impacto previsível para a melhoria da organização;\ng) O impacto previsível no desenvolvimento ou na reconversão do país ou da região coberta pelo investimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 5018,
+        "end": 5652
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Quando o valor do contrato for igual ou superior a (euro) 5 000 000 ou, no caso de parceria para a inovação, a (euro) 2 500 000, a fundamentação prevista no n.º 1 deve basear-se numa avaliação de custo-benefício e deve conter, quando aplicável:\na) A identificação do tipo de beneficiários do contrato a celebrar;\nb) A taxa prevista de utilização da infraestrutura, serviço ou bem;\nc) A análise da rentabilidade;\nd) Os custos de manutenção;\ne) A avaliação dos riscos potenciais e formas de mitigação dos mesmos;\nf) O impacto previsível para a melhoria da organização;\ng) O impacto previsível no desenvolvimento ou na reconversão do país ou da região coberta pelo investimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 2956,
+        "end": 3635
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - A decisão de contratar deve ter em consideração critérios de economicidade e qualidade, de modo a permitir alcançar o resultado mais vantajoso para a satisfação das necessidades da entidade adjudicante e, quando tal se revele adequado, prosseguir objetivos de desenvolvimento sustentável, de inovação e de responsabilidade social.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 550,
+        "end": 884
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

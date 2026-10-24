@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art129-a.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art129-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - Os contratos cujo preço contratual seja igual ou superior ao previsto no n.º 1 do artigo 128.º devem ser publicitados no portal dos contratos públicos, mediante formulário eletrónico no qual se identifique:\na) O objeto do contrato;\nb) O tipo de procedimento;\nc) A entidade adjudicante;\nd) O adjudicatário;\ne) O preço contratual;\nf) O prazo de execução.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 322580,
+        "end": 322936
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

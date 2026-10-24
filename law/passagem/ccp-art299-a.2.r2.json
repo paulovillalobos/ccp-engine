@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-09-01",
+      "text": "2 - No caso previsto no número anterior, a cláusula tem-se por não escrita e a obrigação considera-se vencida de acordo com as regras do artigo anterior.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 525974,
+        "end": 526127
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

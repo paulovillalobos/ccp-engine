@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art36.3.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36.3",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "g) O impacto previsível no desenvolvimento ou na reconversão do país ou da região coberta pelo investimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 5544,
+        "end": 5652
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 152416,
+        "end": 152564
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

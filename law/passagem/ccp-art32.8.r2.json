@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art32.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art32",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "8 - A formação de um contrato misto cujo objecto abranja, simultaneamente, prestações típicas dos contratos de concessão de obras públicas, de concessão de serviços públicos ou de sociedade e de quaisquer outros, que não os de empreitada de obras públicas, de locação ou de aquisição de bens móveis ou de aquisição de serviços, está sujeita às disposições do presente Código relativas à escolha do procedimento e aos trâmites procedimentais específicos aplicáveis aos primeiros.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32",
+      "offsets": {
+        "start": 6864,
+        "end": 7342
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "8 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32",
+      "offsets": {
+        "start": 3527,
+        "end": 3542
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32",
+      "offsets": {
+        "start": 1730,
+        "end": 1745
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

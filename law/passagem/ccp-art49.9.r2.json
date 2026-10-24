@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art49.9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "9 - Para efeito do disposto nos n.os 4, 6 e 8, o concorrente pode apresentar um dossier técnico do fabricante ou um relatório de ensaio de um organismo reconhecido.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 27192,
+        "end": 27356
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "9 - As referências mencionadas no número anterior só são autorizadas, a título excecional, no caso de não ser possível uma descrição suficientemente precisa e inteligível do objeto do contrato nos termos do n.º 7, devendo, no entanto, ser acompanhada da menção 'ou equivalente'.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 9432,
+        "end": 9710
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "9 - As referências mencionadas no número anterior só são autorizadas, a título excecional, no caso de não ser possível uma descrição suficientemente precisa e inteligível do objeto do contrato nos termos do n.º 7, devendo, no entanto, ser acompanhada da menção «ou equivalente».",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 3761,
+        "end": 4039
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art132.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art132",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - As normas do programa do concurso prevalecem sobre quaisquer indicações constantes dos anúncios com elas desconformes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 12709,
+        "end": 12831
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 9020,
+        "end": 9035
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 2949,
+        "end": 2964
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

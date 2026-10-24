@@ -1,0 +1,24 @@
+{
+  "id": "ccp:dl.art7.q1.art24.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art7.q1.art24.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-dl-art7",
+      "offsets": {
+        "start": 279,
+        "end": 293
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art67.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art67",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Salvo no caso de ajuste directo em que tenha sido apresentada uma única proposta, os procedimentos para a formação de contratos são conduzidos por um júri, designado pelo órgão competente para a decisão de contratar, composto, em número ímpar, por um mínimo de três membros efectivos, um dos quais presidirá, e dois suplentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67",
+      "offsets": {
+        "start": 2736,
+        "end": 3066
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Com exceção do ajuste direto e dos casos previstos no n.º 3, os procedimentos para a formação de contratos são conduzidos por um júri, designado pelo órgão competente para a decisão de contratar, composto, em número ímpar, por um mínimo de três membros efetivos, um dos quais preside, e dois suplentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67",
+      "offsets": {
+        "start": 1452,
+        "end": 1758
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

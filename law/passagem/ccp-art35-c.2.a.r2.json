@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-c.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-c.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) O objeto e os objetivos do teste;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 147581,
+        "end": 147617
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

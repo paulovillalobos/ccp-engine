@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art123.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art123",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Elaborado o relatório preliminar referido no artigo anterior, o júri envia-o a todos os concorrentes, fixando-lhes um prazo, não inferior a cinco dias, para que se pronunciem, por escrito, ao abrigo do direito de audiência prévia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art123",
+      "offsets": {
+        "start": 1349,
+        "end": 1583
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Elaborado o relatório preliminar referido no artigo anterior, o júri envia-o a todos os concorrentes, fixando-lhes um prazo, não inferior a três dias, para que se pronunciem, por escrito, ao abrigo do direito de audiência prévia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art123",
+      "offsets": {
+        "start": 631,
+        "end": 864
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

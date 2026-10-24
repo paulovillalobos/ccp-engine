@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art189.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art189",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Com a notificação referida no artigo anterior, o órgão competente para a decisão de contratar envia aos candidatos qualificados, em simultâneo, um convite à apresentação de propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art189",
+      "offsets": {
+        "start": 4392,
+        "end": 4579
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

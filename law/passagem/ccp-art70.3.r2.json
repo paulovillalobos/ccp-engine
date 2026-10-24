@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art70.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A exclusão de quaisquer propostas com fundamento no disposto nas alíneas e) e g) do número anterior deve ser imediatamente comunicada à Autoridade da Concorrência e, no caso de empreitadas ou de concessões de obras públicas, igualmente ao Instituto da Construção e do Imobiliário, I. P.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 18264,
+        "end": 18554
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - A exclusão de quaisquer propostas com fundamento no disposto na alínea e) do número anterior, bem como a existência de indícios de práticas restritivas do comércio, ainda que não tenham dado origem à exclusão da proposta, devem ser comunicadas à Autoridade de Segurança Alimentar e Económica.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 13285,
+        "end": 13581
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - São igualmente excluídas as propostas cuja análise revele:\na) Que desrespeitam manifestamente o objeto do contrato a celebrar, ou que não apresentam algum dos atributos ou algum dos termos ou condições, nos termos, respetivamente, do disposto nas alíneas b) e c) do n.º 1 do artigo 57.º;\nb) Que apresentam algum dos atributos que violem os parâmetros base fixados no caderno de encargos ou que apresentem quaisquer termos ou condições que violem aspetos da execução do contrato a celebrar por aquele não submetidos à concorrência, sem prejuízo do disposto nos n.ºs 10 a 12 do artigo 49.º;\nc) A impossibilidade de avaliação das mesmas em virtude da forma de apresentação de algum dos respectivos atributos;\nd) Que o preço contratual seria superior ao preço base fixado no convite ou no programa do procedimento;\ne) Um preço ou custo anormalmente baixo, cujos esclarecimentos justificativos não tenham sido apresentados ou não tenham sido considerados nos termos do disposto no artigo seguinte;\nf) Que o contrato a celebrar implicaria a violação de quaisquer vinculações legais ou regulamentares aplicáveis;\ng) A existência de fortes indícios de actos, acordos, práticas ou informações susceptíveis de falsear as regras de concorrência;\nh) Que o concorrente não preenche os requisitos mínimos de capacidade exigidos, nos casos previstos no artigo 161.º-D;\ni) Que, na avaliação técnica prevista no artigo 161.º-E, não atingem a pontuação mínima indicada no programa do concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 2162,
+        "end": 3641
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

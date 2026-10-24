@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-xii.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-xii",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Modelo previsto na alínea b) do n.º 2 do artigo 476.º, a incluir no caderno de encargos e no contrato:\nAs partes contratantes aceitam atribuir a competência para a resolução de litígios relativos ao contrato ao Centro de Arbitragem Institucionalizado (designação e identificação do Centro de Arbitragem Institucionalizado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-xii",
+      "offsets": {
+        "start": 3183,
+        "end": 3510
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 725035,
+        "end": 725183
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

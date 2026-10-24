@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art74.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - O convite ou o programa do procedimento deve definir o critério de desempate na avaliação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74",
+      "offsets": {
+        "start": 5192,
+        "end": 5300
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - O convite ou o programa do procedimento pode definir critérios de desempate na avaliação das propostas, designadamente através da utilização dos fatores e subfatores densificadores do critério de adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74",
+      "offsets": {
+        "start": 1269,
+        "end": 1481
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

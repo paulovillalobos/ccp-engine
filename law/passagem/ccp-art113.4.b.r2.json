@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art113.4.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art113.4",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "b) A entidade adjudicante demonstre fundamentadamente que, nesse território, a entidade convidada é a única fornecedora do tipo de bens ou serviços a locar ou adquirir.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 4235,
+        "end": 4403
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

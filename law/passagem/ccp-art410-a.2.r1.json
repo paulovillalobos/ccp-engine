@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art410-a.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art410-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O valor do contrato deve ter em conta, nomeadamente, o seguinte:\na) O valor de qualquer tipo de opção e eventuais prorrogações da duração da concessão;\nb) As receitas provenientes do pagamento de taxas pelos utilizadores das obras ou dos serviços distintas das cobradas em nome da entidade adjudicante;\nc) Os pagamentos ou qualquer vantagem financeira, independentemente da forma, que a entidade adjudicante ou qualquer outra autoridade pública proporcione ao concessionário, incluindo a compensação pelo cumprimento de uma obrigação de serviço público e os subsídios ao investimento público;\nd) O valor das subvenções ou de quaisquer outras vantagens financeiras, independentemente da forma, provenientes de terceiros pela execução da concessão;\ne) A receita da venda de ativos que façam parte do estabelecimento da concessão;\nf) O valor de todos os fornecimentos e serviços postos à disposição do concessionário pelas entidades adjudicantes, desde que sejam necessários à execução das obras ou à prestação dos serviços;\ng) Os prémios ou pagamentos a candidatos ou proponentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art410-a",
+      "offsets": {
+        "start": 623,
+        "end": 1705
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 651884,
+        "end": 652032
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

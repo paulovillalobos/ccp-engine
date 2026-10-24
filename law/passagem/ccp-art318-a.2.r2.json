@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art318-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Para o efeito previsto na parte final do número anterior, o contraente público interpela, gradual e sequencialmente, os concorrentes que participaram no procedimento pré-contratual original, de acordo com a respetiva classificação final, a fim de concluir um novo contrato para a adjudicação da conclusão dos trabalhos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-a",
+      "offsets": {
+        "start": 7289,
+        "end": 7612
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Para o efeito previsto na parte final do número anterior, o contraente público interpela, gradual e sequencialmente, os concorrentes que participaram no procedimento pré-contratual original, de acordo com a respetiva classificação final, a fim de concluir a cessão da posição contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-a",
+      "offsets": {
+        "start": 522,
+        "end": 813
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art79.1.g",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art79.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "g) No procedimento para a celebração de acordo-quadro com várias entidades o número de candidaturas ou propostas apresentadas ou admitidas seja inferior ao número mínimo previsto no programa de concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art79",
+      "offsets": {
+        "start": 4641,
+        "end": 4844
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "g) No procedimento para a celebração de acordo-quadro com várias entidades o número de candidaturas ou propostas apresentadas ou admitidas seja inferior ao número mínimo previsto no programa de concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art79",
+      "offsets": {
+        "start": 834,
+        "end": 1037
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

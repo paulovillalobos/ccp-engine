@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55.1.l",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "l)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "l) Tenham acusado deficiências significativas ou persistentes na execução de, pelo menos, um contrato público anterior nos últimos três anos, tendo tal facto conduzido à resolução desse contrato por incumprimento, ao pagamento de indemnização resultante de incumprimento, à aplicação de sanções que tenham atingido os valores máximos aplicáveis nos termos dos n.os 2 e 3 do artigo 329.º, ou a outras sanções equivalentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 18513,
+        "end": 18934
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "l) Tenham acusado deficiências significativas ou persistentes na execução de, pelo menos, um contrato público anterior nos últimos três anos, tendo tal facto conduzido à resolução desse contrato por incumprimento, ao pagamento de indemnização resultante de incumprimento, à aplicação de sanções que tenham atingido os valores máximos aplicáveis nos termos dos n.ºs 2 e 3 do artigo 329.º, ou a outras sanções equivalentes;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 4302,
+        "end": 4723
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

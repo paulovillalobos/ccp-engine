@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art169.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art169",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Os documentos destinados à qualificação dos candidatos são obrigatoriamente redigidos em língua portuguesa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art169",
+      "offsets": {
+        "start": 935,
+        "end": 1046
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

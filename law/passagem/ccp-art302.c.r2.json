@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art302.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art302",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Modificar unilateralmente as cláusulas respeitantes ao conteúdo e ao modo de execução das prestações previstas no contrato por razões de interesse público;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art302",
+      "offsets": {
+        "start": 1977,
+        "end": 2135
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "c) Modificar unilateralmente as cláusulas respeitantes ao conteúdo e ao modo de execução das prestações previstas no contrato por razões de interesse público, com os limites previstos no presente Código;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art302",
+      "offsets": {
+        "start": 1137,
+        "end": 1340
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Modificar unilateralmente o contrato, com os limites previstos no presente Código;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art302",
+      "offsets": {
+        "start": 331,
+        "end": 416
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

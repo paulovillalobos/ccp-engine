@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art17.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - Quando a entidade adjudicante for organizada por unidades orgânicas, na definição do valor do contrato deve ser tido em conta o valor total referente a todas elas, salvo se forem independentemente responsáveis pelas suas aquisições, nomeadamente por se tratar de serviços periféricos ou municipalizados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 5064,
+        "end": 5371
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 787,
+        "end": 802
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

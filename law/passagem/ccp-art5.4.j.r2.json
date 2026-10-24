@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art5.4.j",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5.4",
+  "kind": "alinea",
+  "label": "j)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "j) Contratos de aquisição de serviços de investigação e desenvolvimento abrangidos pelos códigos CPV referidos no anexo viii ao presente Código, que dele faz parte integrante, desde que se verifiquem cumulativamente as seguintes condições:\ni) Os resultados obtidos com os respetivos serviços não revertam exclusivamente a favor da entidade adjudicante, para utilização no exercício da sua própria atividade;\nii) O pagamento dos serviços em causa não seja integralmente suportado pela entidade adjudicante, designadamente por se tratar de projeto cofinanciado por fundos nacionais ou europeus.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 11078,
+        "end": 11670
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2018-05-16",
+      "revoked": false
+    },
+    {
+      "version": "2018-05-16",
+      "text": "j) Contratos de aquisição de serviços de investigação e desenvolvimento, exceto os contratos de investigação e desenvolvimento com os códigos CPV 73000000-2 a 73120000-9, 73300000-5, 73420000-2 e 73430000-5 em que se verifiquem cumulativamente as seguintes condições:\ni) Os resultados destinam-se exclusivamente à entidade adjudicante, para utilização no exercício da sua própria atividade;\nii) O serviço prestado é integralmente remunerado pela entidade adjudicante",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 7339,
+        "end": 7805
+      },
+      "valid_from": "2018-05-16",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "j) Contratos de aquisição de serviços de investigação e desenvolvimento, exceto os contratos de investigação e desenvolvimento com os códigos CPV 73000000-2 a 73120000-9, 73300000-5, 73420000-2 e 73430000-5 em que se verifiquem cumulativamente as seguintes condições:\ni) Os resultados destinam-se exclusivamente à entidade adjudicante, para utilização no exercício da sua própria atividade;\nii) O serviço prestado é integralmente remunerado pela entidade adjudicante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 2779,
+        "end": 3246
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

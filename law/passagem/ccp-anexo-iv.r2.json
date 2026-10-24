@@ -1,0 +1,48 @@
+{
+  "id": "ccp:anexo-iv",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": null,
+  "kind": "anexo",
+  "label": "Anexo IV",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Anexo IV\nExpressão matemática que traduz o requisito mínimo de capacidade financeira [a que se refere a alínea i) do n.º 1 e o n.º 4 do artigo 164.º e o n.º 2 do artigo 165.º]\n1 - O requisito mínimo de capacidade financeira referido no n.º 2 do artigo 165.º do Código dos Contratos Públicos é traduzido pela seguinte expressão matemática:\nV x t (igual ou menor que) R x f\nsendo:\nV - o preço base, quando fixado nos termos do disposto na alínea a) do n.º 1 do artigo 47.º ou, na falta dessa fixação, o valor económico estimado do contrato, a estabelecer no programa do concurso, exclusivamente para efeitos da avaliação da capacidade financeira dos candidatos;\nt - a taxa de juro EURIBOR, a seis meses, acrescida de 200 pontos base, divulgada à data da publicação do anúncio do concurso no Diário da República;\nR - o valor médio dos resultados operacionais do candidato nos últimos três exercícios, calculado com recurso à seguinte função:\n(ver documento original)\n2 - No caso de o candidato se ter constituído há menos de três exercícios, para efeitos do cálculo de R só são tidos em conta os resultados operacionais do candidato nos exercícios concluídos, sendo o denominador da função adaptado em conformidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-iv",
+      "offsets": {
+        "start": 1698,
+        "end": 2910
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "Anexo IV\nExpressão matemática que traduz o requisito mínimo de capacidade financeira [a que se refere a alínea i) do n.º 1, o n.º 4 do artigo 164.ºe o n.º 2 do artigo 165.º]\n1 — O requisito mínimo de capacidade financeira referido no n.º 2 do artigo 165.º do Código dos Contratos Públicos é traduzido pela seguinte expressão matemática:\nV × t ≤ R × f\nsendo:\nV — o preço base, quando fixado nos termos do disposto na alínea a) do n.º 1 do artigo 47.º ou, na falta dessa fixação, o valor económico estimado do contrato, a estabelecer no programa do concurso, exclusivamente para efeitos da avaliação da capacidade financeira dos\ncandidatos;\nt — a taxa de juro EURIBOR, a seis meses, acrescida de 200 pontos base, divulgada à data da publicação do anúncio do concurso no Diário da República;\nR — o valor médio dos resultados operacionais do candidato nos últimos três exercícios, calculado com recurso à seguinte função:\n(ver documento original)\n2 — No caso de o candidato se ter constituído há menos de três exercícios, para efeitos do cálculo de R só são tidos em conta os resultados operacionais do candidato nos exercícios concluídos, sendo o denominador da função adaptado em conformidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-iv",
+      "offsets": {
+        "start": 352,
+        "end": 1543
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Anexo IV\nExpressão matemática que traduz o requisito mínimo de capacidade financeira [a que se refere a alínea i) do n.º 1, o n.º 4 do artigo 164.ºe o n.º 2 do artigo 165.º]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-iv",
+      "offsets": {
+        "start": 6,
+        "end": 179
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

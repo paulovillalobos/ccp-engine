@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art168.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art168",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "6 - A apresentação de candidatura por candidato que se encontre numa das situações previstas no n.º 1 do artigo 55.º constitui prestação de falsas declarações para os efeitos previstos no artigo 456.º, salvo se tiver dado a conhecer tais situações à entidade adjudicante, designadamente para apuramento, por esta, da existência do impedimento ou para efeitos de relevação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168",
+      "offsets": {
+        "start": 1842,
+        "end": 2214
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

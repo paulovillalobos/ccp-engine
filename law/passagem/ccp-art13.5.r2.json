@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art13.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art13",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - Se, devido à reorganização das suas atividades, o volume de negócios não estiver disponível para os três anos anteriores, basta demonstrar que as atividades projetadas para os anos seguintes cumprem o disposto no n.º 3.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13",
+      "offsets": {
+        "start": 11032,
+        "end": 11255
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - Se, devido à reorganização das suas atividades, o volume de negócios ou a medida alternativa baseada na atividade referida no número anterior não estiverem disponíveis para os três anos anteriores, ou já não forem relevantes, basta demonstrar que as atividades projetadas para os próximos anos cumprem o disposto no n.º 3.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13",
+      "offsets": {
+        "start": 7140,
+        "end": 7466
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

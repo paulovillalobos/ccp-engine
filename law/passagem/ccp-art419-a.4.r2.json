@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art419-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art419-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "4 - O disposto nos n.os 1 e 2 não se aplica a trabalhadores que executem tarefas ocasionais ou serviços específicos e não duradouros no âmbito da execução da concessão.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art419-a",
+      "offsets": {
+        "start": 1667,
+        "end": 1835
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - O disposto nos n.ºs 1 e 2 não se aplica a trabalhadores que executem tarefas ocasionais ou serviços específicos e não duradouros, ou serviços que pela sua própria natureza sejam habitualmente realizados por profissionais liberais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art419-a",
+      "offsets": {
+        "start": 666,
+        "end": 900
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

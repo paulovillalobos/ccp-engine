@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art36.4.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36.4",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "f) O impacto previsível para a melhoria da organização;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 1399,
+        "end": 1454
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

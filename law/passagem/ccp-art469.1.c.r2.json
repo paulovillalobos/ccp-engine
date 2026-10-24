@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art469.1.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art469.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Na data indicada pelos serviços postais, quando efectuadas por carta registada;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art469",
+      "offsets": {
+        "start": 1236,
+        "end": 1318
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

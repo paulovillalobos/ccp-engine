@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art187.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art187",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "8 - As decisões de não qualificação ou de extinção do procedimento, no caso da alínea b) do número anterior, devem ser notificadas a todos os candidatos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art187",
+      "offsets": {
+        "start": 811,
+        "end": 964
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-d.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Terem por objeto a prossecução de uma missão de serviço público ligada à prestação dos serviços a que se refere o número anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d",
+      "offsets": {
+        "start": 3049,
+        "end": 3182
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

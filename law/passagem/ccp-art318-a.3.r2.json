@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art318-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A execução do contrato ocorre nas mesmas condições já propostas pelo cedente no procedimento pré-contratual original.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-a",
+      "offsets": {
+        "start": 7613,
+        "end": 7734
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

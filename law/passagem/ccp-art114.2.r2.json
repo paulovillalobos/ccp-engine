@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art114.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art114",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No caso de o ajuste directo ser adoptado ao abrigo do disposto na alínea g) do n.º 1 do artigo 27.º, a entidade adjudicante deve convidar a apresentar propostas todos os adjudicatários do concurso de concepção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114",
+      "offsets": {
+        "start": 3610,
+        "end": 3824
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "2 - No caso de o ajuste direto ser adotado ao abrigo do disposto na alínea g) do n.º 1 do artigo 27.º, a entidade adjudicante deve convidar a apresentar propostas para a concretização ou o desenvolvimento dos trabalhos de conceção todos os selecionados no concurso de conceção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114",
+      "offsets": {
+        "start": 3012,
+        "end": 3289
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - As entidades a convidar nos termos do número anterior não podem ser especialmente relacionadas entre si, considerando-se como tais, nomeadamente, as entidades que partilhem, ainda que apenas parcialmente, representantes legais ou sócios, ou as sociedades que se encontrem em relação de simples participação, de participação recíproca, de domínio ou de grupo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114",
+      "offsets": {
+        "start": 1439,
+        "end": 1801
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - As entidades a convidar nos termos do número anterior não podem ser especialmente relacionadas entre si, considerando-se existir uma relação especial entre as entidades que:\na) Partilhem o mesmo beneficiário efetivo;\nb) Partilhem pelo menos um membro de órgão de administração ou direção;\nc) Se encontrem em relação de simples participação, participação recíproca, domínio ou grupo, nos termos do Código das Sociedades Comerciais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114",
+      "offsets": {
+        "start": 226,
+        "end": 660
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

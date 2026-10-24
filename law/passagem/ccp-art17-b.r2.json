@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 17.º-B",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 17.º-B\nFracionamento e regras de agregação do valor estimado do contrato\n1 - O valor estimado do contrato não pode ser calculado, nem o objeto do contrato pode ser fracionado, com o intuito de excluir a observância de quaisquer exigências legais, designadamente das constantes do presente Código.\n2 - Quando a entidade adjudicante for organizada por unidades orgânicas, deve ser tido em conta o valor total estimado dos contratos celebrados por todas elas, salvo se forem independentemente responsáveis pelas suas aquisições, nomeadamente por se tratar de serviços periféricos ou municipalizados.\n3 - Quando prestações do mesmo tipo, suscetíveis de constituírem objeto de um único contrato, sejam contratadas através de mais do que um procedimento, o valor estimado a considerar para a escolha de cada procedimento é o do somatório dos valores estimados dos vários contratos.\n4 - As entidades adjudicantes ficam dispensadas do disposto no número anterior relativamente à formação de contrato ou de um conjunto de contratos cujo valor estimado seja inferior a 80 000 €, no caso de bens e serviços, ou a 1 000 000 €, no caso de empreitadas de obras públicas, se o valor estimado daquele contrato ou daquele conjunto de contratos não exceder 20 % do somatório calculado nos termos do número anterior.\n5 - Tratando-se de contratos de aquisição de bens móveis ou de serviços de uso corrente ou que se destinem a ser prorrogados durante um determinado período, o valor estimado do contrato deve ser calculado com base:\na) No somatório dos preços contratuais de todos os contratos do mesmo tipo adjudicados durante os 12 meses anteriores, corrigido, quando possível, para atender às alterações de quantidades ou de valor que possam ocorrer durante os 12 meses seguintes à celebração do contrato inicial; ou\nb) No somatório do valor estimado dos sucessivos contratos que preveja vir a celebrar durante os 12 meses seguintes ao início da execução do primeiro contrato.\n6 - Para efeitos do disposto no n.º 3, consideram-se:\na) Do mesmo tipo, as prestações que se revelem aptas a satisfazer a mesma necessidade da entidade adjudicante;\nb) Suscetíveis de constituir objeto de um único contrato, as prestações que, no seu conjunto, revelem uma função unitária económica e técnica.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 101823,
+        "end": 104097
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

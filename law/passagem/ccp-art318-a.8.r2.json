@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art318-a.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318-a",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - A posição contratual do cocontratante nos subcontratos por si celebrados transmite-se automaticamente para a entidade cessionária, salvo em caso de recusa por parte desta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-a",
+      "offsets": {
+        "start": 8687,
+        "end": 8862
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

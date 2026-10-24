@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-c.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-c.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Consideração adequada das necessidades específicas das diferentes categorias de utilizadores dos bens e serviços, incluindo os grupos desfavorecidos e vulneráveis;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-c",
+      "offsets": {
+        "start": 1897,
+        "end": 2063
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

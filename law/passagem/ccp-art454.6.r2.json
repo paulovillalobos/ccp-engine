@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art454.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art454",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Aos serviços a mais e aos serviços a menos é aplicável, com as necessárias adaptações, o disposto nos artigos 371.º a 375.º e 379.º a 381.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454",
+      "offsets": {
+        "start": 7567,
+        "end": 7710
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - Aos serviços complementares e aos serviços a menos é aplicável, com as necessárias adaptações, o disposto nos artigos 371.º a 375.º e 379.º a 381.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454",
+      "offsets": {
+        "start": 2357,
+        "end": 2508
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "6 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454",
+      "offsets": {
+        "start": 269,
+        "end": 284
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

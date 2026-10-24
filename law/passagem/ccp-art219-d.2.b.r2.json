@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-d.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-d.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Os documentos destinados à qualificação dos candidatos e a identificação do prazo e modo para a sua apresentação.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 428055,
+        "end": 428171
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

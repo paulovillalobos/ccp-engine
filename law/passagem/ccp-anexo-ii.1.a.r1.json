@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-ii.1.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-ii.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2012-08-11",
+      "text": "a) Não se encontra em estado de insolvência, em fase de liquidação, dissolução ou cessação de actividade, sujeita a qualquer meio preventivo de liquidação de patrimónios ou em qualquer situação análoga, nem tem o respectivo processo pendente;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-ii",
+      "offsets": {
+        "start": 6815,
+        "end": 7057
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 4.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 715307,
+        "end": 715471
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

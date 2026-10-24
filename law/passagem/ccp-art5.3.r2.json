@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art5.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A parte ii do presente Código não é igualmente aplicável à formação dos contratos, a celebrar pelos hospitais E. P. E.:\na) De empreitada de obras públicas cujo valor seja inferior ao referido na alínea c) do artigo 7.º da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março;\nb) De locação ou de aquisição de bens móveis e de aquisição de serviços cujo valor seja inferior ao referido na alínea b) do artigo 7.º da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 23191,
+        "end": 23713
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "3 - 3 - A parte II do presente Código não é igualmente aplicável à formação dos contratos, a celebrar pelos hospitais E. P. E. e pelas associações de direito privado que prossigam finalidades a título principal de natureza científica e tecnológica, bem como, exclusivamente no âmbito da actividade científica e tecnológica, pelas instituições de ensino superior públicas e pelos laboratórios de Estado:\na) De empreitada de obras públicas cujo valor seja inferior ao referido na alínea c) do artigo 7.º da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março;\nb) De locação ou de aquisição de bens móveis e de aquisição de serviços cujo valor seja inferior ao referido na alínea b) do artigo 7.º da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 17763,
+        "end": 18564
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 13200,
+        "end": 13215
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 700,
+        "end": 715
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

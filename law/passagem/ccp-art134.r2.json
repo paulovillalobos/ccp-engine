@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art134",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 134.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 134.º\nDevolução do preço pago pela disponibilização das peças do concurso\nO preço pago à entidade adjudicante pela disponibilização das peças do concurso é devolvido aos concorrentes que o requeiram quando:\na) As respectivas propostas não sejam excluídas ou retiradas;\nb) O órgão competente para a decisão de contratar decida não adjudicar com fundamento no disposto nas alíneas c) e d) do n.º 1 do artigo 79.º;\nc) O órgão competente para a decisão de contratar revogar esta decisão com fundamento no n.º 2 do artigo 80.º;\nd) O concorrente fique objectivamente impedido de celebrar o contrato na sequência da rectificação ou da expressa aceitação de erros ou omissões das peças do concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art134",
+      "offsets": {
+        "start": 308,
+        "end": 1005
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 134.º\nDevolução do preço pago pela disponibilização das peças do concurso",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art134",
+      "offsets": {
+        "start": 55,
+        "end": 135
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

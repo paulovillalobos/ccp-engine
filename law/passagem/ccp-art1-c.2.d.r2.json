@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-c.2.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-c.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "d) Supervisão e contributo humano, não dispensando a intervenção dos titulares dos órgãos competentes na verificação dos resultados produzidos pelos sistemas digitais;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 60467,
+        "end": 60634
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

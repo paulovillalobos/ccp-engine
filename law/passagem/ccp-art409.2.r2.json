@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art409.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art409",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Mediante estipulação contratual, o concessionário pode exercer os seguintes poderes e prerrogativas de autoridade:\na) Expropriação por utilidade pública;\nb) Utilização, protecção e gestão das infra-estruturas afectas ao serviço público;\nc) Licenciamento e concessão, nos termos da legislação aplicável à utilização do domínio público, da ocupação ou do exercício de qualquer actividade nos terrenos, edificações e outras infra-estruturas que lhe estejam afectas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art409",
+      "offsets": {
+        "start": 1129,
+        "end": 1595
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Mediante estipulação contratual, o concessionário pode ser autorizado a exercer os seguintes poderes e prerrogativas de autoridade:\na) Expropriação por utilidade pública;\nb) Utilização, proteção e gestão das infraestruturas afetas aos serviços concedidos;\nc) Licenciamento e concessão, nos termos da legislação aplicável à utilização do domínio público, da ocupação ou do exercício de qualquer actividade nos terrenos, edificações e outras infra-estruturas que lhe estejam afectas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art409",
+      "offsets": {
+        "start": 290,
+        "end": 775
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

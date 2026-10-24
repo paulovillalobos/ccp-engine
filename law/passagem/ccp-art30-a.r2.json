@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art30-a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 30.º-A",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 30.º-A\nEscolha da parceria para a inovação\nA entidade adjudicante pode adotar a parceria para a inovação quando pretenda a realização de atividades de investigação e o desenvolvimento de bens, serviços ou obras inovadoras, independentemente da sua natureza e das áreas de atividade, tendo em vista a sua aquisição posterior, desde que estes correspondam aos níveis de desempenho e preços máximos previamente acordados entre aquela e os participantes na parceria.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art30-a",
+      "offsets": {
+        "start": 668,
+        "end": 1137
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 30.º-A\nEscolha da parceria para a inovação\nA entidade adjudicante pode adotar a parceria para a inovação quando pretenda a realização de atividades de investigação e o desenvolvimento de bens, serviços ou obras inovadoras, independentemente da sua natureza e das áreas de atividade, tendo em vista a sua aquisição posterior, desde que estes correspondam aos níveis de desempenho e custos máximos previamente acordados entre aquela e os participantes na parceria.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art30-a",
+      "offsets": {
+        "start": 43,
+        "end": 512
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

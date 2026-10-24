@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art78.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art78",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - No caso de se tratar de contrato de aquisição de algum dos serviços constantes do anexo ii B da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março, deve ser expressamente indicado, no anúncio a que se refere o n.º 1, se a entidade adjudicante concorda ou não com a sua publicação no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78",
+      "offsets": {
+        "start": 12742,
+        "end": 13089
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - No caso de se tratar da adjudicação de contratos de concessão, devem ainda ser publicados os anúncios conforme os modelos aplicáveis referidos nos artigos 32.º e 33.º da Diretiva n.º 2014/23/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78",
+      "offsets": {
+        "start": 9660,
+        "end": 9923
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

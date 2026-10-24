@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art313.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art313",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Nos contratos com objeto passível de ato administrativo e demais contratos sobre o exercício de poderes públicos, o fundamento previsto na alínea a) do artigo anterior não pode conduzir à modificação do contrato por decisão judicial ou arbitral, quando esta interfira com o resultado do exercício da margem de livre decisão administrativa subjacente ao mesmo ou implique a formulação de valorações próprias do exercício da função administrativa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313",
+      "offsets": {
+        "start": 4450,
+        "end": 4899
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - Em caso de modificações sucessivas, o valor a considerar para efeitos do número anterior é, no caso da alínea a), o do acumulado das modificações e, no caso da alínea b), o de cada modificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313",
+      "offsets": {
+        "start": 2426,
+        "end": 2623
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Em caso de modificações sucessivas, o valor a considerar para efeitos do n.º 1 do artigo 312.º é, no caso da alínea c), o do acumulado das modificações e, no caso da alínea d), o de cada modificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313",
+      "offsets": {
+        "start": 308,
+        "end": 511
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

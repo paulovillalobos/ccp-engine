@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-c.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-c",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - Na utilização de sistemas digitais, as entidades adjudicantes devem respeitar os seguintes princípios:\na) Transparência e explicabilidade, de modo a garantir o direito ao conhecimento da utilização de sistemas digitais e ao seu modo de funcionamento;\nb) Segurança, mediante a adoção de soluções que minimizem os riscos de erros e de efeitos discriminatórios;\nc) Garantia da proteção de dados pessoais, bem como de segredos comerciais e industriais e de outras informações confidenciais;\nd) Supervisão e contributo humano, não dispensando a intervenção dos titulares dos órgãos competentes na verificação dos resultados produzidos pelos sistemas digitais;\ne) Garantia de interoperabilidade entre os sistemas digitais utilizados e plataformas agregadoras do Estado.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 59976,
+        "end": 60743
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

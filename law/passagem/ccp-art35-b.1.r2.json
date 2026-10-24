@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-b.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-b",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Qualquer operador económico interessado pode apresentar à entidade adjudicante competente uma iniciativa espontânea para efetuar quaisquer prestações ao abrigo de contratos públicos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 144976,
+        "end": 145162
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

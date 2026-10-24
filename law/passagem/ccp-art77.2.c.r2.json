@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art77.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art77.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Confirmar no prazo para o efeito fixado, se for o caso, os compromissos assumidos por terceiras entidades relativos a atributos ou a termos ou condições da proposta adjudicada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77",
+      "offsets": {
+        "start": 4326,
+        "end": 4505
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Confirmar no prazo para o efeito fixado, se for o caso, os compromissos assumidos por terceiras entidades relativos a atributos ou a termos ou condições da proposta adjudicada;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77",
+      "offsets": {
+        "start": 675,
+        "end": 854
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

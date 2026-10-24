@@ -1,0 +1,36 @@
+{
+  "id": "ccp:dl.art9.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:dl.art9",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Durante o período de um ano a contar da data da entrada em vigor do presente decreto-lei, a entidade adjudicante pode fixar, no programa do procedimento, que os documentos que constituem a proposta ou a candidatura podem ser apresentados em suporte papel.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-dl-art9",
+      "offsets": {
+        "start": 1627,
+        "end": 1886
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-09-12",
+      "revoked": false
+    },
+    {
+      "version": "2012-09-12",
+      "text": "1 - Até 31 de Outubro de 2009, a entidade adjudicante pode fixar, no programa do procedimento, que os documentos que constituem a proposta ou a candidatura possam ser apresentados em suporte papel.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-dl-art9",
+      "offsets": {
+        "start": 95,
+        "end": 292
+      },
+      "valid_from": "2012-09-12",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

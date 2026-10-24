@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art35-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Para efeitos do disposto no número anterior, são consideradas medidas adequadas, entre outras, a comunicação aos restantes candidatos ou concorrentes de todas as informações pertinentes trocadas no âmbito da participação do candidato ou concorrente na preparação do procedimento de formação do contrato, com inclusão dessas informações nas peças do procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art35-a",
+      "offsets": {
+        "start": 2783,
+        "end": 3149
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Para efeitos do disposto no número anterior, são consideradas medidas adequadas, entre outras, a comunicação aos restantes candidatos ou concorrentes de todas as informações pertinentes trocadas no âmbito da participação do candidato ou concorrente na preparação do procedimento de formação do contrato, bem como a fixação de prazos adequados para a apresentação de propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art35-a",
+      "offsets": {
+        "start": 1167,
+        "end": 1547
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art250-c.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-c",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - A modalidade do critério de adjudicação a utilizar é a prevista na alínea a) do n.º 1 do artigo 74.º, tendo em conta fatores de qualidade e sustentabilidade para os serviços sociais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-c",
+      "offsets": {
+        "start": 2123,
+        "end": 2309
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-c",
+      "offsets": {
+        "start": 782,
+        "end": 797
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

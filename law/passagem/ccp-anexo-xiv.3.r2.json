@@ -1,0 +1,24 @@
+{
+  "id": "ccp:anexo-xiv.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-xiv",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A entidade adjudicante recolhe a informação, compõe o objeto contratual pretendido e leva a cabo a tramitação do procedimento de formação de contrato, nos termos previstos nos artigos anteriores;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 726683,
+        "end": 726882
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

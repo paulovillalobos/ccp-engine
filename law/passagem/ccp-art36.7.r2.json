@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art36.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "7 - O disposto nos números anteriores não prejudica a aplicação de regimes especiais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 2157,
+        "end": 2242
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

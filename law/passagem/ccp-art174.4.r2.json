@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art174.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art174",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "4 - Se as peças procedimentais não puderem, total ou parcialmente, ser disponibilizadas sem restrições de acesso, designadamente por motivos de segurança, devem ser disponibilizadas por meios adequados, sendo, nesse caso, os prazos mínimos previstos nos n.os 1 e 3 do presente artigo prorrogados por cinco dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art174",
+      "offsets": {
+        "start": 1161,
+        "end": 1472
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

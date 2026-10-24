@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art17.9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "9 - Caso não se verifique qualquer das situações referidas nos números anteriores considera-se o contrato sem valor.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 5818,
+        "end": 5934
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "9 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 1108,
+        "end": 1123
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

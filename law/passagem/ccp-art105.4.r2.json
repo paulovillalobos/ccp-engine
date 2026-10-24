@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art105.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art105",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - No caso previsto no número anterior, o adjudicatário pode, em alternativa, exigir judicialmente a celebração do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art105",
+      "offsets": {
+        "start": 2489,
+        "end": 2614
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

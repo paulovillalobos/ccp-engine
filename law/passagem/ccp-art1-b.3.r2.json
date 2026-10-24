@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-b.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-b",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - No respeito pelos limites e vinculações legais aplicáveis, as entidades devem procurar adotar as soluções mais simples e menos onerosas para os operadores económicos e evitar a imposição de formalidades inúteis, bem como de exigências de documentação sobre factos e qualidades a que possam aceder por outras vias.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 58807,
+        "end": 59124
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

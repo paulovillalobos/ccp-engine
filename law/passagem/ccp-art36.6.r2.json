@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art36.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - O disposto nos números anteriores não prejudica a aplicação de regimes especiais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 5971,
+        "end": 6056
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - As peças do procedimento devem identificar todos os pareceres prévios, licenciamentos e autorizações necessárias que possam condicionar o procedimento e a execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 1976,
+        "end": 2156
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

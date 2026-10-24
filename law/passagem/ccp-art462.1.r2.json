@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art462.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art462",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O produto das coimas reverte em 60 % para os cofres do Estado, em 30 % para o Instituto da Construção e do Imobiliário, I. P., ou em 20 % para a Autoridade de Segurança Alimentar e Económica e 10 % para a Comissão de Aplicação de Coimas em Matéria Económica e de Publicidade, consoante o caso, e em 10 % para as entidades adjudicantes que tenham participado os factos que determinaram a aplicação da coima.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art462",
+      "offsets": {
+        "start": 627,
+        "end": 1037
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - O produto das coimas reverte em 60 % para o Estado, em 30 % para o Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., e em 10 % para as entidades adjudicantes que tenham participado os factos que determinaram a aplicação da coima.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art462",
+      "offsets": {
+        "start": 64,
+        "end": 319
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

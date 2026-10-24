@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art91.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art91",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A não prestação da caução pelo adjudicatário, no caso de empreitadas ou de concessões de obras públicas, deve ser imediatamente comunicada ao Instituto da Construção e do Imobiliário, I. P.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art91",
+      "offsets": {
+        "start": 2708,
+        "end": 2901
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - A não prestação da caução pelo adjudicatário, no caso de empreitadas ou de concessões de obras públicas, deve ser imediatamente comunicada ao Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., sem prejuízo do disposto no n.º 2 do artigo 88.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art91",
+      "offsets": {
+        "start": 1932,
+        "end": 2198
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Quando o adjudicatário não prestar a caução que lhe for exigida, nos termos do n.º 1, em virtude da verificação de facto que não lhe seja imputável, o órgão competente para a decisão de contratar deve conceder-lhe, em função das razões invocadas, um prazo adicional para a apresentação dos documentos em falta, sob pena de caducidade da adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art91",
+      "offsets": {
+        "start": 608,
+        "end": 961
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

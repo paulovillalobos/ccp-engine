@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art133.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art133",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - A aquisição das peças do concurso não constitui, em caso algum, condição de participação no mesmo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art133",
+      "offsets": {
+        "start": 3635,
+        "end": 3737
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art133",
+      "offsets": {
+        "start": 1980,
+        "end": 1995
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art133",
+      "offsets": {
+        "start": 614,
+        "end": 629
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

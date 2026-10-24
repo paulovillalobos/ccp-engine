@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art131.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art131",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "8 - Não há lugar à publicitação do concurso público no Jornal Oficial da União Europeia no caso de se tratar de um procedimento de formação de um contrato:\na) Relativamente ao qual o Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro, não disponha de modelo próprio;\nb) De concessão de obras públicas, quando diga directa e principalmente respeito a uma ou a várias das actividades exercidas nos sectores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131",
+      "offsets": {
+        "start": 5214,
+        "end": 5751
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "8 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131",
+      "offsets": {
+        "start": 3209,
+        "end": 3224
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131",
+      "offsets": {
+        "start": 1481,
+        "end": 1496
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

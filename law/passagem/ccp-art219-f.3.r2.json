@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-f.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-f",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - O júri do concurso só pode tomar conhecimento da identidade dos concorrentes depois de integralmente cumprido o disposto no número anterior.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 430880,
+        "end": 431024
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

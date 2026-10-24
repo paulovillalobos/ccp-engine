@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-d.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-d",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Quando se verificar a situação prevista na alínea k) do n.º 1, os termos de referência devem ser acompanhados do caderno de encargos relativo ao procedimento de ajuste direto.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 428639,
+        "end": 428818
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

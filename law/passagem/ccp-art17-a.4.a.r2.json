@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-a.4.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17-a.4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) O valor de qualquer tipo de opção e eventuais prorrogações da duração da concessão;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 100712,
+        "end": 100798
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

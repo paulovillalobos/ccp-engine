@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art429.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art429",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Na exploração de uma actividade de serviço público, o concessionário está sujeito aos seguintes princípios:\na) Continuidade e regularidade;\nb) Igualdade;\nc) Adaptação às necessidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art429",
+      "offsets": {
+        "start": 553,
+        "end": 740
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Na gestão e exploração de atividades de serviço público, o concessionário está sujeito aos seguintes princípios:\na) Continuidade e regularidade;\nb) Igualdade;\nc) Adaptação às necessidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art429",
+      "offsets": {
+        "start": 140,
+        "end": 332
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

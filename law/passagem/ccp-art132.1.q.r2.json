@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art132.1.q",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art132.1",
+  "kind": "alinea",
+  "label": "q)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "q) A possibilidade de adopção de um ajuste directo nos termos do disposto na alínea a) do n.º 1 do artigo 25.º ou na alínea a) do n.º 1 do artigo 27.º, quando for o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 11527,
+        "end": 11697
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "q) A possibilidade de adoção de um ajuste direto, nos termos do disposto na alínea a) do n.º 1 do artigo 25.º ou na alínea a) do n.º 1 do artigo 27.º, ou da consulta prévia, nos termos do artigo 27.º-A;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 7925,
+        "end": 8127
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "q) A possibilidade de adoção de um ajuste direto, nos termos do disposto na alínea a) do n.º 1 do artigo 25.º ou na alínea a) do n.º 1 do artigo 27.º, quando for o caso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 4965,
+        "end": 5134
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

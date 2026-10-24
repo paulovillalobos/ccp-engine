@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-a.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - No caso de contratos de empreitada de obras públicas, o cálculo do valor estimado do contrato inclui o custo da obra e o valor total dos bens móveis e serviços que são postos à disposição do adjudicatário pela entidade adjudicante, desde que sejam necessários à execução da obra.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 99416,
+        "end": 99699
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

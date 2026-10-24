@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art465.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art465",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2012-08-11",
+      "text": "1 - É obrigatória a publicitação, no portal da Internet dedicado aos contratos públicos, dos elementos referentes à formação e à execução dos contratos públicos, desde o início do procedimento até ao termo da execução, nos termos a definir por portaria dos membros do Governo responsáveis pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art465",
+      "offsets": {
+        "start": 997,
+        "end": 1332
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - A informação relativa à formação e à execução dos contratos públicos sujeitos à parte ii é obrigatoriamente publicitada no portal dos contratos públicos, através de uma ficha conforme modelo constante do anexo iii ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art465",
+      "offsets": {
+        "start": 534,
+        "end": 771
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - A informação relativa à formação e à execução dos contratos públicos é obrigatoriamente publicitada no portal dos contratos públicos, através de fichas conforme modelo constante de portaria dos membros do Governo responsáveis pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art465",
+      "offsets": {
+        "start": 56,
+        "end": 332
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

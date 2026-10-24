@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-b.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-b",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - O prazo para a apresentação dos documentos que materializam os trabalhos de conceção não pode ser inferior a 30 dias, nos concursos público e limitado, e 15 dias, no concurso simplificado.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 424099,
+        "end": 424291
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

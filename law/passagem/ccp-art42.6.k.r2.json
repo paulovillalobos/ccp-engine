@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art42.6.k",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42.6",
+  "kind": "alinea",
+  "label": "k)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "k) A valorização da contratação coletiva;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 9160,
+        "end": 9201
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

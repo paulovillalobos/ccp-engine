@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art14.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art14",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Qualquer pessoa colectiva que possa exercer, directa ou indirectamente, uma influência dominante sobre a entidade adjudicante, em virtude de qualquer uma das situações referidas na alínea anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art14",
+      "offsets": {
+        "start": 2317,
+        "end": 2517
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Qualquer pessoa coletiva que possa exercer, direta ou indiretamente, uma influência dominante sobre a entidade adjudicante, em virtude de qualquer uma das situações referidas na alínea anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art14",
+      "offsets": {
+        "start": 953,
+        "end": 1150
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

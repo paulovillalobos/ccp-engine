@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Serviço e assistência técnica pós-venda e condições de entrega, designadamente a data de entrega, o processo de entrega, o prazo de entrega ou de execução e o tempo de prestação de assistência;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75",
+      "offsets": {
+        "start": 16427,
+        "end": 16623
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

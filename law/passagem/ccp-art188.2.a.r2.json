@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) Apresentar os documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso, sempre que tais requisitos tenham apenas sido declarados;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188",
+      "offsets": {
+        "start": 408,
+        "end": 614
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

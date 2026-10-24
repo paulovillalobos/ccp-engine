@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art113.3.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art113.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "a) Quando a entidade adjudicante seja o Estado ou uma região autónoma, apenas são tidos em conta os contratos celebrados no âmbito do mesmo gabinete governamental, serviço central ou serviço periférico de cada ministério ou secretaria regional, respetivamente;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 3360,
+        "end": 3620
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

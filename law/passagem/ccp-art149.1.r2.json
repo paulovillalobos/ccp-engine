@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art149.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art149",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - No caso de contratos de concessão de obras públicas ou de concessão de serviços públicos, a entidade adjudicante pode adoptar uma fase de negociação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149",
+      "offsets": {
+        "start": 1965,
+        "end": 2132
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - A entidade adjudicante pode adotar uma fase de negociação das propostas nos seguintes casos:\na) Na formação de contratos de concessão de obras públicas ou de concessão de serviços, independentemente do valor do contrato a celebrar;\nb) Na formação de contratos de empreitadas de obras públicas cujo valor seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Na formação de contratos de locação ou aquisição de bens e aquisição de serviços cujo valor seja inferior ao limiar referido na alínea b) do n.º 3 do artigo 474.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149",
+      "offsets": {
+        "start": 1026,
+        "end": 1571
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - A entidade adjudicante pode adotar uma fase de negociação das propostas nos seguintes casos:\na) Na formação de contratos de concessão de obras públicas ou de concessão de serviços, independentemente do valor estimado do contrato a celebrar;\nb) Na formação de contratos de empreitadas de obras públicas cujo valor estimado seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Na formação de contratos de locação ou aquisição de bens e aquisição de serviços cujo valor estimado seja inferior ao limiar referido na alínea b) do n.º 3 do artigo 474.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149",
+      "offsets": {
+        "start": 76,
+        "end": 648
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

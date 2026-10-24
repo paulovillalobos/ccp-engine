@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art314.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art314",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando a modificação do contrato tenha por fundamento as circunstâncias previstas na alínea a) do artigo 312.º, o cocontratante só tem direito à reposição do equilíbrio financeiro quando, tendo em conta a repartição do risco entre as partes, o facto invocado como fundamento desse direito altere os pressupostos com base nos quais determinou o valor das prestações a que se obrigou, desde que o contraente público conhecesse ou não devesse ignorar esses pressupostos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314",
+      "offsets": {
+        "start": 1975,
+        "end": 2446
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314",
+      "offsets": {
+        "start": 1127,
+        "end": 1142
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314",
+      "offsets": {
+        "start": 228,
+        "end": 243
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

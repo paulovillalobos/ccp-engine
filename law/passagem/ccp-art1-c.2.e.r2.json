@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-c.2.e",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-c.2",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "e) Garantia de interoperabilidade entre os sistemas digitais utilizados e plataformas agregadoras do Estado.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 60635,
+        "end": 60743
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

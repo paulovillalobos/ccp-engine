@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art96.1.i",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96.1",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) A identificação do gestor do contrato em nome da entidade adjudicante, nos termos do artigo 290.º-A;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96",
+      "offsets": {
+        "start": 4304,
+        "end": 4407
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

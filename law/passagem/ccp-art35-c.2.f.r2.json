@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-c.2.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-c.2",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "f) As condições de reversibilidade, portabilidade e eliminação de dados;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 148062,
+        "end": 148134
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

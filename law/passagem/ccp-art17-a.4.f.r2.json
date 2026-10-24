@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-a.4.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17-a.4",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "f) O valor de todos os fornecimentos e serviços postos à disposição do concessionário pelas entidades adjudicantes, desde que sejam necessários à execução das obras ou à prestação dos serviços.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 101475,
+        "end": 101668
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

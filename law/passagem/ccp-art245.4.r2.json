@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art245.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art245",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Deve ainda ser publicado no Jornal Oficial da União Europeia um anúncio do sistema de qualificação, conforme modelo constante do anexo vii do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art245",
+      "offsets": {
+        "start": 4846,
+        "end": 5054
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - Deve ainda ser publicado no Jornal Oficial da União Europeia um anúncio do sistema de qualificação, conforme modelo constante do anexo vii ao Regulamento de Execução (UE) n.º 2015/1986, da Comissão, de 11 de novembro de 2015.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art245",
+      "offsets": {
+        "start": 3009,
+        "end": 3238
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Deve ainda ser publicado no Jornal Oficial da União Europeia um anúncio do sistema de qualificação, formulário-tipo «Concurso» constante do Regulamento de Execução (UE) 2019/1780 da Comissão, de 23 de setembro de 2019.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art245",
+      "offsets": {
+        "start": 1195,
+        "end": 1417
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

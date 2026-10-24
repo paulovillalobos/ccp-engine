@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Para efeitos do disposto no número anterior, considera-se conflito de interesses qualquer situação em que o dirigente ou o trabalhador de uma entidade adjudicante ou de um prestador de serviços que age em nome da entidade adjudicante, que participe na preparação e na condução do procedimento de formação de contrato público ou que possa influenciar os resultados do mesmo, tem direta ou indiretamente um interesse financeiro, económico ou outro interesse pessoal suscetível de comprometer a sua imparcialidade e independência no contexto do referido procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-a",
+      "offsets": {
+        "start": 4974,
+        "end": 5542
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

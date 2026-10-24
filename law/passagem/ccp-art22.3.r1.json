@@ -1,0 +1,47 @@
+{
+  "id": "ccp:art22.3",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art22",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - No caso de contratos de empreitadas de obras públicas, de contratos de locação ou de aquisição de bens móveis ou de contratos de aquisição de serviços, a escolha, nos termos do disposto nos artigos anteriores, do ajuste directo, bem como do concurso público ou do concurso limitado por prévia qualificação cujo anúncio não seja publicado no Jornal Oficial da União Europeia, permite a celebração dos contratos relativos a lotes em que o preço base fixado no caderno de encargos seja inferior a (euro) 1 000 000, no caso de empreitadas de obras públicas, ou a (euro) 80 000, no caso de bens móveis ou serviços, ainda que os somatórios referidos nos números anteriores sejam iguais ou superiores aos valores mencionados, respectivamente e consoante os casos, nos artigos 19.º e 20.º, desde que o valor cumulado dos preços base dos procedimentos de formação dos contratos relativos a lotes cuja celebração é permitida neste número não exceda 20 % daqueles somatórios.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art22",
+      "offsets": {
+        "start": 4691,
+        "end": 5659
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art22",
+      "offsets": {
+        "start": 2759,
+        "end": 2774
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 109651,
+        "end": 109799
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

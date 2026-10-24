@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art36.4.e",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36.4",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "e) A avaliação dos riscos potenciais e formas de mitigação dos mesmos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36",
+      "offsets": {
+        "start": 1328,
+        "end": 1398
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

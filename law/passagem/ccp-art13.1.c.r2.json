@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art13.1.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art13.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) A celebrar entre uma entidade adjudicante abrangida pelas alíneas a) ou b) do n.º 2 do artigo 2.º e uma empresa sua associada ou uma entidade abrangida pela alínea d) do mesmo número da qual aquela entidade adjudicante faça parte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13",
+      "offsets": {
+        "start": 12614,
+        "end": 12847
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) A celebrar entre uma entidade adjudicante abrangida pela alínea a) do n.º 2 do artigo 2.º e uma empresa sua associada ou uma entidade abrangida pela alínea d) do mesmo número da qual aquela entidade adjudicante faça parte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13",
+      "offsets": {
+        "start": 884,
+        "end": 1109
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

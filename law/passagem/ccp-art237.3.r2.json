@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art237.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art237",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - O sistema de aquisição dinâmico rege-se, com as necessárias adaptações, pelas disposições que regulam o concurso limitado por prévia qualificação, em tudo o que não esteja especialmente previsto nos artigos seguintes e seja com eles compatível.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art237",
+      "offsets": {
+        "start": 731,
+        "end": 979
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

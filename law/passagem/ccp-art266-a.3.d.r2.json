@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art266-a.3.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art266-a.3",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Os bens móveis afetos às Forças Armadas e que revistam a natureza de material militar;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 485514,
+        "end": 485603
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

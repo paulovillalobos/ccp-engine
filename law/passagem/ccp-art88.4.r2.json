@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art88.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art88",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Pode não ser exigida a prestação de caução, nos termos previstos no programa do procedimento ou no convite, quando o adjudicatário apresente seguro da execução do contrato a celebrar, emitido por entidade seguradora, que cubra o respectivo preço contratual, ou declaração de assunção de responsabilidade solidária com o adjudicatário, pelo mesmo montante, emitida por entidade bancária, desde que essa entidade apresente documento comprovativo de que possui sede ou sucursal em Estado membro da União Europeia, emitido pela entidade que nesse Estado exerça a supervisão seguradora ou bancária, respectivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art88",
+      "offsets": {
+        "start": 5915,
+        "end": 6529
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

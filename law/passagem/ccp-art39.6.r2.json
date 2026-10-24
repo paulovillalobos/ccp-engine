@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art39.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art39",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - As entidades adjudicantes membro do agrupamento só são solidariamente responsáveis pelo cumprimento das obrigações por si assumidas quando tais obrigações o sejam na sua totalidade pelo conjunto dos seus membros.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39",
+      "offsets": {
+        "start": 5557,
+        "end": 5773
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

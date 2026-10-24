@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art256-a.3.b.i",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256-a.3.b",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) Declaração da entidade convidada de aceitação do conteúdo do caderno de encargos do acordo-quadro, elaborada em conformidade com o modelo constante do anexo i ao presente Código;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a",
+      "offsets": {
+        "start": 5563,
+        "end": 5744
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "i) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a",
+      "offsets": {
+        "start": 1717,
+        "end": 1731
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

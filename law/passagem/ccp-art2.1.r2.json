@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art2.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - São entidades adjudicantes:\na) O Estado;\nb) As Regiões Autónomas;\nc) As autarquias locais;\nd) Os institutos públicos;\ne) As fundações públicas, com excepção das previstas na Lei n.º 62/2007, de 10 de Setembro;\nf) As associações públicas;\ng) As associações de que façam parte uma ou várias das pessoas colectivas referidas nas alíneas anteriores, desde que sejam maioritariamente financiadas por estas, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada pelas mesmas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2",
+      "offsets": {
+        "start": 8718,
+        "end": 9318
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "1 - São entidades adjudicantes:\na) O Estado;\nb) As Regiões Autónomas;\nc) As autarquias locais;\nd) Os institutos públicos;\ne) As fundações públicas;\nf) As associações públicas;\ng) As associações de que façam parte uma ou várias das pessoas colectivas referidas nas alíneas anteriores, desde que sejam maioritariamente financiadas por estas, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada pelas mesmas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2",
+      "offsets": {
+        "start": 4414,
+        "end": 4948
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - São entidades adjudicantes:\na) O Estado;\nb) As Regiões Autónomas;\nc) As autarquias locais;\nd) Os institutos públicos;\ne) As entidades administrativas independentes;\nf) O Banco de Portugal;\ng) As fundações públicas;\nh) As associações públicas;\ni) As associações de que façam parte uma ou várias das pessoas colectivas referidas nas alíneas anteriores, desde que sejam maioritariamente financiadas por estas, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada pelas mesmas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2",
+      "offsets": {
+        "start": 2127,
+        "end": 2732
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

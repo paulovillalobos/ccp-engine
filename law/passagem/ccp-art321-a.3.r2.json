@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art321-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art321-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - O contraente público efetua diretamente os pagamentos ao subcontratado caso o cocontratante não se oponha nos termos do número anterior, ou não liquide os valores devidos no prazo por si indicado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art321-a",
+      "offsets": {
+        "start": 3775,
+        "end": 3975
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - O contraente público efetua diretamente os pagamentos ao subcontratado caso, na situação concreta:\na) O quadro normativo especificamente aplicável à execução do contrato não proíba a realização de pagamentos a terceiros; e\nb) O cocontratante não se oponha justificadamente nos termos do número anterior, ou não liquide os valores devidos no prazo por si indicado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art321-a",
+      "offsets": {
+        "start": 2206,
+        "end": 2573
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

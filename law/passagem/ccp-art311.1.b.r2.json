@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art311.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art311.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Por decisão judicial ou arbitral.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311",
+      "offsets": {
+        "start": 1597,
+        "end": 1633
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) Decisão judicial ou arbitral, exceto nos casos em que a modificação interfira com o resultado do exercício da margem de livre decisão administrativa subjacente ao mesmo ou implique a formulação de valorações próprias do exercício da função administrativa;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311",
+      "offsets": {
+        "start": 854,
+        "end": 1112
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

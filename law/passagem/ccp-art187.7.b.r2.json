@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art187.7.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art187.7",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "b) Todas as candidaturas tenham sido excluídas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art187",
+      "offsets": {
+        "start": 763,
+        "end": 810
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

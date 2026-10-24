@@ -1,0 +1,59 @@
+{
+  "id": "ccp:anexo-i.6",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-i",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Quando a entidade adjudicante o solicitar, o concorrente obriga-se, nos termos do disposto no artigo 81.º do Código dos Contratos Públicos, a apresentar a declaração que constitui o anexo ii do referido Código, bem como os documentos comprovativos de que se encontra nas situações previstas nas alíneas b), d), e) e i) do n.º 4 desta declaração.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-i",
+      "offsets": {
+        "start": 19983,
+        "end": 20332
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - Quando a entidade adjudicante o solicitar, o concorrente obriga-se, nos termos do disposto no artigo 81.º do Código dos Contratos Públicos, a apresentar os documentos comprovativos de que não se encontra nas situações previstas nas alíneas b), d), e) e i) do n.º 1 do artigo 55.º do referido Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-i",
+      "offsets": {
+        "start": 6011,
+        "end": 6314
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "6 - Quando a entidade adjudicante o solicitar, o concorrente obriga-se, nos termos do disposto no artigo 81.º do Código dos Contratos Públicos, a apresentar os documentos comprovativos de que não se encontra nas situações previstas nas alíneas b), d), e) e h) do n.º 1 do artigo 55.º do referido Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-i",
+      "offsets": {
+        "start": 2260,
+        "end": 2563
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 714182,
+        "end": 714330
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

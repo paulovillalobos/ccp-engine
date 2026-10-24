@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art156.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art156",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O procedimento de concurso público urgente rege-se, com as necessárias adaptações, pelas disposições que regulam o concurso público, em tudo o que não esteja especialmente previsto nos artigos seguintes ou que com eles seja incompatível.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art156",
+      "offsets": {
+        "start": 686,
+        "end": 927
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

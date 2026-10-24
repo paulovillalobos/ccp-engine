@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art416",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 416.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 416.º\nViabilidade económico-financeira do projecto\nO contrato só pode atribuir ao concessionário o direito a prestações económico-financeiras desde que as mesmas não violem as regras comunitárias e nacionais da concorrência, sejam essenciais à viabilidade económico-financeira da concessão e não eliminem a efectiva e significativa transferência do risco da concessão para o concessionário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art416",
+      "offsets": {
+        "start": 616,
+        "end": 1013
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 416.º\nViabilidade económico-financeira do projecto\nO contrato só pode atribuir ao concessionário o direito a prestações económico-financeiras desde que as mesmas não violem as regras da União Europeia e nacionais da concorrência, sejam essenciais à viabilidade económico-financeira da concessão e não eliminem a efetiva e significativa transferência de um risco de exploração para o concessionário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art416",
+      "offsets": {
+        "start": 55,
+        "end": 460
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

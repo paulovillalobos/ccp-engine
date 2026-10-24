@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art62-a.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art62-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - A entidade adjudicante pode exigir que as propostas sejam apresentadas através de catálogos eletrónicos ou que incluam catálogos eletrónicos, podendo ser especificados requisitos técnicos dos catálogos, mediante portaria dos membros do Governo responsáveis pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 215013,
+        "end": 215320
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

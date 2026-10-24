@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55.1.i.iii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1.i",
+  "kind": "subalinea",
+  "label": "iii)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "iii) Fraude, na acepção do artigo 1.º da Convenção relativa à Protecção dos Interesses Financeiros das Comunidades Europeias;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 16784,
+        "end": 16909
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "iii) Fraude, na aceção do artigo 1.º da Convenção relativa à Proteção dos Interesses Financeiros das Comunidades Europeias;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 10556,
+        "end": 10679
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

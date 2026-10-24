@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art78.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art78",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "7 - Nas situações em que a publicitação do concurso tenha sido efetuada sob a forma de anúncio de pré-informação, ou de anúncio periódico indicativo, e a entidade adjudicante tenha decidido não celebrar mais contratos durante o período abrangido por esse anúncio, o anúncio da adjudicação do contrato deve conter uma indicação específica nesse sentido.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78",
+      "offsets": {
+        "start": 6464,
+        "end": 6816
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - Nas situações em que a publicitação do concurso tenha sido efetuada sob a forma de anúncio de pré-informação, ou de anúncio periódico indicativo, e a entidade adjudicante tenha decidido não celebrar mais contratos durante o período abrangido por esse anúncio, o anúncio da adjudicação deve conter uma indicação específica nesse sentido.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78",
+      "offsets": {
+        "start": 3006,
+        "end": 3346
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

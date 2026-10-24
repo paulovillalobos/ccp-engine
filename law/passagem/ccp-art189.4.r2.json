@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art189.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art189",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O convite pode ainda conter quaisquer regras específicas sobre a fase da apresentação e análise das propostas e adjudicação consideradas convenientes pela entidade adjudicante, desde que não tenham por efeito impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art189",
+      "offsets": {
+        "start": 5835,
+        "end": 6094
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - O convite pode ainda conter quaisquer regras destinadas a proteger o caráter confidencial das informações contidas nas peças do procedimento, bem como quaisquer específicas sobre o procedimento de concurso público consideradas convenientes pela entidade adjudicante, desde que não tenham por efeito impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art189",
+      "offsets": {
+        "start": 1201,
+        "end": 1550
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

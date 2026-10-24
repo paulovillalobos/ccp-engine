@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art260.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art260",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - As entidades adjudicantes nacionais podem recorrer a atividades de compras centralizadas oferecidas por centrais de compras situadas noutros Estados da União Europeia sempre que estas ofereçam condições mais vantajosas do que as oferecidas pelas centrais de compras previstas no n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art260",
+      "offsets": {
+        "start": 595,
+        "end": 884
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

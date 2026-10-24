@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-c.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-c",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - O concurso de conceção é publicitado no Diário da República através de anúncio conforme modelo aprovado por portaria dos membros do Governo responsáveis pela edição do Diário da República e pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-c",
+      "offsets": {
+        "start": 1668,
+        "end": 1908
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

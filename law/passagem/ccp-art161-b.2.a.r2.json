@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art161-b.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art161-b.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) Proceder ao depósito em dinheiro por falta de liquidez, comprovada por termo de revisor oficial de contas ou de contabilista certificado; e",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 354825,
+        "end": 354967
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

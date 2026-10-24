@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art232.7",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art232",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - O relatório final do concurso deve ainda indicar, fundamentadamente, quais os candidatos a excluir, quer por não preencherem os requisitos mínimos de capacidade técnica exigidos nos termos de referência, quer por terem apresentado as respectivas candidaturas após o termo do prazo fixado para o efeito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art232",
+      "offsets": {
+        "start": 1808,
+        "end": 2114
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 439943,
+        "end": 440108
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

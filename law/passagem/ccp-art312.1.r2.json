@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art312.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art312",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - A modificação do contrato pode ocorrer em qualquer dos seguintes casos:\na) Se o respetivo valor for inferior aos limiares referidos nos n.ºs 2, 3 e 4 do artigo 474.º, consoante o caso, e inferior a 10 % ou, em contratos de empreitada de obras públicas, a 15 % do preço contratual inicial;\nb) De acordo com os termos previstos em cláusulas contratuais que indiquem de forma clara, precisa e inequívoca o âmbito e a natureza das eventuais modificações, bem como as condições em que podem ser aplicadas;\nc) Se houver necessidade de trabalhos, serviços ou bens complementares, desde que o valor da modificação não exceda 50 % do preço contratual inicial e caso a mudança de cocontratante:\ni) Não seja viável por razões económicas ou técnicas, designadamente em função da necessidade de assegurar a permutabilidade ou interoperabilidade com equipamentos, serviços ou instalações existentes; e\nii) Seja altamente inconveniente ou provoque um aumento considerável de custos para o contraente público;\nd) Em caso de necessidade, como consequência de circunstâncias que uma entidade adjudicante diligente não poderia ter previsto, desde que o seu valor não exceda 50 % do preço contratual inicial;\ne) Se, independentemente do seu valor, não for uma modificação substancial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312",
+      "offsets": {
+        "start": 81,
+        "end": 1349
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

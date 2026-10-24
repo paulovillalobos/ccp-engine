@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art113.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art113",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Não podem igualmente ser convidadas a apresentar propostas entidades que tenham executado obras, fornecido bens móveis ou prestado serviços à entidade adjudicante, a título gratuito, no ano económico em curso ou nos dois anos económicos anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 10185,
+        "end": 10437
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "5 - Não podem igualmente ser convidadas a apresentar propostas entidades que tenham executado obras, fornecido bens móveis ou prestado serviços à entidade adjudicante, a título gratuito, no ano económico em curso ou nos dois anos económicos anteriores, excepto se o tiverem feito ao abrigo do Estatuto do Mecenato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 8362,
+        "end": 8676
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - Não podem igualmente ser convidadas a apresentar propostas entidades que tenham executado obras, fornecido bens móveis ou prestado serviços à entidade adjudicante, a título gratuito, no ano económico em curso ou nos dois anos económicos anteriores, exceto se o tiverem feito ao abrigo do Estatuto do Mecenato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 4404,
+        "end": 4717
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

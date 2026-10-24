@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art50.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Os esclarecimentos e as rectificações referidos nos números anteriores devem ser disponibilizados na plataforma electrónica utilizada pela entidade adjudicante e juntos às peças do procedimento que se encontrem patentes para consulta, devendo todos os interessados que as tenham adquirido ser imediatamente notificados desse facto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 7334,
+        "end": 7669
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - O incumprimento do dever a que se referem os números anteriores tem as consequências previstas nos n.os 3 e 4 do artigo 378.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 4662,
+        "end": 4791
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - O incumprimento do dever de identificar erros e omissões a que se referem os números anteriores tem a consequência prevista no n.º 3 do artigo 378.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 1362,
+        "end": 1514
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

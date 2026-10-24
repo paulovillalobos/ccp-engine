@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art81.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - Os documentos a que se refere o número anterior não são exigíveis a concorrentes nacionais de outro Estado signatário do Acordo sobre o Espaço Económico Europeu ou do Acordo sobre Contratos Públicos da Organização Mundial de Comércio, quando nesse Estado aqueles documentos não sejam emitidos, devendo porém ser substituídos por uma declaração sob compromisso de honra, prestada perante notário, autoridade judiciária ou administrativa ou qualquer outra competente, de que os documentos em causa não são emitidos nesse Estado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 11336,
+        "end": 11866
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "7 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 4401,
+        "end": 4416
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 631,
+        "end": 646
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

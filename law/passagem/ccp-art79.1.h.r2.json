@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art79.1.h",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art79.1",
+  "kind": "alinea",
+  "label": "h)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "h) Todas as propostas sejam consideradas insatisfatórias para a entidade adjudicante por nenhuma delas ter alcançado a pontuação global mínima definida no programa do procedimento ou no convite.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art79",
+      "offsets": {
+        "start": 1038,
+        "end": 1232
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

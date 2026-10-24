@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Tenham sido condenadas por sentença transitada em julgado por qualquer crime que afete a sua honorabilidade profissional, no caso de pessoas singulares, ou, no caso de pessoas coletivas, quando tenham sido condenados por aqueles crimes a pessoa coletiva ou os titulares dos seus órgãos sociais de administração, direção ou gerência, e estes se encontrem em efetividade de funções, em qualquer dos casos sem que entretanto tenha ocorrido a respetiva reabilitação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 13766,
+        "end": 14231
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Tenham sido condenadas por sentença transitada em julgado por qualquer crime que afete a sua honorabilidade profissional, cometido há menos de três anos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 515,
+        "end": 671
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

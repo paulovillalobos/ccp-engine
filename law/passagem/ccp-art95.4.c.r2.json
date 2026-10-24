@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art95.4.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art95.4",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Se trate da celebração de contrato ao abrigo de acordo quadro cujos termos abranjam todos os seus aspectos ou que tenha sido celebrado apenas com uma entidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art95",
+      "offsets": {
+        "start": 8717,
+        "end": 8879
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Se trate da celebração de contrato ao abrigo de acordo quadro cujos termos abranjam todos os seus aspectos ou que tenha sido celebrado apenas com uma entidade;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art95",
+      "offsets": {
+        "start": 2620,
+        "end": 2782
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

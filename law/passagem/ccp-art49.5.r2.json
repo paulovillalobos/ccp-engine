@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Quando as especificações técnicas de referência tenham sido fixadas nos termos do disposto na alínea c) do n.º 2, não podem ser excluídas propostas relativas a obras, a bens ou a serviços, desde que estejam em conformidade com normas nacionais que transponham normas europeias, com homologações técnicas europeias, com especificações técnicas comuns, com normas internacionais ou com qualquer outro referencial técnico elaborado pelos organismos europeus de normalização, se estas especificações corresponderem ao desempenho ou cumprirem as exigências funcionais fixadas no caderno de encargos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 25138,
+        "end": 25736
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - Em relação a todos os contratos cujo objeto se destine a ser utilizado por pessoas singulares, quer seja o público em geral quer o pessoal da entidade adjudicante, as especificações técnicas devem, salvo em casos devidamente justificados, ser elaboradas de modo a ter em conta os critérios de acessibilidade para as pessoas com deficiência ou de conceção para todos os utilizadores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 6759,
+        "end": 7145
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-ii.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-ii.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2012-08-11",
+      "text": "c) Tenham sido objeto de aplicação da sanção acessória\nprevista na alínea e) do n.º 1 do artigo 21.º do\nDecreto -Lei n.º 433/82, de 27 de outubro, na alínea b)\ndo n.º 1 do artigo 71.º da Lei n.º 19/2012, de 8 de maio,\ne no n.º 1 do artigo 460.º do presente Código, durante o\nperíodo de inabilidade fixado na decisão condenatória (6);",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-ii",
+      "offsets": {
+        "start": 7345,
+        "end": 7678
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 4.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 715307,
+        "end": 715471
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

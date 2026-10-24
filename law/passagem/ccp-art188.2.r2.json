@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - Juntamente com a notificação da decisão de qualificação, o órgão competente para a decisão de contratar deve notificar os candidatos, concedendo-lhes um prazo mínimo de cinco dias, para:\na) Apresentar os documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso, sempre que tais requisitos tenham apenas sido declarados;\nb) Confirmar, se for o caso, os compromissos assumidos por terceiras entidades relativos aos requisitos referidos na alínea anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188",
+      "offsets": {
+        "start": 217,
+        "end": 748
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

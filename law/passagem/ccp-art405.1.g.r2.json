@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art405.1.g",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art405.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) Se não foram corrigidos os defeitos detectados no período de garantia da obra ou se não for repetida a execução da obra com defeito ou substituídos os equipamentos defeituosos, nos termos do disposto no artigo 397.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art405",
+      "offsets": {
+        "start": 7096,
+        "end": 7314
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "g) Se ocorrerem desvios ao plano de trabalhos nos termos do disposto no n.º 3 do artigo 404.º, sem prejuízo do disposto na alínea anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art405",
+      "offsets": {
+        "start": 4458,
+        "end": 4597
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

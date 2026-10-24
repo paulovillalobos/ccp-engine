@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art327.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art327",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Se a recusa de cumprir pelo co-contratante implicar grave prejuízo para a realização do interesse público nos termos do disposto na parte final do número anterior, aquele apenas pode invocar a excepção de não cumprimento quando a realização das prestações contratuais coloque manifestamente em causa a viabilidade económico-financeira do co-contratante ou se revele excessivamente onerosa, devendo, nesse último caso, ser devidamente ponderados os interesses públicos e privados em presença.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art327",
+      "offsets": {
+        "start": 1856,
+        "end": 2351
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art327",
+      "offsets": {
+        "start": 411,
+        "end": 426
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

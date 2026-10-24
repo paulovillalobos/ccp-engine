@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299-b.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299-b",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - A regulamentação dos aspetos complementares da faturação eletrónica é feita por portaria dos membros do Governo responsáveis pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 527486,
+        "end": 527661
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

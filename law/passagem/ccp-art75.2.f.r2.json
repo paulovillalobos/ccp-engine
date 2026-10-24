@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.2.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75.2",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "f) Grau de inovação de processos, produtos ou materiais utilizados na execução do contrato;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75",
+      "offsets": {
+        "start": 11997,
+        "end": 12088
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

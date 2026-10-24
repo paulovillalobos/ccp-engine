@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art344.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art344",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Sem prejuízo de outras limitações previstas no contrato, o director de fiscalização da obra não tem poderes de representação do dono da obra em matéria de modificação, resolução ou revogação do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art344",
+      "offsets": {
+        "start": 1711,
+        "end": 1918
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Sem prejuízo de outras limitações previstas no contrato, o diretor de fiscalização da obra e o gestor do contrato não têm poderes de representação do dono da obra em matéria de modificação, resolução ou revogação do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art344",
+      "offsets": {
+        "start": 560,
+        "end": 789
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

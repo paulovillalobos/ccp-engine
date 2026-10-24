@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art81.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O adjudicatário, ou um subcontratado referido no n.º 3, nacional de Estado signatário do Acordo sobre o Espaço Económico Europeu ou do Acordo sobre Contratos Públicos da Organização Mundial de Comércio que não seja titular do alvará ou do título de registo referidos nos n.os 2 ou 3, consoante o caso, ou do certificado referido no número anterior deve apresentar, em substituição desses documentos:\na) No caso de se tratar de um procedimento de formação de um contrato de empreitada ou de concessão de obras públicas, uma declaração, emitida pelo Instituto da Construção e do Imobiliário, I. P., comprovativa de que pode executar a prestação objecto do contrato a celebrar por preencher os requisitos que lhe permitiriam ser titular de um alvará ou de um título de registo contendo as habilitações adequadas à execução da obra a realizar;\nb) No caso de se tratar de um procedimento de formação de um contrato de locação ou de aquisição de bens móveis ou de um contrato de aquisição de serviços, certificado de inscrição nos registos a que se referem os anexos ix-B e ix-C da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março, com todas as inscrições em vigor e que revele a titularidade das habilitações adequadas e necessárias à execução das prestações objecto do contrato a celebrar ou, quando o Estado de que é nacional não constar daqueles anexos, uma declaração sob compromisso de honra, prestada perante notário, autoridade judiciária ou administrativa ou qualquer outra competente, de que pode executar a prestação objecto do contrato a celebrar no Estado de que é nacional de acordo com as regras nele aplicáveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 9284,
+        "end": 10938
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 4369,
+        "end": 4384
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 599,
+        "end": 614
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299-a.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-09-01",
+      "text": "1 - São nulas as cláusulas contratuais que, sem motivo atendível e justificado face às circunstâncias concretas, estabeleçam prazos superiores a 60 dias para o vencimento das obrigações pecuniárias.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 525775,
+        "end": 525973
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

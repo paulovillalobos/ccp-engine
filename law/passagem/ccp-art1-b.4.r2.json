@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-b.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-b",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - As entidades adjudicantes devem assegurar, na formação e na execução dos contratos públicos, que os operadores económicos respeitam as normas aplicáveis em vigor em matéria social, laboral, ambiental, de igualdade de género e de prevenção e combate à corrupção, decorrentes do direito internacional, da União Europeia, nacional ou regional.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 59125,
+        "end": 59469
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

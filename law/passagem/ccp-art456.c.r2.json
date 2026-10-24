@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art456.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art456",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) A não apresentação de documentos comprovativos da titularidade de habilitação profissional específica pelo adjudicatário, em violação do disposto no n.º 1 do artigo 234.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art456",
+      "offsets": {
+        "start": 5895,
+        "end": 6069
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "c) A não apresentação de documentos comprovativos da titularidade de habilitação profissional específica pelo adjudicatário, em violação do disposto no n.º 5 do artigo 219.º-I;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art456",
+      "offsets": {
+        "start": 4653,
+        "end": 4829
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

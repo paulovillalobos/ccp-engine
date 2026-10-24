@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art474.3.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) (euro) 209 000, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 5070,
+        "end": 5183
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "c) (euro) 214 000, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 3029,
+        "end": 3142
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) 216 000,00 €, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 946,
+        "end": 1057
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

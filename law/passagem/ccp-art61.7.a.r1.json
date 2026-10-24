@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art61.7.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art61.7",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Os termos do suprimento de cada um dos erros ou das omissões aceites nos termos do disposto no n.º 5, do qual não pode, em caso algum, resultar a violação de qualquer parâmetro base fixado no caderno de encargos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 5108,
+        "end": 5323
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 149/2012 - Diário da República n.º 134/2012, Série I de 2012-07-12, em vigor a partir de 2012-08-11",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 213152,
+        "end": 213299
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

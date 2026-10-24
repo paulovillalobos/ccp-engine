@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art115.5.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art115.5",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) O caderno de encargos deve ser substancialmente idêntico ao que acompanhou os termos de referência do concurso de concepção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115",
+      "offsets": {
+        "start": 13807,
+        "end": 13934
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

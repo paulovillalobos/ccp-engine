@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art40.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art40",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - As peças do procedimento referidas no número anterior são aprovadas pelo órgão competente para a decisão de contratar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art40",
+      "offsets": {
+        "start": 4473,
+        "end": 4595
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - As peças do procedimento referidas no número anterior, incluindo a minuta do anúncio, são aprovadas pelo órgão competente para a decisão de contratar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art40",
+      "offsets": {
+        "start": 2884,
+        "end": 3038
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - As peças do procedimento referidas no número anterior, com exceção da minuta do anúncio, são aprovadas pelo órgão competente para a decisão de contratar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art40",
+      "offsets": {
+        "start": 1058,
+        "end": 1215
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

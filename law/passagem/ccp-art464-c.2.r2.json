@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art464-c.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art464-c",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - Pretendendo submeter a arbitragem litígios emergentes de procedimentos de formação de contratos regulados no presente Código, a entidade adjudicante deve prever no programa do procedimento ou no convite o seguinte:\na) O centro de arbitragem no qual vai funcionar o tribunal;\nb) As regras processuais aplicáveis à arbitragem, caso o regulamento do centro indicado não se encontre integralmente disponível na respetiva página da Internet;\nc) A necessidade de aceitação, por parte dos candidatos ou concorrentes, do recurso à arbitragem, de acordo com o modelo previsto no anexo xii do presente Código, do qual faz parte integrante.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 698097,
+        "end": 698730
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

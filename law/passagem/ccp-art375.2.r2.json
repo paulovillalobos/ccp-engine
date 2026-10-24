@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art375.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art375",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - Quando os trabalhos complementares são executados nos termos do disposto no n.º 7 do artigo 373.º, a publicitação prevista no artigo 315.º é feita através de uma declaração unilateral do dono da obra, da qual deve constar o preço e o prazo indicados na contraproposta referida no n.º 5 do artigo 373.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art375",
+      "offsets": {
+        "start": 297,
+        "end": 602
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

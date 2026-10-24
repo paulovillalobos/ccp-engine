@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art326.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art326",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Quando as importâncias pagas nos termos previstos no número anterior forem inferiores àquelas que sejam efectivamente devidas ao co-contratante, em função da apreciação de reclamações deduzidas, tem este direito a juros de mora sobre essa diferença, nos termos do disposto no n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art326",
+      "offsets": {
+        "start": 1966,
+        "end": 2252
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2010-09-01",
+      "revoked": false
+    },
+    {
+      "version": "2010-09-01",
+      "text": "3 - São nulas as cláusulas contratuais que excluam a responsabilidade pela mora, bem como as cláusulas contratuais que, sem motivo atendível e justificado face às circunstâncias concretas, limitem a responsabilidade pela mora.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art326",
+      "offsets": {
+        "start": 573,
+        "end": 799
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

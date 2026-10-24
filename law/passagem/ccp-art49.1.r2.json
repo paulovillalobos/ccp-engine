@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - As especificações técnicas, como tal definidas no anexo vi da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março, e no anexo xxi da Directiva n.º 2004/17/CE, do Parlamento Europeu e do Conselho, de 31 de Março, devem constar do caderno de encargos e são fixadas por forma a permitir a participação dos concorrentes em condições de igualdade e a promoção da concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 22758,
+        "end": 23159
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - As especificações técnicas, tal como definidas no anexo vii ao presente Código, do qual faz parte integrante, devem constar no caderno de encargos e devem definir as características exigidas para as obras, bens móveis e serviços.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 5742,
+        "end": 5975
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

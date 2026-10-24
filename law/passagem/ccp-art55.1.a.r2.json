@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55.1.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Se encontrem em estado de insolvência, declarada por sentença judicial, em fase de liquidação, dissolução ou cessação de atividade, sujeitas a qualquer meio preventivo de liquidação de patrimónios ou em qualquer situação análoga, ou tenham o respetivo processo pendente, salvo quando se encontrarem abrangidas ou tenham pendente um plano de recuperação de empresas, judicial ou extrajudicial, previsto na lei;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 13353,
+        "end": 13765
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Se encontrem em estado de insolvência, declarada por sentença judicial, ou se encontrem em fase de liquidação, dissolução ou cessação de atividade, salvo quando se encontrarem abrangidas ou tenham pendente a celebração de um acordo de reestruturação ou a aprovação de um plano de recuperação de empresas, judicial ou extrajudicial, previsto na lei;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 163,
+        "end": 514
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

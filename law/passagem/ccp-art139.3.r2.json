@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art139.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art139",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Para cada factor ou subfactor elementar deve ser definida uma escala de pontuação através de uma expressão matemática ou em função de um conjunto ordenado de diferentes atributos susceptíveis de serem propostos para o aspecto da execução do contrato submetido à concorrência pelo caderno de encargos respeitante a esse factor ou subfactor.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art139",
+      "offsets": {
+        "start": 3658,
+        "end": 4001
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

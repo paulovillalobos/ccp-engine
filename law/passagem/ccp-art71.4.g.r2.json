@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art71.4.g",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art71.4",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "g) Ao cumprimento das obrigações decorrentes da legislação em matéria ambiental, social e laboral, referidas no n.º 2 do artigo 1.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art71",
+      "offsets": {
+        "start": 6500,
+        "end": 6634
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "g) Ao cumprimento das obrigações decorrentes da legislação em matéria ambiental, social e laboral, referidas no n.º 4 do artigo 1.º-B.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art71",
+      "offsets": {
+        "start": 2050,
+        "end": 2184
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

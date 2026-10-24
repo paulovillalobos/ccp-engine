@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-i.4.i.ii",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-i.4.i",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "ii) Corrupção, na acepção do artigo 3.º do Acto do Conselho de 26 de Maio de 1997 e do n.º 1 do artigo 3.º da Acção Comum n.º 98/742/JAI, do Conselho;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-i",
+      "offsets": {
+        "start": 18691,
+        "end": 18841
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 4.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 714482,
+        "end": 714646
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

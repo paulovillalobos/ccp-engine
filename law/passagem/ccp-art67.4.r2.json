@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art67.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art67",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - O júri pode ser dispensado nos procedimentos em que seja apresentada apenas uma proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67",
+      "offsets": {
+        "start": 2150,
+        "end": 2243
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art73.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art73",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No mesmo procedimento podem efectuar-se adjudicações de propostas por lotes, caso em que podem ser celebrados tantos contratos quantas as propostas adjudicadas ou quantos os adjudicatários.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art73",
+      "offsets": {
+        "start": 807,
+        "end": 1000
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando seja feita a adjudicação por lotes nos termos do artigo 46.º-A, pode existir uma decisão de adjudicação para cada lote, podendo tais decisões ocorrer em momentos distintos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art73",
+      "offsets": {
+        "start": 248,
+        "end": 431
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

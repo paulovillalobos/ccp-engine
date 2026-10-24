@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "9 - A metodologia referida no número anterior, quando for aplicada para o cálculo dos custos referidos na alínea e) do n.º 7, deve basear-se também em regras objetivamente verificáveis e não discriminatórias, permitindo que os dados a fornecer pelos concorrentes sejam por estes obtidos mediante esforço razoável.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75",
+      "offsets": {
+        "start": 19314,
+        "end": 19627
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

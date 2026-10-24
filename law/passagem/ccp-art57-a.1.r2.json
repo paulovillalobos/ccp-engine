@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art57-a.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "1 - A entidade adjudicante pode exigir no convite à apresentação de propostas ou no programa do procedimento que as propostas sejam constituídas por um documento demonstrativo da estrutura de custos do trabalho necessário à execução do contrato a celebrar, nomeadamente quando o mesmo respeite a setores em que o custo fixo do trabalho é determinante na formação dos preços.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a",
+      "offsets": {
+        "start": 1227,
+        "end": 1601
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

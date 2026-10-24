@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art174.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art174",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Os prazos mínimos para a apresentação das candidaturas previstos nos números anteriores podem ser reduzidos em até sete dias quando os anúncios forem preparados e enviados por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art174",
+      "offsets": {
+        "start": 3727,
+        "end": 4024
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando o contrato a celebrar diga direta e principalmente respeito a uma ou a várias das atividades exercidas nos setores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das candidaturas é, em regra, de 30 dias a contar da data do envio do anúncio para publicação, não podendo em caso algum ser inferior a 15 dias desde aquele envio.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art174",
+      "offsets": {
+        "start": 2274,
+        "end": 2721
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

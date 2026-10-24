@@ -1,0 +1,83 @@
+{
+  "id": "ccp:art86.1.c",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art86.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Redigidos em língua portuguesa ou, no caso previsto no n.º 2 artigo 82.º, acompanhados de tradução devidamente legalizada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86",
+      "offsets": {
+        "start": 9101,
+        "end": 9226
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "c) Redigidos em língua portuguesa ou, no caso previsto no n.º 2 artigo 82.º, acompanhados de tradução devidamente legalizada, excepto nos casos previstos no n.º 4 do artigo 58.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86",
+      "offsets": {
+        "start": 7375,
+        "end": 7552
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "c) Redigidos em língua portuguesa ou, no caso previsto no n.º 2 do artigo 82.º, acompanhados de tradução devidamente legalizada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86",
+      "offsets": {
+        "start": 5698,
+        "end": 5826
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "c) Redigidos em língua portuguesa, ou acompanhados de tradução devidamente legalizada no caso de estarem, pela sua natureza ou origem, redigidos numa outra língua.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86",
+      "offsets": {
+        "start": 4203,
+        "end": 4366
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "c) Redigidos em língua portuguesa, ou acompanhados de tradução devidamente legalizada no caso de estarem, pela sua natureza ou origem, redigidos numa outra língua, salvo se o programa do procedimento dispuser diferentemente e estabelecer a suficiência da redação dos documentos em língua estrangeira sem necessidade de tradução.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86",
+      "offsets": {
+        "start": 2569,
+        "end": 2897
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 263855,
+        "end": 264003
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

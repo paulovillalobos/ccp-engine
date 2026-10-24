@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art472.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art472",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2011-01-13",
+      "text": "3 - Para efeitos do cumprimento das obrigações previstas no n.º 2 do artigo 4.º da Directiva n.º 89/665/CEE, do Conselho, de 21 de Dezembro, e no n.º 2 do artigo 12.º da Directiva n.º 92/13/CEE, do Conselho, de 25 de Fevereiro, compete ao Instituto da Construção e do Imobiliário, I. P., comunicar até 30 de Setembro de cada ano, à Comissão Europeia, de acordo com informação fornecida pelo Conselho Superior dos Tribunais Administrativos e Fiscais, a compilação de todas as decisões que tenham transitado em julgado no ano anterior em que seja afastado o efeito da anulação do contrato nos termos permitidos pelos n.os 3 e 4 do artigo 283.º-A, acompanhadas da respectiva fundamentação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art472",
+      "offsets": {
+        "start": 6116,
+        "end": 6802
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Para efeitos do cumprimento das obrigações previstas no n.º 2 do artigo 4.º da Diretiva n.º 89/665/CEE, do Conselho, de 21 de dezembro, e no n.º 2 do artigo 12.º da Diretiva n.º 92/13/CEE, do Conselho, de 25 de fevereiro, compete ao Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., comunicar à Comissão Europeia, até 30 de setembro de cada ano, de acordo com informação fornecida pelo Conselho Superior dos Tribunais Administrativos e Fiscais, a compilação de todas as decisões que tenham transitado em julgado no ano anterior, nos termos previstos no n.º 4 do artigo 285.º e no n.º 7 do artigo 287.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art472",
+      "offsets": {
+        "start": 3938,
+        "end": 4565
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art169.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art169",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando, pela sua própria natureza ou origem, os documentos destinados à qualificação dos candidatos estiverem redigidos em língua estrangeira, deve o interessado fazê-los acompanhar de tradução devidamente legalizada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art169",
+      "offsets": {
+        "start": 1047,
+        "end": 1268
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

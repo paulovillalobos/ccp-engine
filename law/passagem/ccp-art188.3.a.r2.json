@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.3.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) Não apresente qualquer um dos documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188",
+      "offsets": {
+        "start": 894,
+        "end": 1058
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

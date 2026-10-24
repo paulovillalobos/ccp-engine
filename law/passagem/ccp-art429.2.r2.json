@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art429.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art429",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Sem prejuízo do disposto no presente Código, o regime das concessões de serviços públicos, designadamente o de concessões portuárias, é definido em legislação especial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art429",
+      "offsets": {
+        "start": 741,
+        "end": 913
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art429",
+      "offsets": {
+        "start": 333,
+        "end": 348
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

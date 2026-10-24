@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art424",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 424.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 424.º\nResponsabilidade perante terceiros\n1 - O concedente responde por danos causados pelo concessionário a terceiros no desenvolvimento das actividades concedidas por facto que ao primeiro seja imputável.\n2 - O concedente responde ainda por facto que não lhe seja imputável, mas neste caso só depois de exercidos quaisquer direitos resultantes de contrato de seguro que no caso caibam e de excutidos os bens do património do concessionário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art424",
+      "offsets": {
+        "start": 666,
+        "end": 1114
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 424.º\nResponsabilidade perante terceiros\n1 - Quando resultem de facto que lhe seja imputável, o concedente responde por danos causados pelo concessionário a terceiros no desenvolvimento das atividades concedidas.\n2 - O concedente responde ainda por facto que não lhe seja imputável, mas neste caso só depois de exercidos quaisquer direitos resultantes de contrato de seguro que no caso caibam e de excutidos os bens do património do concessionário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art424",
+      "offsets": {
+        "start": 55,
+        "end": 510
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

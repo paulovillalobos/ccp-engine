@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art77.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art77",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A decisão de adjudicação é notificada, em simultâneo, a todos os concorrentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77",
+      "offsets": {
+        "start": 3884,
+        "end": 3966
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2011-01-13",
+      "revoked": false
+    },
+    {
+      "version": "2011-01-13",
+      "text": "1 - A decisão de adjudicação é notificada em simultâneo a todos os concorrentes, indicando-se, quando aplicável, o prazo de suspensão previsto no n.º 3 do artigo 95.º ou na alínea a) do n.º 1 do artigo 104.º, conforme o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77",
+      "offsets": {
+        "start": 2794,
+        "end": 3019
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

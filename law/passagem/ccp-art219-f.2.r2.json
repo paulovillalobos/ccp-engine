@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-f.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-f",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O júri do concurso procede à apreciação dos trabalhos de conceção e elabora um relatório, assinado por todos os seus membros, no qual deve indicar, fundamentadamente:\na) A ordenação dos trabalhos de conceção apresentados, de acordo com o critério de seleção fixado nos termos de referência;\nb) A exclusão dos trabalhos de conceção apresentados em violação de quaisquer regras relativas à apresentação dos trabalhos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 430460,
+        "end": 430879
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

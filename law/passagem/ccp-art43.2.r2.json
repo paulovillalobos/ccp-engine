@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art43.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando a obra a executar assuma complexidade relevante ou quando sejam utilizados métodos, técnicas ou materiais de construção inovadores, o projecto de execução referido no número anterior deve ser objecto de prévia revisão por pessoa singular ou colectiva devidamente qualificada para a elaboração desse projecto e distinta do autor do mesmo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 16006,
+        "end": 16354
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "2 - Quando a obra seja classificada, nos termos do n.º 7, na categoria iii ou superior, bem como naqueles casos em que o preço base, fixado no caderno de encargos, seja enquadrável na classe 3 de alvará ou em classe superior, o projeto de execução referido no número anterior deve ser objeto de prévia revisão por entidade devidamente qualificada para a sua elaboração, distinta do autor do mesmo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 12554,
+        "end": 12951
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando a obra seja classificada, nos termos da portaria prevista no n.º 7, na categoria iii ou superior, bem como naqueles casos em que o preço base, fixado no caderno de encargos, seja enquadrável na classe 3 de alvará ou em classe superior, o projeto de execução referido no número anterior deve ser objeto de prévia revisão por entidade devidamente qualificada para a sua elaboração, distinta do autor do mesmo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 8065,
+        "end": 8483
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 361,
+        "end": 376
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

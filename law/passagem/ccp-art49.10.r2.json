@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.10",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "10 - Entende-se por organismo reconhecido os laboratórios de ensaio ou de calibração e os organismos de inspecção e de certificação que cumprem as normas europeias aplicáveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 27357,
+        "end": 27532
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "10 - Sempre que a entidade adjudicante recorra à possibilidade de remeter para as especificações técnicas a que se refere na alínea b) do n.º 7, não pode excluir uma proposta com o fundamento de que as obras, bens móveis ou serviços dela constantes não estão em conformidade com as suas especificações técnicas de referência, se o concorrente demonstrar na sua proposta por qualquer meio adequado, nomeadamente os meios de prova referidos no artigo seguinte, que as soluções propostas satisfazem de modo equivalente os requisitos definidos nas especificações técnicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 9711,
+        "end": 10279
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

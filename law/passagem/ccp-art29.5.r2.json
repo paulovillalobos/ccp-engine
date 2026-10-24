@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art29.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art29",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "5 - Na hipótese prevista na alínea f) do n.º 1, a entidade adjudicante pode não publicar os anúncios a que se referem os artigos 197.º e 208.º se convidar a apresentar candidaturas todos e exclusivamente os concorrentes do anterior concurso cujas propostas tenham sido excluídas apenas com fundamento na segunda parte da alínea a) ou nas alíneas b) a g) do n.º 2 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 2877,
+        "end": 3254
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - Na hipótese prevista na alínea f) do n.º 1, a entidade adjudicante pode não publicar os anúncios a que se referem os artigos 197.º e 208.º se convidar a apresentar candidaturas todos e exclusivamente os concorrentes do anterior concurso cujas propostas tenham sido excluídas apenas com fundamento na segunda parte da alínea a) ou nas alíneas b) a g) do n.º 3 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29",
+      "offsets": {
+        "start": 1245,
+        "end": 1622
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

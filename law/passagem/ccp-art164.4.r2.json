@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art164.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O programa do concurso pode indicar requisitos mínimos de capacidade financeira que os candidatos devem preencher cumulativamente com o requisito previsto no anexo iv do presente Código e do qual faz parte integrante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 21361,
+        "end": 21582
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - O programa do concurso pode indicar requisitos mínimos de capacidade financeira que os candidatos devem preencher, sujeitos ao limite previsto no n.º 3 do artigo seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 11913,
+        "end": 12088
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 2678,
+        "end": 2693
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

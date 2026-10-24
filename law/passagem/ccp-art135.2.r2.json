@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art135.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art135",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 20 dias referido no número anterior pode ser reduzido em até 11 dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art135",
+      "offsets": {
+        "start": 1410,
+        "end": 1583
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 14 dias referido no número anterior pode ser reduzido até um prazo mínimo de seis dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art135",
+      "offsets": {
+        "start": 553,
+        "end": 744
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

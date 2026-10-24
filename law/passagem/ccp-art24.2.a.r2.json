@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art24.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Referido na alínea b) do artigo 19.º, no caso de se tratar de um contrato de empreitada de obras públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 20871,
+        "end": 20980
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Alterado pelo/a Artigo 21.º do/a Lei n.º 30/2021 - Diário da República n.º 99/2021, Série I de 2021-05-21, em vigor a partir de 2021-06-20",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 115782,
+        "end": 115920
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": true
+    },
+    {
+      "version": "2022-12-02",
+      "text": "a) O convite à apresentação de propostas e o caderno de encargos do ajuste direto não podem ser substancialmente alterados em relação ao programa do procedimento e ao caderno de encargos do anterior concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 7063,
+        "end": 7271
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

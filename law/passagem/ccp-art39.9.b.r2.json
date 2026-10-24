@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art39.9.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art39.9",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Legislação do Estado onde a entidade jurídica comum desenvolve as suas atividades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39",
+      "offsets": {
+        "start": 7120,
+        "end": 7205
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ccp:art464-a.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art464-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Pode ser aplicada sanção de proibição de participação em procedimentos de formação de contratos públicos, pelo prazo de um ano, às entidades que se encontrem em qualquer das seguintes situações:\na) Incumprimento contratual que tenha dado origem, nos três últimos anos, à aplicação de sanções que tenham atingido os valores máximos aplicáveis nos termos dos n.os 2 e 3 do artigo 329.º;\nb) Incumprimento contratual que tenha sido objeto de duas resoluções sancionatórias nos três últimos anos com fundamento na alínea a) do n.º 1 do artigo 333.º, em qualquer das situações das alíneas b) a g) do n.º 1 do artigo 405.º e as constantes do artigo 423.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art464-a",
+      "offsets": {
+        "start": 1656,
+        "end": 2307
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - Pode ser aplicada sanção de proibição de participação em procedimentos de formação de contratos públicos, pelo prazo de um ano, às entidades que se encontrem em qualquer das seguintes situações:\na) Incumprimento contratual que tenha dado origem, nos três últimos anos, à aplicação de sanções que tenham atingido os valores máximos aplicáveis nos termos dos n.os 2 e 3 do artigo 329.º;\nb) Incumprimento contratual que tenha sido objeto de duas resoluções sancionatórias nos três últimos anos com fundamento na alínea a) do n.º 1 do artigo 333.º, em qualquer das situações das alíneas b) a h) do n.º 1 do artigo 405.º e as constantes do artigo 423.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art464-a",
+      "offsets": {
+        "start": 344,
+        "end": 996
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 696913,
+        "end": 697061
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art283.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art283",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Os contratos são nulos se a nulidade do acto procedimental em tenha assentado a sua celebração tenha sido judicialmente declarada ou possa ainda sê-lo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283",
+      "offsets": {
+        "start": 2250,
+        "end": 2405
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Os contratos são nulos se a nulidade do ato procedimental em que tenha assentado a sua celebração tiver sido judicialmente declarada ou possa ainda sê-lo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283",
+      "offsets": {
+        "start": 113,
+        "end": 271
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

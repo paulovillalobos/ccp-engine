@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art2.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Para os efeitos do disposto na subalínea i) da alínea a) do número anterior, são consideradas pessoas colectivas criadas especificamente para satisfazer necessidades de interesse geral, sem carácter industrial ou comercial, aquelas cuja actividade económica se não submeta à lógica do mercado e da livre concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2",
+      "offsets": {
+        "start": 10837,
+        "end": 11158
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2",
+      "offsets": {
+        "start": 6191,
+        "end": 6206
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2",
+      "offsets": {
+        "start": 1922,
+        "end": 1937
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

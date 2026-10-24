@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art458.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art458",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) A violação do disposto no n.º 2 do artigo 54.º,",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art458",
+      "offsets": {
+        "start": 242,
+        "end": 292
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

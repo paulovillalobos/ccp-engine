@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art464-c.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art464-c",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - A não aceitação do recurso à arbitragem por parte de algum candidato ou concorrente não implica a exclusão da respetiva candidatura ou proposta.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 698731,
+        "end": 698879
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

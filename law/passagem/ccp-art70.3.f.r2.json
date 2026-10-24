@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.3.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.3",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "f) Que o contrato a celebrar implicaria a violação de quaisquer vinculações legais ou regulamentares aplicáveis;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 3159,
+        "end": 3271
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

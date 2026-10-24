@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art187.2.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art187.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Apresentar os documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso, sempre que se revele necessário e tais requisitos tenham apenas sido declarados mediante a apresentação da declaração conforme modelo constante no anexo v ao presente Código ou do Documento Europeu Único de Contratação Pública;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art187",
+      "offsets": {
+        "start": 1700,
+        "end": 2076
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 390905,
+        "end": 391053
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art469",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-v",
+  "kind": "artigo",
+  "label": "Artigo 469.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 469.º\nData da notificação e da comunicação\n1 - As notificações e as comunicações consideram-se feitas:\na) Na data da respectiva expedição, quando efectuadas através de correio electrónico ou de outro meio de transmissão escrita e electrónica de dados, salvo o disposto no número seguinte;\nb) Na data constante do relatório de transmissão bem sucedido, quando efectuado através de telecópia, salvo o disposto no número seguinte;\nc) Na data indicada pelos serviços postais, quando efectuadas por carta registada;\nd) Na data da assinatura do aviso, quando efectuadas por carta registada com aviso de recepção.\n2 - As notificações e as comunicações que tenham como destinatário a entidade adjudicante ou o contraente público e que sejam efectuadas através de correio electrónico, telecópia ou outro meio de transmissão escrita e electrónica de dados, após as 17 horas do local de recepção ou em dia não útil nesse mesmo local, presumem-se feitas às 10 horas do dia útil seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art469",
+      "offsets": {
+        "start": 801,
+        "end": 1783
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 469.º\nData da notificação e da comunicação\n1 - As notificações e as comunicações consideram-se feitas:\na) Na data da respectiva expedição, quando efectuadas através de correio electrónico ou de outro meio de transmissão escrita e electrónica de dados, salvo o disposto no número seguinte;\nb) Na data constante do relatório de transmissão bem sucedido, quando efectuado através de telecópia, salvo o disposto no número seguinte;\nc) Na data indicada pelos serviços postais, quando efectuadas por carta registada;\nd) Na data da assinatura do aviso, quando efectuadas por carta registada com aviso de recepção.\n2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art469",
+      "offsets": {
+        "start": 16,
+        "end": 645
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-g.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-g",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Efetuada a qualificação, o júri do concurso envia aos candidatos qualificados, em simultâneo, um convite à apresentação dos trabalhos de conceção de acordo com as regras fixadas nos termos de referência.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 432199,
+        "end": 432406
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art61.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art61",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Até ao termo do prazo fixado para a apresentação das propostas, o órgão competente para a decisão de contratar deve pronunciar-se sobre os erros e as omissões identificados pelos interessados, considerando-se rejeitados todos os que não sejam por ele expressamente aceites.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 4414,
+        "end": 4691
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "5 - Até ao termo do prazo fixado para a apresentação das propostas ou, no caso previsto no n.º 4, até ao termo do período de manutenção da suspensão daquele prazo, o órgão competente para a decisão de contratar deve pronunciar-se sobre os erros e as omissões identificados pelos interessados, considerando-se rejeitados todos os que não sejam por ele expressamente aceites.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 1848,
+        "end": 2221
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 212980,
+        "end": 213145
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

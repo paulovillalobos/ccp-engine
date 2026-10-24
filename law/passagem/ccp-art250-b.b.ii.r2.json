@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-b.b.ii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-b.b",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "ii) Os tipos de serviços que são objeto dos contratos a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b",
+      "offsets": {
+        "start": 2412,
+        "end": 2477
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art457.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art457",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) A não comparência do adjudicatário no dia, na hora e no local fixados para a outorga do contrato pelo órgão competente para a decisão de contratar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art457",
+      "offsets": {
+        "start": 2782,
+        "end": 2932
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) A não comparência do adjudicatário no dia, na hora e no local fixados para a outorga do contrato pelo órgão competente para a decisão de contratar, em violação do disposto no n.º 3 do artigo 104.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art457",
+      "offsets": {
+        "start": 1648,
+        "end": 1848
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

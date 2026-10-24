@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art464-e.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art464-e",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - Os membros da comissão indicados pelas partes são convocados para a sessão de conciliação no prazo acordado pelas partes.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 700489,
+        "end": 700614
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

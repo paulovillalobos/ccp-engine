@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art323.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art323",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Nos casos em que o cocontratante deva constituir-se sob a forma de sociedade, o contrato pode sujeitar a autorização do contraente público qualquer alteração do contrato constitutivo da sociedade, bem como a alienação ou oneração das participações no respetivo capital social.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art323",
+      "offsets": {
+        "start": 79,
+        "end": 359
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

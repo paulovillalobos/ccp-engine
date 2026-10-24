@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art461.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art461",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As entidades adjudicantes devem participar ao Instituto da Construção e do Imobiliário, I. P., ou à Autoridade de Segurança Alimentar e Económica, consoante o caso, quaisquer factos susceptíveis de constituírem contra-ordenações nos termos do disposto nos artigos 456.º a 458.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art461",
+      "offsets": {
+        "start": 1513,
+        "end": 1794
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - As entidades adjudicantes devem participar ao Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., quaisquer factos suscetíveis de constituírem contraordenações nos termos do disposto nos artigos 456.º a 458.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art461",
+      "offsets": {
+        "start": 289,
+        "end": 521
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

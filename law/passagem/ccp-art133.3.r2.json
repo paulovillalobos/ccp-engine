@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art133.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art133",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A disponibilização das peças do concurso a que se refere o número anterior pode depender do pagamento à entidade adjudicante de um preço adequado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art133",
+      "offsets": {
+        "start": 3345,
+        "end": 3495
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art133",
+      "offsets": {
+        "start": 1948,
+        "end": 1963
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art133",
+      "offsets": {
+        "start": 582,
+        "end": 597
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

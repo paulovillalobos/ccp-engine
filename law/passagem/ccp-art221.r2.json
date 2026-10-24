@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art221",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 221.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 221.º\nInício do concurso de concepção\n1 - O concurso de concepção inicia-se com a decisão de seleccionar um ou mais trabalhos de concepção, a qual cabe ao órgão competente, por lei ou por delegação, para a decisão de autorizar a despesa relativa aos prémios a que os concorrentes tenham direito, podendo essa decisão estar implícita nesta última.\n2 - Quando o concurso de concepção não implique o pagamento de prémios aos concorrentes, a decisão de seleccionar um ou mais trabalhos de concepção cabe ao órgão da entidade adjudicante que for competente para o efeito nos termos da respectiva lei orgânica.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art221",
+      "offsets": {
+        "start": 259,
+        "end": 870
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 221.º\nInício do concurso de concepção",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art221",
+      "offsets": {
+        "start": 42,
+        "end": 86
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

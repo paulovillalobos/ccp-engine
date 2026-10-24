@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art27.1.e",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art27.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) Se trate de serviços de investigação e de desenvolvimento, com excepção daqueles cujos resultados se destinem exclusivamente à entidade adjudicante para utilização no exercício da sua própria actividade, desde que a prestação do serviço seja inteiramente remunerada pela referida entidade adjudicante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27",
+      "offsets": {
+        "start": 21230,
+        "end": 21534
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "e) Se trate de serviços de investigação e desenvolvimento não abrangidos pela alínea j) do n.º 4 do artigo 5.º, desde que o valor estimado do contrato seja inferior aos limiares estabelecidos nas alíneas b) e c) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27",
+      "offsets": {
+        "start": 11671,
+        "end": 11908
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2018-05-16",
+      "revoked": false
+    },
+    {
+      "version": "2018-05-16",
+      "text": "e) Se trate de serviços de investigação e desenvolvimento não excluídos pela alínea j) do n.º 4 do artigo 5.º, desde que o valor estimado do contrato seja inferior aos limites estabelecidos nas alíneas b) e c) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27",
+      "offsets": {
+        "start": 7121,
+        "end": 7356
+      },
+      "valid_from": "2018-05-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art474.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O montante do limiar previsto para os contratos de concessão de serviços públicos e de obras públicas é de (euro) 5 225 000.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 4634,
+        "end": 4762
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - O montante do limiar previsto para os contratos de concessão de serviços públicos e de obras públicas é de (euro) 5 350 000.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 2597,
+        "end": 2725
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - O montante do limiar previsto para os contratos de concessão de obras públicas e concessões de serviços é de 5 404 000 €.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474",
+      "offsets": {
+        "start": 524,
+        "end": 649
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

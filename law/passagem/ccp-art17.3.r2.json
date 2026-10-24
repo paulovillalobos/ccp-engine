@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art17.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - No caso de se tratar de um contrato de empreitada de obras públicas, o benefício referido no n.º 1 inclui ainda o valor dos bens móveis necessários à sua execução e que a entidade adjudicante ponha à disposição do adjudicatário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 6752,
+        "end": 6984
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - No caso de contratos de empreitada de obras públicas, o cálculo do valor do contrato inclui o custo da obra e o valor total dos bens móveis e serviços que são postos à disposição do adjudicatário pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 4313,
+        "end": 4539
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 739,
+        "end": 754
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art24.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Em anterior concurso público, concurso limitado por prévia qualificação ou diálogo concorrencial, todas as propostas apresentadas tenham sido excluídas, e desde que o caderno de encargos não seja substancialmente alterado em relação ao daquele procedimento;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 19498,
+        "end": 19758
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) Em anterior concurso público ou concurso limitado por prévia qualificação, todas as propostas apresentadas tenham sido excluídas, desde que o caderno de encargos não seja substancialmente alterado em relação ao daquele concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 9999,
+        "end": 10230
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "b) Em anterior concurso público ou concurso limitado por prévia qualificação para a formação de contratos de valor inferior aos limiares referidos nos n.os 2, 3 ou 4 do artigo 474.º, consoante o caso, todas as propostas ou todas as candidaturas tenham sido excluídas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 5843,
+        "end": 6110
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

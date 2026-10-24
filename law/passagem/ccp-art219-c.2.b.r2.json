@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-c.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-c.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) A despesa autorizada para pagamento de prémios no âmbito do concurso de conceção seja inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-c",
+      "offsets": {
+        "start": 2390,
+        "end": 2556
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:anexo-xiv.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-xiv",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - A entidade adjudicante notifica os participantes no sistema da sua intenção de proceder à composição do objeto e do momento em que o fará;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 726422,
+        "end": 726564
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

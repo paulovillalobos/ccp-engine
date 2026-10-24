@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art318.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Quando o próprio contraente público assume as obrigações do cocontratante para com os subcontratados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318",
+      "offsets": {
+        "start": 4889,
+        "end": 4993
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Quando haja transmissão universal ou parcial da posição do cocontratante, na sequência de reestruturação societária, nomeadamente, oferta pública de aquisição, aquisição ou fusão ou de insolvência;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318",
+      "offsets": {
+        "start": 359,
+        "end": 559
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

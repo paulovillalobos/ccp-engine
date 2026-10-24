@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art104.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art104",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "4 - Sem prejuízo do disposto nos números anteriores, nos procedimentos pré-contratuais que tenham sido adotados segundo critério de urgência, ou em qualquer outro tipo de procedimento, desde que por motivos de urgência imperiosa resultante de acontecimentos imprevisíveis pela entidade adjudicante, ainda que posteriores à decisão de contratar, caso seja necessário dar imediata execução ao contrato, a redução a escrito pode ocorrer em momento posterior ao do início das prestações contratuais, devendo o contrato ser outorgado no prazo máximo de 30 dias após essa data.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104",
+      "offsets": {
+        "start": 1553,
+        "end": 2124
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

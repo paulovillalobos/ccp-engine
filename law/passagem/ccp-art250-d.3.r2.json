@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art250-d.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Os contratos abrangidos pela presente secção não podem ter um prazo de vigência superior a três anos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d",
+      "offsets": {
+        "start": 3764,
+        "end": 3869
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Os contratos abrangidos pelo presente artigo não podem ter um prazo de vigência superior a três anos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d",
+      "offsets": {
+        "start": 1278,
+        "end": 1383
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art57.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - A declaração referida na alínea a) do n.º 1 deve ser assinada pelo concorrente ou por representante que tenha poderes para o obrigar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57",
+      "offsets": {
+        "start": 14485,
+        "end": 14622
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - Os documentos referidos nos n.os 1 e 2 devem ser assinados pelo concorrente ou por representante que tenha poderes para o obrigar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57",
+      "offsets": {
+        "start": 7202,
+        "end": 7336
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Os documentos referidos nos n.ºs 1 e 2 devem ser assinados pelo concorrente ou por representante que tenha poderes para o obrigar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57",
+      "offsets": {
+        "start": 2347,
+        "end": 2481
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

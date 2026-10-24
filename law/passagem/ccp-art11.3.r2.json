@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art11.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art11",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A parte ii do presente Código é sempre aplicável à formação dos seguintes contratos, a celebrar pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, quando estas exerçam uma ou várias actividades no sector da água:\na) Contratos relacionados com projectos de engenharia hidráulica, de irrigação ou de drenagem, desde que o volume de água destinada ao abastecimento de água potável represente mais de 20 % do volume total de água fornecida de acordo com aqueles projectos ou por instalações de irrigação ou de drenagem;\nb) Contratos relacionados com a rejeição ou o tratamento de águas residuais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 6586,
+        "end": 7194
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - A parte ii do presente Código é sempre aplicável à formação dos seguintes contratos, a celebrar pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, quando estas exerçam uma ou várias actividades no sector da água:\na) Contratos relacionados com projectos de engenharia hidráulica, de irrigação ou de drenagem, desde que o volume de água destinada ao abastecimento de água potável represente mais de 20 % do volume total de água fornecida de acordo com aqueles projectos ou por instalações de irrigação ou de drenagem;\nb) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 4084,
+        "end": 4630
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - A parte ii do presente Código é sempre aplicável à formação dos seguintes contratos, a celebrar pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, quando estas exerçam uma ou várias actividades no sector da água:\na) Contratos relacionados com projectos de engenharia hidráulica, de irrigação ou de drenagem, desde que o volume de água destinada ao abastecimento de água potável represente mais de 20 % do volume total de água fornecida de acordo com aqueles projectos ou por instalações de irrigação ou de drenagem;\nb) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 1694,
+        "end": 2240
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

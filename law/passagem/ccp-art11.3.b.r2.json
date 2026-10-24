@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art11.3.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art11.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Contratos relacionados com a rejeição ou o tratamento de águas residuais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 7118,
+        "end": 7194
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 4616,
+        "end": 4630
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 2226,
+        "end": 2240
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A parte ii do presente Código também não é aplicável à formação dos contratos, independentemente do seu objecto, a celebrar por entidades adjudicantes com uma outra entidade, desde que::\na) A entidade adjudicante exerça sobre a actividade desta, isoladamente ou em conjunto com outras entidades adjudicantes, um controlo análogo ao que exerce sobre os seus próprios serviços; e\nb) Esta entidade desenvolva o essencial da sua actividade em benefício de uma ou de várias entidades adjudicantes que exerçam sobre ela o controlo análogo referido na alínea anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 22625,
+        "end": 23190
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O disposto no número anterior abrange, designadamente, os acordos ou outros instrumentos jurídicos que organizem a transferência ou delegação de poderes e responsabilidades pela execução de missões públicas entre entidades adjudicantes ou agrupamentos de entidades adjudicantes, e que não prevejam uma remuneração.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 8685,
+        "end": 9003
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

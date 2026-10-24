@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art112.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art112",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O ajuste direto é o procedimento em que a entidade adjudicante convida diretamente uma entidade à sua escolha a apresentar proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art112",
+      "offsets": {
+        "start": 336,
+        "end": 472
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

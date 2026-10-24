@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art253.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art253",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Para os efeitos da celebração de acordos quadro na modalidade prevista na alínea b) do n.º 1 do artigo anterior, devem ser adjudicadas, pelo menos, as propostas ordenadas nos três primeiros lugares, salvo quando o número de candidatos qualificados, ou de propostas apresentadas e não excluídas, seja inferior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art253",
+      "offsets": {
+        "start": 2458,
+        "end": 2771
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art253",
+      "offsets": {
+        "start": 1227,
+        "end": 1242
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

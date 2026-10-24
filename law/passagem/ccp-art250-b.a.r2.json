@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art250-b.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-b",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Através da publicação de um anúncio de concurso do qual constem as informações referidas no anexo xviii do Regulamento de Execução (UE) n.º 2015/1986, da Comissão, de 11 de novembro de 2015; ou",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b",
+      "offsets": {
+        "start": 2088,
+        "end": 2284
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Através da publicação de um anúncio de concurso do qual constem as informações referidas no formulário-tipo «Concurso» do Regulamento de Execução (UE) 2019/1780 da Comissão de 23 de setembro de 2019; ou",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b",
+      "offsets": {
+        "start": 440,
+        "end": 645
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - As sanções de proibição de participação em procedimentos de formação de contratos públicos que tenham sido aplicadas, ou consideradas válidas mediante decisão transitada em julgado, não são passíveis de relevação nos termos do presente artigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a",
+      "offsets": {
+        "start": 2949,
+        "end": 3196
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Durante o período da proibição, não são suscetíveis de relevação os impedimentos resultantes de decisões judiciais de proibição de participação em procedimentos de formação de contratos públicos que tenham transitado em julgado ou de decisões administrativas insuscetíveis de impugnação judicial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a",
+      "offsets": {
+        "start": 1255,
+        "end": 1555
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art99.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art99.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) A inclusão de soluções contidas em proposta apresentada por outro concorrente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art99",
+      "offsets": {
+        "start": 2056,
+        "end": 2137
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

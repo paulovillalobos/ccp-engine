@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art319-a.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art319-a",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "7 - O contraente público deve pronunciar-se sobre a proposta do cocontratante no prazo de 30 dias a contar da respetiva apresentação, desde que regularmente instruída.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 554994,
+        "end": 555161
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

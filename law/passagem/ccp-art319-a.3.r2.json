@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art319-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art319-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - A estipulação contratual referida no n.º 1 deve ser adequada e limitada ao necessário e não pode ter por efeito restringir, limitar ou falsear a concorrência garantida pelo disposto no presente Código relativamente à formação do contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 553629,
+        "end": 553871
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

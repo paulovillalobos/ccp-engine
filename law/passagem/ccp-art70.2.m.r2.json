@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.2.m",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "m)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "m) Nos casos de incumprimento da obrigação a que se refere o n.º 3 do artigo 56.º ou de prestação de falsas declarações, nos termos do n.º 4 do mesmo artigo;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 1808,
+        "end": 1965
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

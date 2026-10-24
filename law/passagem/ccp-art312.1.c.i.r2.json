@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art312.1.c.i",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art312.1.c",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "i) Não seja viável por razões económicas ou técnicas, designadamente em função da necessidade de assegurar a permutabilidade ou interoperabilidade com equipamentos, serviços ou instalações existentes; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312",
+      "offsets": {
+        "start": 770,
+        "end": 972
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

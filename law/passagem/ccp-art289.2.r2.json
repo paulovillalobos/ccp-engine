@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art289.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art289",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - As partes estão vinculadas pelo dever de colaboração mútua, designadamente no tocante à prestação recíproca de informações necessárias à boa execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art289",
+      "offsets": {
+        "start": 207,
+        "end": 373
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

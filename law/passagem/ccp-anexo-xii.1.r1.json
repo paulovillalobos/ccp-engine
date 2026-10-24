@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-xii.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-xii",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Modelo previsto na alínea c) do n.º 2 do artigo 476.º, a incluir no programa do procedimento:\nA (designação oficial da entidade pública adjudicante) aceita a jurisdição do Centro de Arbitragem Institucionalizado (designação e identificação do Centro de Arbitragem Institucionalizado) para a resolução de qualquer litígio respeitante ao presente procedimento pré-contratual, seguindo-se os respetivos regulamentos, designadamente quanto ao respetivo modo de constituição e regime processual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-xii",
+      "offsets": {
+        "start": 2198,
+        "end": 2692
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 725035,
+        "end": 725183
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

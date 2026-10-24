@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Sem prejuízo das regras técnicas nacionais obrigatórias, desde que sejam compatíveis com o direito comunitário, as especificações técnicas devem ser fixadas no caderno de encargos:\na) Por referência, por ordem de preferência, a normas nacionais que transponham normas europeias, a homologações técnicas europeias, a especificações técnicas comuns, a normas internacionais ou a qualquer outro referencial técnico elaborado pelos organismos europeus de normalização, acompanhadas da menção «ou equivalente»;\nb) Na falta de qualquer dos referenciais técnicos referidos na alínea anterior, por referência a normas nacionais, a homologações técnicas nacionais ou a especificações técnicas nacionais em matéria de concepção, de cálculo e de realização de obras e de utilização de materiais, acompanhadas da menção «ou equivalente»;\nc) Em termos de desempenho ou de exigências funcionais, incluindo práticas e critérios ambientais, desde que sejam suficientemente precisas para permitir a determinação do objecto do contrato pelos interessados e a escolha da proposta pela entidade adjudicante;\nd) Nos termos referidos na alínea anterior, baseando a presunção da conformidade com aquele desempenho ou com aquelas exigências funcionais na remissão para as especificações a que se referem as alíneas a) e b).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 23160,
+        "end": 24463
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - As características exigidas para as obras, bens móveis e serviços podem também incluir uma referência ao processo ou método específico de produção ou execução das obras, bens móveis ou serviços solicitados ou a um processo específico para outra fase do seu ciclo de vida, mesmo que tais fatores não façam parte da sua substância material, desde que estejam ligados ao objeto do contrato e sejam proporcionais ao seu valor e aos seus objetivos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 5976,
+        "end": 6423
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

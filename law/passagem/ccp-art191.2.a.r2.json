@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art191.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art191.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 52 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art191",
+      "offsets": {
+        "start": 4501,
+        "end": 4695
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "a) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art191",
+      "offsets": {
+        "start": 652,
+        "end": 846
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

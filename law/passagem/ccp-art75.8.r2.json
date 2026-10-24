@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.8",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - Quando o caderno de encargos submeter à concorrência os custos do ciclo de vida do objeto do contrato a celebrar, o programa do procedimento ou convite deve indicar a metodologia que será utilizada para os calcular.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75",
+      "offsets": {
+        "start": 19094,
+        "end": 19313
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

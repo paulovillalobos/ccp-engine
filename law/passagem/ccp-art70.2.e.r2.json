@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art70.2.e",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) Um preço total anormalmente baixo, cujos esclarecimentos justificativos não tenham sido apresentados ou não tenham sido considerados nos termos do disposto no artigo seguinte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 17843,
+        "end": 18021
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "e) Um preço ou custo anormalmente baixo, cujos esclarecimentos justificativos não tenham sido apresentados ou não tenham sido considerados nos termos do disposto no artigo seguinte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 12861,
+        "end": 13042
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "e) Que não cumpram o disposto nos n.ºs 4 e 5 do artigo 57.º ou nos n.ºs 1 e 2 do artigo 58.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 902,
+        "end": 995
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

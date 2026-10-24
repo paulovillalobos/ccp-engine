@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art179.3.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art179.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) No caso de o candidato ser um agrupamento, um dos membros que o integram ser uma instituição de crédito que apresente documento comprovativo de que possui sede ou sucursal em Estado membro da União Europeia, emitido pela entidade que exerça a supervisão bancária nesse Estado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art179",
+      "offsets": {
+        "start": 2192,
+        "end": 2471
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art184.2.k",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art184.2",
+  "kind": "alinea",
+  "label": "k)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "k) No caso previsto no n.º 6 do artigo 168.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art184",
+      "offsets": {
+        "start": 1976,
+        "end": 2021
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art461.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art461",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A instauração e arquivamento dos processos de contra-ordenação cabem:\na) Ao Instituto da Construção e do Imobiliário, I. P., quando o objecto do contrato a celebrar abranja prestações típicas dos contratos de empreitada ou de concessão de obras públicas;\nb) À Autoridade de Segurança Alimentar e Económica, quando o objecto do contrato a celebrar não abranja prestações típicas dos contratos referidos na alínea anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art461",
+      "offsets": {
+        "start": 754,
+        "end": 1179
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - A instauração e arquivamento dos processos, bem como a aplicação de coimas e sanções acessórias, cabem ao Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art461",
+      "offsets": {
+        "start": 92,
+        "end": 272
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

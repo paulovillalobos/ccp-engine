@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art384.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art384",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Os empreiteiros, os subempreiteiros, assim como os terceiros são obrigadas a manter em arquivo os contratos celebrados em que são intervenientes pelo período de cinco anos a contar da data da conclusão das obras.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art384",
+      "offsets": {
+        "start": 2143,
+        "end": 2359
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

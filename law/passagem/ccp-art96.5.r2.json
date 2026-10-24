@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art96.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Em caso de divergência entre os documentos referidos no n.º 2, a prevalência é determinada pela ordem pela qual são indicados nesse número.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96",
+      "offsets": {
+        "start": 8801,
+        "end": 8944
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

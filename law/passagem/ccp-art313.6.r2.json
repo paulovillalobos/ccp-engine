@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art313.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art313",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "6 - As modificações que não respeitem os limites estabelecidos no presente Código determinam a adoção de um novo procedimento de formação de contrato, caso a entidade adjudicante mantenha a decisão de contratar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313",
+      "offsets": {
+        "start": 2799,
+        "end": 3010
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art472.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art472",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para efeitos do disposto no número anterior, as entidades adjudicantes devem remeter às entidades competentes, até 31 de Março de cada ano, todos os dados estatísticos necessários à elaboração dos referidos relatórios, conforme modelo aprovado por portaria conjunta dos ministros responsáveis pelas áreas das finanças e das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art472",
+      "offsets": {
+        "start": 7977,
+        "end": 8320
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Para efeitos do disposto no número anterior, o Instituto dos Mercados Públicos, Imobiliário e Construção, I. P., recolhe os dados necessários a partir do portal dos contratos públicos e dos instrumentos de comunicação da informação inerentes à sua atividade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art472",
+      "offsets": {
+        "start": 3675,
+        "end": 3937
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

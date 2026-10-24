@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art114.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art114",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A entidade adjudicante pode, sempre que o considere conveniente, convidar a apresentar proposta mais de uma entidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114",
+      "offsets": {
+        "start": 3488,
+        "end": 3609
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - No procedimento de consulta prévia, a entidade adjudicante deve convidar a apresentar proposta, pelo menos, três entidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114",
+      "offsets": {
+        "start": 2269,
+        "end": 2396
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art378.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art378",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O empreiteiro é responsável pelos trabalhos de suprimento de erros e omissões cuja detecção era exigível na fase de formação do contrato nos termos do disposto nos n.os 1 e 2 do artigo 61.º, excepto pelos que hajam sido identificados pelos concorrentes na fase de formação do contrato mas que não tenham sido expressamente aceites pelo dono da obra.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 7822,
+        "end": 8175
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "3 - O empreiteiro é responsável pelos trabalhos de suprimento de erros e omissões cuja deteção era exigível na fase de formação do contrato nos termos do disposto no n.º 2 do artigo 61.º, exceto pelos que hajam sido identificados pelos interessados na fase de formação do contrato mas que não tenham sido expressamente aceites pelo dono da obra.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 5408,
+        "end": 5753
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O empreiteiro deve, no prazo de 60 dias contados da data da consignação total ou da primeira consignação parcial, reclamar sobre a existência de erros ou omissões do caderno de encargos, salvo dos que só sejam detetáveis durante a execução da obra, sob pena de ser responsável por suportar metade do valor dos trabalhos complementares de suprimento desses erros e omissões.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 3099,
+        "end": 3476
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - O empreiteiro suporta metade do valor dos trabalhos complementares de suprimento de erros e omissões cuja deteção era exigível na fase de formação do contrato, nos termos do artigo 50.º, exceto pelos que hajam sido nessa fase identificados pelos interessados mas não tenham sido expressamente aceites pelo dono da obra.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378",
+      "offsets": {
+        "start": 535,
+        "end": 858
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art5.4.j.ii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5.4.j",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "ii) O pagamento dos serviços em causa não seja integralmente suportado pela entidade adjudicante, designadamente por se tratar de projeto cofinanciado por fundos nacionais ou europeus.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 11486,
+        "end": 11670
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2018-05-16",
+      "revoked": false
+    },
+    {
+      "version": "2018-05-16",
+      "text": "ii) O serviço prestado é integralmente remunerado pela entidade adjudicante",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 7730,
+        "end": 7805
+      },
+      "valid_from": "2018-05-16",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "ii) O serviço prestado é integralmente remunerado pela entidade adjudicante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5",
+      "offsets": {
+        "start": 3170,
+        "end": 3246
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

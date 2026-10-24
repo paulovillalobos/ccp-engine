@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art54-a.1.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art54-a.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "c) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens móveis ou aquisição de serviços de uso corrente de valor inferior aos limiares referidos nas alíneas c) do n.º 3 ou b) do n.º 4 do artigo 474.º, consoante o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a",
+      "offsets": {
+        "start": 4794,
+        "end": 5273
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "c) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a",
+      "offsets": {
+        "start": 3064,
+        "end": 3576
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a",
+      "offsets": {
+        "start": 966,
+        "end": 1478
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

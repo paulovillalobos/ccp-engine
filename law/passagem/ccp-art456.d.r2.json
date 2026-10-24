@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art456.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art456",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "d) A apresentação de documentos falsos de habilitação, de documentos que constituem a proposta e de documentos destinados à qualificação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art456",
+      "offsets": {
+        "start": 6070,
+        "end": 6207
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

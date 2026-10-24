@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art329.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art329",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando as sanções a que se refere o número anterior revistam natureza pecuniária, o respectivo valor acumulado não pode exceder 20 % do preço contratual, sem prejuízo do poder de resolução do contrato prevista no capítulo seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art329",
+      "offsets": {
+        "start": 2853,
+        "end": 3088
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

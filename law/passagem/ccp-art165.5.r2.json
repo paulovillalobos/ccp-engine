@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art165.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art165",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Os requisitos mínimos de capacidade técnica referidos no n.º 1 e o factor «f» referido na alínea i) do n.º 1 do artigo anterior não devem ser fixados de forma discriminatória.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 6976,
+        "end": 7155
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 4827,
+        "end": 4842
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165",
+      "offsets": {
+        "start": 1405,
+        "end": 1420
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

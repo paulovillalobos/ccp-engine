@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art160.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art160",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No caso de o mais baixo preço constar de mais de uma proposta, deve ser adjudicada aquela que tiver sido apresentada mais cedo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art160",
+      "offsets": {
+        "start": 855,
+        "end": 986
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art160",
+      "offsets": {
+        "start": 520,
+        "end": 535
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art160",
+      "offsets": {
+        "start": 202,
+        "end": 217
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

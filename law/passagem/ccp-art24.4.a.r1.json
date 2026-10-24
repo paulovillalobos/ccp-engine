@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art24.4.a",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24.4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "a) A decisão de escolha do ajuste direto só pode ser tomada no prazo de seis meses a contar da decisão de exclusão de todas as propostas apresentadas, caducando se, durante esse prazo, não for formulado convite à apresentação de proposta;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24",
+      "offsets": {
+        "start": 12012,
+        "end": 12250
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "Alterado pelo/a Artigo 4.º do/a Decreto-Lei n.º 78/2022 - Diário da República n.º 214/2022, Série I de 2022-11-07, em vigor a partir de 2022-12-02",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 115629,
+        "end": 115775
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

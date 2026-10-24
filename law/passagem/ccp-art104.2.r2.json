@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art104.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art104",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O disposto na alínea a) do número anterior não é aplicável quando:\na) Tenha sido adoptado o ajuste directo nos termos do disposto na alínea a) do artigo 19.º, da alínea a) do n.º 1 do artigo 20.º ou da alínea a) do n.º 1 do artigo 21.º, ou ainda ao abrigo do disposto na alínea c) do n.º 1 do artigo 24.º;\nb) Tenha sido adoptado o procedimento de concurso público urgente;\nc) Se trate da celebração de contrato ao abrigo de acordo quadro cujos termos abranjam todos os seus aspectos ou que tenha sido celebrado apenas com uma entidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104",
+      "offsets": {
+        "start": 5727,
+        "end": 6266
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2011-01-13",
+      "revoked": false
+    },
+    {
+      "version": "2011-01-13",
+      "text": "2 - O disposto na alínea a) do número anterior não é aplicável quando:\na) Não tenha sido publicado anúncio do procedimento no Jornal Oficial da União Europeia;\nb) (Revogada.)\nc) Se trate da celebração de contrato ao abrigo de acordo quadro cujos termos abranjam todos os seus aspectos ou que tenha sido celebrado apenas com uma entidade.\nd) Só tenha sido apresentada uma proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104",
+      "offsets": {
+        "start": 4492,
+        "end": 4872
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O prazo de 10 dias previsto na alínea a) do número anterior não é aplicável quando:\na) O contrato tenha sido celebrado ao abrigo de um procedimento de ajuste direto ou de consulta prévia, ou, nos demais procedimentos, quando o anúncio não tenha sido publicado no Jornal Oficial da União Europeia;\nb) (Revogada.)\nc) Se trate da celebração de contrato ao abrigo de acordo quadro cujos termos abranjam todos os seus aspectos ou que tenha sido celebrado apenas com uma entidade.\nd) Só tenha sido apresentada uma proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104",
+      "offsets": {
+        "start": 2811,
+        "end": 3332
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

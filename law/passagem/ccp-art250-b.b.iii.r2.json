@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-b.b.iii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-b.b",
+  "kind": "subalinea",
+  "label": "iii)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "iii) A indicação de que os procedimentos são adjudicados sem nova publicitação, convidando-se os operadores económicos interessados a manifestar-se por escrito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b",
+      "offsets": {
+        "start": 2478,
+        "end": 2638
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

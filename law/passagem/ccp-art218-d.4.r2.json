@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art218-d.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art218-d",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - A parceria para a inovação deve fixar as metas intermédias que devem ser alcançadas pelos parceiros e prever o pagamento de remuneração em frações adequadas.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 419504,
+        "end": 419665
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

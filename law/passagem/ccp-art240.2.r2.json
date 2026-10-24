@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art240.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art240",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O programa do procedimento deve indicar os eventuais factores e subfactores que densificam o critério de adjudicação, bem como o valor dos respectivos coeficientes de ponderação, não sendo, porém, necessário um modelo de avaliação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art240",
+      "offsets": {
+        "start": 1957,
+        "end": 2206
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O programa do procedimento do sistema de aquisição dinâmico deve prever as regras para a fase de apresentação e análise das propostas e adjudicação, designadamente o critério de adjudicação a ser adotado e desenvolvido naquela fase do procedimento, não sendo necessário um modelo de avaliação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art240",
+      "offsets": {
+        "start": 752,
+        "end": 1063
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

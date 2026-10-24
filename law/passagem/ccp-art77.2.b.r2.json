@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art77.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art77.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Prestar caução, se esta for devida, nos termos do disposto nos artigos 88.º a 91.º, indicando expressamente o seu valor;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77",
+      "offsets": {
+        "start": 4202,
+        "end": 4325
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Prestar caução, se esta for devida, indicando expressamente o seu valor;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77",
+      "offsets": {
+        "start": 1919,
+        "end": 1994
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

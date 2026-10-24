@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art146.1.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art146.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "c) A ordenação das propostas objeto de avaliação, com indicação das pontuações atribuídas em cada fator.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art146",
+      "offsets": {
+        "start": 464,
+        "end": 568
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

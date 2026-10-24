@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.3.i",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.3",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "i) Que, na avaliação técnica prevista no artigo 161.º-E, não atingem a pontuação mínima indicada no programa do concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 3520,
+        "end": 3641
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

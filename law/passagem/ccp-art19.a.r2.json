@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art19.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art19",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) A escolha do ajuste directo só permite a celebração de contratos de valor inferior a (euro) 150 000 ou, caso a entidade adjudicante seja o Banco de Portugal ou uma das referidas no n.º 2 do artigo 2.º, de valor inferior a (euro) 1 000 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art19",
+      "offsets": {
+        "start": 2914,
+        "end": 3156
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "a) A escolha do ajuste direto só permite a celebração de contratos de valor inferior a (euro) 150 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art19",
+      "offsets": {
+        "start": 2091,
+        "end": 2193
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art19",
+      "offsets": {
+        "start": 1183,
+        "end": 1350
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art19",
+      "offsets": {
+        "start": 246,
+        "end": 422
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

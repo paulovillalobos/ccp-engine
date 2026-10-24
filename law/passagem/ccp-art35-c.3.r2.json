@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-c.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-c",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - A disponibilização gratuita prevista no presente artigo não é considerada atribuição a título gratuito para os efeitos previstos no n.º 5 do artigo 113.º, nem pode envolver contrapartidas diretas ou indiretas a favor das entidades disponibilizadoras, designadamente pagamentos, cessão de direitos, autorização de utilização de dados para fins próprios, incluindo treino, validação ou melhoria de modelos, publicidade, ou quaisquer outras vantagens suscetíveis de distorcer a concorrência.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 148281,
+        "end": 148773
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

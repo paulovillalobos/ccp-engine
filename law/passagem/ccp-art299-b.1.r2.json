@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299-b.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299-b",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - No âmbito da execução de contratos públicos, os cocontratantes são obrigados a emitir faturas eletrónicas, as quais, sem prejuízo dos requisitos exigidos na legislação fiscal, contêm imperativamente os seguintes elementos, sempre que aplicáveis:\na) Identificadores do processo e da fatura;\nb) Período de faturação;\nc) Informações sobre o cocontratante;\nd) Informações sobre o contraente público;\ne) Informações sobre a entidade beneficiária, se distinta da anterior;\nf) Informações sobre o representante fiscal do cocontratante;\ng) Referência do contrato;\nh) Condições de entrega;\ni) Instruções de pagamento;\nj) Informações sobre ajustamentos e encargos;\nl) Informações sobre as rubricas da fatura;\nm) Totais da fatura.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 526303,
+        "end": 527026
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

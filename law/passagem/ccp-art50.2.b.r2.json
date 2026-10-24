@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art50.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Espécie ou quantidade de prestações estritamente necessárias à integral execução do objeto do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 3942,
+        "end": 4059
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art55.1.h",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "h)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "h) Tenham sido condenadas por sentença transitada em julgado por algum dos seguintes crimes, se entretanto não tiver ocorrido a sua reabilitação, no caso de se tratar de pessoas singulares, ou, no caso de se tratar de pessoas coletivas, tenham sido condenados pelos mesmos crimes a pessoa coletiva ou os titulares dos seus órgãos sociais de administração, direção ou gerência que se encontrem em efetividade de funções, se entretanto não tiver ocorrido a sua reabilitação:",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 15823,
+        "end": 16295
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "h) Tenham sido condenadas por sentença transitada em julgado por algum dos seguintes crimes, se entretanto não tiver ocorrido a sua reabilitação, no caso de se tratar de pessoas singulares, ou, no caso de se tratar de pessoas coletivas, tenham sido condenados pelos mesmos crimes a pessoa coletiva e os titulares dos seus órgãos sociais de administração, direção ou gerência das mesmas e estes se encontrem em efetividade de funções, se entretanto não tiver ocorrido a sua reabilitação:",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 9581,
+        "end": 10067
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "h) Tenham sido condenadas por sentença transitada em julgado, há menos de cinco anos, por algum dos seguintes crimes:",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 1969,
+        "end": 2086
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

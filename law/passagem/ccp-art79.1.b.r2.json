@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art79.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art79.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Todas as candidaturas ou todas as propostas tenham sido excluídas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art79",
+      "offsets": {
+        "start": 5802,
+        "end": 5871
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) Todas as candidaturas ou todas as propostas tenham sido excluídas, sem prejuízo do disposto no n.º 6 do artigo 70.º, no que respeita às propostas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art79",
+      "offsets": {
+        "start": 2206,
+        "end": 2355
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art79",
+      "offsets": {
+        "start": 168,
+        "end": 182
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

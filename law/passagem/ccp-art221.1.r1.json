@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art221.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art221",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O concurso de concepção inicia-se com a decisão de seleccionar um ou mais trabalhos de concepção, a qual cabe ao órgão competente, por lei ou por delegação, para a decisão de autorizar a despesa relativa aos prémios a que os concorrentes tenham direito, podendo essa decisão estar implícita nesta última.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art221",
+      "offsets": {
+        "start": 304,
+        "end": 612
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 437161,
+        "end": 437326
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

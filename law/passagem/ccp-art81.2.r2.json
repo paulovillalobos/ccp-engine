@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art81.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No caso de se tratar de um procedimento de formação de um contrato de empreitada ou de concessão de obras públicas, o adjudicatário, para além dos documentos referidos no número anterior, deve também apresentar os alvarás ou os títulos de registo emitidos pelo Instituto da Construção e do Imobiliário, I. P., contendo as habilitações adequadas e necessárias à execução da obra a realizar ou, no caso de o contrato respeitar a um lote funcionalmente não autónomo, as habilitações adequadas e necessárias à execução dos trabalhos inerentes à totalidade dos lotes que constituem a obra.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 7794,
+        "end": 8382
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - A habilitação, designadamente a titularidade de alvará e certificado de empreiteiro de obras públicas, bem como o modo de apresentação desses documentos, obedece às regras e termos a definir por portaria do membro do Governo responsável pela área das obras públicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 4066,
+        "end": 4336
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - A habilitação profissional, bem como o modo de apresentação dos respetivos documentos, obedece às regras e termos a definir por portaria dos membros do Governo responsáveis pela área das obras públicas e da reforma do Estado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81",
+      "offsets": {
+        "start": 337,
+        "end": 566
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

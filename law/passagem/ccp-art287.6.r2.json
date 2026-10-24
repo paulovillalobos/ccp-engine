@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art287.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art287",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - A ineficácia de um contrato com fundamento na alínea a) do número anterior não se verifica quando, cumulativamente:\na) O procedimento de formação do contrato tenha sido escolhido em função de um critério material previsto nos artigos 24.º a 27.º;\nb) Tenha sido publicado o anúncio voluntário de transparência previsto no artigo 78.º-A;\nc) A outorga do contrato não tenha ocorrido antes de decorridos 10 dias após a data da referida publicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287",
+      "offsets": {
+        "start": 5106,
+        "end": 5553
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "6 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287",
+      "offsets": {
+        "start": 3281,
+        "end": 3296
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287",
+      "offsets": {
+        "start": 1800,
+        "end": 1815
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art454.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art454",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Caso não se verifique alguma das condições previstas no n.º 2, os serviços a mais devem ser objecto de contrato celebrado na sequência de procedimento adoptado nos termos do disposto no título i da parte ii.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454",
+      "offsets": {
+        "start": 7355,
+        "end": 7566
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - Caso não se verifique alguma das condições previstas no n.º 2, os serviços complementares devem ser objeto de contrato celebrado na sequência de procedimento adotado nos termos do disposto no título i da parte ii.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454",
+      "offsets": {
+        "start": 2139,
+        "end": 2356
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454",
+      "offsets": {
+        "start": 253,
+        "end": 268
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

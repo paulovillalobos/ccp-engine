@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art27.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art27",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - A escolha do ajuste directo ao abrigo do disposto na alínea f) do n.º 1 só permite a celebração de contratos de valor inferior ao referido na alínea b) do n.º 1 do artigo 20.º ou ao referido no n.º 2 do artigo 20.º, consoante o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27",
+      "offsets": {
+        "start": 24055,
+        "end": 24292
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "7 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27",
+      "offsets": {
+        "start": 18953,
+        "end": 18968
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27",
+      "offsets": {
+        "start": 4840,
+        "end": 4855
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

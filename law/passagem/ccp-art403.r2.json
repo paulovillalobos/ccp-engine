@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art403",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-i.seccao-xi",
+  "kind": "artigo",
+  "label": "Artigo 403.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 403.º\nAtraso na execução da obra\n1 - Em caso de atraso no início ou na conclusão da execução da obra por facto imputável ao empreiteiro, o dono da obra pode aplicar uma sanção contratual, por cada dia de atraso, em valor correspondente a 1 (por mil) do preço contratual, sem prejuízo de o contrato poder prever valor mais elevado, até ao dobro daquele valor.\n2 - Em caso de incumprimento de prazos parciais de execução da obra por facto imputável ao empreiteiro, é aplicável o disposto no número anterior, sendo o montante da sanção contratual aí prevista reduzido a metade.\n3 - O empreiteiro tem direito ao reembolso das quantias pagas a título de sanção contratual por incumprimento de prazos parciais de execução da obra quando recupere o atraso na execução dos trabalhos e a obra seja concluída dentro do prazo de execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art403",
+      "offsets": {
+        "start": 1055,
+        "end": 1901
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 403.º\nAtraso na execução da obra\n1 - Em caso de atraso no início ou na conclusão da execução da obra por facto imputável ao empreiteiro, o dono da obra pode aplicar uma sanção contratual, por cada dia de atraso, em valor correspondente a 1 (por mil) do preço contratual inicial, sem prejuízo de o contrato poder prever valor mais elevado, até ao dobro daquele valor.\n2 - Em caso de incumprimento de prazos parciais de execução da obra por facto imputável ao empreiteiro, é aplicável o disposto no número anterior, sendo o montante da sanção contratual aí prevista reduzido a metade.\n3 - O empreiteiro tem direito ao reembolso das quantias pagas a título de sanção contratual por incumprimento de prazos parciais de execução da obra quando recupere o atraso na execução dos trabalhos e a obra seja concluída dentro do prazo de execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art403",
+      "offsets": {
+        "start": 55,
+        "end": 909
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

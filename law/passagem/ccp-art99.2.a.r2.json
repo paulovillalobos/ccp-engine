@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art99.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art99.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) A violação dos parâmetros base fixados no caderno de encargos nem a dos aspectos da execução do contrato a celebrar por aquele não submetidos à concorrência;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art99",
+      "offsets": {
+        "start": 1895,
+        "end": 2055
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art136.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art136",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando o contrato a celebrar diga directa e principalmente respeito a uma ou a várias das actividades exercidas nos sectores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das propostas, de 22 dias, previsto no n.º 2, pode ser reduzido nos termos previstos no n.º 3.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art136",
+      "offsets": {
+        "start": 4540,
+        "end": 4921
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art136",
+      "offsets": {
+        "start": 2853,
+        "end": 2868
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": true
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - (Revogado.);",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art136",
+      "offsets": {
+        "start": 1301,
+        "end": 1317
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

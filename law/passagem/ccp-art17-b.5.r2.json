@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art17-b.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17-b",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - Tratando-se de contratos de aquisição de bens móveis ou de serviços de uso corrente ou que se destinem a ser prorrogados durante um determinado período, o valor estimado do contrato deve ser calculado com base:\na) No somatório dos preços contratuais de todos os contratos do mesmo tipo adjudicados durante os 12 meses anteriores, corrigido, quando possível, para atender às alterações de quantidades ou de valor que possam ocorrer durante os 12 meses seguintes à celebração do contrato inicial; ou\nb) No somatório do valor estimado dos sucessivos contratos que preveja vir a celebrar durante os 12 meses seguintes ao início da execução do primeiro contrato.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 103128,
+        "end": 103789
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

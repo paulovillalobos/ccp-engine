@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art147",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-v",
+  "kind": "artigo",
+  "label": "Artigo 147.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 147.º\nAudiência prévia\nElaborado o relatório preliminar, o júri procede à audiência prévia nos termos do disposto no n.º 1 do artigo 123.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art147",
+      "offsets": {
+        "start": 942,
+        "end": 1087
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 147.º\nAudiência prévia\nElaborado o relatório preliminar, o júri envia-o a todos os concorrentes, fixando-lhes um prazo, não inferior a cinco dias, para que se pronunciem, por escrito, ao abrigo do direito de audiência prévia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art147",
+      "offsets": {
+        "start": 538,
+        "end": 770
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 147.º\nAudiência prévia\nElaborado o relatório preliminar, o júri envia-o a todos os concorrentes, fixando-lhes um prazo, não inferior a cinco dias, para que se pronunciem, por escrito, ao abrigo do direito de audiência prévia, salvo se tiver sido apresentada uma única proposta, aplicando-se, nesse caso, o disposto no artigo 125.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art147",
+      "offsets": {
+        "start": 55,
+        "end": 392
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

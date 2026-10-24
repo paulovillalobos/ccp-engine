@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art327.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art327",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - Se a realização das prestações contratuais puser manifestamente em causa a sua viabilidade económico-financeira ou se revelar excessivamente onerosa, o cocontratante pode pedir ao tribunal competente a anulação da resolução fundamentada, bem como a suspensão dos respetivos efeitos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art327",
+      "offsets": {
+        "start": 937,
+        "end": 1223
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-v.2.g",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-v.2",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) Não foi objecto de aplicação da sanção acessória prevista na alínea b) do n.º 1 do artigo 627.º do Código do Trabalho (12);",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-v",
+      "offsets": {
+        "start": 9737,
+        "end": 9863
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 4.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 716658,
+        "end": 716822
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

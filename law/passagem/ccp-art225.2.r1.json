@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art225.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art225",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Não é obrigatória a publicação de anúncio no Jornal Oficial da União Europeia quando a entidade adjudicante não manifeste expressamente a intenção de, posteriormente, celebrar um contrato, por ajuste directo adoptado ao abrigo do disposto na alínea g) do n.º 1 do artigo 27.º, de aquisição do plano, do projecto ou da criação conceptual que consista na concretização ou no desenvolvimento do ou dos trabalhos de concepção seleccionados, e o montante da despesa autorizada para o pagamento dos prémios no âmbito do concurso de concepção seja inferior:\na) Ao referido na alínea b) do artigo 7.º da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março, no caso de a entidade adjudicante ser uma das referidas nas alíneas b) a g) do n.º 1 e no n.º 2 do artigo 2.º;\nb) Ao referido na alínea a) do artigo 7.º da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março, no caso de a entidade adjudicante ser o Estado, excepto se se tratar de concursos de concepção que se refiram a serviços:\ni) De investigação e desenvolvimento;\nii) De transmissão de programas televisivos e de emissões de rádio, serviços de interconexão e serviços integrados de telecomunicações;\niii) Mencionados no anexo ii-B da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março;\nc) Ao referido na alínea a) do artigo 16.º da Directiva n.º 2004/17/CE, do Parlamento Europeu e do Conselho, de 31 de Março, no caso de a entidade adjudicante ser uma das referidas no n.º 1 do artigo 7.º, quando o concurso de concepção se referir a trabalhos de concepção que digam directa e principalmente respeito a uma ou a várias das actividades por ela exercidas nos sectores da água, da energia, dos transportes e dos serviços postais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art225",
+      "offsets": {
+        "start": 535,
+        "end": 2299
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 438074,
+        "end": 438239
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

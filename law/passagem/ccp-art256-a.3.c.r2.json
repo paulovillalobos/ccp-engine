@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art256-a.3.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256-a.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) No caso da formação de um contrato de aquisição ou locação de bens móveis ou de aquisição de serviços cujo preço contratual seja superior ao previsto nos termos da alínea b) do n.º 3 e n.º 5 do artigo 474.º, mediante declaração da entidade convidada de aceitação do conteúdo do caderno de encargos do acordo-quadro, elaborada em conformidade com o modelo constante do anexo i ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a",
+      "offsets": {
+        "start": 6010,
+        "end": 6408
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a",
+      "offsets": {
+        "start": 1997,
+        "end": 2011
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

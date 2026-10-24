@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art10.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art10.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) A produção de gás ou de combustível para aquecimento pela entidade adjudicante seja a consequência inevitável do exercício de uma actividade diferente das referidas no artigo anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art10",
+      "offsets": {
+        "start": 2694,
+        "end": 2881
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) A produção de gás ou de combustível para aquecimento pela entidade adjudicante seja a consequência inevitável do exercício de uma atividade diferente das referidas no artigo anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art10",
+      "offsets": {
+        "start": 984,
+        "end": 1170
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

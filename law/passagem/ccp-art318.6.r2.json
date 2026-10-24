@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art318.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - A autorização estabelecida no contrato não dispensa a observância, no momento da cessão ou subcontratação, dos limites e requisitos previstos, respectivamente, no artigo anterior e nos números anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318",
+      "offsets": {
+        "start": 9111,
+        "end": 9319
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318",
+      "offsets": {
+        "start": 1281,
+        "end": 1296
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

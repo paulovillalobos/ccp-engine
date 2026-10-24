@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art370-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art370-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - As alterações propostas pelo empreiteiro devem conter todos os elementos necessários à sua completa compreensão e definição e não podem alterar a natureza e a finalidade da obra contratada, nem diminuir a qualidade e funcionalidade do projeto de execução.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 603119,
+        "end": 603378
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.7.e",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75.7",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "e) Custos imputados a externalidades ambientais ligadas ao bem, serviço ou obra durante o seu ciclo de vida, desde que seja possível determinar e confirmar o seu valor monetário, os quais podem incluir o custo das emissões de gases com efeito de estufa e de outras emissões poluentes, assim como outros custos de atenuação das alterações climáticas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75",
+      "offsets": {
+        "start": 18744,
+        "end": 19093
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

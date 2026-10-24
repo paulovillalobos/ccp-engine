@@ -1,0 +1,35 @@
+{
+  "id": "ccp:anexo-iv.2",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-iv",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No caso de o candidato se ter constituído há menos de três exercícios, para efeitos do cálculo de R só são tidos em conta os resultados operacionais do candidato nos exercícios concluídos, sendo o denominador da função adaptado em conformidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-anexo-iv",
+      "offsets": {
+        "start": 2662,
+        "end": 2910
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 149/2012 - Diário da República n.º 134/2012, Série I de 2012-07-12, em vigor a partir de 2012-08-11",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 716320,
+        "end": 716467
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art54-a.1.b.i",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art54-a.1.b",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "i) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou b) do n.º 4 do artigo 474.º, consoante o caso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a",
+      "offsets": {
+        "start": 4454,
+        "end": 4654
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "i) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a",
+      "offsets": {
+        "start": 2739,
+        "end": 2924
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

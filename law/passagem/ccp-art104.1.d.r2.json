@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art104.1.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art104.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "d) Confirmados os compromissos referidos na alínea c) do n.º 2 do artigo 77.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104",
+      "offsets": {
+        "start": 5649,
+        "end": 5726
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

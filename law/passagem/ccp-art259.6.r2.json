@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art259.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art259",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - O convite pode ainda prever a realização de leilão eletrónico, aplicando-se, com as necessárias adaptações, os artigos 140.º a 145.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art259",
+      "offsets": {
+        "start": 1787,
+        "end": 1923
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

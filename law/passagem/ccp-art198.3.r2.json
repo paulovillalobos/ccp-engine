@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art198.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art198",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Os prazos mínimos para a apresentação das candidaturas previstos nos números anteriores podem ser reduzidos em até sete dias quando os anúncios forem preparados e enviados por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art198",
+      "offsets": {
+        "start": 1637,
+        "end": 1934
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

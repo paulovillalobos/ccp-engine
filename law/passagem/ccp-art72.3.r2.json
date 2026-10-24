@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art72.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art72",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Os esclarecimentos referidos no número anterior devem ser disponibilizados em plataforma electrónica utilizada pela entidade adjudicante, devendo todos os concorrentes ser imediatamente notificados desse facto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72",
+      "offsets": {
+        "start": 7041,
+        "end": 7255
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O júri deve solicitar aos candidatos e concorrentes que, no prazo máximo de cinco dias, procedam ao suprimento das irregularidades das suas propostas e candidaturas causadas por preterição de formalidades não essenciais e que careçam de suprimento, incluindo a apresentação de documentos que se limitem a comprovar factos ou qualidades anteriores à data de apresentação da proposta ou candidatura, e desde que tal suprimento não afete a concorrência e a igualdade de tratamento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72",
+      "offsets": {
+        "start": 5297,
+        "end": 5779
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "3 - O júri deve solicitar aos candidatos e concorrentes que, no prazo máximo de cinco dias, procedam ao suprimento de irregularidades formais das suas candidaturas e propostas que careçam de ser supridas, desde que tal suprimento não seja suscetível de modificar o respetivo conteúdo e não desrespeite os princípios da igualdade de tratamento e da concorrência, incluindo, designadamente:\na) A não apresentação ou a incorreta apresentação de documentos que se limitem a comprovar factos ou qualidades anteriores à data de apresentação da candidatura ou da proposta, incluindo as declarações dos anexos i e v ao presente Código ou o Documento Europeu Único de Contratação Pública;\nb) A não junção de tradução em língua portuguesa de documentos apresentados em língua estrangeira;\nc) A falta ou insuficiência da assinatura, incluindo a assinatura eletrónica, de quaisquer documentos que constituam a candidatura ou a proposta, as quais podem ser supridas através da junção de declaração de ratificação devidamente assinada e limitada aos documentos já submetidos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72",
+      "offsets": {
+        "start": 2970,
+        "end": 4031
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art164.1.f",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "f) Os documentos de habilitação, directamente relacionados com o objecto do contrato a celebrar, a apresentar nos termos do disposto no n.º 6 do artigo 81.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 17977,
+        "end": 18134
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "f) Os documentos de habilitação, diretamente relacionados com o objeto do contrato a celebrar, a apresentar nos termos do disposto no n.º 2 do artigo 81.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 8034,
+        "end": 8189
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "f) O órgão competente para prestar esclarecimentos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 649,
+        "end": 700
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

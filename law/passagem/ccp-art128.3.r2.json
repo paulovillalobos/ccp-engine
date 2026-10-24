@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art128.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art128",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O procedimento de ajuste directo regulado na presente secção está dispensado de quaisquer outras formalidades previstas no presente Código, incluindo as relativas à celebração do contrato e à publicitação prevista no artigo anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art128",
+      "offsets": {
+        "start": 5937,
+        "end": 6174
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O procedimento de ajuste direto regulado na presente secção está dispensado de quaisquer outras formalidades previstas no presente Código, incluindo as relativas à celebração do contrato e à publicitação prevista no artigo 465.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art128",
+      "offsets": {
+        "start": 2164,
+        "end": 2396
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - O procedimento de ajuste direto regulado na presente secção está dispensado de quaisquer outras formalidades previstas no presente Código, incluindo as relativas à celebração do contrato, à publicitação prevista no artigo 465.º e à designação do gestor do contrato previsto no artigo 290.º-A, assim como do regime de faturação eletrónica.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art128",
+      "offsets": {
+        "start": 777,
+        "end": 1119
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

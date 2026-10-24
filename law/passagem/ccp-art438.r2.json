@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art438",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-iv",
+  "kind": "artigo",
+  "label": "Artigo 438.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 438.º\nRemissão\nÉ aplicável aos contratos de aquisição de bens, com as necessárias adaptações, o disposto no capítulo sobre contratos de empreitadas de obras públicas no que respeita a trabalhos de suprimento de erros e omissões.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art438",
+      "offsets": {
+        "start": 211,
+        "end": 446
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 438.º\nRemissão",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art438",
+      "offsets": {
+        "start": 44,
+        "end": 65
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

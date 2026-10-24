@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art241-c.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art241-c",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - As entidades adjudicantes podem recorrer ao leilão eletrónico para melhoria dos atributos das propostas, aplicando-se, com as necessárias adaptações, os artigos 140.º a 145.º, podendo também utilizar, nos termos gerais, catálogos eletrónicos.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 448091,
+        "end": 448337
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

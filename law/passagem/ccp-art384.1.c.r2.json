@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art384.1.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art384.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) A descrição do objecto do subcontrato;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art384",
+      "offsets": {
+        "start": 1687,
+        "end": 1728
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

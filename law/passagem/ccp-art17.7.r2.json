@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art17.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "7 - A fixação do valor estimado do contrato deve ser fundamentada com base em critérios objetivos, utilizando, como referência preferencial, os custos médios unitários de prestações do mesmo tipo adjudicadas em anteriores procedimentos promovidos pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 5372,
+        "end": 5645
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "7 - A fixação do valor do contrato deve ser fundamentada com base em critérios objetivos, utilizando, como referência preferencial, os custos médios unitários de prestações do mesmo tipo adjudicadas em anteriores procedimentos promovidos pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 2956,
+        "end": 3220
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - O cálculo do valor estimado do contrato deve basear-se em critérios económicos objetivos, tais como os preços habituais no mercado, os preços obtidos através da consulta preliminar, ou os custos médios unitários, resultantes de anteriores procedimentos, para prestações do mesmo tipo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17",
+      "offsets": {
+        "start": 803,
+        "end": 1091
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

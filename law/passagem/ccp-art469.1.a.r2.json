@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art469.1.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art469.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Na data da respectiva expedição, quando efectuadas através de correio electrónico ou de outro meio de transmissão escrita e electrónica de dados, salvo o disposto no número seguinte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art469",
+      "offsets": {
+        "start": 911,
+        "end": 1096
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

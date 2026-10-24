@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art132.1.i",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art132.1",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "i) Os documentos que constituem a proposta que podem ser redigidos em língua estrangeira, nos termos do disposto no n.º 2 do artigo 58.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 10276,
+        "end": 10413
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "i) Os documentos referidos nos n.ºs 1 e 2 do artigo 57.º e, se for o caso, no artigo 57.º-A;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art132",
+      "offsets": {
+        "start": 899,
+        "end": 991
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

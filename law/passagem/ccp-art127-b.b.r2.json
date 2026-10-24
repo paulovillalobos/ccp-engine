@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art127-b.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art127-b",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "b) A promoção de habitação pública ou de custos controlados, bem como naquela cujas competências de gestão patrimonial foram transferidas para os municípios;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 316206,
+        "end": 316363
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

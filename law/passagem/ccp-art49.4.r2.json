@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Não podem ser excluídas propostas com fundamento em desconformidade dos respectivos bens ou serviços com as especificações técnicas de referência, fixadas de acordo com o disposto nas alíneas a) ou b) do n.º 2, desde que o concorrente demonstre, de forma adequada e suficiente, que as soluções apresentadas na sua proposta satisfazem, de modo equivalente, as exigências definidas por aquelas especificações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 24726,
+        "end": 25137
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - As especificações técnicas devem permitir a igualdade de acesso dos operadores económicos ao procedimento de contratação e não devem criar obstáculos injustificados à abertura dos contratos públicos à concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49",
+      "offsets": {
+        "start": 6540,
+        "end": 6758
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

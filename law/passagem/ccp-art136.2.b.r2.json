@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art136.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art136.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) O anúncio de pré-informação ou o anúncio periódico indicativo tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas, respectivamente, pelo anexo ii ou pelo anexo v do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art136",
+      "offsets": {
+        "start": 3970,
+        "end": 4232
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos da parte B do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art136",
+      "offsets": {
+        "start": 2397,
+        "end": 2637
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

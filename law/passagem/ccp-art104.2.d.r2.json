@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art104.2.d",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art104.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2011-01-13",
+      "text": "d) Só tenha sido apresentada uma proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104",
+      "offsets": {
+        "start": 4830,
+        "end": 4872
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

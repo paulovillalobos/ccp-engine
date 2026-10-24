@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art62-a.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art62-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A entidade adjudicante pode ainda recorrer à aquisição através de catálogos eletrónicos existentes no mercado, quando se trate de adquirir bens móveis cujo valor possibilite o recurso ao procedimento de consulta prévia ou ajuste direto.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 215472,
+        "end": 215712
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

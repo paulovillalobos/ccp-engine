@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art218-d.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art218-d",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - À fase de análise das propostas de projetos de investigação e desenvolvimento aplicam-se os trâmites previstos nos artigos 146.º a 148.º, com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 418837,
+        "end": 419009
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

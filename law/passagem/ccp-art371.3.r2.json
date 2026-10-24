@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art371.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art371",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - Nos casos de contratos de empreitada de conceção-construção, e quando a ordem de execução de trabalhos complementares ocorra na fase de construção, o disposto no n.º 1 concretiza-se mediante a entrega, pelo dono da obra, de ordem escrita acompanhada da identificação e descrição clara e suficiente das alterações ao projeto pretendidas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art371",
+      "offsets": {
+        "start": 782,
+        "end": 1122
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

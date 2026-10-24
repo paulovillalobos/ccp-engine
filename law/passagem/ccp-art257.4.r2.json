@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art257.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art257",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando o contrato a celebrar ao abrigo de um acordo quadro seja de empreitada de obras públicas, é aplicável o disposto no n.º 2 do artigo 81.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art257",
+      "offsets": {
+        "start": 3513,
+        "end": 3660
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - O disposto no n.º 1 não obsta à adesão de novas entidades adjudicantes, desde que o programa do procedimento ou o convite relativos ao procedimento que deu origem à celebração do acordo-quadro tenha indicado tal possibilidade e tenha identificado, de forma suficiente, designadamente por recurso a categorias gerais ou delimitação geográfica, as entidades adjudicantes que poderiam aderir.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art257",
+      "offsets": {
+        "start": 769,
+        "end": 1162
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

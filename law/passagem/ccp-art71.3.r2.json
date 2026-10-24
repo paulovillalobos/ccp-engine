@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art71.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art71",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Nenhuma proposta pode ser excluída com fundamento no facto de dela constar um preço total anormalmente baixo sem antes ter sido solicitado ao respectivo concorrente, por escrito, que, em prazo adequado, preste esclarecimentos justificativos relativos aos elementos constitutivos da proposta que considere relevantes para esse efeito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art71",
+      "offsets": {
+        "start": 7759,
+        "end": 8096
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O órgão competente para a decisão de contratar deve fundamentar a decisão de exclusão de uma proposta com essa justificação, solicitando previamente ao respetivo concorrente que preste esclarecimentos, por escrito e em prazo adequado, relativos aos elementos constitutivos relevantes da proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art71",
+      "offsets": {
+        "start": 5236,
+        "end": 5536
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Nos casos previstos nos números anteriores, o júri solicita previamente ao respetivo concorrente que preste esclarecimentos, por escrito e em prazo adequado, relativos aos elementos constitutivos relevantes da sua proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art71",
+      "offsets": {
+        "start": 3155,
+        "end": 3382
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

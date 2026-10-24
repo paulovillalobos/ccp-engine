@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art259.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art259",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Para a formação de contratos a celebrar ao abrigo de acordos quadro celebrados na modalidade prevista na alínea b) do n.º 1 do artigo 252.º, a entidade adjudicante deve dirigir aos co-contratantes do acordo quadro que reúnam as condições necessárias para a execução das prestações objecto desses contratos um convite à apresentação de propostas circunscritas:\na) Aos termos do acordo quadro a concretizar, a desenvolver ou a complementar em virtude das particularidades da necessidade cuja satisfação se visa com a celebração do contrato; ou\nb) Aos aspectos da execução do contrato a celebrar submetidos à concorrência pelo caderno de encargos do acordo quadro para os efeitos do procedimento de formação do contrato a celebrar ao seu abrigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art259",
+      "offsets": {
+        "start": 2503,
+        "end": 3249
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Deve adotar-se o procedimento de consulta prévia para a formação de contratos a celebrar ao abrigo de acordos-quadro na modalidade prevista na alínea b) do n.º 1 do artigo 252.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art259",
+      "offsets": {
+        "start": 182,
+        "end": 363
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art241-a.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art241-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Após decurso do prazo para apresentação das candidaturas fixado nos termos da alínea b) do n.º 1 do artigo 240.º, os interessados que queiram participar no sistema de aquisição dinâmico devem apresentar a sua candidatura de acordo com as regras previstas no programa de procedimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 445645,
+        "end": 445932
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

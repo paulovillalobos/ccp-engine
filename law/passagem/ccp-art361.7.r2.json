@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art361.7",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art361",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - O dono da obra não pode proceder à aceitação parcial do plano de trabalhos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361",
+      "offsets": {
+        "start": 4876,
+        "end": 4955
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

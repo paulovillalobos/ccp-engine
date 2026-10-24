@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art164.1.u",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "u)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "u) A indicação de que se trata de um contrato reservado, nos termos dos artigos 54.º-A ou 250.º-D, se for o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 10769,
+        "end": 10882
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

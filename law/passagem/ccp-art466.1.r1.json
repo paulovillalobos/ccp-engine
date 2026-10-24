@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art466.1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art466",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O observatório das obras públicas é um sistema de informação, a constituir por diploma próprio, que procede à organização de uma base de dados, ao tratamento e à divulgação dos respectivos dados estatísticos no domínio das empreitadas de obras públicas, cabendo-lhe monitorizar:\na) A fase de formação dos contratos de empreitada e de concessão de obras públicas;\nb) A fase de execução dos contratos de empreitada de obras públicas;\nc) As empreitadas de obras públicas integradas em concessões.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art466",
+      "offsets": {
+        "start": 278,
+        "end": 775
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 702646,
+        "end": 702811
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

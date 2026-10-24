@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art32.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art32",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Para a formação de um contrato misto cujo objecto abranja, simultaneamente, prestações típicas dos contratos de empreitada de obras públicas, de locação ou de aquisição de bens móveis ou de aquisição de serviços e dos contratos de concessão de obras públicas, de concessão de serviços públicos ou de sociedade:\na) Pode adoptar-se o concurso público ou o concurso limitado por prévia qualificação, desde que o respectivo valor seja inferior ao mais baixo dos valores referidos na alínea b) do artigo 19.º e na alínea b) do n.º 1 e no n.º 2 do artigo 20.º, consoante o caso;\nb) Pode adoptar-se o procedimento que, nos termos previstos no capítulo anterior, poderia ser adoptado para a celebração de qualquer um daqueles contratos se celebrado em separado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32",
+      "offsets": {
+        "start": 4978,
+        "end": 5735
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando for possível identificar separadamente as diferentes partes de um determinado contrato, o seu objeto principal é determinado em função do valor estimado mais elevado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32",
+      "offsets": {
+        "start": 2604,
+        "end": 2781
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

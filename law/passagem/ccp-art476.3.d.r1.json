@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art476.3.d",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art476.3",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Quando se demonstre que a utilização de um centro de arbitragem institucionalizado teria como consequência um custo mais elevado para as entidades adjudicantes ou contraentes públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art476",
+      "offsets": {
+        "start": 2396,
+        "end": 2583
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 713828,
+        "end": 713976
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

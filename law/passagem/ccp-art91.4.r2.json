@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art91.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art91",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - Sem prejuízo do disposto nos números anteriores, no caso previsto no n.º 1, o órgão competente para a decisão de contratar deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art91",
+      "offsets": {
+        "start": 962,
+        "end": 1145
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

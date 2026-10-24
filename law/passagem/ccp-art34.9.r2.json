@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art34.9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art34",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "9 - O anúncio de pré-informação não pode ser publicado num perfil de adquirente antes do envio ao Serviço das Publicações da União Europeia do anúncio da sua publicação sob essa forma, devendo constar expressamente do primeiro anúncio a data de envio do segundo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34",
+      "offsets": {
+        "start": 6024,
+        "end": 6286
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

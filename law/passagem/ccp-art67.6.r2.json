@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art67.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art67",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "6 - É aplicável aos sujeitos referidos no número anterior o disposto nos artigos 69.º a 76.º do Código do Procedimento Administrativo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67",
+      "offsets": {
+        "start": 1145,
+        "end": 1279
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

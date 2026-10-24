@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art191.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art191",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 10 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 25 dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art191",
+      "offsets": {
+        "start": 3496,
+        "end": 3710
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

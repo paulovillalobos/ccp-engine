@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art140",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 140.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 140.º\nÂmbito\n1 - No caso de contratos de locação ou de aquisição de bens móveis ou de contratos de aquisição de serviços, a entidade adjudicante pode recorrer a um leilão electrónico que consiste num processo interactivo baseado num dispositivo electrónico destinado a permitir aos concorrentes melhorar progressivamente os atributos das respectivas propostas, depois de avaliadas, obtendo-se a sua nova pontuação global através de um tratamento automático.\n2 - Só podem ser objecto de um leilão electrónico os atributos das propostas, desde que:\na) O caderno de encargos fixe os parâmetros base dos respectivos aspectos da execução do contrato a celebrar submetidos à concorrência; e\nb) Tais atributos sejam definidos apenas quantitativamente.\n3 - A entidade adjudicante não pode utilizar o leilão electrónico de forma abusiva ou de modo a impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art140",
+      "offsets": {
+        "start": 1225,
+        "end": 2119
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 140.º\nÂmbito\n1 - No caso de procedimentos de formação de contratos de empreitadas de obras públicas em que o caderno de encargos inclua um projeto de execução, de contratos de locação ou de aquisição de bens móveis ou de contratos de aquisição de serviços, a entidade adjudicante pode recorrer a um leilão eletrónico, através de um processo interativo baseado num dispositivo eletrónico destinado a permitir aos concorrentes melhorar progressivamente os atributos das respetivas propostas, depois de avaliadas, obtendo-se a sua nova pontuação global por via de um tratamento automático.\n2 - Só podem ser objecto de um leilão electrónico os atributos das propostas, desde que:\na) O caderno de encargos fixe os parâmetros base dos respectivos aspectos da execução do contrato a celebrar submetidos à concorrência; e\nb) Tais atributos sejam definidos apenas quantitativamente.\n3 - A entidade adjudicante não pode utilizar o leilão electrónico de forma abusiva ou de modo a impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art140",
+      "offsets": {
+        "start": 56,
+        "end": 1079
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

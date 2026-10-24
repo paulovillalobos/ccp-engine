@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art11.1.b.iii",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art11.1.b",
+  "kind": "subalinea",
+  "label": "iii)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "iii) Concessão de serviços públicos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 5558,
+        "end": 5594
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "iii) Concessão de serviços;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11",
+      "offsets": {
+        "start": 714,
+        "end": 741
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

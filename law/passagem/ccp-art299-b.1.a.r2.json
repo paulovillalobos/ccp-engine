@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299-b.1.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299-b.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Identificadores do processo e da fatura;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 526553,
+        "end": 526596
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

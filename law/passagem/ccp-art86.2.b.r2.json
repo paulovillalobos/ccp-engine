@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art86.2.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art86.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "b) Não apresentar os documentos solicitados pelo órgão competente para a decisão de contratar nos termos do n.º 8 do artigo 81.º no prazo fixado para o efeito;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86",
+      "offsets": {
+        "start": 628,
+        "end": 787
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

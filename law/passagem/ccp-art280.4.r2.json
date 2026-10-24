@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art280.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art280",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Em tudo quanto não estiver regulado no presente Código, na demais legislação administrativa ou em lei especial, e não seja suficientemente disciplinado por aplicação dos princípios gerais de direito administrativo, é subsidiariamente aplicável às relações jurídicas contratuais administrativas, com as necessárias adaptações, o direito civil.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280",
+      "offsets": {
+        "start": 5975,
+        "end": 6321
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - Em tudo quanto não estiver regulado no presente Código ou em lei especial, ou não resultar da aplicação dos princípios gerais de direito administrativo, é subsidiariamente aplicável à execução dos contratos administrativos, com as necessárias adaptações, o direito civil.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280",
+      "offsets": {
+        "start": 3584,
+        "end": 3859
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

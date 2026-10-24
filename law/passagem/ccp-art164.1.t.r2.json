@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art164.1.t",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "t)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "t) A indicação do prazo limite para identificação de erros e omissões e para resposta quanto aos mesmos, se superior ao previsto no artigo 50.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 10624,
+        "end": 10768
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "t) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 2517,
+        "end": 2531
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

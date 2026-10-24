@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art39.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art39",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - As entidades adjudicantes podem agrupar-se com vista à formação de:\na) Um contrato cuja execução seja do interesse de todas;\nb) Um acordo quadro de que todas possam beneficiar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39",
+      "offsets": {
+        "start": 7427,
+        "end": 7607
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - As entidades adjudicantes podem agrupar-se com vista à:\na) Formação de contratos cuja execução seja do interesse de todas;\nb) Formação de um acordo-quadro de que todas possam beneficiar;\nc) Gestão conjunta de sistemas de aquisição dinâmicos;\nd) Aquisição conjunta utilizando catálogos eletrónicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39",
+      "offsets": {
+        "start": 3904,
+        "end": 4205
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

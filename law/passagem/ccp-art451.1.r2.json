@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art451.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art451",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "1 - Em tudo quanto não estiver regulado no presente capítulo, é aplicável aos contratos de aquisição de serviços, com as necessárias adaptações, o disposto no capítulo sobre contratos de aquisição de bens móveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art451",
+      "offsets": {
+        "start": 65,
+        "end": 277
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

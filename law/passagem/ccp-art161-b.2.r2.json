@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art161-b.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art161-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "2 - Além das situações previstas no n.º 2 do artigo 88.º, a prestação de caução também pode não ser exigida, caso o adjudicatário demonstre a impossibilidade de:\na) Proceder ao depósito em dinheiro por falta de liquidez, comprovada por termo de revisor oficial de contas ou de contabilista certificado; e\nb) Obtenha seguro da execução do contrato a celebrar ou declaração de assunção de responsabilidade solidária, nos termos do disposto no n.º 4 do artigo 88.º, junto de, pelo menos, duas entidades seguradoras ou bancárias.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 354663,
+        "end": 355188
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

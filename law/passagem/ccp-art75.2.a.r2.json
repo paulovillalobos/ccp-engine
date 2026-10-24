@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.2.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Qualidade, designadamente valor técnico, características estéticas e funcionais, acessibilidade, conceção para todos os utilizadores, características sociais, ambientais e inovadoras e condições de fornecimento;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75",
+      "offsets": {
+        "start": 15881,
+        "end": 16095
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

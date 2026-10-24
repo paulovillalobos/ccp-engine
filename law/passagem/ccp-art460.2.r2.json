@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art460.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art460",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A sanção acessória a que se refere o número anterior deve ser fixada segundo a gravidade da infracção e a culpa do agente e não pode, em caso algum, exceder dois anos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art460",
+      "offsets": {
+        "start": 1088,
+        "end": 1259
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - A sanção a que se refere o número anterior deve ser fixada segundo a gravidade da infração e a culpa do agente e não pode, em caso algum, exceder dois anos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art460",
+      "offsets": {
+        "start": 378,
+        "end": 538
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

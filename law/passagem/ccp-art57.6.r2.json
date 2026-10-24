@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art57.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - Nos procedimentos com publicação de anúncio no Jornal Oficial da União Europeia, é apresentado, em substituição da declaração do anexo i do presente Código, o Documento Europeu Único de Contratação Pública.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57",
+      "offsets": {
+        "start": 7734,
+        "end": 7944
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - Nos procedimentos com publicação de anúncio no Jornal Oficial da União Europeia, é apresentado o Documento Europeu Único de Contratação Pública.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57",
+      "offsets": {
+        "start": 2879,
+        "end": 3027
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

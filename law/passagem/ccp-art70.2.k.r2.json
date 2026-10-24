@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.2.k",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "k)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "k) Que sejam constituídas por documentos falsos ou nas quais os concorrentes prestem culposamente falsas declarações;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70",
+      "offsets": {
+        "start": 1512,
+        "end": 1629
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

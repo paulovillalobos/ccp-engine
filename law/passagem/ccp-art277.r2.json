@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art277",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-viii",
+  "kind": "artigo",
+  "label": "Artigo 277.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 277.º\nContratos a celebrar por entidades beneficiárias de direitos especiais ou exclusivos no exercício de actividades de serviço público\n1 - Na formação de contratos de locação ou de aquisição de bens móveis por entidades não referidas no artigo 2.º ou no n.º 1 do artigo 7.º às quais tenham sido atribuídos direitos especiais ou exclusivos no exercício de actividades de serviço público por uma das entidades adjudicantes neles referidas, devem aquelas respeitar o princípio da não discriminação em razão da nacionalidade.\n2 - No acto de atribuição dos direitos especiais ou exclusivos, as entidades adjudicantes devem mencionar a obrigação prevista no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art277",
+      "offsets": {
+        "start": 331,
+        "end": 1009
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 277.º\nContratos a celebrar por entidades beneficiárias de direitos especiais ou exclusivos no exercício de actividades de serviço público",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art277",
+      "offsets": {
+        "start": 31,
+        "end": 175
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

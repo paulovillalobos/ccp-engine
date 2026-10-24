@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art285.3",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art285",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Todos os contratos administrativos são susceptíveis de redução e conversão, nos termos do disposto nos artigos 292.º e 293.º do Código Civil, independentemente do respectivo desvalor jurídico.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285",
+      "offsets": {
+        "start": 3902,
+        "end": 4098
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2015-12-01",
+      "revoked": false
+    },
+    {
+      "version": "2015-12-01",
+      "text": "3 - A anulação de quaisquer contratos por falta e vícios da vontade pode ser sempre pedida no prazo de seis meses, contado desde a data da cessação do vício.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285",
+      "offsets": {
+        "start": 3027,
+        "end": 3184
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Todos os contratos públicos são suscetíveis de redução e conversão, nos termos do disposto nos artigos 292.º e 293.º do Código Civil, independentemente do respetivo desvalor jurídico.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285",
+      "offsets": {
+        "start": 1952,
+        "end": 2139
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Os contratos públicos são suscetíveis de redução e conversão, nos termos do disposto nos artigos 292.º e 293.º do Código Civil, independentemente do respetivo desvalor jurídico.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285",
+      "offsets": {
+        "start": 369,
+        "end": 550
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

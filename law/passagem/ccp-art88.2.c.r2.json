@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art88.2.c",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art88.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Quando se trate dos contratos previstos na alínea c) do n.º 1 do artigo 95.º, ainda que exista contrato escrito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art88",
+      "offsets": {
+        "start": 4015,
+        "end": 4130
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299-b.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299-b",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Os dados pessoais obtidos para efeitos de faturação eletrónica só podem ser usados para esse fim ou para fins que com ele sejam compatíveis.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 527341,
+        "end": 527485
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

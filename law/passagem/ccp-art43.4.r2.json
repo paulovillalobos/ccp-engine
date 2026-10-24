@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art43.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Em qualquer dos casos previstos nos números anteriores, o projecto de execução deve ser acompanhado de:\na) Uma descrição dos trabalhos preparatórios ou acessórios, tal como previstos no artigo 350.º;\nb) Uma lista completa de todas as espécies de trabalhos necessárias à execução da obra a realizar e do respectivo mapa de quantidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 16936,
+        "end": 17274
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - O projeto de execução deve ser acompanhado de:\na) Uma descrição dos trabalhos preparatórios ou acessórios, tal como previstos no artigo 350.º;\nb) Uma lista completa de todas as espécies de trabalhos necessárias à execução da obra a realizar e do respectivo mapa de quantidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43",
+      "offsets": {
+        "start": 393,
+        "end": 674
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

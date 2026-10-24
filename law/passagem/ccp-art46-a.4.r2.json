@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art46-a.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art46-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - A entidade adjudicante pode limitar o número máximo de lotes que podem ser adjudicados a cada concorrente, devendo indicar essas limitações no convite ou no programa do procedimento, bem como os critérios objetivos e não discriminatórios em que se baseie a escolha dos lotes a adjudicar a cada concorrente nos casos em que a aplicação dos critérios de adjudicação resulte na atribuição, ao mesmo concorrente, de um número de lotes superior ao máximo fixado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art46-a",
+      "offsets": {
+        "start": 2929,
+        "end": 3390
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

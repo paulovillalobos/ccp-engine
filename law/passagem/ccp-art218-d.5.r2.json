@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art218-d.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art218-d",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - A entidade adjudicante é livre de, no final de cada fase, decidir pôr termo à parceria ou, no caso de parceria com vários parceiros, reduzir o número de parceiros pondo termos a contratos individuais, desde que tal possibilidade e respetivas condições estejam previstas nas peças do procedimento.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 419666,
+        "end": 419966
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

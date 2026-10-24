@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art67.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art67",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - Antes do início de funções, os membros do júri e todos os demais intervenientes no processo de avaliação de propostas, designadamente peritos, subscrevem declaração de inexistência de conflitos de interesses, conforme modelo previsto no anexo xiii ao presente Código e que dele faz parte integrante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67",
+      "offsets": {
+        "start": 2244,
+        "end": 2547
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - Os membros do júri e todos os demais intervenientes no processo de análise e avaliação de propostas, designadamente peritos e consultores, estão obrigados a atuar de forma imparcial, não podendo estar em situação de conflitos de interesses, tal como identificada no n.º 4 do artigo 1.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67",
+      "offsets": {
+        "start": 852,
+        "end": 1144
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

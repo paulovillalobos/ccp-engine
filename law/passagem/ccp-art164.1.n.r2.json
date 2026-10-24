@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art164.1.n",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "n)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "n) O prazo para a apresentação das candidaturas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 19279,
+        "end": 19327
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "n) No caso de a qualificação assentar no sistema de selecção:\ni) O modelo de avaliação dos candidatos, nos termos do artigo 139.º, aplicável com as necessárias adaptações;\nii) O número de candidatos a qualificar, não inferior a cinco;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164",
+      "offsets": {
+        "start": 1683,
+        "end": 1917
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art91.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art91",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - A não prestação da caução pelo adjudicatário, no caso de empreitadas ou de concessões de obras públicas, deve ser imediatamente comunicada ao Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., sem prejuízo do disposto no n.º 2 do artigo 88.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art91",
+      "offsets": {
+        "start": 1146,
+        "end": 1412
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

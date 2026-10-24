@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art15.1.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art15.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) A natureza dos contratos celebrados e o respectivo preço contratual;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art15",
+      "offsets": {
+        "start": 1428,
+        "end": 1499
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

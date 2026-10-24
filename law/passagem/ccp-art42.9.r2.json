@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art42.9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "9 - Os projectos de investigação e desenvolvimento a que se refere o n.º 7 devem conter todos os aspectos necessários e adequados à concretização inequívoca das actividades a desenvolver, nomeadamente a sua descrição, planeamento, objectivos, resultados expectáveis e quantificação financeira.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 16294,
+        "end": 16587
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "9 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 13941,
+        "end": 13956
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "9 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 2511,
+        "end": 2526
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art157",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-vii",
+  "kind": "artigo",
+  "label": "Artigo 157.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 157.º\nAnúncio\n1 - O concurso público urgente é publicitado no Diário da República através de anúncio conforme modelo aprovado por portaria dos ministros responsáveis pela edição do Diário da República e pelas áreas das finanças e das obras públicas.\n2 - O programa do concurso e o caderno de encargos constam do anúncio previsto no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art157",
+      "offsets": {
+        "start": 614,
+        "end": 969
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 157.º\nAnúncio\n1 - O concurso público urgente é publicitado no Diário da República através de anúncio conforme modelo aprovado por portaria dos membros do Governo responsáveis pela edição do Diário da República, pelas finanças e pelas obras públicas, aplicando-se o disposto no artigo 133.º quanto à disponibilização do programa do concurso e caderno de encargos.\n2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art157",
+      "offsets": {
+        "start": 57,
+        "end": 442
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

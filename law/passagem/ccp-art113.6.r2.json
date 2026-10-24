@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art113.6",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art113",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "6 - Não podem também ser convidadas a apresentar propostas entidades especialmente relacionadas com as entidades referidas nos n.os 2 e 5, considerando-se como tais, nomeadamente, as entidades que partilhem, ainda que apenas parcialmente, representantes legais ou sócios, ou as sociedades que se encontrem em relação de simples participação, de participação recíproca, de domínio ou de grupo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 4718,
+        "end": 5110
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - Não podem também ser convidadas a apresentar propostas entidades criadas ou utilizadas com o propósito ou com o resultado de se defraudar o disposto nos n.ºs 2 e 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art113",
+      "offsets": {
+        "start": 2224,
+        "end": 2392
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

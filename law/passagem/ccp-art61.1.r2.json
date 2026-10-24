@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art61.1",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art61",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Até ao termo do quinto sexto do prazo fixado para a apresentação das propostas, os interessados devem apresentar ao órgão competente para a decisão de contratar uma lista na qual identifiquem, expressa e inequivocamente, os erros e as omissões do caderno de encargos detectados e que digam respeito a:\na) Aspectos ou dados que se revelem desconformes com a realidade; ou\nb) Espécie ou quantidade de prestações estritamente necessárias à integral execução do objecto do contrato a celebrar; ou\nc) Condições técnicas de execução do objecto do contrato a celebrar que o interessado não considere exequíveis.\n2 -Exceptuam-se do disposto no número anterior os erros e omissões que os interessados, actuando com a diligência objectivamente exigível em face das circunstâncias concretas, apenas pudessem detectar na fase de execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 2991,
+        "end": 3833
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "1 - Para os efeitos do disposto no presente Código, são erros e omissões do caderno de encargos:\na) Os que digam respeito a:\ni) Aspetos ou dados que se revelem desconformes com a realidade;\nii) Espécie ou quantidade de prestações estritamente necessárias à integral execução do objeto do contrato a celebrar; ou\niii) Condições técnicas de execução do objeto do contrato a celebrar que o interessado não considere exequíveis;\nb) Erros e omissões do projeto de execução que não se incluam na alínea anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61",
+      "offsets": {
+        "start": 318,
+        "end": 824
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 212980,
+        "end": 213145
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

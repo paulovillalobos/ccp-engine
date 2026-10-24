@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-d.1.j",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-d.1",
+  "kind": "alinea",
+  "label": "j)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "j) O valor do prémio de consagração a atribuir a cada um dos concorrentes selecionados;",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 427397,
+        "end": 427484
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

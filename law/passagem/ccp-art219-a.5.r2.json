@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-a.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - A entidade adjudicante pode recorrer ao concurso de conceção simplificado, quando o valor dos prémios a pagar aos participantes, acrescido do valor de quaisquer valores a pagar na sequência do eventual ajuste direto referido na alínea g) do n.º 1 do artigo 27.º, seja igual ou inferior a (euro) 75 000.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 422294,
+        "end": 422600
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

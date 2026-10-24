@@ -1,0 +1,24 @@
+{
+  "id": "ccp:anexo-vii.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:anexo-vii",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Entende-se por 'Norma': uma especificação técnica aprovada por um organismo de normalização reconhecido para aplicação repetida ou continuada, cuja observância não é obrigatória e que se enquadra no âmbito de uma das seguintes categorias:\na) 'Norma internacional': uma norma aprovada por um organismo internacional de normalização e acessível ao público em geral;\nb) 'Norma europeia': uma norma aprovada por um organismo europeu de normalização e acessível ao público em geral;\nc) 'Norma nacional': uma norma aprovada por um organismo nacional de normalização e acessível ao público em geral.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 721118,
+        "end": 721714
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

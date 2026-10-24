@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art42.6.b",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42.6",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) O aumento da participação das mulheres no mercado de trabalho;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42",
+      "offsets": {
+        "start": 11616,
+        "end": 11681
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art74.5.a",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74.5",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "a) É vedada a utilização do critério do momento de entrega das propostas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74",
+      "offsets": {
+        "start": 3559,
+        "end": 3632
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

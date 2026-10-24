@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art60.4",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art60",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - No caso de se tratar de procedimento de formação de contrato de empreitada ou de concessão de obras públicas, o concorrente deve indicar na proposta os preços parciais dos trabalhos que se propõe executar correspondentes às habilitações contidas nos alvarás ou nos títulos de registo ou nas declarações emitidas pelo Instituto da Construção e do Imobiliário, I. P., nos termos do disposto na alínea a) do n.º 5 do artigo 81.º, para efeitos da verificação da conformidade desses preços com a classe daquelas habilitações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art60",
+      "offsets": {
+        "start": 2574,
+        "end": 3098
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - No caso de se tratar de procedimento de formação de contrato de empreitada ou de concessão de obras públicas, o concorrente deve indicar na proposta os preços parciais dos trabalhos que se propõe executar correspondentes às habilitações contidas nos alvarás ou nos certificados de empreiteiro de obras públicas, ou nas declarações emitidas pelo Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., nos termos da portaria referida no n.º 2 do artigo 81.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art60",
+      "offsets": {
+        "start": 1221,
+        "end": 1697
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art60",
+      "offsets": {
+        "start": 538,
+        "end": 553
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

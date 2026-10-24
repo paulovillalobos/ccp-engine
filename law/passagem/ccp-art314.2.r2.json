@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art314.2",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art314",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os demais casos de alteração anormal e imprevisível das circunstâncias conferem direito à modificação do contrato ou a uma compensação financeira, segundo critérios de equidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314",
+      "offsets": {
+        "start": 3127,
+        "end": 3308
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314",
+      "offsets": {
+        "start": 212,
+        "end": 227
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

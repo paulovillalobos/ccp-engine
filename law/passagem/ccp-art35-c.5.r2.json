@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-c.5",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-c",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - Decorrido o período de teste, se a entidade adjudicante pretender contratar a solução, deve promover o procedimento pré-contratual legalmente aplicável, não podendo a realização do teste, por si só, constituir fundamento para a adoção de procedimento menos concorrencial.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 149245,
+        "end": 149520
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}

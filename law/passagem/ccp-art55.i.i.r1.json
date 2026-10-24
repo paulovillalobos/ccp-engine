@@ -1,0 +1,35 @@
+{
+  "id": "ccp:art55.i.i",
+  "revision": 1,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.i",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "i) Participação em actividades de uma organização criminosa, tal como definida no n.º 1 do artigo 2.º da Acção Comum n.º 98/773/JAI, do Conselho;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55",
+      "offsets": {
+        "start": 30709,
+        "end": 30854
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 197788,
+        "end": 197952
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

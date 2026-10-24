@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art50.9",
+  "revision": 2,
+  "recorded_at": "2026-10-24T17:13:15Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "9 - Os esclarecimentos e as retificações fazem parte integrante das peças do procedimento a que dizem respeito e prevalecem sobre estas em caso de divergência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50",
+      "offsets": {
+        "start": 6294,
+        "end": 6453
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}
