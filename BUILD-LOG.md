@@ -43,3 +43,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   test that the committed fixtures re-derive byte for byte. 44 tests green; verify green.
 - Next: A5, FILL-PLAN.md (B1–B4 with their red tests in tests/fill/), AUDIT.md, schemas/TRACEABILITY.md.
 - Why: evaluate() reproduces the three fixture verdicts, so the fixtures are now executable examples, not prose.
+
+## 2026-10-24 A5 — the fill plan (commit: Fill plan: red tests B1–B4, FILL-PLAN, AUDIT, TRACEABILITY)
+- Done: tests/fill/test_b1..b4 (8 tests, all red: modules, CCP capture with 607 notes and the vigente diff, rules v0 with
+  two families, engine v0 at scale); FILL-PLAN.md with the interface each B1 module must expose and the done criterion of
+  each task; AUDIT.md (13 checks for Monday, compare against tag phase-a); schemas/TRACEABILITY.md (12 invariants, 21
+  objects, 8 rule types, three clocks + record clock, the six pieces as the builder reads them, layers and §10 steps).
+- Next: phase B in this order: B1 → B2 → B3 → B4 (B4 waits for the extractor's data/facts/). Each against its red test.
+- Why: the scaffold dictates the fill: whoever continues implements against the signatures, schemas and red tests, and
+  writes a DECISIONS row before changing any of them.
+- Phase A done criterion checked: verify ok (3 stores, 12/12 overlays refused); 44 scaffold tests green; 8 fill tests
+  red; TRACEABILITY without gaps; DECISIONS, FILL-PLAN, AUDIT, BUILD-LOG written; an extractor can start from schemas/ +
+  fixtures/ (data/README.md says where and in what shape).
