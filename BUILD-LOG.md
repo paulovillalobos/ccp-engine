@@ -1174,3 +1174,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Registered: verify@23. Public signatures of engine/ unchanged.
 - Next: the extractor merges main into its E1/E1b branches; E1b (DR notice PDFs, one GET every 10 s) is running there.
 - Why: the extractor's full verify could not pass on a store without the log, and a 35-minute engine run blocked CI.
+
+## 2026-10-25 E1.3 main merged: the builder's fixes for items 1 and 3 (commit: E1.3: main merged (80d8f3310); full verify ok, 64 scaffold tests pass)
+- Done: merged main 80d8f3310 (verify's data store loads governance/; facts_of indexed by unit; verify@23). Conflicts:
+  BUILD-LOG.md (both entries kept); governance/principals.json merged by git with both verify@23 and
+  adapter-base-anuncios@1/@2. SCHEMA-PROPOSAL.md items 1 and 3 marked done by the builder.
+- Checked (`.venv/bin/python -I`):
+  - `verify.py`: ok in 4 min 05 s; stores fixtures, repo, data (181 628 objects, 47 events), measure 0 failures;
+    BENCH/MEAS ok; 30/30 broken overlays refused. The 2 669 I04 lines are gone.
+  - `pytest tests --ignore=tests/fill`: 64 passed (6 min 42 s).
+  - `tools/run_engine.py`: {"units": 0, "sem_regime": 22252, "verdicts": 0, "rules": 0} in 1 min 43 s (was 34 min 38 s);
+    still no settled seletor_regime and no data_inicio_procedimento.
+- Next: the person's review of PR #1; E1b continues on its branch.
+- Why: the done-criterion «verify ok over data/» now holds on the branch itself.
