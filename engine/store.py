@@ -217,10 +217,15 @@ def query(store, type_, known_at=None, valid_at=None, include_stale=False, **fil
       passagem: keeps only the versions with valid_from <= valid_at < valid_to (an object with none is dropped)
       regra / vigencia: valid_from <= valid_at < valid_to
     filters: field == value on the surviving objects. Nothing is read from the future of either clock."""
+    return _bitemporal(type_, store.objects[type_], known_at, valid_at, include_stale, filters)
+
+
+def _bitemporal(type_, objects, known_at, valid_at, include_stale, filters) -> list:
+    """query's read over a given list of objects (all revisions of the ids it holds)."""
     def clock(o):
         return o.get("known_at", o["recorded_at"]) if type_ in ("facto", "veredicto") else o["recorded_at"]
     latest = {}
-    for o in store.objects[type_]:
+    for o in objects:
         if known_at is not None and clock(o) > known_at:
             continue
         if o["id"] not in latest or o["revision"] > latest[o["id"]]["revision"]:
@@ -250,4 +255,17 @@ def facts_of(store, unit_id, known_at=None, valid_at=None) -> list:
     while u is not None:
         ids.append(u["id"])
         u = store.current(u["parent"]) if u.get("parent") else None
-    return [f for f in query(store, "facto", known_at, valid_at) if f["unit"] in ids]
+    # an index of fact ids by unit (any revision) and of revisions by id, built once per store and rebuilt when facts are
+    # added: the same read as query over all facts, restricted to the ids that ever named one of these units
+    facts = store.objects["facto"]
+    idx = getattr(store, "_facts_index", None)
+    if idx is None or idx[0] != len(facts):
+        by_unit, by_id = {}, {}
+        for o in facts:
+            by_unit.setdefault(o["unit"], set()).add(o["id"])
+            by_id.setdefault(o["id"], []).append(o)
+        idx = (len(facts), by_unit, by_id)
+        store._facts_index = idx
+    fids = set().union(*(idx[1].get(i, set()) for i in ids)) if ids else set()
+    revisions = [o for fid in sorted(fids) for o in idx[2][fid]]
+    return [f for f in _bitemporal("facto", revisions, known_at, valid_at, False, {}) if f["unit"] in ids]

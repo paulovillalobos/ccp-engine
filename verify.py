@@ -80,7 +80,7 @@ VERSION = "ccp-verify-0.2"
 STORES = {
     "fixtures": [ROOT / "fixtures/valid"],
     "repo": [ROOT / "law", ROOT / "rules", ROOT / "governance"],
-    "data": [ROOT / "data"],
+    "data": [ROOT / "data", ROOT / "governance"],  # the principals and the log that data/'s adaptadores and links name
 }
 if (ROOT / "reports/veredictos").exists():  # B4: real verdicts are re-derived with the facts, law, rules and log they used
     STORES["engine"] = [ROOT / "data", ROOT / "law", ROOT / "rules", ROOT / "governance", ROOT / "reports/veredictos"]

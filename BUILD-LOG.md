@@ -1121,3 +1121,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the person reviews the PR; E2 (BASE contratos) waits for E1's merge. The fields the prazo rules need
   (data_envio_anuncio, publicado_joue, territorio, tipo_entidade, data_inicio_procedimento) are not in this source.
 - Why: a fact the dump does not state is left out so the engine says nao_avaliado instead of a verdict on a guess.
+## 2026-10-25 — builder fixes for the extractor's E1 (SCHEMA-PROPOSAL items 1 and 3)
+- Done: verify's `data` store loads governance/ with data/ (the principals and log that data/'s adaptadores and links
+  name), as tools/run_engine.py and tools/measure.py already load it. Over the extractor's E1 branch the full verify
+  reported 2 669 I04 «not registered» lines only because the store had no principals.
+- Done: engine.store.facts_of reads facts through an index of fact ids by unit (any revision) and of revisions by id,
+  built once per store and rebuilt when facts are added; the bitemporal read is query's own (_bitemporal), over the
+  revisions of those ids. Same output: 1 200 calls (300 random procs × 4 clock pairs) over the E1 data (131 558 facts,
+  22 252 procs) and every unit of the fixtures, 0 differences against the old scan. Time for all 22 252 procs:
+  0.1 s (was ~26 min, 0.071 s a call), so run_engine and verify's check_measure fit CI's 20-minute timeout.
+- Registered: verify@23. Public signatures of engine/ unchanged.
+- Next: the extractor merges main into its E1/E1b branches; E1b (DR notice PDFs, one GET every 10 s) is running there.
+- Why: the extractor's full verify could not pass on a store without the log, and a 35-minute engine run blocked CI.
