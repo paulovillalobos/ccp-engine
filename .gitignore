@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 events.lock
 dist/
+
+# extractor: downloaded source bytes stay out of git (their raw objects with sha256 and URL are in data/raw/)
+data/raw_bytes/

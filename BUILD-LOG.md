@@ -1043,3 +1043,24 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the extractor brief (BASE anúncios, then contratos) so the rules meet real procedures.
 - Why: the code compares what a reading says; only the person decides that rule, and no reading of the law is approved
   by a person.
+
+## 2026-10-25 E1.0 extractor: done-criterion for BASE anúncios 2026 (commit: E1.0: done-criterion for the BASE anúncios 2026 adapter)
+- Source: dados.gov.pt dataset «Contratos Públicos - Portal Base - IMPIC - Anúncios de 2012 a 2026», resource
+  anuncios2026.json (weekly JSON). One GET, nothing sent.
+- Done when, checked by commands written in the E1 result entry:
+  1. `data/raw/base-anuncios/` holds the `raw` object of the download (sha256, URL, captured_at) and one `raw` per mapped
+     record, whose bytes are that record's exact byte slice of the download; all bytes live in `data/raw_bytes/`
+     (gitignored), and the adapter re-derives every slice from the download (`--check`).
+  2. `adapters/base-anuncios/` holds the code and the mapping as data; `data/facts/adaptador/` the `adaptador` object
+     (field by field: source field -> canonical field, transform, enum map), proposed in the governance log by the
+     adapter's own registered ferramenta.
+  3. At least 1 000 `proc` units with facts in `data/facts/`; every fact names its raw record and source field, its
+     adapter, valid_at (the notice's publication date) and known_at (= the raw's captured_at).
+  4. A field the dump does not give, or gives ambiguously, is not a fact. In particular `data_envio_anuncio` is not
+     replaced by the publication date, and no value is read from free text.
+  5. Entities: adjudicante by NIF; without NIF, a candidate by country + normalised name, never merged.
+  6. `adapters/base-anuncios/COVERAGE.md`: records in, procedures out, per canonical field and per month how many
+     procedures carry it, unmapped records by reason (counts, three examples each).
+  7. `python -I verify.py` ok over data/; `tools/run_engine.py` runs over data/ and its counts are reported.
+- Why: the engine has no facts of real procedures yet; this phase writes only adapters/ and data/ (plus .gitignore,
+  the adapter's registration in governance/ and these entries).
