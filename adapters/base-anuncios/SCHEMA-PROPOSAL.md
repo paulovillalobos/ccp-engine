@@ -4,7 +4,7 @@ The extractor adapts the source to the schemas and does not change schemas/, eng
 what did not fit, what was done meanwhile, and the change proposed. Counts are from the build of 2026-10-25
 (adapters/base-anuncios/COVERAGE.md).
 
-## 1. verify checks `data/` without the governance log (blocks "verify ok over data/")
+## 1. verify checks `data/` without the governance log — DONE by the builder (main 80d8f3310, verify@23)
 - verify.STORES["data"] = [data]. That store has no principals.json, so `need_principal` fails for every principal
   data/ names: the adaptador's proposed_by and each link's proponent (I04). No adaptador can pass, and every fact needs one
   (REF). A second principals.json under data/ would make "two governance logs in one store" in the engine store, so the
@@ -23,7 +23,7 @@ what did not fit, what was done meanwhile, and the change proposed. Counts are f
   44 231 062 bytes in 22 253 files, the largest 23 669 469 bytes.
 - Scope: this anúncios 2026 download only. The BASE contratos dumps (E2; 347 MB for 2026 alone) need their own decision.
 
-## 3. `engine.store.facts_of` scans every fact for each unit
+## 3. `engine.store.facts_of` scans every fact for each unit — DONE by the builder (main 80d8f3310: index by unit, same output, 0.1 s for all 22 252 procs)
 - `facts_of` calls `query(store, "facto")` over all facts on every call: 0.071 s per call with 131 558 facts, measured on
   this store. tools/run_engine.py calls it for every proc (22 252 -> about 26 min) and verify's check_measure calls it
   again through measure.case_values (about 26 min more). CI's verify job has a 20-minute timeout.

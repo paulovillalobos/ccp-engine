@@ -970,6 +970,18 @@
       "versao": 22,
       "code": "verify.py",
       "hash": "148a016b2e15f63f01616c4f46f536e90e8dc1bf04eec5464547e5dee76cc928",
+      "retired": true,
+      "retired_at": "2026-10-25T19:57:27Z"
+    },
+    {
+      "id": "ferramenta:verify@23",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 23,
+      "code": "verify.py",
+      "hash": "709651bafffc8ecf2357362b767af38db23e0ceb0da019b757a81b1993d4ccfe",
       "retired": false
     },
     {
