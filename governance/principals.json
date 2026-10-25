@@ -981,6 +981,19 @@
       "versao": 1,
       "code": "adapters/base-anuncios/adapter.py",
       "hash": "022c10b5314de523936fb5a1e7f24cd67a22caab8d18bf2eac090dadded974cb",
+      "retired": true,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)",
+      "retired_at": "2026-10-25T15:32:19Z"
+    },
+    {
+      "id": "ferramenta:adapter-base-anuncios@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "adapters/base-anuncios/adapter.py",
+      "hash": "aab4e341eff409f8c97bd8ddc92c080463f85f94ab657b5c9964f1c73ca576cb",
       "retired": false,
       "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
     }

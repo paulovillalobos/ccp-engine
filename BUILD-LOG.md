@@ -1082,3 +1082,42 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: build data/ from the download, check, verify, run_engine.
 - Why: the mapping is data and the adapter is code, so a wrong mapping can be traced and the facts re-derived; the log
   holds the proposer, as it does for every other principal.
+
+## 2026-10-25 E1.2 BASE anúncios 2026 in data/: checked result (commit: E1.2: BASE anúncios 2026 — 22 252 procedures, 131 558 facts, raw slices and bytes in data/; COVERAGE.md)
+- Done: `adapter.py build` over the download: 25 609 records in; 22 252 `proc` units out (one per «Anúncio de
+  procedimento» or «Anúncio de concurso urgente», each with its own raw = the record's exact byte slice); 3 357 records
+  not mapped (3 350 alteration notices and 1 rectification that the dump does not join to a procedure; 6 records whose
+  key nAnuncio + IdIncm repeats); 131 558 facts; 228 adjudicante entities (NIF prefix 6), 2 668 aliases and nif_exact
+  links; adaptador:base-anuncios@1 with coverage per month. Coverage per field and month, the unmapped records by reason
+  (counts, three examples each): adapters/base-anuncios/COVERAGE.md.
+- Procedures carrying each field the rules read: tipo_procedimento 21 493, tipo_contrato 21 473, preco_base 22 098,
+  adjudicante 22 250; data_inicio_procedimento, publicado_joue, prazo_propostas_dias, data_envio_anuncio, territorio,
+  tipo_entidade 0 (not in the dump, or, for the deadline, counted from publication). Also data_publicacao_anuncio 22 252
+  and data_limite_propostas 21 992.
+- Decision (pessoa:paulo, 2026-10-25): asked whether the repository keeps the raw bytes of this download (23 MB of
+  notices), he answered «yes». data/raw_bytes/ leaves .gitignore and is committed: 22 253 files, 44 231 062 bytes (the
+  download 23 669 469, the slices 20 561 593), the largest 23 669 469 bytes (under GitHub's 100 MB). It covers this
+  anúncios 2026 download only; the contratos dumps (E2) need their own decision. SCHEMA-PROPOSAL.md item 2 marked decided.
+- The COVERAGE.md line about the bytes changed, so adapter.py changed: ferramenta:adapter-base-anuncios@2 registered
+  (@1 retired), evento:47 corrects the adaptador's proposal with the new code hash (mapping unchanged), data/ rebuilt
+  with @2 at the same recorded_at (only the links' proponent and the adaptador's proposed_by differ).
+- Checked (`.venv/bin/python -I`, from the worktree):
+  - `adapters/base-anuncios/adapter.py check`: 22 306 files re-derived from the stored download, 0 differ, 0 extra.
+  - `verify.py --store data governance`: 0 failures (0 I01), 45 s.
+  - `verify.py` (full, before the bytes decision, 11 min 48 s): code guard ok; stores fixtures, repo, measure 0
+    failures; BENCH/MEAS ok; 30/30 broken overlays refused; store data 2 669 failures, all I04 «principal
+    ferramenta:adapter-base-anuncios@1 is not registered» (1 adaptador + 2 668 links): STORES["data"] has no
+    governance/ (SCHEMA-PROPOSAL item 1). So `verify: FAILED` until the builder adds governance/ to that store.
+  - `pytest tests --ignore=tests/fill`: 62 passed, 2 failed (test_verify::test_empty_stores_pass and
+    ::test_verify_main_exit_code_is_zero, the same I04), 17 min 26 s.
+  - `pytest tests/fill/test_b4_engine_v0.py`: test_extractor_delivered_notices passes (22 252 procs, 0 load errors);
+    test_first_figure_at_scale_is_reproducible fails: reports/prazos-minimos.json is the builder's to write.
+  - `tools/run_engine.py --out <scratch>`: {"units": 0, "sem_regime": 22252, "verdicts": 0, "rules": 0}, 34 min 38 s.
+    No seletor_regime is settled and no procedure has data_inicio_procedimento, so none is routed to a package.
+- For the builder (SCHEMA-PROPOSAL.md): 1 governance/ in verify's data store; 3 facts_of scans every fact per unit
+  (0.071 s a call: run_engine 35 min; CI's verify job has a 20-minute timeout); 4 an entity type for legal persons of
+  unknown nature (19 582 procedures have no entity); 5 a decimal transform; 6 raw.size; 7 vocabulary the dump uses
+  (urgent tender 683, locação de bens móveis 429, ...); 8 a link method for code-made name links.
+- Next: the person reviews the PR; E2 (BASE contratos) waits for E1's merge. The fields the prazo rules need
+  (data_envio_anuncio, publicado_joue, territorio, tipo_entidade, data_inicio_procedimento) are not in this source.
+- Why: a fact the dump does not state is left out so the engine says nao_avaliado instead of a verdict on a guess.

@@ -14,7 +14,8 @@ build   reads the downloaded file (never the network), stores its bytes under da
 check   rebuilds, in memory, from the stored download (the raw of kind dump) and compares every file byte for byte with
         data/ and COVERAGE.md: the record slices, their raws, units, facts, entities, aliases, links and the adaptador.
 register registers this file as ferramenta:adapter-base-anuncios (tools/register_tool.py) and proposes the adaptador in
-        the governance log, with the sha256 of this code and of mapping.json in the payload. The log decides its state.
+        the governance log, with the sha256 of this code and of mapping.json in the payload; when either changed since,
+        it records a correct with the new hashes instead. The log decides its state.
 
 No model reads anything here and nothing is sent anywhere: the dump is structured and this is code.
 """
@@ -313,7 +314,7 @@ def coverage_md(stats):
          f"| fetched (one GET) | {stats['captured_at']} |",
          f"| size | {stats['dump_size']} bytes |",
          f"| sha256 | `{stats['dump_sha']}` |",
-         f"| raw | `{stats['dump_raw']}` (bytes in data/raw_bytes/, not in git) |", "",
+         f"| raw | `{stats['dump_raw']}` (bytes in data/raw_bytes/, kept in the repository by pessoa:paulo's decision of 2026-10-25) |", "",
          "## Records and procedures", "",
          f"- Records in the dump: {stats['records']}.",
          f"- Procedures out (`proc` units, one per procedure notice, each with its own `raw` = the record's byte slice): {procs}.",
@@ -431,12 +432,16 @@ def cmd_register(a):
     pid = register_tool.register(gov, TOOL, code, "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)")
     log = Log(gov)
     aid = MAPPING["adaptador"]["id"]
-    if any(ev["assertion_type"] == "adaptador" and ev["assertion"] == aid for _, ev in log.events):
-        print(pid, "already proposed")
-        return 0
     payload = {"code": code, "code_sha256": sha256_bytes(Path(__file__).read_bytes()), "mapping": "adapters/base-anuncios/mapping.json",
                "mapping_sha256": content_hash(MAPPING["adaptador"]["mapping"])}
-    print(pid, log.propose(pid, "adaptador", aid, payload, a.at))
+    known = [ev for _, ev in log.events if ev["assertion_type"] == "adaptador" and ev["assertion"] == aid and ev["action"] in ("propose", "correct")]
+    if not known:
+        print(pid, log.propose(pid, "adaptador", aid, payload, a.at))
+    elif known[-1]["payload"] != payload:
+        rev = log.replay().assertions[("adaptador", aid)]["revision"]
+        print(pid, log.correct(pid, "adaptador", aid, rev, payload, "the adapter's code changed; same mapping", a.at))
+    else:
+        print(pid, "already proposed with this code and mapping")
     return 0
 
 

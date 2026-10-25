@@ -11,15 +11,17 @@ what did not fit, what was done meanwhile, and the change proposed. Counts are f
   extractor did not write one.
 - Meanwhile: the proposer, ferramenta:adapter-base-anuncios@1, is registered in governance/principals.json (by
   tools/register_tool.py) and the adaptador is proposed in governance/events.jsonl. `verify.py --store data governance`
-  passes. The full `verify.py` reports 1 + 2 668 I04 lines on the data store and nothing else.
+  passes. The full `verify.py` reports 1 + 2 668 I04 lines on the data store and nothing else, and for the same reason
+  tests/test_verify.py::test_empty_stores_pass and ::test_verify_main_exit_code_is_zero fail (62 other scaffold tests pass).
 - Proposed: STORES["data"] = [ROOT / "data", ROOT / "governance"], as run_engine and tools/measure.py already load it.
 
-## 2. Raw bytes kept out of git: CI cannot re-hash them (I01 in CI)
-- As the brief asks, the download (23 669 469 bytes) and the 22 252 record slices live in data/raw_bytes/ (gitignored).
-  Locally verify re-hashes them. In CI, `check_sources` will report I01 "bytes not in the store" for all 22 253 raws.
-- Proposed (pick one): commit the slices (23 MB) and drop the dump bytes from git, or have verify accept a declared
-  external bytes location for data/, or run the data store's I01 only where data/raw_bytes exists. It is a product
-  decision (what the repository holds), so it is left to the person.
+## 2. Raw bytes of the download in git — DECIDED (pessoa:paulo, 2026-10-25)
+- The question: kept out of git, the download and its record slices could not be re-hashed in CI (I01 "bytes not in the
+  store" for all 22 253 raws).
+- Asked whether the repository keeps the raw bytes of this download (23 MB of notices), Paulo answered «yes». The bytes
+  are committed under data/raw_bytes/: the download (23 669 469 bytes) and the 22 252 record slices (20 561 593 bytes),
+  44 231 062 bytes in 22 253 files, the largest 23 669 469 bytes.
+- Scope: this anúncios 2026 download only. The BASE contratos dumps (E2; 347 MB for 2026 alone) need their own decision.
 
 ## 3. `engine.store.facts_of` scans every fact for each unit
 - `facts_of` calls `query(store, "facto")` over all facts on every call: 0.071 s per call with 131 558 facts, measured on

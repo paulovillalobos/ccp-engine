@@ -10,7 +10,8 @@ BASE anúncios dump (dados.gov.pt, IMPIC, weekly JSON) -> `data/`. Owned by the 
 - `COVERAGE.md`: records in, procedures out, coverage per canonical field and month, unmapped records by reason.
 - `SCHEMA-PROPOSAL.md`: what does not fit the schemas or the gate, for the builder.
 
-Reproduce (the bytes are not in git; download the resource named in build.json once, check its sha256, then):
+Reproduce (the download is in data/raw_bytes/<sha256 in build.json>, kept in the repository by pessoa:paulo's decision
+of 2026-10-25):
 
 ```
 .venv/bin/python -I adapters/base-anuncios/adapter.py build --dump PATH --url URL --captured-at T --recorded-at T --principal P
