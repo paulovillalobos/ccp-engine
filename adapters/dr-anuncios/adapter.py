@@ -91,6 +91,26 @@ def stored(log):
 
 
 # ---- fetch ---------------------------------------------------------------------------------------------------------
+NEW_REGIME = "2026-10"
+
+
+def priority_order(items):
+    """Order of the download (the pace does not change): first the notices published since 2026-10-01 (the new regime),
+    then the other months interleaved, one notice of each month in turn, so every month's coverage grows together."""
+    def month(dpub):
+        return f"{dpub[6:10]}-{dpub[3:5]}" if len(dpub) == 10 else "sem-data"
+    first = [x for x in items if month(x[2]) >= NEW_REGIME]
+    by_month = defaultdict(list)
+    for x in items:
+        if month(x[2]) < NEW_REGIME:
+            by_month[month(x[2])].append(x)
+    rest = []
+    queues = [by_month[m] for m in sorted(by_month)]
+    for i in range(max((len(q) for q in queues), default=0)):
+        rest.extend(q[i] for q in queues if i < len(q))
+    return first + rest
+
+
 def cmd_fetch(a):
     import socket
     import urllib.error
@@ -105,7 +125,9 @@ def cmd_fetch(a):
             return 3
     done = stored(log)
     gone = {e["key"] for e in log if e.get("status") == 404}
-    todo = [(k, rec["url"]) for k, _, _, rec, _ in procedures() if DR_PDF.fullmatch(rec.get("url") or "") and k not in done and k not in gone]
+    todo = [(k, rec["url"], rec.get("dataPublicacao") or "") for k, _, _, rec, _ in procedures()
+            if DR_PDF.fullmatch(rec.get("url") or "") and k not in done and k not in gone]
+    todo = [(k, u) for k, u, _ in priority_order(todo)]
     if a.limit:
         todo = todo[:a.limit]
     print(f"{len(done)} stored, {len(todo)} to fetch, one GET every {PACE_S:g} s", flush=True)

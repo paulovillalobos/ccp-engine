@@ -1203,3 +1203,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   are counted in COVERAGE.md.
 - Next: the download runs on (~60 h); then the full text, build, register, check, verify, run_engine, PR.
 - Why: a problem found on 482 notices costs nothing; found after 62 hours it costs a rebuild.
+
+## 2026-10-25 E1b.3 download order: the new regime first, then months interleaved (commit: E1b.3: download order — notices since 2026-10-01 first, then months interleaved; same pace)
+- Done: fetch now orders its queue (priority_order): the notices published since 2026-10-01 first (1 226 left, about
+  3.4 h), then the other months interleaved, one notice of each month in turn, so every month's coverage grows
+  together instead of following nAnuncio's alphabetical order. The pace is unchanged (one GET every 10 s, as the person
+  set it); the total stays about 60 h. No bulk source exists: the DR publishes Part L notices only as single PDFs.
+- Restarted at 21:51:51Z (fetch pid 7824) after 512 stored; it resumed without fetching any stored PDF; no .part file
+  was left. caffeinate is tied to the fetch pid. A watcher written with `pgrep -f` matched its own command line (it
+  would never have ended and held caffeinate on itself); replaced by one that waits on the fetch pid.
+- Next: interim builds as the new-regime notices land; the full build when the download ends.
+- Why: useful data in hours (the new regime) and a balanced sample of the year within about 8 h.
