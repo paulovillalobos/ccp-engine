@@ -5,3 +5,7 @@ __pycache__/
 .DS_Store
 events.lock
 dist/
+
+# extractor E1b: DR notice PDFs and their pypdf text stay out of git (pessoa:paulo, 2026-10-25); raw and documento objects are in git
+data/raw/dr-anuncios/raw_bytes/
+data/raw/dr-anuncios/text/

@@ -1144,3 +1144,21 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   5. COVERAGE.md per field and month, failed PDFs by reason, conflicts by kind; verify over data/ (with governance/);
      run_engine rerun and its counts reported; a PR of its own, not merged.
 - Why: the dump lacks what the deadline rules read; the notice prints it under fixed labels.
+
+## 2026-10-25 E1b.1 the DR notice adapter, download running (commit: E1b.1: adapters/dr-anuncios — fetcher, frozen parser, mapping as data, build)
+- Done: adapters/dr-anuncios/: parse.py (the E1b test's parser, byte for byte, sha256 a29220df…, checked at every
+  build), mapping.json (six rows: data_envio_anuncio, publicado_joue, nut_iii_adjudicante, territorio with the NUT III
+  prefix table as data, data_limite_propostas, norma_juridica_adjudicante; the three fields not derived and why),
+  adapter.py (fetch / text / build / check / register), SCHEMA-PROPOSAL.md (2 questions for the person, 4 for the
+  readers, 2 for the builder). .gitignore: the PDFs and their text stay out of git.
+- Download started 2026-10-25T20:24:09Z (3 notices as a probe), then from 20:26:49Z the 22 167 remaining
+  files.diariodarepublica.pt notices, one GET every 10 s, detached (nohup) so it survives a session restart; every
+  attempt in adapters/dr-anuncios/fetch-log.jsonl. A first launch at 20:25 made no request (its output file's folder
+  was missing).
+- Text by pypdf 6.14.2 and cryptography 50.0.1 on /usr/bin/python3 3.9.6, the test's versions: the adapter keeps -I and
+  adds only the user site where that pypdf is installed, and refuses another pypdf version.
+- Trial build on the first 6 notices: 6 documents, 36 facts with (documento, page, offsets, quote); `check` 0 differ;
+  `verify.py --store data governance`: only the expected I04 (proposer not registered yet) and one orphan (a PDF
+  fetched after the build).
+- Next: when the download ends, text, build, register, check, verify, run_engine, COVERAGE, PR.
+- Why: the notice prints what the deadline rules read; positions make every value traceable to its page.
