@@ -1064,3 +1064,21 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   7. `python -I verify.py` ok over data/; `tools/run_engine.py` runs over data/ and its counts are reported.
 - Why: the engine has no facts of real procedures yet; this phase writes only adapters/ and data/ (plus .gitignore,
   the adapter's registration in governance/ and these entries).
+
+## 2026-10-25 E1.1 the BASE anúncios adapter, registered (commit: E1.1: adapters/base-anuncios — mapping as data, code, registration as ferramenta, adaptador proposed in the log)
+- Done: one GET of https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100557-3458a85b/anuncios2026.json
+  at 2026-10-25T14:47:34Z: 23 669 469 bytes, sha256 9605b59bd94e8119ba158d90f9249b5a5d97fa89e70db2c1de0e5df7e3844a8b,
+  sha1 ac317477cbd8… equal to the checksum dados.gov.pt publishes for the resource. 25 609 records, 20 fields each.
+- adapters/base-anuncios/: mapping.json (six mapping rows, the record key, the procedure notice types, the NIF table
+  for entity types, the six asked fields the dump does not give, each with its reason), adapter.py (build / check /
+  register), README.md, SCHEMA-PROPOSAL.md (8 items for the builder).
+- What the dump gives and does not: modeloAnuncio, tiposContrato, PrecoBase, nifEntidade, dataPublicacao and
+  DataLimitePropostas map to tipo_procedimento, tipo_contrato, preco_base, adjudicante, data_publicacao_anuncio and
+  data_limite_propostas. No field gives data_envio_anuncio, data_inicio_procedimento, publicado_joue, territorio or
+  tipo_entidade. PrazoPropostas equals DataLimitePropostas − dataPublicacao in all 25 298 records that have both dates:
+  it counts from publication, not from the sending the rules' counted_from names, so it is not prazo_propostas_dias.
+- Registered: ferramenta:adapter-base-anuncios@1 (tools/register_tool.py, code adapters/base-anuncios/adapter.py);
+  evento:46 proposes adaptador:base-anuncios@1 with the sha256 of the code and of the mapping. State: proposed.
+- Next: build data/ from the download, check, verify, run_engine.
+- Why: the mapping is data and the adapter is code, so a wrong mapping can be traced and the facts re-derived; the log
+  holds the proposer, as it does for every other principal.

@@ -1,0 +1,88 @@
+{
+  "adaptador": {
+    "id": "adaptador:base-anuncios@1",
+    "source": "base-anuncios",
+    "version": 1,
+    "code": "adapters/base-anuncios/",
+    "mapping": [
+      {
+        "source_field": "modeloAnuncio",
+        "canonical_field": "tipo_procedimento",
+        "transform": "enum_map",
+        "enum_map": {
+          "Concurso público": "concurso_publico",
+          "Concurso limitado por prévia qualificação": "concurso_limitado_previa_qualificacao",
+          "Procedimento de negociação": "procedimento_negociacao"
+        },
+        "note": "only when tipoActo is 'Anúncio de procedimento'; an 'Anúncio de concurso urgente' gives no fact (the urgent tender is not in the vocabulary and modeloAnuncio still says 'Concurso público'); values outside the map give no fact"
+      },
+      {
+        "source_field": "tiposContrato",
+        "canonical_field": "tipo_contrato",
+        "transform": "enum_map",
+        "enum_map": {
+          "Aquisição de bens móveis": "bens",
+          "Aquisição de serviços": "servicos",
+          "Empreitadas de obras públicas": "obras",
+          "Concessão de obras públicas": "concessao_obras",
+          "Concessão de serviços públicos": "concessao_servicos"
+        },
+        "note": "only when the list holds exactly one value; 'Locação de bens móveis', 'Outros', 'Sociedade', an empty list and lists of several types give no fact; servicos_sociais is not told apart by this field"
+      },
+      {
+        "source_field": "PrecoBase",
+        "canonical_field": "preco_base",
+        "transform": "number_pt",
+        "note": "EUR as the dump writes it: decimal point, two decimals, no thousands separator (e.g. '318231.43'); 'Inexistente' and '0.00' give no fact"
+      },
+      {
+        "source_field": "nifEntidade",
+        "canonical_field": "adjudicante",
+        "transform": "nif",
+        "note": "nine digits; an empty value gives no fact"
+      },
+      {
+        "source_field": "dataPublicacao",
+        "canonical_field": "data_publicacao_anuncio",
+        "transform": "date_pt",
+        "note": "dd/mm/yyyy; the publication date of the notice, never used as the date the notice was sent nor as the start of the procedure"
+      },
+      {
+        "source_field": "DataLimitePropostas",
+        "canonical_field": "data_limite_propostas",
+        "transform": "date_pt",
+        "note": "dd/mm/yyyy; empty, or earlier than dataPublicacao: no fact"
+      }
+    ]
+  },
+  "record": {
+    "key": ["nAnuncio", "IdIncm"],
+    "key_note": "unit and raw ids: nAnuncio with every run of characters outside [A-Za-z0-9] as '-', a dot, IdIncm ('-1', no DR id, as 'x'); a key held by two procedure records of the dump maps neither",
+    "procedure_acts": ["Anúncio de procedimento", "Anúncio de concurso urgente"],
+    "unmapped_acts": {
+      "Anúncio de Alteração": "alters an earlier notice that the dump does not name; no field joins it to its procedure",
+      "Declaração de retificação de anúncio": "rectifies an earlier notice that the dump does not name; no field joins it to its procedure"
+    }
+  },
+  "entities": {
+    "adjudicante_nif_field": "nifEntidade",
+    "adjudicante_name_field": "designacaoEntidade",
+    "country": "PT",
+    "type_by_nif_prefix": {
+      "1": "pessoa_singular",
+      "2": "pessoa_singular",
+      "3": "pessoa_singular",
+      "45": "pessoa_singular",
+      "6": "publica"
+    },
+    "type_note": "the NIF's leading digits decide the type only where the code table is decisive (1, 2, 3, 45: natural person; 6: public administration body); 5 and 9 (legal persons, public or private) do not, and entidade.type has no value for that: no entidade is written for them (SCHEMA-PROPOSAL.md)"
+  },
+  "not_in_source": {
+    "data_envio_anuncio": "the dump has no sending date; dataPublicacao is the publication date and is not substituted for it",
+    "prazo_propostas_dias": "PrazoPropostas is DataLimitePropostas minus dataPublicacao (equal in every record with both dates), so it counts from publication, not from the sending of the notice as the rules' counted_from requires; it gives no fact",
+    "data_inicio_procedimento": "the dump has no start date of the procedure; the publication date is a later event and is not substituted for it",
+    "publicado_joue": "no field of the dump says whether the notice was sent to the JOUE",
+    "territorio": "no field of the dump gives the territory",
+    "tipo_entidade": "no field of the dump says whether the contracting entity is the State"
+  }
+}

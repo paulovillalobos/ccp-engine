@@ -971,6 +971,18 @@
       "code": "verify.py",
       "hash": "148a016b2e15f63f01616c4f46f536e90e8dc1bf04eec5464547e5dee76cc928",
       "retired": false
+    },
+    {
+      "id": "ferramenta:adapter-base-anuncios@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "adapters/base-anuncios/adapter.py",
+      "hash": "022c10b5314de523936fb5a1e7f24cd67a22caab8d18bf2eac090dadded974cb",
+      "retired": false,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
     }
   ]
 }
