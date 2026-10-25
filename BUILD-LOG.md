@@ -1264,3 +1264,17 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   (PDFs fetched after its interim build, proposer not yet registered).
 - Next: E1b's final build when the download ends; the samples stay on this branch for the person to review.
 - Why: one sample of every source is now in the store, each with its raw and sha256.
+
+## 2026-10-25 M.3 Vortal: its public JSON API, read without a browser (commit: M.3: Vortal probe — the notice and its documents through Vortal's public JSON API with plain GETs; the uploaded DR notice is byte-identical)
+- Done (the person's «va hazlo» to probing Vortal without stopping the download): the Vortal link was opened once in
+  the built-in browser only to list the addresses its application reads (all GETs to a public JSON API; the page also
+  sends analytics, so the data is read without it), then four plain GETs 10 s apart for one procedure
+  (PT1.NTC.3811157, BASE 24347/2026), all 200: link -> notice address, header, the notice as typed fields with the
+  documents list (public download URLs), and one document. adapters/vortal/ (record.py, PROBE.md); raws
+  raw:vortal:* and raw:pecas:documento:vortal-…; bytes gitignored. No facts.
+- Found: the uploaded document 419974431.pdf is byte-identical (sha256 733a83cf…) to the DR notice E1b fetched: an
+  exact join Vortal procedure <-> DR notice. Deadlines come in UTC (22:59Z = 23:59 Lisbon): a hypothesis for the
+  «D+1 00:59» differences between DR notice and dump. The documents list names the uploading official: never published.
+- Checked: `verify.py --store data governance`: no failure from the probe (the remaining failures are E1b's interim).
+  The DR download kept running throughout (pid 7824).
+- Next: E1b's final build; a decision for the person on reading Vortal and acinGov at scale.
