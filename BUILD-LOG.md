@@ -1278,3 +1278,19 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Checked: `verify.py --store data governance`: no failure from the probe (the remaining failures are E1b's interim).
   The DR download kept running throughout (pid 7824).
 - Next: E1b's final build; a decision for the person on reading Vortal and acinGov at scale.
+
+## 2026-10-25 M.4 the platforms in the background: Vortal notices (2026) and acinGov pieces (October) (commit: M.4: platform fetchers — Vortal notice JSON for 2026, acinGov pieces ZIPs for October, in the background)
+- Decided by the person (his words, ~22:50Z): «vamos a empezar a ingestarlo ya de una vez», after the proposal of
+  Vortal's notice JSON for every 2026 procedure (October first) and acinGov's pieces ZIP for October only. acinGov's
+  whole year (~9 781 ZIPs, ~58 GB at the probe's mean of 5.9 MB) does not fit the 15 GB free; Vortal's documents are
+  not downloaded.
+- Done: adapters/plataformas/fetch.py (vortal / acingov): procedures of adaptador:base-anuncios by their
+  PecasProcedimento host, October first then months interleaved; vortal = two GETs of the public JSON API per
+  procedure (link -> PT1.NTC.*, then the notice with its documents list); acingov = one GET of the link (a ZIP).
+  One GET every 10 s per host, the DR's rules otherwise (stop on 403/429, an hour before a resume, network errors
+  retried by the next run, stored work skipped, stop below 2 GB free). Tested on 2 procedures each, then launched
+  detached at 22:54Z: vortal 10 491 to read (~58 h), acingov 566 (~1.6 h; the probe's 5 ZIPs are not fetched again).
+  The DR download (pid 7824) runs on beside them. Logs: adapters/plataformas/<platform>-log.jsonl.
+- Next: when the October DR notices are in (watcher), the interim DR build and verify; the platform raws and their
+  facts once the downloads end (a build step, not written yet).
+- Why: the platforms hold typed data (Vortal) and the documents (acinGov) that the dump and the DR notice do not.
