@@ -1187,3 +1187,19 @@ One entry per commit: done / next / why. Written so a model change loses nothing
     still no settled seletor_regime and no data_inicio_procedimento.
 - Next: the person's review of PR #1; E1b continues on its branch.
 - Why: the done-criterion «verify ok over data/» now holds on the branch itself.
+
+## 2026-10-25 E1b.2 interim check on the first 482 notices (commit: E1b.2: interim check on 482 notices; misses named by procedure type, cut norma values flagged)
+- Done: `text` (476 new PDFs in 7.6 s) and `build` over the 482 notices fetched by 21:46Z, then `check` (0 differ).
+- Result: data_envio_anuncio, nut_iii_adjudicante, territorio, norma_juridica_adjudicante 482/482; publicado_joue
+  480/482; data_limite_propostas 479/482. The 5 misses are right, not parser errors: the 3 without a deadline are
+  «Concurso limitado por prévia qualificação» (the first phase sets a deadline for candidaturas; the dump's
+  DataLimitePropostas is empty too), the 2 without the JOUE question are «Concurso público simplificado» (the new
+  procedure of DL 177/2026, whose form does not ask it). Cross-checks: 479/479 deadlines and 482/482 NIFs equal the
+  dump; 0 conflicts so far. publicado_joue Sim 141 / Não 339; territorio PT 459, PT-MA 15, PT-AC 8.
+- Found: the frozen parser reads a value to the end of its line, so a norma_juridica value that wraps in the PDF is
+  cut (at least 3 of 482 end in «da» / «por uma»). The parser is not changed; COVERAGE.md now counts them, and the
+  quote is exactly the printed first line.
+- Changed (adapter.py, not the parser): a miss is reported with the procedure type of the dump record; the cut values
+  are counted in COVERAGE.md.
+- Next: the download runs on (~60 h); then the full text, build, register, check, verify, run_engine, PR.
+- Why: a problem found on 482 notices costs nothing; found after 62 hours it costs a rebuild.

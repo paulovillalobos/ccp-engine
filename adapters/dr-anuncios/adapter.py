@@ -47,6 +47,7 @@ USER_AGENT = "ccp-engine research (passive read)"
 PACE_S = 10.0
 REFUSAL_WAIT_S = 3600
 DR_PDF = re.compile(r"https://files\.diariodarepublica\.pt/\S+\.pdf")
+CUT_WORDS = {"a", "da", "das", "de", "do", "dos", "e", "o", "por", "uma", "um"}
 PARSER_SHA256 = "a29220df924331dbda8cb7d8d83c1d45e06ab58b2e28631f0c5e4532879612e3"
 MAPPING = json.loads((HERE / "mapping.json").read_text(encoding="utf-8"))
 
@@ -295,7 +296,7 @@ def build(recorded_at, principal):
         for field, pfield in MAPPING["parser_field"].items():
             v = vals[pfield]
             if v is None:
-                st["omitted"][field]["label not found by the parser"].append(rec["nAnuncio"])
+                st["omitted"][field][f"label not in the notice text ({rec.get('modeloAnuncio')})"].append(rec["nAnuncio"])
                 continue
             span, m = span_of(parse, pfield, text)
             pos = to_page(pages, *span)
@@ -415,7 +416,8 @@ def coverage_md(st):
           f"- publicado_joue: {dict(sorted(st['joue'].items()))}.",
           f"- territorio: {dict(sorted(st['territorio'].items()))}.",
           f"- data_envio_anuncio minus data_publicacao_anuncio, in days: {dict(sorted(st['envio_minus_pub'].items()))}.",
-          "- norma_juridica_adjudicante (stored as printed, not mapped to tipo_entidade): " + "; ".join(f"«{k}» {v}" for k, v in st["norma"].most_common()) + ".", "",
+          "- norma_juridica_adjudicante (stored as printed, not mapped to tipo_entidade): " + "; ".join(f"«{k}» {v}" for k, v in st["norma"].most_common()) + ".",
+          f"- The parser reads a label's value to the end of its line, so a value that wraps in the PDF is cut: at least {sum(v for k, v in st['norma'].items() if k.split()[-1] in CUT_WORDS)} norma_juridica_adjudicante facts end in a word that cannot end the value ({', '.join(sorted(CUT_WORDS))}). The quote is exactly the printed first line; the parser is not changed.", "",
           "## Not derived", ""]
     for field, reason in MAPPING["not_derived"].items():
         L.append(f"- `{field}`: {reason}.")
