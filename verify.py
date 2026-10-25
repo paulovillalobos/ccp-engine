@@ -55,6 +55,8 @@ Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red
   BENCH   a held-out reference case without frozen_at; law/HELD-OUT.json changed after it was frozen; a package built
           after frozen_at holding a rule whose log events name a held-out unit
   MEAS    a reports/measure/<date>.json that tools/measure.py does not recompute from the stored answers
+  TRAIN   training/data (INDEX.json and every example file) that tools/make_training.py does not regenerate byte for byte
+          from the store and the training reservation; a train example touching a reserved article (phase 4, T1)
   I01 also: raw bytes that no raw record names (orphans)
 """
 import ast
@@ -742,6 +744,8 @@ def check_store(roots):
     check_rule_content(store, out)
     check_readings(store, out)
     check_seal(store, out)
+    for tdir, held in training_dirs(roots):
+        check_training(store, out, tdir, held)
     return store, out
 
 
@@ -868,6 +872,74 @@ def check_seal(store, out, casos_root=None, held_out=None, train_files=None):
             idx = json.loads(train_index.read_text(encoding="utf-8"))
             if hashlib.sha256(canonical_json(idx).encode("utf-8")).hexdigest() != seal.get("training_index_sha256"):
                 out.append(("SEAL", f"training/data/INDEX.json not sealed, or changed after the newest seal ({seals[-1]['id']})"))
+
+
+def check_training(store, out, training_dir, held_path):
+    """TRAIN (phase 4, T1): training/data is the generator's output over this store and this reservation. INDEX.json and
+    every file it lists must be what tools/make_training.generate() writes (byte for byte), every listed file must hash
+    to its sha256, no file may be unlisted, and no example of any train.jsonl may name a source inside a reserved article
+    (read independently of the generator, from the stored files and law/TRAIN-HELD-OUT.json)."""
+    data = Path(training_dir) / "data"
+    index_path = data / "INDEX.json"
+    if not index_path.exists():
+        return
+    if not Path(held_path).exists():
+        out.append(("TRAIN", f"{index_path}: training data without its reservation file {held_path}"))
+        return
+    held = json.loads(Path(held_path).read_text(encoding="utf-8"))
+    sys.path.insert(0, str(ROOT / "tools"))
+    import make_training  # noqa: E402  (tools/make_training.py: the generator; no model, no network)
+    readings = (store.governance_dir / "readings") if store.governance_dir is not None else None
+    again = make_training.generate(store, held, readings)
+    stored_index = index_path.read_bytes()
+    if stored_index != again["INDEX.json"]:
+        out.append(("TRAIN", f"{index_path}: not what tools/make_training.py regenerates from the store and the reservation"))
+    index = json.loads(stored_index)
+    listed = set(index.get("files", {}))
+    for rel, meta in index.get("files", {}).items():
+        f = data / rel
+        if not f.exists():
+            out.append(("TRAIN", f"{rel}: listed in INDEX.json and missing"))
+            continue
+        b = f.read_bytes()
+        if hashlib.sha256(b).hexdigest() != meta.get("sha256"):
+            out.append(("TRAIN", f"{rel}: does not hash to its INDEX.json sha256"))
+        if again.get(rel) is not None and b != again[rel]:
+            out.append(("TRAIN", f"{rel}: not what the generator writes"))
+    for f in sorted(p for p in data.rglob("*") if p.is_file() and p.name not in ("INDEX.json", "REPORT.md")):
+        if str(f.relative_to(data)) not in listed:
+            out.append(("TRAIN", f"{f.relative_to(data)}: file not listed in INDEX.json"))
+    from engine.canon import canonical as _canon, sha256_text as _sha
+    if _sha(_canon(held.get("definition"))) != held.get("sha256"):
+        out.append(("TRAIN", f"{held_path}: its definition no longer hashes to the sha256 recorded when it was declared"))
+    units = set(make_training.article_map(make_training.current_passages(store)).values())
+    expect = sorted({a for a in units if make_training.by_hash(a)} | set(held.get("definition", {}).get("by_b3", {}).get("articles", [])))
+    if held.get("reserved_articles") != expect:
+        out.append(("TRAIN", f"{held_path}: reserved_articles is not the declared rule (by_hash over the store's articles + by_b3)"))
+    reserved = set(held.get("reserved_articles", []))
+    art_path = data / "ARTICLE-OF.json"
+    article_of = json.loads(art_path.read_text(encoding="utf-8")) if art_path.exists() else {}
+    for f in sorted(data.glob("*/train.jsonl")):
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            if not line.strip():
+                continue
+            ex = json.loads(line)
+            hit = [s for s in ex.get("sources", []) if article_of.get(s.split("@")[0]) in reserved]
+            if hit:
+                out.append(("TRAIN", f"{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
+
+
+def training_dirs(roots):
+    """(training dir, reservation file) pairs for a store: <root>/training for any root that holds one (a fixture store
+    keeps its reservation inside it); the repository's training/ with law/TRAIN-HELD-OUT.json for the repository store (law/ + rules/ + governance/)."""
+    out = []
+    for r in roots:
+        t = Path(r) / "training"
+        if (t / "data/INDEX.json").exists():
+            out.append((t, t / "TRAIN-HELD-OUT.json"))
+    if {Path(r).resolve() for r in roots} == {Path(r).resolve() for r in STORES["repo"]} and (ROOT / "training/data/INDEX.json").exists():
+        out.append((ROOT / "training", ROOT / "law/TRAIN-HELD-OUT.json"))
+    return out
 
 
 def check_measure():

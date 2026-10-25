@@ -328,6 +328,16 @@ write("caso_referencia", "fx-1", env({"id": "ref:fx-1", "unit": PROC, "expected"
     "annotators": [{"principal": "pessoa:paulo", "at": "2026-10-24T19:40:00Z", "agrees_with_expected": True}, {"principal": "pessoa:revisor-fixture", "at": "2026-10-24T19:41:00Z", "agrees_with_expected": True}],
     "adjudication": None, "held_out": False, "frozen_at": None}))
 
+# ---- phase 4 (T1): the training data the generator writes from this fixture law (verify TRAIN re-derives it) ---------
+sys.path.insert(0, str(ROOT / "tools"))
+import make_training as _mt  # noqa: E402
+from engine.store import Store as _Store  # noqa: E402
+_st = _Store([V]).load()
+_held = _mt.held_out_doc(_st, REC, readings=V / "governance" / "readings")
+(V / "training").mkdir(parents=True, exist_ok=True)
+(V / "training" / "TRAIN-HELD-OUT.json").write_text(json.dumps(_held, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+_mt.write(_mt.generate(_st, _held, V / "governance" / "readings"), V / "training" / "data")
+
 # ---- broken overlays: one per invariant ------------------------------------------------------------------------
 def overlay(name, expect, files):
     d = B / name; d.mkdir(parents=True)
@@ -400,4 +410,12 @@ stale_ent = load("entidade/nif-500000000.json"); stale_ent.update(revision=2, su
 overlay("state-link-to-stale-entity", "STATE", {"entidade/nif-500000000-r2.json": stale_ent})
 def knew_too_early(o): o.update(known_at="2026-10-24T19:05:00Z", recorded_at="2026-10-24T19:05:00Z", id=o["id"].replace(KNOWN_V, "2026-10-24T19:05:00Z"))
 overlay("man-verdict-before-log-head", "MAN", {PRAZO_V: mutate(PRAZO_V, knew_too_early)})
+# phase 4 (T1): the training data must be the generator's output and keep reserved articles out of train
+_idx = json.loads((V / "training/data/INDEX.json").read_text(encoding="utf-8")); _idx["tasks"]["nota_dr"]["train"] += 1
+overlay("train-index-not-regenerated", "TRAIN", {"training/data/INDEX.json": json.dumps(_idx, ensure_ascii=False, sort_keys=True, indent=1) + "\n"})
+_reserved = sorted(_held["reserved_articles"])[0]
+_leak = json.dumps({"answer": json.dumps({"passagem": _reserved}), "id": "escolha_passagem:fixture-leak", "prompt": "FIXTURE", "schema": {}, "sources": [_reserved], "task": "escolha_passagem"}, ensure_ascii=False, sort_keys=True) + "\n"
+overlay("train-example-touches-reserved-article", "TRAIN", {"training/data/escolha_passagem/train.jsonl": (V / "training/data/escolha_passagem/train.jsonl").read_text(encoding="utf-8") + _leak})
+_edited = dict(_held, reserved_articles=_held["reserved_articles"][1:])
+overlay("train-reservation-edited", "TRAIN", {"training/TRAIN-HELD-OUT.json": json.dumps(_edited, ensure_ascii=False, indent=1) + "\n"})
 print("valid objects:", sum(1 for p in V.rglob("*.json")), "events:", len(EVENTS), "broken overlays:", len(list(B.iterdir())))

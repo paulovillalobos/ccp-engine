@@ -1,0 +1,87 @@
+{
+ "examples": 15937,
+ "files": {
+  "ARTICLE-OF.json": {
+   "lines": 36526,
+   "sha256": "5ec60e6d7451f41c59a040525d2f93f0b07477798ef7cb6d83198435af1bf5c5"
+  },
+  "escolha_passagem/held_out.jsonl": {
+   "lines": 2227,
+   "sha256": "dabba168110d053ca68b3de9d6074e81ad4b46891e4116d6744506772e350e68"
+  },
+  "escolha_passagem/train.jsonl": {
+   "lines": 8057,
+   "sha256": "30b8142fb5108c75bb1b3f59b48d4938dc923b847bab7d5aa450ebe9f998581c"
+  },
+  "nota_dr/held_out.jsonl": {
+   "lines": 298,
+   "sha256": "cefd2708af0b65e817ede3b81ee454944f321d510fd1de652fd37952ba207473"
+  },
+  "nota_dr/train.jsonl": {
+   "lines": 506,
+   "sha256": "f16d94179d91e6f9f39e985f951ee8a38fb35267dc45a1c80598e504d9f42dd1"
+  },
+  "regra_tipada/held_out.jsonl": {
+   "lines": 1,
+   "sha256": "fe7a61bb962f42fb253318b44515149af0182753d73ded77adf786a7eb86c3fa"
+  },
+  "regra_tipada/train.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "remissao/held_out.jsonl": {
+   "lines": 1,
+   "sha256": "ffb4f4ca27a1e606ecfdd3b6712b94e2d407e3abf58f542b815454681f2dcedd"
+  },
+  "remissao/train.jsonl": {
+   "lines": 2,
+   "sha256": "0896417a064df6189d78bc80b7eb3c2965c949f9bb36432fbae7ae0bc4233d06"
+  },
+  "texto_vigente/held_out.jsonl": {
+   "lines": 903,
+   "sha256": "e427f80276dc04d5690ec382306c9173a925f30349bd9c5105f3c39981fa4281"
+  },
+  "texto_vigente/train.jsonl": {
+   "lines": 3942,
+   "sha256": "b49fc48e90e01b86d256493554350f45d0679c6ea71a3361141761df83cbc7d9"
+  }
+ },
+ "frozen_at": "2026-10-25",
+ "limits": {
+  "escolha_cap": {
+   "alinea": 3000,
+   "artigo": 4000,
+   "numero": 5000
+  },
+  "max_examples": 40000,
+  "max_passage_chars": 2500,
+  "max_prompt_chars": 9000,
+  "per_passage_and_task": 3
+ },
+ "passages_covered": 11725,
+ "passages_total": 36524,
+ "tasks": {
+  "escolha_passagem": {
+   "held_out": 2227,
+   "train": 8057
+  },
+  "nota_dr": {
+   "held_out": 298,
+   "train": 506
+  },
+  "regra_tipada": {
+   "held_out": 1,
+   "train": 0
+  },
+  "remissao": {
+   "held_out": 1,
+   "train": 2
+  },
+  "texto_vigente": {
+   "held_out": 903,
+   "train": 3942
+  }
+ },
+ "train_held_out_definition_sha256": "b4cb0751e3abbd6ad853205f670628972e3785e78b9502eb9941964dba86875e",
+ "version": "ccp-make-training-0.2"
+}

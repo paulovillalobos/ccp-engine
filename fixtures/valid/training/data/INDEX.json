@@ -1,0 +1,87 @@
+{
+ "examples": 0,
+ "files": {
+  "ARTICLE-OF.json": {
+   "lines": 12,
+   "sha256": "c63bab017cfd38191e37a8c6db70fa4e25374cceed31f8c6b16ab2321b3145e2"
+  },
+  "escolha_passagem/held_out.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "escolha_passagem/train.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "nota_dr/held_out.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "nota_dr/train.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "regra_tipada/held_out.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "regra_tipada/train.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "remissao/held_out.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "remissao/train.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "texto_vigente/held_out.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "texto_vigente/train.jsonl": {
+   "lines": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ },
+ "frozen_at": "2026-10-25",
+ "limits": {
+  "escolha_cap": {
+   "alinea": 3000,
+   "artigo": 4000,
+   "numero": 5000
+  },
+  "max_examples": 40000,
+  "max_passage_chars": 2500,
+  "max_prompt_chars": 9000,
+  "per_passage_and_task": 3
+ },
+ "passages_covered": 0,
+ "passages_total": 10,
+ "tasks": {
+  "escolha_passagem": {
+   "held_out": 0,
+   "train": 0
+  },
+  "nota_dr": {
+   "held_out": 0,
+   "train": 0
+  },
+  "regra_tipada": {
+   "held_out": 0,
+   "train": 0
+  },
+  "remissao": {
+   "held_out": 0,
+   "train": 0
+  },
+  "texto_vigente": {
+   "held_out": 0,
+   "train": 0
+  }
+ },
+ "train_held_out_definition_sha256": "2459c8a043957bf52d7e4d7ee0ed4e6f10765efe5667ba15008bf8493cc8bf62",
+ "version": "ccp-make-training-0.2"
+}

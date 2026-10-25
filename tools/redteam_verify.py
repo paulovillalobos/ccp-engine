@@ -90,5 +90,9 @@ def _retire(at):
     return fn
 run("P1 leitor:b retired before the events it signed (retired_at earlier than its first event)", _retire("2026-10-24T19:00:00Z"))
 run("P2 leitor:b retired with no retired_at: none of its events may count", lambda s: _retire(None)(s) or (lambda p: p.write_text(json.dumps({"principals": [{k: v for k, v in e.items() if k != "retired_at"} for e in json.loads(p.read_text())["principals"]]})))(s / "governance/principals.json"))
+# phase 4 (T1): training data must be the generator's output
+run("Q1 a listed training file deleted", lambda s: (s / "training/data/nota_dr/train.jsonl").unlink())
+run("Q2 an unlisted file dropped into training/data", lambda s: (s / "training/data/nota_dr/extra.jsonl").write_text("{}\n"))
+run("Q3 the reservation file edited after generation (an article un-reserved)", lambda s: edit(s, "training/TRAIN-HELD-OUT.json", lambda o: o.update(reserved_articles=o["reserved_articles"][1:])))
 print(f"{len(MISSED)} MISSED")
 sys.exit(1 if MISSED else 0)

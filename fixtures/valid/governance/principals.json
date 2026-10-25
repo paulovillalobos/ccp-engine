@@ -92,7 +92,7 @@
       "motor": null,
       "versao": 1,
       "code": "tools/make_fixtures.py",
-      "hash": "0ba3d61df28d6497a4b668ee10bc1e476044589a47e9b87dce4cdb8cd887cd02",
+      "hash": "53b9cbde5ef2b80501f7c991174bcd50f96c38af51db0479c699975e9684d1b9",
       "retired": false,
       "nota": "exact-NIF entity links (fixture: hashed to this generator)"
     },
@@ -104,7 +104,7 @@
       "motor": null,
       "versao": 1,
       "code": "tools/make_fixtures.py",
-      "hash": "0ba3d61df28d6497a4b668ee10bc1e476044589a47e9b87dce4cdb8cd887cd02",
+      "hash": "53b9cbde5ef2b80501f7c991174bcd50f96c38af51db0479c699975e9684d1b9",
       "retired": false,
       "nota": "invalidates on failed re-derivation (fixture: hashed to this generator)"
     }
