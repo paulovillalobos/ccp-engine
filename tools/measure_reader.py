@@ -109,7 +109,7 @@ def rules_table():
             path = (d / "leitor-a.json") if r == "leitor-a" else (EVAL / "regras" / s / "leitor-a2.json")
             rec = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
             a = read_rules.parse_answer(rec, t) if rec else None
-            same = lambda x, y: x is not None and y is not None and canonical(norm(x)) == canonical(norm(y))  # noqa: E731
+            same = lambda x, y: read_rules.same_reading(x, y)  # noqa: E731  (D43: the person's canonical form)
             sdir = lambda x, y: x is not None and y is not None and read_rules.key_param(x) == read_rules.key_param(y)  # noqa: E731
             cell = {"parsed": a is not None, "vs_b_exact": same(a, b), "vs_b_direction": sdir(a, b),
                     "vs_settled_exact": same(a, settled) if settled else None, "vs_settled_direction": sdir(a, settled) if settled else None}

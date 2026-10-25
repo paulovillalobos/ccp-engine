@@ -94,5 +94,12 @@ run("P2 leitor:b retired with no retired_at: none of its events may count", lamb
 run("Q1 a listed training file deleted", lambda s: (s / "training/data/nota_dr/train.jsonl").unlink())
 run("Q2 an unlisted file dropped into training/data", lambda s: (s / "training/data/nota_dr/extra.jsonl").write_text("{}\n"))
 run("Q3 the reservation file edited after generation (an article un-reserved)", lambda s: edit(s, "training/TRAIN-HELD-OUT.json", lambda o: o.update(reserved_articles=o["reserved_articles"][1:])))
+def _above_log(change):  # D43: a rule revision above the log's is allowed only to carry a review's new state
+    def fn(s):
+        o = json.loads((s / LIM).read_text()); o.update(revision=2, recorded_at="2026-10-24T20:00:00Z"); change(o)
+        (s / LIM.replace(".json", ".r2.json")).write_text(json.dumps(o, ensure_ascii=False))
+    return fn
+run("R1 rule revision above the log's with a state the replay does not give", _above_log(lambda o: o.update(state="proposed")))
+run("R2 rule revision above the log's that changes content, not state", _above_log(lambda o: o["params"]["threshold"].update(value=1)))
 print(f"{len(MISSED)} MISSED")
 sys.exit(1 if MISSED else 0)

@@ -696,7 +696,8 @@
       "versao": 5,
       "code": "tools/read_rules.py",
       "hash": "8c252a3ebfcef90138881be64bcdde3dd9067702b5d2eeab481659d28b559c80",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T14:07:28Z"
     },
     {
       "id": "ferramenta:measure@3",
@@ -803,7 +804,8 @@
       "versao": 5,
       "code": "tools/make_fixtures.py",
       "hash": "53b9cbde5ef2b80501f7c991174bcd50f96c38af51db0479c699975e9684d1b9",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T14:18:21Z"
     },
     {
       "id": "ferramenta:measure@4",
@@ -876,7 +878,8 @@
       "versao": 20,
       "code": "verify.py",
       "hash": "31307c41a337c1705387e1b302577ebc63cf4219989bc1219c942083038bfb93",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T14:07:29Z"
     },
     {
       "id": "ferramenta:measure-reader@3",
@@ -887,7 +890,8 @@
       "versao": 3,
       "code": "tools/measure_reader.py",
       "hash": "b62909b877e02f35f331360717305dbe38f2a8e94ace0452bc7c88e6cd7cca52",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T14:07:28Z"
     },
     {
       "id": "ferramenta:make-training@3",
@@ -898,6 +902,74 @@
       "versao": 3,
       "code": "tools/make_training.py",
       "hash": "0762ac527cbf96784bfd0958dcc27cd9ba60fa5a931fbcb19bc5f89bee28df6f",
+      "retired": true,
+      "retired_at": "2026-10-25T14:07:28Z"
+    },
+    {
+      "id": "ferramenta:read-rules@6",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 6,
+      "code": "tools/read_rules.py",
+      "hash": "db0b4d7c7c29a844d2c15909131876da83d3a51c81fbb7185745b58f8e6bbe2e",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure-reader@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/measure_reader.py",
+      "hash": "19b673d6cebb1656a89167340e8105efd0e2d11b27686f38b152027f0ac1ac1d",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:make-training@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/make_training.py",
+      "hash": "42f9fbcb6e75de868a193c1b429e88ddee0c486d0eaba7c49689d6bab15fb3af",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@21",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 21,
+      "code": "verify.py",
+      "hash": "be12e03a47ef357da881d8e8d7d7abb013ea699912b16a2f78044dee822dca4e",
+      "retired": true,
+      "retired_at": "2026-10-25T14:18:21Z"
+    },
+    {
+      "id": "ferramenta:make-fixtures@6",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 6,
+      "code": "tools/make_fixtures.py",
+      "hash": "5c1a2767a42a5051e0bd9614ec192f8e045f603063dca6b4b29d16fbd9818030",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@22",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 22,
+      "code": "verify.py",
+      "hash": "148a016b2e15f63f01616c4f46f536e90e8dc1bf04eec5464547e5dee76cc928",
       "retired": false
     }
   ]

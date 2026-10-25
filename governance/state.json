@@ -50,6 +50,16 @@
       "revision": 1,
       "state": "proposed"
     },
+    "product_rule|product_rule:forma-canonica-da-leitura": {
+      "events": [
+        43
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:principais-do-log": {
       "events": [
         1
@@ -207,7 +217,8 @@
     "regra|regra:ccp:limiar-consulta-previa-obras@v1": {
       "events": [
         14,
-        15
+        15,
+        44
       ],
       "family": "A",
       "proposer": "leitor:a",
@@ -217,15 +228,22 @@
           "family": "B",
           "independence": "blind",
           "verdict": "request_evidence"
+        },
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
         }
       ],
       "revision": 1,
-      "state": "proposed"
+      "state": "settled"
     },
     "regra|regra:ccp:limiar-consulta-previa-obras@v2": {
       "events": [
         16,
-        17
+        17,
+        45
       ],
       "family": "A",
       "proposer": "leitor:a",
@@ -235,10 +253,16 @@
           "family": "B",
           "independence": "blind",
           "verdict": "request_evidence"
+        },
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
         }
       ],
       "revision": 1,
-      "state": "proposed"
+      "state": "settled"
     },
     "regra|regra:ccp:prazo-minimo-concurso-joue@v1": {
       "events": [
@@ -387,6 +411,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 42,
-  "head": "94591e572c1bca416a96f94c99d7155cb810635de108221ef20d55fd9eeea71a"
+  "events": 45,
+  "head": "2932e59d8d1a064fb5ff7b654339d80506b54cb3aea3b775e3da3c9552804bc6"
 }

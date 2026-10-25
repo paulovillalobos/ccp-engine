@@ -5,15 +5,15 @@ Gerado por tools/read_rules.py a partir das respostas guardadas em governance/re
 | tipo | propostas | settled | ai_reviewed | proposed | sem leitura válida de A |
 |---|---|---|---|---|---|
 | jurisdicao | 2 | 0 | 0 | 2 | 0 |
-| limiar | 10 | 1 | 0 | 9 | 0 |
+| limiar | 10 | 3 | 0 | 7 | 0 |
 | prazo_minimo | 3 | 0 | 0 | 3 | 0 |
 | procedimento_admissivel | 2 | 0 | 0 | 2 | 0 |
 | seletor_regime | 1 | 0 | 0 | 1 | 0 |
 
-Acordo exato A vs B (passagens, condições e params iguais): 1 de 18.
+Acordo exato A vs B (a mesma leitura em forma canónica: regra de produto da pessoa, evento:43): 3 de 18.
 Acordo de direção A vs B (o valor de que a regra depende: limiar, dias, lista de procedimentos, regimes, efeito): 14 de 18.
 
-Pacotes escritos: pacote:ccp@2026-10-01 (um pacote só nomeia regras settled válidas na sua data; sem pacote dos dois lados não há diff).
+Pacotes escritos: pacote:ccp@2026-09-30, pacote:ccp@2026-10-01 (um pacote só nomeia regras settled válidas na sua data; sem pacote dos dois lados não há diff).
 
 | regra | tipo | estado | exato | direção |
 |---|---|---|---|---|
@@ -24,8 +24,8 @@ Pacotes escritos: pacote:ccp@2026-10-01 (um pacote só nomeia regras settled vá
 | regra:ccp:limiar-ajuste-direto-obras@v2 | limiar | settled | sim | sim |
 | regra:ccp:limiar-consulta-previa-bens-servicos@v1 | limiar | proposed | não | sim |
 | regra:ccp:limiar-consulta-previa-bens-servicos@v2 | limiar | proposed | não | sim |
-| regra:ccp:limiar-consulta-previa-obras@v1 | limiar | proposed | não | sim |
-| regra:ccp:limiar-consulta-previa-obras@v2 | limiar | proposed | não | sim |
+| regra:ccp:limiar-consulta-previa-obras@v1 | limiar | settled | sim | sim |
+| regra:ccp:limiar-consulta-previa-obras@v2 | limiar | settled | sim | sim |
 | regra:ccp:limiar-concurso-sem-joue-bens-servicos-estado@v1 | limiar | proposed | não | não |
 | regra:ccp:limiar-concurso-sem-joue-obras@v1 | limiar | proposed | não | sim |
 | regra:dlr-34-2008-m:coeficiente-madeira@v1 | jurisdicao | proposed | não | não |

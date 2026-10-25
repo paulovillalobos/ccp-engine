@@ -228,6 +228,54 @@ def norm_conditions(conds):
     return sorted(out, key=lambda c: canonical(c))
 
 
+# ---- canonical form of a reading (product rule product_rule:forma-canonica-da-leitura, evento:43; DECISIONS D43) -----
+CANON_RULE = "product_rule:forma-canonica-da-leitura"
+
+
+def _num(x):
+    return int(x) if isinstance(x, float) and x.is_integer() else x
+
+
+def _cval(v):
+    if isinstance(v, list):
+        return [json.loads(i) for i in sorted({json.dumps(_num(x), ensure_ascii=False) for x in v})]
+    return _num(v)
+
+
+def _ccond(c):
+    op, v = c.get("op"), _cval(c.get("value"))
+    if op in ("in", "not_in"):
+        items = v if isinstance(v, list) else [v]
+        if len(items) == 1:
+            return {"field": c.get("field"), "op": "eq" if op == "in" else "ne", "value": items[0]}
+        return {"field": c.get("field"), "op": op, "value": items}
+    if op in ("eq", "ne") and isinstance(v, list) and len(v) == 1:
+        return {"field": c.get("field"), "op": op, "value": v[0]}
+    return {"field": c.get("field"), "op": op, "value": v}
+
+
+def _cparams(p):
+    if isinstance(p, dict):
+        return {k: (sorted({canonical(_ccond(c)) for c in v}) if k == "predicate" and isinstance(v, list) else _cparams(v))
+                for k, v in p.items() if v is not None}
+    if isinstance(p, list):
+        items = [_cparams(x) for x in p]
+        return sorted(items, key=canonical) if items and all(isinstance(x, (dict, list)) for x in items) else sorted(items, key=str)
+    return _num(p)
+
+
+def canonical_reading(r):
+    """What a reading says, not how it is written: passages and conditions as sets, a one-value «in» is «eq», integral
+    numbers as integers, params' lists of objects as sets, null fields dropped. Two readings replicate each other when
+    their canonical forms are equal (the person's product rule, evento:43)."""
+    return {"passages": sorted(set(r["passages"])), "type": r.get("type"),
+            "conditions": sorted({canonical(_ccond(c)) for c in r["conditions"]}), "params": _cparams(r["params"])}
+
+
+def same_reading(a, b):
+    return a is not None and b is not None and canonical_reading(a) == canonical_reading(b)
+
+
 def key_param(r):
     """The number or list a reading turns on (agreement 'of direction', RESUMO.md)."""
     p, t = r["params"], r["type"]
@@ -268,12 +316,25 @@ def cmd_record():
             row["state"] = "sem leitura válida de leitor:a"
             continue
         if b is not None:
-            row["exact"] = (a["passages"], a["conditions"], a["params"]) == (b["passages"], b["conditions"], b["params"])
+            row["exact"] = same_reading(a, b)  # D43: replication is equality of canonical forms (evento:43)
             row["direction"] = key_param(a) == key_param(b)
         if t["rule"] in known:
             row["state"] = log.replay().state_of("regra", t["rule"])
             if b is not None and not row["exact"]:
                 disagreements.append((t, a, b))
+            elif b is not None and row["state"] == "proposed":
+                # D43: the stored blind answer of leitor:b replicates leitor:a's under the person's canonical form (evento:43):
+                # the same answer (same sha256) is recorded again as an uphold that names the product rule; nothing is re-asked
+                question = json.loads((d / "prompt.json").read_text(encoding="utf-8"))["prompt"].split("Pergunta: ", 1)[1]
+                canon_ev = next(ev["id"] for _, ev in log.events if ev["assertion"] == CANON_RULE)
+                ev_b = log.review("leitor:b", "regra", t["rule"], 1, f"Blind, same prompt as leitor:a: {question}", "blind", "uphold", now_utc(),
+                                  payload={"chosen_passages": b["passages"], "conditions": b["conditions"], "params": b["params"],
+                                           "answer_sha256": rb["sha256"], "replication": CANON_RULE, "product_rule_event": canon_ev})
+                rule = store.current(t["rule"])
+                readings = [x for x in rule["readings"] if x["principal"] != "leitor:b"] + [
+                    {"principal": "leitor:b", "family": "B", "at": rb["at"], "chosen_passages": b["passages"], "blind": True, "evento": ev_b}]
+                row["state"] = log.replay().state_of("regra", t["rule"])
+                writer.revise(rule, {"readings": readings, "state": row["state"]}, now_utc())
             continue
         # the rule leitor:a's reading would make must be a valid regra before anything enters the log
         draft = build_rule(store, t, a, a["passages"], [{"principal": "leitor:a", "family": "A", "at": ra["at"], "chosen_passages": a["passages"],
@@ -369,7 +430,7 @@ def write_reports(summary, disagreements, packs=()):
     for k, x in sorted(by_type.items()):
         R.append(f"| {k} | {x['propostas']} | {x['settled']} | {x['ai_reviewed']} | {x['proposed']} | {x['sem_leitura']} |")
     both = [r for r in summary if r["exact"] is not None]
-    R += ["", f"Acordo exato A vs B (passagens, condições e params iguais): {sum(r['exact'] for r in both)} de {len(both)}.",
+    R += ["", f"Acordo exato A vs B (a mesma leitura em forma canónica: regra de produto da pessoa, evento:43): {sum(r['exact'] for r in both)} de {len(both)}.",
           f"Acordo de direção A vs B (o valor de que a regra depende: limiar, dias, lista de procedimentos, regimes, efeito): "
           f"{sum(r['direction'] for r in both)} de {len(both)}.", "",
           f"Pacotes escritos: {', '.join(packs) or 'nenhum'} (um pacote só nomeia regras settled válidas na sua data; sem pacote dos dois "

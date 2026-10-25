@@ -38,18 +38,6 @@ Gerado por tools/read_rules.py a partir das respostas guardadas. Para a pessoa v
 - leitor:b: passagens ccp:art20.1.c; condições [{"field": "tipo_contrato", "op": "in", "value": ["bens", "servicos"]}, {"field": "tipo_procedimento", "op": "eq", "value": "consulta_previa"}]; params {"threshold": {"field": "preco_base", "comparator": "lt", "value": 130000, "currency": "EUR"}}
 - difere em: conditions
 
-## regra:ccp:limiar-consulta-previa-obras@v1 (limiar)
-
-- leitor:a: passagens ccp:art19.c; condições [{"field": "tipo_contrato", "op": "in", "value": "obras"}, {"field": "tipo_procedimento", "op": "in", "value": "consulta_previa"}]; params {"threshold": {"field": "preco_base", "comparator": "lt", "value": 150000, "currency": "EUR"}}
-- leitor:b: passagens ccp:art19.c; condições [{"field": "tipo_contrato", "op": "eq", "value": "obras"}, {"field": "tipo_procedimento", "op": "eq", "value": "consulta_previa"}]; params {"threshold": {"field": "preco_base", "comparator": "lt", "value": 150000, "currency": "EUR"}}
-- difere em: conditions
-
-## regra:ccp:limiar-consulta-previa-obras@v2 (limiar)
-
-- leitor:a: passagens ccp:art19.c; condições [{"field": "tipo_contrato", "op": "in", "value": "obras"}, {"field": "tipo_procedimento", "op": "in", "value": "consulta_previa"}]; params {"threshold": {"field": "preco_base", "comparator": "lt", "value": 1000000, "currency": "EUR"}}
-- leitor:b: passagens ccp:art19.c; condições [{"field": "tipo_contrato", "op": "eq", "value": "obras"}, {"field": "tipo_procedimento", "op": "eq", "value": "consulta_previa"}]; params {"threshold": {"field": "preco_base", "comparator": "lt", "value": 1000000, "currency": "EUR"}}
-- difere em: conditions
-
 ## regra:ccp:limiar-concurso-sem-joue-bens-servicos-estado@v1 (limiar)
 
 - leitor:a: passagens ccp:art20.1.b, ccp:art474.3.b, eu-2025-2152:art1.1.b; condições [{"field": "preco_base", "op": "lt", "value": 139000}, {"field": "tipo_entidade", "op": "eq", "value": "estado"}, {"field": "tipo_procedimento", "op": "eq", "value": "concurso_publico"}]; params {"threshold": {"field": "preco_base", "comparator": "lt", "value": 139000, "currency": "EUR"}}

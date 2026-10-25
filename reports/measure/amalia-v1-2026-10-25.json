@@ -240,35 +240,35 @@
     "leitor-a": {
      "parsed": true,
      "vs_b_direction": true,
-     "vs_b_exact": false,
-     "vs_settled_direction": null,
-     "vs_settled_exact": null
+     "vs_b_exact": true,
+     "vs_settled_direction": true,
+     "vs_settled_exact": true
     },
     "leitor-a2": {
      "parsed": true,
      "vs_b_direction": true,
-     "vs_b_exact": false,
-     "vs_settled_direction": null,
-     "vs_settled_exact": null
+     "vs_b_exact": true,
+     "vs_settled_direction": true,
+     "vs_settled_exact": true
     },
-    "state": "proposed"
+    "state": "settled"
    },
    "regra:ccp:limiar-consulta-previa-obras@v2": {
     "leitor-a": {
      "parsed": true,
      "vs_b_direction": true,
-     "vs_b_exact": false,
-     "vs_settled_direction": null,
-     "vs_settled_exact": null
+     "vs_b_exact": true,
+     "vs_settled_direction": true,
+     "vs_settled_exact": true
     },
     "leitor-a2": {
      "parsed": true,
      "vs_b_direction": true,
-     "vs_b_exact": false,
-     "vs_settled_direction": null,
-     "vs_settled_exact": null
+     "vs_b_exact": true,
+     "vs_settled_direction": true,
+     "vs_settled_exact": true
     },
-    "state": "proposed"
+    "state": "settled"
    },
    "regra:ccp:prazo-minimo-concurso-joue@v1": {
     "leitor-a": {
@@ -407,7 +407,7 @@
     "state": "proposed"
    }
   },
-  "settled": 1,
+  "settled": 3,
   "summary": {
    "leitor-a": {
     "parsed": 18,
@@ -421,29 +421,29 @@
      ]
     },
     "vs_b_exact": {
-     "k": 1,
+     "k": 3,
      "n": 18,
-     "value": 0.0556,
+     "value": 0.1667,
      "wilson95": [
-      0.0099,
-      0.2576
+      0.0584,
+      0.3922
      ]
     },
     "vs_settled_direction": {
-     "k": 1,
-     "n": 1,
+     "k": 3,
+     "n": 3,
      "value": 1.0,
      "wilson95": [
-      0.2065,
+      0.4385,
       1.0
      ]
     },
     "vs_settled_exact": {
-     "k": 1,
-     "n": 1,
+     "k": 3,
+     "n": 3,
      "value": 1.0,
      "wilson95": [
-      0.2065,
+      0.4385,
       1.0
      ]
     }
@@ -460,29 +460,29 @@
      ]
     },
     "vs_b_exact": {
-     "k": 2,
+     "k": 4,
      "n": 18,
-     "value": 0.1111,
+     "value": 0.2222,
      "wilson95": [
-      0.031,
-      0.328
+      0.09,
+      0.4521
      ]
     },
     "vs_settled_direction": {
-     "k": 1,
-     "n": 1,
+     "k": 3,
+     "n": 3,
      "value": 1.0,
      "wilson95": [
-      0.2065,
+      0.4385,
       1.0
      ]
     },
     "vs_settled_exact": {
-     "k": 1,
-     "n": 1,
+     "k": 3,
+     "n": 3,
      "value": 1.0,
      "wilson95": [
-      0.2065,
+      0.4385,
       1.0
      ]
     }

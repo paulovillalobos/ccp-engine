@@ -418,4 +418,7 @@ _leak = json.dumps({"answer": json.dumps({"passagem": _reserved}), "id": "escolh
 overlay("train-example-touches-reserved-article", "TRAIN", {"training/data/escolha_passagem/train.jsonl": (V / "training/data/escolha_passagem/train.jsonl").read_text(encoding="utf-8") + _leak})
 _edited = dict(_held, reserved_articles=_held["reserved_articles"][1:])
 overlay("train-reservation-edited", "TRAIN", {"training/TRAIN-HELD-OUT.json": json.dumps(_edited, ensure_ascii=False, indent=1) + "\n"})
+# D43: a rule revision above the log's may carry a review's new state, never new content
+_above = load("regra/ccp-limiar-ajuste-direto-bens.json"); _above.update(revision=2, supersedes=1, title="Ajuste direto: outra redação", recorded_at="2026-10-24T21:00:00Z")
+overlay("state-rule-above-log-changes-content", "STATE", {"regra/ccp-limiar-ajuste-direto-bens.r2.json": _above})
 print("valid objects:", sum(1 for p in V.rglob("*.json")), "events:", len(EVENTS), "broken overlays:", len(list(B.iterdir())))

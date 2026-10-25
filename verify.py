@@ -441,7 +441,8 @@ def check_states(store, rp, out):
     its replayed state, or `proposed` when the log has never seen it. A disputa is the replayed dispute (disputant,
     verdict, state, adjudicator, outcome, adjudication event). An afirmação's conversion_evento is the
     afirmacao_conversao event of that afirmação by its converted_by. A package names only rules whose named revision is
-    settled. A reading chooses only passages its rule cites. A rule's highest stored revision is the log's revision."""
+    settled. A reading chooses only passages its rule cites. A rule's highest stored revision is at least the log's revision
+    (above it only for a state change by review, with unchanged content and the replay's state: D43)."""
     events = {ev["id"]: ev for _, ev in store.events}
     for l in current_of(store, "link").values():
         if l["evento"] is None:
@@ -492,8 +493,23 @@ def check_states(store, rp, out):
             if extra:
                 out.append(("STATE", f"{r['id']}: reading {rd['evento']} chose {extra}, which the rule does not cite"))
         known = rp.assertions.get(("regra", r["id"]))
-        if known and known["revision"] != r["revision"]:
+        if known and r["revision"] < known["revision"]:
             out.append(("STATE", f"{r['id']}: highest stored revision is {r['revision']} but the log is at revision {known['revision']}"))
+        elif known and r["revision"] > known["revision"]:
+            # D43: a review changes a rule's state, not its content: the object may gain revisions above the log's (a
+            # correct is what raises the log's revision) only while its content is the log's latest (check_rule_content)
+            # and its state is the replay's
+            if r["state"] != rp.state_of("regra", r["id"]):
+                out.append(("STATE", f"{r['id']}: revision {r['revision']} above the log's {known['revision']} with state {r['state']}, the replay says {rp.state_of('regra', r['id'])}"))
+            base = next((x for x in store.revisions(r["id"]) if x["revision"] == known["revision"]), None)
+            moving = {"revision", "recorded_at", "supersedes", "state", "readings"}
+            if base is None or {k: v for k, v in r.items() if k not in moving} != {k: v for k, v in base.items() if k not in moving}:
+                out.append(("STATE", f"{r['id']}: revision {r['revision']} above the log's {known['revision']} changes the rule's content; only a correct in the log may"))
+            old = {rd["evento"] for rd in base["readings"]} if base else set()
+            for rd in r["readings"]:
+                ev = events_by_id.get(rd["evento"])
+                if rd["evento"] not in old and not (ev and ev["action"] == "review" and ev["assertion"] == r["id"]):
+                    out.append(("STATE", f"{r['id']}: revision {r['revision']} adds reading {rd['evento']}, which is not a review of this rule in the log"))
 
 
 def _version(store, passage_id, version):

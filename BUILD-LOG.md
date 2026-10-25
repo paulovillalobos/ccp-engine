@@ -1019,3 +1019,27 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   red as before (data/facts empty).
 - Next: the audit of phase 4.
 - Why: a figure is the stored answers recomputed, with its interval and the comparison beside it.
+
+## 2026-10-25 — D43: the person's canonical form of a reading (product rule, evento:43)
+- Done: Paulo decided that two readings that say the same thing written differently are the same reading. Recorded as
+  evento:43 (pessoa:paulo, product_rule:forma-canonica-da-leitura, his words in the reason; recorded at his request).
+  tools/read_rules.py: canonical_reading / same_reading (passages and conditions as sets, one-value in/not_in = eq/ne,
+  integral numbers as integers, params' object lists as sets, null fields dropped). `record` applied it to the stored
+  answers without asking any reader again: where leitor:b's blind answer replicates leitor:a's, a new leitor:b uphold
+  review (same answer_sha256, payload names the product rule and its event) — evento:44, evento:45 — and a rule
+  revision r2 with the new readings and state.
+- Result: B3 settled 1/18 -> 3/18 (limiar-consulta-previa-obras@v1 and @v2 join limiar-ajuste-direto-obras@v2); exact
+  A vs B 3/18, direction 14/18 unchanged. The other 15 differ in substance (passages, conditions, values, regimes).
+  New packages pacote:ccp@2026-09-30 (r1) and pacote:ccp@2026-10-01 (r3) and the first package diff in rules/diff/.
+- Measurement re-derived with the same canonical form (measure-reader@4): b) exact with leitor:b base 3/18 (16.7 %
+  [5.8, 39.2]) -> v1 4/18 (22.2 % [9.0, 45.2]); with the settled rules 3/3 -> 3/3. a) and c) unchanged.
+- verify STATE (D43): reviews do not raise the log's revision, so a rule object may sit above it, but only with the
+  replay's state and the content of the revision the log is at; an added reading must be a review of that rule. The
+  red-team found the first version let content through (M20 MISSED); closed, plus R1/R2 mutations and the broken overlay
+  state-rule-above-log-changes-content (30 overlays).
+- make_training: regra_tipada reads rule states from the log prefix the training data was sealed at (events 1..41);
+  INDEX.json regenerates byte-identical.
+- Registered: read-rules@6, measure-reader@4, make-training@4, make-fixtures@6, verify@22.
+- Next: the extractor brief (BASE anúncios, then contratos) so the rules meet real procedures.
+- Why: the code compares what a reading says; only the person decides that rule, and no reading of the law is approved
+  by a person.

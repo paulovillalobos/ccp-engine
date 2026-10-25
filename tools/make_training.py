@@ -55,6 +55,7 @@ PER_PASSAGE = 3
 MAX_PROMPT_CHARS = 9000
 MAX_PASSAGE_CHARS = 2500
 ESCOLHA_CAP = {"artigo": 4000, "numero": 5000, "alinea": 3000}
+LOG_PREFIX = 41  # governance events at T1 generation (evento:41 sealed the training index)
 OPENING = "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais."
 
 
@@ -441,8 +442,13 @@ def regra_tipada(ctx, readings=None):
     for r in ctx.store.objects["regra"]:
         if r["id"] not in rules or r["revision"] > rules[r["id"]]["revision"]:
             rules[r["id"]] = r
+    # the rule states as the log stood when training/data was generated and sealed (events 1..LOG_PREFIX): a later
+    # settlement (D43) does not move a sealed training set; a v0.3 of the data would raise LOG_PREFIX on purpose
+    from engine import governance as _gov
+    prefix = ctx.store.events[:LOG_PREFIX]
+    settled_then = {aid for (atype, aid), a in _gov.replay(prefix, ctx.store.principals).assertions.items() if atype == "regra" and a["state"] == "settled"}
     for rid, r in sorted(rules.items()):
-        if r.get("state") != "settled":
+        if rid not in settled_then:
             continue
         slug = rid.split(":", 1)[1].replace(":", "--").replace("@", "-at-")
         pf = readings / slug / "prompt.json"
