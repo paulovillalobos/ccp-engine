@@ -1250,3 +1250,17 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   failure; the 246 failures are E1b's interim state (245 PDFs fetched after its interim build, its proposer not yet
   registered), which its final build resolves.
 - Next: TED probe, documents probe.
+
+## 2026-10-25 M.2 TED and procedure documents: two probes (commit: M.2: probes — one TED daily package (77 Portuguese notices), 10 procedure-document links (acinGov serves the pieces, Vortal does not))
+- TED: three GETs; the first two to wrong addresses (issue not zero-padded: 400, 404), then the daily package of
+  OJ S 190/2026 (01/10/2026), 18 115 918 bytes, sha256 70f29e9a…, raw raw:ted:pacote-diario:202600190. 3 631 EU
+  notices; 77 with a Portuguese organisation, 74 with a NIF; 50 contract notices, 21 award notices. Counted only.
+  adapters/ted/ (record.py, count.py, PROBE.md).
+- Procedure documents: 10 October procedures, one GET every 10 s, no refusal. acinGov 5/5 served the whole set of
+  pieces as one ZIP (3–5 PDFs, 0.4–19 MB), stored as raw:pecas:documento:<key>; Vortal 5/5 served a 686-byte
+  JavaScript shell («Vision»): not readable with a plain GET (a rendering browser would be a decision for the person).
+  adapters/pecas/ (probe.py, probe-log.jsonl, PROBE.md). No facts.
+- Checked: `verify.py --store data governance`: the probes add no failure; the 285 failures are E1b's interim state
+  (PDFs fetched after its interim build, proposer not yet registered).
+- Next: E1b's final build when the download ends; the samples stay on this branch for the person to review.
+- Why: one sample of every source is now in the store, each with its raw and sha256.
