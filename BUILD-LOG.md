@@ -1214,3 +1214,18 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   would never have ended and held caffeinate on itself); replaced by one that waits on the fetch pid.
 - Next: interim builds as the new-regime notices land; the full build when the download ends.
 - Why: useful data in hours (the new regime) and a balanced sample of the year within about 8 h.
+
+## 2026-10-25 M.0 extractor: a sample of every source tonight (commit: M.0: decision and done-criterion for one sample of every source)
+- Decided by the person in this session (his words, 2026-10-25 ~22:15Z): «¿por qué no mejor ingestamos … un poquito de
+  todo?», then, pointing at the table of the system's pieces (law, rules, anúncios, DR notices, contratos, modificações,
+  entidades, TED, procedure documents, 100 hand-checked cases): «esto bro». This changes the brief's order (E2 was to
+  start after E1's merge; TED and procedure documents were out of scope in E1/E2): recorded as his decision.
+- Scope tonight, on branch extractor-muestras (stacked on E1b; the DR download keeps running on its own):
+  BASE contratos 2026, entidades and modificações 2026 (one GET each from dados.gov.pt), a sample of each mapped to the
+  store; TED: one daily package (one GET), Portugal's notices counted and joined where possible; procedure documents:
+  10 procedures of October, one GET every 10 s, stop on 403/429, what each platform serves recorded. Not mine: the
+  rules (the readers) and the 100 hand-checked cases (people).
+- Done when: every downloaded file has its raw (sha256, URL, captured_at), bytes out of git; a sample of each BASE
+  source mapped to facts / units / entities with origin (raw, field); TED and documents reported as probes;
+  `verify.py --store data governance` 0 failures; COVERAGE per source; branch pushed.
+- Why: one sample of every source shows the whole system end to end tomorrow, instead of more of the same notices.
