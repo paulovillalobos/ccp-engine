@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-25T03:33:43Z",
+ "sha256": "1085dd680c55e0b95a357c606d8f5086f066879f8f2dda453df23488c7712435",
+ "answer": "{\"passagens\": [\"ccp:art20.1.c\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": \"consulta_previa\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"obras\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"bens\"}, {\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": \"servicos\"}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"le\", \"value\": 130000, \"currency\": \"EUR\"}}}"
+}

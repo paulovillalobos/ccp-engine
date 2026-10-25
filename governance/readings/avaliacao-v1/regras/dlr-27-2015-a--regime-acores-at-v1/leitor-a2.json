@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-25T03:33:43Z",
+ "sha256": "7c7f130a914ff08bfe6e3d71c36ecbeee8fcb38a54f9e3d157154458026608d9",
+ "answer": "{\"passagens\": [\"dlr-27-2015-a:art19.a\", \"dlr-27-2015-a:art20.a\"], \"tipo\": \"jurisdicao\", \"condicoes\": [{\"field\": \"preco_base\", \"op\": \"in\", \"value\": 150000}, {\"field\": \"preco_base\", \"op\": \"in\", \"value\": 75000}], \"params\": {\"territory\": \"PT-AC\", \"predicate\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": \"ajuste_direto\"}, {\"field\": \"tipo_entidade\", \"op\": \"in\", \"value\": \"outra\"}], \"effect\": {\"multiply_thresholds_by\": 1, \"replace_norma\": \"norma:dlr-27-2015-a\"}}}"
+}

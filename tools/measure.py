@@ -261,6 +261,12 @@ def cmd_seal():
                "files": len(files)}
     if train_held.exists():
         payload["train_held_out_sha256"] = hashlib.sha256(train_held.read_bytes()).hexdigest()
+    aval = ROOT / "governance/readings/avaliacao-v1"  # D42: the T3 answers (leitor:a / leitor:a2) ride on the same seal
+    aval_files = sorted(p for p in aval.rglob("*") if p.is_file() and p.name != "INDEX.json") if aval.exists() else []
+    if aval_files:
+        aidx = {"files": {str(p.relative_to(aval)): hashlib.sha256(p.read_bytes()).hexdigest() for p in aval_files}}
+        (aval / "INDEX.json").write_text(json.dumps(aidx, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+        payload["avaliacao_index_sha256"] = sha256_text(canonical(aidx))
     if train_index.exists():
         payload["training_index_sha256"] = sha256_text(canonical(json.loads(train_index.read_text(encoding="utf-8"))))
     ev = log.propose(tool, "caso_referencia", f"selo:casos:{n}", payload, now_utc())

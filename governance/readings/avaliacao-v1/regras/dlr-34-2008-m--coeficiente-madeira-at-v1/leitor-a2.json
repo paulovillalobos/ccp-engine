@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-25T03:33:43Z",
+ "sha256": "6fa6068ca01eb19edff5ff645427c72e2a6f953962edc542bf4dd626544d2139",
+ "answer": "{\"passagens\": [\"dlr-34-2008-m:art4.1\", \"dlr-34-2008-m:art4.2\", \"dlr-34-2008-m:art4.3\", \"dlr-34-2008-m:art4.4\"], \"tipo\": \"jurisdicao\", \"condicoes\": [{\"field\": \"territorio\", \"op\": \"eq\", \"value\": \"PT-MA\"}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_limitado_previa_qualificacao\"}, {\"field\": \"preco_base\", \"op\": \"not_in\", \"value\": []}], \"params\": {\"territory\": \"PT-MA\", \"predicate\": [], \"effect\": {\"multiply_thresholds_by\": 1.45, \"replace_norma\": \"norma:dlr-34-2008-m\"}}}"
+}

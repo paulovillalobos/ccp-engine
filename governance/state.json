@@ -40,6 +40,16 @@
       "revision": 1,
       "state": "proposed"
     },
+    "caso_referencia|selo:casos:5": {
+      "events": [
+        42
+      ],
+      "family": null,
+      "proposer": "ferramenta:measure@4",
+      "reviews": [],
+      "revision": 1,
+      "state": "proposed"
+    },
     "product_rule|product_rule:principais-do-log": {
       "events": [
         1
@@ -377,6 +387,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 41,
-  "head": "7edc9e04cd89bd0c948c0cb67af3b19184b465b053c961670e90df0c59e7fa7b"
+  "events": 42,
+  "head": "94591e572c1bca416a96f94c99d7155cb810635de108221ef20d55fd9eeea71a"
 }

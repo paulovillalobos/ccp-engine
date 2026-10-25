@@ -965,3 +965,57 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - test_t1 green (4/4). Registered: make-training@2, verify@18, make-fixtures@5.
 - Next: T2 the adapter on Modal.
 - Why: a reader trained on the law's own structure, with nothing in the data that a model wrote.
+
+## 2026-10-25 T2 the adapter amalia-ccp-lei-v1 trained on Modal (commit: T2: LoRA v1 of the reader trained on Modal from training/data; MANIFEST and COST in training/runs/v1)
+- Done: training/train_lora.py (outside engine/, tools/, verify.py), training/README.md. Base AMALIA-9B-0626-DPO revision
+  c4614b9b5c7b; LoRA r 16, alpha 32, dropout 0.05 on q/k/v/o/gate/up/down (50 921 472 trainable parameters); H100, bf16,
+  gradient checkpointing; 2 epochs, AdamW lr 1e-4, 20 warm-up steps then linear decay, effective batch 16,
+  length-sorted micro-batches <= 24 000 tokens; chat format with the reader's system prompt; loss on answer tokens only.
+  Mixture: every train example except escolha_passagem, cut (by sha256 of the id) to the sum of the others: escolha
+  4 450, texto_vigente 3 942, nota_dr 506, remissao 2, regra_tipada 0 = 8 900 examples (escolha exactly 50 %),
+  8 946 426 tokens per epoch, none dropped.
+- Run (training/runs/v1/MANIFEST.json): repo commit 2f3a71300 (training/ and law/ clean), 2026-10-25T02:02:01Z to
+  03:11:27Z, 540 optimizer steps in 4 110.8 s; loss 1.885 at step 1, 0.012 at step 20, <= 0.01 from step 30 on, 0.0000
+  at step 400 (the answers are short structured data; how much of it generalises is T3's question). One CUDA allocator
+  warning at step ~205 (a 2.5 GB allocation retried; training continued). Adapter in the Modal volume amalia-lora as
+  amalia-ccp-lei-v1 (adapter_model.safetensors sha256 74a74d56…); the earlier amalia-rjue-v6 there was not read,
+  loaded or mixed. Modal app ap-us38gDvzpTWhn0xlpEmclw.
+- Cost (training/runs/v1/COST.json, Modal billing report read after the hour closed): training 4.6684 USD (H100 4.5666);
+  evaluation of the base 0.4926 USD, of v1 0.8016 USD; phase total 5.9626 USD.
+- Principal: leitor:a2 (family A, motor amalia-9b-0626-dpo+ccp-lei-v1, versao 74a74d569498) registered in
+  governance/principals.json (committed with T3, the commit that first uses it); leitor:a stays the base.
+- Next: T3 measurement.
+- Why: a family-A reader trained only on the law's own structure, with a manifest that names every input.
+
+## 2026-10-25 T3 measurement: base vs v1 (commit: T3: leitor:a vs leitor:a2 on the held-out tasks, the 18 rules and the 20 cases; answers sealed; report re-derived by verify)
+- Done: readers/leitor_a_modal.py gains --lora v1 (vLLM LoRA from the volume; answer file leitor-a2.json) and a JSONL
+  mode for the held-out task files (B3/B5 directory mode unchanged). tools/measure_reader.py (ferramenta, no model) reads
+  the stored answers; reports/measure/amalia-v1-2026-10-25.{json,md}; verify MEAS recomputes amalia-*.json with it.
+  Answers in governance/readings/avaliacao-v1/ (3 430 per reader on the tasks; 18 rules and 20 cases for leitor:a2; the
+  base's rule and case answers are the B3/B5 files), sealed by evento:42 (measure@4, avaliacao_index_sha256; D42).
+- a) held out, exact accuracy, base -> v1 (95 % Wilson):
+  escolha_passagem 94.6 % [93.5, 95.4] (2 106/2 227) -> 98.7 % [98.1, 99.1] (2 198/2 227);
+  texto_vigente 41.4 % [38.2, 44.7] (374/903) -> 99.5 % [98.7, 99.8] (898/903);
+  nota_dr 61.7 % [56.1, 67.1] (184/298) -> 98.3 % [96.1, 99.3] (293/298);
+  remissao 1/1 -> 1/1 (n = 1, [20.6, 100]); regra_tipada 0/1 -> 0/1 (n = 1, [0, 79.3]).
+- b) the 18 B3 rules: exact agreement with leitor:b 1/18 -> 2/18 (5.6 % [1.0, 25.8] -> 11.1 % [3.1, 32.8]; the new one is
+  limiar-ajuste-direto-obras@v1); direction 14/18 -> 14/18; with the settled rule exact 1/1 -> 1/1, direction 1/1 -> 1/1.
+- c) the 20 cases (236 pairs): A vs B exact 44.0 % [37.7, 50.4] (102/232), direction 96.1 %; A2 vs B exact 62.2 %
+  [55.8, 68.2] (143/230), direction 96.5 % [93.3, 98.2]; A vs A2 exact 46.1 % (105/228), direction 99.6 %; on the 6
+  expected verdicts (A = B, not nao_aplica) A2 gives the same in 3 (50 % [18.8, 81.2]).
+- Measurement correction, disclosed: the first report compared answers as canonical text, so leitor:a2's 150000.0 differed
+  from 150000 and the order of conditions counted; B3's uphold compares with Python equality and tools/read_rules.py
+  sorts passages and conditions. measure_reader now compares integral floats as integers and conditions / passages as
+  sets (measure-reader@2); before the correction b) read 0/18 exact for v1 and 0/1 with the settled rule.
+- Finding: the regra_tipada example's prompt equals the B3 prompt, but its stored schema has its keys sorted (the jsonl
+  is written with sort_keys); under guided decoding the field order changes the answer: with «condicoes» first, base and
+  v1 add a condition preco_base < 150 000 and miss; with the B3 order (passagens first) v1 matches the settled rule. Not
+  changed here (training/data is sealed); the generator should keep the prompt.json key order in a next version.
+- Fixes on the way: the D42 seal check now runs only against the repository's own log (a fixture store failed
+  test_evidence); tests/fill/test_b5_measure.py reads the B5 report, not amalia-* (sorted order put it last).
+- No model name in publishable outputs: the report's reader label says «base + adaptador v1» and training/data/REPORT.md
+  «the family-A reader's tokenizer»; the report file name amalia-v1-<date> is the one the phase brief fixed (kept).
+- Registered: measure@4, measure-reader@3, make-training@3 (report text only; INDEX.json unchanged), verify@20. B4 stays
+  red as before (data/facts empty).
+- Next: the audit of phase 4.
+- Why: a figure is the stored answers recomputed, with its interval and the comparison beside it.

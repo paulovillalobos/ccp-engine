@@ -1,0 +1,621 @@
+{
+ "cases": {
+  "A2_vs_B": {
+   "answered_by_both": 230,
+   "direction": {
+    "k": 222,
+    "n": 230,
+    "value": 0.9652,
+    "wilson95": [
+     0.9329,
+     0.9823
+    ]
+   },
+   "exact": {
+    "k": 143,
+    "n": 230,
+    "value": 0.6217,
+    "wilson95": [
+     0.5576,
+     0.6819
+    ]
+   }
+  },
+  "A_vs_A2": {
+   "answered_by_both": 228,
+   "direction": {
+    "k": 227,
+    "n": 228,
+    "value": 0.9956,
+    "wilson95": [
+     0.9756,
+     0.9992
+    ]
+   },
+   "exact": {
+    "k": 105,
+    "n": 228,
+    "value": 0.4605,
+    "wilson95": [
+     0.397,
+     0.5253
+    ]
+   }
+  },
+  "A_vs_B": {
+   "answered_by_both": 232,
+   "direction": {
+    "k": 223,
+    "n": 232,
+    "value": 0.9612,
+    "wilson95": [
+     0.9279,
+     0.9795
+    ]
+   },
+   "exact": {
+    "k": 102,
+    "n": 232,
+    "value": 0.4397,
+    "wilson95": [
+     0.3773,
+     0.504
+    ]
+   }
+  },
+  "answered": {
+   "leitor-a": 232,
+   "leitor-a2": 230,
+   "leitor-b": 236
+  },
+  "cases": 20,
+  "pairs": 236,
+  "vs_expected": {
+   "leitor-a": {
+    "k": 6,
+    "n": 6,
+    "value": 1.0,
+    "wilson95": [
+     0.6097,
+     1.0
+    ]
+   },
+   "leitor-a2": {
+    "k": 3,
+    "n": 6,
+    "value": 0.5,
+    "wilson95": [
+     0.1876,
+     0.8124
+    ]
+   },
+   "pairs": 6
+  }
+ },
+ "date": "2026-10-25",
+ "readers": {
+  "leitor-a": "leitor:a (base)",
+  "leitor-a2": "leitor:a2 (base + adaptador v1)"
+ },
+ "rules": {
+  "n": 18,
+  "rules": {
+   "regra:ccp:limiar-ajuste-direto-bens-servicos@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-ajuste-direto-bens-servicos@v2": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-ajuste-direto-obras@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": true,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-ajuste-direto-obras@v2": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": true,
+     "vs_settled_direction": true,
+     "vs_settled_exact": true
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": true,
+     "vs_settled_direction": true,
+     "vs_settled_exact": true
+    },
+    "state": "settled"
+   },
+   "regra:ccp:limiar-concurso-sem-joue-bens-servicos-estado@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-concurso-sem-joue-obras@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-consulta-previa-bens-servicos@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-consulta-previa-bens-servicos@v2": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-consulta-previa-obras@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:limiar-consulta-previa-obras@v2": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:prazo-minimo-concurso-joue@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:procedimentos-admissiveis@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:ccp:procedimentos-admissiveis@v2": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": true,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:dl-177-2026:seletor-regime@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:dlr-27-2015-a:regime-acores@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   },
+   "regra:dlr-34-2008-m:coeficiente-madeira@v1": {
+    "leitor-a": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "leitor-a2": {
+     "parsed": true,
+     "vs_b_direction": false,
+     "vs_b_exact": false,
+     "vs_settled_direction": null,
+     "vs_settled_exact": null
+    },
+    "state": "proposed"
+   }
+  },
+  "settled": 1,
+  "summary": {
+   "leitor-a": {
+    "parsed": 18,
+    "vs_b_direction": {
+     "k": 14,
+     "n": 18,
+     "value": 0.7778,
+     "wilson95": [
+      0.5479,
+      0.91
+     ]
+    },
+    "vs_b_exact": {
+     "k": 1,
+     "n": 18,
+     "value": 0.0556,
+     "wilson95": [
+      0.0099,
+      0.2576
+     ]
+    },
+    "vs_settled_direction": {
+     "k": 1,
+     "n": 1,
+     "value": 1.0,
+     "wilson95": [
+      0.2065,
+      1.0
+     ]
+    },
+    "vs_settled_exact": {
+     "k": 1,
+     "n": 1,
+     "value": 1.0,
+     "wilson95": [
+      0.2065,
+      1.0
+     ]
+    }
+   },
+   "leitor-a2": {
+    "parsed": 18,
+    "vs_b_direction": {
+     "k": 14,
+     "n": 18,
+     "value": 0.7778,
+     "wilson95": [
+      0.5479,
+      0.91
+     ]
+    },
+    "vs_b_exact": {
+     "k": 2,
+     "n": 18,
+     "value": 0.1111,
+     "wilson95": [
+      0.031,
+      0.328
+     ]
+    },
+    "vs_settled_direction": {
+     "k": 1,
+     "n": 1,
+     "value": 1.0,
+     "wilson95": [
+      0.2065,
+      1.0
+     ]
+    },
+    "vs_settled_exact": {
+     "k": 1,
+     "n": 1,
+     "value": 1.0,
+     "wilson95": [
+      0.2065,
+      1.0
+     ]
+    }
+   }
+  }
+ },
+ "tasks": {
+  "escolha_passagem": {
+   "held_out": 2227,
+   "leitor-a": {
+    "answered": 2227,
+    "k": 2106,
+    "n": 2227,
+    "unparseable": 0,
+    "value": 0.9457,
+    "wilson95": [
+     0.9355,
+     0.9543
+    ]
+   },
+   "leitor-a2": {
+    "answered": 2227,
+    "k": 2198,
+    "n": 2227,
+    "unparseable": 0,
+    "value": 0.987,
+    "wilson95": [
+     0.9814,
+     0.9909
+    ]
+   }
+  },
+  "nota_dr": {
+   "held_out": 298,
+   "leitor-a": {
+    "answered": 298,
+    "k": 184,
+    "n": 298,
+    "unparseable": 0,
+    "value": 0.6174,
+    "wilson95": [
+     0.5611,
+     0.6708
+    ]
+   },
+   "leitor-a2": {
+    "answered": 298,
+    "k": 293,
+    "n": 298,
+    "unparseable": 0,
+    "value": 0.9832,
+    "wilson95": [
+     0.9613,
+     0.9928
+    ]
+   }
+  },
+  "regra_tipada": {
+   "held_out": 1,
+   "leitor-a": {
+    "answered": 1,
+    "k": 0,
+    "n": 1,
+    "unparseable": 0,
+    "value": 0.0,
+    "wilson95": [
+     0.0,
+     0.7935
+    ]
+   },
+   "leitor-a2": {
+    "answered": 1,
+    "k": 0,
+    "n": 1,
+    "unparseable": 0,
+    "value": 0.0,
+    "wilson95": [
+     0.0,
+     0.7935
+    ]
+   }
+  },
+  "remissao": {
+   "held_out": 1,
+   "leitor-a": {
+    "answered": 1,
+    "k": 1,
+    "n": 1,
+    "unparseable": 0,
+    "value": 1.0,
+    "wilson95": [
+     0.2065,
+     1.0
+    ]
+   },
+   "leitor-a2": {
+    "answered": 1,
+    "k": 1,
+    "n": 1,
+    "unparseable": 0,
+    "value": 1.0,
+    "wilson95": [
+     0.2065,
+     1.0
+    ]
+   }
+  },
+  "texto_vigente": {
+   "held_out": 903,
+   "leitor-a": {
+    "answered": 903,
+    "k": 374,
+    "n": 903,
+    "unparseable": 0,
+    "value": 0.4142,
+    "wilson95": [
+     0.3825,
+     0.4466
+    ]
+   },
+   "leitor-a2": {
+    "answered": 903,
+    "k": 898,
+    "n": 903,
+    "unparseable": 0,
+    "value": 0.9945,
+    "wilson95": [
+     0.9871,
+     0.9976
+    ]
+   }
+  }
+ },
+ "tool": "ccp-measure-reader-0.1",
+ "training_index_examples": 15937
+}

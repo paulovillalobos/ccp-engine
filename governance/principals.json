@@ -707,7 +707,8 @@
       "versao": 3,
       "code": "tools/measure.py",
       "hash": "d3aaae2fa3261c4a25c2c183569869b5800a1f2053322a3ae3f863cfa1e01c0d",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T02:02:39Z"
     },
     {
       "id": "ferramenta:make-training@1",
@@ -754,7 +755,8 @@
       "versao": 2,
       "code": "tools/make_training.py",
       "hash": "ca7f18d78af73768985f35405046994aa691519ce3c5cfb84de93b9862eee5a3",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T13:17:01Z"
     },
     {
       "id": "ferramenta:verify@17",
@@ -789,7 +791,8 @@
       "versao": 18,
       "code": "verify.py",
       "hash": "55916f8ff8e9076278e6606514fdc6575eae6f6feda43936bddff27d9dd48728",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T02:02:39Z"
     },
     {
       "id": "ferramenta:make-fixtures@5",
@@ -800,6 +803,101 @@
       "versao": 5,
       "code": "tools/make_fixtures.py",
       "hash": "53b9cbde5ef2b80501f7c991174bcd50f96c38af51db0479c699975e9684d1b9",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/measure.py",
+      "hash": "fc2d225a49fb27201e258ae6aa040399582ffbf0171f3dad2a6ffb89a6d0fd4a",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure-reader@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_reader.py",
+      "hash": "8703ee1860963889ff7f19442bdd0751630a39c4d650f5d4f12903aab1d675e4",
+      "retired": true,
+      "retired_at": "2026-10-25T03:38:13Z"
+    },
+    {
+      "id": "ferramenta:verify@19",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 19,
+      "code": "verify.py",
+      "hash": "f5df0d008269b27ab5b04eea29cf798d0a80fcd4a0f375b748de014007e961c3",
+      "retired": true,
+      "retired_at": "2026-10-25T03:48:41Z"
+    },
+    {
+      "id": "leitor:a2",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v1",
+        "versao": "74a74d569498"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 4: the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v1 (adapter_model.safetensors sha256 74a74d56…), trained on training/data generated from law/ by code; training/runs/v1/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:measure-reader@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_reader.py",
+      "hash": "590076ffc0b8a98658f704a7d2f7a01b7b9cadd0e8331e56450c1a35052917c9",
+      "retired": true,
+      "retired_at": "2026-10-25T13:17:01Z"
+    },
+    {
+      "id": "ferramenta:verify@20",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 20,
+      "code": "verify.py",
+      "hash": "31307c41a337c1705387e1b302577ebc63cf4219989bc1219c942083038bfb93",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure-reader@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/measure_reader.py",
+      "hash": "b62909b877e02f35f331360717305dbe38f2a8e94ace0452bc7c88e6cd7cca52",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:make-training@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/make_training.py",
+      "hash": "0762ac527cbf96784bfd0958dcc27cd9ba60fa5a931fbcb19bc5f89bee28df6f",
       "retired": false
     }
   ]

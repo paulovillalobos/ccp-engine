@@ -30,8 +30,8 @@ Check codes (one per invariant of ARQUITECTURA.md §2, plus the structural ones)
   I12     an aggregate rule's completeness threshold not decided by a pessoa's product_rule decision in the log
   PROV    a ferramenta principal whose code no longer hashes to the hash registered for its version
   READ    a leitor's raw answer file missing or not hashing to the answer_sha256 its log event recorded
-  SEAL    measurement annotations, law/HELD-OUT.json, law/TRAIN-HELD-OUT.json or training/data/INDEX.json not matching the
-          newest seal event in the log (tools/measure.py seal; D40)
+  SEAL    measurement annotations, law/HELD-OUT.json, law/TRAIN-HELD-OUT.json, training/data/INDEX.json or the T3 answers
+          (governance/readings/avaliacao-v1) not matching the newest seal event in the log (tools/measure.py seal; D40, D42)
   PACK    a package's hash is not the hash of its rule list, or it names rules that are not in the store
   DIFF    a stored diff differs from the one rebuilt from its two packages (engine/rules.py once A4 lands; D14)
 Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red-team mutations):
@@ -54,7 +54,8 @@ Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red
           source field) is not in its adapter's mapping
   BENCH   a held-out reference case without frozen_at; law/HELD-OUT.json changed after it was frozen; a package built
           after frozen_at holding a rule whose log events name a held-out unit
-  MEAS    a reports/measure/<date>.json that tools/measure.py does not recompute from the stored answers
+  MEAS    a reports/measure/<date>.json that tools/measure.py (amalia-*.json: tools/measure_reader.py) does not recompute
+          from the stored answers
   TRAIN   training/data (INDEX.json and every example file) that tools/make_training.py does not regenerate byte for byte
           from the store and the training reservation; a train example touching a reserved article (phase 4, T1)
   I01 also: raw bytes that no raw record names (orphans)
@@ -868,6 +869,22 @@ def check_seal(store, out, casos_root=None, held_out=None, train_files=None):
         train_held, train_index = train_files or (ROOT / "law/TRAIN-HELD-OUT.json", ROOT / "training/data/INDEX.json")
         if train_held.exists() and hashlib.sha256(train_held.read_bytes()).hexdigest() != seal.get("train_held_out_sha256"):
             out.append(("SEAL", f"{train_held.name} not sealed, or changed after the newest seal ({seals[-1]['id']})"))
+        aval = ROOT / "governance/readings/avaliacao-v1"
+        repo_log = Path(gov).resolve() == (ROOT / "governance").resolve()
+        aval_files = sorted(p for p in aval.rglob("*") if p.is_file() and p.name != "INDEX.json") if aval.exists() and repo_log else []
+        if aval_files:  # D42: the T3 answers are sealed like the B5 annotations (the repository's own log only)
+            aidx_path = aval / "INDEX.json"
+            aidx = json.loads(aidx_path.read_text(encoding="utf-8")) if aidx_path.exists() else None
+            if aidx is None or hashlib.sha256(canonical_json(aidx).encode("utf-8")).hexdigest() != seal.get("avaliacao_index_sha256"):
+                out.append(("SEAL", f"governance/readings/avaliacao-v1/INDEX.json missing, not sealed, or changed after the newest seal ({seals[-1]['id']})"))
+            else:
+                for f in aval_files:
+                    rel = str(f.relative_to(aval))
+                    if aidx["files"].get(rel) != hashlib.sha256(f.read_bytes()).hexdigest():
+                        out.append(("SEAL", f"avaliacao-v1/{rel}: not in the sealed index or changed after it"))
+                for rel in aidx["files"]:
+                    if not (aval / rel).exists():
+                        out.append(("SEAL", f"avaliacao-v1/{rel}: sealed answer file missing"))
         if train_index.exists():
             idx = json.loads(train_index.read_text(encoding="utf-8"))
             if hashlib.sha256(canonical_json(idx).encode("utf-8")).hexdigest() != seal.get("training_index_sha256"):
@@ -973,6 +990,12 @@ def check_measure():
                 out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
+        if f.name.startswith("amalia-"):  # phase 4 T3: the reader before / after its adapter (tools/measure_reader.py)
+            import measure_reader  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_reader.report(stored["date"])
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_reader.py recomputes from the stored answers"))
+            continue
         again = measure.report(stored["store"], stored["date"])
         if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
             out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure.py recomputes from the stored answers"))

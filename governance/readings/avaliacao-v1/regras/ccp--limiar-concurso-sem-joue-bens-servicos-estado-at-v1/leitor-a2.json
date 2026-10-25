@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-25T03:33:43Z",
+ "sha256": "7546ca862d6a1623510852cebb1915864bb646e0c4204ea2a600d5afff4bd838",
+ "answer": "{\"passagens\": [\"ccp:art20.1.b\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": \"concurso_limitado_previa_qualificacao\"}, {\"field\": \"territorio\", \"op\": \"in\", \"value\": \"PT\"}, {\"field\": \"preco_base\", \"op\": \"in\", \"value\": \"inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º\"}, {\"field\": \"publicado_joue\", \"op\": \"in\", \"value\": \"false\"}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 139000, \"currency\": \"EUR\"}}}"
+}

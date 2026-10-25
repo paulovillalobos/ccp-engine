@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-25T03:33:43Z",
+ "sha256": "6c38cb2a268aee71cb25ad5bfc7b54810b284daf5a1cc78ec646bee84cf12ca0",
+ "answer": "{\"passagens\": [\"ccp:art19.b\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": \"concurso_limitado_previa_qualificacao\"}, {\"field\": \"territorio\", \"op\": \"in\", \"value\": \"PT\"}, {\"field\": \"preco_base\", \"op\": \"in\", \"value\": \"inferior ao limiar\"}, {\"field\": \"tipo_entidade\", \"op\": \"in\", \"value\": \"estado\"}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 5404000, \"currency\": \"EUR\"}}}"
+}

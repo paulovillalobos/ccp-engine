@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-25T03:36:40Z",
+ "sha256": "baef6bfbd6e2288f0a6c78d8f12e7263854058b634d085e7687f7650940e7dde",
+ "answer": "{\"veredictos\": [{\"regra\": \"regra:ccp:limiar-ajuste-direto-bens-servicos@v1\", \"resultado\": \"cumpre\"}, {\"regra\": \"regra:ccp:limiar-ajuste-direto-obras@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:ccp:limiar-consulta-previa-bens-servicos@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:ccp:limiar-consulta-previa-obras@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:ccp:prazo-minimo-concurso-joue@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1\", \"resultado\": \"cumpre\"}, {\"regra\": \"regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1\", \"resultado\": \"cumpre\"}, {\"regra\": \"regra:ccp:procedimentos-admissiveis@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:dlr-27-2015-a:regime-acores@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:dlr-27-2015-a:regime-acores@v1\", \"resultado\": \"nao_aplica\"}, {\"regra\": \"regra:dlr-34-2008-m:coeficiente-madeira@v1\", \"resultado\": \"nao_aplica\"}]}"
+}
