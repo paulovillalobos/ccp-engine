@@ -79,5 +79,16 @@ def _stale_entity(s):
     (s / "entidade/nif-500000000-r2.json").write_text(json.dumps(e))
 run("N9 settled link to an entity whose head revision is stale", _stale_entity)
 run("N11 verdict known_at earlier than the log head it claims", lambda s: edit(s, PRAZO, lambda o: o.update(known_at="2026-10-24T19:05:00Z", recorded_at="2026-10-24T19:05:00Z", id=o["id"].replace("19:30:00Z", "19:05:00Z"))))
+# phase 4 (2026-10-25): D41 — a retired principal's events count only up to retired_at
+def _retire(at):
+    def fn(s):
+        p = s / "governance/principals.json"; d = json.loads(p.read_text())
+        for e in d["principals"]:
+            if e["id"] == "leitor:b":
+                e.update(retired=True, retired_at=at)
+        p.write_text(json.dumps(d, ensure_ascii=False))
+    return fn
+run("P1 leitor:b retired before the events it signed (retired_at earlier than its first event)", _retire("2026-10-24T19:00:00Z"))
+run("P2 leitor:b retired with no retired_at: none of its events may count", lambda s: _retire(None)(s) or (lambda p: p.write_text(json.dumps({"principals": [{k: v for k, v in e.items() if k != "retired_at"} for e in json.loads(p.read_text())["principals"]]})))(s / "governance/principals.json"))
 print(f"{len(MISSED)} MISSED")
 sys.exit(1 if MISSED else 0)

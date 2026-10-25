@@ -8,7 +8,8 @@ replay; the write side — propose, review, approve, dispute, adjudicate — is 
 
 Rules, enforced on replay (engine/verify.py code I04 unless stated) and again by the write side:
   - the log is a hash chain with consecutive sequence numbers; nothing is edited or removed (I09)
-  - only registered, non-retired principals act, within their role's CAPABILITIES (the id prefix is the role)
+  - only registered principals act, within their role's CAPABILITIES (the id prefix is the role); a retired principal's
+    events count only up to its retired_at (D41)
   - approve and adjudicate are a pessoa's actions (invariant 4); nothing automated produces approval
   - a product_rule proposed by a pessoa with a reason is settled on record (a person's decision with its motive);
     one proposed by anything else waits for a pessoa's approve
@@ -79,8 +80,9 @@ def replay(events, principals) -> Replay:
         if p is None:
             rp.errors.append(("I04", f"event {n}: principal {pid} is not registered"))
             continue
-        if p.get("retired"):
-            rp.errors.append(("I04", f"event {n}: principal {pid} is retired"))
+        if p.get("retired") and not (p.get("retired_at") and str(ev.get("at", "")) <= p["retired_at"]):
+            # D41: a retired principal records nothing new; its events up to retired_at stay valid
+            rp.errors.append(("I04", f"event {n}: principal {pid} is retired" + (f" (since {p['retired_at']})" if p.get("retired_at") else "")))
         role = p.get("papel")
         if role != pid.split(":")[0]:
             rp.errors.append(("I04", f"event {n}: principal {pid} has role {role}, which is not its id prefix"))

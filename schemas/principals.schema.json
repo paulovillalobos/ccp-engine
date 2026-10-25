@@ -20,7 +20,8 @@
           "code": {"type": ["string", "null"], "minLength": 1, "description": "ferramenta: path of the tool's code inside the repository; verify checks its sha256 equals hash while the principal is not retired (PROV)."},
           "hash": {"oneOf": [{"$ref": "defs.schema.json#/$defs/sha256"}, {"type": "null"}]},
           "nota": {"type": "string"},
-          "retired": {"type": "boolean"}
+          "retired": {"type": "boolean"},
+          "retired_at": {"$ref": "defs.schema.json#/$defs/datetime", "description": "When the principal was retired (D41): its events at or before this instant stay valid; none after it."}
         },
         "required": ["id", "kind", "papel", "familia", "motor", "versao", "code", "hash", "retired"],
         "additionalProperties": false,

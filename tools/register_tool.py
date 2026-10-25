@@ -26,8 +26,10 @@ def register(gov_dir: Path, name: str, code: str, nota: str = None) -> str:
     if current and current[0]["hash"] == digest:
         return current[0]["id"]
     n = max([int(p["id"].rsplit("@", 1)[1]) for p in doc["principals"] if p["id"].startswith(f"ferramenta:{name}@")] or [0]) + 1
+    from engine.sources import now_utc
     for p in current:
         p["retired"] = True
+        p["retired_at"] = now_utc()  # D41: its events up to this instant stay valid
     entry = {"id": f"ferramenta:{name}@{n}", "kind": "codigo", "papel": "ferramenta", "familia": None, "motor": None, "versao": n, "code": code, "hash": digest, "retired": False}
     if nota:
         entry["nota"] = nota

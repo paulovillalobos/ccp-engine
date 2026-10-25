@@ -30,7 +30,8 @@ Check codes (one per invariant of ARQUITECTURA.md §2, plus the structural ones)
   I12     an aggregate rule's completeness threshold not decided by a pessoa's product_rule decision in the log
   PROV    a ferramenta principal whose code no longer hashes to the hash registered for its version
   READ    a leitor's raw answer file missing or not hashing to the answer_sha256 its log event recorded
-  SEAL    measurement annotations or law/HELD-OUT.json not matching the newest seal event in the log (tools/measure.py seal)
+  SEAL    measurement annotations, law/HELD-OUT.json, law/TRAIN-HELD-OUT.json or training/data/INDEX.json not matching the
+          newest seal event in the log (tools/measure.py seal; D40)
   PACK    a package's hash is not the hash of its rule list, or it names rules that are not in the store
   DIFF    a stored diff differs from the one rebuilt from its two packages (engine/rules.py once A4 lands; D14)
 Cross-object checks (A3b, audit of 2026-10-24; each has a broken overlay and red-team mutations):
@@ -819,7 +820,7 @@ def check_readings(store, out, readings_root=None):
             out.append(("READ", f"{ev['id']}: {f.relative_to(root)} does not hash to the sha256 the log recorded ({want[:12]}...)"))
 
 
-def check_seal(store, out, casos_root=None, held_out=None):
+def check_seal(store, out, casos_root=None, held_out=None, train_files=None):
     """SEAL (§8 replay): the measurement's raw annotations (governance/readings/casos/**) and law/HELD-OUT.json are
     sealed in the log by a ferramenta (tools/measure.py seal: assertion_type caso_referencia, assertion selo:casos:<n>,
     payload {index_sha256, held_out_sha256, files}). The newest seal must match governance/readings/casos/INDEX.json
@@ -857,6 +858,16 @@ def check_seal(store, out, casos_root=None, held_out=None):
             out.append(("SEAL", f"{rel}: sealed annotation file missing"))
     if held.exists() and hashlib.sha256(held.read_bytes()).hexdigest() != seal.get("held_out_sha256"):
         out.append(("SEAL", f"{held.name} changed after the newest seal ({seals[-1]['id']})"))
+    # D40: the training reservation and the training index are sealed by the same event once they exist (the
+    # repository's own files against the repository's own log; another store passes its paths explicitly)
+    if train_files is not None or Path(gov).resolve() == (ROOT / "governance").resolve():
+        train_held, train_index = train_files or (ROOT / "law/TRAIN-HELD-OUT.json", ROOT / "training/data/INDEX.json")
+        if train_held.exists() and hashlib.sha256(train_held.read_bytes()).hexdigest() != seal.get("train_held_out_sha256"):
+            out.append(("SEAL", f"{train_held.name} not sealed, or changed after the newest seal ({seals[-1]['id']})"))
+        if train_index.exists():
+            idx = json.loads(train_index.read_text(encoding="utf-8"))
+            if hashlib.sha256(canonical_json(idx).encode("utf-8")).hexdigest() != seal.get("training_index_sha256"):
+                out.append(("SEAL", f"training/data/INDEX.json not sealed, or changed after the newest seal ({seals[-1]['id']})"))
 
 
 def check_measure():

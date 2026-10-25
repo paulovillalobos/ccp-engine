@@ -70,3 +70,28 @@ def test_rule_content_is_the_log_replay(tmp_path):
     out = []
     verify.check_rule_content(Store([root]).load(), out)
     assert [c for c, _ in out] == ["STATE"]
+
+
+def test_training_files_ride_on_the_seal(tmp_path):
+    """D40: law/TRAIN-HELD-OUT.json and training/data/INDEX.json are sealed by the newest seal; a change after it is SEAL."""
+    root = _store(tmp_path)
+    casos = root / "governance/readings/casos"
+    casos.mkdir(parents=True)
+    (casos / "INDEX.json").write_text(json.dumps({"files": {}}, sort_keys=True), encoding="utf-8")
+    held = tmp_path / "HELD-OUT.json"
+    held.write_text("{}", encoding="utf-8")
+    train_held, train_index = tmp_path / "TRAIN-HELD-OUT.json", tmp_path / "INDEX.json"
+    train_held.write_text('{"frozen_at": "2026-10-25"}', encoding="utf-8")
+    train_index.write_text('{"tasks": {}}', encoding="utf-8")
+    payload = {"index_sha256": hashlib.sha256(verify.canonical_json({"files": {}}).encode("utf-8")).hexdigest(),
+               "held_out_sha256": hashlib.sha256(held.read_bytes()).hexdigest(), "files": 0,
+               "train_held_out_sha256": hashlib.sha256(train_held.read_bytes()).hexdigest(),
+               "training_index_sha256": hashlib.sha256(verify.canonical_json({"tasks": {}}).encode("utf-8")).hexdigest()}
+    Log(root / "governance").propose("ferramenta:ccp-link@1", "caso_referencia", "selo:casos:1", payload, AT)
+    out = []
+    verify.check_seal(Store([root]).load(), out, held_out=held, train_files=(train_held, train_index))
+    assert out == []
+    train_index.write_text('{"tasks": {"nota_dr": {}}}', encoding="utf-8")
+    out = []
+    verify.check_seal(Store([root]).load(), out, held_out=held, train_files=(train_held, train_index))
+    assert [c for c, _ in out] == ["SEAL"]

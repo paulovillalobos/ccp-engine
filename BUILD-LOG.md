@@ -909,3 +909,25 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the pessoa's four decisions (who proposes, what counts as replication, extractor delivery, adjudications);
   then B4 and B5 over real data.
 - Why: evidence that can change without the log noticing is not evidence.
+
+## 2026-10-25 T0 training held-out set, sealed before any example (commit: T0: training reservation per article, sealed in the log before any example; D40, D41)
+- Done: law/TRAIN-HELD-OUT.json (tools/make_training.py held-out, ferramenta:make-training@1): per article (the article
+  ancestor of a passage; a passage with none is its own unit) reserved when int(sha256(article id), 16) % 5 == 0, plus
+  the 15 articles the 18 B3 rules cite or offer as candidates (ccp art. 16, 19, 20, 135, 136, 474; dl-177-2026 art. 7,
+  10, 11; dlr-27-2015-a art. 1, 16, 19, 20; dlr-34-2008-m art. 4; eu-2025-2152 art. 1). Units 8 878, by hash 1 792,
+  by B3 15, reserved 1 801 (20.3 %). frozen_at 2026-10-25, definition sha256 recorded, file sha256 bb5644c6....
+  Sealed: tools/measure.py seal now carries train_held_out_sha256 (and training_index_sha256 once T1 exists), verify
+  SEAL compares the newest seal with both (D40). Red test first: tests/fill/test_t1_training.py, 4 failed before the
+  file existed; after T0 the held-out test is green, the three T1 tests stay red until T1.
+- Deviation, disclosed: the first `register_tool` calls failed (my shell call passed name and path as one argument), so
+  the first seal (evento:39) was signed by ferramenta:measure@2 although measure.py had already changed; measure@3 was
+  then registered and the seal repeated (evento:40, by measure@3). Both events stay (append-only).
+- Gap found and fixed (D41): retiring measure@2 made the governance replay refuse its past events (38, 39: I04) — the
+  replay refused every event of a retired principal, while principals.schema.json already said past events stay valid.
+  A principal now carries `retired_at`; events at or before it stay valid; register_tool stamps it. measure@2 gets
+  2026-10-25T01:31:56Z (the `at` of its successor's first event: upper bound). Red-team P1/P2 (retired before its
+  events; retired without retired_at) are caught as I04. tests/test_evidence.py gains the D40 seal test.
+- verify: ok (stores fixtures 58 / repo 68 096, 40 events / measure; 26 broken overlays refused). redteam: 0 MISSED.
+  Registered: make-training@1, measure@3, verify@16.
+- Next: T1 the generator.
+- Why: the training set must not be redrawable after the method meets it, like the measurement held-out set.

@@ -661,7 +661,8 @@
       "versao": 2,
       "code": "tools/measure.py",
       "hash": "e615a2cd3839a3d3ffd327eee8275e7daf7a408543ef363760f0e3045229d5ef",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-25T01:31:56Z"
     },
     {
       "id": "ferramenta:verify@13",
@@ -683,7 +684,7 @@
       "versao": 14,
       "code": "verify.py",
       "hash": "6193fa181649241d0614e9e5390ac8c20525a944ff5de712b7d0e8f0818a68b4",
-      "retired": false
+      "retired": true
     },
     {
       "id": "ferramenta:read-rules@5",
@@ -694,6 +695,51 @@
       "versao": 5,
       "code": "tools/read_rules.py",
       "hash": "8c252a3ebfcef90138881be64bcdde3dd9067702b5d2eeab481659d28b559c80",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/measure.py",
+      "hash": "d3aaae2fa3261c4a25c2c183569869b5800a1f2053322a3ae3f863cfa1e01c0d",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:make-training@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_training.py",
+      "hash": "a8de9b53f09191f4b76a7b352b20f8bc5914460c2b2f463c5f9dd3b44bd18d90",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@15",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 15,
+      "code": "verify.py",
+      "hash": "914335feda98ee31909bef82715f1caccfbdad2fe5f881de75a432be43f107dc",
+      "retired": true,
+      "retired_at": "2026-10-25T01:37:55Z"
+    },
+    {
+      "id": "ferramenta:verify@16",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 16,
+      "code": "verify.py",
+      "hash": "e95af79dbf2ec2c37a0df9852a432660cd57b2a1dba37ab627fc76c403785374",
       "retired": false
     }
   ]

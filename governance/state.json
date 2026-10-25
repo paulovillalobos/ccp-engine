@@ -10,6 +10,26 @@
       "revision": 1,
       "state": "proposed"
     },
+    "caso_referencia|selo:casos:2": {
+      "events": [
+        39
+      ],
+      "family": null,
+      "proposer": "ferramenta:measure@2",
+      "reviews": [],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "caso_referencia|selo:casos:3": {
+      "events": [
+        40
+      ],
+      "family": null,
+      "proposer": "ferramenta:measure@3",
+      "reviews": [],
+      "revision": 1,
+      "state": "proposed"
+    },
     "product_rule|product_rule:principais-do-log": {
       "events": [
         1
@@ -346,7 +366,16 @@
     }
   },
   "disputes": {},
-  "errors": [],
-  "events": 38,
-  "head": "3df4e7bcc511c6a5adc30bbfc97dd3f81565b30133d4cccb1c731d28b0193b55"
+  "errors": [
+    [
+      "I04",
+      "event 38: principal ferramenta:measure@2 is retired"
+    ],
+    [
+      "I04",
+      "event 39: principal ferramenta:measure@2 is retired"
+    ]
+  ],
+  "events": 40,
+  "head": "e0806b9021e1f69d429fbf7af272a4b3ba8620b8f30ff5ce64f2f4b1a5bed527"
 }

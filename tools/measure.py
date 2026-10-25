@@ -252,11 +252,18 @@ def cmd_seal():
     index = {"files": {str(p.relative_to(CASES_DIR)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}}
     (CASES_DIR / "INDEX.json").write_text(json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     held = ROOT / "law/HELD-OUT.json"
+    train_held = ROOT / "law/TRAIN-HELD-OUT.json"  # D40: the training reservation and the training index ride on the same seal
+    train_index = ROOT / "training/data/INDEX.json"
     log = Log(ROOT / "governance")
     n = 1 + sum(1 for _, ev in log.events if str(ev["assertion"]).startswith("selo:casos:"))
     tool = next(p["id"] for p in log.principals["principals"] if p["id"].startswith("ferramenta:measure@") and not p["retired"])
-    ev = log.propose(tool, "caso_referencia", f"selo:casos:{n}", {"index_sha256": sha256_text(canonical(index)), "held_out_sha256": hashlib.sha256(held.read_bytes()).hexdigest() if held.exists() else None,
-                                                                   "files": len(files)}, now_utc())
+    payload = {"index_sha256": sha256_text(canonical(index)), "held_out_sha256": hashlib.sha256(held.read_bytes()).hexdigest() if held.exists() else None,
+               "files": len(files)}
+    if train_held.exists():
+        payload["train_held_out_sha256"] = hashlib.sha256(train_held.read_bytes()).hexdigest()
+    if train_index.exists():
+        payload["training_index_sha256"] = sha256_text(canonical(json.loads(train_index.read_text(encoding="utf-8"))))
+    ev = log.propose(tool, "caso_referencia", f"selo:casos:{n}", payload, now_utc())
     log.write_state()
     print(ev, len(files), "files sealed")
 
