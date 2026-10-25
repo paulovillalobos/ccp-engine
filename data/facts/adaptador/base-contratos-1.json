@@ -1,0 +1,87 @@
+{
+  "id": "adaptador:base-contratos@1",
+  "revision": 1,
+  "recorded_at": "2026-10-25T22:45:00Z",
+  "source": "base-contratos",
+  "version": 1,
+  "code": "adapters/base-contratos/",
+  "mapping": [
+    {
+      "source_field": "tipoprocedimento",
+      "canonical_field": "tipo_procedimento",
+      "transform": "enum_map",
+      "enum_map": {
+        "Ajuste Direto Regime Geral": "ajuste_direto",
+        "Consulta Prévia": "consulta_previa",
+        "Concurso público": "concurso_publico",
+        "Concurso limitado por prévia qualificação": "concurso_limitado_previa_qualificacao",
+        "Procedimento de negociação": "procedimento_negociacao"
+      },
+      "note": "a fact of a proc unit created from contracts (no notice in adaptador:base-anuncios); acordo-quadro calls, contratação excluída, the simplified and Lei 30/2021 regimes and other values give no fact"
+    },
+    {
+      "source_field": "precoBaseProcedimento",
+      "canonical_field": "preco_base",
+      "transform": "identity",
+      "note": "EUR as a JSON number; 0 gives no fact; contracts of one procedure that disagree give no fact"
+    },
+    {
+      "source_field": "adjudicante",
+      "canonical_field": "adjudicante",
+      "transform": "nif",
+      "note": "the nine digits before ' - ' in the one-element list"
+    },
+    {
+      "source_field": "tipoContrato",
+      "canonical_field": "tipo_contrato",
+      "transform": "enum_map",
+      "enum_map": {
+        "Aquisição de bens móveis": "bens",
+        "Aquisição de serviços": "servicos",
+        "Empreitadas de obras públicas": "obras",
+        "Concessão de obras públicas": "concessao_obras",
+        "Concessão de serviços públicos": "concessao_servicos"
+      },
+      "note": "only a one-element list, as adaptador:base-anuncios"
+    },
+    {
+      "source_field": "precoContratual",
+      "canonical_field": "preco_contratual",
+      "transform": "identity",
+      "note": "EUR as a JSON number, a fact of the contrato unit; 0 gives no fact"
+    },
+    {
+      "source_field": "dataCelebracaoContrato",
+      "canonical_field": "data_celebracao_contrato",
+      "transform": "date_pt",
+      "note": "dd/mm/yyyy"
+    },
+    {
+      "source_field": "dataPublicacao",
+      "canonical_field": "data_publicacao_contrato",
+      "transform": "date_pt",
+      "note": "the date the contract was published in BASE"
+    },
+    {
+      "source_field": "adjudicatarios",
+      "canonical_field": "adjudicatario",
+      "transform": "nif",
+      "note": "the list of the nine-digit NIFs before ' - '; an element without a NIF ('-') makes the list give no fact"
+    },
+    {
+      "source_field": "modifContratoData",
+      "canonical_field": "data_modificacao",
+      "transform": "date_pt",
+      "note": "dd/mm/yyyy of 'dd/mm/yyyy hh:mm:ss', a fact of the mod unit; modifContratoPrecoAlterado and modifPrazoExecucao do not say whether they are the new value or the change, so they give no fact"
+    }
+  ],
+  "coverage": [
+    {
+      "period": "2026-10",
+      "expected": 15484,
+      "captured": 15108
+    }
+  ],
+  "proposed_by": "ferramenta:adapter-base-contratos@1",
+  "state": "proposed"
+}

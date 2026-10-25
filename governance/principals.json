@@ -1008,6 +1008,18 @@
       "hash": "aab4e341eff409f8c97bd8ddc92c080463f85f94ab657b5c9964f1c73ca576cb",
       "retired": false,
       "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
+    },
+    {
+      "id": "ferramenta:adapter-base-contratos@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "adapters/base-contratos/adapter.py",
+      "hash": "0f4a52c364e30d7368446bc4408781d9c55be9949bd2e03d23fc5e093d3e7eec",
+      "retired": false,
+      "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)"
     }
   ]
 }

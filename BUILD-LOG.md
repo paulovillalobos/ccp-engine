@@ -1229,3 +1229,24 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   source mapped to facts / units / entities with origin (raw, field); TED and documents reported as probes;
   `verify.py --store data governance` 0 failures; COVERAGE per source; branch pushed.
 - Why: one sample of every source shows the whole system end to end tomorrow, instead of more of the same notices.
+
+## 2026-10-25 M.1 BASE contratos, modificações, entidades: the October sample (commit: M.1: BASE contratos 2026 sample — 15 108 contracts, 10 630 procedures, 37 modifications, 97 701 facts)
+- Done: one GET each from dados.gov.pt at 22:23Z: contratos2026.zip (46 720 122 bytes, sha256 2ac78c54…; one member
+  Contratos2026.json, 356 423 059 bytes, 199 701 contracts), entidades.json (51 307 118 bytes, b18c981e…, 216 267
+  records), modcontrats2026.json (1 471 866 bytes, ea475adb…, 4 362 records). Bytes in data/raw/<source>/raw_bytes/,
+  gitignored. adapters/base-contratos/ (mapping.json, adapter.py build / check / register).
+- Sample: the 15 484 contracts BASE published in October 2026; 376 refused (idcontrato held by more than one record of
+  the year). Units: 15 108 contrato, 10 630 new proc (procedures without a notice in E1: ajustes diretos, consultas
+  prévias, acordo-quadro calls...), 37 mod. Facts: 97 701 with origin (raw, field). Joins: 1 937 contracts to a notice
+  of E1 by (nAnuncio, idINCM); on those, preco_base equal 1 905, tipo_procedimento equal 1 889, adjudicante equal
+  1 858 and different 79.
+- Found: entidades.json has no public / private field (nif, name, counts, country only), so it does not settle
+  entidade.type; adjudicatários without NIF 2 051 (no natural person's NIF appears: BASE seems to mask them); regime
+  declared in October: 289 contracts name DL 177/2026, most still name the old text (assertions, not facts; not
+  converted here). modifContratoPrecoAlterado and modifPrazoExecucao do not say whether they are the new value or the
+  change: no facts.
+- Registered: ferramenta:adapter-base-contratos@1; evento:48 proposes adaptador:base-contratos@1.
+- Checked: `adapter.py check` 15 154 files, 0 differ. `verify.py --store data governance`: the contract sample adds no
+  failure; the 246 failures are E1b's interim state (245 PDFs fetched after its interim build, its proposer not yet
+  registered), which its final build resolves.
+- Next: TED probe, documents probe.

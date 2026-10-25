@@ -1,0 +1,20 @@
+{
+  "contratos": {
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-contratos-de-2012-a-2026/20261025-100446-3ec38ae4/contratos2026.zip",
+    "at": "2026-10-25T22:23:08Z",
+    "sha256": "2ac78c54690f2e6456c071e07ba984cfacecf058f5b58a3786944d55fa938fb2"
+  },
+  "modificacoes": {
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-modificacoes-contratuais-de-2012-a-2026/20261025-100638-5cae3b8a/modcontrats2026.json",
+    "at": "2026-10-25T22:23:24Z",
+    "sha256": "ea475adb9f807371e8c1d9f3fb9b285b953f026949d3d775c8d1e5a3635317c2"
+  },
+  "entidades": {
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-entidades/20261025-100656-1ae8ad2c/entidades.json",
+    "at": "2026-10-25T22:23:15Z",
+    "sha256": "b18c981e24a48b5dd9161db79ff3acaec0afd2f760b44774d97e87002d0ad930"
+  },
+  "recorded_at": "2026-10-25T22:45:00Z",
+  "principal": "ferramenta:adapter-base-contratos@1",
+  "tool": "base-contratos-adapter-0.1"
+}
