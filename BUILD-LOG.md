@@ -1121,3 +1121,26 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the person reviews the PR; E2 (BASE contratos) waits for E1's merge. The fields the prazo rules need
   (data_envio_anuncio, publicado_joue, territorio, tipo_entidade, data_inicio_procedimento) are not in this source.
 - Why: a fact the dump does not state is left out so the engine says nao_avaliado instead of a verdict on a guess.
+
+## 2026-10-25 E1b.0 extractor: done-criterion for the DR notice PDFs (commit: E1b.0: done-criterion for the DR notice PDFs of the 22 252 procedures)
+- Decided by pessoa:paulo (relayed by the builder session, his words): «Sí, lanza E1b en la sesión del extractor,
+  despacio (1 cada 10 s)». The pre-registered test (foaap-core/ccp-mother-data/e1b-sample-2026-10-25: CRITERIA-v2
+  sha256 ae708e96…, VERDICT-v2) passed A–D on 200 unseen notices with parser parse.py sha256 a29220df….
+- Source: the Diário da República notice PDF each procedure's record links to (field `url`), only
+  files.diariodarepublica.pt (22 170 of the 22 252 procedures; the other 82 link to the Açores journal, acinGov, a
+  sharepoint page or nothing, and are counted, not fetched). Branch stacked on PR #1.
+- Done when, with the commands written in the E1b result entry:
+  1. Download: one GET every 10 s, User-Agent «ccp-engine research (passive read)»; any 403 or 429 stops the run and is
+     logged, and a resume starts no sooner than one hour after it; network errors are retried on resume; files already
+     stored are skipped. The fetch log is in git; the PDFs (about 1.5 GB) are not (data/raw/dr-anuncios/raw_bytes/,
+     gitignored), each PDF has a `raw` and a `documento` object with sha256 and URL in git.
+  2. Text: pypdf 6.14.2 with cryptography 50.0.1 on /usr/bin/python3 3.9.6, the versions the test ran; values by the
+     frozen parser, copied byte for byte and checked against its sha256 at every run; a PDF that breaks it is counted.
+  3. Facts per proc pointing at the document (documento, page, offsets, quote): data_envio_anuncio, publicado_joue,
+     nut_iii_adjudicante, territorio (NUT III mapping as data: PT2 -> PT-AC, PT3 -> PT-MA, other PT),
+     data_limite_propostas. Stored without becoming a rule field: norma_juridica_adjudicante. Not derived:
+     data_inicio_procedimento, tipo_entidade, prazo_propostas_dias.
+  4. Where the PDF and the dump disagree on data_limite_propostas: a `conflito` with both facts, resolution nao_avaliado.
+  5. COVERAGE.md per field and month, failed PDFs by reason, conflicts by kind; verify over data/ (with governance/);
+     run_engine rerun and its counts reported; a PR of its own, not merged.
+- Why: the dump lacks what the deadline rules read; the notice prints it under fixed labels.
