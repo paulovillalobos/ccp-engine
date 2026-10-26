@@ -1482,3 +1482,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   - adapters/medicao/score.py e997664b5d228f9e05564469797ba7a625e2621b5a7f443159f39a34ed90d3a0 (TED deadline_time as
     hour:minute; the contratos scoring is unchanged)
 - Next: sample.py ted --seed 20261028 --exclude adapters/medicao/ted/sample.json, then the blind reading.
+
+## 2026-10-26 X.4 TED v2 sample drawn and its parser output sealed (commit: X.4: TED v2 sample of 200 drawn by the sealed script (seed 20261028, v1's 200 excluded); sample.json and parsed.json sealed before the blind reading)
+- `adapters/medicao/sample.py ted --seed 20261028 --exclude adapters/medicao/ted/sample.json`: population 54 121 TED-XML and
+  41 942 eForms (v1's 200 left out); 100 + 100 drawn.
+- Sealed: adapters/medicao/ted-v2/sample.json ca9824d2807865917d130977fc1eb629268231181a622a176e105b08eeaa3a08,
+  adapters/medicao/ted-v2/parsed.json 2ae15b5ca1c55a602eba15c0476bd673c53849ad2d085bb65620592897c95856.
+- Next: the blind reading (same client and model), then scoring.
