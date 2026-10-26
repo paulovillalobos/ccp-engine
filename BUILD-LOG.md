@@ -1354,3 +1354,21 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   bucket, and creating one (`ccp-raw`, private) was refused by this session's permission policy (a shared resource).
   The bytes wait on the Mac (424 MB) until the person creates the bucket or allows it.
 - Next: TED Portuguese notices 2018–2026 and the Vortal copies of the DR notices, once the bytes have their place.
+
+## 2026-10-26 H.2 raw bytes to Supabase Storage (bucket ccp-raw), checked by sha256 (commit: H.2: raw bytes offloaded to Supabase Storage ccp-raw — upload, download back, sha256, then delete; 56 files, 507 MB)
+- The person created the private bucket ccp-raw in ccp-engine himself («ya está»; storage.buckets checked by the
+  builder: public = false, 2026-10-26 18:42:44Z). The builder relayed: upload, download each file back and compare its
+  sha256, only then delete the Mac copy.
+- Done: adapters/storage/offload.py: the Supabase CLI (logged in, linked to ccp-engine from a scratch workdir; no key
+  handled by this code) uploads data/raw/<source>/raw_bytes/<sha256> to ccp-raw/<source>/raw_bytes/<sha256>, downloads
+  it back, compares the sha256 with the name, and deletes the Mac copy only on a match; every step in
+  adapters/storage/offload-log.jsonl. Uploaded and verified: base-modificacoes 38 files (1.5 MB, test run), then every
+  file of 1 MB or more of base-historico (15), base-contratos (the 2026 zip), base-entidades (1), ted (1): 18 files,
+  505 MB. 0 hash mismatches.
+- Not uploaded: contratos2025.zip (55 383 072 bytes): Storage answered 413 «The object exceeded the maximum allowed size»
+  (the project's upload limit, 50 MB by default; raising it is a setting in the Supabase dashboard, the person's). It
+  stays on the Mac. The record slices under 1 MB (base-contratos, about 15 000) and the DR PDFs (still downloading,
+  read by E1b's build) stay for now: the CLI takes about 6 s per file.
+- Disk: 6.0 GB free afterwards. The drop since the morning is macOS swap (5 GB in use), not these files.
+- Consequence, as with M.6: verify on the Mac reports I01 for the raws whose bytes now live in the bucket; the builder's
+  proposal (adapters/plataformas/SCHEMA-PROPOSAL.md item 1) covers checking them where they live.
