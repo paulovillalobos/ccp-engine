@@ -1294,3 +1294,20 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: when the October DR notices are in (watcher), the interim DR build and verify; the platform raws and their
   facts once the downloads end (a build step, not written yet).
 - Why: the platforms hold typed data (Vortal) and the documents (acinGov) that the dump and the DR notice do not.
+
+## 2026-10-26 M.5 night: October complete in the DR; the platforms stopped on disk; their files recorded (commit: M.5: platform downloads recorded as raws; acinGov and Vortal stopped at the 2 GB disk guard)
+- DR: the watcher fired at 01:19:42Z: every October notice with a DR PDF is stored (1 763 PDFs in all, 0 errors).
+  Interim build (on this branch, not committed here: E1b's own PR carries it): 1 769 documents; October 1 226/1 226
+  with data_envio_anuncio, nut_iii_adjudicante, territorio, norma_juridica_adjudicante; publicado_joue 1 225;
+  data_limite_propostas 1 195 (the 31 others are concursos limitados and de conceção, whose notice has no deadline);
+  data_limite_propostas equal to the dump 1 734/1 734, NIF equal 1 769/1 769, 0 conflicts. `check` 0 differ.
+- Disk: acinGov's ZIPs average 33.4 MB, not the 5.9 MB estimated from five probes (one is 1.94 GB): 446 ZIPs took
+  14.9 GB, the free space fell to 1.7 GB, and both platform fetchers stopped at their 2 GB guard at ~00:55–00:58Z
+  (acinGov 446 of the 566 October ZIPs; Vortal 345 procedures, 16 HTTP 500 and 3 network errors to retry). My estimate
+  was wrong; no file was lost. The DR fetcher runs on (its guard is 1 GB; ~27 MB/h). Only scratch copies of files
+  already stored in data/ (same sha256) were removed. Nothing downloaded was deleted: that is the person's decision
+  (an external disk, or which files to move).
+- Done: adapters/plataformas/record.py: every stored platform file -> a raw (699 raw:vortal:*, 446
+  raw:pecas:documento:*), with captured_at = its GET. `verify.py --store data governance`: 1 failure, E1b's proposer
+  not yet registered (its final build registers it).
+- Next: the person decides the disk; the DR download goes on; E1b's final build when it ends.
