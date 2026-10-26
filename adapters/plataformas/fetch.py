@@ -59,7 +59,7 @@ def procedures(host):
                 continue
             rec = json.loads((DATA / r["bytes"]).read_bytes().decode("utf-8"))
             link = rec.get("PecasProcedimento") or ""
-            if re.match(rf"https://{re.escape(host)}/", link):
+            if re.match(rf"https://{re.escape(host)}/.", link):  # a bare homepage link names no procedure: nothing to read
                 items.append((r["id"].split(":", 3)[3], link, month_of(rec.get("dataPublicacao"))))
     items.sort()
     first = [x for x in items if x[2] >= NEW_REGIME]

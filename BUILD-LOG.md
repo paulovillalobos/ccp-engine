@@ -1325,3 +1325,20 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   those raws: adapters/plataformas/SCHEMA-PROPOSAL.md item 1 for the builder.
 - Resumed at 07:23Z: vortal (10 148 left), acingov (122 October ZIPs left; offloaded the same way when done). The DR
   download kept running (pid 7824).
+
+## 2026-10-26 M.7 the platforms run on Modal, for all of 2026 (commit: M.7: platform fetchers on Modal (volume ccp-raw-bytes) for every 2026 procedure; local platform files offloaded and checked)
+- Decided by the person (his words, ~07:50Z): «pásalo a modal … hay que dejar libre el disco para poder volver a
+  descargar más cosas, para hacer todo 2026, y directamente en modal». The DR download stays on the Mac (small, 1.6 GB
+  in all; its build reads the PDFs locally; moving it to a datacenter address mid-way would risk the DR's blocks).
+- Done: the local vortal and acingov fetchers stopped at 07:44Z; their files (87 ZIPs, 2.0 GB; 812 Vortal JSON,
+  12 MB) uploaded to ccp-raw-bytes, checked on Modal (539/539 and 812/812 hash to their names;
+  offload-check-pecas-2.json, offload-check-vortal.json), and the local copies removed: 15 GB free.
+- adapters/plataformas/modal_fetch.py: the same fetchers in one small CPU container on the person's Modal account,
+  writing to the volume (bytes under <source>/raw_bytes/<sha256>, log /logs/<platform>-log.jsonl, committed every 25
+  procedures), the same rules (one GET every 10 s per host, stop on 403/429, network errors retried by a later run),
+  a run stops before Modal's 24-hour limit and the next run continues. acingov now reads every 2026 procedure.
+  Tested on 5 + 5 procedures from Modal (no refusal; Vortal 4/5, one HTTP 500 to retry; acinGov 2/5: the other three
+  link to acinGov's homepage only, so fetch.py now skips bare homepage links: 5 on acinGov, 12 on Vortal).
+- Launched detached at 07:58Z: acingov (~9 200 ZIPs, ~26 h, two runs) and vortal (~10 100 procedures, ~56 h).
+- What lives where: GitHub holds every file's raw (sha256, URL, captured_at), the logs and the code; Modal holds the
+  bytes; anyone can re-hash a copy against its raw.
