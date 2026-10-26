@@ -1450,3 +1450,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   CLI cannot open Storage; the pending upload of the DR PDFs was stopped before it began. Reported to the builder.
 - Next: draw the TED sample (the bundles are on the Modal volume); the contratos sample waits for Storage (its zip is
   there only).
+
+## 2026-10-26 X.1 TED sample drawn and its parser output sealed (commit: X.1: TED sample of 200 (100 TED-XML, 100 eForms) drawn by the sealed script; sample.json and parsed.json sealed before the blind reading)
+- `adapters/medicao/sample.py ted` over the 105 Portuguese bundles from the Modal volume, minus 2018-01 and 2026-01:
+  population with a Portuguese buyer 54 221 TED-XML and 42 042 eForms (the buyer filter drops about 2 120 eForms notices
+  whose buyer is foreign); 100 + 100 drawn with random.Random(20261027).
+- Sealed: adapters/medicao/ted/sample.json d12f6a29158385d1dddc9951eaccefa202b788454b45ae5c8788b138f4c0ce8a,
+  adapters/medicao/ted/parsed.json 09df8fa4c52cf10e5f143432150258407f377fdbba8cccb23801d732992963d2. The 200 XML files are
+  re-derivable from the bundles and sample.json (scratch, not in git).
+- Next: check C, the blind family-B reading (reader B's bundled client, model model-b as named by the person for
+  the DR test), then A and B with the BASE anúncios once Storage is readable.
