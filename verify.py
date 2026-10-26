@@ -763,6 +763,7 @@ def check_store(roots):
     check_seal(store, out)
     for tdir, held in training_dirs(roots):
         check_training(store, out, tdir, held)
+        check_training_v2(store, out, tdir, held)
     return store, out
 
 
@@ -961,6 +962,34 @@ def check_training(store, out, training_dir, held_path):
             hit = [s for s in ex.get("sources", []) if article_of.get(s.split("@")[0]) in reserved]
             if hit:
                 out.append(("TRAIN", f"{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
+
+
+def check_training_v2(store, out, training_dir, held_path):
+    """TRAIN (phase 5, D46): training/data-v2 is tools/make_conditions.py's output over this store and reservation, byte
+    for byte, nothing unlisted, and no train example's passage is in a reserved article (read from the reservation)."""
+    data = Path(training_dir) / "data-v2"
+    if not (data / "INDEX.json").exists():
+        return
+    held = json.loads(Path(held_path).read_text(encoding="utf-8"))
+    sys.path.insert(0, str(ROOT / "tools"))
+    import make_conditions  # noqa: E402  (no model, no network)
+    import make_training  # noqa: E402
+    again = make_conditions.generate(store, held)
+    for rel, b in again.items():
+        f = data / rel
+        if not f.exists() or f.read_bytes() != b:
+            out.append(("TRAIN", f"data-v2/{rel}: not what tools/make_conditions.py regenerates from the store and the reservation"))
+    for f in sorted(p for p in data.rglob("*") if p.is_file()):
+        if str(f.relative_to(data)) not in again:
+            out.append(("TRAIN", f"data-v2/{f.relative_to(data)}: file the generator does not write"))
+    art_of = make_training.article_map(make_training.current_passages(store))
+    reserved = set(held.get("reserved_articles", []))
+    for f in sorted(data.glob("*/train.jsonl")):
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            ex = json.loads(line)
+            hit = [x for x in ex.get("sources", []) if art_of.get(x.split("@")[0], x) in reserved]
+            if hit:
+                out.append(("TRAIN", f"data-v2/{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
 
 
 def training_dirs(roots):
