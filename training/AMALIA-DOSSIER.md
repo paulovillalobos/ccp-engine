@@ -40,7 +40,7 @@ AFTER when its measurement exists.
 | base | 2.8 % (10/353) | 81.1 % (1 524 of 1 880) |
 | base + v1 | 0.0 % (0/353) | 78.6 % (1 146 of 1 458) |
 
-- Run: 745 steps, 5 484 s on one H100, 12 232 examples (0 dropped), 50.9 M trainable parameters, USD 5.12
+- Run: 745 steps, 5 484 s on one H100, 12 232 examples (0 dropped), 50.9 M trainable parameters, USD 6.20
   (`training/runs/v2/`).
 - AFTER (the same 353 reserved passages, `reports/measure/condicoes-v2-2026-10-26.md`):
 
@@ -56,6 +56,27 @@ AFTER when its measurement exists.
   público») was read identically by both and is the first of these four rules to settle. The two other deadline rules
   now agree on the article, the days and where they count from, and still differ on conditions; the regime selector
   differs in substance.
+
+## v3 (adapter `amalia-ccp-lei-v3`, 2026-10-26) — teaching it to split time into periods
+- Why: for the regime selector (which version of the law applies to a procedure by its start date) AMALIA answered
+  one period «from 2026-10-01 to 2026-10-01» where the second reader gave two periods split on that day.
+- New tasks (`training/data-v3/`, `tools/make_regimes.py`), labelled by code from the validity notes of the Diário da
+  República: the date an act enters into force, read from its own article (24 train / 8 reserved: few acts print it);
+  the partition of a passage's version history into periods (1 314 train / 301 reserved). Not taught on purpose: whether
+  a procedure started on the day of entry into force falls before or after. Mix: v2's plus these (14 908 examples).
+- Run: 921 steps, 6 714 s on one H100, USD 5.74 (`training/runs/v3/`).
+- Reserved results (`reports/measure/regimes-v3-2026-10-26.md`; BEFORE in `training/runs/v3/BEFORE.md`):
+
+| reader | periods: exact | periods: well-formed partition | entry date | conditions task, exact |
+|---|---|---|---|---|
+| base | 0.0 % (0/301) | 0.0 % | 6/8 | 2.8 % |
+| base + v2 | 0.0 % (0/301) | 0.0 % (every period left open) | 6/8 | 91.2 % |
+| base + v3 | **99.0 % [97.1, 99.7]** (298/301) | **99.3 %** | **8/8** | 91.8 % |
+
+- Rule test, round 5 (`governance/readings/ronda5/RONDA5.md`, round 4's prompt unchanged): the skill did not carry
+  over to the selector question; v3 still answers one period «from 2026-10-01 to 2026-10-01». On the deadline rules it
+  read no better than v2 (identical answer on one, extra conditions on another, conditions dropped on the one already
+  settled, which a later round does not reopen). Settled after five rounds: 1 of these 4.
 
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

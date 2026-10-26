@@ -1124,3 +1124,63 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the selector (blocks every route), then a–d (CPA art. 87.º to capture first).
 - Why: the family-A reader named conditions the text does not state; v2 learned not to, on articles it never saw, and
   the first rule settled by two families on its own.
+
+## 2026-10-26 — D47: AMALIA v3 (selector tasks); B3 round 5
+- Asked: the person approved the selector proposal (budget about USD 7).
+- Done: tools/make_regimes.py (make-regimes@1): entrada_em_vigor (24 / 8; only acts whose own article prints the date
+  of their entra_em_vigor vigências) and periodos_vigencia (1 314 / 301); verify TRAIN re-derives training/data-v3
+  (check_training_v2 generalised to a data dir and its generator). LoRA v3 amalia-ccp-lei-v3: 921 steps, 6 714 s H100,
+  USD 5.74 (training/runs/v3); principal leitor:a4. tools/measure_regimes.py (verify MEAS: regimes-*).
+- Measured on the reserved sets: periods exact base 0/301, v2 0/301 (it leaves every period open), v3 298/301 = 99.0 %
+  [97.1, 99.7], well-formed partition 99.3 %; entry date 6/8, 6/8, 8/8; condicoes_texto v3 91.8 % (v2 91.2 %: not lost).
+- Round 5 (prompt = round 4, committed before v3 existed): leitor:a4 corrects, leitor:b blind: evento:70–75. 0 settled.
+  Selector: v3 still gives one regime from 2026-10-01 to 2026-10-01 (the trained skill did not transfer to the selector
+  question); leitor:b now cites art. 10.º, 11.º and 7.º n.º 2 (two regimes split on 2026-10-01, as before). Deadlines: v3
+  repeats v2 on goods/services, adds conditions on works, drops the conditions on the JOUE rule.
+- Fix before the commit, disclosed: the first local recording of round 5 let leitor:a4 `correct` the JOUE rule settled
+  in round 4, which reopened it; and the «already recorded» check matched an identical answer of round 4. Both
+  recordings were discarded before any commit (git checkout of governance/ and the new rule files); record_round now
+  reports a later round's answers on a settled rule without recording them (D47 addendum), and matches answers per
+  round. JOUE stays settled from round 4.
+- Cost correction: v2's training was USD 6.20 once Modal's hours closed (first reading 5.12).
+- Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected).
+- Next: the selector needs another approach (the person decides); the dossier is updated.
+- Why: a trained skill is measured on reserved data and then on the real question; here the first passed and the
+  second did not, and the log keeps what two families settled.
+
+## 2026-10-26 — D47: AMALIA v3 (entrada_em_vigor, periodos_vigencia); B3 round 5
+- Asked: the person approved the selector proposal (about USD 7).
+- Done: tools/make_regimes.py (make-regimes@1) from law/ by code: entrada_em_vigor 24 train / 8 held out (acts whose own
+  article prints the date of their entra_em_vigor vigências), periodos_vigencia 1 314 / 301 (version histories → the
+  partition of time). Data, round 5 prompts (= round 4) and the BEFORE (base and v2) committed before v3 existed
+  (ab06bf81d, cf2f307bb). LoRA v3 amalia-ccp-lei-v3: 921 steps, 6 714 s H100 (training/runs/v3). Principal leitor:a4.
+- Measured on reserved (tools/measure_regimes.py; verify MEAS recomputes it): periods exact base 0/301, v2 0/301 → v3
+  99.0 % [97.1, 99.7] (298/301), well-formed partition 0 → 99.3 %; entry-into-force date 6/8 → 8/8; condicoes_texto
+  not forgotten (v3 91.8 %, invents 6.0 %, misses 3.2 %).
+- Round 5 (leitor:a4 proposes, leitor:b blind): evento:70–75. Nothing new settles. The selector: leitor:a4 still gives
+  one regime from 2026-10-01 to 2026-10-01 (art. 7.º n.º 2), so the partition learnt on version histories did not carry
+  to this question; leitor:b now cites art. 10.º, 11.º and 7.º n.º 2, two regimes split on 2026-10-01. Deadlines: same
+  article, days and counting point; conditions still differ.
+- Fix on the way: the first recording of round 5 let leitor:a4's `correct` reopen regra:ccp:prazo-minimo-concurso-joue@v1,
+  settled in round 4. Those events were never committed or pushed; they were discarded, record_round now skips a rule
+  settled in an earlier round (its answer is reported, not recorded), and round 5 was recorded again (read-rules@12).
+  measure-conditions@2 reads leitor-a4 too.
+- Next: a selector task built from the transitional norms of other acts (none reserved), then round 6.
+- Why: v3 learnt the skill it was trained on, on articles it never saw; the selector needs that skill applied to a
+  decree's entry into force, which is the next task.
+
+## 2026-10-26 — D48: the Postgres store (Supabase ccp-engine, eu-west-1)
+- Asked: the person, «Sí: crea las tablas con ese diseño (migraciones en el repo, RLS) y carga los 22.252 procedimientos
+  como prueba».
+- Done: supabase/migrations/20261026200000_ccp_store.sql (schema ccp: raw, adaptador, unidade, facto, entidade, alias,
+  link, documento, conflito, afirmacao, veredicto, regra; (id, revision) keys, the whole object in doc, query columns;
+  append-only triggers; RLS on with no policy; no API role can use the schema). db/pg.py: migrate (recorded in
+  supabase_migrations.schema_migrations), load (COPY into a temp table, insert on conflict do nothing), roundtrip.
+  Credentials in .env (gitignored, owner-only): the project ref and the database password only.
+- Checked: PR #1's data (commit c12d1d418) loaded: 181 628 objects (22 252 units, 131 558 facts, 22 253 raws, 228
+  entities, 2 668 aliases, 2 668 links, 1 adaptador); roundtrip 0 missing, 0 different; a second load inserts 0; an
+  update is refused by the trigger; database 169 MB; the facts of one procedure in about 100 ms, a count by procedure type
+  in about 80 ms (through the pooler from Lisbon).
+- Not yet: verify reading the database (today: the roundtrip against the store it was loaded from), the daily pipeline,
+  read-only views for the interface.
+- Why: git cannot hold millions of facts; the interface needs a database; nothing in it can change without a new revision.

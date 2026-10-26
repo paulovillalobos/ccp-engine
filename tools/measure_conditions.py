@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GOLD = ROOT / "training/data-v2/condicoes_texto/held_out.jsonl"
 ANSWERS = ROOT / "governance/readings/avaliacao-v2/condicoes_texto"
-READERS = [("leitor-a", "base"), ("leitor-a2", "base + adaptador v1"), ("leitor-a3", "base + adaptador v2")]
+READERS = [("leitor-a", "base"), ("leitor-a2", "base + adaptador v1"), ("leitor-a3", "base + adaptador v2"), ("leitor-a4", "base + adaptador v3")]
 FIELDS = ["menciona_joue", "territorio", "tipo_contrato", "tipo_procedimento"]
 LISTS = ["territorio", "tipo_contrato", "tipo_procedimento"]
 VERSION = "ccp-measure-conditions-0.1"

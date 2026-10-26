@@ -297,10 +297,12 @@
         56,
         57,
         64,
-        65
+        65,
+        72,
+        73
       ],
       "family": "A",
-      "proposer": "leitor:a3",
+      "proposer": "leitor:a4",
       "reviews": [
         {
           "by": "leitor:b",
@@ -309,7 +311,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "state": "proposed"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
@@ -321,10 +323,12 @@
         58,
         59,
         66,
-        67
+        67,
+        74,
+        75
       ],
       "family": "A",
-      "proposer": "leitor:a3",
+      "proposer": "leitor:a4",
       "reviews": [
         {
           "by": "leitor:b",
@@ -333,7 +337,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "state": "proposed"
     },
     "regra|regra:ccp:procedimentos-admissiveis@v1": {
@@ -381,10 +385,12 @@
         54,
         55,
         62,
-        63
+        63,
+        70,
+        71
       ],
       "family": "A",
-      "proposer": "leitor:a3",
+      "proposer": "leitor:a4",
       "reviews": [
         {
           "by": "leitor:b",
@@ -393,7 +399,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "state": "proposed"
     },
     "regra|regra:dlr-27-2015-a:regime-acores@v1": {
@@ -435,6 +441,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 69,
-  "head": "958e3a325d270573a693065219749ea7fe4344c0466797f623754f3e24555d3f"
+  "events": 75,
+  "head": "d7c854d414b0b82e87a7efeffdf43ef01b22911d0882082f9da92e1c57f27820"
 }

@@ -7,7 +7,7 @@ Gerado por tools/read_rules.py. As mesmas perguntas e candidatas da ronda 1, com
 | regra:dl-177-2026:seletor-regime@v1 | proposed | não | não |
 | regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1 | proposed | não | sim |
 | regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1 | proposed | não | sim |
-| regra:ccp:prazo-minimo-concurso-joue@v1 | proposed | não | sim |
+| regra:ccp:prazo-minimo-concurso-joue@v1 | settled | não | sim |
 
 ## regra:dl-177-2026:seletor-regime@v1
 

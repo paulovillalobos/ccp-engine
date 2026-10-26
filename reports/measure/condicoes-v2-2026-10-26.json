@@ -231,6 +231,82 @@
     "named_in_answer": 436,
     "named_in_text": 407
    }
+  },
+  "leitor-a4": {
+   "answers_sha256": "9f719c8deae0e9b285ff1bfe866f9ea7475ea9ef41ec890d1519d4aac035f3ff",
+   "exact": {
+    "k": 324,
+    "n": 353,
+    "value": 0.9178,
+    "wilson95": [
+     0.8845,
+     0.9422
+    ]
+   },
+   "invalid": 0,
+   "label": "base + adaptador v3",
+   "per_field": {
+    "menciona_joue": {
+     "k": 353,
+     "n": 353,
+     "value": 1.0,
+     "wilson95": [
+      0.9892,
+      1.0
+     ]
+    },
+    "territorio": {
+     "k": 350,
+     "n": 353,
+     "value": 0.9915,
+     "wilson95": [
+      0.9753,
+      0.9971
+     ]
+    },
+    "tipo_contrato": {
+     "k": 333,
+     "n": 353,
+     "value": 0.9433,
+     "wilson95": [
+      0.9141,
+      0.963
+     ]
+    },
+    "tipo_procedimento": {
+     "k": 345,
+     "n": 353,
+     "value": 0.9773,
+     "wilson95": [
+      0.9559,
+      0.9885
+     ]
+    }
+   },
+   "values": {
+    "added": 25,
+    "added_share_of_answer": {
+     "k": 25,
+     "n": 419,
+     "value": 0.0597,
+     "wilson95": [
+      0.0407,
+      0.0866
+     ]
+    },
+    "missed": 13,
+    "missed_share_of_text": {
+     "k": 13,
+     "n": 407,
+     "value": 0.0319,
+     "wilson95": [
+      0.0188,
+      0.0539
+     ]
+    },
+    "named_in_answer": 419,
+    "named_in_text": 407
+   }
   }
  },
  "tool": "ccp-measure-conditions-0.1"

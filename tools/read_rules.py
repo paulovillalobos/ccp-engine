@@ -431,8 +431,13 @@ def record_round(store, log, writer, rnd):
         if cur is None:
             row["state"] = "sem proposta da ronda 1"
             continue
+        if cur["state"] == "settled" and not any(ev["action"] == "correct" and ev["assertion"] == t["rule"] and (ev.get("payload") or {}).get("round") == rnd
+                                                for _, ev in log.events):
+            # D47: a later round never reopens a settled reading; its answers are reported, not recorded
+            row["state"] = "settled numa ronda anterior (não reaberta)"
+            continue
         done = any(ev["action"] == "correct" and ev["assertion"] == t["rule"] and (ev.get("payload") or {}).get("answer_sha256") == ra["sha256"]
-                   for _, ev in log.events)
+                   and (ev.get("payload") or {}).get("round") == rnd for _, ev in log.events)  # per round: two readers may give the same text
         if done:
             row["state"] = log.replay().state_of("regra", t["rule"])
             continue

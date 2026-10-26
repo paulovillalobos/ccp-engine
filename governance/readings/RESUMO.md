@@ -6,7 +6,7 @@ Gerado por tools/read_rules.py a partir das respostas guardadas em governance/re
 |---|---|---|---|---|---|
 | jurisdicao | 2 | 0 | 0 | 2 | 0 |
 | limiar | 10 | 3 | 0 | 7 | 0 |
-| prazo_minimo | 3 | 0 | 0 | 3 | 0 |
+| prazo_minimo | 3 | 1 | 0 | 2 | 0 |
 | procedimento_admissivel | 2 | 0 | 0 | 2 | 0 |
 | seletor_regime | 1 | 0 | 0 | 1 | 0 |
 
@@ -32,6 +32,6 @@ Pacotes escritos: pacote:ccp@2026-09-30, pacote:ccp@2026-10-01 (um pacote só no
 | regra:dlr-27-2015-a:regime-acores@v1 | jurisdicao | proposed | não | não |
 | regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1 | prazo_minimo | proposed | não | sim |
 | regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1 | prazo_minimo | proposed | não | sim |
-| regra:ccp:prazo-minimo-concurso-joue@v1 | prazo_minimo | proposed | não | sim |
+| regra:ccp:prazo-minimo-concurso-joue@v1 | prazo_minimo | settled | não | sim |
 | regra:ccp:procedimentos-admissiveis@v1 | procedimento_admissivel | proposed | não | sim |
 | regra:ccp:procedimentos-admissiveis@v2 | procedimento_admissivel | proposed | não | sim |

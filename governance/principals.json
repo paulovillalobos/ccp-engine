@@ -1103,7 +1103,8 @@
       "versao": 1,
       "code": "tools/measure_conditions.py",
       "hash": "d01e0cb18e36402b35b924ad21baa6d24ac7c6f8ce8c00f8e35c3664a3454c34",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T17:49:27Z"
     },
     {
       "id": "ferramenta:verify@27",
@@ -1174,7 +1175,8 @@
       "versao": 10,
       "code": "tools/read_rules.py",
       "hash": "2a474d3cea7ded373c7e529234a50eced2ebbce2ac641d34debadb51a54a2746",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T17:49:27Z"
     },
     {
       "id": "ferramenta:verify@28",
@@ -1185,6 +1187,55 @@
       "versao": 28,
       "code": "verify.py",
       "hash": "bc9eb963e3a67bae122b02c8d21052e8c2e965bae861e662436cc66ee8a206d1",
+      "retired": false
+    },
+    {
+      "id": "leitor:a4",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v3",
+        "versao": "c31c9ea4e33b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 6 (D47): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v3 (adapter_model.safetensors sha256 c31c9ea4…), trained on training/data + data-v2 + data-v3 generated from law/ by code; training/runs/v3/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:read-rules@11",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 11,
+      "code": "tools/read_rules.py",
+      "hash": "97e6555c66b8428891f5d0236fa6c26704e2697b68c2318da863de5adbed3ef4",
+      "retired": true,
+      "retired_at": "2026-10-26T17:50:29Z"
+    },
+    {
+      "id": "ferramenta:measure-conditions@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_conditions.py",
+      "hash": "615bd15daac8f4120f449110c712cd78b34693e4f369146d10e6a9f331d67030",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:read-rules@12",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 12,
+      "code": "tools/read_rules.py",
+      "hash": "558ead0e57a53e9177995e32c4ec70019ec910fe6f1252593174fbd54d92bd38",
       "retired": false
     }
   ]
