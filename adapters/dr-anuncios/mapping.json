@@ -1,0 +1,65 @@
+{
+  "adaptador": {
+    "id": "adaptador:dr-anuncios@1",
+    "source": "dr-anuncios",
+    "version": 1,
+    "code": "adapters/dr-anuncios/",
+    "mapping": [
+      {
+        "source_field": "Data de Envio do Anúncio:",
+        "canonical_field": "data_envio_anuncio",
+        "transform": "date_pt",
+        "note": "parser field data_envio_anuncio: dd-mm-yyyy after the label"
+      },
+      {
+        "source_field": "publicitado no Jornal Oficial da União Europeia?",
+        "canonical_field": "publicado_joue",
+        "transform": "boolean",
+        "note": "parser field publicado_joue: Sim -> true, Não -> false"
+      },
+      {
+        "source_field": "NUT III:",
+        "canonical_field": "nut_iii_adjudicante",
+        "transform": "identity",
+        "note": "parser field nut_iii: the first occurrence, section 1 (the adjudicante); PT followed by three of 0-9 A-Z"
+      },
+      {
+        "source_field": "NUT III:",
+        "canonical_field": "territorio",
+        "transform": "enum_map",
+        "enum_map": {"PT2": "PT-AC", "PT3": "PT-MA"},
+        "note": "by the first three characters of the adjudicante's NUT III (territorio_by_nut_iii_prefix); any other PT code -> PT. Whether the rules' territorio is the adjudicante's seat is a reading question (SCHEMA-PROPOSAL.md)"
+      },
+      {
+        "source_field": "Prazo para apresentação das propostas:",
+        "canonical_field": "data_limite_propostas",
+        "transform": "date_pt",
+        "note": "parser field prazo_propostas_data: the date only; the time printed after it is not part of the value"
+      },
+      {
+        "source_field": "Norma jurídica da Entidade Adjudicante:",
+        "canonical_field": "norma_juridica_adjudicante",
+        "transform": "identity",
+        "note": "parser field norma_juridica, the text as printed; stored, not mapped to tipo_entidade (that mapping is a reading of the law for the readers)"
+      }
+    ]
+  },
+  "parser_field": {
+    "data_envio_anuncio": "data_envio_anuncio",
+    "publicado_joue": "publicado_joue",
+    "nut_iii_adjudicante": "nut_iii",
+    "territorio": "nut_iii",
+    "data_limite_propostas": "prazo_propostas_data",
+    "norma_juridica_adjudicante": "norma_juridica"
+  },
+  "boolean": {"Sim": true, "Não": false},
+  "territorio_by_nut_iii_prefix": {"PT2": "PT-AC", "PT3": "PT-MA", "PT": "PT"},
+  "not_derived": {
+    "data_inicio_procedimento": "not derived from the sending date: whether the sending bounds the start of the procedure is a reading of the law for the readers",
+    "tipo_entidade": "the «Norma jurídica da Entidade Adjudicante» text is stored as norma_juridica_adjudicante; mapping it to estado / outra is a reading of the law for the readers",
+    "prazo_propostas_dias": "with data_envio_anuncio and data_limite_propostas both facts, the days between them is a transform (days_between) whose counting (which sending, the first day, the time of day) is for the readers and the builder"
+  },
+  "dump_comparison": {
+    "data_limite_propostas": "facto from adaptador:base-anuncios@1 (DataLimitePropostas); a different date gives a conflito with resolution nao_avaliado"
+  }
+}
