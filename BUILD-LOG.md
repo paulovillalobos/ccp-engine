@@ -1470,3 +1470,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   the document, the SettledContract's (BT-145), not the notice's (BT-05). 2 are a joint procurement (parser gave the first
   of six buyers), 2 a change notice whose coded deadline and change text differ. Reader errors 0. adapters/medicao/ted/REPORT-v1.md.
 - Verdict as written: TED's extraction is not measured as passing; fix the parser and draw v2.
+
+## 2026-10-26 X.3 TED v2 criteria and fixed parser, sealed before the v2 sample (commit: X.3: CRITERIA-ted-v2 and the fixed TED parser (eForms dispatch date = the root's IssueDate), sealed before the v2 sample)
+- Sealed (sha256), before the v2 sample is drawn:
+  - adapters/medicao/CRITERIA-ted-v2.md 2c8d1941bde72334f904b6137a0f2fc44982665f9b1b25eb7d89d9498a879a68
+  - adapters/ted/parse.py b277c0075feb5f7e2b5adcfab897ea82387017bf1b05a9719e57f9925d3634a7 (dispatch date fix only; on
+    v1's 200 notices it changes the 39 wrong dates and nothing else)
+  - adapters/medicao/sample.py fbf269f4278be5a1ff108915c43dd12dce511586cc58652718d07aa53f513e8c (--seed, --exclude)
+  - adapters/medicao/blind_read.py 749e1b3c5b57044feb9014a9bace6fac06cb375d69c6504831f3d7c56faf6d58 (TED prompt: the
+    first buyer when several; the contratos prompt is unchanged)
+  - adapters/medicao/score.py e997664b5d228f9e05564469797ba7a625e2621b5a7f443159f39a34ed90d3a0 (TED deadline_time as
+    hour:minute; the contratos scoring is unchanged)
+- Next: sample.py ted --seed 20261028 --exclude adapters/medicao/ted/sample.json, then the blind reading.

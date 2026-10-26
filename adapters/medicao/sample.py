@@ -26,7 +26,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
-SEED = 20261027
+SEED = 20261027  # v1; v2 passes --seed and --exclude (the v1 sample.json)
 DEV_MONTHS = {"2018-01", "2026-01"}
 
 
@@ -46,13 +46,14 @@ def write_json(path, obj):
 def cmd_ted(a):
     parse = load("ted_parse", ROOT / "adapters/ted/parse.py")
     pop = {"ted-xml": [], "eforms": []}
+    seen = {s["member"] for s in json.loads(Path(a.exclude).read_text(encoding="utf-8"))} if a.exclude else set()
     for b in sorted(Path(a.bundles).glob("*.tar.gz")):
         month = b.name[:7]
         if month in DEV_MONTHS:
             continue
         with tarfile.open(b, "r:gz") as t:
             for m in t:
-                if not m.isfile() or not m.name.endswith(".xml"):
+                if not m.isfile() or not m.name.endswith(".xml") or m.name in seen:
                     continue
                 data = t.extractfile(m).read()
                 r = parse.parse(data)
@@ -63,12 +64,12 @@ def cmd_ted(a):
     sample, parsed = [], []
     for fmt in ("ted-xml", "eforms"):
         items = sorted(pop[fmt], key=lambda x: x[0])
-        for name, month, data, r in random.Random(SEED).sample(items, 100):
+        for name, month, data, r in random.Random(a.seed).sample(items, 100):
             n = len(sample)
             (out / "items" / f"{n:03d}.xml").write_bytes(data)
             sample.append({"n": n, "member": name, "month": month, "format": fmt, "sha256": hashlib.sha256(data).hexdigest()})
             parsed.append(dict(r, n=n))
-    print("population", {k: len(v) for k, v in pop.items()})
+    print("population", {k: len(v) for k, v in pop.items()}, "excluded", len(seen), "seed", a.seed)
     print("sample.json", write_json(out / "sample.json", sample), "parsed.json", write_json(out / "parsed.json", parsed))
 
 
@@ -98,6 +99,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     t = sub.add_parser("ted"); t.add_argument("--bundles", required=True); t.add_argument("--out", required=True)
+    t.add_argument("--seed", type=int, default=SEED); t.add_argument("--exclude")
     c = sub.add_parser("contratos"); c.add_argument("--zip", required=True); c.add_argument("--out", required=True)
     a = ap.parse_args()
     sys.exit({"ted": cmd_ted, "contratos": cmd_contratos}[a.cmd](a))

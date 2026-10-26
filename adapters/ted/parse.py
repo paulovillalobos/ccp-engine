@@ -9,9 +9,12 @@ TED-XML: the coded data (TD_DOCUMENT_TYPE, NO_DOC_OJS, DATE_PUB, DS_DATE_DISPATC
 (ADDRESS_CONTRACTING_BODY, PR_PROC, TYPE_CONTRACT, DATE_RECEIPT_TENDERS, TIME_RECEIPT_TENDERS, VAL_ESTIMATED_TOTAL,
 CPV_MAIN); for the older R2.0.8 forms still found in 2018, CA_CE_CONCESSIONAIRE_PROFILE, the CTYPE attribute and
 RECEIPT_LIMIT_DATE (no estimated value is read from them). eForms: the buyer is the organisation the ContractingParty names (cac:Party/cac:PartyIdentification/cbc:ID),
-read in efac:Organizations; the deadline is the first lot's TenderSubmissionDeadlinePeriod; dates keep only the date
+read in efac:Organizations (the first ContractingParty when there are several, as ADDRESS_CONTRACTING_BODY is the first
+in TED-XML); the dispatch date is the IssueDate directly under the root (BT-05), not a SettledContract's (BT-145, which
+comes first in result notices: v1's error); the deadline is the first lot's TenderSubmissionDeadlinePeriod; dates keep only the date
 part (the zone offset is reported in deadline_time when present). Written on the development months 2018-01 and 2026-01
-(not in the measured sample) and frozen by its sha256 before the sample is drawn (CRITERIA-ted-contratos-v1.md).
+(not in the measured sample) and frozen by its sha256 before the sample is drawn (CRITERIA-ted-contratos-v1.md); fixed
+after v1's blind reading and frozen again for CRITERIA-ted-v2.md.
 """
 import xml.etree.ElementTree as ET
 
@@ -92,7 +95,7 @@ def parse_tedxml(root):
 def parse_eforms(root):
     out = {"format": "eforms", "notice_type": text(root, "NoticeSubType", "SubTypeCode")}
     out["notice_id"] = text(root, "Publication", "NoticePublicationID")
-    out["dispatch_date"] = date_only(text(root, "IssueDate"))
+    out["dispatch_date"] = date_only(next((c.text for c in root if local(c.tag) == "IssueDate"), None))  # the root's own (BT-05)
     out["publication_date"] = date_only(text(root, "Publication", "PublicationDate"))
     buyer_ref = text(root, "ContractingParty", "Party", "PartyIdentification", "ID")
     org = None

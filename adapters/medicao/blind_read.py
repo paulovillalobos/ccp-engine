@@ -29,8 +29,8 @@ FIELDS = {
 HEAD = {
     "ted": ("Lê cada anúncio do TED (XML) abaixo e devolve, para cada um, só o que está no texto, sem inferir:\n"
             "- dispatch_date: a data de envio do anúncio ao Serviço de Publicações (AAAA-MM-DD)\n"
-            "- buyer_name: o nome oficial da entidade adjudicante (o comprador)\n"
-            "- buyer_nif: o número de identificação nacional (NIF/NIPC) dessa entidade, se estiver no texto\n"
+            "- buyer_name: o nome oficial da entidade adjudicante (o comprador); se houver vários compradores, só o primeiro\n"
+            "- buyer_nif: o número de identificação nacional (NIF/NIPC) desse primeiro comprador, se estiver no texto\n"
             "- buyer_country: o país dessa entidade, como código do texto (p. ex. PT ou PRT)\n"
             "- procedure_type: o tipo de procedimento como codificado no texto (p. ex. «1 Open procedure» ou «open»)\n"
             "- contract_type: a natureza do contrato como codificada (p. ex. SUPPLIES, SERVICES, WORKS, services, works)\n"

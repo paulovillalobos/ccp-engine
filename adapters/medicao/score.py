@@ -53,9 +53,14 @@ def date(v):
     return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else None
 
 
+def hhmm(v):
+    d = re.findall(r"\d+", str(v))
+    return f"{int(d[0]):02d}:{int(d[1]) if len(d) > 1 else 0:02d}" if d else None
+
+
 TED_NORM = {"dispatch_date": date, "deadline_date": date, "buyer_name": fold, "buyer_nif": digits, "estimated_value": num,
             "buyer_country": lambda v: {"pt": "pt", "prt": "pt"}.get(fold(v), fold(v)), "contract_type": fold,
-            "main_cpv": lambda v: re.sub(r"\D", "", str(v))[:8], "deadline_time": lambda v: str(v)[:5],
+            "main_cpv": lambda v: re.sub(r"\D", "", str(v))[:8], "deadline_time": hhmm,
             "procedure_type": lambda v: fold(re.sub(r"^\d+\s+", "", str(v)))}
 
 
