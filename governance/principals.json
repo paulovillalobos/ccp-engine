@@ -996,7 +996,8 @@
       "versao": 7,
       "code": "tools/read_rules.py",
       "hash": "5415f62fb46a0978d123f49405473ef856a72a48901b2e218e69f4a2cb551b21",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T11:11:18Z"
     },
     {
       "id": "ferramenta:verify@24",
@@ -1042,6 +1043,17 @@
       "versao": 6,
       "code": "tools/measure.py",
       "hash": "81270778f59c7012bc2a1c965e26f36dbf845ad5f7c52d280a3ff570e4fd342d",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:read-rules@8",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 8,
+      "code": "tools/read_rules.py",
+      "hash": "0e9b0d29e790e62144b33ffb2bc849fef44b726fa1217a18ccc91aae3f00097c",
       "retired": false
     }
   ]

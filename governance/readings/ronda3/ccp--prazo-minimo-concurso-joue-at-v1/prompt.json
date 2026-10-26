@@ -1,0 +1,457 @@
+{
+ "rule": "regra:ccp:prazo-minimo-concurso-joue@v1",
+ "type": "prazo_minimo",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art136",
+  "ccp:art136.1",
+  "ccp:art136.2",
+  "ccp:art136.3",
+  "ccp:art135",
+  "ccp:art135.1"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: prazo_minimo.\n\nPassagens candidatas:\n[ccp:art136] (versão em vigor a 2026-10-01, desde 2021-06-20)\nArtigo 136.º\nPrazos mínimos para a apresentação das propostas em concursos públicos com publicidade internacional\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.\n2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º, ou anúncio periódico indicativo, previsto no artigo 35.º, o prazo mínimo referido no número anterior é de 15 dias desde que:\na) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos da parte B do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.\n3 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.\n4 - (Revogado.);\n5 - Na situação prevista no n.º 2 do artigo 133.º, os prazos mínimos referidos nos n.os 1 e 2 do presente artigo são prorrogados por cinco dias.\n[ccp:art136] texto anterior (em vigor de 2018-01-01 a 2021-06-20):\nArtigo 136.º\nPrazos mínimos para a apresentação das propostas em concursos públicos com publicidade internacional\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.\n2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º, ou anúncio periódico indicativo, previsto no artigo 35.º, o prazo mínimo referido no número anterior é de 15 dias desde que:\na) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos da parte B do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.\n3 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.\n4 - (Revogado.)\n\n[ccp:art136.1] (versão em vigor a 2026-10-01, desde 2018-01-01)\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.\n[ccp:art136.1] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 47 dias a contar da data do envio desse anúncio ao Serviço de Publicações Oficiais das Comunidades Europeias.\n\n[ccp:art136.2] (versão em vigor a 2026-10-01, desde 2018-01-01)\n2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º, ou anúncio periódico indicativo, previsto no artigo 35.º, o prazo mínimo referido no número anterior é de 15 dias desde que:\na) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos da parte B do anexo v da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.\n[ccp:art136.2] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º ou o anúncio periódico indicativo previsto no artigo 35.º, e desde que o mesmo contemple as prestações objecto do contrato a celebrar, o prazo mínimo referido no número anterior é de 36 dias, podendo ser de 22 dias desde que:\na) O anúncio de pré-informação ou o anúncio periódico indicativo tenha sido enviado para publicação com uma antecedência mínima de 52 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação ou o anúncio periódico indicativo tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas, respectivamente, pelo anexo ii ou pelo anexo v do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro.\n\n[ccp:art136.3] (versão em vigor a 2026-10-01, desde 2018-01-01)\n3 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.\n[ccp:art136.3] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n3 - Os prazos mínimos para a apresentação das propostas previstos nos números anteriores podem ser reduzidos em até sete dias quando o anúncio referido no n.º 1 for preparado e enviado por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.\n\n[ccp:art135] (versão em vigor a 2026-10-01, desde 2018-01-01)\nArtigo 135.º\nPrazo mínimo para a apresentação das propostas em concursos públicos sem publicidade internacional\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a seis dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 14 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 14 dias referido no número anterior pode ser reduzido até um prazo mínimo de seis dias.\n[ccp:art135] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nArtigo 135.º\nPrazo mínimo para a apresentação das propostas em concursos públicos sem publicidade internacional\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 9 dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 20 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n2 - Em caso de manifesta simplicidade dos trabalhos necessários à realização da obra, o prazo mínimo de 20 dias referido no número anterior pode ser reduzido em até 11 dias.\n\n[ccp:art135.1] (versão em vigor a 2026-10-01, desde 2018-01-01)\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a seis dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 14 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n[ccp:art135.1] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 9 dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 20 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º\n\nPergunta: Num concurso público cujo anúncio é publicado no Jornal Oficial da União Europeia, qual é o prazo mínimo geral para apresentação das propostas? Dê condições, dias, o campo do prazo e de onde se conta.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art136",
+      "ccp:art136.1",
+      "ccp:art136.2",
+      "ccp:art136.3",
+      "ccp:art135",
+      "ccp:art135.1"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "prazo_minimo"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "anyOf": [
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "obras",
+          "bens",
+          "servicos",
+          "concessao_obras",
+          "concessao_servicos",
+          "servicos_sociais"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "obras",
+           "bens",
+           "servicos",
+           "concessao_obras",
+           "concessao_servicos",
+           "servicos_sociais"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "ajuste_direto",
+          "consulta_previa",
+          "concurso_publico",
+          "concurso_limitado_previa_qualificacao",
+          "procedimento_negociacao",
+          "dialogo_concorrencial",
+          "parceria_inovacao"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "ajuste_direto",
+           "consulta_previa",
+           "concurso_publico",
+           "concurso_limitado_previa_qualificacao",
+           "procedimento_negociacao",
+           "dialogo_concorrencial",
+           "parceria_inovacao"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "PT",
+          "PT-AC",
+          "PT-MA"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "PT",
+           "PT-AC",
+           "PT-MA"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "estado",
+          "outra"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "estado",
+           "outra"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "publicado_joue"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "preco_base"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     ]
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "minimum_days": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "deadline_field": {
+      "type": "string",
+      "enum": [
+       "prazo_propostas_dias"
+      ]
+     },
+     "counted_from": {
+      "type": "string",
+      "enum": [
+       "data_publicacao_anuncio",
+       "data_envio_anuncio"
+      ]
+     }
+    },
+    "required": [
+     "minimum_days",
+     "deadline_field",
+     "counted_from"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ },
+ "round": 3
+}
