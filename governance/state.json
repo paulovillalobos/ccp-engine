@@ -271,20 +271,22 @@
         52,
         53,
         60,
-        61
+        61,
+        68,
+        69
       ],
       "family": "A",
-      "proposer": "leitor:a2",
+      "proposer": "leitor:a3",
       "reviews": [
         {
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "request_evidence"
+          "verdict": "uphold"
         }
       ],
-      "revision": 3,
-      "state": "proposed"
+      "revision": 4,
+      "state": "settled"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1": {
       "events": [
@@ -293,10 +295,12 @@
         48,
         49,
         56,
-        57
+        57,
+        64,
+        65
       ],
       "family": "A",
-      "proposer": "leitor:a2",
+      "proposer": "leitor:a3",
       "reviews": [
         {
           "by": "leitor:b",
@@ -305,7 +309,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 3,
+      "revision": 4,
       "state": "proposed"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
@@ -315,10 +319,12 @@
         50,
         51,
         58,
-        59
+        59,
+        66,
+        67
       ],
       "family": "A",
-      "proposer": "leitor:a2",
+      "proposer": "leitor:a3",
       "reviews": [
         {
           "by": "leitor:b",
@@ -327,7 +333,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 3,
+      "revision": 4,
       "state": "proposed"
     },
     "regra|regra:ccp:procedimentos-admissiveis@v1": {
@@ -373,10 +379,12 @@
         46,
         47,
         54,
-        55
+        55,
+        62,
+        63
       ],
       "family": "A",
-      "proposer": "leitor:a2",
+      "proposer": "leitor:a3",
       "reviews": [
         {
           "by": "leitor:b",
@@ -385,7 +393,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 3,
+      "revision": 4,
       "state": "proposed"
     },
     "regra|regra:dlr-27-2015-a:regime-acores@v1": {
@@ -427,6 +435,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 61,
-  "head": "eb2be98aedcf7bc35fa27a0e311dff323f114085564d3aa2e36f16860ee45e01"
+  "events": 69,
+  "head": "958e3a325d270573a693065219749ea7fe4344c0466797f623754f3e24555d3f"
 }

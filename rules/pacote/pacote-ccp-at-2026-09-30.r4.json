@@ -1,0 +1,20 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 4,
+  "recorded_at": "2026-10-26T13:27:52Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    }
+  ],
+  "hash": "38d143f57e4cd0cd72520e88a4cfc3a72588e1cda5417d1174f22c732186b6fa",
+  "log_head": "958e3a325d270573a693065219749ea7fe4344c0466797f623754f3e24555d3f",
+  "built_at": "2026-10-26T13:27:52Z",
+  "supersedes": 3
+}

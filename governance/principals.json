@@ -927,7 +927,8 @@
       "versao": 4,
       "code": "tools/measure_reader.py",
       "hash": "19b673d6cebb1656a89167340e8105efd0e2d11b27686f38b152027f0ac1ac1d",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T13:31:18Z"
     },
     {
       "id": "ferramenta:make-training@4",
@@ -1112,6 +1113,32 @@
       "versao": 27,
       "code": "verify.py",
       "hash": "df54842dd19824bf22558181997fd09006383e84ff06663c6caa7d636825904e",
+      "retired": false
+    },
+    {
+      "id": "leitor:a3",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v2",
+        "versao": "07991a890326"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 5 (D46): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v2 (adapter_model.safetensors sha256 07991a89…), trained on training/data + training/data-v2 (condicoes_texto) generated from law/ by code; training/runs/v2/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:measure-reader@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/measure_reader.py",
+      "hash": "cbc1a4b1175f8f6dab1beb549dff9046c86809213c1dfc775cf87f9756faa254",
       "retired": false
     }
   ]

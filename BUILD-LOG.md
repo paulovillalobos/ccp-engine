@@ -1099,3 +1099,28 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the person decides how the family-A side goes on (see the report); a–d after that.
 - Why: settlement needs two families to replicate a reading; three rounds show leitor:b stable and the family-A
   reader right on the numbers but not on the conditions.
+
+## 2026-10-26 — D46: AMALIA v2 trained on condicoes_texto; B3 round 4: the first deadline rule settles
+- Asked: the person, «Sí: entrena AMALIA v2 en qué condiciones dice el texto, con datos generados por código desde law/,
+  mide en reservados y luego ronda 4».
+- Done: tools/make_conditions.py (make-conditions@1): condicoes_texto from the procurement acts of law/, labelled by a
+  declared word list (two hand checks before freezing fixed four list defects: the labour code's «consulta prévia»,
+  «prestação de serviços», «bens e/ou serviços», «concessão de serviços»); 833 train / 353 held out; a passage whose text
+  is a reserved passage's (the CCP republished in DL 111-B/2017, DL 177/2026) is held out; verify TRAIN re-derives
+  training/data-v2. train_lora runs as data (v1's mix unchanged, 8 900); v2 = v1's data + condicoes_texto twice (12 232).
+  LoRA v2 amalia-ccp-lei-v2: 745 steps, 5 484 s H100, USD 5.12 (training/runs/v2). Principal leitor:a3 (family A).
+- Measured on the 353 reserved passages (tools/measure_conditions.py, verify MEAS recomputes it): all fields exact base
+  2.8 % → v1 0.0 % → v2 91.2 % [87.8, 93.7]; values named that the text does not name 81.1 % → 78.6 % → 8.9 %; values
+  missed 12.5 % → 23.3 % → 2.5 %. BEFORE kept in training/runs/v2/BEFORE.md (committed before v2 existed).
+- Round 4 (prompt and schema of round 3, committed before v2 existed): leitor:a3 proposes, leitor:b blind: evento:62–69.
+  regra:ccp:prazo-minimo-concurso-joue@v1 SETTLED (identical: ccp:art136.1; publicado_joue = true, tipo_procedimento =
+  concurso_publico; 30 days from data_envio_anuncio). Without JOUE (6 / 14 days): same article, days and counting point;
+  leitor:a3 keeps tipo_contrato (≠ / = obras, the condition that splits them) but omits publicado_joue = false and
+  concurso_publico, and on the works rule writes publicado_joue = true. Selector: unchanged in substance.
+- Fix on the way: tools/measure_reader.py read the current rule states, so the settlement moved the dated phase-4
+  report; a dated report now reads the rules as they stood at the end of its date (measure-reader@5).
+- Dossier for the AMALIA team: training/AMALIA-DOSSIER.md (before / after, data, cost).
+- Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected); test_b5 now skips condicoes-* as it skips amalia-*.
+- Next: the selector (blocks every route), then a–d (CPA art. 87.º to capture first).
+- Why: the family-A reader named conditions the text does not state; v2 learned not to, on articles it never saw, and
+  the first rule settled by two families on its own.

@@ -40,8 +40,22 @@ AFTER when its measurement exists.
 | base | 2.8 % (10/353) | 81.1 % (1 524 of 1 880) |
 | base + v1 | 0.0 % (0/353) | 78.6 % (1 146 of 1 458) |
 
-- AFTER: pending (`reports/measure/condicoes-v2-2026-10-26.md` once measured).
-- Rule test, round 4 (v2 proposes, a reader of another family reviews blind): pending.
+- Run: 745 steps, 5 484 s on one H100, 12 232 examples (0 dropped), 50.9 M trainable parameters, USD 5.12
+  (`training/runs/v2/`).
+- AFTER (the same 353 reserved passages, `reports/measure/condicoes-v2-2026-10-26.md`):
+
+| reader | all fields exact | values named that the text does not name | values the text names that it missed |
+|---|---|---|---|
+| base | 2.8 % [1.6, 5.1] | 81.1 % (1 524 of 1 880) | 12.5 % (51 of 407) |
+| base + v1 | 0.0 % [0.0, 1.1] | 78.6 % (1 146 of 1 458) | 23.3 % (95 of 407) |
+| base + v2 | **91.2 % [87.8, 93.7]** (322/353) | **8.9 %** (39 of 436) | **2.5 %** (10 of 407) |
+
+- Rule test, round 4 (`governance/readings/ronda4/RONDA4.md`): the same prompt and schema as round 3; v2 proposes, a
+  reader of another family reviews blind. The minimum deadline of a public tender announced in the EU Official Journal
+  (CCP art. 136.º n.º 1: 30 days from the sending of the notice, conditions «announced in the OJEU» and «concurso
+  público») was read identically by both and is the first of these four rules to settle. The two other deadline rules
+  now agree on the article, the days and where they count from, and still differ on conditions; the regime selector
+  differs in substance.
 
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

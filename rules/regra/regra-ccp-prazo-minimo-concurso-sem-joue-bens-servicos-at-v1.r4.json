@@ -1,0 +1,64 @@
+{
+  "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+  "revision": 4,
+  "recorded_at": "2026-10-26T13:27:31Z",
+  "type": "prazo_minimo",
+  "title": "Concurso público sem anúncio no JOUE: prazo mínimo das propostas (bens e serviços)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "not_in",
+      "value": [
+        "obras"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art135.1",
+      "version": "2018-01-01",
+      "quote": "1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a seis dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 14 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º",
+      "offsets": {
+        "start": 0,
+        "end": 384
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 6,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a3",
+      "family": "A",
+      "at": "2026-10-26T13:25:59Z",
+      "chosen_passages": [
+        "ccp:art135.1"
+      ],
+      "blind": false,
+      "evento": "evento:64"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-26T13:26:45Z",
+      "chosen_passages": [
+        "ccp:art135.1"
+      ],
+      "blind": true,
+      "evento": "evento:65"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 3
+}
