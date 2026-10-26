@@ -47,42 +47,56 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workdir", required=True)
     ap.add_argument("--min-bytes", type=int, default=0, help="only files at least this big (the dumps first, the record slices later)")
+    ap.add_argument("--workers", type=int, default=1, help="parallel uploads (each one CLI process)")
+    ap.add_argument("--require-text", action="store_true", help="dr-anuncios: only PDFs whose pypdf text is already extracted")
     ap.add_argument("sources", nargs="+")
     a = ap.parse_args()
     verified = set()
     if LOG.exists():
         verified = {(e["source"], e["sha256"]) for e in map(json.loads, LOG.read_text(encoding="utf-8").splitlines()) if e.get("verified")}
     totals = {"verified": 0, "bytes": 0, "failed": 0}
-    with open(LOG, "a", encoding="utf-8") as lf:
-        for source in a.sources:
-            d = DATA / f"raw/{source}/raw_bytes"
-            for p in sorted(x for x in d.iterdir() if not x.name.startswith(".")) if d.exists() else []:
-                sha, size = p.name, p.stat().st_size
-                if size < a.min_bytes:
-                    continue
-                e = {"source": source, "sha256": sha, "bytes": size, "object": f"{BUCKET}/{source}/raw_bytes/{sha}", "at": now()}
-                if (source, sha) in verified:
-                    p.unlink(); continue
-                if sha256_file(p) != sha:
-                    e.update(verified=False, error="local file does not hash to its name; not uploaded")
+    jobs = []
+    for source in a.sources:
+        d = DATA / f"raw/{source}/raw_bytes"
+        for p in sorted(x for x in d.iterdir() if not x.name.startswith(".")) if d.exists() else []:
+            if p.stat().st_size < a.min_bytes:
+                continue
+            if a.require_text and not (DATA / f"raw/{source}/text/{p.name}.json").exists():
+                continue
+            if (source, p.name) in verified:
+                p.unlink(); continue
+            jobs.append((source, p))
+
+    def one(job):
+        source, p = job
+        sha, size = p.name, p.stat().st_size
+        e = {"source": source, "sha256": sha, "bytes": size, "object": f"{BUCKET}/{source}/raw_bytes/{sha}", "at": now()}
+        if sha256_file(p) != sha:
+            e.update(verified=False, error="local file does not hash to its name; not uploaded")
+        else:
+            code, out = cli(a.workdir, "cp", str(p), f"ss:///{BUCKET}/{source}/raw_bytes/{sha}")
+            if code != 0:
+                e.update(verified=False, error=f"upload: {out}")
+            else:
+                with tempfile.TemporaryDirectory() as t:
+                    back = Path(t) / sha
+                    code, out = cli(a.workdir, "cp", f"ss:///{BUCKET}/{source}/raw_bytes/{sha}", str(back))
+                    ok = code == 0 and back.exists() and sha256_file(back) == sha
+                e.update(verified=ok, checked_at=now())
+                if ok:
+                    p.unlink()
                 else:
-                    code, out = cli(a.workdir, "cp", str(p), f"ss:///{BUCKET}/{source}/raw_bytes/{sha}")
-                    if code != 0:
-                        e.update(verified=False, error=f"upload: {out}")
-                    else:
-                        with tempfile.TemporaryDirectory() as t:
-                            back = Path(t) / sha
-                            code, out = cli(a.workdir, "cp", f"ss:///{BUCKET}/{source}/raw_bytes/{sha}", str(back))
-                            ok = code == 0 and back.exists() and sha256_file(back) == sha
-                        e.update(verified=ok, checked_at=now())
-                        if ok:
-                            p.unlink()
-                        else:
-                            e["error"] = f"download back: {out}" if code else "downloaded copy does not hash to the name"
-                lf.write(json.dumps(e, ensure_ascii=False, sort_keys=True) + "\n"); lf.flush()
-                totals["verified" if e.get("verified") else "failed"] += 1
-                totals["bytes"] += size if e.get("verified") else 0
-                print(source, sha[:12], size, "ok" if e.get("verified") else e.get("error"), flush=True)
+                    e["error"] = f"download back: {out}" if code else "downloaded copy does not hash to the name"
+        return e
+
+    from concurrent.futures import ThreadPoolExecutor
+    with open(LOG, "a", encoding="utf-8") as lf, ThreadPoolExecutor(max_workers=max(1, a.workers)) as pool:
+        for e in pool.map(one, jobs):
+            lf.write(json.dumps(e, ensure_ascii=False, sort_keys=True) + "\n"); lf.flush()
+            totals["verified" if e.get("verified") else "failed"] += 1
+            totals["bytes"] += e["bytes"] if e.get("verified") else 0
+            if not e.get("verified") or totals["verified"] % 200 == 0:
+                print(e["source"], e["sha256"][:12], e["bytes"], "ok" if e.get("verified") else e.get("error"), totals, flush=True)
     print(json.dumps(totals))
     return 0 if not totals["failed"] else 1
 

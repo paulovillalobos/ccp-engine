@@ -1428,3 +1428,25 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   preemption are both possible. The DR download (another host) and acinGov (another host) go on.
 - Next: no Vortal request before 21:18Z; then one reader only (the notice fetcher first, the DR copy after it), at a
   slower pace.
+
+## 2026-10-26 X.0 extraction test v1 for TED and BASE contratos: criteria and frozen code, sealed before any sample (commit: X.0: CRITERIA-ted-contratos-v1 and frozen parsers, sampling, blind-reading and scoring code — sealed before any sample is drawn)
+- Asked by the person (relayed by the builder): «at least 8 in all»; for extraction, «8 = each new source measured, not
+  assumed», 200 per source, criteria fixed first as CRITERIA-v2 did for the DR notices.
+- Sealed (sha256), in this commit, before either sample is drawn:
+  - adapters/medicao/CRITERIA-ted-contratos-v1.md 786e3b4ab41b1eadcf1900c7568e97aecdef05442a736e484961397027146021
+  - adapters/ted/parse.py cf1ee6bdf9811b1a73d37eb885f1e9ee0f73203a03c83286c3516bc51f982dca (TED-XML R2.0.9 and R2.0.8, and
+    eForms; written on 2018-01 and 2026-01 only: 569 and 1 585 notices, 0 errors; contract notices 2018-01: buyer name
+    and deadline 135/135)
+  - adapters/base-contratos/adapter.py 0f4a52c364e30d7368446bc4408781d9c55be9949bd2e03d23fc5e093d3e7eec and mapping.json
+    65b9c384a5a05bad70e70cc6eda683948cca334f331adfb664eeeed90dbbd79b (written on October 2026 only)
+  - adapters/medicao/sample.py 779c1fb6997f85777a42d001a53ec73b8984169916d81eea8821fb4392918c05
+  - adapters/medicao/blind_read.py a6e2eca0ed738267e2aaa6e23392793fc845b5b135156e6eb7ed908b898dfbf3
+  - adapters/medicao/score.py 7c32e31453aa6e8545c08cb843c1247364641a6a1a0134579e66b717f12b9677
+- Found while writing the TED parser: in eForms the buyer is the organisation the ContractingParty names, not the first
+  organisation; on 2026-01, 1 569 of the 1 585 notices kept by the M-run filter have a Portuguese buyer, 16 do not.
+- Also in this commit: adapters/storage/offload.py gains --workers and --require-text (used once the database is
+  writable again; see below).
+- Blocked meanwhile: the ccp-engine database went read-only (default_transaction_read_only = on, 787 MB), so the Supabase
+  CLI cannot open Storage; the pending upload of the DR PDFs was stopped before it began. Reported to the builder.
+- Next: draw the TED sample (the bundles are on the Modal volume); the contratos sample waits for Storage (its zip is
+  there only).
