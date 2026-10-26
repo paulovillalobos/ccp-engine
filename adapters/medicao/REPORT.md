@@ -16,10 +16,11 @@ CRITERIA-ted-contratos-v1.md, CRITERIA-ted-v2.md and CRITERIA-ted-v3.md, each se
 ## How the two special kinds are counted
 - Joint procurement (v1 n=127, six buyers): counted in C. v1 never said which buyer to give; v2 defines the buyer as the
   first one (the first ContractingParty in eForms, ADDRESS_CONTRACTING_BODY in TED-XML) for the parser and the reader
-  alike. It stays one of v1's 43 disagreements; v2's sample had joint notices with no disagreement.
+  alike. It stays one of v1's 43 disagreements. v2's sample had 9 notices with several buyers (5 eForms with two
+  ContractingParty, 4 TED-XML with ADDRESS_CONTRACTING_BODY_ADDITIONAL); none disagreed on the buyer.
 - A change notice whose coded deadline contradicts its change text (v1 n=125): counted in C as a disagreement classified
-  «text ambiguous», not dropped; it is inside v1's 97.4 %. v2 kept v1's rule (every disagreement counted and classified);
-  v2's sample had no such case.
+  «text ambiguous», not dropped; it is inside v1's 97.4 %. v2 kept v1's rule (every disagreement counted and classified).
+  v2's sample had 18 notices carrying efac:Change; none disagreed on the deadline.
 
 ## Where TED stands
 Measured: A and C on v2's sample, B on v3's (join key buyer + deadline + title containment 0.5, written as code before
