@@ -1,0 +1,2854 @@
+[
+ {
+  "_missing": {
+   "data_celebracao_contrato": "not a date",
+   "preco_base": "0 or absent",
+   "tipo_procedimento": "'Ajuste direto simplificado ao abrigo da Lei n.º 30/2021, de 21.05' outside the vocabulary"
+  },
+  "adjudicante": "600085643",
+  "adjudicatario": [
+   "500940231"
+  ],
+  "data_publicacao_contrato": "2026-03-18",
+  "n": 0,
+  "preco_contratual": 26.87,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508878462",
+  "adjudicatario": [
+   "504928716"
+  ],
+  "data_celebracao_contrato": "2026-01-28",
+  "data_publicacao_contrato": "2026-02-06",
+  "n": 1,
+  "preco_base": 749836.19,
+  "preco_contratual": 713357.79,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "503904040",
+  "adjudicatario": [
+   "501489126"
+  ],
+  "data_celebracao_contrato": "2026-02-19",
+  "data_publicacao_contrato": "2026-03-10",
+  "n": 2,
+  "preco_base": 855000,
+  "preco_contratual": 307234.1,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508878462",
+  "adjudicatario": [
+   "517086522"
+  ],
+  "data_celebracao_contrato": "2026-03-31",
+  "data_publicacao_contrato": "2026-03-31",
+  "n": 3,
+  "preco_base": 7870,
+  "preco_contratual": 7832,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "513606084",
+  "adjudicatario": [
+   "505044897"
+  ],
+  "data_celebracao_contrato": "2026-08-11",
+  "data_publicacao_contrato": "2026-08-21",
+  "n": 4,
+  "preco_base": 3285.05,
+  "preco_contratual": 3285.05,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506816184",
+  "adjudicatario": [
+   "505023288"
+  ],
+  "data_celebracao_contrato": "2026-03-23",
+  "data_publicacao_contrato": "2026-03-30",
+  "n": 5,
+  "preco_base": 55352,
+  "preco_contratual": 54416.68,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506809560",
+  "adjudicatario": [
+   "506260658"
+  ],
+  "data_celebracao_contrato": "2026-06-16",
+  "data_publicacao_contrato": "2026-06-17",
+  "n": 6,
+  "preco_base": 2527.94,
+  "preco_contratual": 2527.94,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "503035416",
+  "adjudicatario": [
+   "502820780"
+  ],
+  "data_celebracao_contrato": "2026-02-26",
+  "data_publicacao_contrato": "2026-02-27",
+  "n": 7,
+  "preco_base": 4357148.52,
+  "preco_contratual": 38554,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501926895",
+  "adjudicatario": [
+   "500302030"
+  ],
+  "data_celebracao_contrato": "2026-04-13",
+  "data_publicacao_contrato": "2026-04-14",
+  "n": 8,
+  "preco_base": 23615.9,
+  "preco_contratual": 1577.14,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "506613461",
+  "data_celebracao_contrato": "2026-01-15",
+  "data_publicacao_contrato": "2026-01-24",
+  "n": 9,
+  "preco_base": 10632.72,
+  "preco_contratual": 10632.72,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501275380",
+  "adjudicatario": [
+   "500231206"
+  ],
+  "data_celebracao_contrato": "2026-01-19",
+  "data_publicacao_contrato": "2026-01-26",
+  "n": 10,
+  "preco_base": 12621.7,
+  "preco_contratual": 12461.35,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "507618319",
+  "adjudicatario": [
+   "517568020"
+  ],
+  "data_celebracao_contrato": "2026-07-03",
+  "data_publicacao_contrato": "2026-07-14",
+  "n": 11,
+  "preco_base": 8286791.28,
+  "preco_contratual": 3665,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "501258027",
+  "data_celebracao_contrato": "2026-03-25",
+  "data_publicacao_contrato": "2026-06-22",
+  "n": 12,
+  "preco_base": 16400,
+  "preco_contratual": 16400,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "several contract types"
+  },
+  "adjudicante": "509364390",
+  "adjudicatario": [
+   "515197700"
+  ],
+  "data_celebracao_contrato": "2026-06-18",
+  "data_publicacao_contrato": "2026-06-19",
+  "n": 13,
+  "preco_base": 320000,
+  "preco_contratual": 287412,
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "509822940",
+  "adjudicatario": [
+   "501463313"
+  ],
+  "data_celebracao_contrato": "2026-07-20",
+  "data_publicacao_contrato": "2026-08-05",
+  "n": 14,
+  "preco_base": 1250,
+  "preco_contratual": 1250,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "503271055",
+  "adjudicatario": [
+   "506571718"
+  ],
+  "data_celebracao_contrato": "2026-02-02",
+  "data_publicacao_contrato": "2026-02-03",
+  "n": 15,
+  "preco_base": 15134.2,
+  "preco_contratual": 15134.2,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "507330609",
+  "data_celebracao_contrato": "2026-02-11",
+  "data_publicacao_contrato": "2026-02-19",
+  "n": 16,
+  "preco_base": 19300,
+  "preco_contratual": 19300,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "504296434",
+  "adjudicatario": [
+   "514622016"
+  ],
+  "data_celebracao_contrato": "2026-06-24",
+  "data_publicacao_contrato": "2026-06-24",
+  "n": 17,
+  "preco_base": 3500,
+  "preco_contratual": 3500,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "506823318",
+  "data_celebracao_contrato": "2026-03-27",
+  "data_publicacao_contrato": "2026-04-16",
+  "n": 18,
+  "preco_base": 11920.56,
+  "preco_contratual": 11920.56,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "503692310",
+  "adjudicatario": [
+   "502183772"
+  ],
+  "data_celebracao_contrato": "2026-07-13",
+  "data_publicacao_contrato": "2026-07-15",
+  "n": 19,
+  "preco_base": 73098.38,
+  "preco_contratual": 23358.38,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "500051070",
+  "adjudicatario": [
+   "516933221"
+  ],
+  "data_celebracao_contrato": "2026-04-01",
+  "data_publicacao_contrato": "2026-04-08",
+  "n": 20,
+  "preco_base": 20325.2,
+  "preco_contratual": 20325.2,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501222634",
+  "adjudicatario": [
+   "509754503"
+  ],
+  "data_celebracao_contrato": "2026-04-22",
+  "data_publicacao_contrato": "2026-04-23",
+  "n": 21,
+  "preco_base": 15631.35,
+  "preco_contratual": 15631.35,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506901173",
+  "adjudicatario": [
+   "505154870"
+  ],
+  "data_celebracao_contrato": "2026-05-29",
+  "data_publicacao_contrato": "2026-06-08",
+  "n": 22,
+  "preco_base": 21552.1,
+  "preco_contratual": 21552.1,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361438",
+  "adjudicatario": [
+   "500191360"
+  ],
+  "data_celebracao_contrato": "2026-03-25",
+  "data_publicacao_contrato": "2026-03-26",
+  "n": 23,
+  "preco_base": 1992590.46,
+  "preco_contratual": 105.1,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361608",
+  "adjudicatario": [
+   "502248793"
+  ],
+  "data_celebracao_contrato": "2026-04-01",
+  "data_publicacao_contrato": "2026-04-06",
+  "n": 24,
+  "preco_base": 59077217.74,
+  "preco_contratual": 9096.96,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "513606084",
+  "adjudicatario": [
+   "508831989"
+  ],
+  "data_celebracao_contrato": "2026-06-26",
+  "data_publicacao_contrato": "2026-07-13",
+  "n": 25,
+  "preco_base": 189.43,
+  "preco_contratual": 189.43,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "512043701",
+  "adjudicatario": [
+   "512039291"
+  ],
+  "data_celebracao_contrato": "2026-05-15",
+  "data_publicacao_contrato": "2026-05-18",
+  "n": 26,
+  "preco_base": 18090,
+  "preco_contratual": 18090,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "507618319",
+  "data_celebracao_contrato": "2026-06-17",
+  "data_publicacao_contrato": "2026-06-17",
+  "n": 27,
+  "preco_base": 451210,
+  "preco_contratual": 153900,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "510103448",
+  "adjudicatario": [
+   "505792362"
+  ],
+  "data_celebracao_contrato": "2026-01-30",
+  "data_publicacao_contrato": "2026-03-10",
+  "n": 28,
+  "preco_base": 447531,
+  "preco_contratual": 32442,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600078140",
+  "adjudicatario": [
+   "500275068"
+  ],
+  "data_celebracao_contrato": "2026-03-27",
+  "data_publicacao_contrato": "2026-04-24",
+  "n": 29,
+  "preco_base": 2814,
+  "preco_contratual": 2814,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508481287",
+  "adjudicatario": [
+   "510229050"
+  ],
+  "data_celebracao_contrato": "2026-06-01",
+  "data_publicacao_contrato": "2026-06-01",
+  "n": 30,
+  "preco_base": 395361.2,
+  "preco_contratual": 395361.2,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508752000",
+  "adjudicatario": [
+   "503322105"
+  ],
+  "data_celebracao_contrato": "2026-05-15",
+  "data_publicacao_contrato": "2026-05-15",
+  "n": 31,
+  "preco_base": 71002.34,
+  "preco_contratual": 13110.6,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600010686",
+  "adjudicatario": [
+   "502846836"
+  ],
+  "data_celebracao_contrato": "2026-02-20",
+  "data_publicacao_contrato": "2026-02-23",
+  "n": 32,
+  "preco_base": 190,
+  "preco_contratual": 190,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501507930",
+  "adjudicatario": [
+   "508535166"
+  ],
+  "data_celebracao_contrato": "2026-01-15",
+  "data_publicacao_contrato": "2026-01-15",
+  "n": 33,
+  "preco_base": 8300,
+  "preco_contratual": 7413.32,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "507618319",
+  "adjudicatario": [
+   "517549344"
+  ],
+  "data_celebracao_contrato": "2026-02-04",
+  "data_publicacao_contrato": "2026-03-05",
+  "n": 34,
+  "preco_base": 122110.63,
+  "preco_contratual": 22917.2,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "500745943",
+  "adjudicatario": [
+   "503068187"
+  ],
+  "data_celebracao_contrato": "2026-09-16",
+  "data_publicacao_contrato": "2026-09-17",
+  "n": 35,
+  "preco_base": 18774.8,
+  "preco_contratual": 13775,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "506682048"
+  ],
+  "data_celebracao_contrato": "2026-03-10",
+  "data_publicacao_contrato": "2026-04-10",
+  "n": 36,
+  "preco_base": 664.91,
+  "preco_contratual": 664.91,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508481287",
+  "adjudicatario": [
+   "502540249"
+  ],
+  "data_celebracao_contrato": "2026-04-27",
+  "data_publicacao_contrato": "2026-04-27",
+  "n": 37,
+  "preco_base": 8372003.71,
+  "preco_contratual": 77810.04,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508481287",
+  "adjudicatario": [
+   "513481613"
+  ],
+  "data_celebracao_contrato": "2026-05-12",
+  "data_publicacao_contrato": "2026-05-12",
+  "n": 38,
+  "preco_base": 147662.68,
+  "preco_contratual": 147662.68,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "several contract types"
+  },
+  "adjudicante": "680015019",
+  "adjudicatario": [
+   "517625288"
+  ],
+  "data_celebracao_contrato": "2026-07-31",
+  "data_publicacao_contrato": "2026-08-07",
+  "n": 39,
+  "preco_base": 7700,
+  "preco_contratual": 7700,
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "several contract types"
+  },
+  "adjudicante": "501275380",
+  "adjudicatario": [
+   "501900004"
+  ],
+  "data_celebracao_contrato": "2026-09-09",
+  "data_publicacao_contrato": "2026-09-11",
+  "n": 40,
+  "preco_base": 13000,
+  "preco_contratual": 13000,
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506791220",
+  "adjudicatario": [
+   "505070022"
+  ],
+  "data_celebracao_contrato": "2026-07-30",
+  "data_publicacao_contrato": "2026-07-31",
+  "n": 41,
+  "preco_base": 18920,
+  "preco_contratual": 17973,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600088146",
+  "adjudicatario": [
+   "502332905"
+  ],
+  "data_celebracao_contrato": "2026-09-02",
+  "data_publicacao_contrato": "2026-09-02",
+  "n": 42,
+  "preco_base": 6807.93,
+  "preco_contratual": 6807.93,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600075680",
+  "adjudicatario": [
+   "507882695"
+  ],
+  "data_celebracao_contrato": "2026-03-09",
+  "data_publicacao_contrato": "2026-03-31",
+  "n": 43,
+  "preco_base": 16822,
+  "preco_contratual": 16710,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "672001926",
+  "adjudicatario": [
+   "515837245"
+  ],
+  "data_celebracao_contrato": "2026-04-20",
+  "data_publicacao_contrato": "2026-04-28",
+  "n": 44,
+  "preco_base": 19975,
+  "preco_contratual": 19972.5,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "672002647",
+  "adjudicatario": [
+   "512035377"
+  ],
+  "data_celebracao_contrato": "2026-01-09",
+  "data_publicacao_contrato": "2026-02-20",
+  "n": 45,
+  "preco_base": 29709.04,
+  "preco_contratual": 2049,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "several contract types"
+  },
+  "adjudicante": "510762980",
+  "adjudicatario": [
+   "501823913"
+  ],
+  "data_celebracao_contrato": "2026-05-09",
+  "data_publicacao_contrato": "2026-05-11",
+  "n": 46,
+  "preco_base": 629400,
+  "preco_contratual": 221348.43,
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600074978",
+  "adjudicatario": [
+   "510728189"
+  ],
+  "data_celebracao_contrato": "2026-01-30",
+  "data_publicacao_contrato": "2026-03-17",
+  "n": 47,
+  "preco_base": 14194.49,
+  "preco_contratual": 14184,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "510533515"
+  ],
+  "data_celebracao_contrato": "2026-05-22",
+  "data_publicacao_contrato": "2026-07-24",
+  "n": 48,
+  "preco_base": 37198.99,
+  "preco_contratual": 646.2,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "516487493",
+  "adjudicatario": [
+   "509582257"
+  ],
+  "data_celebracao_contrato": "2026-05-27",
+  "data_publicacao_contrato": "2026-06-11",
+  "n": 49,
+  "preco_base": 54073.39,
+  "preco_contratual": 54073.39,
+  "tipo_contrato": "obras"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505377802",
+  "adjudicatario": [
+   "509080278"
+  ],
+  "data_celebracao_contrato": "2026-05-15",
+  "data_publicacao_contrato": "2026-05-16",
+  "n": 50,
+  "preco_base": 34000,
+  "preco_contratual": 33940,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501227490",
+  "adjudicatario": [
+   "506871541"
+  ],
+  "data_celebracao_contrato": "2026-08-17",
+  "data_publicacao_contrato": "2026-08-17",
+  "n": 51,
+  "preco_base": 58100,
+  "preco_contratual": 53369,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600010686",
+  "adjudicatario": [
+   "501944141"
+  ],
+  "data_celebracao_contrato": "2026-05-29",
+  "data_publicacao_contrato": "2026-06-01",
+  "n": 52,
+  "preco_base": 3348,
+  "preco_contratual": 3348,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508085888",
+  "adjudicatario": [
+   "508107997"
+  ],
+  "data_celebracao_contrato": "2026-08-03",
+  "data_publicacao_contrato": "2026-08-17",
+  "n": 53,
+  "preco_base": 2251852.84,
+  "preco_contratual": 3957,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506196917",
+  "adjudicatario": [
+   "513493476"
+  ],
+  "data_celebracao_contrato": "2026-02-24",
+  "data_publicacao_contrato": "2026-02-25",
+  "n": 54,
+  "preco_base": 17000,
+  "preco_contratual": 17000,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506884929",
+  "adjudicatario": [
+   "518874320"
+  ],
+  "data_celebracao_contrato": "2026-06-03",
+  "data_publicacao_contrato": "2026-06-08",
+  "n": 55,
+  "preco_base": 74500,
+  "preco_contratual": 73950,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')",
+   "preco_base": "0 or absent",
+   "tipo_procedimento": "'Setores especiais – isenção parte II' outside the vocabulary"
+  },
+  "adjudicante": "500192855",
+  "data_celebracao_contrato": "2026-08-05",
+  "data_publicacao_contrato": "2026-08-10",
+  "n": 56,
+  "preco_contratual": 7630,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "501505334"
+  ],
+  "data_celebracao_contrato": "2026-08-20",
+  "data_publicacao_contrato": "2026-08-20",
+  "n": 57,
+  "preco_base": 1358,
+  "preco_contratual": 1355.2,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508318262",
+  "adjudicatario": [
+   "502942240"
+  ],
+  "data_celebracao_contrato": "2026-04-06",
+  "data_publicacao_contrato": "2026-09-11",
+  "n": 58,
+  "preco_base": 110582413.73,
+  "preco_contratual": 138168.7,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505377802",
+  "adjudicatario": [
+   "506437949"
+  ],
+  "data_celebracao_contrato": "2026-06-08",
+  "data_publicacao_contrato": "2026-06-09",
+  "n": 59,
+  "preco_base": 40000,
+  "preco_contratual": 20000,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508080142",
+  "adjudicatario": [
+   "503550558"
+  ],
+  "data_celebracao_contrato": "2026-09-03",
+  "data_publicacao_contrato": "2026-09-08",
+  "n": 60,
+  "preco_base": 689421.4,
+  "preco_contratual": 66153.4,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506608972",
+  "adjudicatario": [
+   "502930462"
+  ],
+  "data_celebracao_contrato": "2026-05-18",
+  "data_publicacao_contrato": "2026-05-18",
+  "n": 61,
+  "preco_base": 24000,
+  "preco_contratual": 24000,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "509932584",
+  "adjudicatario": [
+   "507981227"
+  ],
+  "data_celebracao_contrato": "2026-05-21",
+  "data_publicacao_contrato": "2026-05-27",
+  "n": 62,
+  "preco_base": 7201363.06,
+  "preco_contratual": 14.4,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508094461",
+  "adjudicatario": [
+   "502318929"
+  ],
+  "data_celebracao_contrato": "2026-05-15",
+  "data_publicacao_contrato": "2026-06-25",
+  "n": 63,
+  "preco_base": 8800,
+  "preco_contratual": 8800,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "501617582",
+  "adjudicatario": [
+   "501061126"
+  ],
+  "data_celebracao_contrato": "2026-08-24",
+  "data_publicacao_contrato": "2026-09-03",
+  "n": 64,
+  "preco_base": 503.01,
+  "preco_contratual": 503.01,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600010686",
+  "adjudicatario": [
+   "514533544"
+  ],
+  "data_celebracao_contrato": "2026-05-06",
+  "data_publicacao_contrato": "2026-05-06",
+  "n": 65,
+  "preco_base": 1420.73,
+  "preco_contratual": 1420.73,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "507281446",
+  "adjudicatario": [
+   "507850467"
+  ],
+  "data_celebracao_contrato": "2026-07-30",
+  "data_publicacao_contrato": "2026-08-24",
+  "n": 66,
+  "preco_base": 16750,
+  "preco_contratual": 16750,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501390642",
+  "adjudicatario": [
+   "501544682"
+  ],
+  "data_celebracao_contrato": "2026-03-06",
+  "data_publicacao_contrato": "2026-03-16",
+  "n": 67,
+  "preco_base": 6310,
+  "preco_contratual": 4359.91,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "505625520"
+  ],
+  "data_celebracao_contrato": "2026-01-27",
+  "data_publicacao_contrato": "2026-01-30",
+  "n": 68,
+  "preco_base": 76.8,
+  "preco_contratual": 76.8,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508080142",
+  "adjudicatario": [
+   "503818348"
+  ],
+  "data_celebracao_contrato": "2026-04-16",
+  "data_publicacao_contrato": "2026-04-20",
+  "n": 69,
+  "preco_base": 1106508.9,
+  "preco_contratual": 209744,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "501461108",
+  "adjudicatario": [
+   "509932045"
+  ],
+  "data_celebracao_contrato": "2026-06-03",
+  "data_publicacao_contrato": "2026-06-03",
+  "n": 70,
+  "preco_base": 129298,
+  "preco_contratual": 47717,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "502083514",
+  "adjudicatario": [
+   "503834149"
+  ],
+  "data_celebracao_contrato": "2026-06-22",
+  "data_publicacao_contrato": "2026-07-22",
+  "n": 71,
+  "preco_base": 59805,
+  "preco_contratual": 59805,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "504590006",
+  "adjudicatario": [
+   "500271518"
+  ],
+  "data_celebracao_contrato": "2026-03-03",
+  "data_publicacao_contrato": "2026-05-21",
+  "n": 72,
+  "preco_base": 26582.79,
+  "preco_contratual": 17155.54,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "514747145"
+  ],
+  "data_celebracao_contrato": "2026-04-27",
+  "data_publicacao_contrato": "2026-05-08",
+  "n": 73,
+  "preco_base": 1400,
+  "preco_contratual": 1400,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "508779200",
+  "data_celebracao_contrato": "2026-03-31",
+  "data_publicacao_contrato": "2026-04-02",
+  "n": 74,
+  "preco_base": 5250,
+  "preco_contratual": 5250,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506882713",
+  "adjudicatario": [
+   "503335096"
+  ],
+  "data_celebracao_contrato": "2026-07-24",
+  "data_publicacao_contrato": "2026-08-27",
+  "n": 75,
+  "preco_base": 432710,
+  "preco_contratual": 361140,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501461108",
+  "adjudicatario": [
+   "508192943"
+  ],
+  "data_celebracao_contrato": "2026-02-03",
+  "data_publicacao_contrato": "2026-02-10",
+  "n": 76,
+  "preco_base": 60000,
+  "preco_contratual": 60000,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "504296434",
+  "adjudicatario": [
+   "518022145"
+  ],
+  "data_celebracao_contrato": "2026-07-23",
+  "data_publicacao_contrato": "2026-07-27",
+  "n": 77,
+  "preco_base": 5750,
+  "preco_contratual": 5750,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "['Locação de bens móveis'] outside the vocabulary"
+  },
+  "adjudicante": "506641376",
+  "adjudicatario": [
+   "516669885"
+  ],
+  "data_celebracao_contrato": "2026-09-03",
+  "data_publicacao_contrato": "2026-09-07",
+  "n": 78,
+  "preco_base": 205656,
+  "preco_contratual": 19305.79,
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506800580",
+  "adjudicatario": [
+   "504100327"
+  ],
+  "data_celebracao_contrato": "2026-07-23",
+  "data_publicacao_contrato": "2026-07-24",
+  "n": 79,
+  "preco_base": 18625,
+  "preco_contratual": 16460,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "509047963",
+  "adjudicatario": [
+   "502365889"
+  ],
+  "data_celebracao_contrato": "2026-07-23",
+  "data_publicacao_contrato": "2026-08-31",
+  "n": 80,
+  "preco_base": 322913.33,
+  "preco_contratual": 16990.28,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361438",
+  "adjudicatario": [
+   "507958861"
+  ],
+  "data_celebracao_contrato": "2026-02-06",
+  "data_publicacao_contrato": "2026-02-11",
+  "n": 81,
+  "preco_base": 7140,
+  "preco_contratual": 4980,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "500051062",
+  "adjudicatario": [
+   "502131608"
+  ],
+  "data_celebracao_contrato": "2026-04-09",
+  "data_publicacao_contrato": "2026-04-13",
+  "n": 82,
+  "preco_base": 18000,
+  "preco_contratual": 18000,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361438",
+  "adjudicatario": [
+   "502914319"
+  ],
+  "data_celebracao_contrato": "2026-01-02",
+  "data_publicacao_contrato": "2026-01-23",
+  "n": 83,
+  "preco_base": 15000,
+  "preco_contratual": 2400,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "515545180",
+  "adjudicatario": [
+   "500650870"
+  ],
+  "data_celebracao_contrato": "2026-03-05",
+  "data_publicacao_contrato": "2026-07-08",
+  "n": 84,
+  "preco_base": 330947.41,
+  "preco_contratual": 330594.89,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "680047360",
+  "adjudicatario": [
+   "503140600"
+  ],
+  "data_celebracao_contrato": "2026-02-18",
+  "data_publicacao_contrato": "2026-03-10",
+  "n": 85,
+  "preco_base": 59500,
+  "preco_contratual": 59212.64,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "502266694",
+  "adjudicatario": [
+   "504511270"
+  ],
+  "data_celebracao_contrato": "2026-07-31",
+  "data_publicacao_contrato": "2026-07-31",
+  "n": 86,
+  "preco_base": 70500,
+  "preco_contratual": 65643.6,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "511228848",
+  "adjudicatario": [
+   "511062052"
+  ],
+  "data_celebracao_contrato": "2026-03-09",
+  "data_publicacao_contrato": "2026-03-10",
+  "n": 87,
+  "preco_base": 418885.92,
+  "preco_contratual": 413427.24,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506881784",
+  "adjudicatario": [
+   "516937340"
+  ],
+  "data_celebracao_contrato": "2026-04-17",
+  "data_publicacao_contrato": "2026-04-20",
+  "n": 88,
+  "preco_base": 27518.29,
+  "preco_contratual": 27500,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506450201",
+  "adjudicatario": [
+   "517625288"
+  ],
+  "data_celebracao_contrato": "2026-05-06",
+  "data_publicacao_contrato": "2026-05-08",
+  "n": 89,
+  "preco_base": 74900,
+  "preco_contratual": 74900,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "510726941"
+  ],
+  "data_celebracao_contrato": "2026-08-04",
+  "data_publicacao_contrato": "2026-08-13",
+  "n": 90,
+  "preco_base": 2176895.2,
+  "preco_contratual": 19770,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600012662",
+  "adjudicatario": [
+   "507304721"
+  ],
+  "data_celebracao_contrato": "2026-03-31",
+  "data_publicacao_contrato": "2026-03-31",
+  "n": 91,
+  "preco_base": 13778.1,
+  "preco_contratual": 13778.1,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505203731",
+  "adjudicatario": [
+   "509725317"
+  ],
+  "data_celebracao_contrato": "2026-04-24",
+  "data_publicacao_contrato": "2026-04-27",
+  "n": 92,
+  "preco_base": 62100,
+  "preco_contratual": 61900,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600012662",
+  "adjudicatario": [
+   "505192942"
+  ],
+  "data_celebracao_contrato": "2026-06-16",
+  "data_publicacao_contrato": "2026-08-12",
+  "n": 93,
+  "preco_base": 138144,
+  "preco_contratual": 22702.8,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "500843139",
+  "adjudicatario": [
+   "507846044"
+  ],
+  "data_celebracao_contrato": "2026-09-23",
+  "data_publicacao_contrato": "2026-09-23",
+  "n": 94,
+  "preco_base": 150554.92,
+  "preco_contratual": 150554.92,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506813266",
+  "adjudicatario": [
+   "501366075"
+  ],
+  "data_celebracao_contrato": "2026-04-01",
+  "data_publicacao_contrato": "2026-04-14",
+  "n": 95,
+  "preco_base": 1280,
+  "preco_contratual": 1275.84,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "510745997",
+  "adjudicatario": [
+   "517685485"
+  ],
+  "data_celebracao_contrato": "2026-06-01",
+  "data_publicacao_contrato": "2026-07-07",
+  "n": 96,
+  "preco_base": 139821.3,
+  "preco_contratual": 139821.3,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506362299",
+  "adjudicatario": [
+   "500013810"
+  ],
+  "data_celebracao_contrato": "2026-08-28",
+  "data_publicacao_contrato": "2026-09-28",
+  "n": 97,
+  "preco_base": 41220.79,
+  "preco_contratual": 2376,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508481287",
+  "adjudicatario": [
+   "503237612"
+  ],
+  "data_celebracao_contrato": "2026-09-07",
+  "data_publicacao_contrato": "2026-09-07",
+  "n": 98,
+  "preco_base": 261,
+  "preco_contratual": 261,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "507072642"
+  ],
+  "data_celebracao_contrato": "2026-02-10",
+  "data_publicacao_contrato": "2026-02-20",
+  "n": 99,
+  "preco_base": 1278,
+  "preco_contratual": 1278,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "510123210",
+  "adjudicatario": [
+   "502266791"
+  ],
+  "data_celebracao_contrato": "2026-05-27",
+  "data_publicacao_contrato": "2026-08-20",
+  "n": 100,
+  "preco_base": 10604100.38,
+  "preco_contratual": 2685.6,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')",
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508741823",
+  "data_celebracao_contrato": "2026-04-09",
+  "data_publicacao_contrato": "2026-07-30",
+  "n": 101,
+  "preco_base": 59077217.74,
+  "preco_contratual": 2075.75,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "511228848",
+  "adjudicatario": [
+   "502820780"
+  ],
+  "data_celebracao_contrato": "2026-05-15",
+  "data_publicacao_contrato": "2026-05-15",
+  "n": 102,
+  "preco_base": 251214,
+  "preco_contratual": 32714,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "509821197",
+  "adjudicatario": [
+   "503531588"
+  ],
+  "data_celebracao_contrato": "2026-07-28",
+  "data_publicacao_contrato": "2026-07-29",
+  "n": 103,
+  "preco_base": 12171.48,
+  "preco_contratual": 12171.48,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "504256360",
+  "adjudicatario": [
+   "502635673"
+  ],
+  "data_celebracao_contrato": "2026-05-21",
+  "data_publicacao_contrato": "2026-05-22",
+  "n": 104,
+  "preco_base": 6886.8,
+  "preco_contratual": 6886.8,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "517392259",
+  "adjudicatario": [
+   "510726941"
+  ],
+  "data_celebracao_contrato": "2026-06-05",
+  "data_publicacao_contrato": "2026-06-08",
+  "n": 105,
+  "preco_base": 114380,
+  "preco_contratual": 114380,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506642798",
+  "adjudicatario": [
+   "503501999"
+  ],
+  "data_celebracao_contrato": "2026-06-12",
+  "data_publicacao_contrato": "2026-06-16",
+  "n": 106,
+  "preco_base": 27000,
+  "preco_contratual": 27000,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "509822932",
+  "adjudicatario": [
+   "506037169"
+  ],
+  "data_celebracao_contrato": "2026-06-02",
+  "data_publicacao_contrato": "2026-06-16",
+  "n": 107,
+  "preco_base": 7201363.06,
+  "preco_contratual": 43998.9,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508905435",
+  "adjudicatario": [
+   "508080975"
+  ],
+  "data_celebracao_contrato": "2026-09-29",
+  "data_publicacao_contrato": "2026-09-29",
+  "n": 108,
+  "preco_base": 5631.24,
+  "preco_contratual": 5631.24,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "508142156",
+  "data_celebracao_contrato": "2026-05-21",
+  "data_publicacao_contrato": "2026-05-22",
+  "n": 109,
+  "preco_base": 150960,
+  "preco_contratual": 150960,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361462",
+  "adjudicatario": [
+   "516337629"
+  ],
+  "data_celebracao_contrato": "2026-09-04",
+  "data_publicacao_contrato": "2026-09-15",
+  "n": 110,
+  "preco_base": 40460,
+  "preco_contratual": 1754.94,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501294996",
+  "adjudicatario": [
+   "509945694"
+  ],
+  "data_celebracao_contrato": "2026-03-05",
+  "data_publicacao_contrato": "2026-03-05",
+  "n": 111,
+  "preco_base": 35000,
+  "preco_contratual": 34750,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "501559094",
+  "adjudicatario": [
+   "503842770"
+  ],
+  "data_celebracao_contrato": "2026-06-03",
+  "data_publicacao_contrato": "2026-06-15",
+  "n": 112,
+  "preco_base": 6831.7,
+  "preco_contratual": 6831.7,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508080142",
+  "adjudicatario": [
+   "500697370"
+  ],
+  "data_celebracao_contrato": "2026-05-21",
+  "data_publicacao_contrato": "2026-05-26",
+  "n": 113,
+  "preco_base": 275654.78,
+  "preco_contratual": 275654.78,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "600015300",
+  "adjudicatario": [
+   "600025420"
+  ],
+  "data_celebracao_contrato": "2026-05-04",
+  "data_publicacao_contrato": "2026-05-04",
+  "n": 114,
+  "preco_base": 35210.12,
+  "preco_contratual": 35210.12,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "513606084",
+  "adjudicatario": [
+   "505044897"
+  ],
+  "data_celebracao_contrato": "2026-07-05",
+  "data_publicacao_contrato": "2026-07-14",
+  "n": 115,
+  "preco_base": 3671.29,
+  "preco_contratual": 3671.29,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "511239068",
+  "adjudicatario": [
+   "514012633"
+  ],
+  "data_celebracao_contrato": "2026-07-21",
+  "data_publicacao_contrato": "2026-07-21",
+  "n": 116,
+  "preco_base": 27000,
+  "preco_contratual": 27000,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "600072525",
+  "adjudicatario": [
+   "506019608"
+  ],
+  "data_celebracao_contrato": "2026-07-08",
+  "data_publicacao_contrato": "2026-07-28",
+  "n": 117,
+  "preco_base": 402439.02,
+  "preco_contratual": 95.01,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506884937",
+  "adjudicatario": [
+   "507399641"
+  ],
+  "data_celebracao_contrato": "2026-07-17",
+  "data_publicacao_contrato": "2026-07-24",
+  "n": 118,
+  "preco_base": 6750,
+  "preco_contratual": 6750,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "preco_base": "0 or absent",
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "509932584",
+  "adjudicatario": [
+   "500626413"
+  ],
+  "data_celebracao_contrato": "2026-01-07",
+  "data_publicacao_contrato": "2026-01-12",
+  "n": 119,
+  "preco_contratual": 1197,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508080827",
+  "adjudicatario": [
+   "504223933"
+  ],
+  "data_celebracao_contrato": "2026-02-02",
+  "data_publicacao_contrato": "2026-02-18",
+  "n": 120,
+  "preco_base": 1146004.6,
+  "preco_contratual": 8092,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506741400",
+  "adjudicatario": [
+   "500424020"
+  ],
+  "data_celebracao_contrato": "2026-03-05",
+  "data_publicacao_contrato": "2026-03-05",
+  "n": 121,
+  "preco_base": 5950,
+  "preco_contratual": 5950,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "513620834"
+  ],
+  "data_celebracao_contrato": "2026-07-16",
+  "data_publicacao_contrato": "2026-07-27",
+  "n": 122,
+  "preco_base": 32033.82,
+  "preco_contratual": 550,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508094461",
+  "adjudicatario": [
+   "503505196"
+  ],
+  "data_celebracao_contrato": "2026-04-08",
+  "data_publicacao_contrato": "2026-04-14",
+  "n": 123,
+  "preco_base": 29852.4,
+  "preco_contratual": 29852.4,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508878462",
+  "adjudicatario": [
+   "508607990"
+  ],
+  "data_celebracao_contrato": "2026-07-10",
+  "data_publicacao_contrato": "2026-07-22",
+  "n": 124,
+  "preco_base": 11433.72,
+  "preco_contratual": 11433.72,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "501559094",
+  "adjudicatario": [
+   "514451270"
+  ],
+  "data_celebracao_contrato": "2026-04-27",
+  "data_publicacao_contrato": "2026-07-06",
+  "n": 125,
+  "preco_base": 120000,
+  "preco_contratual": 119500,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505120151",
+  "adjudicatario": [
+   "519017854"
+  ],
+  "data_celebracao_contrato": "2026-05-18",
+  "data_publicacao_contrato": "2026-05-28",
+  "n": 126,
+  "preco_base": 50000,
+  "preco_contratual": 27490,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "500051062",
+  "adjudicatario": [
+   "509106781"
+  ],
+  "data_celebracao_contrato": "2026-06-22",
+  "data_publicacao_contrato": "2026-07-08",
+  "n": 127,
+  "preco_base": 116000,
+  "preco_contratual": 105250.5,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600086631",
+  "adjudicatario": [
+   "517640112"
+  ],
+  "data_celebracao_contrato": "2026-01-28",
+  "data_publicacao_contrato": "2026-01-29",
+  "n": 128,
+  "preco_base": 121149.6,
+  "preco_contratual": 49076.45,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "504180746"
+  ],
+  "data_celebracao_contrato": "2026-06-29",
+  "data_publicacao_contrato": "2026-08-14",
+  "n": 129,
+  "preco_base": 1858413.8,
+  "preco_contratual": 138997.8,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508752000",
+  "adjudicatario": [
+   "507824652"
+  ],
+  "data_celebracao_contrato": "2026-03-24",
+  "data_publicacao_contrato": "2026-03-24",
+  "n": 130,
+  "preco_base": 216657.3,
+  "preco_contratual": 216657.3,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "500925399",
+  "adjudicatario": [
+   "503258121"
+  ],
+  "data_celebracao_contrato": "2026-05-07",
+  "data_publicacao_contrato": "2026-05-07",
+  "n": 131,
+  "preco_base": 5635.71,
+  "preco_contratual": 5635.71,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "600072525",
+  "adjudicatario": [
+   "506019608"
+  ],
+  "data_celebracao_contrato": "2026-01-19",
+  "data_publicacao_contrato": "2026-02-10",
+  "n": 132,
+  "preco_base": 402439.02,
+  "preco_contratual": 178.83,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "502826126",
+  "adjudicatario": [
+   "500621594"
+  ],
+  "data_celebracao_contrato": "2026-09-25",
+  "data_publicacao_contrato": "2026-09-25",
+  "n": 133,
+  "preco_base": 13755,
+  "preco_contratual": 13234.9,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "503797766",
+  "adjudicatario": [
+   "508787394"
+  ],
+  "data_celebracao_contrato": "2026-03-05",
+  "data_publicacao_contrato": "2026-05-21",
+  "n": 134,
+  "preco_base": 130179.45,
+  "preco_contratual": 123660,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600032205",
+  "adjudicatario": [
+   "504084011"
+  ],
+  "data_celebracao_contrato": "2026-03-12",
+  "data_publicacao_contrato": "2026-03-12",
+  "n": 135,
+  "preco_base": 7970,
+  "preco_contratual": 7970,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "509822940",
+  "adjudicatario": [
+   "507992822"
+  ],
+  "data_celebracao_contrato": "2026-01-30",
+  "data_publicacao_contrato": "2026-04-13",
+  "n": 136,
+  "preco_base": 3339,
+  "preco_contratual": 3339,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600075389",
+  "adjudicatario": [
+   "500039577"
+  ],
+  "data_celebracao_contrato": "2026-01-27",
+  "data_publicacao_contrato": "2026-02-16",
+  "n": 137,
+  "preco_base": 72424.91,
+  "preco_contratual": 14952.25,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "510857043",
+  "data_celebracao_contrato": "2026-07-03",
+  "data_publicacao_contrato": "2026-07-17",
+  "n": 138,
+  "preco_base": 3450,
+  "preco_contratual": 3450,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "510103448",
+  "adjudicatario": [
+   "980474710"
+  ],
+  "data_celebracao_contrato": "2026-02-14",
+  "data_publicacao_contrato": "2026-04-17",
+  "n": 139,
+  "preco_base": 9061.8,
+  "preco_contratual": 9061.8,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "506370836"
+  ],
+  "data_celebracao_contrato": "2026-04-16",
+  "data_publicacao_contrato": "2026-04-16",
+  "n": 140,
+  "preco_base": 450,
+  "preco_contratual": 450,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508100496",
+  "adjudicatario": [
+   "508107997"
+  ],
+  "data_celebracao_contrato": "2026-03-04",
+  "data_publicacao_contrato": "2026-04-08",
+  "n": 141,
+  "preco_base": 128.8,
+  "preco_contratual": 128.8,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "513606084",
+  "adjudicatario": [
+   "500701490"
+  ],
+  "data_celebracao_contrato": "2026-07-16",
+  "data_publicacao_contrato": "2026-08-12",
+  "n": 142,
+  "preco_base": 301,
+  "preco_contratual": 301,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "several contract types"
+  },
+  "adjudicante": "505037700",
+  "adjudicatario": [
+   "516191209"
+  ],
+  "data_celebracao_contrato": "2026-07-17",
+  "data_publicacao_contrato": "2026-07-27",
+  "n": 143,
+  "preco_base": 11000,
+  "preco_contratual": 9760.25,
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506362299",
+  "adjudicatario": [
+   "516808206"
+  ],
+  "data_celebracao_contrato": "2026-05-11",
+  "data_publicacao_contrato": "2026-07-02",
+  "n": 144,
+  "preco_base": 98255.9,
+  "preco_contratual": 590,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')",
+   "tipo_contrato": "['Locação de bens móveis'] outside the vocabulary"
+  },
+  "adjudicante": "506666018",
+  "data_celebracao_contrato": "2026-08-25",
+  "data_publicacao_contrato": "2026-09-08",
+  "n": 145,
+  "preco_base": 1890,
+  "preco_contratual": 1890,
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508080827",
+  "adjudicatario": [
+   "502942240"
+  ],
+  "data_celebracao_contrato": "2026-04-06",
+  "data_publicacao_contrato": "2026-05-06",
+  "n": 146,
+  "preco_base": 110582413.73,
+  "preco_contratual": 1694519.35,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "511228848",
+  "adjudicatario": [
+   "515075876"
+  ],
+  "data_celebracao_contrato": "2026-02-23",
+  "data_publicacao_contrato": "2026-03-12",
+  "n": 147,
+  "preco_base": 8400,
+  "preco_contratual": 8400,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505187531",
+  "adjudicatario": [
+   "502676418"
+  ],
+  "data_celebracao_contrato": "2026-09-16",
+  "data_publicacao_contrato": "2026-09-16",
+  "n": 148,
+  "preco_base": 9950,
+  "preco_contratual": 9950,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "501367225"
+  ],
+  "data_celebracao_contrato": "2026-07-28",
+  "data_publicacao_contrato": "2026-07-31",
+  "n": 149,
+  "preco_base": 145261.35,
+  "preco_contratual": 230.12,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505279460",
+  "adjudicatario": [
+   "500517533"
+  ],
+  "data_celebracao_contrato": "2026-09-04",
+  "data_publicacao_contrato": "2026-09-17",
+  "n": 150,
+  "preco_base": 94800,
+  "preco_contratual": 68770,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')",
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "506361608",
+  "data_celebracao_contrato": "2026-05-09",
+  "data_publicacao_contrato": "2026-06-03",
+  "n": 151,
+  "preco_base": 60000,
+  "preco_contratual": 60000,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501144218",
+  "adjudicatario": [
+   "516857126"
+  ],
+  "data_celebracao_contrato": "2026-05-28",
+  "data_publicacao_contrato": "2026-05-28",
+  "n": 152,
+  "preco_base": 30484.8,
+  "preco_contratual": 23914.8,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Setores especiais – isenção parte II' outside the vocabulary"
+  },
+  "adjudicante": "508114381",
+  "adjudicatario": [
+   "505232235"
+  ],
+  "data_celebracao_contrato": "2026-03-26",
+  "data_publicacao_contrato": "2026-03-31",
+  "n": 153,
+  "preco_base": 80000,
+  "preco_contratual": 64460,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501559094",
+  "adjudicatario": [
+   "507924320"
+  ],
+  "data_celebracao_contrato": "2026-08-10",
+  "data_publicacao_contrato": "2026-08-17",
+  "n": 154,
+  "preco_base": 52400,
+  "preco_contratual": 1774,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "503716391",
+  "adjudicatario": [
+   "507072065"
+  ],
+  "data_celebracao_contrato": "2026-01-19",
+  "data_publicacao_contrato": "2026-01-29",
+  "n": 155,
+  "preco_base": 3900,
+  "preco_contratual": 3900,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506362299",
+  "adjudicatario": [
+   "508107997"
+  ],
+  "data_celebracao_contrato": "2026-05-21",
+  "data_publicacao_contrato": "2026-07-20",
+  "n": 156,
+  "preco_base": 16178376.07,
+  "preco_contratual": 7370.11,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "504152980",
+  "adjudicatario": [
+   "516511084"
+  ],
+  "data_celebracao_contrato": "2026-04-08",
+  "data_publicacao_contrato": "2026-04-22",
+  "n": 157,
+  "preco_base": 11849,
+  "preco_contratual": 4426.59,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "512044040",
+  "adjudicatario": [
+   "512100403"
+  ],
+  "data_celebracao_contrato": "2026-03-10",
+  "data_publicacao_contrato": "2026-03-10",
+  "n": 158,
+  "preco_base": 150000,
+  "preco_contratual": 131952.19,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600008878",
+  "adjudicatario": [
+   "502303832"
+  ],
+  "data_celebracao_contrato": "2026-08-24",
+  "data_publicacao_contrato": "2026-09-17",
+  "n": 159,
+  "preco_base": 29460,
+  "preco_contratual": 29325.7,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505187531",
+  "adjudicatario": [
+   "513184929"
+  ],
+  "data_celebracao_contrato": "2026-05-19",
+  "data_publicacao_contrato": "2026-05-20",
+  "n": 160,
+  "preco_base": 8225,
+  "preco_contratual": 8225,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "501382356"
+  ],
+  "data_celebracao_contrato": "2026-07-22",
+  "data_publicacao_contrato": "2026-07-27",
+  "n": 161,
+  "preco_base": 714394.03,
+  "preco_contratual": 72483.16,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506362299",
+  "adjudicatario": [
+   "505481839"
+  ],
+  "data_celebracao_contrato": "2026-07-14",
+  "data_publicacao_contrato": "2026-09-23",
+  "n": 162,
+  "preco_base": 920.02,
+  "preco_contratual": 60,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506362299",
+  "adjudicatario": [
+   "503612600"
+  ],
+  "data_celebracao_contrato": "2026-04-29",
+  "data_publicacao_contrato": "2026-06-19",
+  "n": 163,
+  "preco_base": 6756.61,
+  "preco_contratual": 165,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "513606130",
+  "adjudicatario": [
+   "513200606"
+  ],
+  "data_celebracao_contrato": "2026-03-13",
+  "data_publicacao_contrato": "2026-03-20",
+  "n": 164,
+  "preco_base": 495000,
+  "preco_contratual": 286389.33,
+  "tipo_contrato": "obras",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "['Locação de bens móveis'] outside the vocabulary"
+  },
+  "adjudicante": "503761877",
+  "adjudicatario": [
+   "503372285"
+  ],
+  "data_celebracao_contrato": "2026-04-14",
+  "data_publicacao_contrato": "2026-04-14",
+  "n": 165,
+  "preco_base": 30205.33,
+  "preco_contratual": 30205.33,
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361616",
+  "adjudicatario": [
+   "513933255"
+  ],
+  "data_celebracao_contrato": "2026-07-14",
+  "data_publicacao_contrato": "2026-07-21",
+  "n": 166,
+  "preco_base": 17300,
+  "preco_contratual": 14687.5,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501090436",
+  "adjudicatario": [
+   "517430649"
+  ],
+  "data_celebracao_contrato": "2026-01-14",
+  "data_publicacao_contrato": "2026-01-15",
+  "n": 167,
+  "preco_base": 5490,
+  "preco_contratual": 5490,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505161974",
+  "adjudicatario": [
+   "510122639"
+  ],
+  "data_celebracao_contrato": "2026-03-26",
+  "data_publicacao_contrato": "2026-04-08",
+  "n": 168,
+  "preco_base": 36750,
+  "preco_contratual": 34930,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361608",
+  "adjudicatario": [
+   "500492867"
+  ],
+  "data_celebracao_contrato": "2026-05-12",
+  "data_publicacao_contrato": "2026-05-19",
+  "n": 169,
+  "preco_base": 84371147.7,
+  "preco_contratual": 302927.29,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "505161974",
+  "adjudicatario": [
+   "500697370"
+  ],
+  "data_celebracao_contrato": "2026-05-28",
+  "data_publicacao_contrato": "2026-06-02",
+  "n": 170,
+  "preco_base": 28264.76,
+  "preco_contratual": 26709.16,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "671000624",
+  "adjudicatario": [
+   "511016239"
+  ],
+  "data_celebracao_contrato": "2026-01-21",
+  "data_publicacao_contrato": "2026-02-20",
+  "n": 171,
+  "preco_base": 20000,
+  "preco_contratual": 19719.02,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501132872",
+  "adjudicatario": [
+   "515366153"
+  ],
+  "data_celebracao_contrato": "2026-03-26",
+  "data_publicacao_contrato": "2026-03-26",
+  "n": 172,
+  "preco_base": 6980,
+  "preco_contratual": 6979.5,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600010180",
+  "adjudicatario": [
+   "513077332"
+  ],
+  "data_celebracao_contrato": "2026-06-15",
+  "data_publicacao_contrato": "2026-06-18",
+  "n": 173,
+  "preco_base": 245.44,
+  "preco_contratual": 245.44,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "501413197",
+  "adjudicatario": [
+   "517362635"
+  ],
+  "data_celebracao_contrato": "2026-07-08",
+  "data_publicacao_contrato": "2026-07-08",
+  "n": 174,
+  "preco_base": 5721,
+  "preco_contratual": 5721,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "508318262",
+  "adjudicatario": [
+   "506819698"
+  ],
+  "data_celebracao_contrato": "2026-07-23",
+  "data_publicacao_contrato": "2026-07-23",
+  "n": 175,
+  "preco_base": 32550,
+  "preco_contratual": 32550,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "510148921",
+  "adjudicatario": [
+   "512063605"
+  ],
+  "data_celebracao_contrato": "2026-08-13",
+  "data_publicacao_contrato": "2026-08-17",
+  "n": 176,
+  "preco_base": 115296.13,
+  "preco_contratual": 637,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361438",
+  "adjudicatario": [
+   "500189412"
+  ],
+  "data_celebracao_contrato": "2026-01-02",
+  "data_publicacao_contrato": "2026-01-02",
+  "n": 177,
+  "preco_base": 4530880.28,
+  "preco_contratual": 461717.34,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506151174",
+  "adjudicatario": [
+   "504961489"
+  ],
+  "data_celebracao_contrato": "2026-03-02",
+  "data_publicacao_contrato": "2026-03-18",
+  "n": 178,
+  "preco_base": 24725.04,
+  "preco_contratual": 1346.8,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506510476",
+  "adjudicatario": [
+   "508745764"
+  ],
+  "data_celebracao_contrato": "2026-09-09",
+  "data_publicacao_contrato": "2026-09-09",
+  "n": 179,
+  "preco_base": 46000,
+  "preco_contratual": 46000,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "509186998",
+  "adjudicatario": [
+   "503480045"
+  ],
+  "data_celebracao_contrato": "2026-01-23",
+  "data_publicacao_contrato": "2026-03-03",
+  "n": 180,
+  "preco_base": 140343.22,
+  "preco_contratual": 350,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_publico"
+ },
+ {
+  "_missing": {
+   "preco_contratual": "0 or absent"
+  },
+  "adjudicante": "510342191",
+  "adjudicatario": [
+   "503653179",
+   "504204440",
+   "500782407",
+   "501140263"
+  ],
+  "data_celebracao_contrato": "2026-01-23",
+  "data_publicacao_contrato": "2026-09-01",
+  "n": 181,
+  "preco_base": 32000000,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "concurso_limitado_previa_qualificacao"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506361470",
+  "adjudicatario": [
+   "513620834"
+  ],
+  "data_celebracao_contrato": "2026-07-31",
+  "data_publicacao_contrato": "2026-09-11",
+  "n": 182,
+  "preco_base": 27380,
+  "preco_contratual": 27380,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "503450189",
+  "adjudicatario": [
+   "518056015"
+  ],
+  "data_celebracao_contrato": "2026-09-21",
+  "data_publicacao_contrato": "2026-09-23",
+  "n": 183,
+  "preco_base": 72000,
+  "preco_contratual": 71600,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "consulta_previa"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "510745997",
+  "adjudicatario": [
+   "504282921"
+  ],
+  "data_celebracao_contrato": "2026-05-04",
+  "data_publicacao_contrato": "2026-05-28",
+  "n": 184,
+  "preco_base": 16880,
+  "preco_contratual": 16880,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508786193",
+  "adjudicatario": [
+   "502155930"
+  ],
+  "data_celebracao_contrato": "2026-01-08",
+  "data_publicacao_contrato": "2026-06-12",
+  "n": 185,
+  "preco_base": 91214.64,
+  "preco_contratual": 1155.2,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')",
+   "tipo_procedimento": "'Contratação excluída II' outside the vocabulary"
+  },
+  "adjudicante": "501442600",
+  "data_celebracao_contrato": "2026-02-20",
+  "data_publicacao_contrato": "2026-02-27",
+  "n": 186,
+  "preco_base": 6615,
+  "preco_contratual": 6615,
+  "tipo_contrato": "servicos"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "508142156",
+  "adjudicatario": [
+   "508107997"
+  ],
+  "data_celebracao_contrato": "2026-01-14",
+  "data_publicacao_contrato": "2026-01-15",
+  "n": 187,
+  "preco_base": 2477320.04,
+  "preco_contratual": 6895.33,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506037258",
+  "adjudicatario": [
+   "510802257"
+  ],
+  "data_celebracao_contrato": "2026-05-18",
+  "data_publicacao_contrato": "2026-05-18",
+  "n": 188,
+  "preco_base": 9890,
+  "preco_contratual": 9890,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "506362299",
+  "adjudicatario": [
+   "500162166"
+  ],
+  "data_celebracao_contrato": "2026-01-21",
+  "data_publicacao_contrato": "2026-03-12",
+  "n": 189,
+  "preco_base": 540536.35,
+  "preco_contratual": 1852.8,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_contrato": "['Locação de bens móveis'] outside the vocabulary"
+  },
+  "adjudicante": "507746430",
+  "adjudicatario": [
+   "503037605"
+  ],
+  "data_celebracao_contrato": "2026-07-13",
+  "data_publicacao_contrato": "2026-07-23",
+  "n": 190,
+  "preco_base": 8850,
+  "preco_contratual": 8850,
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "600087581",
+  "adjudicatario": [
+   "518114252"
+  ],
+  "data_celebracao_contrato": "2026-03-30",
+  "data_publicacao_contrato": "2026-04-28",
+  "n": 191,
+  "preco_base": 660,
+  "preco_contratual": 660,
+  "tipo_contrato": "bens",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "503035416",
+  "adjudicatario": [
+   "504988964"
+  ],
+  "data_celebracao_contrato": "2026-02-26",
+  "data_publicacao_contrato": "2026-03-24",
+  "n": 192,
+  "preco_base": 967957.8,
+  "preco_contratual": 28960,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "505181266",
+  "adjudicatario": [
+   "514896469"
+  ],
+  "data_celebracao_contrato": "2026-04-21",
+  "data_publicacao_contrato": "2026-04-21",
+  "n": 193,
+  "preco_base": 15000,
+  "preco_contratual": 15000,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "500051070",
+  "adjudicatario": [
+   "515268496"
+  ],
+  "data_celebracao_contrato": "2026-03-25",
+  "data_publicacao_contrato": "2026-03-30",
+  "n": 194,
+  "preco_base": 17587,
+  "preco_contratual": 17587,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "513606084",
+  "adjudicatario": [
+   "506958680"
+  ],
+  "data_celebracao_contrato": "2026-08-25",
+  "data_publicacao_contrato": "2026-09-16",
+  "n": 195,
+  "preco_base": 9990,
+  "preco_contratual": 9990,
+  "tipo_contrato": "obras"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary"
+  },
+  "adjudicante": "506814343",
+  "adjudicatario": [
+   "503504564"
+  ],
+  "data_celebracao_contrato": "2026-06-25",
+  "data_publicacao_contrato": "2026-07-03",
+  "n": 196,
+  "preco_base": 810000,
+  "preco_contratual": 810000,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {
+   "adjudicatario": "an adjudicatário without NIF ('-')"
+  },
+  "adjudicante": "501413197",
+  "data_celebracao_contrato": "2026-03-24",
+  "data_publicacao_contrato": "2026-03-25",
+  "n": 197,
+  "preco_base": 17672.52,
+  "preco_contratual": 17672.52,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ },
+ {
+  "_missing": {
+   "tipo_procedimento": "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary"
+  },
+  "adjudicante": "506361462",
+  "adjudicatario": [
+   "513642749"
+  ],
+  "data_celebracao_contrato": "2026-05-22",
+  "data_publicacao_contrato": "2026-05-29",
+  "n": 198,
+  "preco_base": 1251191.64,
+  "preco_contratual": 507.92,
+  "tipo_contrato": "bens"
+ },
+ {
+  "_missing": {},
+  "adjudicante": "504293125",
+  "adjudicatario": [
+   "508966353"
+  ],
+  "data_celebracao_contrato": "2026-02-11",
+  "data_publicacao_contrato": "2026-02-11",
+  "n": 199,
+  "preco_base": 6850.14,
+  "preco_contratual": 6850.14,
+  "tipo_contrato": "servicos",
+  "tipo_procedimento": "ajuste_direto"
+ }
+]

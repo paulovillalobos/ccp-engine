@@ -1489,3 +1489,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Sealed: adapters/medicao/ted-v2/sample.json ca9824d2807865917d130977fc1eb629268231181a622a176e105b08eeaa3a08,
   adapters/medicao/ted-v2/parsed.json 2ae15b5ca1c55a602eba15c0476bd673c53849ad2d085bb65620592897c95856.
 - Next: the blind reading (same client and model), then scoring.
+
+## 2026-10-26 X.5 BASE contratos sample drawn and its parser output sealed (commit: X.5: BASE contratos sample of 200 drawn by the sealed script from contratos2026.zip (back from Storage, sha256 checked); sample.json and parsed.json sealed before the blind reading)
+- Storage answers again (the CLI's login-role step works). contratos2026.zip downloaded back from
+  ccp-raw/base-contratos/raw_bytes/2ac78c54…; sha256 2ac78c54690f2e6456c071e07ba984cfacecf058f5b58a3786944d55fa938fb2 as
+  the criteria name it.
+- `adapters/medicao/sample.py contratos` (v1 criteria, seed 20261027; the contratos path of sample.py is unchanged since
+  X.0): population 182 539 records (October 2026 and repeated idcontrato left out); 200 drawn.
+- Sealed: adapters/medicao/contratos/sample.json 1a03f8e8fda23938a57f50ec359f0ce6f026cadbded7b839459c81d064a40768,
+  adapters/medicao/contratos/parsed.json 5058876e5f0e53d3375b5c0588cb26334d2d2846b1bc89c078830e9394b18111.
+- Next: the blind reading (batches of 10), then A, B (against adaptador:base-anuncios facts) and C.
