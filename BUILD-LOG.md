@@ -1539,3 +1539,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   restricted, BASE Concurso público); parser errors 0.
 - adapters/medicao/REPORT.md: v1, v2, v3 and BASE contratos side by side. Count towards the 8: BASE contratos and TED
   measured; the DR notices measured earlier (CRITERIA-v2).
+
+## 2026-10-26 X.11 Coverage matrix: source × year × field, gaps named (commit: X.11: coverage matrix for BASE anúncios and contratos 2018–2026 and TED 2018–2026, from the adapters' own code; gaps named)
+- adapters/coverage/matrix.py counts, per year, the share of records for which the adapter's own code gives a value
+  (base-anuncios map_record, base-contratos contract_values, adapters/ted/parse.py 715a2dd5…); the BASE dumps were
+  downloaded back from Storage one at a time, sha256 checked, counted and deleted. matrix.json holds counts and the most
+  frequent reasons for no value; COVERAGE-MATRIX.md the tables, every share under 90 % with its reason, and the sources
+  not in the tables (DR 2026 in progress, DR 2018–2025 not fetched, Vortal stopped, platform pieces are documents).
+- Weakest: BASE contratos tipo_procedimento 74–88 % (call-offs and excluded contracting outside the vocabulary);
+  adjudicatario 88–90 % (adjudicatários without NIF); TED estimated_value 37–71 % and TED-XML buyer_nif 11–86 % (not in
+  the notices).
