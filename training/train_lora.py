@@ -28,6 +28,9 @@ MODEL = "amalia-llm/AMALIA-9B-0626-DPO"
 REVISION = "c4614b9b5c7b4fe303fa20902e692fc7dface640"
 SYSTEM = "Responde unicamente com o objeto JSON pedido, sem texto antes nem depois."  # = readers/leitor_a_modal.py SYSTEM
 ADAPTER = "amalia-ccp-lei-v1"
+# phase 5 (DECISIONS D46): v2 adds training/data-v2 (condicoes_texto, generated from law/ by code), counted twice in the mix
+RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repeat": {}},
+        "v2": {"adapter": "amalia-ccp-lei-v2", "data": ["training/data", "training/data-v2"], "repeat": {"condicoes_texto": 2}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,
@@ -43,11 +46,12 @@ adapters = modal.Volume.from_name("amalia-lora", create_if_missing=True)
 app = modal.App("ccp-train-leitor-a2", image=image)
 
 
-def mixture():
+def mixture(run="v1"):
     by_task = {}
-    for f in sorted(DATA.glob("*/train.jsonl")):
-        rows = [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
-        by_task[f.parent.name] = rows
+    for d in RUNS[run]["data"]:
+        for f in sorted((ROOT / d).glob("*/train.jsonl")):
+            rows = [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
+            by_task[f.parent.name] = rows * RUNS[run]["repeat"].get(f.parent.name, 1)
     others = sum(len(v) for k, v in by_task.items() if k != "escolha_passagem")
     esc = sorted(by_task.get("escolha_passagem", []), key=lambda r: hashlib.sha256(r["id"].encode()).hexdigest())
     by_task["escolha_passagem"] = esc[:others]
@@ -56,7 +60,7 @@ def mixture():
 
 
 @app.function(gpu="H100", volumes={"/weights": weights, "/lora": adapters}, timeout=6 * 3600)
-def train_remote(rows: list[dict], hp: dict) -> dict:
+def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
     import math
     import random
 
@@ -65,7 +69,7 @@ def train_remote(rows: list[dict], hp: dict) -> dict:
     from peft import LoraConfig, get_peft_model
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
-    out_dir = Path("/lora") / ADAPTER
+    out_dir = Path("/lora") / adapter
     if out_dir.exists():
         raise SystemExit(f"{out_dir} exists: an adapter is never overwritten")
     path = snapshot_download(MODEL, revision=REVISION, cache_dir="/weights")
@@ -158,18 +162,21 @@ def main(run: str = "v1"):
     out = ROOT / "training/runs" / run
     if (out / "MANIFEST.json").exists():
         raise SystemExit(f"{out}/MANIFEST.json exists: a run is never redone in place")
-    rows, mix = mixture()
+    rows, mix = mixture(run)
+    adapter = RUNS[run]["adapter"]
     index = DATA / "INDEX.json"
+    indexes = {d: hashlib.sha256((ROOT / d / "INDEX.json").read_bytes()).hexdigest() for d in RUNS[run]["data"]}
     commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
-    dirty = bool(subprocess.run(["git", "status", "--porcelain", "training/data", "law"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
+    dirty = bool(subprocess.run(["git", "status", "--porcelain", *RUNS[run]["data"], "law"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    call = train_remote.spawn(rows, HP)
+    call = train_remote.spawn(rows, HP, adapter)
     print("modal function call", call.object_id, flush=True)
     res = call.get()
     finished = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     out.mkdir(parents=True, exist_ok=True)
-    manifest = {"adapter": ADAPTER, "volume": "amalia-lora", "base": {"model": MODEL, "revision": REVISION},
-                "training_index_sha256": hashlib.sha256(index.read_bytes()).hexdigest(), "mixture": mix, "examples_in_mix": len(rows),
+    manifest = {"adapter": adapter, "volume": "amalia-lora", "base": {"model": MODEL, "revision": REVISION},
+                "training_index_sha256": hashlib.sha256(index.read_bytes()).hexdigest(), "data_index_sha256": indexes,
+                "repeat": RUNS[run]["repeat"], "mixture": mix, "examples_in_mix": len(rows),
                 "hyperparameters": HP, "repo_commit": commit, "repo_dirty_training_or_law": dirty, "started": started, "finished": finished,
                 "modal_app": app.app_id, "modal_function_call": call.object_id, "result": res, "cost_usd": "see COST.json (modal billing report)"}
     (out / "MANIFEST.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
