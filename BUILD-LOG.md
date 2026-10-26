@@ -1148,27 +1148,6 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Why: a trained skill is measured on reserved data and then on the real question; here the first passed and the
   second did not, and the log keeps what two families settled.
 
-## 2026-10-26 — D47: AMALIA v3 (entrada_em_vigor, periodos_vigencia); B3 round 5
-- Asked: the person approved the selector proposal (about USD 7).
-- Done: tools/make_regimes.py (make-regimes@1) from law/ by code: entrada_em_vigor 24 train / 8 held out (acts whose own
-  article prints the date of their entra_em_vigor vigências), periodos_vigencia 1 314 / 301 (version histories → the
-  partition of time). Data, round 5 prompts (= round 4) and the BEFORE (base and v2) committed before v3 existed
-  (ab06bf81d, cf2f307bb). LoRA v3 amalia-ccp-lei-v3: 921 steps, 6 714 s H100 (training/runs/v3). Principal leitor:a4.
-- Measured on reserved (tools/measure_regimes.py; verify MEAS recomputes it): periods exact base 0/301, v2 0/301 → v3
-  99.0 % [97.1, 99.7] (298/301), well-formed partition 0 → 99.3 %; entry-into-force date 6/8 → 8/8; condicoes_texto
-  not forgotten (v3 91.8 %, invents 6.0 %, misses 3.2 %).
-- Round 5 (leitor:a4 proposes, leitor:b blind): evento:70–75. Nothing new settles. The selector: leitor:a4 still gives
-  one regime from 2026-10-01 to 2026-10-01 (art. 7.º n.º 2), so the partition learnt on version histories did not carry
-  to this question; leitor:b now cites art. 10.º, 11.º and 7.º n.º 2, two regimes split on 2026-10-01. Deadlines: same
-  article, days and counting point; conditions still differ.
-- Fix on the way: the first recording of round 5 let leitor:a4's `correct` reopen regra:ccp:prazo-minimo-concurso-joue@v1,
-  settled in round 4. Those events were never committed or pushed; they were discarded, record_round now skips a rule
-  settled in an earlier round (its answer is reported, not recorded), and round 5 was recorded again (read-rules@12).
-  measure-conditions@2 reads leitor-a4 too.
-- Next: a selector task built from the transitional norms of other acts (none reserved), then round 6.
-- Why: v3 learnt the skill it was trained on, on articles it never saw; the selector needs that skill applied to a
-  decree's entry into force, which is the next task.
-
 ## 2026-10-26 — D48: the Postgres store (Supabase ccp-engine, eu-west-1)
 - Asked: the person, «Sí: crea las tablas con ese diseño (migraciones en el repo, RLS) y carga los 22.252 procedimientos
   como prueba».
