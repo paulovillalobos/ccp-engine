@@ -1342,3 +1342,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Launched detached at 07:58Z: acingov (~9 200 ZIPs, ~26 h, two runs) and vortal (~10 100 procedures, ~56 h).
 - What lives where: GitHub holds every file's raw (sha256, URL, captured_at), the logs and the code; Modal holds the
   bytes; anyone can re-hash a copy against its raw.
+
+## 2026-10-26 H.1 the BASE history: contratos and anúncios dumps 2018–2026 (commit: H.1: BASE bulk dumps 2018–2025 read once each (16 files, sha1 equal to the portal's); raws; counts per year)
+- Decided by the person, relayed by the builder: «Para el selector por ahora; vamos a los datos (Supabase y descargas)
+  para los 5 días». Branch extractor-historico (from extractor-muestras).
+- Done: adapters/base-historico/fetch.py (fetch / record): the IMPIC datasets' resources on dados.gov.pt, one GET per
+  file, the portal's sha1 checked (16/16 equal), bytes by sha256 under data/raw/base-historico/raw_bytes/ (gitignored),
+  16 raws (source base-dump, kinds contratos-ano / anuncios-ano). 2026 not read again (already stored, same resources).
+  Counts per year: adapters/base-historico/COVERAGE.md — 208 137 anúncios and 1 683 348 contratos, 2018–2026.
+- Blocked: Supabase Storage. The CLI is logged in and linked to ccp-engine from a scratch workdir; the project has no
+  bucket, and creating one (`ccp-raw`, private) was refused by this session's permission policy (a shared resource).
+  The bytes wait on the Mac (424 MB) until the person creates the bucket or allows it.
+- Next: TED Portuguese notices 2018–2026 and the Vortal copies of the DR notices, once the bytes have their place.
