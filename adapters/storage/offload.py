@@ -75,6 +75,8 @@ def main():
             e.update(verified=False, error="local file does not hash to its name; not uploaded")
         else:
             code, out = cli(a.workdir, "cp", str(p), f"ss:///{BUCKET}/{source}/raw_bytes/{sha}")
+            if code != 0 and "KeyAlreadyExists" in out:  # an earlier, interrupted run put it there: check it like a fresh upload
+                code, e["already_there"] = 0, True
             if code != 0:
                 e.update(verified=False, error=f"upload: {out}")
             else:
