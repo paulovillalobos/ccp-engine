@@ -827,7 +827,8 @@ def check_readings(store, out, readings_root=None):
         if not want:
             continue
         leitor = ev["principal"].split(":")[1]
-        f = root / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
+        rnd = (ev.get("payload") or {}).get("round", 1)  # D44: a later round's answers live in readings/ronda<n>/
+        f = (root / f"ronda{rnd}" if rnd != 1 else root) / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
         if not f.exists():
             out.append(("READ", f"{ev['id']}: answer file {f.relative_to(root)} missing for {ev['assertion']}"))
             continue

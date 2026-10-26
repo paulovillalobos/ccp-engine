@@ -36,6 +36,10 @@ from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-read-rules-0.1"
 READINGS = ROOT / "governance/readings"
+# D44: round 2 of B3 for the rules the engine needs first (the person's order, 2026-10-26), with the round-1 prompt defects fixed
+ROUND2 = ["regra:dl-177-2026:seletor-regime@v1", "regra:ccp:prazo-minimo-concurso-joue@v1",
+          "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1", "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1"]
+RONDA2 = READINGS / "ronda2"
 FIELDS = ["tipo_contrato", "tipo_procedimento", "publicado_joue", "territorio", "tipo_entidade", "preco_base", "data_inicio_procedimento"]
 VOCAB = {
     "tipo_contrato": ["obras", "bens", "servicos", "concessao_obras", "concessao_servicos", "servicos_sociais"],
@@ -131,8 +135,9 @@ def version_at(p, date):
     return next((v for v in p["versions"] if v["valid_from"] <= date and (v["valid_to"] is None or date < v["valid_to"])), None)
 
 
-def schema_for(t):
-    value = {"anyOf": [{"type": "string"}, {"type": "number"}, {"type": "boolean"}, {"type": "array", "items": {"type": "string"}}]}
+def schema_for(t, rnd=1):
+    array = {"type": "array", "items": {"type": "string"}, **({"minItems": 1} if rnd == 2 else {})}  # D44 (2): no empty list as a value
+    value = {"anyOf": [{"type": "string"}, {"type": "number"}, {"type": "boolean"}, array]}
     cond = {"type": "object", "properties": {"field": {"type": "string", "enum": FIELDS}, "op": {"type": "string", "enum": OPS}, "value": value},
             "required": ["field", "op", "value"], "additionalProperties": False}
     params = {
@@ -160,11 +165,12 @@ def schema_for(t):
         "required": ["passagens", "tipo", "condicoes", "params"], "additionalProperties": False}
 
 
-def prompt_text(store, t):
+def prompt_text(store, t, rnd=1):
+    date_fmt = "uma data no formato ISO (ano-mês-dia)" if rnd == 2 else "data AAAA-MM-DD"  # D44 (1): round 1 named a literal leitor:a copied
     lines = ["És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.",
              "Regras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); "
              "«condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:",
-             "  " + "; ".join(f"{k}: {', '.join(json.dumps(v, ensure_ascii=False) for v in vals)}" for k, vals in VOCAB.items()) + "; preco_base: número em euros; data_inicio_procedimento: data AAAA-MM-DD.",
+             "  " + "; ".join(f"{k}: {', '.join(json.dumps(v, ensure_ascii=False) for v in vals)}" for k, vals in VOCAB.items()) + f"; preco_base: número em euros; data_inicio_procedimento: {date_fmt}.",
              f"Data de referência: {t['date']}. Tipo de regra pedido: {t['type']}.", "", "Passagens candidatas:"]
     for pid in t["candidates"]:
         p = store.current(pid)
@@ -176,24 +182,33 @@ def prompt_text(store, t):
             lines.append(f"[{pid}] texto anterior (em vigor de {prev[0]['valid_from']} a {prev[0]['valid_to']}):")
             lines.append(prev[0]["text"])
         lines.append("")
-    lines += ["Pergunta: " + t["question"]]
+    question = t["question"]
+    if rnd == 2 and t["type"] == "seletor_regime":  # D44 (3): how an open-ended regime is written
+        question += " Um regime sem data final tem «to» = null."
+    lines += ["Pergunta: " + question]
     return "\n".join(lines)
 
 
-def cmd_prompts(store, only=None):
+def cmd_prompts(store, only=None, rnd=1):
     for t in TARGETS:
         if only and only not in t["rule"]:
+            continue
+        if rnd == 2 and t["rule"] not in ROUND2:
             continue
         for pid in t["candidates"]:
             p = store.current(pid)
             if p is None or version_at(p, t["date"]) is None:
                 raise SystemExit(f"{t['rule']}: candidate {pid} has no version in force on {t['date']}")
-        d = READINGS / slug(t["rule"])
+        d = (RONDA2 if rnd == 2 else READINGS) / slug(t["rule"])
         d.mkdir(parents=True, exist_ok=True)
-        text = prompt_text(store, t)
-        body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": t["candidates"], "prompt": text, "schema": schema_for(t)}
+        if rnd == 2 and (d / "prompt.json").exists():
+            continue  # a round's prompt is fixed once written: its answers are read against it
+        text = prompt_text(store, t, rnd)
+        body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": t["candidates"], "prompt": text, "schema": schema_for(t, rnd)}
+        if rnd == 2:
+            body["round"] = 2
         (d / "prompt.json").write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(TARGETS)} prompts in {READINGS}")
+    print(f"{len(ROUND2) if rnd == 2 else len(TARGETS)} prompts in {RONDA2 if rnd == 2 else READINGS}")
 
 
 def store_answer(path, text):
@@ -363,9 +378,86 @@ def cmd_record():
         state = log.replay().state_of("regra", t["rule"])
         row["state"] = state
         writer.append(build_rule(store, t, a, passages, readings, state))
+    rows2 = record_round2(store, log, writer)
     log.write_state()
     packs = write_packages(writer)
     write_reports(summary, disagreements, packs)
+    write_round2_report(rows2)
+
+
+def record_round2(store, log, writer):
+    """D44: the proposer's own `correct` from its round-2 answer (revision + 1), then leitor:b's blind review of that revision.
+    Recorded once per answer (an answer whose sha256 is already in a correct event is not recorded again)."""
+    rows = []
+    content = ("conditions", "params", "passages", "valid_from", "valid_to", "readings", "state")
+    for t in TARGETS:
+        if t["rule"] not in ROUND2:
+            continue
+        d = RONDA2 / slug(t["rule"])
+        ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in ("leitor-a.json", "leitor-b.json")]
+        if ra is None:
+            continue
+        a = parse_answer(ra, t)
+        b = parse_answer(rb, t) if rb else None
+        row = {"rule": t["rule"], "type": t["type"], "a": a, "b": b, "state": None, "exact": None, "direction": None}
+        rows.append(row)
+        if b is not None and a is not None:
+            row["exact"] = same_reading(a, b)
+            row["direction"] = key_param(a) == key_param(b)
+        cur = log.replay().assertions.get(("regra", t["rule"]))
+        if cur is None:
+            row["state"] = "sem proposta da ronda 1"
+            continue
+        done = any(ev["action"] == "correct" and ev["assertion"] == t["rule"] and (ev.get("payload") or {}).get("answer_sha256") == ra["sha256"]
+                   for _, ev in log.events)
+        if done:
+            row["state"] = log.replay().state_of("regra", t["rule"])
+            continue
+        if a is None or a["type"] != t["type"]:
+            row["state"] = "sem leitura válida de leitor:a"
+            continue
+        draft = build_rule(store, t, a, a["passages"], [{"principal": "leitor:a", "family": "A", "at": ra["at"], "chosen_passages": a["passages"],
+                                                         "blind": False, "evento": "evento:1"}], "proposed")
+        problems = schema.validate("regra", draft)
+        try:
+            rules_mod.check(draft)
+        except rules_mod.RuleError as exc:
+            problems.append(str(exc))
+        if problems:
+            row["state"] = "sem leitura válida de leitor:a"
+            row["why"] = str(problems[0])[:200]
+            continue
+        question = json.loads((d / "prompt.json").read_text(encoding="utf-8"))["prompt"].split("Pergunta: ", 1)[1]
+        ev_a = log.correct("leitor:a", "regra", t["rule"], cur["revision"], {"chosen_passages": a["passages"], "conditions": a["conditions"],
+                           "params": a["params"], "answer_sha256": ra["sha256"], "round": 2},
+                           "Round 2 (DECISIONS D44): the same question with the round-1 prompt defects fixed", ra["at"])
+        readings = [{"principal": "leitor:a", "family": "A", "at": ra["at"], "chosen_passages": a["passages"], "blind": False, "evento": ev_a}]
+        if b is not None:
+            ev_b = log.review("leitor:b", "regra", t["rule"], cur["revision"] + 1, f"Blind, same prompt as leitor:a (round 2): {question}", "blind",
+                              "uphold" if row["exact"] else "request_evidence", rb["at"],
+                              payload={"chosen_passages": b["passages"], "conditions": b["conditions"], "params": b["params"],
+                                       "answer_sha256": rb["sha256"], "round": 2})
+            readings.append({"principal": "leitor:b", "family": "B", "at": rb["at"], "chosen_passages": b["passages"], "blind": True, "evento": ev_b})
+        row["state"] = log.replay().state_of("regra", t["rule"])
+        new = build_rule(store, t, a, a["passages"], readings, row["state"])
+        writer.revise(writer.store.current(t["rule"]), {k: new[k] for k in content}, now_utc())
+    return rows
+
+
+def write_round2_report(rows):
+    if not rows:
+        return
+    L = ["# RONDA 2 — B3, as quatro regras que o motor precisa primeiro (DECISIONS D44)", "",
+         "Gerado por tools/read_rules.py. As mesmas perguntas e candidatas da ronda 1, com três defeitos do prompt corrigidos (D44); "
+         "leitor:a corrige a sua proposta, leitor:b revê às cegas. Só fica settled a leitura que leitor:b replica em forma canónica (D43).", "",
+         "| regra | estado | exato | direção |", "|---|---|---|---|"]
+    for r in rows:
+        L.append(f"| {r['rule']} | {r['state']}{' (' + r['why'] + ')' if r.get('why') else ''} | "
+                 f"{'—' if r['exact'] is None else ('sim' if r['exact'] else 'não')} | {'—' if r['direction'] is None else ('sim' if r['direction'] else 'não')} |")
+    L.append("")
+    for r in rows:
+        L += [f"## {r['rule']}", "", f"- leitor:a: {show(r['a'])}", f"- leitor:b: {show(r['b'])}", ""]
+    (RONDA2 / "RONDA2.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
 def write_packages(writer):
@@ -446,9 +538,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["prompts", "record"])
     ap.add_argument("--only", help="prompts for the rules whose id contains this text")
+    ap.add_argument("--round", type=int, default=1, choices=[1, 2], help="2: the D44 round-2 prompts, in governance/readings/ronda2/")
     a = ap.parse_args()
     if a.cmd == "prompts":
-        cmd_prompts(Store([ROOT / "law"]).load(), a.only)
+        cmd_prompts(Store([ROOT / "law"]).load(), a.only, a.round)
     else:
         cmd_record()
 
