@@ -1514,3 +1514,17 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   joined contracts (94.3–100) PASS; C 1 514 / 1 514 (99.7–100) PASS. Measured. tipo_procedimento is partial (142/200):
   framework call-offs and excluded contracting are outside the vocabulary.
 - BASE anúncios 2018–2025 downloaded back from Storage for B (sha256 checked; scratch, deleted after).
+
+## 2026-10-26 X.8 TED v3 (check B only) criteria and parser, sealed before the v3 sample (commit: X.8: CRITERIA-ted-v3 (B only: buyer + deadline + title containment 0.5, as code) and the TED parser reading the ORIGINAL form, sealed before the v3 sample)
+- The builder relayed a yes to a B-only v3 with the DR test's v2 protocol (join key as code, threshold before the draw,
+  pairs under it «not joinable» and out of the denominator), and to fixing the code error v2's C found.
+- Sealed (sha256), before the v3 sample is drawn:
+  - adapters/medicao/CRITERIA-ted-v3.md 0203b1f4500d78f808e18d46e7abaafbbf0196ac8899ce787bbfe2656e460c3c
+  - adapters/ted/parse.py 715a2dd5f7943480bf296b1636db196623d055e66e794a3cd3233b0c8b1bbe1e: TED-XML form fields from the
+    CATEGORY="ORIGINAL" form (coded data still from the coded section), plus `title`. On v1's and v2's 400 notices it
+    changes one value (v2 n=85's buyer name) besides adding the title. v3 runs this parser; v2's C ran b277c007….
+  - adapters/medicao/sample.py 9109075f7dc0e567541909118413d89b523b54bbdad24b17881044d320a582b2 (--contract-only,
+    several --exclude)
+  - adapters/medicao/score.py f38bf3f84d064902aab8c3138f4bd7e1bbcc6b838ad78ca1cf6d1b867b310b7c (score_ted_b, THRESHOLD 0.5)
+- Also in this commit: the DR upload log so far (49 verified, 14 failed at the pooler's auth limit when 8 CLI processes
+  ran at once; those Mac copies were kept).

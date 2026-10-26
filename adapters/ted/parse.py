@@ -3,7 +3,7 @@
     parse(xml_bytes) -> dict of the fields below (None where the notice does not give one)
 
 format, notice_type, notice_id, dispatch_date, publication_date, buyer_name, buyer_nif, buyer_country, buyer_nuts,
-procedure_type, contract_type, deadline_date, deadline_time, estimated_value, currency, main_cpv.
+procedure_type, contract_type, deadline_date, deadline_time, estimated_value, currency, main_cpv, title.
 
 TED-XML: the coded data (TD_DOCUMENT_TYPE, NO_DOC_OJS, DATE_PUB, DS_DATE_DISPATCH, ISO_COUNTRY) and the form
 (ADDRESS_CONTRACTING_BODY, PR_PROC, TYPE_CONTRACT, DATE_RECEIPT_TENDERS, TIME_RECEIPT_TENDERS, VAL_ESTIMATED_TOTAL,
@@ -14,7 +14,8 @@ in TED-XML); the dispatch date is the IssueDate directly under the root (BT-05),
 comes first in result notices: v1's error); the deadline is the first lot's TenderSubmissionDeadlinePeriod; dates keep only the date
 part (the zone offset is reported in deadline_time when present). Written on the development months 2018-01 and 2026-01
 (not in the measured sample) and frozen by its sha256 before the sample is drawn (CRITERIA-ted-contratos-v1.md); fixed
-after v1's blind reading and frozen again for CRITERIA-ted-v2.md.
+after v1's blind reading and frozen again for CRITERIA-ted-v2.md; for CRITERIA-ted-v3.md, TED-XML fields are read from the
+form whose CATEGORY is ORIGINAL (v2's C found a translation's buyer name read first), and the title is added (B's join).
 """
 import xml.etree.ElementTree as ET
 
@@ -63,32 +64,38 @@ def parse_tedxml(root):
     td = first(root, "TD_DOCUMENT_TYPE")
     out["notice_type"] = f"{td.get('CODE')} {(td.text or '').strip()}".strip() if td is not None else None
     out["notice_id"] = text(root, "NO_DOC_OJS")
-    out["dispatch_date"] = date_only(text(root, "DATE_DISPATCH_NOTICE") or text(root, "DS_DATE_DISPATCH"))
+    fs = first(root, "FORM_SECTION")
+    forms = list(fs) if fs is not None else []
+    form = next((f for f in forms if f.get("CATEGORY") == "ORIGINAL"), forms[0] if forms else root)  # not a translation
+    out["dispatch_date"] = date_only(text(form, "DATE_DISPATCH_NOTICE") or text(root, "DS_DATE_DISPATCH"))
     out["publication_date"] = date_only(text(root, "DATE_PUB"))
-    body = first(root, "ADDRESS_CONTRACTING_BODY") or first(root, "CA_CE_CONCESSIONAIRE_PROFILE")  # R2.0.9, else R2.0.8
+    body = first(form, "ADDRESS_CONTRACTING_BODY") or first(form, "CA_CE_CONCESSIONAIRE_PROFILE")  # R2.0.9, else R2.0.8
     out["buyer_name"] = text(body, "OFFICIALNAME") if body is not None else None
     out["buyer_nif"] = text(body, "NATIONALID") if body is not None else None
     iso = first(root, "ISO_COUNTRY")
     out["buyer_country"] = iso.get("VALUE") if iso is not None else None
     nuts = first(body, "NUTS") if body is not None else None
     out["buyer_nuts"] = nuts.get("CODE") if nuts is not None else None
-    pr = first(root, "PR_PROC")
+    pr = first(root, "PR_PROC")  # coded data, not the form
     out["procedure_type"] = f"{pr.get('CODE')} {(pr.text or '').strip()}".strip() if pr is not None else None
-    tc = first(root, "TYPE_CONTRACT")
+    tc = first(form, "TYPE_CONTRACT")
     if tc is None:  # R2.0.8: the CTYPE attribute of FD_CONTRACT and its kin
-        tc = next((e for e in root.iter() if e.get("CTYPE")), None)
+        tc = next((e for e in form.iter() if e.get("CTYPE")), None)
     out["contract_type"] = tc.get("CTYPE") if tc is not None else None
-    out["deadline_date"] = date_only(text(root, "DATE_RECEIPT_TENDERS"))
-    out["deadline_time"] = text(root, "TIME_RECEIPT_TENDERS")
-    rld = first(root, "RECEIPT_LIMIT_DATE")  # R2.0.8: DAY, MONTH, YEAR, TIME
+    out["deadline_date"] = date_only(text(form, "DATE_RECEIPT_TENDERS"))
+    out["deadline_time"] = text(form, "TIME_RECEIPT_TENDERS")
+    rld = first(form, "RECEIPT_LIMIT_DATE")  # R2.0.8: DAY, MONTH, YEAR, TIME
     if out["deadline_date"] is None and rld is not None and text(rld, "YEAR") and text(rld, "MONTH") and text(rld, "DAY"):
         out["deadline_date"] = f"{text(rld, 'YEAR')}-{int(text(rld, 'MONTH')):02d}-{int(text(rld, 'DAY')):02d}"
         out["deadline_time"] = text(rld, "TIME")
-    val = first(root, "VAL_ESTIMATED_TOTAL")
+    val = first(form, "VAL_ESTIMATED_TOTAL")
     out["estimated_value"] = val.text.strip() if val is not None and val.text and val.text.strip() else None
     out["currency"] = val.get("CURRENCY") if val is not None else None
-    cpv = first(root, "CPV_MAIN", "CPV_CODE")
+    cpv = first(form, "CPV_MAIN", "CPV_CODE")
     out["main_cpv"] = cpv.get("CODE") if cpv is not None else None
+    title = first(form, "OBJECT_CONTRACT", "TITLE") or first(form, "TITLE_CONTRACT")  # R2.0.9, else R2.0.8
+    ps = [" ".join("".join(p.itertext()).split()) for p in title.iter() if local(p.tag) == "P"] if title is not None else []
+    out["title"] = " ".join(x for x in ps if x) or None
     return out
 
 
@@ -116,6 +123,7 @@ def parse_eforms(root):
             project = p
             break
     out["contract_type"] = text(project, "ProcurementTypeCode") if project is not None else None
+    out["title"] = next((c.text.strip() for c in project if local(c.tag) == "Name" and c.text), None) if project is not None else None
     amount = first(project, "RequestedTenderTotal", "EstimatedOverallContractAmount") if project is not None else None
     out["estimated_value"] = amount.text.strip() if amount is not None and amount.text else None
     out["currency"] = amount.get("currencyID") if amount is not None else None
@@ -127,7 +135,7 @@ def parse_eforms(root):
 
 
 FIELDS = ["format", "notice_type", "notice_id", "dispatch_date", "publication_date", "buyer_name", "buyer_nif", "buyer_country",
-          "buyer_nuts", "procedure_type", "contract_type", "deadline_date", "deadline_time", "estimated_value", "currency", "main_cpv"]
+          "buyer_nuts", "procedure_type", "contract_type", "deadline_date", "deadline_time", "estimated_value", "currency", "main_cpv", "title"]
 
 
 def parse(xml_bytes):

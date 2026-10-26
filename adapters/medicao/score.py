@@ -2,6 +2,7 @@
 
     .venv/bin/python -I adapters/medicao/score.py ted OUT --anuncios DIR      (DIR: anuncios<year>.json of BASE)
     .venv/bin/python -I adapters/medicao/score.py contratos OUT
+    .venv/bin/python -I adapters/medicao/score.py ted-b OUT --anuncios DIR    (v3: check B only, the title-checked join)
 
 Writes OUT/<source>/score.json and prints it. Shares with Wilson 95 % intervals. Normalisation as the criteria say:
 dates as dates, amounts to the cent, NIFs as nine digits, names accents and case folded, country PT = PRT.
@@ -149,6 +150,67 @@ def score_ted(out, anuncios_dir):
     return {"source": "ted", "A": a, "B": b, "C": c}
 
 
+def words(s):
+    return {w for w in fold(s or "").split() if len(w) >= 4}
+
+
+def containment(a, b):
+    x, y = words(a), words(b)
+    return len(x & y) / min(len(x), len(y)) if x and y else 0.0
+
+
+THRESHOLD = 0.5  # CRITERIA-ted-v3.md, written before the v3 sample
+
+
+def score_ted_b(out, anuncios_dir):
+    """Check B of CRITERIA-ted-v3.md. Candidates: BASE anúncios with the same deadline date and the same buyer (NIF when
+    the TED notice gives one, else the folded name). Joinable: the candidate whose description contains the TED title at
+    THRESHOLD or more (|words in both| / the smaller word set, words of 4+ letters, accents and case folded), strictly
+    above any other candidate. Everything else is «not joinable», counted by reason and left out of the denominator."""
+    B = out / "ted"
+    parsed = json.loads((B / "parsed.json").read_text(encoding="utf-8"))
+    base = {}
+    for f in sorted(Path(anuncios_dir).glob("anuncios*.json")):
+        for r in json.loads(f.read_text(encoding="utf-8")):
+            d = date(r.get("DataLimitePropostas") or "")
+            if d:
+                base.setdefault(d, []).append(r)
+    proc_map = {"open": "concurso publico", "restricted": "concurso limitado por previa qualificacao", "neg w call": "procedimento de negociacao",
+                "1 open procedure": "concurso publico", "2 restricted procedure": "concurso limitado por previa qualificacao"}
+    reasons, pairs, agree, total, dis = {}, [], 0, 0, []
+    for p in parsed:
+        cands = base.get(p["deadline_date"], [])
+        if p.get("buyer_nif") and digits(p["buyer_nif"]):
+            cands = [r for r in cands if digits(r.get("nifEntidade")) == digits(p["buyer_nif"])]
+        else:
+            cands = [r for r in cands if fold(r.get("designacaoEntidade")) == fold(p.get("buyer_name"))]
+        scored = sorted(((containment(p.get("title"), r.get("descricaoAnuncio")), i, r) for i, r in enumerate(cands)), key=lambda x: (-x[0], x[1]))
+        why = ("no candidate with the same buyer and deadline" if not scored else
+               "title containment below the threshold" if scored[0][0] < THRESHOLD else
+               "two candidates tie" if len(scored) > 1 and scored[1][0] == scored[0][0] else None)
+        if why:
+            reasons[why] = reasons.get(why, 0) + 1
+            continue
+        c, _, r = scored[0]
+        pairs.append({"n": p["n"], "nAnuncio": r["nAnuncio"], "containment": round(c, 2)})
+        if p.get("estimated_value") and num(r.get("PrecoBase")) is not None:
+            total += 1
+            ok = num(p["estimated_value"]) == num(r["PrecoBase"])
+            agree += ok
+            if not ok:
+                dis.append({"n": p["n"], "field": "estimated_value", "ted": p["estimated_value"], "base": r["PrecoBase"], "nAnuncio": r["nAnuncio"]})
+        pt = proc_map.get(fold(p.get("procedure_type") or ""))
+        if pt:
+            total += 1
+            ok = fold(r.get("modeloAnuncio")) == pt
+            agree += ok
+            if not ok:
+                dis.append({"n": p["n"], "field": "procedure_type", "ted": p["procedure_type"], "base": r.get("modeloAnuncio"), "nAnuncio": r["nAnuncio"]})
+    return {"source": "ted", "check": "B (v3)", "threshold": THRESHOLD, "notices": len(parsed), "joined": wilson(len(pairs), len(parsed)),
+            "not_joinable": reasons, "pairs": pairs, "agreement": dict(wilson(agree, total) or {}, pass_=(agree / total >= 0.95) if total else None),
+            "disagreements": dis}
+
+
 def score_contratos(out):
     B = out / "contratos"
     parsed = json.loads((B / "parsed.json").read_text(encoding="utf-8"))
@@ -195,6 +257,11 @@ def score_contratos(out):
 if __name__ == "__main__":
     source, out = sys.argv[1], Path(sys.argv[2])
     anuncios = sys.argv[sys.argv.index("--anuncios") + 1] if "--anuncios" in sys.argv else None
+    if source == "ted-b":
+        res = score_ted_b(out, anuncios)
+        (out / "ted" / "score-b.json").write_text(json.dumps(res, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print(json.dumps({k: v for k, v in res.items() if k != "pairs"}, ensure_ascii=False, indent=1)[:6000])
+        sys.exit(0)
     res = score_ted(out, anuncios) if source == "ted" else score_contratos(out)
     (out / source / "score.json").write_text(json.dumps(res, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps(res, ensure_ascii=False, indent=1)[:6000])

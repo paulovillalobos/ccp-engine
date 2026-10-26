@@ -26,7 +26,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
-SEED = 20261027  # v1; v2 passes --seed and --exclude (the v1 sample.json)
+SEED = 20261027  # v1; v2 and v3 pass --seed and --exclude (earlier sample.json files); v3 also --contract-only
 DEV_MONTHS = {"2018-01", "2026-01"}
 
 
@@ -46,7 +46,7 @@ def write_json(path, obj):
 def cmd_ted(a):
     parse = load("ted_parse", ROOT / "adapters/ted/parse.py")
     pop = {"ted-xml": [], "eforms": []}
-    seen = {s["member"] for s in json.loads(Path(a.exclude).read_text(encoding="utf-8"))} if a.exclude else set()
+    seen = {s["member"] for f in (a.exclude or []) for s in json.loads(Path(f).read_text(encoding="utf-8"))}
     for b in sorted(Path(a.bundles).glob("*.tar.gz")):
         month = b.name[:7]
         if month in DEV_MONTHS:
@@ -57,7 +57,8 @@ def cmd_ted(a):
                     continue
                 data = t.extractfile(m).read()
                 r = parse.parse(data)
-                if r["buyer_country"] in ("PT", "PRT"):
+                contract = (r["notice_type"] or "").split(" ")[0] in ("3", "16", "17", "18") and r["deadline_date"]
+                if r["buyer_country"] in ("PT", "PRT") and (contract or not a.contract_only):
                     pop[r["format"]].append((m.name, month, data, r))
     out = Path(a.out) / "ted"
     (out / "items").mkdir(parents=True, exist_ok=True)
@@ -99,7 +100,8 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     t = sub.add_parser("ted"); t.add_argument("--bundles", required=True); t.add_argument("--out", required=True)
-    t.add_argument("--seed", type=int, default=SEED); t.add_argument("--exclude")
+    t.add_argument("--seed", type=int, default=SEED); t.add_argument("--exclude", nargs="*")
+    t.add_argument("--contract-only", action="store_true", help="v3: contract notices with a deadline only")
     c = sub.add_parser("contratos"); c.add_argument("--zip", required=True); c.add_argument("--out", required=True)
     a = ap.parse_args()
     sys.exit({"ted": cmd_ted, "contratos": cmd_contratos}[a.cmd](a))
