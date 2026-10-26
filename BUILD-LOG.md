@@ -1549,3 +1549,12 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Weakest: BASE contratos tipo_procedimento 74–88 % (call-offs and excluded contracting outside the vocabulary);
   adjudicatario 88–90 % (adjudicatários without NIF); TED estimated_value 37–71 % and TED-XML buyer_nif 11–86 % (not in
   the notices).
+
+## 2026-10-26 X.12 Vortal retried after the hour, one reader at 20 s; the DR uploads resumed with one process (commit: X.12: Vortal retried at 21:23Z, one reader at one GET per 20 s, no refusal so far; DR uploads resumed one process at a time)
+- Vortal: the notice reader (modal_fetch.py --platform vortal, now one GET per 20 s) started at 21:23Z, more than an hour
+  after the 403 of 20:18:27Z; the DR-copy reader stays stopped until it ends. First committed log: 46 GETs to 21:38Z,
+  42 × 200 and 4 × 500 (server errors, logged; a later run retries them), no 403 or 429. On a second 403 it stops itself
+  and stays stopped for the day.
+- Storage uploads of the DR PDFs: 8 CLI processes at once tripped the pooler's authentication circuit breaker (each
+  process re-initialises the CLI's login role); stopped, nothing unverified deleted. Resumed with one process; an object an
+  interrupted run already stored (409 KeyAlreadyExists) is now downloaded back and checked like a fresh upload.
