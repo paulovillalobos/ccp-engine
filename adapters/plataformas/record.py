@@ -3,7 +3,7 @@
     .venv/bin/python -I adapters/plataformas/record.py --recorded-at T
 
 Reads adapters/plataformas/vortal-log.jsonl and acingov-log.jsonl; for every logged GET whose body was stored (sha256)
-and is still in data/raw/<source>/raw_bytes/, one raw: raw:vortal:tender-information:<key>,
+and is still in data/raw/<source>/raw_bytes/ or was offloaded and checked (offload-check-*.json), one raw: raw:vortal:tender-information:<key>,
 raw:vortal:contract-notice:<key> (the notice of that procedure), raw:pecas:documento:<key> (acinGov's pieces ZIP). The
 key is the procedure's key in adaptador:base-anuncios. captured_at is the GET's time; request is one passive GET.
 Writes data/raw/vortal/raw/vortal-fetch.jsonl and data/raw/pecas/raw/pecas-acingov.jsonl, sorted: same log, same bytes.
@@ -25,6 +25,10 @@ KINDS = {("vortal", "information"): ("vortal", "tender-information", "applicatio
          ("acingov", None): ("pecas", "documento", "application/zip", "binary")}
 
 
+# files moved to the person's Modal volume ccp-raw-bytes after offload_check.py found sha256(file) == name (BUILD-LOG M.6)
+OFFLOADED = {n for f in sorted(HERE.glob("offload-check-*.json")) for n in json.loads(f.read_text(encoding="utf-8"))["good"]}
+
+
 def raws(platform, recorded_at):
     out = {}
     path = HERE / f"{platform}-log.jsonl"
@@ -33,7 +37,7 @@ def raws(platform, recorded_at):
         if not e.get("sha256") or e.get("status") != 200:
             continue
         source, kind, media, enc = KINDS[(platform, e.get("step"))]
-        if not (DATA / f"raw/{source}/raw_bytes/{e['sha256']}").exists():
+        if not (DATA / f"raw/{source}/raw_bytes/{e['sha256']}").exists() and e["sha256"] not in OFFLOADED:
             continue
         rid = f"raw:{source}:{kind}:{e['key']}"
         out[rid] = {"id": rid, "revision": 1, "recorded_at": recorded_at, "source": source, "kind": kind,

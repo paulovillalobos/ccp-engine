@@ -1311,3 +1311,17 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   raw:pecas:documento:*), with captured_at = its GET. `verify.py --store data governance`: 1 failure, E1b's proposer
   not yet registered (its final build registers it).
 - Next: the person decides the disk; the DR download goes on; E1b's final build when it ends.
+
+## 2026-10-26 M.6 acinGov's pieces offloaded to the person's Modal volume; the platforms resumed (commit: M.6: acinGov pieces offloaded to Modal volume ccp-raw-bytes (452/452 checked by sha256), local copies removed; fetchers resumed)
+- Decided by the person (his words, ~07:00Z): «si ya tenemos octubre no lo puedes pasar a un lugar en la nube que
+  tengamos acceso y luego así liberar espacio», then «Si hazlo» to: his Modal account (storage reportedly
+  $0.09/GiB-month with 1 TiB free, from third-party pricing pages; to confirm on modal.com/pricing), upload, check
+  every sha256 on Modal, only then remove the local copies.
+- Done: Modal CLI 1.6.2 in a scratch venv (account paulovillalobos); volume `ccp-raw-bytes` created; `modal volume put`
+  of data/raw/pecas/raw_bytes -> /pecas/raw_bytes (452 files, 07:09:47Z–07:17:27Z); adapters/plataformas/
+  offload_check.py hashed every file on a Modal CPU container: 452/452 equal to their name, 0 bad
+  (offload-check-pecas.json); the 452 local copies removed. Free disk 1.8 GB -> 16 GB.
+- record.py now keeps the raws of offloaded files (it reads offload-check-*.json). verify on the Mac reports I01 for
+  those raws: adapters/plataformas/SCHEMA-PROPOSAL.md item 1 for the builder.
+- Resumed at 07:23Z: vortal (10 148 left), acingov (122 October ZIPs left; offloaded the same way when done). The DR
+  download kept running (pid 7824).
