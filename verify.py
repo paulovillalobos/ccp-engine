@@ -765,6 +765,7 @@ def check_store(roots):
         check_training(store, out, tdir, held)
         check_training_v2(store, out, tdir, held)
         check_training_v2(store, out, tdir, held, sub="data-v3", module="make_regimes")
+        check_training_v2(store, out, tdir, held, sub="data-v4", module="make_question_conditions")
     return store, out
 
 
@@ -1039,6 +1040,12 @@ def check_measure():
                 out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
+        if f.name.startswith("pergunta-"):  # phase 7 (D49): condicoes_pergunta held out, base / v3 / v4 (tools/measure_question_conditions.py)
+            import measure_question_conditions  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_question_conditions.report(stored["date"])
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_question_conditions.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("regimes-"):  # phase 6 (D47): the selector tasks held out, base / v2 / v3 (tools/measure_regimes.py)
             import measure_regimes  # noqa: E402  (no model: it reads the stored answers)
             again = measure_regimes.report(stored["date"])

@@ -1187,7 +1187,8 @@
       "versao": 28,
       "code": "verify.py",
       "hash": "bc9eb963e3a67bae122b02c8d21052e8c2e965bae861e662436cc66ee8a206d1",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T20:54:06Z"
     },
     {
       "id": "leitor:a4",
@@ -1236,6 +1237,51 @@
       "versao": 12,
       "code": "tools/read_rules.py",
       "hash": "558ead0e57a53e9177995e32c4ec70019ec910fe6f1252593174fbd54d92bd38",
+      "retired": true,
+      "retired_at": "2026-10-26T20:54:06Z"
+    },
+    {
+      "id": "ferramenta:make-question-conditions@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_question_conditions.py",
+      "hash": "9431daae879ce205139eb2e4f7e37bf57912f6b93680d258483a70a9c7703c1f",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure-question-conditions@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_question_conditions.py",
+      "hash": "769d4455cb011e5153b31051b696f81a71d01459ff4b22ea44354462d1aa56a5",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:read-rules@13",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 13,
+      "code": "tools/read_rules.py",
+      "hash": "314bb192bb476bebd20be346e47e815d174e29772ecec37f1d680c6343083251",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@29",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 29,
+      "code": "verify.py",
+      "hash": "687869901abb1b81b27473ed19e4c2ed9e2629b82e974ed84f06b38a56bba2a9",
       "retired": false
     }
   ]

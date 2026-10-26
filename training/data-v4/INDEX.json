@@ -1,0 +1,21 @@
+{
+ "excluded_sets": 3,
+ "files": {
+  "condicoes_pergunta/held_out.jsonl": {
+   "lines": 400,
+   "sha256": "8b74a79d9e749dc7de338d8e6fe19a4d70399b5f6160c483f8a9399d7268f4b2"
+  },
+  "condicoes_pergunta/train.jsonl": {
+   "lines": 4000,
+   "sha256": "9e0c4dadefe49e06f6166fe26ca3fac020ee14f52d85dbf7bd79a3fd432e51d9"
+  }
+ },
+ "frozen_at": "2026-10-25",
+ "seed": 20261026,
+ "split": {
+  "held_out": 400,
+  "train": 4000
+ },
+ "train_held_out_definition_sha256": "b4cb0751e3abbd6ad853205f670628972e3785e78b9502eb9941964dba86875e",
+ "version": "ccp-make-question-conditions-0.1"
+}

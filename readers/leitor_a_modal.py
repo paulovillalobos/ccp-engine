@@ -1,7 +1,7 @@
 """leitor:a / leitor:a2 on Modal: the family-A reader answers prompts with guided JSON (vLLM, temperature 0, one batch).
 
     <a Python 3.12 venv with modal>/bin/modal run readers/leitor_a_modal.py [--only SLUG] [--dir governance/readings/casos]
-        [--lora v1|v2|v3] [--out-dir DIR] [--jsonl FILE --out FILE]
+        [--lora v1|v2|v3|v4] [--out-dir DIR] [--jsonl FILE --out FILE]
 
 readers/ holds the code that runs a model (DECISIONS D38): nothing in engine/, tools/ or verify.py imports it, and
 verify's code guard keeps it that way.
@@ -29,8 +29,8 @@ import modal
 
 MODEL = "amalia-llm/AMALIA-9B-0626-DPO"
 REVISION = "c4614b9b5c7b4fe303fa20902e692fc7dface640"  # leitor:a motor versao c4614b9b5c7b
-ADAPTERS = {"v1": "amalia-ccp-lei-v1", "v2": "amalia-ccp-lei-v2", "v3": "amalia-ccp-lei-v3"}  # adapter directories in the volume amalia-lora
-LEITOR_OF = {"": "leitor-a", "v1": "leitor-a2", "v2": "leitor-a3", "v3": "leitor-a4"}  # base, phase 4, phase 5 (D46), phase 6 (D47)
+ADAPTERS = {"v1": "amalia-ccp-lei-v1", "v2": "amalia-ccp-lei-v2", "v3": "amalia-ccp-lei-v3", "v4": "amalia-ccp-lei-v4"}  # adapter directories in the volume amalia-lora
+LEITOR_OF = {"": "leitor-a", "v1": "leitor-a2", "v2": "leitor-a3", "v3": "leitor-a4", "v4": "leitor-a5"}  # base, phase 4, 5 (D46), 6 (D47), 7 (D49)
 WINDOW, MAX_TOKENS = 32768, 1500
 SYSTEM = "Responde unicamente com o objeto JSON pedido, sem texto antes nem depois."
 READINGS = Path(__file__).resolve().parent.parent / "governance/readings"
