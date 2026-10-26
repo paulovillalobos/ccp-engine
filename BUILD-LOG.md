@@ -1372,3 +1372,25 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Disk: 6.0 GB free afterwards. The drop since the morning is macOS swap (5 GB in use), not these files.
 - Consequence, as with M.6: verify on the Mac reports I01 for the raws whose bytes now live in the bucket; the builder's
   proposal (adapters/plataformas/SCHEMA-PROPOSAL.md item 1) covers checking them where they live.
+
+## 2026-10-26 H.3 TED Portuguese notices 2018–2026, filtered on Modal (commit: H.3+H.4: TED monthly packages filtered to Portugal on Modal; Vortal's copy of the DR notice as a second source — code, tests, runs launched)
+- adapters/ted/modal_ted.py: per month, on the person's Modal account (volume ccp-raw-bytes, nothing through the Mac),
+  one GET of https://ted.europa.eu/packages/monthly/<yyyy>-<m>, the package kept under /vol/ted/packages/<sha256>, every
+  XML read in the container (the daily packages inside the monthly ones opened in turn), the Portuguese notices kept
+  unchanged in /vol/ted/pt/<yyyy-mm>.tar.gz with /vol/ted/index/<yyyy-mm>.json (package URL, sha256, size, captured_at;
+  each kept notice's member, sha256, size, format, why). Portuguese = TED-XML with ISO_COUNTRY PT in the coded data;
+  eForms with an organisation whose country is PRT. At most two packages at a time (TED allows three).
+- Tests: 2018-01 (TED-XML): 45 278 notices, 569 Portuguese, 788 850-byte bundle. 2026-01 (eForms): the first run found
+  0 notices because the 2026 monthly package holds 21 daily packages; the code now opens nested packages; second run:
+  71 738 notices, 1 585 Portuguese, 2 817 340-byte bundle (the package was read twice, same sha256 6d790daa…).
+- Launched detached: 2018-01 .. 2026-09 (105 months). The bundles and indexes come to the Mac per month, then to
+  Supabase (ccp-raw/ted/…) by offload.py; the packages stay on the Modal volume as the captures' bytes.
+
+## 2026-10-26 H.4 Vortal's copy of the DR notice (second source of the notice PDF)
+- adapters/plataformas/modal_vortal_dr.py: for every procedure whose Vortal notice JSON is stored, the document named
+  «<IdIncm>.pdf» in its documents list is downloaded once (public URL), one GET every 20 s (the Vortal notice fetcher runs
+  beside it), stop on 403/429; only procedures on Vortal, never around a DR refusal. Bytes in /vol/vortal-dr/raw_bytes/.
+- Test on 5 procedures: 5 listed, 5 downloaded, 5 byte-identical to the PDF the DR download stored (sha256 equal).
+  Launched detached over the 1 962 Vortal notices stored so far; to be run again as the Vortal fetcher advances.
+- Note for the person: acinGov's whole 2026 (about 9 200 ZIPs at 33 MB on average, about 300 GB) does not fit the 100 GB
+  of the Supabase plan; today those bytes are on the Modal volume.
