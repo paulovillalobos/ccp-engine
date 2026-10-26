@@ -37,7 +37,8 @@ def fetch_run(platform: str, items: list) -> dict:
     import urllib.parse
     import urllib.request
 
-    UA, PACE, VORTAL = "ccp-engine research (passive read)", 10.0, "https://community.vortal.biz"
+    UA, VORTAL = "ccp-engine research (passive read)", "https://community.vortal.biz"
+    PACE = 20.0 if platform == "vortal" else 10.0  # Vortal: slower after its 403 of 2026-10-26 20:18:27Z, one reader only
     source = {"vortal": "vortal", "acingov": "pecas"}[platform]
     os.makedirs(f"/vol/{source}/raw_bytes", exist_ok=True)
     os.makedirs("/vol/logs", exist_ok=True)
