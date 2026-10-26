@@ -1406,3 +1406,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Caveat in COVERAGE.md: the eForms filter (any Portuguese organisation) is broader than the TED-XML one (the buyer's
   country), so 2024–2026 are not comparable with 2018–2023 as they stand; a buyer-country filter is next.
 - Disk after: 5.4 GB free (macOS swap still at about 5 GB).
+
+## 2026-10-26 H.6 contratos2025.zip stored as byte parts under the 50 MB limit (commit: H.6: contratos2025.zip in two byte parts with a manifest of hashes; joined parts hash to the file; Mac copy removed)
+- Decided by the person, relayed by the builder: «Divide contratos2025.zip en partes de menos de 50 MB con sus huellas,
+  sin tocar el spend cap». No Supabase setting was changed.
+- Done: adapters/storage/split_offload.py: the exact bytes cut at offsets 0 and 40 000 000 (no re-zip) into
+  6c46253114cc….part01 (40 000 000 bytes, sha256 fe117ba9…) and .part02 (15 383 072 bytes, sha256 a06e9fd1…), uploaded to
+  ccp-raw/base-historico/raw_bytes/, with the manifest (whole sha256 and size; each part's name, order, offset, size,
+  sha256) uploaded beside them and committed at adapters/storage/parts/<sha256>.manifest.json.
+- Verified: both parts and the manifest downloaded back; the parts equal their recorded sha256; joined in order they
+  hash to 6c46253114cca8ba…4a03, the file's sha256; the manifest came back identical. Only then was the Mac copy deleted.
+- Raw: unchanged (whole sha256 and URL); raw.schema has no size or parts field, so they are in the manifest and
+  COVERAGE.md. All 16 BASE history files are now in Storage; none is left on the Mac.

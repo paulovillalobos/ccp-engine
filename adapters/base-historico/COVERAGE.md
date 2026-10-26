@@ -21,3 +21,12 @@ not read again.
 
 Not mapped to facts yet: the adapters of E1 (anúncios) and of the October sample (contratos) apply to these years; the
 Postgres load belongs to the D48 session.
+
+## Where the bytes are
+Supabase Storage ccp-raw/base-historico/raw_bytes/<sha256>, each uploaded, downloaded back and equal by sha256
+(adapters/storage/offload-log.jsonl). contratos2025.zip (55 383 072 bytes) is above Storage's 50 MB limit, which stays
+(the person: «sin tocar el spend cap»): it is stored as two byte parts, <sha256>.part01 (40 000 000 bytes) and .part02
+(15 383 072 bytes), with <sha256>.manifest.json beside them and in git at
+adapters/storage/parts/6c46253114cca8ba1004078e1b69961b272152f81e54d2b73ff72c0a367c4a03.manifest.json; joined in order
+they hash to the file. Its raw (raw:base-dump:contratos-ano:contratos2025.zip.…) keeps the whole file's sha256 and URL;
+raw.schema has no field for size or parts, so they live in the manifest.
