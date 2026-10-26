@@ -1394,3 +1394,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   Launched detached over the 1 962 Vortal notices stored so far; to be run again as the Vortal fetcher advances.
 - Note for the person: acinGov's whole 2026 (about 9 200 ZIPs at 33 MB on average, about 300 GB) does not fit the 100 GB
   of the Supabase plan; today those bytes are on the Modal volume.
+
+## 2026-10-26 H.5 TED done: 105 months, 98 952 Portuguese notices; bundles and indexes in Supabase (commit: H.5: TED 2018-01..2026-09 — 6 399 136 EU notices read on Modal, 98 952 Portuguese kept; 105 package raws; bundles and indexes in Supabase, sha256-checked)
+- The Modal run ended with 105/105 months and no error. 6 399 136 EU notices read, 98 952 Portuguese kept (TED-XML
+  54 790, eForms 44 162). Packages 23.9 GB, on the Modal volume (ted/packages/<sha256>); raws in
+  data/raw/ted/raw/ted-mensal.jsonl. Per year: adapters/ted/COVERAGE.md; per month: adapters/ted/manifest.json (package
+  URL, sha256, size, captured_at, counts, the bundle's and the index's sha256).
+- The 105 Portuguese bundles (149 MB) and 105 per-notice indexes (23 MB) came to the Mac, each bundle's sha256 equal to
+  the one its index recorded on Modal (105/105), then went to Supabase ccp-raw/ted/raw_bytes/<sha256> by offload.py:
+  210 files, 179 472 999 bytes, uploaded, downloaded back and equal by sha256; the Mac copies removed.
+- Caveat in COVERAGE.md: the eForms filter (any Portuguese organisation) is broader than the TED-XML one (the buyer's
+  country), so 2024–2026 are not comparable with 2018–2023 as they stand; a buyer-country filter is next.
+- Disk after: 5.4 GB free (macOS swap still at about 5 GB).
