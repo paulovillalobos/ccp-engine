@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:00Z",
+ "ids": [
+  "080",
+  "081",
+  "082",
+  "083",
+  "084"
+ ],
+ "sha256": "b12a29e6406193eed9f4b4702c96295b7fb7d06d01fcdffa6e71cf14a73bcef3",
+ "answer": {
+  "records": [
+   {
+    "id": "080",
+    "dispatch_date": "2018-12-20",
+    "buyer_name": "Universidade de Lisboa",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-01-20",
+    "deadline_time": "18:00",
+    "estimated_value": "348750.00",
+    "main_cpv": "32420000"
+   },
+   {
+    "id": "081",
+    "dispatch_date": "2022-01-18",
+    "buyer_name": "Horários do Funchal - Transportes Públicos, S. A.",
+    "buyer_nif": "511026340",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-02-01",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "34121100"
+   },
+   {
+    "id": "082",
+    "dispatch_date": "2023-10-11",
+    "buyer_name": "Município de Lisboa",
+    "buyer_nif": "500051070",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-11-10",
+    "deadline_time": "23:59",
+    "estimated_value": "424611.27",
+    "main_cpv": "39150000"
+   },
+   {
+    "id": "083",
+    "dispatch_date": "2021-04-19",
+    "buyer_name": "Águas do Alto Minho (AdAM), S. A.",
+    "buyer_nif": "515486159",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2021-05-19",
+    "deadline_time": "18:00",
+    "estimated_value": "576000.00",
+    "main_cpv": "45232460"
+   },
+   {
+    "id": "084",
+    "dispatch_date": "2018-08-02",
+    "buyer_name": "Marinha — DITIC",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2018-08-12",
+    "deadline_time": "23:59",
+    "estimated_value": "233655.00",
+    "main_cpv": "72260000"
+   }
+  ]
+ }
+}

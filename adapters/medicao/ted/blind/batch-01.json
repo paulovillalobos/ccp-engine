@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:01:31Z",
+ "ids": [
+  "005",
+  "006",
+  "007",
+  "008",
+  "009"
+ ],
+ "sha256": "c1b0fa4a450c39d77427180e3925c4bbf3e0206164fe515c623ad9242047e47f",
+ "answer": {
+  "records": [
+   {
+    "id": "005",
+    "dispatch_date": "2021-12-30",
+    "buyer_name": "Direção-Geral de Estatísticas da Educação e Ciência",
+    "buyer_nif": "600084906",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "32410000"
+   },
+   {
+    "id": "006",
+    "dispatch_date": "2023-12-20",
+    "buyer_name": "Hospital de Braga, E. P. E.",
+    "buyer_nif": "515545180",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2024-01-22",
+    "deadline_time": "17:00",
+    "estimated_value": "579441.40",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "007",
+    "dispatch_date": "2020-03-02",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Central, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33696500"
+   },
+   {
+    "id": "008",
+    "dispatch_date": "2023-08-01",
+    "buyer_name": "Município de Porto de Mós",
+    "buyer_nif": "505586401",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2023-08-16",
+    "deadline_time": "23:59",
+    "estimated_value": "8454964.12",
+    "main_cpv": "45214200"
+   },
+   {
+    "id": "009",
+    "dispatch_date": "2018-05-17",
+    "buyer_name": "EDIA — Empresa de Desenvolvimento e Infra-estruturas do Alqueva, S. A.",
+    "buyer_nif": "503450189",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2018-06-28",
+    "deadline_time": "18:00",
+    "estimated_value": null,
+    "main_cpv": "45232120"
+   }
+  ]
+ }
+}

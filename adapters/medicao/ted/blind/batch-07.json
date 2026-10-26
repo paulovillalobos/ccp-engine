@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:00Z",
+ "ids": [
+  "035",
+  "036",
+  "037",
+  "038",
+  "039"
+ ],
+ "sha256": "912d835ca04ed16ca3f9c2b3bbabf0f0ebe077b8868b54a01e89981fcca45edb",
+ "answer": {
+  "records": [
+   {
+    "id": "035",
+    "dispatch_date": "2020-03-03",
+    "buyer_name": "Águas de Gaia, E. M., S. A.",
+    "buyer_nif": "504763202",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2020-04-02",
+    "deadline_time": "23:59",
+    "estimated_value": "330000.00",
+    "main_cpv": "42415200"
+   },
+   {
+    "id": "036",
+    "dispatch_date": "2019-10-15",
+    "buyer_name": "Município de Lagos",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "34130000"
+   },
+   {
+    "id": "037",
+    "dispatch_date": "2018-09-28",
+    "buyer_name": "Direção — Geral do Tesouro e Finanças",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2018-10-28",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "72212900"
+   },
+   {
+    "id": "038",
+    "dispatch_date": "2019-07-30",
+    "buyer_name": "Hospital do Espirito Santo de Évora, E. P. E.",
+    "buyer_nif": "508085888",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33169000"
+   },
+   {
+    "id": "039",
+    "dispatch_date": "2019-03-20",
+    "buyer_name": "Direção-Geral da Administração da Justiça",
+    "buyer_nif": "600072525",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "30200000"
+   }
+  ]
+ }
+}

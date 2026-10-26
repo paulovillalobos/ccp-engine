@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:02Z",
+ "ids": [
+  "140",
+  "141",
+  "142",
+  "143",
+  "144"
+ ],
+ "sha256": "577cec4a6c6f3f3389f9b4d91a35ea89984c24ac1713eadc3c04552ee0e8276d",
+ "answer": {
+  "records": [
+   {
+    "id": "140",
+    "dispatch_date": "2025-12-06",
+    "buyer_name": "Unidade Local de Saúde de Loures-Odivelas, EPE",
+    "buyer_nif": "516726862",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1957000",
+    "main_cpv": "85143000"
+   },
+   {
+    "id": "141",
+    "dispatch_date": "2026-04-15",
+    "buyer_name": "União das Freguesias de Trancoso (São Pedro e Santa Maria) e Souto Maior",
+    "buyer_nif": "510840647",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-05-15",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "95435.18",
+    "main_cpv": "77314000"
+   },
+   {
+    "id": "142",
+    "dispatch_date": "2024-06-14",
+    "buyer_name": "Instituto de Informática, I.P.",
+    "buyer_nif": "504 322 915",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "525000",
+    "main_cpv": "30160000"
+   },
+   {
+    "id": "143",
+    "dispatch_date": "2024-03-18",
+    "buyer_name": "SPMS, EPE - Serviços Partilhados do Ministério da Saúde, EPE",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "oth-single",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "261562.5",
+    "main_cpv": "48000000"
+   },
+   {
+    "id": "144",
+    "dispatch_date": "2026-06-08",
+    "buyer_name": "Águas do Vale do Tejo, SA",
+    "buyer_nif": "513606130",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-07-13",
+    "deadline_time": "19:00:59+00:00",
+    "estimated_value": "2274600",
+    "main_cpv": "90513600"
+   }
+  ]
+ }
+}

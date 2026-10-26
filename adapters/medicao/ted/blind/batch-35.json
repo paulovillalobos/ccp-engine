@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:40Z",
+ "ids": [
+  "175",
+  "176",
+  "177",
+  "178",
+  "179"
+ ],
+ "sha256": "5847b095a493aa194f75e48efee620c3daee7f9ca2f7f218d99011c1e8aca61a",
+ "answer": {
+  "records": [
+   {
+    "id": "175",
+    "dispatch_date": "2025-12-17",
+    "buyer_name": "Secretaria-Geral do Ministério dos Negócios Estrangeiros",
+    "buyer_nif": "600014576",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-01-16",
+    "deadline_time": "16:59:59+01:00",
+    "estimated_value": "244000",
+    "main_cpv": "32420000"
+   },
+   {
+    "id": "176",
+    "dispatch_date": "2024-10-11",
+    "buyer_name": "Secretaria Regional de Equipamentos e Infraestruturas",
+    "buyer_nif": "671001329",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45321000"
+   },
+   {
+    "id": "177",
+    "dispatch_date": "2024-12-27",
+    "buyer_name": "Instituto da Conservação da Natureza e das Florestas, IP",
+    "buyer_nif": "510342647",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-01-27",
+    "deadline_time": "23:59:59Z",
+    "estimated_value": "462750",
+    "main_cpv": "45453100"
+   },
+   {
+    "id": "178",
+    "dispatch_date": "2026-02-09",
+    "buyer_name": "Município de Albufeira",
+    "buyer_nif": "503539473",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-03-11",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "550000",
+    "main_cpv": "03200000"
+   },
+   {
+    "id": "179",
+    "dispatch_date": "2025-05-05",
+    "buyer_name": "Guarda Nacional Republicana",
+    "buyer_nif": "600008878",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "3304954.70",
+    "main_cpv": "90911000"
+   }
+  ]
+ }
+}

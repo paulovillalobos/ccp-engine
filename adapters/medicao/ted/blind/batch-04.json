@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:01:51Z",
+ "ids": [
+  "020",
+  "021",
+  "022",
+  "023",
+  "024"
+ ],
+ "sha256": "6d59fbf029bf882904bb15065bafc32367bd6f2fe5ca31df78e1d584f8cae114",
+ "answer": {
+  "records": [
+   {
+    "id": "020",
+    "dispatch_date": "2020-05-23",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "V Contract award without prior publication",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "50800000"
+   },
+   {
+    "id": "021",
+    "dispatch_date": "2018-05-28",
+    "buyer_name": "REN — Rede Eléctrica Nacional, S. A.",
+    "buyer_nif": "507866673",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "31200000"
+   },
+   {
+    "id": "022",
+    "dispatch_date": "2023-05-19",
+    "buyer_name": "Infraestruturas de Portugal S.A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "472500.00",
+    "main_cpv": "42961200"
+   },
+   {
+    "id": "023",
+    "dispatch_date": "2021-01-21",
+    "buyer_name": "Águas de Santo André, S. A.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "90510000"
+   },
+   {
+    "id": "024",
+    "dispatch_date": "2023-03-06",
+    "buyer_name": "Secretaria-Geral do Ministério dos Negócios Estrangeiros",
+    "buyer_nif": "600014576",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-04-05",
+    "deadline_time": "16:59",
+    "estimated_value": "555154.00",
+    "main_cpv": "30200000"
+   }
+  ]
+ }
+}

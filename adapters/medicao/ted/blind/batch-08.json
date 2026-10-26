@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:09Z",
+ "ids": [
+  "040",
+  "041",
+  "042",
+  "043",
+  "044"
+ ],
+ "sha256": "63b00a998abf2e1ea6edacc93fb0e3c2f3fad35f29d4f9ad54fb7e4e066c5c86",
+ "answer": {
+  "records": [
+   {
+    "id": "040",
+    "dispatch_date": "2023-07-05",
+    "buyer_name": "TUB - Transportes Urbanos de Braga, E. M.",
+    "buyer_nif": "504807684",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "4110000.00",
+    "main_cpv": "34144910"
+   },
+   {
+    "id": "041",
+    "dispatch_date": "2024-01-04",
+    "buyer_name": "EMAC - Empresa Municipal de Ambiente de Cascais, E. M., S. A.",
+    "buyer_nif": "507396081",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "420000.00",
+    "main_cpv": "34144900"
+   },
+   {
+    "id": "042",
+    "dispatch_date": "2023-09-13",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, EPE",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "85145000"
+   },
+   {
+    "id": "043",
+    "dispatch_date": "2020-09-10",
+    "buyer_name": "Santa Casa da Misericórdia de Lisboa",
+    "buyer_nif": "500745471",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-10-10",
+    "deadline_time": "23:59",
+    "estimated_value": "285600.00",
+    "main_cpv": "90500000"
+   },
+   {
+    "id": "044",
+    "dispatch_date": "2022-07-13",
+    "buyer_name": "Instituto da Segurança Social, I. P.",
+    "buyer_nif": "505305500",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "15850000"
+   }
+  ]
+ }
+}

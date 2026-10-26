@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:41Z",
+ "ids": [
+  "120",
+  "121",
+  "122",
+  "123",
+  "124"
+ ],
+ "sha256": "1d6e2a43eceae7ecd7e24dbdcd23644e7d8836d9eed8de657826587336817f1a",
+ "answer": {
+  "records": [
+   {
+    "id": "120",
+    "dispatch_date": "2024-05-10",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2024-06-19",
+    "deadline_time": "17:00:00+01:00",
+    "estimated_value": "9000000",
+    "main_cpv": "45221119"
+   },
+   {
+    "id": "121",
+    "dispatch_date": "2026-05-20",
+    "buyer_name": "Município de Loulé",
+    "buyer_nif": "502098139",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "54135",
+    "main_cpv": "44211000"
+   },
+   {
+    "id": "122",
+    "dispatch_date": "2026-07-22",
+    "buyer_name": "Camões - Instituto da Cooperação e da Língua, IP",
+    "buyer_nif": "510322506",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-08-21",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "562445.04",
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "123",
+    "dispatch_date": "2025-04-23",
+    "buyer_name": "Município de Torres Vedras",
+    "buyer_nif": "502173653",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-05-03",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "45233121"
+   },
+   {
+    "id": "124",
+    "dispatch_date": "2024-04-30",
+    "buyer_name": "Universidade do Porto",
+    "buyer_nif": "501413197",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "720029.1",
+    "main_cpv": "48517000"
+   }
+  ]
+ }
+}

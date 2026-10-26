@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:50Z",
+ "ids": [
+  "070",
+  "071",
+  "072",
+  "073",
+  "074"
+ ],
+ "sha256": "d43150298eca08357610e122671c610cacdba347534cac55c333d6c015f464d9",
+ "answer": {
+  "records": [
+   {
+    "id": "070",
+    "dispatch_date": "2023-01-18",
+    "buyer_name": "Instituto Nacional de Investigação Agrária e Veterinária, I. P.",
+    "buyer_nif": "510345271",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-02-23",
+    "deadline_time": "23:59",
+    "estimated_value": "32260.00",
+    "main_cpv": "71240000"
+   },
+   {
+    "id": "071",
+    "dispatch_date": "2022-06-07",
+    "buyer_name": "Centro Hospitalar Universitário de São João, E. P. E.",
+    "buyer_nif": "509821197",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-07-11",
+    "deadline_time": "18:00",
+    "estimated_value": null,
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "072",
+    "dispatch_date": "2019-09-24",
+    "buyer_name": "Município de Viana do Castelo",
+    "buyer_nif": "506037258",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "60130000"
+   },
+   {
+    "id": "073",
+    "dispatch_date": "2022-04-08",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-05-16",
+    "deadline_time": "17:00",
+    "estimated_value": "1553619.00",
+    "main_cpv": "50225000"
+   },
+   {
+    "id": "074",
+    "dispatch_date": "2023-03-21",
+    "buyer_name": "REN - Rede Eléctrica Nacional, S.A.",
+    "buyer_nif": "507866673",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "31200000"
+   }
+  ]
+ }
+}

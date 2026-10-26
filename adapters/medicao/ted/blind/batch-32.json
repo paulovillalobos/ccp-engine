@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:25Z",
+ "ids": [
+  "160",
+  "161",
+  "162",
+  "163",
+  "164"
+ ],
+ "sha256": "b600280a0512acf197c66c851cac09e4d9afbd093ca1972ac9728133191a86d8",
+ "answer": {
+  "records": [
+   {
+    "id": "160",
+    "dispatch_date": "2026-08-03",
+    "buyer_name": "Município de Ponte de Lima",
+    "buyer_nif": "506811913",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "44613800"
+   },
+   {
+    "id": "161",
+    "dispatch_date": "2025-12-09",
+    "buyer_name": "Unidade Local de Saúde do Baixo Alentejo, EPE",
+    "buyer_nif": "508754275",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-01-11",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "705558",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "162",
+    "dispatch_date": "2025-06-12",
+    "buyer_name": "Universidade de Trás-os-Montes e Alto Douro",
+    "buyer_nif": null,
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "330000",
+    "main_cpv": "71000000"
+   },
+   {
+    "id": "163",
+    "dispatch_date": "2024-12-03",
+    "buyer_name": "Unidade Local de Saúde do Baixo Alentejo, E.P.E",
+    "buyer_nif": "508754275",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-01-13",
+    "deadline_time": "17:00:00Z",
+    "estimated_value": "608043.39",
+    "main_cpv": "33696500"
+   },
+   {
+    "id": "164",
+    "dispatch_date": "2024-04-09",
+    "buyer_name": "Autoridade Nacional de Emergência e Proteção Civil",
+    "buyer_nif": "600082490",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "450000",
+    "main_cpv": "79341400"
+   }
+  ]
+ }
+}

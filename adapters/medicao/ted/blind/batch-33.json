@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:30Z",
+ "ids": [
+  "165",
+  "166",
+  "167",
+  "168",
+  "169"
+ ],
+ "sha256": "304d2bb4e9c8b3b1c39a4dcb7d853c44f3013261a55a74c74dd2cf539e1fabd2",
+ "answer": {
+  "records": [
+   {
+    "id": "165",
+    "dispatch_date": "2025-02-06",
+    "buyer_name": "Didáxis - Cooperativa de Ensino, C. R. L.",
+    "buyer_nif": "500341583",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "26901.00",
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "166",
+    "dispatch_date": "2026-05-04",
+    "buyer_name": "Município de Barcelos",
+    "buyer_nif": "505584760",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-06-02",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "8685013.15",
+    "main_cpv": "55524000"
+   },
+   {
+    "id": "167",
+    "dispatch_date": "2026-07-13",
+    "buyer_name": "A. D. A. M. - Águas do Alto Minho, SA",
+    "buyer_nif": "515486159",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2026-08-12",
+    "deadline_time": "18:00:59+00:00",
+    "estimated_value": "2812700",
+    "main_cpv": "45232151"
+   },
+   {
+    "id": "168",
+    "dispatch_date": "2024-10-02",
+    "buyer_name": "Serviço de Saúde da Região Autónoma da Madeira, EPERAM (SESARAM, EPERAM)",
+    "buyer_nif": "BT 511228848",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2024-11-04",
+    "deadline_time": "17:00:00Z",
+    "estimated_value": "1747264",
+    "main_cpv": "33751000"
+   },
+   {
+    "id": "169",
+    "dispatch_date": "2024-07-24",
+    "buyer_name": "EDIA - Empresa de Desenvolvimento e Infra Estruturas do Alqueva, S. A.",
+    "buyer_nif": "503450189",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-08-26",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": "388000.00",
+    "main_cpv": "90913200"
+   }
+  ]
+ }
+}

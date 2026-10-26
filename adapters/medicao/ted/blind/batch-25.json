@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:51Z",
+ "ids": [
+  "125",
+  "126",
+  "127",
+  "128",
+  "129"
+ ],
+ "sha256": "36b0e6d2168ef92d3e71bb3a77ed0043556b96f49a151b7f7637c73c44cd0a1d",
+ "answer": {
+  "records": [
+   {
+    "id": "125",
+    "dispatch_date": "2025-09-19",
+    "buyer_name": "APA - Administração do Porto de Aveiro, S. A.",
+    "buyer_nif": "501431535",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-10-06",
+    "deadline_time": "19h00",
+    "estimated_value": "7810000",
+    "main_cpv": "45315400"
+   },
+   {
+    "id": "126",
+    "dispatch_date": "2024-07-09",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "95292",
+    "main_cpv": "33652000"
+   },
+   {
+    "id": "127",
+    "dispatch_date": "2024-08-27",
+    "buyer_name": "Águas de Santo André, S. A.; Águas do Algarve, S. A.; Águas do Centro Litoral, S. A.; Águas do Norte, S. A.; Águas do Vale do Tejo, S. A.; AgdA - Águas Públicas do Alentejo, S. A.",
+    "buyer_nif": "505600005; 505176300; 513606181; 513606084; 513606130; 509133843",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "3585800.4",
+    "main_cpv": "24314000"
+   },
+   {
+    "id": "128",
+    "dispatch_date": "2026-03-20",
+    "buyer_name": "Estado-Maior-General das Forças Armadas (EMGFA)",
+    "buyer_nif": "600010180",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-04-22",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "495509",
+    "main_cpv": "34221000"
+   },
+   {
+    "id": "129",
+    "dispatch_date": "2026-05-25",
+    "buyer_name": "Município da Figueira da Foz",
+    "buyer_nif": "501305580",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-06-09",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "384000",
+    "main_cpv": "90910000"
+   }
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:34Z",
+ "ids": [
+  "065",
+  "066",
+  "067",
+  "068",
+  "069"
+ ],
+ "sha256": "a75f64784b410fc25d091b5d5bc6df5f5ce2ae21c4912fe5b4822edb5a445b0a",
+ "answer": {
+  "records": [
+   {
+    "id": "065",
+    "dispatch_date": "2023-07-21",
+    "buyer_name": "Instituto de Informática, IP.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72200000"
+   },
+   {
+    "id": "066",
+    "dispatch_date": "2019-09-24",
+    "buyer_name": "Guarda Nacional Republicana",
+    "buyer_nif": "600008878",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "418700.00",
+    "main_cpv": "32000000"
+   },
+   {
+    "id": "067",
+    "dispatch_date": "2021-10-08",
+    "buyer_name": "ADENE - Agência para a Energia",
+    "buyer_nif": "501618392",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2021-10-13",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "72514000"
+   },
+   {
+    "id": "068",
+    "dispatch_date": "2021-12-23",
+    "buyer_name": "Secretaria-Geral do Ministério da Administração Interna",
+    "buyer_nif": "600014665",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "35310000"
+   },
+   {
+    "id": "069",
+    "dispatch_date": "2022-12-16",
+    "buyer_name": "Hospital de Santo Espírito da Ilha Terceira, E. P. E. R.",
+    "buyer_nif": "512105030",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-01-11",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "66510000"
+   }
+  ]
+ }
+}

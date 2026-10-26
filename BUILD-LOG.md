@@ -1460,3 +1460,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   re-derivable from the bundles and sample.json (scratch, not in git).
 - Next: check C, the blind family-B reading (reader B's bundled client, model model-b as named by the person for
   the DR test), then A and B with the BASE anúncios once Storage is readable.
+
+## 2026-10-26 X.2 TED v1 scored: A passes, C fails on an eForms parser error; B not run (commit: X.2: TED v1 — blind answers sealed; A passes; C 97.4 % fails on the eForms dispatch date; the 43 disagreements settled from the XML)
+- Blind reading: 40 batches of 5 (reader-b-cli, model-b), answers saved before scoring in
+  adapters/medicao/ted/blind/; sha256 of the 40 files' sha256 list 7f7d4452e52dfee8565ffddb6f932cf52a09d5e8ac421f70006c7ef950a06e5d.
+  score.json 43c494f71bbca196fa27d2c5d48f2f69aaa2d1b6242257ec822316d319ad4246.
+- A: the six required fields 98.8–100 % (PASS). C: 1 597 / 1 640 = 97.4 % (96.5–98.0), FAIL; TED-XML 781/781, eForms
+  816/859. 39 of the 43 disagreements are one code error: in eForms result notices the parser read the first IssueDate in
+  the document, the SettledContract's (BT-145), not the notice's (BT-05). 2 are a joint procurement (parser gave the first
+  of six buyers), 2 a change notice whose coded deadline and change text differ. Reader errors 0. adapters/medicao/ted/REPORT-v1.md.
+- Verdict as written: TED's extraction is not measured as passing; fix the parser and draw v2.

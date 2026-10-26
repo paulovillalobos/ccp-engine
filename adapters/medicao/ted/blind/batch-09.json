@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:14Z",
+ "ids": [
+  "045",
+  "046",
+  "047",
+  "048",
+  "049"
+ ],
+ "sha256": "93ed4c5d16efe420946268664aa212f86d528e7005baf8c792691d94bad50402",
+ "answer": {
+  "records": [
+   {
+    "id": "045",
+    "dispatch_date": "2018-03-29",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "046",
+    "dispatch_date": "2018-10-18",
+    "buyer_name": "Município das Caldas da Rainha",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2018-10-24",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "64210000"
+   },
+   {
+    "id": "047",
+    "dispatch_date": "2019-02-19",
+    "buyer_name": "Município de Vila Franca de Xira",
+    "buyer_nif": "506614913",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-03-06",
+    "deadline_time": "23:59",
+    "estimated_value": "446776.41",
+    "main_cpv": "42961000"
+   },
+   {
+    "id": "048",
+    "dispatch_date": "2021-09-27",
+    "buyer_name": "Município de Albufeira",
+    "buyer_nif": "503539473",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-10-16",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "39500000"
+   },
+   {
+    "id": "049",
+    "dispatch_date": "2022-06-09",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Central, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-07-18",
+    "deadline_time": "17:00",
+    "estimated_value": "11393877.24",
+    "main_cpv": "33184100"
+   }
+  ]
+ }
+}

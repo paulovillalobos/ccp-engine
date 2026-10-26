@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:11Z",
+ "ids": [
+  "090",
+  "091",
+  "092",
+  "093",
+  "094"
+ ],
+ "sha256": "5e042dfe386af7fac257efe0da0ff530e861e58d2e2f66860d86fdb4befa8db8",
+ "answer": {
+  "records": [
+   {
+    "id": "090",
+    "dispatch_date": "2023-08-28",
+    "buyer_name": "Santa Casa da Misericórdia de Vila do Conde",
+    "buyer_nif": "501382356",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "5832053.81",
+    "main_cpv": "45210000"
+   },
+   {
+    "id": "091",
+    "dispatch_date": "2018-02-09",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "092",
+    "dispatch_date": "2022-02-04",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-03-02",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "34947100"
+   },
+   {
+    "id": "093",
+    "dispatch_date": "2020-06-16",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72253200"
+   },
+   {
+    "id": "094",
+    "dispatch_date": "2021-05-07",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "9 Not applicable",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "18100000"
+   }
+  ]
+ }
+}

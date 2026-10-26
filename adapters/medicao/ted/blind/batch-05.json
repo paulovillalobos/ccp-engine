@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:01:50Z",
+ "ids": [
+  "025",
+  "026",
+  "027",
+  "028",
+  "029"
+ ],
+ "sha256": "585cf5af1bed576be2ca5e9f10012106244f680513572c6629216c69b5823999",
+ "answer": {
+  "records": [
+   {
+    "id": "025",
+    "dispatch_date": "2022-12-16",
+    "buyer_name": "Município de Almada",
+    "buyer_nif": "500051054",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-01-27",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "50750000"
+   },
+   {
+    "id": "026",
+    "dispatch_date": "2018-03-09",
+    "buyer_name": "Comunidade Intermunicipal do Médio Tejo",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "42995000"
+   },
+   {
+    "id": "027",
+    "dispatch_date": "2018-09-20",
+    "buyer_name": "Entidade de Serviços Partilhados da Administração Pública, I. P.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2018-09-30",
+    "deadline_time": "18:00",
+    "estimated_value": null,
+    "main_cpv": "50111100"
+   },
+   {
+    "id": "028",
+    "dispatch_date": "2019-09-23",
+    "buyer_name": "REN — Rede Eléctrica Nacional, S. A.",
+    "buyer_nif": "507866673",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "71500000"
+   },
+   {
+    "id": "029",
+    "dispatch_date": "2023-11-02",
+    "buyer_name": "APPACDM DE LISBOA - Associação Portuguesa de Pais e Amigos do Cidadão Deficiente Mental",
+    "buyer_nif": "504646788",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "233788.00",
+    "main_cpv": "09310000"
+   }
+  ]
+ }
+}

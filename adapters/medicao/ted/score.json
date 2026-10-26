@@ -1,0 +1,421 @@
+{
+ "source": "ted",
+ "A": {
+  "dispatch_date": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "notice_type": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "notice_id": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "buyer_name": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "buyer_nif": {
+   "k": 174,
+   "n": 200,
+   "pct": 87.0,
+   "wilson95": [
+    81.6,
+    91.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "buyer_country": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "buyer_nuts": {
+   "k": 194,
+   "n": 200,
+   "pct": 97.0,
+   "wilson95": [
+    93.6,
+    98.6
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "procedure_type": {
+   "k": 190,
+   "n": 200,
+   "pct": 95.0,
+   "wilson95": [
+    91.0,
+    97.3
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "contract_type": {
+   "k": 192,
+   "n": 200,
+   "pct": 96.0,
+   "wilson95": [
+    92.3,
+    98.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "deadline_date": {
+   "k": 81,
+   "n": 82,
+   "pct": 98.8,
+   "wilson95": [
+    93.4,
+    99.8
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "deadline_time": {
+   "k": 83,
+   "n": 200,
+   "pct": 41.5,
+   "wilson95": [
+    34.9,
+    48.4
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "estimated_value": {
+   "k": 124,
+   "n": 200,
+   "pct": 62.0,
+   "wilson95": [
+    55.1,
+    68.4
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "main_cpv": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  }
+ },
+ "B": {
+  "status": "NOT RUN (no anúncios given)"
+ },
+ "C": {
+  "k": 1597,
+  "n": 1640,
+  "pct": 97.4,
+  "wilson95": [
+   96.5,
+   98.0
+  ],
+  "disagreements": [
+   {
+    "n": 100,
+    "field": "dispatch_date",
+    "parser": "2024-04-23",
+    "reader": "2024-04-24"
+   },
+   {
+    "n": 101,
+    "field": "dispatch_date",
+    "parser": "2019-03-15",
+    "reader": "2025-02-20"
+   },
+   {
+    "n": 103,
+    "field": "dispatch_date",
+    "parser": "2026-04-10",
+    "reader": "2026-04-16"
+   },
+   {
+    "n": 105,
+    "field": "dispatch_date",
+    "parser": "2024-11-18",
+    "reader": "2026-04-14"
+   },
+   {
+    "n": 106,
+    "field": "dispatch_date",
+    "parser": "2024-06-26",
+    "reader": "2024-08-28"
+   },
+   {
+    "n": 107,
+    "field": "dispatch_date",
+    "parser": "2025-02-04",
+    "reader": "2025-03-18"
+   },
+   {
+    "n": 111,
+    "field": "dispatch_date",
+    "parser": "2026-07-30",
+    "reader": "2026-09-01"
+   },
+   {
+    "n": 112,
+    "field": "dispatch_date",
+    "parser": "2025-03-17",
+    "reader": "2025-08-16"
+   },
+   {
+    "n": 116,
+    "field": "dispatch_date",
+    "parser": "2024-02-26",
+    "reader": "2024-03-06"
+   },
+   {
+    "n": 117,
+    "field": "dispatch_date",
+    "parser": "2026-07-24",
+    "reader": "2026-07-31"
+   },
+   {
+    "n": 119,
+    "field": "dispatch_date",
+    "parser": "2026-09-01",
+    "reader": "2026-09-04"
+   },
+   {
+    "n": 121,
+    "field": "dispatch_date",
+    "parser": "2026-04-21",
+    "reader": "2026-05-20"
+   },
+   {
+    "n": 124,
+    "field": "dispatch_date",
+    "parser": "2024-04-18",
+    "reader": "2024-04-30"
+   },
+   {
+    "n": 125,
+    "field": "deadline_date",
+    "parser": "2025-09-22",
+    "reader": "2025-10-06"
+   },
+   {
+    "n": 125,
+    "field": "deadline_time",
+    "parser": "19:00:59+01:00",
+    "reader": "19h00"
+   },
+   {
+    "n": 127,
+    "field": "dispatch_date",
+    "parser": "2024-08-12",
+    "reader": "2024-08-27"
+   },
+   {
+    "n": 127,
+    "field": "buyer_name",
+    "parser": "Águas de Santo André, S. A.",
+    "reader": "Águas de Santo André, S. A.; Águas do Algarve, S. A.; Águas do Centro Litoral, S. A.; Águas do Norte, S. A.; Águas do Vale do Tejo, S. A.; AgdA - Águas Públicas do Alentejo, S. A."
+   },
+   {
+    "n": 127,
+    "field": "buyer_nif",
+    "parser": "505600005",
+    "reader": "505600005; 505176300; 513606181; 513606084; 513606130; 509133843"
+   },
+   {
+    "n": 130,
+    "field": "dispatch_date",
+    "parser": "2026-02-04",
+    "reader": "2026-07-04"
+   },
+   {
+    "n": 138,
+    "field": "dispatch_date",
+    "parser": "2024-10-31",
+    "reader": "2024-11-04"
+   },
+   {
+    "n": 142,
+    "field": "dispatch_date",
+    "parser": "2024-05-14",
+    "reader": "2024-06-14"
+   },
+   {
+    "n": 143,
+    "field": "dispatch_date",
+    "parser": "2023-05-30",
+    "reader": "2024-03-18"
+   },
+   {
+    "n": 145,
+    "field": "dispatch_date",
+    "parser": "2024-02-28",
+    "reader": "2024-04-17"
+   },
+   {
+    "n": 146,
+    "field": "dispatch_date",
+    "parser": "2021-04-14",
+    "reader": "2024-10-15"
+   },
+   {
+    "n": 147,
+    "field": "dispatch_date",
+    "parser": "2026-05-27",
+    "reader": "2026-07-30"
+   },
+   {
+    "n": 150,
+    "field": "dispatch_date",
+    "parser": "2026-03-31",
+    "reader": "2026-07-01"
+   },
+   {
+    "n": 151,
+    "field": "dispatch_date",
+    "parser": "2025-10-31",
+    "reader": "2025-11-05"
+   },
+   {
+    "n": 152,
+    "field": "dispatch_date",
+    "parser": "2025-03-11",
+    "reader": "2025-03-12"
+   },
+   {
+    "n": 156,
+    "field": "dispatch_date",
+    "parser": "2025-11-05",
+    "reader": "2026-07-22"
+   },
+   {
+    "n": 160,
+    "field": "dispatch_date",
+    "parser": "2026-06-17",
+    "reader": "2026-08-03"
+   },
+   {
+    "n": 162,
+    "field": "dispatch_date",
+    "parser": "2024-12-19",
+    "reader": "2025-06-12"
+   },
+   {
+    "n": 170,
+    "field": "dispatch_date",
+    "parser": "2026-05-28",
+    "reader": "2026-05-29"
+   },
+   {
+    "n": 179,
+    "field": "dispatch_date",
+    "parser": "2025-04-29",
+    "reader": "2025-05-05"
+   },
+   {
+    "n": 184,
+    "field": "dispatch_date",
+    "parser": "2025-10-09",
+    "reader": "2026-03-19"
+   },
+   {
+    "n": 185,
+    "field": "dispatch_date",
+    "parser": "2026-02-18",
+    "reader": "2026-05-02"
+   },
+   {
+    "n": 188,
+    "field": "dispatch_date",
+    "parser": "2026-04-07",
+    "reader": "2026-04-16"
+   },
+   {
+    "n": 190,
+    "field": "dispatch_date",
+    "parser": "2024-10-29",
+    "reader": "2024-11-20"
+   },
+   {
+    "n": 191,
+    "field": "dispatch_date",
+    "parser": "2025-05-07",
+    "reader": "2025-05-09"
+   },
+   {
+    "n": 192,
+    "field": "dispatch_date",
+    "parser": "2024-09-19",
+    "reader": "2024-09-25"
+   },
+   {
+    "n": 195,
+    "field": "dispatch_date",
+    "parser": "2023-11-03",
+    "reader": "2025-11-19"
+   },
+   {
+    "n": 196,
+    "field": "dispatch_date",
+    "parser": "2025-09-18",
+    "reader": "2025-10-02"
+   },
+   {
+    "n": 197,
+    "field": "dispatch_date",
+    "parser": "2020-12-30",
+    "reader": "2024-07-01"
+   },
+   {
+    "n": 198,
+    "field": "dispatch_date",
+    "parser": "2024-07-12",
+    "reader": "2024-10-26"
+   }
+  ],
+  "pass_": false
+ }
+}

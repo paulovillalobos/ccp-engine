@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:53Z",
+ "ids": [
+  "130",
+  "131",
+  "132",
+  "133",
+  "134"
+ ],
+ "sha256": "592b761effc7b4f677a8b3499fc3cbbe799666876935c5e92f12deaa6217c0ca",
+ "answer": {
+  "records": [
+   {
+    "id": "130",
+    "dispatch_date": "2026-07-04",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "66780",
+    "main_cpv": "33600000"
+   },
+   {
+    "id": "131",
+    "dispatch_date": "2026-06-26",
+    "buyer_name": "EPAL - Empresa Portuguesa das Águas Livres, SA",
+    "buyer_nif": "500906840",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "34100000"
+   },
+   {
+    "id": "132",
+    "dispatch_date": "2024-03-26",
+    "buyer_name": "Município de Lisboa",
+    "buyer_nif": "500051070",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2024-04-29",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "1563000",
+    "main_cpv": "18113000"
+   },
+   {
+    "id": "133",
+    "dispatch_date": "2025-01-16",
+    "buyer_name": "OPART - Organismo de Produção Artística, E. P. E.",
+    "buyer_nif": "508180457",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-02-18",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "45454100"
+   },
+   {
+    "id": "134",
+    "dispatch_date": "2026-03-05",
+    "buyer_name": "Unidade Local de Saúde de Santo António, EPE",
+    "buyer_nif": "517392259",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-04-07",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "355000",
+    "main_cpv": "33100000"
+   }
+  ]
+ }
+}

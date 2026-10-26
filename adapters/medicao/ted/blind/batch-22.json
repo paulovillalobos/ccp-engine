@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:32Z",
+ "ids": [
+  "110",
+  "111",
+  "112",
+  "113",
+  "114"
+ ],
+ "sha256": "7b285f8883be662bc0c7cd86f96ad3a5a53ae92c0a8258c0f247f412d3d333a8",
+ "answer": {
+  "records": [
+   {
+    "id": "110",
+    "dispatch_date": "2024-02-19",
+    "buyer_name": "Município de Vila Flor",
+    "buyer_nif": "506696464",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2024-03-20",
+    "deadline_time": "17:30:00Z",
+    "estimated_value": "10179172.33",
+    "main_cpv": "45247210"
+   },
+   {
+    "id": "111",
+    "dispatch_date": "2026-09-01",
+    "buyer_name": "Fundação Casa da Música",
+    "buyer_nif": "507636295",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "299000",
+    "main_cpv": "92312000"
+   },
+   {
+    "id": "112",
+    "dispatch_date": "2025-08-16",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "215165.5",
+    "main_cpv": "33652000"
+   },
+   {
+    "id": "113",
+    "dispatch_date": "2025-08-13",
+    "buyer_name": "Município de Lagos",
+    "buyer_nif": "505170876",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-09-10",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "8240000",
+    "main_cpv": "45211340"
+   },
+   {
+    "id": "114",
+    "dispatch_date": "2025-10-21",
+    "buyer_name": "Serviço de Utilização Comum dos Hospitais",
+    "buyer_nif": "500900469",
+    "buyer_country": "PRT",
+    "procedure_type": "oth-mult",
+    "contract_type": "supplies",
+    "deadline_date": "2029-10-31",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": null,
+    "main_cpv": "15810000"
+   }
+  ]
+ }
+}

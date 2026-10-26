@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:01:41Z",
+ "ids": [
+  "015",
+  "016",
+  "017",
+  "018",
+  "019"
+ ],
+ "sha256": "6506d13d080d9b38b6ba29a7fb3a4de2836d41608362c6df0f6523312183d949",
+ "answer": {
+  "records": [
+   {
+    "id": "015",
+    "dispatch_date": "2021-08-31",
+    "buyer_name": "Santa Casa da Misericórdia de Lisboa",
+    "buyer_nif": "500745471",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "50111000"
+   },
+   {
+    "id": "016",
+    "dispatch_date": "2023-11-17",
+    "buyer_name": "Instituto de Gestão Financeira da Educação, I. P.",
+    "buyer_nif": "600086631",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "32420000"
+   },
+   {
+    "id": "017",
+    "dispatch_date": "2021-04-27",
+    "buyer_name": "Taviraverde — Empresa Municipal de Ambiente, E. M.",
+    "buyer_nif": "507236335",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2021-05-17",
+    "deadline_time": "17:00",
+    "estimated_value": "369820.00",
+    "main_cpv": "50111000"
+   },
+   {
+    "id": "018",
+    "dispatch_date": "2021-07-12",
+    "buyer_name": "Município de Seia",
+    "buyer_nif": "506676170",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2021-08-08",
+    "deadline_time": "23:59",
+    "estimated_value": "343056.60",
+    "main_cpv": "55524000"
+   },
+   {
+    "id": "019",
+    "dispatch_date": "2023-02-06",
+    "buyer_name": "Centro de Formação Profissional da Industria Metalúrgica e Metalomecânica (CENFIM)",
+    "buyer_nif": "502077352",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "300000.00",
+    "main_cpv": "09310000"
+   }
+  ]
+ }
+}

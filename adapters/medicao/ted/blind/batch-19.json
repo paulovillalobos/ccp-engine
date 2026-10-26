@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:16Z",
+ "ids": [
+  "095",
+  "096",
+  "097",
+  "098",
+  "099"
+ ],
+ "sha256": "b441ac8d54abf023df03d2be144942f5fe0e32b8022f0e5368c06569f8f933b5",
+ "answer": {
+  "records": [
+   {
+    "id": "095",
+    "dispatch_date": "2022-04-01",
+    "buyer_name": "Direção-Geral de Recursos de Defesa Nacional",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-04-03",
+    "deadline_time": "23:59",
+    "estimated_value": "300000.00",
+    "main_cpv": "75220000"
+   },
+   {
+    "id": "096",
+    "dispatch_date": "2021-04-28",
+    "buyer_name": "Instituto do Vinho, do Bordado e do Artesanato da Madeira (IVBAM), IP-RAM",
+    "buyer_nif": "511270305",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-05-13",
+    "deadline_time": "17:00",
+    "estimated_value": "334555.00",
+    "main_cpv": "44611600"
+   },
+   {
+    "id": "097",
+    "dispatch_date": "2022-02-21",
+    "buyer_name": "Instituto do Turismo de Portugal, I.P,",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "79340000"
+   },
+   {
+    "id": "098",
+    "dispatch_date": "2020-06-25",
+    "buyer_name": "União das Misericórdias Portuguesas",
+    "buyer_nif": "501295097",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "307000.00",
+    "main_cpv": "72540000"
+   },
+   {
+    "id": "099",
+    "dispatch_date": "2018-04-27",
+    "buyer_name": "Fundação INATEL",
+    "buyer_nif": "500122237",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2018-05-28",
+    "deadline_time": "23:59",
+    "estimated_value": "313566.00",
+    "main_cpv": "39830000"
+   }
+  ]
+ }
+}

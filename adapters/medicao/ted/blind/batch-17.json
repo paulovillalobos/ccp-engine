@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:00Z",
+ "ids": [
+  "085",
+  "086",
+  "087",
+  "088",
+  "089"
+ ],
+ "sha256": "de460cb8d10d33785cea18071519f68f7235acc246b4d220414f134d7773d6ef",
+ "answer": {
+  "records": [
+   {
+    "id": "085",
+    "dispatch_date": "2019-08-26",
+    "buyer_name": "Empresa Municipal de Ambiente do Porto, E. M., S. A.",
+    "buyer_nif": "514280956",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-09-26",
+    "deadline_time": "17:00",
+    "estimated_value": "6274800.00",
+    "main_cpv": "34144510"
+   },
+   {
+    "id": "086",
+    "dispatch_date": "2021-03-11",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": "508481287",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "407790.00",
+    "main_cpv": "33190000"
+   },
+   {
+    "id": "087",
+    "dispatch_date": "2023-09-14",
+    "buyer_name": "Município de Loures",
+    "buyer_nif": "501294996",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "905220.00",
+    "main_cpv": "60000000"
+   },
+   {
+    "id": "088",
+    "dispatch_date": "2019-05-02",
+    "buyer_name": "Parque Escolar, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "252191.80",
+    "main_cpv": "71520000"
+   },
+   {
+    "id": "089",
+    "dispatch_date": "2019-02-01",
+    "buyer_name": "Município de Albufeira",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2019-02-15",
+    "deadline_time": "23:59",
+    "estimated_value": "1500000.00",
+    "main_cpv": "66510000"
+   }
+  ]
+ }
+}
