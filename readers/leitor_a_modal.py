@@ -1,7 +1,7 @@
 """leitor:a / leitor:a2 on Modal: the family-A reader answers prompts with guided JSON (vLLM, temperature 0, one batch).
 
     <a Python 3.12 venv with modal>/bin/modal run readers/leitor_a_modal.py [--only SLUG] [--dir governance/readings/casos]
-        [--lora v1] [--out-dir DIR] [--jsonl FILE --out FILE]
+        [--lora v1|v2] [--out-dir DIR] [--jsonl FILE --out FILE]
 
 readers/ holds the code that runs a model (DECISIONS D38): nothing in engine/, tools/ or verify.py imports it, and
 verify's code guard keeps it that way.
@@ -9,7 +9,8 @@ verify's code guard keeps it that way.
 Directory mode (B3, B5): reads <dir>/<key>/prompt.json, skips a key that already has its answer file, sends the prompts
 and their answer schemas to one GPU container, and writes each answer as <out-dir or dir>/<key>/<leitor>.json
 {"at", "sha256" of the answer text, "answer"}: the same record leitor:b gets. <leitor> is leitor-a (the base model) or,
-with --lora v1, leitor-a2 (the base model + the adapter amalia-ccp-lei-v1 from the Modal volume amalia-lora; phase 4).
+with --lora v1, leitor-a2 (the base model + the adapter amalia-ccp-lei-v1 from the Modal volume amalia-lora; phase 4); with
+--lora v2, leitor-a3 (+ amalia-ccp-lei-v2; phase 5, D46).
 JSONL mode (phase 4, T3): reads a file of examples {id, prompt, schema, ...} (training/data/<task>/held_out.jsonl) and
 writes one line per example {"id", "at", "sha256", "answer"} to --out.
 A prompt longer than the window is skipped and listed, never truncated. The grammar admits no free whitespace, set on
@@ -28,7 +29,8 @@ import modal
 
 MODEL = "amalia-llm/AMALIA-9B-0626-DPO"
 REVISION = "c4614b9b5c7b4fe303fa20902e692fc7dface640"  # leitor:a motor versao c4614b9b5c7b
-ADAPTERS = {"v1": "amalia-ccp-lei-v1"}  # leitor:a2 (phase 4): adapter directory in the volume amalia-lora
+ADAPTERS = {"v1": "amalia-ccp-lei-v1", "v2": "amalia-ccp-lei-v2"}  # adapter directories in the volume amalia-lora
+LEITOR_OF = {"": "leitor-a", "v1": "leitor-a2", "v2": "leitor-a3"}  # leitor:a (base), leitor:a2 (phase 4), leitor:a3 (phase 5, D46)
 WINDOW, MAX_TOKENS = 32768, 1500
 SYSTEM = "Responde unicamente com o objeto JSON pedido, sem texto antes nem depois."
 READINGS = Path(__file__).resolve().parent.parent / "governance/readings"
@@ -83,7 +85,7 @@ def record(text, at):
 
 @app.local_entrypoint()
 def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl: str = "", out: str = ""):
-    leitor = "leitor-a2" if lora else "leitor-a"
+    leitor = LEITOR_OF[lora]
     if jsonl:
         rows = [json.loads(l) for l in Path(jsonl).read_text(encoding="utf-8").splitlines() if l.strip()]
         target = Path(out)

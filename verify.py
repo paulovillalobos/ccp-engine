@@ -1036,6 +1036,12 @@ def check_measure():
                 out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
+        if f.name.startswith("condicoes-"):  # phase 5 (D46): condicoes_texto held out, base / v1 / v2 (tools/measure_conditions.py)
+            import measure_conditions  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_conditions.report(stored["date"])
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_conditions.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("amalia-"):  # phase 4 T3: the reader before / after its adapter (tools/measure_reader.py)
             import measure_reader  # noqa: E402  (no model: it reads the stored answers)
             again = measure_reader.report(stored["date"])

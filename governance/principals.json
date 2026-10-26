@@ -1055,7 +1055,8 @@
       "versao": 8,
       "code": "tools/read_rules.py",
       "hash": "0e9b0d29e790e62144b33ffb2bc849fef44b726fa1217a18ccc91aae3f00097c",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T11:45:08Z"
     },
     {
       "id": "ferramenta:make-conditions@1",
@@ -1077,6 +1078,40 @@
       "versao": 26,
       "code": "verify.py",
       "hash": "d14a22592327770fd59ddc25262b78ac50d918fcfbea309d7e5e7e2ce4f6748e",
+      "retired": true,
+      "retired_at": "2026-10-26T11:45:08Z"
+    },
+    {
+      "id": "ferramenta:read-rules@9",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 9,
+      "code": "tools/read_rules.py",
+      "hash": "c8927faa51d7463c0a0566bd9966a98172865668f53a0427983938f020a99223",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure-conditions@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_conditions.py",
+      "hash": "d01e0cb18e36402b35b924ad21baa6d24ac7c6f8ce8c00f8e35c3664a3454c34",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@27",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 27,
+      "code": "verify.py",
+      "hash": "df54842dd19824bf22558181997fd09006383e84ff06663c6caa7d636825904e",
       "retired": false
     }
   ]
