@@ -1091,7 +1091,8 @@
       "versao": 9,
       "code": "tools/read_rules.py",
       "hash": "c8927faa51d7463c0a0566bd9966a98172865668f53a0427983938f020a99223",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T15:31:19Z"
     },
     {
       "id": "ferramenta:measure-conditions@1",
@@ -1113,7 +1114,8 @@
       "versao": 27,
       "code": "verify.py",
       "hash": "df54842dd19824bf22558181997fd09006383e84ff06663c6caa7d636825904e",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T15:31:19Z"
     },
     {
       "id": "leitor:a3",
@@ -1139,6 +1141,50 @@
       "versao": 5,
       "code": "tools/measure_reader.py",
       "hash": "cbc1a4b1175f8f6dab1beb549dff9046c86809213c1dfc775cf87f9756faa254",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:make-regimes@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_regimes.py",
+      "hash": "dd1535a468748a7de104e9bdb9a55da8476321528e6e89feccbdbf1b8f1298eb",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure-regimes@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_regimes.py",
+      "hash": "15d34357102303a278659963b93f9dac7176bcc4acff88824bd1207923ad7572",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:read-rules@10",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 10,
+      "code": "tools/read_rules.py",
+      "hash": "2a474d3cea7ded373c7e529234a50eced2ebbce2ac641d34debadb51a54a2746",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:verify@28",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 28,
+      "code": "verify.py",
+      "hash": "bc9eb963e3a67bae122b02c8d21052e8c2e965bae861e662436cc66ee8a206d1",
       "retired": false
     }
   ]

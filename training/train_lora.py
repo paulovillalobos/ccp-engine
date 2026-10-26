@@ -30,7 +30,9 @@ SYSTEM = "Responde unicamente com o objeto JSON pedido, sem texto antes nem depo
 ADAPTER = "amalia-ccp-lei-v1"
 # phase 5 (DECISIONS D46): v2 adds training/data-v2 (condicoes_texto, generated from law/ by code), counted twice in the mix
 RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repeat": {}},
-        "v2": {"adapter": "amalia-ccp-lei-v2", "data": ["training/data", "training/data-v2"], "repeat": {"condicoes_texto": 2}}}
+        "v2": {"adapter": "amalia-ccp-lei-v2", "data": ["training/data", "training/data-v2"], "repeat": {"condicoes_texto": 2}},
+        # phase 6 (D47): v3 = v2's mix plus training/data-v3 (entrada_em_vigor, periodos_vigencia)
+        "v3": {"adapter": "amalia-ccp-lei-v3", "data": ["training/data", "training/data-v2", "training/data-v3"], "repeat": {"condicoes_texto": 2}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,

@@ -39,7 +39,7 @@ def test_reference_cases_have_two_blind_annotators_and_a_queue():
 
 
 def test_measurement_report_recomputes_byte_for_byte(tmp_path):
-    reports = sorted(p for p in (ROOT / "reports/measure").glob("*.json") if not p.name.startswith(("amalia-", "condicoes-")))  # amalia-*: phase 4 T3 (tools/measure_reader.py); condicoes-*: phase 5 (tools/measure_conditions.py)
+    reports = sorted(p for p in (ROOT / "reports/measure").glob("*.json") if not p.name.startswith(("amalia-", "condicoes-", "regimes-")))  # amalia-*: phase 4 T3 (tools/measure_reader.py); condicoes-*: phase 5 (tools/measure_conditions.py)
     assert reports, "reports/measure/<date>.json missing"
     rep = json.loads(reports[-1].read_text(encoding="utf-8"))
     assert rep["frozen_at"] and rep["rules"] and rep["agreement"]

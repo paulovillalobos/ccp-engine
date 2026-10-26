@@ -43,7 +43,8 @@ RONDA2 = READINGS / "ronda2"
 # D45: round 3, the same rules, proposed by leitor:a2 (the person's decision) with conditions typed by field
 ROUNDS = {2: {"dir": RONDA2, "proposer": "leitor:a", "file": "leitor-a.json", "decision": "D44"},
           3: {"dir": READINGS / "ronda3", "proposer": "leitor:a2", "file": "leitor-a2.json", "decision": "D45"},
-          4: {"dir": READINGS / "ronda4", "proposer": "leitor:a3", "file": "leitor-a3.json", "decision": "D46"}}
+          4: {"dir": READINGS / "ronda4", "proposer": "leitor:a3", "file": "leitor-a3.json", "decision": "D46"},
+          5: {"dir": READINGS / "ronda5", "proposer": "leitor:a4", "file": "leitor-a4.json", "decision": "D47"}}
 FIELDS = ["tipo_contrato", "tipo_procedimento", "publicado_joue", "territorio", "tipo_entidade", "preco_base", "data_inicio_procedimento"]
 VOCAB = {
     "tipo_contrato": ["obras", "bens", "servicos", "concessao_obras", "concessao_servicos", "servicos_sociais"],
@@ -468,7 +469,8 @@ def record_round(store, log, writer, rnd):
 
 ROUND_NOTE = {2: "As mesmas perguntas e candidatas da ronda 1, com três defeitos do prompt corrigidos (D44); leitor:a corrige a sua proposta, leitor:b revê às cegas.",
               3: "O prompt da ronda 2 com as condições tipadas por campo; propõe leitor:a2 (AMALIA + adaptador, decisão da pessoa, D45), leitor:b revê às cegas.",
-              4: "O prompt e o esquema da ronda 3, sem mudança; propõe leitor:a3 (AMALIA + adaptador v2, treinado em condicoes_texto, D46), leitor:b revê às cegas."}
+              4: "O prompt e o esquema da ronda 3, sem mudança; propõe leitor:a3 (AMALIA + adaptador v2, treinado em condicoes_texto, D46), leitor:b revê às cegas.",
+              5: "O prompt e o esquema da ronda 4, sem mudança; propõe leitor:a4 (AMALIA + adaptador v3, treinado também em entrada_em_vigor e periodos_vigencia, D47), leitor:b revê às cegas."}
 
 
 def write_round_report(rows, rnd):
@@ -564,7 +566,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["prompts", "record"])
     ap.add_argument("--only", help="prompts for the rules whose id contains this text")
-    ap.add_argument("--round", type=int, default=1, choices=[1, 2, 3, 4], help="2 / 3 / 4: the D44 / D45 / D46 round prompts, in governance/readings/ronda<n>/")
+    ap.add_argument("--round", type=int, default=1, choices=[1, 2, 3, 4, 5], help="2-5: the D44-D47 round prompts, in governance/readings/ronda<n>/")
     a = ap.parse_args()
     if a.cmd == "prompts":
         cmd_prompts(Store([ROOT / "law"]).load(), a.only, a.round)

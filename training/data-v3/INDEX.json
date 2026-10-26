@@ -1,0 +1,33 @@
+{
+ "files": {
+  "entrada_em_vigor/held_out.jsonl": {
+   "lines": 8,
+   "sha256": "bda5b27a6652c07463d8ad520b99c87154bde685dd980ece4c5390f0e0799e19"
+  },
+  "entrada_em_vigor/train.jsonl": {
+   "lines": 24,
+   "sha256": "12f003a3df68d60e0a11b093e174f1f032b4c7374009ada78b87e872f8a16729"
+  },
+  "periodos_vigencia/held_out.jsonl": {
+   "lines": 301,
+   "sha256": "132b573dcc87eac07117effa638a81681d8f4efe7d4cf5ce0ed6534759bd8d8f"
+  },
+  "periodos_vigencia/train.jsonl": {
+   "lines": 1314,
+   "sha256": "004b065c25992d0a036016649a071cce0a157587a7ec6ec072b657f0b3687d4c"
+  }
+ },
+ "frozen_at": "2026-10-25",
+ "tasks": {
+  "entrada_em_vigor": {
+   "held_out": 8,
+   "train": 24
+  },
+  "periodos_vigencia": {
+   "held_out": 301,
+   "train": 1314
+  }
+ },
+ "train_held_out_definition_sha256": "b4cb0751e3abbd6ad853205f670628972e3785e78b9502eb9941964dba86875e",
+ "version": "ccp-make-regimes-0.1"
+}

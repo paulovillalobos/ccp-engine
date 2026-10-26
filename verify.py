@@ -764,6 +764,7 @@ def check_store(roots):
     for tdir, held in training_dirs(roots):
         check_training(store, out, tdir, held)
         check_training_v2(store, out, tdir, held)
+        check_training_v2(store, out, tdir, held, sub="data-v3", module="make_regimes")
     return store, out
 
 
@@ -964,24 +965,26 @@ def check_training(store, out, training_dir, held_path):
                 out.append(("TRAIN", f"{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
 
 
-def check_training_v2(store, out, training_dir, held_path):
-    """TRAIN (phase 5, D46): training/data-v2 is tools/make_conditions.py's output over this store and reservation, byte
-    for byte, nothing unlisted, and no train example's passage is in a reserved article (read from the reservation)."""
-    data = Path(training_dir) / "data-v2"
+def check_training_v2(store, out, training_dir, held_path, sub="data-v2", module="make_conditions"):
+    """TRAIN (phase 5, D46; phase 6, D47): training/data-v2 (tools/make_conditions.py) and training/data-v3
+    (tools/make_regimes.py) are their generator's output over this store and reservation, byte for byte, nothing
+    unlisted, and no train example's source is in a reserved article (read from the reservation)."""
+    import importlib
+    data = Path(training_dir) / sub
     if not (data / "INDEX.json").exists():
         return
     held = json.loads(Path(held_path).read_text(encoding="utf-8"))
     sys.path.insert(0, str(ROOT / "tools"))
-    import make_conditions  # noqa: E402  (no model, no network)
+    gen = importlib.import_module(module)  # no model, no network
     import make_training  # noqa: E402
-    again = make_conditions.generate(store, held)
+    again = gen.generate(store, held)
     for rel, b in again.items():
         f = data / rel
         if not f.exists() or f.read_bytes() != b:
-            out.append(("TRAIN", f"data-v2/{rel}: not what tools/make_conditions.py regenerates from the store and the reservation"))
+            out.append(("TRAIN", f"{sub}/{rel}: not what tools/{module}.py regenerates from the store and the reservation"))
     for f in sorted(p for p in data.rglob("*") if p.is_file()):
         if str(f.relative_to(data)) not in again:
-            out.append(("TRAIN", f"data-v2/{f.relative_to(data)}: file the generator does not write"))
+            out.append(("TRAIN", f"{sub}/{f.relative_to(data)}: file the generator does not write"))
     art_of = make_training.article_map(make_training.current_passages(store))
     reserved = set(held.get("reserved_articles", []))
     for f in sorted(data.glob("*/train.jsonl")):
@@ -989,7 +992,7 @@ def check_training_v2(store, out, training_dir, held_path):
             ex = json.loads(line)
             hit = [x for x in ex.get("sources", []) if art_of.get(x.split("@")[0], x) in reserved]
             if hit:
-                out.append(("TRAIN", f"data-v2/{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
+                out.append(("TRAIN", f"{sub}/{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
 
 
 def training_dirs(roots):
@@ -1036,6 +1039,12 @@ def check_measure():
                 out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
+        if f.name.startswith("regimes-"):  # phase 6 (D47): the selector tasks held out, base / v2 / v3 (tools/measure_regimes.py)
+            import measure_regimes  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_regimes.report(stored["date"])
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_regimes.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("condicoes-"):  # phase 5 (D46): condicoes_texto held out, base / v1 / v2 (tools/measure_conditions.py)
             import measure_conditions  # noqa: E402  (no model: it reads the stored answers)
             again = measure_conditions.report(stored["date"])
