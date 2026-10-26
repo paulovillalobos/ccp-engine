@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:13Z",
+ "ids": [
+  "135",
+  "136",
+  "137",
+  "138",
+  "139"
+ ],
+ "sha256": "47fd66fafe0fb904d4b3cb1a39ab3cf059a0e7da696f6b9a38a820f2b3f0083c",
+ "answer": {
+  "records": [
+   {
+    "id": "135",
+    "dispatch_date": "2025-10-02",
+    "buyer_name": "Cinemateca Portuguesa - Museu do Cinema, I. P.",
+    "buyer_nif": "501603409",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-11-01",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "570000",
+    "main_cpv": "92100000"
+   },
+   {
+    "id": "136",
+    "dispatch_date": "2025-07-08",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-08-07",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "33600000"
+   },
+   {
+    "id": "137",
+    "dispatch_date": "2025-04-02",
+    "buyer_name": "AR - Águas do Ribatejo, E. I. M., S. A.",
+    "buyer_nif": "508345464",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "287000",
+    "main_cpv": "90513000"
+   },
+   {
+    "id": "138",
+    "dispatch_date": "2025-03-31",
+    "buyer_name": "RESINORTE - Valorização e Tratamento de Resíduos Sólidos, S. A",
+    "buyer_nif": "509143059",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-04-30",
+    "deadline_time": "17:00:00+01:00",
+    "estimated_value": "287900",
+    "main_cpv": "43252000"
+   },
+   {
+    "id": "139",
+    "dispatch_date": "2024-04-08",
+    "buyer_name": "Município de Loulé",
+    "buyer_nif": "502098139",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "97100",
+    "main_cpv": "31500000"
+   }
+  ]
+ }
+}

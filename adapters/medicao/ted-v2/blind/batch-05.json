@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:21Z",
+ "ids": [
+  "025",
+  "026",
+  "027",
+  "028",
+  "029"
+ ],
+ "sha256": "2ce4f10b6d7d7e613f8a497d8a3d573dcbe3e7e18e6eff6155f57ffb12e58b98",
+ "answer": {
+  "records": [
+   {
+    "id": "025",
+    "dispatch_date": "2021-04-05",
+    "buyer_name": "Direção-Geral de Estatísticas da Educação e Ciência",
+    "buyer_nif": "600084906",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72200000"
+   },
+   {
+    "id": "026",
+    "dispatch_date": "2021-11-25",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Central, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-12-29",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "027",
+    "dispatch_date": "2020-01-07",
+    "buyer_name": "Comunidade Intermunicipal do Cávado",
+    "buyer_nif": "508779472",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-02-07",
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "80500000"
+   },
+   {
+    "id": "028",
+    "dispatch_date": "2018-03-27",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "029",
+    "dispatch_date": "2020-10-20",
+    "buyer_name": "Centro Hospitalar e Universitário de Coimbra, E. P. E.",
+    "buyer_nif": "510103448",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2020-11-23",
+    "deadline_time": "17:00",
+    "estimated_value": "319253.19",
+    "main_cpv": "42510000"
+   }
+  ]
+ }
+}

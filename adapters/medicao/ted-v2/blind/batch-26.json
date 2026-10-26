@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:13Z",
+ "ids": [
+  "130",
+  "131",
+  "132",
+  "133",
+  "134"
+ ],
+ "sha256": "5241004ae3705d766ceacbb47cb9a0863bedeb9c230e692b0e04ee137b8fca38",
+ "answer": {
+  "records": [
+   {
+    "id": "130",
+    "dispatch_date": "2025-02-08",
+    "buyer_name": "Unidade Local de Saúde de São José, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "267000",
+    "main_cpv": "33696500"
+   },
+   {
+    "id": "131",
+    "dispatch_date": "2024-03-18",
+    "buyer_name": "Instituto Nacional de Estatística, IP (INE)",
+    "buyer_nif": "502237490",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-04-17",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "239900",
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "132",
+    "dispatch_date": "2026-04-24",
+    "buyer_name": "Comunidade Intermunicipal da Beira Baixa",
+    "buyer_nif": "508831725",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "6628532.92",
+    "main_cpv": "60112000"
+   },
+   {
+    "id": "133",
+    "dispatch_date": "2025-09-26",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "services",
+    "deadline_date": "2025-10-27",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "570900",
+    "main_cpv": "72253200"
+   },
+   {
+    "id": "134",
+    "dispatch_date": "2026-02-02",
+    "buyer_name": "Instituto da Segurança Social, IP",
+    "buyer_nif": "505305500",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-03-19",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "937500",
+    "main_cpv": "75310000"
+   }
+  ]
+ }
+}

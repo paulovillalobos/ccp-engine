@@ -1,0 +1,130 @@
+{
+ "at": "2026-10-26T21:15:25Z",
+ "ids": [
+  "000",
+  "001",
+  "002",
+  "003",
+  "004",
+  "005",
+  "006",
+  "007",
+  "008",
+  "009"
+ ],
+ "sha256": "992bcd26973ffa3034b3f1bf4aba8d200bc0b8cb770aa2b6307d328031fcce00",
+ "answer": {
+  "records": [
+   {
+    "id": "000",
+    "tipoprocedimento": "Ajuste direto simplificado ao abrigo da Lei n.º 30/2021, de 21.05",
+    "precoBaseProcedimento": "0.0",
+    "adjudicante_nif": "600085643",
+    "tipoContrato": "Aquisição de serviços",
+    "precoContratual": "26.87",
+    "dataCelebracaoContrato": null,
+    "dataPublicacao": "2026-03-18",
+    "adjudicatarios_nifs": "500940231"
+   },
+   {
+    "id": "001",
+    "tipoprocedimento": "Concurso público",
+    "precoBaseProcedimento": "749836.19",
+    "adjudicante_nif": "508878462",
+    "tipoContrato": "Aquisição de serviços",
+    "precoContratual": "713357.79",
+    "dataCelebracaoContrato": "2026-01-28",
+    "dataPublicacao": "2026-02-06",
+    "adjudicatarios_nifs": "504928716"
+   },
+   {
+    "id": "002",
+    "tipoprocedimento": "Concurso público",
+    "precoBaseProcedimento": "855000.0",
+    "adjudicante_nif": "503904040",
+    "tipoContrato": "Aquisição de bens móveis",
+    "precoContratual": "307234.10",
+    "dataCelebracaoContrato": "2026-02-19",
+    "dataPublicacao": "2026-03-10",
+    "adjudicatarios_nifs": "501489126"
+   },
+   {
+    "id": "003",
+    "tipoprocedimento": "Consulta Prévia",
+    "precoBaseProcedimento": "7870.0",
+    "adjudicante_nif": "508878462",
+    "tipoContrato": "Aquisição de bens móveis",
+    "precoContratual": "7832.00",
+    "dataCelebracaoContrato": "2026-03-31",
+    "dataPublicacao": "2026-03-31",
+    "adjudicatarios_nifs": "517086522"
+   },
+   {
+    "id": "004",
+    "tipoprocedimento": "Ao abrigo de acordo-quadro (art.º 258.º)",
+    "precoBaseProcedimento": "3285.05",
+    "adjudicante_nif": "513606084",
+    "tipoContrato": "Aquisição de serviços",
+    "precoContratual": "3285.05",
+    "dataCelebracaoContrato": "2026-08-11",
+    "dataPublicacao": "2026-08-21",
+    "adjudicatarios_nifs": "505044897"
+   },
+   {
+    "id": "005",
+    "tipoprocedimento": "Consulta Prévia",
+    "precoBaseProcedimento": "55352.0",
+    "adjudicante_nif": "506816184",
+    "tipoContrato": "Aquisição de bens móveis",
+    "precoContratual": "54416.68",
+    "dataCelebracaoContrato": "2026-03-23",
+    "dataPublicacao": "2026-03-30",
+    "adjudicatarios_nifs": "505023288"
+   },
+   {
+    "id": "006",
+    "tipoprocedimento": "Ajuste Direto Regime Geral",
+    "precoBaseProcedimento": "2527.94",
+    "adjudicante_nif": "506809560",
+    "tipoContrato": "Aquisição de serviços",
+    "precoContratual": "2527.94",
+    "dataCelebracaoContrato": "2026-06-16",
+    "dataPublicacao": "2026-06-17",
+    "adjudicatarios_nifs": "506260658"
+   },
+   {
+    "id": "007",
+    "tipoprocedimento": "Ao abrigo de acordo-quadro (art.º 259.º)",
+    "precoBaseProcedimento": "4357148.52",
+    "adjudicante_nif": "503035416",
+    "tipoContrato": "Aquisição de bens móveis",
+    "precoContratual": "38554.00",
+    "dataCelebracaoContrato": "2026-02-26",
+    "dataPublicacao": "2026-02-27",
+    "adjudicatarios_nifs": "502820780"
+   },
+   {
+    "id": "008",
+    "tipoprocedimento": "Consulta Prévia",
+    "precoBaseProcedimento": "23615.9",
+    "adjudicante_nif": "501926895",
+    "tipoContrato": "Aquisição de bens móveis",
+    "precoContratual": "1577.14",
+    "dataCelebracaoContrato": "2026-04-13",
+    "dataPublicacao": "2026-04-14",
+    "adjudicatarios_nifs": "500302030"
+   },
+   {
+    "id": "009",
+    "tipoprocedimento": "Ajuste Direto Regime Geral",
+    "precoBaseProcedimento": "10632.72",
+    "adjudicante_nif": "506613461",
+    "tipoContrato": "Aquisição de serviços",
+    "precoContratual": "10632.72",
+    "dataCelebracaoContrato": "2026-01-15",
+    "dataPublicacao": "2026-01-24",
+    "adjudicatarios_nifs": null
+   }
+  ]
+ }
+}

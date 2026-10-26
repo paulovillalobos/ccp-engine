@@ -1499,3 +1499,18 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Sealed: adapters/medicao/contratos/sample.json 1a03f8e8fda23938a57f50ec359f0ce6f026cadbded7b839459c81d064a40768,
   adapters/medicao/contratos/parsed.json 5058876e5f0e53d3375b5c0588cb26334d2d2846b1bc89c078830e9394b18111.
 - Next: the blind reading (batches of 10), then A, B (against adaptador:base-anuncios facts) and C.
+
+## 2026-10-26 X.6 TED v2 and BASE contratos scored (commit: X.6: TED v2 — A and C pass (C 99.9 %), B 93.0 % fails on wrong joins; BASE contratos — A, B and C pass (C 1 514/1 514); blind answers sealed)
+- TED v2 (ted-v2/REPORT-v2.md): blind answers sha256-of-list 38223a26734fbe88eccf44fb3446706de9fa8a4280c1ffed1646400b3509b4a9,
+  score.json e944f92d209d2c70fdd090acc28ef6a76d04038ccda79297d6de64227f660d13.
+  A PASS; C 1 652 / 1 653 = 99.9 % (99.7–100) PASS, the one disagreement a code error (an EU agency's multilingual
+  notice: the parser read the first language form, Danish, not the ORIGINAL English); B 53 / 57 = 93.0 % (83.3–97.2)
+  FAIL, join rate 31 / 93. The 4 B disagreements are joins to a different procedure of the same buyer with the same
+  deadline (titles quoted); parser errors found by B: 0. As written, TED is not measured; a B-only v3 with a better join
+  key needs a decision.
+- BASE contratos (contratos/REPORT-v1.md): blind answers sha256-of-list
+  0a4d95b8bf98f1930e7046318911c7ed07b1aec304c14a03cd5886ff393b9353, score.json
+  783e92020faf1a11b1c44c8caf55a17071ae1a4687965b403c68c76f88f94aa1. A PASS (required fields 99.5–100 %); B 64 / 64 on 17
+  joined contracts (94.3–100) PASS; C 1 514 / 1 514 (99.7–100) PASS. Measured. tipo_procedimento is partial (142/200):
+  framework call-offs and excluded contracting are outside the vocabulary.
+- BASE anúncios 2018–2025 downloaded back from Storage for B (sha256 checked; scratch, deleted after).

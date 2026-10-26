@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:18Z",
+ "ids": [
+  "020",
+  "021",
+  "022",
+  "023",
+  "024"
+ ],
+ "sha256": "d976f4d242d6960a4ef431c98eca4e169fc47a56b54ed9eb31c4a3a40bd8a172",
+ "answer": {
+  "records": [
+   {
+    "id": "020",
+    "dispatch_date": "2021-11-24",
+    "buyer_name": "Fundação INATEL",
+    "buyer_nif": "500122237",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "021",
+    "dispatch_date": "2022-07-12",
+    "buyer_name": "Município de Vale de Cambra",
+    "buyer_nif": "506735524",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-08-10",
+    "deadline_time": "17:00",
+    "estimated_value": "239100.72",
+    "main_cpv": "55524000"
+   },
+   {
+    "id": "022",
+    "dispatch_date": "2023-05-22",
+    "buyer_name": "Lisboa Ocidental, SRU - Sociedade de Reabilitação Urbana E. M., S. A.",
+    "buyer_nif": "507023129",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-05-26",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "71000000"
+   },
+   {
+    "id": "023",
+    "dispatch_date": "2023-02-23",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": "508481287",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-03-28",
+    "deadline_time": "17:00",
+    "estimated_value": "562000.00",
+    "main_cpv": "33184000"
+   },
+   {
+    "id": "024",
+    "dispatch_date": "2023-05-19",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-06-12",
+    "deadline_time": "18:00",
+    "estimated_value": "3346168.57",
+    "main_cpv": "33600000"
+   }
+  ]
+ }
+}

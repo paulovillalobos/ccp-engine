@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:24Z",
+ "ids": [
+  "140",
+  "141",
+  "142",
+  "143",
+  "144"
+ ],
+ "sha256": "a91933404ce89bf84ea5a28f1be22f91eacb15e3e3dd338932c6df4565ef41f3",
+ "answer": {
+  "records": [
+   {
+    "id": "140",
+    "dispatch_date": "2024-08-02",
+    "buyer_name": "Infraestruturas de Portugal S.A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "38000000",
+    "main_cpv": "45233100"
+   },
+   {
+    "id": "141",
+    "dispatch_date": "2026-03-31",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45234100"
+   },
+   {
+    "id": "142",
+    "dispatch_date": "2026-05-08",
+    "buyer_name": "Município do Porto",
+    "buyer_nif": "501306099",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-05-18",
+    "deadline_time": "17:00:59+00:00",
+    "estimated_value": "1426240.78",
+    "main_cpv": "50300000"
+   },
+   {
+    "id": "143",
+    "dispatch_date": "2026-09-03",
+    "buyer_name": "Instituto de Informática, I.P.",
+    "buyer_nif": "504 322 915",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72590000"
+   },
+   {
+    "id": "144",
+    "dispatch_date": "2025-04-22",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-05-26",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "30230000"
+   }
+  ]
+ }
+}

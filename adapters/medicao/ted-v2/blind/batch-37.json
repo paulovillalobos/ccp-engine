@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:16:05Z",
+ "ids": [
+  "185",
+  "186",
+  "187",
+  "188",
+  "189"
+ ],
+ "sha256": "a17d340b986bedfa6a16ac991ad20b64af612a610803af8ca7ee8f42d5d0a76e",
+ "answer": {
+  "records": [
+   {
+    "id": "185",
+    "dispatch_date": "2025-05-29",
+    "buyer_name": "Instituto do Emprego e da Formação Profissional, I. P.",
+    "buyer_nif": "501442600",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-06-02",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "527358",
+    "main_cpv": "30230000"
+   },
+   {
+    "id": "186",
+    "dispatch_date": "2024-12-27",
+    "buyer_name": "ESTADO-MAIOR DA FORÇA AÉREA",
+    "buyer_nif": "600010686",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "5776000",
+    "main_cpv": "03000000"
+   },
+   {
+    "id": "187",
+    "dispatch_date": "2025-05-06",
+    "buyer_name": "Município de Almada",
+    "buyer_nif": "PT500051054",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-06-25",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": null,
+    "main_cpv": "79341200"
+   },
+   {
+    "id": "188",
+    "dispatch_date": "2025-07-14",
+    "buyer_name": "Município de Oeiras",
+    "buyer_nif": "500745943",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-07-30",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "249788.23",
+    "main_cpv": "35113410"
+   },
+   {
+    "id": "189",
+    "dispatch_date": "2025-12-05",
+    "buyer_name": "Instituto do Emprego e Formação Profissional IP",
+    "buyer_nif": "501442600",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "43800000"
+   }
+  ]
+ }
+}

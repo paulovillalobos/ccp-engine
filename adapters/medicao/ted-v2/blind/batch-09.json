@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:42Z",
+ "ids": [
+  "045",
+  "046",
+  "047",
+  "048",
+  "049"
+ ],
+ "sha256": "5fcbee7a965c537d6a1f8d0de0190b5cfdec179edcfb9a97f24b8c683cc965f6",
+ "answer": {
+  "records": [
+   {
+    "id": "045",
+    "dispatch_date": "2021-01-06",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": "508481287",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-02-08",
+    "deadline_time": "17:00",
+    "estimated_value": "675944.50",
+    "main_cpv": "33696800"
+   },
+   {
+    "id": "046",
+    "dispatch_date": "2020-06-08",
+    "buyer_name": "Comunidade Intermunicipal da Lezíria do Tejo",
+    "buyer_nif": "508787033",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-06-19",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "55524000"
+   },
+   {
+    "id": "047",
+    "dispatch_date": "2022-07-06",
+    "buyer_name": "SIMARSUL - Saneamento da Península de Setúbal, S. A.",
+    "buyer_nif": "514385901",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "24958200"
+   },
+   {
+    "id": "048",
+    "dispatch_date": "2021-06-16",
+    "buyer_name": "Município de Leiria",
+    "buyer_nif": "505181266",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "34131000"
+   },
+   {
+    "id": "049",
+    "dispatch_date": "2019-05-30",
+    "buyer_name": "Águas do Centro Litoral, S. A.",
+    "buyer_nif": "513606181",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-07-15",
+    "deadline_time": "18:00",
+    "estimated_value": "1258000.00",
+    "main_cpv": "31680000"
+   }
+  ]
+ }
+}

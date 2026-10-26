@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:50Z",
+ "ids": [
+  "050",
+  "051",
+  "052",
+  "053",
+  "054"
+ ],
+ "sha256": "82157f2f96ad07a02045ccce22da964687ef3e5edde2aa44826ce0fb099f2cc7",
+ "answer": {
+  "records": [
+   {
+    "id": "050",
+    "dispatch_date": "2022-11-02",
+    "buyer_name": "Município de Lisboa",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-12-02",
+    "deadline_time": "23:59",
+    "estimated_value": "380000.00",
+    "main_cpv": "71240000"
+   },
+   {
+    "id": "051",
+    "dispatch_date": "2022-11-02",
+    "buyer_name": "Águas do Norte, S. A.",
+    "buyer_nif": "513606084",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-11-17",
+    "deadline_time": "17:00",
+    "estimated_value": "274500.00",
+    "main_cpv": "90450000"
+   },
+   {
+    "id": "052",
+    "dispatch_date": "2023-03-30",
+    "buyer_name": "REN – Rede Eléctrica Nacional, S.A.",
+    "buyer_nif": "507 866 673",
+    "buyer_country": "PT",
+    "procedure_type": "9 Not applicable",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "31200000"
+   },
+   {
+    "id": "053",
+    "dispatch_date": "2023-10-10",
+    "buyer_name": "Secretaria Regional de Educação, Ciência e Tecnologia",
+    "buyer_nif": "671000497",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "30230000"
+   },
+   {
+    "id": "054",
+    "dispatch_date": "2023-05-23",
+    "buyer_name": "Universidade do Porto",
+    "buyer_nif": "501413197",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45200000"
+   }
+  ]
+ }
+}

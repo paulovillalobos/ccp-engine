@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:43Z",
+ "ids": [
+  "160",
+  "161",
+  "162",
+  "163",
+  "164"
+ ],
+ "sha256": "08fe72a01c0d5519e93f9bca5f53d789dbf6ecc402b4bc1e8b3984e08e2740cf",
+ "answer": {
+  "records": [
+   {
+    "id": "160",
+    "dispatch_date": "2026-02-16",
+    "buyer_name": "Universidade de Évora",
+    "buyer_nif": "501201920",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-03-18",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "340000",
+    "main_cpv": "32424000"
+   },
+   {
+    "id": "161",
+    "dispatch_date": "2026-09-04",
+    "buyer_name": "Município da Póvoa de Varzim",
+    "buyer_nif": "506741400",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1887062.48",
+    "main_cpv": "15894210"
+   },
+   {
+    "id": "162",
+    "dispatch_date": "2026-09-16",
+    "buyer_name": "Direção-Geral da Autoridade Marítima",
+    "buyer_nif": "600012662",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "38432000"
+   },
+   {
+    "id": "163",
+    "dispatch_date": "2026-09-28",
+    "buyer_name": "Município do Funchal",
+    "buyer_nif": "511217315",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2026-10-31",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "2786701.47",
+    "main_cpv": "45231300"
+   },
+   {
+    "id": "164",
+    "dispatch_date": "2026-06-09",
+    "buyer_name": "Unidade Local de Saúde do Tâmega e Sousa, EPE",
+    "buyer_nif": "508318262",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-07-13",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "550000",
+    "main_cpv": "42500000"
+   }
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:12:59Z",
+ "ids": [
+  "005",
+  "006",
+  "007",
+  "008",
+  "009"
+ ],
+ "sha256": "6fd1342b0ad3b9f7963274c0153e9e668a5d899c90a21e25bad31dc9f4b66680",
+ "answer": {
+  "records": [
+   {
+    "id": "005",
+    "dispatch_date": "2022-05-06",
+    "buyer_name": "Centro Hospitalar de Lisboa Ocidental, E. P. E.",
+    "buyer_nif": "507618319",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33696500"
+   },
+   {
+    "id": "006",
+    "dispatch_date": "2021-11-09",
+    "buyer_name": "MARINHA - Direção de Tecnologias de Informação e Comunicações",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "30230000"
+   },
+   {
+    "id": "007",
+    "dispatch_date": "2022-09-26",
+    "buyer_name": "Ecobeirão - Sociedade de Tratamento de Resíduos Sólidos do Planalto Beirão, E. I. M., S. A.",
+    "buyer_nif": "503797766",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-10-26",
+    "deadline_time": "23:59",
+    "estimated_value": "392500.00",
+    "main_cpv": "34144510"
+   },
+   {
+    "id": "008",
+    "dispatch_date": "2018-03-26",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "009",
+    "dispatch_date": "2021-04-19",
+    "buyer_name": "Empresa Municipal de Ambiente de Cascais (EMAC), E. M., S. A.",
+    "buyer_nif": "507396081",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-05-20",
+    "deadline_time": "23:59",
+    "estimated_value": "250800.00",
+    "main_cpv": "34100000"
+   }
+  ]
+ }
+}

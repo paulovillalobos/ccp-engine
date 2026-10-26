@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:23Z",
+ "ids": [
+  "145",
+  "146",
+  "147",
+  "148",
+  "149"
+ ],
+ "sha256": "5fd092fa1956a9f8a72b818686dac64da0a328d0117be51ec78147fb9de9e442",
+ "answer": {
+  "records": [
+   {
+    "id": "145",
+    "dispatch_date": "2025-05-23",
+    "buyer_name": "Municípia, Empresa de Cartografia e Sistemas de Informação, S. A.",
+    "buyer_nif": "504475606",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "34115000"
+   },
+   {
+    "id": "146",
+    "dispatch_date": "2025-06-20",
+    "buyer_name": "SPMS, EPE - Serviços Partilhados do Ministério da Saúde, EPE",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "4494685.45",
+    "main_cpv": "48000000"
+   },
+   {
+    "id": "147",
+    "dispatch_date": "2026-07-25",
+    "buyer_name": "Unidade Local de Saúde de Santa Maria, EPE",
+    "buyer_nif": "508481287",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "394670",
+    "main_cpv": "33190000"
+   },
+   {
+    "id": "148",
+    "dispatch_date": "2025-12-17",
+    "buyer_name": "Portos dos Açores, SA",
+    "buyer_nif": "512077843",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "540000.00",
+    "main_cpv": "90000000"
+   },
+   {
+    "id": "149",
+    "dispatch_date": "2025-08-12",
+    "buyer_name": "Serviços de Ação Social da Universidade de Coimbra",
+    "buyer_nif": "600038106",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-09-10",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "294183",
+    "main_cpv": "15896000"
+   }
+  ]
+ }
+}

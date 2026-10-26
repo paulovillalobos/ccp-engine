@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:04Z",
+ "ids": [
+  "065",
+  "066",
+  "067",
+  "068",
+  "069"
+ ],
+ "sha256": "d4506c5252bb409da09c62d27ed2a8c6b9173940c6c417e1452d5752527baed3",
+ "answer": {
+  "records": [
+   {
+    "id": "065",
+    "dispatch_date": "2019-11-04",
+    "buyer_name": "Centro Hospitalar de Lisboa Ocidental, E. P. E.",
+    "buyer_nif": "507618319",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-11-18",
+    "deadline_time": "17:00",
+    "estimated_value": "300000.00",
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "066",
+    "dispatch_date": "2022-04-01",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-05-02",
+    "deadline_time": "18:00",
+    "estimated_value": null,
+    "main_cpv": "72000000"
+   },
+   {
+    "id": "067",
+    "dispatch_date": "2020-04-07",
+    "buyer_name": "Município de Odivelas",
+    "buyer_nif": "504293125",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-05-07",
+    "deadline_time": "23:59",
+    "estimated_value": "349831.58",
+    "main_cpv": "60112000"
+   },
+   {
+    "id": "068",
+    "dispatch_date": "2019-02-20",
+    "buyer_name": "Comunidade Intermunicipal Viseu Dão Lafões",
+    "buyer_nif": "508047790",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "71317200"
+   },
+   {
+    "id": "069",
+    "dispatch_date": "2022-10-13",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-10-28",
+    "deadline_time": "17:00",
+    "estimated_value": "748984.00",
+    "main_cpv": "50220000"
+   }
+  ]
+ }
+}

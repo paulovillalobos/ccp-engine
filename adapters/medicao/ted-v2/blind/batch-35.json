@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:52Z",
+ "ids": [
+  "175",
+  "176",
+  "177",
+  "178",
+  "179"
+ ],
+ "sha256": "4bd45b9175bcb9d3e1bda954b1041fd9a8be8085b7eb683e925fe68b35821de1",
+ "answer": {
+  "records": [
+   {
+    "id": "175",
+    "dispatch_date": "2026-06-01",
+    "buyer_name": "Infraestruturas de Portugal S.A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "34946220"
+   },
+   {
+    "id": "176",
+    "dispatch_date": "2025-01-20",
+    "buyer_name": "Maior OPorto Hotel, L.da",
+    "buyer_nif": "517837056",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-02-25",
+    "deadline_time": "17:00:00+01:00",
+    "estimated_value": "13733250",
+    "main_cpv": "45200000"
+   },
+   {
+    "id": "177",
+    "dispatch_date": "2025-03-27",
+    "buyer_name": "Nex Continental Holding SL - Sucursal em Portugal",
+    "buyer_nif": "980706840",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-04-15",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": "23202500",
+    "main_cpv": "34144910"
+   },
+   {
+    "id": "178",
+    "dispatch_date": "2026-05-26",
+    "buyer_name": "Unidade Local de Saúde do Alentejo Central, EPE",
+    "buyer_nif": "508085888",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-06-25",
+    "deadline_time": "18:00:59+00:00",
+    "estimated_value": "242502.91",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "179",
+    "dispatch_date": "2024-08-22",
+    "buyer_name": "AdP - Águas de Portugal, SGPS, S. A.",
+    "buyer_nif": "503093742",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "320000",
+    "main_cpv": "79341000"
+   }
+  ]
+ }
+}

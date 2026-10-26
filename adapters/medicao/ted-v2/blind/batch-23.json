@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:55Z",
+ "ids": [
+  "115",
+  "116",
+  "117",
+  "118",
+  "119"
+ ],
+ "sha256": "23de9a99c42ef1b71eb5fb80d19ced7747ae572249ff3f4c564f64611f0c0661",
+ "answer": {
+  "records": [
+   {
+    "id": "115",
+    "dispatch_date": "2025-04-29",
+    "buyer_name": "Nex Continental Holding SL - Sucursal em Portugal",
+    "buyer_nif": "980706840",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-04-29",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "23202500",
+    "main_cpv": "34144910"
+   },
+   {
+    "id": "116",
+    "dispatch_date": "2025-11-07",
+    "buyer_name": "Estado Maior da Força Aérea",
+    "buyer_nif": "600010686",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "5966200",
+    "main_cpv": "03000000"
+   },
+   {
+    "id": "117",
+    "dispatch_date": "2025-01-31",
+    "buyer_name": "Autoridade Nacional de Comunicações",
+    "buyer_nif": "502017368",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "71316000"
+   },
+   {
+    "id": "118",
+    "dispatch_date": "2025-11-07",
+    "buyer_name": "Centro de Formação Profissional da Industria Metalúrgica e Metalomecânica (CENFIM)",
+    "buyer_nif": "502077352",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-12-09",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "250000",
+    "main_cpv": "71314100"
+   },
+   {
+    "id": "119",
+    "dispatch_date": "2025-01-03",
+    "buyer_name": "EMEL - Empresa Municipal de Mobilidade e Estacionamento de Lisboa, E. M., S. A.",
+    "buyer_nif": "503311332",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-02-11",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "759000",
+    "main_cpv": "34996100"
+   }
+  ]
+ }
+}

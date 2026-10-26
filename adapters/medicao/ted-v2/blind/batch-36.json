@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:16:00Z",
+ "ids": [
+  "180",
+  "181",
+  "182",
+  "183",
+  "184"
+ ],
+ "sha256": "02391b7d653050066989e079e55c2e69aac49d18ad34d67210294ae7ca84f8c5",
+ "answer": {
+  "records": [
+   {
+    "id": "180",
+    "dispatch_date": "2025-08-16",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "196965",
+    "main_cpv": "33692400"
+   },
+   {
+    "id": "181",
+    "dispatch_date": "2024-07-15",
+    "buyer_name": "Unidade Local de Saúde de Almada-Seixal, E. P. E.",
+    "buyer_nif": "506361470",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "182",
+    "dispatch_date": "2024-11-04",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "71335000"
+   },
+   {
+    "id": "183",
+    "dispatch_date": "2026-07-20",
+    "buyer_name": "Instituto da Habitação e da Reabilitação Urbana, IP",
+    "buyer_nif": "501460888",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45210000"
+   },
+   {
+    "id": "184",
+    "dispatch_date": "2025-10-14",
+    "buyer_name": "Estado-Maior do Exército",
+    "buyer_nif": "600021610",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "260162",
+    "main_cpv": "34223100"
+   }
+  ]
+ }
+}

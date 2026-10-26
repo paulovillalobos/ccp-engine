@@ -1,0 +1,127 @@
+{
+ "source": "contratos",
+ "A": {
+  "tipo_procedimento": {
+   "k": 142,
+   "n": 200,
+   "pct": 71.0,
+   "wilson95": [
+    64.4,
+    76.8
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "preco_base": {
+   "k": 197,
+   "n": 200,
+   "pct": 98.5,
+   "wilson95": [
+    95.7,
+    99.5
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "adjudicante": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "tipo_contrato": {
+   "k": 191,
+   "n": 200,
+   "pct": 95.5,
+   "wilson95": [
+    91.7,
+    97.6
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "preco_contratual": {
+   "k": 199,
+   "n": 200,
+   "pct": 99.5,
+   "wilson95": [
+    97.2,
+    99.9
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "data_celebracao_contrato": {
+   "k": 199,
+   "n": 200,
+   "pct": 99.5,
+   "wilson95": [
+    97.2,
+    99.9
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "data_publicacao_contrato": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "adjudicatario": {
+   "k": 186,
+   "n": 200,
+   "pct": 93.0,
+   "wilson95": [
+    88.6,
+    95.8
+   ],
+   "required": false,
+   "pass_": null
+  }
+ },
+ "B": {
+  "with_nAnuncio": 26,
+  "joined": {
+   "k": 17,
+   "n": 26,
+   "pct": 65.4,
+   "wilson95": [
+    46.2,
+    80.6
+   ]
+  },
+  "agreement": {
+   "k": 64,
+   "n": 64,
+   "pct": 100.0,
+   "wilson95": [
+    94.3,
+    100.0
+   ],
+   "pass_": true
+  },
+  "disagreements": []
+ },
+ "C": {
+  "k": 1514,
+  "n": 1514,
+  "pct": 100.0,
+  "wilson95": [
+   99.7,
+   100.0
+  ],
+  "disagreements": [],
+  "pass_": true
+ }
+}
