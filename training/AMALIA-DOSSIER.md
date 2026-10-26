@@ -78,5 +78,22 @@ AFTER when its measurement exists.
   read no better than v2 (identical answer on one, extra conditions on another, conditions dropped on the one already
   settled, which a later round does not reopen). Settled after five rounds: 1 of these 4.
 
+## v3 (adapter `amalia-ccp-lei-v3`, 2026-10-26) — splitting time into periods
+- Why: on the regime selector the reader gave one period «from 1 Oct 2026 to 1 Oct 2026» instead of a before and an after.
+- New tasks (`training/data-v3/`, `tools/make_regimes.py`): the entry-into-force date of an act from its articles (24
+  train, 8 reserved), and the partition of a passage's version history into contiguous periods (1 314 train, 301
+  reserved). Mix: v2's plus these (14 908 examples). Run: 921 steps, 6 714 s on one H100.
+- Reserved results (`reports/measure/regimes-v3-2026-10-26.md`):
+
+| reader | periods exactly right | well-formed partition | entry-into-force date |
+|---|---|---|---|
+| base | 0.0 % (0/301) | 0.0 % | 6/8 |
+| base + v2 | 0.0 % (0/301) | 0.0 % | 6/8 |
+| base + v3 | **99.0 % [97.1, 99.7]** (298/301) | **99.3 %** | **8/8** |
+
+  The conditions skill of v2 is kept (v3: 91.8 % exact, 6.0 % values invented).
+- Rule test, round 5: the selector is not settled yet: the partition learnt on version histories did not carry over
+  to the decree's own question; the next task targets it directly.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.
