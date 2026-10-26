@@ -1528,3 +1528,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   - adapters/medicao/score.py f38bf3f84d064902aab8c3138f4bd7e1bbcc6b838ad78ca1cf6d1b867b310b7c (score_ted_b, THRESHOLD 0.5)
 - Also in this commit: the DR upload log so far (49 verified, 14 failed at the pooler's auth limit when 8 CLI processes
   ran at once; those Mac copies were kept).
+
+## 2026-10-26 X.10 TED v3 check B passes; TED measured with v2's A and C (commit: X.10: TED v3 — B 189/192 = 98.4 % (95.5–99.5) on the title-checked join; with v2's A and C, TED's extraction is measured; v1, v2 and v3 side by side)
+- v3 sample (X.9): 22 432 TED-XML and 21 446 eForms contract notices in the population; sample.json
+  fc0dd45f97bfe61a135a7f59c0f0f04ddfa3f51f440d50bbbb7fc462190c09b7, parsed.json
+  1173bb6e4f97610eb9e15229764c13a591c1429ca7c1c50345c9e7b3159ee68f.
+- B (ted-v3/score-b.json 0666da40fc9d63aa6e9fde3e3ca8d4b346fea6ef8fe6ba679f319990731071b5): joinable 102 / 200; not
+  joinable 78 (no candidate), 15 (under 0.5), 5 (tie); agreement 189 / 192 = 98.4 % (95.5–99.5), PASS. Disagreements:
+  2 wrong joins at containment 0.62 and 0.50 (titles quoted), 1 where the sources differ (eForms ProcedureCode
+  restricted, BASE Concurso público); parser errors 0.
+- adapters/medicao/REPORT.md: v1, v2, v3 and BASE contratos side by side. Count towards the 8: BASE contratos and TED
+  measured; the DR notices measured earlier (CRITERIA-v2).

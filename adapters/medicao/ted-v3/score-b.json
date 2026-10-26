@@ -1,0 +1,565 @@
+{
+ "source": "ted",
+ "check": "B (v3)",
+ "threshold": 0.5,
+ "notices": 200,
+ "joined": {
+  "k": 102,
+  "n": 200,
+  "pct": 51.0,
+  "wilson95": [
+   44.1,
+   57.8
+  ]
+ },
+ "not_joinable": {
+  "no candidate with the same buyer and deadline": 78,
+  "title containment below the threshold": 15,
+  "two candidates tie": 5
+ },
+ "pairs": [
+  {
+   "n": 3,
+   "nAnuncio": "8483/2023",
+   "containment": 1.0
+  },
+  {
+   "n": 11,
+   "nAnuncio": "6727/2019",
+   "containment": 1.0
+  },
+  {
+   "n": 12,
+   "nAnuncio": "5051/2019",
+   "containment": 1.0
+  },
+  {
+   "n": 18,
+   "nAnuncio": "15087/2022",
+   "containment": 1.0
+  },
+  {
+   "n": 19,
+   "nAnuncio": "3952/2019",
+   "containment": 0.89
+  },
+  {
+   "n": 23,
+   "nAnuncio": "2476/2019",
+   "containment": 1.0
+  },
+  {
+   "n": 36,
+   "nAnuncio": "10761/2019",
+   "containment": 0.92
+  },
+  {
+   "n": 53,
+   "nAnuncio": "2960/2021",
+   "containment": 1.0
+  },
+  {
+   "n": 57,
+   "nAnuncio": "2400/2023",
+   "containment": 1.0
+  },
+  {
+   "n": 59,
+   "nAnuncio": "4539/2022",
+   "containment": 0.62
+  },
+  {
+   "n": 70,
+   "nAnuncio": "11888/2021",
+   "containment": 0.5
+  },
+  {
+   "n": 71,
+   "nAnuncio": "8728/2023",
+   "containment": 1.0
+  },
+  {
+   "n": 74,
+   "nAnuncio": "8035/2023",
+   "containment": 1.0
+  },
+  {
+   "n": 81,
+   "nAnuncio": "12487/2021",
+   "containment": 1.0
+  },
+  {
+   "n": 83,
+   "nAnuncio": "11125/2021",
+   "containment": 1.0
+  },
+  {
+   "n": 89,
+   "nAnuncio": "11849/2019",
+   "containment": 1.0
+  },
+  {
+   "n": 97,
+   "nAnuncio": "5531/2019",
+   "containment": 1.0
+  },
+  {
+   "n": 100,
+   "nAnuncio": "21860/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 101,
+   "nAnuncio": "22646/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 102,
+   "nAnuncio": "10220/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 103,
+   "nAnuncio": "32113/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 104,
+   "nAnuncio": "14757/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 105,
+   "nAnuncio": "21598/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 106,
+   "nAnuncio": "11641/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 109,
+   "nAnuncio": "18218/2024",
+   "containment": 0.93
+  },
+  {
+   "n": 110,
+   "nAnuncio": "4598/2024",
+   "containment": 0.5
+  },
+  {
+   "n": 111,
+   "nAnuncio": "13115/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 112,
+   "nAnuncio": "11880/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 113,
+   "nAnuncio": "5962/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 114,
+   "nAnuncio": "18160/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 116,
+   "nAnuncio": "22186/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 117,
+   "nAnuncio": "6871/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 118,
+   "nAnuncio": "14436/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 119,
+   "nAnuncio": "17755/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 120,
+   "nAnuncio": "25746/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 122,
+   "nAnuncio": "13071/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 124,
+   "nAnuncio": "16412/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 125,
+   "nAnuncio": "32147/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 126,
+   "nAnuncio": "11415/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 127,
+   "nAnuncio": "9230/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 128,
+   "nAnuncio": "22443/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 129,
+   "nAnuncio": "18264/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 130,
+   "nAnuncio": "9989/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 131,
+   "nAnuncio": "9688/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 132,
+   "nAnuncio": "20758/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 133,
+   "nAnuncio": "22827/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 134,
+   "nAnuncio": "5468/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 135,
+   "nAnuncio": "6365/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 136,
+   "nAnuncio": "11242/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 137,
+   "nAnuncio": "15918/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 138,
+   "nAnuncio": "6433/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 139,
+   "nAnuncio": "8720/2024",
+   "containment": 0.62
+  },
+  {
+   "n": 140,
+   "nAnuncio": "33423/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 141,
+   "nAnuncio": "24191/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 142,
+   "nAnuncio": "12938/2024",
+   "containment": 0.88
+  },
+  {
+   "n": 144,
+   "nAnuncio": "6281/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 145,
+   "nAnuncio": "7006/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 146,
+   "nAnuncio": "25839/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 147,
+   "nAnuncio": "18225/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 148,
+   "nAnuncio": "30219/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 149,
+   "nAnuncio": "20113/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 150,
+   "nAnuncio": "27228/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 151,
+   "nAnuncio": "19688/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 152,
+   "nAnuncio": "18969/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 153,
+   "nAnuncio": "17753/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 154,
+   "nAnuncio": "1828/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 155,
+   "nAnuncio": "24305/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 156,
+   "nAnuncio": "29458/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 159,
+   "nAnuncio": "29134/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 160,
+   "nAnuncio": "31786/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 161,
+   "nAnuncio": "28276/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 162,
+   "nAnuncio": "12109/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 163,
+   "nAnuncio": "31566/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 164,
+   "nAnuncio": "17992/2024",
+   "containment": 0.92
+  },
+  {
+   "n": 165,
+   "nAnuncio": "17723/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 166,
+   "nAnuncio": "15279/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 167,
+   "nAnuncio": "6106/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 168,
+   "nAnuncio": "22074/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 169,
+   "nAnuncio": "22527/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 170,
+   "nAnuncio": "32377/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 171,
+   "nAnuncio": "15707/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 173,
+   "nAnuncio": "31788/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 174,
+   "nAnuncio": "18569/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 176,
+   "nAnuncio": "5665/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 178,
+   "nAnuncio": "17238/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 179,
+   "nAnuncio": "11443/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 180,
+   "nAnuncio": "19749/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 182,
+   "nAnuncio": "21957/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 183,
+   "nAnuncio": "25736/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 184,
+   "nAnuncio": "12184/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 185,
+   "nAnuncio": "32179/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 186,
+   "nAnuncio": "23073/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 187,
+   "nAnuncio": "23016/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 189,
+   "nAnuncio": "8973/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 190,
+   "nAnuncio": "1223/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 192,
+   "nAnuncio": "9697/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 193,
+   "nAnuncio": "30467/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 194,
+   "nAnuncio": "24236/2025",
+   "containment": 1.0
+  },
+  {
+   "n": 195,
+   "nAnuncio": "12177/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 197,
+   "nAnuncio": "16414/2026",
+   "containment": 1.0
+  },
+  {
+   "n": 198,
+   "nAnuncio": "6468/2024",
+   "containment": 1.0
+  },
+  {
+   "n": 199,
+   "nAnuncio": "12681/2026",
+   "containment": 1.0
+  }
+ ],
+ "agreement": {
+  "k": 189,
+  "n": 192,
+  "pct": 98.4,
+  "wilson95": [
+   95.5,
+   99.5
+  ],
+  "pass_": true
+ },
+ "disagreements": [
+  {
+   "n": 59,
+   "field": "estimated_value",
+   "ted": "100000.00",
+   "base": "172800.00",
+   "nAnuncio": "4539/2022"
+  },
+  {
+   "n": 70,
+   "field": "estimated_value",
+   "ted": "824199.60",
+   "base": "2748487.00",
+   "nAnuncio": "11888/2021"
+  },
+  {
+   "n": 165,
+   "field": "procedure_type",
+   "ted": "restricted",
+   "base": "Concurso público",
+   "nAnuncio": "17723/2024"
+  }
+ ]
+}
