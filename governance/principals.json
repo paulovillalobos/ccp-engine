@@ -816,7 +816,8 @@
       "versao": 4,
       "code": "tools/measure.py",
       "hash": "fc2d225a49fb27201e258ae6aa040399582ffbf0171f3dad2a6ffb89a6d0fd4a",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-26T10:42:45Z"
     },
     {
       "id": "ferramenta:measure-reader@1",
@@ -1006,6 +1007,41 @@
       "versao": 24,
       "code": "verify.py",
       "hash": "f1eeaa325f751c25c668fa2de1bfe09b9ebbbbc25985810f183469f973e107b1",
+      "retired": true,
+      "retired_at": "2026-10-26T10:42:45Z"
+    },
+    {
+      "id": "ferramenta:measure@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/measure.py",
+      "hash": "956029997f8c404152cc25a66e58c8d5e36f58077dc63c8a14fa1fb79af8ab89",
+      "retired": true,
+      "retired_at": "2026-10-26T10:57:47Z"
+    },
+    {
+      "id": "ferramenta:verify@25",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 25,
+      "code": "verify.py",
+      "hash": "fd47e5ec7c23049d6a1e4921e8fd4c5a8fef9bb966843d1103a373eb0cdc6090",
+      "retired": false
+    },
+    {
+      "id": "ferramenta:measure@6",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 6,
+      "code": "tools/measure.py",
+      "hash": "81270778f59c7012bc2a1c965e26f36dbf845ad5f7c52d280a3ff570e4fd342d",
       "retired": false
     }
   ]

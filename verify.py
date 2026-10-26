@@ -1013,7 +1013,8 @@ def check_measure():
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_reader.py recomputes from the stored answers"))
             continue
-        again = measure.report(stored["store"], stored["date"])
+        seals = [ev["at"] for _, ev in repo.events if str(ev["assertion"]).startswith("selo:casos:")]
+        again = measure.report(stored["store"], stored["date"], rules_known_at=max(seals) if seals else None)  # D44: rules as sealed
         if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
             out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure.py recomputes from the stored answers"))
     return out

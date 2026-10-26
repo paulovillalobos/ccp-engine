@@ -1056,3 +1056,28 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Registered: verify@23. Public signatures of engine/ unchanged.
 - Next: the extractor merges main into its E1/E1b branches; E1b (DR notice PDFs, one GET every 10 s) is running there.
 - Why: the extractor's full verify could not pass on a store without the log, and a 35-minute engine run blocked CI.
+
+## 2026-10-26 — D44: B3 round 2 for the regime selector and the three minimum-deadline rules
+- Asked: the person, «Sí, lanza los lectores en el paso 3: primero el selector de régimen, luego los tres plazos mínimos
+  y las preguntas a–d». Step 5 (first verdicts on deadlines) is blocked only by these rules: run_engine routes no proc
+  while no seletor_regime is settled.
+- Done: the same questions and candidates as round 1, with three prompt defects fixed and committed before any answer
+  (cd339c2d3): the date format named as a literal leitor:a copied («AAAA-MM-DD»); empty lists allowed as values; no
+  stated way to write an open-ended regime. leitor:a (Modal, temperature 0, guided JSON) answered 4/4; leitor:b (the
+  family-B client, blind, empty directory) 4/4. Recorded as leitor:a's `correct` (revision 2, payload round 2) and
+  leitor:b's blind review of revision 2: evento:46–53. Answers in governance/readings/ronda2/; RONDA2.md.
+- Result: 0 of 4 settled. Direction (the value the rule depends on) agrees on the three deadlines (30, 6 and 14 days,
+  counted from data_envio_anuncio, both readers); the selector differs in substance. leitor:b gave the same readings as
+  in round 1 (art. 7.º n.º 2 + art. 11.º; two regimes split on 2026-10-01; deadlines conditioned on publicado_joue and
+  tipo_contrato). leitor:a fills condition values with descriptions of the vocabulary («data», «número», «uma data no
+  formato ISO», «não especificado»), adds conditions the text does not state (territorio PT, tipo_entidade outra) and
+  omits publicado_joue / tipo_contrato; for the selector it gives one regime from 2026-10-01 to 2026-10-01.
+- Fix on the way: verify MEAS recomputed the sealed B5 report with the current rules, so round 2 moved it; the report now
+  reads the rules as known at its seal (measure@6, verify@25); tools/measure.py reads them so by default, and
+  `--rules-now` for a new measurement. Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected: data/ on main is
+  empty); the 2026-10-24 report regenerates byte-identical.
+- Not done here: questions a–d need new reading targets and, for (a), CPA art. 87.º, which CCP art. 470.º n.º 1 points
+  to and law/ does not hold yet.
+- Next: the person's decision on the proposer (the reader roles were left as a pending product decision in phase 4).
+- Why: re-asking a prompt at temperature 0 returns the same answer; only defects of the prompt were fixed, so the round
+  measures the readers, not a prompt tuned to agree.

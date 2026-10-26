@@ -31,7 +31,7 @@ from engine import evaluate as evaluate_mod  # noqa: E402
 from engine import manifest as manifest_mod  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine.canon import canonical, sha256_text  # noqa: E402
-from engine.store import Store, Writer, facts_of  # noqa: E402
+from engine.store import query, Store, Writer, facts_of  # noqa: E402
 
 VERSION = "ccp-measure-0.1"
 CASES_DIR = ROOT / "governance/readings/casos"
@@ -186,10 +186,20 @@ def engine_result(store, unit, rule, vals):
     return v["result"] if v else "nao_aplica"
 
 
-def report(store_dir, date):
+def sealed_at():
+    """The time of the latest measurement seal in the repository's log (None before the first): the rules a sealed report read."""
+    log = Store([ROOT / "governance"]).load()
+    seals = [ev["at"] for _, ev in log.events if str(ev["assertion"]).startswith("selo:casos:")]
+    return max(seals) if seals else None
+
+
+def report(store_dir, date, rules_known_at=None):
+    """rules_known_at: read the rules as the store knew them then (verify passes the time of the seal that bound the
+    report, so a later revision of a rule, a new round of readings (D44), does not move a sealed measurement)."""
     store = load(store_dir)
     doc = held_out_def()
-    rules = verify.current_of(store, "regra")
+    rules = verify.current_of(store, "regra") if rules_known_at is None else {
+        r["id"]: r for r in query(store, "regra", known_at=rules_known_at, include_stale=True)}
     cases = {c["unit"]: c for c in verify.current_of(store, "caso_referencia").values()}
     per_rule = {}
     for unit in units(store):
@@ -278,6 +288,7 @@ def main():
     ap = argparse.ArgumentParser(description="prompts | record | report | seal")
     ap.add_argument("cmd", nargs="?", choices=["prompts", "record", "seal"])
     ap.add_argument("--store", default="fixtures/measure"); ap.add_argument("--out"); ap.add_argument("--date")
+    ap.add_argument("--rules-now", action="store_true", help="a new measurement: read the current rules (default: the rules as of the latest seal)")
     a = ap.parse_args()
     if a.cmd == "prompts":
         cmd_prompts(load(a.store))
@@ -286,7 +297,7 @@ def main():
     elif a.cmd == "seal":
         cmd_seal()
     else:
-        rep = report(a.store, a.date)
+        rep = report(a.store, a.date, rules_known_at=None if a.rules_now else sealed_at())
         out = Path(a.out)
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(rep, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
