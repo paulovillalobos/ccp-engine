@@ -269,10 +269,12 @@
         28,
         29,
         52,
-        53
+        53,
+        60,
+        61
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a2",
       "reviews": [
         {
           "by": "leitor:b",
@@ -281,7 +283,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 2,
+      "revision": 3,
       "state": "proposed"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1": {
@@ -289,10 +291,12 @@
         24,
         25,
         48,
-        49
+        49,
+        56,
+        57
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a2",
       "reviews": [
         {
           "by": "leitor:b",
@@ -301,7 +305,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 2,
+      "revision": 3,
       "state": "proposed"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
@@ -309,10 +313,12 @@
         26,
         27,
         50,
-        51
+        51,
+        58,
+        59
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a2",
       "reviews": [
         {
           "by": "leitor:b",
@@ -321,7 +327,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 2,
+      "revision": 3,
       "state": "proposed"
     },
     "regra|regra:ccp:procedimentos-admissiveis@v1": {
@@ -365,10 +371,12 @@
         34,
         35,
         46,
-        47
+        47,
+        54,
+        55
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a2",
       "reviews": [
         {
           "by": "leitor:b",
@@ -377,7 +385,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 2,
+      "revision": 3,
       "state": "proposed"
     },
     "regra|regra:dlr-27-2015-a:regime-acores@v1": {
@@ -419,6 +427,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 53,
-  "head": "47a44bac55820b852310bfad4b8743153f2c03019b7916748a630226339db3db"
+  "events": 61,
+  "head": "eb2be98aedcf7bc35fa27a0e311dff323f114085564d3aa2e36f16860ee45e01"
 }

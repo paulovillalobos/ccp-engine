@@ -1081,3 +1081,21 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the person's decision on the proposer (the reader roles were left as a pending product decision in phase 4).
 - Why: re-asking a prompt at temperature 0 returns the same answer; only defects of the prompt were fixed, so the round
   measures the readers, not a prompt tuned to agree.
+
+## 2026-10-26 — D45: B3 round 3 (proposer leitor:a2, conditions typed by field)
+- Asked: the person, «Sí: ronda 3 con leitor:a2 (AMALIA + adaptador) proponiendo y el esquema con valores tipados por campo».
+- Done: round 2's prompt text with conditions typed by field (11 variants: each field with its ops and value type),
+  committed before any answer (245ae45df). leitor:a2 (Modal, adapter amalia-ccp-lei-v1, temperature 0) answered 4/4 and
+  `correct`ed the current revision (the proposer becomes leitor:a2); leitor:b reviewed revision 3 blind: evento:54–61.
+  Answers in governance/readings/ronda3/; RONDA3.md.
+- Result: 0 of 4 settled; direction agrees on the three deadlines (30 / 6 / 14 days from data_envio_anuncio, both
+  readers, both now citing ccp:art135.1 / ccp:art136.1). The typed schema removed the vocabulary-as-value answers.
+  What still differs: with JOUE, leitor:a2 conditions on territorio = PT where leitor:b conditions on tipo_procedimento =
+  concurso_publico (both have publicado_joue = true); without JOUE, leitor:a2 adds conditions that exclude nothing real
+  (data_inicio_procedimento ≠ 2026-10-01, preco_base ≠ 0, territorio in PT) and omits tipo_contrato (≠ / = obras), which
+  is what separates the 6-day from the 14-day rule; the selector differs in substance (leitor:a2: one regime from
+  2026-10-01 to 2026-10-01 and a JOUE condition; leitor:b: two regimes split on 2026-10-01, art. 7.º n.º 2 + art. 11.º).
+- Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected: data/ on main is empty).
+- Next: the person decides how the family-A side goes on (see the report); a–d after that.
+- Why: settlement needs two families to replicate a reading; three rounds show leitor:b stable and the family-A
+  reader right on the numbers but not on the conditions.
