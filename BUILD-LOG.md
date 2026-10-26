@@ -1418,3 +1418,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   hash to 6c46253114cca8ba…4a03, the file's sha256; the manifest came back identical. Only then was the Mac copy deleted.
 - Raw: unchanged (whole sha256 and URL); raw.schema has no size or parts field, so they are in the manifest and
   COVERAGE.md. All 16 BASE history files are now in Storage; none is left on the Mac.
+
+## 2026-10-26 H.7 Vortal refused (403): both Vortal fetchers stopped (commit: H.7: Vortal answered 403 at 20:18:27Z after a Modal preemption; both Vortal fetchers stopped; resume no sooner than an hour, one client only)
+- The Vortal notice fetcher on Modal (M.7) was preempted by Modal and restarted with the same input; its first request
+  after the restart got HTTP 403 at 2026-10-26T20:18:27Z and it stopped itself (todo 7 855, done in that run 0). The
+  Vortal DR-copy fetcher (H.4), which reads the same host, was stopped by hand right after (modal app stop), as the rule
+  for a refusal covers every reader of that host. It had downloaded 219 notices (all HTTP 200; last at 20:12:15Z).
+- Cause not known: two readers of one host (about one GET every 6.7 s together) and a new container address after the
+  preemption are both possible. The DR download (another host) and acinGov (another host) go on.
+- Next: no Vortal request before 21:18Z; then one reader only (the notice fetcher first, the DR copy after it), at a
+  slower pace.
