@@ -1817,4 +1817,5 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   store's only failures are 2 964 I01, raws whose bytes live in ccp-raw or on the Modal volume (BASE dumps 2018–2025,
   entidades, modificações, TED daily and monthly packages, Vortal notices, platform pieces), the open item of
   adapters/plataformas/SCHEMA-PROPOSAL.md item 1. The TED monthly packages alone are tens of GB, so restoring them on the
-  Mac is not an option. tests/test_verify.py::test_empty_stores_pass fails on the same I01.
+  Mac is not an option. Tests: 67 passed, 2 failed, both verify over data/ on the same I01
+  (test_verify.py::test_empty_stores_pass, test_verify_main_exit_code_is_zero).
