@@ -1,0 +1,92 @@
+{
+  "id": "regra:dl-177-2026:seletor-regime@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-26T10:37:49Z",
+  "type": "seletor_regime",
+  "title": "Regime aplicável consoante a data de início do procedimento (DL n.º 177/2026)",
+  "norma": "norma:dl-177-2026",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "territorio",
+      "op": "in",
+      "value": [
+        "PT"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "ajuste_direto",
+        "concurso_limitado_previa_qualificacao",
+        "concurso_publico",
+        "dialogo_concorrencial",
+        "procedimento_negociacao"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "dl-177-2026:art7.2",
+      "version": "2026-10-01",
+      "quote": "2 - Os valores atualizados constantes das alíneas c) e d) do artigo 19.º e das alíneas c) e d) do n.º 1 do artigo 20.º do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo previsto no n.º 2 do artigo 113.º do Código dos Contratos Públicos ter em consideração o valor acumulado dos contratos celebrados no ano económico em curso e nos dois anos económicos anteriores.",
+      "offsets": {
+        "start": 0,
+        "end": 452
+      }
+    },
+    {
+      "passage": "dl-177-2026:art7.3",
+      "version": "2026-10-01",
+      "quote": "3 - Os valores previstos nas alíneas a) e b) do n.º 1 do artigo 127.º-C do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo aí previsto ter em consideração o valor acumulado dos contratos celebrados através do procedimento de consulta prévia simplificada ao abrigo da Lei n.º 30/2021, de 21 de maio, no ano económico em curso e nos dois anos económicos anteriores.",
+      "offsets": {
+        "start": 0,
+        "end": 451
+      }
+    }
+  ],
+  "params": {
+    "selects_by": "data_inicio_procedimento",
+    "regimes": [
+      {
+        "from": "2026-10-01",
+        "to": "2026-10-01",
+        "law_version": "lei:ccp@2026-10-01",
+        "package": "pacote:ccp@2026-10-01"
+      }
+    ]
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-26T10:36:23Z",
+      "chosen_passages": [
+        "dl-177-2026:art7.2",
+        "dl-177-2026:art7.3"
+      ],
+      "blind": false,
+      "evento": "evento:46"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-26T10:37:23Z",
+      "chosen_passages": [
+        "dl-177-2026:art11",
+        "dl-177-2026:art7.2"
+      ],
+      "blind": true,
+      "evento": "evento:47"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

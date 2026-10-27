@@ -1,0 +1,67 @@
+{
+  "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-26T10:37:49Z",
+  "type": "prazo_minimo",
+  "title": "Concurso público com anúncio no JOUE: prazo mínimo das propostas",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "data_inicio_procedimento",
+      "op": "not_in",
+      "value": "não especificado"
+    },
+    {
+      "field": "territorio",
+      "op": "eq",
+      "value": "PT"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art136.1",
+      "version": "2018-01-01",
+      "quote": "1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações Oficiais da União Europeia.",
+      "offsets": {
+        "start": 0,
+        "end": 269
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-26T10:36:23Z",
+      "chosen_passages": [
+        "ccp:art136.1"
+      ],
+      "blind": false,
+      "evento": "evento:52"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-26T10:36:48Z",
+      "chosen_passages": [
+        "ccp:art136.1"
+      ],
+      "blind": true,
+      "evento": "evento:53"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

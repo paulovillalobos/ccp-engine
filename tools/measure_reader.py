@@ -85,10 +85,13 @@ def tasks_table():
     return out
 
 
-def rules_table():
-    rules = {}
+def rules_table(date):
+    # a dated report reads the rules as they stood at the end of its date (a later round, D44-D46, does not move it)
+    rules, cutoff = {}, f"{date}T23:59:59Z"
     for f in sorted((ROOT / "rules/regra").glob("*.json")):
         o = json.loads(f.read_text(encoding="utf-8"))
+        if o["recorded_at"] > cutoff:
+            continue
         if o["id"] not in rules or o["revision"] > rules[o["id"]]["revision"]:
             rules[o["id"]] = o
     rows, totals = {}, {r: {"vs_b_exact": 0, "vs_b_direction": 0, "vs_settled_exact": 0, "vs_settled_direction": 0, "parsed": 0} for r in READERS}
@@ -153,7 +156,7 @@ def cases_table():
 def report(date):
     index = json.loads((DATA / "INDEX.json").read_text(encoding="utf-8"))
     return {"tool": VERSION, "date": date, "readers": {"leitor-a": "leitor:a (base)", "leitor-a2": "leitor:a2 (base + adaptador v1)"},
-            "training_index_examples": index["examples"], "tasks": tasks_table(), "rules": rules_table(), "cases": cases_table()}
+            "training_index_examples": index["examples"], "tasks": tasks_table(), "rules": rules_table(date), "cases": cases_table()}
 
 
 def render_md(rep):

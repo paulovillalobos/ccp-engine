@@ -1,5 +1,27 @@
 {
   "assertions": {
+    "adaptador|adaptador:base-anuncios@1": {
+      "events": [
+        84,
+        85,
+        87
+      ],
+      "family": null,
+      "proposer": "ferramenta:adapter-base-anuncios@3",
+      "reviews": [],
+      "revision": 3,
+      "state": "proposed"
+    },
+    "adaptador|adaptador:base-contratos@1": {
+      "events": [
+        86
+      ],
+      "family": null,
+      "proposer": "ferramenta:adapter-base-contratos@1",
+      "reviews": [],
+      "revision": 1,
+      "state": "proposed"
+    },
     "caso_referencia|selo:casos:1": {
       "events": [
         38
@@ -267,56 +289,82 @@
     "regra|regra:ccp:prazo-minimo-concurso-joue@v1": {
       "events": [
         28,
-        29
+        29,
+        52,
+        53,
+        60,
+        61,
+        68,
+        69
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a3",
       "reviews": [
         {
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "request_evidence"
+          "verdict": "uphold"
         }
       ],
-      "revision": 1,
-      "state": "proposed"
+      "revision": 4,
+      "state": "settled"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1": {
       "events": [
         24,
-        25
+        25,
+        48,
+        49,
+        56,
+        57,
+        64,
+        65,
+        72,
+        73,
+        78,
+        79
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a5",
       "reviews": [
         {
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "request_evidence"
+          "verdict": "uphold"
         }
       ],
-      "revision": 1,
-      "state": "proposed"
+      "revision": 6,
+      "state": "settled"
     },
     "regra|regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1": {
       "events": [
         26,
-        27
+        27,
+        50,
+        51,
+        58,
+        59,
+        66,
+        67,
+        74,
+        75,
+        80,
+        81
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a5",
       "reviews": [
         {
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "request_evidence"
+          "verdict": "uphold"
         }
       ],
-      "revision": 1,
-      "state": "proposed"
+      "revision": 6,
+      "state": "settled"
     },
     "regra|regra:ccp:procedimentos-admissiveis@v1": {
       "events": [
@@ -357,10 +405,22 @@
     "regra|regra:dl-177-2026:seletor-regime@v1": {
       "events": [
         34,
-        35
+        35,
+        46,
+        47,
+        54,
+        55,
+        62,
+        63,
+        70,
+        71,
+        76,
+        77,
+        82,
+        83
       ],
       "family": "A",
-      "proposer": "leitor:a",
+      "proposer": "leitor:a5",
       "reviews": [
         {
           "by": "leitor:b",
@@ -369,7 +429,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 1,
+      "revision": 7,
       "state": "proposed"
     },
     "regra|regra:dlr-27-2015-a:regime-acores@v1": {
@@ -411,6 +471,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 45,
-  "head": "2932e59d8d1a064fb5ff7b654339d80506b54cb3aea3b775e3da3c9552804bc6"
+  "events": 87,
+  "head": "4aa4854bebc91e48105f25e340fa5c6e5d016bc9a2bf81e6c1d9f8da38a80ae1"
 }

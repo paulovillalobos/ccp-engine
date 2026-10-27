@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-26T11:17:09Z",
+ "sha256": "dbd576170bf0a92c21b56612ec026ae68aa4fd7e9e5da62a48cb5842a433027e",
+ "answer": "{\"passagens\": [\"dl-177-2026:art7.2\"], \"tipo\": \"seletor_regime\", \"condicoes\": [{\"field\": \"data_inicio_procedimento\", \"op\": \"ge\", \"value\": \"2026-10-01\"}, {\"field\": \"publicado_joue\", \"op\": \"eq\", \"value\": true}], \"params\": {\"selects_by\": \"data_inicio_procedimento\", \"regimes\": [{\"from\": \"2026-10-01\", \"to\": \"2026-10-01\", \"law_version\": \"lei:ccp@2026-10-01\", \"package\": \"pacote:ccp@2026-10-01\"}]}}"
+}

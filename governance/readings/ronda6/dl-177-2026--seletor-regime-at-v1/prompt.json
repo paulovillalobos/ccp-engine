@@ -1,0 +1,490 @@
+{
+ "rule": "regra:dl-177-2026:seletor-regime@v1",
+ "type": "seletor_regime",
+ "date": "2026-10-01",
+ "candidates": [
+  "dl-177-2026:art7",
+  "dl-177-2026:art7.1",
+  "dl-177-2026:art7.2",
+  "dl-177-2026:art7.3",
+  "dl-177-2026:art10",
+  "dl-177-2026:art11"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: seletor_regime.\n\nPassagens candidatas:\n[dl-177-2026:art7] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 7.º\nNorma transitória\n1 - A Portaria n.º 372/2017, de 14 de dezembro, permanece em vigor até à entrada em vigor da portaria a que se refere o n.º 2 do artigo 81.º do Código dos Contratos Públicos, com a redação dada pelo presente decreto-lei.\n2 - Os valores atualizados constantes das alíneas c) e d) do artigo 19.º e das alíneas c) e d) do n.º 1 do artigo 20.º do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo previsto no n.º 2 do artigo 113.º do Código dos Contratos Públicos ter em consideração o valor acumulado dos contratos celebrados no ano económico em curso e nos dois anos económicos anteriores.\n3 - Os valores previstos nas alíneas a) e b) do n.º 1 do artigo 127.º-C do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo aí previsto ter em consideração o valor acumulado dos contratos celebrados através do procedimento de consulta prévia simplificada ao abrigo da Lei n.º 30/2021, de 21 de maio, no ano económico em curso e nos dois anos económicos anteriores.\n\n[dl-177-2026:art7.1] (versão em vigor a 2026-10-01, desde 2026-10-01)\n1 - A Portaria n.º 372/2017, de 14 de dezembro, permanece em vigor até à entrada em vigor da portaria a que se refere o n.º 2 do artigo 81.º do Código dos Contratos Públicos, com a redação dada pelo presente decreto-lei.\n\n[dl-177-2026:art7.2] (versão em vigor a 2026-10-01, desde 2026-10-01)\n2 - Os valores atualizados constantes das alíneas c) e d) do artigo 19.º e das alíneas c) e d) do n.º 1 do artigo 20.º do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo previsto no n.º 2 do artigo 113.º do Código dos Contratos Públicos ter em consideração o valor acumulado dos contratos celebrados no ano económico em curso e nos dois anos económicos anteriores.\n\n[dl-177-2026:art7.3] (versão em vigor a 2026-10-01, desde 2026-10-01)\n3 - Os valores previstos nas alíneas a) e b) do n.º 1 do artigo 127.º-C do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo aí previsto ter em consideração o valor acumulado dos contratos celebrados através do procedimento de consulta prévia simplificada ao abrigo da Lei n.º 30/2021, de 21 de maio, no ano económico em curso e nos dois anos económicos anteriores.\n\n[dl-177-2026:art10] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 10.º\nAplicação no tempo\n1 - As alterações introduzidas pelo presente decreto-lei ao Código dos Contratos Públicos são aplicáveis aos procedimentos de formação de contratos públicos iniciados após a data da sua entrada em vigor e à execução dos contratos celebrados na sequência de procedimentos de formação iniciados após essa data.\n2 - Sem prejuízo do disposto no número anterior, são aplicáveis aos procedimentos em curso e aos contratos em execução à data da entrada em vigor do presente decreto-lei as alterações por este introduzidas nas seguintes matérias:\na) Modificação objetiva do contrato;\nb) Resolução alternativa de litígios pré-contratuais e contratuais.\n\n[dl-177-2026:art11] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 11.º\nEntrada em vigor\nO presente decreto-lei entra em vigor a 1 de outubro de 2026.\n\nPergunta: Que passagem fixa a que procedimentos se aplicam os valores atualizados do Código pelo presente decreto-lei, e por que facto se escolhe o regime? Dê o campo que seleciona o regime e os regimes (de, até, versão da lei, pacote). Um regime sem data final tem «to» = null.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "enum": [
+      "dl-177-2026:art7",
+      "dl-177-2026:art7.1",
+      "dl-177-2026:art7.2",
+      "dl-177-2026:art7.3",
+      "dl-177-2026:art10",
+      "dl-177-2026:art11"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "seletor_regime"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "anyOf": [
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "obras",
+          "bens",
+          "servicos",
+          "concessao_obras",
+          "concessao_servicos",
+          "servicos_sociais"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "obras",
+           "bens",
+           "servicos",
+           "concessao_obras",
+           "concessao_servicos",
+           "servicos_sociais"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "ajuste_direto",
+          "consulta_previa",
+          "concurso_publico",
+          "concurso_limitado_previa_qualificacao",
+          "procedimento_negociacao",
+          "dialogo_concorrencial",
+          "parceria_inovacao"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "ajuste_direto",
+           "consulta_previa",
+           "concurso_publico",
+           "concurso_limitado_previa_qualificacao",
+           "procedimento_negociacao",
+           "dialogo_concorrencial",
+           "parceria_inovacao"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "PT",
+          "PT-AC",
+          "PT-MA"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "PT",
+           "PT-AC",
+           "PT-MA"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "estado",
+          "outra"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "estado",
+           "outra"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "publicado_joue"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "preco_base"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     ]
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "selects_by": {
+      "type": "string",
+      "enum": [
+       "data_inicio_procedimento"
+      ]
+     },
+     "regimes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "object",
+       "properties": {
+        "from": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "to": {
+         "anyOf": [
+          {
+           "type": "string",
+           "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          {
+           "type": "null"
+          }
+         ]
+        },
+        "law_version": {
+         "type": "string",
+         "enum": [
+          "lei:ccp@2026-09-30",
+          "lei:ccp@2026-10-01"
+         ]
+        },
+        "package": {
+         "type": "string",
+         "enum": [
+          "pacote:ccp@2026-09-30",
+          "pacote:ccp@2026-10-01"
+         ]
+        }
+       },
+       "required": [
+        "from",
+        "to",
+        "law_version",
+        "package"
+       ],
+       "additionalProperties": false
+      }
+     }
+    },
+    "required": [
+     "selects_by",
+     "regimes"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ },
+ "round": 6
+}

@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-26T11:17:09Z",
+ "sha256": "3ff378492f62f76e87ab3b7cca705830ba90f77313fe48cb870f17936c30d717",
+ "answer": "{\"passagens\": [\"ccp:art135.1\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": [\"concurso_publico\"]}, {\"field\": \"territorio\", \"op\": \"in\", \"value\": [\"PT\"]}, {\"field\": \"tipo_entidade\", \"op\": \"in\", \"value\": [\"outra\"]}, {\"field\": \"preco_base\", \"op\": \"ne\", \"value\": 0}, {\"field\": \"data_inicio_procedimento\", \"op\": \"ne\", \"value\": \"2026-10-01\"}], \"params\": {\"minimum_days\": 14, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\"}}"
+}

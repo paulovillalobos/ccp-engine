@@ -1,2 +1,3 @@
 jsonschema==4.25.1
 pytest==8.3.5
+psycopg[binary]==3.2.4  # db/ only (D48): the Postgres store; engine/, tools/ and verify.py never import it

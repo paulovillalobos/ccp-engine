@@ -196,6 +196,8 @@ def build(dump: bytes, url, captured_at, recorded_at, principal):
             unmapped[f"tipoActo '{act}': {MAPPING['record']['unmapped_acts'][act]}"].append(rec["nAnuncio"])
         elif act not in acts:
             unmapped[f"tipoActo '{act}' unknown to the adapter"].append(rec["nAnuncio"])
+        elif not rec.get("nAnuncio"):
+            unmapped["nAnuncio empty: the procedure has no key"].append(f"IdIncm {rec.get('IdIncm')}")
         elif keys[key_of(rec)] > 1:
             unmapped["key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart"].append(rec["nAnuncio"])
         elif not published:

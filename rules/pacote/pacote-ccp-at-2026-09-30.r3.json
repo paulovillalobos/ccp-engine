@@ -1,0 +1,16 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 3,
+  "recorded_at": "2026-10-26T11:18:53Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "revision": 2
+    }
+  ],
+  "hash": "2e13731f3ddae8d818b3a2529106f95a741bf81ee400275c282afcffa719d2e6",
+  "log_head": "eb2be98aedcf7bc35fa27a0e311dff323f114085564d3aa2e36f16860ee45e01",
+  "built_at": "2026-10-26T11:18:53Z",
+  "supersedes": 2
+}

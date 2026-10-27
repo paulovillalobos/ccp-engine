@@ -1,0 +1,88 @@
+{
+  "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+  "revision": 3,
+  "recorded_at": "2026-10-26T11:18:30Z",
+  "type": "prazo_minimo",
+  "title": "Concurso público sem anúncio no JOUE: prazo mínimo das propostas (empreitadas)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "data_inicio_procedimento",
+      "op": "ne",
+      "value": "2026-10-01"
+    },
+    {
+      "field": "preco_base",
+      "op": "ne",
+      "value": 0
+    },
+    {
+      "field": "territorio",
+      "op": "in",
+      "value": [
+        "PT"
+      ]
+    },
+    {
+      "field": "tipo_entidade",
+      "op": "in",
+      "value": [
+        "outra"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "concurso_publico"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art135.1",
+      "version": "2018-01-01",
+      "quote": "1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a seis dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 14 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º",
+      "offsets": {
+        "start": 0,
+        "end": 384
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 14,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a2",
+      "family": "A",
+      "at": "2026-10-26T11:17:09Z",
+      "chosen_passages": [
+        "ccp:art135.1"
+      ],
+      "blind": false,
+      "evento": "evento:58"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-26T11:17:50Z",
+      "chosen_passages": [
+        "ccp:art135.1"
+      ],
+      "blind": true,
+      "evento": "evento:59"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 2
+}

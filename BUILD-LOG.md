@@ -1175,6 +1175,226 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Next: the extractor merges main into its E1/E1b branches; E1b (DR notice PDFs, one GET every 10 s) is running there.
 - Why: the extractor's full verify could not pass on a store without the log, and a 35-minute engine run blocked CI.
 
+## 2026-10-26 — D44: B3 round 2 for the regime selector and the three minimum-deadline rules
+- Asked: the person, «Sí, lanza los lectores en el paso 3: primero el selector de régimen, luego los tres plazos mínimos
+  y las preguntas a–d». Step 5 (first verdicts on deadlines) is blocked only by these rules: run_engine routes no proc
+  while no seletor_regime is settled.
+- Done: the same questions and candidates as round 1, with three prompt defects fixed and committed before any answer
+  (cd339c2d3): the date format named as a literal leitor:a copied («AAAA-MM-DD»); empty lists allowed as values; no
+  stated way to write an open-ended regime. leitor:a (Modal, temperature 0, guided JSON) answered 4/4; leitor:b (the
+  family-B client, blind, empty directory) 4/4. Recorded as leitor:a's `correct` (revision 2, payload round 2) and
+  leitor:b's blind review of revision 2: evento:46–53. Answers in governance/readings/ronda2/; RONDA2.md.
+- Result: 0 of 4 settled. Direction (the value the rule depends on) agrees on the three deadlines (30, 6 and 14 days,
+  counted from data_envio_anuncio, both readers); the selector differs in substance. leitor:b gave the same readings as
+  in round 1 (art. 7.º n.º 2 + art. 11.º; two regimes split on 2026-10-01; deadlines conditioned on publicado_joue and
+  tipo_contrato). leitor:a fills condition values with descriptions of the vocabulary («data», «número», «uma data no
+  formato ISO», «não especificado»), adds conditions the text does not state (territorio PT, tipo_entidade outra) and
+  omits publicado_joue / tipo_contrato; for the selector it gives one regime from 2026-10-01 to 2026-10-01.
+- Fix on the way: verify MEAS recomputed the sealed B5 report with the current rules, so round 2 moved it; the report now
+  reads the rules as known at its seal (measure@6, verify@25); tools/measure.py reads them so by default, and
+  `--rules-now` for a new measurement. Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected: data/ on main is
+  empty); the 2026-10-24 report regenerates byte-identical.
+- Not done here: questions a–d need new reading targets and, for (a), CPA art. 87.º, which CCP art. 470.º n.º 1 points
+  to and law/ does not hold yet.
+- Next: the person's decision on the proposer (the reader roles were left as a pending product decision in phase 4).
+- Why: re-asking a prompt at temperature 0 returns the same answer; only defects of the prompt were fixed, so the round
+  measures the readers, not a prompt tuned to agree.
+
+## 2026-10-26 — D45: B3 round 3 (proposer leitor:a2, conditions typed by field)
+- Asked: the person, «Sí: ronda 3 con leitor:a2 (AMALIA + adaptador) proponiendo y el esquema con valores tipados por campo».
+- Done: round 2's prompt text with conditions typed by field (11 variants: each field with its ops and value type),
+  committed before any answer (245ae45df). leitor:a2 (Modal, adapter amalia-ccp-lei-v1, temperature 0) answered 4/4 and
+  `correct`ed the current revision (the proposer becomes leitor:a2); leitor:b reviewed revision 3 blind: evento:54–61.
+  Answers in governance/readings/ronda3/; RONDA3.md.
+- Result: 0 of 4 settled; direction agrees on the three deadlines (30 / 6 / 14 days from data_envio_anuncio, both
+  readers, both now citing ccp:art135.1 / ccp:art136.1). The typed schema removed the vocabulary-as-value answers.
+  What still differs: with JOUE, leitor:a2 conditions on territorio = PT where leitor:b conditions on tipo_procedimento =
+  concurso_publico (both have publicado_joue = true); without JOUE, leitor:a2 adds conditions that exclude nothing real
+  (data_inicio_procedimento ≠ 2026-10-01, preco_base ≠ 0, territorio in PT) and omits tipo_contrato (≠ / = obras), which
+  is what separates the 6-day from the 14-day rule; the selector differs in substance (leitor:a2: one regime from
+  2026-10-01 to 2026-10-01 and a JOUE condition; leitor:b: two regimes split on 2026-10-01, art. 7.º n.º 2 + art. 11.º).
+- Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected: data/ on main is empty).
+- Next: the person decides how the family-A side goes on (see the report); a–d after that.
+- Why: settlement needs two families to replicate a reading; three rounds show leitor:b stable and the family-A
+  reader right on the numbers but not on the conditions.
+
+## 2026-10-26 — D46: AMALIA v2 trained on condicoes_texto; B3 round 4: the first deadline rule settles
+- Asked: the person, «Sí: entrena AMALIA v2 en qué condiciones dice el texto, con datos generados por código desde law/,
+  mide en reservados y luego ronda 4».
+- Done: tools/make_conditions.py (make-conditions@1): condicoes_texto from the procurement acts of law/, labelled by a
+  declared word list (two hand checks before freezing fixed four list defects: the labour code's «consulta prévia»,
+  «prestação de serviços», «bens e/ou serviços», «concessão de serviços»); 833 train / 353 held out; a passage whose text
+  is a reserved passage's (the CCP republished in DL 111-B/2017, DL 177/2026) is held out; verify TRAIN re-derives
+  training/data-v2. train_lora runs as data (v1's mix unchanged, 8 900); v2 = v1's data + condicoes_texto twice (12 232).
+  LoRA v2 amalia-ccp-lei-v2: 745 steps, 5 484 s H100, USD 5.12 (training/runs/v2). Principal leitor:a3 (family A).
+- Measured on the 353 reserved passages (tools/measure_conditions.py, verify MEAS recomputes it): all fields exact base
+  2.8 % → v1 0.0 % → v2 91.2 % [87.8, 93.7]; values named that the text does not name 81.1 % → 78.6 % → 8.9 %; values
+  missed 12.5 % → 23.3 % → 2.5 %. BEFORE kept in training/runs/v2/BEFORE.md (committed before v2 existed).
+- Round 4 (prompt and schema of round 3, committed before v2 existed): leitor:a3 proposes, leitor:b blind: evento:62–69.
+  regra:ccp:prazo-minimo-concurso-joue@v1 SETTLED (identical: ccp:art136.1; publicado_joue = true, tipo_procedimento =
+  concurso_publico; 30 days from data_envio_anuncio). Without JOUE (6 / 14 days): same article, days and counting point;
+  leitor:a3 keeps tipo_contrato (≠ / = obras, the condition that splits them) but omits publicado_joue = false and
+  concurso_publico, and on the works rule writes publicado_joue = true. Selector: unchanged in substance.
+- Fix on the way: tools/measure_reader.py read the current rule states, so the settlement moved the dated phase-4
+  report; a dated report now reads the rules as they stood at the end of its date (measure-reader@5).
+- Dossier for the AMALIA team: training/AMALIA-DOSSIER.md (before / after, data, cost).
+- Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected); test_b5 now skips condicoes-* as it skips amalia-*.
+- Next: the selector (blocks every route), then a–d (CPA art. 87.º to capture first).
+- Why: the family-A reader named conditions the text does not state; v2 learned not to, on articles it never saw, and
+  the first rule settled by two families on its own.
+
+## 2026-10-26 — D47: AMALIA v3 (selector tasks); B3 round 5
+- Asked: the person approved the selector proposal (budget about USD 7).
+- Done: tools/make_regimes.py (make-regimes@1): entrada_em_vigor (24 / 8; only acts whose own article prints the date
+  of their entra_em_vigor vigências) and periodos_vigencia (1 314 / 301); verify TRAIN re-derives training/data-v3
+  (check_training_v2 generalised to a data dir and its generator). LoRA v3 amalia-ccp-lei-v3: 921 steps, 6 714 s H100,
+  USD 5.74 (training/runs/v3); principal leitor:a4. tools/measure_regimes.py (verify MEAS: regimes-*).
+- Measured on the reserved sets: periods exact base 0/301, v2 0/301 (it leaves every period open), v3 298/301 = 99.0 %
+  [97.1, 99.7], well-formed partition 99.3 %; entry date 6/8, 6/8, 8/8; condicoes_texto v3 91.8 % (v2 91.2 %: not lost).
+- Round 5 (prompt = round 4, committed before v3 existed): leitor:a4 corrects, leitor:b blind: evento:70–75. 0 settled.
+  Selector: v3 still gives one regime from 2026-10-01 to 2026-10-01 (the trained skill did not transfer to the selector
+  question); leitor:b now cites art. 10.º, 11.º and 7.º n.º 2 (two regimes split on 2026-10-01, as before). Deadlines: v3
+  repeats v2 on goods/services, adds conditions on works, drops the conditions on the JOUE rule.
+- Fix before the commit, disclosed: the first local recording of round 5 let leitor:a4 `correct` the JOUE rule settled
+  in round 4, which reopened it; and the «already recorded» check matched an identical answer of round 4. Both
+  recordings were discarded before any commit (git checkout of governance/ and the new rule files); record_round now
+  reports a later round's answers on a settled rule without recording them (D47 addendum), and matches answers per
+  round. JOUE stays settled from round 4.
+- Cost correction: v2's training was USD 6.20 once Modal's hours closed (first reading 5.12).
+- Checks: verify ok; red-team 0 MISSED; 86 tests pass (B4 deselected).
+- Next: the selector needs another approach (the person decides); the dossier is updated.
+- Why: a trained skill is measured on reserved data and then on the real question; here the first passed and the
+  second did not, and the log keeps what two families settled.
+
+## 2026-10-26 — D48: the Postgres store (Supabase ccp-engine, eu-west-1)
+- Asked: the person, «Sí: crea las tablas con ese diseño (migraciones en el repo, RLS) y carga los 22.252 procedimientos
+  como prueba».
+- Done: supabase/migrations/20261026200000_ccp_store.sql (schema ccp: raw, adaptador, unidade, facto, entidade, alias,
+  link, documento, conflito, afirmacao, veredicto, regra; (id, revision) keys, the whole object in doc, query columns;
+  append-only triggers; RLS on with no policy; no API role can use the schema). db/pg.py: migrate (recorded in
+  supabase_migrations.schema_migrations), load (COPY into a temp table, insert on conflict do nothing), roundtrip.
+  Credentials in .env (gitignored, owner-only): the project ref and the database password only.
+- Checked: PR #1's data (commit c12d1d418) loaded: 181 628 objects (22 252 units, 131 558 facts, 22 253 raws, 228
+  entities, 2 668 aliases, 2 668 links, 1 adaptador); roundtrip 0 missing, 0 different; a second load inserts 0; an
+  update is refused by the trigger; database 169 MB; the facts of one procedure in about 100 ms, a count by procedure type
+  in about 80 ms (through the pooler from Lisbon).
+- Not yet: verify reading the database (today: the roundtrip against the store it was loaded from), the daily pipeline,
+  read-only views for the interface.
+- Why: git cannot hold millions of facts; the interface needs a database; nothing in it can change without a new revision.
+
+## 2026-10-27 — D49: AMALIA v4 measured on reserved questions
+- Asked: the person, «Test Amalia».
+- Done: principal leitor:a5 (amalia-9b-0626-dpo+ccp-lei-v4, adapter sha256 8255e876…). v4 answered the 400 reserved
+  condicoes_pergunta questions and, for regression, the reserved sets of v2 and v3. measure-conditions@3 and
+  measure-regimes@2 add leitor-a5 and recompute an earlier report with only the readers it holds (so 2026-10-26's
+  reports do not change); verify@30 passes those readers.
+- Checked (reports/measure/pergunta-v4-2026-10-27, condicoes-v4-2026-10-27, regimes-v4-2026-10-27): exact condition
+  set 400/400 (base 117/400, v3 23/400); 0 of 989 conditions added or missed; no reserved phrasing occurs in a training
+  question. Earlier tasks: conditions in a passage 93.2 % exact (v3 91.8 %), periods 301/301, entry date 8/8.
+- Limit: the reserved questions share the training sentence pattern with other words; the real test is round 6.
+- Cost: v4 training USD 9.53. Correction: v3's training was USD 7.61 once Modal's hours closed (first reading 5.74).
+- Fix before the commit, disclosed: a first regression run passed its paths through a zsh variable that was not split,
+  so no example reached Modal; the two reports it produced held no v4 answers and were deleted before any commit.
+- Next: round 6 (v4 proposes, leitor:b blind) on the selector and the deadline rules.
+
+## 2026-10-27 — D49: B3 round 6 (proposer leitor:a5, AMALIA v4); two deadline rules settle
+- Asked: the person, «Sí, corre la ronda 6: v4 propone y leitor:b a ciegas».
+- Done: the round-6 prompts committed before v4 existed (= round 5's); leitor:a5 answered on Modal, leitor:b (Reader B app
+  CLI) blind in parallel; tools/read_rules.py record --round 6: evento:76–81, governance/readings/ronda6/RONDA6.md.
+- Settled (leitor:b replicates leitor:a5 in canonical form, D43): regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1
+  (art. 135.º n.º 1, 6 days) and regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1 (art. 135.º n.º 1, 14 days). With
+  the JOUE rule settled in round 4, the three minimum-deadline rules the engine needs first are settled.
+- Not settled: the selector. v4 now gives an open end («to» null) but only the regime from 2026-10-01 and cites art.
+  7.º n.º 2; leitor:b gives two regimes split on 2026-10-01 and cites art. 7.º n.º 2 and 11.º.
+- On the JOUE rule (settled, not reopened) v4 left out «concurso público», which the question states: on the three real
+  deadline questions v4 read the stated conditions exactly on 2 of 3, against 400/400 on the reserved pattern.
+- Next: the selector (the person decides the approach).
+
+## 2026-10-27 — D50: AMALIA v5 data (a person's question -> facts); BEFORE
+- Asked: the person, «a user is going to ask a simple Portuguese question… start with AMALIA training».
+- Done: tools/make_user_facts.py (training/data-v5, 4 000 / 400, every wording train-only or held-out-only);
+  training/real-questions/factos-v1 (40 hand-written questions, no template, sealed before training; written by
+  the builder, labels = what each question states); tools/measure_user_facts.py; verify@31 (TRAIN data-v5, MEAS factos-*).
+- BEFORE (training/runs/v5/BEFORE.md), exact facts generated / hand-written: base 3.8 % / 10.0 %; v4 4.0 % / 15.0 %
+  (v4 misses about half of the stated facts). Committed 0230ec430 before training; v5 launched on Modal.
+- Red-team: one changed train line -> TRAIN caught.
+
+## 2026-10-27 — D51: B3 round 7 (the selector's question fixed)
+- Asked: the person approved the draft, «regístralo como D51 y corre la ronda 7».
+- Done: the selector question lists the regimes the system holds, shows art. 19.º c/d and 20.º n.º 1 c/d with their
+  earlier text, asks for each regime's start-date range, admits «from» = null (regra schema too). Prompts committed
+  (e36a79fc6) before any answer; the deadline prompts are round 6's. evento:82–83.
+- Fix before the prompts were committed, disclosed: the earlier text was labelled «em vigor … a 2026-10-01» with the
+  store's exclusive end date, which reads as in force on 1 October; round 7 shows the last day, 2026-09-30.
+- Result: not settled, but the two families now draw the same line: two regimes, the old Code to 2026-09-30 and the new
+  from 2026-10-01 (a procedure started on 1 October falls in the new). They differ on (1) the passages: leitor:a5 cites
+  the changed Code articles 19/20, leitor:b the decree's art. 7.º n.º 2, 10.º and 11.º; (2) the old regime's start:
+  leitor:a5 2018-01-01 (the earlier text's start), leitor:b null.
+- Fix before the commit, disclosed: recording re-rendered the reports of rounds 2–5 with today's states (round 5 would
+  have shown rules settled only in round 6); restored from git, RESUMO.md (the current summary) kept.
+- Checks: verify ok. Tests: 85 pass, 1 FAILS (B4 deselected), disclosed after the commit aaa939473: tests/fill/test_b3_rules_v0.py expects the selector rule to cite dl-177-2026 art. 7.º; the rule's current (proposed) revision carries leitor:a5's reading, which cites ccp art. 19/20 only. Left red on purpose: it reports the open difference, the test is not bent to the data.
+- Next: the person decides how to close the two differences.
+
+## 2026-10-28 — D52: AMALIA v6 on 500 written questions
+- Asked: the person, «you write them as a human being… make the most handwritten questions… stating the wrong law».
+- Done: 500 questions written one by one (training/written-questions, LABELS.md, tools/check_written_questions.py:
+  0 problems); answer with factos / ambiguos / contraditorios / citacoes; tools/make_written.py (300 train + 5 noisy
+  copies each, 100 dev, 100 final sealed, 2 000 D50 templates relabelled and noised); tools/measure_written.py;
+  BEFORE committed a3abf24a7; v6 trained on Modal (1 353 steps, 9 192 s, H100, USD 9.83 first reading);
+  principal leitor:a7.
+- Fix after training, disclosed: the answer schema listed the fact fields in another order than the trained answers; the
+  guided decoder writes properties in schema order, so a reader that began with tipo_procedimento or tipo_entidade could
+  no longer write tipo_contrato or territorio (first v6 dev reading: 56 contract types and 20 regions missed). The schema
+  now follows the answer's order (make-written@2); prompts and answers are byte-identical, so v6's training stands. All
+  three readers were re-run with the fixed schema (the reader resumes per id, so the stale files were moved aside first).
+- Result (reports/measure/escritas-v6-2026-10-28), final sealed / dev: facts exact base 14 % / 11 %, v4 19 % / 19 %,
+  v6 64 % / 67 %; invented facts base 49 % / 54 %, v4 34 % / 39 %, v6 7.9 % / 7.8 %; missed v6 11.9 % / 9.4 %;
+  ambiguous fields found v6 50 % / 60 %, flagged without cause 46 % / 29 %; default fills v6 0.
+- Run record: the local entrypoint stopped when the session restarted (the run was detached and finished); MANIFEST.json
+  is rebuilt from the function call's own return value (modal FunctionCall.from_id), the mixture recomputed (22 787).
+- Checks: verify ok; tests 85 pass, 1 fails (test_b3_rules_v0, red since round 7, disclosed); test_b5_measure now skips factos-/escritas- reports like the other reader reports; red-team: one corrupted v6 answer -> MEAS caught.
+- Next: markers flagged without cause (46 % on final) and missed ambiguous fields are the weakest part.
+
+## 2026-10-26 — D55: the data at scale in Postgres; history loads; the daily job (branch data-loaders)
+- Asked: the person's go-ahead relayed by the builder («you have my yes»): selector paused; on an own branch, loaders for
+  the DR facts (E1b), the BASE history 2018–2026 and TED Portugal 2018–2026, a daily Modal job with health per source,
+  within Micro, rows and GB per table reported.
+- Done: compact layout (migrations 20261027000000 + 000100): ccp.nome, facto_c / raw_c / unidade_c, views ccp.facto /
+  ccp.raw / ccp.unidade rebuilding each doc. The 181 628 D48 objects moved and compared (0 missing, 0 different; a mutated
+  object is caught), then the D48 tables dropped. 955 → 169 bytes per fact. Loads revise (db/pg.py selftest, rolled back:
+  new, unchanged, changed → revision 2 superseding 1). db/pg.py load-files; db/history.py anuncios / contratos / ted;
+  adapters/ted/adapter.py (new); adapters/base-anuncios: a record without nAnuncio is unmapped (4 records 2018–2023; the
+  2026 build has none, so its output is unchanged); db/daily.py + db/modal_daily.py + ccp.ingesta / ccp.saude (migration
+  20261027000200); tests/test_db_encode.py.
+- Loaded (each load read back, 0 different): BASE anúncios 2018–2025 (174 222 notice raws with 2026, 1 021 724 facts in
+  all years); BASE contratos 2018 and 2019 (273 367 contract raws, 1 061 276 facts); TED 2018-01 to 2023-10 (51 229 notice
+  raws, 183 152 facts); DR notices built so far by E1b (1 782 PDFs, 1 781 documentos, 10 648 facts). Database 825 MB:
+  facto_c 2 276 800 rows 385 MB, nome 1 367 268 rows 238 MB, raw_c 500 600 rows 90 MB, unidade_c 468 819 rows 93 MB.
+- Blocked: the Supabase disk filled during contratos 2020 («No space left on device») with 787 MB of data and 992 MB of
+  WAL (min_wal_size is 1 GB, max_wal_size 4 GB), and the project went read-only. The disk is smaller than the 8 GB this
+  plan assumed; nothing was lost (each table's load is one transaction; 2020 has no rows). Projected need for the whole
+  history: about 3.3 GB of data plus up to 4 GB of WAL. Resuming is a re-run (rows present are skipped): contratos
+  2018–2026, then TED 2023–2026.
+- Blocked: the Modal secret ccp-db (project ref + database password, for the daily job) — this session may not write
+  secret stores; the person creates it (`modal secret create ccp-db --from-dotenv .env`), then `modal deploy
+  db/modal_daily.py`. The daily job has not run on Modal yet; locally its TED step stopped at the read-only database.
+- Not done: E2 entities of the history; joining TED procedures and award notices to BASE; modifications 2018–2025 (the
+  extractor fetched 2026 only); verify reading the database.
+
+## 2026-10-26 — D56: the joins, written; not yet applied (database read-only)
+- Asked: the person's goal relayed by the builder («at least 8 in all»): joins for 2018–2026 with the rates published;
+  the daily job live with health rows in Postgres.
+- Done: supabase/migrations/20261027000300_ccp_joins.sql (ccp.facto_atual, ccp.unidade_atual, ccp.contrato_proc,
+  ccp.proc_dr, ccp.entidade_papel, materialized ccp.ted_candidato) and db/joins.py (rates per year, three unmatched
+  examples each, reports/data/joins-<date>). BASE dumps carry no OJ S number (contratos 2020 fields checked), so BASE–TED
+  is a candidate join by buyer NIF + contract type + dispatch window, counted only when unique both ways.
+- Not run: the database is read-only (disk full, previous entry); even reads that spill to temporary files fail. Order
+  once the disk is raised: migrate, finish contratos 2020–2026 and TED 2023-11 to 2026-09, then db/joins.py.
+- Known before running: procedure ↔ DR is 2026 only (E1b reads 2026's notices; 2018–2025 would be about 186 000 PDFs at
+  one every 10 s, three weeks); TED-XML notices (2018–2023) name the buyer's NIF in about one in ten competition notices
+  (2018-01: 13 of 135), so BASE–TED candidates there will be few.
+- Checks: verify ok on the branch (before this entry's files, which are db/ and migrations only).
+
 ## 2026-10-25 E1.3 main merged: the builder's fixes for items 1 and 3 (commit: E1.3: main merged (80d8f3310); full verify ok, 64 scaffold tests pass)
 - Done: merged main 80d8f3310 (verify's data store loads governance/; facts_of indexed by unit; verify@23). Conflicts:
   BUILD-LOG.md (both entries kept); governance/principals.json merged by git with both verify@23 and
@@ -1583,3 +1803,18 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Modal accepts runs again (the builder session relayed that the workspace payment method was updated on 2026-10-27).
   The Vortal notice reader (one GET per 20 s, resumes from its own log of 7 406 lines) restarted at 20:12Z. acinGov is
   not restarted: 2026 alone is about 300 GB, beyond the plan, and waits for Paulo.
+
+## 2026-10-27 X.15 Main (8167135fd) merged into extractor-historico for the handover to the main session (commit: Merge main 8167135fd into extractor-historico: governance re-recorded after main's head, base-anuncios adapter @3)
+- Conflicts: governance/events.jsonl and principals.json take main's file; this branch's three events (evento:46–48:
+  propose and correct of adaptador:base-anuncios@1, propose of adaptador:base-contratos@1) are re-recorded after main's
+  head through engine.governance.Log with their own principals, payloads and times, now evento:84–86; its three
+  ferramenta registrations are added after main's principals. BUILD-LOG.md and .gitignore keep main's lines first, then
+  this branch's. adapters/base-anuncios/adapter.py takes main's (it adds the «nAnuncio empty» case for the history
+  loads); registered as ferramenta:adapter-base-anuncios@3 (evento:87; @2 retired). adapters/dr-anuncios/adapter.py keeps
+  this branch's stored() (X.13). This branch claims no decision id; main goes to D56.
+- Checked: `adapter.py check` for base-anuncios 2026: 22 306 files, 0 differ. `verify.py` with the interim E1b build
+  (untracked) set aside: fixtures, repo and measure stores 0 failures; governance 87 events, no I09/I04/PROV; the data
+  store's only failures are 2 964 I01, raws whose bytes live in ccp-raw or on the Modal volume (BASE dumps 2018–2025,
+  entidades, modificações, TED daily and monthly packages, Vortal notices, platform pieces), the open item of
+  adapters/plataformas/SCHEMA-PROPOSAL.md item 1. The TED monthly packages alone are tens of GB, so restoring them on the
+  Mac is not an option. tests/test_verify.py::test_empty_stores_pass fails on the same I01.

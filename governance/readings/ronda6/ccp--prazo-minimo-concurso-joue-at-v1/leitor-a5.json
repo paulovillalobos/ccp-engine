@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T12:05:40Z",
+ "sha256": "a53971168e031256a3fdf547bd76e0b84bc39d17abac198e071c0f3584e27750",
+ "answer": "{\"passagens\": [\"ccp:art136.1\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"publicado_joue\", \"op\": \"eq\", \"value\": true}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\"}}"
+}

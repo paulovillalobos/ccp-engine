@@ -763,6 +763,13 @@ def check_store(roots):
     check_seal(store, out)
     for tdir, held in training_dirs(roots):
         check_training(store, out, tdir, held)
+        check_training_v2(store, out, tdir, held)
+        check_training_v2(store, out, tdir, held, sub="data-v3", module="make_regimes")
+        check_training_v2(store, out, tdir, held, sub="data-v4", module="make_question_conditions")
+        check_training_v2(store, out, tdir, held, sub="data-v5", module="make_user_facts")
+        check_training_v2(store, out, tdir, held, sub="data-v6", module="make_written")
+        check_training_v2(store, out, tdir, held, sub="data-v7", module="make_written_v7")
+        check_training_v2(store, out, tdir, held, sub="data-v8", module="make_written_v8")
     return store, out
 
 
@@ -827,7 +834,8 @@ def check_readings(store, out, readings_root=None):
         if not want:
             continue
         leitor = ev["principal"].split(":")[1]
-        f = root / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
+        rnd = (ev.get("payload") or {}).get("round", 1)  # D44: a later round's answers live in readings/ronda<n>/
+        f = (root / f"ronda{rnd}" if rnd != 1 else root) / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
         if not f.exists():
             out.append(("READ", f"{ev['id']}: answer file {f.relative_to(root)} missing for {ev['assertion']}"))
             continue
@@ -962,6 +970,36 @@ def check_training(store, out, training_dir, held_path):
                 out.append(("TRAIN", f"{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
 
 
+def check_training_v2(store, out, training_dir, held_path, sub="data-v2", module="make_conditions"):
+    """TRAIN (phase 5, D46; phase 6, D47): training/data-v2 (tools/make_conditions.py) and training/data-v3
+    (tools/make_regimes.py) are their generator's output over this store and reservation, byte for byte, nothing
+    unlisted, and no train example's source is in a reserved article (read from the reservation)."""
+    import importlib
+    data = Path(training_dir) / sub
+    if not (data / "INDEX.json").exists():
+        return
+    held = json.loads(Path(held_path).read_text(encoding="utf-8"))
+    sys.path.insert(0, str(ROOT / "tools"))
+    gen = importlib.import_module(module)  # no model, no network
+    import make_training  # noqa: E402
+    again = gen.generate(store, held)
+    for rel, b in again.items():
+        f = data / rel
+        if not f.exists() or f.read_bytes() != b:
+            out.append(("TRAIN", f"{sub}/{rel}: not what tools/{module}.py regenerates from the store and the reservation"))
+    for f in sorted(p for p in data.rglob("*") if p.is_file()):
+        if str(f.relative_to(data)) not in again:
+            out.append(("TRAIN", f"{sub}/{f.relative_to(data)}: file the generator does not write"))
+    art_of = make_training.article_map(make_training.current_passages(store))
+    reserved = set(held.get("reserved_articles", []))
+    for f in sorted(data.glob("*/train.jsonl")):
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            ex = json.loads(line)
+            hit = [x for x in ex.get("sources", []) if art_of.get(x.split("@")[0], x) in reserved]
+            if hit:
+                out.append(("TRAIN", f"{sub}/{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
+
+
 def training_dirs(roots):
     """(training dir, reservation file) pairs for a store: <root>/training for any root that holds one (a fixture store
     keeps its reservation inside it); the repository's training/ with law/TRAIN-HELD-OUT.json for the repository store (law/ + rules/ + governance/)."""
@@ -1006,13 +1044,44 @@ def check_measure():
                 out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
+        if f.name.startswith("escritas-"):  # phase 9 (D52): written questions -> facts, markers, citations (tools/measure_written.py)
+            import measure_written  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_written.report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_written.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("factos-"):  # phase 8 (D50): a person's question -> facts, generated and hand-written (tools/measure_user_facts.py)
+            import measure_user_facts  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_user_facts.report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_user_facts.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("pergunta-"):  # phase 7 (D49): condicoes_pergunta held out, base / v3 / v4 (tools/measure_question_conditions.py)
+            import measure_question_conditions  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_question_conditions.report(stored["date"])
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_question_conditions.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("regimes-"):  # phase 6 (D47): the selector tasks held out, base / v2 / v3 (tools/measure_regimes.py)
+            import measure_regimes  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_regimes.report(stored["date"], only={r for t in stored["tasks"].values() for r in t["readers"]})
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_regimes.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("condicoes-"):  # phase 5 (D46): condicoes_texto held out, base / v1 / v2 (tools/measure_conditions.py)
+            import measure_conditions  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_conditions.report(stored["date"], only=set(stored["readers"]))
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_conditions.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("amalia-"):  # phase 4 T3: the reader before / after its adapter (tools/measure_reader.py)
             import measure_reader  # noqa: E402  (no model: it reads the stored answers)
             again = measure_reader.report(stored["date"])
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_reader.py recomputes from the stored answers"))
             continue
-        again = measure.report(stored["store"], stored["date"])
+        seals = [ev["at"] for _, ev in repo.events if str(ev["assertion"]).startswith("selo:casos:")]
+        again = measure.report(stored["store"], stored["date"], rules_known_at=max(seals) if seals else None)  # D44: rules as sealed
         if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
             out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure.py recomputes from the stored answers"))
     return out

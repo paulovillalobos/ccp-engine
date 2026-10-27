@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-26T17:40:36Z",
+ "sha256": "8e8e01bca458d651e024aa4ed1f2a5daf84f2449cf045d871173450da15fd1ee",
+ "answer": "{\"passagens\": [\"ccp:art135.1\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"not_in\", \"value\": [\"obras\"]}], \"params\": {\"minimum_days\": 6, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\"}}"
+}

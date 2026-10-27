@@ -1,0 +1,63 @@
+{
+  "id": "regra:dl-177-2026:seletor-regime@v1",
+  "revision": 6,
+  "recorded_at": "2026-10-27T12:06:35Z",
+  "type": "seletor_regime",
+  "title": "Regime aplicável consoante a data de início do procedimento (DL n.º 177/2026)",
+  "norma": "norma:dl-177-2026",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "dl-177-2026:art7.2",
+      "version": "2026-10-01",
+      "quote": "2 - Os valores atualizados constantes das alíneas c) e d) do artigo 19.º e das alíneas c) e d) do n.º 1 do artigo 20.º do Código dos Contratos Públicos aplicam-se aos procedimentos iniciados após a entrada em vigor do presente decreto-lei, devendo o cálculo previsto no n.º 2 do artigo 113.º do Código dos Contratos Públicos ter em consideração o valor acumulado dos contratos celebrados no ano económico em curso e nos dois anos económicos anteriores.",
+      "offsets": {
+        "start": 0,
+        "end": 452
+      }
+    }
+  ],
+  "params": {
+    "selects_by": "data_inicio_procedimento",
+    "regimes": [
+      {
+        "from": "2026-10-01",
+        "to": null,
+        "law_version": "lei:ccp@2026-10-01",
+        "package": "pacote:ccp@2026-10-01"
+      }
+    ]
+  },
+  "readings": [
+    {
+      "principal": "leitor:a5",
+      "family": "A",
+      "at": "2026-10-27T12:05:40Z",
+      "chosen_passages": [
+        "dl-177-2026:art7.2"
+      ],
+      "blind": false,
+      "evento": "evento:76"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-27T12:03:06Z",
+      "chosen_passages": [
+        "dl-177-2026:art11",
+        "dl-177-2026:art7.2"
+      ],
+      "blind": true,
+      "evento": "evento:77"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 5
+}

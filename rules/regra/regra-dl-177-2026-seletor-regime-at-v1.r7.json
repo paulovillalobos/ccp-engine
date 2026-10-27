@@ -1,0 +1,100 @@
+{
+  "id": "regra:dl-177-2026:seletor-regime@v1",
+  "revision": 7,
+  "recorded_at": "2026-10-27T13:06:14Z",
+  "type": "seletor_regime",
+  "title": "Regime aplicável consoante a data de início do procedimento (DL n.º 177/2026)",
+  "norma": "norma:dl-177-2026",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art19.c",
+      "version": "2026-10-01",
+      "quote": "c) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;",
+      "offsets": {
+        "start": 0,
+        "end": 83
+      }
+    },
+    {
+      "passage": "ccp:art19.d",
+      "version": "2026-10-01",
+      "quote": "d) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 79
+      }
+    },
+    {
+      "passage": "ccp:art20.1.c",
+      "version": "2026-10-01",
+      "quote": "c) Consulta prévia, quando o valor estimado do contrato seja inferior a 130 000 €;",
+      "offsets": {
+        "start": 0,
+        "end": 82
+      }
+    },
+    {
+      "passage": "ccp:art20.1.d",
+      "version": "2026-10-01",
+      "quote": "d) Ajuste direto, quando o valor estimado do contrato for inferior a 75 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 78
+      }
+    }
+  ],
+  "params": {
+    "selects_by": "data_inicio_procedimento",
+    "regimes": [
+      {
+        "from": "2018-01-01",
+        "to": "2026-09-30",
+        "law_version": "lei:ccp@2026-09-30",
+        "package": "pacote:ccp@2026-09-30"
+      },
+      {
+        "from": "2026-10-01",
+        "to": null,
+        "law_version": "lei:ccp@2026-10-01",
+        "package": "pacote:ccp@2026-10-01"
+      }
+    ]
+  },
+  "readings": [
+    {
+      "principal": "leitor:a5",
+      "family": "A",
+      "at": "2026-10-27T13:05:34Z",
+      "chosen_passages": [
+        "ccp:art19.c",
+        "ccp:art19.d",
+        "ccp:art20.1.c",
+        "ccp:art20.1.d"
+      ],
+      "blind": false,
+      "evento": "evento:82"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-27T13:03:37Z",
+      "chosen_passages": [
+        "dl-177-2026:art10",
+        "dl-177-2026:art11",
+        "dl-177-2026:art7.2"
+      ],
+      "blind": true,
+      "evento": "evento:83"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 6
+}

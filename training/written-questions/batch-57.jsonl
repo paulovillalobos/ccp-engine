@@ -1,0 +1,50 @@
+{"id": "w2801", "hoje": "2026-10-05", "pergunta": "e por CP?", "factos": {"tipo_procedimento": "concurso_publico"}, "fenomenos": ["seguimento", "abreviaturas"], "estilo": "seguimento"}
+{"id": "w2802", "hoje": "2026-10-05", "pergunta": "e se for fornecimento de cadeiras em vez da obra?", "factos": {"tipo_contrato": "bens"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2803", "hoje": "2026-10-09", "pergunta": "e com publicação no JOUE, muda alguma coisa?", "factos": {"publicado_joue": true}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2804", "hoje": "2026-10-09", "pergunta": "e se o PB for 90 mil?", "factos": {"preco_base": 90000}, "fenomenos": ["seguimento", "abreviaturas"], "estilo": "seguimento"}
+{"id": "w2805", "hoje": "2026-11-09", "pergunta": "e se a decisão de contratar só for tomada amanhã?", "factos": {"data_inicio_procedimento": "2026-11-10"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2806", "hoje": "2026-11-09", "pergunta": "afinal é consulta prévia", "factos": {"tipo_procedimento": "consulta_previa"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2807", "hoje": "2026-11-12", "pergunta": "esquece o que disse, é serviços", "factos": {"tipo_contrato": "servicos"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2808", "hoje": "2026-11-12", "pergunta": "e se o valor estimado for 140 mil?", "factos": {}, "ambiguos": {"preco_base": [140000]}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2809", "hoje": "2026-11-18", "pergunta": "e na Ribeira Grande?", "factos": {"territorio": "PT-AC"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2810", "hoje": "2026-11-18", "pergunta": "e em Lagoa, muda?", "factos": {}, "ambiguos": {"territorio": ["PT", "PT-AC"]}, "fenomenos": ["seguimento", "lugar_ambiguo"], "estilo": "seguimento"}
+{"id": "w2811", "hoje": "2026-11-23", "pergunta": "e se quem contrata for uma universidade?", "factos": {}, "ambiguos": {"tipo_entidade": ["estado", "outra"]}, "fenomenos": ["seguimento", "entidade_ambigua"], "estilo": "seguimento"}
+{"id": "w2812", "hoje": "2026-11-23", "pergunta": "e se for um ministerio?", "factos": {"tipo_entidade": "estado"}, "fenomenos": ["seguimento", "sem_acentos"], "estilo": "seguimento"}
+{"id": "w2813", "hoje": "2026-11-26", "pergunta": "e sem JOUE, só DR?", "factos": {"publicado_joue": false}, "fenomenos": ["seguimento", "abreviaturas"], "estilo": "seguimento"}
+{"id": "w2814", "hoje": "2026-11-26", "pergunta": "e se fizermos concurso?", "factos": {}, "ambiguos": {"tipo_procedimento": ["concurso_publico", "concurso_limitado_previa_qualificacao"]}, "fenomenos": ["seguimento", "concurso_nu"], "estilo": "seguimento"}
+{"id": "w2815", "hoje": "2026-10-14", "pergunta": "e se o procedimento tiver começado a 28 de setembro?", "factos": {"data_inicio_procedimento": "2026-09-28"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2816", "hoje": "2027-02-17", "pergunta": "e se lançarmos o concurso na próxima segunda?", "factos": {}, "ambiguos": {"tipo_procedimento": ["concurso_publico", "concurso_limitado_previa_qualificacao"], "data_inicio_procedimento": ["2027-02-22"]}, "fenomenos": ["seguimento", "lancamento", "concurso_nu"], "estilo": "seguimento"}
+{"id": "w2817", "hoje": "2027-02-17", "pergunta": "e para software?", "factos": {}, "ambiguos": {"tipo_contrato": ["bens", "servicos"]}, "fenomenos": ["seguimento", "objeto_ambiguo"], "estilo": "seguimento"}
+{"id": "w2818", "hoje": "2026-12-02", "pergunta": "e se a retroescavadora vier com operador?", "factos": {}, "ambiguos": {"tipo_contrato": ["bens", "servicos"]}, "fenomenos": ["seguimento", "objeto_ambiguo"], "estilo": "seguimento"}
+{"id": "w2819", "hoje": "2026-12-02", "pergunta": "e numa empreitada, como fica?", "factos": {"tipo_contrato": "obras"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2820", "hoje": "2026-12-07", "pergunta": "e se o PB for 150.000€ com IVA?", "factos": {}, "ambiguos": {"preco_base": [150000]}, "fenomenos": ["seguimento", "abreviaturas", "iva"], "estilo": "seguimento"}
+{"id": "w2821", "hoje": "2026-12-07", "pergunta": "e se o pedido vier de uma união de freguesias?", "factos": {"tipo_entidade": "outra"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2822", "hoje": "2026-12-10", "pergunta": "e se o procedimento só começar a 3 de janeiro?", "factos": {"data_inicio_procedimento": "2027-01-03"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2823", "hoje": "2026-12-10", "pergunta": "e no Funchal, é igual?", "factos": {"territorio": "PT-MA"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2824", "hoje": "2026-12-15", "pergunta": "e em Santa Cruz?", "factos": {}, "ambiguos": {"territorio": ["PT", "PT-MA"]}, "fenomenos": ["seguimento", "lugar_ambiguo"], "estilo": "seguimento"}
+{"id": "w2825", "hoje": "2026-12-15", "pergunta": "e se for ajuste directo?", "factos": {"tipo_procedimento": "ajuste_direto"}, "fenomenos": ["seguimento", "pre_ao"], "estilo": "seguimento"}
+{"id": "w2826", "hoje": "2027-01-05", "pergunta": "e se a decisão de contratar foi ontem?", "factos": {"data_inicio_procedimento": "2027-01-04"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2827", "hoje": "2027-01-05", "pergunta": "e se o orçamento for de 75 mil?", "factos": {}, "ambiguos": {"preco_base": [75000]}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2828", "hoje": "2027-01-11", "pergunta": "ok. e para limpeza?", "factos": {"tipo_contrato": "servicos"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2829", "hoje": "2027-01-11", "pergunta": "e quanto ao prazo das propostas?", "factos": {}, "fenomenos": ["seguimento", "sem_factos"], "estilo": "seguimento"}
+{"id": "w2830", "hoje": "2027-01-19", "pergunta": "e se for procedimento de negociação?", "factos": {"tipo_procedimento": "procedimento_negociacao"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2831", "hoje": "2027-01-19", "pergunta": "e se for uma escola secundária?", "factos": {}, "ambiguos": {"tipo_entidade": ["estado", "outra"]}, "fenomenos": ["seguimento", "entidade_ambigua"], "estilo": "seguimento"}
+{"id": "w2832", "hoje": "2027-01-25", "pergunta": "e se forem 2 lotes de 40 mil cada?", "factos": {}, "ambiguos": {"preco_base": [40000]}, "fenomenos": ["seguimento", "por_item", "distrator"], "estilo": "seguimento"}
+{"id": "w2833", "hoje": "2027-01-25", "pergunta": "e com o DL 177/2026 isso mudou?", "factos": {}, "citacoes": ["dl-177-2026"], "fenomenos": ["seguimento", "abreviaturas", "sem_factos"], "estilo": "seguimento"}
+{"id": "w2834", "hoje": "2027-02-02", "pergunta": "e se fosse antes de outubro de 2026?", "factos": {}, "fenomenos": ["seguimento", "distrator", "sem_factos"], "estilo": "seguimento"}
+{"id": "w2835", "hoje": "2027-02-02", "pergunta": "e se for no Pico?", "factos": {"territorio": "PT-AC"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2836", "hoje": "2027-02-09", "pergunta": "e se o valor ficar entre 60 e 80 mil?", "factos": {}, "ambiguos": {"preco_base": [60000, 80000]}, "fenomenos": ["seguimento", "intervalo"], "estilo": "seguimento"}
+{"id": "w2837", "hoje": "2027-02-09", "pergunta": "e c/ joue?", "factos": {"publicado_joue": true}, "fenomenos": ["seguimento", "abreviaturas"], "estilo": "seguimento"}
+{"id": "w2838", "hoje": "2027-02-24", "pergunta": "e se for uma direção-geral?", "factos": {"tipo_entidade": "estado"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2839", "hoje": "2027-02-24", "pergunta": "e um hospital EPE, também?", "factos": {}, "ambiguos": {"tipo_entidade": ["estado", "outra"]}, "fenomenos": ["seguimento", "entidade_ambigua", "abreviaturas"], "estilo": "seguimento"}
+{"id": "w2840", "hoje": "2027-03-03", "pergunta": "afinal o PB é 60 mil e não 45", "factos": {"preco_base": 60000}, "fenomenos": ["seguimento", "abreviaturas", "distrator"], "estilo": "seguimento"}
+{"id": "w2841", "hoje": "2027-03-03", "pergunta": "e se o preço base for 60 mil... ou 70, ainda não sei", "factos": {}, "contraditorios": {"preco_base": [60000, 70000]}, "fenomenos": ["seguimento", "contradicao", "nao_sabe"], "estilo": "seguimento"}
+{"id": "w2842", "hoje": "2027-03-08", "pergunta": "e se o anúncio sair dia 20?", "factos": {}, "ambiguos": {"data_inicio_procedimento": ["2027-03-20"]}, "fenomenos": ["seguimento", "lancamento"], "estilo": "seguimento"}
+{"id": "w2843", "hoje": "2027-03-08", "pergunta": "e para refeições escolares?", "factos": {}, "ambiguos": {"tipo_contrato": ["bens", "servicos"]}, "fenomenos": ["seguimento", "objeto_ambiguo"], "estilo": "seguimento"}
+{"id": "w2844", "hoje": "2027-03-15", "pergunta": "e na Calheta?", "factos": {}, "ambiguos": {"territorio": ["PT-AC", "PT-MA"]}, "fenomenos": ["seguimento", "lugar_ambiguo"], "estilo": "seguimento"}
+{"id": "w2845", "hoje": "2027-03-15", "pergunta": "e se for diálogo concorrencial?", "factos": {"tipo_procedimento": "dialogo_concorrencial"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2846", "hoje": "2027-03-22", "pergunta": "e para reparar o telhado?", "factos": {"tipo_contrato": "obras"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2847", "hoje": "2027-03-22", "pergunta": "e se fosse por requisição?", "factos": {}, "ambiguos": {"tipo_procedimento": ["ajuste_direto"]}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2848", "hoje": "2027-03-30", "pergunta": "e se a câmara for a de Bragança?", "factos": {"tipo_entidade": "outra", "territorio": "PT"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}
+{"id": "w2849", "hoje": "2027-03-30", "pergunta": "e porquê?", "factos": {}, "fenomenos": ["seguimento", "sem_factos"], "estilo": "seguimento"}
+{"id": "w2850", "hoje": "2027-04-07", "pergunta": "e se o procedimento arrancar na próxima sexta?", "factos": {"data_inicio_procedimento": "2027-04-09"}, "fenomenos": ["seguimento"], "estilo": "seguimento"}

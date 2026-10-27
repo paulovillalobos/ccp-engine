@@ -1,0 +1,8 @@
+# Medição — condicoes_pergunta, reservados (2026-10-26)
+
+Gerado por tools/measure_question_conditions.py (ccp-measure-question-conditions-0.1). 400 perguntas com formulações nunca treinadas, rotuladas por código (D49); condições comparadas em forma canónica (D43). Intervalos de Wilson a 95 %.
+
+| leitor | conjunto de condições exato | condições acrescentadas | condições em falta | inválidas |
+|---|---|---|---|---|
+| leitor-a (base) | 29.2 % [25.0, 33.9] (117/400) | 41.0 % [38.4, 43.8] (527/1284) | 23.5 % [20.9, 26.2] (232/989) | 2 |
+| leitor-a4 (base + adaptador v3) | 5.8 % [3.9, 8.5] (23/400) | 55.1 % [50.2, 59.9] (221/401) | 81.8 % [79.3, 84.1] (809/989) | 1 |

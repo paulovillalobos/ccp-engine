@@ -1,0 +1,204 @@
+{
+ "date": "2026-10-27",
+ "tasks": {
+  "entrada_em_vigor": {
+   "examples": 8,
+   "gold": "training/data-v3/entrada_em_vigor/held_out.jsonl",
+   "gold_sha256": "bda5b27a6652c07463d8ad520b99c87154bde685dd980ece4c5390f0e0799e19",
+   "readers": {
+    "leitor-a": {
+     "answers_sha256": "5e9a2e627ad5b01e82f6cf7ef1d0c16b66ce4498e0f8bbc1d04636ed0acc0ea9",
+     "exact": {
+      "k": 6,
+      "n": 8,
+      "value": 0.75,
+      "wilson95": [
+       0.4093,
+       0.9285
+      ]
+     },
+     "invalid": 0,
+     "label": "base"
+    },
+    "leitor-a3": {
+     "answers_sha256": "f6e79a7acfd1afb8fd448f1a6811c3a8b6496dedf195bc630f41abfb9d120f60",
+     "exact": {
+      "k": 6,
+      "n": 8,
+      "value": 0.75,
+      "wilson95": [
+       0.4093,
+       0.9285
+      ]
+     },
+     "invalid": 0,
+     "label": "base + adaptador v2"
+    },
+    "leitor-a4": {
+     "answers_sha256": "53d4f7c542d2f33c00c0fa34c135eb847ee4e03d6b39313d960f617f175f01d0",
+     "exact": {
+      "k": 8,
+      "n": 8,
+      "value": 1.0,
+      "wilson95": [
+       0.6756,
+       1.0
+      ]
+     },
+     "invalid": 0,
+     "label": "base + adaptador v3"
+    },
+    "leitor-a5": {
+     "answers_sha256": "cafb50d1751a46bf09da66fbc16536f80a120b3a40dcbdfc478fda007aec0a20",
+     "exact": {
+      "k": 8,
+      "n": 8,
+      "value": 1.0,
+      "wilson95": [
+       0.6756,
+       1.0
+      ]
+     },
+     "invalid": 0,
+     "label": "base + adaptador v4"
+    }
+   }
+  },
+  "periodos_vigencia": {
+   "examples": 301,
+   "gold": "training/data-v3/periodos_vigencia/held_out.jsonl",
+   "gold_sha256": "132b573dcc87eac07117effa638a81681d8f4efe7d4cf5ce0ed6534759bd8d8f",
+   "readers": {
+    "leitor-a": {
+     "answers_sha256": "d9e3bb9a20d2a4bad6c122243f0f9f2abc5979f3e2d2d9641dc871d9b9218954",
+     "exact": {
+      "k": 0,
+      "n": 301,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0126
+      ]
+     },
+     "invalid": 0,
+     "label": "base",
+     "right_number_of_periods": {
+      "k": 296,
+      "n": 301,
+      "value": 0.9834,
+      "wilson95": [
+       0.9617,
+       0.9929
+      ]
+     },
+     "well_formed_partition": {
+      "k": 0,
+      "n": 301,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0126
+      ]
+     }
+    },
+    "leitor-a3": {
+     "answers_sha256": "4efd7225c0a4d55c0f505318aee7d789e90220284543ee6187510804d2134a57",
+     "exact": {
+      "k": 0,
+      "n": 301,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0126
+      ]
+     },
+     "invalid": 0,
+     "label": "base + adaptador v2",
+     "right_number_of_periods": {
+      "k": 300,
+      "n": 301,
+      "value": 0.9967,
+      "wilson95": [
+       0.9814,
+       0.9994
+      ]
+     },
+     "well_formed_partition": {
+      "k": 0,
+      "n": 301,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0126
+      ]
+     }
+    },
+    "leitor-a4": {
+     "answers_sha256": "49a500ba966fb141f44de30a1394e7d27079f62db6f6e659fc8d8c91ddd02d31",
+     "exact": {
+      "k": 298,
+      "n": 301,
+      "value": 0.99,
+      "wilson95": [
+       0.9711,
+       0.9966
+      ]
+     },
+     "invalid": 0,
+     "label": "base + adaptador v3",
+     "right_number_of_periods": {
+      "k": 300,
+      "n": 301,
+      "value": 0.9967,
+      "wilson95": [
+       0.9814,
+       0.9994
+      ]
+     },
+     "well_formed_partition": {
+      "k": 299,
+      "n": 301,
+      "value": 0.9934,
+      "wilson95": [
+       0.9761,
+       0.9982
+      ]
+     }
+    },
+    "leitor-a5": {
+     "answers_sha256": "af90fd85ac2f0c7149f2f02e3b36c3274c193a7cddb2a1ef8495a98f2a8d6fe6",
+     "exact": {
+      "k": 301,
+      "n": 301,
+      "value": 1.0,
+      "wilson95": [
+       0.9874,
+       1.0
+      ]
+     },
+     "invalid": 0,
+     "label": "base + adaptador v4",
+     "right_number_of_periods": {
+      "k": 301,
+      "n": 301,
+      "value": 1.0,
+      "wilson95": [
+       0.9874,
+       1.0
+      ]
+     },
+     "well_formed_partition": {
+      "k": 301,
+      "n": 301,
+      "value": 1.0,
+      "wilson95": [
+       0.9874,
+       1.0
+      ]
+     }
+    }
+   }
+  }
+ },
+ "tool": "ccp-measure-regimes-0.1"
+}

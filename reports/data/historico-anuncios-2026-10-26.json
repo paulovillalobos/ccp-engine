@@ -1,0 +1,791 @@
+{
+ "recorded_at": "2026-10-26T21:00:00Z",
+ "report": {
+  "2018": {
+   "dump": {
+    "at": "2026-10-26T18:33:53Z",
+    "sha256": "3d6b6df33e3d637fc0253d8587e07ef558f30fd203f3db73ce01e22cd1f00026",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100630-2b7c4446/anuncios2018.json"
+   },
+   "facts": 67632,
+   "fields": {
+    "adjudicante": 11595,
+    "data_limite_propostas": 10983,
+    "data_publicacao_anuncio": 11610,
+    "preco_base": 11166,
+    "tipo_contrato": 11195,
+    "tipo_procedimento": 11083
+   },
+   "load": {
+    "facto": {
+     "in_store": 67632,
+     "in_table": 199190,
+     "inserted": 0
+    },
+    "raw": {
+     "in_store": 11611,
+     "in_table": 33864,
+     "inserted": 0
+    },
+    "unidade": {
+     "in_store": 11610,
+     "in_table": 33862,
+     "inserted": 0
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 15
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 11610
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 11610
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 1,
+     "empty": 626
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 11610
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 9,
+     "PrecoBase 'Inexistente'": 435
+    },
+    "publicado_joue": {
+     "not in the dump": 11610
+    },
+    "territorio": {
+     "not in the dump": 11610
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 221,
+     "'Outros' outside the vocabulary": 11,
+     "empty list": 50,
+     "several contract types": 133
+    },
+    "tipo_entidade": {
+     "not in the dump": 11610
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 2,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 1,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 16,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 3,
+     "modeloAnuncio 'Concurso público urgente' outside the vocabulary": 9,
+     "modeloAnuncio 'Diálogo concorrencial' outside the vocabulary": 2,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 35,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 19,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 4,
+     "tipoActo 'Anúncio de concurso urgente'": 436
+    }
+   },
+   "procedures": 11610,
+   "records": 13787,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 67,
+    "nAnuncio empty: the procedure has no key": 1,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 1746,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 363
+   }
+  },
+  "2019": {
+   "dump": {
+    "at": "2026-10-26T18:33:54Z",
+    "sha256": "528a18d9ff25ed052907bab1e8502fe89fa954aa68e3f266b167809ebb7bf1d4",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100628-038183ad/anuncios2019.json"
+   },
+   "facts": 86334,
+   "fields": {
+    "adjudicante": 14736,
+    "data_limite_propostas": 14153,
+    "data_publicacao_anuncio": 14757,
+    "preco_base": 14399,
+    "tipo_contrato": 14147,
+    "tipo_procedimento": 14142
+   },
+   "load": {
+    "facto": {
+     "in_store": 86334,
+     "in_table": 285524,
+     "inserted": 86334
+    },
+    "raw": {
+     "in_store": 14758,
+     "in_table": 48622,
+     "inserted": 14758
+    },
+    "unidade": {
+     "in_store": 14757,
+     "in_table": 48619,
+     "inserted": 14757
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 21
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 14757
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 14757
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 2,
+     "empty": 602
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 14757
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 21,
+     "PrecoBase 'Inexistente'": 337
+    },
+    "publicado_joue": {
+     "not in the dump": 14757
+    },
+    "territorio": {
+     "not in the dump": 14757
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 311,
+     "'Outros' outside the vocabulary": 4,
+     "empty list": 90,
+     "several contract types": 205
+    },
+    "tipo_entidade": {
+     "not in the dump": 14757
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 7,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 2,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 30,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 2,
+     "modeloAnuncio 'Concurso público urgente' outside the vocabulary": 3,
+     "modeloAnuncio 'Diálogo concorrencial' outside the vocabulary": 2,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 69,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 5,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 17,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 3,
+     "tipoActo 'Anúncio de concurso urgente'": 475
+    }
+   },
+   "procedures": 14757,
+   "records": 17327,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 80,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 2023,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 467
+   }
+  },
+  "2020": {
+   "dump": {
+    "at": "2026-10-26T18:33:56Z",
+    "sha256": "152e74d24a0b60ed03de84820c39fda316566734761d8aab23124da44393c231",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100626-1bd2bc02/anuncios2020.json"
+   },
+   "facts": 93320,
+   "fields": {
+    "adjudicante": 15961,
+    "data_limite_propostas": 15197,
+    "data_publicacao_anuncio": 15972,
+    "preco_base": 15686,
+    "tipo_contrato": 15354,
+    "tipo_procedimento": 15150
+   },
+   "load": {
+    "facto": {
+     "in_store": 93320,
+     "in_table": 378844,
+     "inserted": 93320
+    },
+    "raw": {
+     "in_store": 15973,
+     "in_table": 64595,
+     "inserted": 15973
+    },
+    "unidade": {
+     "in_store": 15972,
+     "in_table": 64591,
+     "inserted": 15972
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 11
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 15972
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 15972
+    },
+    "data_limite_propostas": {
+     "empty": 775
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 15972
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 9,
+     "PrecoBase 'Inexistente'": 277
+    },
+    "publicado_joue": {
+     "not in the dump": 15972
+    },
+    "territorio": {
+     "not in the dump": 15972
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 315,
+     "'Outros' outside the vocabulary": 2,
+     "empty list": 83,
+     "several contract types": 218
+    },
+    "tipo_entidade": {
+     "not in the dump": 15972
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 3,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 30,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 2,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 72,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 1,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 23,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 2,
+     "modeloAnuncio 'Parceria para a inovação' outside the vocabulary": 1,
+     "tipoActo 'Anúncio de concurso urgente'": 688
+    }
+   },
+   "procedures": 15972,
+   "records": 19071,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 75,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 2525,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 499
+   }
+  },
+  "2021": {
+   "dump": {
+    "at": "2026-10-26T18:33:59Z",
+    "sha256": "4728827204214a109d7423d64317b999412b74964ff37479852a1fdde4fa955a",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100624-b2cd2725/anuncios2021.json"
+   },
+   "facts": 98358,
+   "fields": {
+    "adjudicante": 16757,
+    "data_limite_propostas": 16188,
+    "data_publicacao_anuncio": 16773,
+    "preco_base": 16466,
+    "tipo_contrato": 16071,
+    "tipo_procedimento": 16103
+   },
+   "load": {
+    "facto": {
+     "in_store": 98358,
+     "in_table": 477202,
+     "inserted": 98358
+    },
+    "raw": {
+     "in_store": 16774,
+     "in_table": 81369,
+     "inserted": 16774
+    },
+    "unidade": {
+     "in_store": 16773,
+     "in_table": 81364,
+     "inserted": 16773
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 16
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 16773
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 16773
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 2,
+     "empty": 583
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 16773
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 23,
+     "PrecoBase 'Inexistente'": 284
+    },
+    "publicado_joue": {
+     "not in the dump": 16773
+    },
+    "territorio": {
+     "not in the dump": 16773
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 297,
+     "empty list": 98,
+     "several contract types": 307
+    },
+    "tipo_entidade": {
+     "not in the dump": 16773
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 7,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 2,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 27,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 2,
+     "modeloAnuncio 'Diálogo concorrencial' outside the vocabulary": 1,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 82,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 1,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 15,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 13,
+     "tipoActo 'Anúncio de concurso urgente'": 520
+    }
+   },
+   "procedures": 16773,
+   "records": 19648,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 78,
+    "nAnuncio empty: the procedure has no key": 1,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 2389,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 407
+   }
+  },
+  "2022": {
+   "dump": {
+    "at": "2026-10-26T18:34:02Z",
+    "sha256": "f303ab3800688179634fd83c19443326b63182a260b91f47b7cc0122dde9b75b",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100613-4b49059a/anuncios2022.json"
+   },
+   "facts": 104912,
+   "fields": {
+    "adjudicante": 17968,
+    "data_limite_propostas": 17166,
+    "data_publicacao_anuncio": 17982,
+    "preco_base": 17561,
+    "tipo_contrato": 17157,
+    "tipo_procedimento": 17078
+   },
+   "load": {
+    "facto": {
+     "in_store": 104912,
+     "in_table": 582114,
+     "inserted": 104912
+    },
+    "raw": {
+     "in_store": 17983,
+     "in_table": 99352,
+     "inserted": 17983
+    },
+    "unidade": {
+     "in_store": 17982,
+     "in_table": 99346,
+     "inserted": 17982
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 14
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 17982
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 17982
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 2,
+     "empty": 814
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 17982
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 19,
+     "PrecoBase 'Inexistente'": 402
+    },
+    "publicado_joue": {
+     "not in the dump": 17982
+    },
+    "territorio": {
+     "not in the dump": 17982
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 377,
+     "'Outros' outside the vocabulary": 6,
+     "empty list": 87,
+     "several contract types": 355
+    },
+    "tipo_entidade": {
+     "not in the dump": 17982
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 2,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 8,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 53,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 2,
+     "modeloAnuncio 'Concurso limitado por prévia qualificação simplificado' outside the vocabulary": 3,
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 29,
+     "modeloAnuncio 'Diálogo concorrencial' outside the vocabulary": 1,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 69,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 10,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 9,
+     "tipoActo 'Anúncio de concurso urgente'": 718
+    }
+   },
+   "procedures": 17982,
+   "records": 21153,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 62,
+    "nAnuncio empty: the procedure has no key": 1,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 2630,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 478
+   }
+  },
+  "2023": {
+   "dump": {
+    "at": "2026-10-26T18:34:04Z",
+    "sha256": "5896b9237440143b3956d0e9970d011dd7e8e79d829bcd49fe1c6b9dd520358e",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100610-3e14f874/anuncios2023.json"
+   },
+   "facts": 119665,
+   "fields": {
+    "adjudicante": 20178,
+    "data_limite_propostas": 19810,
+    "data_publicacao_anuncio": 20650,
+    "preco_base": 20070,
+    "tipo_contrato": 19254,
+    "tipo_procedimento": 19703
+   },
+   "load": {
+    "facto": {
+     "in_store": 119665,
+     "in_table": 701779,
+     "inserted": 119665
+    },
+    "raw": {
+     "in_store": 20651,
+     "in_table": 120003,
+     "inserted": 20651
+    },
+    "unidade": {
+     "in_store": 20650,
+     "in_table": 119996,
+     "inserted": 20650
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 472
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 20650
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 20650
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 1,
+     "empty": 839
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 20650
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 324,
+     "PrecoBase 'Inexistente'": 256
+    },
+    "publicado_joue": {
+     "not in the dump": 20650
+    },
+    "territorio": {
+     "not in the dump": 20650
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 466,
+     "'Outros' outside the vocabulary": 8,
+     "empty list": 561,
+     "several contract types": 361
+    },
+    "tipo_entidade": {
+     "not in the dump": 20650
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 9,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 8,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 41,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 1,
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 30,
+     "modeloAnuncio 'Diálogo concorrencial' outside the vocabulary": 1,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 91,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 2,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 15,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 2,
+     "tipoActo 'Anúncio de concurso urgente'": 747
+    }
+   },
+   "procedures": 20650,
+   "records": 30249,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 5451,
+    "nAnuncio empty: the procedure has no key": 1,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 3511,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 636
+   }
+  },
+  "2024": {
+   "dump": {
+    "at": "2026-10-26T18:34:09Z",
+    "sha256": "3a0c3d8b34485dc2987f5004055fed0bc50d9f24a3f967947295936ec08e785b",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100606-fefed5fd/anuncios2024.json"
+   },
+   "facts": 147530,
+   "fields": {
+    "adjudicante": 24905,
+    "data_limite_propostas": 24650,
+    "data_publicacao_anuncio": 25018,
+    "preco_base": 24683,
+    "tipo_contrato": 24092,
+    "tipo_procedimento": 24182
+   },
+   "load": {
+    "facto": {
+     "in_store": 147530,
+     "in_table": 849309,
+     "inserted": 147530
+    },
+    "raw": {
+     "in_store": 25019,
+     "in_table": 145022,
+     "inserted": 25019
+    },
+    "unidade": {
+     "in_store": 25018,
+     "in_table": 145014,
+     "inserted": 25018
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 113
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 25018
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 25018
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 56,
+     "empty": 312
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 25018
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 17,
+     "PrecoBase 'Inexistente'": 318
+    },
+    "publicado_joue": {
+     "not in the dump": 25018
+    },
+    "territorio": {
+     "not in the dump": 25018
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 429,
+     "'Outros' outside the vocabulary": 41,
+     "empty list": 133,
+     "several contract types": 323
+    },
+    "tipo_entidade": {
+     "not in the dump": 25018
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 36,
+     "modeloAnuncio 'Anúncio simplificado' outside the vocabulary": 13,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 16,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 26,
+     "modeloAnuncio 'Concurso limitado por prévia qualificação simplificado' outside the vocabulary": 2,
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 13,
+     "modeloAnuncio 'Diálogo concorrencial' outside the vocabulary": 1,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 33,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 7,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 14,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 2,
+     "tipoActo 'Anúncio de concurso urgente'": 673
+    }
+   },
+   "procedures": 25018,
+   "records": 27772,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 726,
+    "tipoActo 'Anúncio de Alteração': alters an earlier notice that the dump does not name; no field joins it to its procedure": 1310,
+    "tipoActo 'Aviso de prorrogação de prazo' unknown to the adapter": 601,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 117
+   }
+  },
+  "2025": {
+   "dump": {
+    "at": "2026-10-26T18:34:13Z",
+    "sha256": "6d4af3be21b28fd405f4dd4d567c9a1ac29d009aa08ce523123368fad451266d",
+    "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100602-42f6c547/anuncios2025.json"
+   },
+   "facts": 172415,
+   "fields": {
+    "adjudicante": 29189,
+    "data_limite_propostas": 28687,
+    "data_publicacao_anuncio": 29199,
+    "preco_base": 28912,
+    "tipo_contrato": 28201,
+    "tipo_procedimento": 28227
+   },
+   "load": {
+    "facto": {
+     "in_store": 172415,
+     "in_table": 1021724,
+     "inserted": 172415
+    },
+    "raw": {
+     "in_store": 29200,
+     "in_table": 174222,
+     "inserted": 29200
+    },
+    "unidade": {
+     "in_store": 29199,
+     "in_table": 174213,
+     "inserted": 29199
+    }
+   },
+   "omitted": {
+    "adjudicante": {
+     "empty NIF": 10
+    },
+    "data_envio_anuncio": {
+     "not in the dump": 29199
+    },
+    "data_inicio_procedimento": {
+     "not in the dump": 29199
+    },
+    "data_limite_propostas": {
+     "earlier than dataPublicacao": 32,
+     "empty": 480
+    },
+    "prazo_propostas_dias": {
+     "not in the dump": 29199
+    },
+    "preco_base": {
+     "PrecoBase '0.00'": 57,
+     "PrecoBase 'Inexistente'": 230
+    },
+    "publicado_joue": {
+     "not in the dump": 29199
+    },
+    "territorio": {
+     "not in the dump": 29199
+    },
+    "tipo_contrato": {
+     "'Locação de bens móveis' outside the vocabulary": 524,
+     "'Outros' outside the vocabulary": 31,
+     "empty list": 69,
+     "several contract types": 374
+    },
+    "tipo_entidade": {
+     "not in the dump": 29199
+    },
+    "tipo_procedimento": {
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 7,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 40,
+     "modeloAnuncio 'Concurso de ideias' outside the vocabulary": 1,
+     "modeloAnuncio 'Concurso limitado por prévia qualificação simplificado' outside the vocabulary": 3,
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 76,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 59,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 21,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 12,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 1,
+     "tipoActo 'Anúncio de concurso urgente'": 752
+    }
+   },
+   "procedures": 29199,
+   "records": 33521,
+   "unmapped": {
+    "key (nAnuncio, IdIncm) held by more than one procedure record; the procedure cannot be told apart": 26,
+    "tipoActo 'Anúncio de Alteração': alters an earlier notice that the dump does not name; no field joins it to its procedure": 4295,
+    "tipoActo 'Declaração de retificação de anúncio': rectifies an earlier notice that the dump does not name; no field joins it to its procedure": 1
+   }
+  }
+ },
+ "sizes_after": {
+  "_database_bytes": 314504883,
+  "adaptador": {
+   "bytes": 32768,
+   "rows": 1
+  },
+  "afirmacao": {
+   "bytes": 16384,
+   "rows": 0
+  },
+  "alias": {
+   "bytes": 2105344,
+   "rows": 2668
+  },
+  "conflito": {
+   "bytes": 16384,
+   "rows": 0
+  },
+  "documento": {
+   "bytes": 32768,
+   "rows": 0
+  },
+  "entidade": {
+   "bytes": 335872,
+   "rows": 228
+  },
+  "facto_c": {
+   "bytes": 172032000,
+   "rows": 1021724
+  },
+  "link": {
+   "bytes": 2146304,
+   "rows": 2668
+  },
+  "nome": {
+   "bytes": 61972480,
+   "rows": 348464
+  },
+  "raw_c": {
+   "bytes": 29990912,
+   "rows": 174222
+  },
+  "regra": {
+   "bytes": 16384,
+   "rows": 0
+  },
+  "unidade_c": {
+   "bytes": 33693696,
+   "rows": 174213
+  },
+  "veredicto": {
+   "bytes": 32768,
+   "rows": 0
+  }
+ },
+ "tool": "db/history.py",
+ "what": "anuncios",
+ "years": [
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ]
+}

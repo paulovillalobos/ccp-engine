@@ -1,0 +1,23 @@
+{
+ "files": {
+  "condicoes_texto/held_out.jsonl": {
+   "lines": 353,
+   "sha256": "db1581ef100035b22e1ba98d98c90abf2d4aa6e703a005de6ad933d4d5ce3642"
+  },
+  "condicoes_texto/train.jsonl": {
+   "lines": 833,
+   "sha256": "52078c65a52eff141ab6e099bc0b342819acd2d5c67abee38f639a4f617f1aea"
+  }
+ },
+ "frozen_at": "2026-10-25",
+ "negatives_available": 3661,
+ "negatives_kept": 395,
+ "positives": 791,
+ "split": {
+  "held_out": 353,
+  "train": 833
+ },
+ "task": "condicoes_texto",
+ "train_held_out_definition_sha256": "b4cb0751e3abbd6ad853205f670628972e3785e78b9502eb9941964dba86875e",
+ "version": "ccp-make-conditions-0.1"
+}

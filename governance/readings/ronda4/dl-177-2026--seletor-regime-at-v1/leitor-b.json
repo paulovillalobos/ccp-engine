@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-26T13:27:10Z",
+ "sha256": "ad8291813855a70350ce093e0475cb69d77db7dfb268e855c964531d97691bbf",
+ "answer": "{\"passagens\":[\"dl-177-2026:art7.2\",\"dl-177-2026:art11\"],\"tipo\":\"seletor_regime\",\"condicoes\":[],\"params\":{\"selects_by\":\"data_inicio_procedimento\",\"regimes\":[{\"from\":\"0001-01-01\",\"to\":\"2026-09-30\",\"law_version\":\"lei:ccp@2026-09-30\",\"package\":\"pacote:ccp@2026-09-30\"},{\"from\":\"2026-10-01\",\"to\":null,\"law_version\":\"lei:ccp@2026-10-01\",\"package\":\"pacote:ccp@2026-10-01\"}]}}"
+}

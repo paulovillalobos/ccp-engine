@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-26T11:17:09Z",
+ "sha256": "572897a7e95512d1ef05b2037889004ecb37385c50872658342d1e9d8e1cb0b0",
+ "answer": "{\"passagens\": [\"ccp:art136.1\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"publicado_joue\", \"op\": \"eq\", \"value\": true}, {\"field\": \"territorio\", \"op\": \"eq\", \"value\": \"PT\"}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\"}}"
+}

@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-27",
+ "examples": 400,
+ "gold": "training/data-v4/condicoes_pergunta/held_out.jsonl",
+ "gold_sha256": "8b74a79d9e749dc7de338d8e6fe19a4d70399b5f6160c483f8a9399d7268f4b2",
+ "readers": {
+  "leitor-a": {
+   "added": {
+    "k": 527,
+    "n": 1284,
+    "value": 0.4104,
+    "wilson95": [
+     0.3838,
+     0.4376
+    ]
+   },
+   "answers_sha256": "e519da4f47277ae44ae3508b569ffc3f476e741d9a957cdf7665b114e9c79070",
+   "conditions": {
+    "added": 527,
+    "answered": 1284,
+    "missed": 232,
+    "stated": 989
+   },
+   "exact": {
+    "k": 117,
+    "n": 400,
+    "value": 0.2925,
+    "wilson95": [
+     0.2501,
+     0.3389
+    ]
+   },
+   "invalid": 2,
+   "label": "base",
+   "missed": {
+    "k": 232,
+    "n": 989,
+    "value": 0.2346,
+    "wilson95": [
+     0.2092,
+     0.262
+    ]
+   }
+  },
+  "leitor-a4": {
+   "added": {
+    "k": 221,
+    "n": 401,
+    "value": 0.5511,
+    "wilson95": [
+     0.5022,
+     0.5991
+    ]
+   },
+   "answers_sha256": "b7d06698ae7b6b490eb386a40bd4015fc40de9754229eacbb099dcf300231f24",
+   "conditions": {
+    "added": 221,
+    "answered": 401,
+    "missed": 809,
+    "stated": 989
+   },
+   "exact": {
+    "k": 23,
+    "n": 400,
+    "value": 0.0575,
+    "wilson95": [
+     0.0386,
+     0.0848
+    ]
+   },
+   "invalid": 1,
+   "label": "base + adaptador v3",
+   "missed": {
+    "k": 809,
+    "n": 989,
+    "value": 0.818,
+    "wilson95": [
+     0.7927,
+     0.8408
+    ]
+   }
+  },
+  "leitor-a5": {
+   "added": {
+    "k": 0,
+    "n": 989,
+    "value": 0.0,
+    "wilson95": [
+     0.0,
+     0.0039
+    ]
+   },
+   "answers_sha256": "510224821566b06fefb98348c2d55763d7c8639381641068b9662ab848acf9ca",
+   "conditions": {
+    "added": 0,
+    "answered": 989,
+    "missed": 0,
+    "stated": 989
+   },
+   "exact": {
+    "k": 400,
+    "n": 400,
+    "value": 1.0,
+    "wilson95": [
+     0.9905,
+     1.0
+    ]
+   },
+   "invalid": 0,
+   "label": "base + adaptador v4",
+   "missed": {
+    "k": 0,
+    "n": 989,
+    "value": 0.0,
+    "wilson95": [
+     0.0,
+     0.0039
+    ]
+   }
+  }
+ },
+ "tool": "ccp-measure-question-conditions-0.1"
+}

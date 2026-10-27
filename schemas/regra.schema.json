@@ -57,7 +57,7 @@
           "additionalProperties": false
         },
         "selects_by": {"$ref": "defs.schema.json#/$defs/canonical_field", "description": "The fact that fixes the applicable regime (data_inicio_procedimento). Absent: every dependent rule is nao_avaliado / facto_ausente."},
-        "regimes": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"from": {"$ref": "defs.schema.json#/$defs/date"}, "to": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]}, "law_version": {"type": "string", "pattern": "^lei:[a-z0-9-]+@[0-9]{4}-[0-9]{2}-[0-9]{2}$"}, "package": {"$ref": "defs.schema.json#/$defs/id_pacote"}}, "required": ["from", "to", "law_version", "package"], "additionalProperties": false}},
+        "regimes": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"from": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]}, "to": {"oneOf": [{"$ref": "defs.schema.json#/$defs/date"}, {"type": "null"}]}, "law_version": {"type": "string", "pattern": "^lei:[a-z0-9-]+@[0-9]{4}-[0-9]{2}-[0-9]{2}$"}, "package": {"$ref": "defs.schema.json#/$defs/id_pacote"}}, "required": ["from", "to", "law_version", "package"], "additionalProperties": false}},
         "territory": {"$ref": "defs.schema.json#/$defs/jurisdiction"},
         "predicate": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/condition"}, "minItems": 1},
         "effect": {"type": "object", "properties": {"multiply_thresholds_by": {"type": "number", "exclusiveMinimum": 0}, "replace_norma": {"$ref": "defs.schema.json#/$defs/id_norma"}}, "minProperties": 1, "additionalProperties": false}
