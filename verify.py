@@ -1048,13 +1048,13 @@ def check_measure():
             continue
         if f.name.startswith("regimes-"):  # phase 6 (D47): the selector tasks held out, base / v2 / v3 (tools/measure_regimes.py)
             import measure_regimes  # noqa: E402  (no model: it reads the stored answers)
-            again = measure_regimes.report(stored["date"])
+            again = measure_regimes.report(stored["date"], only={r for t in stored["tasks"].values() for r in t["readers"]})
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_regimes.py recomputes from the stored answers"))
             continue
         if f.name.startswith("condicoes-"):  # phase 5 (D46): condicoes_texto held out, base / v1 / v2 (tools/measure_conditions.py)
             import measure_conditions  # noqa: E402  (no model: it reads the stored answers)
-            again = measure_conditions.report(stored["date"])
+            again = measure_conditions.report(stored["date"], only=set(stored["readers"]))
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_conditions.py recomputes from the stored answers"))
             continue

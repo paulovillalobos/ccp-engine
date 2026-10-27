@@ -19,7 +19,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GOLD = ROOT / "training/data-v2/condicoes_texto/held_out.jsonl"
 ANSWERS = ROOT / "governance/readings/avaliacao-v2/condicoes_texto"
-READERS = [("leitor-a", "base"), ("leitor-a2", "base + adaptador v1"), ("leitor-a3", "base + adaptador v2"), ("leitor-a4", "base + adaptador v3")]
+READERS = [("leitor-a", "base"), ("leitor-a2", "base + adaptador v1"), ("leitor-a3", "base + adaptador v2"), ("leitor-a4", "base + adaptador v3"),
+           ("leitor-a5", "base + adaptador v4")]
 FIELDS = ["menciona_joue", "territorio", "tipo_contrato", "tipo_procedimento"]
 LISTS = ["territorio", "tipo_contrato", "tipo_procedimento"]
 VERSION = "ccp-measure-conditions-0.1"
@@ -42,7 +43,8 @@ def parse(text):
     return {"menciona_joue": a["menciona_joue"], **{f: sorted(set(a[f])) if isinstance(a[f], list) else None for f in LISTS}}
 
 
-def report(date):
+def report(date, only=None):
+    """only: the readers a stored report holds (verify MEAS), so a reader added later does not change an earlier report."""
     gold = {}
     for line in GOLD.read_text(encoding="utf-8").splitlines():
         ex = json.loads(line)
@@ -50,6 +52,8 @@ def report(date):
     rep = {"tool": VERSION, "date": date, "gold": str(GOLD.relative_to(ROOT)), "gold_sha256": hashlib.sha256(GOLD.read_bytes()).hexdigest(),
            "examples": len(gold), "readers": {}}
     for leitor, label in READERS:
+        if only is not None and leitor not in only:
+            continue
         f = ANSWERS / f"{leitor}.jsonl"
         if not f.exists():
             continue

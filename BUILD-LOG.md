@@ -1163,3 +1163,18 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Not yet: verify reading the database (today: the roundtrip against the store it was loaded from), the daily pipeline,
   read-only views for the interface.
 - Why: git cannot hold millions of facts; the interface needs a database; nothing in it can change without a new revision.
+
+## 2026-10-27 — D49: AMALIA v4 measured on reserved questions
+- Asked: the person, «Test Amalia».
+- Done: principal leitor:a5 (amalia-9b-0626-dpo+ccp-lei-v4, adapter sha256 8255e876…). v4 answered the 400 reserved
+  condicoes_pergunta questions and, for regression, the reserved sets of v2 and v3. measure-conditions@3 and
+  measure-regimes@2 add leitor-a5 and recompute an earlier report with only the readers it holds (so 2026-10-26's
+  reports do not change); verify@30 passes those readers.
+- Checked (reports/measure/pergunta-v4-2026-10-27, condicoes-v4-2026-10-27, regimes-v4-2026-10-27): exact condition
+  set 400/400 (base 117/400, v3 23/400); 0 of 989 conditions added or missed; no reserved phrasing occurs in a training
+  question. Earlier tasks: conditions in a passage 93.2 % exact (v3 91.8 %), periods 301/301, entry date 8/8.
+- Limit: the reserved questions share the training sentence pattern with other words; the real test is round 6.
+- Cost: v4 training USD 9.53. Correction: v3's training was USD 7.61 once Modal's hours closed (first reading 5.74).
+- Fix before the commit, disclosed: a first regression run passed its paths through a zsh variable that was not split,
+  so no example reached Modal; the two reports it produced held no v4 answers and were deleted before any commit.
+- Next: round 6 (v4 proposes, leitor:b blind) on the selector and the deadline rules.

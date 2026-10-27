@@ -64,7 +64,7 @@ AFTER when its measurement exists.
   República: the date an act enters into force, read from its own article (24 train / 8 reserved: few acts print it);
   the partition of a passage's version history into periods (1 314 train / 301 reserved). Not taught on purpose: whether
   a procedure started on the day of entry into force falls before or after. Mix: v2's plus these (14 908 examples).
-- Run: 921 steps, 6 714 s on one H100, USD 5.74 (`training/runs/v3/`).
+- Run: 921 steps, 6 714 s on one H100, USD 7.61 once Modal closed the hours (first reading 5.74; `training/runs/v3/`).
 - Reserved results (`reports/measure/regimes-v3-2026-10-26.md`; BEFORE in `training/runs/v3/BEFORE.md`):
 
 | reader | periods: exact | periods: well-formed partition | entry date | conditions task, exact |
@@ -78,22 +78,29 @@ AFTER when its measurement exists.
   read no better than v2 (identical answer on one, extra conditions on another, conditions dropped on the one already
   settled, which a later round does not reopen). Settled after five rounds: 1 of these 4.
 
-## v3 (adapter `amalia-ccp-lei-v3`, 2026-10-26) — splitting time into periods
-- Why: on the regime selector the reader gave one period «from 1 Oct 2026 to 1 Oct 2026» instead of a before and an after.
-- New tasks (`training/data-v3/`, `tools/make_regimes.py`): the entry-into-force date of an act from its articles (24
-  train, 8 reserved), and the partition of a passage's version history into contiguous periods (1 314 train, 301
-  reserved). Mix: v2's plus these (14 908 examples). Run: 921 steps, 6 714 s on one H100.
-- Reserved results (`reports/measure/regimes-v3-2026-10-26.md`):
+## v4 (adapter `amalia-ccp-lei-v4`, 2026-10-27) — reading the conditions a question states
+- Why: on the deadline rules the reader added conditions a question did not state, or dropped ones it did (v3 left out
+  81.8 % of the stated conditions on reserved questions; the base model added 41 % of its own).
+- New task (`training/data-v4/condicoes_pergunta/`, `tools/make_question_conditions.py`), labelled by code: a question
+  with 0 to 4 constraints (procedure, JOUE, contract type, region, contracting entity, base price) -> exactly the typed
+  conditions it states, in canonical form. Every constraint has phrasings used only in training and phrasings used only
+  in the 400 reserved questions (checked: no reserved phrasing occurs in a training question). The constraint sets of the
+  three real deadline questions are excluded from both, so the rule test stays unseen. Mix: v3's plus 4 000 (19 511).
+- Run: 1 198 steps, 8 416 s on one H100, USD 9.53 (`training/runs/v4/`).
+- Reserved results (`reports/measure/pergunta-v4-2026-10-27.md`; BEFORE committed before training in
+  `training/runs/v4/BEFORE.md`):
 
-| reader | periods exactly right | well-formed partition | entry-into-force date |
+| reader | exact condition set (400) | conditions added | conditions missed |
 |---|---|---|---|
-| base | 0.0 % (0/301) | 0.0 % | 6/8 |
-| base + v2 | 0.0 % (0/301) | 0.0 % | 6/8 |
-| base + v3 | **99.0 % [97.1, 99.7]** (298/301) | **99.3 %** | **8/8** |
+| base | 29.2 % [25.0, 33.9] | 41.0 % | 23.5 % |
+| base + v3 | 5.8 % [3.9, 8.5] | 55.1 % | 81.8 % |
+| base + v4 | **100.0 % [99.1, 100.0]** (400/400) | **0.0 %** (0/989) | **0.0 %** (0/989) |
 
-  The conditions skill of v2 is kept (v3: 91.8 % exact, 6.0 % values invented).
-- Rule test, round 5: the selector is not settled yet: the partition learnt on version histories did not carry over
-  to the decree's own question; the next task targets it directly.
+- Earlier skills kept (`reports/measure/condicoes-v4-2026-10-27.md`, `regimes-v4-2026-10-27.md`): conditions in a
+  passage 93.2 % exact (v3 91.8 %), periods 301/301 (v3 298/301), entry date 8/8.
+- Limit: the reserved questions are built from the same sentence pattern as the training ones with other words; 100 %
+  says it learned that pattern, not yet that it reads any question. The test that counts is the three real questions in
+  round 6.
 
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

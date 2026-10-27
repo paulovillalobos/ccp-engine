@@ -1,6 +1,7 @@
 {
  "source": "modal billing report --start 2026-10-26 --resolution h --json (Modal client 1.6.1), read 2026-10-26T17:55Z",
  "training_app": "ap-UZBCRDJe2pHNl6KF5bmmcY",
- "training_usd": 5.7373,
- "note": "read soon after the run ended: the last hour may not be closed in Modal's report"
+ "training_usd": 7.6071,
+ "note": "first reading 5.7373 at 17:55Z, before Modal closed the run's hours; 7.6071 read 2026-10-27 once closed",
+ "training_usd_first_reading": 5.7373
 }

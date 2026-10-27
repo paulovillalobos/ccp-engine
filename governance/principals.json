@@ -1164,7 +1164,8 @@
       "versao": 1,
       "code": "tools/measure_regimes.py",
       "hash": "15d34357102303a278659963b93f9dac7176bcc4acff88824bd1207923ad7572",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-27T10:42:40Z"
     },
     {
       "id": "ferramenta:read-rules@10",
@@ -1206,6 +1207,21 @@
       "nota": "phase 6 (D47): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v3 (adapter_model.safetensors sha256 c31c9ea4…), trained on training/data + data-v2 + data-v3 generated from law/ by code; training/runs/v3/MANIFEST.json"
     },
     {
+      "id": "leitor:a5",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v4",
+        "versao": "8255e876e4d0"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 7 (D49): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v4 (adapter_model.safetensors sha256 8255e876…), trained on training/data + data-v2 + data-v3 + data-v4 generated from law/ by code; training/runs/v4/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:read-rules@11",
       "kind": "codigo",
       "papel": "ferramenta",
@@ -1226,7 +1242,8 @@
       "versao": 2,
       "code": "tools/measure_conditions.py",
       "hash": "615bd15daac8f4120f449110c712cd78b34693e4f369146d10e6a9f331d67030",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-27T10:42:40Z"
     },
     {
       "id": "ferramenta:read-rules@12",
@@ -1282,7 +1299,44 @@
       "versao": 29,
       "code": "verify.py",
       "hash": "687869901abb1b81b27473ed19e4c2ed9e2629b82e974ed84f06b38a56bba2a9",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-27T10:42:40Z"
+    },
+    {
+      "id": "ferramenta:measure-conditions@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/measure_conditions.py",
+      "hash": "8b5be752db668355ead1878d0dbdcaa1c9e53ae768ccf3eb0e9952f1500de891",
+      "retired": false,
+      "nota": "phase 7 (D49): leitor-a5 (v4) measured on the earlier reserved sets; an earlier report is recomputed with only the readers it holds"
+    },
+    {
+      "id": "ferramenta:measure-regimes@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_regimes.py",
+      "hash": "9510625ea473702479af63560aa7027fc2106fc2ef8d11179cb801c129e1625e",
+      "retired": false,
+      "nota": "phase 7 (D49): leitor-a5 (v4) measured on the earlier reserved sets; an earlier report is recomputed with only the readers it holds"
+    },
+    {
+      "id": "ferramenta:verify@30",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 30,
+      "code": "verify.py",
+      "hash": "7a33ab747fced6d843be855953a70892267af42e0663410d675e18c85454a532",
+      "retired": false,
+      "nota": "phase 7 (D49): leitor-a5 (v4) measured on the earlier reserved sets; an earlier report is recomputed with only the readers it holds"
     }
   ]
 }

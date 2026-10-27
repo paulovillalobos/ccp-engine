@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GOLD = ROOT / "training/data-v3"
 ANSWERS = ROOT / "governance/readings/avaliacao-v3"
-READERS = [("leitor-a", "base"), ("leitor-a3", "base + adaptador v2"), ("leitor-a4", "base + adaptador v3")]
+READERS = [("leitor-a", "base"), ("leitor-a3", "base + adaptador v2"), ("leitor-a4", "base + adaptador v3"), ("leitor-a5", "base + adaptador v4")]
 TASKS = ["entrada_em_vigor", "periodos_vigencia"]
 VERSION = "ccp-measure-regimes-0.1"
 
@@ -52,13 +52,16 @@ def well_formed(per):
         return False
 
 
-def report(date_):
+def report(date_, only=None):
+    """only: the readers a stored report holds (verify MEAS), so a reader added later does not change an earlier report."""
     rep = {"tool": VERSION, "date": date_, "tasks": {}}
     for task in TASKS:
         gf = GOLD / task / "held_out.jsonl"
         gold = {json.loads(l)["id"]: load(json.loads(l)["answer"]) for l in gf.read_text(encoding="utf-8").splitlines() if l.strip()}
         t = {"gold": str(gf.relative_to(ROOT)), "gold_sha256": hashlib.sha256(gf.read_bytes()).hexdigest(), "examples": len(gold), "readers": {}}
         for leitor, label in READERS:
+            if only is not None and leitor not in only:
+                continue
             f = ANSWERS / task / f"{leitor}.jsonl"
             if not f.exists():
                 continue
