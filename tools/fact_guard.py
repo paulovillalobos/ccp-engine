@@ -129,12 +129,20 @@ def citations(text, known):
         hit = next((c for c in cands if c in known), base if base in known else None)
         if hit and hit not in out:
             out.append(hit)
-    acts = [(r"\b(?:dl|decreto[- ]lei)\s*(?:n\.?\s*º?\s*)?(\d+)(?:-([a-z]))?\s*(?:/|de)\s*(\d{4})", "dl"),
+    for m in re.finditer(r"\bn\.?\s*º?\s*(\d+)\s*(?:,?\s*(?:al[ií]nea|al\.)\s*([a-z])\))?\s*,?\s*d[oa]\s+(?:referido\s+)?art(?:igo|\.|º)?\s*(\d+)", f):
+        num, al, n = m.groups()  # «o n.º 2 do artigo 43.º»: the paragraph before the article
+        hit = next((c for c in [f"ccp:art{n}.{num}" + (f".{al}" if al else ""), f"ccp:art{n}.{num}"] if c in known), None)
+        if hit and hit not in out:
+            out.append(hit)
+    out = [c for c in out if not any(o.startswith(c + ".") for o in out)]  # the most specific citation of an article
+    acts = [(r"\b(?:dl|decreto[- ]lei)\s*(?:n\.?\s*º?\s*)?(\d+)(?:-([a-z]))?\s*(?:/|de)\s*(\d{4}|\d{2}\b)", "dl"),
             (r"\blei\s*(?:n\.?\s*º?\s*)?(\d+)/(\d{4})", "lei"),
             (r"\b(?:dlr|decreto legislativo regional)\s*(?:n\.?\s*º?\s*)?(\d+)/(\d{4})/([am])\b", "dlr")]
     for pat, kind in acts:
         for m in re.finditer(pat, f):
             g = m.groups()
+            if kind == "dl" and len(g[2]) == 2:  # «Decreto-Lei n.º 197/99»
+                g = (g[0], g[1], ("19" if int(g[2]) > 30 else "20") + g[2])
             i = {"dl": lambda: f"dl-{g[0]}" + (f"-{g[1]}" if g[1] else "") + f"-{g[2]}", "lei": lambda: f"lei-{g[0]}-{g[1]}",
                  "dlr": lambda: f"dlr-{g[0]}-{g[1]}-{g[2]}"}[kind]()
             if i in known and i not in out:
@@ -175,7 +183,8 @@ def guard(question, today, a, known):
         A["preco_base"] = [F.pop("preco_base")]
     elif "preco_base" in A and has_pb and not loose and not re.search(r"n[aã]o sei|ou ser[aá]|n[aã]o tenho a certeza", question, re.I) and len(A["preco_base"]) == 1 and isinstance(A["preco_base"][0], (int, float)):
         F["preco_base"] = A.pop("preco_base")[0]
-    a["citacoes"] = sorted(set(citations(question, known)) | {c for c in a["citacoes"] if c in known})
+    cites = set(citations(question, known)) | {c for c in a["citacoes"] if c in known}
+    a["citacoes"] = sorted(c for c in cites if not any(o.startswith(c + ".") for o in cites))
     if "data_inicio_procedimento" in F:
         f = fold(question)
         if not DATE_CUE.search(f):

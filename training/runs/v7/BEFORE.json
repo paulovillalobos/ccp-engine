@@ -1,0 +1,1156 @@
+{
+ "date": "2026-10-28",
+ "guard": "ccp-fact-guard-0.2",
+ "sets": {
+  "dev": {
+   "examples": 200,
+   "gold": "training/data-v7/factos_v7/held_out.jsonl",
+   "gold_sha256": "d196ef775f88480ba9ac8eec0667986e803f40bee7666e45a9314fbdcc1b9e65",
+   "readers": {
+    "leitor-a7": {
+     "after_guard": {
+      "citations_exact": {
+       "k": 200,
+       "n": 200,
+       "value": 1.0,
+       "wilson95": [
+        0.9812,
+        1.0
+       ]
+      },
+      "counts": {
+       "cites_exact": 200,
+       "default_fill": 0,
+       "exact": 119,
+       "facts_exact": 136,
+       "given": 455,
+       "invalid": 0,
+       "invented": 33,
+       "marks_false": 27,
+       "marks_found": 63,
+       "marks_given": 90,
+       "marks_gold": 112,
+       "missed": 37,
+       "stated": 459,
+       "wrong": 3
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 119,
+       "n": 200,
+       "value": 0.595,
+       "wilson95": [
+        0.5258,
+        0.6606
+       ]
+      },
+      "facts_exact": {
+       "k": 136,
+       "n": 200,
+       "value": 0.68,
+       "wilson95": [
+        0.6125,
+        0.7407
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 33,
+       "n": 455,
+       "value": 0.0725,
+       "wilson95": [
+        0.0521,
+        0.1001
+       ]
+      },
+      "markers_false": {
+       "k": 27,
+       "n": 90,
+       "value": 0.3,
+       "wilson95": [
+        0.2151,
+        0.4013
+       ]
+      },
+      "markers_found": {
+       "k": 63,
+       "n": 112,
+       "value": 0.5625,
+       "wilson95": [
+        0.4701,
+        0.6508
+       ]
+      },
+      "missed": {
+       "k": 37,
+       "n": 459,
+       "value": 0.0806,
+       "wilson95": [
+        0.059,
+        0.1091
+       ]
+      },
+      "wrong": {
+       "k": 3,
+       "n": 459,
+       "value": 0.0065,
+       "wilson95": [
+        0.0022,
+        0.019
+       ]
+      }
+     },
+     "answers_sha256": "b253e4d81aaccbcb88564290ea30b260fe1617526c4c399fdbc788a54db6e7aa",
+     "as_answered": {
+      "citations_exact": {
+       "k": 199,
+       "n": 200,
+       "value": 0.995,
+       "wilson95": [
+        0.9722,
+        0.9991
+       ]
+      },
+      "counts": {
+       "cites_exact": 199,
+       "default_fill": 0,
+       "exact": 113,
+       "facts_exact": 127,
+       "given": 449,
+       "invalid": 0,
+       "invented": 35,
+       "marks_false": 35,
+       "marks_found": 62,
+       "marks_given": 97,
+       "marks_gold": 112,
+       "missed": 45,
+       "stated": 459,
+       "wrong": 4
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 113,
+       "n": 200,
+       "value": 0.565,
+       "wilson95": [
+        0.4957,
+        0.6318
+       ]
+      },
+      "facts_exact": {
+       "k": 127,
+       "n": 200,
+       "value": 0.635,
+       "wilson95": [
+        0.5663,
+        0.6986
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 35,
+       "n": 449,
+       "value": 0.078,
+       "wilson95": [
+        0.0566,
+        0.1065
+       ]
+      },
+      "markers_false": {
+       "k": 35,
+       "n": 97,
+       "value": 0.3608,
+       "wilson95": [
+        0.2722,
+        0.46
+       ]
+      },
+      "markers_found": {
+       "k": 62,
+       "n": 112,
+       "value": 0.5536,
+       "wilson95": [
+        0.4612,
+        0.6423
+       ]
+      },
+      "missed": {
+       "k": 45,
+       "n": 459,
+       "value": 0.098,
+       "wilson95": [
+        0.0741,
+        0.1287
+       ]
+      },
+      "wrong": {
+       "k": 4,
+       "n": 459,
+       "value": 0.0087,
+       "wilson95": [
+        0.0034,
+        0.0222
+       ]
+      }
+     },
+     "label": "base + adaptador v6"
+    },
+    "leitor-b": {
+     "after_guard": {
+      "citations_exact": {
+       "k": 199,
+       "n": 200,
+       "value": 0.995,
+       "wilson95": [
+        0.9722,
+        0.9991
+       ]
+      },
+      "counts": {
+       "cites_exact": 199,
+       "default_fill": 0,
+       "exact": 149,
+       "facts_exact": 167,
+       "given": 458,
+       "invalid": 0,
+       "invented": 16,
+       "marks_false": 17,
+       "marks_found": 95,
+       "marks_given": 112,
+       "marks_gold": 112,
+       "missed": 17,
+       "stated": 459,
+       "wrong": 2
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 149,
+       "n": 200,
+       "value": 0.745,
+       "wilson95": [
+        0.6804,
+        0.8004
+       ]
+      },
+      "facts_exact": {
+       "k": 167,
+       "n": 200,
+       "value": 0.835,
+       "wilson95": [
+        0.7773,
+        0.88
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 16,
+       "n": 458,
+       "value": 0.0349,
+       "wilson95": [
+        0.0216,
+        0.056
+       ]
+      },
+      "markers_false": {
+       "k": 17,
+       "n": 112,
+       "value": 0.1518,
+       "wilson95": [
+        0.097,
+        0.2297
+       ]
+      },
+      "markers_found": {
+       "k": 95,
+       "n": 112,
+       "value": 0.8482,
+       "wilson95": [
+        0.7703,
+        0.903
+       ]
+      },
+      "missed": {
+       "k": 17,
+       "n": 459,
+       "value": 0.037,
+       "wilson95": [
+        0.0233,
+        0.0585
+       ]
+      },
+      "wrong": {
+       "k": 2,
+       "n": 459,
+       "value": 0.0044,
+       "wilson95": [
+        0.0012,
+        0.0157
+       ]
+      }
+     },
+     "answers_sha256": "c89f350afc2daa8045d73a0c2f5f2c9c7d65471517cf950cd0d9c73167b3f2f4",
+     "as_answered": {
+      "citations_exact": {
+       "k": 199,
+       "n": 200,
+       "value": 0.995,
+       "wilson95": [
+        0.9722,
+        0.9991
+       ]
+      },
+      "counts": {
+       "cites_exact": 199,
+       "default_fill": 0,
+       "exact": 120,
+       "facts_exact": 137,
+       "given": 433,
+       "invalid": 0,
+       "invented": 23,
+       "marks_false": 19,
+       "marks_found": 92,
+       "marks_given": 111,
+       "marks_gold": 112,
+       "missed": 49,
+       "stated": 459,
+       "wrong": 0
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 120,
+       "n": 200,
+       "value": 0.6,
+       "wilson95": [
+        0.5308,
+        0.6654
+       ]
+      },
+      "facts_exact": {
+       "k": 137,
+       "n": 200,
+       "value": 0.685,
+       "wilson95": [
+        0.6176,
+        0.7454
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 23,
+       "n": 433,
+       "value": 0.0531,
+       "wilson95": [
+        0.0357,
+        0.0784
+       ]
+      },
+      "markers_false": {
+       "k": 19,
+       "n": 111,
+       "value": 0.1712,
+       "wilson95": [
+        0.1124,
+        0.2519
+       ]
+      },
+      "markers_found": {
+       "k": 92,
+       "n": 112,
+       "value": 0.8214,
+       "wilson95": [
+        0.7402,
+        0.8813
+       ]
+      },
+      "missed": {
+       "k": 49,
+       "n": 459,
+       "value": 0.1068,
+       "wilson95": [
+        0.0817,
+        0.1383
+       ]
+      },
+      "wrong": {
+       "k": 0,
+       "n": 459,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0083
+       ]
+      }
+     },
+     "label": "Reader B (família B), teto"
+    }
+   }
+  },
+  "final": {
+   "examples": 200,
+   "gold": "training/data-v7/factos_v7/final.jsonl",
+   "gold_sha256": "166eba0b56ed6cc740d0f4de857de3835b69cab2760345e3986af13b0b004d45",
+   "readers": {
+    "leitor-a7": {
+     "after_guard": {
+      "citations_exact": {
+       "k": 200,
+       "n": 200,
+       "value": 1.0,
+       "wilson95": [
+        0.9812,
+        1.0
+       ]
+      },
+      "counts": {
+       "cites_exact": 200,
+       "default_fill": 0,
+       "exact": 124,
+       "facts_exact": 142,
+       "given": 471,
+       "invalid": 0,
+       "invented": 30,
+       "marks_false": 38,
+       "marks_found": 64,
+       "marks_given": 102,
+       "marks_gold": 111,
+       "missed": 45,
+       "stated": 486,
+       "wrong": 2
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 124,
+       "n": 200,
+       "value": 0.62,
+       "wilson95": [
+        0.5511,
+        0.6844
+       ]
+      },
+      "facts_exact": {
+       "k": 142,
+       "n": 200,
+       "value": 0.71,
+       "wilson95": [
+        0.6436,
+        0.7685
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 30,
+       "n": 471,
+       "value": 0.0637,
+       "wilson95": [
+        0.045,
+        0.0895
+       ]
+      },
+      "markers_false": {
+       "k": 38,
+       "n": 102,
+       "value": 0.3725,
+       "wilson95": [
+        0.2849,
+        0.4694
+       ]
+      },
+      "markers_found": {
+       "k": 64,
+       "n": 111,
+       "value": 0.5766,
+       "wilson95": [
+        0.4836,
+        0.6644
+       ]
+      },
+      "missed": {
+       "k": 45,
+       "n": 486,
+       "value": 0.0926,
+       "wilson95": [
+        0.0699,
+        0.1217
+       ]
+      },
+      "wrong": {
+       "k": 2,
+       "n": 486,
+       "value": 0.0041,
+       "wilson95": [
+        0.0011,
+        0.0149
+       ]
+      }
+     },
+     "answers_sha256": "7226fc62582f2b1e428c51827df1b939af21afcbd5c5b14df5037288919b29f0",
+     "as_answered": {
+      "citations_exact": {
+       "k": 199,
+       "n": 200,
+       "value": 0.995,
+       "wilson95": [
+        0.9722,
+        0.9991
+       ]
+      },
+      "counts": {
+       "cites_exact": 199,
+       "default_fill": 0,
+       "exact": 112,
+       "facts_exact": 129,
+       "given": 468,
+       "invalid": 0,
+       "invented": 34,
+       "marks_false": 43,
+       "marks_found": 61,
+       "marks_given": 104,
+       "marks_gold": 111,
+       "missed": 52,
+       "stated": 486,
+       "wrong": 4
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 112,
+       "n": 200,
+       "value": 0.56,
+       "wilson95": [
+        0.4907,
+        0.627
+       ]
+      },
+      "facts_exact": {
+       "k": 129,
+       "n": 200,
+       "value": 0.645,
+       "wilson95": [
+        0.5765,
+        0.708
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 34,
+       "n": 468,
+       "value": 0.0726,
+       "wilson95": [
+        0.0525,
+        0.0998
+       ]
+      },
+      "markers_false": {
+       "k": 43,
+       "n": 104,
+       "value": 0.4135,
+       "wilson95": [
+        0.3235,
+        0.5095
+       ]
+      },
+      "markers_found": {
+       "k": 61,
+       "n": 111,
+       "value": 0.5495,
+       "wilson95": [
+        0.4569,
+        0.6389
+       ]
+      },
+      "missed": {
+       "k": 52,
+       "n": 486,
+       "value": 0.107,
+       "wilson95": [
+        0.0825,
+        0.1376
+       ]
+      },
+      "wrong": {
+       "k": 4,
+       "n": 486,
+       "value": 0.0082,
+       "wilson95": [
+        0.0032,
+        0.021
+       ]
+      }
+     },
+     "label": "base + adaptador v6"
+    },
+    "leitor-b": {
+     "after_guard": {
+      "citations_exact": {
+       "k": 199,
+       "n": 200,
+       "value": 0.995,
+       "wilson95": [
+        0.9722,
+        0.9991
+       ]
+      },
+      "counts": {
+       "cites_exact": 199,
+       "default_fill": 0,
+       "exact": 146,
+       "facts_exact": 167,
+       "given": 491,
+       "invalid": 0,
+       "invented": 20,
+       "marks_false": 14,
+       "marks_found": 88,
+       "marks_given": 102,
+       "marks_gold": 111,
+       "missed": 15,
+       "stated": 486,
+       "wrong": 1
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 146,
+       "n": 200,
+       "value": 0.73,
+       "wilson95": [
+        0.6646,
+        0.7868
+       ]
+      },
+      "facts_exact": {
+       "k": 167,
+       "n": 200,
+       "value": 0.835,
+       "wilson95": [
+        0.7773,
+        0.88
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 20,
+       "n": 491,
+       "value": 0.0407,
+       "wilson95": [
+        0.0265,
+        0.0621
+       ]
+      },
+      "markers_false": {
+       "k": 14,
+       "n": 102,
+       "value": 0.1373,
+       "wilson95": [
+        0.0836,
+        0.2173
+       ]
+      },
+      "markers_found": {
+       "k": 88,
+       "n": 111,
+       "value": 0.7928,
+       "wilson95": [
+        0.7082,
+        0.8578
+       ]
+      },
+      "missed": {
+       "k": 15,
+       "n": 486,
+       "value": 0.0309,
+       "wilson95": [
+        0.0188,
+        0.0503
+       ]
+      },
+      "wrong": {
+       "k": 1,
+       "n": 486,
+       "value": 0.0021,
+       "wilson95": [
+        0.0004,
+        0.0116
+       ]
+      }
+     },
+     "answers_sha256": "95e9bcf7fc0fb82fa82ec7c2b2befc6d990c10bd91fdf8bdb5c4b7dc8f9f474b",
+     "as_answered": {
+      "citations_exact": {
+       "k": 199,
+       "n": 200,
+       "value": 0.995,
+       "wilson95": [
+        0.9722,
+        0.9991
+       ]
+      },
+      "counts": {
+       "cites_exact": 199,
+       "default_fill": 0,
+       "exact": 125,
+       "facts_exact": 144,
+       "given": 472,
+       "invalid": 0,
+       "invented": 24,
+       "marks_false": 15,
+       "marks_found": 86,
+       "marks_given": 101,
+       "marks_gold": 111,
+       "missed": 38,
+       "stated": 486,
+       "wrong": 0
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 125,
+       "n": 200,
+       "value": 0.625,
+       "wilson95": [
+        0.5561,
+        0.6891
+       ]
+      },
+      "facts_exact": {
+       "k": 144,
+       "n": 200,
+       "value": 0.72,
+       "wilson95": [
+        0.6541,
+        0.7776
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 24,
+       "n": 472,
+       "value": 0.0508,
+       "wilson95": [
+        0.0344,
+        0.0745
+       ]
+      },
+      "markers_false": {
+       "k": 15,
+       "n": 101,
+       "value": 0.1485,
+       "wilson95": [
+        0.0921,
+        0.2307
+       ]
+      },
+      "markers_found": {
+       "k": 86,
+       "n": 111,
+       "value": 0.7748,
+       "wilson95": [
+        0.6886,
+        0.8425
+       ]
+      },
+      "missed": {
+       "k": 38,
+       "n": 486,
+       "value": 0.0782,
+       "wilson95": [
+        0.0575,
+        0.1055
+       ]
+      },
+      "wrong": {
+       "k": 0,
+       "n": 486,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0078
+       ]
+      }
+     },
+     "label": "Reader B (família B), teto"
+    }
+   }
+  },
+  "reais": {
+   "examples": 16,
+   "gold": "training/real-questions/ccdr-alentejo-v1.jsonl",
+   "gold_sha256": "fddb9a532261a870d97b9b31accc5d38e5dc0f440adf00e8d9e14e4c3a654ec7",
+   "readers": {
+    "leitor-a7": {
+     "after_guard": {
+      "citations_exact": {
+       "k": 16,
+       "n": 16,
+       "value": 1.0,
+       "wilson95": [
+        0.8064,
+        1.0
+       ]
+      },
+      "counts": {
+       "cites_exact": 16,
+       "default_fill": 0,
+       "exact": 8,
+       "facts_exact": 10,
+       "given": 37,
+       "invalid": 0,
+       "invented": 5,
+       "marks_false": 1,
+       "marks_found": 8,
+       "marks_given": 9,
+       "marks_gold": 15,
+       "missed": 4,
+       "stated": 36,
+       "wrong": 0
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 8,
+       "n": 16,
+       "value": 0.5,
+       "wilson95": [
+        0.28,
+        0.72
+       ]
+      },
+      "facts_exact": {
+       "k": 10,
+       "n": 16,
+       "value": 0.625,
+       "wilson95": [
+        0.3864,
+        0.8152
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 5,
+       "n": 37,
+       "value": 0.1351,
+       "wilson95": [
+        0.0591,
+        0.2798
+       ]
+      },
+      "markers_false": {
+       "k": 1,
+       "n": 9,
+       "value": 0.1111,
+       "wilson95": [
+        0.0199,
+        0.435
+       ]
+      },
+      "markers_found": {
+       "k": 8,
+       "n": 15,
+       "value": 0.5333,
+       "wilson95": [
+        0.3012,
+        0.7519
+       ]
+      },
+      "missed": {
+       "k": 4,
+       "n": 36,
+       "value": 0.1111,
+       "wilson95": [
+        0.0441,
+        0.2532
+       ]
+      },
+      "wrong": {
+       "k": 0,
+       "n": 36,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0964
+       ]
+      }
+     },
+     "answers_sha256": "c6729cec5e2f61ecf3aa9b7b842e07846bc38c229b8d1f4341d2e9999c6f882f",
+     "as_answered": {
+      "citations_exact": {
+       "k": 13,
+       "n": 16,
+       "value": 0.8125,
+       "wilson95": [
+        0.5699,
+        0.9341
+       ]
+      },
+      "counts": {
+       "cites_exact": 13,
+       "default_fill": 0,
+       "exact": 7,
+       "facts_exact": 10,
+       "given": 37,
+       "invalid": 0,
+       "invented": 5,
+       "marks_false": 1,
+       "marks_found": 8,
+       "marks_given": 9,
+       "marks_gold": 15,
+       "missed": 4,
+       "stated": 36,
+       "wrong": 0
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 7,
+       "n": 16,
+       "value": 0.4375,
+       "wilson95": [
+        0.231,
+        0.6682
+       ]
+      },
+      "facts_exact": {
+       "k": 10,
+       "n": 16,
+       "value": 0.625,
+       "wilson95": [
+        0.3864,
+        0.8152
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 5,
+       "n": 37,
+       "value": 0.1351,
+       "wilson95": [
+        0.0591,
+        0.2798
+       ]
+      },
+      "markers_false": {
+       "k": 1,
+       "n": 9,
+       "value": 0.1111,
+       "wilson95": [
+        0.0199,
+        0.435
+       ]
+      },
+      "markers_found": {
+       "k": 8,
+       "n": 15,
+       "value": 0.5333,
+       "wilson95": [
+        0.3012,
+        0.7519
+       ]
+      },
+      "missed": {
+       "k": 4,
+       "n": 36,
+       "value": 0.1111,
+       "wilson95": [
+        0.0441,
+        0.2532
+       ]
+      },
+      "wrong": {
+       "k": 0,
+       "n": 36,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0964
+       ]
+      }
+     },
+     "label": "base + adaptador v6"
+    },
+    "leitor-b": {
+     "after_guard": {
+      "citations_exact": {
+       "k": 15,
+       "n": 16,
+       "value": 0.9375,
+       "wilson95": [
+        0.7167,
+        0.9889
+       ]
+      },
+      "counts": {
+       "cites_exact": 15,
+       "default_fill": 0,
+       "exact": 6,
+       "facts_exact": 9,
+       "given": 43,
+       "invalid": 0,
+       "invented": 7,
+       "marks_false": 1,
+       "marks_found": 8,
+       "marks_given": 9,
+       "marks_gold": 15,
+       "missed": 0,
+       "stated": 36,
+       "wrong": 0
+      },
+      "default_fill": 0,
+      "exact": {
+       "k": 6,
+       "n": 16,
+       "value": 0.375,
+       "wilson95": [
+        0.1848,
+        0.6136
+       ]
+      },
+      "facts_exact": {
+       "k": 9,
+       "n": 16,
+       "value": 0.5625,
+       "wilson95": [
+        0.3318,
+        0.769
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 7,
+       "n": 43,
+       "value": 0.1628,
+       "wilson95": [
+        0.0812,
+        0.2997
+       ]
+      },
+      "markers_false": {
+       "k": 1,
+       "n": 9,
+       "value": 0.1111,
+       "wilson95": [
+        0.0199,
+        0.435
+       ]
+      },
+      "markers_found": {
+       "k": 8,
+       "n": 15,
+       "value": 0.5333,
+       "wilson95": [
+        0.3012,
+        0.7519
+       ]
+      },
+      "missed": {
+       "k": 0,
+       "n": 36,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0964
+       ]
+      },
+      "wrong": {
+       "k": 0,
+       "n": 36,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0964
+       ]
+      }
+     },
+     "answers_sha256": "f6087a8eebab7383107cb12bd9f71a2b723e215d3777d791f0725861c810ba97",
+     "as_answered": {
+      "citations_exact": {
+       "k": 10,
+       "n": 16,
+       "value": 0.625,
+       "wilson95": [
+        0.3864,
+        0.8152
+       ]
+      },
+      "counts": {
+       "cites_exact": 10,
+       "default_fill": 1,
+       "exact": 1,
+       "facts_exact": 5,
+       "given": 39,
+       "invalid": 0,
+       "invented": 10,
+       "marks_false": 1,
+       "marks_found": 8,
+       "marks_given": 9,
+       "marks_gold": 15,
+       "missed": 7,
+       "stated": 36,
+       "wrong": 0
+      },
+      "default_fill": 1,
+      "exact": {
+       "k": 1,
+       "n": 16,
+       "value": 0.0625,
+       "wilson95": [
+        0.0111,
+        0.2833
+       ]
+      },
+      "facts_exact": {
+       "k": 5,
+       "n": 16,
+       "value": 0.3125,
+       "wilson95": [
+        0.1416,
+        0.556
+       ]
+      },
+      "invalid": 0,
+      "invented": {
+       "k": 10,
+       "n": 39,
+       "value": 0.2564,
+       "wilson95": [
+        0.1457,
+        0.4108
+       ]
+      },
+      "markers_false": {
+       "k": 1,
+       "n": 9,
+       "value": 0.1111,
+       "wilson95": [
+        0.0199,
+        0.435
+       ]
+      },
+      "markers_found": {
+       "k": 8,
+       "n": 15,
+       "value": 0.5333,
+       "wilson95": [
+        0.3012,
+        0.7519
+       ]
+      },
+      "missed": {
+       "k": 7,
+       "n": 36,
+       "value": 0.1944,
+       "wilson95": [
+        0.0975,
+        0.3503
+       ]
+      },
+      "wrong": {
+       "k": 0,
+       "n": 36,
+       "value": 0.0,
+       "wilson95": [
+        0.0,
+        0.0964
+       ]
+      }
+     },
+     "label": "Reader B (família B), teto"
+    }
+   }
+  }
+ },
+ "tool": "ccp-measure-written-v7-0.1"
+}
