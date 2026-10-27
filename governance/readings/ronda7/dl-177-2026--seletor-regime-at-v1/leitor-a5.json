@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T13:05:34Z",
+ "sha256": "0214d33f38dd451dd5622d4f94879fb73642ff9c9a043bb3e8d9b0b6ca7457c1",
+ "answer": "{\"passagens\": [\"ccp:art19.c\", \"ccp:art19.d\", \"ccp:art20.1.c\", \"ccp:art20.1.d\"], \"tipo\": \"seletor_regime\", \"condicoes\": [], \"params\": {\"selects_by\": \"data_inicio_procedimento\", \"regimes\": [{\"from\": \"2018-01-01\", \"to\": \"2026-09-30\", \"law_version\": \"lei:ccp@2026-09-30\", \"package\": \"pacote:ccp@2026-09-30\"}, {\"from\": \"2026-10-01\", \"to\": null, \"law_version\": \"lei:ccp@2026-10-01\", \"package\": \"pacote:ccp@2026-10-01\"}]}}"
+}

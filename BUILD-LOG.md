@@ -1191,3 +1191,27 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - On the JOUE rule (settled, not reopened) v4 left out «concurso público», which the question states: on the three real
   deadline questions v4 read the stated conditions exactly on 2 of 3, against 400/400 on the reserved pattern.
 - Next: the selector (the person decides the approach).
+
+## 2026-10-27 — D50: AMALIA v5 data (a person's question -> facts); BEFORE
+- Asked: the person, «a user is going to ask a simple Portuguese question… start with AMALIA training».
+- Done: tools/make_user_facts.py (training/data-v5, 4 000 / 400, every wording train-only or held-out-only);
+  training/real-questions/factos-v1 (40 hand-written questions, no template, sealed before training; written by
+  the builder, labels = what each question states); tools/measure_user_facts.py; verify@31 (TRAIN data-v5, MEAS factos-*).
+- BEFORE (training/runs/v5/BEFORE.md), exact facts generated / hand-written: base 3.8 % / 10.0 %; v4 4.0 % / 15.0 %
+  (v4 misses about half of the stated facts). Committed 0230ec430 before training; v5 launched on Modal.
+- Red-team: one changed train line -> TRAIN caught.
+
+## 2026-10-27 — D51: B3 round 7 (the selector's question fixed)
+- Asked: the person approved the draft, «regístralo como D51 y corre la ronda 7».
+- Done: the selector question lists the regimes the system holds, shows art. 19.º c/d and 20.º n.º 1 c/d with their
+  earlier text, asks for each regime's start-date range, admits «from» = null (regra schema too). Prompts committed
+  (e36a79fc6) before any answer; the deadline prompts are round 6's. evento:82–83.
+- Fix before the prompts were committed, disclosed: the earlier text was labelled «em vigor … a 2026-10-01» with the
+  store's exclusive end date, which reads as in force on 1 October; round 7 shows the last day, 2026-09-30.
+- Result: not settled, but the two families now draw the same line: two regimes, the old Code to 2026-09-30 and the new
+  from 2026-10-01 (a procedure started on 1 October falls in the new). They differ on (1) the passages: leitor:a5 cites
+  the changed Code articles 19/20, leitor:b the decree's art. 7.º n.º 2, 10.º and 11.º; (2) the old regime's start:
+  leitor:a5 2018-01-01 (the earlier text's start), leitor:b null.
+- Fix before the commit, disclosed: recording re-rendered the reports of rounds 2–5 with today's states (round 5 would
+  have shown rules settled only in round 6); restored from git, RESUMO.md (the current summary) kept.
+- Next: the person decides how to close the two differences.

@@ -393,7 +393,9 @@
         70,
         71,
         76,
-        77
+        77,
+        82,
+        83
       ],
       "family": "A",
       "proposer": "leitor:a5",
@@ -405,7 +407,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 6,
+      "revision": 7,
       "state": "proposed"
     },
     "regra|regra:dlr-27-2015-a:regime-acores@v1": {
@@ -447,6 +449,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 81,
-  "head": "41b394c7d0ee3de6a33ef6cce8798ed293c5fa676a9c77690c33e086ee90ea71"
+  "events": 83,
+  "head": "1869376a58f1470668dc7c8d01bab3c5eebfb6580efe58b06cc8694d22534169"
 }
