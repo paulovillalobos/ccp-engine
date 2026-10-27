@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:16:16Z",
+ "ids": [
+  "195",
+  "196",
+  "197",
+  "198",
+  "199"
+ ],
+ "sha256": "ce9b03e8c6523f63d745009ba4d55a0da17eacacf0b14fbbfa1e604b9d4d6562",
+ "answer": {
+  "records": [
+   {
+    "id": "195",
+    "dispatch_date": "2026-08-26",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PRT",
+    "procedure_type": "oth-single",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72200000"
+   },
+   {
+    "id": "196",
+    "dispatch_date": "2026-03-10",
+    "buyer_name": "Unidade Local de Saúde de Lisboa Ocidental, EPE",
+    "buyer_nif": "507618319",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-04-13",
+    "deadline_time": "17:00:59+00:00",
+    "estimated_value": "220000",
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "197",
+    "dispatch_date": "2026-06-08",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72500000"
+   },
+   {
+    "id": "198",
+    "dispatch_date": "2025-11-14",
+    "buyer_name": "Matosinhoshabit-MH, Empresa Municipal de Habitação de Matosinhos, E. M.",
+    "buyer_nif": "504597221",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-12-14",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "370000",
+    "main_cpv": "50700000"
+   },
+   {
+    "id": "199",
+    "dispatch_date": "2025-02-07",
+    "buyer_name": "Parques de Sintra - Monte da Lua, S. A.",
+    "buyer_nif": "505174839",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-02-26",
+    "deadline_time": "23:55:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "09310000"
+   }
+  ]
+ }
+}

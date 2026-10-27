@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:01Z",
+ "ids": [
+  "135",
+  "136",
+  "137",
+  "138",
+  "139"
+ ],
+ "sha256": "2c616c47b5f583d23e2a2a6fc47a3ddb8537d989a901fd6b4b5edcd5023e4eb8",
+ "answer": {
+  "records": [
+   {
+    "id": "135",
+    "dispatch_date": "2024-05-25",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "2850809.2",
+    "main_cpv": "33692200"
+   },
+   {
+    "id": "136",
+    "dispatch_date": "2024-06-06",
+    "buyer_name": "Municipio de Matosinhos",
+    "buyer_nif": "501305912",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2024-06-17",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "402240",
+    "main_cpv": "34100000"
+   },
+   {
+    "id": "137",
+    "dispatch_date": "2026-06-09",
+    "buyer_name": "Unidade Local de Saúde de Lisboa Ocidental, EPE",
+    "buyer_nif": "507618319",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-07-05",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "368635",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "138",
+    "dispatch_date": "2024-11-04",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "161250",
+    "main_cpv": "85150000"
+   },
+   {
+    "id": "139",
+    "dispatch_date": "2025-10-07",
+    "buyer_name": "Secretaria Regional do Turismo e Cultura",
+    "buyer_nif": "671000527",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-11-06",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "98390000"
+   }
+  ]
+ }
+}

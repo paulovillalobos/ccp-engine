@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:19Z",
+ "ids": [
+  "155",
+  "156",
+  "157",
+  "158",
+  "159"
+ ],
+ "sha256": "f4399d0ed0fbc804daa77a7a9550eb5f98e46642b5a81f4203eb878d0e074f65",
+ "answer": {
+  "records": [
+   {
+    "id": "155",
+    "dispatch_date": "2025-11-19",
+    "buyer_name": "Unidade Local de Saúde do Arco Ribeirinho, E. P. E.",
+    "buyer_nif": "509186998",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "156",
+    "dispatch_date": "2026-07-22",
+    "buyer_name": "Convergência - Formadores Associados, Lda",
+    "buyer_nif": "502465905",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "32322000"
+   },
+   {
+    "id": "157",
+    "dispatch_date": "2025-12-19",
+    "buyer_name": "Unidade Local de Saúde de Lisboa Ocidental, EPE",
+    "buyer_nif": "507618319",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-01-26",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "729400",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "158",
+    "dispatch_date": "2024-07-09",
+    "buyer_name": "Câmara Municipal de Setúbal",
+    "buyer_nif": "501294104",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-08-09",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "340000",
+    "main_cpv": "98390000"
+   },
+   {
+    "id": "159",
+    "dispatch_date": "2025-07-18",
+    "buyer_name": "Águas do Douro e Paiva, S. A.",
+    "buyer_nif": "514310774",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-08-17",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": null,
+    "main_cpv": "38421000"
+   }
+  ]
+ }
+}

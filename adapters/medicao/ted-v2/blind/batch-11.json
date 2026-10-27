@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:52Z",
+ "ids": [
+  "055",
+  "056",
+  "057",
+  "058",
+  "059"
+ ],
+ "sha256": "7bb19f3ddb657ff9d9f994636ff51c3c04c90d09a53b9eaf9541dcf277abb2f7",
+ "answer": {
+  "records": [
+   {
+    "id": "055",
+    "dispatch_date": "2023-02-28",
+    "buyer_name": "Universidade do Algarve",
+    "buyer_nif": "505387271",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-03-29",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "32420000"
+   },
+   {
+    "id": "056",
+    "dispatch_date": "2019-11-22",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-12-26",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "34100000"
+   },
+   {
+    "id": "057",
+    "dispatch_date": "2023-01-03",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E.P.E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "85121100"
+   },
+   {
+    "id": "058",
+    "dispatch_date": "2019-12-23",
+    "buyer_name": "Município de Matosinhos",
+    "buyer_nif": "501305912",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2020-01-22",
+    "deadline_time": "17:00",
+    "estimated_value": "2464848.00",
+    "main_cpv": "15890000"
+   },
+   {
+    "id": "059",
+    "dispatch_date": "2023-09-25",
+    "buyer_name": "Município de Cascais",
+    "buyer_nif": "505187531",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-10-25",
+    "deadline_time": "23:59",
+    "estimated_value": "2451500.00",
+    "main_cpv": "48773100"
+   }
+  ]
+ }
+}

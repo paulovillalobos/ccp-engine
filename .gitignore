@@ -7,3 +7,16 @@ events.lock
 dist/
 .env
 .env.*
+
+# extractor E1b: DR notice PDFs and their pypdf text stay out of git (pessoa:paulo, 2026-10-25); raw and documento objects are in git
+data/raw/dr-anuncios/raw_bytes/
+data/raw/dr-anuncios/text/
+
+# extractor muestras: contracts, entities, modifications, TED and document bytes stay out of git (only the anúncios dump is kept, by the person's decision)
+data/raw/base-contratos/raw_bytes/
+data/raw/base-entidades/raw_bytes/
+data/raw/base-modificacoes/raw_bytes/
+data/raw/ted/raw_bytes/
+data/raw/pecas/raw_bytes/
+data/raw/vortal/raw_bytes/
+data/raw/base-historico/raw_bytes/

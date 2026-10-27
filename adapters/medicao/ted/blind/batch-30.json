@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:13Z",
+ "ids": [
+  "150",
+  "151",
+  "152",
+  "153",
+  "154"
+ ],
+ "sha256": "15f416f0256bb2e49280d19d36b389beca437072e81be4ce60093c020eb788da",
+ "answer": {
+  "records": [
+   {
+    "id": "150",
+    "dispatch_date": "2026-07-01",
+    "buyer_name": "Unidade Local de Saúde da Lezíria, EPE",
+    "buyer_nif": "506361462",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "4502038.76",
+    "main_cpv": "85143000"
+   },
+   {
+    "id": "151",
+    "dispatch_date": "2025-11-05",
+    "buyer_name": "Agência Portuguesa do Ambiente, I. P.",
+    "buyer_nif": "510306624",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "53125",
+    "main_cpv": "71354500"
+   },
+   {
+    "id": "152",
+    "dispatch_date": "2025-03-12",
+    "buyer_name": "Município de Melgaço",
+    "buyer_nif": "PT505592940",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "77000000"
+   },
+   {
+    "id": "153",
+    "dispatch_date": "2026-07-22",
+    "buyer_name": "A. R. M. - Águas e Resíduos da Madeira, SA",
+    "buyer_nif": "509574513",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-08-24",
+    "deadline_time": "17:00:59+00:00",
+    "estimated_value": "524550",
+    "main_cpv": "34115200"
+   },
+   {
+    "id": "154",
+    "dispatch_date": "2024-11-08",
+    "buyer_name": "Serviço de Saúde da Região Autónoma da Madeira, EPERAM",
+    "buyer_nif": "511228848",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2024-11-23",
+    "deadline_time": "17:00:00Z",
+    "estimated_value": "388934.24",
+    "main_cpv": "33696500"
+   }
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:56Z",
+ "ids": [
+  "170",
+  "171",
+  "172",
+  "173",
+  "174"
+ ],
+ "sha256": "447005e1baee628ce3e20bd154303235df3c3c2d3cfd34798f9dc067a5938aa5",
+ "answer": {
+  "records": [
+   {
+    "id": "170",
+    "dispatch_date": "2026-06-01",
+    "buyer_name": "European Maritime Safety Agency",
+    "buyer_nif": "EMSA",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1800000",
+    "main_cpv": "72000000"
+   },
+   {
+    "id": "171",
+    "dispatch_date": "2026-04-13",
+    "buyer_name": "Município de Espinho",
+    "buyer_nif": "501158740",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-05-15",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "1535681.34",
+    "main_cpv": "15894210"
+   },
+   {
+    "id": "172",
+    "dispatch_date": "2024-10-18",
+    "buyer_name": "Município de Braga",
+    "buyer_nif": "506901173",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "533375.95",
+    "main_cpv": "92600000"
+   },
+   {
+    "id": "173",
+    "dispatch_date": "2025-07-15",
+    "buyer_name": "Unidade Local de Saúde de Trás-os-Montes e Alto Douro, E. P. E.",
+    "buyer_nif": "508100496",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "services",
+    "deadline_date": "2025-08-17",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "420000",
+    "main_cpv": "72910000"
+   },
+   {
+    "id": "174",
+    "dispatch_date": "2026-03-26",
+    "buyer_name": "Agrupamento de Escolas de Silves",
+    "buyer_nif": "600085007",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "31700000"
+   }
+  ]
+ }
+}

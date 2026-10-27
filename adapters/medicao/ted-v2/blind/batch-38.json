@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:16:12Z",
+ "ids": [
+  "190",
+  "191",
+  "192",
+  "193",
+  "194"
+ ],
+ "sha256": "55735e9222e932a6e4a15efe62272c06fbb70f161a887db8a9c50a94e53cd033",
+ "answer": {
+  "records": [
+   {
+    "id": "190",
+    "dispatch_date": "2025-03-31",
+    "buyer_name": "European Maritime Safety Agency, EMSA - European Maritime Safety Agency",
+    "buyer_nif": "EMSA",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-05-19",
+    "deadline_time": "16:00:59+01:00",
+    "estimated_value": "150000",
+    "main_cpv": "71900000"
+   },
+   {
+    "id": "191",
+    "dispatch_date": "2025-01-17",
+    "buyer_name": "Comunidade Intermunicipal do Cávado",
+    "buyer_nif": "508779472",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "09310000"
+   },
+   {
+    "id": "192",
+    "dispatch_date": "2025-07-17",
+    "buyer_name": "ESTADO-MAIOR DA FORÇA AÉREA",
+    "buyer_nif": "600010686",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "217954",
+    "main_cpv": "34731000"
+   },
+   {
+    "id": "193",
+    "dispatch_date": "2025-03-28",
+    "buyer_name": "Estado-Maior do Exército",
+    "buyer_nif": "PT600021610",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-04-28",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "300000",
+    "main_cpv": "15897100"
+   },
+   {
+    "id": "194",
+    "dispatch_date": "2024-08-13",
+    "buyer_name": "Secretaria-Geral do Ministério dos Negócios Estrangeiros",
+    "buyer_nif": "600014576",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "9978360",
+    "main_cpv": "72200000"
+   }
+  ]
+ }
+}

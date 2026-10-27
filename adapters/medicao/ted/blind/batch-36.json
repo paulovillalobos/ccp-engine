@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:46Z",
+ "ids": [
+  "180",
+  "181",
+  "182",
+  "183",
+  "184"
+ ],
+ "sha256": "8698a202cf1886b71a0229a14931e1ad25c4ca7005ee1ad9659dd7f0c487c29d",
+ "answer": {
+  "records": [
+   {
+    "id": "180",
+    "dispatch_date": "2024-02-07",
+    "buyer_name": "MUNICIPIO DE S. JOÃO DA MADEIRA",
+    "buyer_nif": "506538575",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-03-11",
+    "deadline_time": "17:30:00Z",
+    "estimated_value": "658000",
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "181",
+    "dispatch_date": "2025-09-02",
+    "buyer_name": "Fundação INATEL",
+    "buyer_nif": "500122237",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-10-02",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "168343.34",
+    "main_cpv": "19640000"
+   },
+   {
+    "id": "182",
+    "dispatch_date": "2026-03-23",
+    "buyer_name": "Instituto Superior de Agronomia",
+    "buyer_nif": "505869721",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-04-23",
+    "deadline_time": "22:59:59+00:00",
+    "estimated_value": null,
+    "main_cpv": "80000000"
+   },
+   {
+    "id": "183",
+    "dispatch_date": "2025-10-09",
+    "buyer_name": "Comunidade Intermunicipal da Região de Coimbra",
+    "buyer_nif": "508354617",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-11-12",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": null,
+    "main_cpv": "50111110"
+   },
+   {
+    "id": "184",
+    "dispatch_date": "2026-03-19",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45233141"
+   }
+  ]
+ }
+}

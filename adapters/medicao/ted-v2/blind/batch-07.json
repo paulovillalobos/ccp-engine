@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:33Z",
+ "ids": [
+  "035",
+  "036",
+  "037",
+  "038",
+  "039"
+ ],
+ "sha256": "1faddf7318fea60428e76b8d8c5e089412d3cb4cb7d78332401c0c94098fe48a",
+ "answer": {
+  "records": [
+   {
+    "id": "035",
+    "dispatch_date": "2018-04-04",
+    "buyer_name": "Rádio e Televisão de Portugal, S. A.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "306000.00",
+    "main_cpv": "64228000"
+   },
+   {
+    "id": "036",
+    "dispatch_date": "2020-10-29",
+    "buyer_name": "Município de Viseu",
+    "buyer_nif": "506697320",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-12-01",
+    "deadline_time": "9:00",
+    "estimated_value": "428110.00",
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "037",
+    "dispatch_date": "2023-07-04",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": "508481287",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-08-03",
+    "deadline_time": "17:00",
+    "estimated_value": "553390.00",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "038",
+    "dispatch_date": "2022-02-01",
+    "buyer_name": "Águas do Algarve, S.A.",
+    "buyer_nif": "505176300",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "71318000"
+   },
+   {
+    "id": "039",
+    "dispatch_date": "2018-03-21",
+    "buyer_name": "Hospital de Santo Espírito da Ilha Terceira, E. P. E. R.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "V Contract award without prior publication",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "490672.08",
+    "main_cpv": "33650000"
+   }
+  ]
+ }
+}

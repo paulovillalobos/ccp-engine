@@ -250,12 +250,40 @@ def check_references(store, out):
             need_principal(a["principal"], c["id"])
 
 
+def stored_elsewhere():
+    """sha256 of bytes kept outside the Mac (DECISIONS D57), each from a committed record that the bytes were stored and
+    read back: adapters/storage/offload-log.jsonl (verified uploads to Storage ccp-raw), adapters/storage/parts/*.manifest.json
+    (files stored in parts), adapters/plataformas/offload-check-*.json (Modal volume, «good» = read back and matching),
+    adapters/ted/manifest.json (TED packages, bundles and indexes, hashed at capture)."""
+    out = set()
+    log = ROOT / "adapters/storage/offload-log.jsonl"
+    if log.exists():
+        for line in log.read_text(encoding="utf-8").splitlines():
+            e = json.loads(line) if line.strip() else {}
+            if e.get("verified") and e.get("sha256"):
+                out.add(e["sha256"])
+    for f in (ROOT / "adapters/storage/parts").glob("*.manifest.json"):
+        out.add(json.loads(f.read_text(encoding="utf-8"))["sha256"])
+    for f in (ROOT / "adapters/plataformas").glob("offload-check-*.json"):
+        out.update(json.loads(f.read_text(encoding="utf-8")).get("good") or [])
+    ted = ROOT / "adapters/ted/manifest.json"
+    if ted.exists():
+        for m in json.loads(ted.read_text(encoding="utf-8")):
+            out.update(v for k, v in m.items() if k.endswith("sha256") and v)
+    return out
+
+
 def check_sources(store, out):
-    """I01: bytes hash to sha256; passage version text sits at its offsets in the raw text. I10: single passive GET."""
+    """I01: bytes hash to sha256; passage version text sits at its offsets in the raw text. I10: single passive GET.
+    D57: bytes kept outside the Mac pass when a committed record says they were stored and read back (stored_elsewhere);
+    their text offsets cannot be re-read here and are not claimed."""
+    elsewhere = None
     for r in store.objects["raw"]:
         path = store.raw_path(r)
         if path is None:
-            out.append(("I01", f"{r['id']}: bytes {r['bytes']} not in the store"))
+            elsewhere = stored_elsewhere() if elsewhere is None else elsewhere
+            if r["sha256"] not in elsewhere:
+                out.append(("I01", f"{r['id']}: bytes {r['bytes']} not in the store nor recorded as stored elsewhere"))
         elif hashlib.sha256(path.read_bytes()).hexdigest() != r["sha256"]:
             out.append(("I01", f"{r['id']}: bytes do not hash to {r['sha256'][:12]}..."))
         text = r.get("text")

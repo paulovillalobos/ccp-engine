@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:09Z",
+ "ids": [
+  "145",
+  "146",
+  "147",
+  "148",
+  "149"
+ ],
+ "sha256": "7e8216186c04f28f14b89424a2770d9e75b3486493e2fc479f20babe2b14a918",
+ "answer": {
+  "records": [
+   {
+    "id": "145",
+    "dispatch_date": "2024-04-17",
+    "buyer_name": "Instituto Português de Oncologia de Lisboa Francisco Gentil E.P.E.",
+    "buyer_nif": "506361616",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "85121200"
+   },
+   {
+    "id": "146",
+    "dispatch_date": "2024-10-15",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45234100"
+   },
+   {
+    "id": "147",
+    "dispatch_date": "2026-07-30",
+    "buyer_name": "EMAC - Empresa de Ambiente de Cascais, EM, SA",
+    "buyer_nif": "507396081",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "66114000"
+   },
+   {
+    "id": "148",
+    "dispatch_date": "2024-07-02",
+    "buyer_name": "Município de Vila Real",
+    "buyer_nif": "506359670",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-07-06",
+    "deadline_time": "17:00:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "77230000"
+   },
+   {
+    "id": "149",
+    "dispatch_date": "2025-11-05",
+    "buyer_name": "EMAC - Empresa Municipal de Ambiente de Cascais, E. M., S. A.",
+    "buyer_nif": "507396081",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-12-05",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "848500",
+    "main_cpv": "66114000"
+   }
+  ]
+ }
+}

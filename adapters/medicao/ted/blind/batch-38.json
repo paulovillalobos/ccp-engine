@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:56Z",
+ "ids": [
+  "190",
+  "191",
+  "192",
+  "193",
+  "194"
+ ],
+ "sha256": "5b541c82f6419129ae7c8ecef795461cbdc29701cce955530401b8938da33cb4",
+ "answer": {
+  "records": [
+   {
+    "id": "190",
+    "dispatch_date": "2024-11-20",
+    "buyer_name": "Águas do Centro Litoral, S.A.",
+    "buyer_nif": "513606181",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "3484765",
+    "main_cpv": "24312122"
+   },
+   {
+    "id": "191",
+    "dispatch_date": "2025-05-09",
+    "buyer_name": "Município de Matosinhos",
+    "buyer_nif": "501305912",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "299880",
+    "main_cpv": "72511000"
+   },
+   {
+    "id": "192",
+    "dispatch_date": "2024-09-25",
+    "buyer_name": "Agência para a Modernização Administrativa, I. P.",
+    "buyer_nif": "508184509",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "31741794.4",
+    "main_cpv": "72230000"
+   },
+   {
+    "id": "193",
+    "dispatch_date": "2025-12-19",
+    "buyer_name": "Unidade Local de Saúde de Coimbra, EPE",
+    "buyer_nif": "510103448",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-01-21",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "1298000",
+    "main_cpv": "33111000"
+   },
+   {
+    "id": "194",
+    "dispatch_date": "2024-03-19",
+    "buyer_name": "Municipio de Vila Real de Santo António",
+    "buyer_nif": "506833224",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2024-04-18",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "46290273.49",
+    "main_cpv": "45000000"
+   }
+  ]
+ }
+}

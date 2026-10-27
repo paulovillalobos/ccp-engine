@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:05:01Z",
+ "ids": [
+  "195",
+  "196",
+  "197",
+  "198",
+  "199"
+ ],
+ "sha256": "00d7e03333498a9e14c26847e7a3c1f1b7fdda2ce38c416690eab7a463ca4a91",
+ "answer": {
+  "records": [
+   {
+    "id": "195",
+    "dispatch_date": "2025-11-19",
+    "buyer_name": "Metro do Porto, S. A.",
+    "buyer_nif": "503278602",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": null,
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45234111"
+   },
+   {
+    "id": "196",
+    "dispatch_date": "2025-10-02",
+    "buyer_name": "Município do Porto",
+    "buyer_nif": "501306099",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1600612.35",
+    "main_cpv": "18100000"
+   },
+   {
+    "id": "197",
+    "dispatch_date": "2024-07-01",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45234100"
+   },
+   {
+    "id": "198",
+    "dispatch_date": "2024-10-26",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "565298",
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "199",
+    "dispatch_date": "2025-06-30",
+    "buyer_name": "Unidade Local de Saúde de São José, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-08-04",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "284090.68",
+    "main_cpv": "34110000"
+   }
+  ]
+ }
+}

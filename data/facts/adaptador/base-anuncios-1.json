@@ -1,0 +1,112 @@
+{
+  "id": "adaptador:base-anuncios@1",
+  "revision": 1,
+  "recorded_at": "2026-10-25T15:00:35Z",
+  "source": "base-anuncios",
+  "version": 1,
+  "code": "adapters/base-anuncios/",
+  "mapping": [
+    {
+      "source_field": "modeloAnuncio",
+      "canonical_field": "tipo_procedimento",
+      "transform": "enum_map",
+      "enum_map": {
+        "Concurso público": "concurso_publico",
+        "Concurso limitado por prévia qualificação": "concurso_limitado_previa_qualificacao",
+        "Procedimento de negociação": "procedimento_negociacao"
+      },
+      "note": "only when tipoActo is 'Anúncio de procedimento'; an 'Anúncio de concurso urgente' gives no fact (the urgent tender is not in the vocabulary and modeloAnuncio still says 'Concurso público'); values outside the map give no fact"
+    },
+    {
+      "source_field": "tiposContrato",
+      "canonical_field": "tipo_contrato",
+      "transform": "enum_map",
+      "enum_map": {
+        "Aquisição de bens móveis": "bens",
+        "Aquisição de serviços": "servicos",
+        "Empreitadas de obras públicas": "obras",
+        "Concessão de obras públicas": "concessao_obras",
+        "Concessão de serviços públicos": "concessao_servicos"
+      },
+      "note": "only when the list holds exactly one value; 'Locação de bens móveis', 'Outros', 'Sociedade', an empty list and lists of several types give no fact; servicos_sociais is not told apart by this field"
+    },
+    {
+      "source_field": "PrecoBase",
+      "canonical_field": "preco_base",
+      "transform": "number_pt",
+      "note": "EUR as the dump writes it: decimal point, two decimals, no thousands separator (e.g. '318231.43'); 'Inexistente' and '0.00' give no fact"
+    },
+    {
+      "source_field": "nifEntidade",
+      "canonical_field": "adjudicante",
+      "transform": "nif",
+      "note": "nine digits; an empty value gives no fact"
+    },
+    {
+      "source_field": "dataPublicacao",
+      "canonical_field": "data_publicacao_anuncio",
+      "transform": "date_pt",
+      "note": "dd/mm/yyyy; the publication date of the notice, never used as the date the notice was sent nor as the start of the procedure"
+    },
+    {
+      "source_field": "DataLimitePropostas",
+      "canonical_field": "data_limite_propostas",
+      "transform": "date_pt",
+      "note": "dd/mm/yyyy; empty, or earlier than dataPublicacao: no fact"
+    }
+  ],
+  "coverage": [
+    {
+      "period": "2026-01",
+      "expected": null,
+      "captured": 1964
+    },
+    {
+      "period": "2026-02",
+      "expected": null,
+      "captured": 2298
+    },
+    {
+      "period": "2026-03",
+      "expected": null,
+      "captured": 2903
+    },
+    {
+      "period": "2026-04",
+      "expected": null,
+      "captured": 2644
+    },
+    {
+      "period": "2026-05",
+      "expected": null,
+      "captured": 2521
+    },
+    {
+      "period": "2026-06",
+      "expected": null,
+      "captured": 2241
+    },
+    {
+      "period": "2026-07",
+      "expected": null,
+      "captured": 2574
+    },
+    {
+      "period": "2026-08",
+      "expected": null,
+      "captured": 1897
+    },
+    {
+      "period": "2026-09",
+      "expected": null,
+      "captured": 1982
+    },
+    {
+      "period": "2026-10",
+      "expected": null,
+      "captured": 1228
+    }
+  ],
+  "proposed_by": "ferramenta:adapter-base-anuncios@2",
+  "state": "proposed"
+}

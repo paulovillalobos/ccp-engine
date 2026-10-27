@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:33Z",
+ "ids": [
+  "150",
+  "151",
+  "152",
+  "153",
+  "154"
+ ],
+ "sha256": "81d2cca7d0815a922c9a104fc984fe36980c3e1e69e3abeab583d096204f3f3c",
+ "answer": {
+  "records": [
+   {
+    "id": "150",
+    "dispatch_date": "2026-06-11",
+    "buyer_name": "AdP - Águas de Portugal, SGPS, SA",
+    "buyer_nif": "503093742",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-07-13",
+    "deadline_time": "18:00:59+00:00",
+    "estimated_value": "489019.18",
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "151",
+    "dispatch_date": "2026-07-04",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "345600",
+    "main_cpv": "33600000"
+   },
+   {
+    "id": "152",
+    "dispatch_date": "2025-04-09",
+    "buyer_name": "Estado-Maior-General das Forças Armadas",
+    "buyer_nif": "600010180",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "293543",
+    "main_cpv": "15894200"
+   },
+   {
+    "id": "153",
+    "dispatch_date": "2025-05-19",
+    "buyer_name": "Secretaria-Geral do Ministério dos Negócios Estrangeiros",
+    "buyer_nif": "600014576",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-06-20",
+    "deadline_time": "16:59:59+01:00",
+    "estimated_value": "1816696.98",
+    "main_cpv": "90911200"
+   },
+   {
+    "id": "154",
+    "dispatch_date": "2024-07-19",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72200000"
+   }
+  ]
+ }
+}

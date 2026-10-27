@@ -1625,8 +1625,71 @@
       "versao": 34,
       "code": "verify.py",
       "hash": "e8e2f664342866c927e7ecccd509c6956088adb0d78c28bb2d4e26643b970531",
+      "retired": true,
+      "nota": "D54: TRAIN data-v8",
+      "retired_at": "2026-10-27T21:28:47Z"
+    },
+    {
+      "id": "ferramenta:adapter-base-anuncios@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "adapters/base-anuncios/adapter.py",
+      "hash": "022c10b5314de523936fb5a1e7f24cd67a22caab8d18bf2eac090dadded974cb",
+      "retired": true,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)",
+      "retired_at": "2026-10-25T15:32:19Z"
+    },
+    {
+      "id": "ferramenta:adapter-base-anuncios@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "adapters/base-anuncios/adapter.py",
+      "hash": "aab4e341eff409f8c97bd8ddc92c080463f85f94ab657b5c9964f1c73ca576cb",
+      "retired": true,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)",
+      "retired_at": "2026-10-27T20:44:17Z"
+    },
+    {
+      "id": "ferramenta:adapter-base-contratos@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "adapters/base-contratos/adapter.py",
+      "hash": "0f4a52c364e30d7368446bc4408781d9c55be9949bd2e03d23fc5e093d3e7eec",
       "retired": false,
-      "nota": "D54: TRAIN data-v8"
+      "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)"
+    },
+    {
+      "id": "ferramenta:adapter-base-anuncios@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "adapters/base-anuncios/adapter.py",
+      "hash": "5c8328fdc8182270718f2bc14a00d8b593ee878cf92fab7c0608a093c1ae6194",
+      "retired": false,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
+    },
+    {
+      "id": "ferramenta:verify@35",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 35,
+      "code": "verify.py",
+      "hash": "f2741d53a834c94e8e46250d50e83db872a658f7963d3b21cf14607f48711ddf",
+      "retired": false,
+      "nota": "D57: bytes kept outside the Mac pass I01 when a committed record says they were stored and read back"
     }
   ]
 }

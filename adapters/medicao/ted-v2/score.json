@@ -1,0 +1,218 @@
+{
+ "source": "ted",
+ "A": {
+  "dispatch_date": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "notice_type": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "notice_id": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "buyer_name": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "buyer_nif": {
+   "k": 170,
+   "n": 200,
+   "pct": 85.0,
+   "wilson95": [
+    79.4,
+    89.3
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "buyer_country": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "buyer_nuts": {
+   "k": 192,
+   "n": 200,
+   "pct": 96.0,
+   "wilson95": [
+    92.3,
+    98.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "procedure_type": {
+   "k": 192,
+   "n": 200,
+   "pct": 96.0,
+   "wilson95": [
+    92.3,
+    98.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "contract_type": {
+   "k": 192,
+   "n": 200,
+   "pct": 96.0,
+   "wilson95": [
+    92.3,
+    98.0
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "deadline_date": {
+   "k": 93,
+   "n": 93,
+   "pct": 100.0,
+   "wilson95": [
+    96.0,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  },
+  "deadline_time": {
+   "k": 90,
+   "n": 200,
+   "pct": 45.0,
+   "wilson95": [
+    38.3,
+    51.9
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "estimated_value": {
+   "k": 120,
+   "n": 200,
+   "pct": 60.0,
+   "wilson95": [
+    53.1,
+    66.5
+   ],
+   "required": false,
+   "pass_": null
+  },
+  "main_cpv": {
+   "k": 200,
+   "n": 200,
+   "pct": 100.0,
+   "wilson95": [
+    98.1,
+    100.0
+   ],
+   "required": true,
+   "pass_": true
+  }
+ },
+ "B": {
+  "contract_notices": 93,
+  "joined": {
+   "k": 31,
+   "n": 93,
+   "pct": 33.3,
+   "wilson95": [
+    24.6,
+    43.4
+   ]
+  },
+  "agreement": {
+   "k": 53,
+   "n": 57,
+   "pct": 93.0,
+   "wilson95": [
+    83.3,
+    97.2
+   ],
+   "pass_": false
+  },
+  "disagreements": [
+   {
+    "n": 21,
+    "field": "estimated_value",
+    "ted": "239100.72",
+    "base": "140000.00",
+    "nAnuncio": "9953/2022"
+   },
+   {
+    "n": 71,
+    "field": "estimated_value",
+    "ted": "7353405.90",
+    "base": "37282.94",
+    "nAnuncio": "11804/2023"
+   },
+   {
+    "n": 78,
+    "field": "estimated_value",
+    "ted": "330000.00",
+    "base": "13500.00",
+    "nAnuncio": "6373/2023"
+   },
+   {
+    "n": 127,
+    "field": "estimated_value",
+    "ted": "2303747.62",
+    "base": "189729.92",
+    "nAnuncio": "7025/2024"
+   }
+  ]
+ },
+ "C": {
+  "k": 1652,
+  "n": 1653,
+  "pct": 99.9,
+  "wilson95": [
+   99.7,
+   100.0
+  ],
+  "disagreements": [
+   {
+    "n": 85,
+    "field": "buyer_name",
+    "parser": "Det Europæiske Agentur for Søfartssikkerhed",
+    "reader": "European Maritime Safety Agency"
+   }
+  ],
+  "pass_": true
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:34Z",
+ "ids": [
+  "060",
+  "061",
+  "062",
+  "063",
+  "064"
+ ],
+ "sha256": "c62fadf203d306ab35292c09576d238970ad7621f78c5c5ce12b1f975dc69cbd",
+ "answer": {
+  "records": [
+   {
+    "id": "060",
+    "dispatch_date": "2019-03-27",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "9 Not applicable",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "10408868.59",
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "061",
+    "dispatch_date": "2021-11-22",
+    "buyer_name": "Agência para a Modernização Administrativa, I. P.",
+    "buyer_nif": "508184509",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "410000.00",
+    "main_cpv": "79550000"
+   },
+   {
+    "id": "062",
+    "dispatch_date": "2019-07-23",
+    "buyer_name": "Instituto do Turismo de Portugal, I. P.",
+    "buyer_nif": "508666236",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "79340000"
+   },
+   {
+    "id": "063",
+    "dispatch_date": "2022-12-28",
+    "buyer_name": "Comunidade Intermunicipal da Beira Baixa",
+    "buyer_nif": "508831725",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "4 Services",
+    "deadline_date": "2023-03-29",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "71240000"
+   },
+   {
+    "id": "064",
+    "dispatch_date": "2021-11-24",
+    "buyer_name": "Serviços Municipalizados de Água e Saneamento de Sintra",
+    "buyer_nif": "680000054",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "897340.50",
+    "main_cpv": "34928480"
+   }
+  ]
+ }
+}

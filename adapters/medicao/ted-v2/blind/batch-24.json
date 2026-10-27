@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:04Z",
+ "ids": [
+  "120",
+  "121",
+  "122",
+  "123",
+  "124"
+ ],
+ "sha256": "9c16432f94b9318ccd473493a8bd4739423c00fe79b212a4b90f1acc4072d681",
+ "answer": {
+  "records": [
+   {
+    "id": "120",
+    "dispatch_date": "2024-05-24",
+    "buyer_name": "APDL - Administração dos Portos do Douro, Leixões e Viana do Castelo, S.A.",
+    "buyer_nif": "501449752",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2024-07-23",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": "8136000",
+    "main_cpv": "45200000"
+   },
+   {
+    "id": "121",
+    "dispatch_date": "2024-09-12",
+    "buyer_name": "Instituto Português de Oncologia do Porto Francisco Gentil, E.P.E.",
+    "buyer_nif": "506362299",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2024-10-18",
+    "deadline_time": "17:00:00+01:00",
+    "estimated_value": "11200000",
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "122",
+    "dispatch_date": "2024-08-27",
+    "buyer_name": "Unidade Local de Saúde do Alto Minho, EPE",
+    "buyer_nif": "508786193",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "29810",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "123",
+    "dispatch_date": "2025-07-17",
+    "buyer_name": "Município da Guarda",
+    "buyer_nif": "501131140",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-08-20",
+    "deadline_time": "16:00:59+01:00",
+    "estimated_value": "9420000",
+    "main_cpv": "90511000"
+   },
+   {
+    "id": "124",
+    "dispatch_date": "2024-05-10",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "3556410",
+    "main_cpv": "34946220"
+   }
+  ]
+ }
+}

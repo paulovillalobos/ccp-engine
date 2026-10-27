@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:59Z",
+ "ids": [
+  "060",
+  "061",
+  "062",
+  "063",
+  "064"
+ ],
+ "sha256": "ccfdb84cc2801ddad891ae8c57ee5ad2dc7f3bb25248c7c02ec3420fdec616d3",
+ "answer": {
+  "records": [
+   {
+    "id": "060",
+    "dispatch_date": "2018-08-14",
+    "buyer_name": "AdP — Águas de Portugal Serviços Ambientais, S. A.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2018-09-13",
+    "deadline_time": "18:00",
+    "estimated_value": "600000.00",
+    "main_cpv": "63516000"
+   },
+   {
+    "id": "061",
+    "dispatch_date": "2021-01-20",
+    "buyer_name": "Águas do Norte, S. A.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "44167000"
+   },
+   {
+    "id": "062",
+    "dispatch_date": "2019-12-09",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "V Contract award without prior publication",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "50800000"
+   },
+   {
+    "id": "063",
+    "dispatch_date": "2018-06-13",
+    "buyer_name": "Águas do Centro Litoral, S. A.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45262220"
+   },
+   {
+    "id": "064",
+    "dispatch_date": "2019-01-08",
+    "buyer_name": "Infraestruturas de Portugal, S. A.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2019-01-30",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "50220000"
+   }
+  ]
+ }
+}

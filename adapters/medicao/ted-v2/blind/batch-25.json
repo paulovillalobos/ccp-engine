@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:04Z",
+ "ids": [
+  "125",
+  "126",
+  "127",
+  "128",
+  "129"
+ ],
+ "sha256": "8e60bb99de1178ebb2a2aabddaeba843cb7a03eea014be13256e371424236b73",
+ "answer": {
+  "records": [
+   {
+    "id": "125",
+    "dispatch_date": "2024-05-28",
+    "buyer_name": "Serviços Municipalizados de água e saneamento do Município de Montijo",
+    "buyer_nif": null,
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "236000",
+    "main_cpv": "90460000"
+   },
+   {
+    "id": "126",
+    "dispatch_date": "2024-09-19",
+    "buyer_name": "Município de Santa Maria da Feira",
+    "buyer_nif": "501157280",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-12-18",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "580000.00",
+    "main_cpv": "71240000"
+   },
+   {
+    "id": "127",
+    "dispatch_date": "2024-03-22",
+    "buyer_name": "Agência para a Modernização Administrativa, I.P.",
+    "buyer_nif": "508184509",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-04-24",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": "2303747.62",
+    "main_cpv": "73300000"
+   },
+   {
+    "id": "128",
+    "dispatch_date": "2024-12-13",
+    "buyer_name": "Municípia, Empresa de Cartografia e Sistemas de Informação, S. A.",
+    "buyer_nif": "504475606",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-01-17",
+    "deadline_time": "23:59:59Z",
+    "estimated_value": null,
+    "main_cpv": "09300000"
+   },
+   {
+    "id": "129",
+    "dispatch_date": "2024-05-18",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "7707451.5",
+    "main_cpv": "33652000"
+   }
+  ]
+ }
+}

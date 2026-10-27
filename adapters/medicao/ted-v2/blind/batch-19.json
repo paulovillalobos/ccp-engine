@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:35Z",
+ "ids": [
+  "095",
+  "096",
+  "097",
+  "098",
+  "099"
+ ],
+ "sha256": "64995b967e141a79fe2bc8d80d653c49b670f4be4689dfe4530e4ed79873614d",
+ "answer": {
+  "records": [
+   {
+    "id": "095",
+    "dispatch_date": "2023-12-15",
+    "buyer_name": "Município de Torres Vedras",
+    "buyer_nif": "502173653",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2024-01-14",
+    "deadline_time": "23:59",
+    "estimated_value": "260255.92",
+    "main_cpv": "15800000"
+   },
+   {
+    "id": "096",
+    "dispatch_date": "2021-05-06",
+    "buyer_name": "Município de Loures",
+    "buyer_nif": "501294996",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2021-06-07",
+    "deadline_time": "18:00",
+    "estimated_value": "243900.00",
+    "main_cpv": "79000000"
+   },
+   {
+    "id": "097",
+    "dispatch_date": "2019-06-12",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "193347.47",
+    "main_cpv": "79714000"
+   },
+   {
+    "id": "098",
+    "dispatch_date": "2019-10-28",
+    "buyer_name": "Instituto da Conservação da Natureza e das Florestas, I. P.",
+    "buyer_nif": "510342647",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "77231600"
+   },
+   {
+    "id": "099",
+    "dispatch_date": "2019-02-01",
+    "buyer_name": "CIMRL — Comunidade Intermunicipal da Região de Leiria",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-03-06",
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "55524000"
+   }
+  ]
+ }
+}

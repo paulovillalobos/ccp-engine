@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:04:34Z",
+ "ids": [
+  "170",
+  "171",
+  "172",
+  "173",
+  "174"
+ ],
+ "sha256": "68d666734f66ec126401e8166ae09859c807eab5682d9c9e2e1569db0321cc61",
+ "answer": {
+  "records": [
+   {
+    "id": "170",
+    "dispatch_date": "2026-05-29",
+    "buyer_name": "Estado Maior da Força Aérea",
+    "buyer_nif": "600010686",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "235595",
+    "main_cpv": "24000000"
+   },
+   {
+    "id": "171",
+    "dispatch_date": "2026-04-27",
+    "buyer_name": "A. D. A. M. - Águas do Alto Minho, SA",
+    "buyer_nif": "515486159",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2026-05-27",
+    "deadline_time": "18:00:59+00:00",
+    "estimated_value": "550000",
+    "main_cpv": "45247270"
+   },
+   {
+    "id": "172",
+    "dispatch_date": "2024-12-13",
+    "buyer_name": "Município de Matosinhos",
+    "buyer_nif": "501305912",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1098402.78",
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "173",
+    "dispatch_date": "2026-02-04",
+    "buyer_name": "Município de Loulé",
+    "buyer_nif": "502098139",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2026-03-09",
+    "deadline_time": "18:00:59+00:00",
+    "estimated_value": "180150",
+    "main_cpv": "31121000"
+   },
+   {
+    "id": "174",
+    "dispatch_date": "2024-10-17",
+    "buyer_name": "Santa Casa da Misericórdia de Lisboa",
+    "buyer_nif": "500745471",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1613500",
+    "main_cpv": "33000000"
+   }
+  ]
+ }
+}

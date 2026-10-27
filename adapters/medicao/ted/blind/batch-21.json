@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:25Z",
+ "ids": [
+  "105",
+  "106",
+  "107",
+  "108",
+  "109"
+ ],
+ "sha256": "98a8ae1fe2b83861a7d99909ff74d9a4076c58f5c3617dec00f0c0e2f18bbe87",
+ "answer": {
+  "records": [
+   {
+    "id": "105",
+    "dispatch_date": "2026-04-14",
+    "buyer_name": "Agência para a Reforma Tecnológica do Estado, I.P.",
+    "buyer_nif": "508184509",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "73300000"
+   },
+   {
+    "id": "106",
+    "dispatch_date": "2024-08-28",
+    "buyer_name": "Lisboa Ocidental Sociedade de Reabilitação Urbana, E.M, S.A",
+    "buyer_nif": "507023129",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "475000",
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "107",
+    "dispatch_date": "2025-03-18",
+    "buyer_name": "Universidade do Minho",
+    "buyer_nif": "502011378",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "11880",
+    "main_cpv": "30237280"
+   },
+   {
+    "id": "108",
+    "dispatch_date": "2025-05-13",
+    "buyer_name": "Município de Águeda",
+    "buyer_nif": "501090436",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-06-12",
+    "deadline_time": "17:00:59+01:00",
+    "estimated_value": "570000",
+    "main_cpv": "79952100"
+   },
+   {
+    "id": "109",
+    "dispatch_date": "2024-02-09",
+    "buyer_name": "Município de Valongo",
+    "buyer_nif": "501138960",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2024-03-10",
+    "deadline_time": "17:00:00Z",
+    "estimated_value": "10125000",
+    "main_cpv": "45211000"
+   }
+  ]
+ }
+}

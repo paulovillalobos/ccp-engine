@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:29Z",
+ "ids": [
+  "030",
+  "031",
+  "032",
+  "033",
+  "034"
+ ],
+ "sha256": "06c8df850a39b281dda1cbb5ff832753c41a7562b8e0ccd08b30ff3725341b63",
+ "answer": {
+  "records": [
+   {
+    "id": "030",
+    "dispatch_date": "2020-03-03",
+    "buyer_name": "Lipor — Serviço Intermunicipalizado de Gestão de Resíduos do Grande Porto",
+    "buyer_nif": "501394192",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "900000.00",
+    "main_cpv": "90510000"
+   },
+   {
+    "id": "031",
+    "dispatch_date": "2019-06-18",
+    "buyer_name": "Centro Hospitalar Universitário do Algarve, E. P. E.",
+    "buyer_nif": "510745997",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1404668.82",
+    "main_cpv": "50000000"
+   },
+   {
+    "id": "032",
+    "dispatch_date": "2022-09-26",
+    "buyer_name": "CERCIPENICHE - Cooperativa de Educação, Reabilitação, Capacitação e Inclusão, C.R.L.",
+    "buyer_nif": "500734623",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-10-23",
+    "deadline_time": null,
+    "estimated_value": "110000.00",
+    "main_cpv": "55500000"
+   },
+   {
+    "id": "033",
+    "dispatch_date": "2022-07-21",
+    "buyer_name": "Metropolitano de Lisboa, E. P. E.",
+    "buyer_nif": "500192855",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-08-20",
+    "deadline_time": "23:59",
+    "estimated_value": "700000.00",
+    "main_cpv": "31154000"
+   },
+   {
+    "id": "034",
+    "dispatch_date": "2018-03-01",
+    "buyer_name": "Município do Porto",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "6 274 592,16",
+    "main_cpv": "79710000"
+   }
+  ]
+ }
+}

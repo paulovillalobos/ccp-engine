@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:14Z",
+ "ids": [
+  "075",
+  "076",
+  "077",
+  "078",
+  "079"
+ ],
+ "sha256": "4635bed4bfd9e512ba684ac8fab54e6dc620187a4225cc6f84de3252b38acb3b",
+ "answer": {
+  "records": [
+   {
+    "id": "075",
+    "dispatch_date": "2023-07-28",
+    "buyer_name": "Agência para a Modernização Administrativa, I. P.",
+    "buyer_nif": "508184509",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "64212100"
+   },
+   {
+    "id": "076",
+    "dispatch_date": "2019-05-03",
+    "buyer_name": "Santa Casa da Misericórdia de Lisboa",
+    "buyer_nif": "500745471",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2019-06-02",
+    "deadline_time": "23:59",
+    "estimated_value": "360000.00",
+    "main_cpv": "45200000"
+   },
+   {
+    "id": "077",
+    "dispatch_date": "2020-12-29",
+    "buyer_name": "EDA Renováveis, S. A.",
+    "buyer_nif": "512026840",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "76431000"
+   },
+   {
+    "id": "078",
+    "dispatch_date": "2023-03-22",
+    "buyer_name": "Município de Elvas",
+    "buyer_nif": "501272968",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-04-27",
+    "deadline_time": "17:00",
+    "estimated_value": "330000.00",
+    "main_cpv": "09134100"
+   },
+   {
+    "id": "079",
+    "dispatch_date": "2020-03-27",
+    "buyer_name": "Sesaram, E. P. E.",
+    "buyer_nif": "511228848",
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33690000"
+   }
+  ]
+ }
+}

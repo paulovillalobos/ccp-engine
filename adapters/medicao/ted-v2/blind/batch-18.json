@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:33Z",
+ "ids": [
+  "090",
+  "091",
+  "092",
+  "093",
+  "094"
+ ],
+ "sha256": "b3b938ca6f4604b08ac728fd36a82c56fc8390d2824789ac4916b786f8a58743",
+ "answer": {
+  "records": [
+   {
+    "id": "090",
+    "dispatch_date": "2022-03-21",
+    "buyer_name": "Instituto do Turismo de Portugal, I. P.",
+    "buyer_nif": "508666236",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2022-04-20",
+    "deadline_time": "17:00",
+    "estimated_value": "760000.00",
+    "main_cpv": "30200000"
+   },
+   {
+    "id": "091",
+    "dispatch_date": "2023-06-09",
+    "buyer_name": "Secretaria Regional do Turismo e Cultura",
+    "buyer_nif": "671000527",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-06-14",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "79811000"
+   },
+   {
+    "id": "092",
+    "dispatch_date": "2024-01-30",
+    "buyer_name": "Serviços Partilhados do Ministério da Saúde, EPE",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "V Contract award without prior publication",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72500000"
+   },
+   {
+    "id": "093",
+    "dispatch_date": "2023-09-21",
+    "buyer_name": "Universidade do Minho",
+    "buyer_nif": "502011378",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-10-23",
+    "deadline_time": "23:59",
+    "estimated_value": "243281.80",
+    "main_cpv": "48900000"
+   },
+   {
+    "id": "094",
+    "dispatch_date": "2019-02-01",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "495.00",
+    "main_cpv": "85150000"
+   }
+  ]
+ }
+}

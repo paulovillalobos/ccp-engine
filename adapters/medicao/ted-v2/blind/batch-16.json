@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:20Z",
+ "ids": [
+  "080",
+  "081",
+  "082",
+  "083",
+  "084"
+ ],
+ "sha256": "f9f17b82c8f5ad1102c291e944b6c7720c3914954f07d4758de0ac29710dca8d",
+ "answer": {
+  "records": [
+   {
+    "id": "080",
+    "dispatch_date": "2023-03-21",
+    "buyer_name": "Município de Tavira",
+    "buyer_nif": "501067191",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-04-15",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "081",
+    "dispatch_date": "2020-09-07",
+    "buyer_name": "Direção-Geral de Recursos da Defesa Nacional",
+    "buyer_nif": "600086640",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-10-07",
+    "deadline_time": "17:30",
+    "estimated_value": "224410.00",
+    "main_cpv": "60170000"
+   },
+   {
+    "id": "082",
+    "dispatch_date": "2018-07-18",
+    "buyer_name": "SPMS — Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2018-08-20",
+    "deadline_time": "18:00",
+    "estimated_value": null,
+    "main_cpv": "32320000"
+   },
+   {
+    "id": "083",
+    "dispatch_date": "2021-01-21",
+    "buyer_name": "MDN — Direção-Geral da Autoridade Marítima",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-02-20",
+    "deadline_time": "23:59",
+    "estimated_value": "600000.00",
+    "main_cpv": "34521400"
+   },
+   {
+    "id": "084",
+    "dispatch_date": "2021-02-08",
+    "buyer_name": "Serviços Partilhados do Ministério da Saúde (SPMS), E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "972487.22",
+    "main_cpv": "79714000"
+   }
+  ]
+ }
+}

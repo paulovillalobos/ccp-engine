@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:01:31Z",
+ "ids": [
+  "000",
+  "001",
+  "002",
+  "003",
+  "004"
+ ],
+ "sha256": "166abfc2b550c9fea0558d95168c0fe57e5d0ac63a2b7d0a33b424f2bd92df37",
+ "answer": {
+  "records": [
+   {
+    "id": "000",
+    "dispatch_date": "2023-10-26",
+    "buyer_name": "Unidade Local de Saúde de Matosinhos, E. P. E.",
+    "buyer_nif": "506361390",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-11-29",
+    "deadline_time": "17:00",
+    "estimated_value": "493676.97",
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "001",
+    "dispatch_date": "2022-05-18",
+    "buyer_name": "REN – Rede Eléctrica Nacional, S.A.",
+    "buyer_nif": "507 866 673",
+    "buyer_country": "PT",
+    "procedure_type": "9 Not applicable",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "31110000"
+   },
+   {
+    "id": "002",
+    "dispatch_date": "2023-09-22",
+    "buyer_name": "Instituto de Informática, I. P.",
+    "buyer_nif": "504322915",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-10-23",
+    "deadline_time": "23:59",
+    "estimated_value": "388000.00",
+    "main_cpv": "32571000"
+   },
+   {
+    "id": "003",
+    "dispatch_date": "2019-10-14",
+    "buyer_name": "Simdouro — Saneamento do Grande Porto, S. A.",
+    "buyer_nif": "514310103",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "90513000"
+   },
+   {
+    "id": "004",
+    "dispatch_date": "2023-12-21",
+    "buyer_name": "MARINHA - Instituto Hidrográfico",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "38260000"
+   }
+  ]
+ }
+}

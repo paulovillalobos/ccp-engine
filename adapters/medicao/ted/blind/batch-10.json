@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:19Z",
+ "ids": [
+  "050",
+  "051",
+  "052",
+  "053",
+  "054"
+ ],
+ "sha256": "b2314c7943c23e1382d6ffc586d9963b984d8995293b70f358f4e7345f5f55dd",
+ "answer": {
+  "records": [
+   {
+    "id": "050",
+    "dispatch_date": "2021-06-24",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Central, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-07-27",
+    "deadline_time": "17:00",
+    "estimated_value": "5760888.90",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "051",
+    "dispatch_date": "2022-03-15",
+    "buyer_name": "Entidade de Serviços Partilhados da Administração Pública, I. P.",
+    "buyer_nif": "510342191",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72000000"
+   },
+   {
+    "id": "052",
+    "dispatch_date": "2023-12-19",
+    "buyer_name": "Centro Hospitalar Universitário de Santo António, E. P. E.",
+    "buyer_nif": "517392259",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "377205.95",
+    "main_cpv": "33696000"
+   },
+   {
+    "id": "053",
+    "dispatch_date": "2018-10-29",
+    "buyer_name": "Navegação Aérea de Portugal — NAV Portugal, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-01-02",
+    "deadline_time": "17:00",
+    "estimated_value": "1 500 000,00",
+    "main_cpv": "34962000"
+   },
+   {
+    "id": "054",
+    "dispatch_date": "2021-07-26",
+    "buyer_name": "Serviço de Saúde da Região Autónoma da Madeira, EPERAM (Sesaram, EPERAM)",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "90910000"
+   }
+  ]
+ }
+}

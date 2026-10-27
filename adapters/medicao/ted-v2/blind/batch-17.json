@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:25Z",
+ "ids": [
+  "085",
+  "086",
+  "087",
+  "088",
+  "089"
+ ],
+ "sha256": "6230425be663696d0bd29d85ccba778df9681d1841908d7e723cf51b58683561",
+ "answer": {
+  "records": [
+   {
+    "id": "085",
+    "dispatch_date": "2021-03-02",
+    "buyer_name": "European Maritime Safety Agency",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "B Competitive procedure with negotiation",
+    "contract_type": "SERVICES",
+    "deadline_date": "2021-04-09",
+    "deadline_time": "16:00",
+    "estimated_value": "12988000.00",
+    "main_cpv": "60651500"
+   },
+   {
+    "id": "086",
+    "dispatch_date": "2019-02-18",
+    "buyer_name": "Comunidade Intermunicipal da Região de Coimbra",
+    "buyer_nif": "508354617",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2019-03-20",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "15894210"
+   },
+   {
+    "id": "087",
+    "dispatch_date": "2022-04-19",
+    "buyer_name": "Agência para a Modernização Administrativa, I. P.",
+    "buyer_nif": "508184509",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2022-05-20",
+    "deadline_time": "23:59",
+    "estimated_value": "739200.00",
+    "main_cpv": "72240000"
+   },
+   {
+    "id": "088",
+    "dispatch_date": "2019-10-25",
+    "buyer_name": "AdRA — Águas da Região de Aveiro, S. A.",
+    "buyer_nif": "509107630",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "700000.00",
+    "main_cpv": "45232151"
+   },
+   {
+    "id": "089",
+    "dispatch_date": "2020-05-28",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "V Contract award without prior publication",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "50800000"
+   }
+  ]
+ }
+}

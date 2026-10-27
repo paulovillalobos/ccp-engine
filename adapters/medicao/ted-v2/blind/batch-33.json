@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:42Z",
+ "ids": [
+  "165",
+  "166",
+  "167",
+  "168",
+  "169"
+ ],
+ "sha256": "604ad09149e90e6bc6a87141d46008253bb6d2cab19fe4a4be82079c2b27475e",
+ "answer": {
+  "records": [
+   {
+    "id": "165",
+    "dispatch_date": "2025-12-26",
+    "buyer_name": "Metro Mondego, SA",
+    "buyer_nif": "503671320",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-02-09",
+    "deadline_time": "17:59:59+01:00",
+    "estimated_value": "1090406",
+    "main_cpv": "90911200"
+   },
+   {
+    "id": "166",
+    "dispatch_date": "2026-03-25",
+    "buyer_name": "Gebalis - Gestão do Arrendamento da Habitação Municipal de Lisboa, EM, SA",
+    "buyer_nif": "503541567",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-04-27",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "540000",
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "167",
+    "dispatch_date": "2025-02-27",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72500000"
+   },
+   {
+    "id": "168",
+    "dispatch_date": "2025-12-11",
+    "buyer_name": "Município de Cascais",
+    "buyer_nif": "505187531",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "5760000",
+    "main_cpv": "45211000"
+   },
+   {
+    "id": "169",
+    "dispatch_date": "2024-02-16",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2024-03-18",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": "3731717.2",
+    "main_cpv": "72500000"
+   }
+  ]
+ }
+}

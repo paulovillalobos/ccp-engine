@@ -1,0 +1,23 @@
+{
+ "sha256": "6c46253114cca8ba1004078e1b69961b272152f81e54d2b73ff72c0a367c4a03",
+ "bytes": 55383072,
+ "source": "base-historico",
+ "bucket": "ccp-raw",
+ "split": "byte offsets, parts joined in order give the file",
+ "parts": [
+  {
+   "name": "6c46253114cca8ba1004078e1b69961b272152f81e54d2b73ff72c0a367c4a03.part01",
+   "order": 1,
+   "offset": 0,
+   "bytes": 40000000,
+   "sha256": "fe117ba904457d952d3f1ba07d2945f0fdf9c9a11f0cd6f81cfe12499d7ddad0"
+  },
+  {
+   "name": "6c46253114cca8ba1004078e1b69961b272152f81e54d2b73ff72c0a367c4a03.part02",
+   "order": 2,
+   "offset": 40000000,
+   "bytes": 15383072,
+   "sha256": "a06e9fd1165416291bc0547f2b31c9c20dcb63d710547662fae7b4b5b9f5d9f0"
+  }
+ ]
+}

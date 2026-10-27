@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:03Z",
+ "ids": [
+  "030",
+  "031",
+  "032",
+  "033",
+  "034"
+ ],
+ "sha256": "9f21d1614121f81dba1262510f7c73255f748e1d56db99a299c1381d9dca2593",
+ "answer": {
+  "records": [
+   {
+    "id": "030",
+    "dispatch_date": "2019-12-12",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "V Contract award without prior publication",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "50800000"
+   },
+   {
+    "id": "031",
+    "dispatch_date": "2018-02-20",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33190000"
+   },
+   {
+    "id": "032",
+    "dispatch_date": "2020-12-22",
+    "buyer_name": "Administração dos Portos de Sines e do Algarve (APS), S. A.",
+    "buyer_nif": "501208950",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "66510000"
+   },
+   {
+    "id": "033",
+    "dispatch_date": "2023-05-25",
+    "buyer_name": "Centro Hospitalar do Oeste, E. P. E.",
+    "buyer_nif": "514993871",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "447000.00",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "034",
+    "dispatch_date": "2019-04-04",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "579679.44",
+    "main_cpv": "33690000"
+   }
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:44Z",
+ "ids": [
+  "100",
+  "101",
+  "102",
+  "103",
+  "104"
+ ],
+ "sha256": "9b95b4e51ed176a1c7983a5ad07dba6d40207720e5f0859a4605c214bef8da4d",
+ "answer": {
+  "records": [
+   {
+    "id": "100",
+    "dispatch_date": "2024-12-26",
+    "buyer_name": "Unidade Local de Saúde de Gaia/Espinho, E. P. E.",
+    "buyer_nif": "508142156",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "39100000"
+   },
+   {
+    "id": "101",
+    "dispatch_date": "2025-10-28",
+    "buyer_name": "EPAL - Empresa Portuguesa das Águas Livres, S. A.",
+    "buyer_nif": "500906840",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-12-03",
+    "deadline_time": "19:00:59+01:00",
+    "estimated_value": "2000000",
+    "main_cpv": "24112100"
+   },
+   {
+    "id": "102",
+    "dispatch_date": "2025-11-05",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33600000"
+   },
+   {
+    "id": "103",
+    "dispatch_date": "2025-02-18",
+    "buyer_name": "Infraestruturas de Portugal S.A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PRT",
+    "procedure_type": null,
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "45232220"
+   },
+   {
+    "id": "104",
+    "dispatch_date": "2024-11-26",
+    "buyer_name": "Serviços Municipalizados de Água e Saneamento de Sintra",
+    "buyer_nif": "680000054",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-01-01",
+    "deadline_time": "17:00:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "90400000"
+   }
+  ]
+ }
+}

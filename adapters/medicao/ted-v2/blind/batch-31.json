@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:15:34Z",
+ "ids": [
+  "155",
+  "156",
+  "157",
+  "158",
+  "159"
+ ],
+ "sha256": "aab10d06ea0d4bf9706d28e0c8c31d07668929b7d0380a90d86a786745424bd8",
+ "answer": {
+  "records": [
+   {
+    "id": "155",
+    "dispatch_date": "2025-03-17",
+    "buyer_name": "Serviços Intermunicipalizados de Água e Saneamento dos Municípios de Oeiras e Amadora",
+    "buyer_nif": "680015019",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72400000"
+   },
+   {
+    "id": "156",
+    "dispatch_date": "2024-07-25",
+    "buyer_name": "Unidade Local de Saúde Santa Maria, E.P.E.",
+    "buyer_nif": "508 481 287",
+    "buyer_country": "PRT",
+    "procedure_type": "oth-single",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "45670.87",
+    "main_cpv": "85143000"
+   },
+   {
+    "id": "157",
+    "dispatch_date": "2025-09-23",
+    "buyer_name": "Assembleia Legislativa da Região Autónoma dos Açores",
+    "buyer_nif": "672000830",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2025-10-22",
+    "deadline_time": "17:59:59+01:00",
+    "estimated_value": "515920.29",
+    "main_cpv": "48600000"
+   },
+   {
+    "id": "158",
+    "dispatch_date": "2025-08-07",
+    "buyer_name": "Águas do Tejo Atlântico, S. A.",
+    "buyer_nif": "514387130",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-09-08",
+    "deadline_time": "23:59:59+01:00",
+    "estimated_value": "720000",
+    "main_cpv": "90512000"
+   },
+   {
+    "id": "159",
+    "dispatch_date": "2026-03-05",
+    "buyer_name": "Município de Viana do Castelo",
+    "buyer_nif": "506037258",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-04-07",
+    "deadline_time": "17:00:59+00:00",
+    "estimated_value": "73032",
+    "main_cpv": "98390000"
+   }
+  ]
+ }
+}

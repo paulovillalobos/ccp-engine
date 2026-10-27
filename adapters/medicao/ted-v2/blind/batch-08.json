@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:40Z",
+ "ids": [
+  "040",
+  "041",
+  "042",
+  "043",
+  "044"
+ ],
+ "sha256": "1c26fa21ab71f7f6105134fee1de10cdc65228901745bbaa29ac9fc7d7a8cc8b",
+ "answer": {
+  "records": [
+   {
+    "id": "040",
+    "dispatch_date": "2023-11-24",
+    "buyer_name": "Centro Hospitalar Universitário Cova da Beira, E. P. E.",
+    "buyer_nif": "506361659",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2023-12-22",
+    "deadline_time": "18:00",
+    "estimated_value": "329000.00",
+    "main_cpv": "85100000"
+   },
+   {
+    "id": "041",
+    "dispatch_date": "2021-04-20",
+    "buyer_name": "Centro Hospitalar Universitário do Algarve, E. P. E",
+    "buyer_nif": "510745997",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "042",
+    "dispatch_date": "2022-09-19",
+    "buyer_name": "Instituto Educativo do Juncal, L.da",
+    "buyer_nif": "502119594",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "331119.00",
+    "main_cpv": "55524000"
+   },
+   {
+    "id": "043",
+    "dispatch_date": "2021-07-27",
+    "buyer_name": "Município de Lisboa",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "90690000"
+   },
+   {
+    "id": "044",
+    "dispatch_date": "2018-02-08",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33190000"
+   }
+  ]
+ }
+}

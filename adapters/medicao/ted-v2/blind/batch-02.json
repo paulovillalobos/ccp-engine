@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:08Z",
+ "ids": [
+  "010",
+  "011",
+  "012",
+  "013",
+  "014"
+ ],
+ "sha256": "9374d5bcb301f1dd316fa61dfb01a298dbc3bf040ea0d5703bd628eeb8abece1",
+ "answer": {
+  "records": [
+   {
+    "id": "010",
+    "dispatch_date": "2021-02-05",
+    "buyer_name": "Serviço de Saúde da Região Autónoma da Madeira, EPERAM (Sesaram, EPERAM)",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-02-20",
+    "deadline_time": "17:00",
+    "estimated_value": "774600.00",
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "011",
+    "dispatch_date": "2021-06-25",
+    "buyer_name": "CMPEA — Empresa de Águas do Município do Porto, E. M.",
+    "buyer_nif": "507718666",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2021-07-22",
+    "deadline_time": "23:59",
+    "estimated_value": null,
+    "main_cpv": "45453100"
+   },
+   {
+    "id": "012",
+    "dispatch_date": "2023-10-10",
+    "buyer_name": "Centro Social e Paroquial de São Martinho de Bougado",
+    "buyer_nif": "506684040",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2023-10-25",
+    "deadline_time": "23:59",
+    "estimated_value": "411898.09",
+    "main_cpv": "45215200"
+   },
+   {
+    "id": "013",
+    "dispatch_date": "2023-11-20",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "30200000"
+   },
+   {
+    "id": "014",
+    "dispatch_date": "2018-10-11",
+    "buyer_name": "Defesa Nacional — Marinha — Direção de Abastecimento",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2018-11-10",
+    "deadline_time": "23:59",
+    "estimated_value": "254010.90",
+    "main_cpv": "15000000"
+   }
+  ]
+ }
+}

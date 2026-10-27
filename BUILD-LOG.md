@@ -1044,6 +1044,124 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Why: the code compares what a reading says; only the person decides that rule, and no reading of the law is approved
   by a person.
 
+## 2026-10-25 E1.0 extractor: done-criterion for BASE anúncios 2026 (commit: E1.0: done-criterion for the BASE anúncios 2026 adapter)
+- Source: dados.gov.pt dataset «Contratos Públicos - Portal Base - IMPIC - Anúncios de 2012 a 2026», resource
+  anuncios2026.json (weekly JSON). One GET, nothing sent.
+- Done when, checked by commands written in the E1 result entry:
+  1. `data/raw/base-anuncios/` holds the `raw` object of the download (sha256, URL, captured_at) and one `raw` per mapped
+     record, whose bytes are that record's exact byte slice of the download; all bytes live in `data/raw_bytes/`
+     (gitignored), and the adapter re-derives every slice from the download (`--check`).
+  2. `adapters/base-anuncios/` holds the code and the mapping as data; `data/facts/adaptador/` the `adaptador` object
+     (field by field: source field -> canonical field, transform, enum map), proposed in the governance log by the
+     adapter's own registered ferramenta.
+  3. At least 1 000 `proc` units with facts in `data/facts/`; every fact names its raw record and source field, its
+     adapter, valid_at (the notice's publication date) and known_at (= the raw's captured_at).
+  4. A field the dump does not give, or gives ambiguously, is not a fact. In particular `data_envio_anuncio` is not
+     replaced by the publication date, and no value is read from free text.
+  5. Entities: adjudicante by NIF; without NIF, a candidate by country + normalised name, never merged.
+  6. `adapters/base-anuncios/COVERAGE.md`: records in, procedures out, per canonical field and per month how many
+     procedures carry it, unmapped records by reason (counts, three examples each).
+  7. `python -I verify.py` ok over data/; `tools/run_engine.py` runs over data/ and its counts are reported.
+- Why: the engine has no facts of real procedures yet; this phase writes only adapters/ and data/ (plus .gitignore,
+  the adapter's registration in governance/ and these entries).
+
+## 2026-10-25 E1.1 the BASE anúncios adapter, registered (commit: E1.1: adapters/base-anuncios — mapping as data, code, registration as ferramenta, adaptador proposed in the log)
+- Done: one GET of https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-anuncios-de-2012-a-2026/20261025-100557-3458a85b/anuncios2026.json
+  at 2026-10-25T14:47:34Z: 23 669 469 bytes, sha256 9605b59bd94e8119ba158d90f9249b5a5d97fa89e70db2c1de0e5df7e3844a8b,
+  sha1 ac317477cbd8… equal to the checksum dados.gov.pt publishes for the resource. 25 609 records, 20 fields each.
+- adapters/base-anuncios/: mapping.json (six mapping rows, the record key, the procedure notice types, the NIF table
+  for entity types, the six asked fields the dump does not give, each with its reason), adapter.py (build / check /
+  register), README.md, SCHEMA-PROPOSAL.md (8 items for the builder).
+- What the dump gives and does not: modeloAnuncio, tiposContrato, PrecoBase, nifEntidade, dataPublicacao and
+  DataLimitePropostas map to tipo_procedimento, tipo_contrato, preco_base, adjudicante, data_publicacao_anuncio and
+  data_limite_propostas. No field gives data_envio_anuncio, data_inicio_procedimento, publicado_joue, territorio or
+  tipo_entidade. PrazoPropostas equals DataLimitePropostas − dataPublicacao in all 25 298 records that have both dates:
+  it counts from publication, not from the sending the rules' counted_from names, so it is not prazo_propostas_dias.
+- Registered: ferramenta:adapter-base-anuncios@1 (tools/register_tool.py, code adapters/base-anuncios/adapter.py);
+  evento:46 proposes adaptador:base-anuncios@1 with the sha256 of the code and of the mapping. State: proposed.
+- Next: build data/ from the download, check, verify, run_engine.
+- Why: the mapping is data and the adapter is code, so a wrong mapping can be traced and the facts re-derived; the log
+  holds the proposer, as it does for every other principal.
+
+## 2026-10-25 E1.2 BASE anúncios 2026 in data/: checked result (commit: E1.2: BASE anúncios 2026 — 22 252 procedures, 131 558 facts, raw slices and bytes in data/; COVERAGE.md)
+- Done: `adapter.py build` over the download: 25 609 records in; 22 252 `proc` units out (one per «Anúncio de
+  procedimento» or «Anúncio de concurso urgente», each with its own raw = the record's exact byte slice); 3 357 records
+  not mapped (3 350 alteration notices and 1 rectification that the dump does not join to a procedure; 6 records whose
+  key nAnuncio + IdIncm repeats); 131 558 facts; 228 adjudicante entities (NIF prefix 6), 2 668 aliases and nif_exact
+  links; adaptador:base-anuncios@1 with coverage per month. Coverage per field and month, the unmapped records by reason
+  (counts, three examples each): adapters/base-anuncios/COVERAGE.md.
+- Procedures carrying each field the rules read: tipo_procedimento 21 493, tipo_contrato 21 473, preco_base 22 098,
+  adjudicante 22 250; data_inicio_procedimento, publicado_joue, prazo_propostas_dias, data_envio_anuncio, territorio,
+  tipo_entidade 0 (not in the dump, or, for the deadline, counted from publication). Also data_publicacao_anuncio 22 252
+  and data_limite_propostas 21 992.
+- Decision (pessoa:paulo, 2026-10-25): asked whether the repository keeps the raw bytes of this download (23 MB of
+  notices), he answered «yes». data/raw_bytes/ leaves .gitignore and is committed: 22 253 files, 44 231 062 bytes (the
+  download 23 669 469, the slices 20 561 593), the largest 23 669 469 bytes (under GitHub's 100 MB). It covers this
+  anúncios 2026 download only; the contratos dumps (E2) need their own decision. SCHEMA-PROPOSAL.md item 2 marked decided.
+- The COVERAGE.md line about the bytes changed, so adapter.py changed: ferramenta:adapter-base-anuncios@2 registered
+  (@1 retired), evento:47 corrects the adaptador's proposal with the new code hash (mapping unchanged), data/ rebuilt
+  with @2 at the same recorded_at (only the links' proponent and the adaptador's proposed_by differ).
+- Checked (`.venv/bin/python -I`, from the worktree):
+  - `adapters/base-anuncios/adapter.py check`: 22 306 files re-derived from the stored download, 0 differ, 0 extra.
+  - `verify.py --store data governance`: 0 failures (0 I01), 45 s.
+  - `verify.py` (full, before the bytes decision, 11 min 48 s): code guard ok; stores fixtures, repo, measure 0
+    failures; BENCH/MEAS ok; 30/30 broken overlays refused; store data 2 669 failures, all I04 «principal
+    ferramenta:adapter-base-anuncios@1 is not registered» (1 adaptador + 2 668 links): STORES["data"] has no
+    governance/ (SCHEMA-PROPOSAL item 1). So `verify: FAILED` until the builder adds governance/ to that store.
+  - `pytest tests --ignore=tests/fill`: 62 passed, 2 failed (test_verify::test_empty_stores_pass and
+    ::test_verify_main_exit_code_is_zero, the same I04), 17 min 26 s.
+  - `pytest tests/fill/test_b4_engine_v0.py`: test_extractor_delivered_notices passes (22 252 procs, 0 load errors);
+    test_first_figure_at_scale_is_reproducible fails: reports/prazos-minimos.json is the builder's to write.
+  - `tools/run_engine.py --out <scratch>`: {"units": 0, "sem_regime": 22252, "verdicts": 0, "rules": 0}, 34 min 38 s.
+    No seletor_regime is settled and no procedure has data_inicio_procedimento, so none is routed to a package.
+- For the builder (SCHEMA-PROPOSAL.md): 1 governance/ in verify's data store; 3 facts_of scans every fact per unit
+  (0.071 s a call: run_engine 35 min; CI's verify job has a 20-minute timeout); 4 an entity type for legal persons of
+  unknown nature (19 582 procedures have no entity); 5 a decimal transform; 6 raw.size; 7 vocabulary the dump uses
+  (urgent tender 683, locação de bens móveis 429, ...); 8 a link method for code-made name links.
+- Next: the person reviews the PR; E2 (BASE contratos) waits for E1's merge. The fields the prazo rules need
+  (data_envio_anuncio, publicado_joue, territorio, tipo_entidade, data_inicio_procedimento) are not in this source.
+- Why: a fact the dump does not state is left out so the engine says nao_avaliado instead of a verdict on a guess.
+
+## 2026-10-25 E1b.0 extractor: done-criterion for the DR notice PDFs (commit: E1b.0: done-criterion for the DR notice PDFs of the 22 252 procedures)
+- Decided by pessoa:paulo (relayed by the builder session, his words): «Sí, lanza E1b en la sesión del extractor,
+  despacio (1 cada 10 s)». The pre-registered test (foaap-core/ccp-mother-data/e1b-sample-2026-10-25: CRITERIA-v2
+  sha256 ae708e96…, VERDICT-v2) passed A–D on 200 unseen notices with parser parse.py sha256 a29220df….
+- Source: the Diário da República notice PDF each procedure's record links to (field `url`), only
+  files.diariodarepublica.pt (22 170 of the 22 252 procedures; the other 82 link to the Açores journal, acinGov, a
+  sharepoint page or nothing, and are counted, not fetched). Branch stacked on PR #1.
+- Done when, with the commands written in the E1b result entry:
+  1. Download: one GET every 10 s, User-Agent «ccp-engine research (passive read)»; any 403 or 429 stops the run and is
+     logged, and a resume starts no sooner than one hour after it; network errors are retried on resume; files already
+     stored are skipped. The fetch log is in git; the PDFs (about 1.5 GB) are not (data/raw/dr-anuncios/raw_bytes/,
+     gitignored), each PDF has a `raw` and a `documento` object with sha256 and URL in git.
+  2. Text: pypdf 6.14.2 with cryptography 50.0.1 on /usr/bin/python3 3.9.6, the versions the test ran; values by the
+     frozen parser, copied byte for byte and checked against its sha256 at every run; a PDF that breaks it is counted.
+  3. Facts per proc pointing at the document (documento, page, offsets, quote): data_envio_anuncio, publicado_joue,
+     nut_iii_adjudicante, territorio (NUT III mapping as data: PT2 -> PT-AC, PT3 -> PT-MA, other PT),
+     data_limite_propostas. Stored without becoming a rule field: norma_juridica_adjudicante. Not derived:
+     data_inicio_procedimento, tipo_entidade, prazo_propostas_dias.
+  4. Where the PDF and the dump disagree on data_limite_propostas: a `conflito` with both facts, resolution nao_avaliado.
+  5. COVERAGE.md per field and month, failed PDFs by reason, conflicts by kind; verify over data/ (with governance/);
+     run_engine rerun and its counts reported; a PR of its own, not merged.
+- Why: the dump lacks what the deadline rules read; the notice prints it under fixed labels.
+
+## 2026-10-25 E1b.1 the DR notice adapter, download running (commit: E1b.1: adapters/dr-anuncios — fetcher, frozen parser, mapping as data, build)
+- Done: adapters/dr-anuncios/: parse.py (the E1b test's parser, byte for byte, sha256 a29220df…, checked at every
+  build), mapping.json (six rows: data_envio_anuncio, publicado_joue, nut_iii_adjudicante, territorio with the NUT III
+  prefix table as data, data_limite_propostas, norma_juridica_adjudicante; the three fields not derived and why),
+  adapter.py (fetch / text / build / check / register), SCHEMA-PROPOSAL.md (2 questions for the person, 4 for the
+  readers, 2 for the builder). .gitignore: the PDFs and their text stay out of git.
+- Download started 2026-10-25T20:24:09Z (3 notices as a probe), then from 20:26:49Z the 22 167 remaining
+  files.diariodarepublica.pt notices, one GET every 10 s, detached (nohup) so it survives a session restart; every
+  attempt in adapters/dr-anuncios/fetch-log.jsonl. A first launch at 20:25 made no request (its output file's folder
+  was missing).
+- Text by pypdf 6.14.2 and cryptography 50.0.1 on /usr/bin/python3 3.9.6, the test's versions: the adapter keeps -I and
+  adds only the user site where that pypdf is installed, and refuses another pypdf version.
+- Trial build on the first 6 notices: 6 documents, 36 facts with (documento, page, offsets, quote); `check` 0 differ;
+  `verify.py --store data governance`: only the expected I04 (proposer not registered yet) and one orphan (a PDF
+  fetched after the build).
+- Next: when the download ends, text, build, register, check, verify, run_engine, COVERAGE, PR.
+- Why: the notice prints what the deadline rules read; positions make every value traceable to its page.
 ## 2026-10-25 — builder fixes for the extractor's E1 (SCHEMA-PROPOSAL items 1 and 3)
 - Done: verify's `data` store loads governance/ with data/ (the principals and log that data/'s adaptadores and links
   name), as tools/run_engine.py and tools/measure.py already load it. Over the extractor's E1 branch the full verify
@@ -1276,3 +1394,439 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   one every 10 s, three weeks); TED-XML notices (2018–2023) name the buyer's NIF in about one in ten competition notices
   (2018-01: 13 of 135), so BASE–TED candidates there will be few.
 - Checks: verify ok on the branch (before this entry's files, which are db/ and migrations only).
+
+## 2026-10-25 E1.3 main merged: the builder's fixes for items 1 and 3 (commit: E1.3: main merged (80d8f3310); full verify ok, 64 scaffold tests pass)
+- Done: merged main 80d8f3310 (verify's data store loads governance/; facts_of indexed by unit; verify@23). Conflicts:
+  BUILD-LOG.md (both entries kept); governance/principals.json merged by git with both verify@23 and
+  adapter-base-anuncios@1/@2. SCHEMA-PROPOSAL.md items 1 and 3 marked done by the builder.
+- Checked (`.venv/bin/python -I`):
+  - `verify.py`: ok in 4 min 05 s; stores fixtures, repo, data (181 628 objects, 47 events), measure 0 failures;
+    BENCH/MEAS ok; 30/30 broken overlays refused. The 2 669 I04 lines are gone.
+  - `pytest tests --ignore=tests/fill`: 64 passed (6 min 42 s).
+  - `tools/run_engine.py`: {"units": 0, "sem_regime": 22252, "verdicts": 0, "rules": 0} in 1 min 43 s (was 34 min 38 s);
+    still no settled seletor_regime and no data_inicio_procedimento.
+- Next: the person's review of PR #1; E1b continues on its branch.
+- Why: the done-criterion «verify ok over data/» now holds on the branch itself.
+
+## 2026-10-25 E1b.2 interim check on the first 482 notices (commit: E1b.2: interim check on 482 notices; misses named by procedure type, cut norma values flagged)
+- Done: `text` (476 new PDFs in 7.6 s) and `build` over the 482 notices fetched by 21:46Z, then `check` (0 differ).
+- Result: data_envio_anuncio, nut_iii_adjudicante, territorio, norma_juridica_adjudicante 482/482; publicado_joue
+  480/482; data_limite_propostas 479/482. The 5 misses are right, not parser errors: the 3 without a deadline are
+  «Concurso limitado por prévia qualificação» (the first phase sets a deadline for candidaturas; the dump's
+  DataLimitePropostas is empty too), the 2 without the JOUE question are «Concurso público simplificado» (the new
+  procedure of DL 177/2026, whose form does not ask it). Cross-checks: 479/479 deadlines and 482/482 NIFs equal the
+  dump; 0 conflicts so far. publicado_joue Sim 141 / Não 339; territorio PT 459, PT-MA 15, PT-AC 8.
+- Found: the frozen parser reads a value to the end of its line, so a norma_juridica value that wraps in the PDF is
+  cut (at least 3 of 482 end in «da» / «por uma»). The parser is not changed; COVERAGE.md now counts them, and the
+  quote is exactly the printed first line.
+- Changed (adapter.py, not the parser): a miss is reported with the procedure type of the dump record; the cut values
+  are counted in COVERAGE.md.
+- Next: the download runs on (~60 h); then the full text, build, register, check, verify, run_engine, PR.
+- Why: a problem found on 482 notices costs nothing; found after 62 hours it costs a rebuild.
+
+## 2026-10-25 E1b.3 download order: the new regime first, then months interleaved (commit: E1b.3: download order — notices since 2026-10-01 first, then months interleaved; same pace)
+- Done: fetch now orders its queue (priority_order): the notices published since 2026-10-01 first (1 226 left, about
+  3.4 h), then the other months interleaved, one notice of each month in turn, so every month's coverage grows
+  together instead of following nAnuncio's alphabetical order. The pace is unchanged (one GET every 10 s, as the person
+  set it); the total stays about 60 h. No bulk source exists: the DR publishes Part L notices only as single PDFs.
+- Restarted at 21:51:51Z (fetch pid 7824) after 512 stored; it resumed without fetching any stored PDF; no .part file
+  was left. caffeinate is tied to the fetch pid. A watcher written with `pgrep -f` matched its own command line (it
+  would never have ended and held caffeinate on itself); replaced by one that waits on the fetch pid.
+- Next: interim builds as the new-regime notices land; the full build when the download ends.
+- Why: useful data in hours (the new regime) and a balanced sample of the year within about 8 h.
+
+## 2026-10-25 M.0 extractor: a sample of every source tonight (commit: M.0: decision and done-criterion for one sample of every source)
+- Decided by the person in this session (his words, 2026-10-25 ~22:15Z): «¿por qué no mejor ingestamos … un poquito de
+  todo?», then, pointing at the table of the system's pieces (law, rules, anúncios, DR notices, contratos, modificações,
+  entidades, TED, procedure documents, 100 hand-checked cases): «esto bro». This changes the brief's order (E2 was to
+  start after E1's merge; TED and procedure documents were out of scope in E1/E2): recorded as his decision.
+- Scope tonight, on branch extractor-muestras (stacked on E1b; the DR download keeps running on its own):
+  BASE contratos 2026, entidades and modificações 2026 (one GET each from dados.gov.pt), a sample of each mapped to the
+  store; TED: one daily package (one GET), Portugal's notices counted and joined where possible; procedure documents:
+  10 procedures of October, one GET every 10 s, stop on 403/429, what each platform serves recorded. Not mine: the
+  rules (the readers) and the 100 hand-checked cases (people).
+- Done when: every downloaded file has its raw (sha256, URL, captured_at), bytes out of git; a sample of each BASE
+  source mapped to facts / units / entities with origin (raw, field); TED and documents reported as probes;
+  `verify.py --store data governance` 0 failures; COVERAGE per source; branch pushed.
+- Why: one sample of every source shows the whole system end to end tomorrow, instead of more of the same notices.
+
+## 2026-10-25 M.1 BASE contratos, modificações, entidades: the October sample (commit: M.1: BASE contratos 2026 sample — 15 108 contracts, 10 630 procedures, 37 modifications, 97 701 facts)
+- Done: one GET each from dados.gov.pt at 22:23Z: contratos2026.zip (46 720 122 bytes, sha256 2ac78c54…; one member
+  Contratos2026.json, 356 423 059 bytes, 199 701 contracts), entidades.json (51 307 118 bytes, b18c981e…, 216 267
+  records), modcontrats2026.json (1 471 866 bytes, ea475adb…, 4 362 records). Bytes in data/raw/<source>/raw_bytes/,
+  gitignored. adapters/base-contratos/ (mapping.json, adapter.py build / check / register).
+- Sample: the 15 484 contracts BASE published in October 2026; 376 refused (idcontrato held by more than one record of
+  the year). Units: 15 108 contrato, 10 630 new proc (procedures without a notice in E1: ajustes diretos, consultas
+  prévias, acordo-quadro calls...), 37 mod. Facts: 97 701 with origin (raw, field). Joins: 1 937 contracts to a notice
+  of E1 by (nAnuncio, idINCM); on those, preco_base equal 1 905, tipo_procedimento equal 1 889, adjudicante equal
+  1 858 and different 79.
+- Found: entidades.json has no public / private field (nif, name, counts, country only), so it does not settle
+  entidade.type; adjudicatários without NIF 2 051 (no natural person's NIF appears: BASE seems to mask them); regime
+  declared in October: 289 contracts name DL 177/2026, most still name the old text (assertions, not facts; not
+  converted here). modifContratoPrecoAlterado and modifPrazoExecucao do not say whether they are the new value or the
+  change: no facts.
+- Registered: ferramenta:adapter-base-contratos@1; evento:48 proposes adaptador:base-contratos@1.
+- Checked: `adapter.py check` 15 154 files, 0 differ. `verify.py --store data governance`: the contract sample adds no
+  failure; the 246 failures are E1b's interim state (245 PDFs fetched after its interim build, its proposer not yet
+  registered), which its final build resolves.
+- Next: TED probe, documents probe.
+
+## 2026-10-25 M.2 TED and procedure documents: two probes (commit: M.2: probes — one TED daily package (77 Portuguese notices), 10 procedure-document links (acinGov serves the pieces, Vortal does not))
+- TED: three GETs; the first two to wrong addresses (issue not zero-padded: 400, 404), then the daily package of
+  OJ S 190/2026 (01/10/2026), 18 115 918 bytes, sha256 70f29e9a…, raw raw:ted:pacote-diario:202600190. 3 631 EU
+  notices; 77 with a Portuguese organisation, 74 with a NIF; 50 contract notices, 21 award notices. Counted only.
+  adapters/ted/ (record.py, count.py, PROBE.md).
+- Procedure documents: 10 October procedures, one GET every 10 s, no refusal. acinGov 5/5 served the whole set of
+  pieces as one ZIP (3–5 PDFs, 0.4–19 MB), stored as raw:pecas:documento:<key>; Vortal 5/5 served a 686-byte
+  JavaScript shell («Vision»): not readable with a plain GET (a rendering browser would be a decision for the person).
+  adapters/pecas/ (probe.py, probe-log.jsonl, PROBE.md). No facts.
+- Checked: `verify.py --store data governance`: the probes add no failure; the 285 failures are E1b's interim state
+  (PDFs fetched after its interim build, proposer not yet registered).
+- Next: E1b's final build when the download ends; the samples stay on this branch for the person to review.
+- Why: one sample of every source is now in the store, each with its raw and sha256.
+
+## 2026-10-25 M.3 Vortal: its public JSON API, read without a browser (commit: M.3: Vortal probe — the notice and its documents through Vortal's public JSON API with plain GETs; the uploaded DR notice is byte-identical)
+- Done (the person's «va hazlo» to probing Vortal without stopping the download): the Vortal link was opened once in
+  the built-in browser only to list the addresses its application reads (all GETs to a public JSON API; the page also
+  sends analytics, so the data is read without it), then four plain GETs 10 s apart for one procedure
+  (PT1.NTC.3811157, BASE 24347/2026), all 200: link -> notice address, header, the notice as typed fields with the
+  documents list (public download URLs), and one document. adapters/vortal/ (record.py, PROBE.md); raws
+  raw:vortal:* and raw:pecas:documento:vortal-…; bytes gitignored. No facts.
+- Found: the uploaded document 419974431.pdf is byte-identical (sha256 733a83cf…) to the DR notice E1b fetched: an
+  exact join Vortal procedure <-> DR notice. Deadlines come in UTC (22:59Z = 23:59 Lisbon): a hypothesis for the
+  «D+1 00:59» differences between DR notice and dump. The documents list names the uploading official: never published.
+- Checked: `verify.py --store data governance`: no failure from the probe (the remaining failures are E1b's interim).
+  The DR download kept running throughout (pid 7824).
+- Next: E1b's final build; a decision for the person on reading Vortal and acinGov at scale.
+
+## 2026-10-25 M.4 the platforms in the background: Vortal notices (2026) and acinGov pieces (October) (commit: M.4: platform fetchers — Vortal notice JSON for 2026, acinGov pieces ZIPs for October, in the background)
+- Decided by the person (his words, ~22:50Z): «vamos a empezar a ingestarlo ya de una vez», after the proposal of
+  Vortal's notice JSON for every 2026 procedure (October first) and acinGov's pieces ZIP for October only. acinGov's
+  whole year (~9 781 ZIPs, ~58 GB at the probe's mean of 5.9 MB) does not fit the 15 GB free; Vortal's documents are
+  not downloaded.
+- Done: adapters/plataformas/fetch.py (vortal / acingov): procedures of adaptador:base-anuncios by their
+  PecasProcedimento host, October first then months interleaved; vortal = two GETs of the public JSON API per
+  procedure (link -> PT1.NTC.*, then the notice with its documents list); acingov = one GET of the link (a ZIP).
+  One GET every 10 s per host, the DR's rules otherwise (stop on 403/429, an hour before a resume, network errors
+  retried by the next run, stored work skipped, stop below 2 GB free). Tested on 2 procedures each, then launched
+  detached at 22:54Z: vortal 10 491 to read (~58 h), acingov 566 (~1.6 h; the probe's 5 ZIPs are not fetched again).
+  The DR download (pid 7824) runs on beside them. Logs: adapters/plataformas/<platform>-log.jsonl.
+- Next: when the October DR notices are in (watcher), the interim DR build and verify; the platform raws and their
+  facts once the downloads end (a build step, not written yet).
+- Why: the platforms hold typed data (Vortal) and the documents (acinGov) that the dump and the DR notice do not.
+
+## 2026-10-26 M.5 night: October complete in the DR; the platforms stopped on disk; their files recorded (commit: M.5: platform downloads recorded as raws; acinGov and Vortal stopped at the 2 GB disk guard)
+- DR: the watcher fired at 01:19:42Z: every October notice with a DR PDF is stored (1 763 PDFs in all, 0 errors).
+  Interim build (on this branch, not committed here: E1b's own PR carries it): 1 769 documents; October 1 226/1 226
+  with data_envio_anuncio, nut_iii_adjudicante, territorio, norma_juridica_adjudicante; publicado_joue 1 225;
+  data_limite_propostas 1 195 (the 31 others are concursos limitados and de conceção, whose notice has no deadline);
+  data_limite_propostas equal to the dump 1 734/1 734, NIF equal 1 769/1 769, 0 conflicts. `check` 0 differ.
+- Disk: acinGov's ZIPs average 33.4 MB, not the 5.9 MB estimated from five probes (one is 1.94 GB): 446 ZIPs took
+  14.9 GB, the free space fell to 1.7 GB, and both platform fetchers stopped at their 2 GB guard at ~00:55–00:58Z
+  (acinGov 446 of the 566 October ZIPs; Vortal 345 procedures, 16 HTTP 500 and 3 network errors to retry). My estimate
+  was wrong; no file was lost. The DR fetcher runs on (its guard is 1 GB; ~27 MB/h). Only scratch copies of files
+  already stored in data/ (same sha256) were removed. Nothing downloaded was deleted: that is the person's decision
+  (an external disk, or which files to move).
+- Done: adapters/plataformas/record.py: every stored platform file -> a raw (699 raw:vortal:*, 446
+  raw:pecas:documento:*), with captured_at = its GET. `verify.py --store data governance`: 1 failure, E1b's proposer
+  not yet registered (its final build registers it).
+- Next: the person decides the disk; the DR download goes on; E1b's final build when it ends.
+
+## 2026-10-26 M.6 acinGov's pieces offloaded to the person's Modal volume; the platforms resumed (commit: M.6: acinGov pieces offloaded to Modal volume ccp-raw-bytes (452/452 checked by sha256), local copies removed; fetchers resumed)
+- Decided by the person (his words, ~07:00Z): «si ya tenemos octubre no lo puedes pasar a un lugar en la nube que
+  tengamos acceso y luego así liberar espacio», then «Si hazlo» to: his Modal account (storage reportedly
+  $0.09/GiB-month with 1 TiB free, from third-party pricing pages; to confirm on modal.com/pricing), upload, check
+  every sha256 on Modal, only then remove the local copies.
+- Done: Modal CLI 1.6.2 in a scratch venv (account paulovillalobos); volume `ccp-raw-bytes` created; `modal volume put`
+  of data/raw/pecas/raw_bytes -> /pecas/raw_bytes (452 files, 07:09:47Z–07:17:27Z); adapters/plataformas/
+  offload_check.py hashed every file on a Modal CPU container: 452/452 equal to their name, 0 bad
+  (offload-check-pecas.json); the 452 local copies removed. Free disk 1.8 GB -> 16 GB.
+- record.py now keeps the raws of offloaded files (it reads offload-check-*.json). verify on the Mac reports I01 for
+  those raws: adapters/plataformas/SCHEMA-PROPOSAL.md item 1 for the builder.
+- Resumed at 07:23Z: vortal (10 148 left), acingov (122 October ZIPs left; offloaded the same way when done). The DR
+  download kept running (pid 7824).
+
+## 2026-10-26 M.7 the platforms run on Modal, for all of 2026 (commit: M.7: platform fetchers on Modal (volume ccp-raw-bytes) for every 2026 procedure; local platform files offloaded and checked)
+- Decided by the person (his words, ~07:50Z): «pásalo a modal … hay que dejar libre el disco para poder volver a
+  descargar más cosas, para hacer todo 2026, y directamente en modal». The DR download stays on the Mac (small, 1.6 GB
+  in all; its build reads the PDFs locally; moving it to a datacenter address mid-way would risk the DR's blocks).
+- Done: the local vortal and acingov fetchers stopped at 07:44Z; their files (87 ZIPs, 2.0 GB; 812 Vortal JSON,
+  12 MB) uploaded to ccp-raw-bytes, checked on Modal (539/539 and 812/812 hash to their names;
+  offload-check-pecas-2.json, offload-check-vortal.json), and the local copies removed: 15 GB free.
+- adapters/plataformas/modal_fetch.py: the same fetchers in one small CPU container on the person's Modal account,
+  writing to the volume (bytes under <source>/raw_bytes/<sha256>, log /logs/<platform>-log.jsonl, committed every 25
+  procedures), the same rules (one GET every 10 s per host, stop on 403/429, network errors retried by a later run),
+  a run stops before Modal's 24-hour limit and the next run continues. acingov now reads every 2026 procedure.
+  Tested on 5 + 5 procedures from Modal (no refusal; Vortal 4/5, one HTTP 500 to retry; acinGov 2/5: the other three
+  link to acinGov's homepage only, so fetch.py now skips bare homepage links: 5 on acinGov, 12 on Vortal).
+- Launched detached at 07:58Z: acingov (~9 200 ZIPs, ~26 h, two runs) and vortal (~10 100 procedures, ~56 h).
+- What lives where: GitHub holds every file's raw (sha256, URL, captured_at), the logs and the code; Modal holds the
+  bytes; anyone can re-hash a copy against its raw.
+
+## 2026-10-26 H.1 the BASE history: contratos and anúncios dumps 2018–2026 (commit: H.1: BASE bulk dumps 2018–2025 read once each (16 files, sha1 equal to the portal's); raws; counts per year)
+- Decided by the person, relayed by the builder: «Para el selector por ahora; vamos a los datos (Supabase y descargas)
+  para los 5 días». Branch extractor-historico (from extractor-muestras).
+- Done: adapters/base-historico/fetch.py (fetch / record): the IMPIC datasets' resources on dados.gov.pt, one GET per
+  file, the portal's sha1 checked (16/16 equal), bytes by sha256 under data/raw/base-historico/raw_bytes/ (gitignored),
+  16 raws (source base-dump, kinds contratos-ano / anuncios-ano). 2026 not read again (already stored, same resources).
+  Counts per year: adapters/base-historico/COVERAGE.md — 208 137 anúncios and 1 683 348 contratos, 2018–2026.
+- Blocked: Supabase Storage. The CLI is logged in and linked to ccp-engine from a scratch workdir; the project has no
+  bucket, and creating one (`ccp-raw`, private) was refused by this session's permission policy (a shared resource).
+  The bytes wait on the Mac (424 MB) until the person creates the bucket or allows it.
+- Next: TED Portuguese notices 2018–2026 and the Vortal copies of the DR notices, once the bytes have their place.
+
+## 2026-10-26 H.2 raw bytes to Supabase Storage (bucket ccp-raw), checked by sha256 (commit: H.2: raw bytes offloaded to Supabase Storage ccp-raw — upload, download back, sha256, then delete; 56 files, 507 MB)
+- The person created the private bucket ccp-raw in ccp-engine himself («ya está»; storage.buckets checked by the
+  builder: public = false, 2026-10-26 18:42:44Z). The builder relayed: upload, download each file back and compare its
+  sha256, only then delete the Mac copy.
+- Done: adapters/storage/offload.py: the Supabase CLI (logged in, linked to ccp-engine from a scratch workdir; no key
+  handled by this code) uploads data/raw/<source>/raw_bytes/<sha256> to ccp-raw/<source>/raw_bytes/<sha256>, downloads
+  it back, compares the sha256 with the name, and deletes the Mac copy only on a match; every step in
+  adapters/storage/offload-log.jsonl. Uploaded and verified: base-modificacoes 38 files (1.5 MB, test run), then every
+  file of 1 MB or more of base-historico (15), base-contratos (the 2026 zip), base-entidades (1), ted (1): 18 files,
+  505 MB. 0 hash mismatches.
+- Not uploaded: contratos2025.zip (55 383 072 bytes): Storage answered 413 «The object exceeded the maximum allowed size»
+  (the project's upload limit, 50 MB by default; raising it is a setting in the Supabase dashboard, the person's). It
+  stays on the Mac. The record slices under 1 MB (base-contratos, about 15 000) and the DR PDFs (still downloading,
+  read by E1b's build) stay for now: the CLI takes about 6 s per file.
+- Disk: 6.0 GB free afterwards. The drop since the morning is macOS swap (5 GB in use), not these files.
+- Consequence, as with M.6: verify on the Mac reports I01 for the raws whose bytes now live in the bucket; the builder's
+  proposal (adapters/plataformas/SCHEMA-PROPOSAL.md item 1) covers checking them where they live.
+
+## 2026-10-26 H.3 TED Portuguese notices 2018–2026, filtered on Modal (commit: H.3+H.4: TED monthly packages filtered to Portugal on Modal; Vortal's copy of the DR notice as a second source — code, tests, runs launched)
+- adapters/ted/modal_ted.py: per month, on the person's Modal account (volume ccp-raw-bytes, nothing through the Mac),
+  one GET of https://ted.europa.eu/packages/monthly/<yyyy>-<m>, the package kept under /vol/ted/packages/<sha256>, every
+  XML read in the container (the daily packages inside the monthly ones opened in turn), the Portuguese notices kept
+  unchanged in /vol/ted/pt/<yyyy-mm>.tar.gz with /vol/ted/index/<yyyy-mm>.json (package URL, sha256, size, captured_at;
+  each kept notice's member, sha256, size, format, why). Portuguese = TED-XML with ISO_COUNTRY PT in the coded data;
+  eForms with an organisation whose country is PRT. At most two packages at a time (TED allows three).
+- Tests: 2018-01 (TED-XML): 45 278 notices, 569 Portuguese, 788 850-byte bundle. 2026-01 (eForms): the first run found
+  0 notices because the 2026 monthly package holds 21 daily packages; the code now opens nested packages; second run:
+  71 738 notices, 1 585 Portuguese, 2 817 340-byte bundle (the package was read twice, same sha256 6d790daa…).
+- Launched detached: 2018-01 .. 2026-09 (105 months). The bundles and indexes come to the Mac per month, then to
+  Supabase (ccp-raw/ted/…) by offload.py; the packages stay on the Modal volume as the captures' bytes.
+
+## 2026-10-26 H.4 Vortal's copy of the DR notice (second source of the notice PDF)
+- adapters/plataformas/modal_vortal_dr.py: for every procedure whose Vortal notice JSON is stored, the document named
+  «<IdIncm>.pdf» in its documents list is downloaded once (public URL), one GET every 20 s (the Vortal notice fetcher runs
+  beside it), stop on 403/429; only procedures on Vortal, never around a DR refusal. Bytes in /vol/vortal-dr/raw_bytes/.
+- Test on 5 procedures: 5 listed, 5 downloaded, 5 byte-identical to the PDF the DR download stored (sha256 equal).
+  Launched detached over the 1 962 Vortal notices stored so far; to be run again as the Vortal fetcher advances.
+- Note for the person: acinGov's whole 2026 (about 9 200 ZIPs at 33 MB on average, about 300 GB) does not fit the 100 GB
+  of the Supabase plan; today those bytes are on the Modal volume.
+
+## 2026-10-26 H.5 TED done: 105 months, 98 952 Portuguese notices; bundles and indexes in Supabase (commit: H.5: TED 2018-01..2026-09 — 6 399 136 EU notices read on Modal, 98 952 Portuguese kept; 105 package raws; bundles and indexes in Supabase, sha256-checked)
+- The Modal run ended with 105/105 months and no error. 6 399 136 EU notices read, 98 952 Portuguese kept (TED-XML
+  54 790, eForms 44 162). Packages 23.9 GB, on the Modal volume (ted/packages/<sha256>); raws in
+  data/raw/ted/raw/ted-mensal.jsonl. Per year: adapters/ted/COVERAGE.md; per month: adapters/ted/manifest.json (package
+  URL, sha256, size, captured_at, counts, the bundle's and the index's sha256).
+- The 105 Portuguese bundles (149 MB) and 105 per-notice indexes (23 MB) came to the Mac, each bundle's sha256 equal to
+  the one its index recorded on Modal (105/105), then went to Supabase ccp-raw/ted/raw_bytes/<sha256> by offload.py:
+  210 files, 179 472 999 bytes, uploaded, downloaded back and equal by sha256; the Mac copies removed.
+- Caveat in COVERAGE.md: the eForms filter (any Portuguese organisation) is broader than the TED-XML one (the buyer's
+  country), so 2024–2026 are not comparable with 2018–2023 as they stand; a buyer-country filter is next.
+- Disk after: 5.4 GB free (macOS swap still at about 5 GB).
+
+## 2026-10-26 H.6 contratos2025.zip stored as byte parts under the 50 MB limit (commit: H.6: contratos2025.zip in two byte parts with a manifest of hashes; joined parts hash to the file; Mac copy removed)
+- Decided by the person, relayed by the builder: «Divide contratos2025.zip en partes de menos de 50 MB con sus huellas,
+  sin tocar el spend cap». No Supabase setting was changed.
+- Done: adapters/storage/split_offload.py: the exact bytes cut at offsets 0 and 40 000 000 (no re-zip) into
+  6c46253114cc….part01 (40 000 000 bytes, sha256 fe117ba9…) and .part02 (15 383 072 bytes, sha256 a06e9fd1…), uploaded to
+  ccp-raw/base-historico/raw_bytes/, with the manifest (whole sha256 and size; each part's name, order, offset, size,
+  sha256) uploaded beside them and committed at adapters/storage/parts/<sha256>.manifest.json.
+- Verified: both parts and the manifest downloaded back; the parts equal their recorded sha256; joined in order they
+  hash to 6c46253114cca8ba…4a03, the file's sha256; the manifest came back identical. Only then was the Mac copy deleted.
+- Raw: unchanged (whole sha256 and URL); raw.schema has no size or parts field, so they are in the manifest and
+  COVERAGE.md. All 16 BASE history files are now in Storage; none is left on the Mac.
+
+## 2026-10-26 H.7 Vortal refused (403): both Vortal fetchers stopped (commit: H.7: Vortal answered 403 at 20:18:27Z after a Modal preemption; both Vortal fetchers stopped; resume no sooner than an hour, one client only)
+- The Vortal notice fetcher on Modal (M.7) was preempted by Modal and restarted with the same input; its first request
+  after the restart got HTTP 403 at 2026-10-26T20:18:27Z and it stopped itself (todo 7 855, done in that run 0). The
+  Vortal DR-copy fetcher (H.4), which reads the same host, was stopped by hand right after (modal app stop), as the rule
+  for a refusal covers every reader of that host. It had downloaded 219 notices (all HTTP 200; last at 20:12:15Z).
+- Cause not known: two readers of one host (about one GET every 6.7 s together) and a new container address after the
+  preemption are both possible. The DR download (another host) and acinGov (another host) go on.
+- Next: no Vortal request before 21:18Z; then one reader only (the notice fetcher first, the DR copy after it), at a
+  slower pace.
+
+## 2026-10-26 X.0 extraction test v1 for TED and BASE contratos: criteria and frozen code, sealed before any sample (commit: X.0: CRITERIA-ted-contratos-v1 and frozen parsers, sampling, blind-reading and scoring code — sealed before any sample is drawn)
+- Asked by the person (relayed by the builder): «at least 8 in all»; for extraction, «8 = each new source measured, not
+  assumed», 200 per source, criteria fixed first as CRITERIA-v2 did for the DR notices.
+- Sealed (sha256), in this commit, before either sample is drawn:
+  - adapters/medicao/CRITERIA-ted-contratos-v1.md 786e3b4ab41b1eadcf1900c7568e97aecdef05442a736e484961397027146021
+  - adapters/ted/parse.py cf1ee6bdf9811b1a73d37eb885f1e9ee0f73203a03c83286c3516bc51f982dca (TED-XML R2.0.9 and R2.0.8, and
+    eForms; written on 2018-01 and 2026-01 only: 569 and 1 585 notices, 0 errors; contract notices 2018-01: buyer name
+    and deadline 135/135)
+  - adapters/base-contratos/adapter.py 0f4a52c364e30d7368446bc4408781d9c55be9949bd2e03d23fc5e093d3e7eec and mapping.json
+    65b9c384a5a05bad70e70cc6eda683948cca334f331adfb664eeeed90dbbd79b (written on October 2026 only)
+  - adapters/medicao/sample.py 779c1fb6997f85777a42d001a53ec73b8984169916d81eea8821fb4392918c05
+  - adapters/medicao/blind_read.py a6e2eca0ed738267e2aaa6e23392793fc845b5b135156e6eb7ed908b898dfbf3
+  - adapters/medicao/score.py 7c32e31453aa6e8545c08cb843c1247364641a6a1a0134579e66b717f12b9677
+- Found while writing the TED parser: in eForms the buyer is the organisation the ContractingParty names, not the first
+  organisation; on 2026-01, 1 569 of the 1 585 notices kept by the M-run filter have a Portuguese buyer, 16 do not.
+- Also in this commit: adapters/storage/offload.py gains --workers and --require-text (used once the database is
+  writable again; see below).
+- Blocked meanwhile: the ccp-engine database went read-only (default_transaction_read_only = on, 787 MB), so the Supabase
+  CLI cannot open Storage; the pending upload of the DR PDFs was stopped before it began. Reported to the builder.
+- Next: draw the TED sample (the bundles are on the Modal volume); the contratos sample waits for Storage (its zip is
+  there only).
+
+## 2026-10-26 X.1 TED sample drawn and its parser output sealed (commit: X.1: TED sample of 200 (100 TED-XML, 100 eForms) drawn by the sealed script; sample.json and parsed.json sealed before the blind reading)
+- `adapters/medicao/sample.py ted` over the 105 Portuguese bundles from the Modal volume, minus 2018-01 and 2026-01:
+  population with a Portuguese buyer 54 221 TED-XML and 42 042 eForms (the buyer filter drops about 2 120 eForms notices
+  whose buyer is foreign); 100 + 100 drawn with random.Random(20261027).
+- Sealed: adapters/medicao/ted/sample.json d12f6a29158385d1dddc9951eaccefa202b788454b45ae5c8788b138f4c0ce8a,
+  adapters/medicao/ted/parsed.json 09df8fa4c52cf10e5f143432150258407f377fdbba8cccb23801d732992963d2. The 200 XML files are
+  re-derivable from the bundles and sample.json (scratch, not in git).
+- Next: check C, the blind family-B reading (reader B's bundled client, model model-b as named by the person for
+  the DR test), then A and B with the BASE anúncios once Storage is readable.
+
+## 2026-10-26 X.2 TED v1 scored: A passes, C fails on an eForms parser error; B not run (commit: X.2: TED v1 — blind answers sealed; A passes; C 97.4 % fails on the eForms dispatch date; the 43 disagreements settled from the XML)
+- Blind reading: 40 batches of 5 (reader-b-cli, model-b), answers saved before scoring in
+  adapters/medicao/ted/blind/; sha256 of the 40 files' sha256 list 7f7d4452e52dfee8565ffddb6f932cf52a09d5e8ac421f70006c7ef950a06e5d.
+  score.json 43c494f71bbca196fa27d2c5d48f2f69aaa2d1b6242257ec822316d319ad4246.
+- A: the six required fields 98.8–100 % (PASS). C: 1 597 / 1 640 = 97.4 % (96.5–98.0), FAIL; TED-XML 781/781, eForms
+  816/859. 39 of the 43 disagreements are one code error: in eForms result notices the parser read the first IssueDate in
+  the document, the SettledContract's (BT-145), not the notice's (BT-05). 2 are a joint procurement (parser gave the first
+  of six buyers), 2 a change notice whose coded deadline and change text differ. Reader errors 0. adapters/medicao/ted/REPORT-v1.md.
+- Verdict as written: TED's extraction is not measured as passing; fix the parser and draw v2.
+
+## 2026-10-26 X.3 TED v2 criteria and fixed parser, sealed before the v2 sample (commit: X.3: CRITERIA-ted-v2 and the fixed TED parser (eForms dispatch date = the root's IssueDate), sealed before the v2 sample)
+- Sealed (sha256), before the v2 sample is drawn:
+  - adapters/medicao/CRITERIA-ted-v2.md 2c8d1941bde72334f904b6137a0f2fc44982665f9b1b25eb7d89d9498a879a68
+  - adapters/ted/parse.py b277c0075feb5f7e2b5adcfab897ea82387017bf1b05a9719e57f9925d3634a7 (dispatch date fix only; on
+    v1's 200 notices it changes the 39 wrong dates and nothing else)
+  - adapters/medicao/sample.py fbf269f4278be5a1ff108915c43dd12dce511586cc58652718d07aa53f513e8c (--seed, --exclude)
+  - adapters/medicao/blind_read.py 749e1b3c5b57044feb9014a9bace6fac06cb375d69c6504831f3d7c56faf6d58 (TED prompt: the
+    first buyer when several; the contratos prompt is unchanged)
+  - adapters/medicao/score.py e997664b5d228f9e05564469797ba7a625e2621b5a7f443159f39a34ed90d3a0 (TED deadline_time as
+    hour:minute; the contratos scoring is unchanged)
+- Next: sample.py ted --seed 20261028 --exclude adapters/medicao/ted/sample.json, then the blind reading.
+
+## 2026-10-26 X.4 TED v2 sample drawn and its parser output sealed (commit: X.4: TED v2 sample of 200 drawn by the sealed script (seed 20261028, v1's 200 excluded); sample.json and parsed.json sealed before the blind reading)
+- `adapters/medicao/sample.py ted --seed 20261028 --exclude adapters/medicao/ted/sample.json`: population 54 121 TED-XML and
+  41 942 eForms (v1's 200 left out); 100 + 100 drawn.
+- Sealed: adapters/medicao/ted-v2/sample.json ca9824d2807865917d130977fc1eb629268231181a622a176e105b08eeaa3a08,
+  adapters/medicao/ted-v2/parsed.json 2ae15b5ca1c55a602eba15c0476bd673c53849ad2d085bb65620592897c95856.
+- Next: the blind reading (same client and model), then scoring.
+
+## 2026-10-26 X.5 BASE contratos sample drawn and its parser output sealed (commit: X.5: BASE contratos sample of 200 drawn by the sealed script from contratos2026.zip (back from Storage, sha256 checked); sample.json and parsed.json sealed before the blind reading)
+- Storage answers again (the CLI's login-role step works). contratos2026.zip downloaded back from
+  ccp-raw/base-contratos/raw_bytes/2ac78c54…; sha256 2ac78c54690f2e6456c071e07ba984cfacecf058f5b58a3786944d55fa938fb2 as
+  the criteria name it.
+- `adapters/medicao/sample.py contratos` (v1 criteria, seed 20261027; the contratos path of sample.py is unchanged since
+  X.0): population 182 539 records (October 2026 and repeated idcontrato left out); 200 drawn.
+- Sealed: adapters/medicao/contratos/sample.json 1a03f8e8fda23938a57f50ec359f0ce6f026cadbded7b839459c81d064a40768,
+  adapters/medicao/contratos/parsed.json 5058876e5f0e53d3375b5c0588cb26334d2d2846b1bc89c078830e9394b18111.
+- Next: the blind reading (batches of 10), then A, B (against adaptador:base-anuncios facts) and C.
+
+## 2026-10-26 X.6 TED v2 and BASE contratos scored (commit: X.6: TED v2 — A and C pass (C 99.9 %), B 93.0 % fails on wrong joins; BASE contratos — A, B and C pass (C 1 514/1 514); blind answers sealed)
+- TED v2 (ted-v2/REPORT-v2.md): blind answers sha256-of-list 38223a26734fbe88eccf44fb3446706de9fa8a4280c1ffed1646400b3509b4a9,
+  score.json e944f92d209d2c70fdd090acc28ef6a76d04038ccda79297d6de64227f660d13.
+  A PASS; C 1 652 / 1 653 = 99.9 % (99.7–100) PASS, the one disagreement a code error (an EU agency's multilingual
+  notice: the parser read the first language form, Danish, not the ORIGINAL English); B 53 / 57 = 93.0 % (83.3–97.2)
+  FAIL, join rate 31 / 93. The 4 B disagreements are joins to a different procedure of the same buyer with the same
+  deadline (titles quoted); parser errors found by B: 0. As written, TED is not measured; a B-only v3 with a better join
+  key needs a decision.
+- BASE contratos (contratos/REPORT-v1.md): blind answers sha256-of-list
+  0a4d95b8bf98f1930e7046318911c7ed07b1aec304c14a03cd5886ff393b9353, score.json
+  783e92020faf1a11b1c44c8caf55a17071ae1a4687965b403c68c76f88f94aa1. A PASS (required fields 99.5–100 %); B 64 / 64 on 17
+  joined contracts (94.3–100) PASS; C 1 514 / 1 514 (99.7–100) PASS. Measured. tipo_procedimento is partial (142/200):
+  framework call-offs and excluded contracting are outside the vocabulary.
+- BASE anúncios 2018–2025 downloaded back from Storage for B (sha256 checked; scratch, deleted after).
+
+## 2026-10-26 X.8 TED v3 (check B only) criteria and parser, sealed before the v3 sample (commit: X.8: CRITERIA-ted-v3 (B only: buyer + deadline + title containment 0.5, as code) and the TED parser reading the ORIGINAL form, sealed before the v3 sample)
+- The builder relayed a yes to a B-only v3 with the DR test's v2 protocol (join key as code, threshold before the draw,
+  pairs under it «not joinable» and out of the denominator), and to fixing the code error v2's C found.
+- Sealed (sha256), before the v3 sample is drawn:
+  - adapters/medicao/CRITERIA-ted-v3.md 0203b1f4500d78f808e18d46e7abaafbbf0196ac8899ce787bbfe2656e460c3c
+  - adapters/ted/parse.py 715a2dd5f7943480bf296b1636db196623d055e66e794a3cd3233b0c8b1bbe1e: TED-XML form fields from the
+    CATEGORY="ORIGINAL" form (coded data still from the coded section), plus `title`. On v1's and v2's 400 notices it
+    changes one value (v2 n=85's buyer name) besides adding the title. v3 runs this parser; v2's C ran b277c007….
+  - adapters/medicao/sample.py 9109075f7dc0e567541909118413d89b523b54bbdad24b17881044d320a582b2 (--contract-only,
+    several --exclude)
+  - adapters/medicao/score.py f38bf3f84d064902aab8c3138f4bd7e1bbcc6b838ad78ca1cf6d1b867b310b7c (score_ted_b, THRESHOLD 0.5)
+- Also in this commit: the DR upload log so far (49 verified, 14 failed at the pooler's auth limit when 8 CLI processes
+  ran at once; those Mac copies were kept).
+
+## 2026-10-26 X.10 TED v3 check B passes; TED measured with v2's A and C (commit: X.10: TED v3 — B 189/192 = 98.4 % (95.5–99.5) on the title-checked join; with v2's A and C, TED's extraction is measured; v1, v2 and v3 side by side)
+- v3 sample (X.9): 22 432 TED-XML and 21 446 eForms contract notices in the population; sample.json
+  fc0dd45f97bfe61a135a7f59c0f0f04ddfa3f51f440d50bbbb7fc462190c09b7, parsed.json
+  1173bb6e4f97610eb9e15229764c13a591c1429ca7c1c50345c9e7b3159ee68f.
+- B (ted-v3/score-b.json 0666da40fc9d63aa6e9fde3e3ca8d4b346fea6ef8fe6ba679f319990731071b5): joinable 102 / 200; not
+  joinable 78 (no candidate), 15 (under 0.5), 5 (tie); agreement 189 / 192 = 98.4 % (95.5–99.5), PASS. Disagreements:
+  2 wrong joins at containment 0.62 and 0.50 (titles quoted), 1 where the sources differ (eForms ProcedureCode
+  restricted, BASE Concurso público); parser errors 0.
+- adapters/medicao/REPORT.md: v1, v2, v3 and BASE contratos side by side. Count towards the 8: BASE contratos and TED
+  measured; the DR notices measured earlier (CRITERIA-v2).
+
+## 2026-10-26 X.11 Coverage matrix: source × year × field, gaps named (commit: X.11: coverage matrix for BASE anúncios and contratos 2018–2026 and TED 2018–2026, from the adapters' own code; gaps named)
+- adapters/coverage/matrix.py counts, per year, the share of records for which the adapter's own code gives a value
+  (base-anuncios map_record, base-contratos contract_values, adapters/ted/parse.py 715a2dd5…); the BASE dumps were
+  downloaded back from Storage one at a time, sha256 checked, counted and deleted. matrix.json holds counts and the most
+  frequent reasons for no value; COVERAGE-MATRIX.md the tables, every share under 90 % with its reason, and the sources
+  not in the tables (DR 2026 in progress, DR 2018–2025 not fetched, Vortal stopped, platform pieces are documents).
+- Weakest: BASE contratos tipo_procedimento 74–88 % (call-offs and excluded contracting outside the vocabulary);
+  adjudicatario 88–90 % (adjudicatários without NIF); TED estimated_value 37–71 % and TED-XML buyer_nif 11–86 % (not in
+  the notices).
+
+## 2026-10-26 X.12 Vortal retried after the hour, one reader at 20 s; the DR uploads resumed with one process (commit: X.12: Vortal retried at 21:23Z, one reader at one GET per 20 s, no refusal so far; DR uploads resumed one process at a time)
+- Vortal: the notice reader (modal_fetch.py --platform vortal, now one GET per 20 s) started at 21:23Z, more than an hour
+  after the 403 of 20:18:27Z; the DR-copy reader stays stopped until it ends. First committed log: 46 GETs to 21:38Z,
+  42 × 200 and 4 × 500 (server errors, logged; a later run retries them), no 403 or 429. On a second 403 it stops itself
+  and stays stopped for the day.
+- Storage uploads of the DR PDFs: 8 CLI processes at once tripped the pooler's authentication circuit breaker (each
+  process re-initialises the CLI's login role); stopped, nothing unverified deleted. Resumed with one process; an object an
+  interrupted run already stored (409 KeyAlreadyExists) is now downloaded back and checked like a fresh upload.
+
+## 2026-10-27 X.13 Disk: verified DR PDFs deleted, the fetch counts what is in ccp-raw as stored; Modal limit stops Vortal (commit: X.13: dr-anuncios fetch counts PDFs verified in ccp-raw as stored; 13 unlogged uploads checked and logged; Modal input limit stopped the Vortal reader)
+- Disk fell under 1 GB twice (macOS swap, then growth outside this worktree). Deleted only copies verified in ccp-raw
+  (sha256 of the downloaded-back object): 8 684 DR PDFs (685 MB) by offload.py, plus the contratos2026.zip copy and the
+  TED bundles in scratch (156 MB). The DR fetch stopped itself under 1 GB at 10:32Z (13 101 of 21 658 in that run).
+- adapter.py stored(): a PDF counts as stored when it is on disk or verified in ccp-raw by offload-log.jsonl. Before, a
+  restarted fetch saw only the 2 020 PDFs still on disk and began fetching again; stopped after 3 GETs (13:51:21–41Z,
+  three notices already held; logged as they are). Restarted at 13:54Z: 13 622 stored, 8 548 to fetch.
+- 13 PDFs were neither on disk nor in offload-log: the 8-worker run killed on 2026-10-26 had stored and deleted them
+  without writing their lines (pool.map writes in order). Each was downloaded back from ccp-raw and matched its sha256;
+  logged with a note.
+- Vortal notice reader: ended 13:49:46Z by Modal, not by Vortal: "Input rate limit (0/s) exceeded" for the function
+  (the acinGov run ended the same way). Log: 7 406 GETs, 7 390 × 200, 15 × 500, the one 403 of 2026-10-26 20:18:27Z.
+  No Modal setting changed; the DR-copy reader is not started.
+
+## 2026-10-27 X.14 Vortal reader restarted after Modal accepts runs again; DR fetch and uploads restarted (commit: X.14: Vortal reader restarted at 20:12Z; DR fetch and uploads restarted after the scratch workdir was emptied)
+- The DR fetch stopped itself under 1 GB again near 14:50Z (301 of that run's 8 548). Restarted 20:09Z with 7.6 GB free:
+  13 980 stored, 8 190 to fetch. The disk guard now pauses it at 1.5 GB, before the fetch's own 1 GB stop, and resumes it
+  at 3 GB.
+- The session's scratch folder was emptied on a restart, with the CLI's linked Supabase workdir in it. A first upload run
+  at 20:09Z logged 301 failures ("failed to change workdir"); nothing was deleted (a local copy goes only after the check).
+  Relinked; uploads verify again from 20:11Z, one process, detached so they outlive the session.
+- Modal accepts runs again (the builder session relayed that the workspace payment method was updated on 2026-10-27).
+  The Vortal notice reader (one GET per 20 s, resumes from its own log of 7 406 lines) restarted at 20:12Z. acinGov is
+  not restarted: 2026 alone is about 300 GB, beyond the plan, and waits for Paulo.
+
+## 2026-10-27 X.15 Main (8167135fd) merged into extractor-historico for the handover to the main session (commit: Merge main 8167135fd into extractor-historico: governance re-recorded after main's head, base-anuncios adapter @3)
+- Conflicts: governance/events.jsonl and principals.json take main's file; this branch's three events (evento:46–48:
+  propose and correct of adaptador:base-anuncios@1, propose of adaptador:base-contratos@1) are re-recorded after main's
+  head through engine.governance.Log with their own principals, payloads and times, now evento:84–86; its three
+  ferramenta registrations are added after main's principals. BUILD-LOG.md and .gitignore keep main's lines first, then
+  this branch's. adapters/base-anuncios/adapter.py takes main's (it adds the «nAnuncio empty» case for the history
+  loads); registered as ferramenta:adapter-base-anuncios@3 (evento:87; @2 retired). adapters/dr-anuncios/adapter.py keeps
+  this branch's stored() (X.13). This branch claims no decision id; main goes to D56.
+- Checked: `adapter.py check` for base-anuncios 2026: 22 306 files, 0 differ. `verify.py` with the interim E1b build
+  (untracked) set aside: fixtures, repo and measure stores 0 failures; governance 87 events, no I09/I04/PROV; the data
+  store's only failures are 2 964 I01, raws whose bytes live in ccp-raw or on the Modal volume (BASE dumps 2018–2025,
+  entidades, modificações, TED daily and monthly packages, Vortal notices, platform pieces), the open item of
+  adapters/plataformas/SCHEMA-PROPOSAL.md item 1. The TED monthly packages alone are tens of GB, so restoring them on the
+  Mac is not an option. Tests: 67 passed, 2 failed, both verify over data/ on the same I01
+  (test_verify.py::test_empty_stores_pass, test_verify_main_exit_code_is_zero).
+
+## 2026-10-27 — Merge of the extractor (PR #2) into main; D57
+- Asked: the person, «I want to have a main one… merge them» (one session).
+- Done: extractor-historico merged (main 8167135fd was already merged into it there; its evento:46-48 re-recorded as
+  84-86, base-anuncios adapter registered @3 as evento:87). D57: verify's I01 accepts bytes recorded as stored and read back
+  outside the Mac (offload log, part manifests, Modal offload checks, TED manifest). The 15 108 base-contratos slices, in
+  no store, cloned into data/raw/base-contratos/raw_bytes of the main checkout (git-ignored, local only).
+- Still running from the extractor's worktree (detached): the DR download, the DR uploads, the Vortal reader on Modal.
+  That session is archived only when they end and its untracked state is moved (handover notes, extractor-handover-2026-10-27.md).
+- Checks: verify ok on every store (data: 321 728 objects). Tests: 89 pass, 2 red and disclosed: test_b3_rules_v0 (since round 7)
+  and test_b5 reference cases, which now asks 100 annotated real cases (20 exist, from the fixtures): real work left, not lowered.

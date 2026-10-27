@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:03:35Z",
+ "ids": [
+  "115",
+  "116",
+  "117",
+  "118",
+  "119"
+ ],
+ "sha256": "d356a9a8460b462b8194493ab1a2d81fe25218eee56d6e0eebc1afd7f67d5f76",
+ "answer": {
+  "records": [
+   {
+    "id": "115",
+    "dispatch_date": "2025-02-12",
+    "buyer_name": "Águas do Norte, S. A.",
+    "buyer_nif": "513606084",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": "2025-03-17",
+    "deadline_time": "18:00:00+01:00",
+    "estimated_value": "3295000.00",
+    "main_cpv": "45231300"
+   },
+   {
+    "id": "116",
+    "dispatch_date": "2024-03-06",
+    "buyer_name": "Município de Rio Maior",
+    "buyer_nif": "505656000",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "works",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "12520500",
+    "main_cpv": "45315300"
+   },
+   {
+    "id": "117",
+    "dispatch_date": "2026-07-31",
+    "buyer_name": "Unidade Local de Saúde do Baixo Mondego, EPE",
+    "buyer_nif": "506361527",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33100000"
+   },
+   {
+    "id": "118",
+    "dispatch_date": "2025-05-19",
+    "buyer_name": "SPMS - Serviços Partilhados do Ministério da Saúde, E. P. E.",
+    "buyer_nif": "509540716",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2025-06-17",
+    "deadline_time": "18:00:59+01:00",
+    "estimated_value": "217560.53",
+    "main_cpv": "72500000"
+   },
+   {
+    "id": "119",
+    "dispatch_date": "2026-09-04",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PRT",
+    "procedure_type": "oth-single",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72200000"
+   }
+  ]
+ }
+}

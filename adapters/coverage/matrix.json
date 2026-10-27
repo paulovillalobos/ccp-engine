@@ -1,0 +1,1753 @@
+[
+ {
+  "source": "base-anuncios",
+  "year": 2018,
+  "records": 11236,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 11145,
+    "pct": 99.2,
+    "none_because": {
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 35,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 19,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 16,
+     "modeloAnuncio 'Concurso público urgente' outside the vocabulary": 9
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 10830,
+    "pct": 96.4,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 207,
+     "several contract types": 127,
+     "empty list": 58,
+     "'Outros' outside the vocabulary": 14
+    }
+   },
+   "preco_base": {
+    "with_value": 10776,
+    "pct": 95.9,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 447,
+     "PrecoBase '0.00'": 13
+    }
+   },
+   "adjudicante": {
+    "with_value": 11213,
+    "pct": 99.8,
+    "none_because": {
+     "empty NIF": 23
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 11236,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 10969,
+    "pct": 97.6,
+    "none_because": {
+     "empty": 266,
+     "earlier than dataPublicacao": 1
+    }
+   }
+  },
+  "records_all_acts": 13787
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2019,
+  "records": 14361,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 14194,
+    "pct": 98.8,
+    "none_because": {
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 69,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 31,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 30,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 17
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 13756,
+    "pct": 95.8,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 299,
+     "several contract types": 203,
+     "empty list": 99,
+     "'Outros' outside the vocabulary": 4
+    }
+   },
+   "preco_base": {
+    "with_value": 13980,
+    "pct": 97.3,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 345,
+     "PrecoBase '0.00'": 36
+    }
+   },
+   "adjudicante": {
+    "with_value": 14331,
+    "pct": 99.8,
+    "none_because": {
+     "empty NIF": 30
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 14361,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 14196,
+    "pct": 98.9,
+    "none_because": {
+     "empty": 163,
+     "earlier than dataPublicacao": 2
+    }
+   }
+  },
+  "records_all_acts": 17327
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2020,
+  "records": 15356,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 15217,
+    "pct": 99.1,
+    "none_because": {
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 72,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 30,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 23,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 5
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 14748,
+    "pct": 96.0,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 301,
+     "several contract types": 214,
+     "empty list": 91,
+     "'Outros' outside the vocabulary": 2
+    }
+   },
+   "preco_base": {
+    "with_value": 15067,
+    "pct": 98.1,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 276,
+     "PrecoBase '0.00'": 13
+    }
+   },
+   "adjudicante": {
+    "with_value": 15337,
+    "pct": 99.9,
+    "none_because": {
+     "empty NIF": 19
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 15356,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 15262,
+    "pct": 99.4,
+    "none_because": {
+     "empty": 94
+    }
+   }
+  },
+  "records_all_acts": 19071
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2021,
+  "records": 16330,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 16172,
+    "pct": 99.0,
+    "none_because": {
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 82,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 27,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 15,
+     "modeloAnuncio 'Intenção de celebração de empreitadas de obras publicas por concessionários que não sejam entidades adjudicantes' outside the vocabulary": 13
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 15635,
+    "pct": 95.7,
+    "none_because": {
+     "several contract types": 308,
+     "'Locação de bens móveis' outside the vocabulary": 286,
+     "empty list": 101
+    }
+   },
+   "preco_base": {
+    "with_value": 16008,
+    "pct": 98.0,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 293,
+     "PrecoBase '0.00'": 29
+    }
+   },
+   "adjudicante": {
+    "with_value": 16311,
+    "pct": 99.9,
+    "none_because": {
+     "empty NIF": 19
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 16330,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 16255,
+    "pct": 99.5,
+    "none_because": {
+     "empty": 73,
+     "earlier than dataPublicacao": 2
+    }
+   }
+  },
+  "records_all_acts": 19648
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2022,
+  "records": 17327,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 17137,
+    "pct": 98.9,
+    "none_because": {
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 69,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 53,
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 29,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 10
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 16518,
+    "pct": 95.3,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 356,
+     "several contract types": 348,
+     "empty list": 99,
+     "'Outros' outside the vocabulary": 6
+    }
+   },
+   "preco_base": {
+    "with_value": 16892,
+    "pct": 97.5,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 414,
+     "PrecoBase '0.00'": 21
+    }
+   },
+   "adjudicante": {
+    "with_value": 17301,
+    "pct": 99.8,
+    "none_because": {
+     "empty NIF": 26
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 17327,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 17216,
+    "pct": 99.4,
+    "none_because": {
+     "empty": 108,
+     "earlier than dataPublicacao": 3
+    }
+   }
+  },
+  "records_all_acts": 21153
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2023,
+  "records": 25323,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 25066,
+    "pct": 99.0,
+    "none_because": {
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 95,
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 48,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 43,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 31
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 23358,
+    "pct": 92.2,
+    "none_because": {
+     "empty list": 944,
+     "'Locação de bens móveis' outside the vocabulary": 537,
+     "several contract types": 476,
+     "'Outros' outside the vocabulary": 8
+    }
+   },
+   "preco_base": {
+    "with_value": 24614,
+    "pct": 97.2,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 368,
+     "PrecoBase '0.00'": 341
+    }
+   },
+   "adjudicante": {
+    "with_value": 24473,
+    "pct": 96.6,
+    "none_because": {
+     "empty NIF": 850
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 25323,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 25189,
+    "pct": 99.5,
+    "none_because": {
+     "empty": 133,
+     "earlier than dataPublicacao": 1
+    }
+   }
+  },
+  "records_all_acts": 30249
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2024,
+  "records": 25064,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 24895,
+    "pct": 99.3,
+    "none_because": {
+     "modeloAnuncio 'Anúncio de Adjudicação de Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 36,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 35,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 30,
+     "modeloAnuncio 'Aquisição de Serviços Sociais e de Outros Serviços Específicos' outside the vocabulary": 16
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 24073,
+    "pct": 96.0,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 432,
+     "several contract types": 335,
+     "empty list": 179,
+     "'Outros' outside the vocabulary": 45
+    }
+   },
+   "preco_base": {
+    "with_value": 24707,
+    "pct": 98.6,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 338,
+     "PrecoBase '0.00'": 19
+    }
+   },
+   "adjudicante": {
+    "with_value": 24907,
+    "pct": 99.4,
+    "none_because": {
+     "empty NIF": 157
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 25064,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 24816,
+    "pct": 99.0,
+    "none_because": {
+     "empty": 221,
+     "earlier than dataPublicacao": 27
+    }
+   }
+  },
+  "records_all_acts": 27772
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2025,
+  "records": 28472,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 28252,
+    "pct": 99.2,
+    "none_because": {
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 76,
+     "modeloAnuncio 'Hasta Pública de Alienação de Bens Móveis' outside the vocabulary": 59,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 40,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 21
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 27484,
+    "pct": 96.5,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 508,
+     "several contract types": 373,
+     "empty list": 76,
+     "'Outros' outside the vocabulary": 31
+    }
+   },
+   "preco_base": {
+    "with_value": 28187,
+    "pct": 99.0,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 226,
+     "PrecoBase '0.00'": 59
+    }
+   },
+   "adjudicante": {
+    "with_value": 28455,
+    "pct": 99.9,
+    "none_because": {
+     "empty NIF": 17
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 28472,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 27964,
+    "pct": 98.2,
+    "none_because": {
+     "empty": 491,
+     "earlier than dataPublicacao": 17
+    }
+   }
+  },
+  "records_all_acts": 33521
+ },
+ {
+  "source": "base-anuncios",
+  "year": 2026,
+  "records": 21575,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 21499,
+    "pct": 99.6,
+    "none_because": {
+     "modeloAnuncio 'Concurso público simplificado' outside the vocabulary": 25,
+     "modeloAnuncio 'Concurso de concepção' outside the vocabulary": 21,
+     "modeloAnuncio 'Instituição de sistema de qualificação' outside the vocabulary": 14,
+     "modeloAnuncio 'Instituição de sistema de aquisição dinâmico' outside the vocabulary": 14
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 20821,
+    "pct": 96.5,
+    "none_because": {
+     "'Locação de bens móveis' outside the vocabulary": 405,
+     "several contract types": 321,
+     "'Outros' outside the vocabulary": 26,
+     "empty list": 2
+    }
+   },
+   "preco_base": {
+    "with_value": 21420,
+    "pct": 99.3,
+    "none_because": {
+     "PrecoBase 'Inexistente'": 142,
+     "PrecoBase '0.00'": 13
+    }
+   },
+   "adjudicante": {
+    "with_value": 21573,
+    "pct": 100.0,
+    "none_because": {
+     "empty NIF": 2
+    }
+   },
+   "data_publicacao_anuncio": {
+    "with_value": 21575,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "data_limite_propostas": {
+    "with_value": 21314,
+    "pct": 98.8,
+    "none_because": {
+     "empty": 257,
+     "earlier than dataPublicacao": 4
+    }
+   }
+  },
+  "records_all_acts": 25609
+ },
+ {
+  "source": "base-contratos",
+  "year": 2018,
+  "records": 127936,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 112633,
+    "pct": 88.0,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 13438,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 1851,
+     "'Ajuste direto simplificado' outside the vocabulary": 14
+    }
+   },
+   "preco_base": {
+    "with_value": 122820,
+    "pct": 96.0,
+    "none_because": {
+     "0 or absent": 5116
+    }
+   },
+   "adjudicante": {
+    "with_value": 127864,
+    "pct": 99.9,
+    "none_because": {
+     "not one 'NIF - name'": 72
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 124932,
+    "pct": 97.7,
+    "none_because": {
+     "several contract types": 1480,
+     "['Locação de bens móveis'] outside the vocabulary": 1402,
+     "['Outros'] outside the vocabulary": 120,
+     "[] outside the vocabulary": 2
+    }
+   },
+   "preco_contratual": {
+    "with_value": 127530,
+    "pct": 99.7,
+    "none_because": {
+     "0 or absent": 406
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 127922,
+    "pct": 100.0,
+    "none_because": {
+     "not a date": 14
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 127936,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 112645,
+    "pct": 88.0,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 15158,
+     "empty list": 133
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2019,
+  "records": 145517,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 126989,
+    "pct": 87.3,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 15947,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 2545,
+     "'Ajuste direto simplificado' outside the vocabulary": 29,
+     "'Contratação excluída II' outside the vocabulary": 4
+    }
+   },
+   "preco_base": {
+    "with_value": 139913,
+    "pct": 96.1,
+    "none_because": {
+     "0 or absent": 5604
+    }
+   },
+   "adjudicante": {
+    "with_value": 145505,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 12
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 142097,
+    "pct": 97.6,
+    "none_because": {
+     "several contract types": 1697,
+     "['Locação de bens móveis'] outside the vocabulary": 1646,
+     "['Outros'] outside the vocabulary": 77
+    }
+   },
+   "preco_contratual": {
+    "with_value": 145145,
+    "pct": 99.7,
+    "none_because": {
+     "0 or absent": 372
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 145488,
+    "pct": 100.0,
+    "none_because": {
+     "not a date": 29
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 145517,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 129445,
+    "pct": 89.0,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 15845,
+     "empty list": 227
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2020,
+  "records": 176534,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 131130,
+    "pct": 74.3,
+    "none_because": {
+     "'Ajuste direto simplificado' outside the vocabulary": 26262,
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 15154,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 3514,
+     "'Ajuste direto simplificado ao abrigo da Lei n.º 30/2021, de 21.05' outside the vocabulary": 461
+    }
+   },
+   "preco_base": {
+    "with_value": 143599,
+    "pct": 81.3,
+    "none_because": {
+     "0 or absent": 32935
+    }
+   },
+   "adjudicante": {
+    "with_value": 176494,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 40
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 173128,
+    "pct": 98.1,
+    "none_because": {
+     "several contract types": 1819,
+     "['Locação de bens móveis'] outside the vocabulary": 1553,
+     "['Outros'] outside the vocabulary": 32,
+     "['Sociedade'] outside the vocabulary": 1
+    }
+   },
+   "preco_contratual": {
+    "with_value": 176050,
+    "pct": 99.7,
+    "none_because": {
+     "0 or absent": 484
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 149811,
+    "pct": 84.9,
+    "none_because": {
+     "not a date": 26723
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 176534,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 159636,
+    "pct": 90.4,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 16605,
+     "empty list": 293
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2021,
+  "records": 187442,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 155319,
+    "pct": 82.9,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 17164,
+     "'Ajuste direto simplificado' outside the vocabulary": 9656,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 4843,
+     "'Ajuste direto simplificado ao abrigo da Lei n.º 30/2021, de 21.05' outside the vocabulary": 281
+    }
+   },
+   "preco_base": {
+    "with_value": 172415,
+    "pct": 92.0,
+    "none_because": {
+     "0 or absent": 15027
+    }
+   },
+   "adjudicante": {
+    "with_value": 187396,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 46
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 183647,
+    "pct": 98.0,
+    "none_because": {
+     "several contract types": 2139,
+     "['Locação de bens móveis'] outside the vocabulary": 1633,
+     "['Outros'] outside the vocabulary": 22,
+     "[] outside the vocabulary": 1
+    }
+   },
+   "preco_contratual": {
+    "with_value": 187060,
+    "pct": 99.8,
+    "none_because": {
+     "0 or absent": 382
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 177505,
+    "pct": 94.7,
+    "none_because": {
+     "not a date": 9937
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 187442,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 169711,
+    "pct": 90.5,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 17412,
+     "empty list": 319
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2022,
+  "records": 176605,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 149701,
+    "pct": 84.8,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 18977,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 4720,
+     "'Ajuste direto simplificado' outside the vocabulary": 2217,
+     "'Contratação excluída II' outside the vocabulary": 385
+    }
+   },
+   "preco_base": {
+    "with_value": 168778,
+    "pct": 95.6,
+    "none_because": {
+     "0 or absent": 7827
+    }
+   },
+   "adjudicante": {
+    "with_value": 176598,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 7
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 172910,
+    "pct": 97.9,
+    "none_because": {
+     "['Locação de bens móveis'] outside the vocabulary": 1930,
+     "several contract types": 1731,
+     "['Outros'] outside the vocabulary": 29,
+     "[] outside the vocabulary": 5
+    }
+   },
+   "preco_contratual": {
+    "with_value": 176076,
+    "pct": 99.7,
+    "none_because": {
+     "0 or absent": 529
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 174163,
+    "pct": 98.6,
+    "none_because": {
+     "not a date": 2442
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 176605,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 157891,
+    "pct": 89.4,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 18298,
+     "empty list": 416
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2023,
+  "records": 194023,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 161867,
+    "pct": 83.4,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 23305,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 5691,
+     "'Contratação excluída II' outside the vocabulary": 1622,
+     "'Ajuste direto simplificado' outside the vocabulary": 489
+    }
+   },
+   "preco_base": {
+    "with_value": 189112,
+    "pct": 97.5,
+    "none_because": {
+     "0 or absent": 4911
+    }
+   },
+   "adjudicante": {
+    "with_value": 193993,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 30
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 189963,
+    "pct": 97.9,
+    "none_because": {
+     "['Locação de bens móveis'] outside the vocabulary": 2213,
+     "several contract types": 1819,
+     "['Outros'] outside the vocabulary": 26,
+     "[] outside the vocabulary": 1
+    }
+   },
+   "preco_contratual": {
+    "with_value": 193405,
+    "pct": 99.7,
+    "none_because": {
+     "0 or absent": 618
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 193275,
+    "pct": 99.6,
+    "none_because": {
+     "not a date": 748
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 194023,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 174382,
+    "pct": 89.9,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 19154,
+     "empty list": 487
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2024,
+  "records": 227509,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 186733,
+    "pct": 82.1,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 27156,
+     "'Contratação excluída II' outside the vocabulary": 6267,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 5595,
+     "'Setores especiais – isenção parte II' outside the vocabulary": 1003
+    }
+   },
+   "preco_base": {
+    "with_value": 222814,
+    "pct": 97.9,
+    "none_because": {
+     "0 or absent": 4695
+    }
+   },
+   "adjudicante": {
+    "with_value": 227120,
+    "pct": 99.8,
+    "none_because": {
+     "not one 'NIF - name'": 389
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 223138,
+    "pct": 98.1,
+    "none_because": {
+     "['Locação de bens móveis'] outside the vocabulary": 2518,
+     "several contract types": 1817,
+     "['Outros'] outside the vocabulary": 34,
+     "[] outside the vocabulary": 1
+    }
+   },
+   "preco_contratual": {
+    "with_value": 227000,
+    "pct": 99.8,
+    "none_because": {
+     "0 or absent": 509
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 227206,
+    "pct": 99.9,
+    "none_because": {
+     "not a date": 303
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 227509,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 205104,
+    "pct": 90.2,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 22301,
+     "empty list": 104
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2025,
+  "records": 248081,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 192430,
+    "pct": 77.6,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 31158,
+     "'Contratação excluída II' outside the vocabulary": 14817,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 6404,
+     "'Setores especiais – isenção parte II' outside the vocabulary": 1412
+    }
+   },
+   "preco_base": {
+    "with_value": 242818,
+    "pct": 97.9,
+    "none_because": {
+     "0 or absent": 5263
+    }
+   },
+   "adjudicante": {
+    "with_value": 248066,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 15
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 242819,
+    "pct": 97.9,
+    "none_because": {
+     "['Locação de bens móveis'] outside the vocabulary": 3273,
+     "several contract types": 1939,
+     "['Outros'] outside the vocabulary": 49,
+     "['Sociedade'] outside the vocabulary": 1
+    }
+   },
+   "preco_contratual": {
+    "with_value": 247527,
+    "pct": 99.8,
+    "none_because": {
+     "0 or absent": 554
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 246881,
+    "pct": 99.5,
+    "none_because": {
+     "not a date": 1200
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 248081,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 221495,
+    "pct": 89.3,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 26516,
+     "empty list": 70
+    }
+   }
+  }
+ },
+ {
+  "source": "base-contratos",
+  "year": 2026,
+  "records": 199701,
+  "fields": {
+   "tipo_procedimento": {
+    "with_value": 147858,
+    "pct": 74.0,
+    "none_because": {
+     "'Ao abrigo de acordo-quadro (art.º 259.º)' outside the vocabulary": 29330,
+     "'Contratação excluída II' outside the vocabulary": 15204,
+     "'Ao abrigo de acordo-quadro (art.º 258.º)' outside the vocabulary": 4971,
+     "'Setores especiais – isenção parte II' outside the vocabulary": 1069
+    }
+   },
+   "preco_base": {
+    "with_value": 196456,
+    "pct": 98.4,
+    "none_because": {
+     "0 or absent": 3245
+    }
+   },
+   "adjudicante": {
+    "with_value": 199697,
+    "pct": 100.0,
+    "none_because": {
+     "not one 'NIF - name'": 4
+    }
+   },
+   "tipo_contrato": {
+    "with_value": 196288,
+    "pct": 98.3,
+    "none_because": {
+     "['Locação de bens móveis'] outside the vocabulary": 1847,
+     "several contract types": 1516,
+     "['Outros'] outside the vocabulary": 48,
+     "['Sociedade'] outside the vocabulary": 2
+    }
+   },
+   "preco_contratual": {
+    "with_value": 199324,
+    "pct": 99.8,
+    "none_because": {
+     "0 or absent": 377
+    }
+   },
+   "data_celebracao_contrato": {
+    "with_value": 199178,
+    "pct": 99.7,
+    "none_because": {
+     "not a date": 523
+    }
+   },
+   "data_publicacao_contrato": {
+    "with_value": 199701,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "adjudicatario": {
+    "with_value": 176189,
+    "pct": 88.2,
+    "none_because": {
+     "an adjudicatário without NIF ('-')": 23495,
+     "empty list": 17
+    }
+   }
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2018,
+  "records": 7607,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 7607,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 7607,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 7544,
+    "pct": 99.2,
+    "none_because": {
+     "not in the notice": 63
+    }
+   },
+   "buyer_nif": {
+    "with_value": 871,
+    "pct": 11.4,
+    "none_because": {
+     "not in the notice": 6736
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 5243,
+    "pct": 68.9,
+    "none_because": {
+     "not in the notice": 2364
+    }
+   },
+   "procedure_type": {
+    "with_value": 7607,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "contract_type": {
+    "with_value": 5280,
+    "pct": 69.4,
+    "none_because": {
+     "not in the notice": 2327
+    }
+   },
+   "deadline_date": {
+    "with_value": 2522,
+    "pct": 99.6,
+    "of": "2532 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 2855,
+    "pct": 37.5,
+    "none_because": {
+     "not in the notice": 4752
+    }
+   },
+   "main_cpv": {
+    "with_value": 7607,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "ted-xml": 7607
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2019,
+  "records": 8396,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 8396,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 8396,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 8388,
+    "pct": 99.9,
+    "none_because": {
+     "not in the notice": 8
+    }
+   },
+   "buyer_nif": {
+    "with_value": 5447,
+    "pct": 64.9,
+    "none_because": {
+     "not in the notice": 2949
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 8370,
+    "pct": 99.7,
+    "none_because": {
+     "not in the notice": 26
+    }
+   },
+   "procedure_type": {
+    "with_value": 8396,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "contract_type": {
+    "with_value": 8344,
+    "pct": 99.4,
+    "none_because": {
+     "not in the notice": 52
+    }
+   },
+   "deadline_date": {
+    "with_value": 3144,
+    "pct": 100.0,
+    "of": "3144 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 5056,
+    "pct": 60.2,
+    "none_because": {
+     "not in the notice": 3340
+    }
+   },
+   "main_cpv": {
+    "with_value": 8393,
+    "pct": 100.0,
+    "none_because": {
+     "not in the notice": 3
+    }
+   }
+  },
+  "formats": {
+   "ted-xml": 8396
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2020,
+  "records": 7860,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 7860,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 7860,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 7860,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_nif": {
+    "with_value": 6325,
+    "pct": 80.5,
+    "none_because": {
+     "not in the notice": 1535
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 7830,
+    "pct": 99.6,
+    "none_because": {
+     "not in the notice": 30
+    }
+   },
+   "procedure_type": {
+    "with_value": 7860,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "contract_type": {
+    "with_value": 7793,
+    "pct": 99.1,
+    "none_because": {
+     "not in the notice": 67
+    }
+   },
+   "deadline_date": {
+    "with_value": 3241,
+    "pct": 100.0,
+    "of": "3241 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 3972,
+    "pct": 50.5,
+    "none_because": {
+     "not in the notice": 3888
+    }
+   },
+   "main_cpv": {
+    "with_value": 7860,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "ted-xml": 7860
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2021,
+  "records": 8645,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 8645,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 8645,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 8645,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_nif": {
+    "with_value": 7413,
+    "pct": 85.7,
+    "none_because": {
+     "not in the notice": 1232
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 8610,
+    "pct": 99.6,
+    "none_because": {
+     "not in the notice": 35
+    }
+   },
+   "procedure_type": {
+    "with_value": 8645,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "contract_type": {
+    "with_value": 8577,
+    "pct": 99.2,
+    "none_because": {
+     "not in the notice": 68
+    }
+   },
+   "deadline_date": {
+    "with_value": 3803,
+    "pct": 100.0,
+    "of": "3803 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 4915,
+    "pct": 56.9,
+    "none_because": {
+     "not in the notice": 3730
+    }
+   },
+   "main_cpv": {
+    "with_value": 8645,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "ted-xml": 8645
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2022,
+  "records": 9036,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 9036,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 9036,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 9036,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_nif": {
+    "with_value": 7804,
+    "pct": 86.4,
+    "none_because": {
+     "not in the notice": 1232
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 9028,
+    "pct": 99.9,
+    "none_because": {
+     "not in the notice": 8
+    }
+   },
+   "procedure_type": {
+    "with_value": 9036,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "contract_type": {
+    "with_value": 8970,
+    "pct": 99.3,
+    "none_because": {
+     "not in the notice": 66
+    }
+   },
+   "deadline_date": {
+    "with_value": 4193,
+    "pct": 100.0,
+    "of": "4193 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 5256,
+    "pct": 58.2,
+    "none_because": {
+     "not in the notice": 3780
+    }
+   },
+   "main_cpv": {
+    "with_value": 9036,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "ted-xml": 9036
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2023,
+  "records": 11817,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 11817,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 11817,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 11815,
+    "pct": 100.0,
+    "none_because": {
+     "not in the notice": 2
+    }
+   },
+   "buyer_nif": {
+    "with_value": 10038,
+    "pct": 84.9,
+    "none_because": {
+     "not in the notice": 1779
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 11808,
+    "pct": 99.9,
+    "none_because": {
+     "not in the notice": 9
+    }
+   },
+   "procedure_type": {
+    "with_value": 11817,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "contract_type": {
+    "with_value": 11761,
+    "pct": 99.5,
+    "none_because": {
+     "not in the notice": 56
+    }
+   },
+   "deadline_date": {
+    "with_value": 5304,
+    "pct": 100.0,
+    "of": "5304 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 6658,
+    "pct": 56.3,
+    "none_because": {
+     "not in the notice": 5159
+    }
+   },
+   "main_cpv": {
+    "with_value": 11815,
+    "pct": 100.0,
+    "none_because": {
+     "not in the notice": 2
+    }
+   }
+  },
+  "formats": {
+   "ted-xml": 11813,
+   "eforms": 4
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2024,
+  "records": 13385,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 13385,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 13385,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 13385,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_nif": {
+    "with_value": 13154,
+    "pct": 98.3,
+    "none_because": {
+     "not in the notice": 231
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 13207,
+    "pct": 98.7,
+    "none_because": {
+     "not in the notice": 178
+    }
+   },
+   "procedure_type": {
+    "with_value": 12553,
+    "pct": 93.8,
+    "none_because": {
+     "not in the notice": 832
+    }
+   },
+   "contract_type": {
+    "with_value": 13297,
+    "pct": 99.3,
+    "none_because": {
+     "not in the notice": 88
+    }
+   },
+   "deadline_date": {
+    "with_value": 7050,
+    "pct": 97.8,
+    "of": "7211 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 9236,
+    "pct": 69.0,
+    "none_because": {
+     "not in the notice": 4149
+    }
+   },
+   "main_cpv": {
+    "with_value": 13385,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "ted-xml": 1433,
+   "eforms": 11952
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2025,
+  "records": 17340,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 17340,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 17340,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 17340,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_nif": {
+    "with_value": 17338,
+    "pct": 100.0,
+    "none_because": {
+     "not in the notice": 2
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 17275,
+    "pct": 99.6,
+    "none_because": {
+     "not in the notice": 65
+    }
+   },
+   "procedure_type": {
+    "with_value": 15669,
+    "pct": 90.4,
+    "none_because": {
+     "not in the notice": 1671
+    }
+   },
+   "contract_type": {
+    "with_value": 16980,
+    "pct": 97.9,
+    "none_because": {
+     "not in the notice": 360
+    }
+   },
+   "deadline_date": {
+    "with_value": 8980,
+    "pct": 99.1,
+    "of": "9059 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 12291,
+    "pct": 70.9,
+    "none_because": {
+     "not in the notice": 5049
+    }
+   },
+   "main_cpv": {
+    "with_value": 17340,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "eforms": 17340
+  }
+ },
+ {
+  "source": "ted",
+  "year": 2026,
+  "records": 14315,
+  "fields": {
+   "dispatch_date": {
+    "with_value": 14315,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "notice_id": {
+    "with_value": 14315,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_name": {
+    "with_value": 14315,
+    "pct": 100.0,
+    "none_because": {}
+   },
+   "buyer_nif": {
+    "with_value": 14311,
+    "pct": 100.0,
+    "none_because": {
+     "not in the notice": 4
+    }
+   },
+   "buyer_nuts": {
+    "with_value": 14312,
+    "pct": 100.0,
+    "none_because": {
+     "not in the notice": 3
+    }
+   },
+   "procedure_type": {
+    "with_value": 12329,
+    "pct": 86.1,
+    "none_because": {
+     "not in the notice": 1986
+    }
+   },
+   "contract_type": {
+    "with_value": 14020,
+    "pct": 97.9,
+    "none_because": {
+     "not in the notice": 295
+    }
+   },
+   "deadline_date": {
+    "with_value": 6695,
+    "pct": 99.1,
+    "of": "6759 contract notices",
+    "none_because": {}
+   },
+   "estimated_value": {
+    "with_value": 10050,
+    "pct": 70.2,
+    "none_because": {
+     "not in the notice": 4265
+    }
+   },
+   "main_cpv": {
+    "with_value": 14315,
+    "pct": 100.0,
+    "none_because": {}
+   }
+  },
+  "formats": {
+   "eforms": 14315
+  }
+ }
+]

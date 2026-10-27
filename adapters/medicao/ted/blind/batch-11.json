@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:24Z",
+ "ids": [
+  "055",
+  "056",
+  "057",
+  "058",
+  "059"
+ ],
+ "sha256": "f0eaeb2fb7254f86f39007d3a70e2274a72d2e2535cae9ef142f868e768a7157",
+ "answer": {
+  "records": [
+   {
+    "id": "055",
+    "dispatch_date": "2019-02-14",
+    "buyer_name": "Secretaria Geral do Ministério do Trabalho, Solidariedade e Segurança Social — UMC",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-03-16",
+    "deadline_time": "23:59",
+    "estimated_value": "644943.13",
+    "main_cpv": "30000000"
+   },
+   {
+    "id": "056",
+    "dispatch_date": "2023-10-20",
+    "buyer_name": "Hospital da Senhora da Oliveira Guimarães, E. P. E.",
+    "buyer_nif": "508080827",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "418950.00",
+    "main_cpv": "33696200"
+   },
+   {
+    "id": "057",
+    "dispatch_date": "2021-05-04",
+    "buyer_name": "Centro Hospitalar de Lisboa Ocidental, E. P. E.",
+    "buyer_nif": "507618319",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-06-07",
+    "deadline_time": "18:00",
+    "estimated_value": "647910.30",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "058",
+    "dispatch_date": "2023-03-20",
+    "buyer_name": "Instituto Superior Técnico",
+    "buyer_nif": "501507930",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "90910000"
+   },
+   {
+    "id": "059",
+    "dispatch_date": "2019-11-12",
+    "buyer_name": "Município de Valongo",
+    "buyer_nif": "501138960",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2019-11-25",
+    "deadline_time": "17:00",
+    "estimated_value": null,
+    "main_cpv": "90511000"
+   }
+  ]
+ }
+}

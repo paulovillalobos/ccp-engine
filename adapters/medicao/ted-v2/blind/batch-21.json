@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:14:45Z",
+ "ids": [
+  "105",
+  "106",
+  "107",
+  "108",
+  "109"
+ ],
+ "sha256": "5b3891e0b82b17909d435a590e809ee1727a305204cd6f1ba90d037c61234396",
+ "answer": {
+  "records": [
+   {
+    "id": "105",
+    "dispatch_date": "2024-05-22",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PRT",
+    "procedure_type": "restricted",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72253200"
+   },
+   {
+    "id": "106",
+    "dispatch_date": "2025-02-06",
+    "buyer_name": "Município de Faro",
+    "buyer_nif": "506579425",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "72910000"
+   },
+   {
+    "id": "107",
+    "dispatch_date": "2026-09-11",
+    "buyer_name": "Instituto de Segurança Social da Madeira, IP-RAM",
+    "buyer_nif": "510474314",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "services",
+    "deadline_date": "2026-10-11",
+    "deadline_time": "23:59:59+00:00",
+    "estimated_value": "831357.76",
+    "main_cpv": "79714000"
+   },
+   {
+    "id": "108",
+    "dispatch_date": "2025-10-07",
+    "buyer_name": "Instituto Português do Mar e da Atmosfera, I. P.",
+    "buyer_nif": "510265600",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "1169980",
+    "main_cpv": "42110000"
+   },
+   {
+    "id": "109",
+    "dispatch_date": "2024-04-09",
+    "buyer_name": "MUNICIPIA, S.A.",
+    "buyer_nif": "504475606",
+    "buyer_country": "PRT",
+    "procedure_type": "open",
+    "contract_type": "supplies",
+    "deadline_date": "2024-05-08",
+    "deadline_time": "23:59:00+01:00",
+    "estimated_value": null,
+    "main_cpv": "34114000"
+   }
+  ]
+ }
+}

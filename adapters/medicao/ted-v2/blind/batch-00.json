@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:12:58Z",
+ "ids": [
+  "000",
+  "001",
+  "002",
+  "003",
+  "004"
+ ],
+ "sha256": "34a638d084c3fe3e6c20fb5ee0a52a800929a93a6f7e987bf9492419b8c504ae",
+ "answer": {
+  "records": [
+   {
+    "id": "000",
+    "dispatch_date": "2022-02-22",
+    "buyer_name": "Infraestruturas de Portugal S.A.",
+    "buyer_nif": "503933813",
+    "buyer_country": "PT",
+    "procedure_type": "2 Restricted procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "71322000"
+   },
+   {
+    "id": "001",
+    "dispatch_date": "2021-09-16",
+    "buyer_name": "Fundação para a Ciência e a Tecnologia, I. P.",
+    "buyer_nif": "503904040",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2021-10-16",
+    "deadline_time": "23:59",
+    "estimated_value": "160249.56",
+    "main_cpv": "66512200"
+   },
+   {
+    "id": "002",
+    "dispatch_date": "2022-10-12",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Norte, EPE",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33600000"
+   },
+   {
+    "id": "003",
+    "dispatch_date": "2023-01-31",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": "508481287",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2023-03-02",
+    "deadline_time": "17:00",
+    "estimated_value": "824774.40",
+    "main_cpv": "33694000"
+   },
+   {
+    "id": "004",
+    "dispatch_date": "2021-11-23",
+    "buyer_name": "Hospital Garcia de Orta, E. P. E.",
+    "buyer_nif": "506361470",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-12-24",
+    "deadline_time": "17:00",
+    "estimated_value": "392168.00",
+    "main_cpv": "33600000"
+   }
+  ]
+ }
+}

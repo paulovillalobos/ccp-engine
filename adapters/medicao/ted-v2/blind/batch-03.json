@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:13:11Z",
+ "ids": [
+  "015",
+  "016",
+  "017",
+  "018",
+  "019"
+ ],
+ "sha256": "70ee2ba4ad31ae1eb712f69adbf9cc3b1c76bb049f375af541b0e57bb04e0c15",
+ "answer": {
+  "records": [
+   {
+    "id": "015",
+    "dispatch_date": "2020-01-27",
+    "buyer_name": "Administração Regional de Saúde de Lisboa e Vale do Tejo, I. P.",
+    "buyer_nif": "503148776",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "WORKS",
+    "deadline_date": "2020-02-27",
+    "deadline_time": "18:00",
+    "estimated_value": "1300000.00",
+    "main_cpv": "45200000"
+   },
+   {
+    "id": "016",
+    "dispatch_date": "2020-10-20",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "T Negotiated without a prior call for competition",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33600000"
+   },
+   {
+    "id": "017",
+    "dispatch_date": "2018-06-01",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "018",
+    "dispatch_date": "2021-12-27",
+    "buyer_name": "Serviços Municipalizados de Água e Saneamento de Sintra",
+    "buyer_nif": "680000054",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "389160.00",
+    "main_cpv": "50532000"
+   },
+   {
+    "id": "019",
+    "dispatch_date": "2018-04-09",
+    "buyer_name": "Centro Hospitalar Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "6 Accelerated negotiated procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "85141200"
+   }
+  ]
+ }
+}

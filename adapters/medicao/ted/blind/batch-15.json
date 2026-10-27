@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:02:51Z",
+ "ids": [
+  "075",
+  "076",
+  "077",
+  "078",
+  "079"
+ ],
+ "sha256": "b5949754dd0e366ef445fb0cd9969499d15de59141a6f1ae48191f0af75ada16",
+ "answer": {
+  "records": [
+   {
+    "id": "075",
+    "dispatch_date": "2019-04-05",
+    "buyer_name": "Centro Hospitalar Universitário de Lisboa Norte, E. P. E.",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "96007.50",
+    "main_cpv": "33690000"
+   },
+   {
+    "id": "076",
+    "dispatch_date": "2023-05-31",
+    "buyer_name": "Câmara Municipal de Sintra",
+    "buyer_nif": "500051062",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "77211500"
+   },
+   {
+    "id": "077",
+    "dispatch_date": "2019-06-18",
+    "buyer_name": "Serviços Municipalizados da Câmara Municipal de Angra do Heroísmo",
+    "buyer_nif": null,
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2019-07-18",
+    "deadline_time": "23:59",
+    "estimated_value": "255120.00",
+    "main_cpv": "44613800"
+   },
+   {
+    "id": "078",
+    "dispatch_date": "2020-06-30",
+    "buyer_name": "Direção Regional de Cultura do Norte",
+    "buyer_nif": "600067831",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": "2020-08-05",
+    "deadline_time": "23:59",
+    "estimated_value": "585795.00",
+    "main_cpv": "72000000"
+   },
+   {
+    "id": "079",
+    "dispatch_date": "2022-03-16",
+    "buyer_name": "Fundação INATEL",
+    "buyer_nif": "500122237",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "60140000"
+   }
+  ]
+ }
+}

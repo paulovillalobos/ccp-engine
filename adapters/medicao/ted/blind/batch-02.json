@@ -1,0 +1,80 @@
+{
+ "at": "2026-10-26T21:01:41Z",
+ "ids": [
+  "010",
+  "011",
+  "012",
+  "013",
+  "014"
+ ],
+ "sha256": "f0e17e8b5846392d3e0cae325c44b71add7f9965116364265af2b5f5eaa5e1ec",
+ "answer": {
+  "records": [
+   {
+    "id": "010",
+    "dispatch_date": "2024-01-29",
+    "buyer_name": "Autoridade Tributária e Aduaneira",
+    "buyer_nif": "600084779",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": "280296.00",
+    "main_cpv": "50312000"
+   },
+   {
+    "id": "011",
+    "dispatch_date": "2024-01-30",
+    "buyer_name": "Hospital do Espírito Santo de Évora, E. P. E.",
+    "buyer_nif": "508085888",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SERVICES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "85121200"
+   },
+   {
+    "id": "012",
+    "dispatch_date": "2021-01-19",
+    "buyer_name": "Centro Hospitalar Universitário Lisboa Central, E. P. E.",
+    "buyer_nif": "508080142",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2021-02-18",
+    "deadline_time": "17:00",
+    "estimated_value": "731666.70",
+    "main_cpv": "33140000"
+   },
+   {
+    "id": "013",
+    "dispatch_date": "2020-04-16",
+    "buyer_name": "Empresa Municipal de Ambiente de Cascais (EMAC), E. M., S. A.",
+    "buyer_nif": "507396081",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": "2020-05-19",
+    "deadline_time": "23:59",
+    "estimated_value": "292500.00",
+    "main_cpv": "34144511"
+   },
+   {
+    "id": "014",
+    "dispatch_date": "2020-04-13",
+    "buyer_name": "Secretaria-Geral do Ministério da Administração Interna",
+    "buyer_nif": "600014665",
+    "buyer_country": "PT",
+    "procedure_type": "1 Open procedure",
+    "contract_type": "SUPPLIES",
+    "deadline_date": null,
+    "deadline_time": null,
+    "estimated_value": null,
+    "main_cpv": "35000000"
+   }
+  ]
+ }
+}

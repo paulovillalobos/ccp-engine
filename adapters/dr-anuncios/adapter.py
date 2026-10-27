@@ -82,10 +82,14 @@ def read_log():
 
 
 def stored(log):
-    """{key: last ok log entry whose bytes are on disk}."""
+    """{key: last ok log entry whose bytes are on disk, or in ccp-raw (uploaded and checked by adapters/storage/offload.py,
+    which then deletes the local copy)}."""
+    off = ROOT / "adapters/storage/offload-log.jsonl"
+    in_storage = {e["sha256"] for e in map(json.loads, off.read_text(encoding="utf-8").splitlines())
+                  if e.get("source") == SOURCE and e.get("verified")} if off.exists() else set()
     out = {}
     for e in log:
-        if e.get("status") == 200 and e.get("sha256") and (PDF_DIR / e["sha256"]).exists():
+        if e.get("status") == 200 and e.get("sha256") and (e["sha256"] in in_storage or (PDF_DIR / e["sha256"]).exists()):
             out[e["key"]] = e
     return out
 
