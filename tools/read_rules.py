@@ -22,6 +22,7 @@ import argparse
 import hashlib
 import json
 import sys
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,7 +46,8 @@ ROUNDS = {2: {"dir": RONDA2, "proposer": "leitor:a", "file": "leitor-a.json", "d
           3: {"dir": READINGS / "ronda3", "proposer": "leitor:a2", "file": "leitor-a2.json", "decision": "D45"},
           4: {"dir": READINGS / "ronda4", "proposer": "leitor:a3", "file": "leitor-a3.json", "decision": "D46"},
           5: {"dir": READINGS / "ronda5", "proposer": "leitor:a4", "file": "leitor-a4.json", "decision": "D47"},
-          6: {"dir": READINGS / "ronda6", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D49"}}
+          6: {"dir": READINGS / "ronda6", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D49"},
+          7: {"dir": READINGS / "ronda7", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D51"}}
 FIELDS = ["tipo_contrato", "tipo_procedimento", "publicado_joue", "territorio", "tipo_entidade", "preco_base", "data_inicio_procedimento"]
 VOCAB = {
     "tipo_contrato": ["obras", "bens", "servicos", "concessao_obras", "concessao_servicos", "servicos_sociais"],
@@ -133,6 +135,23 @@ TARGETS = [
 
 
 # ---- prompts ---------------------------------------------------------------------------------------------------
+# D51: from round 7 the selector's question names the regimes the system holds and shows the Code passages whose values
+# change (art. 19.º c, d; art. 20.º n.º 1 c, d) with their earlier text; how a procedure started on the day of entry into
+# force is classed is left to the readers
+REGIMES_HELD = [("lei:ccp@2026-09-30", "pacote:ccp@2026-09-30", "30 de setembro de 2026"),
+                ("lei:ccp@2026-10-01", "pacote:ccp@2026-10-01", "1 de outubro de 2026")]
+Q_SELECTOR_R7 = ("Que passagens fixam a que procedimentos se aplica cada regime, e por que facto se escolhe? Para cada regime da lista, "
+                 "dê de que data a que data de início do procedimento se aplica (de, até, versão da lei, pacote). Cada data de início "
+                 "deve cair em exatamente um regime. Um regime sem data inicial tem «from» = null; sem data final, «to» = null.")
+
+
+def target(t, rnd):
+    """The rule's question and candidates as asked in round rnd."""
+    if rnd >= 7 and t["type"] == "seletor_regime":
+        return {**t, "candidates": t["candidates"] + art("ccp", 19, ["c", "d"])[1:] + ["ccp:art20.1.c", "ccp:art20.1.d"], "question": Q_SELECTOR_R7}
+    return t
+
+
 def slug(rule_id):
     return rule_id.split(":", 1)[1].replace(":", "--").replace("@", "-at-")
 
@@ -170,7 +189,8 @@ def schema_for(t, rnd=1):
         "procedimento_admissivel": {"procedures": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": VOCAB["tipo_procedimento"]}}},
         "seletor_regime": {"selects_by": {"type": "string", "enum": ["data_inicio_procedimento"]},
                            "regimes": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {
-                               "from": {"type": "string", "pattern": DATE}, "to": {"anyOf": [{"type": "string", "pattern": DATE}, {"type": "null"}]},
+                               "from": {"anyOf": [{"type": "string", "pattern": DATE}, {"type": "null"}]} if rnd >= 7 else {"type": "string", "pattern": DATE},
+                               "to": {"anyOf": [{"type": "string", "pattern": DATE}, {"type": "null"}]},
                                "law_version": {"type": "string", "enum": LAWS},
                                "package": {"type": "string", "enum": PACKAGES}}, "required": ["from", "to", "law_version", "package"], "additionalProperties": False}}},
         "jurisdicao": {"territory": {"type": "string", "enum": ["PT-AC", "PT-MA"]}, "predicate": {"type": "array", "minItems": 1, "items": cond},
@@ -200,11 +220,17 @@ def prompt_text(store, t, rnd=1):
         lines.append(v["text"])
         prev = [x for x in p["versions"] if x["valid_to"] == v["valid_from"]]
         if prev and prev[0]["text"] != v["text"]:
-            lines.append(f"[{pid}] texto anterior (em vigor de {prev[0]['valid_from']} a {prev[0]['valid_to']}):")
+            last = prev[0]["valid_to"]
+            if rnd >= 7 and t["type"] == "seletor_regime":  # D51: the store's valid_to is exclusive; show the last day in force
+                last = (date.fromisoformat(last) - timedelta(days=1)).isoformat()
+            lines.append(f"[{pid}] texto anterior (em vigor de {prev[0]['valid_from']} a {last}):")
             lines.append(prev[0]["text"])
         lines.append("")
     question = t["question"]
-    if rnd >= 2 and t["type"] == "seletor_regime":  # D44 (3): how an open-ended regime is written
+    if rnd >= 7 and t["type"] == "seletor_regime":  # D51: the regimes the system holds, as a closed list
+        lines += ["Regimes que o sistema tem (escolhe «law_version» e «package» só desta lista):"]
+        lines += [f"- {law} com {pk}: o Código dos Contratos Públicos no texto em vigor a {d}" for law, pk, d in REGIMES_HELD] + [""]
+    elif rnd >= 2 and t["type"] == "seletor_regime":  # D44 (3): how an open-ended regime is written
         question += " Um regime sem data final tem «to» = null."
     lines += ["Pergunta: " + question]
     return "\n".join(lines)
@@ -216,6 +242,7 @@ def cmd_prompts(store, only=None, rnd=1):
             continue
         if rnd >= 2 and t["rule"] not in ROUND2:
             continue
+        t = target(t, rnd)
         for pid in t["candidates"]:
             p = store.current(pid)
             if p is None or version_at(p, t["date"]) is None:
@@ -317,7 +344,7 @@ def key_param(r):
     p, t = r["params"], r["type"]
     return {"limiar": lambda: (p.get("threshold") or {}).get("value"), "prazo_minimo": lambda: p.get("minimum_days"),
             "procedimento_admissivel": lambda: tuple(p.get("procedures") or []),
-            "seletor_regime": lambda: tuple(sorted((x.get("from"), x.get("law_version")) for x in p.get("regimes") or [])),
+            "seletor_regime": lambda: tuple(sorted((x.get("from") or "", x.get("law_version")) for x in p.get("regimes") or [])),
             "jurisdicao": lambda: canonical(p.get("effect") or {})}[t]()
 
 
@@ -417,6 +444,7 @@ def record_round(store, log, writer, rnd):
     for t in TARGETS:
         if t["rule"] not in ROUND2:
             continue
+        t = target(t, rnd)
         d = R["dir"] / slug(t["rule"])
         ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (R["file"], "leitor-b.json")]
         if ra is None:
@@ -477,7 +505,8 @@ ROUND_NOTE = {2: "As mesmas perguntas e candidatas da ronda 1, com três defeito
               3: "O prompt da ronda 2 com as condições tipadas por campo; propõe leitor:a2 (AMALIA + adaptador, decisão da pessoa, D45), leitor:b revê às cegas.",
               4: "O prompt e o esquema da ronda 3, sem mudança; propõe leitor:a3 (AMALIA + adaptador v2, treinado em condicoes_texto, D46), leitor:b revê às cegas.",
               5: "O prompt e o esquema da ronda 4, sem mudança; propõe leitor:a4 (AMALIA + adaptador v3, treinado também em entrada_em_vigor e periodos_vigencia, D47), leitor:b revê às cegas.",
-              6: "O prompt e o esquema da ronda 5, sem mudança; propõe leitor:a5 (AMALIA + adaptador v4, treinado também em condicoes_pergunta, D49), leitor:b revê às cegas."}
+              6: "O prompt e o esquema da ronda 5, sem mudança; propõe leitor:a5 (AMALIA + adaptador v4, treinado também em condicoes_pergunta, D49), leitor:b revê às cegas.",
+              7: "Só o seletor muda (D51): a pergunta lista os regimes que o sistema tem, mostra os art. 19.º c), d) e 20.º n.º 1 c), d) do Código com o texto anterior, e admite «from» = null; as outras perguntas são as da ronda 6. Propõe leitor:a5 (AMALIA + adaptador v4), leitor:b revê às cegas."}
 
 
 def write_round_report(rows, rnd):
@@ -573,7 +602,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["prompts", "record"])
     ap.add_argument("--only", help="prompts for the rules whose id contains this text")
-    ap.add_argument("--round", type=int, default=1, choices=[1, 2, 3, 4, 5, 6], help="2-6: the D44-D49 round prompts, in governance/readings/ronda<n>/")
+    ap.add_argument("--round", type=int, default=1, choices=[1, 2, 3, 4, 5, 6, 7], help="2-7: the D44-D51 round prompts, in governance/readings/ronda<n>/")
     a = ap.parse_args()
     if a.cmd == "prompts":
         cmd_prompts(Store([ROOT / "law"]).load(), a.only, a.round)

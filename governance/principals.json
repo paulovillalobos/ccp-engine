@@ -1288,7 +1288,8 @@
       "versao": 13,
       "code": "tools/read_rules.py",
       "hash": "314bb192bb476bebd20be346e47e815d174e29772ecec37f1d680c6343083251",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-10-27T13:03:06Z"
     },
     {
       "id": "ferramenta:verify@29",
@@ -1374,6 +1375,18 @@
       "hash": "1a4261fc37c5a2b3afc5acf94d748d5cbfb54653c1935126333b19842970f374",
       "retired": false,
       "nota": "phase 8 (D50): a person's question -> facts; TRAIN data-v5, MEAS factos-*"
+    },
+    {
+      "id": "ferramenta:read-rules@14",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 14,
+      "code": "tools/read_rules.py",
+      "hash": "cb77cd8787055704a866d1594bab6b1d07805398ee2ace2ca04c8e14874039ad",
+      "retired": false,
+      "nota": "D51: round 7, the selector question names the regimes held, shows art. 19/20 with earlier text, admits from = null"
     }
   ]
 }
