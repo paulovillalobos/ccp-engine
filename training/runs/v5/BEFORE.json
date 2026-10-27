@@ -1,0 +1,212 @@
+{
+ "date": "2026-10-27",
+ "sets": {
+  "factos_reais": {
+   "examples": 40,
+   "gold": "training/real-questions/factos-v1.jsonl",
+   "gold_sha256": "bb52d4b3ee397dae73b03d524fa7955d02ee84c623403f9f848496558ff0f5d7",
+   "readers": {
+    "leitor-a": {
+     "added": {
+      "k": 50,
+      "n": 140,
+      "value": 0.3571,
+      "wilson95": [
+       0.2826,
+       0.4394
+      ]
+     },
+     "answers_sha256": "07b2855c56fa289a797b230c22ed4cdb87d584c821c8830b0de847e8eb8043c5",
+     "exact": {
+      "k": 4,
+      "n": 40,
+      "value": 0.1,
+      "wilson95": [
+       0.0396,
+       0.2305
+      ]
+     },
+     "facts": {
+      "added": 50,
+      "given": 140,
+      "missed": 34,
+      "stated": 124,
+      "wrong": 6
+     },
+     "invalid": 0,
+     "label": "base",
+     "missed": {
+      "k": 34,
+      "n": 124,
+      "value": 0.2742,
+      "wilson95": [
+       0.2033,
+       0.3586
+      ]
+     },
+     "wrong": {
+      "k": 6,
+      "n": 124,
+      "value": 0.0484,
+      "wilson95": [
+       0.0224,
+       0.1016
+      ]
+     }
+    },
+    "leitor-a5": {
+     "added": {
+      "k": 22,
+      "n": 83,
+      "value": 0.2651,
+      "wilson95": [
+       0.182,
+       0.3689
+      ]
+     },
+     "answers_sha256": "b38555f57c1dae26ba2bf83ab862925b6e85ce084ff6d45c0c011769eb4d2d9c",
+     "exact": {
+      "k": 6,
+      "n": 40,
+      "value": 0.15,
+      "wilson95": [
+       0.0706,
+       0.2907
+      ]
+     },
+     "facts": {
+      "added": 22,
+      "given": 83,
+      "missed": 63,
+      "stated": 124,
+      "wrong": 3
+     },
+     "invalid": 0,
+     "label": "base + adaptador v4",
+     "missed": {
+      "k": 63,
+      "n": 124,
+      "value": 0.5081,
+      "wilson95": [
+       0.4212,
+       0.5945
+      ]
+     },
+     "wrong": {
+      "k": 3,
+      "n": 124,
+      "value": 0.0242,
+      "wilson95": [
+       0.0083,
+       0.0687
+      ]
+     }
+    }
+   }
+  },
+  "factos_utilizador": {
+   "examples": 400,
+   "gold": "training/data-v5/factos_utilizador/held_out.jsonl",
+   "gold_sha256": "6b313d94c70808cd9d5db6c893e6530634fc1f2f9bca7c4b61c49759412faeca",
+   "readers": {
+    "leitor-a": {
+     "added": {
+      "k": 509,
+      "n": 1605,
+      "value": 0.3171,
+      "wilson95": [
+       0.2948,
+       0.3403
+      ]
+     },
+     "answers_sha256": "a03d6962978776eaedb7214a09441a680a5158fdcc22c64c1630e7f31b594742",
+     "exact": {
+      "k": 15,
+      "n": 400,
+      "value": 0.0375,
+      "wilson95": [
+       0.0229,
+       0.0609
+      ]
+     },
+     "facts": {
+      "added": 509,
+      "given": 1605,
+      "missed": 415,
+      "stated": 1511,
+      "wrong": 147
+     },
+     "invalid": 0,
+     "label": "base",
+     "missed": {
+      "k": 415,
+      "n": 1511,
+      "value": 0.2747,
+      "wilson95": [
+       0.2527,
+       0.2977
+      ]
+     },
+     "wrong": {
+      "k": 147,
+      "n": 1511,
+      "value": 0.0973,
+      "wilson95": [
+       0.0833,
+       0.1133
+      ]
+     }
+    },
+    "leitor-a5": {
+     "added": {
+      "k": 220,
+      "n": 1008,
+      "value": 0.2183,
+      "wilson95": [
+       0.1938,
+       0.2448
+      ]
+     },
+     "answers_sha256": "7a6e5fbd5d4e9b6f3a0432eec8a5a0916949132c43a70c48a3ce3b0e2dbaad82",
+     "exact": {
+      "k": 16,
+      "n": 400,
+      "value": 0.04,
+      "wilson95": [
+       0.0248,
+       0.064
+      ]
+     },
+     "facts": {
+      "added": 220,
+      "given": 1008,
+      "missed": 723,
+      "stated": 1511,
+      "wrong": 69
+     },
+     "invalid": 0,
+     "label": "base + adaptador v4",
+     "missed": {
+      "k": 723,
+      "n": 1511,
+      "value": 0.4785,
+      "wilson95": [
+       0.4534,
+       0.5037
+      ]
+     },
+     "wrong": {
+      "k": 69,
+      "n": 1511,
+      "value": 0.0457,
+      "wilson95": [
+       0.0362,
+       0.0574
+      ]
+     }
+    }
+   }
+  }
+ },
+ "tool": "ccp-measure-user-facts-0.1"
+}

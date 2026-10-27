@@ -1,0 +1,18 @@
+{
+ "files": {
+  "factos_utilizador/held_out.jsonl": {
+   "lines": 400,
+   "sha256": "6b313d94c70808cd9d5db6c893e6530634fc1f2f9bca7c4b61c49759412faeca"
+  },
+  "factos_utilizador/train.jsonl": {
+   "lines": 4000,
+   "sha256": "f9ebc633b929fc5ca658c9c12c97de8864d6f00857c998d0d60638c31c0aa2d1"
+  }
+ },
+ "seed": 20261027,
+ "split": {
+  "held_out": 400,
+  "train": 4000
+ },
+ "version": "ccp-make-user-facts-0.1"
+}

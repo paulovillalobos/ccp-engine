@@ -1335,8 +1335,45 @@
       "versao": 30,
       "code": "verify.py",
       "hash": "7a33ab747fced6d843be855953a70892267af42e0663410d675e18c85454a532",
+      "retired": true,
+      "nota": "phase 7 (D49): leitor-a5 (v4) measured on the earlier reserved sets; an earlier report is recomputed with only the readers it holds",
+      "retired_at": "2026-10-27T12:51:19Z"
+    },
+    {
+      "id": "ferramenta:make-user-facts@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_user_facts.py",
+      "hash": "cb50b9ef8dc9a640354df22a9ca89409a9922a6fa0a5ea582ecd2996be0384ff",
       "retired": false,
-      "nota": "phase 7 (D49): leitor-a5 (v4) measured on the earlier reserved sets; an earlier report is recomputed with only the readers it holds"
+      "nota": "phase 8 (D50): a person's question -> facts; generator of training/data-v5 and the real-questions prompts"
+    },
+    {
+      "id": "ferramenta:measure-user-facts@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_user_facts.py",
+      "hash": "54167cad915f301197b893293418195cfdea11e0a98af2dc0135d1977bf32fbf",
+      "retired": false,
+      "nota": "phase 8 (D50): a person's question -> facts; measurement"
+    },
+    {
+      "id": "ferramenta:verify@31",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 31,
+      "code": "verify.py",
+      "hash": "1a4261fc37c5a2b3afc5acf94d748d5cbfb54653c1935126333b19842970f374",
+      "retired": false,
+      "nota": "phase 8 (D50): a person's question -> facts; TRAIN data-v5, MEAS factos-*"
     }
   ]
 }
