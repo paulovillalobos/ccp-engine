@@ -1572,3 +1572,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Vortal notice reader: ended 13:49:46Z by Modal, not by Vortal: "Input rate limit (0/s) exceeded" for the function
   (the acinGov run ended the same way). Log: 7 406 GETs, 7 390 × 200, 15 × 500, the one 403 of 2026-10-26 20:18:27Z.
   No Modal setting changed; the DR-copy reader is not started.
+
+## 2026-10-27 X.14 Vortal reader restarted after Modal accepts runs again; DR fetch and uploads restarted (commit: X.14: Vortal reader restarted at 20:12Z; DR fetch and uploads restarted after the scratch workdir was emptied)
+- The DR fetch stopped itself under 1 GB again near 14:50Z (301 of that run's 8 548). Restarted 20:09Z with 7.6 GB free:
+  13 980 stored, 8 190 to fetch. The disk guard now pauses it at 1.5 GB, before the fetch's own 1 GB stop, and resumes it
+  at 3 GB.
+- The session's scratch folder was emptied on a restart, with the CLI's linked Supabase workdir in it. A first upload run
+  at 20:09Z logged 301 failures ("failed to change workdir"); nothing was deleted (a local copy goes only after the check).
+  Relinked; uploads verify again from 20:11Z, one process, detached so they outlive the session.
+- Modal accepts runs again (the builder session relayed that the workspace payment method was updated on 2026-10-27).
+  The Vortal notice reader (one GET per 20 s, resumes from its own log of 7 406 lines) restarted at 20:12Z. acinGov is
+  not restarted: 2026 alone is about 300 GB, beyond the plan, and waits for Paulo.
