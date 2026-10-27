@@ -1,0 +1,6 @@
+{
+ "source": "modal billing report --start 2026-10-27 --resolution h --json, read 2026-10-28",
+ "training_app": "ap-432modIilNMUdCybGyR7K1",
+ "training_usd": 10.31,
+ "note": "read soon after the run ended: the last hour may not be closed"
+}

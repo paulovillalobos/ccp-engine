@@ -1237,6 +1237,36 @@
       "nota": "phase 9 (D52): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v6 (adapter_model.safetensors sha256 b08b35f5…), trained on training/data + data-v2 + data-v3 + data-v4 + data-v6 (written questions); training/runs/v6/MANIFEST.json"
     },
     {
+      "id": "leitor:a8",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v7",
+        "versao": "fcc6661b2f28"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 10 (D53): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v7 (rank 16), trained on training/data + data-v2..v4 + data-v7; training/runs/v7/MANIFEST.json"
+    },
+    {
+      "id": "leitor:a9",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v7r64",
+        "versao": "154a297bc5c7"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 10 (D53): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v7r64 (rank 64), trained on training/data + data-v2..v4 + data-v7; training/runs/v7r64/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:read-rules@11",
       "kind": "codigo",
       "papel": "ferramenta",

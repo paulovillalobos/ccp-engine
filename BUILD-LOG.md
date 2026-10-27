@@ -1830,3 +1830,11 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   That session is archived only when they end and its untracked state is moved (handover notes, extractor-handover-2026-10-27.md).
 - Checks: verify ok on every store (data: 321 728 objects). Tests: 89 pass, 2 red and disclosed: test_b3_rules_v0 (since round 7)
   and test_b5 reference cases, which now asks 100 annotated real cases (20 exist, from the fixtures): real work left, not lowered.
+
+## 2026-10-28 — D53: AMALIA v7 measured (rank 16 and 64)
+- Done: leitor:a8 (v7, rank 16) and leitor:a9 (v7r64, rank 64); manifests rebuilt from the function calls' return values
+  (the local entrypoints stopped at a session restart; the runs were detached and finished).
+- Result (reports/measure/escritas-v7-2026-10-28), facts exact with the guard 0.3, sealed / dev / real: v6 71.0 / 67.5 /
+  10 of 16; v7 r16 85.0 / 80.0 / 13; v7 r64 83.0 / 79.5 / 14; Reader B 83.5 / 83.0 / 9. Invented facts on the sealed set: v7 r16
+  2.3 %, Reader B 4.1 %. Markers found / without cause: v6 57.7 / 37.2 %, v7 r16 73.9 / 8.9 %.
+- Decision: v8 at rank 16 (rank 64 no clear gain, slower, more false markers).

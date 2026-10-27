@@ -126,5 +126,23 @@ AFTER when its measurement exists.
 | base + v4 | 19 % | 34 % | 58 % | 11 % | 11 |
 | base + v6 | **64 % [54, 73]** | **7.9 %** | **11.9 %** | 50 % (flags 46 % without cause) | **0** |
 
+## v7 (adapter `amalia-ccp-lei-v7`, 2026-10-28) — 1 000 written questions, a code guard, rank 16 vs 64
+- Data (`tools/make_written_v7.py`): the 500 questions of v6 plus 500 more aimed at v6's errors; 600 trained (each clean and
+  in 5 noisy copies), 200 dev, 200 sealed final; plus 16 real questions put by câmaras and juntas to CCDR Alentejo
+  (2006-2025), evaluation only. The same mix trained at LoRA rank 16 and rank 64.
+- Code between the reader and the engine (`tools/fact_guard.py`): places from the official list of municipalities and
+  parishes, «preço base» wording, citations and start dates checked against the question's own text; it never adds a fact.
+- Runs: 1 394 steps each, 9 464 s (rank 16) and 10 536 s (rank 64) on one H100, about USD 10 each.
+- Results (`reports/measure/escritas-v7-2026-10-28.md`), facts exact with the guard:
+
+| reader | sealed 200 | dev 200 | real 16 | facts invented (sealed) |
+|---|---|---|---|---|
+| base + v6 | 71.0 % | 67.5 % | 10 | 6.4 % |
+| base + v7, rank 16 | **85.0 %** | **80.0 %** | 13 | **2.3 %** |
+| base + v7, rank 64 | 83.0 % | 79.5 % | **14** | 3.3 % |
+| another family's frontier model, same guard | 83.5 % | 83.0 % | 9 | 4.1 % |
+
+  Rank 64 brings no clear gain over rank 16 at this data size; the next run stays at rank 16.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.
