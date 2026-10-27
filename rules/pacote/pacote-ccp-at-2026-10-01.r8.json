@@ -1,0 +1,32 @@
+{
+  "id": "pacote:ccp@2026-10-01",
+  "revision": 8,
+  "recorded_at": "2026-10-27T12:06:56Z",
+  "law_version": "lei:ccp@2026-10-01",
+  "rules": [
+    {
+      "id": "regra:ccp:limiar-ajuste-direto-obras@v2",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v2",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    }
+  ],
+  "hash": "08e7e4848129165598c62a4406a7b455b8f933f0a4a7068ffc213c10e6bb92cc",
+  "log_head": "41b394c7d0ee3de6a33ef6cce8798ed293c5fa676a9c77690c33e086ee90ea71",
+  "built_at": "2026-10-27T12:06:56Z",
+  "supersedes": 7
+}

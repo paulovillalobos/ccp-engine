@@ -1178,3 +1178,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Fix before the commit, disclosed: a first regression run passed its paths through a zsh variable that was not split,
   so no example reached Modal; the two reports it produced held no v4 answers and were deleted before any commit.
 - Next: round 6 (v4 proposes, leitor:b blind) on the selector and the deadline rules.
+
+## 2026-10-27 — D49: B3 round 6 (proposer leitor:a5, AMALIA v4); two deadline rules settle
+- Asked: the person, «Sí, corre la ronda 6: v4 propone y leitor:b a ciegas».
+- Done: the round-6 prompts committed before v4 existed (= round 5's); leitor:a5 answered on Modal, leitor:b (Reader B app
+  CLI) blind in parallel; tools/read_rules.py record --round 6: evento:76–81, governance/readings/ronda6/RONDA6.md.
+- Settled (leitor:b replicates leitor:a5 in canonical form, D43): regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1
+  (art. 135.º n.º 1, 6 days) and regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1 (art. 135.º n.º 1, 14 days). With
+  the JOUE rule settled in round 4, the three minimum-deadline rules the engine needs first are settled.
+- Not settled: the selector. v4 now gives an open end («to» null) but only the regime from 2026-10-01 and cites art.
+  7.º n.º 2; leitor:b gives two regimes split on 2026-10-01 and cites art. 7.º n.º 2 and 11.º.
+- On the JOUE rule (settled, not reopened) v4 left out «concurso público», which the question states: on the three real
+  deadline questions v4 read the stated conditions exactly on 2 of 3, against 400/400 on the reserved pattern.
+- Next: the selector (the person decides the approach).

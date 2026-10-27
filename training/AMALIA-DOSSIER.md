@@ -101,6 +101,10 @@ AFTER when its measurement exists.
 - Limit: the reserved questions are built from the same sentence pattern as the training ones with other words; 100 %
   says it learned that pattern, not yet that it reads any question. The test that counts is the three real questions in
   round 6.
+- Rule test, round 6 (`governance/readings/ronda6/RONDA6.md`): the two minimum-deadline rules without JOUE settle (v4 and
+  the other family identical: 6 days for goods and services, 14 for works); with the JOUE rule of round 4, all three
+  deadline rules are settled. On the real questions v4 read the stated conditions exactly on 2 of 3 (it left out
+  «concurso público» on the JOUE one). The selector is still not settled: v4 gives only the regime from 1 Oct 2026.
 
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.
