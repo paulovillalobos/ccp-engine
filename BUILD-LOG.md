@@ -1236,3 +1236,43 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   is rebuilt from the function call's own return value (modal FunctionCall.from_id), the mixture recomputed (22 787).
 - Checks: verify ok; tests 85 pass, 1 fails (test_b3_rules_v0, red since round 7, disclosed); test_b5_measure now skips factos-/escritas- reports like the other reader reports; red-team: one corrupted v6 answer -> MEAS caught.
 - Next: markers flagged without cause (46 % on final) and missed ambiguous fields are the weakest part.
+
+## 2026-10-26 — D55: the data at scale in Postgres; history loads; the daily job (branch data-loaders)
+- Asked: the person's go-ahead relayed by the builder («you have my yes»): selector paused; on an own branch, loaders for
+  the DR facts (E1b), the BASE history 2018–2026 and TED Portugal 2018–2026, a daily Modal job with health per source,
+  within Micro, rows and GB per table reported.
+- Done: compact layout (migrations 20261027000000 + 000100): ccp.nome, facto_c / raw_c / unidade_c, views ccp.facto /
+  ccp.raw / ccp.unidade rebuilding each doc. The 181 628 D48 objects moved and compared (0 missing, 0 different; a mutated
+  object is caught), then the D48 tables dropped. 955 → 169 bytes per fact. Loads revise (db/pg.py selftest, rolled back:
+  new, unchanged, changed → revision 2 superseding 1). db/pg.py load-files; db/history.py anuncios / contratos / ted;
+  adapters/ted/adapter.py (new); adapters/base-anuncios: a record without nAnuncio is unmapped (4 records 2018–2023; the
+  2026 build has none, so its output is unchanged); db/daily.py + db/modal_daily.py + ccp.ingesta / ccp.saude (migration
+  20261027000200); tests/test_db_encode.py.
+- Loaded (each load read back, 0 different): BASE anúncios 2018–2025 (174 222 notice raws with 2026, 1 021 724 facts in
+  all years); BASE contratos 2018 and 2019 (273 367 contract raws, 1 061 276 facts); TED 2018-01 to 2023-10 (51 229 notice
+  raws, 183 152 facts); DR notices built so far by E1b (1 782 PDFs, 1 781 documentos, 10 648 facts). Database 825 MB:
+  facto_c 2 276 800 rows 385 MB, nome 1 367 268 rows 238 MB, raw_c 500 600 rows 90 MB, unidade_c 468 819 rows 93 MB.
+- Blocked: the Supabase disk filled during contratos 2020 («No space left on device») with 787 MB of data and 992 MB of
+  WAL (min_wal_size is 1 GB, max_wal_size 4 GB), and the project went read-only. The disk is smaller than the 8 GB this
+  plan assumed; nothing was lost (each table's load is one transaction; 2020 has no rows). Projected need for the whole
+  history: about 3.3 GB of data plus up to 4 GB of WAL. Resuming is a re-run (rows present are skipped): contratos
+  2018–2026, then TED 2023–2026.
+- Blocked: the Modal secret ccp-db (project ref + database password, for the daily job) — this session may not write
+  secret stores; the person creates it (`modal secret create ccp-db --from-dotenv .env`), then `modal deploy
+  db/modal_daily.py`. The daily job has not run on Modal yet; locally its TED step stopped at the read-only database.
+- Not done: E2 entities of the history; joining TED procedures and award notices to BASE; modifications 2018–2025 (the
+  extractor fetched 2026 only); verify reading the database.
+
+## 2026-10-26 — D56: the joins, written; not yet applied (database read-only)
+- Asked: the person's goal relayed by the builder («at least 8 in all»): joins for 2018–2026 with the rates published;
+  the daily job live with health rows in Postgres.
+- Done: supabase/migrations/20261027000300_ccp_joins.sql (ccp.facto_atual, ccp.unidade_atual, ccp.contrato_proc,
+  ccp.proc_dr, ccp.entidade_papel, materialized ccp.ted_candidato) and db/joins.py (rates per year, three unmatched
+  examples each, reports/data/joins-<date>). BASE dumps carry no OJ S number (contratos 2020 fields checked), so BASE–TED
+  is a candidate join by buyer NIF + contract type + dispatch window, counted only when unique both ways.
+- Not run: the database is read-only (disk full, previous entry); even reads that spill to temporary files fail. Order
+  once the disk is raised: migrate, finish contratos 2020–2026 and TED 2023-11 to 2026-09, then db/joins.py.
+- Known before running: procedure ↔ DR is 2026 only (E1b reads 2026's notices; 2018–2025 would be about 186 000 PDFs at
+  one every 10 s, three weeks); TED-XML notices (2018–2023) name the buyer's NIF in about one in ten competition notices
+  (2018-01: 13 of 135), so BASE–TED candidates there will be few.
+- Checks: verify ok on the branch (before this entry's files, which are db/ and migrations only).
