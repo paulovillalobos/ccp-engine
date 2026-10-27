@@ -41,7 +41,12 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
                "repeat": {"condicoes_texto": 2}},
         # phase 9 (D52): v6 = v4's mix (the law) plus training/data-v6 (written questions, their noisy copies, D50 templates relabelled)
         "v6": {"adapter": "amalia-ccp-lei-v6", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v6"],
-               "repeat": {"condicoes_texto": 2}}}
+               "repeat": {"condicoes_texto": 2}},
+        # phase 10 (D53): v7 = v4's mix plus training/data-v7 (1 000 written questions); the same mix at LoRA rank 16 and 64
+        "v7": {"adapter": "amalia-ccp-lei-v7", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v7"],
+               "repeat": {"condicoes_texto": 2}},
+        "v7r64": {"adapter": "amalia-ccp-lei-v7r64", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v7"],
+                  "repeat": {"condicoes_texto": 2}, "hp": {"lora_r": 64, "lora_alpha": 128}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,
@@ -180,7 +185,8 @@ def main(run: str = "v1"):
     commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     dirty = bool(subprocess.run(["git", "status", "--porcelain", *RUNS[run]["data"], "law"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    call = train_remote.spawn(rows, HP, adapter)
+    hp = {**HP, **RUNS[run].get("hp", {})}  # a run may change hyper-parameters (D53: rank 64)
+    call = train_remote.spawn(rows, hp, adapter)
     print("modal function call", call.object_id, flush=True)
     res = call.get()
     finished = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
@@ -188,7 +194,7 @@ def main(run: str = "v1"):
     manifest = {"adapter": adapter, "volume": "amalia-lora", "base": {"model": MODEL, "revision": REVISION},
                 "training_index_sha256": hashlib.sha256(index.read_bytes()).hexdigest(), "data_index_sha256": indexes,
                 "repeat": RUNS[run]["repeat"], "mixture": mix, "examples_in_mix": len(rows),
-                "hyperparameters": HP, "repo_commit": commit, "repo_dirty_training_or_law": dirty, "started": started, "finished": finished,
+                "hyperparameters": hp, "repo_commit": commit, "repo_dirty_training_or_law": dirty, "started": started, "finished": finished,
                 "modal_app": app.app_id, "modal_function_call": call.object_id, "result": res, "cost_usd": "see COST.json (modal billing report)"}
     (out / "MANIFEST.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: v for k, v in manifest.items() if k != "result"}, indent=1))

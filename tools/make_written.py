@@ -141,9 +141,12 @@ def pick_style(rng):
 
 
 # ---- the split and the files ----------------------------------------------------------------------------------------
+BATCHES = [f"batch-{i:02d}.jsonl" for i in range(1, 11)]  # v6 was trained on these 500; later batches belong to later versions
+
+
 def written():
     rows = []
-    for f in sorted(WRITTEN.glob("batch-*.jsonl")):
+    for f in [WRITTEN / b for b in BATCHES]:
         rows += [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
     return rows
 

@@ -29,8 +29,8 @@ import modal
 
 MODEL = "amalia-llm/AMALIA-9B-0626-DPO"
 REVISION = "c4614b9b5c7b4fe303fa20902e692fc7dface640"  # leitor:a motor versao c4614b9b5c7b
-ADAPTERS = {"v1": "amalia-ccp-lei-v1", "v2": "amalia-ccp-lei-v2", "v3": "amalia-ccp-lei-v3", "v4": "amalia-ccp-lei-v4", "v5": "amalia-ccp-lei-v5", "v6": "amalia-ccp-lei-v6"}  # adapter directories in the volume amalia-lora
-LEITOR_OF = {"": "leitor-a", "v1": "leitor-a2", "v2": "leitor-a3", "v3": "leitor-a4", "v4": "leitor-a5", "v5": "leitor-a6", "v6": "leitor-a7"}  # base, phase 4, 5 (D46), 6 (D47), 7 (D49), 8 (D50, never trained), 9 (D52)
+ADAPTERS = {"v1": "amalia-ccp-lei-v1", "v2": "amalia-ccp-lei-v2", "v3": "amalia-ccp-lei-v3", "v4": "amalia-ccp-lei-v4", "v5": "amalia-ccp-lei-v5", "v6": "amalia-ccp-lei-v6", "v7": "amalia-ccp-lei-v7", "v7r64": "amalia-ccp-lei-v7r64"}  # adapter directories in the volume amalia-lora
+LEITOR_OF = {"": "leitor-a", "v1": "leitor-a2", "v2": "leitor-a3", "v3": "leitor-a4", "v4": "leitor-a5", "v5": "leitor-a6", "v6": "leitor-a7", "v7": "leitor-a8", "v7r64": "leitor-a9"}  # base, phase 4, 5 (D46), 6 (D47), 7 (D49), 8 (D50, never trained), 9 (D52)
 WINDOW, MAX_TOKENS = 32768, 1500
 SYSTEM = "Responde unicamente com o objeto JSON pedido, sem texto antes nem depois."
 READINGS = Path(__file__).resolve().parent.parent / "governance/readings"
@@ -50,7 +50,7 @@ def answer(prompts: list[dict], lora: str = "") -> list[dict]:
     from vllm.sampling_params import StructuredOutputsParams
 
     path = snapshot_download(MODEL, revision=REVISION, cache_dir="/weights")
-    extra = {"enable_lora": True, "max_lora_rank": 16} if lora else {}
+    extra = {"enable_lora": True, "max_lora_rank": 64 if lora.endswith("r64") else 16} if lora else {}  # D53: the rank-64 adapter
     llm = LLM(model=path, max_model_len=WINDOW, enable_prefix_caching=True, gpu_memory_utilization=0.92, seed=0,
               structured_outputs_config={"backend": "xgrammar", "disable_any_whitespace": True}, **extra)
     request = None

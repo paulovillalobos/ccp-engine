@@ -18,7 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SETS = {"dev": ROOT / "training/data-v6/factos_v6/held_out.jsonl", "final": ROOT / "training/data-v6/factos_v6/final.jsonl"}
 ANSWERS = ROOT / "governance/readings/avaliacao-v6"
-READERS = [("leitor-a", "base"), ("leitor-a5", "base + adaptador v4"), ("leitor-a7", "base + adaptador v6")]
+READERS = [("leitor-a", "base"), ("leitor-a5", "base + adaptador v4"), ("leitor-a7", "base + adaptador v6"), ("leitor-b", "Reader B (família B), teto")]
 VERSION = "ccp-measure-written-0.1"
 
 
@@ -40,9 +40,9 @@ def parse(text):
         return None
     if not isinstance(a, dict) or not isinstance(a.get("factos"), dict):
         return None
-    marks = lambda d: {k: sorted({json.dumps(num(x)) for x in (v if isinstance(v, list) else [v])}) for k, v in (d or {}).items()}  # noqa: E731
+    marks = lambda d: {k: sorted({json.dumps(num(x)) for x in (v if isinstance(v, list) else [v])}) for k, v in (d or {}).items() if v is not None}  # noqa: E731
     return {"factos": {k: num(v) for k, v in a["factos"].items() if v is not None}, "ambiguos": marks(a.get("ambiguos")),
-            "contraditorios": marks(a.get("contraditorios")), "citacoes": sorted(set(a.get("citacoes") or []))}
+            "contraditorios": marks(a.get("contraditorios")), "citacoes": sorted(set(a.get("citacoes") or []))}  # a null field is an absent one (strict schemas)
 
 
 def report(date, only=None):

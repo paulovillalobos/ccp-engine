@@ -768,6 +768,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v4", module="make_question_conditions")
         check_training_v2(store, out, tdir, held, sub="data-v5", module="make_user_facts")
         check_training_v2(store, out, tdir, held, sub="data-v6", module="make_written")
+        check_training_v2(store, out, tdir, held, sub="data-v7", module="make_written_v7")
     return store, out
 
 

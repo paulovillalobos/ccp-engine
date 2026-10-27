@@ -1426,8 +1426,9 @@
       "versao": 1,
       "code": "tools/measure_written.py",
       "hash": "7b7ce56feb57b98fc4768471d15d43e0d8b8247905e64cc52445ae02fc32c176",
-      "retired": false,
-      "nota": "phase 9 (D52): written questions; measurement"
+      "retired": true,
+      "nota": "phase 9 (D52): written questions; measurement",
+      "retired_at": "2026-10-27T18:27:21Z"
     },
     {
       "id": "ferramenta:check-written-questions@1",
@@ -1450,8 +1451,9 @@
       "versao": 32,
       "code": "verify.py",
       "hash": "bb507dc0527ff9bed739dc469c685d749d3ec4c8120ecc24abfd8ff868d69b8e",
-      "retired": false,
-      "nota": "phase 9 (D52): written questions; TRAIN data-v6, MEAS escritas-*"
+      "retired": true,
+      "nota": "phase 9 (D52): written questions; TRAIN data-v6, MEAS escritas-*",
+      "retired_at": "2026-10-27T18:27:04Z"
     },
     {
       "id": "ferramenta:make-written@2",
@@ -1462,8 +1464,69 @@
       "versao": 2,
       "code": "tools/make_written.py",
       "hash": "f90334c1a67a51468ace2b91e23fb802252b0e218a87c515601648800a980b1d",
+      "retired": true,
+      "nota": "D52: schema properties in the answer's order (a guided decoder writes them in schema order); prompts and answers unchanged",
+      "retired_at": "2026-10-27T18:27:03Z"
+    },
+    {
+      "id": "ferramenta:make-written@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/make_written.py",
+      "hash": "bb34a473178ca82e901249d2c3e93779fd4511786fb892718e255474a010d658",
       "retired": false,
-      "nota": "D52: schema properties in the answer's order (a guided decoder writes them in schema order); prompts and answers unchanged"
+      "nota": "phase 10 (D53)"
+    },
+    {
+      "id": "ferramenta:make-written-v7@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_written_v7.py",
+      "hash": "dc52a2c6f0f9806626c808182ccc9be9a825bf201268f3c4b3bae96226baf4d9",
+      "retired": false,
+      "nota": "phase 10 (D53)"
+    },
+    {
+      "id": "ferramenta:fact-guard@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/fact_guard.py",
+      "hash": "938e72ae813567666194cd57eeb78c7f27e7a148434538203edb241c7105f7eb",
+      "retired": false,
+      "nota": "phase 10 (D53)"
+    },
+    {
+      "id": "ferramenta:verify@33",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 33,
+      "code": "verify.py",
+      "hash": "39000dd2743ab964d7248bd96c07a4e23582d83c57146ed92f630539fa964067",
+      "retired": false,
+      "nota": "phase 10 (D53)"
+    },
+    {
+      "id": "ferramenta:measure-written@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_written.py",
+      "hash": "19826d6ff87610dd02599d65a42fc46a608d0d60b143a97764cba7644d5826ab",
+      "retired": false,
+      "nota": "D53: leitor-b (Reader B ceiling); a null field is an absent one"
     }
   ]
 }

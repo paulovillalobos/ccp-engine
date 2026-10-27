@@ -1,0 +1,2 @@
+{"id": "w208", "at": "2026-10-28", "remove": {"factos": ["territorio"]}, "why": "«hospital de santa maria» names a hospital, not a place (Santa Maria is also an island of the Açores); LABELS.md: territorio only for a place in the text. Found by tools/fact_guard.py auditing the labels."}
+{"id": "w352", "at": "2026-10-28", "move_to_ambiguos": ["preco_base"], "why": "«obras 1,5M» does not say preço base; LABELS.md: an amount under any other term is ambiguos.preco_base. Found by tools/fact_guard.py auditing the labels."}
