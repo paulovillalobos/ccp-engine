@@ -1214,4 +1214,5 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   leitor:a5 2018-01-01 (the earlier text's start), leitor:b null.
 - Fix before the commit, disclosed: recording re-rendered the reports of rounds 2–5 with today's states (round 5 would
   have shown rules settled only in round 6); restored from git, RESUMO.md (the current summary) kept.
+- Checks: verify ok. Tests: 85 pass, 1 FAILS (B4 deselected), disclosed after the commit aaa939473: tests/fill/test_b3_rules_v0.py expects the selector rule to cite dl-177-2026 art. 7.º; the rule's current (proposed) revision carries leitor:a5's reading, which cites ccp art. 19/20 only. Left red on purpose: it reports the open difference, the test is not bent to the data.
 - Next: the person decides how to close the two differences.
