@@ -1558,3 +1558,17 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Storage uploads of the DR PDFs: 8 CLI processes at once tripped the pooler's authentication circuit breaker (each
   process re-initialises the CLI's login role); stopped, nothing unverified deleted. Resumed with one process; an object an
   interrupted run already stored (409 KeyAlreadyExists) is now downloaded back and checked like a fresh upload.
+
+## 2026-10-27 X.13 Disk: verified DR PDFs deleted, the fetch counts what is in ccp-raw as stored; Modal limit stops Vortal (commit: X.13: dr-anuncios fetch counts PDFs verified in ccp-raw as stored; 13 unlogged uploads checked and logged; Modal input limit stopped the Vortal reader)
+- Disk fell under 1 GB twice (macOS swap, then growth outside this worktree). Deleted only copies verified in ccp-raw
+  (sha256 of the downloaded-back object): 8 684 DR PDFs (685 MB) by offload.py, plus the contratos2026.zip copy and the
+  TED bundles in scratch (156 MB). The DR fetch stopped itself under 1 GB at 10:32Z (13 101 of 21 658 in that run).
+- adapter.py stored(): a PDF counts as stored when it is on disk or verified in ccp-raw by offload-log.jsonl. Before, a
+  restarted fetch saw only the 2 020 PDFs still on disk and began fetching again; stopped after 3 GETs (13:51:21–41Z,
+  three notices already held; logged as they are). Restarted at 13:54Z: 13 622 stored, 8 548 to fetch.
+- 13 PDFs were neither on disk nor in offload-log: the 8-worker run killed on 2026-10-26 had stored and deleted them
+  without writing their lines (pool.map writes in order). Each was downloaded back from ccp-raw and matched its sha256;
+  logged with a note.
+- Vortal notice reader: ended 13:49:46Z by Modal, not by Vortal: "Input rate limit (0/s) exceeded" for the function
+  (the acinGov run ended the same way). Log: 7 406 GETs, 7 390 × 200, 15 × 500, the one 403 of 2026-10-26 20:18:27Z.
+  No Modal setting changed; the DR-copy reader is not started.
