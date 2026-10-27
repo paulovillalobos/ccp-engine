@@ -1,5 +1,5 @@
 {
-"source": "https://json.geoapi.pt/freguesias (GeoAPI.pt, from INE/CAOP), fetched 2026-10-28; region of each parish = its municipality's (municipios.json); union parishes split into their former parishes",
+"source": "https://json.geoapi.pt/freguesias (GeoAPI.pt, from INE/CAOP), fetched 2026-10-28; region of each parish = its municipality's (municipios.json); union parishes split into their former parishes; «Place (Parish)» names give both",
 "freguesias": {
 "A dos Cunhados": [
 "PT"
@@ -134,6 +134,9 @@
 "Airão": [
 "PT"
 ],
+"Santa Maria": [
+"PT"
+],
 "Airão São João": [
 "PT"
 ],
@@ -210,6 +213,12 @@
 "PT"
 ],
 "Alcácer do Sal": [
+"PT"
+],
+"Santa Maria do Castelo": [
+"PT"
+],
+"Santiago": [
 "PT"
 ],
 "Alcáçovas": [
@@ -513,6 +522,24 @@
 "Angra": [
 "PT-AC"
 ],
+"Nossa Senhora da Conceição": [
+"PT-AC"
+],
+"Santa Luzia": [
+"PT-AC",
+"PT-MA",
+"PT"
+],
+"São Pedro": [
+"PT-AC",
+"PT-MA",
+"PT"
+],
+"Sé": [
+"PT-AC",
+"PT-MA",
+"PT"
+],
 "Anha": [
 "PT"
 ],
@@ -660,6 +687,12 @@
 "Arões": [
 "PT"
 ],
+"Santa Cristina": [
+"PT"
+],
+"São Romão": [
+"PT"
+],
 "Asseiceira": [
 "PT"
 ],
@@ -783,6 +816,9 @@
 "Baguim do Monte": [
 "PT"
 ],
+"Rio Tinto": [
+"PT"
+],
 "Bairro": [
 "PT"
 ],
@@ -861,6 +897,9 @@
 "Barrosas": [
 "PT"
 ],
+"Santo Estêvão": [
+"PT"
+],
 "Barroselas": [
 "PT"
 ],
@@ -877,6 +916,9 @@
 "PT"
 ],
 "Basto": [
+"PT"
+],
+"São Clemente": [
 "PT"
 ],
 "Batalha": [
@@ -1050,6 +1092,13 @@
 "Borba": [
 "PT"
 ],
+"Matriz": [
+"PT",
+"PT-AC"
+],
+"São Bartolomeu": [
+"PT"
+],
 "Borba de Montanha": [
 "PT"
 ],
@@ -1071,6 +1120,9 @@
 "Bouro": [
 "PT"
 ],
+"Santa Marta": [
+"PT"
+],
 "Bouça": [
 "PT"
 ],
@@ -1078,6 +1130,13 @@
 "PT"
 ],
 "Braga": [
+"PT"
+],
+"São Vicente": [
+"PT",
+"PT-MA"
+],
+"São Vítor": [
 "PT"
 ],
 "Bragado": [
@@ -1327,6 +1386,10 @@
 "Candoso": [
 "PT"
 ],
+"São Martinho": [
+"PT",
+"PT-MA"
+],
 "Canedo": [
 "PT"
 ],
@@ -1371,6 +1434,11 @@
 ],
 "Capelins": [
 "PT"
+],
+"Santo António": [
+"PT",
+"PT-MA",
+"PT-AC"
 ],
 "Capelo": [
 "PT-AC"
@@ -1764,7 +1832,8 @@
 "PT"
 ],
 "Conceição": [
-"PT"
+"PT",
+"PT-AC"
 ],
 "Conde": [
 "PT"
@@ -2510,6 +2579,10 @@
 "Funchal": [
 "PT-MA"
 ],
+"Santa Maria Maior": [
+"PT-MA",
+"PT"
+],
 "Fundada": [
 "PT"
 ],
@@ -2681,6 +2754,9 @@
 "Gouveia": [
 "PT"
 ],
+"São Simão": [
+"PT"
+],
 "Gouvinhas": [
 "PT"
 ],
@@ -2790,6 +2866,9 @@
 "PT-AC",
 "PT"
 ],
+"Angústias": [
+"PT-AC"
+],
 "Horta da Vilariça": [
 "PT"
 ],
@@ -2851,6 +2930,9 @@
 "Jolda": [
 "PT"
 ],
+"São Paio": [
+"PT"
+],
 "Jou": [
 "PT"
 ],
@@ -2897,6 +2979,14 @@
 "PT",
 "PT-AC"
 ],
+"Nossa Senhora do Rosário": [
+"PT-AC"
+],
+"Santa Cruz": [
+"PT-AC",
+"PT",
+"PT-MA"
+],
 "Lajedo": [
 "PT-AC"
 ],
@@ -2938,6 +3028,9 @@
 "PT"
 ],
 "Lamego": [
+"PT"
+],
+"Almacave e Sé": [
 "PT"
 ],
 "Lameiras": [
@@ -3042,6 +3135,13 @@
 "Lobrigos": [
 "PT"
 ],
+"São João Baptista": [
+"PT"
+],
+"São Miguel": [
+"PT",
+"PT-AC"
+],
 "Lobão": [
 "PT"
 ],
@@ -3105,6 +3205,10 @@
 ],
 "Loulé": [
 "PT"
+],
+"São Sebastião": [
+"PT",
+"PT-AC"
 ],
 "Louredo": [
 "PT"
@@ -3248,6 +3352,10 @@
 ],
 "Manadas": [
 "PT-AC"
+],
+"Santa Bárbara": [
+"PT-AC",
+"PT"
 ],
 "Mancelos": [
 "PT"
@@ -3412,6 +3520,9 @@
 "PT"
 ],
 "Mesão Frio": [
+"PT"
+],
+"Santo André": [
 "PT"
 ],
 "Mexilhoeira Grande": [
@@ -3705,6 +3816,9 @@
 "Negrelos": [
 "PT"
 ],
+"São Tomé": [
+"PT"
+],
 "Negrões": [
 "PT"
 ],
@@ -3742,6 +3856,9 @@
 "PT-AC"
 ],
 "Norte Grande": [
+"PT-AC"
+],
+"Neves": [
 "PT-AC"
 ],
 "Norte Pequeno": [
@@ -3842,6 +3959,10 @@
 ],
 "Oliveira": [
 "PT"
+],
+"São Mateus": [
+"PT",
+"PT-AC"
 ],
 "Oliveira do Bairro": [
 "PT"
@@ -4308,6 +4429,9 @@
 "Planalto de Monforte": [
 "PT"
 ],
+"Oucidres": [
+"PT"
+],
 "Pocariça": [
 "PT"
 ],
@@ -4341,6 +4465,9 @@
 "Ponta Delgada": [
 "PT-AC",
 "PT-MA"
+],
+"São José": [
+"PT-AC"
 ],
 "Ponta Garça": [
 "PT-AC"
@@ -4465,6 +4592,9 @@
 "Prazins": [
 "PT"
 ],
+"Santa Eufémia": [
+"PT"
+],
 "Prazins Santo Tirso": [
 "PT"
 ],
@@ -4508,6 +4638,9 @@
 "PT"
 ],
 "Póvoa de Lanhoso": [
+"PT"
+],
+"Nossa Senhora do Amparo": [
 "PT"
 ],
 "Póvoa de Midões": [
@@ -4654,10 +4787,16 @@
 "Rebordões": [
 "PT"
 ],
+"Souto": [
+"PT"
+],
 "Recarei": [
 "PT"
 ],
 "Recezinhos": [
+"PT"
+],
+"São Mamede": [
 "PT"
 ],
 "Redinha": [
@@ -4819,6 +4958,12 @@
 "Rio Covo": [
 "PT"
 ],
+"Santa Eugénia": [
+"PT"
+],
+"Santa Eulália": [
+"PT"
+],
 "Rio Douro": [
 "PT"
 ],
@@ -4832,9 +4977,6 @@
 "PT"
 ],
 "Rio Meão": [
-"PT"
-],
-"Rio Tinto": [
 "PT"
 ],
 "Rio Torto": [
@@ -4896,6 +5038,14 @@
 ],
 "Rosto do Cão": [
 "PT-AC"
+],
+"Livramento": [
+"PT-AC"
+],
+"São Roque": [
+"PT-AC",
+"PT-MA",
+"PT"
 ],
 "Rosário": [
 "PT"
@@ -5026,6 +5176,10 @@
 "Sande": [
 "PT"
 ],
+"Vila Nova": [
+"PT",
+"PT-AC"
+],
 "Sande e São Lourenço do Douro": [
 "PT"
 ],
@@ -5057,10 +5211,6 @@
 "PT"
 ],
 "Sanhoane": [
-"PT"
-],
-"Santa Bárbara": [
-"PT-AC",
 "PT"
 ],
 "Santa Bárbara de Nexe": [
@@ -5097,10 +5247,6 @@
 "Santa Comba de Vilariça": [
 "PT"
 ],
-"Santa Cruz": [
-"PT",
-"PT-MA"
-],
 "Santa Cruz da Graciosa": [
 "PT-AC"
 ],
@@ -5113,26 +5259,13 @@
 "Santa Cruz do Lima": [
 "PT"
 ],
-"Santa Eugénia": [
-"PT"
-],
-"Santa Eulália": [
-"PT"
-],
 "Santa Joana": [
 "PT"
 ],
 "Santa Leocádia": [
 "PT"
 ],
-"Santa Luzia": [
-"PT",
-"PT-AC"
-],
 "Santa Margarida da Coutada": [
-"PT"
-],
-"Santa Maria Maior": [
 "PT"
 ],
 "Santa Maria da Devesa": [
@@ -5191,9 +5324,6 @@
 "Santana do Mato": [
 "PT"
 ],
-"Santiago": [
-"PT"
-],
 "Santiago Maior": [
 "PT"
 ],
@@ -5228,9 +5358,6 @@
 "PT",
 "PT-AC"
 ],
-"Santo André": [
-"PT"
-],
 "Santo André das Tojeiras": [
 "PT"
 ],
@@ -5240,11 +5367,6 @@
 "Santo Antão": [
 "PT-AC",
 "PT"
-],
-"Santo António": [
-"PT-MA",
-"PT",
-"PT-AC"
 ],
 "Santo António da Charneca": [
 "PT"
@@ -5269,9 +5391,6 @@
 ],
 "Santo Espírito": [
 "PT-AC"
-],
-"Santo Estêvão": [
-"PT"
 ],
 "Santo Isidoro": [
 "PT"
@@ -5381,6 +5500,14 @@
 ],
 "Selho": [
 "PT"
+],
+"São Cristóvão": [
+"PT"
+],
+"São Jorge": [
+"PT",
+"PT-MA",
+"PT-AC"
 ],
 "Selmes": [
 "PT"
@@ -5598,9 +5725,6 @@
 "Soutelo do Douro": [
 "PT"
 ],
-"Souto": [
-"PT"
-],
 "Souto Maior": [
 "PT"
 ],
@@ -5666,9 +5790,6 @@
 "São Cosmado": [
 "PT"
 ],
-"São Cristóvão": [
-"PT"
-],
 "São Cristóvão de Mondim de Basto": [
 "PT"
 ],
@@ -5720,10 +5841,6 @@
 "São Joaninho": [
 "PT"
 ],
-"São Jorge": [
-"PT-MA",
-"PT"
-],
 "São Jorge da Beira": [
 "PT"
 ],
@@ -5732,9 +5849,6 @@
 ],
 "São João": [
 "PT-AC",
-"PT"
-],
-"São João Baptista": [
 "PT"
 ],
 "São João da Boa Vista": [
@@ -5800,9 +5914,6 @@
 "São Luís": [
 "PT"
 ],
-"São Mamede": [
-"PT"
-],
 "São Mamede de Infesta": [
 "PT"
 ],
@@ -5814,10 +5925,6 @@
 ],
 "São Marcos da Serra": [
 "PT"
-],
-"São Martinho": [
-"PT",
-"PT-MA"
 ],
 "São Martinho da Cortiça": [
 "PT"
@@ -5846,9 +5953,6 @@
 "São Martinho do Porto": [
 "PT"
 ],
-"São Mateus": [
-"PT-AC"
-],
 "São Mateus da Calheta": [
 "PT-AC"
 ],
@@ -5876,15 +5980,8 @@
 "São Miguel do Outeiro": [
 "PT"
 ],
-"São Paio": [
-"PT"
-],
 "São Paio de Oleiros": [
 "PT"
-],
-"São Pedro": [
-"PT",
-"PT-AC"
 ],
 "São Pedro Fins": [
 "PT"
@@ -5931,14 +6028,7 @@
 "São Pedro do Esteval": [
 "PT"
 ],
-"São Romão": [
-"PT"
-],
 "São Romão de Neiva": [
-"PT"
-],
-"São Roque": [
-"PT-MA",
 "PT"
 ],
 "São Roque do Faial": [
@@ -5959,9 +6049,6 @@
 "São Saturnino": [
 "PT"
 ],
-"São Sebastião": [
-"PT"
-],
 "São Silvestre": [
 "PT"
 ],
@@ -5973,10 +6060,6 @@
 ],
 "São Torcato": [
 "PT"
-],
-"São Vicente": [
-"PT",
-"PT-MA"
 ],
 "São Vicente Ferreira": [
 "PT-AC"
@@ -6027,6 +6110,9 @@
 "PT"
 ],
 "Tamel": [
+"PT"
+],
+"São Veríssimo": [
 "PT"
 ],
 "Tancos": [
@@ -6338,10 +6424,7 @@
 "Alandroal": [
 "PT"
 ],
-"São Brás dos Matos": [
-"PT"
-],
-"Juromenha": [
+"Nossa Senhora da Conceição), São Brás dos Matos (Mina do Bugalho) e Juromenha (Nossa Senhora do Loreto": [
 "PT"
 ],
 "Albernoa": [
@@ -6404,10 +6487,10 @@
 "Foz do Douro": [
 "PT"
 ],
-"Alenquer (Santo Estêvão": [
+"Alenquer": [
 "PT"
 ],
-"Triana)": [
+"Santo Estêvão e Triana": [
 "PT"
 ],
 "Vale de Afonsinho": [
@@ -6620,10 +6703,10 @@
 "Amieira do Tejo": [
 "PT"
 ],
-"Arga (Baixo": [
+"Arga": [
 "PT"
 ],
-"Cima": [
+"Baixo, Cima e São João": [
 "PT"
 ],
 "Aricera": [
@@ -6695,10 +6778,10 @@
 "Malaqueijo": [
 "PT"
 ],
-"Azeitão (São Lourenço": [
+"Azeitão": [
 "PT"
 ],
-"São Simão)": [
+"São Lourenço e São Simão": [
 "PT"
 ],
 "Peva": [
@@ -6779,16 +6862,13 @@
 "Cepões": [
 "PT"
 ],
-"Beja (Salvador": [
+"Beja": [
 "PT"
 ],
-"Santa Maria da Feira)": [
+"Salvador e Santa Maria da Feira": [
 "PT"
 ],
-"Beja (Santiago Maior": [
-"PT"
-],
-"São João Baptista)": [
+"Santiago Maior e São João Baptista": [
 "PT"
 ],
 "Mogo de Malta": [
@@ -6830,25 +6910,16 @@
 "Burga": [
 "PT"
 ],
-"Bougado (São Martinho": [
+"Bougado": [
 "PT"
 ],
-"Santiago)": [
+"São Martinho e Santiago": [
 "PT"
 ],
-"Braga (Maximinos": [
+"Maximinos, Sé e Cividade": [
 "PT"
 ],
-"Sé": [
-"PT"
-],
-"Cividade)": [
-"PT"
-],
-"Braga (São José de São Lázaro": [
-"PT"
-],
-"São João do Souto)": [
+"São José de São Lázaro e São João do Souto": [
 "PT"
 ],
 "Briteiros Santo Estêvão": [
@@ -6896,6 +6967,9 @@
 "Albergaria da Serra": [
 "PT"
 ],
+"São Julião": [
+"PT"
+],
 "Cadafaz": [
 "PT"
 ],
@@ -6917,7 +6991,10 @@
 "Serra do Bouro": [
 "PT"
 ],
-"Caldas de Vizela (São Miguel": [
+"Caldas de Vizela": [
+"PT"
+],
+"São Miguel e São João": [
 "PT"
 ],
 "Sequeiros": [
@@ -7061,6 +7138,9 @@
 "Carreiras": [
 "PT"
 ],
+"São Miguel) e Carreiras (Santiago": [
+"PT"
+],
 "Carva": [
 "PT"
 ],
@@ -7074,6 +7154,9 @@
 "PT"
 ],
 "Aguieira": [
+"PT"
+],
+"Santa Tecla": [
 "PT"
 ],
 "Carmões": [
@@ -7214,10 +7297,10 @@
 "Cernadelo": [
 "PT"
 ],
-"Lousada (São Miguel": [
+"Lousada": [
 "PT"
 ],
-"Santa Margarida)": [
+"São Miguel e Santa Margarida": [
 "PT"
 ],
 "Cerva": [
@@ -7268,13 +7351,10 @@
 "Reigada": [
 "PT"
 ],
-"Coimbra (Sé Nova": [
+"Coimbra": [
 "PT"
 ],
-"Almedina": [
-"PT"
-],
-"São Bartolomeu)": [
+"Sé Nova, Santa Cruz, Almedina e São Bartolomeu": [
 "PT"
 ],
 "Colmeias": [
@@ -7298,10 +7378,10 @@
 "Vale de Nogueiras": [
 "PT"
 ],
-"Coronado (São Romão": [
+"Coronado": [
 "PT"
 ],
-"São Mamede)": [
+"São Romão e São Mamede": [
 "PT"
 ],
 "Cortiçô da Serra": [
@@ -7448,13 +7528,13 @@
 "Pardelhas": [
 "PT"
 ],
+"São Mamede) e Escariz (São Martinho": [
+"PT"
+],
 "Escudeiros": [
 "PT"
 ],
-"Penso (Santo Estêvão": [
-"PT"
-],
-"São Vicente)": [
+"Santo Estêvão e São Vicente": [
 "PT"
 ],
 "Edroso": [
@@ -7478,19 +7558,19 @@
 "Nossa Senhora da Graça": [
 "PT"
 ],
-"São Simão": [
-"PT"
-],
 "Esqueiros": [
 "PT"
 ],
-"Este (São Pedro": [
+"Este": [
 "PT"
 ],
-"Estremoz (Santa Maria": [
+"São Pedro e São Mamede": [
 "PT"
 ],
-"Santo André)": [
+"Estremoz": [
+"PT"
+],
+"Santa Maria e Santo André": [
 "PT"
 ],
 "Estômbar": [
@@ -7502,10 +7582,10 @@
 "Eucisia": [
 "PT"
 ],
-"Faro (Sé": [
+"Faro": [
 "PT"
 ],
-"São Pedro)": [
+"Sé e São Pedro": [
 "PT"
 ],
 "Fataunços": [
@@ -7544,10 +7624,7 @@
 "Figueiras": [
 "PT"
 ],
-"Figueiró (Santiago": [
-"PT"
-],
-"Santa Cristina)": [
+"Santiago e Santa Cristina": [
 "PT"
 ],
 "Figueiró da Serra": [
@@ -8117,6 +8194,9 @@
 "Moura (Santo Agostinho": [
 "PT"
 ],
+"São João Baptista)": [
+"PT"
+],
 "Santo Amador": [
 "PT"
 ],
@@ -8237,6 +8317,9 @@
 "Oriz": [
 "PT"
 ],
+"Santa Marinha) e Oriz (São Miguel": [
+"PT"
+],
 "Outeiro da Cortiçada": [
 "PT"
 ],
@@ -8252,7 +8335,10 @@
 "Ovoa": [
 "PT"
 ],
-"Padreiro (Salvador": [
+"Padreiro": [
+"PT"
+],
+"Salvador e Santa Cristina": [
 "PT"
 ],
 "Painho": [
@@ -8528,9 +8614,6 @@
 "Reguengo": [
 "PT"
 ],
-"São Julião": [
-"PT"
-],
 "Remondes": [
 "PT"
 ],
@@ -8645,9 +8728,6 @@
 "Sanjurge": [
 "PT"
 ],
-"Santa Eufémia": [
-"PT"
-],
 "Boa Vista": [
 "PT"
 ],
@@ -8753,10 +8833,10 @@
 "Sequeade": [
 "PT"
 ],
-"Bastuço (São João": [
+"Bastuço": [
 "PT"
 ],
-"Santo Estevão)": [
+"São João e Santo Estevão": [
 "PT"
 ],
 "Gradiz": [
@@ -8768,16 +8848,13 @@
 "Sarzeda": [
 "PT"
 ],
-"Serpa (Salvador": [
+"Serpa": [
 "PT"
 ],
-"Setúbal (São Julião": [
+"Salvador e Santa Maria": [
 "PT"
 ],
-"Nossa Senhora da Anunciada": [
-"PT"
-],
-"Santa Maria da Graça)": [
+"São Julião, Nossa Senhora da Anunciada e Santa Maria da Graça": [
 "PT"
 ],
 "Sezelhe": [
@@ -8789,13 +8866,10 @@
 "Águas Vivas": [
 "PT"
 ],
-"Sintra (Santa Maria": [
+"Sintra": [
 "PT"
 ],
-"São Miguel": [
-"PT"
-],
-"São Pedro de Penaferrim)": [
+"Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim": [
 "PT"
 ],
 "Sobral Pichorro": [
@@ -8969,9 +9043,6 @@
 "Justes": [
 "PT"
 ],
-"Santa Maria": [
-"PT"
-],
 "Talhinhas": [
 "PT"
 ],
@@ -8987,10 +9058,10 @@
 "Óis do Bairro": [
 "PT"
 ],
-"Tavares (Chãs": [
+"Tavares": [
 "PT"
 ],
-"Travanca)": [
+"Chãs, Várzea e Travanca": [
 "PT"
 ],
 "Taveiro": [
@@ -9002,7 +9073,10 @@
 "Arzila": [
 "PT"
 ],
-"Tavira (Santa Maria": [
+"Tavira": [
+"PT"
+],
+"Santa Maria e Santiago": [
 "PT"
 ],
 "Teixeiró": [
@@ -9050,10 +9124,10 @@
 "Vila Mou": [
 "PT"
 ],
-"Torres Novas (Santa Maria": [
+"Torres Novas": [
 "PT"
 ],
-"Torres Novas": [
+"Santa Maria, Salvador e Santiago": [
 "PT"
 ],
 "Lapas": [
@@ -9077,10 +9151,10 @@
 "Tourais": [
 "PT"
 ],
-"Touvedo (São Lourenço": [
+"Touvedo": [
 "PT"
 ],
-"Salvador)": [
+"São Lourenço e Salvador": [
 "PT"
 ],
 "Trancoso (São Pedro": [
@@ -9134,10 +9208,10 @@
 "Torre de Vilela": [
 "PT"
 ],
-"Távora (Santa Maria": [
+"Távora": [
 "PT"
 ],
-"Távora": [
+"Santa Maria e São Vicente": [
 "PT"
 ],
 "Unhão": [
@@ -9147,6 +9221,9 @@
 "PT"
 ],
 "Peredo dos Castelhanos": [
+"PT"
+],
+"São Pedro), Passô e Valbom (São Martinho": [
 "PT"
 ],
 "Vale": [
@@ -9275,7 +9352,7 @@
 "Cabeça": [
 "PT"
 ],
-"Vila Chã (São João Baptista": [
+"São João Baptista e Santiago": [
 "PT"
 ],
 "Codal": [
@@ -9443,16 +9520,13 @@
 "Ázere": [
 "PT"
 ],
-"Évora (São Mamede": [
+"Évora": [
 "PT"
 ],
-"Santo Antão)": [
+"São Mamede, Sé, São Pedro e Santo Antão": [
 "PT"
 ],
-"Ameixial (Santa Vitória": [
-"PT"
-],
-"São Bento)": [
+"Santa Vitória e São Bento": [
 "PT"
 ],
 "Bombarral": [
@@ -9779,6 +9853,15 @@
 "Vidago": [
 "PT"
 ],
+"Arcossó": [
+"PT"
+],
+"Selhariz": [
+"PT"
+],
+"Vilarinho das Paranheiras": [
+"PT"
+],
 "Vidais": [
 "PT"
 ],
@@ -9862,10 +9945,6 @@
 ],
 "Vila Marim": [
 "PT"
-],
-"Vila Nova": [
-"PT",
-"PT-AC"
 ],
 "Vila Nova da Baronia": [
 "PT"

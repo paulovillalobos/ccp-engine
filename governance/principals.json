@@ -1539,8 +1539,9 @@
       "versao": 2,
       "code": "tools/fact_guard.py",
       "hash": "a7cf90b21baa3bd66581427f329c420af0f062962d6fd5199ee5a67f498e7c3d",
-      "retired": false,
-      "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles"
+      "retired": true,
+      "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles",
+      "retired_at": "2026-10-27T20:00:38Z"
     },
     {
       "id": "ferramenta:measure-written-v7@1",
@@ -1589,6 +1590,18 @@
       "hash": "cf0549306cf1d4d1847bcef07ed4ce5941b704d7e9d91310ea4e0ff2f4a28391",
       "retired": false,
       "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles"
+    },
+    {
+      "id": "ferramenta:fact-guard@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/fact_guard.py",
+      "hash": "17a673c84559832f60faddb12a41af257253e8c14120fdbcb84870219cda20b4",
+      "retired": false,
+      "nota": "D54: guard 0.3 (articles of other acts, common-word place names, parishes by longest name, place right after a name), CP and association rules"
     }
   ]
 }

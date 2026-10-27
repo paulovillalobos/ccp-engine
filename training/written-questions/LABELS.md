@@ -10,8 +10,11 @@ amounts. The label says only what the question states; the engine applies the la
 `factos` — the engine's fields, only when stated or mapped by everyday words:
 - tipo_entidade: câmara, município, junta, união de freguesias, "a autarquia" -> outra; ministério, direção-geral,
   secretaria-geral -> estado. Instituto, universidade, escola, hospital, empresa municipal, Governo Regional, "somos do
-  Estado" -> ambiguos [estado, outra].
-- tipo_procedimento: the procedure's name or a common short form (CP, AD, CLPQ, "consulta previa"). Bare "concurso",
+  Estado" -> ambiguos [estado, outra]. The asker's own IPSS, associação, misericórdia, bombeiros voluntários, private fundação
+  or cooperativa -> ambiguos ["outra"] (it may not be an entidade adjudicante at all); such a body named only as supplier or
+  beneficiary gives no entity.
+- tipo_procedimento: the procedure's name or a common short form: CP = concurso público, AD = ajuste direto, CLPQ, CPrév or
+  «consulta» = consulta prévia (when the text itself says what CP stands for, the text decides). Bare "concurso",
   "requisição", "AD com três orçamentos", "concurso internacional" -> ambiguos with the candidates.
 - tipo_contrato: named, or implied by an object whose type is not in doubt (construir, reparar, pavimentar -> obras;
   comprar, adquirir, fornecimento de coisas -> bens; limpeza, vigilância, consultoria, manutenção, transporte ->

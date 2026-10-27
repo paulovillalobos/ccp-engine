@@ -26,21 +26,22 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "ccp-fact-guard-0.2"
+VERSION = "ccp-fact-guard-0.3"
 GAZ = json.loads((ROOT / "law/gazetteer/municipios.json").read_text(encoding="utf-8"))["municipios"]
 FREG = json.loads((ROOT / "law/gazetteer/freguesias.json").read_text(encoding="utf-8"))["freguesias"]
 TWO_REGIONS = {"calheta": ["PT-MA", "PT-AC"], "lagoa": ["PT", "PT-AC"], "santa cruz": ["PT-MA", "PT"], "sao vicente": ["PT-MA", "PT"],
                "madalena": ["PT-AC", "PT"], "vila franca": ["PT", "PT-AC"]}
 SHORT_NAMES = {"angra": "PT-AC", "gaia": "PT", "vila franca de xira": "PT", "vila franca do campo": "PT-AC", "praia": None}
-COMMON_WORDS = {"porto", "horta", "velas", "corvo", "nordeste", "santana", "lagos", "batalha", "moura", "mira", "feira", "madalena", "angra"}
+COMMON_WORDS = {"porto", "horta", "velas", "corvo", "nordeste", "santana", "lagos", "batalha", "moura", "mira", "madalena", "angra", "tomar", "guarda",
+                "chaves", "paredes", "cuba", "moita", "povoacao", "vagos", "gouveia", "lagoa", "calheta", "fundao", "barrancos", "gaviao", "trofa"}  # also ordinary words
 ISLANDS = {"sao miguel": "PT-AC", "terceira": "PT-AC", "faial": "PT-AC", "pico": "PT-AC", "sao jorge": "PT-AC", "graciosa": "PT-AC",
            "flores": "PT-AC", "santa maria": "PT-AC", "corvo": "PT-AC", "porto santo": "PT-MA"}
 ISLAND_WORDS = {"terceira", "pico", "flores", "santa maria", "corvo"}
 REGIONS = [(r"\ba[cç]ores\b", "PT-AC"), (r"\b(na|da|regi[aã]o aut[oó]noma da) madeira\b", "PT-MA"),
            (r"\b(alentejo|algarve|minho|tr[aá]s-os-montes|beira (alta|baixa|interior|litoral)|continente|[nd]o interior|distrito d[eo])\b", "PT")]
-LOOSE = re.compile(r"\b(com|c/)\s*iva\b|\biva inclu[ií]do|\bincluindo (o )?iva|\b(or[cç]amento|entre|cada|por ano|por lote|por item|por unidade|cabimento)\b|/ano|\bou\s+\d", re.I)
+LOOSE = re.compile(r"\b(com|c/)\s*iva\b|\biva inclu[ií]do|\bincluindo (o )?iva|\b(or[cç]amento|entre|cada|por ano|por lote|por item|por unidade|cabimento)\b|/ano|\bou\s+\d[\d.,\s]*(mil|k\b|€|euros?|milh)", re.I)
 HINT = [(r"madeira|porto santo|funchal", "PT-MA"), (r"algarve|continente", "PT"), (r"a[cç]ores|s[aã]o miguel|s[aã]o jorge|terceira|faial|pico|flores|graciosa", "PT-AC")]
-OWNER = r"(c[aâ]mara( municipal)?|munic[ií]pio|concelho|freguesia|autarquia)\s+d[aeo]s?\s+$"  # «câmara do porto»: a name, even lowercase
+OWNER = r"(c[aâ]mara( municipal)?|munic[ií]pio|concelho|freguesia|autarquia|somos)\s+d[aeo]s?\s+$"  # «câmara do porto»: a name, even lowercase
 
 
 def fold(s):
@@ -64,6 +65,16 @@ LONGEST = sorted(NAMES, key=len, reverse=True)
 PARISHES = {fold(k): set(v) for k, v in FREG.items()}
 
 
+def right_after(after, regs):
+    """A municipality or island written right after a name, «(Funchal)», «, Lisboa», «(Terceira)», that settles it among regs."""
+    m = re.match(r"\s*[(,]\s*(?:em\s+|n[ao]\s+|d[aeo]\s+)?([a-z][a-z\s-]{1,30}?)\s*[),.;:]", after)
+    if not m:
+        return None
+    w = m.group(1).strip()
+    reg = ISLANDS.get(w) or (next(iter(NAMES[w])) if w in NAMES and len(NAMES[w]) == 1 else None)
+    return reg if reg in regs else None
+
+
 def places(text):
     """({region} the text names, {regions} of a name found in more than one region with no hint)."""
     f, found, two, taken = fold(text), set(), set(), []
@@ -72,14 +83,16 @@ def places(text):
     def free(a, b):
         return not any(x < b and a < y for x, y in taken)
 
-    for m in re.finditer(r"freguesia\s+d[aeo]s?\s+([a-z][a-z\s-]{1,40}?)(?=[,.;:)!?]|\s+(e|que|quer|vai|pode|em|no|na|para)\b|$)", f):
-        name = m.group(1).strip()
-        while name and name not in PARISHES and " " in name:
-            name = name.rsplit(" ", 1)[0]
-        if name in PARISHES and name not in NAMES:
-            taken.append((m.start(1), m.start(1) + len(name)))
-            regs = PARISHES[name]
-            (found if len(regs) == 1 else two).update(regs)
+    for m in re.finditer(r"freguesias?\s+d[aeo]s?\s+", f):
+        words = re.findall(r"[a-z][a-z-]*", f[m.end():m.end() + 80])[:8]  # the longest known parish name after «freguesia de»
+        for k in range(len(words), 0, -1):
+            name = " ".join(words[:k])
+            if name in PARISHES and name not in NAMES:
+                taken.append((m.end(), m.end() + len(name)))
+                regs = PARISHES[name]
+                hint = right_after(f[m.end() + len(name):m.end() + len(name) + 30], regs)
+                (found if len(regs) == 1 or hint else two).update({hint} if hint else regs)
+                break
     for key in LONGEST:
         for m in re.finditer(rf"(?<![\w-]){re.escape(key)}(?![\w-])", f):
             if not free(m.start(), m.end()):
@@ -89,7 +102,8 @@ def places(text):
             taken.append((m.start(), m.end()))
             if key in TWO_REGIONS:
                 after = f[m.end():m.end() + 25]
-                hint = next((reg for pat, reg in HINT if re.match(rf"\s*[(,]?\s*(d[aoe]s?\s+)?(ilha d[aeo]s?\s+)?({pat})", after)), None)
+                hint = next((reg for pat, reg in HINT if re.match(rf"\s*[(,]?\s*([dn][aoe]s?\s+)?(ilha d[aeo]s?\s+)?({pat})", after)), None) \
+                    or right_after(after, set(TWO_REGIONS[key]))
                 if hint:
                     found.add(hint)
                 else:
@@ -104,6 +118,7 @@ def places(text):
             if key in ISLAND_WORDS and not (text[m.start()].isupper() or re.search(r"ilha d[aeo]s? $", f[max(0, m.start() - 10):m.start()])):
                 continue
             found.add(reg)
+    names = set()
     before = set()
     for pat, reg in REGIONS:
         for m in re.finditer(pat, f):
@@ -117,12 +132,39 @@ def places(text):
     return found, two
 
 
+ACT_AFTER = re.compile(r"^\s*,?\s*(?:\S+\s+){0,4}?d[oa]s?\s+(?:(dl|decreto[- ]lei)\s*(?:n\.?\s*º?\s*)?(\d+)(?:-([a-z]))?\s*(?:/|de)\s*(\d{4}|\d{2}\b)"
+                       r"|(lei)\s*(?:n\.?\s*º?\s*)?([\d.]+)(?:/(\d{4}))?|(dlr|decreto legislativo regional)\s*(?:n\.?\s*º?\s*)?(\d+)/(\d{4})/([am])\b"
+                       r"|(regulamento|diretiva|portaria|resolu[cç][aã]o|codigo civil|cpa|lei n))")
+
+
+def act_after(window, known):
+    """The act an article belongs to, read from the words right after it: «do DL 177/2026» -> dl-177-2026, nothing or «do CCP» -> ccp,
+    an act the store does not hold (Lei 14.133, a regulation) -> None."""
+    m = ACT_AFTER.search(window)
+    if not m:
+        return "ccp"
+    g = m.groups()
+    if g[0]:
+        year = g[3] if len(g[3]) == 4 else ("19" if int(g[3]) > 30 else "20") + g[3]
+        i = f"dl-{g[1]}" + (f"-{g[2]}" if g[2] else "") + f"-{year}"
+    elif g[4]:
+        i = f"lei-{g[5]}-{g[6]}" if g[6] else None
+    elif g[7]:
+        i = f"dlr-{g[8]}-{g[9]}-{g[10]}"
+    else:
+        return None
+    return i if i in known else None
+
+
 def citations(text, known):
     out = []
     f = fold(text)
     for m in re.finditer(r"\bart(?:igo|\.|º)?\s*(\d+)\s*\.?\s*º?(?:\s*-\s*([a-z]))?(?:\s*,?\s*n\.?\s*º?\s*(\d+))?(?:\s*,?\s*(?:al[ií]nea|al\.)\s*([a-z])\))?", f):
         n, letter, num, al = m.groups()
-        base = f"ccp:art{n}" + (f"-{letter}" if letter else "")
+        act = act_after(f[m.end():m.end() + 45], known)
+        if act is None:
+            continue  # an article of an act outside the store (Lei 14.133, a regulation): not the CCP
+        base = f"{act}:art{n}" + (f"-{letter}" if letter else "")
         cands = [base + (f".{num}" if num else "") + (f".{al}" if al else "")]
         if al and not num:
             cands.append(f"{base}.1.{al}")
@@ -131,7 +173,10 @@ def citations(text, known):
             out.append(hit)
     for m in re.finditer(r"\bn\.?\s*º?\s*(\d+)\s*(?:,?\s*(?:al[ií]nea|al\.)\s*([a-z])\))?\s*,?\s*d[oa]\s+(?:referido\s+)?art(?:igo|\.|º)?\s*(\d+)", f):
         num, al, n = m.groups()  # «o n.º 2 do artigo 43.º»: the paragraph before the article
-        hit = next((c for c in [f"ccp:art{n}.{num}" + (f".{al}" if al else ""), f"ccp:art{n}.{num}"] if c in known), None)
+        act = act_after(f[m.end():m.end() + 45], known)
+        if act is None:
+            continue
+        hit = next((c for c in [f"{act}:art{n}.{num}" + (f".{al}" if al else ""), f"{act}:art{n}.{num}"] if c in known), None)
         if hit and hit not in out:
             out.append(hit)
     out = [c for c in out if not any(o.startswith(c + ".") for o in out)]  # the most specific citation of an article
@@ -147,7 +192,7 @@ def citations(text, known):
                  "dlr": lambda: f"dlr-{g[0]}-{g[1]}-{g[2]}"}[kind]()
             if i in known and i not in out:
                 out.append(i)
-    return out
+    return [c for c in out if not any(o.startswith(c + ":") for o in out)]  # an article of an act stands for the act
 
 
 DATE_CUE = re.compile(r"\d{1,2}\s*[/.-]\s*\d{1,2}|\d{4}-\d{2}-\d{2}|\b(janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|hoje|amanha|ontem|"
@@ -184,7 +229,7 @@ def guard(question, today, a, known):
     elif "preco_base" in A and has_pb and not loose and not re.search(r"n[aã]o sei|ou ser[aá]|n[aã]o tenho a certeza", question, re.I) and len(A["preco_base"]) == 1 and isinstance(A["preco_base"][0], (int, float)):
         F["preco_base"] = A.pop("preco_base")[0]
     cites = set(citations(question, known)) | {c for c in a["citacoes"] if c in known}
-    a["citacoes"] = sorted(c for c in cites if not any(o.startswith(c + ".") for o in cites))
+    a["citacoes"] = sorted(c for c in cites if not any(o.startswith(c + ".") or o.startswith(c + ":") for o in cites))
     if "data_inicio_procedimento" in F:
         f = fold(question)
         if not DATE_CUE.search(f):
