@@ -767,6 +767,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v3", module="make_regimes")
         check_training_v2(store, out, tdir, held, sub="data-v4", module="make_question_conditions")
         check_training_v2(store, out, tdir, held, sub="data-v5", module="make_user_facts")
+        check_training_v2(store, out, tdir, held, sub="data-v6", module="make_written")
     return store, out
 
 
@@ -1041,6 +1042,12 @@ def check_measure():
                 out.append(("BENCH", f"{pk['id']}: built after frozen_at {doc['frozen_at']} and holds {ev['assertion']}, whose event {ev['id']} names a held-out unit"))
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
+        if f.name.startswith("escritas-"):  # phase 9 (D52): written questions -> facts, markers, citations (tools/measure_written.py)
+            import measure_written  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_written.report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_written.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("factos-"):  # phase 8 (D50): a person's question -> facts, generated and hand-written (tools/measure_user_facts.py)
             import measure_user_facts  # noqa: E402  (no model: it reads the stored answers)
             again = measure_user_facts.report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})

@@ -1373,8 +1373,9 @@
       "versao": 31,
       "code": "verify.py",
       "hash": "1a4261fc37c5a2b3afc5acf94d748d5cbfb54653c1935126333b19842970f374",
-      "retired": false,
-      "nota": "phase 8 (D50): a person's question -> facts; TRAIN data-v5, MEAS factos-*"
+      "retired": true,
+      "nota": "phase 8 (D50): a person's question -> facts; TRAIN data-v5, MEAS factos-*",
+      "retired_at": "2026-10-27T14:28:48Z"
     },
     {
       "id": "ferramenta:read-rules@14",
@@ -1387,6 +1388,54 @@
       "hash": "cb77cd8787055704a866d1594bab6b1d07805398ee2ace2ca04c8e14874039ad",
       "retired": false,
       "nota": "D51: round 7, the selector question names the regimes held, shows art. 19/20 with earlier text, admits from = null"
+    },
+    {
+      "id": "ferramenta:make-written@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_written.py",
+      "hash": "721fc60dab2c167384f08cd370e1f03d427872eb768d5e05612010fb46668e5d",
+      "retired": false,
+      "nota": "phase 9 (D52): written questions; generator of training/data-v6"
+    },
+    {
+      "id": "ferramenta:measure-written@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_written.py",
+      "hash": "7b7ce56feb57b98fc4768471d15d43e0d8b8247905e64cc52445ae02fc32c176",
+      "retired": false,
+      "nota": "phase 9 (D52): written questions; measurement"
+    },
+    {
+      "id": "ferramenta:check-written-questions@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/check_written_questions.py",
+      "hash": "9ac2d16e53441e6eede3056b9cc8f4a1d8ca8eaa5738e8559a17a311c19656e1",
+      "retired": false,
+      "nota": "phase 9 (D52): written questions; label check"
+    },
+    {
+      "id": "ferramenta:verify@32",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 32,
+      "code": "verify.py",
+      "hash": "bb507dc0527ff9bed739dc469c685d749d3ec4c8120ecc24abfd8ff868d69b8e",
+      "retired": false,
+      "nota": "phase 9 (D52): written questions; TRAIN data-v6, MEAS escritas-*"
     }
   ]
 }

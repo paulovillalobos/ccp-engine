@@ -38,6 +38,9 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
                "repeat": {"condicoes_texto": 2}},
         # phase 8 (D50): v5 = v4's mix plus training/data-v5 (factos_utilizador: a person's question -> facts)
         "v5": {"adapter": "amalia-ccp-lei-v5", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v5"],
+               "repeat": {"condicoes_texto": 2}},
+        # phase 9 (D52): v6 = v4's mix (the law) plus training/data-v6 (written questions, their noisy copies, D50 templates relabelled)
+        "v6": {"adapter": "amalia-ccp-lei-v6", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v6"],
                "repeat": {"condicoes_texto": 2}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
