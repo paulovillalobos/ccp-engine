@@ -1,0 +1,471 @@
+{
+ "rule": "regra:ccp:auto-limiar-art127-c-1-a@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art127-c",
+  "ccp:art127-c.1",
+  "ccp:art127-c.1.a",
+  "ccp:art127-c.1.b",
+  "ccp:art127-c.2"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art127-c] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 127.º-C\nEscolha das entidades convidadas\n1 - Além das referidas nos n.ºs 5 e 6 do artigo 113.º, também não podem ser convidadas a apresentar propostas em procedimentos de consulta prévia especial entidades às quais a entidade adjudicante já tenha adjudicado, no ano económico em curso e nos dois anos económicos anteriores, na sequência de consulta prévia especial, propostas para a celebração de contratos cujo objeto seja constituído por prestações do mesmo tipo das do contrato a celebrar e cujo preço contratual acumulado seja:\na) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços;\nb) Igual ou superior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou na alínea b) do n.º 4 do artigo 474.º, consoante o caso.\n2 - Para efeitos do disposto no número anterior, são do mesmo tipo as prestações que se revelem aptas a satisfazer uma mesma necessidade da entidade adjudicante.\n\n[ccp:art127-c.1] (versão em vigor a 2026-10-01, desde 2026-10-01)\n1 - Além das referidas nos n.ºs 5 e 6 do artigo 113.º, também não podem ser convidadas a apresentar propostas em procedimentos de consulta prévia especial entidades às quais a entidade adjudicante já tenha adjudicado, no ano económico em curso e nos dois anos económicos anteriores, na sequência de consulta prévia especial, propostas para a celebração de contratos cujo objeto seja constituído por prestações do mesmo tipo das do contrato a celebrar e cujo preço contratual acumulado seja:\na) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços;\nb) Igual ou superior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou na alínea b) do n.º 4 do artigo 474.º, consoante o caso.\n\n[ccp:art127-c.1.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços;\n\n[ccp:art127-c.1.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) Igual ou superior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou na alínea b) do n.º 4 do artigo 474.º, consoante o caso.\n\n[ccp:art127-c.2] (versão em vigor a 2026-10-01, desde 2026-10-01)\n2 - Para efeitos do disposto no número anterior, são do mesmo tipo as prestações que se revelem aptas a satisfazer uma mesma necessidade da entidade adjudicante.\n\nPergunta: Que limiar de valor fixa a passagem ccp:art127-c.1.a: para que procedimento e tipo de contrato, com que valor em euros e que comparação? Dê as condições e o limiar.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art127-c",
+      "ccp:art127-c.1",
+      "ccp:art127-c.1.a",
+      "ccp:art127-c.1.b",
+      "ccp:art127-c.2"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "limiar"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "anyOf": [
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "obras",
+          "bens",
+          "servicos",
+          "concessao_obras",
+          "concessao_servicos",
+          "servicos_sociais"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "obras",
+           "bens",
+           "servicos",
+           "concessao_obras",
+           "concessao_servicos",
+           "servicos_sociais"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "ajuste_direto",
+          "consulta_previa",
+          "concurso_publico",
+          "concurso_limitado_previa_qualificacao",
+          "procedimento_negociacao",
+          "dialogo_concorrencial",
+          "parceria_inovacao"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "ajuste_direto",
+           "consulta_previa",
+           "concurso_publico",
+           "concurso_limitado_previa_qualificacao",
+           "procedimento_negociacao",
+           "dialogo_concorrencial",
+           "parceria_inovacao"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "PT",
+          "PT-AC",
+          "PT-MA"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "PT",
+           "PT-AC",
+           "PT-MA"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "estado",
+          "outra"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "estado",
+           "outra"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "publicado_joue"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "preco_base"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     ]
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "threshold": {
+      "type": "object",
+      "properties": {
+       "field": {
+        "type": "string",
+        "enum": [
+         "preco_base"
+        ]
+       },
+       "comparator": {
+        "type": "string",
+        "enum": [
+         "lt",
+         "le"
+        ]
+       },
+       "value": {
+        "type": "number"
+       },
+       "currency": {
+        "type": "string",
+        "enum": [
+         "EUR"
+        ]
+       }
+      },
+      "required": [
+       "field",
+       "comparator",
+       "value",
+       "currency"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "threshold"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-1",
+ "source_passage": "ccp:art127-c.1.a"
+}

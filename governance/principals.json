@@ -1720,6 +1720,18 @@
       "hash": "f2741d53a834c94e8e46250d50e83db872a658f7963d3b21cf14607f48711ddf",
       "retired": false,
       "nota": "D57: bytes kept outside the Mac pass I01 when a committed record says they were stored and read back"
+    },
+    {
+      "id": "ferramenta:rule-factory@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/rule_factory.py",
+      "hash": "64bd6899abcd6fd521b7be89357e215ffb4d4c4cc0265330b63c46f5c3497f90",
+      "retired": false,
+      "nota": "D58: the rules factory, round 1"
     }
   ]
 }

@@ -1,0 +1,477 @@
+{
+ "rule": "regra:ccp:auto-limiar-art88-2-a@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art88",
+  "ccp:art88.1",
+  "ccp:art88.2",
+  "ccp:art88.2.a",
+  "ccp:art88.2.b",
+  "ccp:art88.2.c",
+  "ccp:art88.3",
+  "ccp:art88.4"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art88] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 88.º\nFunção da caução\n1 - No caso de contratos que impliquem o pagamento de um preço pela entidade adjudicante, deve ser exigida ao adjudicatário a prestação de uma caução destinada a garantir a sua celebração, bem como o exacto e pontual cumprimento de todas as obrigações legais e contratuais que assume com essa celebração.\n2 - Pode não ser exigida prestação de caução:\na) Quando o preço contratual for inferior a 1 000 000 €;\nb) Quando se trate de contratos em que o adjudicatário seja uma entidade prevista nos artigos 2.º ou 7.º; ou\nc) Quando se trate dos contratos previstos na alínea c) do n.º 1 do artigo 95.º, ainda que exista contrato escrito.\n3 - Quando, no caso previsto no número anterior, não tenha sido exigida a prestação de caução, pode a entidade adjudicante, se o considerar conveniente, proceder à retenção de até 10 % do valor dos pagamentos a efectuar, desde que tal faculdade seja prevista no caderno de encargos.\n4 - Pode não ser exigida a prestação de caução, nos termos previstos no programa do procedimento ou no convite, quando o adjudicatário apresente seguro da execução do contrato a celebrar, emitido por entidade seguradora, que cubra o respectivo preço contratual, ou declaração de assunção de responsabilidade solidária com o adjudicatário, pelo mesmo montante, emitida por entidade bancária, desde que essa entidade apresente documento comprovativo de que possui sede ou sucursal em Estado membro da União Europeia, emitido pela entidade que nesse Estado exerça a supervisão seguradora ou bancária, respectivamente.\n[ccp:art88] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\nArtigo 88.º\nFunção da caução\n1 - No caso de contratos que impliquem o pagamento de um preço pela entidade adjudicante, deve ser exigida ao adjudicatário a prestação de uma caução destinada a garantir a sua celebração, bem como o exacto e pontual cumprimento de todas as obrigações legais e contratuais que assume com essa celebração.\n2 - Pode não ser exigida prestação de caução:\na) Quando o preço contratual for inferior a (euro) 500 000;\nb) Quando se trate de contratos em que o adjudicatário seja uma entidade prevista nos artigos 2.º ou 7.º; ou\nc) Quando se trate dos contratos previstos na alínea c) do n.º 1 do artigo 95.º, ainda que exista contrato escrito.\n3 - Quando, no caso previsto no número anterior, não tenha sido exigida a prestação de caução, pode a entidade adjudicante, se o considerar conveniente, proceder à retenção de até 10 % do valor dos pagamentos a efectuar, desde que tal faculdade seja prevista no caderno de encargos.\n4 - Pode não ser exigida a prestação de caução, nos termos previstos no programa do procedimento ou no convite, quando o adjudicatário apresente seguro da execução do contrato a celebrar, emitido por entidade seguradora, que cubra o respectivo preço contratual, ou declaração de assunção de responsabilidade solidária com o adjudicatário, pelo mesmo montante, emitida por entidade bancária, desde que essa entidade apresente documento comprovativo de que possui sede ou sucursal em Estado membro da União Europeia, emitido pela entidade que nesse Estado exerça a supervisão seguradora ou bancária, respectivamente.\n\n[ccp:art88.1] (versão em vigor a 2026-10-01, desde 2008-07-30)\n1 - No caso de contratos que impliquem o pagamento de um preço pela entidade adjudicante, deve ser exigida ao adjudicatário a prestação de uma caução destinada a garantir a sua celebração, bem como o exacto e pontual cumprimento de todas as obrigações legais e contratuais que assume com essa celebração.\n\n[ccp:art88.2] (versão em vigor a 2026-10-01, desde 2026-10-01)\n2 - Pode não ser exigida prestação de caução:\na) Quando o preço contratual for inferior a 1 000 000 €;\nb) Quando se trate de contratos em que o adjudicatário seja uma entidade prevista nos artigos 2.º ou 7.º; ou\nc) Quando se trate dos contratos previstos na alínea c) do n.º 1 do artigo 95.º, ainda que exista contrato escrito.\n[ccp:art88.2] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\n2 - Pode não ser exigida prestação de caução:\na) Quando o preço contratual for inferior a (euro) 500 000;\nb) Quando se trate de contratos em que o adjudicatário seja uma entidade prevista nos artigos 2.º ou 7.º; ou\nc) Quando se trate dos contratos previstos na alínea c) do n.º 1 do artigo 95.º, ainda que exista contrato escrito.\n\n[ccp:art88.2.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Quando o preço contratual for inferior a 1 000 000 €;\n[ccp:art88.2.a] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\na) Quando o preço contratual for inferior a (euro) 500 000;\n\n[ccp:art88.2.b] (versão em vigor a 2026-10-01, desde 2018-01-01)\nb) Quando se trate de contratos em que o adjudicatário seja uma entidade prevista nos artigos 2.º ou 7.º; ou\n\n[ccp:art88.2.c] (versão em vigor a 2026-10-01, desde 2018-01-01)\nc) Quando se trate dos contratos previstos na alínea c) do n.º 1 do artigo 95.º, ainda que exista contrato escrito.\n\n[ccp:art88.3] (versão em vigor a 2026-10-01, desde 2008-07-30)\n3 - Quando, no caso previsto no número anterior, não tenha sido exigida a prestação de caução, pode a entidade adjudicante, se o considerar conveniente, proceder à retenção de até 10 % do valor dos pagamentos a efectuar, desde que tal faculdade seja prevista no caderno de encargos.\n\n[ccp:art88.4] (versão em vigor a 2026-10-01, desde 2008-07-30)\n4 - Pode não ser exigida a prestação de caução, nos termos previstos no programa do procedimento ou no convite, quando o adjudicatário apresente seguro da execução do contrato a celebrar, emitido por entidade seguradora, que cubra o respectivo preço contratual, ou declaração de assunção de responsabilidade solidária com o adjudicatário, pelo mesmo montante, emitida por entidade bancária, desde que essa entidade apresente documento comprovativo de que possui sede ou sucursal em Estado membro da União Europeia, emitido pela entidade que nesse Estado exerça a supervisão seguradora ou bancária, respectivamente.\n\nPergunta: Que limiar de valor fixa a passagem ccp:art88.2.a: para que procedimento e tipo de contrato, com que valor em euros e que comparação? Dê as condições e o limiar.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art88",
+      "ccp:art88.1",
+      "ccp:art88.2",
+      "ccp:art88.2.a",
+      "ccp:art88.2.b",
+      "ccp:art88.2.c",
+      "ccp:art88.3",
+      "ccp:art88.4"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "limiar"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "anyOf": [
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "obras",
+          "bens",
+          "servicos",
+          "concessao_obras",
+          "concessao_servicos",
+          "servicos_sociais"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "obras",
+           "bens",
+           "servicos",
+           "concessao_obras",
+           "concessao_servicos",
+           "servicos_sociais"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "ajuste_direto",
+          "consulta_previa",
+          "concurso_publico",
+          "concurso_limitado_previa_qualificacao",
+          "procedimento_negociacao",
+          "dialogo_concorrencial",
+          "parceria_inovacao"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "ajuste_direto",
+           "consulta_previa",
+           "concurso_publico",
+           "concurso_limitado_previa_qualificacao",
+           "procedimento_negociacao",
+           "dialogo_concorrencial",
+           "parceria_inovacao"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "PT",
+          "PT-AC",
+          "PT-MA"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "PT",
+           "PT-AC",
+           "PT-MA"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "estado",
+          "outra"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "estado",
+           "outra"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "publicado_joue"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "preco_base"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     ]
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "threshold": {
+      "type": "object",
+      "properties": {
+       "field": {
+        "type": "string",
+        "enum": [
+         "preco_base"
+        ]
+       },
+       "comparator": {
+        "type": "string",
+        "enum": [
+         "lt",
+         "le"
+        ]
+       },
+       "value": {
+        "type": "number"
+       },
+       "currency": {
+        "type": "string",
+        "enum": [
+         "EUR"
+        ]
+       }
+      },
+      "required": [
+       "field",
+       "comparator",
+       "value",
+       "currency"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "threshold"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-1",
+ "source_passage": "ccp:art88.2.a"
+}

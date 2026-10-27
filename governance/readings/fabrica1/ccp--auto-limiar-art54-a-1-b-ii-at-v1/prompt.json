@@ -1,0 +1,479 @@
+{
+ "rule": "regra:ccp:auto-limiar-art54-a-1-b-ii@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art54-a",
+  "ccp:art54-a.1",
+  "ccp:art54-a.1.a",
+  "ccp:art54-a.1.b",
+  "ccp:art54-a.1.b.i",
+  "ccp:art54-a.1.b.ii",
+  "ccp:art54-a.1.c",
+  "ccp:art54-a.1.d",
+  "ccp:art54-a.2"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art54-a] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 54.º-A\nContratos reservados\n1 - As entidades adjudicantes podem reservar a possibilidade de ser candidato ou concorrente às:\na) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30/prct. dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor estimado do contrato a celebrar;\nb) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;\nc) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo;\nd) Startups reconhecidas nos termos do artigo 2.º da Lei n.º 21/2023, de 25 de maio, em procedimentos para a formação de contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor estimado inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso, e desde que os mesmos não revelem interesse transfronteiriço certo.\n2 - Quando a participação no procedimento se encontrar reservada nos termos do número anterior, o anúncio deve fazer referência ao presente artigo.\n[ccp:art54-a] texto anterior (em vigor de 2022-12-02 a 2026-10-01):\nArtigo 54.º-A\nContratos reservados\n1 - As entidades adjudicantes podem reservar a possibilidade de ser candidato ou concorrente às:\na) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30 % dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor do contrato a celebrar;\nb) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;\nc) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo.\n2 - Quando a participação no procedimento se encontrar reservada nos termos do número anterior, o anúncio deve fazer referência ao presente artigo.\n\n[ccp:art54-a.1] (versão em vigor a 2026-10-01, desde 2026-10-01)\n1 - As entidades adjudicantes podem reservar a possibilidade de ser candidato ou concorrente às:\na) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30/prct. dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor estimado do contrato a celebrar;\nb) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;\nc) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo;\nd) Startups reconhecidas nos termos do artigo 2.º da Lei n.º 21/2023, de 25 de maio, em procedimentos para a formação de contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor estimado inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso, e desde que os mesmos não revelem interesse transfronteiriço certo.\n[ccp:art54-a.1] texto anterior (em vigor de 2022-12-02 a 2026-10-01):\n1 - As entidades adjudicantes podem reservar a possibilidade de ser candidato ou concorrente às:\na) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30 % dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor do contrato a celebrar;\nb) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;\nc) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo.\n\n[ccp:art54-a.1.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30/prct. dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor estimado do contrato a celebrar;\n[ccp:art54-a.1.a] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\na) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30 % dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor do contrato a celebrar;\n\n[ccp:art54-a.1.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;\n[ccp:art54-a.1.b] texto anterior (em vigor de 2022-12-02 a 2026-10-01):\nb) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;\n\n[ccp:art54-a.1.b.i] (versão em vigor a 2026-10-01, desde 2022-12-02)\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\n[ccp:art54-a.1.b.i] texto anterior (em vigor de 2021-06-20 a 2022-12-02):\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou b) do n.º 4 do artigo 474.º, consoante o caso;\n\n[ccp:art54-a.1.b.ii] (versão em vigor a 2026-10-01, desde 2026-10-01)\nii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;\n[ccp:art54-a.1.b.ii] texto anterior (em vigor de 2021-06-20 a 2026-10-01):\nii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;\n\n[ccp:art54-a.1.c] (versão em vigor a 2026-10-01, desde 2026-10-01)\nc) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo;\n[ccp:art54-a.1.c] texto anterior (em vigor de 2022-12-02 a 2026-10-01):\nc) Entidades com sede e atividade efetiva no território da entidade intermunicipal em que se localize a entidade adjudicante, em procedimentos promovidos por entidades intermunicipais, associações de autarquias locais, autarquias locais ou empresas locais para a formação de contratos de locação ou aquisição de bens ou móveis ou aquisição de serviços de uso corrente, de valor inferior ao limiar referido na alínea c) do n.º 3 do artigo 474.º, e desde que os mesmos não revelem interesse transfronteiriço certo.\n\n[ccp:art54-a.1.d] (versão em vigor a 2026-10-01, desde 2026-10-01)\nd) Startups reconhecidas nos termos do artigo 2.º da Lei n.º 21/2023, de 25 de maio, em procedimentos para a formação de contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor estimado inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso, e desde que os mesmos não revelem interesse transfronteiriço certo.\n\n[ccp:art54-a.2] (versão em vigor a 2026-10-01, desde 2021-06-20)\n2 - Quando a participação no procedimento se encontrar reservada nos termos do número anterior, o anúncio deve fazer referência ao presente artigo.\n\nPergunta: Que limiar de valor fixa a passagem ccp:art54-a.1.b.ii: para que procedimento e tipo de contrato, com que valor em euros e que comparação? Dê as condições e o limiar.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "passagens": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "enum": [
+      "ccp:art54-a",
+      "ccp:art54-a.1",
+      "ccp:art54-a.1.a",
+      "ccp:art54-a.1.b",
+      "ccp:art54-a.1.b.i",
+      "ccp:art54-a.1.b.ii",
+      "ccp:art54-a.1.c",
+      "ccp:art54-a.1.d",
+      "ccp:art54-a.2"
+     ]
+    }
+   },
+   "tipo": {
+    "type": "string",
+    "enum": [
+     "limiar"
+    ]
+   },
+   "condicoes": {
+    "type": "array",
+    "items": {
+     "anyOf": [
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "obras",
+          "bens",
+          "servicos",
+          "concessao_obras",
+          "concessao_servicos",
+          "servicos_sociais"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_contrato"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "obras",
+           "bens",
+           "servicos",
+           "concessao_obras",
+           "concessao_servicos",
+           "servicos_sociais"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "ajuste_direto",
+          "consulta_previa",
+          "concurso_publico",
+          "concurso_limitado_previa_qualificacao",
+          "procedimento_negociacao",
+          "dialogo_concorrencial",
+          "parceria_inovacao"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "ajuste_direto",
+           "consulta_previa",
+           "concurso_publico",
+           "concurso_limitado_previa_qualificacao",
+           "procedimento_negociacao",
+           "dialogo_concorrencial",
+           "parceria_inovacao"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "PT",
+          "PT-AC",
+          "PT-MA"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "territorio"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "PT",
+           "PT-AC",
+           "PT-MA"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "enum": [
+          "estado",
+          "outra"
+         ]
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "tipo_entidade"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "in",
+          "not_in"
+         ]
+        },
+        "value": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "estado",
+           "outra"
+          ]
+         },
+         "minItems": 1
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "publicado_joue"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne"
+         ]
+        },
+        "value": {
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "preco_base"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string",
+         "enum": [
+          "data_inicio_procedimento"
+         ]
+        },
+        "op": {
+         "type": "string",
+         "enum": [
+          "eq",
+          "ne",
+          "lt",
+          "le",
+          "gt",
+          "ge"
+         ]
+        },
+        "value": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+       },
+       "required": [
+        "field",
+        "op",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     ]
+    }
+   },
+   "params": {
+    "type": "object",
+    "properties": {
+     "threshold": {
+      "type": "object",
+      "properties": {
+       "field": {
+        "type": "string",
+        "enum": [
+         "preco_base"
+        ]
+       },
+       "comparator": {
+        "type": "string",
+        "enum": [
+         "lt",
+         "le"
+        ]
+       },
+       "value": {
+        "type": "number"
+       },
+       "currency": {
+        "type": "string",
+        "enum": [
+         "EUR"
+        ]
+       }
+      },
+      "required": [
+       "field",
+       "comparator",
+       "value",
+       "currency"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "threshold"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "required": [
+   "passagens",
+   "tipo",
+   "condicoes",
+   "params"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-1",
+ "source_passage": "ccp:art54-a.1.b.ii"
+}
