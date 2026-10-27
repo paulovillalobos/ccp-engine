@@ -72,9 +72,10 @@ def prompt(question, today):
 
 
 def schema():
-    vals = {k: {"type": "string", "enum": v} for k, v in read_rules.VOCAB.items() if k != "publicado_joue"}
-    vals.update(publicado_joue={"type": "boolean"}, preco_base={"type": "number"},
-                data_inicio_procedimento={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"})
+    one = {k: {"type": "string", "enum": v} for k, v in read_rules.VOCAB.items() if k != "publicado_joue"}
+    one.update(publicado_joue={"type": "boolean"}, preco_base={"type": "number"},
+               data_inicio_procedimento={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"})
+    vals = {k: one[k] for k in FIELDS}  # the answer's order: a guided decoder writes properties in schema order (D46)
     many = {"type": "array", "minItems": 1, "items": {"anyOf": [{"type": "string"}, {"type": "number"}, {"type": "boolean"}]}}
     obj = lambda props: {"type": "object", "properties": props, "additionalProperties": False}  # noqa: E731
     return {"type": "object", "properties": {"factos": obj(vals), "ambiguos": obj({k: many for k in FIELDS}),

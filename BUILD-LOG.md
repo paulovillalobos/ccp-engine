@@ -1216,3 +1216,23 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   have shown rules settled only in round 6); restored from git, RESUMO.md (the current summary) kept.
 - Checks: verify ok. Tests: 85 pass, 1 FAILS (B4 deselected), disclosed after the commit aaa939473: tests/fill/test_b3_rules_v0.py expects the selector rule to cite dl-177-2026 art. 7.º; the rule's current (proposed) revision carries leitor:a5's reading, which cites ccp art. 19/20 only. Left red on purpose: it reports the open difference, the test is not bent to the data.
 - Next: the person decides how to close the two differences.
+
+## 2026-10-28 — D52: AMALIA v6 on 500 written questions
+- Asked: the person, «you write them as a human being… make the most handwritten questions… stating the wrong law».
+- Done: 500 questions written one by one (training/written-questions, LABELS.md, tools/check_written_questions.py:
+  0 problems); answer with factos / ambiguos / contraditorios / citacoes; tools/make_written.py (300 train + 5 noisy
+  copies each, 100 dev, 100 final sealed, 2 000 D50 templates relabelled and noised); tools/measure_written.py;
+  BEFORE committed a3abf24a7; v6 trained on Modal (1 353 steps, 9 192 s, H100, USD 9.83 first reading);
+  principal leitor:a7.
+- Fix after training, disclosed: the answer schema listed the fact fields in another order than the trained answers; the
+  guided decoder writes properties in schema order, so a reader that began with tipo_procedimento or tipo_entidade could
+  no longer write tipo_contrato or territorio (first v6 dev reading: 56 contract types and 20 regions missed). The schema
+  now follows the answer's order (make-written@2); prompts and answers are byte-identical, so v6's training stands. All
+  three readers were re-run with the fixed schema (the reader resumes per id, so the stale files were moved aside first).
+- Result (reports/measure/escritas-v6-2026-10-28), final sealed / dev: facts exact base 14 % / 11 %, v4 19 % / 19 %,
+  v6 64 % / 67 %; invented facts base 49 % / 54 %, v4 34 % / 39 %, v6 7.9 % / 7.8 %; missed v6 11.9 % / 9.4 %;
+  ambiguous fields found v6 50 % / 60 %, flagged without cause 46 % / 29 %; default fills v6 0.
+- Run record: the local entrypoint stopped when the session restarted (the run was detached and finished); MANIFEST.json
+  is rebuilt from the function call's own return value (modal FunctionCall.from_id), the mixture recomputed (22 787).
+- Checks: verify ok; tests 85 pass, 1 fails (test_b3_rules_v0, red since round 7, disclosed); test_b5_measure now skips factos-/escritas- reports like the other reader reports; red-team: one corrupted v6 answer -> MEAS caught.
+- Next: markers flagged without cause (46 % on final) and missed ambiguous fields are the weakest part.

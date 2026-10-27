@@ -1,0 +1,6 @@
+{
+ "source": "modal billing report --start 2026-10-27 --resolution h --json (Modal client 1.6.1), read 2026-10-28",
+ "training_app": "ap-zdd6ampPlB4gC7UtbcPBqd",
+ "training_usd": 9.83,
+ "note": "read soon after the run ended: the last hour may not be closed in Modal's report. D50's v5 run (ap-03bueVplEwsHfM46dUMzeU) stopped at step 460 and cost 3.72 with no adapter."
+}

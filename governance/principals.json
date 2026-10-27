@@ -1222,6 +1222,21 @@
       "nota": "phase 7 (D49): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v4 (adapter_model.safetensors sha256 8255e876…), trained on training/data + data-v2 + data-v3 + data-v4 generated from law/ by code; training/runs/v4/MANIFEST.json"
     },
     {
+      "id": "leitor:a7",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v6",
+        "versao": "b08b35f5e175"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 9 (D52): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v6 (adapter_model.safetensors sha256 b08b35f5…), trained on training/data + data-v2 + data-v3 + data-v4 + data-v6 (written questions); training/runs/v6/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:read-rules@11",
       "kind": "codigo",
       "papel": "ferramenta",
@@ -1398,8 +1413,9 @@
       "versao": 1,
       "code": "tools/make_written.py",
       "hash": "721fc60dab2c167384f08cd370e1f03d427872eb768d5e05612010fb46668e5d",
-      "retired": false,
-      "nota": "phase 9 (D52): written questions; generator of training/data-v6"
+      "retired": true,
+      "nota": "phase 9 (D52): written questions; generator of training/data-v6",
+      "retired_at": "2026-10-27T17:36:19Z"
     },
     {
       "id": "ferramenta:measure-written@1",
@@ -1436,6 +1452,18 @@
       "hash": "bb507dc0527ff9bed739dc469c685d749d3ec4c8120ecc24abfd8ff868d69b8e",
       "retired": false,
       "nota": "phase 9 (D52): written questions; TRAIN data-v6, MEAS escritas-*"
+    },
+    {
+      "id": "ferramenta:make-written@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/make_written.py",
+      "hash": "f90334c1a67a51468ace2b91e23fb802252b0e218a87c515601648800a980b1d",
+      "retired": false,
+      "nota": "D52: schema properties in the answer's order (a guided decoder writes them in schema order); prompts and answers unchanged"
     }
   ]
 }

@@ -2,15 +2,15 @@
  "files": {
   "factos_v6/final.jsonl": {
    "lines": 100,
-   "sha256": "5d83c2a7b1705a5f44590860f8d3653941400c57d033feba0e8f4a739f289bbc"
+   "sha256": "2f0b8d224633c23b39e0d7c0774fec8e0a725bd244f93cab0e7941f122358445"
   },
   "factos_v6/held_out.jsonl": {
    "lines": 100,
-   "sha256": "9d2d75aeb882b4ad0ce7675c14322d6368b2bde70c2c8cd6a8530224fe70efc2"
+   "sha256": "27af9a599669a07a102452242a25d1a3eb0e9f8d3775a1756ddbcd64f155b656"
   },
   "factos_v6/train.jsonl": {
    "lines": 3276,
-   "sha256": "c3d597e22412a6bdc698b72ccceaee65117f27b3874fac0574e08a3bca10b51b"
+   "sha256": "a3e80d8c002d9274391c02d7d74453fb46ac7cf658cb3d2b6bd8274947b26c21"
   }
  },
  "seed": 20261028,

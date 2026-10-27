@@ -13,6 +13,9 @@ AFTER when its measurement exists.
 ## What the training data is (and is not)
 - Generated **by code from the text of the law** held in `law/` (the CCP and related acts as published in the Diário da
   República, with their validity notes). No answer written by any other model is in it.
+- From v6, also **500 user questions written one by one** for this project (not collected from people), labelled by
+  documented rules (`training/written-questions/LABELS.md`), with noisy copies made by code. They teach how a person's
+  question maps to the engine's facts; they carry no reading of the law.
 - About 20 % of the law's articles, plus every article used in the rule tests, are **reserved**: never in training, used
   only to measure (`law/TRAIN-HELD-OUT.json`, frozen 2026-10-25). A passage whose text equals a reserved one (the CCP
   republished inside an amending act) is reserved too.
@@ -105,6 +108,23 @@ AFTER when its measurement exists.
   the other family identical: 6 days for goods and services, 14 for works); with the JOUE rule of round 4, all three
   deadline rules are settled. On the real questions v4 read the stated conditions exactly on 2 of 3 (it left out
   «concurso público» on the JOUE one). The selector is still not settled: v4 gives only the regime from 1 Oct 2026.
+
+## v6 (adapter `amalia-ccp-lei-v6`, 2026-10-28) — reading questions as people write them
+- Why: on questions written as people write (typos, missing accents, old spelling, shorthand, dictation, loose amounts,
+  wrong citations, vague wording) v4 got the facts exactly right on about one question in five and invented a third of
+  the facts it gave.
+- Data (`training/written-questions/`, `tools/make_written.py`): 500 questions written one by one, not from a template,
+  labelled by `LABELS.md`. The answer gives the facts, the fields stated ambiguously (with candidates), contradictions,
+  and every article or act the question cites. 300 for training, each clean and in 5 noisy copies made by code; 100 dev;
+  100 sealed final. Plus 2 000 of v5's template questions relabelled and noised. Mix: v4's (the law) plus these (22 787).
+- Run: 1 353 steps, 9 192 s on one H100, USD 9.83 (`training/runs/v6/`).
+- Results (`reports/measure/escritas-v6-2026-10-28.md`), sealed final 100:
+
+| reader | facts exact | facts invented | facts missed | ambiguous fields found | default fills |
+|---|---|---|---|---|---|
+| base | 14 % | 49 % | 54 % | 65 % (flags 65 % without cause) | 21 |
+| base + v4 | 19 % | 34 % | 58 % | 11 % | 11 |
+| base + v6 | **64 % [54, 73]** | **7.9 %** | **11.9 %** | 50 % (flags 46 % without cause) | **0** |
 
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.
