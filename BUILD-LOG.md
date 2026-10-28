@@ -1925,3 +1925,19 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   round with `content` records under D64. verify accepts a D64 uphold's own extra passages (the rule cites the proposer's).
 - Result: round 4 rechecked from the same answers, no reader asked again: 174.º n.º 2 and 191.º n.º 5 settled. 16 rules
   settled. verify ok (verify@42, rule-factory@8, read-rules@17).
+
+
+## 2026-10-28 — D65: AMALIA v11 on v10's error kinds, factory round 5
+- Done: eval pool of 400 written articles (eval-01..04), 13 near-twins dropped, dev 203 / sealed 184 split by id, sealed
+  committed before any reader. v10's dev errors sorted by code; 400 targeted articles (alvo-01..04, eight kinds) checked
+  against the eval texts; regra_lida_alvo 800 rows. BEFORE committed before v11 answered. v11 trained detached
+  (ap-NJ6Q0ZHPs0oiC7JEfkJkZi, 16:35Z to 20:11Z, USD 13.85 billed so far); leitor:a13 registered (adapter sha b3bfb84cfde3).
+- Result, replicates (D64): sealed v11 96.7 % (v10 91.3 %, Reader B 98.9 %); dev 97.5 % (87.7 %, 98.0 %); data-v10's held
+  out 89.0 % (76.8 %, 98.8 %). Rules exact on sealed: v11 93.5 %, v10 87.0 %, Reader B 81.0 %
+  (reports/measure/regras-v11-2026-10-28).
+- Round 5 (fabrica-5, the 12 targets open after round 4, leitor:a13 proposes, leitor:b's round-4 answers): 1 settled
+  (88.º n.º 2 a)). 17 rules settled. Days or limits agree on all 12. What differs: 127.º-C le vs lt; contract types (17.º-B
+  n.º 4, 21.º n.º 1 b) and c), 31.º n.º 4, 54.º-A); a condition v11 adds (174.º n.º 3, 241.º-B, and on 198.º n.º 1 a start
+  date that is not in the text); one v11 leaves out (198.º n.º 2, 192.º n.º 2).
+- verify: the v11 report is recomputed from the stored answers; a diff is checked at its current revision only (round 5 was
+  the first to revise the package diff, and the old revision was being compared with the new packages). verify@45 ok.

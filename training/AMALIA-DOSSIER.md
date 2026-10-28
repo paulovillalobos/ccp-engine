@@ -201,5 +201,29 @@ AFTER when its measurement exists.
   quarter of the articles. On the real law (rules round 4, 18 open targets) it replicated the other family exactly on 4,
   and the days or limits agreed on 17 of 18.
 
+## v11 (adapter `amalia-ccp-lei-v11`, 2026-10-28) — trained on the kinds of error v10 made
+- Data (`tools/make_rule_readings_v11.py`, D65): a new measurement pool of 400 written articles, 13 near-twins dropped by
+  code, split by id into dev 203 (studied) and sealed 184 (committed before any reader answered it). v10's errors on dev
+  were sorted by code into kinds (a fact from a neighbouring number, the «restantes casos» complement, exception lists,
+  reductions that carry the referred number's conditions, a comparator per case, a procedure only when stated, the
+  target among several deadlines, modalidade). 400 targeted training articles were written on those kinds, checked so none
+  is close to a measured one: task regra_lida_alvo, 800 train rows. v11 = v10's mix plus those rows, from the base.
+- Run: training ended 20:11Z on one H100, USD 13.85 for the hours billed so far (`training/runs/v11/`).
+- Results (`reports/measure/regras-v11-2026-10-28.md`), «replicates» = the same rules with passages aside, every rule
+  citing the target passage (D64):
+
+| set | base + v10 | base + v11 | another family's frontier model |
+|---|---|---|---|
+| sealed, 184 (never studied) | 91.3 % | **96.7 %** [93.1, 98.5] | 98.9 % |
+| dev, 203 (studied for errors) | 87.7 % | 97.5 % | 98.0 % |
+| data-v10's held out, 82 | 76.8 % | **89.0 %** [80.4, 94.1] | 98.8 % |
+
+  Rules exact (passages included) on sealed: v11 93.5 %, v10 87.0 %, the frontier model 81.0 %. v11 got the days or limits
+  right on every sealed article.
+- On the real law (rules round 5, the 12 targets left open after round 4), v11 replicated the other family on 1
+  (88.º n.º 2 a)). Days and limits agree on all 12; the readings differ in conditions or the comparator. Written
+  articles are now close to solved; the real passages that are left are the hardest ones, and the gain does not carry
+  over to them in full.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

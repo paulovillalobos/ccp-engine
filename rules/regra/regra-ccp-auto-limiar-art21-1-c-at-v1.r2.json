@@ -1,0 +1,74 @@
+{
+  "id": "regra:ccp:auto-limiar-art21-1-c@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-28T20:27:41Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art21.1.c (fábrica de regras, ronda 5)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "not_in",
+      "value": [
+        "concessao_obras",
+        "concessao_servicos"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "ajuste_direto"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art21.1.c",
+      "version": "2026-10-01",
+      "quote": "c) Ajuste direto, quando o valor estimado do contrato seja inferior a 75 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 79
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 75000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a13",
+      "family": "A",
+      "at": "2026-10-28T20:26:12Z",
+      "chosen_passages": [
+        "ccp:art21.1.c"
+      ],
+      "blind": false,
+      "evento": "evento:231"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:52:50Z",
+      "chosen_passages": [
+        "ccp:art21.1",
+        "ccp:art21.1.c"
+      ],
+      "blind": true,
+      "evento": "evento:232"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

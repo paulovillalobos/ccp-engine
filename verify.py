@@ -730,7 +730,7 @@ def check_packages(store, out):
         return
     packages = current_of(store, "pacote")
     regras = current_of(store, "regra")
-    for d in store.objects["diff"]:
+    for d in current_of(store, "diff").values():  # an older revision is the diff of older packages
         a, b = packages.get(d["from"]), packages.get(d["to"])
         if a and b:
             built = rules_mod.diff(a, b, regras)
@@ -1093,6 +1093,12 @@ def check_measure():
             again = importlib.import_module(name).report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/{name}.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("regras-v11-"):  # phase 13 (D65): v11's dev, sealed and old held-out sets (tools/measure_rule_readings_v11.py)
+            import measure_rule_readings_v11  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_rule_readings_v11.report(stored["date"], sets=set(stored["sets"]))
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_rule_readings_v11.py recomputes from the stored answers"))
             continue
         if f.name.startswith("regras-"):  # phase 13 (D63): rule readings of written articles (tools/measure_rule_readings.py)
             import measure_rule_readings  # noqa: E402  (no model: it reads the stored answers)

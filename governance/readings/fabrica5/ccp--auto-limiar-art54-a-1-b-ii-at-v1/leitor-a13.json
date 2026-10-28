@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T20:26:12Z",
+ "sha256": "3e1b1125e87eabcbc13c321fcac26780159964cfeee550ae18bfa10f8d956fc0",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art54-a.1.b.ii\", \"ccp:art54-a.1.b.ii\"], \"tipo\": \"limiar\", \"condicoes\": [], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 500000, \"currency\": \"EUR\"}}}]}"
+}

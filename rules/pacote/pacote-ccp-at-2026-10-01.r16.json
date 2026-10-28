@@ -1,0 +1,76 @@
+{
+  "id": "pacote:ccp@2026-10-01",
+  "revision": 16,
+  "recorded_at": "2026-10-28T20:28:02Z",
+  "law_version": "lei:ccp@2026-10-01",
+  "rules": [
+    {
+      "id": "regra:ccp:auto-limiar-art88-2-a@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-1@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-2@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-5@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-j-3@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:limiar-ajuste-direto-obras@v2",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v2",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    }
+  ],
+  "hash": "01229f13c9c137e331c5ad13b03d1413b257cadc0ce95f606f7b4b2c909fdcd2",
+  "log_head": "06b5ebb226aa4c68058570bb87b27bd0bb4ed3ba2e0bce43f28d1064a6abd20e",
+  "built_at": "2026-10-28T20:28:02Z",
+  "supersedes": 15
+}

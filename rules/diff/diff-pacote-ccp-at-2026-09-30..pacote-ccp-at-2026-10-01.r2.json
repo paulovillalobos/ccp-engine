@@ -1,0 +1,57 @@
+{
+  "id": "diff:pacote:ccp@2026-09-30..pacote:ccp@2026-10-01",
+  "revision": 2,
+  "recorded_at": "2026-10-28T20:28:02Z",
+  "from": "pacote:ccp@2026-09-30",
+  "to": "pacote:ccp@2026-10-01",
+  "by_rule": [
+    {
+      "rule": "regra:ccp:auto-limiar-art88-2-a@v1",
+      "change": "added",
+      "fields": []
+    },
+    {
+      "rule": "regra:ccp:limiar-ajuste-direto-obras@v2",
+      "change": "added",
+      "fields": []
+    },
+    {
+      "rule": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "change": "removed",
+      "fields": []
+    },
+    {
+      "rule": "regra:ccp:limiar-consulta-previa-obras@v2",
+      "change": "added",
+      "fields": []
+    }
+  ],
+  "by_consumer_field": [
+    {
+      "field": "preco_base",
+      "rules": [
+        "regra:ccp:auto-limiar-art88-2-a@v1",
+        "regra:ccp:limiar-ajuste-direto-obras@v2",
+        "regra:ccp:limiar-consulta-previa-obras@v1",
+        "regra:ccp:limiar-consulta-previa-obras@v2"
+      ]
+    },
+    {
+      "field": "tipo_contrato",
+      "rules": [
+        "regra:ccp:limiar-ajuste-direto-obras@v2",
+        "regra:ccp:limiar-consulta-previa-obras@v1",
+        "regra:ccp:limiar-consulta-previa-obras@v2"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "rules": [
+        "regra:ccp:limiar-ajuste-direto-obras@v2",
+        "regra:ccp:limiar-consulta-previa-obras@v1",
+        "regra:ccp:limiar-consulta-previa-obras@v2"
+      ]
+    }
+  ],
+  "supersedes": 1
+}

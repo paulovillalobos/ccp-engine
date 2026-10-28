@@ -1,0 +1,6 @@
+{
+ "source": "modal billing report --start 2026-10-28 --resolution h --json, read 2026-10-28",
+ "training_app": "ap-NJ6Q0ZHPs0oiC7JEfkJkZi",
+ "training_usd": 13.85,
+ "note": "hours 16:00-19:00 only; training ended 20:11Z and the 20:00 hour was not yet reported (about 0.7 USD more expected at the same rate); the four reader runs (ap-pBkoU8Ln9rFB2MGEhU6t6E, ap-wGbMvmcNSmUNdUjNVdPl4C, ap-uoTVchU9M9U99XpJR5A5fH, ap-4f1dqniltap4qMO9BhzGr0) were not yet reported either"
+}

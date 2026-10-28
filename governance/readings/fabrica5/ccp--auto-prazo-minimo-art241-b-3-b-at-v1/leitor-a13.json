@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T20:26:12Z",
+ "sha256": "8bdc34528bfd2f71737f3015dac83a93841160b8d8d9f65840ed2818e4f16b1e",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art241-b.3.b\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_concecao\"}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"nao_indicado\", \"usual_days\": null}}]}"
+}

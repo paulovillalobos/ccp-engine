@@ -1850,6 +1850,21 @@
       "nota": "phase 13 (D63): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v10 (rank 16), trained on v9's data plus training/data-v10 (task regra_lida: 600 written CCP-style articles with gold rule readings written from the text, 1 000 train rows); training/runs/v10/MANIFEST.json"
     },
     {
+      "id": "leitor:a13",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v11",
+        "versao": "b3bfb84cfde3"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 13 (D65): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v11 (rank 16), trained on v10's data plus training/data-v11 (task regra_lida_alvo: 400 written articles aimed at v10's dev errors, 800 train rows); training/runs/v11/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:rule-factory@4",
       "kind": "codigo",
       "papel": "ferramenta",
@@ -2110,8 +2125,9 @@
       "versao": 43,
       "code": "verify.py",
       "hash": "97e5056884b27191956ab82283ed9989339a2cde0de17b3b7d5f1dc74813a7d1",
-      "retired": false,
-      "nota": "D65: regenerates training/data-v11"
+      "retired": true,
+      "nota": "D65: regenerates training/data-v11",
+      "retired_at": "2026-10-28T20:28:27Z"
     },
     {
       "id": "ferramenta:rule-factory@9",
@@ -2136,6 +2152,31 @@
       "hash": "9e64cf00f936c5f487bf7b1be4e29240d5c0e10a0a83a3e5fdf23f2a8c4dff9e",
       "retired": false,
       "nota": "phase 14 (D65): v10, v11 and Reader B on data-v11 dev and sealed and data-v10's held out; D64 replication; dev errors sorted by kind; no model"
+    },
+    {
+      "id": "ferramenta:verify@44",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 44,
+      "code": "verify.py",
+      "hash": "da5ae20c0b1a95f3bc94765195c27b99944469804a0e4c031de8ba26aff78b09",
+      "retired": true,
+      "nota": "D65: the v11 rule-reading report (dev, sealed, data-v10's held out) is recomputed from the stored answers",
+      "retired_at": "2026-10-28T20:41:41Z"
+    },
+    {
+      "id": "ferramenta:verify@45",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 45,
+      "code": "verify.py",
+      "hash": "f73b9f6a3753a920247abe3064cffb659ec26c99ad6581523b268e169614f209",
+      "retired": false,
+      "nota": "D65: the v11 rule-reading report is recomputed from the stored answers; a diff is checked at its current revision only (an older revision is the diff of older packages)"
     }
   ]
 }
