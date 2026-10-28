@@ -5,7 +5,8 @@
 Gold: training/data-v10/regra_lida/held_out.jsonl (82 written articles, never trained). Answers:
 governance/readings/avaliacao-v10/dev/<leitor>.jsonl. A reading is scored as the rules factory scores two readers
 (read_rules.parse_answers, canonical form, D43): rules exact = the same rules, one by one; count exact = the same number
-of rules; days exact = the same days or limits, rule by rule; invalid = not JSON, or a passage outside the candidates.
+of rules; days exact = the same days or limits, rule by rule; content exact = rules exact with the cited passages left
+aside (the conditions and params agree; the passages are where two careful readers differ most); invalid = not JSON, or a passage outside the candidates.
 """
 import argparse
 import hashlib
@@ -17,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "tools"))
 import measure_written as mw  # noqa: E402  (Wilson intervals)
 import read_rules as rr  # noqa: E402
+from engine.canon import canonical  # noqa: E402
 
 GOLD = ROOT / "training/data-v10/regra_lida/held_out.jsonl"
 ANSWERS = ROOT / "governance/readings/avaliacao-v10/dev"
@@ -30,7 +32,8 @@ def target_of(row):
 
 
 def score(gold, ans):
-    c = dict(rules_exact=0, count_exact=0, days_exact=0, invalid=0, padded=0)
+    c = dict(rules_exact=0, content_exact=0, count_exact=0, days_exact=0, invalid=0, padded=0)
+    bare = lambda r: {**r, "passages": []}
     for i, (t, g) in gold.items():
         a = rr.parse_answers({"answer": ans[i]}, t) if i in ans else None
         if a is None:
@@ -40,8 +43,10 @@ def score(gold, ans):
         c["padded"] += len(a) > len(g)
         c["days_exact"] += sorted(map(str, map(rr.key_param, a))) == sorted(map(str, map(rr.key_param, g)))
         c["rules_exact"] += len(a) == len(g) and all(rr.same_reading(x, y) for x, y in zip(a, g))
+        ca, cg = sorted(canonical(rr.canonical_reading(bare(x))) for x in a), sorted(canonical(rr.canonical_reading(bare(y))) for y in g)
+        c["content_exact"] += ca == cg
     n, w = len(gold), mw.wil
-    return {"rules_exact": w(c["rules_exact"], n), "count_exact": w(c["count_exact"], n), "days_exact": w(c["days_exact"], n),
+    return {"rules_exact": w(c["rules_exact"], n), "content_exact": w(c["content_exact"], n), "count_exact": w(c["count_exact"], n), "days_exact": w(c["days_exact"], n),
             "more_rules_than_gold": w(c["padded"], n), "invalid": c["invalid"], "counts": c}
 
 
@@ -64,9 +69,9 @@ def render_md(rep):
     L = [f"# Medição — leitura de regras, v10 ({rep['date']})", "",
          f"Gerado por tools/measure_rule_readings.py ({rep['tool']}). {rep['examples']} artigos escritos (held_out de data-v10, nunca "
          "treinados); cada leitura comparada com a de ouro em forma canónica, regra a regra (D43). Intervalos de Wilson a 95 %.", "",
-         "| leitor | regras exatas | número de regras certo | dias ou limites certos | mais regras que o ouro | inválidas |", "|---|---|---|---|---|---|"]
+         "| leitor | regras exatas | conteúdo exato (sem passagens) | número de regras certo | dias ou limites certos | mais regras que o ouro | inválidas |", "|---|---|---|---|---|---|---|"]
     for k, r in rep["readers"].items():
-        L.append(f"| {k} ({r['label']}) | {f(r['rules_exact'])} | {f(r['count_exact'])} | {f(r['days_exact'])} | {f(r['more_rules_than_gold'])} | {r['invalid']} |")
+        L.append(f"| {k} ({r['label']}) | {f(r['rules_exact'])} | {f(r['content_exact'])} | {f(r['count_exact'])} | {f(r['days_exact'])} | {f(r['more_rules_than_gold'])} | {r['invalid']} |")
     return "\n".join(L) + "\n"
 
 
