@@ -186,7 +186,9 @@
       "events": [
         98,
         99,
-        124
+        124,
+        128,
+        129
       ],
       "family": "A",
       "proposer": "leitor:a8",
@@ -198,8 +200,8 @@
           "verdict": "uphold"
         }
       ],
-      "revision": 1,
-      "state": "stale"
+      "revision": 2,
+      "state": "settled"
     },
     "regra|regra:ccp:auto-prazo-minimo-art174-2@v1": {
       "events": [
@@ -240,7 +242,9 @@
     "regra|regra:ccp:auto-prazo-minimo-art190-1@v1": {
       "events": [
         104,
-        105
+        105,
+        130,
+        131
       ],
       "family": "A",
       "proposer": "leitor:a8",
@@ -252,14 +256,16 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art191-1@v1": {
       "events": [
         106,
         107,
-        125
+        125,
+        132,
+        133
       ],
       "family": "A",
       "proposer": "leitor:a8",
@@ -268,11 +274,11 @@
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "uphold"
+          "verdict": "request_evidence"
         }
       ],
-      "revision": 1,
-      "state": "stale"
+      "revision": 2,
+      "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art191-5@v1": {
       "events": [
@@ -295,7 +301,9 @@
     "regra|regra:ccp:auto-prazo-minimo-art192-2@v1": {
       "events": [
         110,
-        111
+        111,
+        134,
+        135
       ],
       "family": "A",
       "proposer": "leitor:a8",
@@ -307,13 +315,15 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art198-1@v1": {
       "events": [
         112,
-        113
+        113,
+        136,
+        137
       ],
       "family": "A",
       "proposer": "leitor:a8",
@@ -325,7 +335,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art198-2@v1": {
@@ -350,7 +360,9 @@
       "events": [
         116,
         117,
-        126
+        126,
+        138,
+        139
       ],
       "family": "A",
       "proposer": "leitor:a8",
@@ -362,8 +374,8 @@
           "verdict": "uphold"
         }
       ],
-      "revision": 1,
-      "state": "stale"
+      "revision": 2,
+      "state": "settled"
     },
     "regra|regra:ccp:auto-prazo-minimo-art219-b-5@v1": {
       "events": [
@@ -799,6 +811,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 127,
-  "head": "9ff7a3776d9565bc0928b2c4ac9e67edd293e451e50d635749a16e46bc35cec5"
+  "events": 139,
+  "head": "0240d112aa1a5667631c0b71df25c0e0fdfda6762b0660dc3d68f55a97cd8f55"
 }

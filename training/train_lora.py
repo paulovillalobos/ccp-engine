@@ -49,6 +49,9 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
                   "repeat": {"condicoes_texto": 2}, "hp": {"lora_r": 64, "lora_alpha": 128}},
         # phase 11 (D54): v8 = v4's mix plus training/data-v8 (3 000 written questions in 20 styles: 2 200 trained), rank 16
         "v8": {"adapter": "amalia-ccp-lei-v8", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v8"],
+               "repeat": {"condicoes_texto": 2}},
+        # phase 12 (D61): v9 = v4's mix plus training/data-v9 (3 600 written questions: v8's plus 600 on v8's dev errors; D61 errata), rank 16
+        "v9": {"adapter": "amalia-ccp-lei-v9", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9"],
                "repeat": {"condicoes_texto": 2}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,

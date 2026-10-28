@@ -1838,3 +1838,44 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   10 of 16; v7 r16 85.0 / 80.0 / 13; v7 r64 83.0 / 79.5 / 14; Reader B 83.5 / 83.0 / 9. Invented facts on the sealed set: v7 r16
   2.3 %, Reader B 4.1 %. Markers found / without cause: v6 57.7 / 37.2 %, v7 r16 73.9 / 8.9 %.
 - Decision: v8 at rank 16 (rank 64 no clear gain, slower, more false markers).
+
+## 2026-10-28 — D58/D59: the rules factory, round 1
+- Asked: the person, «or maybe you could run them directly» (overnight plan: factory round 1 after v8).
+- Done: 20 targets from the CCP (7 limiar, 13 prazo_minimo); leitor:a8 (AMALIA + v7) proposed, leitor:b reviewed blind (one
+  answer retried once after the client stopped at its output limit). Recorded: 4 settled, 14 differ, 2 without a valid
+  proposal (AMALIA gave no rule for art. 21.º n.º 1 b) and c)).
+- Then read against the law: the 4 settled were all wrong in the same way, a value the schema does not have (candidaturas,
+  counting from the convite, a concurso de ideias). D59: the factory now finds such gaps by code; the 4 were invalidated
+  (stale) by ferramenta:rule-factory@2 with the gap as reason. Net settled: 0 of 20. 12 of 20 targets have a gap.
+- verify: the factory's readings folder (fabrica1) mapped; escritas reports recomputed by the tool that wrote them (v7's was
+  recomputed by v6's tool and failed). Registered verify@36.
+- Next: round 2 grows the vocabulary and the engine first (prazo_candidaturas_dias, data_envio_convite, conceção procedures,
+  urgência), then the 12 targets read again; the 8 without a gap: AMALIA restates the threshold as a condition or adds conditions on 4, no rule on 2.
+
+## 2026-10-28 — D60: the rules factory, round 2
+- Done: the deadline vocabulary gains prazo_candidaturas_dias and data_envio_convite (read_rules round 8; serve.py accepts both
+  facts; the engine evaluates them without new code). 8 targets (round 1's whose gaps these values close), prompts committed
+  first (9e88e3919), leitor:a8 proposed, leitor:b blind.
+- Result: 2 settled, both right against the text: art. 174.º n.º 1 (30 days, candidaturas, from the JOUE notice) and 218.º
+  (30 days, proposals, from the convite). 174.º n.º 3 replicated but wrong (the absolute minimum is 15, not 30; special sectors
+  only): three more gaps added to the code check (special sectors, indicative notice, two minimums), so it stays proposed.
+  The other 5 differ: AMALIA keeps counting from the notice where the text says convite (191.º n.º 1, 192.º n.º 2), drops a
+  condition the text states (198.º n.º 1) or one rule of a passage that holds two (190.º n.º 1: 6 days, 14 for works).
+- Rules settled by the factory so far: 2 of 20 targets. Settled overall: 8 (6 earlier + 2).
+- verify: a rule's content base is the stored revision carrying the log's latest propose/correct (registered verify@37).
+
+## 2026-10-28 — D54: AMALIA v8 measured
+- Done: v8 trained detached (1 754 steps, 11 375 s, USD 12.52); leitor:a10 registered; v8, v7 and Reader B measured on dev 400,
+  sealed 400 and the 16 real questions (reports/measure/escritas-v8-2026-10-28; Reader B's 3 missing answers per set filled).
+- Result, facts exact with the guard, sealed / dev / real: v8 88.2 / 84.8 / 13 of 16; v7 76.8 / 71.2 / 13; Reader B 75.5 / 77.2 / 9.
+  Invented facts on the sealed set: v8 2.6 %, v7 5.6 %, Reader B 7.7 %.
+- Next: dev-only error analysis of v8, fixes to labels / guard / data, v9.
+
+## 2026-10-28 — D61: v8's dev errors, label rules, data-v9
+- Done: dev-only error analysis of v8 (61 of 400 not facts-exact after the guard; the sealed set untouched). Two label rules
+  written into LABELS.md (the procedure asked about; one candidate). My first draft of the first rule was backwards (an asked
+  procedure would not be a fact); the label audit showed it would contradict 211 labels and drop what the engine needs, so it
+  was reversed before use. 204 errata from two audits (sampled and read), applied from v9 only. 600 new questions on v8's five
+  error kinds by four writers, relabelled under the final rule (61 changes), 100 held out as a targeted dev set.
+- data-v9: dev 400 and sealed 400 (same questions, 25 + 25 gold answers corrected), alvo 100, 2 700 questions trained.
+- verify ok (verify@38). v8's and Reader B's dev/sealed/real answers carried to avaliacao-v9 (prompts byte-identical).

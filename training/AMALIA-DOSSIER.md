@@ -144,5 +144,23 @@ AFTER when its measurement exists.
 
   Rank 64 brings no clear gain over rank 16 at this data size; the next run stays at rank 16.
 
+## v8 (adapter `amalia-ccp-lei-v8`, 2026-10-28) — 3 000 written questions in 20 styles
+- Data (`tools/make_written_v8.py`): v7's 1 000 written questions plus 2 000 more in 20 writing styles (`STYLES.md`: from a
+  parish clerk's dictated note to a lawyer's letter), written one by one for this project (not collected from people); v7's
+  split kept, the new ones 1 600 train / 200 dev / 200 sealed final, so dev and sealed are 400 each. Mix: v4's plus these
+  (31 670 examples). Rank 16.
+- Run: 1 754 steps, 11 375 s on one H100, USD 12.52 (`training/runs/v8/`).
+- Results (`reports/measure/escritas-v8-2026-10-28.md`), facts exact with the guard:
+
+| reader | sealed 400 | dev 400 | real 16 | facts invented (sealed) |
+|---|---|---|---|---|
+| base + v7, rank 16 | 76.8 % | 71.2 % | 13 | 5.6 % |
+| base + v8 | **88.2 % [84.7, 91.0]** | **84.8 %** | 13 | **2.6 %** |
+| another family's frontier model, same guard | 75.5 % | 77.2 % | 9 | 7.7 % |
+
+  v7 scored 85.0 % on v7's sealed 200; on these 400, half in styles it never saw, it drops to 76.8 %. v8 holds 88.2 %.
+  On the 16 real questions v8 and v7 both have 13 facts-exact; v8 invents fewer facts (1 of 35 vs 2 of 36) and gives no
+  marker without cause (0 of 9).
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

@@ -32,6 +32,8 @@ NEW_FINAL, NEW_DEV = 100, 100
 def errata(rows):
     by = {q["id"]: q for q in rows}
     for e in (json.loads(l) for l in (mw.WRITTEN / "ERRATA.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()):
+        if e.get("since"):
+            continue  # D61: an erratum for a later version (applied by its own generator) leaves data-v7 and data-v8 as built
         q = by[e["id"]]
         for k in (e.get("remove") or {}).get("factos", []):
             q["factos"].pop(k)

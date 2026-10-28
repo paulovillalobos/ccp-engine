@@ -16,7 +16,8 @@ sys.path.insert(0, str(ROOT / "tools"))
 import read_rules  # noqa: E402  (the engine's fact vocabulary)
 
 DIR = ROOT / "training/written-questions"
-KEYS = {"id", "hoje", "pergunta", "factos", "ambiguos", "contraditorios", "citacoes", "fenomenos", "estilo"}
+KEYS = {"id", "hoje", "pergunta", "factos", "ambiguos", "contraditorios", "citacoes", "fenomenos", "estilo", "alvo"}
+ALVOS = {"pergunta_opcao", "procedimento_tema", "tipo_dito", "objeto_misto", "telegrafico_factos"}  # D61: the v8 error each targeted question aims at
 FIELDS = list(read_rules.VOCAB) + ["preco_base", "data_inicio_procedimento"]
 TAGS = set("typo sem_acentos pre_ao pt_br ditado abreviaturas telegrafico carta multi seguimento premissa citacao_errada limiar_antigo iva "
            "intervalo por_item contradicao nao_sabe distrator lugar_ambiguo entidade_ambigua objeto_ambiguo concurso_nu lancamento sem_factos".split())
@@ -75,6 +76,8 @@ def check(rows, ids):
         for c in q.get("citacoes") or []:
             if c not in ids:
                 out.append(f"{at}: citação {c!r} not in law/")
+        if "alvo" in q and q["alvo"] not in ALVOS:
+            out.append(f"{at}: alvo {q['alvo']!r}")
         if "estilo" in q and q["estilo"] not in STYLES:
             out.append(f"{at}: estilo {q['estilo']!r} not in STYLES.md")
         for t in q.get("fenomenos") or []:

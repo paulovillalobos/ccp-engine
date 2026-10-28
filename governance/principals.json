@@ -1522,8 +1522,9 @@
       "versao": 1,
       "code": "tools/make_written_v7.py",
       "hash": "dc52a2c6f0f9806626c808182ccc9be9a825bf201268f3c4b3bae96226baf4d9",
-      "retired": false,
-      "nota": "phase 10 (D53)"
+      "retired": true,
+      "nota": "phase 10 (D53)",
+      "retired_at": "2026-10-28T02:08:52Z"
     },
     {
       "id": "ferramenta:fact-guard@1",
@@ -1621,8 +1622,9 @@
       "versao": 2,
       "code": "tools/check_written_questions.py",
       "hash": "cf0549306cf1d4d1847bcef07ed4ce5941b704d7e9d91310ea4e0ff2f4a28391",
-      "retired": false,
-      "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles"
+      "retired": true,
+      "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles",
+      "retired_at": "2026-10-28T02:08:52Z"
     },
     {
       "id": "ferramenta:fact-guard@3",
@@ -1759,8 +1761,9 @@
       "versao": 36,
       "code": "verify.py",
       "hash": "1ed01882fffb7e3a9430b7cd1adda0765b16730186d198656444e733012d593f",
-      "retired": false,
-      "nota": "D58/D59: factory readings folder; escritas reports recomputed by the tool that wrote them"
+      "retired": true,
+      "nota": "D58/D59: factory readings folder; escritas reports recomputed by the tool that wrote them",
+      "retired_at": "2026-10-28T01:31:58Z"
     },
     {
       "id": "ferramenta:rule-factory@3",
@@ -1771,8 +1774,9 @@
       "versao": 3,
       "code": "tools/rule_factory.py",
       "hash": "732650b1b089852159ac3bcc0b9d7c671f52c67022872b0174ddd4a62738f9d3",
-      "retired": false,
-      "nota": "D60: rounds as a parameter; round 2 with the wider deadline vocabulary"
+      "retired": true,
+      "nota": "D60: rounds as a parameter; round 2 with the wider deadline vocabulary",
+      "retired_at": "2026-10-28T01:25:24Z"
     },
     {
       "id": "ferramenta:read-rules@15",
@@ -1797,6 +1801,94 @@
       "hash": "77fc6d402c32d5960c06a82017598d95a17fc6fddaa1a5a6768125c1818969ab",
       "retired": false,
       "nota": "D60: accepts prazo_candidaturas_dias and data_envio_convite"
+    },
+    {
+      "id": "leitor:a10",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v8",
+        "versao": "f6dcf0a7ebfd"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 10 (D54): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v8 (rank 16), trained on training/data + data-v2..v4 + data-v8 (3 000 written questions in 20 styles); training/runs/v8/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:rule-factory@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/rule_factory.py",
+      "hash": "805811470e7109587cc94b0808076a30e8b2d5650712870cee9bb38e781f069a",
+      "retired": false,
+      "nota": "D60: three more vocabulary gaps (special sectors, indicative notice, two minimums); round 2 targets with a gap left open are not recorded"
+    },
+    {
+      "id": "ferramenta:verify@37",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 37,
+      "code": "verify.py",
+      "hash": "247de208b371918b4ed0f0eb3ebaaa89e67324aaac26f5bdff163d981c3a84f9",
+      "retired": true,
+      "nota": "D60: a rule's content base is the stored revision carrying the log's latest propose/correct",
+      "retired_at": "2026-10-28T02:08:53Z"
+    },
+    {
+      "id": "ferramenta:check-written-questions@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/check_written_questions.py",
+      "hash": "a3f79d464d446fbc7ae1b51e1dc7bdb407bc963e1df5068e128e47538e076348",
+      "retired": false,
+      "nota": "D61: alvo key"
+    },
+    {
+      "id": "ferramenta:make-written-v7@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/make_written_v7.py",
+      "hash": "ccc98d1eee29eb9cf207104e2daf2edd427fc054d1df702093e94fff71f090d3",
+      "retired": false,
+      "nota": "D61: errata with since apply only from their own version"
+    },
+    {
+      "id": "ferramenta:make-written-v9@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_written_v9.py",
+      "hash": "9888e5ee1c7573711e4cd33d14e3b75cfafc3c70b7b11cec19981b7b898e92e9",
+      "retired": false,
+      "nota": "D61: data-v9 (3 600 written questions, D61 errata, targeted dev set)"
+    },
+    {
+      "id": "ferramenta:verify@38",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 38,
+      "code": "verify.py",
+      "hash": "cc0788eb41f12d7ad0e78d1ff0a8bfd25a8bc77f08abeb4e836154fa5970af9b",
+      "retired": false,
+      "nota": "D61: data-v9 and escritas-v9 checks; D60 revision anchor"
     }
   ]
 }

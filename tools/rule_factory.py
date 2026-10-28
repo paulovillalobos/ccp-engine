@@ -30,8 +30,8 @@ from engine.governance import Log  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-rule-factory-0.3"
-TOOL = "ferramenta:rule-factory@3"  # D59 gap check, D60 round 2
+VERSION = "ccp-rule-factory-0.4"
+TOOL = "ferramenta:rule-factory@4"  # D59 gap check, D60 round 2 and its three new gaps
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"}}
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
@@ -56,6 +56,10 @@ GAPS = [
     ("convite", "conta-se do envio do convite (o schema só tem anúncio)", re.compile(r"envio do convite", re.I), "passage"),
     ("urgencia", "urgência (sem campo no vocabulário)", re.compile(r"urg[êe]ncia", re.I), "passage"),
     ("procedimento", "procedimento fora do vocabulário (conceção, ideias, simplificado)", re.compile(r"concurso (de conce[çc][ãa]o|de ideias|simplificado)", re.I), "both"),
+    # D60, found reading round 2 against the law (art. 174.º n.º 3, 198.º n.º 2)
+    ("setores", "setores especiais: água, energia, transportes, serviços postais (sem campo no vocabulário)", re.compile(r"setores da [áa]gua|setores especiais", re.I), "passage"),
+    ("pre_informacao", "anúncio periódico indicativo / de pré-informação (sem campo no vocabulário)", re.compile(r"an[úu]ncio (peri[óo]dico indicativo|de pr[ée]-informa[çc][ãa]o)", re.I), "passage"),
+    ("dois_prazos", "um prazo «em regra» e outro mínimo absoluto (a regra só tem um mínimo)", re.compile(r"em regra[^.;]{0,160}em caso algum", re.I), "passage"),
 ]
 
 
@@ -73,11 +77,12 @@ def slug_of(pid):
 
 def targets(store, n=1):
     """Round 1: one target per leaf passage that states a minimum of days or a euro limit, outside the articles read by hand.
-    Round n > 1: round 1's targets with a gap that round n's vocabulary closes entirely."""
+    Round n > 1: round 1's targets with a gap that round n's vocabulary closes; one with a gap left open is read, reported and not
+    recorded."""
     if n > 1:
         closed = FROUNDS[n]["closed"]
         return [{**t, "title": TITLE[t["type"]].format(pid=t["source_passage"], n=n)} for t in targets(store)
-                if gaps_of(store, t["source_passage"]) and not gaps_of(store, t["source_passage"], closed)]
+                if set(gaps_of(store, t["source_passage"])) - set(gaps_of(store, t["source_passage"], closed))]
     hits = {}
     for p in store.objects["passagem"]:
         pid = p["id"]
@@ -213,7 +218,11 @@ INTRO = {
         "com a razão no registo; o schema cresce antes da ronda 2."],
     2: ["D60: o vocabulário das regras ganha prazo_candidaturas_dias e data_envio_convite (o prompt diz o que cada campo quer dizer). "
         "Alvos: os da ronda 1 cujas únicas lacunas estes valores fecham. As duas famílias leem de novo às cegas; uma regra já no "
-        "registo recebe uma correção (nova revisão), não uma segunda proposta.", ""],
+        "registo recebe uma correção (nova revisão), não uma segunda proposta.",
+        "Lidas contra a lei, as leituras da ronda 2 mostraram mais três lacunas, agora verificadas por código: setores especiais (art. "
+        "174.º n.º 3), anúncio periódico indicativo (art. 198.º n.º 2) e um prazo «em regra» com outro mínimo absoluto (174.º n.º 3: "
+        "30 dias em regra, nunca menos de 15; as duas famílias deram 30). Um alvo com uma lacuna ainda aberta é lido e mostrado aqui, "
+        "não registado."],
 }
 
 

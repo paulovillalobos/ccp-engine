@@ -529,7 +529,11 @@ def check_states(store, rp, out):
             # and its state is the replay's
             if r["state"] != rp.state_of("regra", r["id"]):
                 out.append(("STATE", f"{r['id']}: revision {r['revision']} above the log's {known['revision']} with state {r['state']}, the replay says {rp.state_of('regra', r['id'])}"))
-            base = next((x for x in store.revisions(r["id"]) if x["revision"] == known["revision"]), None)
+            # D60: the content's base is the first stored revision that carries the log's latest propose/correct (an invalidation,
+            # D59, adds a stored revision with no log revision, so the numbers may drift apart); else the same revision number
+            last = next((ev["id"] for _, ev in reversed(store.events) if ev["assertion"] == r["id"] and ev["action"] in ("propose", "correct")), None)
+            base = next((x for x in store.revisions(r["id"]) if last in {rd["evento"] for rd in x["readings"]}), None) \
+                or next((x for x in store.revisions(r["id"]) if x["revision"] == known["revision"]), None)
             moving = {"revision", "recorded_at", "supersedes", "state", "readings"}
             if base is None or {k: v for k, v in r.items() if k not in moving} != {k: v for k, v in base.items() if k not in moving}:
                 out.append(("STATE", f"{r['id']}: revision {r['revision']} above the log's {known['revision']} changes the rule's content; only a correct in the log may"))
@@ -798,6 +802,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v6", module="make_written")
         check_training_v2(store, out, tdir, held, sub="data-v7", module="make_written_v7")
         check_training_v2(store, out, tdir, held, sub="data-v8", module="make_written_v8")
+        check_training_v2(store, out, tdir, held, sub="data-v9", module="make_written_v9")
     return store, out
 
 
@@ -863,7 +868,8 @@ def check_readings(store, out, readings_root=None):
             continue
         leitor = ev["principal"].split(":")[1]
         rnd = (ev.get("payload") or {}).get("round", 1)  # D44: a later round's answers live in readings/ronda<n>/
-        f = (root / f"ronda{rnd}" if rnd != 1 else root) / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
+        folder = root if rnd == 1 else root / (rnd.replace("-", "") if str(rnd).startswith("fabrica") else f"ronda{rnd}")  # D58: fabrica-<n> -> readings/fabrica<n>/
+        f = folder / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
         if not f.exists():
             out.append(("READ", f"{ev['id']}: answer file {f.relative_to(root)} missing for {ev['assertion']}"))
             continue
@@ -1073,10 +1079,12 @@ def check_measure():
     for f in sorted((ROOT / "reports/measure").glob("*.json")) if (ROOT / "reports/measure").exists() else []:
         stored = json.loads(f.read_text(encoding="utf-8"))
         if f.name.startswith("escritas-"):  # phase 9 (D52): written questions -> facts, markers, citations (tools/measure_written.py)
-            import measure_written  # noqa: E402  (no model: it reads the stored answers)
-            again = measure_written.report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
+            import importlib  # noqa: E402  (no model: it reads the stored answers)
+            name = {"ccp-measure-written-v7-0.1": "measure_written_v7", "ccp-measure-written-v8-0.1": "measure_written_v8",
+                    "ccp-measure-written-v9-0.1": "measure_written_v9"}.get(stored.get("tool"), "measure_written")
+            again = importlib.import_module(name).report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
-                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_written.py recomputes from the stored answers"))
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/{name}.py recomputes from the stored answers"))
             continue
         if f.name.startswith("factos-"):  # phase 8 (D50): a person's question -> facts, generated and hand-written (tools/measure_user_facts.py)
             import measure_user_facts  # noqa: E402  (no model: it reads the stored answers)

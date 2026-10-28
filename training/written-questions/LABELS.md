@@ -31,6 +31,19 @@ amounts. The label says only what the question states; the engine applies the la
   -> ambiguos.data_inicio_procedimento [the date] (art. 36.º n.º 1: the procedure starts with the decisão de contratar;
   the question names another event). Year alone, law names, contract or adjudicação dates -> nothing.
 
+The procedure asked about (from v9, D61): the procedure the question is about is a fact whether the user states it or asks
+whether it may be used — «temos um AD», «vamos lançar CP», «posso fazer AD?», «AD?», «pode ser por consulta prévia?», «chega
+um AD simplificado?», «o que é o AD», «o limite do AD»: it is the procedure the engine checks. Two procedures offered as a
+choice («AD ou CPrév?», «CP ou CLPQ?») -> ambiguos with both. «Que procedimento?» -> nothing. A procedure only suspected of
+someone else («coincidência ou estratégia para fazer AD?») -> nothing. publicado_joue is different: asked («tem de ir ao
+JOUE?», «CP com JOUE?», «JOUE obrigatório?») -> nothing, it is what the engine computes; stated («vai ao JOUE», «sem JOUE»,
+«publicado no JOUE») -> the value.
+One candidate (from v9, D61): a field in ambiguos lists at least two candidates, except three cases that keep one: the
+asker's own IPSS-type body (["outra"]), «requisição» (["ajuste_direto"]) and a design project — projeto de arquitetura,
+de especialidades, de execução, plano diretor — (["servicos"]). «Ajuste direto simplificado» names the ajuste direto (art.
+128.º) and «consulta prévia simplificada» the consulta prévia: tipo_procedimento by the rule above, never a one-candidate ambiguos. An object said with the word
+«serviços» («serviços de arquitetura», «serviços de consultoria») is tipo_contrato servicos.
+
 Not a fact: what the user says they do not know ("não sabemos se é CP ou AD"); claims about the law ("o limite do AD
 é 20 mil", "o colega diz que não vai ao JOUE", "por ser urgente"); distractor numbers and dates (quantities, durations,
 law numbers, article numbers).
