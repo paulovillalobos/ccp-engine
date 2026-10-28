@@ -1,0 +1,60 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 12,
+  "recorded_at": "2026-10-28T14:22:12Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-1@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-j-3@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    }
+  ],
+  "hash": "67957bde6c10a4b3f09a8ea301f714b717ca26ba205e04be2b841beff1fc0089",
+  "log_head": "6bc6bb3521b00b4e9cb2a66dcacee7552dfafa5e8711f3168855d77b1d262e44",
+  "built_at": "2026-10-28T14:22:12Z",
+  "supersedes": 11
+}

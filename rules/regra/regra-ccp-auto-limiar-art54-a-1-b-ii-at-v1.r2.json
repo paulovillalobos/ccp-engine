@@ -1,0 +1,81 @@
+{
+  "id": "regra:ccp:auto-limiar-art54-a-1-b-ii@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-28T14:21:51Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art54-a.1.b.ii (fábrica de regras, ronda 4)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": [
+        "concessao_obras",
+        "concessao_servicos",
+        "obras",
+        "servicos"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "ajuste_direto",
+        "concurso_limitado_previa_qualificacao",
+        "concurso_publico",
+        "dialogo_concorrencial",
+        "parceria_inovacao"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art54-a.1.b.ii",
+      "version": "2026-10-01",
+      "quote": "ii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;",
+      "offsets": {
+        "start": 0,
+        "end": 147
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 500000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a12",
+      "family": "A",
+      "at": "2026-10-28T14:18:55Z",
+      "chosen_passages": [
+        "ccp:art54-a.1.b.ii"
+      ],
+      "blind": false,
+      "evento": "evento:190"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:53:09Z",
+      "chosen_passages": [
+        "ccp:art54-a.1.b.ii"
+      ],
+      "blind": true,
+      "evento": "evento:191"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

@@ -1904,3 +1904,17 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   counted from the notice where the text says convite. AMALIA was never trained to read typed rules (regra_tipada 0).
 - verify@39: a target's -b/-c rules read the target's answer file. verify ok.
 - Next: a rule-reading task for AMALIA, written from the law (not from Reader B's readings, so the families stay independent).
+
+## 2026-10-28 — D63: AMALIA v10 reads typed rules, factory round 4
+- Done: task regra_lida (training/data-v10): 600 written CCP-style articles with invented numbers, gold readings written
+  from the text by six writers under training/rule-readings/GUIDE.md, code checks on every example, 18 near-copies of real
+  target passages dropped; 1 000 train rows, 82 held out. BEFORE committed before v10 answered (v9 2.4 %, Reader B 85.4 %).
+  v10 trained detached (ap-FdWSej880Y2yWDQXNtT1i4, 10:45Z to 14:11Z, USD 13.17 billed so far); leitor:a12 registered
+  (adapter sha 0b10f5c0fe65).
+- Result, 82 held-out articles: rules exact v10 69.5 % (v9 2.4 %, Reader B 85.4 %); content exact (passages aside) 76.8 %
+  (Reader B 98.8 %); right number of rules 98.8 %; right days or limits 97.6 % (reports/measure/regras-v10-2026-10-28).
+- Round 4 (fabrica-4, the 18 open round-1 targets, leitor:a12 proposes, leitor:b blind): 4 settled (190.º n.º 1 and
+  219.º-B n.º 5 as two rules each, 191.º n.º 1, 219.º-J n.º 3). 14 differ; days or limits agree on 17 of 18. Two differ
+  only in the passages cited (174.º n.º 2, 191.º n.º 5: Reader B also cites the number referred to). The rest differ in
+  conditions or the comparator: 127.º-C le vs lt, 198.º concurso público vs negociação, 174.º n.º 3 30 vs 15 days.
+- Next: the person's call on citation in D43 replication; a dev-only look at v10's condition errors.

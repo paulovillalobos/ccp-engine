@@ -1,0 +1,70 @@
+{
+  "id": "regra:ccp:auto-limiar-art21-1-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T14:21:51Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art21.1.b (fábrica de regras, ronda 4)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "ne",
+      "value": "concessao_obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "consulta_previa"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art21.1.b",
+      "version": "2026-10-01",
+      "quote": "b) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor estimado do contrato seja inferior a 130 000 €;",
+      "offsets": {
+        "start": 0,
+        "end": 125
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 130000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a12",
+      "family": "A",
+      "at": "2026-10-28T14:18:55Z",
+      "chosen_passages": [
+        "ccp:art21.1.b"
+      ],
+      "blind": false,
+      "evento": "evento:184"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:52:24Z",
+      "chosen_passages": [
+        "ccp:art21.1",
+        "ccp:art21.1.b"
+      ],
+      "blind": true,
+      "evento": "evento:185"
+    }
+  ],
+  "state": "proposed"
+}

@@ -1089,6 +1089,12 @@ def check_measure():
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/{name}.py recomputes from the stored answers"))
             continue
+        if f.name.startswith("regras-"):  # phase 13 (D63): rule readings of written articles (tools/measure_rule_readings.py)
+            import measure_rule_readings  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_rule_readings.report(stored["date"], only=set(stored["readers"]))
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_rule_readings.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("factos-"):  # phase 8 (D50): a person's question -> facts, generated and hand-written (tools/measure_user_facts.py)
             import measure_user_facts  # noqa: E402  (no model: it reads the stored answers)
             again = measure_user_facts.report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})

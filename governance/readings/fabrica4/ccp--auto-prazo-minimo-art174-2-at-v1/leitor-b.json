@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:53:31Z",
+ "sha256": "995d7f6ea662d648ed5792fab7b7779d915aa7a3de786450217eab17d72366af",
+ "answer": "{\"regras\":[{\"passagens\":[\"ccp:art174.1\",\"ccp:art174.2\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\"},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":true}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null}}]}"
+}

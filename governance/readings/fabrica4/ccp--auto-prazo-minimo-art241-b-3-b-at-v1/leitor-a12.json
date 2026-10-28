@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T14:18:55Z",
+ "sha256": "050326d4bca8ade345d3264b14222a3db27d1f59e8f9693dd748047798457a57",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art241-b.3.b\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"bens\"}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"ajuste_direto\"}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_convite\", \"usual_days\": null}}]}"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art174-3@v1",
+  "revision": 3,
+  "recorded_at": "2026-10-28T14:21:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art174.3 (fábrica de regras, ronda 4)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "setores_especiais",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": [
+        "concessao_obras",
+        "concessao_servicos",
+        "servicos_sociais"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art174.3",
+      "version": "2018-01-01",
+      "quote": "3 - Quando o contrato a celebrar diga direta e principalmente respeito a uma ou a várias das atividades exercidas nos setores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das candidaturas é, em regra, de 30 dias a contar da data do envio do anúncio para publicação, não podendo em caso algum ser inferior a 15 dias desde aquele envio.",
+      "offsets": {
+        "start": 0,
+        "end": 447
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio",
+    "usual_days": 30
+  },
+  "readings": [
+    {
+      "principal": "leitor:a12",
+      "family": "A",
+      "at": "2026-10-28T14:18:55Z",
+      "chosen_passages": [
+        "ccp:art174.3"
+      ],
+      "blind": false,
+      "evento": "evento:196"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:53:44Z",
+      "chosen_passages": [
+        "ccp:art174.3"
+      ],
+      "blind": true,
+      "evento": "evento:197"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 2
+}

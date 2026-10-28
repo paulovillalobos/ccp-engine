@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T14:18:55Z",
+ "sha256": "4bafe31e68035395c086b164ecbca2e818efc6ce38ee068629ed5969257771c7",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art219-b.5\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"modalidade_concecao\", \"op\": \"in\", \"value\": [\"limitado\", \"publico\"]}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_concecao\"}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_trabalhos_concecao_dias\", \"counted_from\": \"nao_indicado\", \"usual_days\": null}}, {\"passagens\": [\"ccp:art219-b.5\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"modalidade_concecao\", \"op\": \"eq\", \"value\": \"simplificado\"}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_concecao\"}], \"params\": {\"minimum_days\": 15, \"deadline_field\": \"prazo_trabalhos_concecao_dias\", \"counted_from\": \"nao_indicado\", \"usual_days\": null}}]}"
+}

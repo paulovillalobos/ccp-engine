@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T14:18:55Z",
+ "sha256": "730674a98abdd4db56c4795e6dcb46557147a449b97147a046627ad932fb09c4",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art17-b.4\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"bens\"}, {\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": [\"ajuste_direto\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\"]}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 80000, \"currency\": \"EUR\"}}}, {\"passagens\": [\"ccp:art17-b.4\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"obras\"}, {\"field\": \"tipo_procedimento\", \"op\": \"in\", \"value\": [\"concurso_publico\", \"concurso_limitado_previa_qualificacao\"]}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 1000000, \"currency\": \"EUR\"}}}]}"
+}

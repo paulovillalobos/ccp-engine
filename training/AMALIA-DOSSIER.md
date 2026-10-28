@@ -181,5 +181,25 @@ AFTER when its measurement exists.
   markers without cause (sealed 4 % to 12 %), mostly tipo_contrato and tipo_procedimento flagged ambiguous when the
   question settles them. Without the guard v9 scores 96 % on alvo; the guard takes 4 of those away.
 
+## v10 (adapter `amalia-ccp-lei-v10`, 2026-10-28) — reading a typed rule out of a law passage
+- Data (`tools/make_rule_readings.py`, D63): v9's mix plus a new task, regra_lida. It is built from 600 articles written for
+  this project in the CCP's style, with invented numbers, and gold rule readings written from the text (never from the
+  other family's readings). Every example is checked by code, and near-copies of real target passages are dropped (18).
+  The task has 1 000 train rows (each article twice, with different offered field lists) and 82 held-out articles, never
+  trained on. Mix 35 152 examples. Rank 16.
+- Run: training ended 14:11Z on one H100, USD 13.17 for the hours billed so far (`training/runs/v10/`).
+- Results (`reports/measure/regras-v10-2026-10-28.md`), 82 held-out articles, compared with the gold rule by rule in
+  canonical form:
+
+| reader | rules exact | content exact (passages aside) | right number of rules | right days or limits |
+|---|---|---|---|---|
+| base + v9 | 2.4 % | 2.4 % | 73.2 % | 72.0 % |
+| base + v10 | **69.5 %** [58.9, 78.4] | **76.8 %** | **98.8 %** | **97.6 %** |
+| another family's frontier model | 85.4 % | 98.8 % | 100 % | 100 % |
+
+  v10 learned the task's shape (number of rules, days, limits). It still differs from the gold on conditions in about a
+  quarter of the articles. On the real law (rules round 4, 18 open targets) it replicated the other family exactly on 4,
+  and the days or limits agreed on 17 of 18.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

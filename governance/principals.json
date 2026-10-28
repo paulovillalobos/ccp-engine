@@ -1835,6 +1835,21 @@
       "nota": "phase 10 (D61): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v9 (rank 16), trained on training/data + data-v2..v4 + data-v9 (v8's written questions under the D61 label rules and errata, plus 600 targeted questions); training/runs/v9/MANIFEST.json"
     },
     {
+      "id": "leitor:a12",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v10",
+        "versao": "0b10f5c0fe65"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 13 (D63): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v10 (rank 16), trained on v9's data plus training/data-v10 (task regra_lida: 600 written CCP-style articles with gold rule readings written from the text, 1 000 train rows); training/runs/v10/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:rule-factory@4",
       "kind": "codigo",
       "papel": "ferramenta",
@@ -1993,8 +2008,9 @@
       "versao": 40,
       "code": "verify.py",
       "hash": "2bcef983d52d0bcd951d9c984489bc151457ea3c7a8e79416c4a9de1d2d8d894",
-      "retired": false,
-      "nota": "D63: data-v10 rebuilt byte for byte by make_rule_readings"
+      "retired": true,
+      "nota": "D63: data-v10 rebuilt byte for byte by make_rule_readings",
+      "retired_at": "2026-10-28T14:27:47Z"
     },
     {
       "id": "ferramenta:rule-factory@7",
@@ -2007,6 +2023,30 @@
       "hash": "423652ba66fa4aac2bb7fdfb94a247584861d5a7b756ad88e71d03cf30620394",
       "retired": false,
       "nota": "D63: round 4 (TOOL constant at @7)"
+    },
+    {
+      "id": "ferramenta:verify@41",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 41,
+      "code": "verify.py",
+      "hash": "443b674a201a8f5283703f9392e80b42262cddbc4a2ad61fefd50f560c9c421f",
+      "retired": false,
+      "nota": "phase 13 (D63): checks reports/measure/regras-* against tools/measure_rule_readings.py"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_rule_readings.py",
+      "hash": "544a9b8802a0b1f528db3d7a8a28b8ffcb39cea8fa29a938fd9302132f2fdaf4",
+      "retired": false,
+      "nota": "phase 13 (D63): v9, v10 and Reader B on the 82 held-out rule readings of data-v10; no model"
     }
   ]
 }

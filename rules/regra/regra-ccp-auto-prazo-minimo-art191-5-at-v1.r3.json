@@ -1,0 +1,73 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art191-5@v1",
+  "revision": 3,
+  "recorded_at": "2026-10-28T14:21:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art191.5 (fábrica de regras, ronda 4)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    },
+    {
+      "field": "urgencia_fundamentada",
+      "op": "eq",
+      "value": true
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art191.5",
+      "version": "2018-01-01",
+      "quote": "5 - O prazo mínimo previsto no n.º 1 pode ser reduzido para 10 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 25 dias.",
+      "offsets": {
+        "start": 0,
+        "end": 214
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 10,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_convite"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a12",
+      "family": "A",
+      "at": "2026-10-28T14:18:55Z",
+      "chosen_passages": [
+        "ccp:art191.5"
+      ],
+      "blind": false,
+      "evento": "evento:204"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:54:17Z",
+      "chosen_passages": [
+        "ccp:art191.1",
+        "ccp:art191.5"
+      ],
+      "blind": true,
+      "evento": "evento:205"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 2
+}

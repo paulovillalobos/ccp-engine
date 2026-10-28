@@ -1,0 +1,75 @@
+{
+  "id": "regra:ccp:auto-limiar-art127-c-1-a@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-28T14:21:51Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art127-c.1.a (fábrica de regras, ronda 4)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": [
+        "concessao_obras",
+        "concessao_servicos",
+        "obras"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "consulta_previa"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art127-c.1.a",
+      "version": "2026-10-01",
+      "quote": "a) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços;",
+      "offsets": {
+        "start": 0,
+        "end": 119
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "le",
+      "value": 2000000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a12",
+      "family": "A",
+      "at": "2026-10-28T14:18:55Z",
+      "chosen_passages": [
+        "ccp:art127-c.1.a"
+      ],
+      "blind": false,
+      "evento": "evento:178"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:51:40Z",
+      "chosen_passages": [
+        "ccp:art127-c.1",
+        "ccp:art127-c.1.a"
+      ],
+      "blind": true,
+      "evento": "evento:179"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}
