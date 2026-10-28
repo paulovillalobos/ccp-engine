@@ -1,0 +1,472 @@
+{
+ "tool": "ccp-measure-rule-readings-v11-0.1",
+ "date": "2026-10-28",
+ "sets": {
+  "dev": {
+   "gold": "training/data-v11/regra_lida/dev.jsonl",
+   "gold_sha256": "a3480aa92d21a1453cb780cbde5bbc96cd1f2991f8dfc108283fea86041442af",
+   "examples": 203,
+   "readers": {
+    "leitor-a12": {
+     "label": "base + adaptador v10",
+     "answers_sha256": "d7b3d55f1e055aa02b50bf16eb038b40a807953c95c42d529b631ac076d80722",
+     "rules_exact": {
+      "k": 172,
+      "n": 203,
+      "value": 0.8473,
+      "wilson95": [
+       0.7914,
+       0.8903
+      ]
+     },
+     "content_exact": {
+      "k": 178,
+      "n": 203,
+      "value": 0.8768,
+      "wilson95": [
+       0.8245,
+       0.9152
+      ]
+     },
+     "count_exact": {
+      "k": 203,
+      "n": 203,
+      "value": 1.0,
+      "wilson95": [
+       0.9814,
+       1.0
+      ]
+     },
+     "days_exact": {
+      "k": 202,
+      "n": 203,
+      "value": 0.9951,
+      "wilson95": [
+       0.9726,
+       0.9991
+      ]
+     },
+     "more_rules_than_gold": {
+      "k": 0,
+      "n": 203,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0186
+      ]
+     },
+     "invalid": 0,
+     "counts": {
+      "rules_exact": 172,
+      "content_exact": 178,
+      "count_exact": 203,
+      "days_exact": 202,
+      "invalid": 0,
+      "padded": 0
+     },
+     "replicates_d64": {
+      "k": 178,
+      "n": 203,
+      "value": 0.8768,
+      "wilson95": [
+       0.8245,
+       0.9152
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "condição com outro valor: tipo_contrato": 6,
+       "condição a mais: publicado_joue": 4,
+       "condição em falta: tipo_contrato": 4,
+       "condição a mais: tipo_procedimento": 3,
+       "condição a mais: urgencia_fundamentada": 3,
+       "limiar: comparator": 2,
+       "condição a mais: tipo_contrato": 1,
+       "condição com outro valor: modalidade_concecao": 1,
+       "condição com outro valor: tipo_entidade": 1,
+       "condição em falta: modalidade_concecao": 1,
+       "condição em falta: publicado_joue": 1,
+       "prazo: counted_from": 1,
+       "prazo: deadline_field": 1,
+       "prazo: minimum_days": 1
+      },
+      "by_style": {
+       "prazo_distratores": 6,
+       "prazo_casos": 5,
+       "limiar_dois_casos": 4,
+       "limiar_tipos": 3,
+       "prazo_reducao": 2,
+       "prazo_em_regra": 1,
+       "prazo_epigrafe": 1,
+       "prazo_joue": 1,
+       "prazo_nao_indicado": 1,
+       "prazo_outros": 1
+      }
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "fcb0e29d25580c46baf8f00886e1016526f3de62ad809959bf1798d8b55a459f",
+     "rules_exact": {
+      "k": 160,
+      "n": 203,
+      "value": 0.7882,
+      "wilson95": [
+       0.7269,
+       0.8388
+      ]
+     },
+     "content_exact": {
+      "k": 199,
+      "n": 203,
+      "value": 0.9803,
+      "wilson95": [
+       0.9504,
+       0.9923
+      ]
+     },
+     "count_exact": {
+      "k": 202,
+      "n": 203,
+      "value": 0.9951,
+      "wilson95": [
+       0.9726,
+       0.9991
+      ]
+     },
+     "days_exact": {
+      "k": 202,
+      "n": 203,
+      "value": 0.9951,
+      "wilson95": [
+       0.9726,
+       0.9991
+      ]
+     },
+     "more_rules_than_gold": {
+      "k": 1,
+      "n": 203,
+      "value": 0.0049,
+      "wilson95": [
+       0.0009,
+       0.0274
+      ]
+     },
+     "invalid": 0,
+     "counts": {
+      "rules_exact": 160,
+      "content_exact": 199,
+      "count_exact": 202,
+      "days_exact": 202,
+      "invalid": 0,
+      "padded": 1
+     },
+     "replicates_d64": {
+      "k": 199,
+      "n": 203,
+      "value": 0.9803,
+      "wilson95": [
+       0.9504,
+       0.9923
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "condição a mais: urgencia_fundamentada": 1,
+       "condição com outro valor: tipo_contrato": 1,
+       "número de regras a mais": 1,
+       "prazo: usual_days": 1
+      },
+      "by_style": {
+       "prazo_distratores": 2,
+       "limiar_dois_casos": 1,
+       "prazo_reducao": 1
+      }
+     }
+    }
+   }
+  },
+  "sealed": {
+   "gold": "training/data-v11/regra_lida/sealed.jsonl",
+   "gold_sha256": "4c6c540db21d6f293c56da14caa29c206bd370174b752cc174edcfe75ce38e4e",
+   "examples": 184,
+   "readers": {
+    "leitor-a12": {
+     "label": "base + adaptador v10",
+     "answers_sha256": "11e7f54052dfcb94312574d443c5a1d2b086821329c8fbd26b9afa356add8d38",
+     "rules_exact": {
+      "k": 160,
+      "n": 184,
+      "value": 0.8696,
+      "wilson95": [
+       0.8133,
+       0.9108
+      ]
+     },
+     "content_exact": {
+      "k": 168,
+      "n": 184,
+      "value": 0.913,
+      "wilson95": [
+       0.8634,
+       0.9458
+      ]
+     },
+     "count_exact": {
+      "k": 184,
+      "n": 184,
+      "value": 1.0,
+      "wilson95": [
+       0.9795,
+       1.0
+      ]
+     },
+     "days_exact": {
+      "k": 183,
+      "n": 184,
+      "value": 0.9946,
+      "wilson95": [
+       0.9699,
+       0.999
+      ]
+     },
+     "more_rules_than_gold": {
+      "k": 0,
+      "n": 184,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0205
+      ]
+     },
+     "invalid": 0,
+     "counts": {
+      "rules_exact": 160,
+      "content_exact": 168,
+      "count_exact": 184,
+      "days_exact": 183,
+      "invalid": 0,
+      "padded": 0
+     },
+     "replicates_d64": {
+      "k": 168,
+      "n": 184,
+      "value": 0.913,
+      "wilson95": [
+       0.8634,
+       0.9458
+      ]
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "b4ad8e0fb3c8af295c47b152a63e447ddf38300ee99ca145ab11497b209bbd1c",
+     "rules_exact": {
+      "k": 149,
+      "n": 184,
+      "value": 0.8098,
+      "wilson95": [
+       0.747,
+       0.8599
+      ]
+     },
+     "content_exact": {
+      "k": 182,
+      "n": 184,
+      "value": 0.9891,
+      "wilson95": [
+       0.9612,
+       0.997
+      ]
+     },
+     "count_exact": {
+      "k": 183,
+      "n": 184,
+      "value": 0.9946,
+      "wilson95": [
+       0.9699,
+       0.999
+      ]
+     },
+     "days_exact": {
+      "k": 183,
+      "n": 184,
+      "value": 0.9946,
+      "wilson95": [
+       0.9699,
+       0.999
+      ]
+     },
+     "more_rules_than_gold": {
+      "k": 0,
+      "n": 184,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0205
+      ]
+     },
+     "invalid": 1,
+     "counts": {
+      "rules_exact": 149,
+      "content_exact": 182,
+      "count_exact": 183,
+      "days_exact": 183,
+      "invalid": 1,
+      "padded": 0
+     },
+     "replicates_d64": {
+      "k": 182,
+      "n": 184,
+      "value": 0.9891,
+      "wilson95": [
+       0.9612,
+       0.997
+      ]
+     }
+    }
+   }
+  },
+  "held_out_v10": {
+   "gold": "training/data-v10/regra_lida/held_out.jsonl",
+   "gold_sha256": "83472f61647a1cc492b507a340bf63c36a9e2f28ffef5582b028398a9fc593db",
+   "examples": 82,
+   "readers": {
+    "leitor-a12": {
+     "label": "base + adaptador v10",
+     "answers_sha256": "f13e1e18d8a8c020d2c76c58c22cd3f4a131c29b19c30de952b24d40d762057c",
+     "rules_exact": {
+      "k": 57,
+      "n": 82,
+      "value": 0.6951,
+      "wilson95": [
+       0.5886,
+       0.7842
+      ]
+     },
+     "content_exact": {
+      "k": 63,
+      "n": 82,
+      "value": 0.7683,
+      "wilson95": [
+       0.6662,
+       0.8463
+      ]
+     },
+     "count_exact": {
+      "k": 81,
+      "n": 82,
+      "value": 0.9878,
+      "wilson95": [
+       0.9341,
+       0.9978
+      ]
+     },
+     "days_exact": {
+      "k": 80,
+      "n": 82,
+      "value": 0.9756,
+      "wilson95": [
+       0.9154,
+       0.9933
+      ]
+     },
+     "more_rules_than_gold": {
+      "k": 1,
+      "n": 82,
+      "value": 0.0122,
+      "wilson95": [
+       0.0022,
+       0.0659
+      ]
+     },
+     "invalid": 0,
+     "counts": {
+      "rules_exact": 57,
+      "content_exact": 63,
+      "count_exact": 81,
+      "days_exact": 80,
+      "invalid": 0,
+      "padded": 1
+     },
+     "replicates_d64": {
+      "k": 63,
+      "n": 82,
+      "value": 0.7683,
+      "wilson95": [
+       0.6662,
+       0.8463
+      ]
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "b07268b065eef4e646c246f911c4c99f9a3043172c5d1d47b6520dcb86d45209",
+     "rules_exact": {
+      "k": 70,
+      "n": 82,
+      "value": 0.8537,
+      "wilson95": [
+       0.7614,
+       0.9143
+      ]
+     },
+     "content_exact": {
+      "k": 81,
+      "n": 82,
+      "value": 0.9878,
+      "wilson95": [
+       0.9341,
+       0.9978
+      ]
+     },
+     "count_exact": {
+      "k": 82,
+      "n": 82,
+      "value": 1.0,
+      "wilson95": [
+       0.9552,
+       1.0
+      ]
+     },
+     "days_exact": {
+      "k": 82,
+      "n": 82,
+      "value": 1.0,
+      "wilson95": [
+       0.9552,
+       1.0
+      ]
+     },
+     "more_rules_than_gold": {
+      "k": 0,
+      "n": 82,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0448
+      ]
+     },
+     "invalid": 0,
+     "counts": {
+      "rules_exact": 70,
+      "content_exact": 81,
+      "count_exact": 82,
+      "days_exact": 82,
+      "invalid": 0,
+      "padded": 0
+     },
+     "replicates_d64": {
+      "k": 81,
+      "n": 82,
+      "value": 0.9878,
+      "wilson95": [
+       0.9341,
+       0.9978
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:51:49Z",
+ "sha256": "3b53ec7650b207b163d941c30bf206f2a262982cf2e22249eb5812c4f7db9a4a",
+ "answer": "{\"regras\":[{\"passagens\":[\"ccp:art17-b.4\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"]}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":80000,\"currency\":\"EUR\"}}},{\"passagens\":[\"ccp:art17-b.4\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\"}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":1000000,\"currency\":\"EUR\"}}}]}"
+}

@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:51:40Z",
+ "sha256": "4acc5986f6bd5a8db3ded1d07c1a4cffbfbc9db61e064cd141998a7b1ddf756b",
+ "answer": "{\"regras\":[{\"passagens\":[\"ccp:art127-c.1\",\"ccp:art127-c.1.a\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"consulta_previa\"},{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"obras\",\"concessao_obras\",\"concessao_servicos\"]}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":2000000,\"currency\":\"EUR\"}}}]}"
+}

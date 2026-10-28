@@ -41,7 +41,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.6"
-TOOL = "ferramenta:rule-factory@8"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck
+TOOL = "ferramenta:rule-factory@9"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -52,7 +52,13 @@ FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, 
                "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"},
                "only": {"ccp:art127-c.1.a", "ccp:art17-b.4", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art88.2.a",
                         "ccp:art174.2", "ccp:art174.3", "ccp:art190.1", "ccp:art191.1", "ccp:art191.5", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2",
-                        "ccp:art219-b.5", "ccp:art219-j.3", "ccp:art241-b.3.b"}}}
+                        "ccp:art219-b.5", "ccp:art219-j.3", "ccp:art241-b.3.b"}},
+           # D65: the 12 targets round 4 left open, read by AMALIA + adapter v11 (leitor:a13), replication by content and alvo (D64);
+           # leitor:b's round-4 answers are carried (same prompts, byte for byte, checked when the prompts are written)
+           5: {"round": "fabrica-5", "dir": rr.READINGS / "fabrica5", "rnd": 9, "decision": "D65", "proposer": ("leitor:a13", "leitor-a13.json"), "content": True,
+               "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"},
+               "only": {"ccp:art127-c.1.a", "ccp:art17-b.4", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art88.2.a",
+                        "ccp:art174.3", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2", "ccp:art241-b.3.b"}}}
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
 HAND_READ = {"ccp:art19", "ccp:art20", "ccp:art135", "ccp:art136"}
@@ -345,7 +351,13 @@ INTRO = {
     4: ["D63: AMALIA aprendeu a ler regras (adaptador v10, treinado em artigos escritos para isso, nunca nas leituras de leitor:b). "
         "Alvos: todos os da ronda 1 que não estavam settled quando o treino começou, com o vocabulário da ronda 3.",
         "Uma regra já no registo recebe uma correção (nova revisão) de leitor:a12; leitor:b lê de novo às cegas."],
+    5: ["D65: AMALIA treinada nos tipos de erro que v10 fez no dev (adaptador v11). Alvos: os 12 que a ronda 4 deixou abertos.",
+        "As respostas de leitor:b são as da ronda 4 (o mesmo prompt, byte a byte); uma regra já no registo recebe uma correção (nova "
+        "revisão) de leitor:a13."],
 }
+
+
+ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11"}
 
 
 def write_report(rows, n=1):
@@ -353,7 +365,8 @@ def write_report(rows, n=1):
     proposer = R.get("proposer", (PROPOSER,))[0]
     L = [f"# FÁBRICA DE REGRAS — ronda {n} (DECISIONS {R['decision']})", "",
          f"Gerado por tools/rule_factory.py ({VERSION}). " + INTRO[n][0].format(date=DATE) + f" Propõe {proposer} "
-         f"(AMALIA + adaptador {'v10' if proposer == 'leitor:a12' else 'v7'}), leitor:b revê às cegas; só fica settled a leitura que leitor:b replica em forma canónica (D43).", "",
+         f"(AMALIA + adaptador {ADAPTER_OF.get(proposer, 'v7')}), leitor:b revê às cegas; só fica settled a leitura que leitor:b replica "
+         + ("com o mesmo conteúdo e a passagem-alvo citada (D64)." if R.get("content") else "em forma canónica (D43)."), "",
          INTRO[n][1], "",
          "| regra | passagem | estado | exato | direção | lacunas do vocabulário |", "|---|---|---|---|---|---|"]
     for r in rows:

@@ -2072,8 +2072,9 @@
       "versao": 8,
       "code": "tools/rule_factory.py",
       "hash": "0d70e191f002164aeaf378c3351f0ce2fd0b02db825781489829efbeaefd834a",
-      "retired": false,
-      "nota": "D64: recheck command; rounds with content compare the same rule and the target passage"
+      "retired": true,
+      "nota": "D64: recheck command; rounds with content compare the same rule and the target passage",
+      "retired_at": "2026-10-28T16:36:47Z"
     },
     {
       "id": "ferramenta:verify@42",
@@ -2111,6 +2112,30 @@
       "hash": "97e5056884b27191956ab82283ed9989339a2cde0de17b3b7d5f1dc74813a7d1",
       "retired": false,
       "nota": "D65: regenerates training/data-v11"
+    },
+    {
+      "id": "ferramenta:rule-factory@9",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 9,
+      "code": "tools/rule_factory.py",
+      "hash": "5c76a3027cb387fc00518f4b20e9fd646adc84835295385b5c12cd256d8fdd6b",
+      "retired": false,
+      "nota": "D65: round 5, leitor:a13 proposes, D64 replication, leitor:b's round-4 answers carried"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v11@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_rule_readings_v11.py",
+      "hash": "9e64cf00f936c5f487bf7b1be4e29240d5c0e10a0a83a3e5fdf23f2a8c4dff9e",
+      "retired": false,
+      "nota": "phase 14 (D65): v10, v11 and Reader B on data-v11 dev and sealed and data-v10's held out; D64 replication; dev errors sorted by kind; no model"
     }
   ]
 }

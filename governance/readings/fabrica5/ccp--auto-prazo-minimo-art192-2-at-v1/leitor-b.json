@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:54:25Z",
+ "sha256": "6f8e1912390dd22a0638101d22035e06bce33e6659d237128ab7fa2cbc098180",
+ "answer": "{\"regras\":[{\"passagens\":[\"ccp:art192.1\",\"ccp:art192.2\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\"},{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":true}],\"params\":{\"minimum_days\":10,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null}}]}"
+}
