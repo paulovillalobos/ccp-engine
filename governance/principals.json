@@ -2084,8 +2084,33 @@
       "versao": 42,
       "code": "verify.py",
       "hash": "eef906af25fe578945c71906898ecdc0bf255644b2924b65965ea9832bff4c86",
+      "retired": true,
+      "nota": "D64: an uphold under the content-and-alvo rule may keep its own extra passages",
+      "retired_at": "2026-10-28T16:11:08Z"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v11@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v11.py",
+      "hash": "c36dbd4137187194ccfeff5b689a36004a67e5bd22546501d5ec4e972c36124f",
       "retired": false,
-      "nota": "D64: an uphold under the content-and-alvo rule may keep its own extra passages"
+      "nota": "phase 14 (D65): data-v11, the dev and sealed articles (eval-*) and the targeted training articles (alvo-*)"
+    },
+    {
+      "id": "ferramenta:verify@43",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 43,
+      "code": "verify.py",
+      "hash": "97e5056884b27191956ab82283ed9989339a2cde0de17b3b7d5f1dc74813a7d1",
+      "retired": false,
+      "nota": "D65: regenerates training/data-v11"
     }
   ]
 }

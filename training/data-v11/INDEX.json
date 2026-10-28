@@ -1,0 +1,59 @@
+{
+ "dropped": {
+  "e02-055": [
+   "a cited passage close to one e01-062 cites"
+  ],
+  "e03-004": [
+   "a cited passage close to one e03-003 cites"
+  ],
+  "e03-022": [
+   "a cited passage close to one e01-019 cites"
+  ],
+  "e03-026": [
+   "a cited passage close to one e03-011 cites"
+  ],
+  "e03-030": [
+   "a cited passage close to one e03-007 cites"
+  ],
+  "e03-054": [
+   "a cited passage close to one e01-054 cites"
+  ],
+  "e03-077": [
+   "a cited passage close to one e01-079 cites"
+  ],
+  "e03-078": [
+   "a cited passage close to one e02-079 cites"
+  ],
+  "e04-008": [
+   "a cited passage close to one e03-003 cites"
+  ],
+  "e04-032": [
+   "a cited passage close to one e03-072 cites"
+  ],
+  "e04-053": [
+   "a cited passage close to one e01-054 cites"
+  ],
+  "e04-055": [
+   "a cited passage close to one e01-055 cites"
+  ],
+  "e04-059": [
+   "a cited passage close to one e01-059 cites"
+  ]
+ },
+ "files": {
+  "regra_lida/dev.jsonl": {
+   "lines": 203,
+   "sha256": "be810f0b790a1bdc71ebfc172ed0f59eccd299c2f849661d51c55874f0cc744f"
+  },
+  "regra_lida/sealed.jsonl": {
+   "lines": 184,
+   "sha256": "4c6c540db21d6f293c56da14caa29c206bd370174b752cc174edcfe75ce38e4e"
+  }
+ },
+ "seed": 20261029,
+ "split": {
+  "regra_lida/dev": 203,
+  "regra_lida/sealed": 184
+ },
+ "version": "ccp-make-rule-readings-v11-0.1"
+}

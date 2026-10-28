@@ -808,6 +808,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v8", module="make_written_v8")
         check_training_v2(store, out, tdir, held, sub="data-v9", module="make_written_v9")
         check_training_v2(store, out, tdir, held, sub="data-v10", module="make_rule_readings")
+        check_training_v2(store, out, tdir, held, sub="data-v11", module="make_rule_readings_v11")
     return store, out
 
 
