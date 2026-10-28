@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:22:34Z",
+ "sha256": "aaaaa5516b2c6214dbe200c49835d2713a497269a7c4f360a0b8f9a38e707237",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art174.3\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": [\"concessao_obras\", \"concessao_servicos\"]}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_candidaturas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": 30}}, {\"passagens\": [\"ccp:art174.3\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [], \"params\": {\"minimum_days\": 15, \"deadline_field\": \"prazo_candidaturas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}}]}"
+}

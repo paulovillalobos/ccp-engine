@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:22:34Z",
+ "sha256": "1884ee347eded2c81d0c0a41ebfa74d0fa5e59d312711dc010218f718decc237",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art191.5\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"urgencia_fundamentada\", \"op\": \"eq\", \"value\": true}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}}]}"
+}

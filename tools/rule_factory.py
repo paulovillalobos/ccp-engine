@@ -36,12 +36,18 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.5"
-TOOL = "ferramenta:rule-factory@5"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3
+TOOL = "ferramenta:rule-factory@7"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
            3: {"round": "fabrica-3", "dir": rr.READINGS / "fabrica3", "rnd": 9, "decision": "D62", "extra": {"ccp:art190.1"},
-               "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"}}}
+               "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"}},
+           # D63: every round-1 target not settled when v10 began training, read by AMALIA + adapter v10 (leitor:a12)
+           4: {"round": "fabrica-4", "dir": rr.READINGS / "fabrica4", "rnd": 9, "decision": "D63", "proposer": ("leitor:a12", "leitor-a12.json"),
+               "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"},
+               "only": {"ccp:art127-c.1.a", "ccp:art17-b.4", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art88.2.a",
+                        "ccp:art174.2", "ccp:art174.3", "ccp:art190.1", "ccp:art191.1", "ccp:art191.5", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2",
+                        "ccp:art219-b.5", "ccp:art219-j.3", "ccp:art241-b.3.b"}}}
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
 HAND_READ = {"ccp:art19", "ccp:art20", "ccp:art135", "ccp:art136"}
@@ -87,6 +93,8 @@ def targets(store, n=1):
     """Round 1: one target per leaf passage that states a minimum of days or a euro limit, outside the articles read by hand.
     Round n > 1: round 1's targets with a gap that round n's vocabulary closes; one with a gap left open is read, reported and not
     recorded."""
+    if n > 1 and "only" in FROUNDS[n]:
+        return [{**t, "title": TITLE[t["type"]].format(pid=t["source_passage"], n=n)} for t in targets(store) if t["source_passage"] in FROUNDS[n]["only"]]
     if n > 1:
         closed, before = FROUNDS[n]["closed"], FROUNDS[n - 1]["closed"]  # D62: only what this round newly closes (a settled rule stays read)
         extra = FROUNDS[n].get("extra", set())
@@ -144,9 +152,10 @@ def cmd_record(n=1):
     log = Log(ROOT / "governance")
     writer = Writer(ROOT / "rules", Store([ROOT / "rules"]).load())
     rows = []
+    proposer, pfile = R.get("proposer", (PROPOSER, PROPOSER_FILE))
     for t in targets(store, n):
         d = R["dir"] / rr.slug(t["rule"])
-        ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (PROPOSER_FILE, "leitor-b.json")]
+        ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (pfile, "leitor-b.json")]
         A = readings_of(ra, t, R["rnd"]) if ra else None
         B = readings_of(rb, t, R["rnd"]) if rb else None
         a, b = (A[0] if len(A) == 1 else A) if A else None, (B[0] if len(B) == 1 else B) if B else None
@@ -158,7 +167,7 @@ def cmd_record(n=1):
             row["state"] = "fora do vocabulário"  # D59: not proposed; the schema grows first
             continue
         if A is None or any(x["type"] != t["type"] for x in A):
-            row["state"] = f"sem leitura válida de {PROPOSER}"
+            row["state"] = f"sem leitura válida de {proposer}"
             continue
         if B is not None:  # D62: the readings replicate when every rule does, the sets sorted by canonical form
             row["exact"] = len(A) == len(B) and all(rr.same_reading(x, y) for x, y in zip(A, B))
@@ -170,7 +179,7 @@ def cmd_record(n=1):
         for i, a in enumerate(A):
             ti = t if i == 0 else {**t, "rule": t["rule"].replace("@v1", f"-{'bcd'[i - 1]}@v1"), "title": t["title"] + f" ({i + 1}.ª regra)"}
             b = (B[i] if i < len(B) else B[-1]) if B else None
-            st = record_one(store, log, writer, R, d, ti, a, b, ra, rb, row["exact"])
+            st = record_one(store, log, writer, R, d, ti, a, b, ra, rb, row["exact"], proposer)
             if isinstance(st, dict):
                 row.update(st); break
             states.append(st)
@@ -195,11 +204,11 @@ def readings_of(rec, t, rnd):
     return [a] if a else None
 
 
-def record_one(store, log, writer, R, d, t, a, b, ra, rb, exact):
-    """Propose (or correct) one rule of a target from leitor:a8's reading, with leitor:b's blind review; its state, or a dict
+def record_one(store, log, writer, R, d, t, a, b, ra, rb, exact, proposer=PROPOSER):
+    """Propose (or correct) one rule of a target from the family-A reading, with leitor:b's blind review; its state, or a dict
     {"state", "why"} when the draft is not a valid rule."""
     known = log.replay().assertions.get(("regra", t["rule"]))
-    draft = rr.build_rule(store, t, a, a["passages"], [{"principal": PROPOSER, "family": "A", "at": ra["at"], "chosen_passages": a["passages"],
+    draft = rr.build_rule(store, t, a, a["passages"], [{"principal": proposer, "family": "A", "at": ra["at"], "chosen_passages": a["passages"],
                                                         "blind": False, "evento": "evento:1"}], "proposed")
     problems = schema.validate("regra", draft)
     try:
@@ -207,18 +216,18 @@ def record_one(store, log, writer, R, d, t, a, b, ra, rb, exact):
     except rules_mod.RuleError as exc:
         problems.append(str(exc))
     if problems:
-        return {"state": f"sem leitura válida de {PROPOSER}", "why": str(problems[0])[:200]}
+        return {"state": f"sem leitura válida de {proposer}", "why": str(problems[0])[:200]}
     payload = {"chosen_passages": a["passages"], "conditions": a["conditions"], "params": a["params"], "answer_sha256": ra["sha256"], "round": R["round"]}
     if known:  # D60: a later round's reading is a new revision of the same rule
-        ev_a = log.correct(PROPOSER, "regra", t["rule"], known["revision"], payload,
+        ev_a = log.correct(proposer, "regra", t["rule"], known["revision"], payload,
                            f"{R['decision']}: {R['round']}, read again with the wider vocabulary", ra["at"])
     else:
-        ev_a = log.propose(PROPOSER, "regra", t["rule"], payload, ra["at"])
+        ev_a = log.propose(proposer, "regra", t["rule"], payload, ra["at"])
     rev = log.replay().assertions[("regra", t["rule"])]["revision"]
-    readings = [{"principal": PROPOSER, "family": "A", "at": ra["at"], "chosen_passages": a["passages"], "blind": False, "evento": ev_a}]
+    readings = [{"principal": proposer, "family": "A", "at": ra["at"], "chosen_passages": a["passages"], "blind": False, "evento": ev_a}]
     if b is not None:
         question = json.loads((d / "prompt.json").read_text(encoding="utf-8"))["prompt"].split("Pergunta: ", 1)[1]
-        ev_b = log.review("leitor:b", "regra", t["rule"], rev, f"Blind, same prompt as {PROPOSER} ({R['round']}): {question}", "blind",
+        ev_b = log.review("leitor:b", "regra", t["rule"], rev, f"Blind, same prompt as {proposer} ({R['round']}): {question}", "blind",
                           "uphold" if exact else "request_evidence", rb["at"],
                           payload={"chosen_passages": b["passages"], "conditions": b["conditions"], "params": b["params"],
                                    "answer_sha256": rb["sha256"], "round": R["round"]})
@@ -264,14 +273,18 @@ INTRO = {
         "n.º 1 (duas regras numa passagem).",
         "As leituras replicam quando cada regra replica, os dois conjuntos ordenados pela forma canónica; a 2.ª e a 3.ª regra de um "
         "alvo têm ids terminados em -b e -c."],
+    4: ["D63: AMALIA aprendeu a ler regras (adaptador v10, treinado em artigos escritos para isso, nunca nas leituras de leitor:b). "
+        "Alvos: todos os da ronda 1 que não estavam settled quando o treino começou, com o vocabulário da ronda 3.",
+        "Uma regra já no registo recebe uma correção (nova revisão) de leitor:a12; leitor:b lê de novo às cegas."],
 }
 
 
 def write_report(rows, n=1):
     R = FROUNDS[n]
+    proposer = R.get("proposer", (PROPOSER,))[0]
     L = [f"# FÁBRICA DE REGRAS — ronda {n} (DECISIONS {R['decision']})", "",
-         f"Gerado por tools/rule_factory.py ({VERSION}). " + INTRO[n][0].format(date=DATE) + f" Propõe {PROPOSER} "
-         "(AMALIA + adaptador v7), leitor:b revê às cegas; só fica settled a leitura que leitor:b replica em forma canónica (D43).", "",
+         f"Gerado por tools/rule_factory.py ({VERSION}). " + INTRO[n][0].format(date=DATE) + f" Propõe {proposer} "
+         f"(AMALIA + adaptador {'v10' if proposer == 'leitor:a12' else 'v7'}), leitor:b revê às cegas; só fica settled a leitura que leitor:b replica em forma canónica (D43).", "",
          INTRO[n][1], "",
          "| regra | passagem | estado | exato | direção | lacunas do vocabulário |", "|---|---|---|---|---|---|"]
     for r in rows:
@@ -280,7 +293,7 @@ def write_report(rows, n=1):
                  f"{'—' if r['exact'] is None else ('sim' if r['exact'] else 'não')} | {'—' if r['direction'] is None else ('sim' if r['direction'] else 'não')} | {'; '.join(r['gaps']) or '—'} |")
     L.append("")
     for r in rows:
-        L += [f"## {r['rule']}", "", f"- {PROPOSER}: {rr.show(r['a'])}", f"- leitor:b: {rr.show(r['b'])}", ""]
+        L += [f"## {r['rule']}", "", f"- {proposer}: {rr.show(r['a'])}", f"- leitor:b: {rr.show(r['b'])}", ""]
     (R["dir"] / f"FABRICA{n}.md").write_text("\n".join(L).replace("\n\n\n", "\n\n") + "\n", encoding="utf-8")
 
 

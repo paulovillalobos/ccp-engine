@@ -1942,8 +1942,9 @@
       "versao": 5,
       "code": "tools/rule_factory.py",
       "hash": "212c9d188046fc2b98f6849e70a565a1aeabce02a2cc5f5819b13f981018a0b9",
-      "retired": false,
-      "nota": "D62: round 3, targets only the gaps a round newly closes, multi-rule answers"
+      "retired": true,
+      "nota": "D62: round 3, targets only the gaps a round newly closes, multi-rule answers",
+      "retired_at": "2026-10-28T10:39:14Z"
     },
     {
       "id": "ferramenta:verify@39",
@@ -1954,8 +1955,58 @@
       "versao": 39,
       "code": "verify.py",
       "hash": "c259d0b30ce15c36a7b322b6a7b5884f69c349ea5bc36f63f4ebb1766fbe2d2e",
+      "retired": true,
+      "nota": "D62: a factory target's -b/-c rules read their answers from the target's folder",
+      "retired_at": "2026-10-28T10:39:14Z"
+    },
+    {
+      "id": "ferramenta:make-rule-readings@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings.py",
+      "hash": "6ab9871e06aca63b5b54728ee0b8160a048c862350d2c1fda547d82fcd52f9d0",
       "retired": false,
-      "nota": "D62: a factory target's -b/-c rules read their answers from the target's folder"
+      "nota": "D63: data-v10, reading typed rules out of written articles (task regra_lida), code checks, leak check"
+    },
+    {
+      "id": "ferramenta:rule-factory@6",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 6,
+      "code": "tools/rule_factory.py",
+      "hash": "1893779b334eb8fa265aa1ec684541a4941d42f6fc5ee13e03b0fe96d54a45bd",
+      "retired": true,
+      "nota": "D63: round 4, every unsettled round-1 target read by leitor:a12 (v10); per-round proposer",
+      "retired_at": "2026-10-28T10:39:20Z"
+    },
+    {
+      "id": "ferramenta:verify@40",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 40,
+      "code": "verify.py",
+      "hash": "2bcef983d52d0bcd951d9c984489bc151457ea3c7a8e79416c4a9de1d2d8d894",
+      "retired": false,
+      "nota": "D63: data-v10 rebuilt byte for byte by make_rule_readings"
+    },
+    {
+      "id": "ferramenta:rule-factory@7",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 7,
+      "code": "tools/rule_factory.py",
+      "hash": "423652ba66fa4aac2bb7fdfb94a247584861d5a7b756ad88e71d03cf30620394",
+      "retired": false,
+      "nota": "D63: round 4 (TOOL constant at @7)"
     }
   ]
 }

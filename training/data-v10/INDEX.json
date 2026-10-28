@@ -1,0 +1,79 @@
+{
+ "dropped": {
+  "r01-036": [
+   "exemplo:art101-c.2: close to a real target passage (0.88)"
+  ],
+  "r01-091": [
+   "exemplo:art119-a.1: close to a real target passage (0.86)"
+  ],
+  "r03-001": [
+   "exemplo:art88-d.1: close to a real target passage (0.85)"
+  ],
+  "r03-071": [
+   "exemplo:art95-b.1: close to a real target passage (0.90)"
+  ],
+  "r03-079": [
+   "exemplo:art187-d.1: close to a real target passage (0.89)"
+  ],
+  "r04-002": [
+   "exemplo:art211-b.2.b: close to a real target passage (0.98)"
+  ],
+  "r04-006": [
+   "exemplo:art231-d.2.b: close to a real target passage (0.90)"
+  ],
+  "r04-032": [
+   "exemplo:art179-b.5: close to a real target passage (0.90)"
+  ],
+  "r04-056": [
+   "exemplo:art163-d.2: close to a real target passage (0.88)"
+  ],
+  "r04-091": [
+   "exemplo:art142-e.3: close to a real target passage (0.90)"
+  ],
+  "r05-039": [
+   "exemplo:art35-b.1.a: close to a real target passage (0.91)",
+   "exemplo:art35-b.1.b: close to a real target passage (0.92)"
+  ],
+  "r05-045": [
+   "exemplo:art53-e.1.b: close to a real target passage (0.86)"
+  ],
+  "r05-049": [
+   "exemplo:art57-c.1.a: close to a real target passage (0.87)",
+   "exemplo:art57-c.1.b: close to a real target passage (0.90)"
+  ],
+  "r05-058": [
+   "exemplo:art126-d.1.a: close to a real target passage (0.88)",
+   "exemplo:art126-d.1.b: close to a real target passage (0.86)"
+  ],
+  "r05-059": [
+   "exemplo:art45-b.1.a: close to a real target passage (0.88)",
+   "exemplo:art45-b.1.b: close to a real target passage (0.90)"
+  ],
+  "r05-067": [
+   "exemplo:art133-d.2.a: close to a real target passage (0.94)",
+   "exemplo:art133-d.2.b: close to a real target passage (0.93)"
+  ],
+  "r06-031": [
+   "exemplo:art94-h.1: close to a real target passage (0.90)"
+  ],
+  "r06-038": [
+   "exemplo:art73-k.3: close to a real target passage (0.86)"
+  ]
+ },
+ "files": {
+  "regra_lida/held_out.jsonl": {
+   "lines": 82,
+   "sha256": "83472f61647a1cc492b507a340bf63c36a9e2f28ffef5582b028398a9fc593db"
+  },
+  "regra_lida/train.jsonl": {
+   "lines": 1000,
+   "sha256": "8cafc5f9d99d6ddb711e8a156668a5c6d61e487383b1d5557c303e20b11c33b3"
+  }
+ },
+ "seed": 20261028,
+ "split": {
+  "held_out": 82,
+  "train": 1000
+ },
+ "version": "ccp-make-rule-readings-0.1"
+}

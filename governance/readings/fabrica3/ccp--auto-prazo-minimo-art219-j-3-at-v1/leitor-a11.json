@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T10:22:34Z",
+ "sha256": "dcc9ce67e770acc34e090d75187bac000449b9c95ed36ea4c506789eca0a9033",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art219-j.3\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [], \"params\": {\"minimum_days\": 60, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_publicacao_anuncio\", \"usual_days\": null}}, {\"passagens\": [\"ccp:art219-j.8\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"modalidade_concecao\", \"op\": \"eq\", \"value\": \"publico\"}], \"params\": {\"minimum_days\": 60, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_publicacao_anuncio\", \"usual_days\": null}}]}"
+}
