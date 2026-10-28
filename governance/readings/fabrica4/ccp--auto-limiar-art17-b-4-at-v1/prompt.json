@@ -1,0 +1,650 @@
+{
+ "rule": "regra:ccp:auto-limiar-art17-b-4@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art17-b",
+  "ccp:art17-b.1",
+  "ccp:art17-b.2",
+  "ccp:art17-b.3",
+  "ccp:art17-b.4",
+  "ccp:art17-b.5",
+  "ccp:art17-b.5.a",
+  "ccp:art17-b.5.b",
+  "ccp:art17-b.6",
+  "ccp:art17-b.6.a",
+  "ccp:art17-b.6.b"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\", \"concurso_concecao\", \"concurso_ideias\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; modalidade_concecao: \"publico\", \"limitado\", \"simplificado\"; urgencia_fundamentada: true, false; setores_especiais: true, false; anuncio_pre_informacao: true, false; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art17-b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 17.º-B\nFracionamento e regras de agregação do valor estimado do contrato\n1 - O valor estimado do contrato não pode ser calculado, nem o objeto do contrato pode ser fracionado, com o intuito de excluir a observância de quaisquer exigências legais, designadamente das constantes do presente Código.\n2 - Quando a entidade adjudicante for organizada por unidades orgânicas, deve ser tido em conta o valor total estimado dos contratos celebrados por todas elas, salvo se forem independentemente responsáveis pelas suas aquisições, nomeadamente por se tratar de serviços periféricos ou municipalizados.\n3 - Quando prestações do mesmo tipo, suscetíveis de constituírem objeto de um único contrato, sejam contratadas através de mais do que um procedimento, o valor estimado a considerar para a escolha de cada procedimento é o do somatório dos valores estimados dos vários contratos.\n4 - As entidades adjudicantes ficam dispensadas do disposto no número anterior relativamente à formação de contrato ou de um conjunto de contratos cujo valor estimado seja inferior a 80 000 €, no caso de bens e serviços, ou a 1 000 000 €, no caso de empreitadas de obras públicas, se o valor estimado daquele contrato ou daquele conjunto de contratos não exceder 20 % do somatório calculado nos termos do número anterior.\n5 - Tratando-se de contratos de aquisição de bens móveis ou de serviços de uso corrente ou que se destinem a ser prorrogados durante um determinado período, o valor estimado do contrato deve ser calculado com base:\na) No somatório dos preços contratuais de todos os contratos do mesmo tipo adjudicados durante os 12 meses anteriores, corrigido, quando possível, para atender às alterações de quantidades ou de valor que possam ocorrer durante os 12 meses seguintes à celebração do contrato inicial; ou\nb) No somatório do valor estimado dos sucessivos contratos que preveja vir a celebrar durante os 12 meses seguintes ao início da execução do primeiro contrato.\n6 - Para efeitos do disposto no n.º 3, consideram-se:\na) Do mesmo tipo, as prestações que se revelem aptas a satisfazer a mesma necessidade da entidade adjudicante;\nb) Suscetíveis de constituir objeto de um único contrato, as prestações que, no seu conjunto, revelem uma função unitária económica e técnica.\n\n[ccp:art17-b.1] (versão em vigor a 2026-10-01, desde 2026-10-01)\n1 - O valor estimado do contrato não pode ser calculado, nem o objeto do contrato pode ser fracionado, com o intuito de excluir a observância de quaisquer exigências legais, designadamente das constantes do presente Código.\n\n[ccp:art17-b.2] (versão em vigor a 2026-10-01, desde 2026-10-01)\n2 - Quando a entidade adjudicante for organizada por unidades orgânicas, deve ser tido em conta o valor total estimado dos contratos celebrados por todas elas, salvo se forem independentemente responsáveis pelas suas aquisições, nomeadamente por se tratar de serviços periféricos ou municipalizados.\n\n[ccp:art17-b.3] (versão em vigor a 2026-10-01, desde 2026-10-01)\n3 - Quando prestações do mesmo tipo, suscetíveis de constituírem objeto de um único contrato, sejam contratadas através de mais do que um procedimento, o valor estimado a considerar para a escolha de cada procedimento é o do somatório dos valores estimados dos vários contratos.\n\n[ccp:art17-b.4] (versão em vigor a 2026-10-01, desde 2026-10-01)\n4 - As entidades adjudicantes ficam dispensadas do disposto no número anterior relativamente à formação de contrato ou de um conjunto de contratos cujo valor estimado seja inferior a 80 000 €, no caso de bens e serviços, ou a 1 000 000 €, no caso de empreitadas de obras públicas, se o valor estimado daquele contrato ou daquele conjunto de contratos não exceder 20 % do somatório calculado nos termos do número anterior.\n\n[ccp:art17-b.5] (versão em vigor a 2026-10-01, desde 2026-10-01)\n5 - Tratando-se de contratos de aquisição de bens móveis ou de serviços de uso corrente ou que se destinem a ser prorrogados durante um determinado período, o valor estimado do contrato deve ser calculado com base:\na) No somatório dos preços contratuais de todos os contratos do mesmo tipo adjudicados durante os 12 meses anteriores, corrigido, quando possível, para atender às alterações de quantidades ou de valor que possam ocorrer durante os 12 meses seguintes à celebração do contrato inicial; ou\nb) No somatório do valor estimado dos sucessivos contratos que preveja vir a celebrar durante os 12 meses seguintes ao início da execução do primeiro contrato.\n\n[ccp:art17-b.5.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) No somatório dos preços contratuais de todos os contratos do mesmo tipo adjudicados durante os 12 meses anteriores, corrigido, quando possível, para atender às alterações de quantidades ou de valor que possam ocorrer durante os 12 meses seguintes à celebração do contrato inicial; ou\n\n[ccp:art17-b.5.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) No somatório do valor estimado dos sucessivos contratos que preveja vir a celebrar durante os 12 meses seguintes ao início da execução do primeiro contrato.\n\n[ccp:art17-b.6] (versão em vigor a 2026-10-01, desde 2026-10-01)\n6 - Para efeitos do disposto no n.º 3, consideram-se:\na) Do mesmo tipo, as prestações que se revelem aptas a satisfazer a mesma necessidade da entidade adjudicante;\nb) Suscetíveis de constituir objeto de um único contrato, as prestações que, no seu conjunto, revelem uma função unitária económica e técnica.\n\n[ccp:art17-b.6.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Do mesmo tipo, as prestações que se revelem aptas a satisfazer a mesma necessidade da entidade adjudicante;\n\n[ccp:art17-b.6.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) Suscetíveis de constituir objeto de um único contrato, as prestações que, no seu conjunto, revelem uma função unitária económica e técnica.\n\nPergunta: Que limiar de valor fixa a passagem ccp:art17-b.4: para que procedimento e tipo de contrato, com que valor em euros e que comparação? Dê as condições e o limiar.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "regras": {
+    "type": "array",
+    "minItems": 1,
+    "maxItems": 3,
+    "items": {
+     "type": "object",
+     "properties": {
+      "passagens": {
+       "type": "array",
+       "minItems": 1,
+       "items": {
+        "type": "string",
+        "enum": [
+         "ccp:art17-b",
+         "ccp:art17-b.1",
+         "ccp:art17-b.2",
+         "ccp:art17-b.3",
+         "ccp:art17-b.4",
+         "ccp:art17-b.5",
+         "ccp:art17-b.5.a",
+         "ccp:art17-b.5.b",
+         "ccp:art17-b.6",
+         "ccp:art17-b.6.a",
+         "ccp:art17-b.6.b"
+        ]
+       }
+      },
+      "tipo": {
+       "type": "string",
+       "enum": [
+        "limiar"
+       ]
+      },
+      "condicoes": {
+       "type": "array",
+       "items": {
+        "anyOf": [
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_contrato"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "obras",
+             "bens",
+             "servicos",
+             "concessao_obras",
+             "concessao_servicos",
+             "servicos_sociais"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_contrato"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "obras",
+              "bens",
+              "servicos",
+              "concessao_obras",
+              "concessao_servicos",
+              "servicos_sociais"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "ajuste_direto",
+             "consulta_previa",
+             "concurso_publico",
+             "concurso_limitado_previa_qualificacao",
+             "procedimento_negociacao",
+             "dialogo_concorrencial",
+             "parceria_inovacao",
+             "concurso_concecao",
+             "concurso_ideias"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "ajuste_direto",
+              "consulta_previa",
+              "concurso_publico",
+              "concurso_limitado_previa_qualificacao",
+              "procedimento_negociacao",
+              "dialogo_concorrencial",
+              "parceria_inovacao",
+              "concurso_concecao",
+              "concurso_ideias"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "territorio"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "PT",
+             "PT-AC",
+             "PT-MA"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "territorio"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "PT",
+              "PT-AC",
+              "PT-MA"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_entidade"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "estado",
+             "outra"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_entidade"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "estado",
+              "outra"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "modalidade_concecao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "publico",
+             "limitado",
+             "simplificado"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "modalidade_concecao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "publico",
+              "limitado",
+              "simplificado"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "publicado_joue"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "urgencia_fundamentada"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "setores_especiais"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "anuncio_pre_informacao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "preco_base"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne",
+             "lt",
+             "le",
+             "gt",
+             "ge"
+            ]
+           },
+           "value": {
+            "type": "number"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "data_inicio_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne",
+             "lt",
+             "le",
+             "gt",
+             "ge"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         }
+        ]
+       }
+      },
+      "params": {
+       "type": "object",
+       "properties": {
+        "threshold": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string",
+           "enum": [
+            "preco_base"
+           ]
+          },
+          "comparator": {
+           "type": "string",
+           "enum": [
+            "lt",
+            "le"
+           ]
+          },
+          "value": {
+           "type": "number"
+          },
+          "currency": {
+           "type": "string",
+           "enum": [
+            "EUR"
+           ]
+          }
+         },
+         "required": [
+          "field",
+          "comparator",
+          "value",
+          "currency"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "required": [
+        "threshold"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "required": [
+      "passagens",
+      "tipo",
+      "condicoes",
+      "params"
+     ],
+     "additionalProperties": false
+    }
+   }
+  },
+  "required": [
+   "regras"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-4",
+ "source_passage": "ccp:art17-b.4"
+}

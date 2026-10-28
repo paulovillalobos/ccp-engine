@@ -1,0 +1,640 @@
+{
+ "rule": "regra:ccp:auto-limiar-art21-1-b@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art21",
+  "ccp:art21.1",
+  "ccp:art21.1.a",
+  "ccp:art21.1.b",
+  "ccp:art21.1.c",
+  "ccp:art21.2"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\", \"concurso_concecao\", \"concurso_ideias\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; modalidade_concecao: \"publico\", \"limitado\", \"simplificado\"; urgencia_fundamentada: true, false; setores_especiais: true, false; anuncio_pre_informacao: true, false; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: limiar.\n\nPassagens candidatas:\n[ccp:art21] (versão em vigor a 2026-10-01, desde 2026-10-01)\nArtigo 21.º\nEscolha do procedimento de formação de outros contratos\n1 - No caso de contratos distintos dos previstos nos artigos anteriores, que não configurem contratos de concessão de obras públicas ou de concessão de serviços, ou contratos de sociedade, pode adotar-se um dos seguintes procedimentos:\na) Concurso público, concurso limitado por prévia qualificação, procedimento de negociação, diálogo concorrencial ou parceria para a inovação, sem publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\nb) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor estimado do contrato seja inferior a 130 000 €;\nc) Ajuste direto, quando o valor estimado do contrato seja inferior a 75 000 €.\n2 - Para a formação de contratos cuja execução não gere qualquer contrapartida ou vantagem direta para o cocontratante pode ser adotado qualquer um dos procedimentos referidos no número anterior.\n[ccp:art21] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nArtigo 21.º\nEscolha do procedimento de formação de outros contratos\n1 - No caso de contratos distintos dos previstos nos artigos anteriores, que não configurem contratos de concessão de obras públicas ou de concessão de serviços públicos, ou contratos de sociedade, pode adotar-se um dos seguintes procedimentos:\na) Concurso público, concurso limitado por prévia qualificação, procedimento de negociação, diálogo concorrencial ou parceria para a inovação, sem publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\nb) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor do contrato seja inferior a (euro) 100 000;\nc) Ajuste direto, quando o valor do contrato seja inferior a (euro) 50 000.\n2 - Para a formação de contratos sem valor, excepto se se tratar de um dos contratos mencionados no número anterior, pode ser adoptado qualquer um dos procedimentos nele referidos.\n\n[ccp:art21.1] (versão em vigor a 2026-10-01, desde 2026-10-01)\n1 - No caso de contratos distintos dos previstos nos artigos anteriores, que não configurem contratos de concessão de obras públicas ou de concessão de serviços, ou contratos de sociedade, pode adotar-se um dos seguintes procedimentos:\na) Concurso público, concurso limitado por prévia qualificação, procedimento de negociação, diálogo concorrencial ou parceria para a inovação, sem publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\nb) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor estimado do contrato seja inferior a 130 000 €;\nc) Ajuste direto, quando o valor estimado do contrato seja inferior a 75 000 €.\n[ccp:art21.1] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\n1 - No caso de contratos distintos dos previstos nos artigos anteriores, que não configurem contratos de concessão de obras públicas ou de concessão de serviços públicos, ou contratos de sociedade, pode adotar-se um dos seguintes procedimentos:\na) Concurso público, concurso limitado por prévia qualificação, procedimento de negociação, diálogo concorrencial ou parceria para a inovação, sem publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\nb) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor do contrato seja inferior a (euro) 100 000;\nc) Ajuste direto, quando o valor do contrato seja inferior a (euro) 50 000.\n\n[ccp:art21.1.a] (versão em vigor a 2026-10-01, desde 2026-10-01)\na) Concurso público, concurso limitado por prévia qualificação, procedimento de negociação, diálogo concorrencial ou parceria para a inovação, sem publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\n[ccp:art21.1.a] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\na) Concurso público, concurso limitado por prévia qualificação, procedimento de negociação, diálogo concorrencial ou parceria para a inovação, sem publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor do contrato;\n\n[ccp:art21.1.b] (versão em vigor a 2026-10-01, desde 2026-10-01)\nb) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor estimado do contrato seja inferior a 130 000 €;\n[ccp:art21.1.b] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nb) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor do contrato seja inferior a (euro) 100 000;\n\n[ccp:art21.1.c] (versão em vigor a 2026-10-01, desde 2026-10-01)\nc) Ajuste direto, quando o valor estimado do contrato seja inferior a 75 000 €.\n[ccp:art21.1.c] texto anterior (em vigor de 2018-01-01 a 2026-10-01):\nc) Ajuste direto, quando o valor do contrato seja inferior a (euro) 50 000.\n\n[ccp:art21.2] (versão em vigor a 2026-10-01, desde 2026-10-01)\n2 - Para a formação de contratos cuja execução não gere qualquer contrapartida ou vantagem direta para o cocontratante pode ser adotado qualquer um dos procedimentos referidos no número anterior.\n[ccp:art21.2] texto anterior (em vigor de 2008-07-30 a 2026-10-01):\n2 - Para a formação de contratos sem valor, excepto se se tratar de um dos contratos mencionados no número anterior, pode ser adoptado qualquer um dos procedimentos nele referidos.\n\nPergunta: Que limiar de valor fixa a passagem ccp:art21.1.b: para que procedimento e tipo de contrato, com que valor em euros e que comparação? Dê as condições e o limiar.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "regras": {
+    "type": "array",
+    "minItems": 1,
+    "maxItems": 3,
+    "items": {
+     "type": "object",
+     "properties": {
+      "passagens": {
+       "type": "array",
+       "minItems": 1,
+       "items": {
+        "type": "string",
+        "enum": [
+         "ccp:art21",
+         "ccp:art21.1",
+         "ccp:art21.1.a",
+         "ccp:art21.1.b",
+         "ccp:art21.1.c",
+         "ccp:art21.2"
+        ]
+       }
+      },
+      "tipo": {
+       "type": "string",
+       "enum": [
+        "limiar"
+       ]
+      },
+      "condicoes": {
+       "type": "array",
+       "items": {
+        "anyOf": [
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_contrato"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "obras",
+             "bens",
+             "servicos",
+             "concessao_obras",
+             "concessao_servicos",
+             "servicos_sociais"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_contrato"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "obras",
+              "bens",
+              "servicos",
+              "concessao_obras",
+              "concessao_servicos",
+              "servicos_sociais"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "ajuste_direto",
+             "consulta_previa",
+             "concurso_publico",
+             "concurso_limitado_previa_qualificacao",
+             "procedimento_negociacao",
+             "dialogo_concorrencial",
+             "parceria_inovacao",
+             "concurso_concecao",
+             "concurso_ideias"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "ajuste_direto",
+              "consulta_previa",
+              "concurso_publico",
+              "concurso_limitado_previa_qualificacao",
+              "procedimento_negociacao",
+              "dialogo_concorrencial",
+              "parceria_inovacao",
+              "concurso_concecao",
+              "concurso_ideias"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "territorio"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "PT",
+             "PT-AC",
+             "PT-MA"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "territorio"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "PT",
+              "PT-AC",
+              "PT-MA"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_entidade"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "estado",
+             "outra"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_entidade"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "estado",
+              "outra"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "modalidade_concecao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "publico",
+             "limitado",
+             "simplificado"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "modalidade_concecao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "publico",
+              "limitado",
+              "simplificado"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "publicado_joue"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "urgencia_fundamentada"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "setores_especiais"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "anuncio_pre_informacao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "preco_base"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne",
+             "lt",
+             "le",
+             "gt",
+             "ge"
+            ]
+           },
+           "value": {
+            "type": "number"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "data_inicio_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne",
+             "lt",
+             "le",
+             "gt",
+             "ge"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         }
+        ]
+       }
+      },
+      "params": {
+       "type": "object",
+       "properties": {
+        "threshold": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string",
+           "enum": [
+            "preco_base"
+           ]
+          },
+          "comparator": {
+           "type": "string",
+           "enum": [
+            "lt",
+            "le"
+           ]
+          },
+          "value": {
+           "type": "number"
+          },
+          "currency": {
+           "type": "string",
+           "enum": [
+            "EUR"
+           ]
+          }
+         },
+         "required": [
+          "field",
+          "comparator",
+          "value",
+          "currency"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "required": [
+        "threshold"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "required": [
+      "passagens",
+      "tipo",
+      "condicoes",
+      "params"
+     ],
+     "additionalProperties": false
+    }
+   }
+  },
+  "required": [
+   "regras"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-4",
+ "source_passage": "ccp:art21.1.b"
+}
