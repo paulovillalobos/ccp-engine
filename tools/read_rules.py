@@ -48,6 +48,7 @@ ROUNDS = {2: {"dir": RONDA2, "proposer": "leitor:a", "file": "leitor-a.json", "d
           5: {"dir": READINGS / "ronda5", "proposer": "leitor:a4", "file": "leitor-a4.json", "decision": "D47"},
           6: {"dir": READINGS / "ronda6", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D49"},
           7: {"dir": READINGS / "ronda7", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D51"}}
+DEADLINE_FIELDS = ["prazo_propostas_dias", "prazo_candidaturas_dias"]  # D60: round 8 on (the rules factory, round 2)
 FIELDS = ["tipo_contrato", "tipo_procedimento", "publicado_joue", "territorio", "tipo_entidade", "preco_base", "data_inicio_procedimento"]
 VOCAB = {
     "tipo_contrato": ["obras", "bens", "servicos", "concessao_obras", "concessao_servicos", "servicos_sociais"],
@@ -184,8 +185,9 @@ def schema_for(t, rnd=1):
         "limiar": {"threshold": {"type": "object", "properties": {"field": {"type": "string", "enum": ["preco_base"]}, "comparator": {"type": "string", "enum": ["lt", "le"]},
                                                                   "value": {"type": "number"}, "currency": {"type": "string", "enum": ["EUR"]}},
                                  "required": ["field", "comparator", "value", "currency"], "additionalProperties": False}},
-        "prazo_minimo": {"minimum_days": {"type": "integer", "minimum": 1}, "deadline_field": {"type": "string", "enum": ["prazo_propostas_dias"]},
-                         "counted_from": {"type": "string", "enum": ["data_publicacao_anuncio", "data_envio_anuncio"]}},
+        "prazo_minimo": {"minimum_days": {"type": "integer", "minimum": 1},
+                         "deadline_field": {"type": "string", "enum": DEADLINE_FIELDS if rnd >= 8 else ["prazo_propostas_dias"]},  # D60
+                         "counted_from": {"type": "string", "enum": ["data_publicacao_anuncio", "data_envio_anuncio"] + (["data_envio_convite"] if rnd >= 8 else [])}},
         "procedimento_admissivel": {"procedures": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": VOCAB["tipo_procedimento"]}}},
         "seletor_regime": {"selects_by": {"type": "string", "enum": ["data_inicio_procedimento"]},
                            "regimes": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {
@@ -227,6 +229,10 @@ def prompt_text(store, t, rnd=1):
             lines.append(prev[0]["text"])
         lines.append("")
     question = t["question"]
+    if rnd >= 8 and t["type"] == "prazo_minimo":  # D60: what each deadline field and starting point means
+        lines += ["Campos do prazo: prazo_propostas_dias = prazo para a apresentação das propostas; prazo_candidaturas_dias = prazo para a "
+                  "apresentação das candidaturas. Início da contagem: data_envio_anuncio = envio do anúncio (ao Serviço das Publicações da "
+                  "União Europeia); data_publicacao_anuncio = publicação do anúncio; data_envio_convite = envio do convite.", ""]
     if rnd >= 7 and t["type"] == "seletor_regime":  # D51: the regimes the system holds, as a closed list
         lines += ["Regimes que o sistema tem (escolhe «law_version» e «package» só desta lista):"]
         lines += [f"- {law} com {pk}: o Código dos Contratos Públicos no texto em vigor a {d}" for law, pk, d in REGIMES_HELD] + [""]

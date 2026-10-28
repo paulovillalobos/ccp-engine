@@ -51,7 +51,7 @@ STORE = None
 COMMIT = None
 REPOSITORY = "github.com/paulovillalobos/ccp-engine"
 DATE = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
-FIELDS = {"data_inicio_procedimento", "tipo_procedimento", "tipo_contrato", "preco_base", "publicado_joue", "prazo_propostas_dias",
+FIELDS = {"data_inicio_procedimento", "tipo_procedimento", "tipo_contrato", "preco_base", "publicado_joue", "prazo_propostas_dias", "prazo_candidaturas_dias", "data_envio_convite",
           "data_envio_anuncio", "data_publicacao_anuncio", "territorio", "tipo_entidade", "adjudicante"}
 PUBLIC = ("/v1/saude", "/v1/openapi.json", "/v1/lei.json", "/v1/manifesto.json")
 KEYED_GET = ("/v1/diff",)

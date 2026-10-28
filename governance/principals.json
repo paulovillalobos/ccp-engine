@@ -650,8 +650,9 @@
       "versao": 1,
       "code": "tools/serve.py",
       "hash": "50874ebd86aea8bb89b8eda631979786a5d10f575f2bc2553b01b7c54283a409",
-      "retired": false,
-      "nota": "API v1 local (B6)"
+      "retired": true,
+      "nota": "API v1 local (B6)",
+      "retired_at": "2026-10-28T01:12:44Z"
     },
     {
       "id": "ferramenta:measure@2",
@@ -1431,8 +1432,9 @@
       "versao": 14,
       "code": "tools/read_rules.py",
       "hash": "cb77cd8787055704a866d1594bab6b1d07805398ee2ace2ca04c8e14874039ad",
-      "retired": false,
-      "nota": "D51: round 7, the selector question names the regimes held, shows art. 19/20 with earlier text, admits from = null"
+      "retired": true,
+      "nota": "D51: round 7, the selector question names the regimes held, shows art. 19/20 with earlier text, admits from = null",
+      "retired_at": "2026-10-28T01:07:54Z"
     },
     {
       "id": "ferramenta:make-written@1",
@@ -1744,8 +1746,9 @@
       "versao": 2,
       "code": "tools/rule_factory.py",
       "hash": "33fa2da3da4ad752280996fa2fb72eef5c9a6018a764fb6f3adc26315eee139d",
-      "retired": false,
-      "nota": "D59: vocabulary-gap check; invalidates factory rules settled on passages the schema cannot hold"
+      "retired": true,
+      "nota": "D59: vocabulary-gap check; invalidates factory rules settled on passages the schema cannot hold",
+      "retired_at": "2026-10-28T01:07:53Z"
     },
     {
       "id": "ferramenta:verify@36",
@@ -1758,6 +1761,42 @@
       "hash": "1ed01882fffb7e3a9430b7cd1adda0765b16730186d198656444e733012d593f",
       "retired": false,
       "nota": "D58/D59: factory readings folder; escritas reports recomputed by the tool that wrote them"
+    },
+    {
+      "id": "ferramenta:rule-factory@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/rule_factory.py",
+      "hash": "732650b1b089852159ac3bcc0b9d7c671f52c67022872b0174ddd4a62738f9d3",
+      "retired": false,
+      "nota": "D60: rounds as a parameter; round 2 with the wider deadline vocabulary"
+    },
+    {
+      "id": "ferramenta:read-rules@15",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 15,
+      "code": "tools/read_rules.py",
+      "hash": "37ca4de22400b29a0925a413bb58aaaaef1ebdb782a26d654b167c08060896d8",
+      "retired": false,
+      "nota": "D60: round 8 schema and prompt for deadline fields"
+    },
+    {
+      "id": "ferramenta:serve@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/serve.py",
+      "hash": "77fc6d402c32d5960c06a82017598d95a17fc6fddaa1a5a6768125c1818969ab",
+      "retired": false,
+      "nota": "D60: accepts prazo_candidaturas_dias and data_envio_convite"
     }
   ]
 }
