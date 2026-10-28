@@ -91,7 +91,8 @@ Starting points (`counted_from`):
 6. **Value limits** read as the passage writes them: «inferior a 75 000 €» → `lt 75000`; «igual ou inferior a» → `le`.
    The procedure or contract type the passage ties the limit to are conditions. Only write `limiar` examples a `lt` or
    `le` threshold can hold.
-7. Write only what the text says. A condition the passage does not state is not added; a fact the vocabulary has no
+7. **`tipo_entidade` takes `eq`**: «quando a entidade adjudicante seja o Estado» → `eq estado`; «não seja o Estado», «nos demais casos» → `eq outra` (the field has two values; never `ne`).
+8. Write only what the text says. A condition the passage does not state is not added; a fact the vocabulary has no
    value for means the example is not written.
 
 ## Style
