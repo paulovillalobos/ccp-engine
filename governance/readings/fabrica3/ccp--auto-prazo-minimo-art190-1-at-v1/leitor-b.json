@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T09:55:26Z",
+ "sha256": "e5fd698c6f300f4603c41415a9edb8b7b442e9e62d3d5f12ae5a43f872c29a67",
+ "answer": "{\"regras\":[{\"passagens\":[\"ccp:art190.1\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\"},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false},{\"field\":\"tipo_contrato\",\"op\":\"ne\",\"value\":\"obras\"}],\"params\":{\"minimum_days\":6,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null}},{\"passagens\":[\"ccp:art190.1\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\"},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false},{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\"}],\"params\":{\"minimum_days\":14,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null}}]}"
+}

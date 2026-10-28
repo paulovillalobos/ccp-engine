@@ -1892,3 +1892,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   ambiguous, which D61 forbids, so a guard rule can drop it.
 - verify ok; tests/test_verify.py 5 passed.
 - Next: guard rule for publicado_joue (new guard version, re-measure); the vocabulary decisions the factory is waiting on.
+
+## 2026-10-28 — D62: rule vocabulary on the person's choices, factory round 3
+- Done: the person chose all four recommended options (urgency as a declared fact; special sectors with 15 binding and 30 as
+  usual_days; the indicative notice as a fact; design and ideas contests in full, with up to three rules per answer).
+  read_rules round 9 (VOCAB_9, rule readers only), engine note for usual_days, regra schema, serve accepts the new facts.
+  The factory now targets only the gaps a round newly closes (a first run picked up 174.º n.º 1 and 218.º, already settled;
+  caught before any answer). Prompts committed first (1805b2a9d); leitor:a8 and leitor:b blind.
+- Result: 0 of 7 settled. Reader B's 7 readings agree with the text, two of them as two rules (190.º n.º 1, 219.º-B n.º 5).
+  AMALIA v7 padded its answers to three rules, took rules from neighbouring passages, ignored the new deadline field and
+  counted from the notice where the text says convite. AMALIA was never trained to read typed rules (regra_tipada 0).
+- verify@39: a target's -b/-c rules read the target's answer file. verify ok.
+- Next: a rule-reading task for AMALIA, written from the law (not from Reader B's readings, so the families stay independent).

@@ -1,0 +1,62 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art191-5-c@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T09:58:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art191.5 (fábrica de regras, ronda 3) (3.ª regra)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "urgencia_fundamentada",
+      "op": "eq",
+      "value": true
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art191.1",
+      "version": "2018-01-01",
+      "quote": "1 - Quando o anúncio do concurso limitado por prévia qualificação seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 25 dias a contar da data do envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 237
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 25,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-28T09:57:56Z",
+      "chosen_passages": [
+        "ccp:art191.1"
+      ],
+      "blind": false,
+      "evento": "evento:160"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T09:55:37Z",
+      "chosen_passages": [
+        "ccp:art191.1",
+        "ccp:art191.5"
+      ],
+      "blind": true,
+      "evento": "evento:161"
+    }
+  ],
+  "state": "proposed"
+}

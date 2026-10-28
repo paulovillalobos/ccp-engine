@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T09:57:56Z",
+ "sha256": "8f23055740864b158e5452e957abb528502d8eda247471144fd0f76f9efb563c",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art191.5\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"urgencia_fundamentada\", \"op\": \"eq\", \"value\": true}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}}, {\"passagens\": [\"ccp:art191.1\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"urgencia_fundamentada\", \"op\": \"eq\", \"value\": true}], \"params\": {\"minimum_days\": 25, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}}, {\"passagens\": [\"ccp:art191.2.b\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"anuncio_pre_informacao\", \"op\": \"eq\", \"value\": true}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}}]}"
+}

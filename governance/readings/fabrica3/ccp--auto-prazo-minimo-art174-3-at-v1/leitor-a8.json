@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T09:57:56Z",
+ "sha256": "fc155dda04004fde4cfc52ad0502c67503e9defd443c322a978a736606baf882",
+ "answer": "{\"regras\": [{\"passagens\": [\"ccp:art174.3\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"setores_especiais\", \"op\": \"eq\", \"value\": true}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_candidaturas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": 30}}, {\"passagens\": [\"ccp:art174.3\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [], \"params\": {\"minimum_days\": 15, \"deadline_field\": \"prazo_candidaturas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}}]}"
+}

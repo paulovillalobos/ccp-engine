@@ -1905,8 +1905,9 @@
       "versao": 38,
       "code": "verify.py",
       "hash": "cc0788eb41f12d7ad0e78d1ff0a8bfd25a8bc77f08abeb4e836154fa5970af9b",
-      "retired": false,
-      "nota": "D61: data-v9 and escritas-v9 checks; D60 revision anchor"
+      "retired": true,
+      "nota": "D61: data-v9 and escritas-v9 checks; D60 revision anchor",
+      "retired_at": "2026-10-28T10:04:39Z"
     },
     {
       "id": "ferramenta:read-rules@16",
@@ -1943,6 +1944,18 @@
       "hash": "212c9d188046fc2b98f6849e70a565a1aeabce02a2cc5f5819b13f981018a0b9",
       "retired": false,
       "nota": "D62: round 3, targets only the gaps a round newly closes, multi-rule answers"
+    },
+    {
+      "id": "ferramenta:verify@39",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 39,
+      "code": "verify.py",
+      "hash": "c259d0b30ce15c36a7b322b6a7b5884f69c349ea5bc36f63f4ebb1766fbe2d2e",
+      "retired": false,
+      "nota": "D62: a factory target's -b/-c rules read their answers from the target's folder"
     }
   ]
 }

@@ -1,0 +1,55 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art198-2-c@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T09:58:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art198.2 (fábrica de regras, ronda 3) (3.ª regra)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art198.3",
+      "version": "2008-07-30",
+      "quote": "3 - Os prazos mínimos para a apresentação das candidaturas previstos nos números anteriores podem ser reduzidos em até sete dias quando os anúncios forem preparados e enviados por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.",
+      "offsets": {
+        "start": 0,
+        "end": 297
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 7,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-28T09:57:56Z",
+      "chosen_passages": [
+        "ccp:art198.3"
+      ],
+      "blind": false,
+      "evento": "evento:166"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T09:55:58Z",
+      "chosen_passages": [
+        "ccp:art198.2"
+      ],
+      "blind": true,
+      "evento": "evento:167"
+    }
+  ],
+  "state": "proposed"
+}

@@ -870,6 +870,8 @@ def check_readings(store, out, readings_root=None):
         rnd = (ev.get("payload") or {}).get("round", 1)  # D44: a later round's answers live in readings/ronda<n>/
         folder = root if rnd == 1 else root / (rnd.replace("-", "") if str(rnd).startswith("fabrica") else f"ronda{rnd}")  # D58: fabrica-<n> -> readings/fabrica<n>/
         f = folder / reading_dir(ev["assertion"]) / f"leitor-{leitor}.json"
+        if not f.exists() and str(rnd).startswith("fabrica"):  # D62: a target's 2nd and 3rd rules (-b, -c) share its answer file
+            f = folder / reading_dir(re.sub(r"-[b-d]@v1$", "@v1", ev["assertion"])) / f"leitor-{leitor}.json"
         if not f.exists():
             out.append(("READ", f"{ev['id']}: answer file {f.relative_to(root)} missing for {ev['assertion']}"))
             continue

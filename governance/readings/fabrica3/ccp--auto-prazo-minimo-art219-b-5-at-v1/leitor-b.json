@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T09:56:57Z",
+ "sha256": "f060e9e0806dc8f0b8941081580e94caea6c2eea4874f323aefa4b56369ca022",
+ "answer": "{\"regras\":[{\"passagens\":[\"ccp:art219-b.5\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\"},{\"field\":\"modalidade_concecao\",\"op\":\"in\",\"value\":[\"publico\",\"limitado\"]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_trabalhos_concecao_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null}},{\"passagens\":[\"ccp:art219-b.5\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\"},{\"field\":\"modalidade_concecao\",\"op\":\"eq\",\"value\":\"simplificado\"}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_trabalhos_concecao_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null}}]}"
+}

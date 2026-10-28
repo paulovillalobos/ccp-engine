@@ -1,0 +1,55 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art219-j-3-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T09:58:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art219-j.3 (fábrica de regras, ronda 3) (2.ª regra)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art219-j.3",
+      "version": "2018-01-01",
+      "quote": "3 - O prazo para a apresentação de propostas deve ser estabelecido tendo em consideração a importância e complexidade da questão e não pode ser inferior a 60 dias a partir da data de publicação do anúncio.",
+      "offsets": {
+        "start": 0,
+        "end": 205
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 60,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_publicacao_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-28T09:57:56Z",
+      "chosen_passages": [
+        "ccp:art219-j.3"
+      ],
+      "blind": false,
+      "evento": "evento:174"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T09:57:05Z",
+      "chosen_passages": [
+        "ccp:art219-j.3"
+      ],
+      "blind": true,
+      "evento": "evento:175"
+    }
+  ],
+  "state": "proposed"
+}

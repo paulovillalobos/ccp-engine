@@ -1,0 +1,68 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art174-2@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-28T09:58:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art174.2 (fábrica de regras, ronda 3)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "setores_especiais",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "urgencia_fundamentada",
+      "op": "eq",
+      "value": true
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art174.2",
+      "version": "2018-01-01",
+      "quote": "2 - O prazo mínimo previsto no número anterior pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.",
+      "offsets": {
+        "start": 0,
+        "end": 224
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 15,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-28T09:57:56Z",
+      "chosen_passages": [
+        "ccp:art174.2"
+      ],
+      "blind": false,
+      "evento": "evento:140"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T09:55:01Z",
+      "chosen_passages": [
+        "ccp:art174.1",
+        "ccp:art174.2"
+      ],
+      "blind": true,
+      "evento": "evento:141"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

@@ -1,0 +1,63 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art191-5@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-28T09:58:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art191.5 (fábrica de regras, ronda 3)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "anuncio_pre_informacao",
+      "op": "eq",
+      "value": true
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art191.2.b",
+      "version": "2018-01-01",
+      "quote": "b) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos do anexo v, parte B, secção i da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro.",
+      "offsets": {
+        "start": 0,
+        "end": 240
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 10,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-28T09:57:56Z",
+      "chosen_passages": [
+        "ccp:art191.2.b"
+      ],
+      "blind": false,
+      "evento": "evento:156"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T09:55:37Z",
+      "chosen_passages": [
+        "ccp:art191.1",
+        "ccp:art191.5"
+      ],
+      "blind": true,
+      "evento": "evento:157"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}
