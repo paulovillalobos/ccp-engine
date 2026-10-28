@@ -518,6 +518,10 @@ def check_states(store, rp, out):
             if ev and ev["action"] == "review" and ev.get("verdict") != "uphold":
                 continue
             extra = sorted(set(rd["chosen_passages"]) - cited)
+            # D64: an uphold under the content-and-alvo rule shares the target passage with the rule; its other passages stay its own
+            if extra and ev and ev["action"] == "review" and (ev.get("payload") or {}).get("replication") == "product_rule:replicacao-conteudo-e-alvo" \
+                    and set(rd["chosen_passages"]) & cited:
+                continue
             if extra:
                 out.append(("STATE", f"{r['id']}: reading {rd['evento']} chose {extra}, which the rule does not cite"))
         known = rp.assertions.get(("regra", r["id"]))

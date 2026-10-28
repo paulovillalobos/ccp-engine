@@ -14,6 +14,10 @@ concurso_concecao / concurso_ideias with modalidade_concecao, the deadline prazo
 absolute minimum, and an answer that may hold up to three rules. Targets: round 1's with a gap this closes, and 190.º n.º 1 (two
 rules in one passage). A target's second and third rules get ids ending -b, -c.
 
+Recheck (D64): `recheck --round N` compares the answers a round recorded again under the person's product rule
+product_rule:replicacao-conteudo-e-alvo (the same rule, both citing the target passage); a rule they now replicate gets
+leitor:b's blind review again, from the same answer, as an uphold that names that rule. No reader is asked again.
+
 Targets, round 1: the leaf passages of the CCP in force on 2026-10-01 that state, in their own words, a minimum number of
 days for something to be done (prazo_minimo) or a value limit in euros (limiar) — the two rule types the engine evaluates
 today. Articles already read by hand (19, 20, 135, 136: B3, D44-D51) are left out. The candidates are the passage's whole
@@ -29,14 +33,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "tools"))
 import read_rules as rr  # noqa: E402  (prompts, schemas, canonical readings, the rule builder)
+from engine.canon import canonical  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine import schema  # noqa: E402
 from engine.governance import Log  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-rule-factory-0.5"
-TOOL = "ferramenta:rule-factory@7"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4
+VERSION = "ccp-rule-factory-0.6"
+TOOL = "ferramenta:rule-factory@8"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -169,8 +174,8 @@ def cmd_record(n=1):
         if A is None or any(x["type"] != t["type"] for x in A):
             row["state"] = f"sem leitura válida de {proposer}"
             continue
-        if B is not None:  # D62: the readings replicate when every rule does, the sets sorted by canonical form
-            row["exact"] = len(A) == len(B) and all(rr.same_reading(x, y) for x, y in zip(A, B))
+        if B is not None:  # D62: the readings replicate when every rule does, the sets sorted by canonical form; D64: content and alvo
+            row["exact"] = replicate(A, B, t["source_passage"] if R.get("content") else None)
             row["direction"] = [rr.key_param(x) for x in A] == [rr.key_param(y) for y in B]
         if recorded_in(store, t["rule"], R["round"]) or (known and row["gaps"]):
             row["state"] = log.replay().state_of("regra", t["rule"])  # recorded already in this round: answers are read once
@@ -178,7 +183,8 @@ def cmd_record(n=1):
         states = []
         for i, a in enumerate(A):
             ti = t if i == 0 else {**t, "rule": t["rule"].replace("@v1", f"-{'bcd'[i - 1]}@v1"), "title": t["title"] + f" ({i + 1}.ª regra)"}
-            b = (B[i] if i < len(B) else B[-1]) if B else None
+            P = pairs(A, B) if R.get("content") else None
+            b = P[i][1] if P else ((B[i] if i < len(B) else B[-1]) if B else None)
             st = record_one(store, log, writer, R, d, ti, a, b, ra, rb, row["exact"], proposer)
             if isinstance(st, dict):
                 row.update(st); break
@@ -194,6 +200,68 @@ def cmd_record(n=1):
     settled = sum(1 for r in rows if r["state"] == "settled")
     print(f"{len(rows)} targets, {settled} settled, {sum(1 for r in rows if r['exact'] is False)} differ, "
           f"{sum(1 for r in rows if str(r['state']).startswith('sem'))} without a valid proposal")
+
+
+def pairs(A, B):
+    """A's rules, each with the rule of B that says the same thing (both sorted by their canonical form without passages,
+    D64), in A's order; None when the numbers of rules differ."""
+    if A is None or B is None or len(A) != len(B):
+        return None
+    key = lambda r: canonical(rr.canonical_reading({**r, "passages": []}))  # noqa: E731
+    out = [None] * len(A)
+    for i, b in zip(sorted(range(len(A)), key=lambda i: key(A[i])), sorted(B, key=key)):
+        out[i] = (A[i], b)
+    return out
+
+
+def replicate(A, B, alvo=None):
+    """D43: the same rules, one by one, in canonical form. With alvo (D64): the same rules without their passages, every one
+    of both readings citing the target passage."""
+    if alvo is None:
+        return A is not None and B is not None and len(A) == len(B) and all(rr.same_reading(x, y) for x, y in zip(A, B))
+    P = pairs(A, B)
+    return P is not None and all(rr.same_content(x, y, alvo) for x, y in P)
+
+
+def cmd_recheck(n):
+    """D64: a round's recorded answers compared again under the content-and-alvo rule. A rule still proposed whose two readings
+    now replicate gets leitor:b's blind review again, from the same answer, as an uphold naming the product rule."""
+    R = FROUNDS[n]
+    store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    log = Log(ROOT / "governance")
+    writer = Writer(ROOT / "rules", Store([ROOT / "rules"]).load())
+    rule_ev = next((ev["id"] for _, ev in store.events if ev["assertion"] == rr.CONTENT_RULE), None)
+    if rule_ev is None:
+        raise SystemExit(f"{rr.CONTENT_RULE} is not in the log")
+    proposer, pfile = R.get("proposer", (PROPOSER, PROPOSER_FILE))
+    done = []
+    for t in targets(store, n):
+        d = R["dir"] / rr.slug(t["rule"])
+        ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (pfile, "leitor-b.json")]
+        A = readings_of(ra, t, R["rnd"]) if ra else None
+        B = readings_of(rb, t, R["rnd"]) if rb else None
+        if replicate(A, B) or not replicate(A, B, t["source_passage"]):
+            continue
+        question = json.loads((d / "prompt.json").read_text(encoding="utf-8"))["prompt"].split("Pergunta: ", 1)[1]
+        for i, (a, b) in enumerate(pairs(A, B)):
+            rid = t["rule"] if i == 0 else t["rule"].replace("@v1", f"-{'bcd'[i - 1]}@v1")
+            known = log.replay().assertions.get(("regra", rid))
+            if not known or known["state"] != "proposed" or known["proposer"] != proposer:
+                continue
+            ev_b = log.review("leitor:b", "regra", rid, known["revision"],
+                              f"D64, the same blind answer of {R['round']} compared again (content and alvo {t['source_passage']}): {question}",
+                              "blind", "uphold", now_utc(),
+                              payload={"chosen_passages": b["passages"], "conditions": b["conditions"], "params": b["params"],
+                                       "answer_sha256": rb["sha256"], "round": R["round"], "replication": rr.CONTENT_RULE, "product_rule_event": rule_ev})
+            cur = writer.store.current(rid)
+            readings = cur["readings"] + [{"principal": "leitor:b", "family": "B", "at": rb["at"], "chosen_passages": b["passages"], "blind": True, "evento": ev_b}]
+            writer.revise(cur, {"state": log.replay().state_of("regra", rid), "readings": readings}, now_utc())
+            done.append((rid, log.replay().state_of("regra", rid)))
+    log.write_state()
+    rr.write_packages(writer)
+    for rid, st in done:
+        print(rid, st)
+    print(f"{len(done)} rules replicate under D64")
 
 
 def readings_of(rec, t, rnd):
@@ -230,7 +298,8 @@ def record_one(store, log, writer, R, d, t, a, b, ra, rb, exact, proposer=PROPOS
         ev_b = log.review("leitor:b", "regra", t["rule"], rev, f"Blind, same prompt as {proposer} ({R['round']}): {question}", "blind",
                           "uphold" if exact else "request_evidence", rb["at"],
                           payload={"chosen_passages": b["passages"], "conditions": b["conditions"], "params": b["params"],
-                                   "answer_sha256": rb["sha256"], "round": R["round"]})
+                                   "answer_sha256": rb["sha256"], "round": R["round"],
+                                   **({"replication": rr.CONTENT_RULE} if R.get("content") else {})})
         readings.append({"principal": "leitor:b", "family": "B", "at": rb["at"], "chosen_passages": b["passages"], "blind": True, "evento": ev_b})
     state = log.replay().state_of("regra", t["rule"])
     rule = rr.build_rule(store, t, a, a["passages"], readings, state)
@@ -298,7 +367,7 @@ def write_report(rows, n=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
     a = ap.parse_args()
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
     if a.cmd == "targets":
@@ -307,6 +376,8 @@ def main():
         return
     if a.cmd == "prompts":
         return cmd_prompts(store, a.round)
+    if a.cmd == "recheck":
+        return cmd_recheck(a.round)
     cmd_record(a.round)
 
 

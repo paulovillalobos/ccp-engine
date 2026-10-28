@@ -1918,3 +1918,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   only in the passages cited (174.º n.º 2, 191.º n.º 5: Reader B also cites the number referred to). The rest differ in
   conditions or the comparator: 127.º-C le vs lt, 198.º concurso público vs negociação, 174.º n.º 3 30 vs 15 days.
 - Next: the person's call on citation in D43 replication; a dev-only look at v10's condition errors.
+
+## 2026-10-28 — D64: replication by content and the target passage
+- Done: the person's product rule product_rule:replicacao-conteudo-e-alvo (evento:220, settled on record). read_rules
+  same_content; the factory pairs rules by content, `recheck --round N` compares a round's recorded answers again, and a
+  round with `content` records under D64. verify accepts a D64 uphold's own extra passages (the rule cites the proposer's).
+- Result: round 4 rechecked from the same answers, no reader asked again: 174.º n.º 2 and 191.º n.º 5 settled. 16 rules
+  settled. verify ok (verify@42, rule-factory@8, read-rules@17).

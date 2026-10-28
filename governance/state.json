@@ -92,6 +92,16 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:replicacao-conteudo-e-alvo": {
+      "events": [
+        220
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "regra|regra:ccp:auto-limiar-art127-c-1-a@v1": {
       "events": [
         88,
@@ -310,7 +320,8 @@
         140,
         141,
         194,
-        195
+        195,
+        221
       ],
       "family": "A",
       "proposer": "leitor:a12",
@@ -320,10 +331,16 @@
           "family": "B",
           "independence": "blind",
           "verdict": "request_evidence"
+        },
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
         }
       ],
       "revision": 3,
-      "state": "proposed"
+      "state": "settled"
     },
     "regra|regra:ccp:auto-prazo-minimo-art174-3-b@v1": {
       "events": [
@@ -493,7 +510,8 @@
         156,
         157,
         204,
-        205
+        205,
+        222
       ],
       "family": "A",
       "proposer": "leitor:a12",
@@ -503,10 +521,16 @@
           "family": "B",
           "independence": "blind",
           "verdict": "request_evidence"
+        },
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
         }
       ],
       "revision": 3,
-      "state": "proposed"
+      "state": "settled"
     },
     "regra|regra:ccp:auto-prazo-minimo-art192-2@v1": {
       "events": [
@@ -1131,6 +1155,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 219,
-  "head": "6bc6bb3521b00b4e9cb2a66dcacee7552dfafa5e8711f3168855d77b1d262e44"
+  "events": 222,
+  "head": "245ff4174dda3d2699aecb79ff58e6bccc614c49952c2013bc67d69d31df551b"
 }

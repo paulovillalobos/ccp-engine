@@ -384,6 +384,16 @@ def same_reading(a, b):
     return a is not None and b is not None and canonical_reading(a) == canonical_reading(b)
 
 
+CONTENT_RULE = "product_rule:replicacao-conteudo-e-alvo"
+
+
+def same_content(a, b, alvo):
+    """D64 (the person's product rule): two readings of a target replicate when they say the same rule (type, conditions and
+    params in canonical form) and both cite the target passage; the other passages each cites stay with its own reading."""
+    return (a is not None and b is not None and alvo in a["passages"] and alvo in b["passages"]
+            and canonical_reading({**a, "passages": []}) == canonical_reading({**b, "passages": []}))
+
+
 def key_param(r):
     """The number or list a reading turns on (agreement 'of direction', RESUMO.md)."""
     p, t = r["params"], r["type"]
