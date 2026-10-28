@@ -162,5 +162,24 @@ AFTER when its measurement exists.
   On the 16 real questions v8 and v7 both have 13 facts-exact; v8 invents fewer facts (1 of 35 vs 2 of 36) and gives no
   marker without cause (0 of 9).
 
+## v9 (adapter `amalia-ccp-lei-v9`, 2026-10-28) — v8's dev errors fixed in the labels and the data
+- Data (`tools/make_written_v9.py`, D61): v8's written questions with two new label rules (the procedure asked about is a
+  fact; one candidate goes to the ambiguous list only for three named cases) and 204 errata, plus 600 new questions on v8's
+  five dev error kinds; 100 of them held out as a targeted set (alvo), never trained. Dev 400 and sealed 400 are v8's
+  questions with corrected gold. Mix 34 152 examples. Rank 16.
+- Run: training ended 05:34Z on one H100, USD 11.19 for the hours billed so far (`training/runs/v9/`).
+- Results (`reports/measure/escritas-v9-2026-10-28.md`), facts exact with the guard, corrected gold:
+
+| reader | sealed 400 | dev 400 | alvo 100 | real 16 | answer exact (sealed) | facts invented (sealed) |
+|---|---|---|---|---|---|---|
+| base + v8 | 87.5 % | 83.5 % | 85 % | 13 | 70.0 % | 2.1 % |
+| base + v9 | 87.5 % [83.9, 90.4] | **87.0 %** | **92 %** | 13 | **75.2 %** | **1.1 %** |
+| another family's frontier model, same guard | 74.5 % | 75.5 % | 72 % | 9 | 63.2 % | 7.2 % |
+
+  On facts alone v9 ties v8 on the sealed set; the gain is in the whole answer (markers included: found 74 % to 86 %) and
+  in fewer invented facts. On the targeted set the procedure-as-topic questions go from 11 of 19 to 17 of 19. The cost: more
+  markers without cause (sealed 4 % to 12 %), mostly tipo_contrato and tipo_procedimento flagged ambiguous when the
+  question settles them. Without the guard v9 scores 96 % on alvo; the guard takes 4 of those away.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

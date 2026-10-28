@@ -1879,3 +1879,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   error kinds by four writers, relabelled under the final rule (61 changes), 100 held out as a targeted dev set.
 - data-v9: dev 400 and sealed 400 (same questions, 25 + 25 gold answers corrected), alvo 100, 2 700 questions trained.
 - verify ok (verify@38). v8's and Reader B's dev/sealed/real answers carried to avaliacao-v9 (prompts byte-identical).
+
+## 2026-10-28 — D61: AMALIA v9 measured
+- Done: v9 trained detached (ap-t83yESUJ7XGoN0JUYzDk9t, ended 05:34Z, USD 11.19 billed so far); leitor:a11 registered
+  (adapter sha 9f93ecab7042); v9, v8 and Reader B measured on dev 400, sealed 400, alvo 100 and the 16 real questions
+  (reports/measure/escritas-v9-2026-10-28).
+- Result, facts exact with the guard, sealed / dev / alvo / real: v9 87.5 / 87.0 / 92 / 13 of 16; v8 87.5 / 83.5 / 85 / 13;
+  Reader B 74.5 / 75.5 / 72 / 9. Answer exact on the sealed set: v9 75.2, v8 70.0, Reader B 63.2. Invented facts (sealed):
+  v9 1.1 %, v8 2.1 %, Reader B 7.2 %.
+- Dev-only look at the one regression, markers without cause (sealed 4 % to 12 %): v9 finds 45 more gold markers on dev (missed
+  99 to 54) and adds 18 false ones (tipo_contrato 9 to 16, tipo_procedimento 4 to 10); 3 dev answers mark publicado_joue
+  ambiguous, which D61 forbids, so a guard rule can drop it.
+- verify ok; tests/test_verify.py 5 passed.
+- Next: guard rule for publicado_joue (new guard version, re-measure); the vocabulary decisions the factory is waiting on.
