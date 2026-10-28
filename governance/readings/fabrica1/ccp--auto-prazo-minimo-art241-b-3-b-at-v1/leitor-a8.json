@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T23:52:54Z",
+ "sha256": "b9cf6a2d7dc5664d2093f7d94076dfecd562fd781e4db6bcfdc43ed467e48def",
+ "answer": "{\"passagens\": [\"ccp:art241-b.3.b\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_publicacao_anuncio\"}}"
+}

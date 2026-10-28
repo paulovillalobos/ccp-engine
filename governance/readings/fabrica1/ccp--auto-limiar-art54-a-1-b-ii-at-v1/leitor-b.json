@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T23:54:42Z",
+ "sha256": "21089f4e783c2ca24008c92f347cafc8c8b85dd36535da88ad5d362ac09ffa6a",
+ "answer": "{\"passagens\":[\"ccp:art54-a.1.b.ii\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"obras\",\"concessao_obras\",\"concessao_servicos\"]}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":500000,\"currency\":\"EUR\"}}}"
+}

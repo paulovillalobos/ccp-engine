@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T00:18:09Z",
+ "sha256": "33b7f7a65c4613e2b6762aeea608bde04ca64794d82e00afbdde6d9fea7299cc",
+ "answer": "{\"passagens\":[\"ccp:art219-j.3\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[],\"params\":{\"minimum_days\":60,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_publicacao_anuncio\"}}"
+}

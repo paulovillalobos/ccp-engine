@@ -1,0 +1,64 @@
+{
+  "id": "regra:ccp:auto-limiar-art88-2-a@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T00:22:02Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art88.2.a (fábrica de regras, ronda 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "preco_base",
+      "op": "ge",
+      "value": 1000000
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art88.2.a",
+      "version": "2026-10-01",
+      "quote": "a) Quando o preço contratual for inferior a 1 000 000 €;",
+      "offsets": {
+        "start": 0,
+        "end": 56
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "lt",
+      "value": 1000000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-27T23:52:54Z",
+      "chosen_passages": [
+        "ccp:art88.2.a"
+      ],
+      "blind": false,
+      "evento": "evento:96"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-27T23:54:49Z",
+      "chosen_passages": [
+        "ccp:art88.2.a"
+      ],
+      "blind": true,
+      "evento": "evento:97"
+    }
+  ],
+  "state": "proposed"
+}

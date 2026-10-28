@@ -92,6 +92,334 @@
       "revision": 1,
       "state": "settled"
     },
+    "regra|regra:ccp:auto-limiar-art127-c-1-a@v1": {
+      "events": [
+        88,
+        89
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-limiar-art17-b-4@v1": {
+      "events": [
+        90,
+        91
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-limiar-art31-4@v1": {
+      "events": [
+        92,
+        93
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-limiar-art54-a-1-b-ii@v1": {
+      "events": [
+        94,
+        95
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-limiar-art88-2-a@v1": {
+      "events": [
+        96,
+        97
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art174-1@v1": {
+      "events": [
+        98,
+        99,
+        124
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "stale"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art174-2@v1": {
+      "events": [
+        100,
+        101
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art174-3@v1": {
+      "events": [
+        102,
+        103
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art190-1@v1": {
+      "events": [
+        104,
+        105
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art191-1@v1": {
+      "events": [
+        106,
+        107,
+        125
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "stale"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art191-5@v1": {
+      "events": [
+        108,
+        109
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art192-2@v1": {
+      "events": [
+        110,
+        111
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art198-1@v1": {
+      "events": [
+        112,
+        113
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art198-2@v1": {
+      "events": [
+        114,
+        115
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art218@v1": {
+      "events": [
+        116,
+        117,
+        126
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "stale"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art219-b-5@v1": {
+      "events": [
+        118,
+        119
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art219-j-3@v1": {
+      "events": [
+        120,
+        121,
+        127
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "stale"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art241-b-3-b@v1": {
+      "events": [
+        122,
+        123
+      ],
+      "family": "A",
+      "proposer": "leitor:a8",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
     "regra|regra:ccp:limiar-ajuste-direto-bens-servicos@v1": {
       "events": [
         2,
@@ -471,6 +799,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 87,
-  "head": "4aa4854bebc91e48105f25e340fa5c6e5d016bc9a2bf81e6c1d9f8da38a80ae1"
+  "events": 127,
+  "head": "9ff7a3776d9565bc0928b2c4ac9e67edd293e451e50d635749a16e46bc35cec5"
 }

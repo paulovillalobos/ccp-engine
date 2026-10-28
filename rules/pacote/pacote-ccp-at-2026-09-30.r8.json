@@ -1,0 +1,44 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 8,
+  "recorded_at": "2026-10-28T00:22:22Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-j-3@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    }
+  ],
+  "hash": "30e5f40a2bb56018b9d372f729b654cd7f904c34c480063c6fc1cc931ca10527",
+  "log_head": "7f46b81699169d18fe86550a838e515e205d73045bf3bd684a4dca7a5f09c9db",
+  "built_at": "2026-10-28T00:22:22Z",
+  "supersedes": 7
+}

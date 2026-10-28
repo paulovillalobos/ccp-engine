@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T23:56:52Z",
+ "sha256": "f5dee4bb18e74163475bcbf784ffe821b5206c2b5c859f43064c5035e21ece4d",
+ "answer": "{\"passagens\":[\"ccp:art198.2\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_negociacao\"}],\"params\":{\"minimum_days\":25,\"deadline_field\": \"prazo_propostas_dias\",\"counted_from\": \"data_envio_anuncio\"}}"
+}

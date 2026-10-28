@@ -1,0 +1,69 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T00:22:02Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art219-b.5 (fábrica de regras, ronda 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "concurso_limitado_previa_qualificacao",
+        "concurso_publico"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "ne",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art219-b.5",
+      "version": "2018-01-01",
+      "quote": "5 - O prazo para a apresentação dos documentos que materializam os trabalhos de conceção não pode ser inferior a 30 dias, nos concursos público e limitado, e 15 dias, no concurso simplificado.",
+      "offsets": {
+        "start": 0,
+        "end": 192
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_publicacao_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-27T23:52:54Z",
+      "chosen_passages": [
+        "ccp:art219-b.5"
+      ],
+      "blind": false,
+      "evento": "evento:118"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T00:21:17Z",
+      "chosen_passages": [
+        "ccp:art219-b.5"
+      ],
+      "blind": true,
+      "evento": "evento:119"
+    }
+  ],
+  "state": "proposed"
+}

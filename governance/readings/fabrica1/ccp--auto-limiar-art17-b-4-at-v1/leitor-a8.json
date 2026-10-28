@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T23:52:54Z",
+ "sha256": "d74b093b5673af383a48426220bee1815ce341aa0d5f35bf86f5bb4c29e54ecc",
+ "answer": "{\"passagens\": [\"ccp:art17-b.4\"], \"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": [\"bens\", \"obras\"]}, {\"field\": \"preco_base\", \"op\": \"lt\", \"value\": 80000}, {\"field\": \"preco_base\", \"op\": \"le\", \"value\": 1000000}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"le\", \"value\": 1000000, \"currency\": \"EUR\"}}}"
+}

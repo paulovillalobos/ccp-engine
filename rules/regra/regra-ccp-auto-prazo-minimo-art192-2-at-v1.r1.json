@@ -1,0 +1,62 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art192-2@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-28T00:22:02Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art192.2 (fábrica de regras, ronda 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art192.2",
+      "version": "2008-07-30",
+      "quote": "2 - O prazo previsto no número anterior não pode, em qualquer caso, ser inferior a 10 dias a contar da data do envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 128
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 10,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-27T23:52:54Z",
+      "chosen_passages": [
+        "ccp:art192.2"
+      ],
+      "blind": false,
+      "evento": "evento:110"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-27T23:56:25Z",
+      "chosen_passages": [
+        "ccp:art192.1",
+        "ccp:art192.2"
+      ],
+      "blind": true,
+      "evento": "evento:111"
+    }
+  ],
+  "state": "proposed"
+}

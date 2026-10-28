@@ -1,0 +1,62 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+  "revision": 2,
+  "recorded_at": "2026-10-28T00:25:58Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art218 (fábrica de regras, ronda 1)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "dialogo_concorrencial"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2021-06-20",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art218",
+      "version": "2021-06-20",
+      "quote": "Artigo 218.º\nPrazos mínimos para a apresentação das propostas em procedimento de diálogo concorrencial\nNão pode ser fixado um prazo para a apresentação das propostas inferior a 30 dias a contar da data do envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 222
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a8",
+      "family": "A",
+      "at": "2026-10-27T23:52:54Z",
+      "chosen_passages": [
+        "ccp:art218"
+      ],
+      "blind": false,
+      "evento": "evento:116"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-27T23:57:03Z",
+      "chosen_passages": [
+        "ccp:art218"
+      ],
+      "blind": true,
+      "evento": "evento:117"
+    }
+  ],
+  "state": "stale",
+  "supersedes": 1
+}

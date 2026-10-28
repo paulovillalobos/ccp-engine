@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T23:53:57Z",
+ "sha256": "27450446d519ef68fc6666606abaf65c483398615383ea1a2b0dfa40e8d89b82",
+ "answer": "{\"passagens\":[\"ccp:art21.1\",\"ccp:art21.1.b\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"consulta_previa\"},{\"field\":\"tipo_contrato\",\"op\":\"not_in\",\"value\":[\"obras\",\"bens\",\"servicos\",\"concessao_obras\",\"concessao_servicos\"]}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":130000,\"currency\":\"EUR\"}}}"
+}

@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-27T23:53:37Z",
+ "sha256": "6e2bec433525376c3c76682064384c001282a2871a11647f23826fd758678841",
+ "answer": "{\"passagens\":[\"ccp:art17-b.4\"],\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"]}],\"params\":{\"threshold\":{\"field\":\"preco_base\",\"comparator\":\"lt\",\"value\":80000,\"currency\":\"EUR\"}}}"
+}
