@@ -1,0 +1,637 @@
+{
+ "rule": "regra:ccp:auto-prazo-minimo-art198-2@v1",
+ "type": "prazo_minimo",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art198",
+  "ccp:art198.1",
+  "ccp:art198.2",
+  "ccp:art198.3"
+ ],
+ "prompt": "És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.\nRegras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); «condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:\n  tipo_contrato: \"obras\", \"bens\", \"servicos\", \"concessao_obras\", \"concessao_servicos\", \"servicos_sociais\"; tipo_procedimento: \"ajuste_direto\", \"consulta_previa\", \"concurso_publico\", \"concurso_limitado_previa_qualificacao\", \"procedimento_negociacao\", \"dialogo_concorrencial\", \"parceria_inovacao\", \"concurso_concecao\", \"concurso_ideias\"; publicado_joue: true, false; territorio: \"PT\", \"PT-AC\", \"PT-MA\"; tipo_entidade: \"estado\", \"outra\"; modalidade_concecao: \"publico\", \"limitado\", \"simplificado\"; urgencia_fundamentada: true, false; setores_especiais: true, false; anuncio_pre_informacao: true, false; preco_base: número em euros; data_inicio_procedimento: uma data no formato ISO (ano-mês-dia).\nData de referência: 2026-10-01. Tipo de regra pedido: prazo_minimo.\n\nPassagens candidatas:\n[ccp:art198] (versão em vigor a 2026-10-01, desde 2018-01-01)\nArtigo 198.º\nPrazos mínimos para a apresentação das candidaturas\n1 - Não pode ser fixado um prazo para a apresentação das candidaturas inferior a 30 dias a contar da data do envio do anúncio referido no n.º 2 do artigo anterior ao Serviço das Publicações da União Europeia.\n2 - Quando tenha sido publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 25 dias a contar da data do envio do convite previsto no n.º 5 do mesmo artigo.\n3 - Os prazos mínimos para a apresentação das candidaturas previstos nos números anteriores podem ser reduzidos em até sete dias quando os anúncios forem preparados e enviados por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.\n[ccp:art198] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\nArtigo 198.º\nPrazos mínimos para a apresentação das candidaturas\n1 - Não pode ser fixado um prazo para a apresentação das candidaturas inferior a 37 dias a contar da data do envio do anúncio referido no n.º 2 do artigo anterior ao Serviço de Publicações Oficiais das Comunidades Europeias.\n2 - Quando tenha sido publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 37 dias a contar da data do envio do convite previsto no n.º 5 do mesmo artigo.\n3 - Os prazos mínimos para a apresentação das candidaturas previstos nos números anteriores podem ser reduzidos em até sete dias quando os anúncios forem preparados e enviados por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.\n\n[ccp:art198.1] (versão em vigor a 2026-10-01, desde 2018-01-01)\n1 - Não pode ser fixado um prazo para a apresentação das candidaturas inferior a 30 dias a contar da data do envio do anúncio referido no n.º 2 do artigo anterior ao Serviço das Publicações da União Europeia.\n[ccp:art198.1] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n1 - Não pode ser fixado um prazo para a apresentação das candidaturas inferior a 37 dias a contar da data do envio do anúncio referido no n.º 2 do artigo anterior ao Serviço de Publicações Oficiais das Comunidades Europeias.\n\n[ccp:art198.2] (versão em vigor a 2026-10-01, desde 2018-01-01)\n2 - Quando tenha sido publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 25 dias a contar da data do envio do convite previsto no n.º 5 do mesmo artigo.\n[ccp:art198.2] texto anterior (em vigor de 2008-07-30 a 2018-01-01):\n2 - Quando tenha sido publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 37 dias a contar da data do envio do convite previsto no n.º 5 do mesmo artigo.\n\n[ccp:art198.3] (versão em vigor a 2026-10-01, desde 2008-07-30)\n3 - Os prazos mínimos para a apresentação das candidaturas previstos nos números anteriores podem ser reduzidos em até sete dias quando os anúncios forem preparados e enviados por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.\n\nCampos do prazo: prazo_propostas_dias = prazo para a apresentação das propostas; prazo_candidaturas_dias = prazo para a apresentação das candidaturas. Início da contagem: data_envio_anuncio = envio do anúncio (ao Serviço das Publicações da União Europeia); data_publicacao_anuncio = publicação do anúncio; data_envio_convite = envio do convite.\n\nTambém: prazo_trabalhos_concecao_dias = prazo para a apresentação dos documentos que materializam os trabalhos de conceção; nao_indicado = a passagem não diz de quando se conta.\nFactos: urgencia_fundamentada = a entidade adjudicante fundamentou uma situação de urgência; setores_especiais = o contrato diz direta e principalmente respeito a atividades dos setores da água, da energia, dos transportes ou dos serviços postais; anuncio_pre_informacao = foi publicado o anúncio periódico indicativo; modalidade_concecao = a modalidade do concurso de conceção. «minimum_days» é o mínimo abaixo do qual o prazo nunca pode ficar; «usual_days» é o prazo que a passagem fixa «em regra» quando fixa também esse mínimo absoluto, e null quando não fixa.\nSe a passagem fixa mais de uma regra (casos diferentes com prazos diferentes), dá uma regra por caso em «regras»; senão, uma só.\n\nPergunta: Que prazo mínimo fixa a passagem ccp:art198.2: em que procedimento e condições, quantos dias, para que prazo e a contar de quando? Dê as condições, os dias, o campo do prazo e de onde se conta.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "regras": {
+    "type": "array",
+    "minItems": 1,
+    "maxItems": 3,
+    "items": {
+     "type": "object",
+     "properties": {
+      "passagens": {
+       "type": "array",
+       "minItems": 1,
+       "items": {
+        "type": "string",
+        "enum": [
+         "ccp:art198",
+         "ccp:art198.1",
+         "ccp:art198.2",
+         "ccp:art198.3"
+        ]
+       }
+      },
+      "tipo": {
+       "type": "string",
+       "enum": [
+        "prazo_minimo"
+       ]
+      },
+      "condicoes": {
+       "type": "array",
+       "items": {
+        "anyOf": [
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_contrato"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "obras",
+             "bens",
+             "servicos",
+             "concessao_obras",
+             "concessao_servicos",
+             "servicos_sociais"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_contrato"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "obras",
+              "bens",
+              "servicos",
+              "concessao_obras",
+              "concessao_servicos",
+              "servicos_sociais"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "ajuste_direto",
+             "consulta_previa",
+             "concurso_publico",
+             "concurso_limitado_previa_qualificacao",
+             "procedimento_negociacao",
+             "dialogo_concorrencial",
+             "parceria_inovacao",
+             "concurso_concecao",
+             "concurso_ideias"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "ajuste_direto",
+              "consulta_previa",
+              "concurso_publico",
+              "concurso_limitado_previa_qualificacao",
+              "procedimento_negociacao",
+              "dialogo_concorrencial",
+              "parceria_inovacao",
+              "concurso_concecao",
+              "concurso_ideias"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "territorio"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "PT",
+             "PT-AC",
+             "PT-MA"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "territorio"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "PT",
+              "PT-AC",
+              "PT-MA"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_entidade"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "estado",
+             "outra"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "tipo_entidade"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "estado",
+              "outra"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "modalidade_concecao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "enum": [
+             "publico",
+             "limitado",
+             "simplificado"
+            ]
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "modalidade_concecao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "in",
+             "not_in"
+            ]
+           },
+           "value": {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "publico",
+              "limitado",
+              "simplificado"
+             ]
+            },
+            "minItems": 1
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "publicado_joue"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "urgencia_fundamentada"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "setores_especiais"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "anuncio_pre_informacao"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne"
+            ]
+           },
+           "value": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "preco_base"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne",
+             "lt",
+             "le",
+             "gt",
+             "ge"
+            ]
+           },
+           "value": {
+            "type": "number"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         },
+         {
+          "type": "object",
+          "properties": {
+           "field": {
+            "type": "string",
+            "enum": [
+             "data_inicio_procedimento"
+            ]
+           },
+           "op": {
+            "type": "string",
+            "enum": [
+             "eq",
+             "ne",
+             "lt",
+             "le",
+             "gt",
+             "ge"
+            ]
+           },
+           "value": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+           }
+          },
+          "required": [
+           "field",
+           "op",
+           "value"
+          ],
+          "additionalProperties": false
+         }
+        ]
+       }
+      },
+      "params": {
+       "type": "object",
+       "properties": {
+        "minimum_days": {
+         "type": "integer",
+         "minimum": 1
+        },
+        "deadline_field": {
+         "type": "string",
+         "enum": [
+          "prazo_propostas_dias",
+          "prazo_candidaturas_dias",
+          "prazo_trabalhos_concecao_dias"
+         ]
+        },
+        "counted_from": {
+         "type": "string",
+         "enum": [
+          "data_publicacao_anuncio",
+          "data_envio_anuncio",
+          "data_envio_convite",
+          "nao_indicado"
+         ]
+        },
+        "usual_days": {
+         "anyOf": [
+          {
+           "type": "integer",
+           "minimum": 1
+          },
+          {
+           "type": "null"
+          }
+         ]
+        }
+       },
+       "required": [
+        "minimum_days",
+        "deadline_field",
+        "counted_from",
+        "usual_days"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "required": [
+      "passagens",
+      "tipo",
+      "condicoes",
+      "params"
+     ],
+     "additionalProperties": false
+    }
+   }
+  },
+  "required": [
+   "regras"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-3",
+ "source_passage": "ccp:art198.2"
+}

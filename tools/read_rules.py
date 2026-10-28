@@ -49,6 +49,8 @@ ROUNDS = {2: {"dir": RONDA2, "proposer": "leitor:a", "file": "leitor-a.json", "d
           6: {"dir": READINGS / "ronda6", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D49"},
           7: {"dir": READINGS / "ronda7", "proposer": "leitor:a5", "file": "leitor-a5.json", "decision": "D51"}}
 DEADLINE_FIELDS = ["prazo_propostas_dias", "prazo_candidaturas_dias"]  # D60: round 8 on (the rules factory, round 2)
+DEADLINE_FIELDS_9 = DEADLINE_FIELDS + ["prazo_trabalhos_concecao_dias"]  # D62: round 9 on (the rules factory, round 3)
+COUNTED_FROM_9 = ["data_publicacao_anuncio", "data_envio_anuncio", "data_envio_convite", "nao_indicado"]
 FIELDS = ["tipo_contrato", "tipo_procedimento", "publicado_joue", "territorio", "tipo_entidade", "preco_base", "data_inicio_procedimento"]
 VOCAB = {
     "tipo_contrato": ["obras", "bens", "servicos", "concessao_obras", "concessao_servicos", "servicos_sociais"],
@@ -58,6 +60,12 @@ VOCAB = {
     "territorio": ["PT", "PT-AC", "PT-MA"],
     "tipo_entidade": ["estado", "outra"],
 }
+# D62: the rule readers' vocabulary from round 9 (the person's choices, 2026-10-28). VOCAB itself stays as it is: the written
+# questions' tools read it, and their data must rebuild unchanged.
+VOCAB_9 = {**VOCAB, "tipo_procedimento": VOCAB["tipo_procedimento"] + ["concurso_concecao", "concurso_ideias"],
+           "modalidade_concecao": ["publico", "limitado", "simplificado"],
+           "urgencia_fundamentada": [True, False], "setores_especiais": [True, False], "anuncio_pre_informacao": [True, False]}
+BOOLEANS_9 = ["urgencia_fundamentada", "setores_especiais", "anuncio_pre_informacao"]
 OPS = ["eq", "ne", "lt", "le", "gt", "ge", "in", "not_in"]
 LAWS = ["lei:ccp@2026-09-30", "lei:ccp@2026-10-01"]
 PACKAGES = ["pacote:ccp@2026-09-30", "pacote:ccp@2026-10-01"]
@@ -161,16 +169,18 @@ def version_at(p, date):
     return next((v for v in p["versions"] if v["valid_from"] <= date and (v["valid_to"] is None or date < v["valid_to"])), None)
 
 
-def typed_condition():
-    """D45: a condition whose value is typed by its field (round 3 on)."""
+def typed_condition(rnd=3):
+    """D45: a condition whose value is typed by its field (round 3 on); D62: round 9 on, the wider vocabulary."""
+    vocab = VOCAB_9 if rnd >= 9 else VOCAB
     def var(field, ops, value):
         return {"type": "object", "properties": {"field": {"type": "string", "enum": [field]}, "op": {"type": "string", "enum": ops}, "value": value},
                 "required": ["field", "op", "value"], "additionalProperties": False}
     out = []
-    for f in ("tipo_contrato", "tipo_procedimento", "territorio", "tipo_entidade"):
-        out.append(var(f, ["eq", "ne"], {"type": "string", "enum": VOCAB[f]}))
-        out.append(var(f, ["in", "not_in"], {"type": "array", "items": {"type": "string", "enum": VOCAB[f]}, "minItems": 1}))
-    out.append(var("publicado_joue", ["eq", "ne"], {"type": "boolean"}))
+    for f in ("tipo_contrato", "tipo_procedimento", "territorio", "tipo_entidade") + (("modalidade_concecao",) if rnd >= 9 else ()):
+        out.append(var(f, ["eq", "ne"], {"type": "string", "enum": vocab[f]}))
+        out.append(var(f, ["in", "not_in"], {"type": "array", "items": {"type": "string", "enum": vocab[f]}, "minItems": 1}))
+    for f in ["publicado_joue"] + (BOOLEANS_9 if rnd >= 9 else []):
+        out.append(var(f, ["eq", "ne"], {"type": "boolean"}))
     out.append(var("preco_base", ["eq", "ne", "lt", "le", "gt", "ge"], {"type": "number"}))
     out.append(var("data_inicio_procedimento", ["eq", "ne", "lt", "le", "gt", "ge"], {"type": "string", "pattern": DATE}))
     return {"anyOf": out}
@@ -179,16 +189,17 @@ def typed_condition():
 def schema_for(t, rnd=1):
     array = {"type": "array", "items": {"type": "string"}, **({"minItems": 1} if rnd == 2 else {})}  # D44 (2): no empty list as a value
     value = {"anyOf": [{"type": "string"}, {"type": "number"}, {"type": "boolean"}, array]}
-    cond = typed_condition() if rnd >= 3 else {"type": "object", "properties": {"field": {"type": "string", "enum": FIELDS}, "op": {"type": "string", "enum": OPS}, "value": value},
+    cond = typed_condition(rnd) if rnd >= 3 else {"type": "object", "properties": {"field": {"type": "string", "enum": FIELDS}, "op": {"type": "string", "enum": OPS}, "value": value},
                                                "required": ["field", "op", "value"], "additionalProperties": False}
     params = {
         "limiar": {"threshold": {"type": "object", "properties": {"field": {"type": "string", "enum": ["preco_base"]}, "comparator": {"type": "string", "enum": ["lt", "le"]},
                                                                   "value": {"type": "number"}, "currency": {"type": "string", "enum": ["EUR"]}},
                                  "required": ["field", "comparator", "value", "currency"], "additionalProperties": False}},
         "prazo_minimo": {"minimum_days": {"type": "integer", "minimum": 1},
-                         "deadline_field": {"type": "string", "enum": DEADLINE_FIELDS if rnd >= 8 else ["prazo_propostas_dias"]},  # D60
-                         "counted_from": {"type": "string", "enum": ["data_publicacao_anuncio", "data_envio_anuncio"] + (["data_envio_convite"] if rnd >= 8 else [])}},
-        "procedimento_admissivel": {"procedures": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": VOCAB["tipo_procedimento"]}}},
+                         "deadline_field": {"type": "string", "enum": DEADLINE_FIELDS_9 if rnd >= 9 else DEADLINE_FIELDS if rnd >= 8 else ["prazo_propostas_dias"]},  # D60, D62
+                         "counted_from": {"type": "string", "enum": COUNTED_FROM_9 if rnd >= 9 else ["data_publicacao_anuncio", "data_envio_anuncio"] + (["data_envio_convite"] if rnd >= 8 else [])},
+                         **({"usual_days": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]}} if rnd >= 9 else {})},  # D62
+        "procedimento_admissivel": {"procedures": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": (VOCAB_9 if rnd >= 9 else VOCAB)["tipo_procedimento"]}}},
         "seletor_regime": {"selects_by": {"type": "string", "enum": ["data_inicio_procedimento"]},
                            "regimes": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {
                                "from": {"anyOf": [{"type": "string", "pattern": DATE}, {"type": "null"}]} if rnd >= 7 else {"type": "string", "pattern": DATE},
@@ -200,12 +211,16 @@ def schema_for(t, rnd=1):
                                                                    "replace_norma": {"type": ["string", "null"], "enum": ["norma:dlr-27-2015-a", "norma:dlr-34-2008-m", None]}},
                                   "required": ["multiply_thresholds_by", "replace_norma"], "additionalProperties": False}},
     }[t["type"]]
-    return {"type": "object", "properties": {
+    one = {"type": "object", "properties": {
         "passagens": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": t["candidates"]}},
         "tipo": {"type": "string", "enum": [t["type"]]},
         "condicoes": {"type": "array", "items": cond},
         "params": {"type": "object", "properties": params, "required": list(params), "additionalProperties": False}},
         "required": ["passagens", "tipo", "condicoes", "params"], "additionalProperties": False}
+    if rnd >= 9:  # D62: a passage may state more than one rule (190.º n.º 1: 6 days, 14 for works)
+        return {"type": "object", "properties": {"regras": {"type": "array", "minItems": 1, "maxItems": 3, "items": one}},
+                "required": ["regras"], "additionalProperties": False}
+    return one
 
 
 def prompt_text(store, t, rnd=1):
@@ -213,7 +228,7 @@ def prompt_text(store, t, rnd=1):
     lines = ["És um leitor da lei portuguesa. Lê as passagens candidatas e responde à pergunta com um objeto JSON e nada mais.",
              "Regras: escolhe em «passagens» os ids das passagens que fundamentam a resposta (só ids da lista, nunca texto); "
              "«condicoes» são condições sobre factos do procedimento; usa só estes campos e valores:",
-             "  " + "; ".join(f"{k}: {', '.join(json.dumps(v, ensure_ascii=False) for v in vals)}" for k, vals in VOCAB.items()) + f"; preco_base: número em euros; data_inicio_procedimento: {date_fmt}.",
+             "  " + "; ".join(f"{k}: {', '.join(json.dumps(v, ensure_ascii=False) for v in vals)}" for k, vals in (VOCAB_9 if rnd >= 9 else VOCAB).items()) + f"; preco_base: número em euros; data_inicio_procedimento: {date_fmt}.",
              f"Data de referência: {t['date']}. Tipo de regra pedido: {t['type']}.", "", "Passagens candidatas:"]
     for pid in t["candidates"]:
         p = store.current(pid)
@@ -233,6 +248,16 @@ def prompt_text(store, t, rnd=1):
         lines += ["Campos do prazo: prazo_propostas_dias = prazo para a apresentação das propostas; prazo_candidaturas_dias = prazo para a "
                   "apresentação das candidaturas. Início da contagem: data_envio_anuncio = envio do anúncio (ao Serviço das Publicações da "
                   "União Europeia); data_publicacao_anuncio = publicação do anúncio; data_envio_convite = envio do convite.", ""]
+    if rnd >= 9 and t["type"] == "prazo_minimo":  # D62: the facts and params the person added
+        lines += ["Também: prazo_trabalhos_concecao_dias = prazo para a apresentação dos documentos que materializam os trabalhos de "
+                  "conceção; nao_indicado = a passagem não diz de quando se conta.",
+                  "Factos: urgencia_fundamentada = a entidade adjudicante fundamentou uma situação de urgência; setores_especiais = o "
+                  "contrato diz direta e principalmente respeito a atividades dos setores da água, da energia, dos transportes ou dos "
+                  "serviços postais; anuncio_pre_informacao = foi publicado o anúncio periódico indicativo; modalidade_concecao = a "
+                  "modalidade do concurso de conceção. «minimum_days» é o mínimo abaixo do qual o prazo nunca pode ficar; «usual_days» é "
+                  "o prazo que a passagem fixa «em regra» quando fixa também esse mínimo absoluto, e null quando não fixa.",
+                  "Se a passagem fixa mais de uma regra (casos diferentes com prazos diferentes), dá uma regra por caso em «regras»; "
+                  "senão, uma só.", ""]
     if rnd >= 7 and t["type"] == "seletor_regime":  # D51: the regimes the system holds, as a closed list
         lines += ["Regimes que o sistema tem (escolhe «law_version» e «package» só desta lista):"]
         lines += [f"- {law} com {pk}: o Código dos Contratos Públicos no texto em vigor a {d}" for law, pk, d in REGIMES_HELD] + [""]
@@ -271,6 +296,18 @@ def store_answer(path, text):
 
 
 # ---- record ------------------------------------------------------------------------------------------------------
+def parse_answers(rec, t):
+    """D62 (round 9 on): the readings of an answer {"regras": [...]}, sorted by canonical form, or None when one is not valid."""
+    try:
+        a = json.loads(rec["answer"])
+    except (json.JSONDecodeError, TypeError):
+        return None
+    if not isinstance(a, dict) or not isinstance(a.get("regras"), list) or not a["regras"]:
+        return None
+    out = [parse_answer({"answer": json.dumps(r, ensure_ascii=False)}, t) for r in a["regras"]]
+    return None if any(r is None for r in out) else sorted(out, key=lambda r: canonical(canonical_reading(r)))
+
+
 def parse_answer(rec, t):
     """The reader's JSON, or None when it is not JSON or names a passage outside the candidates."""
     try:
@@ -282,6 +319,8 @@ def parse_answer(rec, t):
     params = dict(a.get("params") or {})
     if t["type"] == "jurisdicao" and isinstance(params.get("effect"), dict):
         params["effect"] = {k: v for k, v in params["effect"].items() if v is not None}
+    if t["type"] == "prazo_minimo" and "usual_days" in params and params["usual_days"] is None:  # D62: null = no «em regra» days
+        del params["usual_days"]
     if t["type"] == "procedimento_admissivel" and isinstance(params.get("procedures"), list):
         params["procedures"] = sorted(set(params["procedures"]))
     return {"passages": sorted(set(a["passagens"])), "type": a.get("tipo"), "conditions": norm_conditions(a.get("condicoes") or []), "params": params}
@@ -567,6 +606,8 @@ def write_packages(writer):
 def show(r):
     if r is None:
         return "—"
+    if isinstance(r, list):
+        return " || ".join(show(x) for x in r)
     return f"passagens {', '.join(r['passages'])}; condições {json.dumps(r['conditions'], ensure_ascii=False)}; params {json.dumps(r['params'], ensure_ascii=False)}"
 
 

@@ -1787,8 +1787,9 @@
       "versao": 15,
       "code": "tools/read_rules.py",
       "hash": "37ca4de22400b29a0925a413bb58aaaaef1ebdb782a26d654b167c08060896d8",
-      "retired": false,
-      "nota": "D60: round 8 schema and prompt for deadline fields"
+      "retired": true,
+      "nota": "D60: round 8 schema and prompt for deadline fields",
+      "retired_at": "2026-10-28T09:49:08Z"
     },
     {
       "id": "ferramenta:serve@2",
@@ -1799,8 +1800,9 @@
       "versao": 2,
       "code": "tools/serve.py",
       "hash": "77fc6d402c32d5960c06a82017598d95a17fc6fddaa1a5a6768125c1818969ab",
-      "retired": false,
-      "nota": "D60: accepts prazo_candidaturas_dias and data_envio_convite"
+      "retired": true,
+      "nota": "D60: accepts prazo_candidaturas_dias and data_envio_convite",
+      "retired_at": "2026-10-28T09:49:08Z"
     },
     {
       "id": "leitor:a10",
@@ -1841,8 +1843,9 @@
       "versao": 4,
       "code": "tools/rule_factory.py",
       "hash": "805811470e7109587cc94b0808076a30e8b2d5650712870cee9bb38e781f069a",
-      "retired": false,
-      "nota": "D60: three more vocabulary gaps (special sectors, indicative notice, two minimums); round 2 targets with a gap left open are not recorded"
+      "retired": true,
+      "nota": "D60: three more vocabulary gaps (special sectors, indicative notice, two minimums); round 2 targets with a gap left open are not recorded",
+      "retired_at": "2026-10-28T09:49:08Z"
     },
     {
       "id": "ferramenta:verify@37",
@@ -1904,6 +1907,42 @@
       "hash": "cc0788eb41f12d7ad0e78d1ff0a8bfd25a8bc77f08abeb4e836154fa5970af9b",
       "retired": false,
       "nota": "D61: data-v9 and escritas-v9 checks; D60 revision anchor"
+    },
+    {
+      "id": "ferramenta:read-rules@16",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 16,
+      "code": "tools/read_rules.py",
+      "hash": "a2a7dc7861a4493d19d018bbcbced2498420a016abc5a001ecccdff756465a24",
+      "retired": false,
+      "nota": "D62: round 9, the person's rule vocabulary (VOCAB_9), usual_days, up to three rules per answer"
+    },
+    {
+      "id": "ferramenta:serve@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/serve.py",
+      "hash": "29a63371d9464e391d162fd6db690d53fe789038338977e5ba111b4322a65df1",
+      "retired": false,
+      "nota": "D62: accepts the five new facts"
+    },
+    {
+      "id": "ferramenta:rule-factory@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/rule_factory.py",
+      "hash": "212c9d188046fc2b98f6849e70a565a1aeabce02a2cc5f5819b13f981018a0b9",
+      "retired": false,
+      "nota": "D62: round 3, targets only the gaps a round newly closes, multi-rule answers"
     }
   ]
 }

@@ -156,7 +156,10 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             if not isinstance(days, (int, float)):
                 verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
                 continue
-            verdicts.append(done(r, "cumpre" if days >= p["minimum_days"] else "nao_cumpre", f"{p['deadline_field']}={days:g} >= {p['minimum_days']}" if days >= p["minimum_days"] else f"{p['deadline_field']}={days:g} < {p['minimum_days']}", used))
+            detail = f"{p['deadline_field']}={days:g} >= {p['minimum_days']}" if days >= p["minimum_days"] else f"{p['deadline_field']}={days:g} < {p['minimum_days']}"
+            if days >= p["minimum_days"] and p.get("usual_days") and days < p["usual_days"]:  # D62: under the «em regra» days, not under the floor
+                detail += f"; below the usual {p['usual_days']} days the passage sets as a rule"
+            verdicts.append(done(r, "cumpre" if days >= p["minimum_days"] else "nao_cumpre", detail, used))
         elif t == "procedimento_admissivel":
             proc = values["tipo_procedimento"]
             verdicts.append(done(r, "cumpre" if proc in p["procedures"] else "nao_cumpre", f"tipo_procedimento={proc} in {p['procedures']}", used))
