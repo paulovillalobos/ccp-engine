@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T01:21:37Z",
+ "sha256": "da6a0ce94eb322d6c089442dcc9d58d4cc7bbac41d94c7bcaf8a5f04f914aa93",
+ "answer": "{\"passagens\":[\"ccp:art198.2\"],\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_negociacao\"},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true}],\"params\":{\"minimum_days\":25,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_convite\"}}"
+}

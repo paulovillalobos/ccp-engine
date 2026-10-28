@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T01:20:06Z",
+ "sha256": "ba712ee068f85d24d43fe985fa4807a3649f4f18cf7a95e89f89ae77ed4eb4a2",
+ "answer": "{\"passagens\": [\"ccp:art218\"], \"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"dialogo_concorrencial\"}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_convite\"}}"
+}

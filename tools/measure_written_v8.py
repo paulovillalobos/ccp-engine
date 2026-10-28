@@ -84,7 +84,7 @@ def report(date, only=None):
 def render_md(rep):
     pct = mw.pct
     L = [f"# Medição — perguntas escritas, v8 ({rep["date"]})", "",
-         f"Gerado por tools/measure_written_v7.py ({rep['tool']}, guarda {rep['guard']}). dev 400 e final 400 (selado, metade nos 20 estilos), tal como escritas. "
+         f"Gerado por tools/measure_written_v8.py ({rep['tool']}, guarda {rep['guard']}). dev 400 e final 400 (selado, metade nos 20 estilos), tal como escritas. "
          "Cada leitor tal como respondeu e depois da guarda. Intervalos de Wilson a 95 %.", ""]
     for name, s in rep["sets"].items():
         L += [f"## {name} ({s['examples']} perguntas)", "",
