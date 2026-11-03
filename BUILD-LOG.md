@@ -1941,3 +1941,24 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   date that is not in the text); one v11 leaves out (198.º n.º 2, 192.º n.º 2).
 - verify: the v11 report is recomputed from the stored answers; a diff is checked at its current revision only (round 5 was
   the first to revise the package diff, and the old revision was being compared with the new packages). verify@45 ok.
+
+## 2026-11-03 — D66: the reading protocol v3, part 1 (decisions, code, engine, round 6 prompts)
+- Done: the person's five product rules (evento:249–253): titles name the procedure; a limiar is a limit on choosing a
+  procedure, and 88.º n.º 2 a) is withdrawn; the v3 vocabulary (schemas/vocabulario-v3.json); quotes checked by code and
+  «não tipável» as an answer; the most specific rule wins in the engine. D66 row written before any result.
+- tools/read_rules_v3.py (read-rules-v3@3): context, prompt (L1–L14, what a rule means to the engine, neutral question),
+  schema (rules with quotes, or «não tipável» with four reasons), checker, canonical form, cited passages. Tests on the real
+  law (tests/test_read_rules_v3.py): correct answers on 7 targets pass; broken copies with each mistake of rounds 1–5 fail; a
+  quote cut from a longer phrase fails. training/rule-readings/PROTOCOL-V3.md: the 12-point checklist and the paper audit.
+- Governance: nao_tipavel is a reading of the law (settles by a blind uphold of the other family, like regra). Engine: limiar
+  compares with lt/le/gt/ge; among applying prazo_minimo or limiar rules of one field the most specific gives the verdict,
+  otherwise differing verdicts are nao_avaliado / conflito (tests/test_most_specific.py). regra schema: comparators gt, ge.
+- 88.º n.º 2 a) invalidated by rule-factory@10 under product_rule:limiar-e-escolha-de-procedimento; packages rebuilt.
+- Round 6 (fabrica-6): the 12 targets of round 5, prompts rendered with v3 and their context kept beside them; committed
+  before any reader answers. verify V3: a recorded v3 answer passes the checker again; the payload is the answer's content;
+  an uphold is exactly a replication.
+- tools/make_rule_readings_v12.py: every written article as a law of its own, rendered by the factory's code, gold quotes
+  derived by code and checked by the factory's checker. On the existing articles: 957 of 1 000 training and 392 of 400 old
+  eval articles pass; the rest is listed (a procedure no source names, days not in the text, …).
+- Next: leitor:b and leitor:a13 on round 6; new v3 articles (v3-01..04, eval3-01..02) by writers under BRIEF-V3.md; data-v12;
+  BEFORE; v12 on Modal.

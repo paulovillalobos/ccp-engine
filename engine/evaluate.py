@@ -20,13 +20,15 @@ Inputs
 
 Order (ARQUITECTURA.md §4 layer 6): 1 seletor_regime fixes the regime from the fact it selects by; without that fact every
 other rule is nao_avaliado / facto_ausente. 2 jurisdicao rules whose predicate holds adjust thresholds. 3 simple rules
-(limiar, procedimento_admissivel, prazo_minimo, conteudo_obrigatorio, proibicao). 4 agregada: completeness first (below
+(limiar, procedimento_admissivel, prazo_minimo, conteudo_obrigatorio, proibicao); among prazo_minimo or limiar rules of one
+field that apply, the most specific gives the verdict (D66). 4 agregada: completeness first (below
 the product threshold -> cobertura_insuficiente), then the aggregate.
 A rule whose conditions do not hold yields no verdict (it does not apply); a rule whose conditions cannot be read yields
 nao_avaliado with the missing or conflicted field in detail. A rule outside its validity at the regime date is skipped.
 Verdict id: veredicto:<rule id>:<unit id>:<known_at> with ':' of the ids replaced by '-'.
 """
 from engine import manifest as manifest_mod
+from engine.canon import canonical
 from engine import rules as rules_mod
 from engine.rules import MISSING, Conflict
 
@@ -149,7 +151,7 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
         if t == "limiar":
             limit = p["threshold"]["value"] * multiplier
             value = values[p["threshold"]["field"]]
-            ok2 = value < limit if p["threshold"]["comparator"] == "lt" else value <= limit
+            ok2 = rules_mod.holds({"field": "_v", "op": p["threshold"]["comparator"], "value": limit}, {"_v": value})  # D66: lt, le, gt, ge
             verdicts.append(done(r, "cumpre" if ok2 else "nao_cumpre", f"{p['threshold']['field']}={value} {p['threshold']['comparator']} {limit:g}", used))
         elif t == "prazo_minimo":
             days = values[p["deadline_field"]]
@@ -179,4 +181,29 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
                 verdicts.append(na(r, "facto_ausente", f"elements not extracted: {sorted(set(p['required_elements']) - set(present))}", used))
                 continue
             verdicts.append(done(r, "cumpre", f"elements present: {present}", used + used_for(present)))
-    return verdicts
+    return most_specific(applicable, verdicts, na)
+
+
+def most_specific(applicable, verdicts, na):
+    """D66 (product_rule:regra-mais-especifica): among the prazo_minimo or limiar rules of one deadline or threshold field
+    that apply, the one whose conditions contain every other's gives the verdict and the others give none; when no applying
+    rule contains the others and their results differ, each is nao_avaliado / conflito."""
+    by_rule = {v["rule"]["id"]: v for v in verdicts}
+    groups = {}
+    for r in applicable:
+        v = by_rule.get(r["id"])
+        if v is None or v["result"] == "nao_avaliado" or r["type"] not in ("prazo_minimo", "limiar"):
+            continue
+        key = (r["type"], r["params"]["deadline_field"] if r["type"] == "prazo_minimo" else r["params"]["threshold"]["field"])
+        groups.setdefault(key, []).append(r)
+    drop, conflict = set(), {}
+    for rs in groups.values():
+        conds = {r["id"]: {canonical(c) for c in r["conditions"]} for r in rs}
+        top = [r for r in rs if not any(conds[r["id"]] < conds[o["id"]] for o in rs if o["id"] != r["id"])]
+        drop |= {r["id"] for r in rs} - {r["id"] for r in top}
+        if len(top) > 1 and len({by_rule[r["id"]]["result"] for r in top}) > 1:
+            names = ", ".join(sorted(r["id"] for r in top))
+            for r in top:
+                conflict[r["id"]] = na(r, "conflito", f"{names} apply and none contains the others' conditions (product_rule:regra-mais-especifica)",
+                                       by_rule[r["id"]]["facts_used"])
+    return [conflict.get(v["rule"]["id"], v) for v in verdicts if v["rule"]["id"] not in drop]

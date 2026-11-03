@@ -16,8 +16,8 @@ Rules, enforced on replay (engine/verify.py code I04 unless stated) and again by
   - approve, reject, dispute and adjudicate carry a reason; a review carries question, independence and verdict
   - a proposer never reviews or approves its own revision; an adjudicator is never the disputant
   - review, approve, reject and correct name the exact current revision (expected_revision)
-  - a reading of the law (assertion_type regra) is never approved by a pessoa: it is `settled` when a blind review/uphold
-    comes from a leitor whose familia differs from the proposer's (invariant 5); any other uphold gives `ai_reviewed`
+  - a reading of the law (assertion_type regra, or nao_tipavel: D66) is never approved by a pessoa: it is `settled` when a
+    blind review/uphold comes from a leitor whose familia differs from the proposer's (invariant 5); any other uphold gives `ai_reviewed`
   - adaptador, link, afirmacao_conversao and caso_referencia settle by a pessoa's approve
 
     replay(events, principals) -> Replay   state per assertion, open disputes, errors as (code, message)
@@ -35,7 +35,7 @@ CAPABILITIES = {  # by role (papel); the role is the id prefix
     "ferramenta": {"propose", "correct", "invalidate"},
 }
 ROLES = tuple(CAPABILITIES)
-LEGAL_TYPES = {"regra"}
+LEGAL_TYPES = {"regra", "nao_tipavel"}  # D66: «não tipável» (the passage holds no rule of the asked type) is a reading too
 APPROVABLE_TYPES = {"product_rule", "adaptador", "link", "afirmacao_conversao", "caso_referencia"}
 NEEDS_REASON = {"approve", "reject", "dispute", "adjudicate"}
 NEEDS_CURRENT_REVISION = {"review", "approve", "reject", "correct"}

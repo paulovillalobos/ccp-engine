@@ -60,6 +60,11 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
         # phase 14 (D65): v11 = v10's mix plus training/data-v11 (targeted articles on v10's dev errors), rank 16
         "v11": {"adapter": "amalia-ccp-lei-v11", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9",
                                                            "training/data-v10", "training/data-v11"],
+                "repeat": {"condicoes_texto": 2}},
+        # phase 15 (D66): v12 = v11's mix with the rule-reading rows in the protocol v3 (training/data-v12 replaces regra_lida and
+        # empties regra_lida_alvo), rank 16
+        "v12": {"adapter": "amalia-ccp-lei-v12", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9",
+                                                           "training/data-v10", "training/data-v11", "training/data-v12"],
                 "repeat": {"condicoes_texto": 2}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,

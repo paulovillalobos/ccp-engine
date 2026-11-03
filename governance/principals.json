@@ -2138,8 +2138,9 @@
       "versao": 9,
       "code": "tools/rule_factory.py",
       "hash": "5c76a3027cb387fc00518f4b20e9fd646adc84835295385b5c12cd256d8fdd6b",
-      "retired": false,
-      "nota": "D65: round 5, leitor:a13 proposes, D64 replication, leitor:b's round-4 answers carried"
+      "retired": true,
+      "nota": "D65: round 5, leitor:a13 proposes, D64 replication, leitor:b's round-4 answers carried",
+      "retired_at": "2026-11-03T00:05:30Z"
     },
     {
       "id": "ferramenta:measure-rule-readings-v11@1",
@@ -2175,8 +2176,83 @@
       "versao": 45,
       "code": "verify.py",
       "hash": "f73b9f6a3753a920247abe3064cffb659ec26c99ad6581523b268e169614f209",
+      "retired": true,
+      "nota": "D65: the v11 rule-reading report is recomputed from the stored answers; a diff is checked at its current revision only (an older revision is the diff of older packages)",
+      "retired_at": "2026-11-03T00:24:26Z"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/read_rules_v3.py",
+      "hash": "157f5bd67749a6dbe29ed69fecb557e4be16d5f002c10e36a58944462c67f17f",
+      "retired": true,
+      "nota": "D66: the reading protocol v3: context (the target in its place in the law), prompt, answer schema with quotes or «não tipável», the checker that confirms every quote against the shown text, canonical content",
+      "retired_at": "2026-11-03T00:38:26Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@10",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 10,
+      "code": "tools/rule_factory.py",
+      "hash": "27c8ca9b4f83ebb6d2a81c3bbad6d5d65f5cd2539b4eaec4f7d2d2bda2c418a8",
       "retired": false,
-      "nota": "D65: the v11 rule-reading report is recomputed from the stored answers; a diff is checked at its current revision only (an older revision is the diff of older packages)"
+      "nota": "D66: round 6 with the protocol v3 (the checker decides which answers are recorded; «não tipável» settles an assertion nao_tipavel and invalidates the target's proposed rules); withdraw: a settled rule a person's product rule takes out"
+    },
+    {
+      "id": "ferramenta:verify@46",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 46,
+      "code": "verify.py",
+      "hash": "f0f52dae30e41807d78094f5fd575739ce925715e15e907c85d68c2bf48a75e3",
+      "retired": false,
+      "nota": "D66: V3 — a v3 prompt shows every passage its context lets a reading quote; every recorded v3 answer passes the checker; the log's payload is the answer's content; a blind review upholds exactly when the readings replicate"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/read_rules_v3.py",
+      "hash": "125018bc622708d133dc530514f90856b6a2572ea8d42230b2a5ab158c5d2eb9",
+      "retired": true,
+      "nota": "D66: the reading protocol v3; articles ordered per law, so the same code builds the context of written training articles",
+      "retired_at": "2026-11-03T00:51:53Z"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/read_rules_v3.py",
+      "hash": "9dcc2440615e51a6bb5ecab87e45359e49e7e6ce0b6c721fe903e29945e5b0fd",
+      "retired": false,
+      "nota": "D66: the checker resolves «contados do seu envio» and «a contar da sua publicação», reads «seja ou não» as both sides, lets cases of one passage complete each other both ways and «nas restantes modalidades» name the values the other cases leave, and refuses a quote cut out of a longer phrase naming another value"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v12@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v12.py",
+      "hash": "38437324d080303a0b9c6388b7ab397983be479ddcf0105666b3be752dd86d49",
+      "retired": false,
+      "nota": "D66: data-v12, the written articles rendered by the factory's own v3 code, quotes derived by code, every gold checked by the factory's checker"
     }
   ]
 }

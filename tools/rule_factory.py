@@ -14,6 +14,12 @@ concurso_concecao / concurso_ideias with modalidade_concecao, the deadline prazo
 absolute minimum, and an answer that may hold up to three rules. Targets: round 1's with a gap this closes, and 190.º n.º 1 (two
 rules in one passage). A target's second and third rules get ids ending -b, -c.
 
+Round 6 (D66): the reading protocol v3 (tools/read_rules_v3.py): the target in its place in the law, the reading rules
+in the prompt, every condition and parameter quoting its words; the checker decides which answers can be recorded. Two
+readings replicate on their canonical content, or on the same «não tipável» reason, which settles an assertion of type
+nao_tipavel and invalidates the target's proposed rules. `withdraw --rule ID --product-rule ID` invalidates one settled rule
+a person's product rule takes out (D66: 88.º n.º 2 a)).
+
 Recheck (D64): `recheck --round N` compares the answers a round recorded again under the person's product rule
 product_rule:replicacao-conteudo-e-alvo (the same rule, both citing the target passage); a rule they now replicate gets
 leitor:b's blind review again, from the same answer, as an uphold that names that rule. No reader is asked again.
@@ -33,6 +39,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "tools"))
 import read_rules as rr  # noqa: E402  (prompts, schemas, canonical readings, the rule builder)
+import read_rules_v3 as v3  # noqa: E402  (D66: the reading protocol v3)
 from engine.canon import canonical  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine import schema  # noqa: E402
@@ -40,8 +47,8 @@ from engine.governance import Log  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-rule-factory-0.6"
-TOOL = "ferramenta:rule-factory@9"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5
+VERSION = "ccp-rule-factory-0.7"
+TOOL = "ferramenta:rule-factory@10"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -58,7 +65,13 @@ FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, 
            5: {"round": "fabrica-5", "dir": rr.READINGS / "fabrica5", "rnd": 9, "decision": "D65", "proposer": ("leitor:a13", "leitor-a13.json"), "content": True,
                "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"},
                "only": {"ccp:art127-c.1.a", "ccp:art17-b.4", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art88.2.a",
+                        "ccp:art174.3", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2", "ccp:art241-b.3.b"}},
+           # D66: round 5's 12 targets read with the protocol v3 by leitor:b (fresh answers: the prompts are new) and leitor:a13
+           6: {"round": "fabrica-6", "dir": rr.READINGS / "fabrica6", "rnd": 9, "decision": "D66", "proposer": ("leitor:a13", "leitor-a13.json"), "v3": True,
+               "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"},
+               "only": {"ccp:art127-c.1.a", "ccp:art17-b.4", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art88.2.a",
                         "ccp:art174.3", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2", "ccp:art241-b.3.b"}}}
+V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
 HAND_READ = {"ccp:art19", "ccp:art20", "ccp:art135", "ccp:art136"}
@@ -141,13 +154,20 @@ def targets(store, n=1):
 def cmd_prompts(store, n=1):
     R = FROUNDS[n]
     k = 0
+    law = v3.Law(store) if R.get("v3") else None
     for t in targets(store, n):
         d = R["dir"] / rr.slug(t["rule"])
         d.mkdir(parents=True, exist_ok=True)
         if (d / "prompt.json").exists():
             continue  # a round's prompt is fixed once written: its answers are read against it
-        body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": t["candidates"], "prompt": rr.prompt_text(store, t, R["rnd"]),
-                "schema": rr.schema_for(t, R["rnd"]), "round": R["round"], "source_passage": t["source_passage"]}
+        if R.get("v3"):  # D66: the context is kept beside the prompt, so the checker reads an answer against the text its reader saw
+            ctx = v3.context(law, t["source_passage"], t["date"])
+            body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": sorted(ctx["roles"]), "prompt": v3.render(ctx, t["type"]),
+                    "schema": v3.schema(ctx, t["type"]), "round": R["round"], "source_passage": t["source_passage"], "protocol": "v3",
+                    "protocol_version": v3.VERSION, "context": v3.context_record(ctx)}
+        else:
+            body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": t["candidates"], "prompt": rr.prompt_text(store, t, R["rnd"]),
+                    "schema": rr.schema_for(t, R["rnd"]), "round": R["round"], "source_passage": t["source_passage"]}
         (d / "prompt.json").write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         k += 1
     print(f"{k} new prompts in {R['dir']}")
@@ -159,6 +179,8 @@ def recorded_in(store, rule, rnd_name):
 
 def cmd_record(n=1):
     R = FROUNDS[n]
+    if R.get("v3"):
+        return cmd_record_v3(n)
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
     log = Log(ROOT / "governance")
     writer = Writer(ROOT / "rules", Store([ROOT / "rules"]).load())
@@ -206,6 +228,169 @@ def cmd_record(n=1):
     settled = sum(1 for r in rows if r["state"] == "settled")
     print(f"{len(rows)} targets, {settled} settled, {sum(1 for r in rows if r['exact'] is False)} differ, "
           f"{sum(1 for r in rows if str(r['state']).startswith('sem'))} without a valid proposal")
+
+
+def rule_ids(t, k):
+    return [t["rule"] if i == 0 else t["rule"].replace("@v1", f"-{'bcd'[i - 1]}@v1") for i in range(k)]
+
+
+def checked(rec, ctx, rtype):
+    """(the reading, the checker's errors) of one answer file; (None, [why]) when there is no answer or it is not the object."""
+    if rec is None:
+        return None, ["sem resposta"]
+    a = v3.parse(rec["answer"])
+    if a is None:
+        return None, ["a resposta não é o objeto pedido"]
+    return a, v3.check(a, ctx, rtype)
+
+
+def cmd_record_v3(n):
+    """D66: record a v3 round. A reading the checker refuses is not recorded; a «não tipável» proposal is an assertion of
+    type nao_tipavel, settled by leitor:b's blind uphold with the same reason, and then the target's proposed rules are
+    invalidated. Rules: propose or correct per rule, leitor:b's blind review (uphold when the canonical content replicates)."""
+    R = FROUNDS[n]
+    store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    log = Log(ROOT / "governance")
+    writer = Writer(ROOT / "rules", Store([ROOT / "rules"]).load())
+    proposer, pfile = R["proposer"]
+    rows = []
+    for t in targets(store, n):
+        d = R["dir"] / rr.slug(t["rule"])
+        body = json.loads((d / "prompt.json").read_text(encoding="utf-8"))
+        ctx, rtype = body["context"], t["type"]
+        ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (pfile, "leitor-b.json")]
+        A, ea = checked(ra, ctx, rtype)
+        B, eb = checked(rb, ctx, rtype)
+        row = {"rule": t["rule"], "type": rtype, "source": t["source_passage"], "a": A, "b": B, "a_errors": ea, "b_errors": eb, "state": None,
+               "exact": v3.replicate(A, B) if not ea and not eb else None}
+        rows.append(row)
+        if ea:
+            row["state"] = f"sem leitura válida de {proposer}"
+            continue
+        question = body["prompt"].rsplit("PERGUNTA\n", 1)[1]
+        if A.get("nao_tipavel"):
+            aid = t["rule"].replace("regra:", "nao_tipavel:", 1)
+            if recorded_in(store, aid, R["round"]):
+                row["state"] = log.replay().state_of("nao_tipavel", aid); continue
+            known = log.replay().assertions.get(("nao_tipavel", aid))
+            pay = {"rule_type": rtype, "motivo": A["nao_tipavel"]["motivo"], "fontes": A["nao_tipavel"]["fontes"], "falta": A["nao_tipavel"]["falta"],
+                   "answer_sha256": ra["sha256"], "round": R["round"], "protocol": "v3"}
+            if known:
+                log.correct(proposer, "nao_tipavel", aid, known["revision"], pay, f"{R['decision']}: {R['round']}, read again with the protocol v3", ra["at"])
+            else:
+                log.propose(proposer, "nao_tipavel", aid, pay, ra["at"])
+            rev = log.replay().assertions[("nao_tipavel", aid)]["revision"]
+            if not eb:
+                log.review("leitor:b", "nao_tipavel", aid, rev, f"Blind, same prompt as {proposer} ({R['round']}): {question}", "blind",
+                           "uphold" if row["exact"] else "request_evidence", rb["at"],
+                           payload={"answer": v3.canonical(B), "answer_sha256": rb["sha256"], "round": R["round"], "replication": V3_RULE, "protocol": "v3"})
+            row["state"] = log.replay().state_of("nao_tipavel", aid)
+            if row["state"] == "settled":  # the target holds no rule of this type: its proposed rules go
+                for rid in [x for (ty, x), a in log.replay().assertions.items() if ty == "regra" and re.sub(r"-[b-d]@v1$", "@v1", x) == t["rule"]]:
+                    if log.replay().state_of("regra", rid) not in ("stale", "rejected"):
+                        log.invalidate(TOOL, "regra", rid, f"D66: os dois leitores, às cegas, dão {t['source_passage']} como não tipável "
+                                       f"({A['nao_tipavel']['motivo']}); a regra proposta sai ({aid}).", now_utc())
+                        writer.revise(writer.store.current(rid), {"state": "stale"}, now_utc())
+            continue
+        Aread, Bread = v3.to_readings(A, ctx, rtype), (v3.to_readings(B, ctx, rtype) if not eb else None)
+        canonA = [v3.canonical_rule(r) for r in A["regras"]]
+        canonB = [v3.canonical_rule(r) for r in B["regras"]] if B and not eb and B.get("regras") else []
+        states = []
+        for i, (rid, a) in enumerate(zip(rule_ids(t, len(Aread)), Aread)):
+            ti = {**t, "rule": rid, "title": t["title"] + (f" ({i + 1}.ª regra)" if i else "")}
+            if recorded_in(store, rid, R["round"]):
+                states.append(log.replay().state_of("regra", rid)); continue
+            a = {**a, "conditions": canonA[i]["condicoes"]}
+            known = log.replay().assertions.get(("regra", rid))
+            pay = {"chosen_passages": a["passages"], "conditions": a["conditions"], "params": a["params"], "fontes": {
+                       "condicoes": [c["fontes"] for c in A["regras"][i]["condicoes"]], "params": A["regras"][i]["fontes"]},
+                   "answer_sha256": ra["sha256"], "round": R["round"], "protocol": "v3"}
+            draft = rr.build_rule(store, ti, a, a["passages"], [{"principal": proposer, "family": "A", "at": ra["at"], "chosen_passages": a["passages"],
+                                                                  "blind": False, "evento": "evento:1"}], "proposed")
+            problems = schema.validate("regra", draft)
+            if problems:
+                states.append(f"sem leitura válida de {proposer}"); row["why"] = str(problems[0])[:200]; continue
+            if known:  # a later round's reading is a new revision of the same rule (D60)
+                ev_a = log.correct(proposer, "regra", rid, known["revision"], pay, f"{R['decision']}: {R['round']}, read again with the protocol v3", ra["at"])
+            else:
+                ev_a = log.propose(proposer, "regra", rid, pay, ra["at"])
+            rev = log.replay().assertions[("regra", rid)]["revision"]
+            readings = [{"principal": proposer, "family": "A", "at": ra["at"], "chosen_passages": a["passages"], "blind": False, "evento": ev_a}]
+            if not eb and Bread is not None:
+                j = next((k for k, c in enumerate(canonB) if c == canonA[i]), None)
+                b = Bread[j] if j is not None else (Bread[i] if i < len(Bread) else None)
+                ev_b = log.review("leitor:b", "regra", rid, rev, f"Blind, same prompt as {proposer} ({R['round']}): {question}", "blind",
+                                  "uphold" if row["exact"] else "request_evidence", rb["at"],
+                                  payload={"chosen_passages": b["passages"] if b else [], "conditions": canonB[j]["condicoes"] if j is not None else (b["conditions"] if b else []),
+                                           "params": b["params"] if b else {}, "answer_sha256": rb["sha256"], "round": R["round"], "replication": V3_RULE,
+                                           "protocol": "v3"})
+                cited = set(a["passages"])
+                readings.append({"principal": "leitor:b", "family": "B", "at": rb["at"],
+                                 "chosen_passages": sorted(set(b["passages"]) & cited) if (b and row["exact"]) else (b["passages"] if b else []),
+                                 "blind": True, "evento": ev_b})
+            state = log.replay().state_of("regra", rid)
+            rule = rr.build_rule(store, ti, a, a["passages"], readings, state)
+            cur = writer.store.current(rid)
+            if cur is None:
+                writer.append(rule)
+            else:
+                writer.revise(cur, {k: v for k, v in rule.items() if k not in ("id", "revision", "recorded_at", "supersedes")}, now_utc())
+            states.append(state)
+        row["state"] = states[0] if len(set(states)) == 1 else " / ".join(map(str, states))
+        if len(Aread) > 1:
+            row["rules"] = len(Aread)
+    log.write_state()
+    rr.write_packages(writer)
+    write_report_v3(rows, n)
+    settled = sum(1 for r in rows if r["state"] == "settled")
+    print(f"{len(rows)} targets, {settled} settled, {sum(1 for r in rows if r['exact'] is False)} differ, "
+          f"{sum(1 for r in rows if r['a_errors'])} without a valid proposal, {sum(1 for r in rows if r['b_errors'])} without a valid review")
+
+
+def show_v3(a):
+    if a is None:
+        return "—"
+    if a.get("nao_tipavel"):
+        return f"não tipável ({a['nao_tipavel'].get('motivo')}): {a['nao_tipavel'].get('falta')}"
+    return " || ".join(json.dumps(v3.canonical_rule(r), ensure_ascii=False) for r in a.get("regras") or [])
+
+
+def write_report_v3(rows, n):
+    R = FROUNDS[n]
+    proposer = R["proposer"][0]
+    L = [f"# FÁBRICA DE REGRAS — ronda {n} (DECISIONS {R['decision']})", "",
+         f"Gerado por tools/rule_factory.py ({VERSION}) com o protocolo de leitura v3 (tools/read_rules_v3.py, {v3.VERSION}). " + INTRO[n][0] +
+         f" Propõe {proposer} (AMALIA + adaptador {ADAPTER_OF.get(proposer, 'v7')}), leitor:b revê às cegas.", "", INTRO[n][1], "",
+         "| regra | passagem | estado | replica | verificador: leitor A | verificador: leitor B |", "|---|---|---|---|---|---|"]
+    for r in rows:
+        note = (f" ({r['why']})" if r.get("why") else "") + (f" ({r['rules']} regras)" if r.get("rules") else "")
+        L.append(f"| {r['rule']} | {r['source']} | {r['state']}{note} | {'—' if r['exact'] is None else ('sim' if r['exact'] else 'não')} | "
+                 f"{'ok' if not r['a_errors'] else r['a_errors'][0][:120]} | {'ok' if not r['b_errors'] else r['b_errors'][0][:120]} |")
+    L.append("")
+    for r in rows:
+        L += [f"## {r['rule']}", "", f"- {proposer}: {show_v3(r['a'])}", f"- leitor:b: {show_v3(r['b'])}"]
+        for who, errs in (("A", r["a_errors"]), ("B", r["b_errors"])):
+            if errs:
+                L.append(f"- verificador ({who}): " + "; ".join(errs[:6]))
+        L.append("")
+    (R["dir"] / f"FABRICA{n}.md").write_text("\n".join(L).replace("\n\n\n", "\n\n") + "\n", encoding="utf-8")
+
+
+def cmd_withdraw(rid, product_rule):
+    """D66: a settled rule a person's product rule takes out is invalidated by this tool, the product rule's event named."""
+    store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    log = Log(ROOT / "governance")
+    writer = Writer(ROOT / "rules", Store([ROOT / "rules"]).load())
+    ev = next((e for _, e in store.events if e["assertion"] == product_rule and e["action"] == "propose"), None)
+    if ev is None or log.replay().state_of("product_rule", product_rule) != "settled":
+        raise SystemExit(f"{product_rule} is not a settled product rule in the log")
+    if log.replay().state_of("regra", rid) in (None, "stale"):
+        raise SystemExit(f"{rid} is not a live rule in the log")
+    log.invalidate(TOOL, "regra", rid, f"D66: {product_rule} ({ev['id']}): {ev['payload']['rule']}", now_utc())
+    writer.revise(writer.store.current(rid), {"state": "stale"}, now_utc())
+    log.write_state()
+    rr.write_packages(writer)
+    print(rid, log.replay().state_of("regra", rid))
 
 
 def pairs(A, B):
@@ -354,6 +539,10 @@ INTRO = {
     5: ["D65: AMALIA treinada nos tipos de erro que v10 fez no dev (adaptador v11). Alvos: os 12 que a ronda 4 deixou abertos.",
         "As respostas de leitor:b são as da ronda 4 (o mesmo prompt, byte a byte); uma regra já no registo recebe uma correção (nova "
         "revisão) de leitor:a13."],
+    6: ["D66: o protocolo de leitura v3 — a passagem-alvo no seu lugar na lei, as regras de leitura no prompt, cada condição e "
+        "cada parâmetro com as palavras exatas e a passagem de onde vêm. Alvos: os 12 da ronda 5.",
+        "Um programa confirma cada palavra citada; a leitura que falha não fica registada. Replicam o mesmo conteúdo canónico ou o "
+        "mesmo motivo de «não tipável»; um «não tipável» assente invalida as regras propostas do alvo."],
 }
 
 
@@ -380,8 +569,11 @@ def write_report(rows, n=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap.add_argument("--rule"); ap.add_argument("--product-rule")
     a = ap.parse_args()
+    if a.cmd == "withdraw":
+        return cmd_withdraw(a.rule, a.product_rule)
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
     if a.cmd == "targets":
         for t in targets(store, a.round):

@@ -1,0 +1,653 @@
+{
+ "about": "One source for the v3 reading prompt and its checker: every value, the law's words for it, and the closed lists. The prompt prints this; the checker reads it. Phrases are matched after old-spelling normalisation (concepção = conceção).",
+ "condition_fields": {
+  "tipo_contrato": {
+   "kind": "enum",
+   "values": {
+    "obras": [
+     "empreitada de obras públicas",
+     "empreitadas de obras públicas",
+     "contrato de empreitada",
+     "contratos de empreitada",
+     "empreitadas",
+     "empreitada",
+     "execução de uma obra pública",
+     "obra pública",
+     "obras"
+    ],
+    "bens": [
+     "locação ou aquisição de bens móveis",
+     "aquisição de bens móveis",
+     "locação de bens móveis",
+     "fornecimento de bens",
+     "aquisição de bens",
+     "bens móveis",
+     "bens"
+    ],
+    "servicos": [
+     "aquisição de serviços",
+     "prestação de serviços",
+     "serviços"
+    ],
+    "concessao_obras": [
+     "concessão de obras públicas",
+     "concessões de obras públicas"
+    ],
+    "concessao_servicos": [
+     "concessão de serviços públicos",
+     "concessões de serviços públicos",
+     "concessão de serviços",
+     "concessões de serviços"
+    ],
+    "servicos_sociais": [
+     "aquisição de serviços sociais e de outros serviços específicos",
+     "serviços sociais e de outros serviços específicos",
+     "aquisição de serviços sociais e outros serviços específicos",
+     "serviços sociais e outros serviços específicos",
+     "aquisição de serviços sociais",
+     "serviços sociais"
+    ],
+    "sociedade": [
+     "contratos de sociedade",
+     "contrato de sociedade"
+    ]
+   },
+   "both_concessions": [
+    "concessão de obras públicas ou de serviços",
+    "concessões de obras públicas ou de serviços",
+    "concessão de obras públicas e de serviços",
+    "concessões de obras públicas e de serviços",
+    "concessões de obras públicas ou de concessão de serviços",
+    "concessões de obras públicas e de concessões de serviços"
+   ]
+  },
+  "tipo_procedimento": {
+   "kind": "enum",
+   "values": {
+    "ajuste_direto_simplificado": [
+     "ajuste direto simplificado"
+    ],
+    "ajuste_direto": [
+     "ajuste direto"
+    ],
+    "consulta_previa_especial": [
+     "consulta prévia especial"
+    ],
+    "consulta_previa": [
+     "consulta prévia"
+    ],
+    "concurso_publico_urgente": [
+     "concurso público urgente"
+    ],
+    "concurso_publico": [
+     "concurso público",
+     "concursos públicos"
+    ],
+    "concurso_limitado_previa_qualificacao": [
+     "concurso limitado por prévia qualificação",
+     "concursos limitados por prévia qualificação",
+     "concurso limitado",
+     "concursos limitados"
+    ],
+    "procedimento_negociacao": [
+     "procedimento de negociação",
+     "procedimentos de negociação"
+    ],
+    "dialogo_concorrencial": [
+     "diálogo concorrencial"
+    ],
+    "parceria_inovacao": [
+     "parceria para a inovação"
+    ],
+    "concurso_concecao": [
+     "concurso de conceção",
+     "concursos de conceção"
+    ],
+    "concurso_ideias": [
+     "concurso de ideias",
+     "concursos de ideias"
+    ]
+   }
+  },
+  "modalidade_concecao": {
+   "kind": "enum",
+   "values": {
+    "publico": [
+     "concurso de conceção público",
+     "concursos de conceção públicos",
+     "concursos público",
+     "concurso público",
+     "público",
+     "modalidade de concurso público",
+     "modalidades de concurso público",
+     "modalidade pública",
+     "pública"
+    ],
+    "limitado": [
+     "concurso de conceção limitado",
+     "limitado por prévia qualificação",
+     "concursos limitado",
+     "limitado",
+     "modalidade de concurso limitado",
+     "modalidade limitada",
+     "limitada"
+    ],
+    "simplificado": [
+     "concurso de conceção simplificado",
+     "concurso simplificado",
+     "simplificado",
+     "modalidade simplificada",
+     "simplificada"
+    ]
+   }
+  },
+  "tipo_entidade": {
+   "kind": "enum",
+   "always_eq": true,
+   "values": {
+    "estado": [
+     "a entidade adjudicante seja o Estado",
+     "a entidade adjudicante for o Estado",
+     "adjudicados pelo Estado",
+     "celebrados pelo Estado",
+     "serviços do Estado",
+     "for o Estado",
+     "seja o Estado",
+     "pelo Estado"
+    ],
+    "outra": [
+     "não seja o Estado",
+     "não for o Estado",
+     "outras entidades adjudicantes",
+     "outra entidade adjudicante",
+     "demais entidades adjudicantes",
+     "restantes entidades adjudicantes",
+     "nos demais casos",
+     "nos restantes casos",
+     "não sendo a entidade adjudicante o Estado",
+     "entidades não estaduais"
+    ]
+   }
+  },
+  "territorio": {
+   "kind": "enum",
+   "values": {
+    "PT": [
+     "território nacional",
+     "Portugal continental",
+     "no continente",
+     "continente"
+    ],
+    "PT-AC": [
+     "Região Autónoma dos Açores",
+     "Açores"
+    ],
+    "PT-MA": [
+     "Região Autónoma da Madeira",
+     "Madeira"
+    ]
+   },
+   "both_regions": [
+    "Regiões Autónomas"
+   ]
+  },
+  "publicado_joue": {
+   "kind": "boolean",
+   "phrases": [
+    "publicado no Jornal Oficial da União Europeia",
+    "publicação no Jornal Oficial da União Europeia",
+    "publicação de anúncio no Jornal Oficial da União Europeia",
+    "publicitar o concurso público no Jornal Oficial da União Europeia",
+    "Serviço das Publicações da União Europeia",
+    "Serviço das Publicações Oficiais da União Europeia",
+    "Jornal Oficial da União Europeia",
+    "publicidade internacional",
+    "publicação do anúncio no Jornal Oficial da União Europeia",
+    "publicidade europeia"
+   ]
+  },
+  "urgencia_fundamentada": {
+   "kind": "boolean",
+   "phrases": [
+    "urgência devidamente fundamentada",
+    "urgência fundamentada",
+    "situação de urgência",
+    "por motivos de urgência",
+    "fundamentada a urgência",
+    "fundamente a existência de urgência",
+    "fundamentar a urgência",
+    "fundamente uma situação de urgência",
+    "razões de urgência",
+    "urgência"
+   ]
+  },
+  "setores_especiais": {
+   "kind": "boolean",
+   "phrases": [
+    "setores da água, da energia, dos transportes e dos serviços postais",
+    "setores da água, da energia, dos transportes ou dos serviços postais",
+    "atividades exercidas nos setores",
+    "setores especiais"
+   ]
+  },
+  "anuncio_pre_informacao": {
+   "kind": "boolean",
+   "phrases": [
+    "anúncio periódico indicativo",
+    "anúncio de pré-informação"
+   ]
+  },
+  "duracao_contrato_meses": {
+   "kind": "number",
+   "unit_words": {
+    "ano": 12,
+    "anos": 12,
+    "mês": 1,
+    "meses": 1
+   },
+   "phrases": [
+    "duração"
+   ]
+  },
+  "data_inicio_procedimento": {
+   "kind": "date",
+   "phrases": [
+    "procedimentos iniciados",
+    "procedimentos cuja decisão de contratar",
+    "a partir de"
+   ]
+  },
+  "valor_estimado": {
+   "kind": "amount",
+   "phrases": [
+    "valor estimado do contrato",
+    "valor estimado dos contratos",
+    "valor estimado",
+    "valor do contrato",
+    "valor dos contratos",
+    "de valor",
+    "o valor",
+    "cujo valor",
+    "o seu valor",
+    "seu valor",
+    "valor"
+   ]
+  },
+  "preco_base": {
+   "kind": "amount",
+   "phrases": [
+    "preço base",
+    "preços base"
+   ]
+  },
+  "preco_contratual": {
+   "kind": "amount",
+   "phrases": [
+    "preço contratual"
+   ]
+  }
+ },
+ "negations": [
+  "não seja",
+  "não for",
+  "não sejam",
+  "não forem",
+  "sem publicação",
+  "sem anúncio",
+  "não haja",
+  "não tenha sido"
+ ],
+ "rest_phrases": [
+  "nos restantes casos",
+  "nos demais casos",
+  "nos outros casos",
+  "nos restantes contratos",
+  "nos demais contratos",
+  "nos outros contratos",
+  "restantes",
+  "demais"
+ ],
+ "exception_phrases": [
+  "com exceção de",
+  "com exceção das",
+  "com exceção dos",
+  "excetuados",
+  "excetuando",
+  "salvo"
+ ],
+ "only_phrases": [
+  "apenas",
+  "só nos",
+  "exclusivamente"
+ ],
+ "comparators": {
+  "ge": [
+   "igual ou superior a",
+   "igual ou superior ao",
+   "igual ou superior aos",
+   "iguais ou superiores a",
+   "pelo menos",
+   "a partir de"
+  ],
+  "le": [
+   "igual ou inferior a",
+   "igual ou inferior ao",
+   "igual ou inferior aos",
+   "iguais ou inferiores a",
+   "não superior a",
+   "que não exceda",
+   "não exceda",
+   "não exceder",
+   "não excedam",
+   "que não ultrapasse",
+   "não ultrapasse",
+   "inclusive"
+  ],
+  "gt": [
+   "superior a",
+   "superior ao",
+   "superior aos",
+   "superiores a",
+   "exceda",
+   "excedam",
+   "exceder",
+   "ultrapasse",
+   "acima de"
+  ],
+  "lt": [
+   "inferior a",
+   "inferior ao",
+   "inferior aos",
+   "inferiores a",
+   "inferior, respetivamente, a",
+   "abaixo de",
+   "exclusive"
+  ]
+ },
+ "threshold_fields": {
+  "valor_estimado": [
+   "valor estimado do contrato",
+   "valor estimado dos contratos",
+   "valor estimado",
+   "valor do contrato",
+   "valor dos contratos",
+   "de valor",
+   "o valor",
+   "cujo valor",
+   "o seu valor",
+   "seu valor",
+   "valor"
+  ],
+  "preco_base": [
+   "preço base",
+   "preços base"
+  ],
+  "preco_contratual": [
+   "preço contratual"
+  ]
+ },
+ "minimum_phrases": [
+  "não pode ser fixado um prazo",
+  "não pode ser inferior a",
+  "nunca pode ficar abaixo de",
+  "não podendo em caso algum ser inferior a",
+  "não pode, em qualquer caso, ser inferior a",
+  "o prazo mínimo",
+  "prazo mínimo",
+  "pelo menos",
+  "não pode terminar antes de decorridos",
+  "pode ser reduzido para",
+  "podem ser reduzidos para",
+  "reduzido para",
+  "inferior a",
+  "não pode ser mais curto do que",
+  "nunca inferior a",
+  "não inferior a"
+ ],
+ "reduction_by_phrases": [
+  "reduzido em até",
+  "reduzidos em até",
+  "reduzido em",
+  "reduzidos em"
+ ],
+ "usual_phrases": [
+  "em regra"
+ ],
+ "deadline_fields": {
+  "prazo_propostas_dias": [
+   "apresentação das propostas",
+   "apresentação de propostas",
+   "apresentação das versões iniciais das propostas",
+   "as propostas são apresentadas",
+   "apresentarem as suas propostas",
+   "apresentar propostas",
+   "apresentação das versões finais das propostas",
+   "apresentar as suas propostas",
+   "apresentar as propostas",
+   "apresentação da proposta",
+   "as propostas são entregues",
+   "entregar as propostas",
+   "versões finais das propostas",
+   "versões iniciais das propostas",
+   "propostas iniciais",
+   "entrega das propostas",
+   "propostas"
+  ],
+  "prazo_candidaturas_dias": [
+   "apresentação das candidaturas",
+   "apresentação de candidaturas",
+   "as candidaturas são apresentadas",
+   "as candidaturas são entregues",
+   "apresentar candidaturas",
+   "apresentar as candidaturas",
+   "apresentar as suas candidaturas",
+   "apresentação da candidatura",
+   "entregar a sua candidatura",
+   "prazo das candidaturas",
+   "candidatar-se",
+   "candidaturas",
+   "candidatura"
+  ],
+  "prazo_trabalhos_concecao_dias": [
+   "documentos que materializam os trabalhos de conceção",
+   "trabalhos de conceção",
+   "trabalhos de conceção são apresentados"
+  ],
+  "prazo_solucoes_dias": [
+   "apresentação das soluções",
+   "apresentação de soluções",
+   "apresentarem as suas soluções",
+   "as soluções são apresentadas",
+   "apresentar as soluções",
+   "entrega das soluções",
+   "apresenta as suas soluções",
+   "soluções"
+  ],
+  "prazo_esclarecimentos_dias": [
+   "pedidos de esclarecimentos",
+   "pedido de esclarecimentos",
+   "solicitarem esclarecimentos",
+   "pedir esclarecimentos",
+   "solicitar esclarecimentos",
+   "esclarecimentos"
+  ],
+  "prazo_pronuncia_dias": [
+   "pronúncia dos interessados",
+   "pronúncia dos concorrentes",
+   "pronúncia dos candidatos",
+   "se pronunciarem",
+   "pronunciar-se",
+   "audiência prévia",
+   "pronunciam-se",
+   "se pronunciam",
+   "pronunciar"
+  ],
+  "prazo_reclamacao_dias": [
+   "reclamação",
+   "reclamações",
+   "reclamar"
+  ],
+  "prazo_caucao_dias": [
+   "prestação da caução",
+   "prestar a caução",
+   "prestar caução",
+   "presta a caução",
+   "a caução é prestada",
+   "caução"
+  ],
+  "prazo_habilitacao_dias": [
+   "documentos de habilitação",
+   "entrega os documentos de habilitação",
+   "habilitação"
+  ]
+ },
+ "counted_from": {
+  "data_envio_anuncio": [
+   "a contar da data do envio do anúncio",
+   "a contar da data de envio do anúncio",
+   "a contar do envio do anúncio",
+   "desde aquele envio",
+   "data do envio do anúncio",
+   "data do envio desse anúncio",
+   "data do envio, para publicação, do anúncio",
+   "envio do anúncio para publicação",
+   "a contar do respetivo envio",
+   "envio do anúncio"
+  ],
+  "data_publicacao_anuncio": [
+   "a contar da data de publicação do anúncio",
+   "a partir da data de publicação do anúncio",
+   "contados da publicação do anúncio",
+   "data da publicação do anúncio",
+   "data de publicação do anúncio",
+   "contados da data de publicação do anúncio",
+   "contado da data de publicação do anúncio",
+   "a contar da publicação do anúncio",
+   "publicação do anúncio no Diário da República",
+   "após a publicação do anúncio",
+   "contando-se o prazo da data de publicação do anúncio",
+   "publicação do anúncio"
+  ],
+  "data_envio_convite": [
+   "a contar da data do envio do convite",
+   "data do envio do convite",
+   "a contar do envio do convite",
+   "data de envio do convite",
+   "contados da data do envio do convite",
+   "contado do envio do convite",
+   "contados do envio do convite",
+   "contado da data do envio do convite",
+   "contados do envio do respetivo convite",
+   "envio do convite"
+  ],
+  "data_notificacao": [
+   "a contar da data da notificação",
+   "a contar da data da sua notificação",
+   "a contar da notificação",
+   "contados da notificação",
+   "contado da notificação",
+   "data da notificação",
+   "data da sua notificação",
+   "objeto de notificação",
+   "contados da data dessa notificação",
+   "notificação"
+  ],
+  "data_disponibilizacao_pecas": [
+   "disponibilização das peças do procedimento",
+   "disponibilização das peças",
+   "peças do procedimento são disponibilizadas",
+   "as peças do procedimento estão disponíveis",
+   "disponibilização das peças do procedimento"
+  ]
+ },
+ "nao_tipavel_motivos": {
+  "nao_e_limiar": "o valor não é o limite até ao qual um procedimento pode ser escolhido (dispensa uma obrigação, reserva um contrato, exclui um convidado, soma contratos)",
+  "nao_e_prazo_minimo": "o prazo é um máximo, é um prazo da própria entidade adjudicante, ou não é para apresentar nada",
+  "sem_vocabulario": "a regra precisa de um facto, de um valor ou de uma unidade que o vocabulário não tem",
+  "texto_em_falta": "a passagem remete para um texto que não está mostrado e sem o qual a regra não se lê"
+ },
+ "old_spelling": {
+  "concepção": "conceção",
+  "concepções": "conceções",
+  "directa": "direta",
+  "directamente": "diretamente",
+  "actividade": "atividade",
+  "actividades": "atividades",
+  "sector": "setor",
+  "sectores": "setores",
+  "electrónico": "eletrónico",
+  "electrónicos": "eletrónicos",
+  "electrónica": "eletrónica",
+  "electrónicas": "eletrónicas",
+  "efectuar": "efetuar",
+  "efectuadas": "efetuadas",
+  "efectiva": "efetiva",
+  "adoptar": "adotar",
+  "adoptado": "adotado",
+  "projecto": "projeto",
+  "recepção": "receção",
+  "excepção": "exceção",
+  "objecto": "objeto",
+  "acto": "ato",
+  "actos": "atos",
+  "exacto": "exato"
+ },
+ "negations_words": [
+  "não",
+  "sem",
+  "fora dos",
+  "fora das",
+  "fora do",
+  "fora da"
+ ],
+ "alternative_negations": [
+  "quando o não seja",
+  "quando não o seja",
+  "não o sendo",
+  "caso contrário",
+  "se o não for",
+  "quando o não for"
+ ],
+ "anaphoric_sending": [
+  "contados do seu envio",
+  "contado do seu envio",
+  "contado da data do seu envio",
+  "contados da data do seu envio",
+  "a contar do seu envio",
+  "a contar do envio deste",
+  "a contar da data do envio deste",
+  "contados do respetivo envio",
+  "a contar do respetivo envio",
+  "em que o convite é enviado",
+  "em que o anúncio é enviado",
+  "contado da data do seu envio",
+  "a contar da data do seu envio",
+  "a contar da data de envio deste",
+  "contados do envio deste",
+  "contado do envio deste"
+ ],
+ "instrumentos_sem_valor": [
+  "sistemas de aquisição dinâmicos",
+  "sistema de aquisição dinâmico",
+  "acordos-quadro",
+  "acordo-quadro",
+  "sistemas de qualificação",
+  "sistema de qualificação",
+  "centrais de compras",
+  "leilão eletrónico"
+ ],
+ "anaphoric_publication": [
+  "a contar da sua publicação",
+  "contados da sua publicação",
+  "a contar da data da sua publicação",
+  "contados da data da sua publicação",
+  "após a sua publicação"
+ ],
+ "both_polarities": [
+  "seja ou não",
+  "for ou não",
+  "sejam ou não",
+  "tenha ou não sido",
+  "consoante haja ou não"
+ ]
+}

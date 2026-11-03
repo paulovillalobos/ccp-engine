@@ -38,7 +38,7 @@
     "params": {
       "type": "object",
       "properties": {
-        "threshold": {"type": "object", "properties": {"field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "comparator": {"type": "string", "enum": ["lt", "le"]}, "value": {"type": "number"}, "currency": {"const": "EUR"}}, "required": ["field", "comparator", "value", "currency"], "additionalProperties": false},
+        "threshold": {"type": "object", "properties": {"field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "comparator": {"type": "string", "enum": ["lt", "le", "gt", "ge"]}, "value": {"type": "number"}, "currency": {"const": "EUR"}}, "required": ["field", "comparator", "value", "currency"], "additionalProperties": false},
         "procedures": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "description": "Procedure types admissible when conditions hold."},
         "minimum_days": {"type": "integer", "minimum": 1},
         "usual_days": {"type": "integer", "minimum": 1, "description": "D62: the days a passage sets «em regra» beside an absolute minimum (minimum_days). Under it and not under minimum_days: cumpre, with a note."},

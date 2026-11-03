@@ -796,6 +796,7 @@ def check_store(roots):
     check_packages(store, out)
     check_rule_content(store, out)
     check_readings(store, out)
+    check_v3_readings(store, out)
     check_seal(store, out)
     for tdir, held in training_dirs(roots):
         check_training(store, out, tdir, held)
@@ -889,6 +890,72 @@ def check_readings(store, out, readings_root=None):
         got = hashlib.sha256(str(doc.get("answer", "")).encode("utf-8")).hexdigest()
         if got != want or doc.get("sha256") != want:
             out.append(("READ", f"{ev['id']}: {f.relative_to(root)} does not hash to the sha256 the log recorded ({want[:12]}...)"))
+
+
+def check_v3_readings(store, out, readings_root=None):
+    """V3 (D66, product_rule:fontes-verificadas-e-nao-tipavel): a v3 prompt shows every passage its context lets a reading
+    quote; every answer a v3 round recorded passes the reading protocol's checker against that context; the log's payload is
+    the answer's canonical content; a blind review upholds exactly when the two readings replicate. The checker is code
+    (tools/read_rules_v3.py); nothing here calls a model."""
+    root = Path(readings_root) if readings_root else (store.governance_dir / "readings" if store.governance_dir else None)
+    if root is None or not any(root.glob("fabrica*/*/prompt.json")):
+        return
+    if str(ROOT / "tools") not in sys.path:
+        sys.path.insert(0, str(ROOT / "tools"))
+    import read_rules_v3 as v3  # noqa: E402
+    if not v3.selftest():
+        out.append(("V3", "tools/read_rules_v3.py: the checker accepts a broken copy of the prompt's example, or refuses the example"))
+    prompts = {}
+    for f in sorted(root.glob("fabrica*/*/prompt.json")):
+        body = json.loads(f.read_text(encoding="utf-8"))
+        if body.get("protocol") != "v3":
+            continue
+        prompts[(body["round"], f.parent.name)] = (f.parent, body)
+        shown = v3.norm(body["prompt"])
+        for pid, text in body["context"]["allowed"].items():
+            for line in (text or "").split("\n"):
+                if line.strip() and v3.norm(line) not in shown:
+                    out.append(("V3", f"{f.relative_to(root)}: {pid} may be quoted but its words «{line[:50]}» are not in the prompt"))
+                    break
+    if not prompts:
+        return
+    answers, proposals = {}, {}
+    for _, ev in store.events:
+        p = ev.get("payload") or {}
+        if p.get("protocol") != "v3" or not p.get("answer_sha256"):
+            continue
+        key = (p["round"], reading_dir(re.sub(r"-[b-d]@v1$", "@v1", ev["assertion"])))
+        if key not in prompts:
+            out.append(("V3", f"{ev['id']}: no v3 prompt {key[1]} in round {key[0]}"))
+            continue
+        folder, body = prompts[key]
+        f = folder / f"leitor-{ev['principal'].split(':')[1]}.json"
+        if f not in answers:
+            doc = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+            a = v3.parse(doc.get("answer", ""))
+            answers[f] = (a, v3.check(a, body["context"], body["type"]) if a is not None else ["not the answer object"])
+        a, errs = answers[f]
+        if errs:
+            out.append(("V3", f"{ev['id']}: the recorded answer {f.relative_to(root)} fails the checker: {errs[0]}"))
+            continue
+        if ev["action"] in ("propose", "correct"):
+            proposals[(ev["assertion"], p["round"])] = a
+            if ev["assertion_type"] == "nao_tipavel":
+                if not a.get("nao_tipavel") or p.get("motivo") != a["nao_tipavel"]["motivo"]:
+                    out.append(("V3", f"{ev['id']}: the payload's reason is not the answer's"))
+            else:
+                m = re.search(r"-([b-d])@v1$", ev["assertion"])
+                i = "bcd".index(m.group(1)) + 1 if m else 0
+                rules = a.get("regras") or []
+                if i >= len(rules) or v3.canonical_rule(rules[i])["condicoes"] != p.get("conditions") or \
+                        {k: v for k, v in rules[i]["params"].items() if v is not None} != p.get("params"):
+                    out.append(("V3", f"{ev['id']}: the payload is not rule {i + 1} of the answer {f.relative_to(root)}"))
+        elif ev["action"] == "review":
+            pa = proposals.get((ev["assertion"], p["round"]))
+            if pa is None:
+                out.append(("V3", f"{ev['id']}: a blind review with no recorded v3 proposal before it"))
+            elif v3.replicate(pa, a) != (ev.get("verdict") == "uphold"):
+                out.append(("V3", f"{ev['id']}: verdict {ev.get('verdict')}, but the two readings {'replicate' if v3.replicate(pa, a) else 'do not replicate'}"))
 
 
 def check_seal(store, out, casos_root=None, held_out=None, train_files=None):

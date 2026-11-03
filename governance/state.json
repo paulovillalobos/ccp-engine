@@ -72,9 +72,29 @@
       "revision": 1,
       "state": "proposed"
     },
+    "product_rule|product_rule:fontes-verificadas-e-nao-tipavel": {
+      "events": [
+        252
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:forma-canonica-da-leitura": {
       "events": [
         43
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
+    "product_rule|product_rule:limiar-e-escolha-de-procedimento": {
+      "events": [
+        250
       ],
       "family": null,
       "proposer": "pessoa:paulo",
@@ -92,9 +112,39 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:regra-mais-especifica": {
+      "events": [
+        253
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:replicacao-conteudo-e-alvo": {
       "events": [
         220
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
+    "product_rule|product_rule:titulos-nomeiam-procedimento": {
+      "events": [
+        249
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
+    "product_rule|product_rule:vocabulario-v3": {
+      "events": [
+        251
       ],
       "family": null,
       "proposer": "pessoa:paulo",
@@ -257,7 +307,8 @@
         192,
         193,
         237,
-        238
+        238,
+        254
       ],
       "family": "A",
       "proposer": "leitor:a13",
@@ -270,7 +321,7 @@
         }
       ],
       "revision": 3,
-      "state": "settled"
+      "state": "stale"
     },
     "regra|regra:ccp:auto-prazo-minimo-art174-1@v1": {
       "events": [
@@ -1181,6 +1232,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 248,
-  "head": "06b5ebb226aa4c68058570bb87b27bd0bb4ed3ba2e0bce43f28d1064a6abd20e"
+  "events": 254,
+  "head": "64ea3478e379dfdefb89f4b0b51aa2fe269ea3a0727352a36939992050549e83"
 }
