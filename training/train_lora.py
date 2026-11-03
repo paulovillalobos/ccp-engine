@@ -99,7 +99,7 @@ def mixture(run="v1"):
     return mix, {k: len(v) for k, v in sorted(by_task.items())}
 
 
-@app.function(gpu="H100", volumes={"/weights": weights, "/lora": adapters}, timeout=6 * 3600)
+@app.function(gpu="H100", volumes={"/weights": weights, "/lora": adapters}, timeout=9 * 3600)  # D67: v13 ≈ 5.5 h (v12 4.2 h × 1.31); the adapter is saved only at the end
 def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
     import math
     import random
