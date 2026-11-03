@@ -2011,3 +2011,15 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   differs (v12 leaves out publicado_joue); 11 without a valid proposal (conditions from neighbouring numbers, procedures
   and contract types the words do not name, rules for the 5 targets that hold none). 16 rules settled (17 less 88.º
   n.º 2 a), withdrawn).
+
+## 2026-11-03 — D67, the data part: why v12's data rated 3, and the tools for data-v13
+- Audit of data-v12's rule-reading rows against dev (reports/DATA-AUDIT-v12.md; sealed only in the leak count): 959 of
+  the 1 318 training rows were written for the old prompt; «não tipável» 7.4 % (dev 24.0 %); titles 16.8 % (dev 100 %);
+  each v3 kind 29–52 rows; 70.5 % of the quotes are the vocabulary's first phrase where it lists others (dev 46.3 %);
+  stored schemas alphabetised; 21 training articles close to a measured one (9 sealed, 3 dev, 9 dev_antigo).
+- tools/make_rule_readings_v13.py: data-v12's articles plus BRIEF-D67's (training/rule-readings/v4-*), untitled articles
+  under NEUTRAL titles (tests: no reading changes), every training article compared with every measured article, the
+  schema in the factory's order. tools/preflight_data.py: 8 checks of the training rows against dev; data-v12 fails 7.
+  training/train_lora.py: run v13 refuses to start unless the gate passes.
+- BRIEF-D67: 13 batches of 100 (40 «não tipável», 10 per reason; the v3 kinds; comparador lt and le only until the limiar
+  product rule). Pilot batch v4-01 being written; the other 12 after its review.
