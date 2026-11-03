@@ -2536,8 +2536,33 @@
       "versao": 50,
       "code": "verify.py",
       "hash": "a66d5fba835a07ecfebbdd7e978195f7700bfc3fa872814213883a4d8f95a73b",
+      "retired": true,
+      "nota": "D67: TRAIN regenerates data-v13 (tools/make_rule_readings_v13.py) byte for byte",
+      "retired_at": "2026-11-03T16:19:29Z"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v13@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_rule_readings_v13.py",
+      "hash": "73b424fe449d56749f670c37b0d74dd7ae2ade8e97c1f1ad14b41f1ff113069e",
       "retired": false,
-      "nota": "D67: TRAIN regenerates data-v13 (tools/make_rule_readings_v13.py) byte for byte"
+      "nota": "D67: the readers on data-v13's measured sets, read with the protocol 0.4 (the checker against the article's context, then the canonical content against the gold); counts the answers decoded under the quote grammar; no model"
+    },
+    {
+      "id": "ferramenta:verify@51",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 51,
+      "code": "verify.py",
+      "hash": "b33707803628b5ef8bc2e070d87eb395342c8be94a5a6a833f36f95f7eaf8581",
+      "retired": false,
+      "nota": "D67: MEAS recomputes regras-v13 reports (tools/measure_rule_readings_v13.py)"
     }
   ]
 }

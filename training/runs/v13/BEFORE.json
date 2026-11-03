@@ -1,0 +1,98 @@
+{
+ "tool": "ccp-measure-rule-readings-v13-0.1",
+ "protocol": "ccp-read-rules-v3-0.4",
+ "date": "2026-11-03",
+ "sets": {
+  "dev": {
+   "gold": "training/data-v13/regra_lida/dev.jsonl",
+   "gold_sha256": "12d89c8dc605007c9085233fd538cd246b4a6123d8251473b3fc6d23ccedeba1",
+   "examples": 104,
+   "readers": {
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "a844083b444ee476c4e19b1070bab22cf1ce6461edf9c3260ea84d557b95df83",
+     "quoted_by_grammar": 0,
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "settles": {
+      "k": 98,
+      "n": 104,
+      "value": 0.9423,
+      "wilson95": [
+       0.8798,
+       0.9733
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "não tipável num e regras no outro": 4,
+       "condição em falta: tipo_contrato": 1,
+       "motivo nao_e_limiar em vez de sem_vocabulario": 1
+      },
+      "by_style": {
+       "comparador": 3,
+       "capitulo": 1,
+       "grandeza": 1,
+       "nao_tipavel": 1
+      }
+     }
+    }
+   }
+  },
+  "sealed": {
+   "gold": "training/data-v13/regra_lida/sealed.jsonl",
+   "gold_sha256": "74417f86ec0d2825200410db978ee7d86d10ed6cff21118d7361084e7cbde6fd",
+   "examples": 96,
+   "readers": {
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "d71a8f44c9157f6237b6b4b9d1c7aa215898b6d8303392d00c502898e2dc6132",
+     "quoted_by_grammar": 0,
+     "answered": {
+      "k": 94,
+      "n": 96,
+      "value": 0.9792,
+      "wilson95": [
+       0.9272,
+       0.9943
+      ]
+     },
+     "valid": {
+      "k": 93,
+      "n": 96,
+      "value": 0.9688,
+      "wilson95": [
+       0.9121,
+       0.9893
+      ]
+     },
+     "settles": {
+      "k": 86,
+      "n": 96,
+      "value": 0.8958,
+      "wilson95": [
+       0.8188,
+       0.9424
+      ]
+     }
+    }
+   }
+  }
+ }
+}

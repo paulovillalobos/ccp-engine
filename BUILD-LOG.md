@@ -2047,3 +2047,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   12 passages, 5 values named, cross-reference 50 %, qualifier 22 %, other law 21 %, other units 24 %); old spelling 18 %
   (law 27 % ± 10); first listed phrase 40 % (law 37 %); schema order and answer keys 0 off; 0 leaks. verify regenerates
   data-v13 byte for byte (ok). v13's mix is 1.31× v12's: about 5.5 h and USD 22 on one H100.
+- BEFORE (training/runs/v13/BEFORE, tools/measure_rule_readings_v13.py, protocol 0.4): leitor:b (Reader B, model-b) answered
+  data-v13's dev and sealed blind. Dev 104: 100 % valid, 94.2 % settle (in 0.3: 92.3 % and 80.8 %); sealed 96: 96.9 % valid,
+  89.6 % settle (0.3: 94.8 % and 81.2 %), 94 of 96 answered. 11 first calls ended with no answer (9 at the output limit,
+  looping on whitespace; 2 stuck 30 minutes) and were asked again; reader-b-cli on PATH no longer serves model-b on
+  that account, so the second call used reader B's client (0.166.0-alpha.5.1, as in earlier rounds). Two sealed
+  calls ended at the output limit both times and stay unanswered (they count as not settling). v12's reading of the same
+  sets with 0.4 and the quote grammar (leitor:a14, on Modal) is added to BEFORE before v13 answers.
+- tools/measure_rule_readings_v13.py (measure-rule-readings-v13@1): v12's measurement with the checker of the protocol 0.4;
+  it counts the answers decoded under the quote grammar (all 593 gold answers settle). verify@51: MEAS recomputes
+  regras-v13 reports.

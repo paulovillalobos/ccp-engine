@@ -1165,6 +1165,12 @@ def check_measure():
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/{name}.py recomputes from the stored answers"))
             continue
+        if f.name.startswith("regras-v13-"):  # phase 15 (D67): the readers on data-v13's measured sets, read with the protocol 0.4 (tools/measure_rule_readings_v13.py)
+            import measure_rule_readings_v13  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_rule_readings_v13.report(stored["date"], sets=set(stored["sets"]))
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_rule_readings_v13.py recomputes from the stored answers"))
+            continue
         if f.name.startswith("regras-v12-"):  # phase 15 (D66): the readers on data-v12, read with the protocol v3 (tools/measure_rule_readings_v12.py)
             import measure_rule_readings_v12  # noqa: E402  (no model: it reads the stored answers)
             again = measure_rule_readings_v12.report(stored["date"], sets=set(stored["sets"]))
