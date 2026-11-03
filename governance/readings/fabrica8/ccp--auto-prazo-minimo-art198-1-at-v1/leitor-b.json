@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T04:09:08Z",
+ "sha256": "ae24a15e1aa37fdb0f279ad93caddfb2c2cd72d78b27d03ce68d194758bd02c9",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_negociacao\",\"fontes\":[{\"texto\":\"Procedimento de negociação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iv\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"envio do anúncio referido no n.º 2 do artigo anterior ao Serviço das Publicações da União Europeia\",\"de\":\"ccp:art198.1\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"Não pode ser fixado um prazo para a apresentação das candidaturas inferior a 30 dias\",\"de\":\"ccp:art198.1\"}],\"deadline_field\":[{\"texto\":\"apresentação das candidaturas\",\"de\":\"ccp:art198.1\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio do anúncio\",\"de\":\"ccp:art198.1\"}]    \t,\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

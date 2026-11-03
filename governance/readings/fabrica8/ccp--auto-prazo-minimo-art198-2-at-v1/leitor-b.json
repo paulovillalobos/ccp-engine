@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T04:32:40Z",
+ "sha256": "297b86fa069489351bc97f0f70c05742133be63182073a2a117796f9b338513e",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_negociacao\",\"fontes\":[{\"texto\":\"Procedimento de negociação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iv\"}]},{\"field\":\"anuncio_pre_informacao\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"Quando tenha sido publicado o anúncio periódico indicativo\",\"de\":\"ccp:art198.2\"}]}],\"params\":{\"minimum_days\":25,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"não pode ser fixado um prazo para a apresentação das candidaturas inferior a 25 dias\",\"de\":\"ccp:art198.2\"}],\"deadline_field\":[{\"texto\":\"apresentação das candidaturas\",\"de\":\"ccp:art198.2\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio do convite\",\"de\":\"ccp:art198.2\"}] \t,\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

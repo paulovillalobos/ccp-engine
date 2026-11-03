@@ -8,7 +8,7 @@ fresh empty working directory (it sees the prompt and the answer schema, no repo
 writes leitor-b.json {"at", "sha256" of the answer text, "answer"}. The engine is the principal's motor field; the model
 option is given on the command line and written nowhere. readers/ holds the code that runs a model (D38).
 JSONL mode (D52, the ceiling on the written questions): the same blind call per example of a file {id, prompt, schema};
-resumable (an id already in --out is skipped). Reader B's structured output wants every property listed, so the schema is
+resumable (an id already in --out is skipped; answers are written as they come, a call stuck 30 minutes is skipped). Reader B's structured output wants every property listed, so the schema is
 made strict (each optional property required and nullable, no pattern or length bounds); the measurement drops nulls.
 """
 import concurrent.futures
@@ -43,7 +43,10 @@ def ask(prompt, schema, a):
         out = Path(empty) / "answer.txt"
         cmd = ["reader-b", "exec", "--skip-git-repo-check", "--sandbox", "read-only", "--ephemeral", "-C", empty, "-c", f'model_reasoning_effort="{a.effort}"']
         cmd += ["-m", a.model] if a.model else []
-        res = subprocess.run(cmd + ["--output-schema", str(sf), "-o", str(out), "-"], input=prompt, capture_output=True, text=True, timeout=1800)
+        try:
+            res = subprocess.run(cmd + ["--output-schema", str(sf), "-o", str(out), "-"], input=prompt, capture_output=True, text=True, timeout=1800)
+        except subprocess.TimeoutExpired:  # one stuck call is skipped, not the batch; a rerun asks it again
+            return "", subprocess.CompletedProcess(cmd, -1, "", "timed out after 1800 s")
         return (out.read_text(encoding="utf-8") if out.exists() else ""), res
 
 
@@ -56,7 +59,7 @@ def jsonl_mode(a):
         return e, ask(e["prompt"], strict(e["schema"]), a)
 
     with concurrent.futures.ThreadPoolExecutor(a.workers) as pool, out.open("a", encoding="utf-8") as fh:
-        for e, (text, res) in pool.map(one, todo):
+        for e, (text, res) in (f.result() for f in concurrent.futures.as_completed([pool.submit(one, e) for e in todo])):
             if not text.strip():
                 print(f"{e['id']}: no answer (exit {res.returncode}): {res.stderr[-200:]}", flush=True)
                 continue
