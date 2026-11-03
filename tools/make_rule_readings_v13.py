@@ -10,13 +10,17 @@ The articles are rendered, quoted and checked by data-v12's code (tools/make_rul
   compared v3-* only;
 - an article written without titles (batch-*, alvo-*) is placed under NEUTRAL titles, as every article of the law sits under
   some: titles that name no field value, deadline, starting point, amount field or comparator (checked at import);
+- about AGED_SHARE of the articles, chosen by id among those with a word that has an old form, are written in the spelling
+  before the 1990 agreement (the vocabulary's old_spelling forms), as that share of the real law's passages is (texture());
 - a stored schema keeps the factory's property order (data-v12's sort_keys sorted it: D66's serving trap);
 - the measured sets stay data-v12's (training/data-v12/regra_lida/{dev,sealed,dev_antigo}.jsonl).
-profile() is what tools/preflight_data.py compares with the measured set before a run.
+profile() and texture() are what tools/preflight_data.py compares with dev and with the real law before a run.
 """
 import argparse
 import hashlib
 import json
+import re
+import statistics as st
 import sys
 from collections import Counter
 from pathlib import Path
@@ -24,7 +28,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "tools"))
 import make_rule_readings_v12 as v12  # noqa: E402  (render, quotes by code, the factory's checker, the leak test)
+import read_rules as rr  # noqa: E402
 import read_rules_v3 as v3  # noqa: E402
+import rule_factory as rf  # noqa: E402  (PATTERNS: a passage that states a deadline in days or a euro amount)
 
 VERSION = "ccp-make-rule-readings-v13-0.1"
 DATA = ROOT / "training/data-v13"
@@ -35,7 +41,15 @@ SOURCES = ["batch-*.jsonl", "alvo-*.jsonl", "v3-*.jsonl", "v4-*.jsonl"]
 MEASURED_SOURCES = ["eval-*.jsonl", "eval3-*.jsonl"]
 # BRIEF-D67: the kinds of one batch of 100 (comparador: lt and le only until the limiar product rule is decided)
 BRIEF_MIX = {"nao_tipavel": 40, "contagem": 9, "grandeza": 8, "valor_condicao": 8, "casos": 8, "comparador": 8, "alineas": 7, "remissao": 6, "capitulo": 6}
-FIRST_WHERE_OTHERS_MAX = 0.40
+AGED_SHARE = 0.27  # the real law's passages with days or euros that show a pre-1990 spelling (texture(real_contexts()), 2026-11-03)
+AGED_OF_ELIGIBLE = 0.55  # 46 % of the written articles have a word with an old form; 0.55 of those ≈ AGED_SHARE of all
+# BRIEF-D67 section 7: a batch's texture, from the real law's (112 passages: shown text median 1 981 characters, 12 passages,
+# target 447, 4 values named; cross-reference in the target 55 %, qualifier 21 %, another law 18 %, other units 23 %,
+# revoked 7 %; first listed phrase 37 % of the values named)
+TEXTURE_BRIEF = {"shown_chars": (1500, 3500), "passages": (9, 18), "target_chars": (250, 900), "values_named": (4, 14),
+                 "xref": (0.40, 0.70), "qualifier": (0.12, 0.35), "other_law": (0.10, 0.30), "units": (0.15, 0.35),
+                 "first_phrase": (0.27, 0.47)}
+NEW_TO_OLD = {new: old for old, new in VOC["old_spelling"].items()}
 NEUTRAL = [
     ["Título II — Fase de formação do contrato", "Capítulo I — Disposições comuns"],
     ["Título III — Tramitação procedimental", "Capítulo IV — Prazos"],
@@ -77,6 +91,28 @@ def housed(ex):
     return {**ex, "lugar": list(NEUTRAL[int(hashlib.sha256(ex["id"].encode("utf-8")).hexdigest(), 16) % len(NEUTRAL)])}
 
 
+def old_spelling(text):
+    def back(mt):
+        w = NEW_TO_OLD[mt.group(0).lower()]
+        return w[0].upper() + w[1:] if mt.group(0)[0].isupper() else w
+    return re.sub(r"(?<!\w)(?:" + "|".join(sorted(map(re.escape, NEW_TO_OLD), key=len, reverse=True)) + r")(?!\w)", back, text, flags=re.I) if text else text
+
+
+def aged(ex):
+    """The article in the old spelling when its id falls in AGED_OF_ELIGIBLE and it has a word with an old form; as it is
+    otherwise. The gold does not change: the factory's checker and the quote finder read both spellings."""
+    if int(hashlib.sha256(("aged:" + ex["id"]).encode("utf-8")).hexdigest(), 16) % 10000 >= AGED_OF_ELIGIBLE * 10000:
+        return ex
+    nums = lambda xs: [{**x, "texto": old_spelling(x["texto"])} for x in xs or []]  # noqa: E731
+    out = {**ex, "epigrafe": old_spelling(ex["epigrafe"]), "texto": old_spelling(ex.get("texto", "")), "numeros": nums(ex["numeros"]),
+           "lugar": [old_spelling(t) for t in ex.get("lugar") or []] or ex.get("lugar"),
+           "remissoes": [{**r, "epigrafe": old_spelling(r["epigrafe"]), "texto": old_spelling(r.get("texto", "")), "numeros": nums(r.get("numeros"))}
+                         for r in ex.get("remissoes") or []] or ex.get("remissoes")}
+    if "texto" not in ex:
+        out.pop("texto")
+    return ex if json.dumps(out, ensure_ascii=False, sort_keys=True) == json.dumps(ex, ensure_ascii=False, sort_keys=True) else out
+
+
 def measured_texts():
     return [v12.alvo_text(ex) for pattern in MEASURED_SOURCES for ex in v12.load(pattern)]
 
@@ -94,7 +130,7 @@ def build(store=None, only=None):
             t = v12.alvo_text(ex)
             if v12.close(t, real) or v12.close(t, measured):
                 rejected[ex["id"]] = "close to a real passage or a measured article"; continue
-            ex = housed(ex)
+            ex = aged(housed(ex))
             res, errs = v12.problems(ex)
             if errs:
                 rejected[ex["id"]] = errs[0]; continue
@@ -159,6 +195,66 @@ def profile(pairs):
             "quote_roles": {k: share(v, nq) for k, v in roles.most_common()}}
 
 
+# ---- texture: what a reader is shown, in the real law and in a written article -----------------------------------------
+OTHER_LAW = re.compile(r"Decreto-Lei n\.º|Lei n\.º|Diretiva|Regulamento \(|Regulamento Delegado|Portaria n\.º|Decreto Regulamentar|Resolução do Conselho|"
+                       r"Código do Procedimento Administrativo|Código do Trabalho|Código Civil|regime jurídico", re.I)
+QUALIFIER = re.compile(r"sem prejuízo|salvo|exceto|excepto|com exce[cç][ãa]o|ressalvad|nos termos d|para efeitos d", re.I)
+XREF = re.compile(r"n\.º\s*\d+\s+do\s+artigo|artigo anterior|n[úu]mero anterior|al[íi]nea anterior|presente artigo|presente c[óo]digo|do artigo \d+", re.I)
+UNITS = re.compile(r"dias úteis|\bmeses\b|\bhoras\b|\bpor cento\b|%", re.I)
+REVOKED = re.compile(r"revogad[oa]", re.I)
+OLD_FORMS = re.compile(r"(?<!\w)(?:" + "|".join(sorted(map(re.escape, VOC["old_spelling"]), key=len, reverse=True)) + r")(?!\w)", re.I)
+
+
+def first_phrase_uses(text):
+    """For each value the text names, among those the vocabulary gives several phrases: is one of them its first listed phrase?"""
+    t, out = v3.norm(text), []
+    for spec in VOC["condition_fields"].values():
+        if spec["kind"] != "enum":
+            continue
+        for ws in spec["values"].values():
+            if len(ws) > 1:
+                hits = [v3.norm(w) for w in ws if re.search(rf"(?<!\w){re.escape(v3.norm(w))}(?!\w)", t)]
+                if hits:
+                    out.append(v3.norm(ws[0]) in hits)
+    return out
+
+
+def features(ctx):
+    allowed, alvo = ctx["allowed"], ctx["alvo"]
+    text, a = "\n".join(allowed.values()), allowed[ctx["alvo"]]
+    return {"shown_chars": len(text), "passages": len(allowed), "target_chars": len(a),
+            "values_named": sum(len(v3.values_named(f, text)) for f, s in VOC["condition_fields"].items() if s["kind"] == "enum"),
+            "xref": bool(XREF.search(a)), "qualifier": bool(QUALIFIER.search(a)), "other_law": bool(OTHER_LAW.search(text)),
+            "units": bool(UNITS.search(text)), "revoked": bool(REVOKED.search(text)), "old_spelling": bool(OLD_FORMS.search(text)),
+            "first_phrase": first_phrase_uses(text)}
+
+
+def texture(ctxs):
+    fs = [features(c) for c in ctxs]
+    n = len(fs)
+    if not n:
+        return {"n": 0}
+    out = {"n": n, **{k: st.median(f[k] for f in fs) for k in ("shown_chars", "passages", "target_chars", "values_named")},
+           **{k: share(sum(f[k] for f in fs), n) for k in ("xref", "qualifier", "other_law", "units", "revoked", "old_spelling")}}
+    uses = [u for f in fs for u in f["first_phrase"]]
+    out["first_phrase"] = share(sum(uses), len(uses))
+    return out
+
+
+def real_contexts(store=None):
+    """The v3 context of every CCP passage in force that states a deadline in days or a euro amount (the factory's PATTERNS)."""
+    store = store or v12.m.Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    law, out = v3.Law(store), []
+    for p in store.objects["passagem"]:
+        v = rr.version_at(store.current(p["id"]), v12.DATE) if p["id"].startswith("ccp:art") else None
+        if v and any(pat.search(v["text"]) for pat in rf.PATTERNS.values()):
+            try:
+                out.append(v3.context(law, p["id"], v12.DATE))
+            except (KeyError, ValueError, IndexError):
+                continue
+    return out
+
+
 def measured_pairs(name="dev"):
     arts = {f"{TASK}:{ex['id']}": ex for pattern in MEASURED_SOURCES for ex in v12.load(pattern)}
     rows = [json.loads(line) for line in (MEASURED / f"{name}.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
@@ -197,9 +293,13 @@ def main():
             print("kinds (have / BRIEF-D67 per 100): " + ", ".join(f"{k} {have.get(k, 0)}/{n}" for k, n in BRIEF_MIX.items())
                   + (f"; not in the brief: {sorted(set(have) - set(BRIEF_MIX))}" if set(have) - set(BRIEF_MIX) else ""))
             print("não tipável by reason (10 each): " + ", ".join(f"{m} {p['motivos'].get(m, 0)}" for m in VOC["nao_tipavel_motivos"]))
-            fw = p["quote_first_where_others"]
-            print(f"quotes that are the vocabulary's first phrase where it lists others: {100 * (fw or 0):.0f} % "
-                  f"(BRIEF-D67: at most {100 * FIRST_WHERE_OTHERS_MAX:.0f} %){'  <- too many' if fw and fw > FIRST_WHERE_OTHERS_MAX else ''}")
+            mine, real = texture([v12.ctx_of(ex) for ex, _ in train]), texture(real_contexts())
+            print("texture, your batch | the real law (BRIEF-D67 section 7):")
+            for k, want in TEXTURE_BRIEF.items():
+                lo, hi = want
+                x = mine.get(k)
+                flag = "" if x is not None and lo <= x <= hi else "  <- outside the brief"
+                print(f"  {k:14} {x} | {real.get(k)}   brief: {lo}–{hi}{flag}")
         return
     files = generate()
     for rel, b in files.items():

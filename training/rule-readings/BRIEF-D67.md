@@ -2,16 +2,19 @@
 
 Read `training/rule-readings/BRIEF-V3.md` first: everything in it holds (what to read, what NOT to read, the JSON shape,
 the kinds, the gold without quotes, European Portuguese as the CCP writes it, no copying of a real article). This file
-changes six things. Where the two differ, this file wins.
+changes eight things. Where the two differ, this file wins.
 
 Why: v12 was trained on 1 318 articles, and 73 % of them were written for the old reading prompt. Against the articles it
 was measured on, it almost never says «não tipável», it copies the vocabulary's first phrase instead of the text's words,
-and it cites the target passage when the words are in a title, the proémio or a referred number. These articles teach the
-three things it does not know.
+and it cites the target passage when the words are in a title, the proémio or a referred number. And every written
+article so far is tidier than the law: the real CCP passages that state days or euros show a reader four times more text,
+twice the values, a cross-reference in half the targets, another law in one in five (section 7). These rows teach what it
+does not know, on text as messy as the law's.
 
 ## 1. Output
-`training/rule-readings/{FILE}.jsonl`, ids `{PREFIX}-001` … `{PREFIX}-100`, invented article numbers in {RANGE} (remissões
-too), each article number used once. Do not read the other `v4-*.jsonl` files.
+`training/rule-readings/{FILE}.jsonl`, ids `{PREFIX}-001` … `{PREFIX}-100`: 100 rows from 50 articles, each article read
+twice (section 8). Invented article numbers in {RANGE} (remissões too); each number names one article. Do not read the
+other `v4-*.jsonl` files.
 
 ## 2. The mix of your 100 (replaces BRIEF-V3's)
 | kind (`estilo`) | articles | what it practises (BRIEF-V3 describes each) |
@@ -35,17 +38,18 @@ contrato», «Capítulo IV — Disposições comuns»); the others may name a pr
 An article without `lugar` is left out by the check.
 
 ## 4. The law's words, not the vocabulary's first phrase
-The reader's prompt shows only the first phrase or two of each value; the reader has to quote your text. So where
-`schemas/vocabulario-v3.json` lists several phrases for a value, use the first one in at most one article in three: rotate
-the others, inflected as the CCP writes them («de locação ou de aquisição de bens móveis», «de aquisição de serviços»,
-«empreitadas de obras públicas»). Lists go in the order the sentence wants, not the vocabulary's: «a consulta prévia e o
-ajuste direto», «ajuste direto ou consulta prévia». The check prints your share of first phrases; keep it at or under 40 %.
+The reader's prompt shows only the first phrase or two of each value; the reader has to quote your text. Where
+`schemas/vocabulario-v3.json` lists several phrases for a value, the real law uses the first one about one time in three
+(37 %); v12's training articles did it half the time. Do as the law does: the first phrase about one time in three, the
+others rotated and inflected as the CCP writes them («de locação ou de aquisição de bens móveis», «de aquisição de
+serviços», «empreitadas de obras públicas»). Lists go in the order the sentence wants, not the vocabulary's: «a consulta
+prévia e o ajuste direto», «ajuste direto ou consulta prévia». The check prints the share (`first_phrase`); keep it
+between 27 % and 47 %.
 
 ## 5. Where the words are
-In about half of your typable articles, at least one condition or parameter is said outside the target passage: in the
-proémio, the epígrafe, a title, or the referred number. Each article has 2 to 6 numbers, and the other numbers say related
-things with other values (another procedure, another deadline, another amount), so a reader that quotes a neighbour fails
-(L1).
+In about half of your typable rows, at least one condition or parameter is said outside the target passage: in the
+proémio, the epígrafe, a title, or the referred number. The other numbers say related things with other values (another
+procedure, another deadline, another amount), so a reader that quotes a neighbour fails (L1).
 
 ## 6. «Não tipável», 10 per reason
 Write each so that one changed detail would make it typable, and say in `falta`, in one sentence, what is missing:
@@ -63,11 +67,37 @@ Write each so that one changed detail would make it typable, and say in `falta`,
   be read without it («o prazo previsto no n.º 2 do artigo N.º», N an unused number of your range, with no remissão given).
 The `fonte` is the exact words of the target or its proémio that show it.
 
-## Check, then fix until clean
-Run `.venv/bin/python tools/make_rule_readings_v13.py check --only {PREFIX}` (under a minute). It prints every problem
-(«gold: …», «checker: …», «close to …», «no lugar»), then your mix against section 2, your «não tipável» by reason, and your
-share of first phrases. Fix the text or the gold (never the code) until no problem line names your ids, the kinds match
-section 2, each reason has 10, and the share is at or under 40 %. Then read your 100 gold readings once more against your
-texts and fix any you would not defend.
+## 7. Texture: as messy as the real law
+Measured on the 112 real CCP passages that state a deadline in days or a euro amount, as the factory shows them to a
+reader. Write to the last column; the check prints yours beside the law's.
+| | the real law | your 100 rows |
+|---|---|---|
+| text shown (article, titles, remissões) | median 1 981 characters | median 1 500–3 500 |
+| passages shown | median 12 | 9–18: articles of 6 to 12 numbers and alíneas |
+| target passage | median 447 characters | 250–900: the rule's sentence with its qualifications, often two sentences |
+| values the shown text names (procedures, contract types, …) | median 4 | 4 or more: neighbours name other procedures, contract types, amounts |
+| target with a cross-reference («nos termos do n.º 2», «previsto no artigo anterior», «do artigo 3112.º») | 55 % | 40–70 % |
+| target with a qualifier («sem prejuízo de», «salvo», «exceto», «para efeitos de») | 21 % | 12–35 % |
+| another law named («Código do Procedimento Administrativo», «Diretiva 2014/24/UE», «regime jurídico da …») | 18 % | 10–30 % |
+| units other than days in the text (dias úteis, meses, horas, %) | 23 % | 15–35 %, in a neighbour unless the row is sem_vocabulario |
+| a revoked number shown («4 - (Revogado.)») | 7 % | a few |
+Write in today's spelling: code puts 27 % of the articles in the old one (concepção, sector, projecto, acto), as the law has.
+Messy is the law's mess: long sentences, remissões, exceptions, neighbours that almost apply. Never a typo, and never a rule
+the words do not state.
 
-Finish with one line: the file path, how many of your articles pass, and your share of first phrases.
+## 8. One article, two targets
+The law's articles hold several rules, and a reader must not take a neighbour's. So write 50 articles and read each twice:
+rows 001 and 002 share one article, 003 and 004 the next, and so on. The two rows of a pair have the same `artigo`,
+`epigrafe`, `lugar`, `numeros` and `remissoes`, and differ in `alvo`, `regras` or `nao_tipavel`, and `estilo`; their kinds
+may differ (a minimum deadline in n.º 2 and the jury's own deadline in n.º 5 make one typable row and one
+`nao_e_prazo_minimo`; a `texto_em_falta` row's target refers to an article that `remissoes` does not give, while its pair
+may use one it does). The 100 rows keep section 2's mix.
+
+## Check, then fix until clean
+Run `.venv/bin/python tools/make_rule_readings_v13.py check --only {PREFIX}` (about a minute). It prints every problem
+(«gold: …», «checker: …», «close to …», «no lugar»), then your mix against section 2, your «não tipável» by reason, and your
+texture beside the law's (section 7, with `first_phrase` from section 4). Fix the text or the gold (never the code) until no
+problem line names your ids, the kinds match section 2, each reason has 10, and no texture line is marked outside the
+brief. Then read your 100 gold readings once more against your texts and fix any you would not defend.
+
+Finish with one line: the file path, how many of your rows pass, and the texture lines the check printed.

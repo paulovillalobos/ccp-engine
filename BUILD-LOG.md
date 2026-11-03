@@ -2023,3 +2023,9 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   training/train_lora.py: run v13 refuses to start unless the gate passes.
 - BRIEF-D67: 13 batches of 100 (40 «não tipável», 10 per reason; the v3 kinds; comparador lt and le only until the limiar
   product rule). Pilot batch v4-01 being written; the other 12 after its review.
+- Texture (same day, on Paulo's question whether the data is human-like and messy): the real CCP passages with days or
+  euros show a reader four times the text of our written articles, twice the values, cross-references in 55 % of targets
+  (ours 12 %), another law in 18 % (0 %), old spelling in 27 % (0 %) (reports/DATA-AUDIT-v12.md). BRIEF-D67 gains sections 7
+  (texture bands from the law) and 8 (50 articles, two targets each); make_rule_readings_v13 puts ~27 % of articles in the old
+  spelling (no reading changes) and prints a batch's texture beside the law's; preflight_data 0.2 adds 11 checks against the
+  real law (data-v12 fails 17 of 18). Pilot v4-01 (tidy, 100 of 100 pass) is kept; v4-02..07 are being written to the new brief.

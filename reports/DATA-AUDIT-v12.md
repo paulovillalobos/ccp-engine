@@ -42,3 +42,32 @@ answer characters, so the v3-shaped rows were about 6 %.
 The gate on data-v12: 7 of 8 checks fail (tests/test_preflight_data.py). training/train_lora.py runs it before v13 and
 refuses the run if it fails. The comparador batches hold lt and le only: «superior a» / «igual ou superior a» wait for the
 limiar product rule (evento:250 or 251).
+
+## Texture: our articles against the real law (added the same day)
+
+The same v3 context a reader is shown, for the 112 real CCP passages that state a deadline in days or a euro amount
+(make_rule_readings_v13.real_contexts), for v12's training articles, and for dev. Surface features only; no answer read.
+
+| | real law (112) | v12 training (1 318) | dev (104) | pilot batch v4-01 (100) |
+|---|---|---|---|---|
+| text shown, median characters | 1 981 | 506 | 530 | 535 |
+| passages shown, median | 12 | 5 | 7 | 7 |
+| target passage, median characters | 447 | 176 | 170 | 152 |
+| values named in the shown text, median | 4 | 2 | 2 | 2 |
+| target with a cross-reference | 55 % | 12 % | 31 % | 25 % |
+| target with a qualifier («sem prejuízo», «salvo», …) | 21 % | 4 % | 3 % | 1 % |
+| another law named | 18 % | 0 % | 0 % | 0 % |
+| units other than days (dias úteis, meses, horas, %) | 23 % | 3 % | 4 % | 9 % |
+| old spelling (concepção, sector, projecto, acto) | 27 % | 0 % | 0 % | 0 % |
+| values named by the vocabulary's first listed phrase | 37 % | 49 % | 48 % | 12 % |
+
+Every written article so far, test sets included, is tidier than the law: a quarter of the text, half the values, few
+cross-references, no other laws, no old spelling. That is consistent with written articles that settle and real ones that
+do not (v11: 96.7 % replicated on written sealed, 1 of 12 on round 5's real targets; v12: 0 of 12 in round 8). The pilot
+batch fixed the labels and kinds but not the texture, and over-corrected the wording (12 %).
+
+Fix: BRIEF-D67 sections 7 and 8 (articles as long and messy as the law's, each read for two targets; wording at the law's
+37 %); the old spelling by code (make_rule_readings_v13.aged, about 27 % of the articles; tests: no reading changes); and
+11 more gate checks against the real law (tools/preflight_data.py 0.2: the D67 rows inside BRIEF-D67's bands, at least
+40 % of the rows; old spelling and wording within 10 points of the law's). The gate on data-v12: 17 of 18 checks fail.
+The measured sets stay as they are, so dev cannot show this gain; the real-law round can.

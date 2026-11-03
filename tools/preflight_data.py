@@ -2,14 +2,18 @@
 
     .venv/bin/python tools/preflight_data.py [--train training/data-v13/regra_lida/train.jsonl] [--json OUT]
 
-What the model will learn from is compared with what it will be measured on: the dev set (training/data-v12/regra_lida/
-dev.jsonl, the set error analysis may use). The sealed set's article texts are used for the leak test only. Exit 1 when a
-check fails; training/train_lora.py runs this before a run that names it. Why each check: reports/DATA-AUDIT-v12.md.
+What the model will learn from is compared with what it will be measured on, the dev set (training/data-v12/regra_lida/
+dev.jsonl, the set error analysis may use), and with what it must read, the real law (make_rule_readings_v13.texture of
+every CCP passage that states days or euros). The sealed set's article texts are used for the leak test only. Exit 1 when
+a check fails; training/train_lora.py runs this before a run that names it. Why each check: reports/DATA-AUDIT-v12.md.
 - labels: the «não tipável» share is within 5 points of dev's, and each reason holds at least 20 % of them;
 - titles: at least 95 % of the training articles sit under titles, as every article of the law does;
 - kinds: every kind of dev has at least 100 training articles («não tipável» counted by the gold);
-- quotes: where the vocabulary lists several phrases for a value, the share of quotes that are its first phrase is at most
-  dev's plus 10 points (the prompt prints the first phrases; a reader trained on them copies them instead of the text);
+- texture: the D67 rows (BRIEF-D67) are at least 40 % of the rows and, taken together, inside BRIEF-D67's bands around the
+  real law (text shown, passages, target length, values named, cross-references, qualifiers, other laws, other units);
+  the old spelling is within 10 points of the real law's share;
+- wording: where the vocabulary lists several phrases for a value, the share of values the text names by the first one is
+  within 10 points of the real law's (the prompt prints the first phrases; a reader trained on them copies them);
 - order: every stored schema is the factory's (read_rules_v3.schema), property order included, and every answer's keys
   follow it (the decoder writes keys in the schema's order: D66);
 - leaks: no training article is, or is close to (difflib, make_rule_readings.LEAK), a measured article.
@@ -26,8 +30,8 @@ import make_rule_readings_v12 as v12  # noqa: E402
 import make_rule_readings_v13 as v13  # noqa: E402
 import read_rules_v3 as v3  # noqa: E402
 
-VERSION = "ccp-preflight-data-0.1"
-NT_BAND, NT_REASON_MIN, TITLED_MIN, KIND_MIN, FIRST_SLACK = 0.05, 0.20, 0.95, 100, 0.10
+VERSION = "ccp-preflight-data-0.2"
+NT_BAND, NT_REASON_MIN, TITLED_MIN, KIND_MIN, D67_MIN, REAL_SLACK = 0.05, 0.20, 0.95, 100, 0.40, 0.10
 
 
 def key_order_ok(a, s):
@@ -41,9 +45,12 @@ def key_order_ok(a, s):
 
 
 def shown(ex, prompt):
-    """The article as its row's prompt shows it: under the neutral titles when the prompt carries them (data-v13), as written otherwise."""
-    h = v13.housed(ex)
-    return h if h is not ex and all(t.split(" — ", 1)[-1] in prompt for t in h["lugar"]) else ex
+    """The article as its row's prompt shows it: as data-v13 writes it (neutral titles, old spelling) when the prompt shows
+    that text, as written otherwise (data-v12)."""
+    for cand in (v13.aged(v13.housed(ex)), v13.housed(ex)):
+        if cand is not ex and all(t in prompt for t in v12.ctx_of(cand)["allowed"].values()):
+            return cand
+    return ex
 
 
 def articles():
@@ -70,8 +77,16 @@ def gate(train_path, arts=None):
     counts = dict(train["kinds"]); counts["nao_tipavel"] = nt_n
     short = {k: counts.get(k, 0) for k in dev["kinds"] if counts.get(k, 0) < KIND_MIN}
     add("kinds: every dev kind ≥ 100 training articles", not short, {k: counts.get(k, 0) for k in dev["kinds"]}, f"short: {short}" if short else f"≥ {KIND_MIN} each")
-    add("quotes: first phrase where others exist", train["quote_first_where_others"] <= dev["quote_first_where_others"] + FIRST_SLACK,
-        train["quote_first_where_others"], f"≤ {round(dev['quote_first_where_others'] + FIRST_SLACK, 4)} (dev {dev['quote_first_where_others']})")
+    real = v13.texture(v13.real_contexts())
+    d67 = [ex for ex, r in pairs if r["id"].startswith(f"{v12.TASK}:v4-")]
+    every, new = v13.texture([v12.ctx_of(ex) for ex, _ in pairs]), v13.texture([v12.ctx_of(ex) for ex in d67])
+    add("texture: D67 rows ≥ 40 % of the training rows", len(d67) >= D67_MIN * len(pairs), f"{len(d67)} of {len(pairs)}", f"≥ {D67_MIN}")
+    for k, (lo, hi) in v13.TEXTURE_BRIEF.items():
+        if k != "first_phrase":
+            add(f"texture: D67 rows' {k} inside BRIEF-D67's band", new.get(k) is not None and lo <= new[k] <= hi, new.get(k), f"{lo}–{hi} (real law {real[k]})")
+    add("texture: old spelling like the real law", abs(every["old_spelling"] - real["old_spelling"]) <= REAL_SLACK, every["old_spelling"], f"{real['old_spelling']} ± {REAL_SLACK}")
+    add("wording: values named by their first listed phrase, like the real law", abs(every["first_phrase"] - real["first_phrase"]) <= REAL_SLACK,
+        every["first_phrase"], f"{real['first_phrase']} ± {REAL_SLACK}")
     bad_schema = bad_answer = 0
     for ex, r in pairs:
         want = v3.schema(v12.ctx_of(ex), ex["tipo"])
@@ -89,7 +104,7 @@ def gate(train_path, arts=None):
     leaks = [r["id"] for ex, r in pairs if r["id"] in measured or v12.close(v12.alvo_text(ex), texts)]
     add("leaks: no training article is or is close to a measured one", not leaks and not missing, f"{len(leaks)} close" + (f", {len(missing)} unknown ids" if missing else ""), 0)
     return {"tool": VERSION, "train": str(train_path), "ok": all(c["ok"] for c in checks), "checks": checks,
-            "profile": {"train": train, "dev": dev}, "leaks": leaks[:50]}
+            "profile": {"train": train, "dev": dev}, "texture": {"real_law": real, "all_rows": every, "d67_rows": new}, "leaks": leaks[:50]}
 
 
 def main():

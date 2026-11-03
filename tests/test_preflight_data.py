@@ -49,3 +49,21 @@ def test_rows_keep_the_factory_schema_order():
     row = json.loads(v13.dump([v12.row(ex, ctx, answer)]))
     assert json.dumps(row["schema"], ensure_ascii=False) == json.dumps(v3.schema(ctx, ex["tipo"]), ensure_ascii=False)
     assert pf.key_order_ok(json.loads(row["answer"]), row["schema"])
+
+
+def test_old_spelling_changes_no_reading():
+    n = 0
+    for pattern in ("batch-*.jsonl", "alvo-*.jsonl", "v3-*.jsonl"):
+        for ex in v12.load(pattern):
+            ex = v13.housed(ex)
+            old = v13.aged(ex)
+            if old is ex:
+                continue
+            before, errs = v12.problems(ex)
+            if errs:
+                continue
+            after, errs2 = v12.problems(old)
+            assert not errs2, (ex["id"], errs2[:1])
+            assert v3.canonical(after[0]) == v3.canonical(before[0]), ex["id"]
+            n += 1
+    assert n > 250
