@@ -1,0 +1,107 @@
+{
+ "tool": "ccp-make-rule-readings-v13-0.1",
+ "protocol": "ccp-read-rules-v3-0.4",
+ "date": "2026-10-01",
+ "rejected": 116,
+ "files": {
+  "REJECTED.json": {
+   "rows": 118,
+   "sha256": "053dacde97c1dc0fd02efcffb6689537bda692de0d64bb03ddd5e8ad438d207d"
+  },
+  "regra_lida/dev.jsonl": {
+   "rows": 104,
+   "sha256": "12d89c8dc605007c9085233fd538cd246b4a6123d8251473b3fc6d23ccedeba1"
+  },
+  "regra_lida/dev_antigo.jsonl": {
+   "rows": 393,
+   "sha256": "78c115434723d2509be38e58804734ec41ae63858281a8a37ad7d552bd99459c"
+  },
+  "regra_lida/sealed.jsonl": {
+   "rows": 96,
+   "sha256": "74417f86ec0d2825200410db978ee7d86d10ed6cff21118d7361084e7cbde6fd"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 2584,
+   "sha256": "0e42bbb00c41808010773594410b80ec474e2a5ab76a2888a0bf07c464b6a17a"
+  }
+ },
+ "measured_sets": "training/data-v12/regra_lida's articles and gold, prompts in ccp-read-rules-v3-0.4",
+ "profile": {
+  "rows": 2584,
+  "nao_tipavel": 0.2392,
+  "motivos": {
+   "nao_e_limiar": 179,
+   "nao_e_prazo_minimo": 148,
+   "sem_vocabulario": 146,
+   "texto_em_falta": 145
+  },
+  "titled": 1.0,
+  "kinds": {
+   "nao_tipavel": 589,
+   "contagem": 146,
+   "grandeza": 135,
+   "casos": 135,
+   "valor_condicao": 133,
+   "comparador": 132,
+   "alineas": 130,
+   "remissao": 128,
+   "capitulo": 128,
+   "factos_vizinhos": 79,
+   "dois_casos": 66,
+   "restantes": 66,
+   "reducao_herda": 46,
+   "excecoes": 45,
+   "reducao": 40,
+   "alvo_entre_prazos": 40,
+   "procedimento_so_se_dito": 39,
+   "limiar_simples": 38,
+   "comparador_por_caso": 38,
+   "alinea": 36,
+   "modalidade": 28,
+   "base_com_reducao": 27,
+   "outros_prazos": 27,
+   "artigo_longo": 25,
+   "limiar_alinea": 23,
+   "inicio_diferente": 22,
+   "distrator": 20,
+   "um_caso_parecido": 20,
+   "por_extenso": 19,
+   "limiar_le": 19,
+   "dialogo": 18,
+   "joue": 17,
+   "concecao": 17,
+   "artigo_unico": 15,
+   "limiar_dois": 12,
+   "joue_falso": 11,
+   "nao_indicado": 11,
+   "em_regra": 11,
+   "setores": 9,
+   "tres_casos": 8,
+   "ideias": 8,
+   "notificacao": 6,
+   "simples": 3,
+   "convite": 3,
+   "pecas": 3,
+   "tipo_contrato": 2,
+   "setores_especiais": 2,
+   "territorio": 2,
+   "preco_base": 2,
+   "sem_procedimento": 2,
+   "entidade": 1,
+   "pre_informacao": 1,
+   "data": 1
+  },
+  "quote_first_phrase": 0.6852,
+  "quote_first_where_others": 0.6297,
+  "quote_roles": {
+   "alvo": 0.8199,
+   "remissao": 0.0904,
+   "epigrafe": 0.0338,
+   "titulo": 0.0275,
+   "proemio": 0.0267,
+   "vizinho": 0.001,
+   "remissao_epigrafe": 0.0006
+  }
+ },
+ "note": "D67: data-v12's articles plus BRIEF-D67's, every one under titles, compared with every measured article, schema in the factory's order"
+}

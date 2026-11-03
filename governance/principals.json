@@ -2487,8 +2487,9 @@
       "versao": 49,
       "code": "verify.py",
       "hash": "b5a4d9e1410efc2f04fa4b6d5e5d9602ff5c55aaec60c330b50ea25044129117",
-      "retired": false,
-      "nota": "D67: V3 checks a round's recorded answers with their prompt's protocol version"
+      "retired": true,
+      "nota": "D67: V3 checks a round's recorded answers with their prompt's protocol version",
+      "retired_at": "2026-11-03T13:51:16Z"
     },
     {
       "id": "ferramenta:measure-rule-readings-v12@3",
@@ -2501,6 +2502,42 @@
       "hash": "47784308bbae564efedf995b46a62c1ee1da246ee102a643659dd7b2f13e5372",
       "retired": false,
       "nota": "D67: checks v12's answers, and names the protocol in its report, as their prompts had it (0.3)"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v13@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v13.py",
+      "hash": "c9f9cf087d7a9d9769fb682cec9b97b4cad7590350efcd1ed2b8f6a0eff1f50b",
+      "retired": false,
+      "nota": "D67: data-v13: data-v12's articles plus BRIEF-D67's (v4-*), every article under titles (NEUTRAL when written without), the old spelling for AGED_SHARE of them, compared with every measured article, the schema in the factory's order, every prompt in the protocol 0.4 (the measured sets too)"
+    },
+    {
+      "id": "ferramenta:preflight-data@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/preflight_data.py",
+      "hash": "bc0a9421c4545686c093aed8a1a0b85aba59dcd57e11080f1ae7c3afa4ebc3e1",
+      "retired": false,
+      "nota": "D67: the pre-flight gate: a training set's rule-reading rows against dev and against the real law, before any run"
+    },
+    {
+      "id": "ferramenta:verify@50",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 50,
+      "code": "verify.py",
+      "hash": "a66d5fba835a07ecfebbdd7e978195f7700bfc3fa872814213883a4d8f95a73b",
+      "retired": false,
+      "nota": "D67: TRAIN regenerates data-v13 (tools/make_rule_readings_v13.py) byte for byte"
     }
   ]
 }

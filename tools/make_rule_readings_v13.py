@@ -10,7 +10,7 @@ The articles are rendered, quoted and checked by data-v12's code (tools/make_rul
   compared v3-* only;
 - an article written without titles (batch-*, alvo-*) is placed under NEUTRAL titles, as every article of the law sits under
   some: titles that name no field value, deadline, starting point, amount field or comparator (checked at import);
-- about AGED_SHARE of the articles, chosen by id among those with a word that has an old form, are written in the spelling
+- AGED_SHARE of the articles (aged_ids: by id, among those with a word that has an old form) are written in the spelling
   before the 1990 agreement (the vocabulary's old_spelling forms), as that share of the real law's passages is (texture());
 - a stored schema keeps the factory's property order (data-v12's sort_keys sorted it: D66's serving trap);
 - the measured sets keep data-v12's articles and gold (training/data-v12/regra_lida/{dev,sealed,dev_antigo}.jsonl); their
@@ -44,7 +44,6 @@ MEASURED_SOURCES = ["eval-*.jsonl", "eval3-*.jsonl"]
 # BRIEF-D67: the kinds of one batch of 100 (comparador: lt and le only until the limiar product rule is decided)
 BRIEF_MIX = {"nao_tipavel": 40, "contagem": 9, "grandeza": 8, "valor_condicao": 8, "casos": 8, "comparador": 8, "alineas": 7, "remissao": 6, "capitulo": 6}
 AGED_SHARE = 0.27  # the real law's passages with days or euros that show a pre-1990 spelling (texture(real_contexts()), 2026-11-03)
-AGED_OF_ELIGIBLE = 0.55  # 46 % of the written articles have a word with an old form; 0.55 of those ≈ AGED_SHARE of all
 # BRIEF-D67 section 7: a batch's texture, from the real law's (112 passages: shown text median 1 981 characters, 12 passages,
 # target 447, 4 values named; cross-reference in the target 55 %, qualifier 21 %, another law 18 %, other units 23 %,
 # revoked 7 %; first listed phrase 37 % of the values named)
@@ -101,10 +100,8 @@ def old_spelling(text):
 
 
 def aged(ex):
-    """The article in the old spelling when its id falls in AGED_OF_ELIGIBLE and it has a word with an old form; as it is
-    otherwise. The gold does not change: the factory's checker and the quote finder read both spellings."""
-    if int(hashlib.sha256(("aged:" + ex["id"]).encode("utf-8")).hexdigest(), 16) % 10000 >= AGED_OF_ELIGIBLE * 10000:
-        return ex
+    """The article in the spelling before the 1990 agreement; itself when none of its words has an old form. The gold does
+    not change: the factory's checker and the quote finder read both spellings."""
     nums = lambda xs: [{**x, "texto": old_spelling(x["texto"])} for x in xs or []]  # noqa: E731
     out = {**ex, "epigrafe": old_spelling(ex["epigrafe"]), "texto": old_spelling(ex.get("texto", "")), "numeros": nums(ex["numeros"]),
            "lugar": [old_spelling(t) for t in ex.get("lugar") or []] or ex.get("lugar"),
@@ -115,6 +112,13 @@ def aged(ex):
     return ex if json.dumps(out, ensure_ascii=False, sort_keys=True) == json.dumps(ex, ensure_ascii=False, sort_keys=True) else out
 
 
+def aged_ids(exs):
+    """The articles written in the old spelling: AGED_SHARE of them all, the first by sha256 of the id among those with a
+    word that has an old form (a long article almost always has one, a short one half the time)."""
+    eligible = sorted((ex["id"] for ex in exs if aged(ex) is not ex), key=lambda i: hashlib.sha256(("aged:" + i).encode("utf-8")).hexdigest())
+    return set(eligible[:round(AGED_SHARE * len(exs))])
+
+
 def measured_texts():
     return [v12.alvo_text(ex) for pattern in MEASURED_SOURCES for ex in v12.load(pattern)]
 
@@ -122,7 +126,7 @@ def measured_texts():
 def build(store=None, only=None):
     """[(ex, row)] for training, {id: why left out}."""
     real, measured = v12.m.reference_texts(store), measured_texts()
-    train, rejected = [], {}
+    cands, train, rejected = [], [], {}
     for pattern in SOURCES:
         for ex in v12.load(pattern):
             if only and not ex["id"].startswith(only):
@@ -132,11 +136,14 @@ def build(store=None, only=None):
             t = v12.alvo_text(ex)
             if v12.close(t, real) or v12.close(t, measured):
                 rejected[ex["id"]] = "close to a real passage or a measured article"; continue
-            ex = aged(housed(ex))
-            res, errs = v12.problems(ex, PROTOCOL)
-            if errs:
-                rejected[ex["id"]] = errs[0]; continue
-            train.append((ex, v12.row(ex, res[1], res[0], PROTOCOL)))
+            cands.append(housed(ex))
+    old = aged_ids(cands)
+    for ex in cands:
+        ex = aged(ex) if ex["id"] in old else ex
+        res, errs = v12.problems(ex, PROTOCOL)
+        if errs:
+            rejected[ex["id"]] = errs[0]; continue
+        train.append((ex, v12.row(ex, res[1], res[0], PROTOCOL)))
     return train, rejected
 
 
@@ -279,7 +286,7 @@ def measured_in_protocol(name):
     return out
 
 
-def generate(store=None):
+def generate(store=None, held_doc=None):
     train, rejected = build(store)
     files = {"regra_lida/train.jsonl": dump(r for _, r in sorted(train, key=lambda x: x[1]["id"])),
              "REJECTED.json": (json.dumps(rejected, ensure_ascii=False, indent=1, sort_keys=True) + "\n").encode("utf-8")}

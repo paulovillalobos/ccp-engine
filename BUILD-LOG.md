@@ -2040,3 +2040,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   parser agreed on 12 714 texts (run with stand-ins for torch; vLLM 0.30's own xgrammar not yet tried). Found on the way: the
   schema path decoded «, » and «: » while the gold (and the training) is compact JSON; the grammar writes the gold's form.
 - Batches v4-02..07 written to BRIEF-D67 (100 of 100 each; texture inside every band). verify ok.
+- data-v13 generated (tools/make_rule_readings_v13.py, protocol 0.4): train 2 584 rows (batch/alvo/v3 1 284 after the
+  leak test against every measured article; BRIEF-D67's v4-01..13 1 300), dev/sealed/dev_antigo re-rendered in 0.4 (same
+  articles and gold). Pre-flight (tools/preflight_data.py): 18 of 18 pass — «não tipável» 23.9 % (dev 24.0 %), reasons
+  179/148/146/145; every dev kind 128–146 rows; D67 rows 1 300 of 2 584, texture inside every band (shown 1 841 characters,
+  12 passages, 5 values named, cross-reference 50 %, qualifier 22 %, other law 21 %, other units 24 %); old spelling 18 %
+  (law 27 % ± 10); first listed phrase 40 % (law 37 %); schema order and answer keys 0 off; 0 leaks. verify regenerates
+  data-v13 byte for byte (ok). v13's mix is 1.31× v12's: about 5.5 h and USD 22 on one H100.
