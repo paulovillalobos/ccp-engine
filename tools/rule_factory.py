@@ -48,7 +48,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@15"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
+TOOL = "ferramenta:rule-factory@16"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -301,7 +301,7 @@ def cmd_record_v3(n):
                 log.review("leitor:b", "nao_tipavel", aid, rev, f"Blind, same prompt as {proposer} ({R['round']}): {question}", "blind",
                            "uphold" if row["exact"] else "request_evidence", rb["at"],
                            payload={"answer": v3.canonical(B), "answer_sha256": rb["sha256"], "round": R["round"], "replication": V3_RULE, "protocol": "v3"})
-            row["state"] = log.replay().state_of("nao_tipavel", aid)
+            row["state"], row["why"] = log.replay().state_of("nao_tipavel", aid), f"não tipável: {A['nao_tipavel']['motivo']}"
             if row["state"] == "settled":  # the target holds no rule of this type: its proposed rules go
                 for rid in [x for (ty, x), a in log.replay().assertions.items() if ty == "regra" and x in rule_ids(t, 4)]:
                     if log.replay().state_of("regra", rid) not in ("stale", "rejected"):

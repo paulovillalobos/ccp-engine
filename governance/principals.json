@@ -2393,8 +2393,21 @@
       "versao": 15,
       "code": "tools/rule_factory.py",
       "hash": "37dcc640d1a9ca2876d039050af8e049e362f6555c0e0817f23798d01c1dfca0",
+      "retired": true,
+      "nota": "D66: round 8, round 7 with the protocol 0.3 (leitor:b answers again; v12 reads round 8)",
+      "retired_at": "2026-11-03T04:55:42Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@16",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 16,
+      "code": "tools/rule_factory.py",
+      "hash": "e5c129d3cd682c309081081696bb1ff9502f04fb5cd0c7af8b9594de342201cc",
       "retired": false,
-      "nota": "D66: round 8, round 7 with the protocol 0.3 (leitor:b answers again; v12 reads round 8)"
+      "nota": "D66: the round report marks a target settled as «não tipável» with its reason"
     }
   ]
 }
