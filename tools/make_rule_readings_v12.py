@@ -307,6 +307,19 @@ def prazo_quotes(p, ctx):
         out["counted_from"] = None
     else:
         q = first(ctx, PARAM_ORDER, phrase_finder(VOC["counted_from"], p["counted_from"]))
+        if q is None and p["counted_from"] == "data_publicacao_anuncio":  # «a contar da sua publicação», after «anúncio»
+            for pid in sources(ctx, PARAM_ORDER):
+                text = ctx["allowed"][pid]
+                for w in VOC.get("anaphoric_publication", []):
+                    for s, e in spans(text, w):
+                        k = max((x.start() for x in re.finditer(r"an[úu]ncio", text[:s], re.I)), default=None)
+                        if k is not None:
+                            q = [{"texto": text[k:e], "de": pid}]
+                            break
+                    if q:
+                        break
+                if q:
+                    break
         if q is None:  # «contados do seu envio»: from the document the sentence names last before those words
             for pid in sources(ctx, PARAM_ORDER):
                 text = ctx["allowed"][pid]

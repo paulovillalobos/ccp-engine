@@ -23,7 +23,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VOC = json.loads((ROOT / "schemas/vocabulario-v3.json").read_text(encoding="utf-8"))
-VERSION = "ccp-read-rules-v3-0.2"  # 0.2: a referred number is shown whole (with its alíneas); L12 says when a missing text blocks the reading
+VERSION = "ccp-read-rules-v3-0.3"  # 0.2: a referred number is shown whole (with its alíneas); L12 says when a missing text blocks the reading;
+# 0.3: an article's own opening words are shown only when its alíneas hang from it (not n.º 1 a second time)
 
 # ---- words ----------------------------------------------------------------------------------------------------------
 OLD = VOC["old_spelling"]
@@ -438,9 +439,10 @@ def context(law, alvo, date, depth=3):
                 allowed[c] = law.own(c, date)
             walk(c, level + 1)
     if law.children(aid, date):
-        body = re.split(r"\n(?=(?:[a-z]|[ivx]+)\) |\d+ - )", "\n".join((law.text(aid, date) or "").split("\n")[2:]), maxsplit=1)[0].strip()
-        if body:
-            items.append((aid, body, 0))
+        if law.kind(law.children(aid, date)[0]) in ("alinea", "subalinea"):  # «Para a celebração de … pode adotar-se:» before alíneas a), b)
+            body = re.split(r"\n(?=(?:[a-z]|[ivx]+)\) )", "\n".join((law.text(aid, date) or "").split("\n")[2:]), maxsplit=1)[0].strip()
+            if body:
+                items.append((aid, body, 0))
         walk(aid, 0)
     else:
         items.append((aid, law.own(aid, date), 0))

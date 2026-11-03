@@ -1,0 +1,33 @@
+{
+ "date": "2026-10-01",
+ "files": {
+  "REJECTED.json": {
+   "rows": 91,
+   "sha256": "e44c03755af05f91b5741e9610cba393442ad07fb65f47b9e73d343042721870"
+  },
+  "regra_lida/dev.jsonl": {
+   "rows": 104,
+   "sha256": "f6cc74457edaf308304f11f19e6acdf35a0116a1de91b86269faaff7323a912b"
+  },
+  "regra_lida/dev_antigo.jsonl": {
+   "rows": 393,
+   "sha256": "bdf5330520c66282474b536d6baba85b30bbe878da8d3094a7b3fc92a17636f4"
+  },
+  "regra_lida/sealed.jsonl": {
+   "rows": 96,
+   "sha256": "aa4805be1e8aaf67ca73f90a9835c5e3567408f1b16c135712e9fbc5839c96ae"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 1318,
+   "sha256": "8892d1c1c70a59527f939f5092f46f1d066ba5376280ce069c0d8cde62082ff0"
+  },
+  "regra_lida_alvo/train.jsonl": {
+   "rows": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ },
+ "note": "D66: the written articles rendered by the factory's own v3 code, quotes derived by code, every gold checked",
+ "protocol": "ccp-read-rules-v3-0.3",
+ "rejected": 89,
+ "tool": "ccp-make-rule-readings-v12-0.1"
+}

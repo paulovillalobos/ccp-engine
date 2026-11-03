@@ -48,7 +48,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@14"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
+TOOL = "ferramenta:rule-factory@15"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -74,6 +74,9 @@ FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, 
 # D66: round 7 reads round 6's targets that are still open with v12 (leitor:a14); the prompts are round 6's, byte for byte, so
 # leitor:b's round-6 answers are carried (checked when the prompts are written)
 FROUNDS[7] = {**FROUNDS[6], "round": "fabrica-7", "dir": rr.READINGS / "fabrica7", "proposer": ("leitor:a14", "leitor-a14.json"), "carry_b": 6}
+# D66: round 8 is round 7 with the protocol 0.3 (an article's n.º 1 is no longer shown a second time); leitor:b answers again, and
+# v12 reads round 8 (round 7 keeps leitor:b's answers to the 0.2 prompts, read by no family-A reader)
+FROUNDS[8] = {**FROUNDS[7], "round": "fabrica-8", "dir": rr.READINGS / "fabrica8", "carry_b": 7}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -557,6 +560,8 @@ INTRO = {
         "cada parâmetro com as palavras exatas e a passagem de onde vêm. Alvos: os 12 da ronda 5.",
         "Um programa confirma cada palavra citada; a leitura que falha não fica registada. Replicam o mesmo conteúdo canónico ou o "
         "mesmo motivo de «não tipável»; um «não tipável» assente invalida as regras propostas do alvo."],
+    8: ["D66: AMALIA treinada no protocolo v3 (adaptador v12). Alvos: os da ronda 6 que ficaram abertos, com o protocolo 0.3.",
+        "leitor:b responde de novo aos prompts 0.3. Um programa confirma cada palavra citada; a leitura que falha não fica registada."],
     7: ["D66: AMALIA treinada no protocolo v3 (adaptador v12). Alvos: os da ronda 6 que ficaram abertos.",
         "Os prompts são os da ronda 6, byte a byte; as respostas de leitor:b são as da ronda 6. Um programa confirma cada palavra "
         "citada; a leitura que falha não fica registada."],

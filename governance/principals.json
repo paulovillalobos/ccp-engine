@@ -2254,8 +2254,9 @@
       "versao": 1,
       "code": "tools/make_rule_readings_v12.py",
       "hash": "38437324d080303a0b9c6388b7ab397983be479ddcf0105666b3be752dd86d49",
-      "retired": false,
-      "nota": "D66: data-v12, the written articles rendered by the factory's own v3 code, quotes derived by code, every gold checked by the factory's checker"
+      "retired": true,
+      "nota": "D66: data-v12, the written articles rendered by the factory's own v3 code, quotes derived by code, every gold checked by the factory's checker",
+      "retired_at": "2026-11-03T01:36:27Z"
     },
     {
       "id": "ferramenta:measure-rule-readings-v12@1",
@@ -2342,8 +2343,9 @@
       "versao": 14,
       "code": "tools/rule_factory.py",
       "hash": "e1fe2517305b61ef64417708c59f8af417790b1062d36ee0dc68685a30319918",
-      "retired": false,
-      "nota": "D66: round 7 carries leitor:b's answer only for a prompt that is round 6's byte for byte; a changed prompt is answered again"
+      "retired": true,
+      "nota": "D66: round 7 carries leitor:b's answer only for a prompt that is round 6's byte for byte; a changed prompt is answered again",
+      "retired_at": "2026-11-03T02:51:47Z"
     },
     {
       "id": "ferramenta:read-rules-v3@4",
@@ -2354,8 +2356,45 @@
       "versao": 4,
       "code": "tools/read_rules_v3.py",
       "hash": "924b5045477697db3e4e0d8ca29be27b58bf1d6990207a864d01690277d3e595",
+      "retired": true,
+      "nota": "D66 protocol 0.2: a referred number is shown whole, with its alíneas; L12 says when a missing text blocks a reading; a «não tipável» may quote the title that makes it so",
+      "retired_at": "2026-11-03T02:51:47Z"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v12@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/make_rule_readings_v12.py",
+      "hash": "a8cf5e54ed01c231c3d1c06d0f78cc549d71192235877516dc31835d99b7db06",
       "retired": false,
-      "nota": "D66 protocol 0.2: a referred number is shown whole, with its alíneas; L12 says when a missing text blocks a reading; a «não tipável» may quote the title that makes it so"
+      "nota": "D66: «a contar da sua publicação» quoted from the «anúncio» it refers to"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/read_rules_v3.py",
+      "hash": "eed6afd39a789d12e242da3f86bf6d720895154df445f371f75d1601931a07ae",
+      "retired": false,
+      "nota": "D66 protocol 0.3: an article's own opening words are shown only when its alíneas hang from it; n.º 1 is no longer shown a second time under the article id"
+    },
+    {
+      "id": "ferramenta:rule-factory@15",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 15,
+      "code": "tools/rule_factory.py",
+      "hash": "37dcc640d1a9ca2876d039050af8e049e362f6555c0e0817f23798d01c1dfca0",
+      "retired": false,
+      "nota": "D66: round 8, round 7 with the protocol 0.3 (leitor:b answers again; v12 reads round 8)"
     }
   ]
 }

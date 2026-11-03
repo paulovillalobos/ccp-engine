@@ -1975,3 +1975,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   or a fact of the rule are in it. Round 7's prompts are rendered with 0.2 (none is round 6's byte for byte, so leitor:b
   answers all again), committed before any answer. A rehearsal of the recorder on a copy of the log found and fixed a name
   clash (a target whose own name ends in an alínea, 21.º n.º 1 b)) in verify V3 and in the factory's invalidation.
+
+## 2026-11-03 — D66, part 3: protocol 0.3, round 8 prompts, data-v12
+- Round 7 (protocol 0.2): leitor:b passed the checker on all 12 targets and its readings agree with the paper audit on all
+  12 (7 rules: 21.º n.º 1 b), c), 31.º n.º 4, 174.º n.º 3, 192.º n.º 2, 198.º n.ºs 1 and 2; 5 not typable: 127.º-C, 17.º-B
+  n.º 4, 54.º-A, 88.º n.º 2 a) as nao_e_limiar, 241.º-B as sem_vocabulario). No family-A reader read round 7.
+- A writer found the renderer printing an article's n.º 1 a second time under the article id. Protocol 0.3 (read-rules-v3@5)
+  shows an article's own opening words only when its alíneas hang from it (19.º, 20.º). Round 8 = round 7's targets with
+  0.3, committed before any answer; leitor:b answers again; v12 reads round 8.
+- data-v12 (make-rule-readings-v12@2): six writers under BRIEF-V3.md wrote v3-01..04 (400 training articles) and
+  eval3-01..02 (200 measured articles), each batch 100 of 100 through the check. Built with protocol 0.3: train 1 318 rows
+  (957 old articles in v3 plus 359 new; 41 new left out as close to an eval3 article or a real passage), dev 104 and sealed
+  96 (eval3, split by sha256 of the id; sealed read by no reader yet), dev_antigo 393, 91 left out with their reason
+  (REJECTED.json).
