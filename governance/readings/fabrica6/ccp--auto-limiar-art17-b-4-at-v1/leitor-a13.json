@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:02:02Z",
+ "sha256": "b1562de0a1825f8c4dd9e6ac963eb609e6faf1b77c3375afecd40494e8857ec1",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"bens\", \"fontes\": [{\"texto\": \"no caso de bens e serviços\", \"de\": \"ccp:art17-b.4\"}]}], \"params\": {\"threshold\": {\"field\": \"valor_estimado\", \"comparator\": \"lt\", \"value\": 80000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"no caso de bens e serviços\", \"de\": \"ccp:art17-b.4\"}], \"comparator\": [{\"texto\": \"inferior a\", \"de\": \"ccp:art17-b.4\"}], \"value\": [{\"texto\": \"80 000 €\", \"de\": \"ccp:art17-b.4\"}]}}], \"nao_tipavel\": null}"
+}

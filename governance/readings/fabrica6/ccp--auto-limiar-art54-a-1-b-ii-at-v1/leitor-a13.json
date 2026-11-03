@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:02:02Z",
+ "sha256": "1a1f67d7a931ef657693d2ba234830efa26677eb40dd9213b7f39c975bc2975d",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": [\"concessao_obras\", \"concessao_servicos\", \"obras\", \"servicos\"], \"fontes\": [{\"texto\": \"Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas\", \"de\": \"ccp:art54-a.1.b.ii\"}]}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 500000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"valor estimado do contrato\", \"de\": \"ccp:art54-a.1.b.ii\"}], \"comparator\": [{\"texto\": \"inferior a\", \"de\": \"ccp:art54-a.1.b.ii\"}], \"value\": [{\"texto\": \"500 000 €\", \"de\": \"ccp:art54-a.1.b.ii\"}]}}], \"nao_tipavel\": null}"
+}

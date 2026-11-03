@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VOC = json.loads((ROOT / "schemas/vocabulario-v3.json").read_text(encoding="utf-8"))
-VERSION = "ccp-read-rules-v3-0.1"
+VERSION = "ccp-read-rules-v3-0.2"  # 0.2: a referred number is shown whole (with its alíneas); L12 says when a missing text blocks the reading
 
 # ---- words ----------------------------------------------------------------------------------------------------------
 OLD = VOC["old_spelling"]
@@ -417,7 +417,9 @@ def context(law, alvo, date, depth=3):
                 roles[target], allowed[target] = "remissao_epigrafe", law.heading(target, date)
                 refs.append((target, "epigrafe"))
                 continue
-            roles[target], allowed[target] = "remissao", law.own(target, date)
+            # a reference to a number is to all of it: its alíneas are shown with it (0.2)
+            whole = law.kind(target) == "numero" and law.children(target, date)
+            roles[target], allowed[target] = "remissao", (law.text(target, date) if whole else law.own(target, date))
             refs.append((target, "texto"))
             p = law.parent(target)
             if law.kind(target) in ("alinea", "subalinea") and p and p not in roles:  # a referred alínea is read with its proémio
@@ -497,7 +499,7 @@ L8 Comparação, como a fonte a escreve: «inferior a» → lt; «igual ou infer
 L9 O prazo da passagem-alvo. Num artigo com vários prazos, a regra é a do prazo que a passagem-alvo fixa: o seu campo (o que se apresenta) e o seu início de contagem, pelas palavras do vocabulário; «contados do seu envio», «a contar do envio deste» contam-se do envio do documento que a frase nomeia (o convite ou o anúncio). Se a passagem, lida com as que remete, não diz de quando se conta, counted_from = nao_indicado, sem fonte.
 L10 Números e grandezas. Dias e euros como o texto os escreve, em algarismos ou por extenso («seis dias» = 6; «1 000 000 €» = 1000000). No limiar, field é a grandeza que a fonte nomeia: «valor estimado do contrato» → valor_estimado; «preço base» → preco_base; «preço contratual» → preco_contratual. Um valor dado por remissão («inferior aos limiares referidos na alínea b) do n.º 3 do artigo 474.º») lê-se na passagem remetida, e cada valor remetido é um caso (L5). Quando é o prazo que muda com o valor do contrato («quando o preço base seja igual ou superior a 1 000 000 €»), o valor é uma condição — valor_estimado, preco_base ou preco_contratual, com lt, le, gt ou ge; num limiar, o valor é o parâmetro e nunca uma condição.
 L11 «Em regra». Se a passagem fixa um prazo «em regra» e um mínimo «em caso algum», minimum_days = o mínimo e usual_days = o prazo «em regra»; senão, usual_days = null.
-L12 Não tipável. Responde {"regras": [], "nao_tipavel": {...}} quando: nao_e_limiar — o valor não é o limite até ao qual um procedimento pode ser escolhido (dispensa uma obrigação, reserva um contrato, exclui um convidado, ou soma o valor de vários contratos); nao_e_prazo_minimo — o prazo é um máximo («não pode ser superior a»), é um prazo para a própria entidade adjudicante, ou não é para apresentar nada; sem_vocabulario — a regra precisa de um facto, de um valor ou de uma unidade que o vocabulário não tem (um procedimento fora da lista, um prazo em horas, dias úteis ou meses); texto_em_falta — a passagem remete para um texto que não está mostrado e sem o qual a regra não se lê. Em «falta», diz numa frase o que falta.
+L12 Não tipável. Responde {"regras": [], "nao_tipavel": {...}} quando: nao_e_limiar — o valor não é o limite até ao qual um procedimento pode ser escolhido (dispensa uma obrigação, reserva um contrato, exclui um convidado, ou soma o valor de vários contratos); nao_e_prazo_minimo — o prazo é um máximo («não pode ser superior a»), é um prazo para a própria entidade adjudicante, ou não é para apresentar nada; sem_vocabulario — a regra precisa de um facto, de um valor ou de uma unidade que o vocabulário não tem (um procedimento fora da lista, um prazo em horas, dias úteis ou meses); texto_em_falta — os dias, o valor ou um facto de que a regra precisa estão num texto para que a passagem remete e que não está mostrado; uma remissão que só descreve (quem são as entidades, o que o anúncio ou o convite indicam) não impede a leitura. Em «falta», diz numa frase o que falta.
 L13 Datas. data_inicio_procedimento só entra quando a própria passagem fixa a data a partir da qual se aplica. A data de referência escolhe o texto em vigor; nunca é uma condição.
 L14 Forma. Um só valor → eq (ou ne); vários → in (ou not_in). tipo_entidade usa sempre eq («quando a entidade adjudicante não seja o Estado» → eq outra). As passagens que a regra cita são a passagem-alvo e as das tuas fontes: não as escrevas.
 
@@ -627,7 +629,7 @@ def check(reading, ctx, rtype):
             errs.append("não tipável com regras")
         if nt.get("motivo") not in VOC["nao_tipavel_motivos"]:
             errs.append(f"motivo {nt.get('motivo')} fora da lista")
-        _sources(ctx, nt.get("fontes"), {"alvo", "proemio", "remissao"}, "não tipável", errs)
+        _sources(ctx, nt.get("fontes"), {"alvo", "proemio", "remissao", "epigrafe", "titulo"}, "não tipável", errs)  # L3: a title can be the reason
         return errs
     if not rules:
         return ["nem regras nem não tipável"]

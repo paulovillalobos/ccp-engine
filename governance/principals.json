@@ -2202,8 +2202,9 @@
       "versao": 10,
       "code": "tools/rule_factory.py",
       "hash": "27c8ca9b4f83ebb6d2a81c3bbad6d5d65f5cd2539b4eaec4f7d2d2bda2c418a8",
-      "retired": false,
-      "nota": "D66: round 6 with the protocol v3 (the checker decides which answers are recorded; «não tipável» settles an assertion nao_tipavel and invalidates the target's proposed rules); withdraw: a settled rule a person's product rule takes out"
+      "retired": true,
+      "nota": "D66: round 6 with the protocol v3 (the checker decides which answers are recorded; «não tipável» settles an assertion nao_tipavel and invalidates the target's proposed rules); withdraw: a settled rule a person's product rule takes out",
+      "retired_at": "2026-11-03T00:59:56Z"
     },
     {
       "id": "ferramenta:verify@46",
@@ -2214,8 +2215,9 @@
       "versao": 46,
       "code": "verify.py",
       "hash": "f0f52dae30e41807d78094f5fd575739ce925715e15e907c85d68c2bf48a75e3",
-      "retired": false,
-      "nota": "D66: V3 — a v3 prompt shows every passage its context lets a reading quote; every recorded v3 answer passes the checker; the log's payload is the answer's content; a blind review upholds exactly when the readings replicate"
+      "retired": true,
+      "nota": "D66: V3 — a v3 prompt shows every passage its context lets a reading quote; every recorded v3 answer passes the checker; the log's payload is the answer's content; a blind review upholds exactly when the readings replicate",
+      "retired_at": "2026-11-03T00:59:56Z"
     },
     {
       "id": "ferramenta:read-rules-v3@2",
@@ -2239,8 +2241,9 @@
       "versao": 3,
       "code": "tools/read_rules_v3.py",
       "hash": "9dcc2440615e51a6bb5ecab87e45359e49e7e6ce0b6c721fe903e29945e5b0fd",
-      "retired": false,
-      "nota": "D66: the checker resolves «contados do seu envio» and «a contar da sua publicação», reads «seja ou não» as both sides, lets cases of one passage complete each other both ways and «nas restantes modalidades» name the values the other cases leave, and refuses a quote cut out of a longer phrase naming another value"
+      "retired": true,
+      "nota": "D66: the checker resolves «contados do seu envio» and «a contar da sua publicação», reads «seja ou não» as both sides, lets cases of one passage complete each other both ways and «nas restantes modalidades» name the values the other cases leave, and refuses a quote cut out of a longer phrase naming another value",
+      "retired_at": "2026-11-03T01:07:54Z"
     },
     {
       "id": "ferramenta:make-rule-readings-v12@1",
@@ -2253,6 +2256,106 @@
       "hash": "38437324d080303a0b9c6388b7ab397983be479ddcf0105666b3be752dd86d49",
       "retired": false,
       "nota": "D66: data-v12, the written articles rendered by the factory's own v3 code, quotes derived by code, every gold checked by the factory's checker"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v12@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_rule_readings_v12.py",
+      "hash": "107f96180a2309159d72f72e807b787218f35aa2189fac284535ba83b5feb070",
+      "retired": false,
+      "nota": "D66: the readers on data-v12 read as the factory reads them: the checker against the article's context, then the canonical content against the gold"
+    },
+    {
+      "id": "ferramenta:rule-factory@11",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 11,
+      "code": "tools/rule_factory.py",
+      "hash": "ded3e7dcd1f50be0f2e43fc6f2670b6f28a8e16c2d2af23adaff61810bb5a9a5",
+      "retired": true,
+      "nota": "D66: round 7 (v12, leitor:a14) on round 6's open targets, round 6's prompts byte for byte and leitor:b's answers carried",
+      "retired_at": "2026-11-03T01:00:04Z"
+    },
+    {
+      "id": "ferramenta:verify@47",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 47,
+      "code": "verify.py",
+      "hash": "ddb376747ca6ac2dc68fbec8284724ba40350d29b63d1d548217b4c7f91124c9",
+      "retired": true,
+      "nota": "D66: data-v12 is its generator's output; the v12 rule-reading report is recomputed from the stored answers",
+      "retired_at": "2026-11-03T01:06:13Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@12",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 12,
+      "code": "tools/rule_factory.py",
+      "hash": "9eaa87cd5fc08eb2b9833bfaa91d5d92220b7f83860d24f483e2d34c33f7e1e2",
+      "retired": true,
+      "nota": "D66: round 7 (v12, leitor:a14) on round 6's open targets, round 6's prompts byte for byte and leitor:b's answers carried; TOOL names this version",
+      "retired_at": "2026-11-03T01:06:13Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@13",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 13,
+      "code": "tools/rule_factory.py",
+      "hash": "7992b13948346d147f19d043a9bbbfe184a235a38abe5ef4e81be7bd4c4b1344",
+      "retired": true,
+      "nota": "D66: the invalidation after a settled «não tipável» names the target's rule ids (a target's own name may end in an alínea)",
+      "retired_at": "2026-11-03T01:07:53Z"
+    },
+    {
+      "id": "ferramenta:verify@48",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 48,
+      "code": "verify.py",
+      "hash": "26c927049e98f69b5f1a99454a91b18ab061785a4e0495776db2d181ca05a0cd",
+      "retired": false,
+      "nota": "D66: V3 finds a target's folder by its own name first (a name may end in an alínea, -b@v1), then as a 2nd or 3rd rule"
+    },
+    {
+      "id": "ferramenta:rule-factory@14",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 14,
+      "code": "tools/rule_factory.py",
+      "hash": "e1fe2517305b61ef64417708c59f8af417790b1062d36ee0dc68685a30319918",
+      "retired": false,
+      "nota": "D66: round 7 carries leitor:b's answer only for a prompt that is round 6's byte for byte; a changed prompt is answered again"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/read_rules_v3.py",
+      "hash": "924b5045477697db3e4e0d8ca29be27b58bf1d6990207a864d01690277d3e595",
+      "retired": false,
+      "nota": "D66 protocol 0.2: a referred number is shown whole, with its alíneas; L12 says when a missing text blocks a reading; a «não tipável» may quote the title that makes it so"
     }
   ]
 }

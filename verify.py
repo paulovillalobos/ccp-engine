@@ -810,6 +810,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v9", module="make_written_v9")
         check_training_v2(store, out, tdir, held, sub="data-v10", module="make_rule_readings")
         check_training_v2(store, out, tdir, held, sub="data-v11", module="make_rule_readings_v11")
+        check_training_v2(store, out, tdir, held, sub="data-v12", module="make_rule_readings_v12")
     return store, out
 
 
@@ -924,7 +925,9 @@ def check_v3_readings(store, out, readings_root=None):
         p = ev.get("payload") or {}
         if p.get("protocol") != "v3" or not p.get("answer_sha256"):
             continue
-        key = (p["round"], reading_dir(re.sub(r"-[b-d]@v1$", "@v1", ev["assertion"])))
+        key = (p["round"], reading_dir(ev["assertion"]))
+        if key not in prompts:  # D62: a target's 2nd and 3rd rules (-b, -c) share its folder; a target's own name may end in an alínea (-b@v1)
+            key = (p["round"], reading_dir(re.sub(r"-[b-d]@v1$", "@v1", ev["assertion"])))
         if key not in prompts:
             out.append(("V3", f"{ev['id']}: no v3 prompt {key[1]} in round {key[0]}"))
             continue
@@ -945,7 +948,7 @@ def check_v3_readings(store, out, readings_root=None):
                     out.append(("V3", f"{ev['id']}: the payload's reason is not the answer's"))
             else:
                 m = re.search(r"-([b-d])@v1$", ev["assertion"])
-                i = "bcd".index(m.group(1)) + 1 if m else 0
+                i = 0 if ev["assertion"] == body["rule"] else ("bcd".index(m.group(1)) + 1 if m else 0)
                 rules = a.get("regras") or []
                 if i >= len(rules) or v3.canonical_rule(rules[i])["condicoes"] != p.get("conditions") or \
                         {k: v for k, v in rules[i]["params"].items() if v is not None} != p.get("params"):
@@ -1160,6 +1163,12 @@ def check_measure():
             again = importlib.import_module(name).report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/{name}.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("regras-v12-"):  # phase 15 (D66): the readers on data-v12, read with the protocol v3 (tools/measure_rule_readings_v12.py)
+            import measure_rule_readings_v12  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_rule_readings_v12.report(stored["date"], sets=set(stored["sets"]))
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_rule_readings_v12.py recomputes from the stored answers"))
             continue
         if f.name.startswith("regras-v11-"):  # phase 13 (D65): v11's dev, sealed and old held-out sets (tools/measure_rule_readings_v11.py)
             import measure_rule_readings_v11  # noqa: E402  (no model: it reads the stored answers)

@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:02:02Z",
+ "sha256": "95f3d2a3fb660da67862fa2f0d0419d01e3a580280249ca8496e712d5076a416",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"consulta_previa\", \"fontes\": [{\"texto\": \"Consulta prévia\", \"de\": \"ccp:art21.1.b\"}]}, {\"field\": \"valor_estimado\", \"op\": \"lt\", \"value\": 130000, \"fontes\": [{\"texto\": \"valor estimado do contrato\", \"de\": \"ccp:art21.1.b\"}]}], \"params\": {\"threshold\": {\"field\": \"valor_estimado\", \"comparator\": \"lt\", \"value\": 130000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"valor estimado do contrato\", \"de\": \"ccp:art21.1.b\"}], \"comparator\": [{\"texto\": \"inferior a\", \"de\": \"ccp:art21.1.b\"}], \"value\": [{\"texto\": \".130.000\", \"de\": \"ccp:art21.1.b\"}]}}], \"nao_tipavel\": null}"
+}

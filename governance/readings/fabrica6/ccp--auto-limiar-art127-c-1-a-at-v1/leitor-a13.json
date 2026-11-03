@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:02:02Z",
+ "sha256": "6d848537947bb2b273996f37734c6305521a8f672cb207843716507ac0e4d123",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": [\"concessao_obras\", \"concessao_servicos\", \"obras\"], \"fontes\": [{\"texto\": \"a) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços\", \"de\": \"ccp:art127-c.1.a\"}]}, {\"field\": \"preco_base\", \"op\": \"ge\", \"value\": 2000000, \"fontes\": [{\"texto\": \"a) Igual ou superior a 2 000 000 €\", \"de\": \"ccp:art127-c.1.a\"}]}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"ge\", \"value\": 2000000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"a) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços\", \"de\": \"ccp:art127-c.1.a\"}], \"comparator\": [{\"texto\": \"igual ou superior a\", \"de\": \"ccp:art127-c.1.a\"}], \"value\": [{\"texto\": \"2 000 000 €\", \"de\": \"ccp:art127-c.1.a\"}]}}], \"nao_tipavel\": null}"
+}

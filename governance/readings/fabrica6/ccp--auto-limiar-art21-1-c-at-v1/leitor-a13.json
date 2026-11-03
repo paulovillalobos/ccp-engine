@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:02:02Z",
+ "sha256": "67868bc0f5886fdcf2984abacb07309ea2904da04abbadd3c0b066fad8e157d2",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"ajuste_direto\", \"fontes\": [{\"texto\": \"ajuste direto\", \"de\": \"ccp:art21.1.c\"}]}], \"params\": {\"threshold\": {\"field\": \"preco_base\", \"comparator\": \"lt\", \"value\": 75000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"ajuste direto\", \"de\": \"ccp:art21.1.c\"}], \"comparator\": [{\"texto\": \"inferior a\", \"de\": \"ccp:art21.1.c\"}], \"value\": [{\"texto\": \"75 000\", \"de\": \"ccp:art21.1.c\"}]}}], \"nao_tipavel\": null}"
+}

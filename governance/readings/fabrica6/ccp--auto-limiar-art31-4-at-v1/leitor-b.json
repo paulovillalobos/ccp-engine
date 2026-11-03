@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:00:21Z",
+ "sha256": "358e24fbe2f61b08c3e38dd3fbdda5d9e479b5e7e579031de8f72a454ff33c53",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\"],\"fontes\":[{\"texto\":\"concessão de obras públicas ou de serviços\",\"de\":\"ccp:art31.4\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"consulta_previa\",\"ajuste_direto\"],\"fontes\":[{\"texto\":\"consulta prévia ou ajuste direto\",\"de\":\"ccp:art31.4\"}]},{\"field\":\"duracao_contrato_meses\",\"op\":\"lt\",\"value\":12,\"fontes\":[{\"texto\":\"a sua duração seja inferior a um ano\",\"de\":\"ccp:art31.4\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":1000000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado do contrato\",\"de\":\"ccp:art31.4\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"ccp:art31.4\"}],\"value\":[{\"texto\":\"1 000 000 €\",\"de\":\"ccp:art31.4\"}]}}],\"nao_tipavel\":null}"
+}

@@ -1962,3 +1962,16 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   eval articles pass; the rest is listed (a procedure no source names, days not in the text, …).
 - Next: leitor:b and leitor:a13 on round 6; new v3 articles (v3-01..04, eval3-01..02) by writers under BRIEF-V3.md; data-v12;
   BEFORE; v12 on Modal.
+
+## 2026-11-03 — D66, part 2: round 6 read, protocol 0.2, round 7 prompts
+- Round 6 (fabrica-6, protocol 0.1): leitor:b (Reader B, fresh, blind) passed the checker on all 12 targets once the checker let a
+  «não tipável» quote the title that makes it so (L3: «Capítulo II — Sistemas de aquisição dinâmicos»); its readings agree with
+  the paper audit on 8 (127.º-C, 17.º-B n.º 4, 54.º-A, 88.º n.º 2 a) not typable as limits; 21.º n.º 1 b), c); 31.º n.º 4 with
+  the duration; 198.º n.º 1; 241.º-B sem_vocabulario). leitor:a13 (v11, never trained on v3) passed on none: nothing proposed,
+  nothing settled (FABRICA6.md).
+- Reader B's other three answers («texto_em_falta» for 174.º n.º 3, 192.º n.º 2, 198.º n.º 2) showed two gaps: a referred number
+  was shown by its opening line only (n.º 1 of 7.º, n.º 3 of 167.º without their alíneas), and L12 did not say when a missing
+  text blocks a reading. Protocol 0.2 (read-rules-v3@4) shows a referred number whole and says: only when the days, the value
+  or a fact of the rule are in it. Round 7's prompts are rendered with 0.2 (none is round 6's byte for byte, so leitor:b
+  answers all again), committed before any answer. A rehearsal of the recorder on a copy of the log found and fixed a name
+  clash (a target whose own name ends in an alínea, 21.º n.º 1 b)) in verify V3 and in the factory's invalidation.

@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T01:02:02Z",
+ "sha256": "b56005c94cf250cd23c0942db24b46a296b883769ec86fa1fc4ca6a3ac799a9a",
+ "answer": "{\"regras\": [{\"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_limitado_previa_qualificacao\", \"fontes\": [{\"texto\": \"Concurso limitado por prévia qualificação\", \"de\": \"ccp:art192\"}]}, {\"field\": \"data_inicio_procedimento\", \"op\": \"eq\", \"value\": \"ajuste_direto_simplificado\", \"fontes\": [{\"texto\": \"data_envio_convite\", \"de\": \"ccp:art192.2\"}]}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_convite\", \"usual_days\": null}, \"fontes\": {\"minimum_days\": [{\"texto\": \"não pode, em qualquer caso, ser inferior a 10 dias\", \"de\": \"ccp:art192.2\"}], \"deadline_field\": [{\"texto\": \"apresentação das propostas\", \"de\": \"ccp:art192.2\"}], \"counted_from\": [{\"texto\": \"a contar da data do envio do convite\", \"de\": \"ccp:art192.2\"}], \"usual_days\": [{\"texto\": \"não é aplicável o disposto no artigo 64.º\", \"de\": \"ccp:art192.5\"}]}}], \"nao_tipavel\": null}"
+}

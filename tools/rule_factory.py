@@ -48,7 +48,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@10"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
+TOOL = "ferramenta:rule-factory@14"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -71,6 +71,9 @@ FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, 
                "closed": {"candidaturas", "convite", "urgencia", "procedimento", "setores", "pre_informacao", "dois_prazos"},
                "only": {"ccp:art127-c.1.a", "ccp:art17-b.4", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art88.2.a",
                         "ccp:art174.3", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2", "ccp:art241-b.3.b"}}}
+# D66: round 7 reads round 6's targets that are still open with v12 (leitor:a14); the prompts are round 6's, byte for byte, so
+# leitor:b's round-6 answers are carried (checked when the prompts are written)
+FROUNDS[7] = {**FROUNDS[6], "round": "fabrica-7", "dir": rr.READINGS / "fabrica7", "proposer": ("leitor:a14", "leitor-a14.json"), "carry_b": 6}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -160,6 +163,17 @@ def cmd_prompts(store, n=1):
         d.mkdir(parents=True, exist_ok=True)
         if (d / "prompt.json").exists():
             continue  # a round's prompt is fixed once written: its answers are read against it
+        if R.get("carry_b"):  # D66: the same prompt as an earlier round, byte for byte, carries leitor:b's blind answer
+            src = FROUNDS[R["carry_b"]]["dir"] / rr.slug(t["rule"])
+            body = json.loads((src / "prompt.json").read_text(encoding="utf-8"))
+            ctx = v3.context(law, t["source_passage"], t["date"])
+            if (body["prompt"], body["schema"], body["context"]) == (v3.render(ctx, t["type"]), v3.schema(ctx, t["type"]), v3.context_record(ctx)):
+                (d / "prompt.json").write_text(json.dumps({**body, "round": R["round"]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+                if (src / "leitor-b.json").exists():
+                    (d / "leitor-b.json").write_bytes((src / "leitor-b.json").read_bytes())
+                k += 1
+                continue
+            print(f"{t['rule']}: the prompt is not round {R['carry_b']}'s (protocol {v3.VERSION}); leitor:b answers it again")
         if R.get("v3"):  # D66: the context is kept beside the prompt, so the checker reads an answer against the text its reader saw
             ctx = v3.context(law, t["source_passage"], t["date"])
             body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": sorted(ctx["roles"]), "prompt": v3.render(ctx, t["type"]),
@@ -286,7 +300,7 @@ def cmd_record_v3(n):
                            payload={"answer": v3.canonical(B), "answer_sha256": rb["sha256"], "round": R["round"], "replication": V3_RULE, "protocol": "v3"})
             row["state"] = log.replay().state_of("nao_tipavel", aid)
             if row["state"] == "settled":  # the target holds no rule of this type: its proposed rules go
-                for rid in [x for (ty, x), a in log.replay().assertions.items() if ty == "regra" and re.sub(r"-[b-d]@v1$", "@v1", x) == t["rule"]]:
+                for rid in [x for (ty, x), a in log.replay().assertions.items() if ty == "regra" and x in rule_ids(t, 4)]:
                     if log.replay().state_of("regra", rid) not in ("stale", "rejected"):
                         log.invalidate(TOOL, "regra", rid, f"D66: os dois leitores, às cegas, dão {t['source_passage']} como não tipável "
                                        f"({A['nao_tipavel']['motivo']}); a regra proposta sai ({aid}).", now_utc())
@@ -543,10 +557,13 @@ INTRO = {
         "cada parâmetro com as palavras exatas e a passagem de onde vêm. Alvos: os 12 da ronda 5.",
         "Um programa confirma cada palavra citada; a leitura que falha não fica registada. Replicam o mesmo conteúdo canónico ou o "
         "mesmo motivo de «não tipável»; um «não tipável» assente invalida as regras propostas do alvo."],
+    7: ["D66: AMALIA treinada no protocolo v3 (adaptador v12). Alvos: os da ronda 6 que ficaram abertos.",
+        "Os prompts são os da ronda 6, byte a byte; as respostas de leitor:b são as da ronda 6. Um programa confirma cada palavra "
+        "citada; a leitura que falha não fica registada."],
 }
 
 
-ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11"}
+ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12"}
 
 
 def write_report(rows, n=1):
