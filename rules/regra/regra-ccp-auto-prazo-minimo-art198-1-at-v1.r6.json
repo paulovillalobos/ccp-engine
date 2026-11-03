@@ -1,0 +1,62 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art198-1@v1",
+  "revision": 6,
+  "recorded_at": "2026-11-03T23:06:28Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art198.1 (fábrica de regras, ronda 9)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "procedimento_negociacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art198.1",
+      "version": "2018-01-01",
+      "quote": "1 - Não pode ser fixado um prazo para a apresentação das candidaturas inferior a 30 dias a contar da data do envio do anúncio referido no n.º 2 do artigo anterior ao Serviço das Publicações da União Europeia.",
+      "offsets": {
+        "start": 0,
+        "end": 208
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a15",
+      "family": "A",
+      "at": "2026-11-03T23:02:07Z",
+      "chosen_passages": [
+        "ccp:art198.1"
+      ],
+      "blind": false,
+      "evento": "evento:271"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-03T17:22:43Z",
+      "chosen_passages": [
+        "ccp:art198.1"
+      ],
+      "blind": true,
+      "evento": "evento:272"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 5
+}

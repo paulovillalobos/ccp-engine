@@ -1,0 +1,6 @@
+{
+ "source": "modal billing report --start 2026-11-03 --resolution h --json, read 2026-11-03",
+ "training_app": "ap-kVPhVFVloK7fNOwPVZEtNy",
+ "training_usd": 22.91,
+ "note": "hours 17:00-22:00, every hour of the run (17:21Z-22:57Z); the reads of leitor:a15 (dev ap-zKCZZkYprT2AeNSTP2tkUs, sealed ap-vPygw7IT3Do0EYE3X3g8mF, dev_antigo ap-gWYA0XqqUtjvVOe6gB3KAQ, round 9 ap-IvQG6PnCQ4ZKUljyrlVqLH) began at 22:58Z: USD 0.04 each in the 22:00 hour, the 23:00 hour not yet reported; BEFORE's two reads of leitor:a14 with the protocol 0.4 (ap-4FjSSiziqNFCsqtztEWcxR, ap-3DiBA6zAUGlhfjECXjLvCx) USD 0.25"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-03T23:02:07Z",
+ "sha256": "6fa9986150e2d136e5ffcbb436adc7f5e30e10c8bf2ec73125185d30945bdd38",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"not_in\",\"value\":[\"concessao_obras\",\"concessao_servicos\",\"sociedade\"],\"fontes\":[{\"texto\":\"concessão de obras públicas\",\"de\":\"ccp:art21.1\"},{\"texto\":\"concessão de serviços\",\"de\":\"ccp:art21.1\"},{\"texto\":\"contratos de sociedade\",\"de\":\"ccp:art21.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"consulta_previa\",\"fontes\":[{\"texto\":\"Consulta prévia\",\"de\":\"ccp:art21.1.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":130000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado do contrato\",\"de\":\"ccp:art21.1.b\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"ccp:art21.1.b\"}],\"value\":[{\"texto\":\"130 000 €\",\"de\":\"ccp:art21.1.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

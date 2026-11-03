@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-03T23:02:07Z",
+ "sha256": "effd4f7082e16b07b43d910294c7950a4611123445230b3fa203a28e996969f1",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art19\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"ajuste_direto\",\"fontes\":[{\"texto\":\"Ajuste direto\",\"de\":\"ccp:art21.1.c\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":75000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado do contrato\",\"de\":\"ccp:art21.1.c\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"ccp:art21.1.c\"}],\"value\":[{\"texto\":\"75 000 €\",\"de\":\"ccp:art21.1.c\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

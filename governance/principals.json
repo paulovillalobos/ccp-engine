@@ -1880,6 +1880,21 @@
       "nota": "phase 15 (D66): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v12 (rank 16), trained on v11's data with every rule reading in the reading protocol v3 (training/data-v12, task regra_lida: 1 318 train rows, the written articles of D63 and D65 rendered by the factory's own v3 code plus 359 written in the v3 shape; data-v11's old-format rows taken out); training/runs/v12/MANIFEST.json"
     },
     {
+      "id": "leitor:a15",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v13",
+        "versao": "09efbf9b3b88"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 16 (D67): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v13 (rank 16), trained on v12's data with training/data-v13 (task regra_lida: 2 584 train rows, every prompt in the reading protocol v3 0.4; 1 300 of them articles written to BRIEF-D67 with the texture of the real law, the other 1 284 data-v12's after the leak test against every measured article); it reads with its quotes held to the text (readers/quote_grammar.py, --quotes text); training/runs/v13/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:rule-factory@4",
       "kind": "codigo",
       "papel": "ferramenta",
@@ -2574,8 +2589,21 @@
       "versao": 18,
       "code": "tools/rule_factory.py",
       "hash": "571679fb0e2e23367e7b5e58683f130f5eafd3111f331916e9897e5e2382d89d",
+      "retired": true,
+      "nota": "D67: round 9, round 8's targets with the protocol 0.4 (leitor:b answers again; v13, leitor:a15, proposes with its quotes held to the text)",
+      "retired_at": "2026-11-03T23:05:37Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@19",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 19,
+      "code": "tools/rule_factory.py",
+      "hash": "76d5a877080d375943794459380d3602d4dd2c54c679511166220ae1fc2a88e2",
       "retired": false,
-      "nota": "D67: round 9, round 8's targets with the protocol 0.4 (leitor:b answers again; v13, leitor:a15, proposes with its quotes held to the text)"
+      "nota": "D67: TOOL names this version, and record, recheck and withdraw check before writing that it is the current registration with this file's hash (round 9's first record stopped at an invalidation by @16, retired since @17)"
     }
   ]
 }

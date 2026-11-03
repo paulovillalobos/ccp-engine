@@ -1,0 +1,76 @@
+{
+  "id": "regra:ccp:auto-limiar-art31-4@v1",
+  "revision": 4,
+  "recorded_at": "2026-11-03T23:06:28Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art31.4 (fábrica de regras, ronda 9)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": [
+        "concessao_obras",
+        "concessao_servicos"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "ajuste_direto",
+        "consulta_previa"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art31.4",
+      "version": "2026-10-01",
+      "quote": "4 - Caso o valor estimado do contrato de concessão de obras públicas ou de serviços seja inferior a 1 000 000 € e a sua duração seja inferior a um ano, podem ser utilizados os procedimentos de consulta prévia ou ajuste direto.",
+      "offsets": {
+        "start": 0,
+        "end": 226
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "valor_estimado",
+      "comparator": "lt",
+      "value": 1000000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a15",
+      "family": "A",
+      "at": "2026-11-03T23:02:07Z",
+      "chosen_passages": [
+        "ccp:art31.4"
+      ],
+      "blind": false,
+      "evento": "evento:265"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-03T17:21:53Z",
+      "chosen_passages": [
+        "ccp:art31.4"
+      ],
+      "blind": true,
+      "evento": "evento:266"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 3
+}

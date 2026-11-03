@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-03T23:02:07Z",
+ "sha256": "511df937c6825799d6d41cb7bc56d20b74265a0b54466002a8474d2096e9c2ed",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"sectores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art7.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"Concurso limitado por prévia qualificação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iii\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"30 dias\",\"de\":\"ccp:art174.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das candidaturas\",\"de\":\"ccp:art174.3\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio do anúncio\",\"de\":\"ccp:art174.3\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

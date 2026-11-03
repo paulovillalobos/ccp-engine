@@ -1,0 +1,62 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art241-b-3-b@v1",
+  "revision": 4,
+  "recorded_at": "2026-11-03T23:06:28Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art241-b.3.b (fábrica de regras, ronda 5)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_concecao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art241-b.3.b",
+      "version": "2018-01-01",
+      "quote": "b) O prazo para a apresentação das propostas, o qual não pode ser inferior a 10 dias;",
+      "offsets": {
+        "start": 0,
+        "end": 85
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 10,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "nao_indicado"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a13",
+      "family": "A",
+      "at": "2026-10-28T20:26:12Z",
+      "chosen_passages": [
+        "ccp:art241-b.3.b"
+      ],
+      "blind": false,
+      "evento": "evento:247"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:56:07Z",
+      "chosen_passages": [
+        "ccp:art241-b.3.b"
+      ],
+      "blind": true,
+      "evento": "evento:248"
+    }
+  ],
+  "state": "stale",
+  "supersedes": 3
+}

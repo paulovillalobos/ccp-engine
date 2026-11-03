@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-03T23:02:07Z",
+ "sha256": "0a12564ef55d74236925c630277ba826e6ded9a7fd4f47e71d6b8d375427a455",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\",\"obras\"],\"fontes\":[{\"texto\":\"concessão de obras públicas\",\"de\":\"ccp:art54-a.1.b.ii\"},{\"texto\":\"concessão de serviços\",\"de\":\"ccp:art54-a.1.b.ii\"},{\"texto\":\"empreitada\",\"de\":\"ccp:art54-a.1.b.ii\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"outra\",\"fontes\":[{\"texto\":\"empresas\",\"de\":\"ccp:art54-a.1.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"ajuste_direto\",\"concurso_publico\"],\"fontes\":[{\"texto\":\"procedimentos para a formação\",\"de\":\"ccp:art54-a.1.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":500000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de valor\",\"de\":\"ccp:art54-a.1.b.ii\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"ccp:art54-a.1.b.ii\"}],\"value\":[{\"texto\":\"500 000 €\",\"de\":\"ccp:art54-a.1.b.ii\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

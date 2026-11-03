@@ -31,6 +31,7 @@ article; the question asks for the rule the passage states. The readers' prompts
 conditions, round 3 on). A passage that states no such rule gives two readings that do not replicate: nothing settles.
 """
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -48,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@16"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3)
+TOOL = "ferramenta:rule-factory@19"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4)
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -191,6 +192,16 @@ def cmd_prompts(store, n=1):
         (d / "prompt.json").write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         k += 1
     print(f"{k} new prompts in {R['dir']}")
+
+
+def tool_is_current():
+    """D67: TOOL must be the factory's current registration with this file's hash, checked before anything is written: round 9's
+    first record stopped half-way when the log refused an invalidation by ferramenta:rule-factory@16, retired since @17."""
+    doc = json.loads((ROOT / "governance/principals.json").read_text(encoding="utf-8"))
+    p = next((p for p in doc["principals"] if p["id"] == TOOL), None)
+    if p is None or p["retired"] or p["hash"] != hashlib.sha256(Path(__file__).read_bytes()).hexdigest():
+        raise SystemExit(f"{TOOL} is not this file's current registration: register it (tools/register_tool.py rule-factory "
+                         "tools/rule_factory.py) and point TOOL at the version it gives")
 
 
 def recorded_in(store, rule, rnd_name):
@@ -600,6 +611,8 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
     ap.add_argument("--rule"); ap.add_argument("--product-rule")
     a = ap.parse_args()
+    if a.cmd in ("record", "recheck", "withdraw"):
+        tool_is_current()
     if a.cmd == "withdraw":
         return cmd_withdraw(a.rule, a.product_rule)
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()

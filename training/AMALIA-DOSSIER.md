@@ -260,5 +260,37 @@ AFTER when its measurement exists.
   conditions from neighbouring numbers, names procedures and contract types the words do not name, and writes rules for
   the 5 targets that hold none.
 
+## v13 (adapter `amalia-ccp-lei-v13`, 2026-11-03) — articles with the law's texture, quotes held to the text
+- Data (`tools/make_rule_readings_v13.py`, D67): data-v12's training articles after a leak test against every measured
+  article (1 284 rows), plus 1 300 articles written to `training/rule-readings/BRIEF-D67.md` with the texture of the real
+  law: about as long (1 841 characters shown, 12 passages), a condition or parameter said outside the target in half the
+  typable ones, cross-references, other laws and units, old spelling in about a fifth, and a quarter «não tipável»
+  across four reasons. Every prompt in the reading protocol 0.4, which prints every law phrase the checker accepts. A
+  pre-flight gate compared the rows with the measured sets before the run (18 of 18). Mix 36 736 examples, rank 16,
+  from the base.
+- Decoding (D67 B7): the reader writes each answer under a grammar in which every quote is a piece of a passage its slot
+  may cite (`readers/quote_grammar.py`). The factory's checker still judges every answer.
+- BEFORE, committed before v13 answered (`training/runs/v13/BEFORE.md`, `FORECAST.md`): v12 with the protocol 0.4 and the
+  same grammar settles 57.3 % of sealed, the other family's frontier model 89.6 %.
+- Run: 2 061 steps on one H100, 17:21Z to 22:57Z, USD 22.91 (`training/runs/v13/`).
+- Results (`reports/measure/regras-v13-2026-11-03.md`):
+
+| set | base + v12 (0.4, grammar) | base + v13 (0.4, grammar) | another family's frontier model | forecast for v13 |
+|---|---|---|---|---|
+| sealed, 96 (never studied) | 57.3 % | **86.5 %** [78.2, 91.9] | 89.6 % | 75–85 % |
+| dev, 104 (studied for errors) | 49.0 % | 80.8 % [72.2, 87.2] | 94.2 % | — |
+| v11's articles, 393 | 63.9 % (0.3, no grammar) | **82.7 %** [78.6, 86.1] | — | — |
+
+  On dev v13 says «não tipável» right on 23 of the 25 articles that hold no rule (v12 5, the frontier model 24) and gives
+  it to 3 typable ones (the frontier model 4). The checker refuses 11 of 104 dev answers (v12 37), none for a quote
+  outside the text. Of its 20 dev misses, 7 are remissão articles; 6 quote real words that do not name the value, and 3
+  leave out the JOUE publication.
+- On the real law (rules round 9, the 12 targets left open), 8 of v13's 12 readings pass the checker (v12 1 of 12) and 3
+  settle with the other family's, all three «não tipável». The five valid rule readings have the other family's values
+  (amounts, days, deadline field, start of the count) and differ in a condition: the JOUE publication (198.º n.º 1, as
+  v12), special sectors (192.º n.º 2), the contract's duration (31.º n.º 4), which contracts 21.º n.º 1 b) and c) apply
+  to. Two of the four refused readings write rules where the other family reads none. The bar set for a showcase
+  (10 of 12 valid, 8 settled) is not reached.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-03T23:02:07Z",
+ "sha256": "15d8a5dd7a374c4f804a0774538c6ddb3973691a5d73dd37d6a86503ac2d7cb5",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\",\"obras\"],\"fontes\":[{\"texto\":\"concessões de obras públicas ou de concessões de serviços\",\"de\":\"ccp:art127-c.1.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"consulta_previa_especial\",\"fontes\":[{\"texto\":\"consulta prévia especial\",\"de\":\"ccp:art127-c.1\"}]}],\"params\":{\"threshold\":{\"field\":\"preco_contratual\",\"comparator\":\"ge\",\"value\":2000000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"preço contratual\",\"de\":\"ccp:art127-c.1\"}],\"comparator\":[{\"texto\":\"igualmente\",\"de\":\"ccp:art113.5\"}],\"value\":[{\"texto\":\"2 000 000 €\",\"de\":\"ccp:art127-c.1.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

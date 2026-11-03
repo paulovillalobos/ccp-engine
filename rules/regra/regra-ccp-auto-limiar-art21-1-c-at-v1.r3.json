@@ -1,0 +1,83 @@
+{
+  "id": "regra:ccp:auto-limiar-art21-1-c@v1",
+  "revision": 3,
+  "recorded_at": "2026-11-03T23:06:28Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art21.1.c (fábrica de regras, ronda 9)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "eq",
+      "value": "obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "ajuste_direto"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art19",
+      "version": "2026-10-01",
+      "quote": "Artigo 19.º\nEscolha do procedimento de formação de contratos de empreitada de obras públicas\nPara a celebração de contratos de empreitadas de obras públicas pode adotar-se um dos seguintes procedimentos:\na) Concurso público ou concurso limitado por prévia qualificação, com publicação de anúncio no Jornal Oficial da União Europeia, qualquer que seja o valor estimado do contrato;\nb) Concurso público ou concurso limitado por prévia qualificação, sem publicação de anúncio no Jornal Oficial da União Europeia, quando o valor estimado do contrato seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;\nc) Consulta prévia, quando o valor estimado do contrato for inferior a 1 000 000 €;\nd) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 781
+      }
+    },
+    {
+      "passage": "ccp:art21.1.c",
+      "version": "2026-10-01",
+      "quote": "c) Ajuste direto, quando o valor estimado do contrato seja inferior a 75 000 €.",
+      "offsets": {
+        "start": 0,
+        "end": 79
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "valor_estimado",
+      "comparator": "lt",
+      "value": 75000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a15",
+      "family": "A",
+      "at": "2026-11-03T23:02:07Z",
+      "chosen_passages": [
+        "ccp:art19",
+        "ccp:art21.1.c"
+      ],
+      "blind": false,
+      "evento": "evento:263"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-03T17:21:44Z",
+      "chosen_passages": [
+        "ccp:art19",
+        "ccp:art20",
+        "ccp:art21.1",
+        "ccp:art21.1.c"
+      ],
+      "blind": true,
+      "evento": "evento:264"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 2
+}

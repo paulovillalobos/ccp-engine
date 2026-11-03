@@ -2072,3 +2072,29 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   is round 8's byte for byte). leitor:b (reader B's client, model-b) answered all 12 at the first call: 12 of 12
   pass the checker, and all 12 have round 8's canonical content (7 rules, 5 «não tipável», as the paper audit read them).
   v13 (leitor:a15) proposes with --quotes text; readers/leitor_a_modal.py knows v13 (amalia-ccp-lei-v13, leitor-a15).
+- v13 trained (training/runs/v13/MANIFEST.json): 2 061 steps, 2 epochs, 36 736 examples, 42.8 M tokens, 17:21Z to 22:57Z
+  (5.6 h of the 9 h limit), USD 22.91 (training/runs/v13/COST.json). Adapter amalia-ccp-lei-v13 (adapter_model.safetensors
+  09efbf9b3b88…), registered as leitor:a15.
+- v13 read data-v13's dev, sealed and dev_antigo and round 9 with the protocol 0.4 and --quotes text (apps
+  ap-zKCZZkYprT2AeNSTP2tkUs, ap-vPygw7IT3Do0EYE3X3g8mF, ap-gWYA0XqqUtjvVOe6gB3KAQ, ap-IvQG6PnCQ4ZKUljyrlVqLH): 593 of 593
+  and 12 of 12 answers decoded with the grammar.
+- Measured (reports/measure/regras-v13-2026-11-03.md). Sealed 96: 95.8 % valid, 86.5 % settle [78.2, 91.9] (v12 with 0.4
+  and the grammar 57.3 %, leitor:b 89.6 %; forecast 75–85 %). Dev 104: 89.4 % valid, 80.8 % settle (v12 49.0 %, leitor:b
+  94.2 %); the checker refuses 11 (forecast 5–15); «não tipável» right on 23 of 25 (forecast 18–23; leitor:b 24) and given
+  to 3 typable articles (leitor:b 4); no quote outside the text. dev_antigo 393: 90.6 % valid, 82.7 % settle (v12 in 0.3
+  without the grammar 63.9 %). Of v13's 20 dev misses 7 are remissão articles; 6 quote real words that do not name the
+  value, 3 leave out the JOUE publication.
+- Round 9 recorded (rule-factory@19, governance/readings/fabrica9/FABRICA9.md, evento:257–275): leitor:a15 8 of 12 through
+  the checker (round 8: 1; forecast 6–10), 3 settled with leitor:b (forecast 4–8), all three «não tipável» (17.º-B n.º 4,
+  88.º n.º 2 a), 241.º-B n.º 3 b)), and the rules proposed for them invalidated (3 stale). The five valid rule readings have
+  leitor:b's values (amount and comparator, days, deadline field, start of the count) and differ in a condition: the JOUE
+  publication (198.º n.º 1, as v12 in round 8), special sectors (192.º n.º 2), the contract's duration (31.º n.º 4), which
+  contracts 21.º n.º 1 b) and c) apply to. The four refused: quotes that do not name «obras» (127.º-C) or «outra» (54.º-A),
+  where leitor:b reads no rule, and a deadline field or start of the count the passage does not say (174.º n.º 3,
+  198.º n.º 2; L9). None quotes words outside the text. 16 rules settled in all, and 3 «não tipável». The showcase bar
+  (FORECAST.md: at least 10 of 12 valid and 8 settled) is not reached.
+- The first record of round 9 stopped at evento:259: TOOL still named ferramenta:rule-factory@16, retired since @17 (D67's
+  registrations had not moved it), and the log refused the invalidation after the first settled «não tipável». Its two
+  events (257, 258), never committed, were rolled back to the committed log and the round recorded again in full.
+  rule-factory@19: TOOL names it, and record, recheck and withdraw check before writing that TOOL is the current
+  registration with the file's hash (tests/test_rule_factory_tool.py).
