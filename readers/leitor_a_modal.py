@@ -1,7 +1,7 @@
 """leitor:a / leitor:a2 on Modal: the family-A reader answers prompts with guided JSON (vLLM, temperature 0, one batch).
 
     <a Python 3.12 venv with modal>/bin/modal run readers/leitor_a_modal.py [--only SLUG] [--dir governance/readings/casos]
-        [--lora v1|v2|v3|v4] [--out-dir DIR] [--jsonl FILE --out FILE]
+        [--lora v1|v2|v3|v4] [--out-dir DIR] [--jsonl FILE --out FILE [--order required]]
 
 readers/ holds the code that runs a model (DECISIONS D38): nothing in engine/, tools/ or verify.py imports it, and
 verify's code guard keeps it that way.
@@ -12,7 +12,11 @@ and their answer schemas to one GPU container, and writes each answer as <out-di
 with --lora v1, leitor-a2 (the base model + the adapter amalia-ccp-lei-v1 from the Modal volume amalia-lora; phase 4); with
 --lora v2, leitor-a3 (+ amalia-ccp-lei-v2; phase 5, D46).
 JSONL mode (phase 4, T3): reads a file of examples {id, prompt, schema, ...} (training/data/<task>/held_out.jsonl) and
-writes one line per example {"id", "at", "sha256", "answer"} to --out.
+writes one line per example {"id", "at", "sha256", "answer"} to --out. With --order required (D66), each schema object's
+properties are put in the order of its required list before decoding: data-v12's rows are written with sort_keys, which
+puts every schema's properties in alphabetical order, and the decoder writes the keys in the schema's order, so a reader
+trained on the factory's order (read_rules_v3.schema, the same as required; tests/test_reader_order.py) must be given it
+back. v12's first read of dev and sealed ran without it and is kept as leitor-a14.attempt1.jsonl.
 A prompt longer than the window is skipped and listed, never truncated. The grammar admits no free whitespace, set on
 the engine (attempt 1, free whitespace: 8 of 18 answers looped on blanks until max_tokens; attempt 2, the flag per
 request only: 7 of 18, the flag was not honoured; both kept as leitor-a.attempt1.json / attempt2.json). The model,
@@ -83,14 +87,30 @@ def record(text, at):
     return {"at": at, "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(), "answer": text}
 
 
+def in_answer_order(s):
+    """Every object's properties in the order of its required list (the rest after them, as they are)."""
+    if isinstance(s, list):
+        return [in_answer_order(x) for x in s]
+    if not isinstance(s, dict):
+        return s
+    s = {k: in_answer_order(v) for k, v in s.items()}
+    p, req = s.get("properties"), s.get("required")
+    if isinstance(p, dict) and isinstance(req, list):
+        s["properties"] = {**{k: p[k] for k in req if k in p}, **{k: v for k, v in p.items() if k not in req}}
+    return s
+
+
 @app.local_entrypoint()
-def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl: str = "", out: str = ""):
+def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl: str = "", out: str = "", order: str = ""):
     leitor = LEITOR_OF[lora]
+    if order not in ("", "required"):
+        raise SystemExit(f"--order {order}: only «required»")
     if jsonl:
         rows = [json.loads(l) for l in Path(jsonl).read_text(encoding="utf-8").splitlines() if l.strip()]
         target = Path(out)
         done = {json.loads(l)["id"] for l in target.read_text(encoding="utf-8").splitlines() if l.strip()} if target.exists() else set()
-        items = [{"key": r["id"], "prompt": r["prompt"], "schema": r["schema"]} for r in rows if r["id"] not in done]
+        items = [{"key": r["id"], "prompt": r["prompt"], "schema": in_answer_order(r["schema"]) if order else r["schema"]}
+                 for r in rows if r["id"] not in done]
         if not items:
             print("nothing to answer"); return
         result = answer.remote(items, lora)

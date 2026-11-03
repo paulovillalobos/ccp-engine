@@ -1,0 +1,367 @@
+{
+ "tool": "ccp-measure-rule-readings-v12-0.1",
+ "protocol": "ccp-read-rules-v3-0.3",
+ "date": "2026-11-03",
+ "sets": {
+  "dev": {
+   "gold": "training/data-v12/regra_lida/dev.jsonl",
+   "gold_sha256": "f6cc74457edaf308304f11f19e6acdf35a0116a1de91b86269faaff7323a912b",
+   "examples": 104,
+   "readers": {
+    "leitor-a13": {
+     "label": "base + adaptador v11",
+     "answers_sha256": "7310139a692620125a17ea65e99f6613fa246409772104add0a1742e5389ec59",
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 85,
+      "n": 104,
+      "value": 0.8173,
+      "wilson95": [
+       0.7322,
+       0.8798
+      ]
+     },
+     "settles": {
+      "k": 5,
+      "n": 104,
+      "value": 0.0481,
+      "wilson95": [
+       0.0207,
+       0.1076
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "não tipável num e regras no outro": 64,
+       "verificador: não tipável: … não está em exemplo:art….…": 10,
+       "verificador: não tipável com regras": 7,
+       "motivo sem_vocabulario em vez de nao_e_prazo_minimo": 6,
+       "motivo sem_vocabulario em vez de nao_e_limiar": 4,
+       "motivo sem_vocabulario em vez de texto_em_falta": 4,
+       "a resposta não é o objeto pedido": 2,
+       "motivo texto_em_falta em vez de nao_e_prazo_minimo": 1,
+       "motivo texto_em_falta em vez de sem_vocabulario": 1
+      },
+      "by_style": {
+       "nao_tipavel": 20,
+       "remissao": 15,
+       "capitulo": 13,
+       "alineas": 10,
+       "grandeza": 10,
+       "casos": 9,
+       "contagem": 9,
+       "valor_condicao": 9,
+       "comparador": 4
+      }
+     }
+    },
+    "leitor-a14": {
+     "label": "base + adaptador v12",
+     "answers_sha256": "2c4802763115ca1308efd26e2d9a9c3b814fa7c307623f88a5c3d60687ed94c9",
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 58,
+      "n": 104,
+      "value": 0.5577,
+      "wilson95": [
+       0.4619,
+       0.6494
+      ]
+     },
+     "settles": {
+      "k": 46,
+      "n": 104,
+      "value": 0.4423,
+      "wilson95": [
+       0.3506,
+       0.5381
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "verificador: … não está em exemplo:art….…": 10,
+       "não tipável num e regras no outro": 5,
+       "verificador: as fontes não nomeiam …": 5,
+       "verificador: deadline_field prazo_propostas_dias e as fontes dizem nada (L…)": 4,
+       "motivo sem_vocabulario em vez de nao_e_prazo_minimo": 3,
+       "verificador: counted_from data_envio_convite e as fontes dizem nada (L…)": 3,
+       "verificador: … não está em exemplo:art…": 3,
+       "verificador: counted_from data_envio_anuncio e as fontes dizem nada (L…)": 2,
+       "verificador: fonte em exemplo:art….…, que é vizinho (L…)": 2,
+       "verificador: operador e valor não combinam (L…)": 2,
+       "verificador: … não está em exemplo:art….….a": 2,
+       "1 regras em vez de 2": 1,
+       "condição com outro valor: tipo_contrato": 1,
+       "condição em falta: tipo_procedimento": 1,
+       "condição em falta: urgencia_fundamentada": 1,
+       "parâmetro: minimum_days": 1,
+       "verificador: as fontes não dizem preco_base gt … (L…)": 1,
+       "verificador: as fontes não dizem preco_contratual le … (L…)": 1,
+       "verificador: comparator gt e as fontes dizem … (L…)": 1,
+       "verificador: comparator le e as fontes dizem … (L…)": 1,
+       "verificador: counted_from data_publicacao_anuncio e as fontes dizem nada (L…)": 1,
+       "verificador: field preco_contratual e as fontes nomeiam nada (L…)": 1,
+       "verificador: minimum_days … não está nas fontes (L…, L…)": 1,
+       "verificador: num limiar o valor é o parâmetro, não uma condição (L…)": 1,
+       "verificador: não tipável: … não está em exemplo:art….…": 1,
+       "verificador: valores fora do vocabulário …": 1,
+       "verificador: value … não está nas fontes (L…)": 1,
+       "verificador: … não está em exemplo:art….….b": 1,
+       "verificador: … não está em exemplo:lugar-…": 1
+      },
+      "by_style": {
+       "nao_tipavel": 23,
+       "contagem": 7,
+       "remissao": 7,
+       "casos": 5,
+       "valor_condicao": 5,
+       "grandeza": 4,
+       "alineas": 3,
+       "capitulo": 3,
+       "comparador": 1
+      }
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "e4c8ec3cdb669c4e65362dadc32c9bb268b81c96d3b13b7f02dfda5a6d8d0794",
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 96,
+      "n": 104,
+      "value": 0.9231,
+      "wilson95": [
+       0.8555,
+       0.9605
+      ]
+     },
+     "settles": {
+      "k": 84,
+      "n": 104,
+      "value": 0.8077,
+      "wilson95": [
+       0.7215,
+       0.8719
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "não tipável num e regras no outro": 10,
+       "condição em falta: tipo_contrato": 2,
+       "verificador: counted_from data_envio_convite e as fontes dizem nada (L…)": 2,
+       "verificador: … não está em exemplo:art….…": 2,
+       "condição em falta: tipo_entidade": 1,
+       "verificador: as fontes nomeiam também … (fonte mais curta, ou a condição está incompleta)": 1,
+       "verificador: counted_from data_envio_anuncio e as fontes dizem nada (L…)": 1,
+       "verificador: counted_from data_publicacao_anuncio e as fontes dizem nada (L…)": 1,
+       "verificador: minimum_days … não está nas fontes (L…, L…)": 1
+      },
+      "by_style": {
+       "remissao": 5,
+       "contagem": 4,
+       "casos": 3,
+       "grandeza": 3,
+       "capitulo": 2,
+       "alineas": 1,
+       "comparador": 1,
+       "valor_condicao": 1
+      }
+     }
+    }
+   }
+  },
+  "sealed": {
+   "gold": "training/data-v12/regra_lida/sealed.jsonl",
+   "gold_sha256": "aa4805be1e8aaf67ca73f90a9835c5e3567408f1b16c135712e9fbc5839c96ae",
+   "examples": 96,
+   "readers": {
+    "leitor-a13": {
+     "label": "base + adaptador v11",
+     "answers_sha256": "e5a5d9df733af01c25219f32b1e575d188237a850d17e100a554307848a942ad",
+     "answered": {
+      "k": 96,
+      "n": 96,
+      "value": 1.0,
+      "wilson95": [
+       0.9615,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 83,
+      "n": 96,
+      "value": 0.8646,
+      "wilson95": [
+       0.782,
+       0.9191
+      ]
+     },
+     "settles": {
+      "k": 4,
+      "n": 96,
+      "value": 0.0417,
+      "wilson95": [
+       0.0163,
+       0.1023
+      ]
+     }
+    },
+    "leitor-a14": {
+     "label": "base + adaptador v12",
+     "answers_sha256": "fa10b73a366e667585b707d682827694b11f74e8330dbaef42e2545ef0f13906",
+     "answered": {
+      "k": 96,
+      "n": 96,
+      "value": 1.0,
+      "wilson95": [
+       0.9615,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 61,
+      "n": 96,
+      "value": 0.6354,
+      "wilson95": [
+       0.5357,
+       0.7248
+      ]
+     },
+     "settles": {
+      "k": 53,
+      "n": 96,
+      "value": 0.5521,
+      "wilson95": [
+       0.4525,
+       0.6476
+      ]
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers_sha256": "251d8b104b1ac72473a47d645a1666c1789df0cc77d3bbb3806fc2cf8d3f218b",
+     "answered": {
+      "k": 96,
+      "n": 96,
+      "value": 1.0,
+      "wilson95": [
+       0.9615,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 91,
+      "n": 96,
+      "value": 0.9479,
+      "wilson95": [
+       0.8838,
+       0.9776
+      ]
+     },
+     "settles": {
+      "k": 78,
+      "n": 96,
+      "value": 0.8125,
+      "wilson95": [
+       0.723,
+       0.878
+      ]
+     }
+    }
+   }
+  },
+  "dev_antigo": {
+   "gold": "training/data-v12/regra_lida/dev_antigo.jsonl",
+   "gold_sha256": "bdf5330520c66282474b536d6baba85b30bbe878da8d3094a7b3fc92a17636f4",
+   "examples": 393,
+   "readers": {
+    "leitor-a13": {
+     "label": "base + adaptador v11",
+     "answers_sha256": "5fcd3206cfd17433f285fbf3659f9bbb3335f64050b935ab493b3eaedefd4f0e",
+     "answered": {
+      "k": 393,
+      "n": 393,
+      "value": 1.0,
+      "wilson95": [
+       0.9903,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 305,
+      "n": 393,
+      "value": 0.7761,
+      "wilson95": [
+       0.7323,
+       0.8145
+      ]
+     },
+     "settles": {
+      "k": 0,
+      "n": 393,
+      "value": 0.0,
+      "wilson95": [
+       0.0,
+       0.0097
+      ]
+     }
+    },
+    "leitor-a14": {
+     "label": "base + adaptador v12",
+     "answers_sha256": "48db392bd9ef0ee3c7e5b2428cbbeaf6da3c3e83d545d1a524274927d77f6637",
+     "answered": {
+      "k": 393,
+      "n": 393,
+      "value": 1.0,
+      "wilson95": [
+       0.9903,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 295,
+      "n": 393,
+      "value": 0.7506,
+      "wilson95": [
+       0.7056,
+       0.7908
+      ]
+     },
+     "settles": {
+      "k": 251,
+      "n": 393,
+      "value": 0.6387,
+      "wilson95": [
+       0.5901,
+       0.6846
+      ]
+     }
+    }
+   }
+  }
+ }
+}

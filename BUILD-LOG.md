@@ -1988,3 +1988,26 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   (957 old articles in v3 plus 359 new; 41 new left out as close to an eval3 article or a real passage), dev 104 and sealed
   96 (eval3, split by sha256 of the id; sealed read by no reader yet), dev_antigo 393, 91 left out with their reason
   (REJECTED.json).
+
+## 2026-11-03 — D66, result: AMALIA v12 measured, factory round 8
+- Done: BEFORE (v11 and leitor:b on dev, sealed and dev_antigo) committed before v12 answered (187028adc). leitor:b
+  answered round 8: 12 of 12 through the checker, all as the paper audit. leitor_b_cli: a call that times out is skipped,
+  not the batch (a stuck call had lost the sealed batch's other answers; the rerun completed 96 of 96). rule-factory@16:
+  a target settled as «não tipável» shows its reason in the round report. v12 trained detached
+  (ap-yv1b6uv0Sci4WNA7B6jmZw, 02:59Z to 07:12Z, 1 965 steps, USD 16.33 billed so far); leitor:a14 registered (adapter
+  sha 1e8d700d771b).
+- Serving correction, disclosed: data-v12's rows are written with sort_keys, so every stored answer schema has its
+  properties in alphabetical order; the guided decoder writes keys in the schema's order, and v12 was trained in the
+  factory's order (the phase-4 finding, repeated in the v12 generator). Attempt 1 began every answer with «nao_tipavel»
+  (set on 100 of 104 dev answers, the gold has 25): sealed 10.4 %, dev 17.3 % settle. readers/leitor_a_modal.py
+  --order required puts each object's properties in the order of its required list, which gives back
+  read_rules_v3.schema on all 593 measured rows (tests/test_reader_order.py). Found from the stored schemas; no sealed
+  answer was opened. Attempt 1 kept as leitor-a14.attempt1.jsonl. Round 8's prompts already had the factory's order.
+- Result (reports/measure/regras-v12-2026-11-03), settles: sealed v12 55.2 % (v11 4.2 %, leitor:b 81.2 %); dev 44.2 %
+  (4.8 %, 80.8 %); dev_antigo 63.9 % (v11 0.0 %). On dev, v12 settles 44 of 79 articles that hold a rule (leitor:b 59)
+  and 2 of 25 that hold none (leitor:b 25); 46 of its 104 answers fail the checker, mostly a quote that is not the
+  passage's own words.
+- Round 8 (fabrica-8, leitor:a14 proposes, leitor:b's 0.3 answers review): 0 settled. 198.º n.º 1 passed the checker and
+  differs (v12 leaves out publicado_joue); 11 without a valid proposal (conditions from neighbouring numbers, procedures
+  and contract types the words do not name, rules for the 5 targets that hold none). 16 rules settled (17 less 88.º
+  n.º 2 a), withdrawn).

@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T07:24:36Z",
+ "sha256": "c13c014261a4a37b0b3735b47ef2b8e965d3b151bbb8bc4f2d3e4f8ba01394f1",
+ "answer": "{\"regras\": [{\"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"anuncio_pre_informacao\", \"op\": \"eq\", \"value\": true, \"fontes\": [{\"texto\": \"anúncio periódico indicativo\", \"de\": \"ccp:art198.2\"}]}, {\"field\": \"publicado_joue\", \"op\": \"eq\", \"value\": true, \"fontes\": [{\"texto\": \"publicado no Jornal Oficial da União Europeia\", \"de\": \"ccp:art167.5\"}]}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"procedimento_negociacao\", \"fontes\": [{\"texto\": \"Procedimento de negociação\", \"de\": \"ccp:art198.3\"}]}], \"params\": {\"minimum_days\": 25, \"deadline_field\": \"prazo_candidaturas_dias\", \"counted_from\": \"data_envio_convite\", \"usual_days\": null}, \"fontes\": {\"minimum_days\": [{\"texto\": \"25 dias\", \"de\": \"ccp:art198.2\"}], \"deadline_field\": [{\"texto\": \"apresentação das candidaturas\", \"de\": \"ccp:art198.2\"}], \"counted_from\": [{\"texto\": \"a contar da data do envio do convite\", \"de\": \"ccp:art198.2\"}], \"usual_days\": null}}], \"nao_tipavel\": null}"
+}

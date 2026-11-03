@@ -634,10 +634,12 @@
         208,
         209,
         243,
-        244
+        244,
+        255,
+        256
       ],
       "family": "A",
-      "proposer": "leitor:a13",
+      "proposer": "leitor:a14",
       "reviews": [
         {
           "by": "leitor:b",
@@ -646,7 +648,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art198-2-b@v1": {
@@ -1232,6 +1234,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 254,
-  "head": "64ea3478e379dfdefb89f4b0b51aa2fe269ea3a0727352a36939992050549e83"
+  "events": 256,
+  "head": "de385face6d5a976460da75c4708a55de7300f23d1153d189f5d9254916b8071"
 }

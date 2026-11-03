@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T07:24:36Z",
+ "sha256": "4a062e3196ef05bdec0e33062ac816d6e0d60be906201f0c2640a1cf24a6ba8a",
+ "answer": "{\"regras\": [{\"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"bens\", \"fontes\": [{\"texto\": \"bem ou serviço\", \"de\": \"ccp:art241-b.3\"}]}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_concecao\", \"fontes\": [{\"texto\": \"Sistemas de aquisição dinâmicos\", \"de\": \"ccp:art241-b.3\"}]}], \"params\": {\"minimum_days\": 10, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"nao_indicado\", \"usual_days\": null}, \"fontes\": {\"minimum_days\": [{\"texto\": \"10 dias\", \"de\": \"ccp:art241-b.3.b\"}], \"deadline_field\": [{\"texto\": \"apresentação das propostas\", \"de\": \"ccp:art241-b.3.b\"}], \"counted_from\": null, \"usual_days\": null}}], \"nao_tipavel\": null}"
+}

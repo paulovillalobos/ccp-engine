@@ -1865,6 +1865,21 @@
       "nota": "phase 13 (D65): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v11 (rank 16), trained on v10's data plus training/data-v11 (task regra_lida_alvo: 400 written articles aimed at v10's dev errors, 800 train rows); training/runs/v11/MANIFEST.json"
     },
     {
+      "id": "leitor:a14",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v12",
+        "versao": "1e8d700d771b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 15 (D66): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v12 (rank 16), trained on v11's data with every rule reading in the reading protocol v3 (training/data-v12, task regra_lida: 1 318 train rows, the written articles of D63 and D65 rendered by the factory's own v3 code plus 359 written in the v3 shape; data-v11's old-format rows taken out); training/runs/v12/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:rule-factory@4",
       "kind": "codigo",
       "papel": "ferramenta",

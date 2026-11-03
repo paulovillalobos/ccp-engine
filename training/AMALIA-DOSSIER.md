@@ -225,5 +225,40 @@ AFTER when its measurement exists.
   articles are now close to solved; the real passages that are left are the hardest ones, and the gain does not carry
   over to them in full.
 
+## v12 (adapter `amalia-ccp-lei-v12`, 2026-11-03) — reading with the protocol v3, every word quoted
+- Data (`tools/make_rule_readings_v12.py`, D66): the rule readings in the reading protocol v3. Every written article
+  becomes a law of its own and is rendered by the factory's own code (the law's titles above the article, the article,
+  the passages it refers to). Its gold is the article's rules, or a «não tipável» reason, with every quote derived by code
+  from the text and checked by the factory's checker. Train 1 318 rows: the 957 earlier training articles rendered again,
+  plus 359 new articles written in the v3 shape (titles that name the procedure, remissões, alíneas, «não tipável»,
+  gt/ge, amounts as conditions); 98 rows are «não tipável». v11's old-format rule rows were taken out. Mix 35 470
+  examples, rank 16, from the base.
+- Measured on 200 new articles in the v3 shape, split by id into dev 104 (studied) and sealed 96 (committed before any
+  reader answered it), and on v11's 393 measured articles rendered in v3 (never trained on).
+- Run: training ended 07:12Z on one H100, USD 16.33 for the hours billed so far (`training/runs/v12/`).
+- Serving correction, disclosed: the first read gave v12 each answer schema with its keys in alphabetical order (the
+  data rows are written with sorted keys), while v12 was trained on answers in the factory's order. A guided decoder
+  writes the keys in the schema's order, so v12 had to begin every answer with «nao_tipavel», and set it on 100 of 104
+  dev answers (the gold has 25). Sealed settled 10.4 % that way. The reader now restores the factory's order
+  (`--order required`, checked on all 593 measured rows); the first read is kept (`leitor-a14.attempt1.jsonl`).
+- Results (`reports/measure/regras-v12-2026-11-03.md`). «Settles» = passes the factory's checker against the article's
+  text and has the same canonical content as the gold: what the factory records.
+
+| set | base + v11 | base + v12 | another family's frontier model |
+|---|---|---|---|
+| sealed, 96 (never studied) | 4.2 % | **55.2 %** [45.2, 64.8] | 81.2 % |
+| dev, 104 (studied for errors) | 4.8 % | 44.2 % | 80.8 % |
+| v11's articles in v3, 393 | 0.0 % | **63.9 %** [59.0, 68.5] | — |
+
+  v11 was never trained on v3 and was read with the alphabetised schema. On dev, v12 settles 44 of the 79 articles that
+  hold a rule (the frontier model 59) and 2 of the 25 that hold none (the frontier model 25): it seldom says a passage
+  holds no rule of the type. When its answer passes the checker it settles in 46 of 58; the 46 that fail mostly quote
+  words that are not the passage's own (the vocabulary's wording instead of the text's, words in another order), or
+  quote a source that does not say the value.
+- On the real law (rules round 8, the 12 targets left open), v12's reading passed the checker on 1 (198.º n.º 1) and did
+  not replicate the other family's: it leaves out the JOUE publication. Nothing settled. On the real passages v12 takes
+  conditions from neighbouring numbers, names procedures and contract types the words do not name, and writes rules for
+  the 5 targets that hold none.
+
 ## Not for publication
 The rule-test log names the reader of the other family; findings about specific vendors or municipalities stay out.

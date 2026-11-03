@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T07:24:36Z",
+ "sha256": "4560a57b7756d89d5e51ea2356da2d2110be246dfba24feed409b316f274eeed",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"eq\", \"value\": \"obras\", \"fontes\": [{\"texto\": \"empreitadas de obras públicas\", \"de\": \"ccp:art17-b.4\"}]}, {\"field\": \"tipo_entidade\", \"op\": \"eq\", \"value\": \"outra\", \"fontes\": [{\"texto\": \"de bens e serviços\", \"de\": \"ccp:art17-b.4\"}]}], \"params\": {\"threshold\": {\"field\": \"valor_estimado\", \"comparator\": \"lt\", \"value\": 1000000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"valor estimado\", \"de\": \"ccp:art17-b.4\"}], \"comparator\": [{\"texto\": \"inferior a\", \"de\": \"ccp:art17-b.4\"}], \"value\": [{\"texto\": \"1 000 000 €\", \"de\": \"ccp:art17-b.4\"}]}}], \"nao_tipavel\": null}"
+}

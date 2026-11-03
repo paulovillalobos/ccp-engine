@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T07:24:36Z",
+ "sha256": "9cf007f19aaa1133f3cc8a4af25753fe18f78815ead62f6c48db04c4d3901d00",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"tipo_contrato\", \"op\": \"in\", \"value\": [\"concessao_obras\", \"concessao_servicos\", \"obras\", \"servicos\"], \"fontes\": [{\"texto\": \"empreitadas e concessões de obras públicas ou de concessões de serviços\", \"de\": \"ccp:art127-c.1.a\"}]}, {\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"consulta_previa_especial\", \"fontes\": [{\"texto\": \"consulta prévia especial\", \"de\": \"ccp:art127-c\"}]}], \"params\": {\"threshold\": {\"field\": \"preco_contratual\", \"comparator\": \"ge\", \"value\": 2000000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"preço contratual\", \"de\": \"ccp:art127-c.1.a\"}], \"comparator\": [{\"texto\": \"igual ou superior a\", \"de\": \"ccp:art127-c.1.a\"}], \"value\": [{\"texto\": \"2 000 000 €\", \"de\": \"ccp:art127-c.1.a\"}]}}], \"nao_tipavel\": null}"
+}

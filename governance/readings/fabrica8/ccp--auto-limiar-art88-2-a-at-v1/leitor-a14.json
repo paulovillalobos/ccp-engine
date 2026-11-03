@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T07:24:36Z",
+ "sha256": "8d48dba1d105d38206dbd85555a6b24673601ac89fa6de1d813a21d21e2241dd",
+ "answer": "{\"regras\": [{\"tipo\": \"limiar\", \"condicoes\": [{\"field\": \"preco_contratual\", \"op\": \"lt\", \"value\": 1000000, \"fontes\": [{\"texto\": \"preço contratual for inferior a 1 000 000 €\", \"de\": \"ccp:art88.2.a\"}]}], \"params\": {\"threshold\": {\"field\": \"preco_contratual\", \"comparator\": \"lt\", \"value\": 1000000, \"currency\": \"EUR\"}}, \"fontes\": {\"field\": [{\"texto\": \"preço contratual\", \"de\": \"ccp:art88.2.a\"}], \"comparator\": [{\"texto\": \"inferior a\", \"de\": \"ccp:art88.2.a\"}], \"value\": [{\"texto\": \"1 000 000 €\", \"de\": \"ccp:art88.2.a\"}]}}], \"nao_tipavel\": null}"
+}

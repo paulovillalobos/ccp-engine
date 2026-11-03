@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-03T07:24:36Z",
+ "sha256": "04b7795b13910416f5289431ac24505e6df59ca176fe7acada0b99057abdbb93",
+ "answer": "{\"regras\": [{\"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"procedimento_negociacao\", \"fontes\": [{\"texto\": \"Procedimento de negociação\", \"de\": \"ccp:parte-ii.titulo-iii.capitulo-iv\"}]}], \"params\": {\"minimum_days\": 30, \"deadline_field\": \"prazo_candidaturas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}, \"fontes\": {\"minimum_days\": [{\"texto\": \"30 dias\", \"de\": \"ccp:art198.1\"}], \"deadline_field\": [{\"texto\": \"apresentação das candidaturas\", \"de\": \"ccp:art198.1\"}], \"counted_from\": [{\"texto\": \"a contar da data do envio do anúncio\", \"de\": \"ccp:art198.1\"}], \"usual_days\": null}}], \"nao_tipavel\": null}"
+}
