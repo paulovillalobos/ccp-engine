@@ -77,6 +77,9 @@ FROUNDS[7] = {**FROUNDS[6], "round": "fabrica-7", "dir": rr.READINGS / "fabrica7
 # D66: round 8 is round 7 with the protocol 0.3 (an article's n.º 1 is no longer shown a second time); leitor:b answers again, and
 # v12 reads round 8 (round 7 keeps leitor:b's answers to the 0.2 prompts, read by no family-A reader)
 FROUNDS[8] = {**FROUNDS[7], "round": "fabrica-8", "dir": rr.READINGS / "fabrica8", "carry_b": 7}
+# D67: round 9 is round 8 with the protocol 0.4 (every law phrase printed, L5, L9, L10); leitor:b answers again, and v13 reads
+# it with its quotes held to the text (readers/quote_grammar.py)
+FROUNDS[9] = {**FROUNDS[8], "round": "fabrica-9", "dir": rr.READINGS / "fabrica9", "decision": "D67", "proposer": ("leitor:a15", "leitor-a15.json"), "carry_b": 8}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -565,10 +568,13 @@ INTRO = {
     7: ["D66: AMALIA treinada no protocolo v3 (adaptador v12). Alvos: os da ronda 6 que ficaram abertos.",
         "Os prompts são os da ronda 6, byte a byte; as respostas de leitor:b são as da ronda 6. Um programa confirma cada palavra "
         "citada; a leitura que falha não fica registada."],
+    9: ["D67: AMALIA treinada em artigos com a textura da lei (adaptador v13), as citações presas ao texto por uma gramática. "
+        "Alvos: os da ronda 6 que ficaram abertos, com o protocolo 0.4.",
+        "leitor:b responde de novo aos prompts 0.4. Um programa confirma cada palavra citada; a leitura que falha não fica registada."],
 }
 
 
-ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12"}
+ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13"}
 
 
 def write_report(rows, n=1):

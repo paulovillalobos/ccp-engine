@@ -6,7 +6,11 @@ Gerado por tools/measure_rule_readings_v13.py (ccp-measure-rule-readings-v13-0.1
 
 | leitor | respondidas | válidas | assenta |
 |---|---|---|---|
+| leitor-a14 (base + adaptador v12, citações pela gramática) | 100.0 % [96.4, 100.0] (104/104) | 64.4 % [54.9, 73.0] (67/104) | 49.0 % [39.6, 58.5] (51/104) |
 | leitor-b (Reader B (família B)) | 100.0 % [96.4, 100.0] (104/104) | 100.0 % [96.4, 100.0] (104/104) | 94.2 % [88.0, 97.3] (98/104) |
+
+Por que não assentam as de leitor-a14: verificador: as fontes não nomeiam … 15; 1 regras em vez de 2 4; não tipável num e regras no outro 4; verificador: deadline_field prazo_propostas_dias e as fontes dizem nada (L…) 4; parâmetro: minimum_days 3; verificador: as fontes nomeiam também … (fonte mais curta, ou a condição está incompleta) 3; condição em falta: publicado_joue 2; condição em falta: tipo_procedimento 2; verificador: num limiar o valor é o parâmetro, não uma condição (L…) 2; verificador: valores fora do vocabulário … 2; verificador: value … não está nas fontes (L…) 2; condição com outro valor: urgencia_fundamentada 1; condição em falta: tipo_contrato 1; condição em falta: urgencia_fundamentada 1; condição em falta: valor_estimado 1; verificador: as fontes não dizem preco_base ge … (L…) 1; verificador: as fontes não dizem preco_base gt … (L…) 1; verificador: comparator gt e as fontes dizem … (L…) 1; verificador: comparator lt e as fontes dizem … (L…) 1; verificador: field preco_contratual e as fontes nomeiam nada (L…) 1; verificador: field valor_estimado e as fontes nomeiam nada (L…) 1; verificador: minimum_days … não está nas fontes (L…, L…) 1; verificador: operador e valor não combinam (L…) 1; verificador: um limiar tem sempre o procedimento que permite abaixo do valor; sem ele, L… (nao_e_limiar 1.
+Por estilo: nao_tipavel 20; remissao 9; casos 6; valor_condicao 5; alineas 3; capitulo 3; contagem 3; grandeza 3; comparador 1.
 
 Por que não assentam as de leitor-b: não tipável num e regras no outro 4; condição em falta: tipo_contrato 1; motivo nao_e_limiar em vez de sem_vocabulario 1.
 Por estilo: comparador 3; capitulo 1; grandeza 1; nao_tipavel 1.
@@ -15,5 +19,6 @@ Por estilo: comparador 3; capitulo 1; grandeza 1; nao_tipavel 1.
 
 | leitor | respondidas | válidas | assenta |
 |---|---|---|---|
+| leitor-a14 (base + adaptador v12, citações pela gramática) | 100.0 % [96.2, 100.0] (96/96) | 68.8 % [58.9, 77.1] (66/96) | 57.3 % [47.3, 66.7] (55/96) |
 | leitor-b (Reader B (família B)) | 97.9 % [92.7, 99.4] (94/96) | 96.9 % [91.2, 98.9] (93/96) | 89.6 % [81.9, 94.2] (86/96) |
 

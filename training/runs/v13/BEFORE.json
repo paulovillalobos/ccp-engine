@@ -8,6 +8,77 @@
    "gold_sha256": "12d89c8dc605007c9085233fd538cd246b4a6123d8251473b3fc6d23ccedeba1",
    "examples": 104,
    "readers": {
+    "leitor-a14": {
+     "label": "base + adaptador v12",
+     "answers_sha256": "c8d344d6d79b79f33be199798f59b6ed2e82d5458d4166a74a94bc94f88a755e",
+     "quoted_by_grammar": 104,
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 67,
+      "n": 104,
+      "value": 0.6442,
+      "wilson95": [
+       0.5486,
+       0.7296
+      ]
+     },
+     "settles": {
+      "k": 51,
+      "n": 104,
+      "value": 0.4904,
+      "wilson95": [
+       0.3964,
+       0.5851
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "verificador: as fontes não nomeiam …": 15,
+       "1 regras em vez de 2": 4,
+       "não tipável num e regras no outro": 4,
+       "verificador: deadline_field prazo_propostas_dias e as fontes dizem nada (L…)": 4,
+       "parâmetro: minimum_days": 3,
+       "verificador: as fontes nomeiam também … (fonte mais curta, ou a condição está incompleta)": 3,
+       "condição em falta: publicado_joue": 2,
+       "condição em falta: tipo_procedimento": 2,
+       "verificador: num limiar o valor é o parâmetro, não uma condição (L…)": 2,
+       "verificador: valores fora do vocabulário …": 2,
+       "verificador: value … não está nas fontes (L…)": 2,
+       "condição com outro valor: urgencia_fundamentada": 1,
+       "condição em falta: tipo_contrato": 1,
+       "condição em falta: urgencia_fundamentada": 1,
+       "condição em falta: valor_estimado": 1,
+       "verificador: as fontes não dizem preco_base ge … (L…)": 1,
+       "verificador: as fontes não dizem preco_base gt … (L…)": 1,
+       "verificador: comparator gt e as fontes dizem … (L…)": 1,
+       "verificador: comparator lt e as fontes dizem … (L…)": 1,
+       "verificador: field preco_contratual e as fontes nomeiam nada (L…)": 1,
+       "verificador: field valor_estimado e as fontes nomeiam nada (L…)": 1,
+       "verificador: minimum_days … não está nas fontes (L…, L…)": 1,
+       "verificador: operador e valor não combinam (L…)": 1,
+       "verificador: um limiar tem sempre o procedimento que permite abaixo do valor; sem ele, L… (nao_e_limiar": 1
+      },
+      "by_style": {
+       "nao_tipavel": 20,
+       "remissao": 9,
+       "casos": 6,
+       "valor_condicao": 5,
+       "alineas": 3,
+       "capitulo": 3,
+       "contagem": 3,
+       "grandeza": 3,
+       "comparador": 1
+      }
+     }
+    },
     "leitor-b": {
      "label": "Reader B (família B)",
      "answers_sha256": "a844083b444ee476c4e19b1070bab22cf1ce6461edf9c3260ea84d557b95df83",
@@ -60,6 +131,38 @@
    "gold_sha256": "74417f86ec0d2825200410db978ee7d86d10ed6cff21118d7361084e7cbde6fd",
    "examples": 96,
    "readers": {
+    "leitor-a14": {
+     "label": "base + adaptador v12",
+     "answers_sha256": "304426880c40d5bb453c78136797744c4a4e8f8739ed73c72c69eac9c06c706a",
+     "quoted_by_grammar": 96,
+     "answered": {
+      "k": 96,
+      "n": 96,
+      "value": 1.0,
+      "wilson95": [
+       0.9615,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 66,
+      "n": 96,
+      "value": 0.6875,
+      "wilson95": [
+       0.5891,
+       0.7715
+      ]
+     },
+     "settles": {
+      "k": 55,
+      "n": 96,
+      "value": 0.5729,
+      "wilson95": [
+       0.473,
+       0.6672
+      ]
+     }
+    },
     "leitor-b": {
      "label": "Reader B (família B)",
      "answers_sha256": "d71a8f44c9157f6237b6b4b9d1c7aa215898b6d8303392d00c502898e2dc6132",

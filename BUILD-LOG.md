@@ -2057,3 +2057,18 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - tools/measure_rule_readings_v13.py (measure-rule-readings-v13@1): v12's measurement with the checker of the protocol 0.4;
   it counts the answers decoded under the quote grammar (all 593 gold answers settle). verify@51: MEAS recomputes
   regras-v13 reports.
+- v13 training (Paulo: «Yes, ~22 is fine»): train_lora.py ran the pre-flight gate (18 of 18) and spawned Modal app
+  ap-kVPhVFVloK7fNOwPVZEtNy, function call fc-01M6H6VPM2V9MBJD4DW7HT0T91, one H100. Its limit went from 6 to 9 h first
+  (a11abc8ea): v12 trained 4.2 h, v13's mix is 1.31x, and the adapter is saved only at the end.
+- BEFORE, family A: v12 (leitor:a14) read data-v13's dev and sealed with the protocol 0.4 and its quotes held to the text
+  (--quotes text, the first live run of readers/quote_grammar.py; apps ap-4FjSSiziqNFCsqtztEWcxR, ap-3DiBA6zAUGlhfjECXjLvCx;
+  200 of 200 answers decoded with the grammar). Sealed: 68.8 % valid, 57.3 % settle (in 0.3 without the grammar: 63.5 % and
+  55.2 %). Dev: 64.4 % valid, 49.0 % settle (55.8 % and 44.2 %); the checker refuses 37 of 104 (was 46), none for a quote
+  outside the text; «não tipável» right 5 of 25 (was 2; Reader B 24); the most common refusal is now a real quote that does not
+  name the value (15). The grammar and the prompt alone move v12 two points; the training is the lever.
+  training/runs/v13/FORECAST.md: the forecast made before training (sealed 75–85 %, round 9 6–10 valid and 4–8 settled of
+  12), committed before v13 answers.
+- Round 9 (rule-factory@18, FROUNDS[9]): round 8's 12 targets with the protocol 0.4 (prompts about 20 000 characters; none
+  is round 8's byte for byte). leitor:b (reader B's client, model-b) answered all 12 at the first call: 12 of 12
+  pass the checker, and all 12 have round 8's canonical content (7 rules, 5 «não tipável», as the paper audit read them).
+  v13 (leitor:a15) proposes with --quotes text; readers/leitor_a_modal.py knows v13 (amalia-ccp-lei-v13, leitor-a15).
