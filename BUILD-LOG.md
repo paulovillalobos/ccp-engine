@@ -2029,3 +2029,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   (texture bands from the law) and 8 (50 articles, two targets each); make_rule_readings_v13 puts ~27 % of articles in the old
   spelling (no reading changes) and prints a batch's texture beside the law's; preflight_data 0.2 adds 11 checks against the
   real law (data-v12 fails 17 of 18). Pilot v4-01 (tidy, 100 of 100 pass) is kept; v4-02..07 are being written to the new brief.
+- Protocol 0.4 (Paulo: «Yes, run it», after «can we get there … also our system»): vocab_text prints every law phrase the
+  checker accepts (prompts ≈ 19 000 characters); an anaphoric start is read in its passage (L9); L10 and L5 say what 0.3
+  left to the reader. A3 waits for Paulo's limiar rule; A6 (one ambiguous dev line) left so the measured articles stay.
+  render() and check() take the prompt's version: data-v12, its measurement and rounds 6–8 keep 0.3 (593 of 593 prompts
+  render byte for byte). data-v13 renders train and the measured sets (same articles and gold) in 0.4; v13 max_len 12 288.
+- Quote scaffold (D67 B7): readers/quote_grammar.py + leitor_a_modal.py --quotes text --contexts FILE (contexts by
+  tools/write_contexts.py under governance/readings/avaliacao-v13/contexts/). Every quote is a token-aligned piece of a
+  passage its slot may cite; 1 911 of 1 911 gold answers accepted, v12's 20 bad-quote dev answers refused; xgrammar 0.2.8's
+  parser agreed on 12 714 texts (run with stand-ins for torch; vLLM 0.30's own xgrammar not yet tried). Found on the way: the
+  schema path decoded «, » and «: » while the gold (and the training) is compact JSON; the grammar writes the gold's form.
+- Batches v4-02..07 written to BRIEF-D67 (100 of 100 each; texture inside every band). verify ok.

@@ -13,7 +13,8 @@ The articles are rendered, quoted and checked by data-v12's code (tools/make_rul
 - about AGED_SHARE of the articles, chosen by id among those with a word that has an old form, are written in the spelling
   before the 1990 agreement (the vocabulary's old_spelling forms), as that share of the real law's passages is (texture());
 - a stored schema keeps the factory's property order (data-v12's sort_keys sorted it: D66's serving trap);
-- the measured sets stay data-v12's (training/data-v12/regra_lida/{dev,sealed,dev_antigo}.jsonl).
+- the measured sets keep data-v12's articles and gold (training/data-v12/regra_lida/{dev,sealed,dev_antigo}.jsonl); their
+  prompts are rendered again with the protocol 0.4 (training/data-v13/regra_lida/), as every prompt here is.
 profile() and texture() are what tools/preflight_data.py compares with dev and with the real law before a run.
 """
 import argparse
@@ -33,6 +34,7 @@ import read_rules_v3 as v3  # noqa: E402
 import rule_factory as rf  # noqa: E402  (PATTERNS: a passage that states a deadline in days or a euro amount)
 
 VERSION = "ccp-make-rule-readings-v13-0.1"
+PROTOCOL = v3.VERSION  # D67: the reading protocol 0.4
 DATA = ROOT / "training/data-v13"
 MEASURED = ROOT / "training/data-v12/regra_lida"
 TASK = v12.TASK
@@ -131,10 +133,10 @@ def build(store=None, only=None):
             if v12.close(t, real) or v12.close(t, measured):
                 rejected[ex["id"]] = "close to a real passage or a measured article"; continue
             ex = aged(housed(ex))
-            res, errs = v12.problems(ex)
+            res, errs = v12.problems(ex, PROTOCOL)
             if errs:
                 rejected[ex["id"]] = errs[0]; continue
-            train.append((ex, v12.row(ex, res[1], res[0])))
+            train.append((ex, v12.row(ex, res[1], res[0], PROTOCOL)))
     return train, rejected
 
 
@@ -266,13 +268,26 @@ def dump(rows):
     return "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows).encode("utf-8")  # no sort_keys: the schema keeps the factory's order
 
 
+def measured_in_protocol(name):
+    """A measured set of data-v12 with the same articles and gold, its prompts rendered with this protocol (0.4)."""
+    out = []
+    for ex, r in measured_pairs(name):
+        res, errs = v12.problems(ex, PROTOCOL)
+        if errs or json.dumps(res[0], ensure_ascii=False, separators=(",", ":")) != r["answer"]:
+            raise SystemExit(f"{r['id']}: its gold does not pass protocol {PROTOCOL} as it is ({errs[:1]})")
+        out.append(v12.row(ex, res[1], res[0], PROTOCOL))
+    return out
+
+
 def generate(store=None):
     train, rejected = build(store)
     files = {"regra_lida/train.jsonl": dump(r for _, r in sorted(train, key=lambda x: x[1]["id"])),
              "REJECTED.json": (json.dumps(rejected, ensure_ascii=False, indent=1, sort_keys=True) + "\n").encode("utf-8")}
-    index = {"tool": VERSION, "protocol": v3.VERSION, "date": v12.DATE, "rejected": len(rejected),
+    for name in ("dev", "sealed", "dev_antigo"):  # the same articles and gold as data-v12's, read with the protocol 0.4
+        files[f"regra_lida/{name}.jsonl"] = dump(measured_in_protocol(name))
+    index = {"tool": VERSION, "protocol": PROTOCOL, "date": v12.DATE, "rejected": len(rejected),
              "files": {k: {"rows": v.count(b"\n"), "sha256": hashlib.sha256(v).hexdigest()} for k, v in sorted(files.items())},
-             "measured_sets": str(MEASURED.relative_to(ROOT)), "profile": profile(train),
+             "measured_sets": f"{MEASURED.relative_to(ROOT)}'s articles and gold, prompts in {PROTOCOL}", "profile": profile(train),
              "note": "D67: data-v12's articles plus BRIEF-D67's, every one under titles, compared with every measured article, schema in the factory's order"}
     files["INDEX.json"] = (json.dumps(index, ensure_ascii=False, indent=1) + "\n").encode("utf-8")
     return files

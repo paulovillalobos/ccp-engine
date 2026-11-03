@@ -2282,8 +2282,9 @@
       "versao": 1,
       "code": "tools/measure_rule_readings_v12.py",
       "hash": "107f96180a2309159d72f72e807b787218f35aa2189fac284535ba83b5feb070",
-      "retired": false,
-      "nota": "D66: the readers on data-v12 read as the factory reads them: the checker against the article's context, then the canonical content against the gold"
+      "retired": true,
+      "nota": "D66: the readers on data-v12 read as the factory reads them: the checker against the article's context, then the canonical content against the gold",
+      "retired_at": "2026-11-03T12:59:54Z"
     },
     {
       "id": "ferramenta:rule-factory@11",
@@ -2346,8 +2347,9 @@
       "versao": 48,
       "code": "verify.py",
       "hash": "26c927049e98f69b5f1a99454a91b18ab061785a4e0495776db2d181ca05a0cd",
-      "retired": false,
-      "nota": "D66: V3 finds a target's folder by its own name first (a name may end in an alínea, -b@v1), then as a 2nd or 3rd rule"
+      "retired": true,
+      "nota": "D66: V3 finds a target's folder by its own name first (a name may end in an alínea, -b@v1), then as a 2nd or 3rd rule",
+      "retired_at": "2026-11-03T12:59:54Z"
     },
     {
       "id": "ferramenta:rule-factory@14",
@@ -2384,8 +2386,9 @@
       "versao": 2,
       "code": "tools/make_rule_readings_v12.py",
       "hash": "a8cf5e54ed01c231c3d1c06d0f78cc549d71192235877516dc31835d99b7db06",
-      "retired": false,
-      "nota": "D66: «a contar da sua publicação» quoted from the «anúncio» it refers to"
+      "retired": true,
+      "nota": "D66: «a contar da sua publicação» quoted from the «anúncio» it refers to",
+      "retired_at": "2026-11-03T12:59:54Z"
     },
     {
       "id": "ferramenta:read-rules-v3@5",
@@ -2396,8 +2399,9 @@
       "versao": 5,
       "code": "tools/read_rules_v3.py",
       "hash": "eed6afd39a789d12e242da3f86bf6d720895154df445f371f75d1601931a07ae",
-      "retired": false,
-      "nota": "D66 protocol 0.3: an article's own opening words are shown only when its alíneas hang from it; n.º 1 is no longer shown a second time under the article id"
+      "retired": true,
+      "nota": "D66 protocol 0.3: an article's own opening words are shown only when its alíneas hang from it; n.º 1 is no longer shown a second time under the article id",
+      "retired_at": "2026-11-03T12:59:54Z"
     },
     {
       "id": "ferramenta:rule-factory@15",
@@ -2421,8 +2425,82 @@
       "versao": 16,
       "code": "tools/rule_factory.py",
       "hash": "e5c129d3cd682c309081081696bb1ff9502f04fb5cd0c7af8b9594de342201cc",
+      "retired": true,
+      "nota": "D66: the round report marks a target settled as «não tipável» with its reason",
+      "retired_at": "2026-11-03T12:59:54Z"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@6",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 6,
+      "code": "tools/read_rules_v3.py",
+      "hash": "f4ebc3a634f2eb59ae4f18f1f29944bb94bab2bfc279077d66924637367ec03a",
       "retired": false,
-      "nota": "D66: the round report marks a target settled as «não tipável» with its reason"
+      "nota": "D67 protocol 0.4: every law phrase the checker accepts is printed (C6); an anaphoric start is read in the passage it is quoted from (L9); L10: a value by remissão carries the referred passage's conditions; L5: a rest-case eq/in condition quotes the rest phrase alone; render() and check() take the prompt's protocol version"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v12@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/make_rule_readings_v12.py",
+      "hash": "356b32bb70e8a2dc6f16a71e8c24acd251697fc9c573612fc8ee3e109e44896d",
+      "retired": false,
+      "nota": "D67: data-v12 renders and checks with its pinned protocol 0.3 (PROTOCOL); row() and problems() take a version, which data-v13 sets to 0.4"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v12@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_rule_readings_v12.py",
+      "hash": "b207b4cea56e62b704c9b1b8e8e27ecc9f72bf1a0d997d08320bd3f8a91363fc",
+      "retired": true,
+      "nota": "D67: checks v12's answers with the protocol their prompts had (0.3)",
+      "retired_at": "2026-11-03T13:32:02Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@17",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 17,
+      "code": "tools/rule_factory.py",
+      "hash": "80fbb620473056d56be70a2ae3c9643f60047c80fe4a7151f91c6049b7258655",
+      "retired": false,
+      "nota": "D67: a round's answers are checked with the protocol version their prompt was rendered with"
+    },
+    {
+      "id": "ferramenta:verify@49",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 49,
+      "code": "verify.py",
+      "hash": "b5a4d9e1410efc2f04fa4b6d5e5d9602ff5c55aaec60c330b50ea25044129117",
+      "retired": false,
+      "nota": "D67: V3 checks a round's recorded answers with their prompt's protocol version"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v12@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/measure_rule_readings_v12.py",
+      "hash": "47784308bbae564efedf995b46a62c1ee1da246ee102a643659dd7b2f13e5372",
+      "retired": false,
+      "nota": "D67: checks v12's answers, and names the protocol in its report, as their prompts had it (0.3)"
     }
   ]
 }

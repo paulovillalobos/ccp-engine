@@ -936,7 +936,7 @@ def check_v3_readings(store, out, readings_root=None):
         if f not in answers:
             doc = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
             a = v3.parse(doc.get("answer", ""))
-            answers[f] = (a, v3.check(a, body["context"], body["type"]) if a is not None else ["not the answer object"])
+            answers[f] = (a, v3.check(a, body["context"], body["type"], body.get("protocol_version")) if a is not None else ["not the answer object"])
         a, errs = answers[f]
         if errs:
             out.append(("V3", f"{ev['id']}: the recorded answer {f.relative_to(root)} fails the checker: {errs[0]}"))

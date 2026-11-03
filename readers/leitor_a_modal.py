@@ -1,7 +1,7 @@
 """leitor:a / leitor:a2 on Modal: the family-A reader answers prompts with guided JSON (vLLM, temperature 0, one batch).
 
     <a Python 3.12 venv with modal>/bin/modal run readers/leitor_a_modal.py [--only SLUG] [--dir governance/readings/casos]
-        [--lora v1|v2|v3|v4] [--out-dir DIR] [--jsonl FILE --out FILE [--order required]]
+        [--lora v1|v2|v3|v4] [--out-dir DIR] [--jsonl FILE --out FILE [--order required]] [--quotes text [--contexts FILE]]
 
 readers/ holds the code that runs a model (DECISIONS D38): nothing in engine/, tools/ or verify.py imports it, and
 verify's code guard keeps it that way.
@@ -17,6 +17,16 @@ properties are put in the order of its required list before decoding: data-v12's
 puts every schema's properties in alphabetical order, and the decoder writes the keys in the schema's order, so a reader
 trained on the factory's order (read_rules_v3.schema, the same as required; tests/test_reader_order.py) must be given it
 back. v12's first read of dev and sealed ran without it and is kept as leitor-a14.attempt1.jsonl.
+With --quotes text, an answer can only quote words that are in the text. The answer schema keeps the decoder to the JSON
+shape, not to the law: on v12's dev set, 11 of leitor-a14's answers quoted words that are nowhere in the text and 7 cited a
+passage that does not hold them. Each item then carries a grammar built here, before the GPU, by readers/quote_grammar.py
+from the item's schema (put in answer order first, as --order required does) and its context: in JSONL mode the line with
+the row's id in --contexts FILE (tools/write_contexts.py writes them under governance/readings/avaliacao-v13/contexts/), in
+directory mode prompt.json's "context". The grammar is the schema's compact JSON («,» and «:», as the gold is written; the
+schema path writes «, » and «: »), in which every «texto» is a token-aligned piece of a passage its slot may cite (the
+checker's roles, read_rules_v3.check) and «de» is that passage. The GPU container decodes those items with
+StructuredOutputsParams(grammar=...) instead of json=..., and each answer record says "quotes": "text"; such a run writes
+to its own --out or --out-dir. Without the option, nothing changes.
 A prompt longer than the window is skipped and listed, never truncated. The grammar admits no free whitespace, set on
 the engine (attempt 1, free whitespace: 8 of 18 answers looped on blanks until max_tokens; attempt 2, the flag per
 request only: 7 of 18, the flag was not honoured; both kept as leitor-a.attempt1.json / attempt2.json). The model,
@@ -26,6 +36,7 @@ client venv does not carry the engine's dependencies).
 """
 import hashlib
 import json
+import sys
 import time
 from pathlib import Path
 
@@ -73,9 +84,11 @@ def answer(prompts: list[dict], lora: str = "") -> list[dict]:
             out.append({"key": p["key"], "skipped": "window", "prompt_tokens": n})
         else:
             keep.append((p, msgs, n))
-    # compact JSON: the grammar allows no free whitespace (with it, the model looped on blanks until max_tokens: attempt 1)
+    # compact JSON: the grammar allows no free whitespace (with it, the model looped on blanks until max_tokens: attempt 1);
+    # --quotes text: the item's own grammar, built locally (quotes from the text only)
     params = [SamplingParams(temperature=0.0, max_tokens=MAX_TOKENS, seed=0,
-                             structured_outputs=StructuredOutputsParams(json=k[0]["schema"], disable_any_whitespace=True)) for k in keep]
+                             structured_outputs=StructuredOutputsParams(grammar=k[0]["grammar"]) if k[0].get("grammar") else
+                             StructuredOutputsParams(json=k[0]["schema"], disable_any_whitespace=True)) for k in keep]
     res = llm.chat([k[1] for k in keep], params, use_tqdm=False, lora_request=request)
     for (p, _, n), r in zip(keep, res):
         o = r.outputs[0]
@@ -100,12 +113,33 @@ def in_answer_order(s):
     return s
 
 
+def with_grammars(items, contexts):
+    """--quotes text: each item's quote grammar, built here from its schema in answer order and its context. The GPU
+    container gets the grammar's text only: readers/quote_grammar.py is imported here, never there."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from quote_grammar import grammar
+    missing = [i["key"] for i in items if i["key"] not in contexts]
+    if missing:
+        raise SystemExit(f"--quotes text: no context for {len(missing)} items ({', '.join(missing[:5])})")
+    for i in items:
+        i["grammar"] = grammar(in_answer_order(i["schema"]), contexts[i["key"]])
+    return items
+
+
 @app.local_entrypoint()
-def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl: str = "", out: str = "", order: str = ""):
+def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl: str = "", out: str = "", order: str = "",
+         quotes: str = "", contexts: str = ""):
     leitor = LEITOR_OF[lora]
     if order not in ("", "required"):
         raise SystemExit(f"--order {order}: only «required»")
+    if quotes not in ("", "text"):
+        raise SystemExit(f"--quotes {quotes}: only «text»")
+    if contexts and not (quotes and jsonl):
+        raise SystemExit("--contexts FILE goes with --quotes text in JSONL mode (directory mode reads prompt.json's context)")
+    mark = {"quotes": quotes} if quotes else {}
     if jsonl:
+        if quotes and not contexts:
+            raise SystemExit("--quotes text in JSONL mode needs --contexts FILE (tools/write_contexts.py)")
         rows = [json.loads(l) for l in Path(jsonl).read_text(encoding="utf-8").splitlines() if l.strip()]
         target = Path(out)
         done = {json.loads(l)["id"] for l in target.read_text(encoding="utf-8").splitlines() if l.strip()} if target.exists() else set()
@@ -113,6 +147,9 @@ def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl
                  for r in rows if r["id"] not in done]
         if not items:
             print("nothing to answer"); return
+        if quotes:
+            lines = [json.loads(l) for l in Path(contexts).read_text(encoding="utf-8").splitlines() if l.strip()]
+            with_grammars(items, {c["id"]: c["context"] for c in lines})
         result = answer.remote(items, lora)
         at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -120,21 +157,25 @@ def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl
             for r in result:
                 if "text" not in r:
                     print(f"{r['key']}: skipped ({r['skipped']}, {r['prompt_tokens']} tokens)"); continue
-                f.write(json.dumps({"id": r["key"], **record(r["text"], at), "finish_reason": r["finish_reason"]}, ensure_ascii=False, sort_keys=True) + "\n")
-        print(f"{sum('text' in r for r in result)} answers -> {target} ({leitor})")
+                f.write(json.dumps({"id": r["key"], **record(r["text"], at), "finish_reason": r["finish_reason"], **mark}, ensure_ascii=False, sort_keys=True) + "\n")
+        print(f"{sum('text' in r for r in result)} answers -> {target} ({leitor}{', quotes from the text' if quotes else ''})")
         return
     base = Path(dir).resolve() if dir else READINGS  # --dir governance/readings/casos for the B5 cases
     dest = Path(out_dir).resolve() if out_dir else base
-    items = []
+    items, found = [], {}
     for d in sorted(base.iterdir()):
         f = d / "prompt.json"
         if not f.exists() or (dest / d.name / f"{leitor}.json").exists() or (only and only not in d.name):
             continue
         body = json.loads(f.read_text(encoding="utf-8"))
         items.append({"key": d.name, "prompt": body["prompt"], "schema": body["schema"]})
+        if "context" in body:
+            found[d.name] = body["context"]
     if not items:
         print("nothing to answer")
         return
+    if quotes:
+        with_grammars(items, found)  # a prompt.json without "context" stops the run
     result = answer.remote(items, lora)
     at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     for r in result:
@@ -142,5 +183,5 @@ def main(only: str = "", dir: str = "", lora: str = "", out_dir: str = "", jsonl
             print(f"{r['key']}: skipped ({r['skipped']}, {r['prompt_tokens']} tokens)")
             continue
         (dest / r["key"]).mkdir(parents=True, exist_ok=True)
-        (dest / r["key"] / f"{leitor}.json").write_text(json.dumps(record(r["text"], at), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        (dest / r["key"] / f"{leitor}.json").write_text(json.dumps({**record(r["text"], at), **mark}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         print(f"{r['key']}: answered ({r['prompt_tokens']} prompt tokens, {r['completion_tokens']} out, {r['finish_reason']}) -> {leitor}")

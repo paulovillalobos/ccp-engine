@@ -251,14 +251,14 @@ def rule_ids(t, k):
     return [t["rule"] if i == 0 else t["rule"].replace("@v1", f"-{'bcd'[i - 1]}@v1") for i in range(k)]
 
 
-def checked(rec, ctx, rtype):
+def checked(rec, ctx, rtype, version=None):
     """(the reading, the checker's errors) of one answer file; (None, [why]) when there is no answer or it is not the object."""
     if rec is None:
         return None, ["sem resposta"]
     a = v3.parse(rec["answer"])
     if a is None:
         return None, ["a resposta não é o objeto pedido"]
-    return a, v3.check(a, ctx, rtype)
+    return a, v3.check(a, ctx, rtype, version)
 
 
 def cmd_record_v3(n):
@@ -276,8 +276,8 @@ def cmd_record_v3(n):
         body = json.loads((d / "prompt.json").read_text(encoding="utf-8"))
         ctx, rtype = body["context"], t["type"]
         ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (pfile, "leitor-b.json")]
-        A, ea = checked(ra, ctx, rtype)
-        B, eb = checked(rb, ctx, rtype)
+        A, ea = checked(ra, ctx, rtype, body.get("protocol_version"))
+        B, eb = checked(rb, ctx, rtype, body.get("protocol_version"))
         row = {"rule": t["rule"], "type": rtype, "source": t["source_passage"], "a": A, "b": B, "a_errors": ea, "b_errors": eb, "state": None,
                "exact": v3.replicate(A, B) if not ea and not eb else None}
         rows.append(row)

@@ -76,7 +76,7 @@ def score(rows, ans, arts, errors):
             if errors and r["id"] in ans:
                 kinds["a resposta não é o objeto pedido"] += 1; by_style[ex.get("estilo")] += 1
             continue
-        errs = v3.check(a, data.ctx_of(ex), ex["tipo"])
+        errs = v3.check(a, data.ctx_of(ex), ex["tipo"], data.PROTOCOL)
         if not errs:
             valid += 1
         rep = not errs and v3.replicate(a, g)
@@ -92,7 +92,7 @@ def score(rows, ans, arts, errors):
 
 
 def report(date, sets=None):
-    rep = {"tool": VERSION, "protocol": v3.VERSION, "date": date, "sets": {}}
+    rep = {"tool": VERSION, "protocol": data.PROTOCOL, "date": date, "sets": {}}
     arts = articles()
     for name, path in SETS.items():
         if (sets is not None and name not in sets) or not path.exists():

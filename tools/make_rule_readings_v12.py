@@ -33,6 +33,7 @@ import make_rule_readings as m  # noqa: E402  (the written articles' ids and the
 import read_rules_v3 as v3  # noqa: E402  (D66: the factory's context, prompt, schema and checker)
 
 VERSION = "ccp-make-rule-readings-v12-0.1"
+PROTOCOL = "ccp-read-rules-v3-0.3"  # data-v12 is rendered and checked with this protocol (a later one passes its own: D67)
 DATA = ROOT / "training/data-v12"
 TASK = "regra_lida"
 DATE = "2026-10-01"
@@ -458,12 +459,12 @@ def derive(ex, ctx):
     return {"regras": rules, "nao_tipavel": None}
 
 
-def row(ex, ctx, answer):
-    return {"id": f"{TASK}:{ex['id']}", "task": TASK, "prompt": v3.render(ctx, ex["tipo"]), "schema": v3.schema(ctx, ex["tipo"]),
+def row(ex, ctx, answer, version=PROTOCOL):
+    return {"id": f"{TASK}:{ex['id']}", "task": TASK, "prompt": v3.render(ctx, ex["tipo"], version), "schema": v3.schema(ctx, ex["tipo"]),
             "answer": json.dumps(answer, ensure_ascii=False, separators=(",", ":")), "sources": [], "estilo": ex.get("estilo")}
 
 
-def problems(ex):
+def problems(ex, version=PROTOCOL):
     """(answer, []) when the article renders and its gold, quoted by code, passes the factory's checker; (None, [why]) otherwise."""
     try:
         if ex["tipo"] not in ("prazo_minimo", "limiar"):
@@ -476,7 +477,7 @@ def problems(ex):
         return None, [f"gold: {exc}"]
     except (KeyError, TypeError, AttributeError, IndexError, ValueError) as exc:
         return None, [f"malformed: {exc!r}"[:200]]
-    errs = v3.check(answer, ctx, ex["tipo"])
+    errs = v3.check(answer, ctx, ex["tipo"], version)
     return (answer, ctx), [f"checker: {e}" for e in errs]
 
 
@@ -552,7 +553,7 @@ def generate(store=None, held_doc=None):
              "regra_lida/dev.jsonl": dump(r for _, r in sorted(sets["dev"], key=lambda x: x[1]["id"])),
              "regra_lida/sealed.jsonl": dump(r for _, r in sorted(sets["sealed"], key=lambda x: x[1]["id"])),
              "REJECTED.json": (json.dumps(rejected, ensure_ascii=False, indent=1, sort_keys=True) + "\n").encode("utf-8")}
-    index = {"tool": VERSION, "protocol": v3.VERSION, "date": DATE, "files": {k: {"rows": v.count(b"\n"), "sha256": hashlib.sha256(v).hexdigest()} for k, v in sorted(files.items())},
+    index = {"tool": VERSION, "protocol": PROTOCOL, "date": DATE, "files": {k: {"rows": v.count(b"\n"), "sha256": hashlib.sha256(v).hexdigest()} for k, v in sorted(files.items())},
              "rejected": len(rejected), "note": "D66: the written articles rendered by the factory's own v3 code, quotes derived by code, every gold checked"}
     files["INDEX.json"] = (json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True) + "\n").encode("utf-8")
     return files

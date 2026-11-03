@@ -23,8 +23,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VOC = json.loads((ROOT / "schemas/vocabulario-v3.json").read_text(encoding="utf-8"))
-VERSION = "ccp-read-rules-v3-0.3"  # 0.2: a referred number is shown whole (with its alíneas); L12 says when a missing text blocks the reading;
-# 0.3: an article's own opening words are shown only when its alíneas hang from it (not n.º 1 a second time)
+VERSION = "ccp-read-rules-v3-0.4"  # 0.2: a referred number is shown whole (with its alíneas); L12 says when a missing text blocks the reading;
+# 0.3: an article's own opening words are shown only when its alíneas hang from it (not n.º 1 a second time);
+# 0.4 (D67): the vocabulary prints every law phrase the checker accepts (C6); an anaphoric start («contados do seu envio») is
+# read in the passage it is quoted from (L9); a value taken by remissão carries the referred passage's conditions (L10); a
+# rest-case condition with eq or in quotes the rest phrase alone (L5). A prompt keeps the version it was rendered with:
+# render() and check() take it, so data-v12, its measurement and rounds 6–8 read as they did.
+V03 = "ccp-read-rules-v3-0.3"
+
+
+def minor(version):
+    """3 for ccp-read-rules-v3-0.3 (and for a prompt that names no version), 4 for 0.4."""
+    return int(str(version or V03).rsplit(".", 1)[1])
 
 # ---- words ----------------------------------------------------------------------------------------------------------
 OLD = VOC["old_spelling"]
@@ -81,25 +91,37 @@ def polarity(field, text):
     return out
 
 
-def counted_named(text):
+def counted_named(text, before=""):
     """The starting points a text states. «Contados do seu envio», «a contar do envio deste» count from the document the
-    sentence names last before those words (the convite or the anúncio)."""
+    sentence names last before those words (the convite or the anúncio); `before` is the passage's text ahead of `text`
+    (0.4: a quote of the anaphora alone is read in its passage)."""
     found = _named(text, VOC["counted_from"])
-    t = norm(text)
+    t, b = norm(text), norm(before)
     for w in VOC.get("anaphoric_sending", []):
         for m in re.finditer(re.escape(norm(w)), t):
             if "convite" in w:
                 found.add("data_envio_convite")
                 continue
-            before = t[:m.start()]
-            c, a = before.rfind("convite"), max(before.rfind("anúncio"), before.rfind("anuncio"))
+            prior = b + " " + t[:m.start()]
+            c, a = prior.rfind("convite"), max(prior.rfind("anúncio"), prior.rfind("anuncio"))
             if c > a:
                 found.add("data_envio_convite")
             elif a > c:
                 found.add("data_envio_anuncio")
     for w in VOC.get("anaphoric_publication", []):
-        if re.search(re.escape(norm(w)), t) and ("anúncio" in t or "anuncio" in t):
+        if re.search(re.escape(norm(w)), t) and ("anúncio" in b + " " + t or "anuncio" in b + " " + t):
             found.add("data_publicacao_anuncio")
+    return found
+
+
+def counted_in_passage(ctx, fontes):
+    """0.4 (L9): the starting points the quotes state, each read against the words before it in the passage it is quoted
+    from, so «contados do seu envio» after «convite» counts from the convite's sending."""
+    found = set()
+    for f in fontes or []:
+        src, txt = norm(ctx["allowed"].get(f.get("de"), "")), f.get("texto", "")
+        k = src.find(norm(txt)) if txt.strip() else -1
+        found |= counted_named(txt, src[:k] if k > 0 else "")
     return found
 
 
@@ -454,11 +476,15 @@ def context(law, alvo, date, depth=3):
 
 
 # ---- the prompt ------------------------------------------------------------------------------------------------------
-def vocab_text():
+def vocab_text(version=VERSION):
     c = VOC["condition_fields"]
+    every = minor(version) >= 4  # 0.4: every law phrase the checker accepts, not the first one or two (C6)
+
+    def quoted(ws, n):
+        return "«" + "», «".join(ws if every else ws[:n]) + "»"
 
     def words(field, v, n=2):
-        return "«" + "», «".join(c[field]["values"][v][:n]) + "»"
+        return quoted(c[field]["values"][v], n)
     tc = ", ".join(f"{v} ({words('tipo_contrato', v)})" for v in c["tipo_contrato"]["values"])
     tp = ", ".join(c["tipo_procedimento"]["values"])
     return "\n".join([
@@ -475,13 +501,13 @@ def vocab_text():
         "valor_estimado, preco_base, preco_contratual: euros, como condição de um prazo que muda com o valor do contrato (L10).",
         "Operadores: eq, ne (um valor); in, not_in (uma lista); lt, le, gt, ge (números e datas).",
         "prazo_minimo — params: minimum_days (inteiro), deadline_field, counted_from, usual_days (inteiro ou null).",
-        "deadline_field: " + ", ".join(f"{k} («{v[0]}»)" for k, v in VOC["deadline_fields"].items()) + ".",
-        "counted_from: " + ", ".join(f"{k} («{v[0]}»)" for k, v in VOC["counted_from"].items()) + ", nao_indicado (L9).",
-        "limiar — params: threshold = {field: " + " | ".join(f"{k} («{v[0]}»)" for k, v in VOC["threshold_fields"].items())
+        "deadline_field: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in VOC["deadline_fields"].items()) + ".",
+        "counted_from: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in VOC["counted_from"].items()) + ", nao_indicado (L9).",
+        "limiar — params: threshold = {field: " + " | ".join(f"{k} ({quoted(v, 1)})" for k, v in VOC["threshold_fields"].items())
         + ", comparator: lt | le | gt | ge, value: euros, currency: \"EUR\"}."])
 
 
-STATIC = """TAREFA
+STATIC_03 = """TAREFA
 És um leitor da lei portuguesa. Lês uma passagem do Código dos Contratos Públicos — a passagem-alvo, marcada no texto — e escreves em JSON a regra que ela fixa, com o vocabulário e o formato abaixo. Só conta o texto mostrado: o que saibas da lei para além dele não entra. Outro leitor lê a mesma passagem com estas mesmas regras, sem ver a tua resposta; a regra só fica registada quando as duas leituras coincidem, e um programa confirma cada palavra que citares.
 
 O QUE UMA REGRA QUER DIZER (é assim que o motor a aplica)
@@ -519,6 +545,17 @@ Onde está: [exemplo:cap-ii] Capítulo II — Concurso público
 [exemplo:art900.2] 2 - Em caso de urgência devidamente fundamentada, o prazo previsto no número anterior pode ser reduzido para 15 dias.   ◀ PASSAGEM-ALVO
 Resposta: {EXAMPLE}"""
 
+
+# 0.4 (D67): the same rules, with L5 and L10 saying what 0.3 left to the reader
+L5_03 = "para isso, os números do artigo que fixam esses outros casos contam como fonte."
+L5_04 = (L5_03 + " Se a regra dos restantes casos fica com eq ou in (tipo_entidade eq outra, ou os valores que sobram), a fonte dessa "
+         "condição é só a expressão dos restantes casos, sem as palavras dos outros casos.")
+L10_03 = "lê-se na passagem remetida, e cada valor remetido é um caso (L5)."
+L10_04 = ("lê-se na passagem remetida, e cada valor remetido é um caso (L5) com as condições que a passagem remetida lhe põe "
+          "(o tipo de contrato, a entidade), além das da passagem-alvo.")
+STATIC = STATIC_03.replace(L5_03, L5_04).replace(L10_03, L10_04)
+assert STATIC.count(L5_04) == 1 and STATIC.count(L10_04) == 1
+
 EXAMPLE = {"regras": [{"tipo": "prazo_minimo", "condicoes": [
     {"field": "tipo_procedimento", "op": "eq", "value": "concurso_publico", "fontes": [{"texto": "Concurso público", "de": "exemplo:cap-ii"}]},
     {"field": "publicado_joue", "op": "eq", "value": True, "fontes": [{"texto": "Quando o anúncio seja publicado no Jornal Oficial da União Europeia", "de": "exemplo:art900.1"}]},
@@ -535,9 +572,9 @@ EXAMPLE_CTX = {"alvo": "exemplo:art900.2", "article": "exemplo:art900",
                            "exemplo:art900": "Prazos para a apresentação das propostas", "exemplo:cap-ii": "Capítulo II — Concurso público"}}
 
 
-def render(ctx, rtype):
+def render(ctx, rtype, version=VERSION):
     mark = {"alvo": "   ◀ PASSAGEM-ALVO", "remissao": "   ◀ remetida", "proemio": "   ◀ proémio da passagem-alvo"}
-    lines = [STATIC.replace("{VOCAB}", vocab_text()).replace("{INSTR}", ", ".join("«" + w + "»" for w in VOC["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
+    lines = [(STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in VOC["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
              f"O TEXTO (versão em vigor a {ctx['date']})",
              "Onde está: " + (" > ".join(f"[{i}] {t}" for i, t in ctx["place"]) or "—"),
              f"[{ctx['article']}] {ctx['label']} — {ctx['heading']}"]
@@ -621,9 +658,9 @@ def _sources(ctx, fontes, roles_ok, where, errs, rest_ok=False):
     return " ‖ ".join(texts)
 
 
-def check(reading, ctx, rtype):
+def check(reading, ctx, rtype, version=VERSION):
     """Errors that keep a reading from being recorded; [] when every quoted word is in the text, comes from a source L1
-    allows and says the value it is quoted for."""
+    allows and says the value it is quoted for. `version` is the protocol the reading's prompt was rendered with."""
     errs = []
     nt, rules = reading.get("nao_tipavel"), reading.get("regras") or []
     if nt:
@@ -714,7 +751,7 @@ def check(reading, ctx, rtype):
                     errs.append(f"{w}: nao_indicado, mas o texto diz {sorted(said)} (L9)")
             else:
                 t = _sources(ctx, pf.get("counted_from"), PARAM_ROLES, f"{w}, counted_from", errs)
-                got = counted_named(t)
+                got = counted_in_passage(ctx, pf.get("counted_from")) if minor(version) >= 4 else counted_named(t)
                 if got != {p.get("counted_from")}:
                     errs.append(f"{w}: counted_from {p.get('counted_from')} e as fontes dizem {sorted(got) or 'nada'} (L9)")
             if p.get("usual_days") is not None:
