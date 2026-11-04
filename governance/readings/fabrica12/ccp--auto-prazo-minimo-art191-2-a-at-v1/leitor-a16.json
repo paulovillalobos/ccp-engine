@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "05bea3dc391e858407a9f65e39367ec8c8a055a1f9c40a759f2db2a9430880d5",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"publicado no Jornal Oficial da União Europeia\",\"de\":\"ccp:art191.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concurso limitado por prévia qualificação\",\"de\":\"ccp:art191.1\"}]}],\"params\":{\"minimum_days\":10,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"10 dias\",\"de\":\"ccp:art191.2\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art191.1\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio do convite\",\"de\":\"ccp:art191.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

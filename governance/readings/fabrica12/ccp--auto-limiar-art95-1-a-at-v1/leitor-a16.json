@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "a4dadaa8ad7427f6326a0b70d8df2ea9f828c4d1571f78451b1c1988d6af60eb",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"],\"fontes\":[{\"texto\":\"aquisição de bens móveis\",\"de\":\"ccp:art95.1.a\"},{\"texto\":\"aquisição de serviços\",\"de\":\"ccp:art95.1.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"ajuste_direto\",\"fontes\":[{\"texto\":\"contrato de locação ou de aquisição de bens móveis ou de aquisição de serviços\",\"de\":\"ccp:art95.1.a\"}]}],\"params\":{\"threshold\":{\"field\":\"preco_contratual\",\"comparator\":\"le\",\"value\":30000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"preço contratual\",\"de\":\"ccp:art95.1.a\"}],\"comparator\":[{\"texto\":\"não exceda\",\"de\":\"ccp:art95.1.a\"}],\"value\":[{\"texto\":\"30 000 €\",\"de\":\"ccp:art95.1.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

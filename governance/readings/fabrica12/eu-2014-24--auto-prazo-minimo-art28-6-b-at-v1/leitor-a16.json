@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "23d0d0f194b4ac0adb044cb827c72968ca9b4f7156b1a1a76a164101ea4de406",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"convite à apresentação de propostas\",\"de\":\"eu-2014-24:art28.6.b\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"urgência, devidamente fundamentada\",\"de\":\"eu-2014-24:art28.6\"}]}],\"params\":{\"minimum_days\":10,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"10 dias\",\"de\":\"eu-2014-24:art28.6.b\"}],\"deadline_field\":[{\"texto\":\"receção das propostas\",\"de\":\"eu-2014-24:art28.6.b\"}],\"counted_from\":[{\"texto\":\"convite à apresentação de propostas\",\"de\":\"eu-2014-24:art28.6.b\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

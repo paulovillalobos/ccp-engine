@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "c516ebe60d396bfb93dda44f16932bfa0958e3546e128871a8afd64553615e22",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"parceria_inovacao\",\"fontes\":[{\"texto\":\"parcerias para a inovação\",\"de\":\"eu-2014-24:art31.1\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"30 dias\",\"de\":\"eu-2014-24:art31.1\"}],\"deadline_field\":[{\"texto\":\"receção dos pedidos de participação\",\"de\":\"eu-2014-24:art31.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-24:art31.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

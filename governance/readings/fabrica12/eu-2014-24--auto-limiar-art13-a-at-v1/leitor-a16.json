@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "c136ea877cf7f2875d127cb833035761b6c06adf03955dcca38f0c7059128fc9",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"Contratos de empreitada de obras\",\"de\":\"eu-2014-24:art13.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"Contratos de empreitada de obras subsidiados diretamente em mais de 50 % pelas autoridades adjudicantes\",\"de\":\"eu-2014-24:art13.a\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2014-24:art13.a\"}],\"comparator\":[{\"texto\":\"igual ou superior a\",\"de\":\"eu-2014-24:art13.a\"}],\"value\":[{\"texto\":\"5 404 000 EUR\",\"de\":\"eu-2014-24:art13.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

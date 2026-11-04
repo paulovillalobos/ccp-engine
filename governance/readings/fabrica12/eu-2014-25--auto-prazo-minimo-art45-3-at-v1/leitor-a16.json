@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "f8573e5df0b09548aefaacb4a6405c473840189c2d1975e69ed997bb3552e41a",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"Concurso público\",\"de\":\"eu-2014-25:art45\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"Concurso público\",\"de\":\"eu-2014-25:art45\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"urgência devidamente fundamentada\",\"de\":\"eu-2014-25:art45.3\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"15 dias\",\"de\":\"eu-2014-25:art45.3\"}],\"deadline_field\":[{\"texto\":\"receção de propostas\",\"de\":\"eu-2014-25:art45.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-25:art45.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

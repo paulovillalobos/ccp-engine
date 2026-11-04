@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "7210645ef3aea6e06c63315026388a299f0663937e325a971df6b315aa9f9032",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"publicado\",\"de\":\"eu-2004-18:art38.4\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concursos públicos\",\"de\":\"eu-2004-18:art38.2\"}]}],\"params\":{\"maximum_days\":29,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"reduzidos em sete dias\",\"de\":\"eu-2004-18:art38.5\"}],\"deadline_field\":[{\"texto\":\"propostas\",\"de\":\"eu-2004-18:art38.2\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2004-18:art38.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

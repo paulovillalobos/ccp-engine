@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "db36f9f19494043b918a94549121234a3f4226e687e19a79aaa4206705c5bac5",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras públicas\",\"de\":\"eu-2014-24:art4.a\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"públicas\",\"de\":\"eu-2014-24:art4.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_publico\",\"concurso_aberto\"],\"fontes\":[{\"texto\":\"contratos de empreitada de obras públicas\",\"de\":\"eu-2014-24:art4.a\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2014-24:art4\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2014-24:art4\"}],\"value\":[{\"texto\":\"5 404 000 EUR\",\"de\":\"eu-2014-24:art4.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

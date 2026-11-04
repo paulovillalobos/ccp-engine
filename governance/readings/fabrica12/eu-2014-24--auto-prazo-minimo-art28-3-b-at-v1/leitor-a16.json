@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "41e7d269e530e1d6fa0c3a5a76997ca6f6373452da118ae27f8a86c708b5b8cd",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"anuncio_pre_informacao\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"anúncio de pré-informação\",\"de\":\"eu-2014-24:art28.3.b\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"não tenha sido utilizado como meio de abertura de concurso\",\"de\":\"eu-2014-24:art28.3\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concurso\",\"de\":\"eu-2014-24:art28.3\"}]}],\"params\":{\"minimum_days\":10,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"10 dias\",\"de\":\"eu-2014-24:art28.3\"}],\"deadline_field\":[{\"texto\":\"receção das propostas\",\"de\":\"eu-2014-24:art28.3\"}],\"counted_from\":[{\"texto\":\"convite à apresentação de propostas\",\"de\":\"eu-2014-24:art28.2\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

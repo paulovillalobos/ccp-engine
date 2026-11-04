@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:02:06Z",
+ "sha256": "8bbf7fd04f272a01536316cc958b2dc5282d510faabc995ea44e6e624ef73a74",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"dialogo_concorrencial\",\"fontes\":[{\"texto\":\"diálogo concorrencial\",\"de\":\"ccp:art218\"}]}],\"params\":{\"minimum_days\":40,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"Não pode ser fixado um prazo para a apresentação das propostas inferior a 40 dias\",\"de\":\"ccp:art218\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art218\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio do convite\",\"de\":\"ccp:art218\"}]                                                                , \"usual_days\": null}}],\"nao_tipavel\":null}"
+}

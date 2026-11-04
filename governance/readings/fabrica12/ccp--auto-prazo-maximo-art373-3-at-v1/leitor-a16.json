@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "effb57ce6994a1c0c12992912e4be0a632c3c83e6ba927c46369e7bcaaab0c91",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de conceção-construção\",\"de\":\"ccp:art373.3\"}]}],\"params\":{\"maximum_days\":15,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_notificacao\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"15 dias\",\"de\":\"ccp:art373.3\"}],\"deadline_field\":[{\"texto\":\"proposta de preço e de prazo de execução\",\"de\":\"ccp:art373.3\"}],\"counted_from\":[{\"texto\":\"a contar da data da receção do pedido\",\"de\":\"ccp:art373.3\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

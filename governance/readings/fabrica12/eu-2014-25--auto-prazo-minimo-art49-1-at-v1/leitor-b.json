@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:07:26Z",
+ "sha256": "106130db743f92ccde8b909a6a4fee79d956968d9b54a2ad56fe0ca9ad312f48",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"parceria_inovacao\",\"fontes\":[{\"texto\":\"parceria para a inovação\",\"de\":\"eu-2014-25:art49.1\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":30},\"fontes\":{\"minimum_days\":[{\"texto\":\"não podendo nunca ser inferior a 15 dias\",\"de\":\"eu-2014-25:art49.1\"}],\"deadline_field\":[{\"texto\":\"receção dos pedidos de participação\",\"de\":\"eu-2014-25:art49.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio de concurso\",\"de\":\"eu-2014-25:art49.1\"}],\"usual_days\":[{\"texto\":\"como regra geral, ser fixado em pelo menos 30 dias\",\"de\":\"eu-2014-25:art49.1\"}]}}],\"nao_tipavel\":null}"
+}

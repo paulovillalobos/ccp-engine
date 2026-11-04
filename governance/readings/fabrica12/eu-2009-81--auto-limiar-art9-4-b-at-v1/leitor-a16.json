@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "2826a85bef42c67ec4819183a16a7ec7e8fb56ec67d3f8939cfc41229c3e42aa",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"bens\",\"fontes\":[{\"texto\":\"fornecimentos\",\"de\":\"eu-2009-81:art9.4.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_publico\",\"concurso_aberto\",\"concurso_limitado_previa_qualificacao\",\"procedimento_concorrencial_negociacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"conta\",\"de\":\"eu-2009-81:art9.4.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":80000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2009-81:art9.4.b\"}],\"comparator\":[{\"texto\":\"igual ou superior ao\",\"de\":\"eu-2009-81:art9.4.b\"}],\"value\":[{\"texto\":\"80 000 EUR\",\"de\":\"eu-2009-81:art9.4.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

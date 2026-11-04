@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T22:25:45Z",
+ "sha256": "8b47a7e12e9671ca4ca852c24c3d6bec9c0cce98b4d5e58665e01e010c82c2db",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concurso limitado por prévia qualificação\",\"de\":\"ccp:art173\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"não seja publicado no Jornal Oficial da União Europeia\",\"de\":\"ccp:art173\"}]}],\"params\":{\"minimum_days\":6,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"não pode ser fixado um prazo para a apresentação das candidaturas inferior a seis dias\",\"de\":\"ccp:art173\"}],\"deadline_field\":[{\"texto\":\"apresentação das candidaturas\",\"de\":\"ccp:art173\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio, para publicação, do anúncio\",\"de\":\"ccp:art173\"}]   \t,\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

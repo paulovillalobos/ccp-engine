@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "7ebc2355a804014ec94648a179fc84da1c367248baae913ffdfc658a36d59e6b",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"bens\",\"fontes\":[{\"texto\":\"fornecimento de bens\",\"de\":\"eu-2014-25:art16.10\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_aberto\",\"fontes\":[{\"texto\":\"conta\",\"de\":\"eu-2014-25:art16.8\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":80000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2014-25:art16.10\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"eu-2014-25:art16.10\"}],\"value\":[{\"texto\":\"80 000 EUR\",\"de\":\"eu-2014-25:art16.10\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

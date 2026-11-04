@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "79031ece8bb7cb819118958db6d1a350b78da7b3eea68b971166768e34900ecd",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"concessao_obras\",\"fontes\":[{\"texto\":\"concessões\",\"de\":\"eu-2014-23:art8.1\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor\",\"de\":\"eu-2014-23:art8.1\"}],\"comparator\":[{\"texto\":\"igual ou superior a\",\"de\":\"eu-2014-23:art8.1\"}],\"value\":[{\"texto\":\"5 404 000 EUR\",\"de\":\"eu-2014-23:art8.1\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

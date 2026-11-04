@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "e4ac2b58f353cda0f1d6746d92822e99476343b9f764c5665d470cfd4e74974c",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"],\"fontes\":[{\"texto\":\"bens\",\"de\":\"ccp:art299.1.d\"},{\"texto\":\"serviços\",\"de\":\"ccp:art299.1.d\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_concorrencial_negociacao\",\"fontes\":[{\"texto\":\"procedimento de aceitação ou verificação\",\"de\":\"ccp:art299.2\"}]}],\"params\":{\"maximum_days\":30,\"deadline_field\":\"prazo_pronuncia_dias\",\"counted_from\":\"nao_indicado\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"30 dias\",\"de\":\"ccp:art299.2\"}],\"deadline_field\":[{\"texto\":\"aceitação ou verificação\",\"de\":\"ccp:art299.2\"}],\"counted_from\":[{\"texto\":\"não pode exceder os 30 dias\",\"de\":\"ccp:art299.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "105b4adc2341c37426c0e08b9b83eb08f5f2c108f644af17cecf614bb7ce48e1",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concursos\",\"de\":\"eu-2004-18:art38.3\"}]}],\"params\":{\"minimum_days\":37,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"37 dias\",\"de\":\"eu-2004-18:art38.3.a\"}],\"deadline_field\":[{\"texto\":\"pedidos de participação\",\"de\":\"eu-2004-18:art38.3.a\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2004-18:art38.3.a\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

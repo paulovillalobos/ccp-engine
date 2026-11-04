@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "a7d176a9d7af8751cb54bb0819e124df22f1daf13ff5882f59ce97a9f80817bc",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2014-24:art28.1\"}]}],\"params\":{\"maximum_days\":5,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"reduzido em 5 dias\",\"de\":\"eu-2014-24:art28.5\"},{\"texto\":\"10 dias\",\"de\":\"eu-2014-24:art28.6\"}],\"deadline_field\":[{\"texto\":\"apresentação de propostas\",\"de\":\"eu-2014-24:art28.2\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do convite\",\"de\":\"eu-2014-24:art28.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

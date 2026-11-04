@@ -1,0 +1,66 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art198-2-v20080730@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art198.2 (fábrica de regras, ronda 12), versão de 2008-07-30",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "anuncio_pre_informacao",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "procedimento_negociacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": "2018-01-01",
+  "passages": [
+    {
+      "passage": "ccp:art198.2",
+      "version": "2008-07-30",
+      "quote": "2 - Quando tenha sido publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 37 dias a contar da data do envio do convite previsto no n.º 5 do mesmo artigo.",
+      "offsets": {
+        "start": 0,
+        "end": 273
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 37,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_convite"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "ccp:art198.2"
+      ],
+      "blind": false,
+      "evento": "evento:509"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:01:46Z",
+      "chosen_passages": [
+        "ccp:art198.2"
+      ],
+      "blind": true,
+      "evento": "evento:510"
+    }
+  ],
+  "state": "settled"
+}

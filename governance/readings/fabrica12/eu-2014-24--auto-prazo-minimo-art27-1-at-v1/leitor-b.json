@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:06:06Z",
+ "sha256": "d56aaa354fb489b6e9be8dd08dcf3ecc25d3b87fe5b029b33ee654902f94190a",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_aberto\",\"fontes\":[{\"texto\":\"concursos abertos\",\"de\":\"eu-2014-24:art27.1\"}]}],\"params\":{\"minimum_days\":35,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"O prazo mínimo de receção das propostas é de 35 dias\",\"de\":\"eu-2014-24:art27.1\"}],\"deadline_field\":[{\"texto\":\"propostas\",\"de\":\"eu-2014-24:art27.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio de concurso\",\"de\":\"eu-2014-24:art27.1\"}] , \"usual_days\":null}}],\"nao_tipavel\":null}"
+}

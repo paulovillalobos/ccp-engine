@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "990094ef4e0677d5bb817c0800708dc10c535f0f24d0c015e31174d74b28f836",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"servicos_sociais\",\"fontes\":[{\"texto\":\"serviços sociais e outros serviços específicos\",\"de\":\"eu-2014-24:art4.d\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"serviços relativos a serviços sociais e outros serviços específicos\",\"de\":\"eu-2014-24:art4.d\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_aberto\",\"concurso_publico\",\"concurso_publico_urgente\",\"concurso_concecao\",\"dialogo_concorrencial\",\"parceria_inovacao\"],\"fontes\":[{\"texto\":\"contratos públicos de serviços\",\"de\":\"eu-2014-24:art4.d\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":750000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2014-24:art4\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2014-24:art4\"}],\"value\":[{\"texto\":\"750 000 EUR\",\"de\":\"eu-2014-24:art4.d\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

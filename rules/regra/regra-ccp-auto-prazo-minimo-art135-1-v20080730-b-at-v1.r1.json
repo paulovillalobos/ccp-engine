@@ -1,0 +1,71 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art135-1-v20080730-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art135.1 (fábrica de regras, ronda 12), versão de 2008-07-30 (2.ª regra)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": false
+    },
+    {
+      "field": "tipo_contrato",
+      "op": "eq",
+      "value": "obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": "2018-01-01",
+  "passages": [
+    {
+      "passage": "ccp:art135.1",
+      "version": "2008-07-30",
+      "quote": "1 - Quando o anúncio do concurso público não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 9 dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, a 20 dias, a contar da data do envio, para publicação, do anúncio previsto no n.º 1 do artigo 130.º",
+      "offsets": {
+        "start": 0,
+        "end": 381
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 20,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "ccp:art135.1"
+      ],
+      "blind": false,
+      "evento": "evento:452"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T22:24:28Z",
+      "chosen_passages": [
+        "ccp:art135.1"
+      ],
+      "blind": true,
+      "evento": "evento:453"
+    }
+  ],
+  "state": "settled"
+}

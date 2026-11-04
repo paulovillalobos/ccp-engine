@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "145d2c02d899d3762fe8ef4caf697f9211bb5459ed52c2af759d5d60b7a622e7",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"sectores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art7.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concursos públicos\",\"de\":\"ccp:art136\"}]}],\"params\":{\"minimum_days\":22,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"22 dias\",\"de\":\"ccp:art136.4\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art136.4\"}],\"counted_from\":[{\"texto\":\"ainda que\",\"de\":\"ccp:art7.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

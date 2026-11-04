@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "aa1878c07d7f5d61e06e9471f1f69591f9203890aabe5ed6898eb16a48c54a9b",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"bens\",\"fontes\":[{\"texto\":\"fornecimento e de serviços\",\"de\":\"eu-2004-17:art16.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"ajuste_direto\",\"concurso_aberto\",\"concurso_publico\",\"concurso_publico_urgente\",\"consulta_previa\",\"consulta_previa_especial\",\"procedimento_concorrencial_negociacao\",\"procedimento_negociacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"contratos de fornecimento e de serviços\",\"de\":\"eu-2004-17:art16.a\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":418000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2004-17:art16\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2004-17:art16\"}],\"value\":[{\"texto\":\"418 000 EUR\",\"de\":\"eu-2004-17:art16.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

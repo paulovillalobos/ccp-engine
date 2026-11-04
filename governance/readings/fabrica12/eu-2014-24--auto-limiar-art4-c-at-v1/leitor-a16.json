@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "870320ba4c4630d72af77d1f021c8c456df8c6c3ccc7e9704c8685628e5d5f45",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos_sociais\"],\"fontes\":[{\"texto\":\"fornecimento e de serviços\",\"de\":\"eu-2014-24:art4.c\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"outra\",\"fontes\":[{\"texto\":\"autoridades adjudicantes subcentrais\",\"de\":\"eu-2014-24:art4.c\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_aberto\",\"concurso_ideias\",\"concurso_publico\",\"concurso_publico_urgente\",\"dialogo_concorrencial\",\"procedimento_concorrencial_negociacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"concursos para trabalhos de conceção\",\"de\":\"eu-2014-24:art4.c\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":216000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"cujo valor\",\"de\":\"eu-2014-24:art4\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2014-24:art4\"}],\"value\":[{\"texto\":\"216 000 EUR\",\"de\":\"eu-2014-24:art4.c\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

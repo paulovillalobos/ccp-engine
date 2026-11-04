@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T22:16:58Z",
+ "sha256": "adddf0209e411d5bfb553dac37e64be988b4352af6967c062c80dba2f6e28d47",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"Empreitadas de obras públicas\",\"de\":\"ccp:parte-iii.titulo-ii.capitulo-i\"}]}],\"params\":{\"maximum_days\":15,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"nao_indicado\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"no prazo de 15 dias\",\"de\":\"ccp:art401.1\"},{\"texto\":\"no mesmo prazo\",\"de\":\"ccp:art401.1\"}],\"deadline_field\":[{\"texto\":\"reclamação\",\"de\":\"ccp:art401.1\"}],\"counted_from\":null}}],\"nao_tipavel\":null}"
+}

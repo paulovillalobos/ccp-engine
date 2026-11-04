@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "5dd7ad738c6c7bb3f968cc42758c52c79e2a1716aeeadb12da4da82de6bbae14",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"concessao_obras\",\"fontes\":[{\"texto\":\"concessão\",\"de\":\"eu-2014-23:art39\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_aberto\",\"fontes\":[{\"texto\":\"concessão\",\"de\":\"eu-2014-23:art39\"}]}],\"params\":{\"minimum_days\":22,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"22 dias\",\"de\":\"eu-2014-23:art39.4\"}],\"deadline_field\":[{\"texto\":\"apresentação de propostas\",\"de\":\"eu-2014-23:art39.4\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do convite\",\"de\":\"eu-2014-23:art39.4\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

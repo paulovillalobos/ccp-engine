@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "961cbd681e6131a1c3b9487dc5a1e288b0cfce661ee6ddc37ae3e024bb35dbf1",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"anuncio_pre_informacao\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"anúncio periódico indicativo\",\"de\":\"ccp:art174.2\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º\",\"de\":\"ccp:art174.2\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concurso limitado por prévia qualificação\",\"de\":\"ccp:art167.3\"}]}],\"params\":{\"minimum_days\":37,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"37 dias\",\"de\":\"ccp:art174.2\"}],\"deadline_field\":[{\"texto\":\"apresentação das candidaturas\",\"de\":\"ccp:art174.2\"}],\"counted_from\":[{\"texto\":\"convite previsto no n.º 5 do mesmo artigo\",\"de\":\"ccp:art174.2\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

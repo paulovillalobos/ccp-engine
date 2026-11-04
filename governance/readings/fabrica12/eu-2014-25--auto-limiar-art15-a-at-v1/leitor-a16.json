@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "d8047984aee1878b0ecc97a98da2a8f41019c0ccdd8109ad8c5c2b104678d2c9",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\",\"servicos_sociais\"],\"fontes\":[{\"texto\":\"fornecimento de bens e prestação de serviços\",\"de\":\"eu-2014-25:art15.a\"},{\"texto\":\"prestação de serviços\",\"de\":\"eu-2014-25:art15.a\"},{\"texto\":\"serviços\",\"de\":\"eu-2014-25:art15.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_concecao\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"eu-2014-25:art15.a\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":432000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2014-25:art15\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2014-25:art15\"}],\"value\":[{\"texto\":\"432 000 EUR\",\"de\":\"eu-2014-25:art15.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

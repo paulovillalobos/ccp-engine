@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:08:09Z",
+ "sha256": "d0be23246590dac26ca174f7f922daafa1b2f27e5574b43366fcbf5850cee70e",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"Concurso limitado\",\"de\":\"eu-2014-24:art28\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"uma situação de urgência, devidamente fundamentada pelas autoridades adjudicantes\",\"de\":\"eu-2014-24:art28.6\"}]}],\"params\":{\"minimum_days\":10,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"não inferior a 10 dias\",\"de\":\"eu-2014-24:art28.6.b\"}],\"deadline_field\":[{\"texto\":\"propostas\",\"de\":\"eu-2014-24:art28.6.b\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do convite\",\"de\":\"eu-2014-24:art28.6.b\"}]  \t,\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

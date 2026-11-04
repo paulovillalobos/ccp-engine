@@ -1,0 +1,71 @@
+{
+  "id": "regra:eu-2014-25:auto-prazo-minimo-art45-1@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:54Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2014-25:art45.1 (fábrica de regras, ronda 12)",
+  "norma": "norma:eu-2014-25",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2014-04-17",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2014-25:art45",
+      "version": "2014-04-17",
+      "quote": "Artigo 45.º\nConcurso público\n1. Nos concursos abertos, qualquer operador económico interessado pode apresentar uma proposta em resposta a um convite à apresentação de propostas\nO prazo mínimo para receção de propostas é de 35 dias a contar da data de envio do anúncio de concurso.\nA proposta deve ser acompanhada das informações solicitadas para efeitos de seleção qualitativa pela entidade adjudicante.\n2. Se as autoridades adjudicantes tiverem publicado um anúncio periódico indicativo que não seja utilizado como meio de abertura de concurso, o prazo mínimo para receção de propostas, conforme estabelecido no n.º 1, segundo parágrafo, do presente artigo, pode ser reduzido para 15 dias, desde que estejam preenchidas todas as seguintes condições:\na) O anúncio periódico indicativo incluiu, para além das informações exigidas no Anexo VI, parte A, secção I, todas as informações exigidas no Anexo VI, parte A, secção II, na medida em que essas informações estejam disponíveis no momento da publicação do anúncio periódico indicativo;\nb) O anúncio periódico indicativo foi enviado para publicação entre um mínimo de 35 dias e um máximo de 12 meses antes da data de envio do anúncio de concurso.\n3. Nos casos em que uma situação de urgência devidamente fundamentada pelas entidades adjudicantes inviabiliza o cumprimento dos prazos fixados no n.º 1, segundo parágrafo, estas podem fixar um prazo que não pode ser inferior a 15 dias a contar da data de envio do anúncio de concurso.\n4. As entidades adjudicantes podem reduzir em cinco dias os prazos de receção de propostas estabelecidos no segundo parágrafo do n.º 1 do presente artigo, nos casos em que aceitem que as propostas possam ser apresentadas por meios eletrónicos nos termos do artigo 40.º, n.º 4, primeiro parágrafo, e do artigo 40.º, n.os 5 e 6.",
+      "offsets": {
+        "start": 0,
+        "end": 1809
+      }
+    },
+    {
+      "passage": "eu-2014-25:art45.1",
+      "version": "2014-04-17",
+      "quote": "1. Nos concursos abertos, qualquer operador económico interessado pode apresentar uma proposta em resposta a um convite à apresentação de propostas\nO prazo mínimo para receção de propostas é de 35 dias a contar da data de envio do anúncio de concurso.\nA proposta deve ser acompanhada das informações solicitadas para efeitos de seleção qualitativa pela entidade adjudicante.",
+      "offsets": {
+        "start": 0,
+        "end": 374
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 35,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "eu-2014-25:art45",
+        "eu-2014-25:art45.1"
+      ],
+      "blind": false,
+      "evento": "evento:917"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:05:29Z",
+      "chosen_passages": [
+        "eu-2014-25:art45.1"
+      ],
+      "blind": true,
+      "evento": "evento:918"
+    }
+  ],
+  "state": "proposed"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "c7699ee613427626c57e3e97a2fe1a8a59073ae97bf6e17306d960c42eb17e9a",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_limitado_previa_qualificacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2004-18:art38.8\"},{\"texto\":\"procedimento por negociação com publicação de anúncio de concurso\",\"de\":\"eu-2004-18:art30\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"quinze dias\",\"de\":\"eu-2004-18:art38.8.a\"}],\"deadline_field\":[{\"texto\":\"recepção dos pedidos de participação\",\"de\":\"eu-2004-18:art38.8.a\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2004-18:art38.8.a\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

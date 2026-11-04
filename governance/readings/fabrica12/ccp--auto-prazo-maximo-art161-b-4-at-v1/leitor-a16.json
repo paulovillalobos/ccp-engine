@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "99cb273cd2bcca9ab6cdccc7c97abeff32299badef8fbda39fc69e2dd69a43cb",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[],\"params\":{\"maximum_days\":3,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"nao_indicado\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"três dias\",\"de\":\"ccp:art161-b.4\"}],\"deadline_field\":[{\"texto\":\"impugnações\",\"de\":\"ccp:art161-b.4\"}],\"counted_from\":[{\"texto\":\"são de três dias\",\"de\":\"ccp:art161-b.4\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

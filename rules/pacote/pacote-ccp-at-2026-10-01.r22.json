@@ -1,0 +1,92 @@
+{
+  "id": "pacote:ccp@2026-10-01",
+  "revision": 22,
+  "recorded_at": "2026-11-04T23:24:21Z",
+  "law_version": "lei:ccp@2026-10-01",
+  "rules": [
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art123-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-1@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-2@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-3@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-5@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art198-1@v1",
+      "revision": 7
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art198-2@v1",
+      "revision": 5
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-j-3@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:limiar-ajuste-direto-obras@v2",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v2",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:eu-2014-24:auto-prazo-minimo-art27-1@v1",
+      "revision": 1
+    }
+  ],
+  "hash": "da8996032b2b35958f2aa526dc62510ed2d9ac09e2f7578a6dc6447a75abd0a3",
+  "log_head": "eab6791dcfe8951a286daa7b14f5c23e5c0ab8975e75366037ba1387bda15d5c",
+  "built_at": "2026-11-04T23:24:21Z",
+  "supersedes": 21
+}

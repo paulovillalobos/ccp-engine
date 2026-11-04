@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "b77cca6518870cf826391d8a7a2a77d51351518fc673efedb7e02d14a8d2c2c5",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"servicos\",\"fontes\":[{\"texto\":\"serão organizados em conformidade com o presente título:\",\"de\":\"eu-2004-18:art67.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\",\"fontes\":[{\"texto\":\"concursos para trabalhos de concepção\",\"de\":\"eu-2004-18:art67.1\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":209000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor em questão\",\"de\":\"eu-2004-18:art67.1.b\"}],\"comparator\":[{\"texto\":\"igual ou superior a\",\"de\":\"eu-2004-18:art67.1.b\"}],\"value\":[{\"texto\":\"209 000 EUR\",\"de\":\"eu-2004-18:art67.1.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

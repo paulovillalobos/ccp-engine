@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "6ad915ebb3179f41d6be52d0c671523117543051fa78b851e03b6662ad04d98b",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_aberto\",\"fontes\":[{\"texto\":\"Concurso aberto\",\"de\":\"eu-2014-24:art27\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"não tenha sido utilizado como meio de abertura de concurso\",\"de\":\"eu-2014-24:art28.3\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"não tenha sido\",\"de\":\"eu-2014-24:art28.3\"}]}],\"params\":{\"minimum_days\":6,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"seis dias\",\"de\":\"eu-2014-24:art47.3.a\"}],\"deadline_field\":[{\"texto\":\"receção das propostas\",\"de\":\"eu-2014-24:art47.3.a\"}],\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

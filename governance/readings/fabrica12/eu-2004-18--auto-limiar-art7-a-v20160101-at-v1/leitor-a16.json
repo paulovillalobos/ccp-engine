@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "c93269170a659d38c2371ba21f0d55f69ce9a8579d28d12bb0fe76b06f82add3",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"],\"fontes\":[{\"texto\":\"fornecimento e de serviços\",\"de\":\"eu-2004-18:art7.a\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"autoridades governamentais centrais\",\"de\":\"eu-2004-18:art7.a\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":135000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2004-18:art7\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2004-18:art7\"}],\"value\":[{\"texto\":\"135 000 EUR\",\"de\":\"eu-2004-18:art7.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

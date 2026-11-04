@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "6bfba3f5523fc5975bd80219aa740852bd6f47248b1d30c4d4b1b4312441f16b",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_limitado_previa_qualificacao\",\"procedimento_concorrencial_negociacao\",\"dialogo_concorrencial\"],\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2009-81:art33.2\"},{\"texto\":\"diálogo concorrencial\",\"de\":\"eu-2009-81:art33.2\"}]}],\"params\":{\"minimum_days\":37,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"37 dias\",\"de\":\"eu-2009-81:art33.2\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2009-81:art33.2\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2009-81:art33.2\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

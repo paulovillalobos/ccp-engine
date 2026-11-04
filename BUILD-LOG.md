@@ -2233,3 +2233,24 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   leitor:b on 92–100 %; 145–225 settled, 40–110 of them rules (most on the directives' minimum deadlines); per type, settled
   share highest on prazo_minimo and lowest on prazo_maximo; no quote outside the text. Below 120 settled, the new type or the
   new texts are where v14 fails and the next step is its training on them, not more passages.
+- Both families read the 377 blind: leitor:a16 on Modal (377 of 377, --quotes text), leitor:b through reader B's client. The
+  sequential reader stalled twice on Reader B's whitespace loop (one call 11 minutes, one 17): each was killed and its prompt asked
+  again; the unanswered ones were read by disjoint shards (--only, one folder set each), 377 of 377.
+- Round 12 recorded (rule-factory@27, governance/readings/fabrica12/FABRICA12.md, evento:377–961). leitor:a16 302 of 377 through the
+  checker (forecast 55–70 %: 80 %, above), leitor:b 345 (92–100 %: 92 %). 81 settled (forecast 145–225: below), 11 of them rules
+  (40–110: below): 6 earlier CCP texts (135.º n.º 1, 190.º n.º 1, 191.º n.º 1 and 3 and 198.º n.º 2 as of 2008-07-30, 147.º as of
+  2018-01-01), 191.º n.º 3 in force, and 4 EU minimum deadlines (2014/24 art. 27.º n.º 1, 35 days; 2004/18 art. 38.º n.º 2 and n.º 3
+  b), 52 and 40 days; 2004/17 art. 45.º n.º 2, 52 days); 70 «não tipável». By stratum: pratica 67 of 296 (6 rules), reservado 14
+  of 81 (5 rules). Below 120 settled: as the forecast said, the new type and the new texts are where v14 fails.
+- What the round shows, as data:
+  1. The new type holds almost no real rules. On the 215 prazo_maximo targets leitor:b reads 5 rules; 147 «não é prazo máximo»
+     («o prazo é para a própria entidade adjudicante enviar um anúncio», «juntar os elementos em falta», «manter as propostas», a
+     duration, an execution deadline), 37 sem_vocabulario. The CCP's deadlines are mostly the entity's own acts: a type for them
+     needs the date of the act among the facts (D71), the person's decision.
+  2. v14 agrees that most of these passages hold no rule, with the old reason: on prazo_maximo targets it answers nao_e_prazo_minimo
+     109 times (it never trained on nao_e_prazo_maximo). 108 targets where both families read «não tipável» do not settle only
+     because the reason differs; 36 more differ as nt against sem_vocabulario, 24 against nao_e_limiar.
+  3. On the directives v14 often cannot answer within the checker: 31 of 68 EU prazo_minimo and 20 of 53 EU limiar answers are
+     refused (procedure names and phrasings it has never seen); leitor:b reads 23 prazo_minimo rules in all, v14 settles 11.
+- Answer keys: 138 settled (30 rules, 108 «não tipável»; 57 before). Round 12's 67 pratica keys may train v15 under evento:276;
+  its 14 reservado keys join the exam.

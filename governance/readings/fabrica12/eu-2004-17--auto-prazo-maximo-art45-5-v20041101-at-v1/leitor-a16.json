@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "4447ce3a2eb93a08f9f167d113f2c3097f9bf8affb76c00ac366e98a57c62b69",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concursos públicos\",\"de\":\"eu-2004-17:art45.5\"}]}],\"params\":{\"maximum_days\":19,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"nao_indicado\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"reduzidos em sete dias\",\"de\":\"eu-2004-17:art45.5\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2004-17:art45.5\"}],\"counted_from\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

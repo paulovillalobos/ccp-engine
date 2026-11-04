@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "11e5f25c8423447bb823fa95b95a2fe457f0440845e52d209ffef57cf5392556",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"],\"fontes\":[{\"texto\":\"fornecimento e de serviços\",\"de\":\"eu-2014-24:art4.b\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"autoridades governamentais centrais\",\"de\":\"eu-2014-24:art4.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_publico\",\"concurso_aberto\",\"concurso_ideias\",\"concurso_concecao\",\"concurso_limitado_previa_qualificacao\",\"dialogo_concorrencial\",\"procedimento_concorrencial_negociacao\",\"procedimento_negociacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"contratos públicos de fornecimento e de serviços\",\"de\":\"eu-2014-24:art4.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":140000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"contratos públicos de fornecimento\",\"de\":\"eu-2014-24:art4.b\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2014-24:art4\"}],\"value\":[{\"texto\":\"140 000 EUR\",\"de\":\"eu-2014-24:art4.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "3dd74f785da7e9e3784501e498d48c15b9d60daa34fc9889c1307717ad0c9d21",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras\",\"de\":\"eu-2004-17:art16.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":5225000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2004-17:art16\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2004-17:art16\"}],\"value\":[{\"texto\":\"5 225 000 EUR\",\"de\":\"eu-2004-17:art16.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

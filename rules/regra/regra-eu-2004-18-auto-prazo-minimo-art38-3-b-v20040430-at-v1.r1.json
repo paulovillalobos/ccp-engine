@@ -1,0 +1,61 @@
+{
+  "id": "regra:eu-2004-18:auto-prazo-minimo-art38-3-b-v20040430@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:53Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2004-18:art38.3.b (fábrica de regras, ronda 12), versão de 2004-04-30",
+  "norma": "norma:eu-2004-18",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2004-04-30",
+  "valid_to": "2016-04-18",
+  "passages": [
+    {
+      "passage": "eu-2004-18:art38.3.b",
+      "version": "2004-04-30",
+      "quote": "b) Nos concursos limitados, o prazo mínimo para recepção das propostas é de 40 dias a contar da data de envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 121
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 40,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_convite"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "eu-2004-18:art38.3.b"
+      ],
+      "blind": false,
+      "evento": "evento:798"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:06:59Z",
+      "chosen_passages": [
+        "eu-2004-18:art38.3.b"
+      ],
+      "blind": true,
+      "evento": "evento:799"
+    }
+  ],
+  "state": "settled"
+}

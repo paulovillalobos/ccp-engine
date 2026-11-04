@@ -1,0 +1,61 @@
+{
+  "id": "regra:eu-2004-17:auto-prazo-minimo-art45-2-v20041101@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:53Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2004-17:art45.2 (fábrica de regras, ronda 12), versão de 2004-11-01",
+  "norma": "norma:eu-2004-17",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2004-11-01",
+  "valid_to": "2016-04-18",
+  "passages": [
+    {
+      "passage": "eu-2004-17:art45.2",
+      "version": "2004-11-01",
+      "quote": "2. Nos concursos públicos, o prazo mínimo para a recepção das propostas é de 52 dias a contar da data de envio do anúncio de concurso.",
+      "offsets": {
+        "start": 0,
+        "end": 134
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 52,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "eu-2004-17:art45.2"
+      ],
+      "blind": false,
+      "evento": "evento:746"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:21:53Z",
+      "chosen_passages": [
+        "eu-2004-17:art45.2"
+      ],
+      "blind": true,
+      "evento": "evento:747"
+    }
+  ],
+  "state": "settled"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "46f0a3a0d1aa09af377a8049f4ed8311a82c0e17421973d95f8d20ec07400728",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"Concurso público\",\"de\":\"eu-2014-25:art45\"}]}],\"params\":{\"minimum_days\":35,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"35 dias\",\"de\":\"eu-2014-25:art45.1\"}],\"deadline_field\":[{\"texto\":\"receção de propostas\",\"de\":\"eu-2014-25:art45.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-25:art45.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

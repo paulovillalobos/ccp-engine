@@ -1,0 +1,71 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art190-1-v20080730@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art190.1 (fábrica de regras, ronda 12), versão de 2008-07-30",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": false
+    },
+    {
+      "field": "tipo_contrato",
+      "op": "eq",
+      "value": "obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": "2018-01-01",
+  "passages": [
+    {
+      "passage": "ccp:art190.1",
+      "version": "2008-07-30",
+      "quote": "1 - Quando o anúncio do concurso limitado por prévia qualificação não seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 9 dias ou, no caso de se tratar de um procedimento de formação de um contrato de empreitada de obras públicas, inferior a 20 dias, a contar da data do envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 364
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 20,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_convite"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "ccp:art190.1"
+      ],
+      "blind": false,
+      "evento": "evento:486"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T22:47:46Z",
+      "chosen_passages": [
+        "ccp:art190.1"
+      ],
+      "blind": true,
+      "evento": "evento:487"
+    }
+  ],
+  "state": "settled"
+}

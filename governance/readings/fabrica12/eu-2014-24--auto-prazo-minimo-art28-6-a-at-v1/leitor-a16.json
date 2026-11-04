@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "fa526e9c3f086a0c3e924e20c369b06a2d2fa58b365a51cd0798730a7cfad803",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concurso\",\"de\":\"eu-2014-24:art28.6.a\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"urgência, devidamente fundamentada\",\"de\":\"eu-2014-24:art28.6\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"15 dias\",\"de\":\"eu-2014-24:art28.6.a\"}],\"deadline_field\":[{\"texto\":\"receção dos pedidos de participação\",\"de\":\"eu-2014-24:art28.6.a\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-24:art28.6.a\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

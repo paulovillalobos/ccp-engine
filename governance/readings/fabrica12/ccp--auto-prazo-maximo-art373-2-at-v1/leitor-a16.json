@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T22:04:34Z",
+ "sha256": "337ff9c93c6500caed3219adde339162353d186117e1b8f39541a9983f6d4584",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"Empreitadas de obras públicas\",\"de\":\"ccp:parte-iii.titulo-ii.capitulo-i\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"Contratos administrativos em especial\",\"de\":\"ccp:parte-iii.titulo-ii\"}]}],\"params\":{\"maximum_days\":15,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"15 dias\",\"de\":\"ccp:art373.2\"}],\"deadline_field\":[{\"texto\":\"proposta de preço e de prazo de execução\",\"de\":\"ccp:art373.2\"}],\"counted_from\":[{\"texto\":\"a contar da data da receção do pedido\",\"de\":\"ccp:art373.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

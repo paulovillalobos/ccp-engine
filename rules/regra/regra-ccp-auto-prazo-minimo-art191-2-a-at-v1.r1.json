@@ -1,0 +1,76 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art191-2-a@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T23:23:51Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art191.2.a (fábrica de regras, ronda 12)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2021-06-20",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art191.1",
+      "version": "2018-01-01",
+      "quote": "1 - Quando o anúncio do concurso limitado por prévia qualificação seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 25 dias a contar da data do envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 237
+      }
+    },
+    {
+      "passage": "ccp:art191.2",
+      "version": "2021-06-20",
+      "quote": "2 - Quando tenha sido publicado o anúncio de pré-informação previsto no artigo 34.º e o mesmo contemple as prestações objeto do contrato a celebrar, o prazo mínimo referido no número anterior é de 10 dias, desde que:\na) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e\nb) O anúncio de pré-informação tenha incluído todas as informações, disponíveis à data da sua publicação, exigidas nos termos do anexo v, parte B, secção i da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro.",
+      "offsets": {
+        "start": 0,
+        "end": 652
+      }
+    },
+    {
+      "passage": "ccp:art191.2.a",
+      "version": "2021-06-20",
+      "quote": "a) O anúncio de pré-informação tenha sido enviado para publicação com uma antecedência mínima de 35 dias e máxima de 12 meses em relação à data do envio do anúncio previsto no número anterior; e",
+      "offsets": {
+        "start": 0,
+        "end": 194
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 10,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_convite"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "ccp:art191.1",
+        "ccp:art191.2",
+        "ccp:art191.2.a"
+      ],
+      "blind": false,
+      "evento": "evento:499"
+    }
+  ],
+  "state": "proposed"
+}
