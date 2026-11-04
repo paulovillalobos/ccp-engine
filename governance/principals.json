@@ -2693,8 +2693,21 @@
       "versao": 22,
       "code": "tools/rule_factory.py",
       "hash": "ce00b1a5284abdd29a038148357cbf7365839e791234f75d91a09dfb87f39a41",
+      "retired": true,
+      "nota": "D69: round 11, 60 real passages drawn once (PICK11; 104.º n.º 2 and n.º 3 b) left out, a revoked line the prompt does not print), the report by stratum",
+      "retired_at": "2026-11-04T14:33:25Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@23",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 23,
+      "code": "tools/rule_factory.py",
+      "hash": "df455b3698c564c7e259cdb23d5b437e466240734840058fd832517e95a78eef",
       "retired": false,
-      "nota": "D69: round 11, 60 real passages drawn once (PICK11; 104.º n.º 2 and n.º 3 b) left out, a revoked line the prompt does not print), the report by stratum"
+      "nota": "D69: a rule leitor:b reads none of («não tipável» against family A's rule): its blind review is logged, the rule keeps family A's reading only"
     }
   ]
 }

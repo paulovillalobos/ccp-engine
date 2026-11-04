@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "1d3cdd382da895f463022c662dd358ab693e68c17cb9e7347cc1cb4c9bc2f662",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\",\"obras\",\"servicos\",\"servicos_sociais\"],\"fontes\":[{\"texto\":\"concessão de obras públicas e concessões de serviços\",\"de\":\"ccp:art474.2\"},{\"texto\":\"concessões de serviços\",\"de\":\"ccp:art474.2\"},{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art474.4\"},{\"texto\":\"aquisição de serviços\",\"de\":\"ccp:art127-b\"},{\"texto\":\"aquisição de serviços ou a realização de obras públicas\",\"de\":\"ccp:art127-b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"consulta_previa_especial\",\"fontes\":[{\"texto\":\"consulta prévia especial\",\"de\":\"ccp:art127-b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":2000000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado do contrato\",\"de\":\"ccp:art127-b\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"ccp:art127-b\"}],\"value\":[{\"texto\":\"2 000 000 euros\",\"de\":\"ccp:art127-b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

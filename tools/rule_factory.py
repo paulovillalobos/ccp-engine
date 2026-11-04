@@ -49,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@22"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11
+TOOL = "ferramenta:rule-factory@23"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of)
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -401,9 +401,10 @@ def cmd_record_v3(n):
                                            "params": b["params"] if b else {}, "answer_sha256": rb["sha256"], "round": R["round"], "replication": V3_RULE,
                                            "protocol": "v3"})
                 cited = set(a["passages"])
-                readings.append({"principal": "leitor:b", "family": "B", "at": rb["at"],
-                                 "chosen_passages": sorted(set(b["passages"]) & cited) if (b and row["exact"]) else (b["passages"] if b else []),
-                                 "blind": True, "evento": ev_b})
+                if b:  # D69: leitor:b reads no rule here («não tipável»): its review is in the log, the rule holds no reading of it
+                    readings.append({"principal": "leitor:b", "family": "B", "at": rb["at"],
+                                     "chosen_passages": sorted(set(b["passages"]) & cited) if row["exact"] else b["passages"],
+                                     "blind": True, "evento": ev_b})
             state = log.replay().state_of("regra", rid)
             rule = rr.build_rule(store, ti, a, a["passages"], readings, state)
             cur = writer.store.current(rid)

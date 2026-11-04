@@ -1,0 +1,64 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art123-1@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T14:34:13Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art123.1 (fábrica de regras, ronda 11)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "ajuste_direto",
+        "consulta_previa"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2018-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art123.1",
+      "version": "2018-01-01",
+      "quote": "1 - Elaborado o relatório preliminar referido no artigo anterior, o júri envia-o a todos os concorrentes, fixando-lhes um prazo, não inferior a três dias, para que se pronunciem, por escrito, ao abrigo do direito de audiência prévia.",
+      "offsets": {
+        "start": 0,
+        "end": 233
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 3,
+    "deadline_field": "prazo_pronuncia_dias",
+    "counted_from": "nao_indicado"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T14:05:52Z",
+      "chosen_passages": [
+        "ccp:art123.1"
+      ],
+      "blind": false,
+      "evento": "evento:300"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T14:23:15Z",
+      "chosen_passages": [
+        "ccp:art123.1"
+      ],
+      "blind": true,
+      "evento": "evento:301"
+    }
+  ],
+  "state": "settled"
+}

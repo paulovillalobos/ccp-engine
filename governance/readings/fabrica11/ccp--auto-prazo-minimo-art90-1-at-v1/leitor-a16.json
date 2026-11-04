@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "25d551b393b469ddbb99fde03d0d1b255d4c85d04896aed5d38b502802bbb1a4",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"servicos_sociais\",\"fontes\":[{\"texto\":\"caução\",\"de\":\"ccp:art90.1\"}]}],\"params\":{\"minimum_days\":10,\"deadline_field\":\"prazo_caucao_dias\",\"counted_from\":\"data_notificacao\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"10 dias\",\"de\":\"ccp:art90.1\"}],\"deadline_field\":[{\"texto\":\"prestar a caução\",\"de\":\"ccp:art90.1\"}],\"counted_from\":[{\"texto\":\"a contar da notificação\",\"de\":\"ccp:art90.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

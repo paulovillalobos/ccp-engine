@@ -2159,3 +2159,26 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   «texto_visto» within 15 points of each other; no quote outside the text. Below 20 settled, reading ordinary real passages is the
   bottleneck and the next step is the reading itself, not more keys. Settled means both families agree blind, not that the law
   was proved read right (round 1: 4 of 4 settled readings were wrong on a vocabulary gap).
+- Both families read the 60 blind, in parallel from 14:02Z: leitor:a16 on Modal (one L40S, --quotes text: 60 of 60 through the
+  grammar), leitor:b through reader B's client (about 10 s an answer). 60 of 60 answers each.
+- Round 11 recorded (rule-factory@23, governance/readings/fabrica11/FABRICA11.md, evento:292–376). leitor:a16 43 of 60 through the
+  checker (forecast 50–58: below), leitor:b 59 (57–60). 35 settled (25–40): 34 «não tipável» and one rule, 123.º n.º 1 (3 days for
+  the pronúncia on the relatório preliminar, ajuste direto and consulta prévia; forecast 3–10 rules: below). By stratum: reservado
+  13 of 28, texto_visto 22 of 32 (forecast within 15 points: 23 apart). The 9 passages of 474.º (the EU thresholds) are all
+  reservado and none settles; without them, 13 of 19 and 22 of 32: seeing a passage's text in other tasks did not help. No quote
+  outside the text.
+- Where v14 fails: it writes a rule where leitor:b reads «não tipável». The checker refuses all 17, none reached the log: 474.º (7; leitor:b
+  reads nao_e_limiar), 129.º-A n.º 1 a) and b) and 127.º-B (amounts that are not a procedure's limit), a prazo de pronúncia whose
+  quotes do not name the field (161.º-B n.º 4, 188.º n.º 2, 219.º-C n.º 3), conditions the passage does not name (373.º n.º 2 and
+  3, 64.º n.º 2, 90.º n.º 1), a number not in its sources (198.º n.º 3). When v14 reads «não tipável», leitor:b gives the same reason
+  on 34 of 39. 7 differ: 5 on the reason (143.º n.º 1, 78.º n.º 5, 273.º, 474.º n.º 3 d) and n.º 4 c)), 2 a rule against
+  sem_vocabulario (147.º, 161.º-B n.º 1 b)). leitor:b reads 123.º n.º 1 as a rule and the near-identical 147.º as sem_vocabulario:
+  a blind agreement can also fail on family B's side.
+- The first record stopped half-way at 147.º, the first v3 target where family A's rule passes the checker and leitor:b reads
+  «não tipável»: the factory kept a reading of leitor:b with no passage, which the rule schema refuses. Its 18 events, never
+  committed, were set aside and the log restored to the committed one. rule-factory@23 logs leitor:b's blind review and keeps only
+  family A's reading on that rule; recorded again in full.
+- Answer keys: 57 settled (19 rules, 38 «não tipável»; 22 before). Round 11's 22 texto_visto keys may be practice for v15 under
+  evento:276; its 13 reservado keys stay the exam. Below 20 settled was not reached: on ordinary real passages v14 settles 35 of 60,
+  nearly all of them «não tipável»; on real passages that do state a rule of these types, the evidence is still round 10's 3 of 9
+  and this round's one rule.

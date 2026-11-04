@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "70bdfd20ec09040861433e5c0155f8051dd2639704f69e9e4b959fbf735a536b",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\",\"concessao_servicos\",\"concessao_obras\"],\"fontes\":[{\"texto\":\"fornecimento de bens\",\"de\":\"ccp:art474.3.b\"},{\"texto\":\"prestação de serviços\",\"de\":\"ccp:art474.3.b\"},{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"pelo Estado\",\"de\":\"ccp:art474.3.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_concecao\",\"consulta_previa\",\"concurso_publico\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"},{\"texto\":\"Contratos\",\"de\":\"norma:ccp\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":139000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"montantes dos limiares\",\"de\":\"ccp:art474.3\"}],\"comparator\":[{\"texto\":\"para os contratos públicos\",\"de\":\"ccp:art474.3.b\"}],\"value\":[{\"texto\":\"139 000 €\",\"de\":\"ccp:art474.3.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "db7d261f6c24a3e83a4d658c6fb16b454069446937968602a024f083d8c2a744",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de conceção-construção\",\"de\":\"ccp:art373.3\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_notificacao\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"15 dias\",\"de\":\"ccp:art373.3\"}],\"deadline_field\":[{\"texto\":\"proposta de preço e de prazo de execução\",\"de\":\"ccp:art373.3\"}],\"counted_from\":[{\"texto\":\"a contar da data da receção do pedido\",\"de\":\"ccp:art373.3\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "0b7584b926ff6118df75932fe5ac3f947c5ce724794ea94b63edb38a39be5553",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"publicado no Jornal Oficial da União Europeia\",\"de\":\"ccp:art219-c.3\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\",\"fontes\":[{\"texto\":\"concurso de conceção\",\"de\":\"ccp:art219-c.3\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_pronuncia_dias\",\"counted_from\":\"data_publicacao_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"30 dias\",\"de\":\"ccp:art219-c.3\"}],\"deadline_field\":[{\"texto\":\"anúncio do concurso de conceção tenha sido publicado no Jornal Oficial da União Europeia\",\"de\":\"ccp:art219-c.3\"}],\"counted_from\":[{\"texto\":\"30 dias após a decisão de seleção\",\"de\":\"ccp:art219-c.3\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

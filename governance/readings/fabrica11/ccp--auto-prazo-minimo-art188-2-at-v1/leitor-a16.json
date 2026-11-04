@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "2e5969c2ce1e61f04140242bbdb5d749e0830b8bd4e2704b87c83ab4dd5b4466",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"Concurso limitado por prévia qualificação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iii\"}]}],\"params\":{\"minimum_days\":5,\"deadline_field\":\"prazo_pronuncia_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"cinco dias\",\"de\":\"ccp:art188.2\"}],\"deadline_field\":[{\"texto\":\"a notificação da decisão de qualificação\",\"de\":\"ccp:art188.2\"}],\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

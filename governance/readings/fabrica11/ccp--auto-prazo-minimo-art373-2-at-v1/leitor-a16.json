@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "a9e5fb143f6a3310ef7b3f546b26179e55c009cc76c6211ee299f79d6e174665",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"Empreitadas de obras públicas\",\"de\":\"ccp:parte-iii.titulo-ii.capitulo-i\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"Contratos administrativos em especial\",\"de\":\"ccp:parte-iii.titulo-ii\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_disponibilizacao_pecas\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"15 dias\",\"de\":\"ccp:art373.2\"}],\"deadline_field\":[{\"texto\":\"proposta de preço e de prazo de execução\",\"de\":\"ccp:art373.2\"}],\"counted_from\":[{\"texto\":\"a contar da data da receção do pedido\",\"de\":\"ccp:art373.2\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

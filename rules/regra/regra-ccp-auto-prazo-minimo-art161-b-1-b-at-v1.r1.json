@@ -1,0 +1,61 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art161-b-1-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T14:34:13Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art161-b.1.b (fábrica de regras, ronda 11)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art161-b.1",
+      "version": "2026-10-01",
+      "quote": "1 - A adoção do regime de flexibilização do concurso público autoriza a entidade adjudicante:\na) A dispensar o cumprimento do dever de fundamentar as decisões de não adjudicação por lotes a que se refere o n.º 2 do artigo 46.º-A;\nb) A reduzir para três dias o prazo de pronúncia dos concorrentes sobre o relatório preliminar.",
+      "offsets": {
+        "start": 0,
+        "end": 325
+      }
+    },
+    {
+      "passage": "ccp:art161-b.1.b",
+      "version": "2026-10-01",
+      "quote": "b) A reduzir para três dias o prazo de pronúncia dos concorrentes sobre o relatório preliminar.",
+      "offsets": {
+        "start": 0,
+        "end": 95
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 3,
+    "deadline_field": "prazo_pronuncia_dias",
+    "counted_from": "nao_indicado"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T14:05:52Z",
+      "chosen_passages": [
+        "ccp:art161-b.1",
+        "ccp:art161-b.1.b"
+      ],
+      "blind": false,
+      "evento": "evento:310"
+    }
+  ],
+  "state": "proposed"
+}

@@ -108,6 +108,60 @@
       "revision": 1,
       "state": "settled"
     },
+    "nao_tipavel|nao_tipavel:ccp:auto-limiar-art36-4@v1": {
+      "events": [
+        341,
+        342
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-limiar-art474-3-d@v1": {
+      "events": [
+        359,
+        360
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-limiar-art474-4-c@v1": {
+      "events": [
+        361,
+        362
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
     "nao_tipavel|nao_tipavel:ccp:auto-limiar-art54-a-1-b-ii@v1": {
       "events": [
         282,
@@ -144,6 +198,168 @@
       "revision": 1,
       "state": "settled"
     },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art101@v1": {
+      "events": [
+        292,
+        293
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art102-2@v1": {
+      "events": [
+        294,
+        295
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art116@v1": {
+      "events": [
+        296,
+        297
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art120-1@v1": {
+      "events": [
+        298,
+        299
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art129-a-6@v1": {
+      "events": [
+        302,
+        303
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art138-3@v1": {
+      "events": [
+        304,
+        305
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art143-1@v1": {
+      "events": [
+        306,
+        307
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art177-3@v1": {
+      "events": [
+        312,
+        313
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art188-4@v1": {
+      "events": [
+        315,
+        316
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
     "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art241-b-3-b@v1": {
       "events": [
         273,
@@ -151,6 +367,492 @@
       ],
       "family": "A",
       "proposer": "leitor:a15",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art266-b-3@v1": {
+      "events": [
+        317,
+        318
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art270@v1": {
+      "events": [
+        319,
+        320
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art273@v1": {
+      "events": [
+        321,
+        322
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art274-1@v1": {
+      "events": [
+        323,
+        324
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art283-a-2-c@v1": {
+      "events": [
+        325,
+        326
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art299-1-c@v1": {
+      "events": [
+        327,
+        328
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art304-3@v1": {
+      "events": [
+        329,
+        330
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art327-3@v1": {
+      "events": [
+        331,
+        332
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art327-4@v1": {
+      "events": [
+        333,
+        334
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art333-4@v1": {
+      "events": [
+        335,
+        336
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art345-5@v1": {
+      "events": [
+        337,
+        338
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art359-1@v1": {
+      "events": [
+        339,
+        340
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art372-3-a@v1": {
+      "events": [
+        343,
+        344
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art389-1@v1": {
+      "events": [
+        345,
+        346
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art394-7@v1": {
+      "events": [
+        347,
+        348
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art401-1@v1": {
+      "events": [
+        349,
+        350
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art404-1@v1": {
+      "events": [
+        351,
+        352
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art405-2@v1": {
+      "events": [
+        353,
+        354
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art43-10-c@v1": {
+      "events": [
+        355,
+        356
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art464-g@v1": {
+      "events": [
+        357,
+        358
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art65@v1": {
+      "events": [
+        363,
+        364
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art72-3@v1": {
+      "events": [
+        365,
+        366
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art78-1@v1": {
+      "events": [
+        367,
+        368
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art78-5@v1": {
+      "events": [
+        369,
+        370
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art85-2@v1": {
+      "events": [
+        371,
+        372
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art87-a-2@v1": {
+      "events": [
+        373,
+        374
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-prazo-minimo-art93-2@v1": {
+      "events": [
+        375,
+        376
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
       "reviews": [
         {
           "by": "leitor:b",
@@ -434,6 +1136,60 @@
       "revision": 3,
       "state": "stale"
     },
+    "regra|regra:ccp:auto-prazo-minimo-art123-1@v1": {
+      "events": [
+        300,
+        301
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art147@v1": {
+      "events": [
+        308,
+        309
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art161-b-1-b@v1": {
+      "events": [
+        310,
+        311
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
+    },
     "regra|regra:ccp:auto-prazo-minimo-art174-1@v1": {
       "events": [
         98,
@@ -562,6 +1318,16 @@
         }
       ],
       "revision": 5,
+      "state": "proposed"
+    },
+    "regra|regra:ccp:auto-prazo-minimo-art185@v1": {
+      "events": [
+        314
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [],
+      "revision": 1,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art190-1-b@v1": {
@@ -1358,6 +2124,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 291,
-  "head": "e873b1f8940aa295b45db86033b538476bca32c33fa4dba27c98e792fb345baf"
+  "events": 376,
+  "head": "9b98b9f74e3dc4d87f2604666c54f627c69151ade59b5ee364f50346299af068"
 }

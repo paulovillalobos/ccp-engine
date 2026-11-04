@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "c8abe1965168b9e539b3bb6042c2650816329127892ffd0dce9761a72f422cab",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concurso público\",\"de\":\"ccp:art161-b.1\"}]}],\"params\":{\"minimum_days\":3,\"deadline_field\":\"prazo_pronuncia_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"três dias\",\"de\":\"ccp:art161-b.1.b\"}],\"deadline_field\":[{\"texto\":\"pronúncia dos concorrentes\",\"de\":\"ccp:art161-b.1.b\"}],\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "eee9c04ae41bf8dd19e376e45cb01712ce1896a5670c53bdeee8715d45690430",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art474.4.a\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"celebrados pelas entidades que operam nos\",\"de\":\"ccp:art474.4\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\",\"fontes\":[{\"texto\":\"contratos de empreitada de obras públicas\",\"de\":\"ccp:art474.4.a\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de\",\"de\":\"ccp:art474.4.a\"}],\"comparator\":[{\"texto\":\"para os contratos de empreitada de obras públicas\",\"de\":\"ccp:art474.4.a\"}],\"value\":[{\"texto\":\"5 404 000 €\",\"de\":\"ccp:art474.4.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

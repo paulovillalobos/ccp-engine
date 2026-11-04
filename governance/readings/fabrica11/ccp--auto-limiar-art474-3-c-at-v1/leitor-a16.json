@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T14:05:52Z",
+ "sha256": "1427073e34bb90e7b1cef6f6b18ae741a50a58a3ada272cbdf18bcf5fbd36b6e",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\",\"servicos_sociais\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"},{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"outra\",\"fontes\":[{\"texto\":\"outras entidades adjudicantes\",\"de\":\"ccp:art474.3.c\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_concecao\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":216000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"contratos\",\"de\":\"ccp:art474.3.c\"}],\"comparator\":[{\"texto\":\"para os contratos referidos na alínea anterior\",\"de\":\"ccp:art474.3.c\"}],\"value\":[{\"texto\":\"216 000,00 €\",\"de\":\"ccp:art474.3.c\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}
