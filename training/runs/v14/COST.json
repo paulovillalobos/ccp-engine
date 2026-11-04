@@ -1,7 +1,8 @@
 {
- "source": "modal billing report --start 2026-11-04 --resolution h --json, read 2026-11-04 01:2xZ: no hour of 2026-11-04 reported yet",
+ "source": "modal billing report --start 2026-11-04 --resolution h --json, read 2026-11-04",
  "training_app": "ap-0ms56hJLXpFQqJlCnFp8T7",
- "training_usd": null,
- "estimate_usd": 2.73,
- "note": "not billed yet: 2 393 s of one H100 at v13's billed rate (USD 22.91 for 20 055 s) is about USD 2.73; the reads of leitor:a16 (dev ap-O8YJbBhghLjBgMtwrUlhua, sealed ap-qdJDM9yd1qBDf0q6mtIRhz, dev_antigo ap-UCtP5ar2inbWUnBLjFgrgU, round 10 ap-mS6QDL1p7ItlmbBb7Z9LJ8) not reported either; round 10 called no Reader B (leitor:b's round-9 answers carried)"
+ "training_usd": 2.73,
+ "reads_usd": 0.52,
+ "total_usd": 3.25,
+ "note": "the 00:00 hour holds the whole run (2 393 s of one H100; the estimate from v13's rate was USD 2.73); the reads of leitor:a16: dev ap-O8YJbBhghLjBgMtwrUlhua USD 0.11, sealed ap-qdJDM9yd1qBDf0q6mtIRhz USD 0.13, dev_antigo ap-UCtP5ar2inbWUnBLjFgrgU USD 0.17, round 10 ap-mS6QDL1p7ItlmbBb7Z9LJ8 USD 0.11; round 10 called no Reader B (leitor:b's round-9 answers carried). v13 cost USD 22.91 to train"
 }
