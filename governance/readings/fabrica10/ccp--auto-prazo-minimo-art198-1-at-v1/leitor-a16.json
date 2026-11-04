@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T00:56:43Z",
+ "sha256": "8b1c9b454ef14d9f1cb63062c07b216c859023c2d0350bf35261a89a7b1f5f28",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"Serviço das Publicações da União Europeia\",\"de\":\"ccp:art198.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_negociacao\",\"fontes\":[{\"texto\":\"Procedimento de negociação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iv\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"30 dias\",\"de\":\"ccp:art198.1\"}],\"deadline_field\":[{\"texto\":\"apresentação das candidaturas\",\"de\":\"ccp:art198.1\"}],\"counted_from\":[{\"texto\":\"data do envio do anúncio\",\"de\":\"ccp:art198.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

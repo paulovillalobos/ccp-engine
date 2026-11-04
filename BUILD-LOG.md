@@ -2120,3 +2120,19 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Forecast, committed before v14 answers: sealed 85–90 % settle (v13 86.5 %); round 10, the 9 open targets: 3–5 settled with
   leitor:b (v13 0), 6–8 valid (v13 5), no quote outside the text. Below 3 settled, the real practice did not carry over: the next
   step is a scaffold for conditions said outside the target, not more training.
+- v14 trained from v13 (training/runs/v14/MANIFEST.json): 139 steps, one epoch, 4 491 examples, 9.2 M tokens, 00:11Z to
+  00:52Z (2 393 s), about USD 2.7 (not billed yet: training/runs/v14/COST.json); its loss began at 0.014, v13's level, so it
+  went on from v13. Adapter amalia-ccp-lei-v14 (d4634ba004c1…), registered as leitor:a16.
+- v14 read dev, sealed and dev_antigo (data-v13's, protocol 0.4, --quotes text) and round 10 (rule-factory@20: 9 prompts, round
+  9's byte for byte, leitor:b's answers carried, no Reader B call): 593 of 593 and 9 of 9 answers through the grammar.
+- Measured (reports/measure/regras-v14-2026-11-04.md). Sealed 96: 94.8 % valid, 87.5 % settle [79.4, 92.7] (v13 86.5 %, leitor:b
+  89.6 %; forecast 85–90 %). Dev 104: 93.3 % valid, 86.5 % settle (v13 80.8 %, leitor:b 94.2 %); the checker refuses 7 (v13 11);
+  «não tipável» right on 22 of 25 (v13 23) and given to no typable article (v13 3); no quote outside the text. dev_antigo 393:
+  84.5 % settle (v13 82.7 %).
+- Round 10 recorded (governance/readings/fabrica10/FABRICA10.md, evento:277 on): leitor:a16 7 of 9 through the checker (v13 5;
+  forecast 6–8), 3 settled with leitor:b (v13 0; forecast 3–5): 198.º n.º 1 (the JOUE publication, which v12 and v13 left out),
+  198.º n.º 2 (the start of the count, L9) and 127.º-C n.º 1 a) as «não tipável» (v13 wrote a rule). Still open: 21.º n.º 1 b)
+  and c), refused: v14 adds «publicado_joue eq false», which the passage does not say (L7), a JOUE condition taken from the
+  practice where it is not; 31.º n.º 4 and 192.º n.º 2 leave out the contract's duration and the special sectors, which no
+  practice reading has; 54.º-A n.º 1 b) ii) is «não tipável» with texto_em_falta for leitor:b's nao_e_limiar; 174.º n.º 3 differs
+  in its two deadlines. 18 rules settled in all (16 before), and 4 «não tipável».

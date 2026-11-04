@@ -1,0 +1,348 @@
+{
+ "tool": "ccp-measure-rule-readings-v14-0.1",
+ "protocol": "ccp-read-rules-v3-0.4",
+ "date": "2026-11-04",
+ "sets": {
+  "dev": {
+   "gold": "training/data-v13/regra_lida/dev.jsonl",
+   "gold_sha256": "12d89c8dc605007c9085233fd538cd246b4a6123d8251473b3fc6d23ccedeba1",
+   "examples": 104,
+   "readers": {
+    "leitor-a15": {
+     "label": "base + adaptador v13",
+     "answers": "governance/readings/avaliacao-v13/dev/leitor-a15.jsonl",
+     "answers_sha256": "bb5b398b97393aa8766b135eb3bcdca9d545029c91365e2ba933b640b352a332",
+     "quoted_by_grammar": 104,
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 93,
+      "n": 104,
+      "value": 0.8942,
+      "wilson95": [
+       0.8205,
+       0.9399
+      ]
+     },
+     "settles": {
+      "k": 84,
+      "n": 104,
+      "value": 0.8077,
+      "wilson95": [
+       0.7215,
+       0.8719
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "verificador: as fontes não nomeiam …": 6,
+       "condição em falta: publicado_joue": 3,
+       "não tipável num e regras no outro": 3,
+       "parâmetro: value": 2,
+       "condição com outro valor: tipo_contrato": 1,
+       "motivo texto_em_falta em vez de nao_e_limiar": 1,
+       "verificador: as fontes não dizem preco_base gt … (L…)": 1,
+       "verificador: as fontes não negam o facto (L…)": 1,
+       "verificador: counted_from data_envio_anuncio e as fontes dizem nada (L…)": 1,
+       "verificador: counted_from data_envio_convite e as fontes dizem nada (L…)": 1,
+       "verificador: counted_from data_publicacao_anuncio e as fontes dizem nada (L…)": 1
+      },
+      "by_style": {
+       "remissao": 7,
+       "alineas": 3,
+       "capitulo": 3,
+       "valor_condicao": 3,
+       "nao_tipavel": 2,
+       "contagem": 1,
+       "grandeza": 1
+      }
+     }
+    },
+    "leitor-a16": {
+     "label": "base + adaptador v14 (de v13)",
+     "answers": "governance/readings/avaliacao-v14/dev/leitor-a16.jsonl",
+     "answers_sha256": "d0d852f2ccc763cc9d2fc7152eb8bd98dbaa9cde48d168101e623973b564c40c",
+     "quoted_by_grammar": 104,
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 97,
+      "n": 104,
+      "value": 0.9327,
+      "wilson95": [
+       0.8675,
+       0.967
+      ]
+     },
+     "settles": {
+      "k": 90,
+      "n": 104,
+      "value": 0.8654,
+      "wilson95": [
+       0.7866,
+       0.9181
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "condição em falta: tipo_procedimento": 5,
+       "verificador: as fontes não nomeiam …": 3,
+       "parâmetro: value": 2,
+       "condição com outro valor: tipo_contrato": 1,
+       "verificador: as fontes não dizem preco_base gt … (L…)": 1,
+       "verificador: counted_from data_envio_convite e as fontes dizem nada (L…)": 1,
+       "verificador: minimum_days … não está nas fontes (L…, L…)": 1,
+       "verificador: um limiar tem sempre o procedimento que permite abaixo do valor; sem ele, L… (nao_e_limiar": 1
+      },
+      "by_style": {
+       "remissao": 6,
+       "nao_tipavel": 3,
+       "valor_condicao": 3,
+       "capitulo": 1,
+       "contagem": 1
+      }
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers": "governance/readings/avaliacao-v13/dev/leitor-b.jsonl",
+     "answers_sha256": "a844083b444ee476c4e19b1070bab22cf1ce6461edf9c3260ea84d557b95df83",
+     "quoted_by_grammar": 0,
+     "answered": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 104,
+      "n": 104,
+      "value": 1.0,
+      "wilson95": [
+       0.9644,
+       1.0
+      ]
+     },
+     "settles": {
+      "k": 98,
+      "n": 104,
+      "value": 0.9423,
+      "wilson95": [
+       0.8798,
+       0.9733
+      ]
+     },
+     "errors": {
+      "by_kind": {
+       "não tipável num e regras no outro": 4,
+       "condição em falta: tipo_contrato": 1,
+       "motivo nao_e_limiar em vez de sem_vocabulario": 1
+      },
+      "by_style": {
+       "comparador": 3,
+       "capitulo": 1,
+       "grandeza": 1,
+       "nao_tipavel": 1
+      }
+     }
+    }
+   }
+  },
+  "sealed": {
+   "gold": "training/data-v13/regra_lida/sealed.jsonl",
+   "gold_sha256": "74417f86ec0d2825200410db978ee7d86d10ed6cff21118d7361084e7cbde6fd",
+   "examples": 96,
+   "readers": {
+    "leitor-a15": {
+     "label": "base + adaptador v13",
+     "answers": "governance/readings/avaliacao-v13/sealed/leitor-a15.jsonl",
+     "answers_sha256": "0b7f9a92d1f006dd3df2dbb1b06e4468e815f92191798d0a2758965035fcc85a",
+     "quoted_by_grammar": 96,
+     "answered": {
+      "k": 96,
+      "n": 96,
+      "value": 1.0,
+      "wilson95": [
+       0.9615,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 92,
+      "n": 96,
+      "value": 0.9583,
+      "wilson95": [
+       0.8977,
+       0.9837
+      ]
+     },
+     "settles": {
+      "k": 83,
+      "n": 96,
+      "value": 0.8646,
+      "wilson95": [
+       0.782,
+       0.9191
+      ]
+     }
+    },
+    "leitor-a16": {
+     "label": "base + adaptador v14 (de v13)",
+     "answers": "governance/readings/avaliacao-v14/sealed/leitor-a16.jsonl",
+     "answers_sha256": "0d982d6b6c0182b45e945158cded81d9b9865b72f2664112fbef6670a0e4bf33",
+     "quoted_by_grammar": 96,
+     "answered": {
+      "k": 96,
+      "n": 96,
+      "value": 1.0,
+      "wilson95": [
+       0.9615,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 91,
+      "n": 96,
+      "value": 0.9479,
+      "wilson95": [
+       0.8838,
+       0.9776
+      ]
+     },
+     "settles": {
+      "k": 84,
+      "n": 96,
+      "value": 0.875,
+      "wilson95": [
+       0.7941,
+       0.927
+      ]
+     }
+    },
+    "leitor-b": {
+     "label": "Reader B (família B)",
+     "answers": "governance/readings/avaliacao-v13/sealed/leitor-b.jsonl",
+     "answers_sha256": "d71a8f44c9157f6237b6b4b9d1c7aa215898b6d8303392d00c502898e2dc6132",
+     "quoted_by_grammar": 0,
+     "answered": {
+      "k": 94,
+      "n": 96,
+      "value": 0.9792,
+      "wilson95": [
+       0.9272,
+       0.9943
+      ]
+     },
+     "valid": {
+      "k": 93,
+      "n": 96,
+      "value": 0.9688,
+      "wilson95": [
+       0.9121,
+       0.9893
+      ]
+     },
+     "settles": {
+      "k": 86,
+      "n": 96,
+      "value": 0.8958,
+      "wilson95": [
+       0.8188,
+       0.9424
+      ]
+     }
+    }
+   }
+  },
+  "dev_antigo": {
+   "gold": "training/data-v13/regra_lida/dev_antigo.jsonl",
+   "gold_sha256": "78c115434723d2509be38e58804734ec41ae63858281a8a37ad7d552bd99459c",
+   "examples": 393,
+   "readers": {
+    "leitor-a15": {
+     "label": "base + adaptador v13",
+     "answers": "governance/readings/avaliacao-v13/dev_antigo/leitor-a15.jsonl",
+     "answers_sha256": "442ffce8c964138a6177c7742f7d6cb263e7e803f12712571e882f808d140536",
+     "quoted_by_grammar": 393,
+     "answered": {
+      "k": 393,
+      "n": 393,
+      "value": 1.0,
+      "wilson95": [
+       0.9903,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 356,
+      "n": 393,
+      "value": 0.9059,
+      "wilson95": [
+       0.8729,
+       0.9309
+      ]
+     },
+     "settles": {
+      "k": 325,
+      "n": 393,
+      "value": 0.827,
+      "wilson95": [
+       0.7865,
+       0.8612
+      ]
+     }
+    },
+    "leitor-a16": {
+     "label": "base + adaptador v14 (de v13)",
+     "answers": "governance/readings/avaliacao-v14/dev_antigo/leitor-a16.jsonl",
+     "answers_sha256": "3660cec530ad8e635a8ab8804dc6580b988ad9084d981a32f1f25438750adfab",
+     "quoted_by_grammar": 393,
+     "answered": {
+      "k": 393,
+      "n": 393,
+      "value": 1.0,
+      "wilson95": [
+       0.9903,
+       1.0
+      ]
+     },
+     "valid": {
+      "k": 358,
+      "n": 393,
+      "value": 0.9109,
+      "wilson95": [
+       0.8787,
+       0.9353
+      ]
+     },
+     "settles": {
+      "k": 332,
+      "n": 393,
+      "value": 0.8448,
+      "wilson95": [
+       0.8057,
+       0.8772
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art174-3@v1",
+  "revision": 5,
+  "recorded_at": "2026-11-04T00:57:48Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art174.3 (fábrica de regras, ronda 10)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "setores_especiais",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_limitado_previa_qualificacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2021-06-20",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art174",
+      "version": "2021-06-20",
+      "quote": "Artigo 174.º\nPrazos mínimos para a apresentação das candidaturas em concursos limitados por prévia qualificação com publicidade internacional\n1 - Quando o anúncio do concurso limitado por prévia qualificação seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 30 dias a contar da data do envio desse anúncio ao Serviço das Publicações da União Europeia.\n2 - O prazo mínimo previsto no número anterior pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.\n3 - Quando o contrato a celebrar diga direta e principalmente respeito a uma ou a várias das atividades exercidas nos setores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das candidaturas é, em regra, de 30 dias a contar da data do envio do anúncio para publicação, não podendo em caso algum ser inferior a 15 dias desde aquele envio.\n4 - Se as peças procedimentais não puderem, total ou parcialmente, ser disponibilizadas sem restrições de acesso, designadamente por motivos de segurança, devem ser disponibilizadas por meios adequados, sendo, nesse caso, os prazos mínimos previstos nos n.os 1 e 3 do presente artigo prorrogados por cinco dias.",
+      "offsets": {
+        "start": 0,
+        "end": 1415
+      }
+    },
+    {
+      "passage": "ccp:art174.3",
+      "version": "2018-01-01",
+      "quote": "3 - Quando o contrato a celebrar diga direta e principalmente respeito a uma ou a várias das atividades exercidas nos setores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das candidaturas é, em regra, de 30 dias a contar da data do envio do anúncio para publicação, não podendo em caso algum ser inferior a 15 dias desde aquele envio.",
+      "offsets": {
+        "start": 0,
+        "end": 447
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T00:56:43Z",
+      "chosen_passages": [
+        "ccp:art174",
+        "ccp:art174.3"
+      ],
+      "blind": false,
+      "evento": "evento:284"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-03T17:22:18Z",
+      "chosen_passages": [
+        "ccp:art174",
+        "ccp:art174.3"
+      ],
+      "blind": true,
+      "evento": "evento:285"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 4
+}

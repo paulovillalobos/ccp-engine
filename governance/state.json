@@ -72,6 +72,24 @@
       "revision": 1,
       "state": "proposed"
     },
+    "nao_tipavel|nao_tipavel:ccp:auto-limiar-art127-c-1-a@v1": {
+      "events": [
+        277,
+        278
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
     "nao_tipavel|nao_tipavel:ccp:auto-limiar-art17-b-4@v1": {
       "events": [
         257,
@@ -89,6 +107,24 @@
       ],
       "revision": 1,
       "state": "settled"
+    },
+    "nao_tipavel|nao_tipavel:ccp:auto-limiar-art54-a-1-b-ii@v1": {
+      "events": [
+        282,
+        283
+      ],
+      "family": "A",
+      "proposer": "leitor:a16",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "request_evidence"
+        }
+      ],
+      "revision": 1,
+      "state": "proposed"
     },
     "nao_tipavel|nao_tipavel:ccp:auto-limiar-art88-2-a@v1": {
       "events": [
@@ -223,7 +259,8 @@
         178,
         179,
         223,
-        224
+        224,
+        279
       ],
       "family": "A",
       "proposer": "leitor:a13",
@@ -236,7 +273,7 @@
         }
       ],
       "revision": 3,
-      "state": "proposed"
+      "state": "stale"
     },
     "regra|regra:ccp:auto-limiar-art17-b-4-b@v1": {
       "events": [
@@ -335,10 +372,12 @@
         233,
         234,
         265,
-        266
+        266,
+        280,
+        281
       ],
       "family": "A",
-      "proposer": "leitor:a15",
+      "proposer": "leitor:a16",
       "reviews": [
         {
           "by": "leitor:b",
@@ -347,7 +386,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-limiar-art54-a-1-b-ii@v1": {
@@ -508,10 +547,12 @@
         196,
         197,
         239,
-        240
+        240,
+        284,
+        285
       ],
       "family": "A",
-      "proposer": "leitor:a13",
+      "proposer": "leitor:a16",
       "reviews": [
         {
           "by": "leitor:b",
@@ -520,7 +561,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art190-1-b@v1": {
@@ -684,10 +725,12 @@
         241,
         242,
         269,
-        270
+        270,
+        286,
+        287
       ],
       "family": "A",
-      "proposer": "leitor:a15",
+      "proposer": "leitor:a16",
       "reviews": [
         {
           "by": "leitor:b",
@@ -696,7 +739,7 @@
           "verdict": "request_evidence"
         }
       ],
-      "revision": 5,
+      "revision": 6,
       "state": "proposed"
     },
     "regra|regra:ccp:auto-prazo-minimo-art198-1@v1": {
@@ -712,20 +755,22 @@
         255,
         256,
         271,
-        272
+        272,
+        288,
+        289
       ],
       "family": "A",
-      "proposer": "leitor:a15",
+      "proposer": "leitor:a16",
       "reviews": [
         {
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "request_evidence"
+          "verdict": "uphold"
         }
       ],
-      "revision": 6,
-      "state": "proposed"
+      "revision": 7,
+      "state": "settled"
     },
     "regra|regra:ccp:auto-prazo-minimo-art198-2-b@v1": {
       "events": [
@@ -772,20 +817,22 @@
         210,
         211,
         245,
-        246
+        246,
+        290,
+        291
       ],
       "family": "A",
-      "proposer": "leitor:a13",
+      "proposer": "leitor:a16",
       "reviews": [
         {
           "by": "leitor:b",
           "family": "B",
           "independence": "blind",
-          "verdict": "request_evidence"
+          "verdict": "uphold"
         }
       ],
-      "revision": 4,
-      "state": "proposed"
+      "revision": 5,
+      "state": "settled"
     },
     "regra|regra:ccp:auto-prazo-minimo-art218@v1": {
       "events": [
@@ -1311,6 +1358,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 276,
-  "head": "b75b600cc760a605848e32eab160a106667a060fbd686c6ab12859c407c6ecec"
+  "events": 291,
+  "head": "e873b1f8940aa295b45db86033b538476bca32c33fa4dba27c98e792fb345baf"
 }

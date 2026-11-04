@@ -1,0 +1,85 @@
+{
+  "id": "regra:ccp:auto-limiar-art127-c-1-a@v1",
+  "revision": 4,
+  "recorded_at": "2026-11-04T00:57:48Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art127-c.1.a (fábrica de regras, ronda 5)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "in",
+      "value": [
+        "concessao_obras",
+        "concessao_servicos",
+        "obras"
+      ]
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "consulta_previa"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art127-c.1",
+      "version": "2026-10-01",
+      "quote": "1 - Além das referidas nos n.ºs 5 e 6 do artigo 113.º, também não podem ser convidadas a apresentar propostas em procedimentos de consulta prévia especial entidades às quais a entidade adjudicante já tenha adjudicado, no ano económico em curso e nos dois anos económicos anteriores, na sequência de consulta prévia especial, propostas para a celebração de contratos cujo objeto seja constituído por prestações do mesmo tipo das do contrato a celebrar e cujo preço contratual acumulado seja:\na) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços;\nb) Igual ou superior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou na alínea b) do n.º 4 do artigo 474.º, consoante o caso.",
+      "offsets": {
+        "start": 0,
+        "end": 744
+      }
+    },
+    {
+      "passage": "ccp:art127-c.1.a",
+      "version": "2026-10-01",
+      "quote": "a) Igual ou superior a 2 000 000 €, no caso de empreitadas e concessões de obras públicas ou de concessões de serviços;",
+      "offsets": {
+        "start": 0,
+        "end": 119
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "preco_base",
+      "comparator": "le",
+      "value": 2000000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a13",
+      "family": "A",
+      "at": "2026-10-28T20:26:12Z",
+      "chosen_passages": [
+        "ccp:art127-c.1",
+        "ccp:art127-c.1.a"
+      ],
+      "blind": false,
+      "evento": "evento:223"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-28T10:51:40Z",
+      "chosen_passages": [
+        "ccp:art127-c.1",
+        "ccp:art127-c.1.a"
+      ],
+      "blind": true,
+      "evento": "evento:224"
+    }
+  ],
+  "state": "stale",
+  "supersedes": 3
+}

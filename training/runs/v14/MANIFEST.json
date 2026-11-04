@@ -1,0 +1,185 @@
+{
+ "adapter": "amalia-ccp-lei-v14",
+ "volume": "amalia-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "init": "amalia-ccp-lei-v13",
+ "training_index_sha256": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+ "data_index_sha256": {
+  "training/data": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+  "training/data-v2": "afc01d6a6b7e7fe25ab6f74d34a56db1b50960f2677a2728b327dda2cecb321c",
+  "training/data-v3": "781078b81b51e5fc9a832e085a0cc9cfcd75bd2f633030c4a1f5ad233fa2a36b",
+  "training/data-v4": "6d79d787354f3d58746367b1bad1dd82ea463cefe8b2d8d3317bd27c8c53ec98",
+  "training/data-v9": "6668751dd00b9ff799128708cec5d4828e9720dd89ae2f8aed8019f04d7f46d7",
+  "training/data-v10": "917ed418c177865296032ecb4b87dc3fe571ef00a217a8c8fc8a68d28337cb61",
+  "training/data-v11": "42f2c56ef482fd96999cd5bcecd13a20b151a33d21b9c1c1e065357dd3652281",
+  "training/data-v12": "f7d7ca1dc7f4b58589df22f678251710bf7eb85f659656b27847c799d89fe7a7",
+  "training/data-v14": "752c51ee6affc57b31834bc74023a0c353012f7d557bd1880766f7b1360c28bb"
+ },
+ "repeat": {
+  "condicoes_texto": 2
+ },
+ "mixture": {
+  "condicoes_pergunta": 400,
+  "condicoes_texto": 167,
+  "entrada_em_vigor": 2,
+  "escolha_passagem": 806,
+  "factos_v9": 1464,
+  "nota_dr": 51,
+  "periodos_vigencia": 131,
+  "regra_lida": 1075,
+  "regra_lida_alvo": 0,
+  "regra_tipada": 0,
+  "remissao": 1,
+  "texto_vigente": 394
+ },
+ "examples_in_mix": 4491,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 1,
+  "lr": 0.0001,
+  "warmup_steps": 10,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 12288,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "2639f46b23ae4ef8f0289af4dff005a4f7d2554c",
+ "repo_dirty_training_or_law": false,
+ "started": "2026-11-04T00:11:53Z",
+ "finished": "2026-11-04T00:52:29Z",
+ "modal_app": "ap-0ms56hJLXpFQqJlCnFp8T7",
+ "modal_function_call": "fc-01M6HYBSNP37Z743GQAAHQCT3Z",
+ "result": {
+  "examples": 4491,
+  "dropped": 0,
+  "tokens": 9243818,
+  "trainable_params": 50921472,
+  "steps": 139,
+  "seconds": 2392.8,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 0.0136,
+    "seen": 29,
+    "seconds": 14.9
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.0105,
+    "seen": 347,
+    "seconds": 153.7
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.0004,
+    "seen": 575,
+    "seconds": 335.6
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.0048,
+    "seen": 939,
+    "seconds": 552.2
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.0008,
+    "seen": 1286,
+    "seconds": 749.6
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0042,
+    "seen": 1590,
+    "seconds": 927.1
+   },
+   {
+    "step": 60,
+    "epoch": 1,
+    "loss": 0.0058,
+    "seen": 1926,
+    "seconds": 1085.3
+   },
+   {
+    "step": 70,
+    "epoch": 1,
+    "loss": 0.0002,
+    "seen": 2305,
+    "seconds": 1203.8
+   },
+   {
+    "step": 80,
+    "epoch": 1,
+    "loss": 0.0057,
+    "seen": 2607,
+    "seconds": 1372.2
+   },
+   {
+    "step": 90,
+    "epoch": 1,
+    "loss": 0.0028,
+    "seen": 2897,
+    "seconds": 1538.2
+   },
+   {
+    "step": 100,
+    "epoch": 1,
+    "loss": 0.0013,
+    "seen": 3233,
+    "seconds": 1687.0
+   },
+   {
+    "step": 110,
+    "epoch": 1,
+    "loss": 0.0012,
+    "seen": 3575,
+    "seconds": 1901.4
+   },
+   {
+    "step": 120,
+    "epoch": 1,
+    "loss": 0.0058,
+    "seen": 3888,
+    "seconds": 2077.4
+   },
+   {
+    "step": 130,
+    "epoch": 1,
+    "loss": 0.0011,
+    "seen": 4228,
+    "seconds": 2267.4
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "db1850aa00ae2576226aba3d086b7ca569c96c541b1d657b7628f1736436a65e",
+   "adapter_model.safetensors": "d4634ba004c126d9f096a96ffa31b526b5ea12a2865f417f1beaab250cb42186"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}

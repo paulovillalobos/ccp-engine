@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-04T00:56:43Z",
+ "sha256": "0c744086c908300a598eec9a364b09d6caa7df295f06f2bf6a6b01a0327a1cbe",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"não configurem contratos de concessão de obras públicas ou de concessão de serviços\",\"de\":\"ccp:art21.1\"}]},{\"field\":\"tipo_contrato\",\"op\":\"not_in\",\"value\":[\"concessao_obras\",\"concessao_servicos\"],\"fontes\":[{\"texto\":\"concessão de obras públicas\",\"de\":\"ccp:art21.1\"},{\"texto\":\"concessão de serviços\",\"de\":\"ccp:art21.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"consulta_previa\",\"fontes\":[{\"texto\":\"Consulta prévia\",\"de\":\"ccp:art21.1.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":130000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado do contrato\",\"de\":\"ccp:art21.1.b\"}],\"comparator\":[{\"texto\":\"inferior a\",\"de\":\"ccp:art21.1.b\"}],\"value\":[{\"texto\":\"130 000 €\",\"de\":\"ccp:art21.1.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

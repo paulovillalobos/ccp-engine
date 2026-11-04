@@ -1895,6 +1895,21 @@
       "nota": "phase 16 (D67): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v13 (rank 16), trained on v12's data with training/data-v13 (task regra_lida: 2 584 train rows, every prompt in the reading protocol v3 0.4; 1 300 of them articles written to BRIEF-D67 with the texture of the real law, the other 1 284 data-v12's after the leak test against every measured article); it reads with its quotes held to the text (readers/quote_grammar.py, --quotes text); training/runs/v13/MANIFEST.json"
     },
     {
+      "id": "leitor:a16",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v14",
+        "versao": "d4634ba004c1"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 17 (D68): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v14 (rank 16), trained from amalia-ccp-lei-v13 one epoch on training/data-v14 (275 rows of the real readings both families settled blind, their numbers moved by code, and 800 of data-v13's) and a tenth of every other task; it reads with its quotes held to the text (--quotes text); training/runs/v14/MANIFEST.json"
+    },
+    {
       "id": "ferramenta:rule-factory@4",
       "kind": "codigo",
       "papel": "ferramenta",
