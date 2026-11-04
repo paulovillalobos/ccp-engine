@@ -1,0 +1,35 @@
+{
+  "id": "eu-2014-24:art57.1.b",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2014-24",
+  "parent": "eu-2014-24:art57.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2014-04-17",
+      "text": "b) Corrupção, tal como definida no artigo 3.º da Convenção relativa à luta contra a corrupção em que estejam implicados funcionários da União Europeia ou dos Estados-Membros da União Europeia e no artigo 2.º, n.º 1, da Decisão-Quadro 2003/568/JAI do Conselho , ou ainda na aceção da legislação nacional da autoridade adjudicante ou do operador económico;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 158674,
+        "end": 159028
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "b) Corrupção, tal como definida no artigo 3.º da Convenção relativa à luta contra a corrupção em que estejam implicados funcionários da União Europeia ou dos Estados-Membros da União Europeia () e no artigo 2.º, n.º 1, da Decisão-Quadro 2003/568/JAI do Conselho (), ou ainda na aceção da legislação nacional da autoridade adjudicante ou do operador económico;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20160101",
+      "offsets": {
+        "start": 158833,
+        "end": 159192
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

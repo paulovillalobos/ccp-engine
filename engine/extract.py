@@ -233,6 +233,119 @@ def eurlex_html(raw: bytes) -> str:
     return "\n".join(parser.lines) + "\n"
 
 
+EURLEX_C_SKIP = {"arrow", "disclaimer", "reference", "hd-modifiers", "footnote", "title-toc", "toc-item", "hd-toc-1", "hd-toc-2", "hd-toc-3",
+                 "oj-note", "modref"}
+EURLEX_C_MARK = re.compile(r"\s*(?:[►▼][A-Z][0-9]*|◄)\s*")  # the consolidation's amendment markers: ►M6 … ◄, ▼B, ▼M1
+EURLEX_C_LETTER = re.compile(r"^(?:[a-z]{1,4}|[ivxlc]+)\)$")
+EURLEX_C_NUMBER = re.compile(r"^[0-9]+\.$")
+EURLEX_C_HEAD = {"title-doc-first", "title-doc-oj-reference", "oj-doc-ti", "oj-hd-date"}
+EURLEX_C_ENACTING = re.compile(r"^(?:tis|prt|cpt|sct|art)_")  # the ELI ids of the enacting terms' subdivisions
+EURLEX_C_ANNEX = re.compile(r"^ANEXO(?: [IVXLC]+)?$")
+EURLEX_C_START = {"title-division-1", "title-article-norm", "oj-ti-section-1", "oj-ti-art"}
+
+
+class _EurLexConsolidated(HTMLParser):
+    """An EU directive in the Publications Office's XHTML: a consolidated version (CONVEX: title-article-norm, norm,
+    grid-list points) or the Official Journal text as adopted (oj-ti-art, oj-normal, points in table cells). The head
+    lines (title, OJ date or reference), then the enacting terms, from the first ELI subdivision (tis_, cpt_, art_ …),
+    or in a version without ELI ids the first heading or article, up to the first annex. A paragraph number (span no-parag «1.») or a point label («a)» in its own cell) opens the
+    next line; a numbered point «1)» inside a paragraph stays in its text as «(1)», so the definitions of a number stay
+    one passage. Amendment markers and footnotes are not text; the ordinal printed as «o» is the «º» of the text."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack, self.lines, self.buf, self.label, self.sup = [], [], [], None, 0
+        self.body = self.done = False
+        self.skip = 0
+
+    def _flush(self):
+        line = EURLEX_C_MARK.sub(" ", "".join(self.buf))
+        line = re.sub(r"[ \t\u00a0\n]+", " ", line).strip()
+        line = re.sub(r"\b([0-9]+)\.o\b", r"\1.º", re.sub(r"\bn\.o\b", "n.º", line))  # the OJ prints the ordinal indicator as a plain «o»
+        self.buf = []
+        if not line:
+            return
+        if self.body and (EURLEX_C_LETTER.match(line) or EURLEX_C_NUMBER.match(line) or re.match(r"^[0-9]+\)$", line)):
+            self.label = f"({line[:-1]})" if re.match(r"^[0-9]+\)$", line) else line  # a label cell (OJ table): it opens the next line
+            return
+        if self.body and EURLEX_C_ANNEX.match(line):
+            self.done = True
+            return
+        if self.body and not self.label:  # a version that prints a numbered point inline («1) …»): part of its paragraph, as «(1)»
+            line = re.sub(r"^([0-9]+)\) ", r"(\1) ", line)
+        if self.label:
+            line, self.label = f"{self.label} {line}", None
+        self.lines.append(line)
+
+    def handle_starttag(self, tag, attrs):
+        if self.done or tag in VOID:
+            if tag == "br" and self.body and not self.done:
+                self.buf.append(" ")
+            return
+        a = dict(attrs)
+        cls, ident = set((a.get("class") or "").split()), a.get("id") or ""
+        skip = bool(cls & EURLEX_C_SKIP) or (tag == "a" and (a.get("href") or "").startswith("#"))
+        self.stack.append((tag, cls, skip))
+        self.skip += skip
+        if tag == "span" and cls & {"superscript", "oj-super"}:
+            self.sup += 1
+        if ident.startswith("anx_") or "title-annex-1" in cls:
+            self._flush()
+            self.done = True
+            return
+        if not self.body and ((tag == "div" and EURLEX_C_ENACTING.match(ident)) or cls & EURLEX_C_START):  # older versions have no ELI ids
+            self._flush()
+            self.body = True
+        if tag in ("p", "td") or (tag == "div" and "inline-element" in cls):
+            self._flush()
+        if tag == "span" and "no-parag" in cls:
+            self._flush()
+
+    def handle_endtag(self, tag):
+        if tag in VOID or not self.stack:
+            return
+        t, cls, skip = self.stack.pop()
+        self.skip -= skip
+        if t == "span" and cls & {"superscript", "oj-super"}:
+            self.sup -= 1
+        if self.done:
+            return
+        if t == "span" and ("no-parag" in cls or self._in_list_cell()):
+            label = re.sub(r"\s+", "", "".join(self.buf))
+            self.buf = []
+            if EURLEX_C_NUMBER.match(label) or EURLEX_C_LETTER.match(label):
+                self.label = label
+            elif re.match(r"^[0-9]+\)$", label):
+                self.label = f"({label[:-1]})"  # a numbered point inside a paragraph is part of its text
+            elif label:
+                self.label = label
+            return
+        if t in ("p", "td") or (t == "div" and "inline-element" in cls):
+            if self.body or (EURLEX_C_HEAD & cls):
+                self._flush()
+            else:
+                self.buf = []
+
+    def _in_list_cell(self):
+        return any(t == "div" and "grid-list-column-1" in c for t, c, _ in self.stack)
+
+    def handle_data(self, data):
+        if self.done or self.skip:
+            return
+        if not self.body and not any((EURLEX_C_HEAD & c) for _, c, _ in self.stack):
+            return
+        self.buf.append("º" if self.sup and data.strip() == "o" else data)
+
+
+def eurlex_consolidated(raw: bytes) -> str:
+    parser = _EurLexConsolidated()
+    parser.feed(raw.decode("utf-8"))
+    parser._flush()
+    if not any(re.match(r"^Artigo [0-9]+\.º$", line) for line in parser.lines):
+        raise ValueError("no article in the enacting terms: not a consolidated text of the Publications Office")
+    return "\n".join(parser.lines) + "\n"
+
+
 EXTRACTORS = {"dr-consolidated-fragments@1": dr_consolidated_fragments, "dr-article-history@1": dr_article_history,
               "dr-article-history@2": dr_article_history_v2, "eurlex-html@1": eurlex_html,
-              "dr-html-blocks@1": dr_html_blocks, "utf-8@1": utf8}
+              "eurlex-consolidated@1": eurlex_consolidated, "dr-html-blocks@1": dr_html_blocks, "utf-8@1": utf8}

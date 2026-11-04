@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art9.1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art9",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "1. O cálculo do valor estimado de um contrato baseia-se no montante total a pagar, sem IVA, estimado pela autoridade/entidade adjudicante. Este cálculo deve ter em consideração o montante total estimado, incluindo eventuais opções e eventuais renovações do contrato.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 15331,
+        "end": 15597
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "1. O cálculo do valor estimado de um contrato baseia-se no montante total a pagar, sem IVA, estimado pela autoridade/entidade adjudicante. Este cálculo deve ter em consideração o montante total estimado, incluindo eventuais opções e eventuais renovações do contrato.\nSempre que a autoridade/entidade adjudicante preveja prémios ou pagamentos a candidatos ou proponentes, tomá-los-á em consideração ao calcular o valor estimado do contrato.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20160101",
+      "offsets": {
+        "start": 15331,
+        "end": 15770
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

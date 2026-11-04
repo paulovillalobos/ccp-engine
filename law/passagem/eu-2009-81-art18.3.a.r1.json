@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art18.3.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art18.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "a) Seja por referência a especificações técnicas definidas no anexo III e, por ordem de preferência:\n— a normas nacionais civis que transponham normas europeias,\n— a homologações técnicas europeias,\n— a especificações técnicas comuns,\n— a normas nacionais civis que transponham normas internacionais,\n— a outras normas internacionais civis,\n— a qualquer outro referencial técnico estabelecido pelos organismos europeus de normalização, ou, caso aquele não exista, a outras normas nacionais civis, a homologações técnicas nacionais ou a especificações técnicas nacionais em matéria de concepção, cálculo e execução de obras, bem como de utilização de materiais,\n— a especificações técnicas civis provenientes da indústria e por esta amplamente reconhecidas, ou\n— às «normas de defesa» nacionais definidas no ponto 3) do anexo III e às especificações relativas ao equipamento de defesa semelhantes a essas normas.\nCada referência deve ser acompanhada da menção «ou equivalente».",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 26881,
+        "end": 27857
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "a) Seja por referência a especificações técnicas definidas no anexo III e, por ordem de preferência:\naespecificaçõestécnicascivisprovenientesdaindústriaeporestaamplamentereconhecidas,ou— às «normas de defesa» nacionais definidas no ponto 3) do anexo III e às especificações relativas ao equipamento de defesa semelhantes a essas normas.\nCada referência deve ser acompanhada da menção «ou equivalente».",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20200101",
+      "offsets": {
+        "start": 26342,
+        "end": 26743
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

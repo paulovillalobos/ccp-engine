@@ -1,0 +1,35 @@
+{
+  "id": "eu-2014-24:art57.1.c",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2014-24",
+  "parent": "eu-2014-24:art57.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2014-04-17",
+      "text": "c) Fraude, na aceção do artigo 1.º da Convenção relativa à Proteção dos Interesses Financeiros das Comunidades Europeias ;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 159029,
+        "end": 159151
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "c) Fraude, na aceção do artigo 1.º da Convenção relativa à Proteção dos Interesses Financeiros das Comunidades Europeias ();",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20160101",
+      "offsets": {
+        "start": 159193,
+        "end": 159317
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

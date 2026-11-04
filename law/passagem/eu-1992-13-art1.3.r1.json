@@ -1,0 +1,47 @@
+{
+  "id": "eu-1992-13:art1.3",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art1",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "3. Os Estados-membros devem garantir que os procedimentos de recurso sejam acessíveis, de acordo com regras que os Estados-membros podem determinar, pelo menos a qualquer pessoa que tenha ou tenha tido interesse em obter um determinado contrato e que tenha sido ou possa vir a ser lesada por uma eventual violação. Os Estados-membros podem, em especial, exigir que a pessoa que pretenda a aplicação de tal procedimento informe previamente a entidade adjudicante da alegada violação e da sua intenção de interpor recurso.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 1272,
+        "end": 1792
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": "2008-01-09",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-09",
+      "text": "3. Os Estados-Membros devem garantir o acesso ao recurso de acordo com regras detalhadas que os Estados-Membros podem estabelecer, a qualquer pessoa que tenha ou tenha tido interesse em obter um determinado contrato e que tenha sido, ou possa vir a ser, lesada por uma eventual violação.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 1674,
+        "end": 1961
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": "2014-04-17",
+      "revoked": false
+    },
+    {
+      "version": "2014-04-17",
+      "text": "3. Os Estados-Membros devem garantir o acesso ao recurso, de acordo com regras detalhadas que os Estados-Membros podem estabelecer, pelo menos a qualquer pessoa que tenha ou tenha tido interesse em obter um determinado contrato e que tenha sido, ou possa vir a ser, lesada por uma eventual violação.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20140417",
+      "offsets": {
+        "start": 1838,
+        "end": 2137
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

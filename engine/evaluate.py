@@ -20,7 +20,7 @@ Inputs
 
 Order (ARQUITECTURA.md §4 layer 6): 1 seletor_regime fixes the regime from the fact it selects by; without that fact every
 other rule is nao_avaliado / facto_ausente. 2 jurisdicao rules whose predicate holds adjust thresholds. 3 simple rules
-(limiar, procedimento_admissivel, prazo_minimo, conteudo_obrigatorio, proibicao); among prazo_minimo or limiar rules of one
+(limiar, procedimento_admissivel, prazo_minimo, prazo_maximo, conteudo_obrigatorio, proibicao); among prazo_minimo, prazo_maximo or limiar rules of one
 field that apply, the most specific gives the verdict (D66). 4 agregada: completeness first (below
 the product threshold -> cobertura_insuficiente), then the aggregate.
 A rule whose conditions do not hold yields no verdict (it does not apply); a rule whose conditions cannot be read yields
@@ -140,7 +140,7 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             result = "cumpre" if rules_mod.holds({"field": "_agg", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_agg": value}) else "nao_cumpre"
             verdicts.append(done(r, result, f"{p['aggregate']['op']}({p['aggregate']['field']})={value} {p['aggregate']['comparator']} {p['aggregate']['value']}", used_for(cond_fields)))
             continue
-        needed = {"limiar": [p["threshold"]["field"]] if "threshold" in p else [], "prazo_minimo": [p.get("deadline_field")], "procedimento_admissivel": ["tipo_procedimento"],
+        needed = {"limiar": [p["threshold"]["field"]] if "threshold" in p else [], "prazo_minimo": [p.get("deadline_field")], "prazo_maximo": [p.get("deadline_field")], "procedimento_admissivel": ["tipo_procedimento"],
                   "proibicao": [c["field"] for c in p.get("forbidden", [])], "conteudo_obrigatorio": []}[t]
         blocked = next((f for f in needed if values.get(f, MISSING) is MISSING or isinstance(values.get(f), Conflict)), None)
         if blocked is not None:
@@ -162,6 +162,13 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             if days >= p["minimum_days"] and p.get("usual_days") and days < p["usual_days"]:  # D62: under the «em regra» days, not under the floor
                 detail += f"; below the usual {p['usual_days']} days the passage sets as a rule"
             verdicts.append(done(r, "cumpre" if days >= p["minimum_days"] else "nao_cumpre", detail, used))
+        elif t == "prazo_maximo":  # D71
+            days = values[p["deadline_field"]]
+            if not isinstance(days, (int, float)):
+                verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
+                continue
+            ok2 = days <= p["maximum_days"]
+            verdicts.append(done(r, "cumpre" if ok2 else "nao_cumpre", f"{p['deadline_field']}={days:g} {'<=' if ok2 else '>'} {p['maximum_days']}", used))
         elif t == "procedimento_admissivel":
             proc = values["tipo_procedimento"]
             verdicts.append(done(r, "cumpre" if proc in p["procedures"] else "nao_cumpre", f"tipo_procedimento={proc} in {p['procedures']}", used))
@@ -192,9 +199,9 @@ def most_specific(applicable, verdicts, na):
     groups = {}
     for r in applicable:
         v = by_rule.get(r["id"])
-        if v is None or v["result"] == "nao_avaliado" or r["type"] not in ("prazo_minimo", "limiar"):
+        if v is None or v["result"] == "nao_avaliado" or r["type"] not in ("prazo_minimo", "prazo_maximo", "limiar"):
             continue
-        key = (r["type"], r["params"]["deadline_field"] if r["type"] == "prazo_minimo" else r["params"]["threshold"]["field"])
+        key = (r["type"], r["params"]["deadline_field"] if r["type"] in ("prazo_minimo", "prazo_maximo") else r["params"]["threshold"]["field"])
         groups.setdefault(key, []).append(r)
     drop, conflict = set(), {}
     for rs in groups.values():

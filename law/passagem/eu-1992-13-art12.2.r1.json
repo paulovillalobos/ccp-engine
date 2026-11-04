@@ -1,0 +1,35 @@
+{
+  "id": "eu-1992-13:art12.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art12",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "2. Os Estados-membros devem enviar anualmente à Comissão, até ao dia 1 de Março, informações sobre o andamento dos processos nacionais de recurso interpostos durante o ano civil anterior. A Comissão determinará, em consulta com o Comité Consultivo para os Contratos de Direito Público, a natureza dessas informações.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 17016,
+        "end": 17332
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": "2008-01-09",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-09",
+      "text": "2. Os Estados-Membros devem comunicar anualmente à Comissão o texto de todas as decisões, acompanhado da respectiva fundamentação, tomadas pelas respectivas instâncias de recurso, nos termos do n.º 3 do artigo 2.º-D.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 24793,
+        "end": 25009
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art45.3",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art45",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "3. Nos concursos limitados e nos procedimentos por negociação com prévia publicação de anúncio de concurso, aplicam-se as seguintes disposições:\na) O prazo de recepção dos pedidos de participação, em resposta a um anúncio publicado nos termos da alínea c) do n.º 1 do artigo 42.º ou em resposta a um convite das entidades adjudicantes nos termos do n.º 5 do artigo 47.º, deve ser fixado, regra geral, num mínimo de 37 dias a contar da data em que o anúncio ou o convite tiverem sido enviados, não podendo nunca ser inferior a 22 dias, se o anúncio for enviado por outros meios que não os meios electrónicos ou o fax, ou a 15 dias, se o anúncio tiver sido enviado por esses meios;\nb) O prazo de recepção das propostas pode ser fixado de comum acordo entre a entidade adjudicante e os candidatos seleccionados, desde que todos os candidatos disponham de um prazo idêntico para preparar e apresentar as suas propostas;\nc) Se for impossível chegar a acordo sobre o prazo de recepção das propostas, a entidade adjudicante fixará, regra geral, um prazo de 24 dias no mínimo, e, em todo o caso, nunca inferior a 10 dias a contar da data do convite para apresentação de propostas.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 76490,
+        "end": 77662
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

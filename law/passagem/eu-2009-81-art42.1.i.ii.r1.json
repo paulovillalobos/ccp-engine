@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art42.1.i.ii",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art42.1.i",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "ii) Certificados emitidos por institutos ou serviços oficiais de controlo da qualidade com competência reconhecida, que atestem a conformidade dos produtos, claramente identificada por referência a especificações ou normas.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 98039,
+        "end": 98262
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "ii) Lista dos principais fornecimentos ou serviços efectuados, regra geral, durante os cinco últimos anos, com indicação dos montantes, datas e destinatários, públicos ou privados. Os fornecimentos e as prestações de serviços serão provados:\nquandoodestinatáriotiversidoumadquirenteprivado,pordeclaraçãoreconhecidadoadquirenteou,nasuafalta,porsimplesdeclaraçãodooperadoreconómico.b) Indicação dos técnicos ou dos serviços técnicos envolvidos, integrados ou não na empresa do operador económico, especialmente dos responsáveis pelo controlo da qualidade e, sempre que se trate de contratos de empreitada, dos técnicos de que o empreiteiro poderá dispor para executar o trabalho;",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20200101",
+      "offsets": {
+        "start": 93183,
+        "end": 93860
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

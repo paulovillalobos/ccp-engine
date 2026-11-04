@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art33.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art33",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2. Nos concursos limitados, nos procedimentos por negociação com publicação de anúncio de concurso e nos casos de diálogo concorrencial, o prazo mínimo para recepção dos pedidos de participação é de 37 dias a contar da data de envio do anúncio de concurso.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 67542,
+        "end": 67798
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "2. Nos concursos limitados, nos procedimentos por negociação com publicação de anúncio de concurso e nos casos de diálogo concorrencial, o prazo mínimo para recepção dos pedidos de participação é de 37 dias a contar da data de envio do anúncio de concurso.\nNos concursos limitados, o prazo mínimo para recepção das propostas é de 40 dias a contar da data de envio do convite.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20160101",
+      "offsets": {
+        "start": 67431,
+        "end": 67806
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

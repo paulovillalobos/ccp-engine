@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-18:art63.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-18",
+  "parent": "eu-2004-18:art63",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-04-30",
+      "text": "2. Não são consideradas terceiros as empresas que se tenham agrupado para obter a concessão, nem as empresas a elas associadas.\nPor «empresa associada» entende-se qualquer empresa em que o concessionário possa exercer, directa ou indirectamente, uma influência dominante, qualquer empresa que possa exercer uma influência dominante sobre o concessionário ou que, tal como o concessionário, esteja sujeita à influência dominante de outra empresa em virtude da propriedade, da participação financeira ou das regras que a rejam. Presume-se a existência de influência dominante quando, directa ou indirectamente, em relação a outra, uma empresa:\na) Detenha uma participação maioritária no capital subscrito da empresa; ou\nb) Disponha da maioria dos votos correspondentes às acções emitidas pela empresa; ou\nc) Possa designar mais de metade dos membros do órgão de administração, de direcção ou de fiscalização da empresa.\nA lista exaustiva dessas empresas deve ser apensa à candidatura à concessão. Essa lista deverá ser actualizada em função das posteriores alterações dos vínculos existentes entre as empresas.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-18-20040430",
+      "offsets": {
+        "start": 116216,
+        "end": 117324
+      },
+      "valid_from": "2004-04-30",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 91.º\nRevogações\nA Diretiva 2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs referências à diretiva revogada devem entender-se como referências à presente diretiva e devem ser lidas de acordo com a tabela de correspondência constante do Anexo XV.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 238626,
+        "end": 238899
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

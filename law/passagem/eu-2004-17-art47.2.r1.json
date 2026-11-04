@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art47.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art47",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "2. Se a entidade que disponibilizar o caderno de encargos e/ou os documentos complementares não for a entidade adjudicante responsável pelo processo de adjudicação, o convite deve precisar o endereço do serviço em que esse caderno de encargos e esses documentos podem ser solicitados e, se for caso disso, a data-limite para os pedir, bem como o montante e as formas de pagamento da quantia a desembolsar para a obtenção dos documentos em causa. Os serviços competentes enviarão essa documentação aos operadores económicos sem demora após recepção do seu pedido.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 82995,
+        "end": 83557
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

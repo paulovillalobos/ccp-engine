@@ -125,6 +125,16 @@ class Store:
                     self.errors.append(("I09", f"{ident} revision {r['revision']}: must name supersedes = {r['revision'] - 1}"))
 
     # ---- reading ------------------------------------------------------------------------------------------------
+    def as_recorded(self, recorded_by, types=("norma", "passagem", "vigencia")):
+        """D70: a view of this store with only the revisions of `types` recorded at or before `recorded_by` (the law as
+        the store held it then); every other type, the log and the bytes are this store's. Nothing is copied to disk."""
+        view = Store(self.roots)
+        view.__dict__.update({k: v for k, v in self.__dict__.items() if k not in ("objects", "by_id")})
+        later = {id(o) for t in types for o in self.objects.get(t, []) if (o.get("recorded_at") or "") > recorded_by}
+        view.objects = {t: [o for o in objs if id(o) not in later] for t, objs in self.objects.items()}
+        view.by_id = {k: kept for k, revs in self.by_id.items() if (kept := [o for o in revs if id(o) not in later])}
+        return view
+
     def revisions(self, ident):
         return sorted(self.by_id.get(ident, []), key=lambda r: r["revision"])
 

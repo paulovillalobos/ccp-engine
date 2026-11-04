@@ -799,20 +799,23 @@ def check_store(roots):
     check_v3_readings(store, out)
     check_seal(store, out)
     for tdir, held in training_dirs(roots):
-        check_training(store, out, tdir, held)
-        check_training_v2(store, out, tdir, held)
-        check_training_v2(store, out, tdir, held, sub="data-v3", module="make_regimes")
-        check_training_v2(store, out, tdir, held, sub="data-v4", module="make_question_conditions")
-        check_training_v2(store, out, tdir, held, sub="data-v5", module="make_user_facts")
-        check_training_v2(store, out, tdir, held, sub="data-v6", module="make_written")
-        check_training_v2(store, out, tdir, held, sub="data-v7", module="make_written_v7")
-        check_training_v2(store, out, tdir, held, sub="data-v8", module="make_written_v8")
-        check_training_v2(store, out, tdir, held, sub="data-v9", module="make_written_v9")
-        check_training_v2(store, out, tdir, held, sub="data-v10", module="make_rule_readings")
-        check_training_v2(store, out, tdir, held, sub="data-v11", module="make_rule_readings_v11")
-        check_training_v2(store, out, tdir, held, sub="data-v12", module="make_rule_readings_v12")
-        check_training_v2(store, out, tdir, held, sub="data-v13", module="make_rule_readings_v13")
-        check_training_v2(store, out, tdir, held, sub="data-v14", module="make_rule_readings_v14")
+        sys.path.insert(0, str(ROOT / "tools"))
+        import make_training  # noqa: E402
+        tstore = store.as_recorded(make_training.LAW_RECORDED_BY)  # D70: the law the training data was generated from
+        check_training(tstore, out, tdir, held)
+        check_training_v2(tstore, out, tdir, held)
+        check_training_v2(tstore, out, tdir, held, sub="data-v3", module="make_regimes")
+        check_training_v2(tstore, out, tdir, held, sub="data-v4", module="make_question_conditions")
+        check_training_v2(tstore, out, tdir, held, sub="data-v5", module="make_user_facts")
+        check_training_v2(tstore, out, tdir, held, sub="data-v6", module="make_written")
+        check_training_v2(tstore, out, tdir, held, sub="data-v7", module="make_written_v7")
+        check_training_v2(tstore, out, tdir, held, sub="data-v8", module="make_written_v8")
+        check_training_v2(tstore, out, tdir, held, sub="data-v9", module="make_written_v9")
+        check_training_v2(tstore, out, tdir, held, sub="data-v10", module="make_rule_readings")
+        check_training_v2(tstore, out, tdir, held, sub="data-v11", module="make_rule_readings_v11")
+        check_training_v2(tstore, out, tdir, held, sub="data-v12", module="make_rule_readings_v12")
+        check_training_v2(tstore, out, tdir, held, sub="data-v13", module="make_rule_readings_v13")
+        check_training_v2(tstore, out, tdir, held, sub="data-v14", module="make_rule_readings_v14")
     return store, out
 
 

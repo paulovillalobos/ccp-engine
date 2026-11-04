@@ -1,0 +1,95 @@
+{
+  "id": "eu-2014-24:art4.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2014-24",
+  "parent": "eu-2014-24:art4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2014-04-17",
+      "text": "a) 5 186 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 13083,
+        "end": 13150
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "a) 5 225 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20160101",
+      "offsets": {
+        "start": 13218,
+        "end": 13285
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) 5 548 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20180101",
+      "offsets": {
+        "start": 13218,
+        "end": 13285
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "a) 5 350 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20200101",
+      "offsets": {
+        "start": 13218,
+        "end": 13285
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": "2022-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2022-01-01",
+      "text": "a) 5 382 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20220101",
+      "offsets": {
+        "start": 13218,
+        "end": 13285
+      },
+      "valid_from": "2022-01-01",
+      "valid_to": "2024-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2024-01-01",
+      "text": "a) 5 538 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20240101",
+      "offsets": {
+        "start": 13218,
+        "end": 13285
+      },
+      "valid_from": "2024-01-01",
+      "valid_to": "2026-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-01-01",
+      "text": "a) 5 404 000 EUR para os contratos de empreitada de obras públicas;",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20260101",
+      "offsets": {
+        "start": 13218,
+        "end": 13285
+      },
+      "valid_from": "2026-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

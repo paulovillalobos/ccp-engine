@@ -1,0 +1,47 @@
+{
+  "id": "eu-2004-17:art69.1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art69",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "1. A Comissão procederá à verificação dos limiares estabelecidos no artigo 16.º, de dois em dois anos, a partir de 30 de Abril de 2004, e revê-los-á, se necessário, no que diz respeito ao segundo parágrafo, nos termos do n.º 2 do artigo 68.º\nO cálculo do valor desses limiares basear-se-á no valor médio diário do euro, expresso em direitos de saque especiais, durante o período de 24 meses que termina no último dia do mês de Agosto anterior à revisão que produzirá efeitos em 1 de Janeiro. Se necessário, o valor dos limiares assim revisto será arredondado por defeito para o milhar de euros mais próximo, a fim de assegurar o respeito dos limiares em vigor previstos pelo Acordo, e que são expressos em direitos de saque especiais.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 128046,
+        "end": 128780
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2009-08-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-08-07",
+      "text": "1. A Comissão procederá à verificação dos limiares estabelecidos no artigo 16.º, de dois em dois anos, a partir de 30 de Abril de 2004, e revê-los-á, se necessário, no que diz respeito ao segundo parágrafo. Estas medidas, que têm por objecto alterar elementos não essenciais da presente directiva, são aprovadas pelo procedimento de regulamentação com controlo a que se refere o n.º 4 do artigo 68.º. Por imperativos de urgência, a Comissão pode recorrer ao procedimento de urgência referido no n.º 5 do artigo 68.º.\nO cálculo do valor desses limiares basear-se-á no valor médio diário do euro, expresso em direitos de saque especiais, durante o período de 24 meses que termina no último dia do mês de Agosto anterior à revisão que produzirá efeitos em 1 de Janeiro. Se necessário, o valor dos limiares assim revisto será arredondado por defeito para o milhar de euros mais próximo, a fim de assegurar o respeito dos limiares em vigor previstos pelo Acordo, e que são expressos em direitos de saque especiais.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20090807",
+      "offsets": {
+        "start": 128651,
+        "end": 129660
+      },
+      "valid_from": "2009-08-07",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

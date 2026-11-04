@@ -1,0 +1,35 @@
+{
+  "id": "eu-1992-13:art8.3.c",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art8.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "c) Uma notificação indicando que o procedimento de celebração do contrato em causa foi suspenso, quer por iniciativa da entidade adjudicante, por sua própria iniciativa, quer no âmbito do exercício dos poderes previstos no n.º 1, alínea a), do artigo 2.º",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 11253,
+        "end": 11507
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": "2008-01-09",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-09",
+      "text": "c) Uma notificação indicando a suspensão do procedimento de adjudicação do contrato em causa, quer por iniciativa da entidade adjudicante, quer no âmbito do exercício dos poderes previstos na alínea a) do n.º 1 do artigo 2.º",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 23471,
+        "end": 23695
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

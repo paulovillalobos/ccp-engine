@@ -1,0 +1,23 @@
+{
+  "id": "eu-1992-13:art13.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art13",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "2. Os Estados-membros porão em vigor as medidas a que se refere o n.º 1 nas mesmas datas que as previstas na Directiva 90/531/CEE.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 18197,
+        "end": 18327
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

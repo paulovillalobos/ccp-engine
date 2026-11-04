@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-18:art24.4",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-18",
+  "parent": "eu-2004-18:art24",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2004-04-30",
+      "text": "4. As entidades adjudicantes só tomarão em consideração as variantes que satisfaçam os requisitos mínimos por elas exigidos.\nNos processos de adjudicação de contratos públicos de fornecimento ou de serviços, as entidades adjudicantes que tenham autorizado variantes não podem recusar uma variante pelo simples facto de esta poder conduzir, caso seja escolhida, a um contrato de serviços em vez de um contrato público de fornecimento, ou a um contrato de fornecimento em vez de um contrato público de serviços.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-18-20040430",
+      "offsets": {
+        "start": 35021,
+        "end": 35530
+      },
+      "valid_from": "2004-04-30",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 91.º\nRevogações\nA Diretiva 2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs referências à diretiva revogada devem entender-se como referências à presente diretiva e devem ser lidas de acordo com a tabela de correspondência constante do Anexo XV.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 238626,
+        "end": 238899
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

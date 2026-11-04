@@ -1,0 +1,107 @@
+{
+  "id": "eu-2004-17:art16.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art16",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "a) 473 000 euros , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 26599,
+        "end": 26666
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2006-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2006-01-01",
+      "text": "a) 422 000 euros , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20060101",
+      "offsets": {
+        "start": 26599,
+        "end": 26666
+      },
+      "valid_from": "2006-01-01",
+      "valid_to": "2008-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-01",
+      "text": "a) 412 000 EUR , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20080101",
+      "offsets": {
+        "start": 26599,
+        "end": 26664
+      },
+      "valid_from": "2008-01-01",
+      "valid_to": "2010-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2010-01-01",
+      "text": "a) 387 000 EUR , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20100101",
+      "offsets": {
+        "start": 26603,
+        "end": 26668
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2012-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2012-01-01",
+      "text": "a) 400 000 EUR , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20120101",
+      "offsets": {
+        "start": 26603,
+        "end": 26668
+      },
+      "valid_from": "2012-01-01",
+      "valid_to": "2014-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2014-01-01",
+      "text": "a) 414 000 EUR , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20140101",
+      "offsets": {
+        "start": 26603,
+        "end": 26668
+      },
+      "valid_from": "2014-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "a) 418 000 EUR , para os contratos de fornecimento e de serviços;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20160101",
+      "offsets": {
+        "start": 26606,
+        "end": 26671
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

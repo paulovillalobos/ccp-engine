@@ -1,0 +1,23 @@
+{
+  "id": "eu-2009-81:art33.2-dup2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art33",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2. Nos concursos limitados, o prazo mínimo para recepção das propostas é de 40 dias a contar da data de envio do convite.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 67799,
+        "end": 67920
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    }
+  ]
+}

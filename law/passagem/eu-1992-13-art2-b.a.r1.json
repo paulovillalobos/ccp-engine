@@ -1,0 +1,35 @@
+{
+  "id": "eu-1992-13:art2-b.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art2-b",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-01-09",
+      "text": "a) Se a Directiva 2004/17/CE não exigir a publicação prévia do anúncio de concurso no Jornal Oficial da União Europeia;",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 11951,
+        "end": 12070
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": "2014-04-17",
+      "revoked": false
+    },
+    {
+      "version": "2014-04-17",
+      "text": "a) Se a Diretiva 2014/25/UE ou, se for caso disso, a Diretiva 2014/23/UE não exigirem a publicação prévia de um anúncio de concurso no Jornal Oficial da União Europeia;",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20140417",
+      "offsets": {
+        "start": 12363,
+        "end": 12531
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

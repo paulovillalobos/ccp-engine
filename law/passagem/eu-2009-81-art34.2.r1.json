@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art34.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art34",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2. O convite aos candidatos compreenderá:\n— um exemplar do caderno de encargos ou da memória descritiva e de todos os documentos complementares, ou\n— uma referência ao acesso aos outros documentos indicados no primeiro travessão, quando estes sejam directamente disponibilizados por meios electrónicos em conformidade com o n.º 5 do artigo 33.º.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 71284,
+        "end": 71629
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "2. O convite aos candidatos compreenderá:\numexemplardocadernodeencargosoudamemóriadescritivaedetodososdocumentoscomplementares,ou— uma referência ao acesso aos outros documentos indicados no primeiro travessão, quando estes sejam directamente disponibilizados por meios electrónicos em conformidade com o n.º 5 do artigo 33.º.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20200101",
+      "offsets": {
+        "start": 69589,
+        "end": 69915
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

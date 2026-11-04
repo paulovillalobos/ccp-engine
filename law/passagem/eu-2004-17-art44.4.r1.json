@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art44.4",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art44",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "4. Os anúncios de concurso serão publicados na íntegra numa das línguas oficiais da Comunidade, escolhida pela entidade adjudicante, fazendo fé apenas o texto original publicado nessa língua. Será publicado um resumo dos elementos relevantes de cada anúncio nas outras línguas oficiais.\nAs despesas de publicação dos anúncios pela Comissão serão suportadas pela Comunidade.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 74505,
+        "end": 74878
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

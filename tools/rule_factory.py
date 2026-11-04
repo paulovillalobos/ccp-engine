@@ -48,8 +48,8 @@ from engine.governance import Log  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@23"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of)
+VERSION = "ccp-rule-factory-0.8"
+TOOL = "ferramenta:rule-factory@27"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -121,6 +121,9 @@ PICK11 = {"ccp:art101": ("prazo_minimo", "reservado"), "ccp:art102.2": ("prazo_m
           "ccp:art90.1": ("prazo_minimo", "reservado"), "ccp:art93.2": ("prazo_minimo", "texto_visto")}
 FROUNDS[11] = {**{k: v for k, v in FROUNDS[9].items() if k not in ("only", "carry_b")}, "round": "fabrica-11", "dir": rr.READINGS / "fabrica11",
                "decision": "D69", "proposer": ("leitor:a16", "leitor-a16.json"), "pick": PICK11}
+PICK12_FILE = rr.READINGS / "fabrica12" / "pick.json"
+FROUNDS[12] = {**{k: v for k, v in FROUNDS[11].items() if k != "pick"}, "round": "fabrica-12", "dir": rr.READINGS / "fabrica12", "decision": "D72", "v3_version": v3.V05,
+               "pick": [tuple(x) for x in json.loads(PICK12_FILE.read_text(encoding="utf-8"))["pick"]] if PICK12_FILE.exists() else []}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -134,8 +137,11 @@ QUESTION = {
                     "de quando? Dê as condições, os dias, o campo do prazo e de onde se conta.",
     "limiar": "Que limiar de valor fixa a passagem {pid}: para que procedimento e tipo de contrato, com que valor em euros e que "
               "comparação? Dê as condições e o limiar.",
+    "prazo_maximo": "Que prazo máximo fixa a passagem {pid}: em que procedimento e condições, quantos dias, para que prazo e a contar "
+                    "de quando? Dê as condições, os dias, o campo do prazo e de onde se conta.",
 }
-TITLE = {"prazo_minimo": "Prazo mínimo fixado em {pid} (fábrica de regras, ronda {n})", "limiar": "Limiar de valor fixado em {pid} (fábrica de regras, ronda {n})"}
+TITLE = {"prazo_minimo": "Prazo mínimo fixado em {pid} (fábrica de regras, ronda {n})", "limiar": "Limiar de valor fixado em {pid} (fábrica de regras, ronda {n})",
+         "prazo_maximo": "Prazo máximo fixado em {pid} (fábrica de regras, ronda {n})"}
 # D59: what the rule vocabulary cannot hold. Words of the passage, or of its article's heading, that name a deadline, an
 # anchor, a procedure or a circumstance the schema has no value for. Two readers forced onto the nearest value can replicate
 # each other and both be wrong (round 1: 4 of 4 settled readings were). Checked by code from the text; never by a model.
@@ -167,8 +173,10 @@ def targets(store, n=1):
     """Round 1: one target per leaf passage that states a minimum of days or a euro limit, outside the articles read by hand.
     Round n > 1: round 1's targets with a gap that round n's vocabulary closes; one with a gap left open is read, reported and not
     recorded."""
-    if n > 1 and "pick" in FROUNDS[n]:  # D69: passages round 1's patterns do not find, drawn once and kept in the round
-        return [target_of(store, pid, type_, n) for pid, (type_, _) in sorted(FROUNDS[n]["pick"].items())]
+    if n > 1 and "pick" in FROUNDS[n] and isinstance(FROUNDS[n]["pick"], dict):  # D69: passages round 1's patterns do not find, drawn once and kept in the round
+        return [target_of(store, pid, type_, n, stratum=k) for pid, (type_, k) in sorted(FROUNDS[n]["pick"].items())]
+    if n > 1 and "pick" in FROUNDS[n]:  # D72: [passage, date, type, stratum], drawn once by draw12() and kept in the round's pick.json
+        return [target_of(store, pid, type_, n, date=d, stratum=k) for pid, d, type_, k in FROUNDS[n]["pick"]]
     if n > 1 and "only" in FROUNDS[n]:
         return [{**t, "title": TITLE[t["type"]].format(pid=t["source_passage"], n=n)} for t in targets(store) if t["source_passage"] in FROUNDS[n]["only"]]
     if n > 1:
@@ -194,16 +202,96 @@ def targets(store, n=1):
     return out
 
 
-def target_of(store, pid, type_, n=1):
+# D72: round 12 reads every real passage the store holds that states days or euros and that no round asked the same question
+# of: the CCP in force, the CCP's earlier versions whose numbers differ from today's, and the EU procurement directives (D70).
+DAYS12 = re.compile(r"\b(\d+|um|dois|três|quatro|cinco|seis|sete|oito|nove|dez|quinze|vinte|trinta|sessenta|noventa)\s+dias\b", re.I)
+EUROS12 = re.compile(r"€|euros|\bEUR\b")
+MINIMUM12 = re.compile(r"m[ií]nim[oa]s?\b|inferior(?:es)? a|pelo menos|anteced[êe]ncia", re.I)
+DIRECTIVES = ("eu-1989-665", "eu-1992-13", "eu-2004-17", "eu-2004-18", "eu-2009-81", "eu-2014-23", "eu-2014-24", "eu-2014-25")
+
+
+def type12(text):
+    """The question a passage is asked: a deadline when it states days (a minimum when its words say one, else a maximum),
+    a limit when it states only euros."""
+    if DAYS12.search(text):
+        return "prazo_minimo" if MINIMUM12.search(text) else "prazo_maximo"
+    return "limiar"
+
+
+def draw12(store):
+    """[passage, date, type, stratum], in id and date order. Dates: DATE for what is in force on it; for a CCP version no longer
+    in force, the day it began (one target per earlier version whose numbers differ from today's); for a repealed directive,
+    the day its last version began. A passage is kept when no passage below it states days or euros on the same date. Left
+    out: a CCP passage in force whose rule id any round already asked (the same passage and type), the articles read by
+    hand (in force), a revoked text, a passage whose prompt would not print a line its reading may quote (round 11's 104.º). Stratum (TRAIN-HELD-OUT's rule, frozen 2026-10-25): reservado when the article is in its
+    list, or for an act that list did not yet hold, when int(sha256(article id), 16) % 5 == 0; else pratica."""
+    law = v3.Law(store)
+    reserved = set(json.loads((ROOT / "law/TRAIN-HELD-OUT.json").read_text(encoding="utf-8"))["reserved_articles"])
+    asked = {t["rule"] for m in FROUNDS if m < 12 for t in targets(store, m)}
+    nums = lambda t: re.findall(r"\d[\d .]*\d|\d", t or "")  # noqa: E731
+    hits = {}
+    for p in store.objects["passagem"]:
+        pid = p["id"]
+        ns = pid.split(":", 1)[0]
+        if not (pid.startswith("ccp:art") or (ns in DIRECTIVES and ":art" in pid)) or "-dup" in pid:  # a -dup id is a number the structure saw twice
+            continue
+        cur = store.current(pid)
+        if cur.get("stale"):
+            continue
+        dates = []
+        now = rr.version_at(cur, DATE)
+        now = None if now and now.get("revoked") else now  # a repealed directive or a revoked passage has no text in force
+        if now:
+            dates.append(DATE)
+        live = [v for v in cur["versions"] if not v.get("revoked") and v["valid_to"] and v["valid_to"] <= DATE]
+        if ns == "ccp":
+            now_nums = nums(law.own(pid, DATE)) if now else None
+            dates += [v["valid_from"] for v in live if nums(law.own(pid, v["valid_from"])) != now_nums]
+        elif not now and live:
+            dates.append(max(v["valid_from"] for v in live))
+        for d in dates:
+            text = law.own(pid, d) or ""
+            if DAYS12.search(text) or EUROS12.search(text):
+                hits.setdefault(d, set()).add(pid)
+    out = []
+    for d, pids in hits.items():
+        for pid in pids:
+            if any(o != pid and o.startswith(pid + ".") for o in pids):
+                continue
+            if d == DATE and pid.startswith("ccp:") and pid.split(".")[0] in HAND_READ:
+                continue
+            type_ = type12(law.own(pid, d))
+            if target_of(store, pid, type_, 12, date=d)["rule"] in asked:
+                continue
+            ctx = v3.context(law, pid, d)  # verify V3: a prompt must print every line its reading may quote (a revoked «b) (Revogada.)» is not printed)
+            shown = v3.norm(v3.render(ctx, type_, v3.V05))
+            if any(line.strip() and v3.norm(line) not in shown for text in ctx["allowed"].values() for line in (text or "").split("\n")):
+                continue
+            art = law.article_of(pid) or pid
+            k = "reservado" if art in reserved or (not pid.startswith("ccp:") and int(hashlib.sha256(art.encode()).hexdigest(), 16) % 5 == 0) else "pratica"
+            out.append([pid, d, type_, k])
+    return sorted(out, key=lambda x: (x[0].split(":")[0], v3.Law.key(x[0]), x[1]))
+
+
+def target_of(store, pid, type_, n=1, date=None, stratum=None):
+    """A round-1-style target for any passage. D72: of any act the store holds (its norma and jurisdiction), and read at
+    `date` when it is not DATE (a CCP version no longer in force, a repealed directive): the rule id then ends in that date."""
+    date = date or DATE
     article = pid.split(".")[0]
     parts = sorted({q["id"] for q in store.objects["passagem"] if q["id"] == article or q["id"].startswith(article + ".")}
-                   - {q["id"] for q in store.objects["passagem"] if not rr.version_at(store.current(q["id"]), DATE)})
+                   - {q["id"] for q in store.objects["passagem"] if not rr.version_at(store.current(q["id"]), date)})
     cands = [article] + [q for q in parts if q != article][:13]
     if pid not in cands:
         cands.append(pid)
-    return {"rule": f"regra:ccp:auto-{type_.replace('_', '-')}-{slug_of(pid)}@v1", "type": type_, "norma": "norma:ccp",
-            "jurisdiction": "PT", "date": DATE, "title": TITLE[type_].format(pid=pid, n=n), "candidates": cands,
-            "question": QUESTION[type_].format(pid=pid), "source_passage": pid}
+    ns, norma = pid.split(":", 1)[0], store.current(pid)["norma"]
+    when = "" if date == DATE else f"-v{date.replace('-', '')}"
+    title = TITLE[type_].format(pid=pid, n=n) + ("" if date == DATE else f", versão de {date}")
+    t = {"rule": f"regra:{ns}:auto-{type_.replace('_', '-')}-{slug_of(pid)}{when}@v1", "type": type_, "norma": norma,
+         "jurisdiction": "UE" if ns.startswith("eu-") else ("PT-AC" if ns.endswith("-a") and ns.startswith("dlr-") else "PT-MA" if ns.endswith("-m") and ns.startswith("dlr-") else "PT"),
+         "date": date, "title": title, "candidates": cands, "question": QUESTION[type_].format(pid=pid), "source_passage": pid}
+    if stratum:
+        t["stratum"] = stratum
+    return t
 
 
 def cmd_prompts(store, n=1):
@@ -219,7 +307,8 @@ def cmd_prompts(store, n=1):
             src = FROUNDS[R["carry_b"]]["dir"] / rr.slug(t["rule"])
             body = json.loads((src / "prompt.json").read_text(encoding="utf-8"))
             ctx = v3.context(law, t["source_passage"], t["date"])
-            if (body["prompt"], body["schema"], body["context"]) == (v3.render(ctx, t["type"]), v3.schema(ctx, t["type"]), v3.context_record(ctx)):
+            ver = body.get("protocol_version")
+            if (body["prompt"], body["schema"], body["context"]) == (v3.render(ctx, t["type"], ver), v3.schema(ctx, t["type"], ver), v3.context_record(ctx)):
                 (d / "prompt.json").write_text(json.dumps({**body, "round": R["round"]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
                 if (src / "leitor-b.json").exists():
                     (d / "leitor-b.json").write_bytes((src / "leitor-b.json").read_bytes())
@@ -228,9 +317,10 @@ def cmd_prompts(store, n=1):
             print(f"{t['rule']}: the prompt is not round {R['carry_b']}'s (protocol {v3.VERSION}); leitor:b answers it again")
         if R.get("v3"):  # D66: the context is kept beside the prompt, so the checker reads an answer against the text its reader saw
             ctx = v3.context(law, t["source_passage"], t["date"])
-            body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": sorted(ctx["roles"]), "prompt": v3.render(ctx, t["type"]),
-                    "schema": v3.schema(ctx, t["type"]), "round": R["round"], "source_passage": t["source_passage"], "protocol": "v3",
-                    "protocol_version": v3.VERSION, "context": v3.context_record(ctx)}
+            ver = R.get("v3_version", v3.VERSION)  # D71: a round names the protocol it renders with; 0.4 for rounds 9-11
+            body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": sorted(ctx["roles"]), "prompt": v3.render(ctx, t["type"], ver),
+                    "schema": v3.schema(ctx, t["type"], ver), "round": R["round"], "source_passage": t["source_passage"], "protocol": "v3",
+                    "protocol_version": ver, "context": v3.context_record(ctx)}
         else:
             body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": t["candidates"], "prompt": rr.prompt_text(store, t, R["rnd"]),
                     "schema": rr.schema_for(t, R["rnd"]), "round": R["round"], "source_passage": t["source_passage"]}
@@ -338,7 +428,7 @@ def cmd_record_v3(n):
         A, ea = checked(ra, ctx, rtype, body.get("protocol_version"))
         B, eb = checked(rb, ctx, rtype, body.get("protocol_version"))
         row = {"rule": t["rule"], "type": rtype, "source": t["source_passage"], "a": A, "b": B, "a_errors": ea, "b_errors": eb, "state": None,
-               "exact": v3.replicate(A, B) if not ea and not eb else None}
+               "exact": v3.replicate(A, B) if not ea and not eb else None, "stratum": t.get("stratum")}
         rows.append(row)
         if ea:
             row["state"] = f"sem leitura válida de {proposer}"
@@ -436,13 +526,13 @@ def write_report_v3(rows, n):
     R = FROUNDS[n]
     proposer = R["proposer"][0]
     L = [f"# FÁBRICA DE REGRAS — ronda {n} (DECISIONS {R['decision']})", "",
-         f"Gerado por tools/rule_factory.py ({VERSION}) com o protocolo de leitura v3 (tools/read_rules_v3.py, {v3.VERSION}). " + INTRO[n][0] +
+         f"Gerado por tools/rule_factory.py ({VERSION}) com o protocolo de leitura v3 (tools/read_rules_v3.py, {R.get('v3_version', v3.VERSION)}). " + INTRO[n][0] +
          f" Propõe {proposer} (AMALIA + adaptador {ADAPTER_OF.get(proposer, 'v7')}), leitor:b revê às cegas.", "", INTRO[n][1], "",
          "| regra | passagem | estado | replica | verificador: leitor A | verificador: leitor B |", "|---|---|---|---|---|---|"]
     if "pick" in R:  # D69: the exam by stratum, before the rows
         S = ["| grupo | alvos | leitor A válido | leitor B válido | assentes | regras | «não tipável» |", "|---|---|---|---|---|---|---|"]
-        for g in sorted({k for _, k in R["pick"].values()}) + ["todos"]:
-            rs = [r for r in rows if g == "todos" or R["pick"][r["source"]][1] == g]
+        for g in sorted({r["stratum"] for r in rows}) + ["todos"]:
+            rs = [r for r in rows if g == "todos" or r["stratum"] == g]
             st = [r for r in rs if r["state"] == "settled"]
             S.append(f"| {g} | {len(rs)} | {sum(not r['a_errors'] for r in rs)} | {sum(not r['b_errors'] for r in rs)} | {len(st)} | "
                      f"{sum(not (r['a'] or {}).get('nao_tipavel') for r in st)} | {sum(bool((r['a'] or {}).get('nao_tipavel')) for r in st)} |")
@@ -640,6 +730,12 @@ INTRO = {
          "código (adaptador v14). Alvos: os 9 da ronda 9 ainda abertos, que nenhum exemplo de treino mostra.",
          "Os prompts são os da ronda 9, byte a byte; as respostas de leitor:b são as da ronda 9. Um programa confirma cada palavra "
          "citada; a leitura que falha não fica registada."],
+    12: ["D72: toda a lei real que o depósito tem e que diz dias ou euros, ainda não perguntada: o CCP em vigor, as versões anteriores "
+         "do CCP cujos números diferem dos de hoje, e as diretivas da União sobre contratação pública (D70). Protocolo 0.5: o tipo "
+         "prazo_maximo e os nomes de procedimento das diretivas (D71). Adaptador v14; grupo reservado (exame) pela regra do "
+         "TRAIN-HELD-OUT, o resto é prática.",
+         "Uma passagem é lida na data em que o texto estava em vigor. Um programa confirma cada palavra citada; a leitura que falha "
+         "não fica registada; o «não tipável» com o mesmo motivo também assenta."],
     11: ["D69: um exame real maior. Alvos: 60 passagens do CCP em vigor que dizem dias ou euros e que nenhuma ronda leu, tiradas uma "
          "vez: as 28 de artigos reservados que nenhum exemplo de treino mostra (reservado) e 32 das outras pelo sha256 do id "
          "(texto_visto: outras tarefas mostram o texto, nenhuma leitura de regra o faz). Adaptador v14.",
@@ -672,7 +768,7 @@ def write_report(rows, n=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw", "draw"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
     ap.add_argument("--rule"); ap.add_argument("--product-rule")
     a = ap.parse_args()
     if a.cmd in ("record", "recheck", "withdraw"):
@@ -680,6 +776,14 @@ def main():
     if a.cmd == "withdraw":
         return cmd_withdraw(a.rule, a.product_rule)
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    if a.cmd == "draw":  # D72: round 12's targets, drawn once and kept before either family reads
+        if a.round != 12 or PICK12_FILE.exists():
+            raise SystemExit("draw is for round 12, once: pick.json is kept as drawn")
+        pick = draw12(Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load())
+        PICK12_FILE.parent.mkdir(parents=True, exist_ok=True)
+        PICK12_FILE.write_text(json.dumps({"tool": VERSION, "decision": "D72", "drawn_at": now_utc(), "pick": pick}, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
+        print(f"{len(pick)} targets in {PICK12_FILE}")
+        return
     if a.cmd == "targets":
         for t in targets(store, a.round):
             print(t["type"], t["source_passage"], len(t["candidates"]), t["rule"])

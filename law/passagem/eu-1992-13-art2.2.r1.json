@@ -1,0 +1,35 @@
+{
+  "id": "eu-1992-13:art2.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "2. Os poderes referidos no n.º 1 podem ser atribuídos a instâncias distintas responsáveis por aspectos diferentes dos processos de recurso.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 3963,
+        "end": 4102
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": "2008-01-09",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-09",
+      "text": "2. Os poderes referidos no n.º 1 e nos artigos 2.º-D e 2.º-E podem ser atribuídos a instâncias distintas responsáveis por aspectos diferentes do recurso.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 5531,
+        "end": 5684
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

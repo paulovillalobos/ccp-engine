@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art48.4",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art48",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4. Antes de procederem ao leilão electrónico, as autoridades/entidades adjudicantes efectuarão uma primeira avaliação completa das propostas em conformidade com o critério ou os critérios de adjudicação previamente definidos e a respectiva ponderação.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 111310,
+        "end": 111561
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "4. Antes de procederem ao leilão electrónico, as autoridades/entidades adjudicantes efectuarão uma primeira avaliação completa das propostas em conformidade com o critério ou os critérios de adjudicação previamente definidos e a respectiva ponderação.\nTodos os proponentes que tenham apresentado propostas admissíveis são convidados simultaneamente, por meios electrónicos, a apresentar novos preços e/ou novos valores. O convite deve conter todas as informações pertinentes para a conexão individual ao dispositivo electrónico utilizado e especificar a data e hora de início do leilão electrónico. O leilão electrónico pode processar-se em várias fases sucessivas. Não pode ser dado início ao leilão electrónico antes de decorridos dois dias úteis desde a data de envio dos convites.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20160101",
+      "offsets": {
+        "start": 111133,
+        "end": 111917
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

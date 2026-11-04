@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art1.18",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art1",
+  "kind": "numero",
+  "label": "18",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "18. «Centrais de compras»: uma entidade adjudicante referida no n.º 9 do artigo 1.º da Directiva 2004/18/CE e no n.º 1 do artigo 2.º da Directiva 2004/17/CE ou um organismo público europeu, que:\n— adquira fornecimentos e/ou serviços destinados a autoridades/entidades adjudicantes, ou\n— proceda à adjudicação de contratos ou celebre acordos-quadro de empreitada, de fornecimentos ou de serviços destinados a autoridades/entidades adjudicantes;",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 6214,
+        "end": 6657
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "18. «Centrais de compras»: uma entidade adjudicante referida no n.º 9 do artigo 1.º da Directiva 2004/18/CE e no n.º 1 do artigo 2.º da Directiva 2004/17/CE ou um organismo público europeu, que:\nprocedaàadjudicaçãodecontratosoucelebreacordos-quadrodeempreitada,defornecimentosoudeserviçosdestinadosaautoridades/entidadesadjudicantes;19. «Concursos limitados»: os procedimentos em que qualquer operador económico pode solicitar participar e em que só os operadores económicos convidados pela autoridade/entidade adjudicante podem apresentar propostas;",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20200101",
+      "offsets": {
+        "start": 6217,
+        "end": 6767
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art60.4",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art60",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "4. Os Estados-Membros devem estabelecer que a alínea a) do n.º 1 do presente artigo não é aplicável, quando:\n— a autoridade/entidade adjudicante considere que a adjudicação de um contrato sem publicação prévia de um anúncio de concurso no Jornal Oficial da União Europeia é permitida nos termos da presente directiva,\n— a autoridade/entidade adjudicante tenha publicado um anúncio no Jornal Oficial da União Europeia, tal como indicado no artigo 64.º, manifestando a sua intenção de celebrar o contrato, e\n— o contrato não tenha sido celebrado antes do termo de um prazo mínimo de 10 dias consecutivos a contar do dia seguinte à data da publicação do anúncio.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 138632,
+        "end": 139291
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "4. Os Estados-Membros devem estabelecer que a alínea a) do n.º 1 do presente artigo não é aplicável, quando:\naautoridade/entidadeadjudicantetenhapublicadoumanúncionoJornalOficialdaUniãoEuropeia,talcomoindicadonoartigo64.º,manifestandoasuaintençãodecelebrarocontrato,e— o contrato não tenha sido celebrado antes do termo de um prazo mínimo de 10 dias consecutivos a contar do dia seguinte à data da publicação do anúncio.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20200101",
+      "offsets": {
+        "start": 136497,
+        "end": 136917
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -19,11 +19,12 @@ engine refuses a rule whose type is not here.
 from engine.canon import content_hash
 
 VERSION = "ccp-rules-0.1"
-RULE_TYPES = ("seletor_regime", "jurisdicao", "limiar", "procedimento_admissivel", "prazo_minimo", "conteudo_obrigatorio", "proibicao", "agregada")
+RULE_TYPES = ("seletor_regime", "jurisdicao", "limiar", "procedimento_admissivel", "prazo_minimo", "prazo_maximo", "conteudo_obrigatorio", "proibicao", "agregada")
 REQUIRED_PARAMS = {
     "limiar": ("threshold",),
     "procedimento_admissivel": ("procedures",),
     "prazo_minimo": ("minimum_days", "deadline_field", "counted_from"),
+    "prazo_maximo": ("maximum_days", "deadline_field", "counted_from"),  # D71: the same deadline, bounded from above
     "conteudo_obrigatorio": ("required_elements", "document_piece"),
     "proibicao": ("forbidden",),
     "agregada": ("window", "group_key", "aggregate", "completeness_threshold"),

@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art55.6",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art55",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "6. Os Estados-Membros podem exigir que o interessado solicite previamente à autoridade/entidade adjudicante a alteração da sua decisão. Nesse caso, os Estados-Membros devem assegurar que a apresentação de tal pedido implique a suspensão imediata da possibilidade de celebrar o contrato.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 123531,
+        "end": 123817
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "6. Os Estados-Membros podem exigir que o interessado solicite previamente à autoridade/entidade adjudicante a alteração da sua decisão. Nesse caso, os Estados-Membros devem assegurar que a apresentação de tal pedido implique a suspensão imediata da possibilidade de celebrar o contrato.\nOs Estados-Membros decidem quais os meios de comunicação apropriados, designadamente a telecópia ou os meios electrónicos, que devem ser usados para apresentar o pedido a que se refere o primeiro parágrafo.\nA suspensão referida no primeiro parágrafo não cessa antes do termo de um prazo mínimo de 10 dias consecutivos, a contar do dia seguinte à data em que a autoridade/entidade adjudicante tenha enviado uma resposta, em caso de utilização de telecópia ou de meios electrónicos, ou, em caso de utilização de outros meios de comunicação, alternativamente, um prazo mínimo de 15 dias consecutivos, a contar do dia seguinte à data em que a autoridade/entidade adjudicante tenha enviado uma resposta, ou de 10 dias consecutivos a contar do dia seguinte à data de recepção da resposta.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20160101",
+      "offsets": {
+        "start": 123321,
+        "end": 124390
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -24,9 +24,10 @@ def now_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def record_raw(root, source, kind, source_id, url, data: bytes, media_type, encoding, captured_at, *, extractor=None, renderer=None, recorded_at=None) -> dict:
+def record_raw(root, source, kind, source_id, url, data: bytes, media_type, encoding, captured_at, *, extractor=None, renderer=None, recorded_at=None,
+               store=None) -> dict:
     root = Path(root)
-    store = Store([root]).load()
+    store = store or Store([root]).load()  # a batch caller passes the store it loaded once (D70)
     sha = sha256_bytes(data)
     for existing in store.objects["raw"]:
         if existing["sha256"] == sha and existing["url"] == url:

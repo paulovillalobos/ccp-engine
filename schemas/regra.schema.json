@@ -9,6 +9,7 @@
     {"if": {"properties": {"type": {"const": "limiar"}}}, "then": {"properties": {"params": {"required": ["threshold"]}}}},
     {"if": {"properties": {"type": {"const": "procedimento_admissivel"}}}, "then": {"properties": {"params": {"required": ["procedures"]}}}},
     {"if": {"properties": {"type": {"const": "prazo_minimo"}}}, "then": {"properties": {"params": {"required": ["minimum_days", "deadline_field", "counted_from"]}}}},
+    {"if": {"properties": {"type": {"const": "prazo_maximo"}}}, "then": {"properties": {"params": {"required": ["maximum_days", "deadline_field", "counted_from"]}}}},
     {"if": {"properties": {"type": {"const": "conteudo_obrigatorio"}}}, "then": {"properties": {"params": {"required": ["required_elements", "document_piece"]}}}},
     {"if": {"properties": {"type": {"const": "proibicao"}}}, "then": {"properties": {"params": {"required": ["forbidden"]}}}},
     {"if": {"properties": {"type": {"const": "agregada"}}}, "then": {"properties": {"params": {"required": ["window", "group_key", "aggregate", "completeness_threshold"]}}}},

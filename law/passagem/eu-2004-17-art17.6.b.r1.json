@@ -1,0 +1,47 @@
+{
+  "id": "eu-2004-17:art17.6.b",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art17.6",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "b) Sempre que uma proposta para a aquisição de fornecimentos similares possa ocasionar a adjudicação simultânea de contratos por lotes separados, deve ser tido em conta o valor total estimado da totalidade desses lotes para a aplicação do artigo 16.º\nSempre que o valor cumulado dos lotes seja igual ou superior ao limiar estabelecido no artigo 16.º, a presente directiva aplica-se à adjudicação de cada lote.\nContudo, as entidades adjudicantes podem derrogar esta aplicação para lotes cujo valor estimado, sem IVA, seja inferior a 80 000 EUR, desde que o valor cumulado desses lotes não exceda 20% do valor cumulado da totalidade dos lotes.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 29076,
+        "end": 29717
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2009-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2009-01-01",
+      "text": "b) Sempre que uma proposta para a aquisição de fornecimentos similares possa ocasionar a adjudicação simultânea de contratos por lotes separados, deve ser tido em conta o valor total estimado da totalidade desses lotes para a aplicação do artigo 16.º\nSempre que o valor cumulado dos lotes seja igual ou superior ao limiar estabelecido no artigo 16.º, a presente directiva aplica-se à adjudicação de cada lote.\nContudo, as entidades adjudicantes podem derrogar esta aplicação para lotes cujo valor estimado, sem IVA, seja inferior a 80 000 EUR, desde que o valor cumulado desses lotes não exceda 20 % do valor cumulado da totalidade dos lotes.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20090101",
+      "offsets": {
+        "start": 29077,
+        "end": 29719
+      },
+      "valid_from": "2009-01-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

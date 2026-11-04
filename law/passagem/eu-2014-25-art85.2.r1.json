@@ -1,0 +1,35 @@
+{
+  "id": "eu-2014-25:art85.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2014-25",
+  "parent": "eu-2014-25:art85",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2014-04-17",
+      "text": "2. Qualquer proposta apresentada para adjudicação de um contrato de fornecimento pode ser rejeitada quando a parte de produtos originários de países terceiros, determinada em conformidade com o Regulamento (UE) n.º 952/2013 do Parlamento Europeu e do Conselho , exceder em 50 % o valor total dos produtos que compõem a proposta.\nPara efeitos do presente artigo, considera-se produto o software utilizado nos equipamentos de redes de telecomunicações.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 198592,
+        "end": 199042
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "2. Qualquer proposta apresentada para adjudicação de um contrato de fornecimento pode ser rejeitada quando a parte de produtos originários de países terceiros, determinada em conformidade com o Regulamento (UE) n.º 952/2013 do Parlamento Europeu e do Conselho (), exceder em 50 % o valor total dos produtos que compõem a proposta.\nPara efeitos do presente artigo, considera-se produto o software utilizado nos equipamentos de redes de telecomunicações.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20160101",
+      "offsets": {
+        "start": 198866,
+        "end": 199318
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

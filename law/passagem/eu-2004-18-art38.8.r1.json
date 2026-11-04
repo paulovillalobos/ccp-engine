@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-18:art38.8",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-18",
+  "parent": "eu-2004-18:art38",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2004-04-30",
+      "text": "8. Nos concursos limitados e nos procedimentos por negociação com publicação de um anúncio de concurso, a que se refere o artigo 30.º, quando a urgência torne impraticáveis os prazos mínimos fixados no presente artigo, as entidades adjudicantes podem fixar:\na) Um prazo de recepção dos pedidos de participação que não pode ser inferior a quinze dias a contar da data de envio do anúncio de concurso ou a dez dias, se o anúncio tiver sido enviado por meios electrónicos em conformidade com o formato e as modalidades de transmissão indicadas no ponto 3 do anexo VIII;\nb) E, em caso de concursos limitados, um prazo de recepção das propostas que não pode ser inferior a dez dias a contar da data de envio do convite à apresentação de propostas.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-18-20040430",
+      "offsets": {
+        "start": 68778,
+        "end": 69520
+      },
+      "valid_from": "2004-04-30",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 91.º\nRevogações\nA Diretiva 2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs referências à diretiva revogada devem entender-se como referências à presente diretiva e devem ser lidas de acordo com a tabela de correspondência constante do Anexo XV.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 238626,
+        "end": 238899
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

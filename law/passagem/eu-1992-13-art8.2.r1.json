@@ -1,0 +1,35 @@
+{
+  "id": "eu-1992-13:art8.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art8",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "2. A Comissão notificará ao Estado-membro e à entidade adjudicante em questão as razões pelas quais considera ter sido cometida uma violação clara e manifesta e solicitará a sua correcção pelos meios adequados.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 10750,
+        "end": 10960
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": "2008-01-09",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-09",
+      "text": "2. A Comissão notifica o Estado-Membro em causa das razões pelas quais considera ter sido cometida uma violação grave e solicita a sua correcção através dos meios adequados.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 22993,
+        "end": 23166
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-18:art23.3.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-18",
+  "parent": "eu-2004-18:art23.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2004-04-30",
+      "text": "a) Seja por referência a especificações técnicas definidas no anexo VI e, por ordem de preferência, a normas nacionais que transponham normas europeias, a homologações técnicas europeias, a especificações técnicas comuns, a normas internacionais, a qualquer outro referencial técnico elaborado pelos organismos europeus de normalização ou, caso aquele não exista, a normas nacionais, a homologações técnicas nacionais ou a especificações técnicas nacionais em matéria de concepção, cálculo e execução de obras, bem como de utilização de materiais. Cada referência será acompanhada da menção «ou equivalente»;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-18-20040430",
+      "offsets": {
+        "start": 29380,
+        "end": 29988
+      },
+      "valid_from": "2004-04-30",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 91.º\nRevogações\nA Diretiva 2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs referências à diretiva revogada devem entender-se como referências à presente diretiva e devem ser lidas de acordo com a tabela de correspondência constante do Anexo XV.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 238626,
+        "end": 238899
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

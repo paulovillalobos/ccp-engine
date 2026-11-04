@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art24",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:titulo-ii.capitulo-ii.seccao-2.subseccao-3",
+  "kind": "artigo",
+  "label": "Artigo 24.º",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "Artigo 24.º\nContratos relativos a certos serviços excluídos do âmbito de aplicação da presente directiva\nA presente directiva não é aplicável aos contratos de serviços relativos:\na) À aquisição ou locação, sejam quais forem as respectivas modalidades financeiras, de terrenos, edifícios existentes ou outros bens imóveis, ou a direitos sobre esses bens; no entanto, são abrangidos pela presente directiva os contratos de prestação de serviços financeiros celebrados simultânea, prévia ou posteriormente ao contrato de aquisição ou de locação, seja qual for a sua forma;\nb) A serviços de arbitragem e de conciliação;\nc) A serviços financeiros relativos à emissão, compra, venda ou transferência de títulos ou outros instrumentos financeiros, em especial a operações de obtenção de fundos ou de capital pelas entidades adjudicantes;\nd) A contratos de trabalho;\ne) A serviços de investigação e desenvolvimento, com excepção daqueles cujos resultados se destinem exclusivamente à entidade adjudicante para utilização no exercício da sua própria actividade, desde que a prestação do serviço seja inteiramente remunerada pela referida entidade adjudicante.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 39947,
+        "end": 41097
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

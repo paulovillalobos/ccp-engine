@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art48.7.c",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art48.7",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "c) Quando tiverem sido atingidas as fases do leilão fixadas no convite à participação no mesmo.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 114139,
+        "end": 114234
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "c) Quando tiverem sido atingidas as fases do leilão fixadas no convite à participação no mesmo.\nSempre que as autoridades/entidades adjudicantes decidam encerrar o leilão electrónico da forma indicada na alínea c), eventualmente em combinação com as modalidades previstas na alínea b), o convite à participação no leilão indicará o calendário para cada fase do leilão.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20160101",
+      "offsets": {
+        "start": 113953,
+        "end": 114321
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

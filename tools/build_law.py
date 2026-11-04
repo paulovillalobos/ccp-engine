@@ -43,7 +43,7 @@ from engine.canon import sha256_text  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-build-law-0.1"
+VERSION = "ccp-build-law-0.2"
 CONSOLIDATED = "raw:dr-consolidado:lei:ccp"
 TEXT_EXTRACTOR = "dr-article-history@1"
 EU_EXTRACTOR = "eurlex-html@1"
@@ -226,6 +226,7 @@ def build_normas(store, recorded_at):
     for raw in own_pages(store):
         if raw["kind"] == "lei":
             register_from_notes(normas, raw, texts[raw["id"]], recorded_at, normas[f"norma:{raw['source_id']}"]["title"])
+    directive_normas(store, normas, recorded_at)
     register_timeline(store, normas, recorded_at)
     return normas
 
@@ -298,6 +299,154 @@ def in_force_vigencias(ps, norma, start, src, recorded_at):
                     "valid_to": None, "altered_by": norma["id"], "effect": "entra_em_vigor",
                     "note": {"raw": src["raw"], "quote": src["text"], "offsets": dict(src["offsets"])}})
     return out
+
+
+EU_CONSOLIDATED = "eurlex-consolidated@1"
+EU_DIR_IN_FORCE = re.compile(r"entra em vigor no (?:(vigésimo|décimo|primeiro|[0-9]+\.º) dia seguinte ao|dia) da sua publicação")
+EU_DIR_DAYS = {"vigésimo": 20, "décimo": 10, "primeiro": 1}
+EU_OJ_DATE = re.compile(r"\(JO L [0-9]+ de ([0-9]{1,2})\.([0-9]{1,2})\.([0-9]{4})")
+EU_REPEALS = re.compile(r"(?:É revogada a Diretiva|A Diretiva) ([0-9]{4})/([0-9]+)/CE,?(?: é revogada,?)? com efeitos a partir de ([0-9]{1,2}) de ([a-zç]+) de ([0-9]{4})")
+
+
+def directive_pages(store):
+    """D70: {norma short: [(version date, raw)] in date order}: every consolidated version of an EU directive captured
+    from the Publications Office (raw kind diretiva, source id eu-<year>-<number>-<AAAAMMDD>)."""
+    out = {}
+    for r in sorted({r["id"] for r in store.objects["raw"] if (r["source"], r["kind"]) == ("eur-lex", "diretiva")}):
+        raw = store.current(r)
+        short, d = raw["source_id"].rsplit("-", 1)
+        out.setdefault(short, []).append((f"{d[:4]}-{d[4:6]}-{d[6:]}", raw))
+    return {k: sorted(v, key=lambda x: x[0]) for k, v in out.items()}
+
+
+def directive_normas(store, normas, recorded_at):
+    """One norma per directive, its title and scope read from its latest consolidated version."""
+    for short, versions in directive_pages(store).items():
+        lines = store.raw_text(versions[-1][1]).split("\n")
+        title = next(l for l in lines if l.startswith(("DIRETIVA", "DIRECTIVA")))
+        scope = next((l for l in lines[:6] if l.lower().startswith(("relativa", "que ", "sobre "))), title)
+        m = EU_OJ_DATE.search("\n".join(lines[:8]))
+        y, n = short.split("-")[1:]
+        if not re.search(r"[0-9]+/[0-9]+", title):  # «DIRECTIVA DO CONSELHO» (1989, 1992): the number as the act is cited
+            title = f"{title} {y[2:]}/{n}/CEE"
+        normas[f"norma:{short}"] = {"id": f"norma:{short}", "revision": 1, "recorded_at": recorded_at, "title": title, "short": short,
+                                     "jurisdiction": "UE", "scope": scope, "eli": f"https://data.europa.eu/eli/dir/{y}/{n}/oj",
+                                     "source": {"url": versions[-1][1]["url"], "raw": [r["id"] for _, r in versions]}, "_own": True,
+                                     "_header": {"published": f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else None}}
+
+
+def directive_repeals(by_norma):
+    """{repealed directive short: (date, the passage version that says it, the repealing directive)}: «A Diretiva
+    2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016» (or «É revogada a Diretiva …») in a later
+    directive's own text. Read, never guessed."""
+    out = {}
+    for by, ps in by_norma.items():
+        for p in ps.values():
+            for v in p["versions"]:
+                for m in EU_REPEALS.finditer(v["text"]):
+                    if m.group(4) in MONTHS:
+                        d = f"{m.group(5)}-{MONTHS.index(m.group(4)) + 1:02d}-{int(m.group(3)):02d}"
+                        out.setdefault(f"eu-{m.group(1)}-{int(m.group(2))}", (d, v, by))
+    return out
+
+
+def structure_directive(norma, text, raw_id, version):
+    """structure_codigo over a directive's own text: an amending quotation (a line that opens «…» at depth 0, up to the line
+    that closes it, or to the end when none does) is another act's text and is left out, so its numbers are not this
+    directive's passages. Same passages, ids and offsets as structure_codigo on the lines it reads."""
+    lines = text.split("\n")
+    starts, pos = [], 0
+    for line in lines:
+        starts.append(pos)
+        pos += len(line) + 1
+    regions, first, depth, opened = [], 0, 0, None
+    for i, line in enumerate(lines):
+        if depth == 0 and line.startswith("«"):
+            opened = i
+        depth += line.count("«") - line.count("»")
+        if opened is not None and depth <= 0:
+            regions.append((first, opened))
+            first, opened, depth = i + 1, None, 0
+    regions.append((first, opened if opened is not None else len(lines)))
+    out, recorded_at = [], now_utc()
+    for a, b in regions:
+        for n in structure.parse(lines, a, b, "", False, "dr-codigo"):
+            st, en = starts[n["start_line"]], starts[n["last_line"]] + len(lines[n["last_line"]])
+            t = text[st:en]
+            out.append({"id": f"{norma['short']}:{n['path']}", "revision": 1, "recorded_at": recorded_at, "norma": norma["id"],
+                        "parent": f"{norma['short']}:{n['parent']}" if n["parent"] else None, "kind": n["kind"], "label": n["label"],
+                        "versions": [{"version": version, "text": t, "raw": raw_id, "offsets": {"start": st, "end": en},
+                                      "valid_from": version, "valid_to": None, "revoked": structure._revoked(n["kind"], t)}]})
+    return out
+
+
+def directive_passages(store, normas, skipped=None):
+    """D70: ({id: passagem}, {id: vigencia}). Each consolidated version is structured (layout dr-codigo); a passage's
+    version starts on the consolidation date its text first appears and closes when a later consolidation changes
+    or drops it. The first version starts on the directive's entry into force when the first consolidation is the
+    text as adopted («entra em vigor no vigésimo dia seguinte ao da sua publicação», the OJ date of its header) and
+    gets an entra_em_vigor vigencia; a later consolidation's amending act is not read, so its versions have none. A
+    directive another directive repeals closes on that date with a revoked version quoting the repealing passage."""
+    by_norma, vigs = {}, {}
+    for short, versions in directive_pages(store).items():
+        norma = normas[f"norma:{short}"]
+        LAYOUT[norma["id"]] = "dr-codigo"
+        merged, first_ps = {}, None
+        for d, raw in versions:
+            try:
+                ps = structure_directive(norma, store.raw_text(raw), raw["id"], d)
+            except ValueError as exc:  # the version is left out, and said so in build-report.json
+                if skipped is not None:
+                    skipped[raw["id"]] = str(exc)
+                continue
+            first_ps = first_ps or ps
+            seen = set()
+            for p in ps:
+                seen.add(p["id"])
+                v = p["versions"][0]
+                cur = merged.get(p["id"])
+                if cur is None:
+                    merged[p["id"]] = dict(p, versions=[v])
+                elif cur["versions"][-1]["valid_to"] is not None:
+                    raise ValueError(f"{p['id']}: dropped by a consolidation and printed again on {d}")
+                elif " ".join(cur["versions"][-1]["text"].split()) != " ".join(v["text"].split()):
+                    cur["versions"][-1]["valid_to"] = d
+                    cur["versions"].append(v)
+            for pid, cur in merged.items():
+                if pid not in seen and cur["versions"][-1]["valid_to"] is None:
+                    cur["versions"][-1]["valid_to"] = d
+        published = norma["_header"]["published"]
+        art = entry_article(first_ps or [])
+        m = EU_DIR_IN_FORCE.search(" ".join(art["versions"][0]["text"].split())) if art and published else None
+        if m:
+            n = 0 if m.group(1) is None else EU_DIR_DAYS.get(m.group(1)) or int(m.group(1)[:-2])  # «no dia da sua publicação»: that day
+            from datetime import date, timedelta
+            start = (date.fromisoformat(published) + timedelta(days=n)).isoformat()
+            first = min(v["valid_from"] for p in merged.values() for v in p["versions"])
+            if first <= start:  # the first consolidation is the adopted text: it is in force from the entry into force
+                src = next(v for v in merged[art["id"]]["versions"] if v["valid_from"] == first)
+                for p in merged.values():
+                    v0 = p["versions"][0]
+                    if v0["valid_from"] == first and (v0["valid_to"] is None or v0["valid_to"] > start):
+                        v0["version"] = v0["valid_from"] = start
+                    elif v0["valid_from"] == first:
+                        p["versions"] = p["versions"][1:]
+                for v in in_force_vigencias([p for p in merged.values() if p["versions"]], norma, start, src, now_utc()):
+                    vigs[v["id"]] = v
+        by_norma[short] = {k: p for k, p in merged.items() if p["versions"]}
+    for short, (d, src, by) in directive_repeals(by_norma).items():
+        for p in by_norma.get(short, {}).values():
+            p["versions"] = [v for v in p["versions"] if v["valid_from"] < d]
+            if not p["versions"]:
+                continue
+            if p["versions"][-1]["valid_to"] is None or p["versions"][-1]["valid_to"] > d:
+                p["versions"][-1]["valid_to"] = d
+            if p["versions"][-1]["valid_to"] == d:
+                p["versions"].append({"version": d, "text": src["text"], "raw": src["raw"], "offsets": dict(src["offsets"]),
+                                      "valid_from": d, "valid_to": None, "revoked": True})
+                vigs[f"{p['id']}@{d}"] = {"id": f"{p['id']}@{d}", "revision": 1, "recorded_at": now_utc(), "passage": p["id"], "valid_from": d,
+                                         "valid_to": None, "altered_by": f"norma:{by}", "effect": "revoga", "note": {"raw": src["raw"], "quote": src["text"], "offsets": dict(src["offsets"])}}
+    return {pid: p for ps in by_norma.values() for pid, p in ps.items() if p["versions"]}, vigs
 
 
 def dated(ps, start):
@@ -452,6 +601,9 @@ def build_passages(store, normas):
             out[p["id"]] = p
         for v in vg:
             vigs[v["id"]] = v
+    ps, vg = directive_passages(store, normas, skipped)
+    out.update(ps)
+    vigs.update(vg)
     return out, vigs, skipped
 
 
@@ -633,9 +785,11 @@ def main():
     writer = Writer(root, store)
     recorded_at = now_utc()
     ensure_text(root, store, writer, CONSOLIDATED, TEXT_EXTRACTOR, False)
+    store = Store([root]).load()
+    writer = Writer(root, store)  # D70: one load for every EU page (66 directive versions); the writer keeps the store current
     for r in sorted({r["id"] for r in store.objects["raw"] if r["source"] == "eur-lex"}):
-        store = Store([root]).load()
-        ensure_text(root, store, Writer(root, store), r, EU_EXTRACTOR, False)  # D29 pattern: a revision with the new text
+        extractor = EU_CONSOLIDATED if store.current(r)["kind"] == "diretiva" else EU_EXTRACTOR  # D70: a consolidated text
+        ensure_text(root, store, writer, r, extractor, False)  # D29 pattern: a revision with the new text
     store = Store([root]).load()
     writer = Writer(root, store)
     ccp_raw = store.current(CONSOLIDATED)

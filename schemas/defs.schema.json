@@ -85,7 +85,7 @@
     },
     "rule_type": {
       "type": "string",
-      "enum": ["limiar", "procedimento_admissivel", "prazo_minimo", "conteudo_obrigatorio", "proibicao", "agregada", "seletor_regime", "jurisdicao"],
+      "enum": ["limiar", "procedimento_admissivel", "prazo_minimo", "prazo_maximo", "conteudo_obrigatorio", "proibicao", "agregada", "seletor_regime", "jurisdicao"],
       "description": "The eight rule types of ARQUITECTURA.md section 5."
     },
     "assertion_state": {"type": "string", "enum": ["proposed", "ai_reviewed", "settled", "rejected", "stale"], "description": "Derived by replaying the governance log; stored copies are the replay, never the source."},

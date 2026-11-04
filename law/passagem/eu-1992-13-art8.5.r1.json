@@ -1,0 +1,35 @@
+{
+  "id": "eu-1992-13:art8.5",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1992-13",
+  "parent": "eu-1992-13:art8",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2007-01-01",
+      "text": "5. Em caso de notificação indicando que um procedimento de celebração de contrato foi suspenso nas condições previstas na alínea c) do n.º 3, o Estado-membro deve notificar a Comissão do levantamento da suspensão ou da abertura de outro procedimento de celebração de contrato relacionado, no todo ou em parte, com o anterior. Esta nova notificação deve confirmar que a violação alegada foi corrigida ou incluir uma comunicação fundamentada explicando por que razões não foi efectuada qualquer correcção.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20070101",
+      "offsets": {
+        "start": 11851,
+        "end": 12354
+      },
+      "valid_from": "2007-01-01",
+      "valid_to": "2008-01-09",
+      "revoked": false
+    },
+    {
+      "version": "2008-01-09",
+      "text": "5. Em caso de notificação que indique a suspensão de um procedimento de adjudicação de contrato nos termos da alínea c) do n.º 3, o Estado-Membro em causa deve notificar a Comissão do levantamento da suspensão ou do início de outro procedimento de adjudicação de contrato relacionado, no todo ou em parte, com o mesmo objecto. Esta nova notificação deve confirmar a correcção da alegada violação ou incluir uma exposição fundamentada explicando as razões pelas quais não foi efectuada qualquer correcção.",
+      "raw": "raw:eur-lex:diretiva:eu-1992-13-20080109",
+      "offsets": {
+        "start": 24054,
+        "end": 24558
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

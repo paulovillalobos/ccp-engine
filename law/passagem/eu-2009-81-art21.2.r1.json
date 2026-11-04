@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art21.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art21",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "2. A autoridade/entidade adjudicante pode solicitar, ou ser obrigada por um Estado-Membro a solicitar ao adjudicatário:\n— que indique na respectiva proposta qual a parte do contrato que tenciona subcontratar com terceiros e quais os subcontratantes propostos, bem como o objecto do contrato em relação ao qual é proposto um subcontratante, e/ou\n— que indique todas as alterações ocorridas ao nível dos subcontratantes durante a execução do contrato.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 34629,
+        "end": 35078
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2020-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2020-01-01",
+      "text": "2. A autoridade/entidade adjudicante pode solicitar, ou ser obrigada por um Estado-Membro a solicitar ao adjudicatário:\nqueindiquenarespectivapropostaqualapartedocontratoquetencionasubcontratarcomterceirosequaisossubcontratantespropostos,bemcomooobjectodocontratoemrelaçãoaoqualépropostoumsubcontratante,e/ou— que indique todas as alterações ocorridas ao nível dos subcontratantes durante a execução do contrato.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20200101",
+      "offsets": {
+        "start": 33255,
+        "end": 33667
+      },
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

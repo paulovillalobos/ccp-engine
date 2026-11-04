@@ -46,6 +46,9 @@ from engine.canon import canonical, sha256_text  # noqa: E402
 from engine.store import Store  # noqa: E402
 
 VERSION = "ccp-make-training-0.2"
+# D70: the training data of D45-D69 and the reservation are read from the law as the store held it when the reservation was
+# frozen (2026-10-25): no law object was recorded between then and the EU directives (D70), which are not theirs.
+LAW_RECORDED_BY = "2026-10-25T00:00:00Z"
 HELD = ROOT / "law/TRAIN-HELD-OUT.json"
 DATA = ROOT / "training/data"
 FROZEN_AT = "2026-10-25"

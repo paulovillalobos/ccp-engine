@@ -1,0 +1,35 @@
+{
+  "id": "eu-1989-665:art2-b.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1989-665",
+  "parent": "eu-1989-665:art2-b",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-01-09",
+      "text": "a) Se a Directiva 2004/18/CE não exigir a publicação prévia do anúncio de concurso no Jornal Oficial da União Europeia;",
+      "raw": "raw:eur-lex:diretiva:eu-1989-665-20080109",
+      "offsets": {
+        "start": 10544,
+        "end": 10663
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": "2014-04-17",
+      "revoked": false
+    },
+    {
+      "version": "2014-04-17",
+      "text": "a) Se a Diretiva 2014/24/UE ou, se for caso disso, a Diretiva 2014/23/UE não exigirem a publicação prévia de um anúncio de concurso no Jornal Oficial da União Europeia;",
+      "raw": "raw:eur-lex:diretiva:eu-1989-665-20140417",
+      "offsets": {
+        "start": 10896,
+        "end": 11064
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

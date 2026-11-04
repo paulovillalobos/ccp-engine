@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-18:art16.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-18",
+  "parent": "eu-2004-18:art16",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2004-04-30",
+      "text": "a) À aquisição ou locação, sejam quais forem as respectivas modalidades financeiras, de terrenos, edifícios existentes ou outros bens imóveis, ou a direitos sobre esses bens; no entanto, são abrangidos pela presente directiva os contratos de prestação de serviços financeiros celebrados simultânea, prévia ou posteriormente ao contrato de aquisição ou de locação, seja qual for a sua forma;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-18-20040430",
+      "offsets": {
+        "start": 25229,
+        "end": 25619
+      },
+      "valid_from": "2004-04-30",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 91.º\nRevogações\nA Diretiva 2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs referências à diretiva revogada devem entender-se como referências à presente diretiva e devem ser lidas de acordo com a tabela de correspondência constante do Anexo XV.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 238626,
+        "end": 238899
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

@@ -397,7 +397,7 @@ def same_content(a, b, alvo):
 def key_param(r):
     """The number or list a reading turns on (agreement 'of direction', RESUMO.md)."""
     p, t = r["params"], r["type"]
-    return {"limiar": lambda: (p.get("threshold") or {}).get("value"), "prazo_minimo": lambda: p.get("minimum_days"),
+    return {"limiar": lambda: (p.get("threshold") or {}).get("value"), "prazo_minimo": lambda: p.get("minimum_days"), "prazo_maximo": lambda: p.get("maximum_days"),
             "procedimento_admissivel": lambda: tuple(p.get("procedures") or []),
             "seletor_regime": lambda: tuple(sorted((x.get("from") or "", x.get("law_version")) for x in p.get("regimes") or [])),
             "jurisdicao": lambda: canonical(p.get("effect") or {})}[t]()

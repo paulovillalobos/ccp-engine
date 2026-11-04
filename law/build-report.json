@@ -518,6 +518,14 @@
   "norma:crcspss": "dr-codigo",
   "norma:csc": "dr-codigo",
   "norma:ct": "dr-codigo",
+  "norma:eu-1989-665": "dr-codigo",
+  "norma:eu-1992-13": "dr-codigo",
+  "norma:eu-2004-17": "dr-codigo",
+  "norma:eu-2004-18": "dr-codigo",
+  "norma:eu-2009-81": "dr-codigo",
+  "norma:eu-2014-23": "dr-codigo",
+  "norma:eu-2014-24": "dr-codigo",
+  "norma:eu-2014-25": "dr-codigo",
   "norma:eu-2025-2150": "dr-codigo",
   "norma:eu-2025-2151": "dr-codigo",
   "norma:eu-2025-2152": "dr-codigo",
@@ -530,7 +538,8 @@
   "norma:ret-18-a-2008": "line 186: a quotation with no passage quoting it ('«1 - As decisões de instauração e de arquivamento dos processos e de aplicação d')",
   "norma:ret-25-2021": "line 39: a quotation with no passage quoting it ('«4 - A decisão referida no número anterior não pode afastar o efeito anulatório ')",
   "norma:ret-36-a-2017": "no articles of its own (a declaração de retificação lists corrections)",
-  "norma:ret-42-2017": "no articles of its own (a declaração de retificação lists corrections)"
+  "norma:ret-42-2017": "no articles of its own (a declaração de retificação lists corrections)",
+  "raw:eur-lex:diretiva:eu-2014-23-20140328": "unbalanced quotation at the end of the structured region (depth 6)"
  },
- "tool": "ccp-build-law-0.1"
+ "tool": "ccp-build-law-0.2"
 }

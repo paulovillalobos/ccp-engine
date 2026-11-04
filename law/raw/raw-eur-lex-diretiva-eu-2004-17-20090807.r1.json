@@ -1,0 +1,20 @@
+{
+  "id": "raw:eur-lex:diretiva:eu-2004-17-20090807",
+  "revision": 1,
+  "recorded_at": "2026-11-04T19:21:33Z",
+  "source": "eur-lex",
+  "kind": "diretiva",
+  "source_id": "eu-2004-17-20090807",
+  "sha256": "48d7af61b53f259a9aeaef1108de7872c4c008a78ab2aa4e0fc154dcbfe21eba",
+  "bytes": "raw_bytes/48d7af61b53f259a9aeaef1108de7872c4c008a78ab2aa4e0fc154dcbfe21eba",
+  "media_type": "application/xhtml+xml",
+  "encoding": "utf-8",
+  "url": "https://publications.europa.eu/resource/celex/02004L0017-20090807",
+  "captured_at": "2026-11-04T19:21:32Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.3: one urllib GET"
+  },
+  "text": null
+}

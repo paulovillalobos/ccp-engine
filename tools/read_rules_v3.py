@@ -23,27 +23,70 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VOC = json.loads((ROOT / "schemas/vocabulario-v3.json").read_text(encoding="utf-8"))
+NEW_05 = {"values": set(), "phrases": set()}  # what 0.5 adds (D71), in VOC5 only: VOC stays 0.4 for every tool written before it
+VOC5 = json.loads(json.dumps(VOC))
+for _f, _vals in VOC["since_0_5"]["condition_values"].items():
+    VOC5["condition_fields"][_f]["values"].update(_vals)
+    NEW_05["values"] |= set(_vals)
+for _f, _vals in VOC["since_0_5"]["condition_phrases"].items():
+    for _v, _ws in _vals.items():
+        VOC5["condition_fields"][_f]["values"][_v] += _ws
+        NEW_05["phrases"] |= set(_ws)
+for _k, _ws in VOC["since_0_5"]["deadline_phrases"].items():
+    VOC5["deadline_fields"][_k] += _ws
+    NEW_05["phrases"] |= set(_ws)
+VOC5["nao_tipavel_motivos"].update(VOC["since_0_5"]["nao_tipavel_motivos"])
+NEW_05["values"] |= set(VOC["since_0_5"]["nao_tipavel_motivos"])
+_STATE = {"voc": VOC}
+
+
+def V():
+    """The vocabulary of the protocol being rendered or checked: VOC5 inside a 0.5 call, VOC otherwise."""
+    return _STATE["voc"]
+
+
+class _using:
+    def __init__(self, version):
+        self.voc = VOC5 if minor(version) >= 5 else VOC
+
+    def __enter__(self):
+        self.prev, _STATE["voc"] = _STATE["voc"], self.voc
+
+    def __exit__(self, *exc):
+        _STATE["voc"] = self.prev
+
+
 VERSION = "ccp-read-rules-v3-0.4"  # 0.2: a referred number is shown whole (with its alíneas); L12 says when a missing text blocks the reading;
 # 0.3: an article's own opening words are shown only when its alíneas hang from it (not n.º 1 a second time);
 # 0.4 (D67): the vocabulary prints every law phrase the checker accepts (C6); an anaphoric start («contados do seu envio») is
 # read in the passage it is quoted from (L9); a value taken by remissão carries the referred passage's conditions (L10); a
 # rest-case condition with eq or in quotes the rest phrase alone (L5). A prompt keeps the version it was rendered with:
 # render() and check() take it, so data-v12, its measurement and rounds 6–8 read as they did.
+# 0.5 (D71): a passage of any act the store holds (the EU directives, D70), named in «Onde está»; the directives' own
+# procedure names as values of their own; the prazo_maximo type («não pode ser superior a», «no prazo de») and its reason.
 V03 = "ccp-read-rules-v3-0.3"
+V04 = VERSION  # what a caller that names no version gets: every generator and measure written before 0.5 (D71)
+V05 = "ccp-read-rules-v3-0.5"  # D71: a round that wants 0.5 names it (round 12)
+PRAZOS = ("prazo_minimo", "prazo_maximo")
+DAYS_KEY = {"prazo_minimo": "minimum_days", "prazo_maximo": "maximum_days"}
 
 
 def minor(version):
-    """3 for ccp-read-rules-v3-0.3 (and for a prompt that names no version), 4 for 0.4."""
+    """3 for ccp-read-rules-v3-0.3 (and for a prompt that names no version), 4 for 0.4, 5 for 0.5."""
     return int(str(version or V03).rsplit(".", 1)[1])
 
+
+def old(ws, version):
+    """The law phrases or values a prompt of `version` knows: before 0.5, none of what 0.5 adds."""
+    return [w for w in ws if w not in NEW_05["phrases"] and w not in NEW_05["values"]] if minor(version) < 5 else list(ws)
+
 # ---- words ----------------------------------------------------------------------------------------------------------
-OLD = VOC["old_spelling"]
 
 
 def norm(s):
     s = s.replace(" ", " ").replace("’", "'").replace("«", '"').replace("»", '"').replace("“", '"').replace("”", '"')
     s = re.sub(r"\s+", " ", s).strip().lower()
-    for a, b in OLD.items():
+    for a, b in V()["old_spelling"].items():
         s = re.sub(rf"(?<!\w){a}(?!\w)", b, s)
     return s
 
@@ -72,7 +115,7 @@ def _named(text, table, consume_first=()):
 
 
 def values_named(field, text):
-    spec = VOC["condition_fields"][field]
+    spec = V()["condition_fields"][field]
     first = [(spec["both_concessions"], ["concessao_obras", "concessao_servicos"])] if field == "tipo_contrato" else \
         [(spec["both_regions"], ["PT-AC", "PT-MA"])] if field == "territorio" else []
     return _named(text, spec["values"], first)
@@ -81,13 +124,13 @@ def values_named(field, text):
 def polarity(field, text):
     """True / False for each place the text states a two-sided fact: false when «não» or «sem» comes just before."""
     t, out = norm(text), set()
-    for w in sorted(VOC["condition_fields"][field]["phrases"], key=len, reverse=True):
+    for w in sorted(V()["condition_fields"][field]["phrases"], key=len, reverse=True):
         for m in re.finditer(re.escape(norm(w)), t):
             before = t[max(0, m.start() - 45):m.start()]
-            if any(norm(b) in before[-20:] for b in VOC.get("both_polarities", [])):
+            if any(norm(b) in before[-20:] for b in V().get("both_polarities", [])):
                 out |= {True, False}
                 continue
-            out.add(not any(re.search(rf"(?<!\w){re.escape(n)}(?!\w)", before) for n in VOC.get("negations_words", ["não", "sem"])))
+            out.add(not any(re.search(rf"(?<!\w){re.escape(n)}(?!\w)", before) for n in V().get("negations_words", ["não", "sem"])))
     return out
 
 
@@ -95,9 +138,9 @@ def counted_named(text, before=""):
     """The starting points a text states. «Contados do seu envio», «a contar do envio deste» count from the document the
     sentence names last before those words (the convite or the anúncio); `before` is the passage's text ahead of `text`
     (0.4: a quote of the anaphora alone is read in its passage)."""
-    found = _named(text, VOC["counted_from"])
+    found = _named(text, V()["counted_from"])
     t, b = norm(text), norm(before)
-    for w in VOC.get("anaphoric_sending", []):
+    for w in V().get("anaphoric_sending", []):
         for m in re.finditer(re.escape(norm(w)), t):
             if "convite" in w:
                 found.add("data_envio_convite")
@@ -108,7 +151,7 @@ def counted_named(text, before=""):
                 found.add("data_envio_convite")
             elif a > c:
                 found.add("data_envio_anuncio")
-    for w in VOC.get("anaphoric_publication", []):
+    for w in V().get("anaphoric_publication", []):
         if re.search(re.escape(norm(w)), t) and ("anúncio" in b + " " + t or "anuncio" in b + " " + t):
             found.add("data_publicacao_anuncio")
     return found
@@ -126,7 +169,7 @@ def counted_in_passage(ctx, fontes):
 
 
 def comparators_in(text):
-    return _named(text, VOC["comparators"])
+    return _named(text, V()["comparators"])
 
 
 UNITS = {"um": 1, "uma": 1, "dois": 2, "duas": 2, "três": 3, "quatro": 4, "cinco": 5, "seis": 6, "sete": 7, "oito": 8,
@@ -195,6 +238,7 @@ class Law:
         for o in store.objects["passagem"]:
             if o["id"] not in self.p or o["revision"] > self.p[o["id"]]["revision"]:
                 self.p[o["id"]] = o
+        self.titles = {o["id"]: o["title"] for o in store.objects.get("norma", [])}  # 0.5: an act other than the CCP is named by its own title
         self.kids = {}
         for o in self.p.values():
             self.kids.setdefault(o.get("parent"), []).append(o["id"])
@@ -421,7 +465,7 @@ def context(law, alvo, date, depth=3):
         x = law.parent(x)
     norma = (law.p.get(aid) or {}).get("norma")
     if norma:
-        title = NORMA_TITLES.get(norma) or norma
+        title = NORMA_TITLES.get(norma) or getattr(law, "titles", {}).get(norma) or norma
         place.append((norma, title))
         roles[norma], allowed[norma] = "titulo", title
     place.reverse()
@@ -477,20 +521,29 @@ def context(law, alvo, date, depth=3):
 
 # ---- the prompt ------------------------------------------------------------------------------------------------------
 def vocab_text(version=VERSION):
-    c = VOC["condition_fields"]
+    with _using(version):  # D71: the vocabulary of the prompt's own protocol
+        return _vocab_text(version)
+
+
+def _vocab_text(version=VERSION):
+    c = V()["condition_fields"]
     every = minor(version) >= 4  # 0.4: every law phrase the checker accepts, not the first one or two (C6)
 
     def quoted(ws, n):
+        ws = old(ws, version)
         return "«" + "», «".join(ws if every else ws[:n]) + "»"
 
     def words(field, v, n=2):
         return quoted(c[field]["values"][v], n)
     tc = ", ".join(f"{v} ({words('tipo_contrato', v)})" for v in c["tipo_contrato"]["values"])
-    tp = ", ".join(c["tipo_procedimento"]["values"])
+    tp = ", ".join(old(c["tipo_procedimento"]["values"], version))
+    eu = [v for v in c["tipo_procedimento"]["values"] if v in NEW_05["values"]]
     return "\n".join([
         "VOCABULÁRIO (só estes campos e valores; entre «», palavras da lei para cada um)",
         f"tipo_contrato: {tc}. «Concessão de obras públicas ou de serviços» nomeia as duas concessões.",
-        f"tipo_procedimento: {tp} — cada um pelo seu nome na lei; «ajuste direto simplificado», «consulta prévia especial» e «concurso público urgente» são procedimentos à parte.",
+        f"tipo_procedimento: {tp} — cada um pelo seu nome na lei; «ajuste direto simplificado», «consulta prévia especial» e «concurso público urgente» são procedimentos à parte."
+        + (" Os nomes das diretivas da União são valores à parte: " + ", ".join(f"{v} ({words('tipo_procedimento', v)})" for v in eu)
+           + "; «concursos limitados», «diálogo concorrencial» e «parcerias para a inovação» têm os valores do Código." if minor(version) >= 5 else ""),
         "publicado_joue (true/false): o anúncio é publicado no Jornal Oficial da União Europeia; «envio do anúncio ao Serviço das Publicações da União Europeia» e «publicidade internacional» afirmam-no.",
         "urgencia_fundamentada (true/false): a entidade adjudicante fundamentou uma situação de urgência.",
         "setores_especiais (true/false): o contrato diz direta e principalmente respeito a atividades dos setores da água, da energia, dos transportes ou dos serviços postais.",
@@ -501,9 +554,10 @@ def vocab_text(version=VERSION):
         "valor_estimado, preco_base, preco_contratual: euros, como condição de um prazo que muda com o valor do contrato (L10).",
         "Operadores: eq, ne (um valor); in, not_in (uma lista); lt, le, gt, ge (números e datas).",
         "prazo_minimo — params: minimum_days (inteiro), deadline_field, counted_from, usual_days (inteiro ou null).",
-        "deadline_field: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in VOC["deadline_fields"].items()) + ".",
-        "counted_from: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in VOC["counted_from"].items()) + ", nao_indicado (L9).",
-        "limiar — params: threshold = {field: " + " | ".join(f"{k} ({quoted(v, 1)})" for k, v in VOC["threshold_fields"].items())
+        *(["prazo_maximo — params: maximum_days (inteiro), deadline_field, counted_from."] if minor(version) >= 5 else []),
+        "deadline_field: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["deadline_fields"].items()) + ".",
+        "counted_from: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["counted_from"].items()) + ", nao_indicado (L9).",
+        "limiar — params: threshold = {field: " + " | ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["threshold_fields"].items())
         + ", comparator: lt | le | gt | ge, value: euros, currency: \"EUR\"}."])
 
 
@@ -555,6 +609,22 @@ L10_04 = ("lê-se na passagem remetida, e cada valor remetido é um caso (L5) co
           "(o tipo de contrato, a entidade), além das da passagem-alvo.")
 STATIC = STATIC_03.replace(L5_03, L5_04).replace(L10_03, L10_04)
 assert STATIC.count(L5_04) == 1 and STATIC.count(L10_04) == 1
+# 0.5 (D71): any act the store holds, and the prazo_maximo type
+_05 = [("És um leitor da lei portuguesa. Lês uma passagem do Código dos Contratos Públicos — a passagem-alvo, marcada no texto — e escreves",
+        "És um leitor da lei da contratação pública. Lês uma passagem de um ato (o Código dos Contratos Públicos ou outro, nomeado em «Onde está») — a passagem-alvo, marcada no texto — e escreves"),
+       ("O motor dá «não cumpre» a um procedimento que fixe menos.",
+        "O motor dá «não cumpre» a um procedimento que fixe menos.\n- prazo_maximo: «quando todas as condições se verificam, o prazo <deadline_field>, contado desde "
+        "<counted_from>, não pode ser superior a <maximum_days> dias». O motor dá «não cumpre» a um procedimento que fixe mais."),
+       ("«o prazo mínimo é de N dias» → minimum_days N.",
+        "«o prazo mínimo é de N dias» → minimum_days N. No prazo máximo, «não pode ser superior a N dias», «no prazo máximo de N dias», «no prazo de N dias», «até N dias» → maximum_days N."),
+       ("ou não é para apresentar nada; sem_vocabulario",
+        "ou não é para apresentar nada; nao_e_prazo_maximo — o prazo é um mínimo («não pode ser inferior a»), é um prazo para a própria entidade adjudicante, ou não é para apresentar nada; sem_vocabulario"),
+       ('"nao_e_limiar | nao_e_prazo_minimo | sem_vocabulario | texto_em_falta"', '"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | sem_vocabulario | texto_em_falta"'),
+       ("e usual_days (quando não é null), no prazo_minimo;", "e usual_days (quando não é null), no prazo_minimo; maximum_days, deadline_field e counted_from (salvo nao_indicado), no prazo_maximo;")]
+STATIC_05 = STATIC
+for _a, _b in _05:
+    assert STATIC_05.count(_a) == 1, _a
+    STATIC_05 = STATIC_05.replace(_a, _b)
 
 EXAMPLE = {"regras": [{"tipo": "prazo_minimo", "condicoes": [
     {"field": "tipo_procedimento", "op": "eq", "value": "concurso_publico", "fontes": [{"texto": "Concurso público", "de": "exemplo:cap-ii"}]},
@@ -573,8 +643,13 @@ EXAMPLE_CTX = {"alvo": "exemplo:art900.2", "article": "exemplo:art900",
 
 
 def render(ctx, rtype, version=VERSION):
+    with _using(version):  # D71: the vocabulary of the prompt's own protocol
+        return _render(ctx, rtype, version)
+
+
+def _render(ctx, rtype, version=VERSION):
     mark = {"alvo": "   ◀ PASSAGEM-ALVO", "remissao": "   ◀ remetida", "proemio": "   ◀ proémio da passagem-alvo"}
-    lines = [(STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in VOC["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
+    lines = [(STATIC_05 if minor(version) >= 5 else STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in V()["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
              f"O TEXTO (versão em vigor a {ctx['date']})",
              "Onde está: " + (" > ".join(f"[{i}] {t}" for i, t in ctx["place"]) or "—"),
              f"[{ctx['article']}] {ctx['label']} — {ctx['heading']}"]
@@ -592,12 +667,17 @@ def render(ctx, rtype, version=VERSION):
     return "\n".join(lines)
 
 
-def schema(ctx, rtype):
+def schema(ctx, rtype, version=VERSION):
+    with _using(version):  # D71: the vocabulary of the prompt's own protocol
+        return _schema(ctx, rtype, version)
+
+
+def _schema(ctx, rtype, version=VERSION):
     ids = sorted(i for i in ctx["roles"])
     src = {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {
         "texto": {"type": "string"}, "de": {"type": "string", "enum": ids}}, "required": ["texto", "de"], "additionalProperties": False}}
-    c = VOC["condition_fields"]
-    enum_vals = sorted({v for f in c.values() if f["kind"] == "enum" for v in f["values"]})
+    c = V()["condition_fields"]
+    enum_vals = sorted(old({v for f in c.values() if f["kind"] == "enum" for v in f["values"]}, version))
     cond = {"type": "object", "properties": {
         "field": {"type": "string", "enum": list(c)},
         "op": {"type": "string", "enum": ["eq", "ne", "in", "not_in", "lt", "le", "gt", "ge"]},
@@ -609,15 +689,23 @@ def schema(ctx, rtype):
     if rtype == "prazo_minimo":
         params = {"type": "object", "properties": {
             "minimum_days": {"type": "integer", "minimum": 1},
-            "deadline_field": {"type": "string", "enum": list(VOC["deadline_fields"])},
-            "counted_from": {"type": "string", "enum": list(VOC["counted_from"]) + ["nao_indicado"]},
+            "deadline_field": {"type": "string", "enum": list(V()["deadline_fields"])},
+            "counted_from": {"type": "string", "enum": list(V()["counted_from"]) + ["nao_indicado"]},
             "usual_days": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]}},
             "required": ["minimum_days", "deadline_field", "counted_from", "usual_days"], "additionalProperties": False}
         fontes = {"type": "object", "properties": {"minimum_days": src, "deadline_field": src, "counted_from": nullable_src, "usual_days": nullable_src},
                   "required": ["minimum_days", "deadline_field", "counted_from", "usual_days"], "additionalProperties": False}
+    elif rtype == "prazo_maximo":  # 0.5 (D71)
+        params = {"type": "object", "properties": {
+            "maximum_days": {"type": "integer", "minimum": 1},
+            "deadline_field": {"type": "string", "enum": list(V()["deadline_fields"])},
+            "counted_from": {"type": "string", "enum": list(V()["counted_from"]) + ["nao_indicado"]}},
+            "required": ["maximum_days", "deadline_field", "counted_from"], "additionalProperties": False}
+        fontes = {"type": "object", "properties": {"maximum_days": src, "deadline_field": src, "counted_from": nullable_src},
+                  "required": ["maximum_days", "deadline_field", "counted_from"], "additionalProperties": False}
     else:
         params = {"type": "object", "properties": {"threshold": {"type": "object", "properties": {
-            "field": {"type": "string", "enum": list(VOC["threshold_fields"])},
+            "field": {"type": "string", "enum": list(V()["threshold_fields"])},
             "comparator": {"type": "string", "enum": ["lt", "le", "gt", "ge"]},
             "value": {"type": "number"}, "currency": {"type": "string", "enum": ["EUR"]}},
             "required": ["field", "comparator", "value", "currency"], "additionalProperties": False}},
@@ -627,7 +715,7 @@ def schema(ctx, rtype):
     rule = {"type": "object", "properties": {"tipo": {"type": "string", "enum": [rtype]}, "condicoes": {"type": "array", "items": cond},
                                              "params": params, "fontes": fontes},
             "required": ["tipo", "condicoes", "params", "fontes"], "additionalProperties": False}
-    nt = {"type": "object", "properties": {"motivo": {"type": "string", "enum": list(VOC["nao_tipavel_motivos"])}, "fontes": src,
+    nt = {"type": "object", "properties": {"motivo": {"type": "string", "enum": old(V()["nao_tipavel_motivos"], version)}, "fontes": src,
                                            "falta": {"type": "string"}},
           "required": ["motivo", "fontes", "falta"], "additionalProperties": False}
     return {"type": "object", "properties": {"regras": {"type": "array", "maxItems": 4, "items": rule},
@@ -659,6 +747,11 @@ def _sources(ctx, fontes, roles_ok, where, errs, rest_ok=False):
 
 
 def check(reading, ctx, rtype, version=VERSION):
+    with _using(version):  # D71: the vocabulary of the prompt's own protocol
+        return _check(reading, ctx, rtype, version)
+
+
+def _check(reading, ctx, rtype, version=VERSION):
     """Errors that keep a reading from being recorded; [] when every quoted word is in the text, comes from a source L1
     allows and says the value it is quoted for. `version` is the protocol the reading's prompt was rendered with."""
     errs = []
@@ -666,14 +759,14 @@ def check(reading, ctx, rtype, version=VERSION):
     if nt:
         if rules:
             errs.append("não tipável com regras")
-        if nt.get("motivo") not in VOC["nao_tipavel_motivos"]:
+        if nt.get("motivo") not in V()["nao_tipavel_motivos"]:
             errs.append(f"motivo {nt.get('motivo')} fora da lista")
         _sources(ctx, nt.get("fontes"), {"alvo", "proemio", "remissao", "epigrafe", "titulo"}, "não tipável", errs)  # L3: a title can be the reason
         return errs
     if not rules:
         return ["nem regras nem não tipável"]
     alvo_text = ctx["allowed"][ctx["alvo"]]
-    rest = any(contains(alvo_text, w) for w in VOC["rest_phrases"])
+    rest = any(contains(alvo_text, w) for w in V()["rest_phrases"])
     seen = set()
     for i, r in enumerate(rules, 1):
         w = f"regra {i}"
@@ -681,7 +774,7 @@ def check(reading, ctx, rtype, version=VERSION):
             errs.append(f"{w}: tipo {r.get('tipo')}")
         for c in r.get("condicoes", []):
             f, op, v = c.get("field"), c.get("op"), c.get("value")
-            spec = VOC["condition_fields"].get(f)
+            spec = V()["condition_fields"].get(f)
             cw = f"{w}, {f} {op} {v}"
             if spec is None:
                 errs.append(f"{cw}: campo fora do vocabulário")
@@ -697,7 +790,7 @@ def check(reading, ctx, rtype, version=VERSION):
                 if bad:
                     errs.append(f"{cw}: valores fora do vocabulário {sorted(bad)}")
                 named = values_named(f, t)
-                if rest and op in ("eq", "in") and any(contains(t, w) for w in VOC["rest_phrases"]):
+                if rest and op in ("eq", "in") and any(contains(t, w) for w in V()["rest_phrases"]):
                     others = {x for j, r2 in enumerate(rules, 1) if j != i for c2 in r2.get("condicoes", [])
                               if c2.get("field") == f and c2.get("op") in ("eq", "in") for x in (c2["value"] if isinstance(c2["value"], list) else [c2["value"]])}
                     named |= (set(spec["values"]) - others) & vals
@@ -730,20 +823,23 @@ def check(reading, ctx, rtype, version=VERSION):
                 if not any(contains(t, ph) for ph in spec["phrases"]) or v not in euros_in(t) or op not in comparators_in(t):
                     errs.append(f"{cw}: as fontes não dizem {f} {op} {v} (L10)")
         p, pf = r.get("params", {}), r.get("fontes", {})
-        if rtype == "prazo_minimo":
-            t = _sources(ctx, pf.get("minimum_days"), PARAM_ROLES, f"{w}, minimum_days", errs)
+        if rtype in PRAZOS:
+            dk = DAYS_KEY[rtype]
+            t = _sources(ctx, pf.get(dk), PARAM_ROLES, f"{w}, {dk}", errs)
             nums = numbers_in(t)
-            reduction_by = any(contains(t, x) for x in VOC["reduction_by_phrases"])
-            ok = p.get("minimum_days") in nums or (reduction_by and any(a - b == p.get("minimum_days") for a in nums for b in nums))
+            reduction_by = rtype == "prazo_minimo" and any(contains(t, x) for x in V()["reduction_by_phrases"])
+            ok = p.get(dk) in nums or (reduction_by and any(a - b == p.get(dk) for a in nums for b in nums))
             if not ok:
-                errs.append(f"{w}: minimum_days {p.get('minimum_days')} não está nas fontes (L8, L4)")
+                errs.append(f"{w}: {dk} {p.get(dk)} não está nas fontes (L8, L4)")
+            if rtype == "prazo_maximo" and ok and not any(contains(t, x) for x in V()["since_0_5"]["maximum_phrases"]):
+                errs.append(f"{w}: as fontes de maximum_days não dizem um máximo («não pode ser superior a», «no prazo de», L8)")
             t = _sources(ctx, pf.get("deadline_field"), PARAM_ROLES, f"{w}, deadline_field", errs)
-            got = _named(t, VOC["deadline_fields"])
+            got = _named(t, V()["deadline_fields"])
             if got != {p.get("deadline_field")}:
                 errs.append(f"{w}: deadline_field {p.get('deadline_field')} e as fontes dizem {sorted(got) or 'nada'} (L9)")
             if p.get("counted_from") == "nao_indicado":
                 said = set()
-                counting = {k: [w for w in ws if re.search(r"a contar|contad[oa]s?|desde|após|a partir", w)] for k, ws in VOC["counted_from"].items()}
+                counting = {k: [w for w in ws if re.search(r"a contar|contad[oa]s?|desde|após|a partir", w)] for k, ws in V()["counted_from"].items()}
                 for pid, role in ctx["roles"].items():
                     if role in ("alvo", "proemio", "remissao"):
                         said |= _named(ctx["allowed"][pid], counting)
@@ -754,7 +850,7 @@ def check(reading, ctx, rtype, version=VERSION):
                 got = counted_in_passage(ctx, pf.get("counted_from")) if minor(version) >= 4 else counted_named(t)
                 if got != {p.get("counted_from")}:
                     errs.append(f"{w}: counted_from {p.get('counted_from')} e as fontes dizem {sorted(got) or 'nada'} (L9)")
-            if p.get("usual_days") is not None:
+            if rtype == "prazo_minimo" and p.get("usual_days") is not None:
                 t = _sources(ctx, pf.get("usual_days"), PARAM_ROLES, f"{w}, usual_days", errs)
                 if not contains(t, "em regra") or p["usual_days"] not in numbers_in(t):
                     errs.append(f"{w}: usual_days sem «em regra» e os dias nas fontes (L11)")
@@ -763,7 +859,7 @@ def check(reading, ctx, rtype, version=VERSION):
             if not any(c.get("field") == "tipo_procedimento" and c.get("op") in ("eq", "in") for c in r.get("condicoes", [])):
                 errs.append(f"{w}: um limiar tem sempre o procedimento que permite abaixo do valor; sem ele, L12 (nao_e_limiar)")
             t = _sources(ctx, pf.get("field"), PARAM_ROLES | {"remissao_epigrafe"}, f"{w}, field", errs)
-            if _named(t, VOC["threshold_fields"]) != {th.get("field")}:
+            if _named(t, V()["threshold_fields"]) != {th.get("field")}:
                 errs.append(f"{w}: field {th.get('field')} e as fontes nomeiam {sorted(_named(t, VOC['threshold_fields'])) or 'nada'} (L10)")
             t = _sources(ctx, pf.get("comparator"), PARAM_ROLES, f"{w}, comparator", errs)
             if comparators_in(t) != {th.get("comparator")}:
@@ -782,7 +878,7 @@ def complement(field, text, rules, i, value=False):
     """A case of one passage completes another (L5): «30 dias, ou 15 dias se a urgência…» gives false to the 30-day rule
     when another rule of the same answer has the fact true, and «25 dias ou, quando o anúncio não seja publicado…, 15 dias»
     gives true to the 25-day rule when another has it false; «quando o não seja» negates the fact the sentence names."""
-    if not value and any(contains(text, w) for w in VOC.get("alternative_negations", [])) and polarity(field, text):
+    if not value and any(contains(text, w) for w in V().get("alternative_negations", [])) and polarity(field, text):
         return True
     return (not value) in polarity(field, text) and any(
         j != i and any(c.get("field") == field and c.get("value") is (not value) for c in r.get("condicoes", r.get("conditions", [])))
@@ -830,13 +926,13 @@ def support(rule, ctx, rtype, rules=()):
     """What an answer written without quotes claims that no allowed source says (the v3 sources and words, L1-L13)."""
     errs = []
     alvo_text = ctx["allowed"][ctx["alvo"]]
-    rest = any(contains(alvo_text, w) for w in VOC["rest_phrases"])
+    rest = any(contains(alvo_text, w) for w in V()["rest_phrases"])
     cond_text = " ‖ ".join(t for pid, t in ctx["allowed"].items() if ctx["roles"][pid] in CONDITION_ROLES)
     near_text = cond_text + (" ‖ " + " ‖ ".join(t for pid, t in ctx["allowed"].items() if ctx["roles"][pid] == "vizinho") if rest else "")
     param_text = " ‖ ".join(t for pid, t in ctx["allowed"].items() if ctx["roles"][pid] in PARAM_ROLES)
     for c in rule.get("conditions") or rule.get("condicoes") or []:
         f, op, v = c["field"], c["op"], c["value"]
-        spec = VOC["condition_fields"].get(f)
+        spec = V()["condition_fields"].get(f)
         cw = f"{f} {op} {v}"
         if spec is None:
             errs.append(f"{cw}: campo fora do vocabulário v3")
@@ -865,10 +961,11 @@ def support(rule, ctx, rtype, rules=()):
             if not re.search(r"\d{1,2} de \w+ de \d{4}|\d{4}-\d{2}-\d{2}", cond_text):
                 errs.append(f"{cw}: nenhuma fonte fixa uma data (L13)")
     p = rule.get("params") or {}
-    if rtype == "prazo_minimo":
-        if p.get("minimum_days") not in numbers_in(param_text) and not any(contains(param_text, x) for x in VOC["reduction_by_phrases"]):
-            errs.append(f"minimum_days {p.get('minimum_days')}: não está no texto")
-        if p.get("deadline_field") not in _named(param_text, VOC["deadline_fields"]):
+    if rtype in PRAZOS:
+        dk = DAYS_KEY[rtype]
+        if p.get(dk) not in numbers_in(param_text) and not (rtype == "prazo_minimo" and any(contains(param_text, x) for x in V()["reduction_by_phrases"])):
+            errs.append(f"{dk} {p.get(dk)}: não está no texto")
+        if p.get("deadline_field") not in _named(param_text, V()["deadline_fields"]):
             errs.append(f"deadline_field {p.get('deadline_field')}: o texto não o diz")
         said = counted_named(param_text)
         if p.get("counted_from") == "nao_indicado" and said:
@@ -881,7 +978,7 @@ def support(rule, ctx, rtype, rules=()):
             errs.append(f"value {th.get('value')}: não está no texto")
         if th.get("comparator") not in comparators_in(param_text):
             errs.append(f"comparator {th.get('comparator')}: o texto diz {sorted(comparators_in(param_text))}")
-        named = _named(param_text, VOC["threshold_fields"])
+        named = _named(param_text, V()["threshold_fields"])
         if th.get("field") not in named:
             errs.append(f"field {th.get('field')}: o texto nomeia {sorted(named) or 'nada'} (L10)")
     return errs

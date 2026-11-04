@@ -1,0 +1,35 @@
+{
+  "id": "eu-2009-81:art48.5",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2009-81",
+  "parent": "eu-2009-81:art48",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2010-01-01",
+      "text": "5. Quando a adjudicação for feita à proposta economicamente mais vantajosa, o convite será acompanhado do resultado da avaliação completa da proposta do proponente em questão, efectuada em conformidade com a ponderação prevista no primeiro parágrafo do n.º 2 do artigo 47.º.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20100101",
+      "offsets": {
+        "start": 112098,
+        "end": 112372
+      },
+      "valid_from": "2010-01-01",
+      "valid_to": "2016-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2016-01-01",
+      "text": "5. Quando a adjudicação for feita à proposta economicamente mais vantajosa, o convite será acompanhado do resultado da avaliação completa da proposta do proponente em questão, efectuada em conformidade com a ponderação prevista no primeiro parágrafo do n.º 2 do artigo 47.º.\nO convite mencionará igualmente a fórmula matemática que determinará, aquando do leilão electrónico, as reclassificações automáticas em função dos novos preços e/ou dos novos valores apresentados. Essa fórmula integrará a ponderação de todos os critérios definidos para determinar a proposta economicamente mais vantajosa, tal como indicada no anúncio de concurso ou no caderno de encargos; para o efeito, as eventuais margens de flutuação devem ser previamente expressas por um valor determinado.\nCaso sejam autorizadas variantes, deve ser fornecida uma fórmula separada para cada variante.",
+      "raw": "raw:eur-lex:diretiva:eu-2009-81-20160101",
+      "offsets": {
+        "start": 111918,
+        "end": 112784
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

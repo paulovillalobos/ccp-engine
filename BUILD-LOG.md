@@ -2182,3 +2182,54 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   evento:276; its 13 reservado keys stay the exam. Below 20 settled was not reached: on ordinary real passages v14 settles 35 of 60,
   nearly all of them «não tipável»; on real passages that do state a rule of these types, the evidence is still round 10's 3 of 9
   and this round's one rule.
+
+## 2026-11-04 — D70–D72: all the real law the store can hold, a third rule type, round 12 over all of it
+- Asked (pessoa:paulo, 2026-11-04): «Add all the real law that you can go fetch it then come back», in answer to whether to add a
+  rule type for deadlines on an act. Read as the go for both: fetch the procurement law the store lacks, and a rule type so
+  more of the real law can be labelled.
+- D70, the law. The store held the CCP and Portuguese acts; the EU procurement directives themselves were missing (only the
+  2026–2027 threshold regulations). The EUR-Lex website answers scripts with a challenge, so nothing there; the Publications
+  Office serves the same texts by content negotiation (official open data, resource/celex/<CELEX>, Accept xhtml, Accept-Language
+  por). 66 documents, one passive GET each (tools/capture_page.py@3, --list: the store loaded once): every consolidated version
+  in Portuguese of 2014/24, 2014/25, 2014/23, 2009/81, 2004/18, 2004/17, 89/665 and 92/13, and the OJ text as adopted of 2014/24,
+  2014/25, 2014/23 and 2004/18. 5 earlier versions are not served in Portuguese (404) and are not here.
+- Extractor eurlex-consolidated@1 (engine/extract.py, extract@5): both the consolidated CONVEX markup (old and new) and the OJ
+  text; amendment markers and footnotes are not text; a numbered point «1)» inside a paragraph stays its text as «(1)»; the
+  OJ's ordinal «o» is «º»; it stops at the first annex (annexes are not structured).
+- build_law@7: a directive's passages take a version per consolidation that changes their text, from that date; the first
+  from the entry into force when the first capture is the adopted text («no vigésimo dia seguinte ao da sua publicação»: 2014/24
+  art. 27.º n.º 1 from 2014-04-17, with its entra_em_vigor vigência); an amending quotation (another act's text) is left out;
+  2004/18 and 2004/17 close on 2016-04-18 with a revoked version and a «revoga» vigência quoting 2014/24 art. 91.º and 2014/25
+  art. 107.º. Example of the law clock: 2014/24 art. 4.º b) reads 134 000, 135 000, 144 000, 139 000, 140 000, 143 000 and 140 000 EUR,
+  each from its consolidation date. Not structured, and said so in build-report.json: the OJ text of 2014/23 (an unbalanced «
+  in its definitions); 2014/23 arts. 46.º–55.º and 2009/81 from art. 71.º (an amending quotation the source leaves open).
+  2009/81's versions before 2016 hold 107 "-dup" numbers the old markup repeats; no target is drawn from a -dup id.
+- Added: 8 normas, 3 555 passages, 2 879 vigências; the CCP and every other act unchanged (36 524 passages). law/COVERAGE.md
+  regenerated. tests/test_eu_directives.py (5).
+- The training data of D45–D69 and the reservation are functions of the store; with the directives in it they would no longer
+  regenerate (verify's first run: 21 TRAIN failures). The 0.5 vocabulary is a copy (VOC5) read only inside a 0.5 call, so every
+  generator and measure written before it reads the 0.4 tables unchanged (a merged table moved one statistic of data-v13's INDEX). make_training.LAW_RECORDED_BY = 2026-10-25T00:00:00Z (the day the reservation was frozen; no law object was
+  recorded between then and D70): verify@53 reads the TRAIN checks from the store as recorded by then (Store.as_recorded). The
+  training data, the reservation list and the measurements are unchanged.
+- D71, protocol 0.5 (tools/read_rules_v3.py@8, V05; VERSION stays 0.4 for every caller written before it): a passage of any act
+  the store holds, named by its title in «Onde está»; the directives' procedure names as values of their own (concurso_aberto,
+  procedimento_concorrencial_negociacao, procedimento_negociacao_com_concurso), never mapped onto a CCP procedure; «pedidos de
+  participação» names the candidaturas deadline; the type prazo_maximo («o prazo … não pode ser superior a N dias»; «no prazo
+  de N dias», «no prazo máximo de», «até N dias» → maximum_days), its reason nao_e_prazo_maximo, and a checker that refuses a
+  maximum whose quote states none. The engine evaluates it (cumpre when the deadline set is at most the maximum; the most
+  specific of one field's rules decides, D66). Every recorded 0.4 prompt of rounds 9–11 re-renders byte for byte
+  (tests/test_read_rules_v3_05.py, 4). Kept narrow on purpose: a deadline the entity itself must meet («o júri notifica no prazo
+  de 5 dias») needs the date of the act among the facts, which the facts do not have: still «não tipável», a product call.
+- D72, round 12 (rule-factory@26, FROUNDS[12], governance/readings/fabrica12/pick.json, drawn once by draw12 before either family
+  reads; tests/test_rule_factory_round12.py re-draws it): every real passage of the store that states days or euros and that no
+  round asked the same question of. 377 targets: CCP in force 107 (92 prazo_maximo — round 11's «não é prazo mínimo» asked again
+  under the new type, and the rest), CCP versions no longer in force whose numbers differ from today's 86, EU directives 184
+  (68 prazo_minimo, 63 prazo_maximo, 53 limiar). Left out: 12 whose prompt would not print a line their reading may quote (a
+  revoked «b) (Revogada.)», round 11's 104.º trap; verify V3 caught them on the first draw, before any reading: the round
+  directory was removed and drawn again with the check in draw12). Type by the passage's words: days with «mínimo», «inferior a», «pelo menos» or
+  «antecedência» → prazo_minimo; other days → prazo_maximo; euros alone → limiar. Strata by TRAIN-HELD-OUT's frozen rule:
+  81 reservado (exam), 296 pratica. Protocol 0.5, adapter v14 (leitor:a16), leitor:b blind.
+- Forecast, committed before either family answers: leitor:a16 valid on 55–70 % (it never saw prazo_maximo nor an EU text),
+  leitor:b on 92–100 %; 145–225 settled, 40–110 of them rules (most on the directives' minimum deadlines); per type, settled
+  share highest on prazo_minimo and lowest on prazo_maximo; no quote outside the text. Below 120 settled, the new type or the
+  new texts are where v14 fails and the next step is its training on them, not more passages.

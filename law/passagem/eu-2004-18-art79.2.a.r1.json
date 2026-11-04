@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-18:art79.2.a",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-18",
+  "parent": "eu-2004-18:art79.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2009-08-07",
+      "text": "a) As regras técnicas dos métodos de cálculo previstos no segundo parágrafo do n.º 1 e no n.º 3 do artigo 78.º;",
+      "raw": "raw:eur-lex:diretiva:eu-2004-18-20090807",
+      "offsets": {
+        "start": 131999,
+        "end": 132110
+      },
+      "valid_from": "2009-08-07",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 91.º\nRevogações\nA Diretiva 2004/18/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs referências à diretiva revogada devem entender-se como referências à presente diretiva e devem ser lidas de acordo com a tabela de correspondência constante do Anexo XV.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-24-20140328",
+      "offsets": {
+        "start": 238626,
+        "end": 238899
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

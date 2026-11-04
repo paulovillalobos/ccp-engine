@@ -1,0 +1,35 @@
+{
+  "id": "eu-1989-665:art1.3",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1989-665",
+  "parent": "eu-1989-665:art1",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-01-09",
+      "text": "3. Os Estados-Membros devem garantir o acesso ao recurso, de acordo com regras detalhadas que os Estados-Membros podem estabelecer, a qualquer pessoa que tenha ou tenha tido interesse em obter um determinado contrato e que tenha sido, ou possa vir a ser, lesada por uma eventual violação.",
+      "raw": "raw:eur-lex:diretiva:eu-1989-665-20080109",
+      "offsets": {
+        "start": 2003,
+        "end": 2291
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": "2014-04-17",
+      "revoked": false
+    },
+    {
+      "version": "2014-04-17",
+      "text": "3. Os Estados-Membros devem garantir o acesso ao recurso, de acordo com regras detalhadas que os Estados-Membros podem estabelecer, pelo menos a qualquer pessoa que tenha ou tenha tido interesse em obter um determinado contrato e que tenha sido, ou possa vir a ser, lesada por uma eventual violação.",
+      "raw": "raw:eur-lex:diretiva:eu-1989-665-20140417",
+      "offsets": {
+        "start": 2170,
+        "end": 2469
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

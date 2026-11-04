@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art34.3",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art34",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "3. Sem prejuízo das regras técnicas nacionais vinculativas, desde que compatíveis com o direito comunitário, as especificações técnicas devem ser formuladas:\na) Seja por referência a especificações técnicas definidas no anexo XXI e, por ordem de preferência, a normas nacionais que transponham normas europeias, a homologações técnicas europeias, a especificações técnicas comuns, a normas internacionais, a qualquer outro referencial técnico estabelecido pelos organismos europeus de normalização ou, caso aquele não exista, a normas nacionais, a homologações técnicas nacionais ou a especificações técnicas nacionais em matéria de concepção, cálculo e execução de obras, bem como de utilização de materiais. Cada referência será acompanhada da menção «ou equivalente»;\nb) Seja em termos de desempenho ou de exigências funcionais, podendo estas últimas incluir características ambientais. Devem, todavia, ser suficientemente precisas para permitir aos proponentes determinar o objecto do contrato e às entidades adjudicantes escolher o adjudicatário;\nc) Seja em termos do desempenho ou das exigências funcionais a que se refere a alínea b), remetendo, como meio de presunção de conformidade com esse desempenho ou essas exigências funcionais, para as especificações a que se refere a alínea a);\nd) Seja por referência às especificações a que se refere a alínea a) para determinadas características e por referência ao desempenho ou às exigências funcionais a que se refere a alínea b) para outras características.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 51870,
+        "end": 53384
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

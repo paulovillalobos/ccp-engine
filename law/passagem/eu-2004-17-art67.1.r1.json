@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art67.1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art67",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "1. Os Estados-Membros devem assegurar que a Comissão receba anualmente, segundo modalidades a estabelecer nos termos do n.º 2 do artigo 68.º, um relatório estatístico relativo ao valor total, discriminado por Estado-Membro e por cada uma das categorias de actividades referidas nos anexos I a X, das adjudicações efectuadas com limiares inferiores aos estabelecidos no artigo 16.º, mas que, não considerando os limiares, estariam abrangidas pela presente directiva.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 125959,
+        "end": 126424
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

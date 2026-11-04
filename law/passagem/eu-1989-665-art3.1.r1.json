@@ -1,0 +1,35 @@
+{
+  "id": "eu-1989-665:art3.1",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-1989-665",
+  "parent": "eu-1989-665:art3",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-01-09",
+      "text": "1. A Comissão pode recorrer ao procedimento previsto nos n.os 2 a 5 caso, antes de um contrato ser celebrado, considere que foi cometida uma violação grave do direito comunitário em matéria de contratos públicos no decurso de um procedimento de adjudicação de contratos abrangido pela Directiva 2004/18/CE.",
+      "raw": "raw:eur-lex:diretiva:eu-1989-665-20080109",
+      "offsets": {
+        "start": 20190,
+        "end": 20496
+      },
+      "valid_from": "2008-01-09",
+      "valid_to": "2014-04-17",
+      "revoked": false
+    },
+    {
+      "version": "2014-04-17",
+      "text": "1. A Comissão pode recorrer ao procedimento previsto nos n.os 2 a 5 caso, antes de um contrato ser celebrado, considere que foi cometida uma violação grave do direito da União em matéria de contratos públicos no decurso de um procedimento de adjudicação de contratos abrangido pela Diretiva 2014/24/UE ou pela Diretiva 2014/23/UE.",
+      "raw": "raw:eur-lex:diretiva:eu-1989-665-20140417",
+      "offsets": {
+        "start": 20610,
+        "end": 20940
+      },
+      "valid_from": "2014-04-17",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

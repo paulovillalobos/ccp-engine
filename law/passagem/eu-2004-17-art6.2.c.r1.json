@@ -1,0 +1,35 @@
+{
+  "id": "eu-2004-17:art6.2.c",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2004-17",
+  "parent": "eu-2004-17:art6.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2004-11-01",
+      "text": "c) «Outros serviços diferentes dos serviços postais» :\nserviços prestados nos seguintes domínios:\n— os serviços de gestão de serviços de correio (tanto os serviços que precedem o envio como os posteriores ao envio, tais como mailroom management services),\n— os serviços de valor acrescentado associados à via electrónica e inteiramente efectuados por essa via (incluindo a transmissão protegida de documentos codificados por via electrónica, os serviços de gestão de endereços e o envio de correio electrónico registado),\n— os serviços relativos a envios postais não incluídos na alínea a), tais como a publicidade postal sem endereço,\n— os serviços financeiros, tal como definidos na categoria 6 do anexo XVII A e na alínea c) do artigo 24.º e que incluem, nomeadamente, ordens de pagamento postal e ordens de transferência postal,\n— os serviços de filatelia, e\n— os serviços logísticos (serviços que combinem a entrega física e/ou o armazenamento com outras funções não postais),\ndesde que tais serviços sejam prestados por uma entidade que preste igualmente serviços postais na acepção dos primeiro ou segundo travessôes da alínea b) e de que as condições referidas no n.º 1 do artigo 30.º não estejam preenchidas relativamente aos serviços referidos naquelestravessões.",
+      "raw": "raw:eur-lex:diretiva:eu-2004-17-20041101",
+      "offsets": {
+        "start": 15404,
+        "end": 16677
+      },
+      "valid_from": "2004-11-01",
+      "valid_to": "2016-04-18",
+      "revoked": false
+    },
+    {
+      "version": "2016-04-18",
+      "text": "Artigo 107.º\nRevogação\nA Diretiva 2004/17/CE é revogada com efeitos a partir de 18 de abril de 2016.\nAs remissões para a diretiva revogada devem entender-se como sendo feitas para a presente diretiva e ser lidas de acordo com a tabela de correspondência constante do Anexo XXI.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-25-20140328",
+      "offsets": {
+        "start": 236878,
+        "end": 237155
+      },
+      "valid_from": "2016-04-18",
+      "valid_to": null,
+      "revoked": true
+    }
+  ]
+}

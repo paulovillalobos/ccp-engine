@@ -649,5 +649,61 @@
   "sejam ou não",
   "tenha ou não sido",
   "consoante haja ou não"
- ]
+ ],
+ "since_0_5": {
+  "about": "D71 (protocol 0.5): what 0.5 adds, read into a copy of the tables for a prompt of 0.5 only; a prompt of 0.4 or earlier, and every tool written before 0.5, read the tables above unchanged. The EU directives' own procedure names are values of their own, never mapped onto a CCP procedure; «pedidos de participação» is the directives' word for the candidaturas deadline; the prazo_maximo type and its reason.",
+  "condition_values": {
+   "tipo_procedimento": {
+    "concurso_aberto": [
+     "concurso aberto",
+     "concursos abertos"
+    ],
+    "procedimento_concorrencial_negociacao": [
+     "procedimento concorrencial com negociação",
+     "procedimentos concorrenciais com negociação"
+    ],
+    "procedimento_negociacao_com_concurso": [
+     "procedimento por negociação com abertura prévia de concurso",
+     "procedimentos por negociação com abertura prévia de concurso",
+     "processos por negociação com publicação de anúncio",
+     "processo por negociação com publicação de anúncio",
+     "processos por negociação com publicação prévia de anúncio de concurso",
+     "processos por negociação com abertura de concurso",
+     "procedimentos por negociação com publicação de anúncio de concurso",
+     "procedimento por negociação com publicação de anúncio de concurso",
+     "procedimentos por negociação com publicação de anúncio",
+     "procedimento por negociação com publicação de anúncio"
+    ]
+   }
+  },
+  "condition_phrases": {
+   "tipo_procedimento": {
+    "parceria_inovacao": [
+     "parcerias para a inovação"
+    ]
+   }
+  },
+  "deadline_phrases": {
+   "prazo_candidaturas_dias": [
+    "receção dos pedidos de participação",
+    "pedidos de participação",
+    "pedido de participação"
+   ]
+  },
+  "nao_tipavel_motivos": {
+   "nao_e_prazo_maximo": "o prazo é um mínimo, é um prazo para a própria entidade adjudicante, ou não é para apresentar nada"
+  },
+  "maximum_phrases": [
+   "não pode ser superior a",
+   "não podendo ser superior a",
+   "não pode exceder",
+   "não podendo exceder",
+   "no prazo máximo de",
+   "prazo máximo de",
+   "o prazo máximo",
+   "até ao máximo de",
+   "no prazo de",
+   "até"
+  ]
+ }
 }

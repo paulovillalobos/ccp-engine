@@ -1,0 +1,23 @@
+{
+  "id": "eu-2014-23:art2.2",
+  "revision": 1,
+  "recorded_at": "2026-11-04T20:17:58Z",
+  "norma": "norma:eu-2014-23",
+  "parent": "eu-2014-23:art2",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2016-01-01",
+      "text": "2. A presente diretiva não afeta os regimes de propriedade nos Estados-Membros e, em particular, não impõe a privatização de empresas públicas que prestam serviços ao público.",
+      "raw": "raw:eur-lex:diretiva:eu-2014-23-20160101",
+      "offsets": {
+        "start": 2337,
+        "end": 2512
+      },
+      "valid_from": "2016-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ]
+}

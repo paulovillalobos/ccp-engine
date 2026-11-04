@@ -1,0 +1,25 @@
+{
+  "id": "raw:eur-lex:diretiva:eu-2004-18-20060101",
+  "revision": 2,
+  "recorded_at": "2026-11-04T20:13:54Z",
+  "source": "eur-lex",
+  "kind": "diretiva",
+  "source_id": "eu-2004-18-20060101",
+  "sha256": "516e87ce80c02a2ff5b588b2a09b4c2023cc0c3ae8ef92e49da4c2d39f187039",
+  "bytes": "raw_bytes/516e87ce80c02a2ff5b588b2a09b4c2023cc0c3ae8ef92e49da4c2d39f187039",
+  "media_type": "application/xhtml+xml",
+  "encoding": "utf-8",
+  "url": "https://publications.europa.eu/resource/celex/02004L0018-20060101",
+  "captured_at": "2026-11-04T19:21:00Z",
+  "request": {
+    "method": "GET",
+    "reads_of_page": 1,
+    "renderer": "ccp-capture-page-0.3: one urllib GET"
+  },
+  "text": {
+    "extractor": "eurlex-consolidated@1",
+    "sha256": "b2555767c37924bb3b844b821c2bbd1ce7df99e83c62d6e0e6b001e88151d89d",
+    "bytes": "raw_bytes/b2555767c37924bb3b844b821c2bbd1ce7df99e83c62d6e0e6b001e88151d89d"
+  },
+  "supersedes": 1
+}
