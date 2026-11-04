@@ -2098,3 +2098,25 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   events (257, 258), never committed, were rolled back to the committed log and the round recorded again in full.
   rule-factory@19: TOOL names it, and record, recheck and withdraw check before writing that TOOL is the current
   registration with the file's hash (tests/test_rule_factory_tool.py).
+
+## 2026-11-04 — D68: v14 practises on the real law, from v13
+
+- On the person's question why the practice was written articles and not the real law, and his «compress the time cycle … start
+  saving money»: product_rule:leituras-assentes-como-pratica (evento:276, his «Go»): a reading of a real passage both families
+  settled blind may be practice for family A, its numbers moved by code; the targets still open stay the exam.
+- data-v14 (tools/make_rule_readings_v14.py, make-rule-readings-v14@1): the 19 readings settled by evento:275; 14 kept on 11
+  passages, 5 left out with the reason (REJECTED.json): 174.º n.º 1 and 2 (their article holds the exam's 174.º n.º 3), 19.º d)
+  (a near-copy of the exam's 21.º n.º 1 c), difflib 0.85) and 19.º c) (its reader sees 19.º d)), 19.º c)'s reading of the text before
+  2026-10-01. Each passage: its own row and 24 copies with the days or euro amounts moved where the gold quotes them («seis dias»
+  becomes another number in words), the gold derived again by data-v12's derive and checked with the protocol 0.4: 275 rows, and
+  800 of data-v13's rows (by sha256 of the id). tests/test_rule_readings_v14.py: no row shows an exam passage or article.
+- training/train_lora.py: a run may start from an earlier adapter (init, PeftModel trainable) and keep a share of each task
+  (sample, by sha256). RUNS v14: from amalia-ccp-lei-v13, one epoch, warm-up 10, a tenth of every task but regra_lida: 4 491
+  examples, about 8.8 M tokens (v13: 36 736 examples, 42.8 M tokens an epoch, two epochs).
+- rule-factory@20: FROUNDS[10], round 9's 9 open targets with its prompts and leitor:b's answers carried (no Reader B call).
+  readers/leitor_a_modal.py knows v14 (amalia-ccp-lei-v14, leitor-a16). measure-rule-readings-v14@1 (v14's answers in
+  governance/readings/avaliacao-v14). verify@52: TRAIN checks data-v14, where a reserved article may be cited only as
+  allowed_sources says; MEAS recomputes regras-v14.
+- Forecast, committed before v14 answers: sealed 85–90 % settle (v13 86.5 %); round 10, the 9 open targets: 3–5 settled with
+  leitor:b (v13 0), 6–8 valid (v13 5), no quote outside the text. Below 3 settled, the real practice did not carry over: the next
+  step is a scaffold for conditions said outside the target, not more training.

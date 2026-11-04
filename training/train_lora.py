@@ -70,7 +70,13 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
         # titles, schema in the factory's order), rank 16; tools/preflight_data.py must pass on them before the run starts
         "v13": {"adapter": "amalia-ccp-lei-v13", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9",
                                                            "training/data-v10", "training/data-v11", "training/data-v12", "training/data-v13"],
-                "repeat": {"condicoes_texto": 2}, "preflight": "training/data-v13/regra_lida/train.jsonl", "hp": {"max_len": 12288}}}
+                "repeat": {"condicoes_texto": 2}, "preflight": "training/data-v13/regra_lida/train.jsonl", "hp": {"max_len": 12288}},
+        # phase 17 (D68): v14 starts from v13's adapter (init) and trains one epoch on data-v14's rule rows (the real readings both
+        # families settled, their numbers moved by code, plus 800 of data-v13's) and a tenth of every other task, so v13's skills stay
+        "v14": {"adapter": "amalia-ccp-lei-v14", "init": "amalia-ccp-lei-v13",
+                "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9", "training/data-v10",
+                         "training/data-v11", "training/data-v12", "training/data-v14"],
+                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,
@@ -92,6 +98,12 @@ def mixture(run="v1"):
         for f in sorted((ROOT / d).glob("*/train.jsonl")):
             rows = [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
             by_task[f.parent.name] = rows * RUNS[run]["repeat"].get(f.parent.name, 1)
+    sample = RUNS[run].get("sample", {})
+    for k in by_task:  # D68: a run from an earlier adapter keeps a share of each task, the first by sha256 of the id (and of its copy)
+        share = sample.get(k, sample.get("*", 1.0))
+        if share < 1.0:
+            keyed = sorted(enumerate(by_task[k]), key=lambda x: hashlib.sha256(f"{x[1]['id']}#{x[0]}".encode()).hexdigest())
+            by_task[k] = [r for _, r in keyed[:max(1, round(share * len(keyed)))]]
     others = sum(len(v) for k, v in by_task.items() if k != "escolha_passagem")
     esc = sorted(by_task.get("escolha_passagem", []), key=lambda r: hashlib.sha256(r["id"].encode()).hexdigest())
     by_task["escolha_passagem"] = esc[:others]
@@ -100,13 +112,13 @@ def mixture(run="v1"):
 
 
 @app.function(gpu="H100", volumes={"/weights": weights, "/lora": adapters}, timeout=9 * 3600)  # D67: v13 ≈ 5.5 h (v12 4.2 h × 1.31); the adapter is saved only at the end
-def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
+def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER, init: str = "") -> dict:
     import math
     import random
 
     import torch
     from huggingface_hub import snapshot_download
-    from peft import LoraConfig, get_peft_model
+    from peft import LoraConfig, PeftModel, get_peft_model
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
     out_dir = Path("/lora") / adapter
@@ -151,8 +163,11 @@ def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
     model.config.use_cache = False
     model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
     model.enable_input_require_grads()
-    model = get_peft_model(model, LoraConfig(r=hp["lora_r"], lora_alpha=hp["lora_alpha"], lora_dropout=hp["lora_dropout"],
-                                             task_type="CAUSAL_LM", target_modules=hp["target_modules"]))
+    if init:  # D68: training goes on from an earlier adapter in the volume (its rank and modules), which stays as it is
+        model = PeftModel.from_pretrained(model, str(Path("/lora") / init), is_trainable=True)
+    else:
+        model = get_peft_model(model, LoraConfig(r=hp["lora_r"], lora_alpha=hp["lora_alpha"], lora_dropout=hp["lora_dropout"],
+                                                 task_type="CAUSAL_LM", target_modules=hp["target_modules"]))
     trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
     inner = model.base_model.model
     torch.manual_seed(hp["seed"])
@@ -214,12 +229,12 @@ def main(run: str = "v1"):
     dirty = bool(subprocess.run(["git", "status", "--porcelain", *RUNS[run]["data"], "law"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     hp = {**HP, **RUNS[run].get("hp", {})}  # a run may change hyper-parameters (D53: rank 64)
-    call = train_remote.spawn(rows, hp, adapter)
+    call = train_remote.spawn(rows, hp, adapter, RUNS[run].get("init", ""))
     print("modal function call", call.object_id, flush=True)
     res = call.get()
     finished = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     out.mkdir(parents=True, exist_ok=True)
-    manifest = {"adapter": adapter, "volume": "amalia-lora", "base": {"model": MODEL, "revision": REVISION},
+    manifest = {"adapter": adapter, "volume": "amalia-lora", "base": {"model": MODEL, "revision": REVISION}, "init": RUNS[run].get("init"),
                 "training_index_sha256": hashlib.sha256(index.read_bytes()).hexdigest(), "data_index_sha256": indexes,
                 "repeat": RUNS[run]["repeat"], "mixture": mix, "examples_in_mix": len(rows),
                 "hyperparameters": hp, "repo_commit": commit, "repo_dirty_training_or_law": dirty, "started": started, "finished": finished,

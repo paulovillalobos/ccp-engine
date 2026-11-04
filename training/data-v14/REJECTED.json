@@ -1,0 +1,7 @@
+{
+ "regra:ccp:auto-prazo-minimo-art174-1@v1": "its article ccp:art174 holds an exam target",
+ "regra:ccp:auto-prazo-minimo-art174-2@v1": "its article ccp:art174 holds an exam target",
+ "regra:ccp:limiar-ajuste-direto-obras@v2": "its reader sees ccp:art19.d, an exam passage or close to one",
+ "regra:ccp:limiar-consulta-previa-obras@v1": "it reads the text before 2026-10-01, not the one in force on 2026-10-01",
+ "regra:ccp:limiar-consulta-previa-obras@v2": "its reader sees ccp:art19.d, an exam passage or close to one"
+}

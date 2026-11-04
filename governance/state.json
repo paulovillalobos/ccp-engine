@@ -146,6 +146,16 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:leituras-assentes-como-pratica": {
+      "events": [
+        276
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:limiar-e-escolha-de-procedimento": {
       "events": [
         250
@@ -1301,6 +1311,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 275,
-  "head": "3e47636698190297425010d07fda14c9b3ec6c142e9420196cfb8484f6bc6190"
+  "events": 276,
+  "head": "b75b600cc760a605848e32eab160a106667a060fbd686c6ab12859c407c6ecec"
 }

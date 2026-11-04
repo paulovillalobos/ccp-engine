@@ -1,0 +1,102 @@
+{
+ "tool": "ccp-make-rule-readings-v14-0.1",
+ "protocol": "ccp-read-rules-v3-0.4",
+ "date": "2026-10-01",
+ "product_rule": "product_rule:leituras-assentes-como-pratica",
+ "practice": {
+  "ccp:art135.1": {
+   "readings": [
+    "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+    "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art136.1": {
+   "readings": [
+    "regra:ccp:prazo-minimo-concurso-joue@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art17-b.4": {
+   "readings": [
+    "nao_tipavel:ccp:auto-limiar-art17-b-4@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art190.1": {
+   "readings": [
+    "regra:ccp:auto-prazo-minimo-art190-1@v1",
+    "regra:ccp:auto-prazo-minimo-art190-1-b@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art191.1": {
+   "readings": [
+    "regra:ccp:auto-prazo-minimo-art191-1@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art191.5": {
+   "readings": [
+    "regra:ccp:auto-prazo-minimo-art191-5@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art218": {
+   "readings": [
+    "regra:ccp:auto-prazo-minimo-art218@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art219-b.5": {
+   "readings": [
+    "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+    "regra:ccp:auto-prazo-minimo-art219-b-5-b@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art219-j.3": {
+   "readings": [
+    "regra:ccp:auto-prazo-minimo-art219-j-3@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art241-b.3.b": {
+   "readings": [
+    "nao_tipavel:ccp:auto-prazo-minimo-art241-b-3-b@v1"
+   ],
+   "rows": 25
+  },
+  "ccp:art88.2.a": {
+   "readings": [
+    "nao_tipavel:ccp:auto-limiar-art88-2-a@v1"
+   ],
+   "rows": 25
+  }
+ },
+ "practice_rows": 275,
+ "remind_rows": 800,
+ "rejected": 5,
+ "exam": [
+  "ccp:art127-c.1.a",
+  "ccp:art21.1.b",
+  "ccp:art21.1.c",
+  "ccp:art31.4",
+  "ccp:art54-a.1.b.ii",
+  "ccp:art174.3",
+  "ccp:art192.2",
+  "ccp:art198.1",
+  "ccp:art198.2"
+ ],
+ "files": {
+  "REJECTED.json": {
+   "rows": 7,
+   "sha256": "f1ec8ac7feccf6d2d4dbf9502c94f30ed75d634d93358e605b229608cf5f3146"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 1075,
+   "sha256": "ebb64c0782d9c37aa258b77a88ad7529b03b9cc0af4d9865643993595bdb61f3"
+  }
+ },
+ "note": "D68: the readings both families settled blind by evento:275, their numbers moved by code; the exam is the targets still open then"
+}

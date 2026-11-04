@@ -812,6 +812,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v11", module="make_rule_readings_v11")
         check_training_v2(store, out, tdir, held, sub="data-v12", module="make_rule_readings_v12")
         check_training_v2(store, out, tdir, held, sub="data-v13", module="make_rule_readings_v13")
+        check_training_v2(store, out, tdir, held, sub="data-v14", module="make_rule_readings_v14")
     return store, out
 
 
@@ -1105,10 +1106,13 @@ def check_training_v2(store, out, training_dir, held_path, sub="data-v2", module
             out.append(("TRAIN", f"{sub}/{f.relative_to(data)}: file the generator does not write"))
     art_of = make_training.article_map(make_training.current_passages(store))
     reserved = set(held.get("reserved_articles", []))
+    # D68: a generator may name what its rows may cite inside a reserved article (make_rule_readings_v14: the passages a reading
+    # both families settled shows, while the log holds them and the product rule settled); anything else there is still refused
+    allowed = gen.allowed_sources(store) if hasattr(gen, "allowed_sources") else set()
     for f in sorted(data.glob("*/train.jsonl")):
         for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
             ex = json.loads(line)
-            hit = [x for x in ex.get("sources", []) if art_of.get(x.split("@")[0], x) in reserved]
+            hit = [x for x in ex.get("sources", []) if art_of.get(x.split("@")[0], x) in reserved and x not in allowed]
             if hit:
                 out.append(("TRAIN", f"{sub}/{f.relative_to(data)}:{n} ({ex.get('id')}): train example touches reserved article(s) {hit[:3]}"))
 
@@ -1164,6 +1168,12 @@ def check_measure():
             again = importlib.import_module(name).report(stored["date"], only={r for s in stored["sets"].values() for r in s["readers"]})
             if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
                 out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/{name}.py recomputes from the stored answers"))
+            continue
+        if f.name.startswith("regras-v14-"):  # phase 17 (D68): v14 beside v13 and leitor:b, read with the protocol 0.4 (tools/measure_rule_readings_v14.py)
+            import measure_rule_readings_v14  # noqa: E402  (no model: it reads the stored answers)
+            again = measure_rule_readings_v14.report(stored["date"], sets=set(stored["sets"]))
+            if json.dumps(again, sort_keys=True, ensure_ascii=False) != json.dumps(stored, sort_keys=True, ensure_ascii=False):
+                out.append(("MEAS", f"{f.relative_to(ROOT)}: not what tools/measure_rule_readings_v14.py recomputes from the stored answers"))
             continue
         if f.name.startswith("regras-v13-"):  # phase 15 (D67): the readers on data-v13's measured sets, read with the protocol 0.4 (tools/measure_rule_readings_v13.py)
             import measure_rule_readings_v13  # noqa: E402  (no model: it reads the stored answers)

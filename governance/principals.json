@@ -2577,8 +2577,9 @@
       "versao": 51,
       "code": "verify.py",
       "hash": "b33707803628b5ef8bc2e070d87eb395342c8be94a5a6a833f36f95f7eaf8581",
-      "retired": false,
-      "nota": "D67: MEAS recomputes regras-v13 reports (tools/measure_rule_readings_v13.py)"
+      "retired": true,
+      "nota": "D67: MEAS recomputes regras-v13 reports (tools/measure_rule_readings_v13.py)",
+      "retired_at": "2026-11-04T00:10:44Z"
     },
     {
       "id": "ferramenta:rule-factory@18",
@@ -2602,8 +2603,57 @@
       "versao": 19,
       "code": "tools/rule_factory.py",
       "hash": "76d5a877080d375943794459380d3602d4dd2c54c679511166220ae1fc2a88e2",
+      "retired": true,
+      "nota": "D67: TOOL names this version, and record, recheck and withdraw check before writing that it is the current registration with this file's hash (round 9's first record stopped at an invalidation by @16, retired since @17)",
+      "retired_at": "2026-11-04T00:10:43Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@20",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 20,
+      "code": "tools/rule_factory.py",
+      "hash": "425831e757b47b227db87d6e42d9cd8b10533eafc123355895a534bded477efa",
       "retired": false,
-      "nota": "D67: TOOL names this version, and record, recheck and withdraw check before writing that it is the current registration with this file's hash (round 9's first record stopped at an invalidation by @16, retired since @17)"
+      "nota": "D68: round 10, round 9's targets still open with round 9's prompts and leitor:b's answers carried; v14 (leitor:a16) proposes"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v14@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v14.py",
+      "hash": "436dd792913206ccdd8346e392a6a4e5213bea7eb89ad8be18e68df5711a38b1",
+      "retired": false,
+      "nota": "D68: data-v14, the readings both families settled blind (by evento:275) as practice, their numbers moved by code; the exam's targets, articles and near-copies left out"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v14@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/measure_rule_readings_v14.py",
+      "hash": "3d44851e73b492e30bcbcfcc3387186ebf119d001bce379da6a96fd2f9e52c8b",
+      "retired": false,
+      "nota": "D68: v14 beside v13 and leitor:b on data-v13's measured sets, protocol 0.4"
+    },
+    {
+      "id": "ferramenta:verify@52",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 52,
+      "code": "verify.py",
+      "hash": "4c337bdcfd5f7739a2c5ed6da18c9d5781bb718dab965a38a3db8f32ed6f0fe9",
+      "retired": false,
+      "nota": "D68: TRAIN checks data-v14 (a reserved article may be cited only where make_rule_readings_v14.allowed_sources says); MEAS recomputes regras-v14 reports"
     }
   ]
 }

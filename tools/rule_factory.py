@@ -49,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@19"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4)
+TOOL = "ferramenta:rule-factory@20"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -81,6 +81,10 @@ FROUNDS[8] = {**FROUNDS[7], "round": "fabrica-8", "dir": rr.READINGS / "fabrica8
 # D67: round 9 is round 8 with the protocol 0.4 (every law phrase printed, L5, L9, L10); leitor:b answers again, and v13 reads
 # it with its quotes held to the text (readers/quote_grammar.py)
 FROUNDS[9] = {**FROUNDS[8], "round": "fabrica-9", "dir": rr.READINGS / "fabrica9", "decision": "D67", "proposer": ("leitor:a15", "leitor-a15.json"), "carry_b": 8}
+# D68: round 10 reads round 9's targets still open (tools/make_rule_readings_v14.EXAM: never trained on) with round 9's prompts,
+# byte for byte, so leitor:b's round-9 answers are carried; v14 (leitor:a16) proposes with its quotes held to the text
+FROUNDS[10] = {**FROUNDS[9], "round": "fabrica-10", "dir": rr.READINGS / "fabrica10", "decision": "D68", "proposer": ("leitor:a16", "leitor-a16.json"), "carry_b": 9,
+               "only": {"ccp:art127-c.1.a", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art174.3", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2"}}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -582,10 +586,14 @@ INTRO = {
     9: ["D67: AMALIA treinada em artigos com a textura da lei (adaptador v13), as citações presas ao texto por uma gramática. "
         "Alvos: os da ronda 6 que ficaram abertos, com o protocolo 0.4.",
         "leitor:b responde de novo aos prompts 0.4. Um programa confirma cada palavra citada; a leitura que falha não fica registada."],
+    10: ["D68: AMALIA treinada a partir de v13 nas leituras reais que as duas famílias assentaram às cegas, os números movidos por "
+         "código (adaptador v14). Alvos: os 9 da ronda 9 ainda abertos, que nenhum exemplo de treino mostra.",
+         "Os prompts são os da ronda 9, byte a byte; as respostas de leitor:b são as da ronda 9. Um programa confirma cada palavra "
+         "citada; a leitura que falha não fica registada."],
 }
 
 
-ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13"}
+ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13", "leitor:a16": "v14"}
 
 
 def write_report(rows, n=1):
