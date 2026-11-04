@@ -2136,3 +2136,21 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   practice where it is not; 31.º n.º 4 and 192.º n.º 2 leave out the contract's duration and the special sectors, which no
   practice reading has; 54.º-A n.º 1 b) ii) is «não tipável» with texto_em_falta for leitor:b's nao_e_limiar; 174.º n.º 3 differs
   in its two deadlines. 18 rules settled in all (16 before), and 4 «não tipável».
+
+## 2026-11-04 — D69: round 11, 60 real passages no round has read
+
+- On the person's question why the real-law score is low when the practice is the real law with its numbers moved: the score is
+  round 10's, the 9 hardest passages left, and the real law has 22 answer keys (passages both families read the same way blind).
+  Round 1's patterns find 20 targets in the whole CCP, all read; 136 leaf passages state days or euros in their own words and no
+  round has read them. His «Yes, 60 passages».
+- rule-factory@21: FROUNDS[11] with PICK11, targets drawn once and kept in the round (target_of builds round 1's target for any
+  passage; the round report gains a table by stratum). The draw: the 28 candidates in reserved articles that no training row shows
+  («reservado»; 190.º n.º 2, 191.º n.º 2 a) and n.º 3 are out, printed in data-v14's practice contexts) and the first 32 of the 105
+  unreserved by sha256 of the id («texto_visto»: escolha_passagem, texto_vigente and other tasks show their text, no rule-reading
+  row does). 49 prazo_minimo, 11 limiar (the passage says euros). tests/test_rule_factory_round11.py draws it again.
+- Prompts: protocol 0.4, fresh (no carry), 60 of 60 written before either family answers.
+- Forecast, committed before either family answers: leitor:a16 valid on 50–58 of 60, leitor:b on 57–60; 25–40 settled, most of
+  them «não tipável» (a deadline that is not a minimum, an amount that is not a procedure's limit), 3–10 rules; «reservado» and
+  «texto_visto» within 15 points of each other; no quote outside the text. Below 20 settled, reading ordinary real passages is the
+  bottleneck and the next step is the reading itself, not more keys. Settled means both families agree blind, not that the law
+  was proved read right (round 1: 4 of 4 settled readings were wrong on a vocabulary gap).

@@ -49,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@20"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10
+TOOL = "ferramenta:rule-factory@21"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -85,6 +85,40 @@ FROUNDS[9] = {**FROUNDS[8], "round": "fabrica-9", "dir": rr.READINGS / "fabrica9
 # byte for byte, so leitor:b's round-9 answers are carried; v14 (leitor:a16) proposes with its quotes held to the text
 FROUNDS[10] = {**FROUNDS[9], "round": "fabrica-10", "dir": rr.READINGS / "fabrica10", "decision": "D68", "proposer": ("leitor:a16", "leitor-a16.json"), "carry_b": 9,
                "only": {"ccp:art127-c.1.a", "ccp:art21.1.b", "ccp:art21.1.c", "ccp:art31.4", "ccp:art54-a.1.b.ii", "ccp:art174.3", "ccp:art192.2", "ccp:art198.1", "ccp:art198.2"}}
+# D69: round 11 reads 60 real passages no round has read. Drawn once on 2026-11-04 from the CCP's leaf passages in force that
+# state days or euros in their own words (136, outside round 1's targets and the articles read by hand): the 28 in reserved
+# articles that no training row shows ("reservado"; 190.º n.º 2, 191.º n.º 2 a) and n.º 3 are left out, printed in data-v14's
+# practice) and the first 32 of the 105 unreserved by sha256 of the id ("texto_visto": other tasks show their text, no rule
+# reading does). Type: limiar when the passage says euros, prazo_minimo otherwise. leitor:b answers fresh prompts (protocol 0.4)
+PICK11 = {"ccp:art101": ("prazo_minimo", "reservado"), "ccp:art102.2": ("prazo_minimo", "texto_visto"),
+          "ccp:art104.2": ("prazo_minimo", "texto_visto"), "ccp:art104.3.b": ("prazo_minimo", "texto_visto"),
+          "ccp:art116": ("prazo_minimo", "reservado"), "ccp:art120.1": ("prazo_minimo", "texto_visto"),
+          "ccp:art123.1": ("prazo_minimo", "texto_visto"), "ccp:art129-a.1.a": ("limiar", "texto_visto"),
+          "ccp:art129-a.1.b": ("limiar", "texto_visto"), "ccp:art129-a.6": ("prazo_minimo", "texto_visto"),
+          "ccp:art138.3": ("prazo_minimo", "reservado"), "ccp:art143.1": ("prazo_minimo", "texto_visto"),
+          "ccp:art147": ("prazo_minimo", "texto_visto"), "ccp:art161-b.1.b": ("prazo_minimo", "reservado"),
+          "ccp:art161-b.4": ("prazo_minimo", "reservado"), "ccp:art177.3": ("prazo_minimo", "texto_visto"),
+          "ccp:art185": ("prazo_minimo", "reservado"), "ccp:art188.2": ("prazo_minimo", "texto_visto"),
+          "ccp:art188.4": ("prazo_minimo", "texto_visto"), "ccp:art198.3": ("prazo_minimo", "texto_visto"),
+          "ccp:art219-c.3": ("prazo_minimo", "texto_visto"), "ccp:art266-b.3": ("prazo_minimo", "reservado"),
+          "ccp:art273": ("prazo_minimo", "reservado"), "ccp:art274.1": ("prazo_minimo", "texto_visto"),
+          "ccp:art283-a.2.c": ("prazo_minimo", "texto_visto"), "ccp:art299.1.c": ("prazo_minimo", "texto_visto"),
+          "ccp:art304.3": ("prazo_minimo", "reservado"), "ccp:art327.3": ("prazo_minimo", "reservado"),
+          "ccp:art327.4": ("prazo_minimo", "reservado"), "ccp:art333.4": ("prazo_minimo", "reservado"),
+          "ccp:art345.5": ("prazo_minimo", "texto_visto"), "ccp:art359.1": ("prazo_minimo", "reservado"), "ccp:art36.4": ("limiar", "reservado"),
+          "ccp:art372.3.a": ("prazo_minimo", "texto_visto"), "ccp:art373.2": ("prazo_minimo", "texto_visto"),
+          "ccp:art373.3": ("prazo_minimo", "texto_visto"), "ccp:art389.1": ("prazo_minimo", "texto_visto"),
+          "ccp:art394.7": ("prazo_minimo", "texto_visto"), "ccp:art401.1": ("prazo_minimo", "texto_visto"),
+          "ccp:art404.1": ("prazo_minimo", "texto_visto"), "ccp:art405.2": ("prazo_minimo", "texto_visto"),
+          "ccp:art43.10.c": ("prazo_minimo", "texto_visto"), "ccp:art464-g": ("prazo_minimo", "texto_visto"),
+          "ccp:art474.2": ("limiar", "reservado"), "ccp:art474.3.a": ("limiar", "reservado"), "ccp:art474.3.b": ("limiar", "reservado"),
+          "ccp:art474.3.c": ("limiar", "reservado"), "ccp:art474.3.d": ("limiar", "reservado"), "ccp:art474.4.a": ("limiar", "reservado"),
+          "ccp:art474.4.b": ("limiar", "reservado"), "ccp:art474.4.c": ("limiar", "reservado"), "ccp:art64.2": ("prazo_minimo", "reservado"),
+          "ccp:art65": ("prazo_minimo", "texto_visto"), "ccp:art72.3": ("prazo_minimo", "texto_visto"), "ccp:art78.1": ("prazo_minimo", "reservado"),
+          "ccp:art78.5": ("prazo_minimo", "reservado"), "ccp:art85.2": ("prazo_minimo", "reservado"), "ccp:art87-a.2": ("prazo_minimo", "reservado"),
+          "ccp:art90.1": ("prazo_minimo", "reservado"), "ccp:art93.2": ("prazo_minimo", "texto_visto")}
+FROUNDS[11] = {**{k: v for k, v in FROUNDS[9].items() if k not in ("only", "carry_b")}, "round": "fabrica-11", "dir": rr.READINGS / "fabrica11",
+               "decision": "D69", "proposer": ("leitor:a16", "leitor-a16.json"), "pick": PICK11}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -131,6 +165,8 @@ def targets(store, n=1):
     """Round 1: one target per leaf passage that states a minimum of days or a euro limit, outside the articles read by hand.
     Round n > 1: round 1's targets with a gap that round n's vocabulary closes; one with a gap left open is read, reported and not
     recorded."""
+    if n > 1 and "pick" in FROUNDS[n]:  # D69: passages round 1's patterns do not find, drawn once and kept in the round
+        return [target_of(store, pid, type_, n) for pid, (type_, _) in sorted(FROUNDS[n]["pick"].items())]
     if n > 1 and "only" in FROUNDS[n]:
         return [{**t, "title": TITLE[t["type"]].format(pid=t["source_passage"], n=n)} for t in targets(store) if t["source_passage"] in FROUNDS[n]["only"]]
     if n > 1:
@@ -152,17 +188,20 @@ def targets(store, n=1):
     out = []
     for type_, pids in sorted(hits.items()):
         leaves = sorted(p for p in pids if not any(o != p and o.startswith(p + ".") for o in pids))
-        for pid in leaves:
-            article = pid.split(".")[0]
-            parts = sorted({q["id"] for q in store.objects["passagem"] if q["id"] == article or q["id"].startswith(article + ".")}
-                           - {q["id"] for q in store.objects["passagem"] if not rr.version_at(store.current(q["id"]), DATE)})
-            cands = [article] + [q for q in parts if q != article][:13]
-            if pid not in cands:
-                cands.append(pid)
-            out.append({"rule": f"regra:ccp:auto-{type_.replace('_', '-')}-{slug_of(pid)}@v1", "type": type_, "norma": "norma:ccp",
-                        "jurisdiction": "PT", "date": DATE, "title": TITLE[type_].format(pid=pid, n=1), "candidates": cands,
-                        "question": QUESTION[type_].format(pid=pid), "source_passage": pid})
+        out += [target_of(store, pid, type_) for pid in leaves]
     return out
+
+
+def target_of(store, pid, type_, n=1):
+    article = pid.split(".")[0]
+    parts = sorted({q["id"] for q in store.objects["passagem"] if q["id"] == article or q["id"].startswith(article + ".")}
+                   - {q["id"] for q in store.objects["passagem"] if not rr.version_at(store.current(q["id"]), DATE)})
+    cands = [article] + [q for q in parts if q != article][:13]
+    if pid not in cands:
+        cands.append(pid)
+    return {"rule": f"regra:ccp:auto-{type_.replace('_', '-')}-{slug_of(pid)}@v1", "type": type_, "norma": "norma:ccp",
+            "jurisdiction": "PT", "date": DATE, "title": TITLE[type_].format(pid=pid, n=n), "candidates": cands,
+            "question": QUESTION[type_].format(pid=pid), "source_passage": pid}
 
 
 def cmd_prompts(store, n=1):
@@ -397,6 +436,14 @@ def write_report_v3(rows, n):
          f"Gerado por tools/rule_factory.py ({VERSION}) com o protocolo de leitura v3 (tools/read_rules_v3.py, {v3.VERSION}). " + INTRO[n][0] +
          f" Propõe {proposer} (AMALIA + adaptador {ADAPTER_OF.get(proposer, 'v7')}), leitor:b revê às cegas.", "", INTRO[n][1], "",
          "| regra | passagem | estado | replica | verificador: leitor A | verificador: leitor B |", "|---|---|---|---|---|---|"]
+    if "pick" in R:  # D69: the exam by stratum, before the rows
+        S = ["| grupo | alvos | leitor A válido | leitor B válido | assentes | regras | «não tipável» |", "|---|---|---|---|---|---|---|"]
+        for g in sorted({k for _, k in R["pick"].values()}) + ["todos"]:
+            rs = [r for r in rows if g == "todos" or R["pick"][r["source"]][1] == g]
+            st = [r for r in rs if r["state"] == "settled"]
+            S.append(f"| {g} | {len(rs)} | {sum(not r['a_errors'] for r in rs)} | {sum(not r['b_errors'] for r in rs)} | {len(st)} | "
+                     f"{sum(not (r['a'] or {}).get('nao_tipavel') for r in st)} | {sum(bool((r['a'] or {}).get('nao_tipavel')) for r in st)} |")
+        L[-2:-2] = S + [""]
     for r in rows:
         note = (f" ({r['why']})" if r.get("why") else "") + (f" ({r['rules']} regras)" if r.get("rules") else "")
         L.append(f"| {r['rule']} | {r['source']} | {r['state']}{note} | {'—' if r['exact'] is None else ('sim' if r['exact'] else 'não')} | "
@@ -590,6 +637,12 @@ INTRO = {
          "código (adaptador v14). Alvos: os 9 da ronda 9 ainda abertos, que nenhum exemplo de treino mostra.",
          "Os prompts são os da ronda 9, byte a byte; as respostas de leitor:b são as da ronda 9. Um programa confirma cada palavra "
          "citada; a leitura que falha não fica registada."],
+    11: ["D69: um exame real maior. Alvos: 60 passagens do CCP em vigor que dizem dias ou euros e que nenhuma ronda leu, tiradas uma "
+         "vez: as 28 de artigos reservados que nenhum exemplo de treino mostra (reservado) e 32 das outras pelo sha256 do id "
+         "(texto_visto: outras tarefas mostram o texto, nenhuma leitura de regra o faz). Adaptador v14.",
+         "Muitas destas passagens dizem um prazo que não é um mínimo ou um valor que não é um limiar: o «não tipável» com o mesmo "
+         "motivo também assenta. leitor:b responde a prompts novos (protocolo 0.4). Um programa confirma cada palavra citada; a "
+         "leitura que falha não fica registada."],
 }
 
 

@@ -2631,8 +2631,9 @@
       "versao": 20,
       "code": "tools/rule_factory.py",
       "hash": "425831e757b47b227db87d6e42d9cd8b10533eafc123355895a534bded477efa",
-      "retired": false,
-      "nota": "D68: round 10, round 9's targets still open with round 9's prompts and leitor:b's answers carried; v14 (leitor:a16) proposes"
+      "retired": true,
+      "nota": "D68: round 10, round 9's targets still open with round 9's prompts and leitor:b's answers carried; v14 (leitor:a16) proposes",
+      "retired_at": "2026-11-04T13:18:25Z"
     },
     {
       "id": "ferramenta:make-rule-readings-v14@1",
@@ -2669,6 +2670,18 @@
       "hash": "4c337bdcfd5f7739a2c5ed6da18c9d5781bb718dab965a38a3db8f32ed6f0fe9",
       "retired": false,
       "nota": "D68: TRAIN checks data-v14 (a reserved article may be cited only where make_rule_readings_v14.allowed_sources says); MEAS recomputes regras-v14 reports"
+    },
+    {
+      "id": "ferramenta:rule-factory@21",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 21,
+      "code": "tools/rule_factory.py",
+      "hash": "96a8cc521e691791a7f3b1b50d9e25e494e114334aa5d233851d6b70943ddd45",
+      "retired": false,
+      "nota": "D69: round 11, 60 real passages drawn once (PICK11), the report by stratum"
     }
   ]
 }
