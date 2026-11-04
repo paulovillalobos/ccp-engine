@@ -2147,7 +2147,12 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   passage; the round report gains a table by stratum). The draw: the 28 candidates in reserved articles that no training row shows
   («reservado»; 190.º n.º 2, 191.º n.º 2 a) and n.º 3 are out, printed in data-v14's practice contexts) and the first 32 of the 105
   unreserved by sha256 of the id («texto_visto»: escolha_passagem, texto_vigente and other tasks show their text, no rule-reading
-  row does). 49 prazo_minimo, 11 limiar (the passage says euros). tests/test_rule_factory_round11.py draws it again.
+  row does). 48 prazo_minimo, 12 limiar (the passage says euros). tests/test_rule_factory_round11.py draws it again.
+- Correction before any answer, disclosed: the first commit of the pick (b8e04f691, rule-factory@21) held 104.º n.º 2 and n.º 3 b),
+  whose context lets a reading quote 104.º n.º 2 b) «(Revogada.)», a line the protocol 0.4 does not print; verify V3 refused both
+  prompts, and the chain committed anyway because a pipe to tail hid verify's exit code. rule-factory@22 leaves them out and takes
+  the next two by sha256 (270.º, prazo_minimo, and 127.º-B, limiar); every round 11 prompt now prints every line its reading may quote
+  (tests/test_rule_factory_round11.py). Neither family had answered.
 - Prompts: protocol 0.4, fresh (no carry), 60 of 60 written before either family answers.
 - Forecast, committed before either family answers: leitor:a16 valid on 50–58 of 60, leitor:b on 57–60; 25–40 settled, most of
   them «não tipável» (a deadline that is not a minimum, an amount that is not a procedure's limit), 3–10 rules; «reservado» and

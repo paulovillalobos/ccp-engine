@@ -2680,8 +2680,21 @@
       "versao": 21,
       "code": "tools/rule_factory.py",
       "hash": "96a8cc521e691791a7f3b1b50d9e25e494e114334aa5d233851d6b70943ddd45",
+      "retired": true,
+      "nota": "D69: round 11, 60 real passages drawn once (PICK11), the report by stratum",
+      "retired_at": "2026-11-04T13:50:13Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@22",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 22,
+      "code": "tools/rule_factory.py",
+      "hash": "ce00b1a5284abdd29a038148357cbf7365839e791234f75d91a09dfb87f39a41",
       "retired": false,
-      "nota": "D69: round 11, 60 real passages drawn once (PICK11), the report by stratum"
+      "nota": "D69: round 11, 60 real passages drawn once (PICK11; 104.º n.º 2 and n.º 3 b) left out, a revoked line the prompt does not print), the report by stratum"
     }
   ]
 }

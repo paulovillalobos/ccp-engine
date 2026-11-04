@@ -20,6 +20,7 @@ DAYS = re.compile(r"\b(\d+|um|dois|três|quatro|cinco|seis|sete|oito|nove|dez|qu
 EUR = re.compile(r"€|euros", re.I)
 RESERVED = set(json.loads((ROOT / "law/TRAIN-HELD-OUT.json").read_text(encoding="utf-8"))["reserved_articles"])
 PRACTICED = {"ccp:art190.2", "ccp:art191.2.a", "ccp:art191.3"}  # printed in data-v14's practice contexts
+NOT_SHOWN = {"ccp:art104.2", "ccp:art104.3.b"}  # their context may quote 104.º n.º 2 b) «(Revogada.)», which the prompt does not print
 
 
 def candidates():
@@ -33,7 +34,7 @@ def candidates():
 def test_the_pick_is_the_draw():
     cands = candidates()
     reserved = sorted(p for p in cands if LAW.article_of(p) in RESERVED and p not in PRACTICED)
-    rest = sorted((p for p in cands if LAW.article_of(p) not in RESERVED), key=lambda p: hashlib.sha256(p.encode()).hexdigest())
+    rest = sorted((p for p in cands if LAW.article_of(p) not in RESERVED and p not in NOT_SHOWN), key=lambda p: hashlib.sha256(p.encode()).hexdigest())
     assert len(cands) == 136 and len(reserved) == 28
     assert {p for p, (_, k) in PICK.items() if k == "reservado"} == set(reserved)
     assert {p for p, (_, k) in PICK.items() if k == "texto_visto"} == set(rest[:32])
@@ -52,3 +53,10 @@ def test_no_rule_reading_row_shows_the_pick():
         raw = (ROOT / "training" / sub / "regra_lida/train.jsonl").read_text(encoding="utf-8")
         shown = set(re.findall(r"\[(ccp:art[^\]\s]+)\]", raw)) | set(re.findall(r"\"(ccp:art[^\"@\s]+)(?:@[^\"]*)?\"", raw))
         assert not shown & set(PICK), (sub, sorted(shown & set(PICK)))
+
+
+def test_every_prompt_prints_what_its_reading_may_quote():
+    for t in rf.targets(STORE, 11):
+        body = json.loads((rf.FROUNDS[11]["dir"] / rf.rr.slug(t["rule"]) / "prompt.json").read_text(encoding="utf-8"))
+        shown = v3.norm(body["prompt"])
+        assert all(v3.norm(line) in shown for text in body["context"]["allowed"].values() for line in (text or "").split("\n") if line.strip()), t["rule"]

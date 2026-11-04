@@ -49,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.7"
-TOOL = "ferramenta:rule-factory@21"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11
+TOOL = "ferramenta:rule-factory@22"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -89,9 +89,11 @@ FROUNDS[10] = {**FROUNDS[9], "round": "fabrica-10", "dir": rr.READINGS / "fabric
 # state days or euros in their own words (136, outside round 1's targets and the articles read by hand): the 28 in reserved
 # articles that no training row shows ("reservado"; 190.º n.º 2, 191.º n.º 2 a) and n.º 3 are left out, printed in data-v14's
 # practice) and the first 32 of the 105 unreserved by sha256 of the id ("texto_visto": other tasks show their text, no rule
-# reading does). Type: limiar when the passage says euros, prazo_minimo otherwise. leitor:b answers fresh prompts (protocol 0.4)
+# reading does), leaving out 104.º n.º 2 and n.º 3 b), whose context lets a reading quote 104.º n.º 2 b) «(Revogada.)», which the
+# protocol 0.4 does not print (verify V3). Type: limiar when the passage says euros, prazo_minimo otherwise. leitor:b answers
+# fresh prompts (protocol 0.4)
 PICK11 = {"ccp:art101": ("prazo_minimo", "reservado"), "ccp:art102.2": ("prazo_minimo", "texto_visto"),
-          "ccp:art104.2": ("prazo_minimo", "texto_visto"), "ccp:art104.3.b": ("prazo_minimo", "texto_visto"),
+          "ccp:art127-b": ("limiar", "texto_visto"), "ccp:art270": ("prazo_minimo", "texto_visto"),
           "ccp:art116": ("prazo_minimo", "reservado"), "ccp:art120.1": ("prazo_minimo", "texto_visto"),
           "ccp:art123.1": ("prazo_minimo", "texto_visto"), "ccp:art129-a.1.a": ("limiar", "texto_visto"),
           "ccp:art129-a.1.b": ("limiar", "texto_visto"), "ccp:art129-a.6": ("prazo_minimo", "texto_visto"),
