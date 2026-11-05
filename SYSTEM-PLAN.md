@@ -49,12 +49,16 @@ A user's request reads stored verdicts, or sends facts for a fresh check: databa
 
 ## 4. Phases (in order; each ends with verify ok and a commit)
 
-**Phase 1 — Checker to Mistral (L2).**
-1. Mistral open model (Mistral Small) as `leitor:c`, a registered principal of a third family; reader code beside
-   `readers/leitor_b_cli.py`.
-2. Mistral reads blind every prompt of the settled rules and of the exam (rounds 11–16).
-3. Measure Mistral against the same exam; a rule stays settled only where AMALIA and Mistral agree.
-4. Done when: the rule count settled by AMALIA + Mistral is known, verify ok, the refresh uses Mistral, Reader B retired.
+**Phase 1 — The GPU to Scaleway, and the checker to Mistral there (L2)** (the person, 2026-11-05: no reason to set the
+checker up twice).
+1. A Scaleway project in Paris with an L40S GPU (the person creates the account and API key).
+2. Copy the base weights and `amalia-ccp-lei-v16` from Modal; AMALIA gives the same answers on a fixed sample.
+3. Mistral open model (Mistral Small) downloaded straight there as `leitor:c`, a registered principal of a third family;
+   reader code beside `readers/leitor_b_cli.py`.
+4. Mistral reads blind every prompt of the settled rules and of the exam (rounds 11–16); a rule stays settled only where
+   AMALIA and Mistral agree.
+5. Done when: both readers run on Scaleway, the settled count under AMALIA + Mistral is known, verify ok, the refresh uses
+   them, Reader B retired. Modal keeps only rjue and saneamento.
 
 **Phase 2 — Derived facts (L5).**
 1. The engine's fields mapped to Supabase's: `data_inicio_procedimento` ← `data_publicacao_anuncio`;
@@ -73,9 +77,7 @@ A user's request reads stored verdicts, or sends facts for a fresh check: databa
 2. The DR notice adapters fill what BASE lacks (deadlines, EU publication) for the procedures still "missing fact".
 3. Tender PDFs only where a needed fact is nowhere else: measured on 100 procedures, cost stated before any spend.
 
-**Phase 5 — Compute to Scaleway.**
-1. Copy the base weights and `amalia-ccp-lei-v16` to Scaleway; the reader runs there; same answers on a fixed sample.
-2. Mistral beside it; ingest and engine batch jobs moved; Modal keeps only rjue and saneamento.
+**Phase 5 — CPU jobs to Scaleway.** Ingest and the engine batch move from Modal to Scaleway CPU (same code).
 
 **Phase 6 — API (L7) and frontend (L8).**
 1. The API reads Supabase: `/v1/procedimento/<id>`, `/v1/entidade/<nif>`, `/v1/regras`, `/v1/lei`, `POST /v1/verificar`
