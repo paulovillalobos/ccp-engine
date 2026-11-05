@@ -2316,3 +2316,9 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   `record` does; `exam` reports concordancia_d77. verify.py@57: V3 accepts an uphold that names the rule after evento:1723.
 - Exam (rounds 15–16, reservado, v16): 83 of 101 = 82 % (62 with the reason); practice 245 of 271 = 90 %; all 355 of 404 = 88 %.
 - recheck-nt rounds 11–16: 0, 0, 0, 1, 59, 6 — 66 more «não tipável» settled (rounds 11–13's answers had newer revisions).
+
+## 2026-11-05 — D78: the system plan
+- SYSTEM-PLAN.md: the layers with their state today, where each runs (sovereign target), the data flow, phases 1–7 with
+  done criteria, costs, open decisions. Found while writing it: Supabase holds data_limite_propostas (212 244 facts) and
+  data_publicacao_anuncio (174 549) but not the engine's prazo_propostas_dias or data_inicio_procedimento, so a derived-facts
+  layer (Phase 2) comes before the engine run over Supabase.
