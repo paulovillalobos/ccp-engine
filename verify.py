@@ -900,10 +900,14 @@ def check_readings(store, out, readings_root=None):
             out.append(("READ", f"{ev['id']}: {f.relative_to(root)} does not hash to the sha256 the log recorded ({want[:12]}...)"))
 
 
+NT_RULE = "product_rule:nao-tipavel-qualquer-motivo"
+
+
 def check_v3_readings(store, out, readings_root=None):
     """V3 (D66, product_rule:fontes-verificadas-e-nao-tipavel): a v3 prompt shows every passage its context lets a reading
     quote; every answer a v3 round recorded passes the reading protocol's checker against that context; the log's payload is
-    the answer's canonical content; a blind review upholds exactly when the two readings replicate. The checker is code
+    the answer's canonical content; a blind review upholds exactly when the two readings replicate, or (D77, after the person's
+    product rule NT_RULE) when it names NT_RULE and both readings say «não tipável», whatever their reasons. The checker is code
     (tools/read_rules_v3.py); nothing here calls a model."""
     root = Path(readings_root) if readings_root else (store.governance_dir / "readings" if store.governance_dir else None)
     if root is None or not any(root.glob("fabrica*/*/prompt.json")):
@@ -928,6 +932,7 @@ def check_v3_readings(store, out, readings_root=None):
     if not prompts:
         return
     answers, proposals = {}, {}
+    nt_rule_at = next((ev["seq"] for _, ev in store.events if ev["assertion"] == NT_RULE and ev["action"] == "propose"), None)  # D77
     for _, ev in store.events:
         p = ev.get("payload") or {}
         if p.get("protocol") != "v3" or not p.get("answer_sha256"):
@@ -964,7 +969,8 @@ def check_v3_readings(store, out, readings_root=None):
             pa = proposals.get((ev["assertion"], p["round"]))
             if pa is None:
                 out.append(("V3", f"{ev['id']}: a blind review with no recorded v3 proposal before it"))
-            elif v3.replicate(pa, a) != (ev.get("verdict") == "uphold"):
+            elif bool(v3.replicate(pa, a) or (p.get("replication") == NT_RULE and nt_rule_at and nt_rule_at < ev["seq"]
+                                              and pa.get("nao_tipavel") and a.get("nao_tipavel"))) != (ev.get("verdict") == "uphold"):
                 out.append(("V3", f"{ev['id']}: verdict {ev.get('verdict')}, but the two readings {'replicate' if v3.replicate(pa, a) else 'do not replicate'}"))
 
 

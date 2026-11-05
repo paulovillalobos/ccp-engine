@@ -1,0 +1,52 @@
+{
+  "id": "regra:eu-2004-17:auto-prazo-minimo-art45-7-v20041101@v1",
+  "revision": 2,
+  "recorded_at": "2026-11-05T13:29:39Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2004-17:art45.7 (fábrica de regras, ronda 12), versão de 2004-11-01",
+  "norma": "norma:eu-2004-17",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2004-11-01",
+  "valid_to": "2016-04-18",
+  "passages": [
+    {
+      "passage": "eu-2004-17:art45.7",
+      "version": "2004-11-01",
+      "quote": "7. Nos concursos públicos, o efeito cumulado das reduções previstas nos n.os 4, 5 e 6 não pode em caso algum conduzir a um prazo de recepção das propostas inferior a 15 dias a contar da data de envio do anúncio de concurso.\nTodavia, se o anúncio do concurso não tiver sido enviado por fax ou por meios electrónicos, o efeito cumulado das reduções previstas nos n.os 4, 5 e 6 não pode em caso algum, conduzir a um prazo inferior a 22 dias a contar da data de envio do anúncio de concurso, para a recepção das propostas num concurso público.",
+      "offsets": {
+        "start": 0,
+        "end": 539
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 15,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a16",
+      "family": "A",
+      "at": "2026-11-04T22:04:34Z",
+      "chosen_passages": [
+        "eu-2004-17:art45.7"
+      ],
+      "blind": false,
+      "evento": "evento:750"
+    }
+  ],
+  "state": "stale",
+  "supersedes": 1
+}

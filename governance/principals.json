@@ -2995,8 +2995,9 @@
       "versao": 55,
       "code": "verify.py",
       "hash": "35a8d73a84d72b438abea02385f28f4fcf888fc1c7567f6af73b39730c4cf7a0",
-      "retired": false,
-      "nota": "D76: TRAIN checks data-v16"
+      "retired": true,
+      "nota": "D76: TRAIN checks data-v16",
+      "retired_at": "2026-11-05T12:51:08Z"
     },
     {
       "id": "ferramenta:rule-factory@29",
@@ -3007,8 +3008,9 @@
       "versao": 29,
       "code": "tools/rule_factory.py",
       "hash": "243728522a3c6f22216918be124736f7c4c221cf309efb1d104bd5a75bd54521",
-      "retired": false,
-      "nota": "D76: rounds 15-16 (v16 re-reads rounds 12 and 11); refresh rounds proposed by leitor:a18"
+      "retired": true,
+      "nota": "D76: rounds 15-16 (v16 re-reads rounds 12 and 11); refresh rounds proposed by leitor:a18",
+      "retired_at": "2026-11-05T12:51:07Z"
     },
     {
       "id": "ferramenta:refresh@2",
@@ -3060,6 +3062,69 @@
       "hash": "fd65e958f4c14f18a2851fcb663e0a1a982349bd469e51088ab03952de5acc63",
       "retired": false,
       "nota": "D76: keys read from the log at LOG_UPTO 1485"
+    },
+    {
+      "id": "ferramenta:rule-factory@30",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 30,
+      "code": "tools/rule_factory.py",
+      "hash": "67d1c488660268f85a6bc94b8be5c2ec9561b141cfe3160fd23127ce90c8a5d5",
+      "retired": true,
+      "nota": "D77: «não tipável» with any reason replicates (recheck-nt, exam concordancia_d77)",
+      "retired_at": "2026-11-05T12:51:29Z"
+    },
+    {
+      "id": "ferramenta:verify@56",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 56,
+      "code": "verify.py",
+      "hash": "a2d6ebce9d6bd90406573581c0544d5495c9df4ceda456a72db38fa262781ffd",
+      "retired": true,
+      "nota": "D77: V3 accepts an uphold naming product_rule:nao-tipavel-qualquer-motivo",
+      "retired_at": "2026-11-05T14:19:18Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@31",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 31,
+      "code": "tools/rule_factory.py",
+      "hash": "29fdc73d6151712f298f072304fe6230362fea228f4cd1b7183f3aac129a4181",
+      "retired": true,
+      "nota": "D77: «não tipável» with any reason replicates (recheck-nt, exam concordancia_d77)",
+      "retired_at": "2026-11-05T12:51:37Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@32",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 32,
+      "code": "tools/rule_factory.py",
+      "hash": "f42ea5f8d1eb3218d437d96df42437da2ab5b802096c4552fe35a834c672592c",
+      "retired": false,
+      "nota": "D77: «não tipável» with any reason replicates (recheck-nt, exam concordancia_d77)"
+    },
+    {
+      "id": "ferramenta:verify@57",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 57,
+      "code": "verify.py",
+      "hash": "ef346d8781a686a712983a50a5404f94f355d40dd2741d522ee2f0e85ca4ea3b",
+      "retired": false,
+      "nota": "D77: V3 accepts an uphold naming product_rule:nao-tipavel-qualquer-motivo"
     }
   ]
 }

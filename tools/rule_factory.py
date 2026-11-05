@@ -23,6 +23,8 @@ a person's product rule takes out (D66: 88.º n.º 2 a)).
 Recheck (D64): `recheck --round N` compares the answers a round recorded again under the person's product rule
 product_rule:replicacao-conteudo-e-alvo (the same rule, both citing the target passage); a rule they now replicate gets
 leitor:b's blind review again, from the same answer, as an uphold that names that rule. No reader is asked again.
+`recheck-nt --round N` (D77) does the same for two «não tipável» readings of other reasons, under the person's
+product_rule:nao-tipavel-qualquer-motivo.
 
 Targets, round 1: the leaf passages of the CCP in force on 2026-10-01 that state, in their own words, a minimum number of
 days for something to be done (prazo_minimo) or a value limit in euros (limiar) — the two rule types the engine evaluates
@@ -48,8 +50,8 @@ from engine.governance import Log  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-rule-factory-0.8"
-TOOL = "ferramenta:rule-factory@29"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+VERSION = "ccp-rule-factory-0.9"
+TOOL = "ferramenta:rule-factory@32"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -138,6 +140,7 @@ for _k, _f in enumerate(sorted(rr.READINGS.glob("refresh-*/pick.json"))):  # D75
     FROUNDS[1001 + _k] = {**FROUNDS[12], "round": _f.parent.name, "dir": _f.parent, "decision": "D75", "proposer": CURRENT,
                           "pick": [tuple(x) for x in json.loads(_f.read_text(encoding="utf-8"))["pick"]]}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
+NT_RULE = "product_rule:nao-tipavel-qualquer-motivo"  # D77: two blind «não tipável» readings replicate whatever their reasons
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
 HAND_READ = {"ccp:art19", "ccp:art20", "ccp:art135", "ccp:art136"}
@@ -437,6 +440,11 @@ def checked(rec, ctx, rtype, version=None):
     return a, v3.check(a, ctx, rtype, version)
 
 
+def nt_any(log, A, B):
+    """D77: the person's product rule is settled in the log and both checked readings say «não tipável» (any reasons)."""
+    return bool(A and B and A.get("nao_tipavel") and B.get("nao_tipavel")) and log.replay().state_of("product_rule", NT_RULE) == "settled"
+
+
 def settled_before(log, t):
     rp = log.replay()
     return rp.state_of("regra", t["rule"]) == "settled" or rp.state_of("nao_tipavel", t["rule"].replace("regra:", "nao_tipavel:", 1)) == "settled"
@@ -444,8 +452,10 @@ def settled_before(log, t):
 
 def cmd_exam(rounds):
     """D74: per stratum, how often the proposer's checked reading replicates leitor:b's on the targets leitor:b reads validly
-    (every target of the rounds, settled before or not). Reads the stored answers; writes nothing; no model."""
+    (every target of the rounds, settled before or not), and (concordancia_d77) counting two «não tipável» of any reasons
+    while NT_RULE is settled. Reads the stored answers; writes nothing; no model."""
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    log = Log(ROOT / "governance")
     tally = {}
     for n in rounds:
         R = FROUNDS[n]
@@ -466,8 +476,10 @@ def cmd_exam(rounds):
                 if not ea and v3.replicate(A, B):
                     x["replica"] += 1
                     x["regras_replicadas"] += not B.get("nao_tipavel")
+                x["replica_d77"] = x.get("replica_d77", 0) + (not ea and (v3.replicate(A, B) or nt_any(log, A, B)))
     for g, x in tally.items():
         x["concordancia"] = round(x["replica"] / x["b_valido"], 3) if x["b_valido"] else None
+        x["concordancia_d77"] = round(x.get("replica_d77", 0) / x["b_valido"], 3) if x["b_valido"] else None
     print(json.dumps({"rounds": rounds, "por_grupo": tally}, ensure_ascii=False, indent=1))
     return tally
 
@@ -497,6 +509,7 @@ def cmd_record_v3(n):
         if ea:
             row["state"] = f"sem leitura válida de {proposer}"
             continue
+        nt = not eb and nt_any(log, A, B)
         question = body["prompt"].rsplit("PERGUNTA\n", 1)[1]
         if A.get("nao_tipavel"):
             aid = t["rule"].replace("regra:", "nao_tipavel:", 1)
@@ -512,8 +525,9 @@ def cmd_record_v3(n):
             rev = log.replay().assertions[("nao_tipavel", aid)]["revision"]
             if not eb:
                 log.review("leitor:b", "nao_tipavel", aid, rev, f"Blind, same prompt as {proposer} ({R['round']}): {question}", "blind",
-                           "uphold" if row["exact"] else "request_evidence", rb["at"],
-                           payload={"answer": v3.canonical(B), "answer_sha256": rb["sha256"], "round": R["round"], "replication": V3_RULE, "protocol": "v3"})
+                           "uphold" if row["exact"] or nt else "request_evidence", rb["at"],
+                           payload={"answer": v3.canonical(B), "answer_sha256": rb["sha256"], "round": R["round"],
+                                    "replication": NT_RULE if nt and not row["exact"] else V3_RULE, "protocol": "v3"})
             row["state"], row["why"] = log.replay().state_of("nao_tipavel", aid), f"não tipável: {A['nao_tipavel']['motivo']}"
             if row["state"] == "settled":  # the target holds no rule of this type: its proposed rules go
                 for rid in [x for (ty, x), a in log.replay().assertions.items() if ty == "regra" and x in rule_ids(t, 4)]:
@@ -694,6 +708,50 @@ def cmd_recheck(n):
     print(f"{len(done)} rules replicate under D64")
 
 
+def cmd_recheck_nt(n):
+    """D77: a v3 round's recorded «não tipável» proposals compared again under NT_RULE. One still unsettled whose current
+    revision is this round's answer, and whose leitor:b answer also says «não tipável» (another reason), gets leitor:b's blind
+    review again, from the same answer, as an uphold naming NT_RULE; then the target's proposed rules go, as in record."""
+    R = FROUNDS[n]
+    store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    log = Log(ROOT / "governance")
+    writer = Writer(ROOT / "rules", Store([ROOT / "rules"]).load())
+    if log.replay().state_of("product_rule", NT_RULE) != "settled":
+        raise SystemExit(f"{NT_RULE} is not a settled product rule in the log")
+    proposer, pfile = R["proposer"]
+    done = []
+    for t in targets(store, n):
+        d = R["dir"] / rr.slug(t["rule"])
+        body = json.loads((d / "prompt.json").read_text(encoding="utf-8"))
+        ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (pfile, "leitor-b.json")]
+        A, ea = checked(ra, body["context"], t["type"], body.get("protocol_version"))
+        B, eb = checked(rb, body["context"], t["type"], body.get("protocol_version"))
+        if ea or eb or v3.replicate(A, B) or not nt_any(log, A, B):
+            continue
+        aid = t["rule"].replace("regra:", "nao_tipavel:", 1)
+        known = log.replay().assertions.get(("nao_tipavel", aid))
+        last = next((ev for _, ev in reversed(store.events) if ev["assertion"] == aid and ev["action"] in ("propose", "correct")), None)
+        if not known or known["state"] in ("settled", "stale", "rejected") or known["proposer"] != proposer or \
+                (last or {}).get("payload", {}).get("answer_sha256") != ra["sha256"]:
+            continue
+        question = body["prompt"].rsplit("PERGUNTA\n", 1)[1]
+        log.review("leitor:b", "nao_tipavel", aid, known["revision"],
+                   f"D77, the same blind answer of {R['round']} compared again («não tipável», any reason): {question}", "blind", "uphold", now_utc(),
+                   payload={"answer": v3.canonical(B), "answer_sha256": rb["sha256"], "round": R["round"], "replication": NT_RULE, "protocol": "v3"})
+        if log.replay().state_of("nao_tipavel", aid) == "settled":
+            for rid in [x for (ty, x), a in log.replay().assertions.items() if ty == "regra" and x in rule_ids(t, 4)]:
+                if log.replay().state_of("regra", rid) not in ("stale", "rejected"):
+                    log.invalidate(TOOL, "regra", rid, f"D77: os dois leitores, às cegas, dão {t['source_passage']} como não tipável "
+                                   f"({A['nao_tipavel']['motivo']} / {B['nao_tipavel']['motivo']}); a regra proposta sai ({aid}).", now_utc())
+                    writer.revise(writer.store.current(rid), {"state": "stale"}, now_utc())
+        done.append((aid, log.replay().state_of("nao_tipavel", aid), t.get("stratum")))
+    log.write_state()
+    rr.write_packages(writer)
+    for aid, st, g in done:
+        print(aid, st, g)
+    print(f"{len(done)} «não tipável» settle under D77 in {R['round']}")
+
+
 def readings_of(rec, t, rnd):
     """The readings of one answer as a list: round 9 on, the rules it gives (D62); before, its one rule."""
     if rnd >= 9:
@@ -846,11 +904,11 @@ def write_report(rows, n=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw", "draw", "exam"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "recheck-nt", "withdraw", "draw", "exam"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
     ap.add_argument("--rounds", type=int, nargs="*")
     ap.add_argument("--rule"); ap.add_argument("--product-rule")
     a = ap.parse_args()
-    if a.cmd in ("record", "recheck", "withdraw"):
+    if a.cmd in ("record", "recheck", "recheck-nt", "withdraw"):
         tool_is_current()
     if a.cmd == "withdraw":
         return cmd_withdraw(a.rule, a.product_rule)
@@ -874,6 +932,8 @@ def main():
         return cmd_prompts(store, a.round)
     if a.cmd == "recheck":
         return cmd_recheck(a.round)
+    if a.cmd == "recheck-nt":
+        return cmd_recheck_nt(a.round)
     cmd_record(a.round)
 
 

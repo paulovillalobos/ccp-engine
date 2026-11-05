@@ -2306,3 +2306,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   capacity (a higher LoRA rank, or a larger base) for the checker's quoting.
 - Spend of the push (modal billing report, 2026-11-05): training USD 18.49, reads USD 1.11 (AMALIA; Reader B through the person's
   subscription); training/runs/v15/COST.json and v16/COST.json. Inside the USD 40 cap stated before it began.
+
+## 2026-11-05 — D77: a «não tipável» replicates whatever its reason (the person's product rule)
+- Paulo's product rule (evento:1723, product_rule:nao-tipavel-qualquer-motivo), answering whether a «não tipável» must give the
+  same reason to settle: «then Yes bro». Two blind readings that say the passage holds no rule agree; the engine applies no rule
+  either way, so no verdict changes.
+- tools/rule_factory.py@32: `record` upholds two «não tipável» of other reasons under it; `recheck-nt --round N` gives leitor:b's
+  blind review again from the same recorded answer (no reader asked again) and invalidates the target's proposed rules, as
+  `record` does; `exam` reports concordancia_d77. verify.py@57: V3 accepts an uphold that names the rule after evento:1723.
+- Exam (rounds 15–16, reservado, v16): 83 of 101 = 82 % (62 with the reason); practice 245 of 271 = 90 %; all 355 of 404 = 88 %.
+- recheck-nt rounds 11–16: 0, 0, 0, 1, 59, 6 — 66 more «não tipável» settled (rounds 11–13's answers had newer revisions).
