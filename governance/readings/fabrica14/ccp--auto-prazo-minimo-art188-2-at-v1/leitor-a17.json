@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:29:23Z",
+ "sha256": "361b87e3a924cece8e6fd62a74984b522be7ddef07eda90df238f5621ab97e58",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"Concurso limitado por prévia qualificação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iii\"}]}],\"params\":{\"minimum_days\":5,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"cinco dias\",\"de\":\"ccp:art188.2\"}],\"deadline_field\":[{\"texto\":\"Apresentar os documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira\",\"de\":\"ccp:art188.2.a\"}],\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

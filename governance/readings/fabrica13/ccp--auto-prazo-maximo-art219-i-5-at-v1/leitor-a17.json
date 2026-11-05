@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "2ea5db0d9b36b1006172d76711165e3b7c867fe450d4af82a42b345c4ef6e5f0",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\",\"fontes\":[{\"texto\":\"concurso de conceção\",\"de\":\"ccp:art219-i.5\"}]}],\"params\":{\"maximum_days\":5,\"deadline_field\":\"prazo_habilitacao_dias\",\"counted_from\":\"data_notificacao\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"no prazo de cinco dias\",\"de\":\"ccp:art219-i.5\"}],\"deadline_field\":[{\"texto\":\"documentos comprovativos das mesmas\",\"de\":\"ccp:art219-i.5\"}],\"counted_from\":[{\"texto\":\"a contar da notificação\",\"de\":\"ccp:art219-i.5\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

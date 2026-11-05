@@ -2927,8 +2927,9 @@
       "versao": 54,
       "code": "verify.py",
       "hash": "98938d0ce004242e004b398712cded717fc5b9c2c8148e5900c942c34ba28961",
-      "retired": false,
-      "nota": "D73: TRAIN checks data-v15 against the store as it is"
+      "retired": true,
+      "nota": "D73: TRAIN checks data-v15 against the store as it is",
+      "retired_at": "2026-11-05T03:45:09Z"
     },
     {
       "id": "ferramenta:refresh@1",
@@ -2953,6 +2954,45 @@
       "hash": "f479a0b98787ecd099e96fa4706c08682065be02e692b360badcc9b4a552912f",
       "retired": false,
       "nota": "D74: rounds 13-14 (v15 re-reads 12 and 11, settled targets measured not recorded), exam; D75: draw_since and the refresh rounds"
+    },
+    {
+      "id": "leitor:a17",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v15",
+        "versao": "472a10383084"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 18 (D73): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v15 (rank 16), trained from amalia-ccp-lei-v14 two epochs on training/data-v15 (rounds 11-12's settled real readings with their numbers moved, 1 120 invented articles in round 12's shapes, v13/v14 rows kept; protocol 0.5) and a tenth of every other task; it reads with its quotes held to the text (--quotes text); training/runs/v15/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v16@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v16.py",
+      "hash": "402bb89bf486179272d9bf13bbbab28d2cd74572bf5a031fcc86dc5d1c1cd04d",
+      "retired": false,
+      "nota": "D76: data-v16 — rounds 11-14's settled keys (7 copies each), the party deadline without a vocabulary field, part of data-v15"
+    },
+    {
+      "id": "ferramenta:verify@55",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 55,
+      "code": "verify.py",
+      "hash": "35a8d73a84d72b438abea02385f28f4fcf888fc1c7567f6af73b39730c4cf7a0",
+      "retired": false,
+      "nota": "D76: TRAIN checks data-v16"
     }
   ]
 }

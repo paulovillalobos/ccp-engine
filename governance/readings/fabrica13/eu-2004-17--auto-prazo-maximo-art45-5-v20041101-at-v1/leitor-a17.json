@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "77886c09ff803aaf9ef87390e69701dc386b9bd0f7cd7cd5609a5f78ff48bce6",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_limitado_previa_qualificacao\",\"procedimento_negociacao\",\"concurso_publico\"],\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2004-17:art45.5\"},{\"texto\":\"procedimentos por negociação\",\"de\":\"eu-2004-17:art45.5\"},{\"texto\":\"concursos públicos\",\"de\":\"eu-2004-17:art45.5\"}]}],\"params\":{\"maximum_days\":15,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"nao_indicado\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"reduzidos em sete dias\",\"de\":\"eu-2004-17:art45.5\"}],\"deadline_field\":[{\"texto\":\"recepção dos pedidos de participação\",\"de\":\"eu-2004-17:art45.5\"}],\"counted_from\":[{\"texto\":\"anúncios forem preparados e enviados por meios electrónicos\",\"de\":\"eu-2004-17:art45.5\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

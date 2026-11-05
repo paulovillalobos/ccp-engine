@@ -83,7 +83,13 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
         "v15": {"adapter": "amalia-ccp-lei-v15", "init": "amalia-ccp-lei-v14",
                 "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9", "training/data-v10",
                          "training/data-v11", "training/data-v12", "training/data-v15"],
-                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 2, "warmup_steps": 10}}}
+                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 2, "warmup_steps": 10}},
+        # phase 19 (D76): v16 starts from v15's adapter and trains one epoch on data-v16's rule rows (rounds 11-14's settled real
+        # readings, the party deadline the vocabulary has no field for, part of data-v15) and a tenth of every other task
+        "v16": {"adapter": "amalia-ccp-lei-v16", "init": "amalia-ccp-lei-v15",
+                "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9", "training/data-v10",
+                         "training/data-v11", "training/data-v12", "training/data-v16"],
+                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,

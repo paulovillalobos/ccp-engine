@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "e1ce5f7e18959dcb8af89b05e7e9cf4b049ad3888077a4c8f64f28e137f2c20e",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"concessao_obras\",\"fontes\":[{\"texto\":\"concessão\",\"de\":\"eu-2014-23:art39.3\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"30 dias\",\"de\":\"eu-2014-23:art39.3\"}],\"deadline_field\":[{\"texto\":\"receção das candidaturas\",\"de\":\"eu-2014-23:art39.3\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-23:art39.3\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

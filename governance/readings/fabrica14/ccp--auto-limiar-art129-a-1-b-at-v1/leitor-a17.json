@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:29:23Z",
+ "sha256": "38462b0d2dc06c915fe04ae26af420eb07a18186789f4d1d02f20ff4247e9c3b",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\"],\"fontes\":[{\"texto\":\"locação ou aquisição de bens móveis\",\"de\":\"ccp:art129-a.1.b\"},{\"texto\":\"aquisição de serviços\",\"de\":\"ccp:art129-a.1.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"ajuste_direto\",\"fontes\":[{\"texto\":\"ajuste direto\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":100000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de\",\"de\":\"ccp:art129-a.1.b\"}],\"comparator\":[{\"texto\":\"intervenções\",\"de\":\"ccp:art129-a.1\"}],\"value\":[{\"texto\":\"100 000 €\",\"de\":\"ccp:art129-a.1.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "b59f0d2f3afaafe58f1ea53bc9d58696ff963e736d9e5c9ff922aa6074805272",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"publicado no Jornal Oficial da União Europeia\",\"de\":\"ccp:art136.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concurso público\",\"de\":\"ccp:art136.1\"}]}],\"params\":{\"minimum_days\":7,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"reduzidos em até sete dias\",\"de\":\"ccp:art136.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art136.1\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio desse anúncio\",\"de\":\"ccp:art136.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

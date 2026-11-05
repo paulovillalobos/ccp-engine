@@ -2254,3 +2254,38 @@ One entry per commit: done / next / why. Written so a model change loses nothing
      refused (procedure names and phrasings it has never seen); leitor:b reads 23 prazo_minimo rules in all, v14 settles 11.
 - Answer keys: 138 settled (30 rules, 108 «não tipável»; 57 before). Round 12's 67 pratica keys may train v15 under evento:276;
   its 14 reservado keys join the exam.
+
+## 2026-11-05 — D73–D75: one push to the target, the daily refresh, the public recipe
+- Asked (pessoa:paulo, 2026-11-05): «el puto 10 de 10 ya … que aprenda de chingada, de putazo … ya, dale», and whether the CCP
+  Engine goes public with its information kept current. Read as: no more small steps; one training with everything the real
+  law showed; the engine public and refreshed daily; the person still says «publícalo» before anything is deployed.
+- The target (stated before any of it ran): on the exam, the reservado targets of rounds 11 and 12 (109 real passages no
+  training row shows), family A replicates leitor:b blind on at least 95 % of the targets leitor:b reads validly, with no quote
+  outside the text. Baseline v14 (rule_factory exam --rounds 12 11): 27 of 101, 26.7 %. Ceiling: leitor:b asked the same 109
+  prompts a second time, blind (scratch, not a governance round; one prompt unanswered after two tries, Reader B's whitespace
+  loop) replicates itself on 99 of 100 both read validly (one differs: 276.º n.º 5, sem_vocabulario against texto_em_falta).
+- Order changed from the person's three steps, said in the chat: the training first, because 108 round-12 targets both families
+  read as «não tipável» failed to settle on the reason alone (v14 never learned nao_e_prazo_maximo); a type for the entity's
+  own deadlines after it (it needs the date of the act among the facts).
+- D73, data-v15 (tools/make_rule_readings_v15.py@1, protocol 0.5): 77 practice keys of rounds 11–12 (family A's settled
+  reading as the gold; 12 left out: their reader sees a reserved article or an exam passage) with their numbers moved, 1 229
+  rows; 1 120 invented articles (norma:exemplo) drawn by code in round 12's shapes — a party's deadline at most N days (350,
+  prazo_maximo), the entity's own deadline or an obligation to keep (250 nao_e_prazo_maximo, 100 nao_e_prazo_minimo), the
+  directives' minimum deadlines with their own procedure names, urgency and pré-informação (300), a directive's threshold
+  (60 nao_e_limiar), a deadline in working days (60 sem_vocabulario) — each gold quoted by data-v12's code with the 0.5 tables
+  and kept only when the factory's checker passes it, none close to an exam passage; 875 rows kept from data-v14 and data-v13.
+  v15 (training/train_lora.py RUNS v15): from v14's adapter, two epochs on data-v15's rule rows and a tenth of every other task.
+- D74, the exam: rounds 13 and 14 have v15 (leitor:a17) read rounds 12 and 11 again, byte-identical prompts, leitor:b's blind
+  answers carried (437 prompts, no Reader B call). A target already settled is read and measured but not recorded again.
+  rule_factory exam reports, per stratum, family A's replication of leitor:b among leitor:b's valid readings.
+- D75: tools/refresh.py@1, the daily refresh: the Publications Office's SPARQL list of consolidated versions (a version not
+  served in Portuguese is remembered in law/REFRESH.json); the DR consolidated page rendered once and each code article compared
+  with the text in force; on a change, the history walk, build_law, coverage; passages recorded after the last refresh that
+  state days or euros become a refresh round (rule_factory draw_since, governance/readings/refresh-<date>/), read blind by both
+  families, recorded, verify, commit, push, tools/package.sh; deployed only when deploy/AUTODEPLOY exists. Its first passive run
+  found two real differences between the store and the DR page: 61.º (the store holds it revoked since 2018; the page shows its
+  text in force) and 410.º n.º 2 («é de 30 anos» on the page, «é 30 anos» in the store) — the run with --apply walks the histories
+  again. deploy/com.paulo.ccp-refresh.plist (06:30 daily) is written, not loaded.
+- Public recipe (deploy/Dockerfile, deploy/README.md; tools/package.sh copies the Dockerfile and requirements): Cloud Run,
+  project gen-lang-client-0698758883, europe-southwest1, the same settings as rjue-service; the package (640 MB) passes its
+  local smoke test (74 864 objects, 961 events). Not deployed: the person's «publícalo».

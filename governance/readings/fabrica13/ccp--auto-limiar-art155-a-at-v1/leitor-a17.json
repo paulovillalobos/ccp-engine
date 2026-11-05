@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "6b09565aaa3baf71c1e21621d8a60a7de90115dca83e39c09b7fdfb785c3c3d9",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"bens\",\"servicos\",\"obras\"],\"fontes\":[{\"texto\":\"aquisição de bens móveis\",\"de\":\"ccp:art155.a\"},{\"texto\":\"aquisição de serviços\",\"de\":\"ccp:art155.a\"},{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art155.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concurso público\",\"de\":\"ccp:art155\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"le\",\"value\":300000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado do contrato\",\"de\":\"ccp:art155.a\"}],\"comparator\":[{\"texto\":\"não exceda\",\"de\":\"ccp:art155.a\"}],\"value\":[{\"texto\":\"300 000 €\",\"de\":\"ccp:art155.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

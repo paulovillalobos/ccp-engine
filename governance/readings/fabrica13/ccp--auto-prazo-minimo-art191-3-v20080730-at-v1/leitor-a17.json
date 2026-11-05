@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "da25513669a0de8c5487f5ac3e65ceb7a767c86021475344e07c481316364a22",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concurso limitado por prévia qualificação\",\"de\":\"ccp:art191.1\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"publicado no Jornal Oficial da União Europeia\",\"de\":\"ccp:art191.1\"}]},{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"sectores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art7.1\"}]}],\"params\":{\"minimum_days\":19,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"19 dias\",\"de\":\"ccp:art191.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art191.1\"}],\"counted_from\":[{\"texto\":\"a contar da data do envio do convite\",\"de\":\"ccp:art191.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

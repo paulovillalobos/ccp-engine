@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "17f99f1990fcd82acf219e349cdf855d48490cf38305389b56d9e46492541013",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"dialogo_concorrencial\",\"fontes\":[{\"texto\":\"diálogos concorrenciais\",\"de\":\"eu-2014-24:art30.1\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"30 dias\",\"de\":\"eu-2014-24:art30.1\"}],\"deadline_field\":[{\"texto\":\"receção dos pedidos de participação\",\"de\":\"eu-2014-24:art30.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-24:art30.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

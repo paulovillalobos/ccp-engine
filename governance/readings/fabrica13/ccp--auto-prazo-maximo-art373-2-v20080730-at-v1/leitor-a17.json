@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "b9c8b5edc14fe6e8b7609d7ac3418bf5805cf87a4bb651d98da9bc828bdad69c",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"Empreitadas de obras públicas\",\"de\":\"ccp:parte-iii.titulo-ii.capitulo-i\"}]}],\"params\":{\"maximum_days\":10,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_notificacao\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"no prazo de 10 dias\",\"de\":\"ccp:art373.2\"}],\"deadline_field\":[{\"texto\":\"proposta de preço e de prazo de execução\",\"de\":\"ccp:art373.2\"}],\"counted_from\":[{\"texto\":\"a contar da data da notificação\",\"de\":\"ccp:art373.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

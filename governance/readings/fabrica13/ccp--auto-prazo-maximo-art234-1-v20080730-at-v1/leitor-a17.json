@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:32:44Z",
+ "sha256": "2d02d40f0e370ba764cf12ddc765f32bc5723011a78e67e8b967f03d600ca1aa",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\",\"fontes\":[{\"texto\":\"Concurso de concepção\",\"de\":\"ccp:parte-ii.titulo-iv.capitulo-i\"}]}],\"params\":{\"maximum_days\":5,\"deadline_field\":\"prazo_habilitacao_dias\",\"counted_from\":\"data_notificacao\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"no prazo de cinco dias\",\"de\":\"ccp:art234.1\"}],\"deadline_field\":[{\"texto\":\"documentos comprovativos das mesmas\",\"de\":\"ccp:art234.1\"}],\"counted_from\":[{\"texto\":\"a contar da notificação\",\"de\":\"ccp:art234.1\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

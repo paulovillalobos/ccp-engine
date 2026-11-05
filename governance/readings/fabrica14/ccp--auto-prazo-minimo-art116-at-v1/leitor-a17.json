@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T03:29:23Z",
+ "sha256": "cb27a031fd7c75a81f140c99aa60de1f632891ea2236233b0edd5c3638371386",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"ajuste_direto\",\"consulta_previa\"],\"fontes\":[{\"texto\":\"ajuste direto\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i\"},{\"texto\":\"Consulta prévia\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i\"}]}],\"params\":{\"minimum_days\":6,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"seis dias\",\"de\":\"ccp:art116\"}],\"deadline_field\":[{\"texto\":\"apresentação da proposta\",\"de\":\"ccp:art116\"}],\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}
