@@ -49,16 +49,13 @@ A user's request reads stored verdicts, or sends facts for a fresh check: databa
 
 ## 4. Phases (in order; each ends with verify ok and a commit)
 
-**Phase 1 — The GPU to Scaleway, and the checker to Mistral there (L2)** (the person, 2026-11-05: no reason to set the
-checker up twice).
-1. A Scaleway project in Paris with an L40S GPU (the person creates the account and API key).
-2. Copy the base weights and `amalia-ccp-lei-v16` from Modal; AMALIA gives the same answers on a fixed sample.
-3. Mistral open model (Mistral Small) downloaded straight there as `leitor:c`, a registered principal of a third family;
-   reader code beside `readers/leitor_b_cli.py`.
-4. Mistral reads blind every prompt of the settled rules and of the exam (rounds 11–16); a rule stays settled only where
-   AMALIA and Mistral agree.
-5. Done when: both readers run on Scaleway, the settled count under AMALIA + Mistral is known, verify ok, the refresh uses
-   them, Reader B retired. Modal keeps only rjue and saneamento.
+**Phase 1 — The checker (L2): done, Reader B stays** (D79, 2026-11-05). Scaleway Paris had no GPU capacity (quota 0, new
+deployments restricted), so the readers stay on Modal. Mistral's open models were tested blind on the 28 round-15 targets
+where Reader B gives a valid rule (readers/leitor_c_modal.py): Ministral 3 14B gave «não tipável» on all 28 (with and without
+the quote grammar); Mistral Small 4 119B (two H100) gave 0 valid rules, with the grammar 23 «não tipável» and 5 refused,
+without it 27 rules the checker refused (conditions the quoted words do not state). AMALIA v16 on the same 28: 13 valid
+rules, 11 the same as Reader B. Reader B (leitor:b) stays the blind checker until a European model passes this test (the 28
+are kept as the test).
 
 **Phase 2 — Derived facts (L5).**
 1. The engine's fields mapped to Supabase's: `data_inicio_procedimento` ← `data_publicacao_anuncio`;

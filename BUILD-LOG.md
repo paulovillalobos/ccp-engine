@@ -2322,3 +2322,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   done criteria, costs, open decisions. Found while writing it: Supabase holds data_limite_propostas (212 244 facts) and
   data_publicacao_anuncio (174 549) but not the engine's prazo_propostas_dias or data_inicio_procedimento, so a derived-facts
   layer (Phase 2) comes before the engine run over Supabase.
+
+## 2026-11-05 — D79: Mistral tested as the checker; Reader B stays
+- Scaleway: CLI set up, key verified on project ccp-engine; every GPU quota 0 and Paris restricted for new deployments.
+- readers/leitor_c_modal.py (leitor:c, not registered: nothing recorded): Mistral in its own Modal volume mistral-weights,
+  Mistral's native format (tokenizer/config/load «mistral»), transformers 5.16.1 (vLLM 0.30 needs ≥5.15 for Mistral and
+  imports PixtralRotaryEmbedding, gone in 5.17), --quotes text as family A, --model small4 (two H100; a B200 was not
+  given in 40 min) | 14b (L40S). The 14B's files deleted from the volume by the person.
+- On the 28 round-15 targets where Reader B gives a valid rule: 14B «não tipável» ×28; Small 4 guided 23 «não tipável» + 5
+  refused, unguided 27 refused («as fontes não nomeiam ['obras']» and the like); AMALIA v16 13 valid, 11 = Reader B.
+  Spend ≈ USD 9 (Modal).
