@@ -4,10 +4,10 @@ Gerado por tools/coverage.py (ccp-coverage-0.1) a partir do store; não editar �
 
 ## Normas
 
-- registadas: 373
+- registadas: 381
 - capturadas (página própria no DR ou no EUR-Lex, bytes com sha256 em law/raw_bytes/): 53
-- estruturadas (com passagens): 47
-- com vigências: 256
+- estruturadas (com passagens): 55
+- com vigências: 260
 - CCP: 3873 passagens (596 artigo), 6304 versões; 3965 vigências
 
 | norma | título | jurisdição | capturada | passagens | artigos | vigências | endereço |
@@ -151,6 +151,14 @@ Gerado por tools/coverage.py (ccp-coverage-0.1) a partir do store; não editar �
 | norma:dlr-5-2012-m | Decreto Legislativo Regional n.º 5/2012/M | PT-MA | não | 0 | 0 | não | https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/5-2012-553889 |
 | norma:dlr-6-2018-m | Decreto Legislativo Regional n.º 6/2018/M, de 15 de março | PT-MA | sim | 38 | 8 | sim | https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/6-2018-114866946 |
 | norma:dlr-8-2025-m | Decreto Legislativo Regional n.º 8/2025/M, de 30 de dezembro | PT-MA | sim | 908 | 131 | sim | https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2025-993031451 |
+| norma:eu-1989-665 | DIRECTIVA DO CONSELHO 89/665/CEE | UE | não | 68 | 15 | não | https://publications.europa.eu/resource/celex/01989L0665-20140417 |
+| norma:eu-1992-13 | DIRECTIVA 92/13/CEE DO CONSELHO | UE | não | 106 | 23 | não | https://publications.europa.eu/resource/celex/01992L0013-20140417 |
+| norma:eu-2004-17 | DIRECTIVA 2004/17/CE DO PARLAMENTO EUROPEU E DO CONSELHO | UE | não | 498 | 76 | sim | https://publications.europa.eu/resource/celex/02004L0017-20160101 |
+| norma:eu-2004-18 | DIRECTIVA 2004/18/CE DO PARLAMENTO EUROPEU E DO CONSELHO | UE | não | 488 | 84 | sim | https://publications.europa.eu/resource/celex/02004L0018-20160101 |
+| norma:eu-2009-81 | DIRECTIVA 2009/81/CE DO PARLAMENTO EUROPEU E DO CONSELHO | UE | não | 599 | 72 | não | https://publications.europa.eu/resource/celex/02009L0081-20260101 |
+| norma:eu-2014-23 | DIRETIVA 2014/23/UE DO PARLAMENTO EUROPEU E DO CONSELHO | UE | não | 336 | 46 | não | https://publications.europa.eu/resource/celex/02014L0023-20260101 |
+| norma:eu-2014-24 | DIRETIVA 2014/24/UE DO PARLAMENTO EUROPEU E DO CONSELHO | UE | não | 704 | 94 | sim | https://publications.europa.eu/resource/celex/02014L0024-20260101 |
+| norma:eu-2014-25 | DIRETIVA 2014/25/UE DO PARLAMENTO EUROPEU E DO CONSELHO | UE | não | 756 | 110 | sim | https://publications.europa.eu/resource/celex/02014L0025-20260101 |
 | norma:eu-2025-2150 | REGULAMENTO DELEGADO (UE) 2025/2150 DA COMISSÃO | UE | sim | 4 | 2 | sim | https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=OJ:L_202502150 |
 | norma:eu-2025-2151 | REGULAMENTO DELEGADO (UE) 2025/2151 DA COMISSÃO | UE | sim | 2 | 2 | sim | https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=OJ:L_202502151 |
 | norma:eu-2025-2152 | REGULAMENTO DELEGADO (UE) 2025/2152 DA COMISSÃO | UE | sim | 9 | 2 | sim | https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=OJ:L_202502152 |
@@ -537,6 +545,7 @@ Capturados mas não estruturados (o motivo é o que tools/build_law.py registou 
 - norma:ret-25-2021: line 39: a quotation with no passage quoting it ('«4 - A decisão referida no número anterior não pode afastar o efeito anulatório ')
 - norma:ret-36-a-2017: no articles of its own (a declaração de retificação lists corrections)
 - norma:ret-42-2017: no articles of its own (a declaração de retificação lists corrections)
+- raw:eur-lex:diretiva:eu-2014-23-20140328: unbalanced quotation at the end of the structured region (depth 6)
 
 Artigos deixados de fora por uma nota que não se lê ou não se data (D33):
 
@@ -551,5 +560,5 @@ Artigos deixados de fora por uma nota que não se lê ou não se data (D33):
 - norma:lei-98-1997: 1 (lei-98-1997:art38)
 - norma:port-318-b-2023: 2 (port-318-b-2023:art18, port-318-b-2023:art20)
 
-Registados só por aparecerem nas notas de outros códigos capturados (não citados pelo CCP): 306.
+Registados só por aparecerem nas notas de outros códigos capturados (não citados pelo CCP): 314.
 

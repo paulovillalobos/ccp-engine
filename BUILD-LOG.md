@@ -2332,3 +2332,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - On the 28 round-15 targets where Reader B gives a valid rule: 14B «não tipável» ×28; Small 4 guided 23 «não tipável» + 5
   refused, unguided 27 refused («as fontes não nomeiam ['obras']» and the like); AMALIA v16 13 valid, 11 = Reader B.
   Spend ≈ USD 9 (Modal).
+
+## 2026-11-05 — D80: the engine over Supabase; deadlines as two dates
+- engine/evaluate.py: deadline_days (stated days as before; else the rule's counted_from date to the deadline's date with a
+  settled counting rule, else regra_ausente). tests/test_deadline_dates.py (6). Existing engine tests unchanged and passing.
+- db/run_engine.py: report | write over ccp.facto (procedures in id order, pages of 500), the API's choose_package and
+  manifest, verdicts into ccp.veredicto on write. First report, 1 000 procedures: all «sem data de início» (Supabase has
+  no data_inicio_procedimento; which date starts a procedure is a reading).
+- law/COVERAGE.md regenerated (tools/coverage.py --write): stale since the EU directives (381 → 373 listed).
+- Next: the two readings (start of procedure, counting of days) as a question type of the reading protocol, read blind
+  by AMALIA and Reader B; then run_engine write over every procedure.

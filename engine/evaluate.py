@@ -73,7 +73,36 @@ def _verdict(rule, unit, result, reason, detail, citation, facts_used, assertion
             "valid_at": valid_at, "known_at": known_at, "engine_version": engine_version, "manifest": manifest}
 
 
-def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), assertions=(), entities=(), documents=(), coverage=None, aggregates=None, engine_version=VERSION):
+# D80: a deadline the facts state as two dates. The days between the rule's own counted_from date and the deadline's
+# date are counted by a settled counting rule (counting: {"id": regra id, "first_day_counts": bool}); without one the
+# verdict is regra_ausente, never a count the code chose.
+DEADLINE_END = {"prazo_propostas_dias": "data_limite_propostas", "prazo_candidaturas_dias": "data_limite_candidaturas"}
+
+
+def deadline_days(p, values, counting):
+    """(days, fields used, None) or (None, fields, (reason, detail)) for a prazo_minimo / prazo_maximo rule's params."""
+    field, start, end = p["deadline_field"], p.get("counted_from"), DEADLINE_END.get(p["deadline_field"])
+    if values.get(field, MISSING) is not MISSING:
+        return values[field], [field], None
+    if not end or start in (None, "nao_indicado"):
+        return None, [field], ("facto_ausente", f"{p.get('type', 'prazo')} needs {field}")
+    for f in (end, start):
+        v = values.get(f, MISSING)
+        if v is MISSING or isinstance(v, Conflict):
+            return None, [field, f], ("conflito" if isinstance(v, Conflict) else "facto_ausente",
+                                       f"{field} needs {f}" + (f" (in conflict: {v.conflito_id})" if isinstance(v, Conflict) else ""))
+    if counting is None:
+        return None, [end, start], ("regra_ausente", f"{field}: the days from {start} to {end} need a settled counting rule")
+    import datetime
+    try:
+        a, b = datetime.date.fromisoformat(values[start][:10]), datetime.date.fromisoformat(values[end][:10])
+    except (TypeError, ValueError):
+        return None, [end, start], ("facto_ausente", f"{field}: {start} or {end} is not a date")
+    return (b - a).days + (1 if counting["first_day_counts"] else 0), [end, start], None
+
+
+def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), assertions=(), entities=(), documents=(), coverage=None, aggregates=None,
+             counting=None, engine_version=VERSION):
     missing = manifest_mod.is_complete(manifest)
     if missing:
         raise EvaluateError(f"incomplete manifest: {missing}")
@@ -140,7 +169,26 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             result = "cumpre" if rules_mod.holds({"field": "_agg", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_agg": value}) else "nao_cumpre"
             verdicts.append(done(r, result, f"{p['aggregate']['op']}({p['aggregate']['field']})={value} {p['aggregate']['comparator']} {p['aggregate']['value']}", used_for(cond_fields)))
             continue
-        needed = {"limiar": [p["threshold"]["field"]] if "threshold" in p else [], "prazo_minimo": [p.get("deadline_field")], "prazo_maximo": [p.get("deadline_field")], "procedimento_admissivel": ["tipo_procedimento"],
+        if t in ("prazo_minimo", "prazo_maximo"):  # D80: stated as days, or as two dates and a settled counting rule
+            days, needed, why = deadline_days({**p, "type": t}, values, counting)
+            if why:
+                verdicts.append(na(r, why[0], why[1], used_for(cond_fields + needed)))
+                continue
+            used = used_for(needed + cond_fields)
+            if not isinstance(days, (int, float)):
+                verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
+                continue
+            how = "" if needed == [p["deadline_field"]] else f" ({needed[1]} to {needed[0]}, counting rule {counting['id']})"
+            if t == "prazo_minimo":
+                detail = (f"{p['deadline_field']}={days:g} >= {p['minimum_days']}" if days >= p["minimum_days"] else f"{p['deadline_field']}={days:g} < {p['minimum_days']}") + how
+                if days >= p["minimum_days"] and p.get("usual_days") and days < p["usual_days"]:  # D62: under the «em regra» days, not under the floor
+                    detail += f"; below the usual {p['usual_days']} days the passage sets as a rule"
+                verdicts.append(done(r, "cumpre" if days >= p["minimum_days"] else "nao_cumpre", detail, used))
+            else:  # D71
+                ok2 = days <= p["maximum_days"]
+                verdicts.append(done(r, "cumpre" if ok2 else "nao_cumpre", f"{p['deadline_field']}={days:g} {'<=' if ok2 else '>'} {p['maximum_days']}" + how, used))
+            continue
+        needed = {"limiar": [p["threshold"]["field"]] if "threshold" in p else [], "procedimento_admissivel": ["tipo_procedimento"],
                   "proibicao": [c["field"] for c in p.get("forbidden", [])], "conteudo_obrigatorio": []}[t]
         blocked = next((f for f in needed if values.get(f, MISSING) is MISSING or isinstance(values.get(f), Conflict)), None)
         if blocked is not None:
@@ -153,22 +201,6 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             value = values[p["threshold"]["field"]]
             ok2 = rules_mod.holds({"field": "_v", "op": p["threshold"]["comparator"], "value": limit}, {"_v": value})  # D66: lt, le, gt, ge
             verdicts.append(done(r, "cumpre" if ok2 else "nao_cumpre", f"{p['threshold']['field']}={value} {p['threshold']['comparator']} {limit:g}", used))
-        elif t == "prazo_minimo":
-            days = values[p["deadline_field"]]
-            if not isinstance(days, (int, float)):
-                verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
-                continue
-            detail = f"{p['deadline_field']}={days:g} >= {p['minimum_days']}" if days >= p["minimum_days"] else f"{p['deadline_field']}={days:g} < {p['minimum_days']}"
-            if days >= p["minimum_days"] and p.get("usual_days") and days < p["usual_days"]:  # D62: under the «em regra» days, not under the floor
-                detail += f"; below the usual {p['usual_days']} days the passage sets as a rule"
-            verdicts.append(done(r, "cumpre" if days >= p["minimum_days"] else "nao_cumpre", detail, used))
-        elif t == "prazo_maximo":  # D71
-            days = values[p["deadline_field"]]
-            if not isinstance(days, (int, float)):
-                verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
-                continue
-            ok2 = days <= p["maximum_days"]
-            verdicts.append(done(r, "cumpre" if ok2 else "nao_cumpre", f"{p['deadline_field']}={days:g} {'<=' if ok2 else '>'} {p['maximum_days']}", used))
         elif t == "procedimento_admissivel":
             proc = values["tipo_procedimento"]
             verdicts.append(done(r, "cumpre" if proc in p["procedures"] else "nao_cumpre", f"tipo_procedimento={proc} in {p['procedures']}", used))
