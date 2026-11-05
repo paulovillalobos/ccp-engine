@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:02:53Z",
+ "sha256": "daff4d55404a7d806a4f44d9de2564604d583ae36ed3ddbc21da6fc416ea1e87",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"O prazo mínimo para a receção das candidaturas incluindo ou não propostas à concessão é de 30 dias\",\"de\":\"eu-2014-23:art39.3\"}],\"deadline_field\":[{\"texto\":\"receção das candidaturas\",\"de\":\"eu-2014-23:art39.3\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio de concessão\",\"de\":\"eu-2014-23:art39.3\"}],\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

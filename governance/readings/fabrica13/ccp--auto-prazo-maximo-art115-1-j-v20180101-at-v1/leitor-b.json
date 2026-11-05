@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T21:59:08Z",
+ "sha256": "a8b221630d504e532d5280af1b5cc2534f9464f02d7ae9543d59dfac84b9f956",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"consulta_previa\",\"ajuste_direto\"],\"fontes\":[{\"texto\":\"Consulta prévia e ajuste direto\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i\"}]}],\"params\":{\"maximum_days\":5,\"deadline_field\":\"prazo_habilitacao_dias\",\"counted_from\":\"nao_indicado\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"até cinco dias\",\"de\":\"ccp:art115.1.j\"}],\"deadline_field\":[{\"texto\":\"documentos de habilitação\",\"de\":\"ccp:art115.1.j\"}] , \"counted_from\":null}}],\"nao_tipavel\":null}"
+}

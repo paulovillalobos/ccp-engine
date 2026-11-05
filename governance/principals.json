@@ -2902,8 +2902,9 @@
       "versao": 27,
       "code": "tools/rule_factory.py",
       "hash": "f603c8f890c217f88f6345dfdfa1404d454efef0be17434188de18537f5e8efd",
-      "retired": false,
-      "nota": "D72: draw12 leaves out a passage whose prompt would not print a line its reading may quote"
+      "retired": true,
+      "nota": "D72: draw12 leaves out a passage whose prompt would not print a line its reading may quote",
+      "retired_at": "2026-11-05T00:39:55Z"
     },
     {
       "id": "ferramenta:make-rule-readings-v15@1",
@@ -2928,6 +2929,30 @@
       "hash": "98938d0ce004242e004b398712cded717fc5b9c2c8148e5900c942c34ba28961",
       "retired": false,
       "nota": "D73: TRAIN checks data-v15 against the store as it is"
+    },
+    {
+      "id": "ferramenta:refresh@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/refresh.py",
+      "hash": "bd2cbf95aa585a2c6598d5f1cc3f121a8e32ca632b182531a22252ccaecdea4f",
+      "retired": false,
+      "nota": "D75: the daily refresh — EU consolidations and the DR consolidated page read passively, law rebuilt, changed passages read blind by both families, verify, package; deploy only with deploy/AUTODEPLOY"
+    },
+    {
+      "id": "ferramenta:rule-factory@28",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 28,
+      "code": "tools/rule_factory.py",
+      "hash": "f479a0b98787ecd099e96fa4706c08682065be02e692b360badcc9b4a552912f",
+      "retired": false,
+      "nota": "D74: rounds 13-14 (v15 re-reads 12 and 11, settled targets measured not recorded), exam; D75: draw_since and the refresh rounds"
     }
   ]
 }

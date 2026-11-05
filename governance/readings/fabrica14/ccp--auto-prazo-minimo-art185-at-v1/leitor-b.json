@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T14:24:56Z",
+ "sha256": "f82c7854edccda083d18c80e8400c45c786f51b0750cf39107a7cffbfe6adfdf",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"Concurso limitado por prévia qualificação\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-iii\"}]}],\"params\":{\"minimum_days\":5,\"deadline_field\":\"prazo_pronuncia_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"não inferior a cinco dias\",\"de\":\"ccp:art185\"}],\"deadline_field\":[{\"texto\":\"se pronunciem\",\"de\":\"ccp:art185\"}]\t\t        \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t,\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

@@ -10,7 +10,8 @@ cd "$(dirname "$0")/.."
 OUT=dist/ccp-service
 rm -rf "$OUT" && mkdir -p "$OUT/governance"
 cp -R engine tools schemas law rules examples "$OUT/"
-cp verify.py "$OUT/"
+cp verify.py requirements.txt "$OUT/"
+cp deploy/Dockerfile "$OUT/Dockerfile"  # D75: the Cloud Run image (deploy/README.md)
 cp governance/events.jsonl governance/principals.json "$OUT/governance/"
 find "$OUT" -name "__pycache__" -type d -prune -exec rm -rf {} +
 LEAK=$(find "$OUT" \( -name ".env*" -o -iname "*token*" -o -name "*.key" -o -name "*.pem" \) -print)

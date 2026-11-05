@@ -49,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.8"
-TOOL = "ferramenta:rule-factory@27"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+TOOL = "ferramenta:rule-factory@28"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -124,6 +124,16 @@ FROUNDS[11] = {**{k: v for k, v in FROUNDS[9].items() if k not in ("only", "carr
 PICK12_FILE = rr.READINGS / "fabrica12" / "pick.json"
 FROUNDS[12] = {**{k: v for k, v in FROUNDS[11].items() if k != "pick"}, "round": "fabrica-12", "dir": rr.READINGS / "fabrica12", "decision": "D72", "v3_version": v3.V05,
                "pick": [tuple(x) for x in json.loads(PICK12_FILE.read_text(encoding="utf-8"))["pick"]] if PICK12_FILE.exists() else []}
+# D74: v15 (leitor:a17) reads rounds 12 and 11 again, byte-identical prompts, leitor:b's blind answers carried. The exam is
+# their reservado; a target already settled is read and measured but not recorded again (a later round never reopens it).
+FROUNDS[13] = {**FROUNDS[12], "round": "fabrica-13", "dir": rr.READINGS / "fabrica13", "decision": "D74", "proposer": ("leitor:a17", "leitor-a17.json"),
+               "carry_b": 12, "skip_settled": True}
+FROUNDS[14] = {**FROUNDS[11], "round": "fabrica-14", "dir": rr.READINGS / "fabrica14", "decision": "D74", "proposer": ("leitor:a17", "leitor-a17.json"),
+               "carry_b": 11, "skip_settled": True}
+CURRENT = ("leitor:a17", "leitor-a17.json")  # D75: who proposes in a refresh round, the latest adapter (v15)
+for _k, _f in enumerate(sorted(rr.READINGS.glob("refresh-*/pick.json"))):  # D75: the daily refresh rounds, one folder each
+    FROUNDS[1001 + _k] = {**FROUNDS[12], "round": _f.parent.name, "dir": _f.parent, "decision": "D75", "proposer": CURRENT,
+                          "pick": [tuple(x) for x in json.loads(_f.read_text(encoding="utf-8"))["pick"]]}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
 DATE = rr.NEW
@@ -218,7 +228,7 @@ def type12(text):
     return "limiar"
 
 
-def draw12(store):
+def draw12(store, only=None, rounds=None):
     """[passage, date, type, stratum], in id and date order. Dates: DATE for what is in force on it; for a CCP version no longer
     in force, the day it began (one target per earlier version whose numbers differ from today's); for a repealed directive,
     the day its last version began. A passage is kept when no passage below it states days or euros on the same date. Left
@@ -227,13 +237,13 @@ def draw12(store):
     list, or for an act that list did not yet hold, when int(sha256(article id), 16) % 5 == 0; else pratica."""
     law = v3.Law(store)
     reserved = set(json.loads((ROOT / "law/TRAIN-HELD-OUT.json").read_text(encoding="utf-8"))["reserved_articles"])
-    asked = {t["rule"] for m in FROUNDS if m < 12 for t in targets(store, m)}
+    asked = {t["rule"] for m in (rounds if rounds is not None else [m for m in FROUNDS if m < 12]) for t in targets(store, m)}
     nums = lambda t: re.findall(r"\d[\d .]*\d|\d", t or "")  # noqa: E731
     hits = {}
     for p in store.objects["passagem"]:
         pid = p["id"]
         ns = pid.split(":", 1)[0]
-        if not (pid.startswith("ccp:art") or (ns in DIRECTIVES and ":art" in pid)) or "-dup" in pid:  # a -dup id is a number the structure saw twice
+        if not (pid.startswith("ccp:art") or (ns in DIRECTIVES and ":art" in pid)) or "-dup" in pid or (only is not None and pid not in only):  # a -dup id is a number the structure saw twice
             continue
         cur = store.current(pid)
         if cur.get("stale"):
@@ -271,6 +281,20 @@ def draw12(store):
             k = "reservado" if art in reserved or (not pid.startswith("ccp:") and int(hashlib.sha256(art.encode()).hexdigest(), 16) % 5 == 0) else "pratica"
             out.append([pid, d, type_, k])
     return sorted(out, key=lambda x: (x[0].split(":")[0], v3.Law.key(x[0]), x[1]))
+
+
+def draw_since(store, since):
+    """D75: the refresh round's targets: draw12's rules over the passages whose current revision was recorded after `since`
+    (a new or changed text), against every round's questions so far."""
+    changed = {p["id"] for p in store.objects["passagem"] if store.current(p["id"]) is p and p.get("recorded_at", "") > since}
+    return draw12(store, only=changed, rounds=list(FROUNDS)) if changed else []
+
+
+def refresh_round_of(folder):
+    """The FROUNDS key of a refresh folder (governance/readings/refresh-<date>), after the module reads it again."""
+    import importlib
+    importlib.reload(sys.modules[__name__])
+    return next(n for n, R in sys.modules[__name__].FROUNDS.items() if R.get("dir") == folder)
 
 
 def target_of(store, pid, type_, n=1, date=None, stratum=None):
@@ -410,6 +434,41 @@ def checked(rec, ctx, rtype, version=None):
     return a, v3.check(a, ctx, rtype, version)
 
 
+def settled_before(log, t):
+    rp = log.replay()
+    return rp.state_of("regra", t["rule"]) == "settled" or rp.state_of("nao_tipavel", t["rule"].replace("regra:", "nao_tipavel:", 1)) == "settled"
+
+
+def cmd_exam(rounds):
+    """D74: per stratum, how often the proposer's checked reading replicates leitor:b's on the targets leitor:b reads validly
+    (every target of the rounds, settled before or not). Reads the stored answers; writes nothing; no model."""
+    store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    tally = {}
+    for n in rounds:
+        R = FROUNDS[n]
+        for t in targets(store, n):
+            d = R["dir"] / rr.slug(t["rule"])
+            body = json.loads((d / "prompt.json").read_text(encoding="utf-8"))
+            ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (R["proposer"][1], "leitor-b.json")]
+            A, ea = checked(ra, body["context"], t["type"], body.get("protocol_version"))
+            B, eb = checked(rb, body["context"], t["type"], body.get("protocol_version"))
+            for g in (t.get("stratum") or "—", "todos"):
+                x = tally.setdefault(g, {"alvos": 0, "b_valido": 0, "a_valido": 0, "replica": 0, "regras_b": 0, "regras_replicadas": 0})
+                x["alvos"] += 1
+                x["a_valido"] += not ea
+                if eb:
+                    continue
+                x["b_valido"] += 1
+                x["regras_b"] += not B.get("nao_tipavel")
+                if not ea and v3.replicate(A, B):
+                    x["replica"] += 1
+                    x["regras_replicadas"] += not B.get("nao_tipavel")
+    for g, x in tally.items():
+        x["concordancia"] = round(x["replica"] / x["b_valido"], 3) if x["b_valido"] else None
+    print(json.dumps({"rounds": rounds, "por_grupo": tally}, ensure_ascii=False, indent=1))
+    return tally
+
+
 def cmd_record_v3(n):
     """D66: record a v3 round. A reading the checker refuses is not recorded; a «não tipável» proposal is an assertion of
     type nao_tipavel, settled by leitor:b's blind uphold with the same reason, and then the target's proposed rules are
@@ -424,6 +483,8 @@ def cmd_record_v3(n):
         d = R["dir"] / rr.slug(t["rule"])
         body = json.loads((d / "prompt.json").read_text(encoding="utf-8"))
         ctx, rtype = body["context"], t["type"]
+        if R.get("skip_settled") and settled_before(log, t):  # D74: measured by `exam`, not recorded again
+            continue
         ra, rb = [json.loads((d / f).read_text(encoding="utf-8")) if (d / f).exists() else None for f in (pfile, "leitor-b.json")]
         A, ea = checked(ra, ctx, rtype, body.get("protocol_version"))
         B, eb = checked(rb, ctx, rtype, body.get("protocol_version"))
@@ -526,8 +587,8 @@ def write_report_v3(rows, n):
     R = FROUNDS[n]
     proposer = R["proposer"][0]
     L = [f"# FÁBRICA DE REGRAS — ronda {n} (DECISIONS {R['decision']})", "",
-         f"Gerado por tools/rule_factory.py ({VERSION}) com o protocolo de leitura v3 (tools/read_rules_v3.py, {R.get('v3_version', v3.VERSION)}). " + INTRO[n][0] +
-         f" Propõe {proposer} (AMALIA + adaptador {ADAPTER_OF.get(proposer, 'v7')}), leitor:b revê às cegas.", "", INTRO[n][1], "",
+         f"Gerado por tools/rule_factory.py ({VERSION}) com o protocolo de leitura v3 (tools/read_rules_v3.py, {R.get('v3_version', v3.VERSION)}). " + INTRO.get(n, INTRO_REFRESH)[0] +
+         f" Propõe {proposer} (AMALIA + adaptador {ADAPTER_OF.get(proposer, 'v7')}), leitor:b revê às cegas.", "", INTRO.get(n, INTRO_REFRESH)[1], "",
          "| regra | passagem | estado | replica | verificador: leitor A | verificador: leitor B |", "|---|---|---|---|---|---|"]
     if "pick" in R:  # D69: the exam by stratum, before the rows
         S = ["| grupo | alvos | leitor A válido | leitor B válido | assentes | regras | «não tipável» |", "|---|---|---|---|---|---|---|"]
@@ -730,6 +791,12 @@ INTRO = {
          "código (adaptador v14). Alvos: os 9 da ronda 9 ainda abertos, que nenhum exemplo de treino mostra.",
          "Os prompts são os da ronda 9, byte a byte; as respostas de leitor:b são as da ronda 9. Um programa confirma cada palavra "
          "citada; a leitura que falha não fica registada."],
+    13: ["D74: v15 relê a ronda 12 (os mesmos prompts, byte a byte; as respostas cegas do leitor:b vêm da ronda 12). O exame é o "
+         "grupo reservado; um alvo já assente é lido e medido mas não volta a ser registado.",
+         "Protocolo 0.5. Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."],
+    14: ["D74: v15 relê a ronda 11 (os mesmos prompts, protocolo 0.4; as respostas cegas do leitor:b vêm da ronda 11). O exame é o "
+         "grupo reservado; um alvo já assente é lido e medido mas não volta a ser registado.",
+         "Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."],
     12: ["D72: toda a lei real que o depósito tem e que diz dias ou euros, ainda não perguntada: o CCP em vigor, as versões anteriores "
          "do CCP cujos números diferem dos de hoje, e as diretivas da União sobre contratação pública (D70). Protocolo 0.5: o tipo "
          "prazo_maximo e os nomes de procedimento das diretivas (D71). Adaptador v14; grupo reservado (exame) pela regra do "
@@ -745,7 +812,9 @@ INTRO = {
 }
 
 
-ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13", "leitor:a16": "v14"}
+INTRO_REFRESH = ["D75: a atualização diária — as passagens cujo texto mudou ou entrou no depósito desde a última, que dizem dias ou euros.",
+                 "Protocolo 0.5. Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."]
+ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13", "leitor:a16": "v14", "leitor:a17": "v15"}
 
 
 def write_report(rows, n=1):
@@ -768,7 +837,8 @@ def write_report(rows, n=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw", "draw"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["targets", "prompts", "record", "recheck", "withdraw", "draw", "exam"]); ap.add_argument("--round", type=int, default=1, choices=sorted(FROUNDS))
+    ap.add_argument("--rounds", type=int, nargs="*")
     ap.add_argument("--rule"); ap.add_argument("--product-rule")
     a = ap.parse_args()
     if a.cmd in ("record", "recheck", "withdraw"):
@@ -776,6 +846,9 @@ def main():
     if a.cmd == "withdraw":
         return cmd_withdraw(a.rule, a.product_rule)
     store = Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
+    if a.cmd == "exam":
+        cmd_exam(a.rounds or [a.round])
+        return
     if a.cmd == "draw":  # D72: round 12's targets, drawn once and kept before either family reads
         if a.round != 12 or PICK12_FILE.exists():
             raise SystemExit("draw is for round 12, once: pick.json is kept as drawn")

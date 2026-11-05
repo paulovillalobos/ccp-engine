@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T22:00:08Z",
+ "sha256": "5565122a77928da89c49c055577f8feef0c95353cb7d2352503429e04d98e987",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico_urgente\",\"fontes\":[{\"texto\":\"Concurso público urgente\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-ii.seccao-vii\"}]}],\"params\":{\"maximum_days\":2,\"deadline_field\":\"prazo_habilitacao_dias\",\"counted_from\":\"data_notificacao\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"no prazo de dois dias\",\"de\":\"ccp:art161\"}],\"deadline_field\":[{\"texto\":\"documentos de habilitação\",\"de\":\"ccp:art161\"}],\"counted_from\":[{\"texto\":\"a contar da data da notificação da adjudicação\",\"de\":\"ccp:art161\"}]}}],\"nao_tipavel\":null}"
+}

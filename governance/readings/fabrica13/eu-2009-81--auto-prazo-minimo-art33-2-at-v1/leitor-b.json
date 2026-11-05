@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:04:00Z",
+ "sha256": "deb513cadefedd91845ffcaf67c61c6fb25455c7a7fe2b1dd716709f4e8a9a90",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2009-81:art33.2\"}]}],\"params\":{\"minimum_days\":40,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"o prazo mínimo para recepção das propostas é de 40 dias\",\"de\":\"eu-2009-81:art33.2\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2009-81:art33.2\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do convite\",\"de\":\"eu-2009-81:art33.2\"}]   \t \n\t\n\t\t\t\n\t\n\t\n\t\t\n\t\n\t\n   \t\n \t\n \t\n\t \n \t,\t\n\t\n\t \t \t \t  \t\t\n\t\t\t   \n\t\t\t\t  \t \n \t  \t\n\t  \t \t\t   \t\t \n \t\t\t    \t\t  \t\t\t\t \t  \t\t\t\t\n\t\t\t \n \t \n\t  \t \n  \t\t \t\t\t\n\t\t\t \t  \t\t  \n      \t \t \t\t  \t \t \t\n\t\t\n   \"usual_days\":null}}],\"nao_tipavel\":null}"
+}
