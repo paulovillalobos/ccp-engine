@@ -2342,3 +2342,12 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - law/COVERAGE.md regenerated (tools/coverage.py --write): stale since the EU directives (381 → 373 listed).
 - Next: the two readings (start of procedure, counting of days) as a question type of the reading protocol, read blind
   by AMALIA and Reader B; then run_engine write over every procedure.
+
+## 2026-11-05 — D81: the holidays from the law's text
+- engine/calendario.py: holidays(text, year) reads Código do Trabalho art. 234.º n.º 1 as the caller gives it (the fixed
+  days it names, and Sexta-Feira Santa, Domingo de Páscoa, Corpo de Deus by Easter); a name it cannot place raises
+  Unreadable. next_working_day for CPA art. 87.º f). On the store's text (in force from 2016): 13 days in 2018, 2022, 2026.
+  tests/test_calendario.py (4).
+- Found reading the law for D80's two readings: CCP art. 470.º (formation deadlines counted by CPA art. 87.º; the
+  urgent tender's proposals deadline without its alínea b); n.º 3: proposals, applications and solutions continuous);
+  CPA art. 87.º b) and f); CCP art. 36.º n.º 1 (the procedure starts with the decisão de contratar, a date no source holds).
