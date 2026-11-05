@@ -2877,8 +2877,9 @@
       "versao": 53,
       "code": "verify.py",
       "hash": "92ae94008d199bed60b9a413c99795677818d8170346ba2fdd8ebb58a1dc1f0c",
-      "retired": false,
-      "nota": "D70: the TRAIN checks read the law as recorded by make_training.LAW_RECORDED_BY"
+      "retired": true,
+      "nota": "D70: the TRAIN checks read the law as recorded by make_training.LAW_RECORDED_BY",
+      "retired_at": "2026-11-05T00:17:31Z"
     },
     {
       "id": "ferramenta:read-rules-v3@9",
@@ -2903,6 +2904,30 @@
       "hash": "f603c8f890c217f88f6345dfdfa1404d454efef0be17434188de18537f5e8efd",
       "retired": false,
       "nota": "D72: draw12 leaves out a passage whose prompt would not print a line its reading may quote"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v15@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v15.py",
+      "hash": "597dad23ffa802c8a759cc0570acf4543783b8a89e757b979d67b5ee839ea081",
+      "retired": false,
+      "nota": "D73: data-v15 — rounds 11-12's settled real readings with numbers moved, invented articles in round 12's shapes, v13/v14 rows kept; protocol 0.5"
+    },
+    {
+      "id": "ferramenta:verify@54",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 54,
+      "code": "verify.py",
+      "hash": "98938d0ce004242e004b398712cded717fc5b9c2c8148e5900c942c34ba28961",
+      "retired": false,
+      "nota": "D73: TRAIN checks data-v15 against the store as it is"
     }
   ]
 }

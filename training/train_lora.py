@@ -76,7 +76,14 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
         "v14": {"adapter": "amalia-ccp-lei-v14", "init": "amalia-ccp-lei-v13",
                 "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9", "training/data-v10",
                          "training/data-v11", "training/data-v12", "training/data-v14"],
-                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}}}
+                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}},
+        # phase 18 (D73): v15 starts from v14's adapter and trains two epochs on data-v15's rule rows (rounds 11-12's settled real
+        # readings with their numbers moved, the invented articles in the shapes round 12 showed, v13/v14 rows kept), protocol 0.5,
+        # and a tenth of every other task
+        "v15": {"adapter": "amalia-ccp-lei-v15", "init": "amalia-ccp-lei-v14",
+                "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v9", "training/data-v10",
+                         "training/data-v11", "training/data-v12", "training/data-v15"],
+                "repeat": {"condicoes_texto": 2}, "sample": {"*": 0.1, "regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 2, "warmup_steps": 10}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,

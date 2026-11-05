@@ -1,0 +1,415 @@
+{
+ "tool": "ccp-make-rule-readings-v15-0.1",
+ "protocol": "ccp-read-rules-v3-0.5",
+ "product_rule": "product_rule:leituras-assentes-como-pratica",
+ "keys": {
+  "regra:ccp:auto-prazo-minimo-art102-2@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art120-1@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art188-4@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art274-1@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art283-a-2-c@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art299-1-c@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art345-5@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art372-3-a@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art389-1@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art394-7@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art401-1@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art404-1@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art405-2@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art43-10-c@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art464-g@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art65@v1": {
+   "round": 11,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art72-3@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art93-2@v1": {
+   "round": 11,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art35-c-2-c@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art43-10-b@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art43-10-c@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-limiar-art46-a-2@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-limiar-art55-3-a@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art61-4-v20120811@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-limiar-art95-1-d@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art147-v20180101@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": false
+  },
+  "regra:ccp:auto-prazo-minimo-art214-1@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art240-1-b@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art241-d@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art242-4-v20080730@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art243-2-a-v20080730@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art295-3@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art295-4@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art295-5-b-v20080730@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art295-6-v20080730@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art295-9@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art299-2-v20080730@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art299-4@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art319-a-7@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art321-a-2@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art329-5@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art345-5@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art354-4@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art361-5@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art366-5@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art373-3-v20080730@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art373-5@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-minimo-art394-3@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:ccp:auto-prazo-maximo-art394-7@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-1992-13:auto-prazo-minimo-art2-f-1-a@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-17:auto-prazo-minimo-art15-5-v20041101@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-17:auto-prazo-minimo-art45-2-v20041101@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": false
+  },
+  "regra:eu-2004-17:auto-prazo-maximo-art45-6-v20041101@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-17:auto-prazo-maximo-art46-2-v20041101@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-17:auto-prazo-maximo-art47-3-v20041101@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-17:auto-prazo-maximo-art49-2-v20041101@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-17:auto-limiar-art69-2-v20090807@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-18:auto-limiar-art8-a-v20160101@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-18:auto-limiar-art8-b-v20160101@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-18:auto-prazo-minimo-art33-5-v20040430@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2004-18:auto-prazo-minimo-art38-2-v20040430@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": false
+  },
+  "regra:eu-2009-81:auto-prazo-maximo-art35-2@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2009-81:auto-prazo-minimo-art55-6@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2009-81:auto-prazo-minimo-art62-1-a@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-23:auto-prazo-maximo-art34-3@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-limiar-art13-b@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-prazo-minimo-art27-1@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": false
+  },
+  "regra:eu-2014-24:auto-prazo-minimo-art34-2-a@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-prazo-minimo-art34-2-b@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-prazo-maximo-art34-7@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-prazo-maximo-art35-5@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-limiar-art83-6-a@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-24:auto-limiar-art83-6-b@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-25:auto-prazo-minimo-art52-2-a@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-25:auto-prazo-minimo-art52-2-b@v1": {
+   "round": 12,
+   "rows": 25,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-25:auto-prazo-maximo-art52-7@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  },
+  "regra:eu-2014-25:auto-prazo-maximo-art53-5@v1": {
+   "round": 12,
+   "rows": 1,
+   "nao_tipavel": true
+  }
+ },
+ "key_rows": 1229,
+ "written_rows": 1120,
+ "written_by_style": {
+  "w15-maximo": 350,
+  "w15-entidade_max": 250,
+  "w15-entidade_min": 100,
+  "w15-ue-minimo": 300,
+  "w15-ue-limiar": 60,
+  "w15-uteis": 60
+ },
+ "remind_rows": 875,
+ "rejected": 12,
+ "files": {
+  "REJECTED.json": {
+   "rows": 14,
+   "sha256": "0f06a347b99b192f385682b272b1c7c52f0c3020f0c13927040667ec79c01004"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 3224,
+   "sha256": "ab792cad549bdb3963d275a3476f5af51a35d41b8f8bcf93da5a9a11b3cd1951"
+  }
+ },
+ "note": "D73: the settled real readings of rounds 11-12 with their numbers moved, invented articles in the shapes round 12 showed, and v13/v14 rows kept"
+}
