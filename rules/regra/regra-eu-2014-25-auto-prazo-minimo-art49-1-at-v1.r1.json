@@ -1,0 +1,51 @@
+{
+  "id": "regra:eu-2014-25:auto-prazo-minimo-art49-1@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-05T03:38:08Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2014-25:art49.1 (fábrica de regras, ronda 13)",
+  "norma": "norma:eu-2014-25",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "parceria_inovacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2014-04-17",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2014-25:art49.1",
+      "version": "2014-04-17",
+      "quote": "1. Nas parecerias para a inovação, qualquer operador económico pode apresentar um pedido de participação em resposta a um anúncio de concurso nos termos do artigo 44.º, n.º 4, alíneas b) e c), apresentando as informações para efeitos de seleção qualitativa solicitadas pela entidade adjudicante.\nNos documentos do concurso, a entidade adjudicante indica a necessidade de produtos, serviços ou obras inovadores que não possam ser obtidos mediante a aquisição de produtos, serviços ou obras já disponíveis no mercado. Indica igualmente os elementos desta descrição que definem os requisitos mínimos que todos os proponentes devem preencher. As indicações devem ser suficientemente precisas de modo a permitir aos operadores económicos identificar a natureza e o âmbito da solução necessária e decidir se pretendem solicitar a participação no procedimento.\nA entidade adjudicante pode decidir estabelecer a parceria para a inovação com um só parceiro ou com vários parceiros que efetuem atividades de investigação e desenvolvimento distintas.\nO prazo mínimo para receção dos pedidos de participação deve, como regra geral, ser fixado em pelo menos 30 dias a contar da data de envio do anúncio de concurso, não podendo nunca ser inferior a 15 dias. Só os operadores económicos convidados pela entidade adjudicante na sequência da avaliação das informações que prestaram podem participar no procedimento. As entidades adjudicantes podem restringir o número de candidatos que satisfazem as condições para serem convidados a participar no processo em conformidade com o artigo 78.º, n.º 2. Os contratos são adjudicados exclusivamente com base no critério da melhor relação qualidade/preço em conformidade com o artigo 82.º, n.º 2.",
+      "offsets": {
+        "start": 0,
+        "end": 1723
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "eu-2014-25:art49.1"
+      ],
+      "blind": false,
+      "evento": "evento:1432"
+    }
+  ],
+  "state": "proposed"
+}

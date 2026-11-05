@@ -1,0 +1,62 @@
+{
+  "id": "regra:eu-2014-25:auto-prazo-minimo-art45-1@v1",
+  "revision": 2,
+  "recorded_at": "2026-11-05T03:38:07Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2014-25:art45.1 (fábrica de regras, ronda 13)",
+  "norma": "norma:eu-2014-25",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_aberto"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2014-04-17",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2014-25:art45.1",
+      "version": "2014-04-17",
+      "quote": "1. Nos concursos abertos, qualquer operador económico interessado pode apresentar uma proposta em resposta a um convite à apresentação de propostas\nO prazo mínimo para receção de propostas é de 35 dias a contar da data de envio do anúncio de concurso.\nA proposta deve ser acompanhada das informações solicitadas para efeitos de seleção qualitativa pela entidade adjudicante.",
+      "offsets": {
+        "start": 0,
+        "end": 374
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 35,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "eu-2014-25:art45.1"
+      ],
+      "blind": false,
+      "evento": "evento:1417"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:05:29Z",
+      "chosen_passages": [
+        "eu-2014-25:art45.1"
+      ],
+      "blind": true,
+      "evento": "evento:1418"
+    }
+  ],
+  "state": "settled",
+  "supersedes": 1
+}

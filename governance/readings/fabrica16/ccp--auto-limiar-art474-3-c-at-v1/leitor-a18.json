@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "a37834576610ddb74f055a2399dc9218ceea4a516ccbcd263b2cbd4f78acd7dd",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\"],\"fontes\":[{\"texto\":\"concursos de conceção, adjudicados pelo Estado\",\"de\":\"ccp:art474.3.b\"},{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"outra\",\"fontes\":[{\"texto\":\"outras entidades adjudicantes\",\"de\":\"ccp:art474.3.c\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":216000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de serviços\",\"de\":\"ccp:art474.3.b\"}],\"comparator\":[{\"texto\":\"adjudicados por outras entidades adjudicantes\",\"de\":\"ccp:art474.3.c\"}],\"value\":[{\"texto\":\"216 000,00 €\",\"de\":\"ccp:art474.3.c\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

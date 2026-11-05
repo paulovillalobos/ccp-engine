@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:06:36Z",
+ "sha256": "5e213327527563b93d062681e05e1ca43da5f97b71704b5aa6eb0c607dd24ce7",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concursos públicos\",\"de\":\"eu-2004-18:art38.2\"}]}],\"params\":{\"minimum_days\":52,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"prazo mínimo para recepção das propostas é de 52 dias\",\"de\":\"eu-2004-18:art38.2\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2004-18:art38.2\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio de concurso\",\"de\":\"eu-2004-18:art38.2\"}],\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

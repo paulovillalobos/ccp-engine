@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T22:09:30Z",
+ "sha256": "2f2fbc718055c2dca831db4ac4f5ba2a65b867130b5a6d9f5a3aaa793571d563",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_maximo\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"Empreitadas de obras públicas\",\"de\":\"ccp:parte-iii.titulo-ii.capitulo-i\"}]}],\"params\":{\"maximum_days\":10,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"data_notificacao\"},\"fontes\":{\"maximum_days\":[{\"texto\":\"apresentadas nos 10 dias subsequentes\",\"de\":\"ccp:art345.3\"}],\"deadline_field\":[{\"texto\":\"reclamações\",\"de\":\"ccp:art345.3\"}],\"counted_from\":[{\"texto\":\"notificação do mesmo ao empreiteiro\",\"de\":\"ccp:art345.3\"}]}}],\"nao_tipavel\":null}"
+}

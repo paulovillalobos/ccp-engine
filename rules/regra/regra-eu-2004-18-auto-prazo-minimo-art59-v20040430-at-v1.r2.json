@@ -1,0 +1,52 @@
+{
+  "id": "regra:eu-2004-18:auto-prazo-minimo-art59-v20040430@v1",
+  "revision": 2,
+  "recorded_at": "2026-11-05T03:38:05Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2004-18:art59 (fábrica de regras, ronda 13), versão de 2004-04-30",
+  "norma": "norma:eu-2004-18",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "eq",
+      "value": "concessao_obras"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2004-04-30",
+  "valid_to": "2016-04-18",
+  "passages": [
+    {
+      "passage": "eu-2004-18:art59",
+      "version": "2004-04-30",
+      "quote": "Artigo 59.º\nPrazos\nNos casos em que as entidades adjudicantes recorram à concessão de obras públicas, o prazo para apresentação das candidaturas à concessão não deve ser inferior a 52 dias a contar da data de envio do anúncio, excepto nos casos a que se refere o n.º 5 do artigo 38.º\nÉ aplicável o n.º 7 do artigo 38.º",
+      "offsets": {
+        "start": 0,
+        "end": 318
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 52,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "eu-2004-18:art59"
+      ],
+      "blind": false,
+      "evento": "evento:1302"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

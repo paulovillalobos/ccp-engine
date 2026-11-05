@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "eb111c50062efa9e06e340fd6b0615e9fc8b56f95994342cb2f72696a3eca777",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art474.4.a\"}]},{\"field\":\"publicado_joue\",\"op\":\"eq\",\"value\":\"0000-00-00\",\"fontes\":[{\"texto\":\"entidades que operam nos setores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art474.4\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"celebrados pelas entidades que operam nos setores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art474.4\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de empreitada de obras públicas\",\"de\":\"ccp:art474.4.a\"}],\"comparator\":[{\"texto\":\"para os contratos de empreitada de obras públicas\",\"de\":\"ccp:art474.4.a\"}],\"value\":[{\"texto\":\"5 404 000 €\",\"de\":\"ccp:art474.4.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

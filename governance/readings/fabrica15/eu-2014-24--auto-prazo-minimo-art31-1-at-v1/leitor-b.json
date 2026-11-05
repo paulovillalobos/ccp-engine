@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:08:41Z",
+ "sha256": "bc6a52000a3ffc911e148bb204259d886a309ae42966f939fbcbb9534c1770b0",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"parceria_inovacao\",\"fontes\":[{\"texto\":\"parcerias para a inovação\",\"de\":\"eu-2014-24:art31.1\"}]}],\"params\":{\"minimum_days\":30,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"O prazo mínimo de receção dos pedidos de participação é de 30 dias\",\"de\":\"eu-2014-24:art31.1\"}],\"deadline_field\":[{\"texto\":\"receção dos pedidos de participação\",\"de\":\"eu-2014-24:art31.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio de concurso\",\"de\":\"eu-2014-24:art31.1\"}],\"usual_days\":null}}],\"nao_tipavel\":null}"
+}

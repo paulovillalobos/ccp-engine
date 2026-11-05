@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "28adf105ebb55baad7d3bb86ecfda7a06d9332f0d735793c92bcb3cb2929f84a",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\"],\"fontes\":[{\"texto\":\"concessão de obras públicas e concessões de serviços\",\"de\":\"ccp:art474.2\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"montante do limiar\",\"de\":\"ccp:art474.2\"}],\"comparator\":[{\"texto\":\"para os contratos de\",\"de\":\"ccp:art474.2\"}],\"value\":[{\"texto\":\"5 404 000 €\",\"de\":\"ccp:art474.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

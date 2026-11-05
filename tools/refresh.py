@@ -39,7 +39,7 @@ MODAL = str(Path.home() / "Downloads/foaap-core/.venv-modal/bin/modal")
 READER_B_PATH = "/usr/local/bin"
 SPARQL = "https://publications.europa.eu/webapi/rdf/sparql"
 CCP_URL = "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2008-34455475"
-LATEST_LORA = "v15"
+LATEST_LORA = "v16"
 
 
 def run(cmd, **kw):

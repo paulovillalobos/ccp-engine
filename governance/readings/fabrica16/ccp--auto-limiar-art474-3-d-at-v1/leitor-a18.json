@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "e0121093a1c073a9180a480569429b480aa087f04db0a3ed3f42f8e7acd7aa91",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"serviços sociais e outros serviços específicos\",\"de\":\"ccp:art474.3.d\"}]},{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"concessao_servicos\",\"fontes\":[{\"texto\":\"serviços sociais e outros serviços específicos\",\"de\":\"ccp:art474.3.d\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_concecao\",\"fontes\":[{\"texto\":\"contratos públicos relativos a serviços sociais e outros serviços específicos\",\"de\":\"ccp:art474.3.d\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":750000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"seguintes\",\"de\":\"ccp:art474.3\"}],\"comparator\":[{\"texto\":\"para os contratos públicos relativos a serviços sociais e outros serviços específicos\",\"de\":\"ccp:art474.3.d\"}],\"value\":[{\"texto\":\"750 000 €\",\"de\":\"ccp:art474.3.d\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

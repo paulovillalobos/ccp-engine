@@ -1,0 +1,52 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art147@v1",
+  "revision": 3,
+  "recorded_at": "2026-11-05T05:31:49Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art147 (fábrica de regras, ronda 16)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2021-06-20",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art147",
+      "version": "2021-06-20",
+      "quote": "Artigo 147.º\nAudiência prévia\nElaborado o relatório preliminar, o júri envia-o a todos os concorrentes, fixando-lhes um prazo, não inferior a cinco dias, para que se pronunciem, por escrito, ao abrigo do direito de audiência prévia, salvo se tiver sido apresentada uma única proposta, aplicando-se, nesse caso, o disposto no artigo 125.º",
+      "offsets": {
+        "start": 0,
+        "end": 337
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 5,
+    "deadline_field": "prazo_pronuncia_dias",
+    "counted_from": "nao_indicado"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a18",
+      "family": "A",
+      "at": "2026-11-05T05:17:54Z",
+      "chosen_passages": [
+        "ccp:art147"
+      ],
+      "blind": false,
+      "evento": "evento:1703"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 2
+}

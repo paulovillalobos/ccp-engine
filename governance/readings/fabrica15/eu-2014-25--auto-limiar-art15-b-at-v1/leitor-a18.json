@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:22:27Z",
+ "sha256": "b55ec5775fb3749a35df7a0c6ca43e6bed1950b8d272674cbb0edacf978a7d6e",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras\",\"de\":\"eu-2014-25:art15.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_aberto\",\"concurso_concecao\"],\"fontes\":[{\"texto\":\"contratos de empreitada de obras\",\"de\":\"eu-2014-25:art15.b\"},{\"texto\":\"contratos de empreitada\",\"de\":\"eu-2014-25:art15.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"ge\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"valor estimado\",\"de\":\"eu-2014-25:art15\"}],\"comparator\":[{\"texto\":\"igual ou superior aos\",\"de\":\"eu-2014-25:art15\"}],\"value\":[{\"texto\":\"5 404 000 EUR\",\"de\":\"eu-2014-25:art15.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

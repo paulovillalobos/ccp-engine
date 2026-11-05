@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:22:27Z",
+ "sha256": "9864769797278530c5d5df3732e1b7de391f29d12489dc45356d96992a23cab8",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_limitado_previa_qualificacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2004-17:art45.3\"},{\"texto\":\"procedimentos por negociação com prévia publicação de anúncio de concurso\",\"de\":\"eu-2004-17:art45.3\"}]}],\"params\":{\"minimum_days\":37,\"deadline_field\":\"prazo_reclamacao_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"37 dias\",\"de\":\"eu-2004-17:art45.3.a\"}],\"deadline_field\":[{\"texto\":\"recepção dos pedidos de participação\",\"de\":\"eu-2004-17:art45.3.a\"}],\"counted_from\":[{\"texto\":\"anúncio ou o convite tiverem sido enviados\",\"de\":\"eu-2004-17:art45.3.a\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

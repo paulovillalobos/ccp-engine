@@ -1,0 +1,67 @@
+{
+  "id": "regra:eu-2014-24:auto-prazo-minimo-art27-3@v1",
+  "revision": 2,
+  "recorded_at": "2026-11-05T05:29:36Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2014-24:art27.3 (fábrica de regras, ronda 15)",
+  "norma": "norma:eu-2014-24",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_aberto"
+    },
+    {
+      "field": "urgencia_fundamentada",
+      "op": "eq",
+      "value": true
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2014-04-17",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2014-24:art27.1",
+      "version": "2014-04-17",
+      "quote": "1. Nos concursos abertos, qualquer operador económico interessado pode apresentar uma proposta em resposta a um convite à apresentação de propostas.\nO prazo mínimo de receção das propostas é de 35 dias a contar da data de envio do anúncio de concurso.\nA proposta deve ser acompanhada das informações solicitadas para efeitos de seleção qualitativa pela autoridade adjudicante.",
+      "offsets": {
+        "start": 0,
+        "end": 376
+      }
+    },
+    {
+      "passage": "eu-2014-24:art27.3",
+      "version": "2014-04-17",
+      "quote": "3. Nos casos em que uma situação de urgência devidamente fundamentada pelas autoridades adjudicantes inviabilize o cumprimento dos prazos fixados no segundo parágrafo do n.º 1, essas autoridades podem fixar um prazo que não será inferior a 15 dias a contar da data de envio do anúncio de concurso.",
+      "offsets": {
+        "start": 0,
+        "end": 297
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 15,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a18",
+      "family": "A",
+      "at": "2026-11-05T05:22:27Z",
+      "chosen_passages": [
+        "eu-2014-24:art27.1",
+        "eu-2014-24:art27.3"
+      ],
+      "blind": false,
+      "evento": "evento:1672"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

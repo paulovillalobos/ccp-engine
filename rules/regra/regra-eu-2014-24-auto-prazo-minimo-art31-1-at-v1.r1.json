@@ -1,0 +1,61 @@
+{
+  "id": "regra:eu-2014-24:auto-prazo-minimo-art31-1@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-05T03:38:07Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2014-24:art31.1 (fábrica de regras, ronda 13)",
+  "norma": "norma:eu-2014-24",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "parceria_inovacao"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2014-04-17",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2014-24:art31.1",
+      "version": "2014-04-17",
+      "quote": "1. Nas parcerias para a inovação, qualquer operador económico pode apresentar um pedido de participação em resposta a um anúncio de concurso, apresentando as informações para efeitos de seleção qualitativa solicitadas pela autoridade adjudicante.\nNos documentos do concurso, a autoridade adjudicante indica a necessidade de produtos, serviços ou obras inovadores que não possam ser obtidos mediante a aquisição de produtos, serviços ou obras já disponíveis no mercado. Indica igualmente os elementos desta descrição que definem os requisitos mínimos que todos os proponentes devem preencher. As informações fornecidas devem ser suficientemente precisas de modo a permitir aos operadores económicos identificar a natureza e o âmbito da solução necessária e decidir se pretendem solicitar a participação no procedimento.\nA autoridade adjudicante pode decidir estabelecer a parceria para a inovação com um só parceiro ou com vários parceiros que efetuem atividades de investigação e desenvolvimento distintas.\nO prazo mínimo de receção dos pedidos de participação é de 30 dias a contar da data de envio do anúncio de concurso. Só podem participar no concurso os operadores económicos convidados pela autoridade adjudicante após a avaliação das informações prestadas. As autoridades adjudicantes podem limitar o número de candidatos convidados a participar no procedimento nos termos do artigo 65.º. Os contratos são adjudicados exclusivamente com base no critério da proposta com melhor relação qualidade/preço em conformidade com o artigo 67.º.",
+      "offsets": {
+        "start": 0,
+        "end": 1542
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 30,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "eu-2014-24:art31.1"
+      ],
+      "blind": false,
+      "evento": "evento:1385"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:08:41Z",
+      "chosen_passages": [
+        "eu-2014-24:art31.1"
+      ],
+      "blind": true,
+      "evento": "evento:1386"
+    }
+  ],
+  "state": "settled"
+}

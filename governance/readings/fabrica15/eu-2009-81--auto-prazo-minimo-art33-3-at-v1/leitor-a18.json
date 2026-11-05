@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:22:27Z",
+ "sha256": "011ca10cea24d281876afdb674addb7fd63483f135c0e13352975235d087c37f",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_limitado_previa_qualificacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"concursos limitados\",\"de\":\"eu-2009-81:art33.2\"},{\"texto\":\"procedimentos por negociação com publicação de anúncio de concurso\",\"de\":\"eu-2009-81:art33.2\"}]},{\"field\":\"anuncio_pre_informacao\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"anúncio de pré-informação\",\"de\":\"eu-2009-81:art33.3\"}]}],\"params\":{\"minimum_days\":22,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"22 dias\",\"de\":\"eu-2009-81:art33.3\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2009-81:art33.3\"}],\"counted_from\":[{\"texto\":\"convite à apresentação de propostas\",\"de\":\"eu-2009-81:art33.3\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

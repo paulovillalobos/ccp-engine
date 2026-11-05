@@ -1,0 +1,56 @@
+{
+  "id": "regra:eu-2014-25:auto-prazo-minimo-art47-1-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-05T03:38:08Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2014-25:art47.1 (fábrica de regras, ronda 13) (2.ª regra)",
+  "norma": "norma:eu-2014-25",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "anuncio_pre_informacao",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "procedimento_negociacao_com_concurso"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2014-04-17",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2014-25:art47.1",
+      "version": "2014-04-17",
+      "quote": "1. Nos procedimentos por negociação com abertura prévia de concurso, qualquer operador económico pode apresentar um pedido de participação em resposta a um anúncio de concurso, fornecendo as informações solicitadas para efeitos de seleção qualitativa pela entidade adjudicante.\nO prazo mínimo para a receção dos pedidos de participação deve, como regra geral, ser fixado em pelo menos 30 dias a contar da data de envio do anúncio de concurso ou, caso seja usado um anúncio periódico indicativo como meio de abertura de concurso, do convite à confirmação do interesse, não podendo nunca ser inferior a 15 dias.",
+      "offsets": {
+        "start": 0,
+        "end": 609
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 15,
+    "deadline_field": "prazo_candidaturas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "eu-2014-25:art47.1"
+      ],
+      "blind": false,
+      "evento": "evento:1428"
+    }
+  ],
+  "state": "proposed"
+}

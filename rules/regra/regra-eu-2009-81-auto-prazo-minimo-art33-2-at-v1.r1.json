@@ -1,0 +1,65 @@
+{
+  "id": "regra:eu-2009-81:auto-prazo-minimo-art33-2@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-05T03:38:05Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2009-81:art33.2 (fábrica de regras, ronda 13)",
+  "norma": "norma:eu-2009-81",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_procedimento",
+      "op": "in",
+      "value": [
+        "concurso_limitado_previa_qualificacao",
+        "dialogo_concorrencial",
+        "procedimento_negociacao_com_concurso"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2016-01-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "eu-2009-81:art33.2",
+      "version": "2016-01-01",
+      "quote": "2. Nos concursos limitados, nos procedimentos por negociação com publicação de anúncio de concurso e nos casos de diálogo concorrencial, o prazo mínimo para recepção dos pedidos de participação é de 37 dias a contar da data de envio do anúncio de concurso.\nNos concursos limitados, o prazo mínimo para recepção das propostas é de 40 dias a contar da data de envio do convite.",
+      "offsets": {
+        "start": 0,
+        "end": 375
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 37,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "eu-2009-81:art33.2"
+      ],
+      "blind": false,
+      "evento": "evento:1324"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-04T23:04:00Z",
+      "chosen_passages": [
+        "eu-2009-81:art33.2"
+      ],
+      "blind": true,
+      "evento": "evento:1325"
+    }
+  ],
+  "state": "proposed"
+}

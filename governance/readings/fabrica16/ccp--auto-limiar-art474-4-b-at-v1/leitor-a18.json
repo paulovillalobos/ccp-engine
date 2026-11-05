@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "fcdc6383b624cb9a0ef4b4acebe7035195e6d9a2eff98be5eda589ffacacc863",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"setores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art474.4\"}]},{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"bens\",\"fontes\":[{\"texto\":\"fornecimentos de bens\",\"de\":\"ccp:art474.4.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_concecao\",\"consulta_previa\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.4.b\"},{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.4.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":432000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de\",\"de\":\"ccp:art474.4.b\"}],\"comparator\":[{\"texto\":\"para os contratos públicos de fornecimentos de bens, de prestação de serviços e de concursos de conceção\",\"de\":\"ccp:art474.4.b\"}],\"value\":[{\"texto\":\"432 000,00 €\",\"de\":\"ccp:art474.4.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

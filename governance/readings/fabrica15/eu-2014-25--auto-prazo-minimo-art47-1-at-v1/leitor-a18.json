@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:22:27Z",
+ "sha256": "1ae3d2ea5d314040cccd250b04d8306d0dd2bc2dc6ed654431bb58f0834a2dbf",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"procedimento_negociacao_com_concurso\",\"fontes\":[{\"texto\":\"procedimentos por negociação com abertura prévia de concurso\",\"de\":\"eu-2014-25:art47.1\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_candidaturas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":30},\"fontes\":{\"minimum_days\":[{\"texto\":\"15 dias\",\"de\":\"eu-2014-25:art47.1\"}],\"deadline_field\":[{\"texto\":\"receção dos pedidos de participação\",\"de\":\"eu-2014-25:art47.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2014-25:art47.1\"}],\"usual_days\":[{\"texto\":\"como regra geral, ser fixado em pelo menos 30 dias\",\"de\":\"eu-2014-25:art47.1\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

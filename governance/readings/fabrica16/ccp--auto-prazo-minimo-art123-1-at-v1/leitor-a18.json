@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "6fd3c0019876d81df8ad6827df687610d71410f56fabfc3a25f08f8f7712d136",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"ajuste_direto\",\"consulta_previa\"],\"fontes\":[{\"texto\":\"ajuste direto\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i\"},{\"texto\":\"Consulta prévia\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i\"}]}],\"params\":{\"minimum_days\":3,\"deadline_field\":\"prazo_pronuncia_dias\",\"counted_from\":\"nao_indicado\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"três dias\",\"de\":\"ccp:art123.1\"}],\"deadline_field\":[{\"texto\":\"audiência prévia\",\"de\":\"ccp:art123.1\"}],\"counted_from\":null,\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -2915,8 +2915,9 @@
       "versao": 1,
       "code": "tools/make_rule_readings_v15.py",
       "hash": "597dad23ffa802c8a759cc0570acf4543783b8a89e757b979d67b5ee839ea081",
-      "retired": false,
-      "nota": "D73: data-v15 — rounds 11-12's settled real readings with numbers moved, invented articles in round 12's shapes, v13/v14 rows kept; protocol 0.5"
+      "retired": true,
+      "nota": "D73: data-v15 — rounds 11-12's settled real readings with numbers moved, invented articles in round 12's shapes, v13/v14 rows kept; protocol 0.5",
+      "retired_at": "2026-11-05T06:08:15Z"
     },
     {
       "id": "ferramenta:verify@54",
@@ -2940,8 +2941,9 @@
       "versao": 1,
       "code": "tools/refresh.py",
       "hash": "bd2cbf95aa585a2c6598d5f1cc3f121a8e32ca632b182531a22252ccaecdea4f",
-      "retired": false,
-      "nota": "D75: the daily refresh — EU consolidations and the DR consolidated page read passively, law rebuilt, changed passages read blind by both families, verify, package; deploy only with deploy/AUTODEPLOY"
+      "retired": true,
+      "nota": "D75: the daily refresh — EU consolidations and the DR consolidated page read passively, law rebuilt, changed passages read blind by both families, verify, package; deploy only with deploy/AUTODEPLOY",
+      "retired_at": "2026-11-05T03:45:42Z"
     },
     {
       "id": "ferramenta:rule-factory@28",
@@ -2952,8 +2954,9 @@
       "versao": 28,
       "code": "tools/rule_factory.py",
       "hash": "f479a0b98787ecd099e96fa4706c08682065be02e692b360badcc9b4a552912f",
-      "retired": false,
-      "nota": "D74: rounds 13-14 (v15 re-reads 12 and 11, settled targets measured not recorded), exam; D75: draw_since and the refresh rounds"
+      "retired": true,
+      "nota": "D74: rounds 13-14 (v15 re-reads 12 and 11, settled targets measured not recorded), exam; D75: draw_since and the refresh rounds",
+      "retired_at": "2026-11-05T03:45:42Z"
     },
     {
       "id": "leitor:a17",
@@ -2979,8 +2982,9 @@
       "versao": 1,
       "code": "tools/make_rule_readings_v16.py",
       "hash": "402bb89bf486179272d9bf13bbbab28d2cd74572bf5a031fcc86dc5d1c1cd04d",
-      "retired": false,
-      "nota": "D76: data-v16 — rounds 11-14's settled keys (7 copies each), the party deadline without a vocabulary field, part of data-v15"
+      "retired": true,
+      "nota": "D76: data-v16 — rounds 11-14's settled keys (7 copies each), the party deadline without a vocabulary field, part of data-v15",
+      "retired_at": "2026-11-05T06:08:15Z"
     },
     {
       "id": "ferramenta:verify@55",
@@ -2993,6 +2997,69 @@
       "hash": "35a8d73a84d72b438abea02385f28f4fcf888fc1c7567f6af73b39730c4cf7a0",
       "retired": false,
       "nota": "D76: TRAIN checks data-v16"
+    },
+    {
+      "id": "ferramenta:rule-factory@29",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 29,
+      "code": "tools/rule_factory.py",
+      "hash": "243728522a3c6f22216918be124736f7c4c221cf309efb1d104bd5a75bd54521",
+      "retired": false,
+      "nota": "D76: rounds 15-16 (v16 re-reads rounds 12 and 11); refresh rounds proposed by leitor:a18"
+    },
+    {
+      "id": "ferramenta:refresh@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/refresh.py",
+      "hash": "9aa0019c7f1e68fc19dab3c812f4c03f1d15348564906a269848a03ce9a4e311",
+      "retired": false,
+      "nota": "D76: the refresh reads with v16"
+    },
+    {
+      "id": "leitor:a18",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v16",
+        "versao": "ae014b3e5b5b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 19 (D76): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v16 (rank 16), trained from amalia-ccp-lei-v15 one epoch on training/data-v16 (rounds 11-14's settled real readings, 300 invented articles of a party deadline the vocabulary has no field for, part of data-v15) and a tenth of every other task; --quotes text; training/runs/v16/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v15@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/make_rule_readings_v15.py",
+      "hash": "4ae6aa6a6615c8b4a7f6f29c05b495fb3b79a041de8d32aa9a38f1653526ce83",
+      "retired": false,
+      "nota": "D73: keys read from the log as it stood when data-v15 was written (LOG_UPTO 961); v14's practice rows keep their allowed sources"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v16@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/make_rule_readings_v16.py",
+      "hash": "fd65e958f4c14f18a2851fcb663e0a1a982349bd469e51088ab03952de5acc63",
+      "retired": false,
+      "nota": "D76: keys read from the log at LOG_UPTO 1485"
     }
   ]
 }

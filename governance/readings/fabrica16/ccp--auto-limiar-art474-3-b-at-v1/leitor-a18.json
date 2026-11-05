@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "b33df690b99e2c918ba28a97ba7a24bde5c085597034c09f551c15931ab121e3",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"in\",\"value\":[\"concessao_obras\",\"concessao_servicos\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"},{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"adjudicados pelo Estado\",\"de\":\"ccp:art474.3.b\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_concecao\"],\"fontes\":[{\"texto\":\"concursos de conceção\",\"de\":\"ccp:art474.3.b\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":139000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de\",\"de\":\"ccp:art474.3.b\"}],\"comparator\":[{\"texto\":\"para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção\",\"de\":\"ccp:art474.3.b\"}],\"value\":[{\"texto\":\"139 000 €\",\"de\":\"ccp:art474.3.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:06:02Z",
+ "sha256": "f41c3c74ed39bb36e0a061676e8463e0930c8a93fbcbb9b93b6d9526c680d123",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_aberto\",\"fontes\":[{\"texto\":\"Nos concursos abertos\",\"de\":\"eu-2014-25:art45.1\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"uma situação de urgência devidamente fundamentada pelas entidades adjudicantes\",\"de\":\"eu-2014-25:art45.3\"}]}],\"params\":{\"minimum_days\":15,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"não pode ser inferior a 15 dias\",\"de\":\"eu-2014-25:art45.3\"}],\"deadline_field\":[{\"texto\":\"receção de propostas\",\"de\":\"eu-2014-25:art45.1\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio de concurso\",\"de\":\"eu-2014-25:art45.3\"}] \t, \"usual_days\": null}}],\"nao_tipavel\":null}"
+}

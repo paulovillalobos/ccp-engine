@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:22:27Z",
+ "sha256": "6ca4400e0e6ce252275473bf0ba99e9b412c9c2059316be97c485f92ec26b432",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"anuncio_pre_informacao\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"anúncio periódico indicativo\",\"de\":\"eu-2004-17:art41.1\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concursos públicos\",\"de\":\"eu-2004-17:art45.4\"}]}],\"params\":{\"minimum_days\":36,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_anuncio\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"36 dias\",\"de\":\"eu-2004-17:art45.4\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2004-17:art45.4\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do anúncio\",\"de\":\"eu-2004-17:art45.4\"}],\"usual_days\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

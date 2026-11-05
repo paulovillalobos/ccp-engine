@@ -1,0 +1,69 @@
+{
+  "id": "regra:ccp:auto-limiar-art155-a-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-05T05:29:32Z",
+  "type": "limiar",
+  "title": "Limiar de valor fixado em ccp:art155.a (fábrica de regras, ronda 15) (2.ª regra)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "tipo_contrato",
+      "op": "eq",
+      "value": "obras"
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art155",
+      "version": "2026-10-01",
+      "quote": "Artigo 155.º\nÂmbito e pressupostos\nEm caso de urgência na celebração de um contrato de locação ou de aquisição de bens móveis ou de aquisição de serviços de uso corrente, ou de contratos de empreitada, pode adotar-se o procedimento de concurso público nos termos previstos na presente secção, desde que:\na) O valor estimado do contrato a celebrar não exceda os limiares referidos no artigo 474.º, no caso de locação ou de aquisição de bens móveis ou de aquisição de serviços, ou 300 000 €, no caso de empreitada de obras públicas; e\nb) O critério de adjudicação seja na modalidade prevista na alínea b) do n.º 1 do artigo 74.º",
+      "offsets": {
+        "start": 0,
+        "end": 626
+      }
+    },
+    {
+      "passage": "ccp:art155.a",
+      "version": "2026-10-01",
+      "quote": "a) O valor estimado do contrato a celebrar não exceda os limiares referidos no artigo 474.º, no caso de locação ou de aquisição de bens móveis ou de aquisição de serviços, ou 300 000 €, no caso de empreitada de obras públicas; e",
+      "offsets": {
+        "start": 0,
+        "end": 228
+      }
+    }
+  ],
+  "params": {
+    "threshold": {
+      "field": "valor_estimado",
+      "comparator": "le",
+      "value": 300000,
+      "currency": "EUR"
+    }
+  },
+  "readings": [
+    {
+      "principal": "leitor:a18",
+      "family": "A",
+      "at": "2026-11-05T05:22:27Z",
+      "chosen_passages": [
+        "ccp:art155",
+        "ccp:art155.a"
+      ],
+      "blind": false,
+      "evento": "evento:1527"
+    }
+  ],
+  "state": "proposed"
+}

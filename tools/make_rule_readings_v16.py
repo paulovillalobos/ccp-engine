@@ -32,6 +32,7 @@ KEY_STRATA = {11: "texto_visto", 12: "pratica", 13: "pratica", 14: "texto_visto"
 NEW_WRITTEN = 300
 KEEP_V15 = 450
 REMIND = 300
+LOG_UPTO = 1485  # the log when data-v16 was written (rounds 13-14 recorded)
 VARIANTS = 7  # data-v15 moved each key's numbers 24 times for 77 keys; with ~240 keys 7 copies each keep the file under GitHub's 100 MB
 SEED = "D76"
 PARTY_NO_FIELD = [("Os concorrentes suprem as irregularidades formais das suas propostas", "o suprimento de irregularidades das propostas"),
@@ -91,14 +92,14 @@ def by_hash(rows, n):
 def build(store=None):
     from engine.store import Store
     store = store or Store([ROOT / "law", ROOT / "rules", ROOT / "governance"]).load()
-    saved, saved_n = dict(v15.KEY_STRATA), v15.VARIANTS
+    saved, saved_n, saved_log = dict(v15.KEY_STRATA), v15.VARIANTS, v15.LOG_UPTO
     try:
         v15.KEY_STRATA.clear(); v15.KEY_STRATA.update(KEY_STRATA)
-        v15.VARIANTS = VARIANTS
+        v15.VARIANTS, v15.LOG_UPTO = VARIANTS, LOG_UPTO
         keys, per, rej_k = v15.key_rows(store)
     finally:
         v15.KEY_STRATA.clear(); v15.KEY_STRATA.update(saved)
-        v15.VARIANTS = saved_n
+        v15.VARIANTS, v15.LOG_UPTO = saved_n, saved_log
     old_written, rej_w = v15.written_rows(store)
     added, rej_n = new_rows(store)
     written = added + by_hash(old_written, KEEP_V15)

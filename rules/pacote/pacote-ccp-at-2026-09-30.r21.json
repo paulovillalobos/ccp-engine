@@ -1,0 +1,96 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 21,
+  "recorded_at": "2026-11-05T03:38:44Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art123-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-1@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-2@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-3@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-5@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art198-1@v1",
+      "revision": 7
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art198-2@v1",
+      "revision": 5
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-j-3@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:eu-2014-24:auto-prazo-minimo-art27-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:eu-2014-24:auto-prazo-minimo-art31-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:eu-2014-25:auto-prazo-minimo-art45-1@v1",
+      "revision": 2
+    }
+  ],
+  "hash": "90155cb764c2be6cd221bb7dc61af6539b72311cee887d7556b5d3e222b3258d",
+  "log_head": "a4a0355f1e06b42f73738d2c72f742d849a266446b7ef9982b13f0d90ad0ecde",
+  "built_at": "2026-11-05T03:38:44Z",
+  "supersedes": 20
+}

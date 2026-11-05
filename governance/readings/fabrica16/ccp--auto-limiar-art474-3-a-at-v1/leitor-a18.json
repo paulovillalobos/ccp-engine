@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "d8ebf9d6fd0291a5739d40e28f8fe2cb6a319331a6b43fd9441a3183e0ea6743",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art474.3.a\"}]},{\"field\":\"tipo_entidade\",\"op\":\"eq\",\"value\":\"estado\",\"fontes\":[{\"texto\":\"públicos\",\"de\":\"ccp:art474.3\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":5404000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de obras\",\"de\":\"ccp:art474.3.a\"}],\"comparator\":[{\"texto\":\"para os contratos de empreitada de obras públicas\",\"de\":\"ccp:art474.3.a\"}],\"value\":[{\"texto\":\"5 404 000,00 €\",\"de\":\"ccp:art474.3.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

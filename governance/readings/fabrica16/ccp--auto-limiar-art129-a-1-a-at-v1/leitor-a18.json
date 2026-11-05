@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "d5f8523f283d9fbe535be512160ba6642c75591540389595a271f19007e0dbe1",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"obras\",\"fontes\":[{\"texto\":\"empreitada de obras públicas\",\"de\":\"ccp:art129-a.1.a\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"ajuste_direto_simplificado\",\"fontes\":[{\"texto\":\"Ajuste direto simplificado\",\"de\":\"ccp:parte-ii.titulo-iii.capitulo-i.seccao-iv\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":500000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"de áreas afetadas\",\"de\":\"ccp:art129-a.1\"}],\"comparator\":[{\"texto\":\"na formação de contratos de empreitada de obras públicas\",\"de\":\"ccp:art129-a.1.a\"}],\"value\":[{\"texto\":\"500 000 €\",\"de\":\"ccp:art129-a.1.a\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

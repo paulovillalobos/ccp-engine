@@ -1,0 +1,500 @@
+{
+ "rule": "regra:ccp:auto-limiar-art474-4-b@v1",
+ "type": "limiar",
+ "date": "2026-10-01",
+ "candidates": [
+  "ccp:art474",
+  "ccp:art474.1",
+  "ccp:art474.2",
+  "ccp:art474.3",
+  "ccp:art474.3.a",
+  "ccp:art474.3.b",
+  "ccp:art474.3.c",
+  "ccp:art474.3.d",
+  "ccp:art474.4",
+  "ccp:art474.4.a",
+  "ccp:art474.4.b",
+  "ccp:art474.4.c",
+  "ccp:art474.5",
+  "ccp:parte-v",
+  "norma:ccp"
+ ],
+ "prompt": "TAREFA\nÉs um leitor da lei portuguesa. Lês uma passagem do Código dos Contratos Públicos — a passagem-alvo, marcada no texto — e escreves em JSON a regra que ela fixa, com o vocabulário e o formato abaixo. Só conta o texto mostrado: o que saibas da lei para além dele não entra. Outro leitor lê a mesma passagem com estas mesmas regras, sem ver a tua resposta; a regra só fica registada quando as duas leituras coincidem, e um programa confirma cada palavra que citares.\n\nO QUE UMA REGRA QUER DIZER (é assim que o motor a aplica)\n- prazo_minimo: «quando todas as condições se verificam, o prazo <deadline_field>, contado desde <counted_from>, não pode ser inferior a <minimum_days> dias». O motor dá «não cumpre» a um procedimento que fixe menos.\n- limiar: «quando todas as condições se verificam, <field> do contrato tem de ser <comparator> <value> euros». O motor dá «não cumpre» a um procedimento cujo valor fique do outro lado. Um limiar é sempre o valor até ao qual um procedimento pode ser escolhido; esse procedimento é uma das condições.\n- Antes de responder, aplica a tua regra assim: daria «não cumpre» a um procedimento que a passagem permite, ou «cumpre» a um que ela não permite? Se sim, corrige-a; se o vocabulário não chega para a escrever certa, aplica L12.\n\nCOMO LER (as mesmas regras para todos os leitores)\nL1 Fontes. Cada condição e cada parâmetro vem de uma destas fontes, e só delas: a passagem-alvo, com as alíneas que a completam; o proémio do número ou da alínea de que ela faz parte; as passagens marcadas «remetida» (aquelas para que a passagem-alvo remete, e as que essas remetem); a epígrafe do artigo; os títulos do capítulo e da secção. Os outros números do artigo mostram-se só como contexto: um facto que apenas eles dizem não entra (exceção em L5).\nL2 Fonte copiada. Em cada condição e em cada parâmetro, «fontes» tem as palavras exatas do texto que o dizem — as mais curtas que o digam — e o id de onde as copiaste. Sem palavras que o digam, a condição não existe. Condição é o que diz quando a regra se aplica; uma exigência sobre o que se faz («com convite a, pelo menos, três entidades», «o convite deve indicar») é outra regra e não entra.\nL3 Procedimento, contrato e modalidade nomeados por um título. Entra tipo_procedimento quando uma fonte de L1 nomeia o procedimento; um título de capítulo ou de secção que é o nome de um procedimento nomeia-o. Decide o mais próximo da passagem: a passagem-alvo, o proémio, a epígrafe, a secção, o capítulo. Um título que nomeia dois procedimentos dá in [os dois]. O mesmo vale para tipo_contrato e modalidade_concecao. Um capítulo ou secção de um instrumento que o vocabulário não tem («sistemas de aquisição dinâmicos», «acordos-quadro», «sistemas de qualificação», «centrais de compras») limita a regra a esse instrumento: aplica L12 (sem_vocabulario).\nL4 Número que muda outro. Um número que reduz, alarga ou substitui o prazo ou o limite de outro («o prazo previsto no número anterior pode ser reduzido para 15 dias») dá uma regra com todas as condições do número para que remete — e as que esse herda —, o seu campo do prazo e o seu início da contagem, mais as condições e os dias do próprio número. «Reduzido para N dias» → N; «reduzido em até N dias» → os dias do número remetido menos N.\nL5 Casos. Uma regra por caso: «seis dias ou, nas empreitadas de obras públicas, 14 dias» são duas regras (tipo_contrato ne obras com 6; eq obras com 14), cada uma com o seu comparador e o seu valor. «Nos restantes casos», «nos demais casos», «nos outros contratos» → not_in [todos os tipos nomeados nos outros casos], ou ne quando é um só; para isso, os números do artigo que fixam esses outros casos contam como fonte. Se a regra dos restantes casos fica com eq ou in (tipo_entidade eq outra, ou os valores que sobram), a fonte dessa condição é só a expressão dos restantes casos, sem as palavras dos outros casos. Os casos de uma mesma passagem completam-se: «30 dias, ou 15 dias se a urgência for fundamentada» são duas regras, urgencia_fundamentada eq false na de 30 e eq true na de 15; «quando o não seja» nega o facto que a frase nomeia. Números diferentes não se completam: cada número dá a sua regra, e o motor aplica a mais específica. Uma passagem com um só prazo ou um só valor é uma regra. Nunca repitas uma regra nem dês a de outro número.\nL6 Listas. «Com exceção de A e de B», «excetuados A e B», «salvo A ou B» → not_in [A, B]; «apenas», «só», «exclusivamente» → in [A, B]. «Contratos distintos dos previstos nos artigos anteriores» (ou «nos artigos X e Y») → not_in os tipos que as epígrafes desses artigos nomeiam (mostradas nas remissões), mais os que a passagem exclui por palavras.\nL7 Factos de dois lados (publicado_joue, urgencia_fundamentada, setores_especiais, anuncio_pre_informacao): true quando uma fonte o afirma; false quando o nega («não seja publicado», «sem publicação de anúncio»); nenhuma condição quando nenhuma fonte o diz e nenhum caso da passagem o dá (L5) — nunca false por omissão.\nL8 Comparação, como a fonte a escreve: «inferior a» → lt; «igual ou inferior a», «não superior a», «que não exceda» → le; «superior a» → gt; «igual ou superior a» → ge. No prazo, «não pode ser inferior a N dias», «nunca pode ficar abaixo de N dias», «de, pelo menos, N dias», «o prazo mínimo é de N dias» → minimum_days N.\nL9 O prazo da passagem-alvo. Num artigo com vários prazos, a regra é a do prazo que a passagem-alvo fixa: o seu campo (o que se apresenta) e o seu início de contagem, pelas palavras do vocabulário; «contados do seu envio», «a contar do envio deste» contam-se do envio do documento que a frase nomeia (o convite ou o anúncio). Se a passagem, lida com as que remete, não diz de quando se conta, counted_from = nao_indicado, sem fonte.\nL10 Números e grandezas. Dias e euros como o texto os escreve, em algarismos ou por extenso («seis dias» = 6; «1 000 000 €» = 1000000). No limiar, field é a grandeza que a fonte nomeia: «valor estimado do contrato» → valor_estimado; «preço base» → preco_base; «preço contratual» → preco_contratual. Um valor dado por remissão («inferior aos limiares referidos na alínea b) do n.º 3 do artigo 474.º») lê-se na passagem remetida, e cada valor remetido é um caso (L5) com as condições que a passagem remetida lhe põe (o tipo de contrato, a entidade), além das da passagem-alvo. Quando é o prazo que muda com o valor do contrato («quando o preço base seja igual ou superior a 1 000 000 €»), o valor é uma condição — valor_estimado, preco_base ou preco_contratual, com lt, le, gt ou ge; num limiar, o valor é o parâmetro e nunca uma condição.\nL11 «Em regra». Se a passagem fixa um prazo «em regra» e um mínimo «em caso algum», minimum_days = o mínimo e usual_days = o prazo «em regra»; senão, usual_days = null.\nL12 Não tipável. Responde {\"regras\": [], \"nao_tipavel\": {...}} quando: nao_e_limiar — o valor não é o limite até ao qual um procedimento pode ser escolhido (dispensa uma obrigação, reserva um contrato, exclui um convidado, ou soma o valor de vários contratos); nao_e_prazo_minimo — o prazo é um máximo («não pode ser superior a»), é um prazo para a própria entidade adjudicante, ou não é para apresentar nada; sem_vocabulario — a regra precisa de um facto, de um valor ou de uma unidade que o vocabulário não tem (um procedimento fora da lista, um prazo em horas, dias úteis ou meses); texto_em_falta — os dias, o valor ou um facto de que a regra precisa estão num texto para que a passagem remete e que não está mostrado; uma remissão que só descreve (quem são as entidades, o que o anúncio ou o convite indicam) não impede a leitura. Em «falta», diz numa frase o que falta.\nL13 Datas. data_inicio_procedimento só entra quando a própria passagem fixa a data a partir da qual se aplica. A data de referência escolhe o texto em vigor; nunca é uma condição.\nL14 Forma. Um só valor → eq (ou ne); vários → in (ou not_in). tipo_entidade usa sempre eq («quando a entidade adjudicante não seja o Estado» → eq outra). As passagens que a regra cita são a passagem-alvo e as das tuas fontes: não as escrevas.\n\nVOCABULÁRIO (só estes campos e valores; entre «», palavras da lei para cada um)\ntipo_contrato: obras («empreitada de obras públicas», «empreitadas de obras públicas», «contrato de empreitada», «contratos de empreitada», «empreitadas», «empreitada», «execução de uma obra pública», «obra pública», «obras»), bens («locação ou aquisição de bens móveis», «aquisição de bens móveis», «locação de bens móveis», «fornecimento de bens», «aquisição de bens», «bens móveis», «bens»), servicos («aquisição de serviços», «prestação de serviços», «serviços»), concessao_obras («concessão de obras públicas», «concessões de obras públicas»), concessao_servicos («concessão de serviços públicos», «concessões de serviços públicos», «concessão de serviços», «concessões de serviços»), servicos_sociais («aquisição de serviços sociais e de outros serviços específicos», «serviços sociais e de outros serviços específicos», «aquisição de serviços sociais e outros serviços específicos», «serviços sociais e outros serviços específicos», «aquisição de serviços sociais», «serviços sociais»), sociedade («contratos de sociedade», «contrato de sociedade»). «Concessão de obras públicas ou de serviços» nomeia as duas concessões.\ntipo_procedimento: ajuste_direto_simplificado, ajuste_direto, consulta_previa_especial, consulta_previa, concurso_publico_urgente, concurso_publico, concurso_limitado_previa_qualificacao, procedimento_negociacao, dialogo_concorrencial, parceria_inovacao, concurso_concecao, concurso_ideias — cada um pelo seu nome na lei; «ajuste direto simplificado», «consulta prévia especial» e «concurso público urgente» são procedimentos à parte.\npublicado_joue (true/false): o anúncio é publicado no Jornal Oficial da União Europeia; «envio do anúncio ao Serviço das Publicações da União Europeia» e «publicidade internacional» afirmam-no.\nurgencia_fundamentada (true/false): a entidade adjudicante fundamentou uma situação de urgência.\nsetores_especiais (true/false): o contrato diz direta e principalmente respeito a atividades dos setores da água, da energia, dos transportes ou dos serviços postais.\nanuncio_pre_informacao (true/false): foi publicado o anúncio periódico indicativo.\nmodalidade_concecao: publico, limitado, simplificado — a modalidade do concurso de conceção.\ntipo_entidade: estado («a entidade adjudicante seja o Estado», «a entidade adjudicante for o Estado», «adjudicados pelo Estado», «celebrados pelo Estado», «serviços do Estado», «for o Estado», «seja o Estado», «pelo Estado»), outra («não seja o Estado», «não for o Estado», «outras entidades adjudicantes», «outra entidade adjudicante», «demais entidades adjudicantes», «restantes entidades adjudicantes», «nos demais casos», «nos restantes casos», «não sendo a entidade adjudicante o Estado», «entidades não estaduais»).\nterritorio: PT, PT-AC, PT-MA («Regiões Autónomas» = PT-AC e PT-MA). duracao_contrato_meses: número de meses («um ano» = 12). data_inicio_procedimento: data ISO (ano-mês-dia).\nvalor_estimado, preco_base, preco_contratual: euros, como condição de um prazo que muda com o valor do contrato (L10).\nOperadores: eq, ne (um valor); in, not_in (uma lista); lt, le, gt, ge (números e datas).\nprazo_minimo — params: minimum_days (inteiro), deadline_field, counted_from, usual_days (inteiro ou null).\ndeadline_field: prazo_propostas_dias («apresentação das propostas», «apresentação de propostas», «apresentação das versões iniciais das propostas», «as propostas são apresentadas», «apresentarem as suas propostas», «apresentar propostas», «apresentação das versões finais das propostas», «apresentar as suas propostas», «apresentar as propostas», «apresentação da proposta», «as propostas são entregues», «entregar as propostas», «versões finais das propostas», «versões iniciais das propostas», «propostas iniciais», «entrega das propostas», «propostas»), prazo_candidaturas_dias («apresentação das candidaturas», «apresentação de candidaturas», «as candidaturas são apresentadas», «as candidaturas são entregues», «apresentar candidaturas», «apresentar as candidaturas», «apresentar as suas candidaturas», «apresentação da candidatura», «entregar a sua candidatura», «prazo das candidaturas», «candidatar-se», «candidaturas», «candidatura»), prazo_trabalhos_concecao_dias («documentos que materializam os trabalhos de conceção», «trabalhos de conceção», «trabalhos de conceção são apresentados»), prazo_solucoes_dias («apresentação das soluções», «apresentação de soluções», «apresentarem as suas soluções», «as soluções são apresentadas», «apresentar as soluções», «entrega das soluções», «apresenta as suas soluções», «soluções»), prazo_esclarecimentos_dias («pedidos de esclarecimentos», «pedido de esclarecimentos», «solicitarem esclarecimentos», «pedir esclarecimentos», «solicitar esclarecimentos», «esclarecimentos»), prazo_pronuncia_dias («pronúncia dos interessados», «pronúncia dos concorrentes», «pronúncia dos candidatos», «se pronunciarem», «pronunciar-se», «audiência prévia», «pronunciam-se», «se pronunciam», «pronunciar»), prazo_reclamacao_dias («reclamação», «reclamações», «reclamar»), prazo_caucao_dias («prestação da caução», «prestar a caução», «prestar caução», «presta a caução», «a caução é prestada», «caução»), prazo_habilitacao_dias («documentos de habilitação», «entrega os documentos de habilitação», «habilitação»).\ncounted_from: data_envio_anuncio («a contar da data do envio do anúncio», «a contar da data de envio do anúncio», «a contar do envio do anúncio», «desde aquele envio», «data do envio do anúncio», «data do envio desse anúncio», «data do envio, para publicação, do anúncio», «envio do anúncio para publicação», «a contar do respetivo envio», «envio do anúncio»), data_publicacao_anuncio («a contar da data de publicação do anúncio», «a partir da data de publicação do anúncio», «contados da publicação do anúncio», «data da publicação do anúncio», «data de publicação do anúncio», «contados da data de publicação do anúncio», «contado da data de publicação do anúncio», «a contar da publicação do anúncio», «publicação do anúncio no Diário da República», «após a publicação do anúncio», «contando-se o prazo da data de publicação do anúncio», «publicação do anúncio»), data_envio_convite («a contar da data do envio do convite», «data do envio do convite», «a contar do envio do convite», «data de envio do convite», «contados da data do envio do convite», «contado do envio do convite», «contados do envio do convite», «contado da data do envio do convite», «contados do envio do respetivo convite», «envio do convite»), data_notificacao («a contar da data da notificação», «a contar da data da sua notificação», «a contar da notificação», «contados da notificação», «contado da notificação», «data da notificação», «data da sua notificação», «objeto de notificação», «contados da data dessa notificação», «notificação»), data_disponibilizacao_pecas («disponibilização das peças do procedimento», «disponibilização das peças», «peças do procedimento são disponibilizadas», «as peças do procedimento estão disponíveis», «disponibilização das peças do procedimento»), nao_indicado (L9).\nlimiar — params: threshold = {field: valor_estimado («valor estimado do contrato», «valor estimado dos contratos», «valor estimado», «valor do contrato», «valor dos contratos», «de valor», «o valor», «cujo valor», «o seu valor», «seu valor», «valor») | preco_base («preço base», «preços base») | preco_contratual («preço contratual»), comparator: lt | le | gt | ge, value: euros, currency: \"EUR\"}.\n\nFORMATO — responde só com um objeto JSON:\n{\"regras\": [{\"tipo\": \"…\", \"condicoes\": [{\"field\": \"…\", \"op\": \"…\", \"value\": …, \"fontes\": [{\"texto\": \"…\", \"de\": \"…\"}]}], \"params\": {…}, \"fontes\": {\"<parâmetro>\": [{\"texto\": \"…\", \"de\": \"…\"}]}}], \"nao_tipavel\": null}\nou, quando L12 se aplica: {\"regras\": [], \"nao_tipavel\": {\"motivo\": \"nao_e_limiar | nao_e_prazo_minimo | sem_vocabulario | texto_em_falta\", \"fontes\": [{\"texto\": \"…\", \"de\": \"…\"}], \"falta\": \"…\"}}\n«fontes» dos params: minimum_days, deadline_field, counted_from (salvo nao_indicado) e usual_days (quando não é null), no prazo_minimo; field, comparator e value, no limiar.\n\nExemplo (artigo inventado, só para mostrar a forma):\nOnde está: [exemplo:cap-ii] Capítulo II — Concurso público\n[exemplo:art900] Artigo 900.º — Prazos para a apresentação das propostas\n[exemplo:art900.1] 1 - Quando o anúncio seja publicado no Jornal Oficial da União Europeia, o prazo para a apresentação das propostas não pode ser inferior a 30 dias a contar da data do envio do anúncio.   ◀ remetida\n[exemplo:art900.2] 2 - Em caso de urgência devidamente fundamentada, o prazo previsto no número anterior pode ser reduzido para 15 dias.   ◀ PASSAGEM-ALVO\nResposta: {\"regras\": [{\"tipo\": \"prazo_minimo\", \"condicoes\": [{\"field\": \"tipo_procedimento\", \"op\": \"eq\", \"value\": \"concurso_publico\", \"fontes\": [{\"texto\": \"Concurso público\", \"de\": \"exemplo:cap-ii\"}]}, {\"field\": \"publicado_joue\", \"op\": \"eq\", \"value\": true, \"fontes\": [{\"texto\": \"Quando o anúncio seja publicado no Jornal Oficial da União Europeia\", \"de\": \"exemplo:art900.1\"}]}, {\"field\": \"urgencia_fundamentada\", \"op\": \"eq\", \"value\": true, \"fontes\": [{\"texto\": \"Em caso de urgência devidamente fundamentada\", \"de\": \"exemplo:art900.2\"}]}], \"params\": {\"minimum_days\": 15, \"deadline_field\": \"prazo_propostas_dias\", \"counted_from\": \"data_envio_anuncio\", \"usual_days\": null}, \"fontes\": {\"minimum_days\": [{\"texto\": \"pode ser reduzido para 15 dias\", \"de\": \"exemplo:art900.2\"}], \"deadline_field\": [{\"texto\": \"apresentação das propostas\", \"de\": \"exemplo:art900.1\"}], \"counted_from\": [{\"texto\": \"a contar da data do envio do anúncio\", \"de\": \"exemplo:art900.1\"}]}}], \"nao_tipavel\": null}\n\nO TEXTO (versão em vigor a 2026-10-01)\nOnde está: [norma:ccp] Código dos Contratos Públicos > [ccp:parte-v] Parte V — Disposições finais\n[ccp:art474] Artigo 474.º — Montantes dos limiares europeus\n[ccp:art474.1] 1 - Os montantes dos limiares europeus, para efeito de publicitação obrigatória de anúncio no Jornal Oficial da União Europeia, são os previstos no artigo 8.º da Diretiva 2014/23/UE, no artigo 4.º da Diretiva 2014/24/UE e no artigo 15.º da Diretiva 2014/25/UE, os quais se reproduzem nos números seguintes, na redação que lhes foi dada pelo Regulamento Delegado (UE) 2019/1827, pelo Regulamento Delegado (UE) 2019/1828 e pelo Regulamento Delegado (UE) 2019/1829.\n[ccp:art474.2] 2 - O montante do limiar previsto para os contratos de concessão de obras públicas e concessões de serviços é de 5 404 000 €.\n[ccp:art474.3] 3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:\n  [ccp:art474.3.a] a) 5 404 000,00 €, para os contratos de empreitada de obras públicas;\n  [ccp:art474.3.b] b) 139 000 €, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;\n  [ccp:art474.3.c] c) 216 000,00 €, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;\n  [ccp:art474.3.d] d) 750 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.\n[ccp:art474.4] 4 - Os montantes dos limiares previstos para os contratos públicos celebrados pelas entidades que operam nos setores da água, da energia, dos transportes e dos serviços postais são os seguintes:   ◀ proémio da passagem-alvo\n  [ccp:art474.4.a] a) 5 404 000 €, para os contratos de empreitada de obras públicas;\n  [ccp:art474.4.b] b) 432 000,00 €, para os contratos públicos de fornecimentos de bens, de prestação de serviços e de concursos de conceção;   ◀ PASSAGEM-ALVO\n  [ccp:art474.4.c] c) 1 000 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.\n[ccp:art474.5] 5 - A revisão dos montantes dos limiares referidos nos números anteriores por ato delegado da Comissão Europeia determina a modificação do presente artigo e é divulgada no portal dos contratos públicos.\n\nPERGUNTA\nQue regra do tipo limiar fixa a passagem ccp:art474.4.b? Se fixa mais de uma, dá uma por caso; se não fixa nenhuma regra deste tipo, aplica L12.",
+ "schema": {
+  "type": "object",
+  "properties": {
+   "regras": {
+    "type": "array",
+    "maxItems": 4,
+    "items": {
+     "type": "object",
+     "properties": {
+      "tipo": {
+       "type": "string",
+       "enum": [
+        "limiar"
+       ]
+      },
+      "condicoes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "field": {
+          "type": "string",
+          "enum": [
+           "tipo_contrato",
+           "tipo_procedimento",
+           "modalidade_concecao",
+           "tipo_entidade",
+           "territorio",
+           "publicado_joue",
+           "urgencia_fundamentada",
+           "setores_especiais",
+           "anuncio_pre_informacao",
+           "duracao_contrato_meses",
+           "data_inicio_procedimento",
+           "valor_estimado",
+           "preco_base",
+           "preco_contratual"
+          ]
+         },
+         "op": {
+          "type": "string",
+          "enum": [
+           "eq",
+           "ne",
+           "in",
+           "not_in",
+           "lt",
+           "le",
+           "gt",
+           "ge"
+          ]
+         },
+         "value": {
+          "anyOf": [
+           {
+            "type": "string",
+            "enum": [
+             "PT",
+             "PT-AC",
+             "PT-MA",
+             "ajuste_direto",
+             "ajuste_direto_simplificado",
+             "bens",
+             "concessao_obras",
+             "concessao_servicos",
+             "concurso_concecao",
+             "concurso_ideias",
+             "concurso_limitado_previa_qualificacao",
+             "concurso_publico",
+             "concurso_publico_urgente",
+             "consulta_previa",
+             "consulta_previa_especial",
+             "dialogo_concorrencial",
+             "estado",
+             "limitado",
+             "obras",
+             "outra",
+             "parceria_inovacao",
+             "procedimento_negociacao",
+             "publico",
+             "servicos",
+             "servicos_sociais",
+             "simplificado",
+             "sociedade"
+            ]
+           },
+           {
+            "type": "boolean"
+           },
+           {
+            "type": "number"
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "PT",
+              "PT-AC",
+              "PT-MA",
+              "ajuste_direto",
+              "ajuste_direto_simplificado",
+              "bens",
+              "concessao_obras",
+              "concessao_servicos",
+              "concurso_concecao",
+              "concurso_ideias",
+              "concurso_limitado_previa_qualificacao",
+              "concurso_publico",
+              "concurso_publico_urgente",
+              "consulta_previa",
+              "consulta_previa_especial",
+              "dialogo_concorrencial",
+              "estado",
+              "limitado",
+              "obras",
+              "outra",
+              "parceria_inovacao",
+              "procedimento_negociacao",
+              "publico",
+              "servicos",
+              "servicos_sociais",
+              "simplificado",
+              "sociedade"
+             ]
+            }
+           },
+           {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+           }
+          ]
+         },
+         "fontes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+           "type": "object",
+           "properties": {
+            "texto": {
+             "type": "string"
+            },
+            "de": {
+             "type": "string",
+             "enum": [
+              "ccp:art474",
+              "ccp:art474.1",
+              "ccp:art474.2",
+              "ccp:art474.3",
+              "ccp:art474.3.a",
+              "ccp:art474.3.b",
+              "ccp:art474.3.c",
+              "ccp:art474.3.d",
+              "ccp:art474.4",
+              "ccp:art474.4.a",
+              "ccp:art474.4.b",
+              "ccp:art474.4.c",
+              "ccp:art474.5",
+              "ccp:parte-v",
+              "norma:ccp"
+             ]
+            }
+           },
+           "required": [
+            "texto",
+            "de"
+           ],
+           "additionalProperties": false
+          }
+         }
+        },
+        "required": [
+         "field",
+         "op",
+         "value",
+         "fontes"
+        ],
+        "additionalProperties": false
+       }
+      },
+      "params": {
+       "type": "object",
+       "properties": {
+        "threshold": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string",
+           "enum": [
+            "valor_estimado",
+            "preco_base",
+            "preco_contratual"
+           ]
+          },
+          "comparator": {
+           "type": "string",
+           "enum": [
+            "lt",
+            "le",
+            "gt",
+            "ge"
+           ]
+          },
+          "value": {
+           "type": "number"
+          },
+          "currency": {
+           "type": "string",
+           "enum": [
+            "EUR"
+           ]
+          }
+         },
+         "required": [
+          "field",
+          "comparator",
+          "value",
+          "currency"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "required": [
+        "threshold"
+       ],
+       "additionalProperties": false
+      },
+      "fontes": {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "array",
+         "minItems": 1,
+         "items": {
+          "type": "object",
+          "properties": {
+           "texto": {
+            "type": "string"
+           },
+           "de": {
+            "type": "string",
+            "enum": [
+             "ccp:art474",
+             "ccp:art474.1",
+             "ccp:art474.2",
+             "ccp:art474.3",
+             "ccp:art474.3.a",
+             "ccp:art474.3.b",
+             "ccp:art474.3.c",
+             "ccp:art474.3.d",
+             "ccp:art474.4",
+             "ccp:art474.4.a",
+             "ccp:art474.4.b",
+             "ccp:art474.4.c",
+             "ccp:art474.5",
+             "ccp:parte-v",
+             "norma:ccp"
+            ]
+           }
+          },
+          "required": [
+           "texto",
+           "de"
+          ],
+          "additionalProperties": false
+         }
+        },
+        "comparator": {
+         "type": "array",
+         "minItems": 1,
+         "items": {
+          "type": "object",
+          "properties": {
+           "texto": {
+            "type": "string"
+           },
+           "de": {
+            "type": "string",
+            "enum": [
+             "ccp:art474",
+             "ccp:art474.1",
+             "ccp:art474.2",
+             "ccp:art474.3",
+             "ccp:art474.3.a",
+             "ccp:art474.3.b",
+             "ccp:art474.3.c",
+             "ccp:art474.3.d",
+             "ccp:art474.4",
+             "ccp:art474.4.a",
+             "ccp:art474.4.b",
+             "ccp:art474.4.c",
+             "ccp:art474.5",
+             "ccp:parte-v",
+             "norma:ccp"
+            ]
+           }
+          },
+          "required": [
+           "texto",
+           "de"
+          ],
+          "additionalProperties": false
+         }
+        },
+        "value": {
+         "type": "array",
+         "minItems": 1,
+         "items": {
+          "type": "object",
+          "properties": {
+           "texto": {
+            "type": "string"
+           },
+           "de": {
+            "type": "string",
+            "enum": [
+             "ccp:art474",
+             "ccp:art474.1",
+             "ccp:art474.2",
+             "ccp:art474.3",
+             "ccp:art474.3.a",
+             "ccp:art474.3.b",
+             "ccp:art474.3.c",
+             "ccp:art474.3.d",
+             "ccp:art474.4",
+             "ccp:art474.4.a",
+             "ccp:art474.4.b",
+             "ccp:art474.4.c",
+             "ccp:art474.5",
+             "ccp:parte-v",
+             "norma:ccp"
+            ]
+           }
+          },
+          "required": [
+           "texto",
+           "de"
+          ],
+          "additionalProperties": false
+         }
+        }
+       },
+       "required": [
+        "field",
+        "comparator",
+        "value"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "required": [
+      "tipo",
+      "condicoes",
+      "params",
+      "fontes"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "nao_tipavel": {
+    "anyOf": [
+     {
+      "type": "object",
+      "properties": {
+       "motivo": {
+        "type": "string",
+        "enum": [
+         "nao_e_limiar",
+         "nao_e_prazo_minimo",
+         "sem_vocabulario",
+         "texto_em_falta"
+        ]
+       },
+       "fontes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "type": "object",
+         "properties": {
+          "texto": {
+           "type": "string"
+          },
+          "de": {
+           "type": "string",
+           "enum": [
+            "ccp:art474",
+            "ccp:art474.1",
+            "ccp:art474.2",
+            "ccp:art474.3",
+            "ccp:art474.3.a",
+            "ccp:art474.3.b",
+            "ccp:art474.3.c",
+            "ccp:art474.3.d",
+            "ccp:art474.4",
+            "ccp:art474.4.a",
+            "ccp:art474.4.b",
+            "ccp:art474.4.c",
+            "ccp:art474.5",
+            "ccp:parte-v",
+            "norma:ccp"
+           ]
+          }
+         },
+         "required": [
+          "texto",
+          "de"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "falta": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "motivo",
+       "fontes",
+       "falta"
+      ],
+      "additionalProperties": false
+     },
+     {
+      "type": "null"
+     }
+    ]
+   }
+  },
+  "required": [
+   "regras",
+   "nao_tipavel"
+  ],
+  "additionalProperties": false
+ },
+ "round": "fabrica-16",
+ "source_passage": "ccp:art474.4.b",
+ "protocol": "v3",
+ "protocol_version": "ccp-read-rules-v3-0.4",
+ "context": {
+  "alvo": "ccp:art474.4.b",
+  "date": "2026-10-01",
+  "article": "ccp:art474",
+  "roles": {
+   "ccp:art474.4.b": "alvo",
+   "ccp:art474.4": "proemio",
+   "ccp:art474": "epigrafe",
+   "ccp:parte-v": "titulo",
+   "norma:ccp": "titulo",
+   "ccp:art474.1": "vizinho",
+   "ccp:art474.2": "vizinho",
+   "ccp:art474.3": "vizinho",
+   "ccp:art474.3.a": "vizinho",
+   "ccp:art474.3.b": "vizinho",
+   "ccp:art474.3.c": "vizinho",
+   "ccp:art474.3.d": "vizinho",
+   "ccp:art474.4.a": "vizinho",
+   "ccp:art474.4.c": "vizinho",
+   "ccp:art474.5": "vizinho"
+  },
+  "allowed": {
+   "ccp:art474.4.b": "b) 432 000,00 €, para os contratos públicos de fornecimentos de bens, de prestação de serviços e de concursos de conceção;",
+   "ccp:art474.4": "4 - Os montantes dos limiares previstos para os contratos públicos celebrados pelas entidades que operam nos setores da água, da energia, dos transportes e dos serviços postais são os seguintes:",
+   "ccp:art474": "Montantes dos limiares europeus",
+   "ccp:parte-v": "Parte V — Disposições finais",
+   "norma:ccp": "Código dos Contratos Públicos",
+   "ccp:art474.1": "1 - Os montantes dos limiares europeus, para efeito de publicitação obrigatória de anúncio no Jornal Oficial da União Europeia, são os previstos no artigo 8.º da Diretiva 2014/23/UE, no artigo 4.º da Diretiva 2014/24/UE e no artigo 15.º da Diretiva 2014/25/UE, os quais se reproduzem nos números seguintes, na redação que lhes foi dada pelo Regulamento Delegado (UE) 2019/1827, pelo Regulamento Delegado (UE) 2019/1828 e pelo Regulamento Delegado (UE) 2019/1829.",
+   "ccp:art474.2": "2 - O montante do limiar previsto para os contratos de concessão de obras públicas e concessões de serviços é de 5 404 000 €.",
+   "ccp:art474.3": "3 - Os montantes dos limiares previstos para os contratos públicos são os seguintes:",
+   "ccp:art474.3.a": "a) 5 404 000,00 €, para os contratos de empreitada de obras públicas;",
+   "ccp:art474.3.b": "b) 139 000 €, para os contratos públicos de fornecimento de bens, prestação de serviços e de concursos de conceção, adjudicados pelo Estado;",
+   "ccp:art474.3.c": "c) 216 000,00 €, para os contratos referidos na alínea anterior, adjudicados por outras entidades adjudicantes;",
+   "ccp:art474.3.d": "d) 750 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+   "ccp:art474.4.a": "a) 5 404 000 €, para os contratos de empreitada de obras públicas;",
+   "ccp:art474.4.c": "c) 1 000 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+   "ccp:art474.5": "5 - A revisão dos montantes dos limiares referidos nos números anteriores por ato delegado da Comissão Europeia determina a modificação do presente artigo e é divulgada no portal dos contratos públicos."
+  }
+ }
+}

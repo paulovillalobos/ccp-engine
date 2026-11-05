@@ -1,0 +1,67 @@
+{
+  "id": "regra:eu-2004-17:auto-prazo-minimo-art45-4-v20041101@v1",
+  "revision": 2,
+  "recorded_at": "2026-11-05T05:29:35Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em eu-2004-17:art45.4 (fábrica de regras, ronda 15), versão de 2004-11-01",
+  "norma": "norma:eu-2004-17",
+  "jurisdiction": "UE",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "anuncio_pre_informacao",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2004-11-01",
+  "valid_to": "2016-04-18",
+  "passages": [
+    {
+      "passage": "eu-2004-17:art41.1",
+      "version": "2004-11-01",
+      "quote": "1. As entidades adjudicantes darão a conhecer, pelo menos anualmente, por meio de um anúncio periódico indicativo conforme com o anexo XV A, publicado pela Comissão ou por elas próprias, no seu «perfil de adquirente», tal como previsto na alínea b) do ponto 2 do anexo XX:\na) Quanto aos fornecimentos, o valor total estimado dos contratos ou dos acordos-quadro, por grupos de produtos, que tencionam celebrar durante os 12 meses subsequentes, e cujo valor total estimado, tendo em conta os artigos 16.º e 17.º, seja igual ou superior a 750 000 EUR.\nOs grupos de produtos devem ser estabelecidos pelas entidades adjudicantes mediante referência às posições do CPV;\nb) Quanto aos serviços, o valor total estimado dos contratos ou dos acordos-quadro, para cada categoria de serviços enumerada no anexo XVII A que tencionam celebrar durante os 12 meses subsequentes, e cujo valor total estimado, tendo em conta os artigos 16.º e 17.º, for igual ou superior a 750 000 EUR;\nc) Quanto às empreitadas de obras, as características essenciais dos contratos ou acordos-quadro que tencionam celebrar nos 12 meses subsequentes e cujo valor estimado for igual ou superior ao limiar estabelecido no artigo 16.º, tendo em conta o artigo 17.º\nOs anúncios previstos nas alíneas a) e b) serão enviados à Comissão ou publicados no perfil de adquirente o mais rapidamente possível após o início do exercício orçamental.\nO anúncio previsto na alínea c) será enviado à Comissão ou publicado no perfil de adquirente o mais rapidamente possível depois de tomada a decisão de autorização do programa em que se inserem os contratos de empreitada de obras ou os acordos-quadro que as entidades adjudicantes tencionam celebrar.\nAs entidades adjudicantes que publiquem o anúncio periódico indicativo no seu perfil de adquirente enviarão à Comissão, por meio electrónico em conformidade com o formato e as modalidades de envio dos anúncios por via electrónica indicadas no ponto 3 do anexo XX, um anúncio que refira a publicação daquele anúncio periódico indicativo no referido perfil de adquirente.\nA publicação dos anúncios referidos nas alíneas a), b) e c) só é obrigatória quando as entidades adjudicantes recorrerem à possibilidade de reduzir os prazos de recepção das propostas prevista no n.º 4 do artigo 45.º\nO presente número não se aplica aos procedimentos sem abertura prévia de concurso.",
+      "offsets": {
+        "start": 0,
+        "end": 2368
+      }
+    },
+    {
+      "passage": "eu-2004-17:art45.4",
+      "version": "2004-11-01",
+      "quote": "4. Caso as entidades adjudicantes tenham publicado um anúncio periódico indicativo contemplado no n.º 1 do artigo 41.º, nos termos do anexo XX, o prazo mínimo para a recepção das propostas nos concursos públicos deve ser fixado, regra geral, num mínimo de 36 dias, não podendo, porém, em caso algum, ser inferior a 22 dias a contar da data de envio do anúncio.\nTais prazos reduzidos são permitidos desde que o anúncio periódico indicativo, para além das informações exigidas na parte I do anexo XV A, tenha incluído todas as informações exigidas na parte II do anexo, na medida em que estas informações estejam disponíveis à data de publicação do anúncio e o anúncio tenha sido enviado para publicação entre um mínimo de 52 dias e um máximo de 12 meses antes da data de envio do anúncio de concurso previsto na alínea c) do n.º 1 do artigo 42.º",
+      "offsets": {
+        "start": 0,
+        "end": 844
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 36,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a18",
+      "family": "A",
+      "at": "2026-11-05T05:22:27Z",
+      "chosen_passages": [
+        "eu-2004-17:art41.1",
+        "eu-2004-17:art45.4"
+      ],
+      "blind": false,
+      "evento": "evento:1631"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

@@ -4,7 +4,8 @@
     .venv/bin/python tools/make_rule_readings_v15.py generate   training/data-v15
 
 Three parts, every row rendered and checked with the protocol 0.5 (read_rules_v3.V05):
-- keys: the real passages both families settled blind in rounds 11 (texto_visto) and 12 (pratica), under
+- keys: the real passages both families settled blind in rounds 11 (texto_visto) and 12 (pratica), as the log stood at
+  LOG_UPTO, under
   product_rule:leituras-assentes-como-pratica (evento:276). The gold is family A's reading the log holds settled; each passage
   gives its own row and VARIANTS more with its days or euro amounts moved by code where its quotes are. A key is left out when
   any passage its reader sees is in a reserved article (TRAIN-HELD-OUT's list, or for an act that list did not yet hold its
@@ -36,7 +37,7 @@ import make_rule_readings_v13 as v13  # noqa: E402  (dump, data-v13's rows)
 import make_rule_readings_v14 as v14  # noqa: E402  (move_days, move_amount, replace_in, AMOUNTS)
 import read_rules_v3 as v3  # noqa: E402
 import rule_factory as rf  # noqa: E402
-from engine.governance import Log  # noqa: E402
+from engine.governance import Log, replay  # noqa: E402
 
 VERSION = "ccp-make-rule-readings-v15-0.1"
 PROTOCOL = v3.V05
@@ -47,6 +48,7 @@ VARIANTS = 24
 REMIND = 600
 WRITTEN_SEED = "D73"
 KEY_STRATA = {11: "texto_visto", 12: "pratica"}  # the strata a round may give as practice; reservado is the exam
+LOG_UPTO = 961  # the log as it stood when data-v15 was written (round 12 recorded, evento:961): a later round settles more of the same ids
 COUNTS = {"maximo": 350, "entidade_max": 250, "entidade_min": 100, "ue_minimo": 300, "ue_limiar": 60, "uteis": 60}
 
 
@@ -67,7 +69,8 @@ def exam(store):
 # ---- keys ------------------------------------------------------------------------------------------------------------------
 def settled_keys(store):
     """[(round, target, gold answer, prompt version)] for every practice-stratum target whose reading the log holds settled."""
-    rp = Log(store.governance_dir).replay()
+    log = Log(store.governance_dir)
+    rp = replay(log.events[:LOG_UPTO], log.principals)
     out = []
     for n, stratum in KEY_STRATA.items():
         for t in rf.targets(store, n):
@@ -368,8 +371,9 @@ def remind():
 
 
 def allowed_sources(store):
-    """What verify lets a key row cite inside a reserved article: nothing (a key that shows one is left out)."""
-    return set()
+    """What verify lets a row cite inside a reserved article: what data-v14's practice rows (kept in remind) may cite, under the
+    same product rule (make_rule_readings_v14.allowed_sources); a key of rounds 11-12 that shows one is left out."""
+    return v14.allowed_sources(store)
 
 
 def build(store=None):

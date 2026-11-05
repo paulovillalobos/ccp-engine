@@ -49,7 +49,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.8"
-TOOL = "ferramenta:rule-factory@28"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+TOOL = "ferramenta:rule-factory@29"  # D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -130,7 +130,10 @@ FROUNDS[13] = {**FROUNDS[12], "round": "fabrica-13", "dir": rr.READINGS / "fabri
                "carry_b": 12, "skip_settled": True}
 FROUNDS[14] = {**FROUNDS[11], "round": "fabrica-14", "dir": rr.READINGS / "fabrica14", "decision": "D74", "proposer": ("leitor:a17", "leitor-a17.json"),
                "carry_b": 11, "skip_settled": True}
-CURRENT = ("leitor:a17", "leitor-a17.json")  # D75: who proposes in a refresh round, the latest adapter (v15)
+# D76: v16 (leitor:a18) reads rounds 12 and 11 again the same way
+FROUNDS[15] = {**FROUNDS[13], "round": "fabrica-15", "dir": rr.READINGS / "fabrica15", "decision": "D76", "proposer": ("leitor:a18", "leitor-a18.json")}
+FROUNDS[16] = {**FROUNDS[14], "round": "fabrica-16", "dir": rr.READINGS / "fabrica16", "decision": "D76", "proposer": ("leitor:a18", "leitor-a18.json")}
+CURRENT = ("leitor:a18", "leitor-a18.json")  # D75: who proposes in a refresh round, the latest adapter (v16)
 for _k, _f in enumerate(sorted(rr.READINGS.glob("refresh-*/pick.json"))):  # D75: the daily refresh rounds, one folder each
     FROUNDS[1001 + _k] = {**FROUNDS[12], "round": _f.parent.name, "dir": _f.parent, "decision": "D75", "proposer": CURRENT,
                           "pick": [tuple(x) for x in json.loads(_f.read_text(encoding="utf-8"))["pick"]]}
@@ -791,6 +794,12 @@ INTRO = {
          "código (adaptador v14). Alvos: os 9 da ronda 9 ainda abertos, que nenhum exemplo de treino mostra.",
          "Os prompts são os da ronda 9, byte a byte; as respostas de leitor:b são as da ronda 9. Um programa confirma cada palavra "
          "citada; a leitura que falha não fica registada."],
+    15: ["D76: v16 relê a ronda 12 (os mesmos prompts, byte a byte; as respostas cegas do leitor:b vêm da ronda 12). O exame é o "
+         "grupo reservado; um alvo já assente é lido e medido mas não volta a ser registado.",
+         "Protocolo 0.5. Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."],
+    16: ["D76: v16 relê a ronda 11 (os mesmos prompts, protocolo 0.4; as respostas cegas do leitor:b vêm da ronda 11). O exame é o "
+         "grupo reservado; um alvo já assente é lido e medido mas não volta a ser registado.",
+         "Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."],
     13: ["D74: v15 relê a ronda 12 (os mesmos prompts, byte a byte; as respostas cegas do leitor:b vêm da ronda 12). O exame é o "
          "grupo reservado; um alvo já assente é lido e medido mas não volta a ser registado.",
          "Protocolo 0.5. Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."],
@@ -814,7 +823,7 @@ INTRO = {
 
 INTRO_REFRESH = ["D75: a atualização diária — as passagens cujo texto mudou ou entrou no depósito desde a última, que dizem dias ou euros.",
                  "Protocolo 0.5. Um programa confirma cada palavra citada; o «não tipável» com o mesmo motivo também assenta."]
-ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13", "leitor:a16": "v14", "leitor:a17": "v15"}
+ADAPTER_OF = {"leitor:a12": "v10", "leitor:a13": "v11", "leitor:a14": "v12", "leitor:a15": "v13", "leitor:a16": "v14", "leitor:a17": "v15", "leitor:a18": "v16"}
 
 
 def write_report(rows, n=1):

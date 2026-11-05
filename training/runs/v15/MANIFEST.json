@@ -1,0 +1,451 @@
+{
+ "adapter": "amalia-ccp-lei-v15",
+ "volume": "amalia-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "init": "amalia-ccp-lei-v14",
+ "training_index_sha256": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+ "data_index_sha256": {
+  "training/data": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+  "training/data-v2": "afc01d6a6b7e7fe25ab6f74d34a56db1b50960f2677a2728b327dda2cecb321c",
+  "training/data-v3": "781078b81b51e5fc9a832e085a0cc9cfcd75bd2f633030c4a1f5ad233fa2a36b",
+  "training/data-v4": "6d79d787354f3d58746367b1bad1dd82ea463cefe8b2d8d3317bd27c8c53ec98",
+  "training/data-v9": "6668751dd00b9ff799128708cec5d4828e9720dd89ae2f8aed8019f04d7f46d7",
+  "training/data-v10": "917ed418c177865296032ecb4b87dc3fe571ef00a217a8c8fc8a68d28337cb61",
+  "training/data-v11": "42f2c56ef482fd96999cd5bcecd13a20b151a33d21b9c1c1e065357dd3652281",
+  "training/data-v12": "f7d7ca1dc7f4b58589df22f678251710bf7eb85f659656b27847c799d89fe7a7",
+  "training/data-v15": "a0213b16e5f7168f252d1a66c7294930729012f289fc30f9b1d9672cf13a48af"
+ },
+ "repeat": {
+  "condicoes_texto": 2
+ },
+ "mixture": {
+  "condicoes_pergunta": 400,
+  "condicoes_texto": 167,
+  "entrada_em_vigor": 2,
+  "escolha_passagem": 806,
+  "factos_v9": 1464,
+  "nota_dr": 51,
+  "periodos_vigencia": 131,
+  "regra_lida": 3224,
+  "regra_lida_alvo": 0,
+  "regra_tipada": 0,
+  "remissao": 1,
+  "texto_vigente": 394
+ },
+ "examples_in_mix": 6640,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 2,
+  "lr": 0.0001,
+  "warmup_steps": 10,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 12288,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "256e2c3ce3dfd39a99852b9816ccf8ca880053e7",
+ "repo_dirty_training_or_law": false,
+ "started": "2026-11-05T00:17:58Z",
+ "finished": "2026-11-05T03:24:02Z",
+ "modal_app": "ap-DXnf9dZECicOMQ3pwq3Aab",
+ "modal_function_call": "fc-01M6MH3QDQY3B0TR8XP59CD0M3",
+ "result": {
+  "examples": 6640,
+  "dropped": 0,
+  "tokens": 23320436,
+  "trainable_params": 50921472,
+  "steps": 519,
+  "seconds": 11102.1,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 0.0994,
+    "seen": 18,
+    "seconds": 32.6
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.0616,
+    "seen": 184,
+    "seconds": 246.5
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.0198,
+    "seen": 409,
+    "seconds": 511.7
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.0107,
+    "seen": 675,
+    "seconds": 722.7
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.0187,
+    "seen": 945,
+    "seconds": 893.1
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0083,
+    "seen": 1237,
+    "seconds": 1104.6
+   },
+   {
+    "step": 60,
+    "epoch": 1,
+    "loss": 0.0346,
+    "seen": 1494,
+    "seconds": 1277.7
+   },
+   {
+    "step": 70,
+    "epoch": 1,
+    "loss": 0.0165,
+    "seen": 1750,
+    "seconds": 1494.0
+   },
+   {
+    "step": 80,
+    "epoch": 1,
+    "loss": 0.0037,
+    "seen": 1973,
+    "seconds": 1727.4
+   },
+   {
+    "step": 90,
+    "epoch": 1,
+    "loss": 0.0291,
+    "seen": 2219,
+    "seconds": 1940.1
+   },
+   {
+    "step": 100,
+    "epoch": 1,
+    "loss": 0.0156,
+    "seen": 2453,
+    "seconds": 2154.7
+   },
+   {
+    "step": 110,
+    "epoch": 1,
+    "loss": 0.0082,
+    "seen": 2749,
+    "seconds": 2322.0
+   },
+   {
+    "step": 120,
+    "epoch": 1,
+    "loss": 0.0049,
+    "seen": 2985,
+    "seconds": 2547.6
+   },
+   {
+    "step": 130,
+    "epoch": 1,
+    "loss": 0.0116,
+    "seen": 3199,
+    "seconds": 2784.1
+   },
+   {
+    "step": 140,
+    "epoch": 1,
+    "loss": 0.0042,
+    "seen": 3435,
+    "seconds": 3014.2
+   },
+   {
+    "step": 150,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 3715,
+    "seconds": 3221.1
+   },
+   {
+    "step": 160,
+    "epoch": 1,
+    "loss": 0.0027,
+    "seen": 4074,
+    "seconds": 3426.3
+   },
+   {
+    "step": 170,
+    "epoch": 1,
+    "loss": 0.0155,
+    "seen": 4402,
+    "seconds": 3619.4
+   },
+   {
+    "step": 180,
+    "epoch": 1,
+    "loss": 0.0027,
+    "seen": 4617,
+    "seconds": 3813.9
+   },
+   {
+    "step": 190,
+    "epoch": 1,
+    "loss": 0.0,
+    "seen": 4869,
+    "seconds": 4026.7
+   },
+   {
+    "step": 200,
+    "epoch": 1,
+    "loss": 0.0006,
+    "seen": 5087,
+    "seconds": 4276.4
+   },
+   {
+    "step": 210,
+    "epoch": 1,
+    "loss": 0.0013,
+    "seen": 5326,
+    "seconds": 4494.9
+   },
+   {
+    "step": 220,
+    "epoch": 1,
+    "loss": 0.0048,
+    "seen": 5530,
+    "seconds": 4737.3
+   },
+   {
+    "step": 230,
+    "epoch": 1,
+    "loss": 0.0018,
+    "seen": 5796,
+    "seconds": 4960.1
+   },
+   {
+    "step": 240,
+    "epoch": 1,
+    "loss": 0.0051,
+    "seen": 6180,
+    "seconds": 5156.2
+   },
+   {
+    "step": 250,
+    "epoch": 1,
+    "loss": 0.0003,
+    "seen": 6439,
+    "seconds": 5401.0
+   },
+   {
+    "step": 260,
+    "epoch": 2,
+    "loss": 0.0005,
+    "seen": 6700,
+    "seconds": 5605.8
+   },
+   {
+    "step": 270,
+    "epoch": 2,
+    "loss": 0.0024,
+    "seen": 6921,
+    "seconds": 5853.5
+   },
+   {
+    "step": 280,
+    "epoch": 2,
+    "loss": 0.0023,
+    "seen": 7185,
+    "seconds": 6086.2
+   },
+   {
+    "step": 290,
+    "epoch": 2,
+    "loss": 0.0005,
+    "seen": 7421,
+    "seconds": 6291.3
+   },
+   {
+    "step": 300,
+    "epoch": 2,
+    "loss": 0.0093,
+    "seen": 7651,
+    "seconds": 6542.7
+   },
+   {
+    "step": 310,
+    "epoch": 2,
+    "loss": 0.0003,
+    "seen": 7839,
+    "seconds": 6812.4
+   },
+   {
+    "step": 320,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 8102,
+    "seconds": 7030.5
+   },
+   {
+    "step": 330,
+    "epoch": 2,
+    "loss": 0.004,
+    "seen": 8352,
+    "seconds": 7279.4
+   },
+   {
+    "step": 340,
+    "epoch": 2,
+    "loss": 0.0008,
+    "seen": 8569,
+    "seconds": 7475.8
+   },
+   {
+    "step": 350,
+    "epoch": 2,
+    "loss": 0.0005,
+    "seen": 8847,
+    "seconds": 7665.3
+   },
+   {
+    "step": 360,
+    "epoch": 2,
+    "loss": 0.0043,
+    "seen": 9119,
+    "seconds": 7891.4
+   },
+   {
+    "step": 370,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 9360,
+    "seconds": 8109.3
+   },
+   {
+    "step": 380,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 9638,
+    "seconds": 8283.6
+   },
+   {
+    "step": 390,
+    "epoch": 2,
+    "loss": 0.0002,
+    "seen": 9870,
+    "seconds": 8507.9
+   },
+   {
+    "step": 400,
+    "epoch": 2,
+    "loss": 0.0076,
+    "seen": 10192,
+    "seconds": 8733.0
+   },
+   {
+    "step": 410,
+    "epoch": 2,
+    "loss": 0.0003,
+    "seen": 10477,
+    "seconds": 8947.0
+   },
+   {
+    "step": 420,
+    "epoch": 2,
+    "loss": 0.0013,
+    "seen": 10737,
+    "seconds": 9177.4
+   },
+   {
+    "step": 430,
+    "epoch": 2,
+    "loss": 0.0009,
+    "seen": 10970,
+    "seconds": 9360.8
+   },
+   {
+    "step": 440,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 11211,
+    "seconds": 9588.1
+   },
+   {
+    "step": 450,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 11438,
+    "seconds": 9792.2
+   },
+   {
+    "step": 460,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 11697,
+    "seconds": 9993.4
+   },
+   {
+    "step": 470,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 11945,
+    "seconds": 10151.1
+   },
+   {
+    "step": 480,
+    "epoch": 2,
+    "loss": 0.0018,
+    "seen": 12163,
+    "seconds": 10378.7
+   },
+   {
+    "step": 490,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 12475,
+    "seconds": 10570.7
+   },
+   {
+    "step": 500,
+    "epoch": 2,
+    "loss": 0.0003,
+    "seen": 12838,
+    "seconds": 10784.2
+   },
+   {
+    "step": 510,
+    "epoch": 2,
+    "loss": 0.0002,
+    "seen": 13107,
+    "seconds": 10920.9
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "d4f1618045a7ff7bf410a2a0cf36c8a130e9f1f5352a40488363bbd275aa810d",
+   "adapter_model.safetensors": "472a10383084b045c48dd3ee417f738df4ff5bb13829325faed138a5c311c29f"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}

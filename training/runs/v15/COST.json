@@ -1,0 +1,11 @@
+{
+ "source": "modal billing report --start 2026-11-04 --end 2026-11-06 (2026-11-05 bucket)",
+ "training_app": "ap-DXnf9dZECicOMQ3pwq3Aab",
+ "training_usd": 12.56,
+ "reads_apps": [
+  "ap-XffET56vsQ (fabrica13)",
+  "ap-Z7fMabbl3F (fabrica14)"
+ ],
+ "reads_usd": 0.41,
+ "total_usd": 12.97
+}

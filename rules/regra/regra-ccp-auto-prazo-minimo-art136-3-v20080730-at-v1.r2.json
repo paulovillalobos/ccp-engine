@@ -1,0 +1,67 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art136-3-v20080730@v1",
+  "revision": 2,
+  "recorded_at": "2026-11-05T03:38:00Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art136.3 (fábrica de regras, ronda 13), versão de 2008-07-30",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [
+    {
+      "field": "publicado_joue",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "field": "tipo_procedimento",
+      "op": "eq",
+      "value": "concurso_publico"
+    }
+  ],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": "2018-01-01",
+  "passages": [
+    {
+      "passage": "ccp:art136.1",
+      "version": "2008-07-30",
+      "quote": "1 - Quando o anúncio do concurso público seja publicado no Jornal Oficial da União Europeia, não pode ser fixado um prazo para a apresentação das propostas inferior a 47 dias a contar da data do envio desse anúncio ao Serviço de Publicações Oficiais das Comunidades Europeias.",
+      "offsets": {
+        "start": 0,
+        "end": 276
+      }
+    },
+    {
+      "passage": "ccp:art136.3",
+      "version": "2008-07-30",
+      "quote": "3 - Os prazos mínimos para a apresentação das propostas previstos nos números anteriores podem ser reduzidos em até sete dias quando o anúncio referido no n.º 1 for preparado e enviado por meios electrónicos conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int.",
+      "offsets": {
+        "start": 0,
+        "end": 306
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 7,
+    "deadline_field": "prazo_propostas_dias",
+    "counted_from": "data_envio_anuncio"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:32:44Z",
+      "chosen_passages": [
+        "ccp:art136.1",
+        "ccp:art136.3"
+      ],
+      "blind": false,
+      "evento": "evento:1019"
+    }
+  ],
+  "state": "proposed",
+  "supersedes": 1
+}

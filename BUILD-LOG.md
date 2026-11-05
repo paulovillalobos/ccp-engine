@@ -2289,3 +2289,20 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Public recipe (deploy/Dockerfile, deploy/README.md; tools/package.sh copies the Dockerfile and requirements): Cloud Run,
   project gen-lang-client-0698758883, europe-southwest1, the same settings as rjue-service; the package (640 MB) passes its
   local smoke test (74 864 objects, 961 events). Not deployed: the person's «publícalo».
+- v15 trained (ap-DXnf9dZECicOMQ3pwq3Aab, 519 steps, 3.1 h on one H100, USD 12.56; adapter 472a10383084, leitor:a17). Exam
+  (rounds 13–14, reservado): 63 of 101 (v14 27); practice 187 of 271 (v14 67). Rounds 13–14 recorded (evento:962–1485): 161 more
+  settled; keys 299. Studied on round 13's practice targets only (never the exam): the remaining misses are v15 reading a party's
+  deadline for an act the vocabulary has no field for as nao_e_prazo_maximo where L12 says sem_vocabulario (26), and quotes the
+  checker refuses on older CCP texts.
+- D76, data-v16 (tools/make_rule_readings_v16.py@1): 172 keys of rounds 11–14, 7 copies each (1 880 rows; 24 would pass GitHub's
+  100 MB file limit), 300 invented articles of that shape (sem_vocabulario), 450 of data-v15's written rows and 300 of its
+  remind rows. v16 (ap-XEnx8Btqm7, one epoch from v15, USD 5.93; adapter ae014b3e5b5b, leitor:a18). Exam (rounds 15–16): 62 of
+  101: no gain over v15. Rounds 15–16 recorded: 19 more settled; keys 318.
+- Where the exam stands (v16, 101 targets leitor:b reads validly): 62 the same; 21 both «não tipável» with another reason; 14
+  answers the checker refuses (nothing recorded); 4 a different rule. Counting a «não tipável» as replicated whatever its
+  reason, 82 % (v15 81 %, v14 62 %). The target, 95 % with the reason, is not reached: training on more of the same moved v15
+  to v16 by −1. What the remaining gap needs is not more rows of these kinds: either the person's product rule on whether a
+  «não tipável» must agree on its reason to settle (the engine applies no rule either way), or a family-A reader with more
+  capacity (a higher LoRA rank, or a larger base) for the checker's quoting.
+- Spend of the push (modal billing report, 2026-11-05): training USD 18.49, reads USD 1.11 (AMALIA; Reader B through the person's
+  subscription); training/runs/v15/COST.json and v16/COST.json. Inside the USD 40 cap stated before it began.

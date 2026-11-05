@@ -1,0 +1,45 @@
+{
+  "id": "regra:ccp:auto-prazo-minimo-art90-1@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-05T03:39:59Z",
+  "type": "prazo_minimo",
+  "title": "Prazo mínimo fixado em ccp:art90.1 (fábrica de regras, ronda 14)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2008-07-30",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art90.1",
+      "version": "2008-07-30",
+      "quote": "1 - O adjudicatário deve prestar a caução no prazo de 10 dias a contar da notificação prevista no n.º 2 do artigo 77.º, devendo comprovar essa prestação junto da entidade adjudicante no dia imediatamente subsequente.",
+      "offsets": {
+        "start": 0,
+        "end": 216
+      }
+    }
+  ],
+  "params": {
+    "minimum_days": 10,
+    "deadline_field": "prazo_caucao_dias",
+    "counted_from": "data_notificacao"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a17",
+      "family": "A",
+      "at": "2026-11-05T03:29:23Z",
+      "chosen_passages": [
+        "ccp:art90.1"
+      ],
+      "blind": false,
+      "evento": "evento:1484"
+    }
+  ],
+  "state": "proposed"
+}

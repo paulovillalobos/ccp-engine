@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-05T05:17:54Z",
+ "sha256": "35f82baa81ceeb31358c01f96e31e7d5ac09269400028def8d07cf82fdadb4a2",
+ "answer": "{\"regras\":[{\"tipo\":\"limiar\",\"condicoes\":[{\"field\":\"setores_especiais\",\"op\":\"eq\",\"value\":true,\"fontes\":[{\"texto\":\"setores da água, da energia, dos transportes e dos serviços postais\",\"de\":\"ccp:art474.4\"}]},{\"field\":\"tipo_contrato\",\"op\":\"eq\",\"value\":\"servicos_sociais\",\"fontes\":[{\"texto\":\"serviços sociais e outros serviços específicos\",\"de\":\"ccp:art474.4.c\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_concecao\",\"consulta_previa\"],\"fontes\":[{\"texto\":\"contratos públicos\",\"de\":\"ccp:art474.4.c\"},{\"texto\":\"contratos públicos\",\"de\":\"ccp:art474.4.c\"}]}],\"params\":{\"threshold\":{\"field\":\"valor_estimado\",\"comparator\":\"lt\",\"value\":1000000,\"currency\":\"EUR\"}},\"fontes\":{\"field\":[{\"texto\":\"serviços sociais e outros serviços específicos\",\"de\":\"ccp:art474.4.c\"}],\"comparator\":[{\"texto\":\"que operam nos setores\",\"de\":\"ccp:art474.4\"}],\"value\":[{\"texto\":\"1 000 000 €\",\"de\":\"ccp:art474.4.c\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

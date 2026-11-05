@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-04T23:06:59Z",
+ "sha256": "2a65a249b2f3c30b2631ca6f7fd7ae6faf13aa64eb8588070856ffac81d89488",
+ "answer": "{\"regras\":[{\"tipo\":\"prazo_minimo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_limitado_previa_qualificacao\",\"fontes\":[{\"texto\":\"Nos concursos limitados\",\"de\":\"eu-2004-18:art38.3.b\"}]}],\"params\":{\"minimum_days\":40,\"deadline_field\":\"prazo_propostas_dias\",\"counted_from\":\"data_envio_convite\",\"usual_days\":null},\"fontes\":{\"minimum_days\":[{\"texto\":\"o prazo mínimo para recepção das propostas é de 40 dias\",\"de\":\"eu-2004-18:art38.3.b\"}],\"deadline_field\":[{\"texto\":\"recepção das propostas\",\"de\":\"eu-2004-18:art38.3.b\"}],\"counted_from\":[{\"texto\":\"a contar da data de envio do convite\",\"de\":\"eu-2004-18:art38.3.b\"}],\"usual_days\":null}}],\"nao_tipavel\":null}"
+}
