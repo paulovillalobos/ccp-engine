@@ -2373,3 +2373,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - db/run_engine.py 0.3: the counting rules (CCP and, by CCP art. 470.º n.º 1, CPA) and the holidays of CT art. 234.º in
   force; 500 procedures: 33 deadline verdicts regra_ausente (the counting), the concurso rules facto_ausente on
   publicado_joue (BASE does not say it; TED covers 43 661 procedures).
+
+## 2026-11-06 — D84: the engine in parallel; the DR notices' facts loaded; counting still unsettled
+- db/run_engine.py 0.4 (--workers): 4 000 procedures in 92 s with 4 workers (≈ 4 h for the 1.48 M on the Mac).
+- db/load_dr_history.py over E1b's 13 980 texts: 12 860 documents, 76 995 facts (66 347 new, 10 648 already stored),
+  17 conflitos. data_envio_anuncio and publicado_joue now held for 12 860 / 12 844 procedures (was 1 781).
+- Round 17 with the example in the 0.6 prompt (first answers kept as *.attempt1.json): leitor:b 5/5 valid; leitor:a18
+  «não tipável» ×5; leitor:a (base AMALIA) 0/5 valid (conditions the text does not state). Spend ≈ USD 0.20.

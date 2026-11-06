@@ -3163,8 +3163,9 @@
       "versao": 11,
       "code": "tools/read_rules_v3.py",
       "hash": "265aae35d2aed5cfb48e29cde89c360d18e61daf286445d42a6fbd636f42b987",
-      "retired": false,
-      "nota": "D83: protocol 0.6; todos may quote words of deadlines in general"
+      "retired": true,
+      "nota": "D83: protocol 0.6; todos may quote words of deadlines in general",
+      "retired_at": "2026-11-06T11:36:13Z"
     },
     {
       "id": "ferramenta:make-fixtures@7",
@@ -3177,6 +3178,18 @@
       "hash": "739615bd5a93cd19d7e2853dff90c5a8e860404466d5e45dcabbba0c64d12459",
       "retired": false,
       "nota": "D82–D83: prazo_maximo and contagem_prazo fixtures"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@12",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 12,
+      "code": "tools/read_rules_v3.py",
+      "hash": "2800c9b7447897c12a805d29b51fc69d0c7c6128fc6611fd881ddecbed5121dd",
+      "retired": false,
+      "nota": "D83: the 0.6 prompt shows a contagem_prazo example"
     }
   ]
 }

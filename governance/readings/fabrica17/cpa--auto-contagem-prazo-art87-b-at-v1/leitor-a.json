@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T11:28:35Z",
+ "sha256": "217aafed73b06188c37772e70b99b91b340c33d249fb15c71e387e17f4b41f0d",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":[\"concurso_publico\",\"ajuste_direto\",\"consulta_previa_especial\",\"consulta_previa\",\"concurso_aberto\",\"concurso_limitado_previa_qualificacao\",\"procedimento_negociacao\",\"dialogo_concorrencial\",\"parceria_inovacao\",\"concurso_concecao\",\"concurso_ideias\",\"concurso_aberto\",\"procedimento_concorrencial_negociacao\",\"procedimento_negociacao_com_concurso\"],\"fontes\":[{\"texto\":\"À contagem dos prazos são aplicáveis as seguintes regras\",\"de\":\"cpa:art87\"}]},{\"field\":\"urgencia_fundamentada\",\"op\":\"eq\",\"value\":false,\"fontes\":[{\"texto\":\"Não se inclui na contagem o dia em que ocorra o evento a partir do qual o prazo começa a correr\",\"de\":\"cpa:art87.b\"}]}],\"params\":{\"deadline_field\":\"todos\",\"aspecto\":\"primeiro_dia\",\"valor\":\"nao_conta\"},\"fontes\":{\"aspecto\":[{\"texto\":\"Não se inclui na contagem o dia\",\"de\":\"cpa:art87.b\"}],\"deadline_field\":[{\"texto\":\"prazo\",\"de\":\"cpa:art87.b\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

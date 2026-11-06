@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T11:28:35Z",
+ "sha256": "4574f64ad1c0ca85ef70b519ae4229d648e12d529a34bcdabda04115ae597f4d",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"concurso público urgente\",\"de\":\"ccp:art470.2\"}]},{\"field\":\"tipo_procedimento\",\"op\":\"in\",\"value\":\"concurso_publico\",\"fontes\":[{\"texto\":\"Ao prazo para a apresentação das propostas no concurso público urgente não é aplicável o disposto na alínea b) do artigo 87.º do Código do Procedimento Administrativo\",\"de\":\"ccp:art470.2\"}]}],\"params\":{\"deadline_field\":\"prazo_propostas_dias\",\"aspecto\":\"fins_de_semana\",\"valor\":\"continuo\"},\"fontes\":{\"aspecto\":[{\"texto\":\"contratos\",\"de\":\"ccp:art470\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.2\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -658,7 +658,8 @@ STATIC_05 = STATIC
 for _a, _b in _05:
     assert STATIC_05.count(_a) == 1, _a
     STATIC_05 = STATIC_05.replace(_a, _b)
-# 0.6 (D83): the contagem_prazo type
+# 0.6 (D83): the contagem_prazo type, with an example of its own
+EXAMPLE_06 = {"regras": [{"tipo": "contagem_prazo", "condicoes": [], "params": {"deadline_field": "prazo_propostas_dias", "aspecto": "fins_de_semana", "valor": "continuo"}, "fontes": {"aspecto": [{"texto": "são contínuos", "de": "exemplo:art901.2"}], "deadline_field": [{"texto": "apresentação das propostas", "de": "exemplo:art901.2"}]}}, {"tipo": "contagem_prazo", "condicoes": [], "params": {"deadline_field": "todos", "aspecto": "primeiro_dia", "valor": "nao_conta"}, "fontes": {"aspecto": [{"texto": "Não se inclui na contagem o dia", "de": "exemplo:art901.1"}], "deadline_field": None}}], "nao_tipavel": None}
 _06 = [("O motor dá «não cumpre» a um procedimento que fixe mais.",
         "O motor dá «não cumpre» a um procedimento que fixe mais.\n- contagem_prazo: «quando todas as condições se verificam, na contagem do prazo <deadline_field> "
         "(todos: de todos os prazos de que a passagem fala), <aspecto> é <valor>». Aspetos e valores: primeiro_dia — nao_conta (o dia do evento a partir do qual o "
@@ -668,7 +669,15 @@ _06 = [("O motor dá «não cumpre» a um procedimento que fixe mais.",
        ("sem_vocabulario — a regra precisa de um facto",
         "nao_e_contagem — a passagem não diz como se contam os dias de um prazo; sem_vocabulario — a regra precisa de um facto"),
        ('"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | sem_vocabulario | texto_em_falta"',
-        '"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | nao_e_contagem | sem_vocabulario | texto_em_falta"')]
+        '"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | nao_e_contagem | sem_vocabulario | texto_em_falta"'),
+       ("field, comparator e value, no limiar.",
+        "field, comparator e value, no limiar; aspecto e deadline_field, na contagem_prazo (com todos, deadline_field não tem fonte, ou tem as palavras que falam dos prazos em geral)."),
+       ("Resposta: {EXAMPLE}",
+        "Resposta: {EXAMPLE}\n\nOutro exemplo, de contagem_prazo (artigo inventado):\n[exemplo:art901] Artigo 901.º — Contagem dos prazos\n"
+        "[exemplo:art901.1] 1 - Não se inclui na contagem o dia em que ocorra o evento a partir do qual o prazo começa a correr.\n"
+        "[exemplo:art901.2] 2 - Os prazos para a apresentação das propostas são contínuos.\n"
+        "Pergunta sobre exemplo:art901.2 → uma regra (a do n.º 2); sobre exemplo:art901.1 → a regra do n.º 1, deadline_field todos. As duas juntas:\n"
+        "Resposta: " + json.dumps(EXAMPLE_06, ensure_ascii=False))]
 STATIC_06 = STATIC_05
 for _a, _b in _06:
     assert STATIC_06.count(_a) == 1, _a

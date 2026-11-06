@@ -39,7 +39,7 @@ from engine import manifest as manifest_mod  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine.governance import Log, head  # noqa: E402
 
-VERSION = "ccp-run-engine-0.3"
+VERSION = "ccp-run-engine-0.4"
 START = "data_inicio_procedimento"
 BOUNDS = ("data_envio_anuncio", "data_publicacao_anuncio", "data_envio_joue")  # the procedure's own dated acts
 CHILD_BOUNDS = ("data_celebracao_contrato", "data_publicacao_contrato")  # its contracts'
@@ -164,57 +164,141 @@ def settled_window(log):
     return int(ev["payload"]["days"])
 
 
+def load_rules():
+    current = {}
+    for r in serve.STORE.objects["regra"]:
+        if r["id"] not in current or r["revision"] > current[r["id"]]["revision"]:
+            current[r["id"]] = r
+    return sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and
+                   (r["norma"] == "norma:ccp" or (r["type"] == "contagem_prazo" and r["norma"] == "norma:cpa"))),  # D83: CPA art. 87.º counts the CCP's deadlines (CCP art. 470.º n.º 1)
+                  key=lambda r: r["id"])
+
+
+_W = {}
+
+
+def _init(write):
+    """A worker process: the store, the rules and a connection, once."""
+    serve.load(("law", "rules", "governance"))
+    _W.update(rules=load_rules(), conn=pg.connect(), write=write, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+
+
+def _chunk(job):
+    """D84: one chunk of procedure ids → (tallies per window, written counts)."""
+    units, windows = job
+    conn, rules = _W["conn"], _W["rules"]
+    facts, dates = facts_of(conn, units), child_dates(conn, units)
+    out = {w: (collections.Counter(), collections.Counter(), collections.Counter()) for w in windows}
+    written = collections.Counter()
+    for w in windows:
+        tally, why_none, how = out[w]
+        page = []
+        for u in units:
+            verdicts, why, h = evaluate_unit(u, facts.get(u, []), dates.get(u, []), rules, w, _W["now"])
+            if why:
+                why_none[why] += 1
+            if h:
+                how[h] += 1
+            for v in verdicts:
+                tally[(v["rule"]["id"], v["result"], v["reason"])] += 1
+            page.extend(verdicts)
+        if _W["write"] and page:
+            for k, n in pg.load_objects(conn, {"veredicto": page}).get("veredicto", {}).items():
+                written[k] += n
+    return out, written, len(units)
+
+
+def load_rules():
+    current = {}
+    for r in serve.STORE.objects["regra"]:
+        if r["id"] not in current or r["revision"] > current[r["id"]]["revision"]:
+            current[r["id"]] = r
+    return sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and
+                   (r["norma"] == "norma:ccp" or (r["type"] == "contagem_prazo" and r["norma"] == "norma:cpa"))),  # D83: CPA art. 87.º counts the CCP's deadlines (CCP art. 470.º n.º 1)
+                  key=lambda r: r["id"])
+
+
+_W = {}
+
+
+def _init(write):
+    """D84: a worker process loads the store, the rules and a connection once."""
+    serve.load(("law", "rules", "governance"))
+    _W.update(rules=load_rules(), conn=pg.connect(), write=write, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+
+
+def _chunk(job):
+    """D84: one chunk of procedure ids → (tallies per window, written counts, how many)."""
+    units, windows = job
+    conn, rules = _W["conn"], _W["rules"]
+    facts, dates = facts_of(conn, units), child_dates(conn, units)
+    out = {w: (collections.Counter(), collections.Counter(), collections.Counter()) for w in windows}
+    written = collections.Counter()
+    for w in windows:
+        tally, why_none, how = out[w]
+        page = []
+        for u in units:
+            verdicts, why, h = evaluate_unit(u, facts.get(u, []), dates.get(u, []), rules, w, _W["now"])
+            if why:
+                why_none[why] += 1
+            if h:
+                how[h] += 1
+            for v in verdicts:
+                tally[(v["rule"]["id"], v["result"], v["reason"])] += 1
+            page.extend(verdicts)
+        if _W["write"] and page:
+            for k, n in pg.load_objects(conn, {"veredicto": page}).get("veredicto", {}).items():
+                written[k] += n
+    return out, written, len(units)
+
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["report", "write"])
     ap.add_argument("--limit", type=int, default=1000); ap.add_argument("--after", default="")
     ap.add_argument("--window", type=int, nargs="*", default=[])
+    ap.add_argument("--workers", type=int, default=1, help="D84: processes, each with its own store and connection")
     a = ap.parse_args()
     serve.load(("law", "rules", "governance"))
     if a.cmd == "write":
         decided = settled_window(Log(ROOT / "governance"))
         if decided is None or a.window != [decided]:
             raise SystemExit(f"write needs --window {decided if decided is not None else 'N'}: {WINDOW_RULE} settled in the log with those days")
-    current = {}
-    for r in serve.STORE.objects["regra"]:
-        if r["id"] not in current or r["revision"] > current[r["id"]]["revision"]:
-            current[r["id"]] = r
-    rules = sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and
-                    (r["norma"] == "norma:ccp" or (r["type"] == "contagem_prazo" and r["norma"] == "norma:cpa"))),  # D83: CPA art. 87.º counts the CCP's deadlines (CCP art. 470.º n.º 1)
-                   key=lambda r: r["id"])
-    now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    conn = pg.connect()
+    rules = load_rules()
     windows = a.window or [None]
+    conn = pg.connect()
+    ids, after = [], a.after
+    while len(ids) < a.limit:
+        page = procedures(conn, after, min(50000, a.limit - len(ids)))
+        if not page:
+            break
+        ids += page
+        after = page[-1]
+    jobs = [(ids[i:i + PAGE], windows) for i in range(0, len(ids), PAGE)]
     tally = {w: collections.Counter() for w in windows}
     why_none = {w: collections.Counter() for w in windows}
     how = {w: collections.Counter() for w in windows}
-    written, done, after = collections.Counter(), 0, a.after
-    while done < a.limit:
-        units = procedures(conn, after, min(PAGE, a.limit - done))
-        if not units:
-            break
-        facts, dates = facts_of(conn, units), child_dates(conn, units)
-        for w in windows:
-            page = []
-            for u in units:
-                verdicts, why, h = evaluate_unit(u, facts.get(u, []), dates.get(u, []), rules, w, now)
-                if why:
-                    why_none[w][why] += 1
-                if h:
-                    how[w][h] += 1
-                for v in verdicts:
-                    tally[w][(v["rule"]["id"], v["result"], v["reason"])] += 1
-                page.extend(verdicts)
-            if a.cmd == "write" and page:
-                for k, n in pg.load_objects(conn, {"veredicto": page}).get("veredicto", {}).items():
-                    written[k] += n
-        done += len(units)
-        after = units[-1]
+    written, done, t0 = collections.Counter(), 0, time.time()
+    if a.workers > 1:
+        import multiprocessing as mp
+        pool = mp.get_context("spawn").Pool(a.workers, initializer=_init, initargs=(a.cmd == "write",))
+        results = pool.imap_unordered(_chunk, jobs)
+    else:
+        _init(a.cmd == "write")
+        results = map(_chunk, jobs)
+    for out, wr, n in results:
+        for w, (tl, wn, hw) in out.items():
+            tally[w].update(tl); why_none[w].update(wn); how[w].update(hw)
+        written.update(wr)
+        done += n
+        if done % 20000 < PAGE:
+            print(f"... {done}/{len(ids)} procedures, {time.time() - t0:.0f} s", file=sys.stderr, flush=True)
     for w in windows:
         t = tally[w]
-        print(json.dumps({"tool": VERSION, "window_days": w, "procedures": done, "last": after, "rules": len(rules),
+        print(json.dumps({"tool": VERSION, "window_days": w, "procedures": done, "last": ids[-1] if ids else a.after, "rules": len(rules),
                           "without_verdicts": dict(why_none[w]), "start_from": dict(how[w]), "verdicts": sum(t.values()),
                           "by_result": dict(collections.Counter(r for (_, r, _) in t.elements())),
                           "by_reason": dict(collections.Counter(x for (_, _, x) in t.elements() if x)),
+                          "seconds": round(time.time() - t0),
                           **({"written": dict(written)} if a.cmd == "write" else {})}, ensure_ascii=False, indent=1))
         for (rid, res, why), n in sorted(t.items(), key=lambda x: -x[1])[:12]:
             print(f"{n:7d}  {res:13s} {why or '':15s} {rid}")

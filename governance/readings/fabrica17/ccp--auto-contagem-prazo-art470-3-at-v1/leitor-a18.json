@@ -1,6 +1,6 @@
 {
- "at": "2026-11-06T01:02:06Z",
- "sha256": "babb152caac48e6adfa6a35cf8ddec2eb6fbbf2338e0da48db15cac44f9eab87",
- "answer": "{\"regras\":[],\"nao_tipavel\":{\"motivo\":\"nao_e_contagem\",\"fontes\":[{\"texto\":\"Os prazos fixados para a apresentação das propostas, das candidaturas e das soluções são contínuos, não se suspendendo nos sábados, domingos e feriados.\",\"de\":\"ccp:art470.3\"}],\"falta\":\"A passagem não diz como se contam os dias de um prazo, mas fixa que os prazos não se suspendem nos feriados.\"}}",
+ "at": "2026-11-06T11:22:05Z",
+ "sha256": "6d958c43c565a957ef2b676b515f23cd6d3ec65339bd597d9a7949d1f4dedde7",
+ "answer": "{\"regras\":[],\"nao_tipavel\":{\"motivo\":\"nao_e_contagem\",\"fontes\":[{\"texto\":\"Os prazos fixados para a apresentação das propostas, das candidaturas e das soluções são contínuos\",\"de\":\"ccp:art470.3\"}],\"falta\":\"A passagem diz que os prazos não se suspendem nos feriados e sábados, e são contínuos, não fixando como se contam os dias.\"}}",
  "quotes": "text"
 }

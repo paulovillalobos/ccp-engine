@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-06T00:59:48Z",
+ "sha256": "2f252318bff16e57d8af16e66b5bf1d01e456ff39300749a66733eb96f370ea3",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"prazo_propostas_dias\",\"aspecto\":\"fins_de_semana\",\"valor\":\"continuo\"},\"fontes\":{\"aspecto\":[{\"texto\":\"são contínuos\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.3\"}]}},{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"prazo_candidaturas_dias\",\"aspecto\":\"fins_de_semana\",\"valor\":\"continuo\"},\"fontes\":{\"aspecto\":[{\"texto\":\"são contínuos\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"candidaturas\",\"de\":\"ccp:art470.3\"}]}},{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"prazo_solucoes_dias\",\"aspecto\":\"fins_de_semana\",\"valor\":\"continuo\"},\"fontes\":{\"aspecto\":[{\"texto\":\"são contínuos\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"soluções\",\"de\":\"ccp:art470.3\"}]}}],\"nao_tipavel\":null}"
+}

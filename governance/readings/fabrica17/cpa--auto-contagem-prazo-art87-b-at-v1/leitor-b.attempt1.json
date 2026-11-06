@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-06T00:59:59Z",
+ "sha256": "ac2d3e7743705911f5e08e4f3b116019a7b3d9aca3c2479d4619419e5c036e8e",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"todos\",\"aspecto\":\"primeiro_dia\",\"valor\":\"nao_conta\"},\"fontes\":{\"aspecto\":[{\"texto\":\"Não se inclui na contagem o dia em que ocorra o evento a partir do qual o prazo começa a correr\",\"de\":\"cpa:art87.b\"}],\"deadline_field\":[{\"texto\":\"À contagem dos prazos são aplicáveis as seguintes regras\",\"de\":\"cpa:art87\"}]}}],\"nao_tipavel\":null}"
+}

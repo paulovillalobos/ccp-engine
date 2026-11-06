@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-06T00:59:36Z",
+ "sha256": "d47f97cbf5a69529640a46d2b677b50a082320da74d2847da13c36a72c20a8d2",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico_urgente\",\"fontes\":[{\"texto\":\"concurso público urgente\",\"de\":\"ccp:art470.2\"}]}],\"params\":{\"deadline_field\":\"prazo_propostas_dias\",\"aspecto\":\"primeiro_dia\",\"valor\":\"conta\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não é aplicável o disposto na alínea b)\",\"de\":\"ccp:art470.2\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.2\"}]}}],\"nao_tipavel\":null}"
+}
