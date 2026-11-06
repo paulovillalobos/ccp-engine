@@ -19,7 +19,8 @@ engine refuses a rule whose type is not here.
 from engine.canon import content_hash
 
 VERSION = "ccp-rules-0.1"
-RULE_TYPES = ("seletor_regime", "jurisdicao", "limiar", "procedimento_admissivel", "prazo_minimo", "prazo_maximo", "conteudo_obrigatorio", "proibicao", "agregada")
+RULE_TYPES = ("seletor_regime", "jurisdicao", "limiar", "procedimento_admissivel", "prazo_minimo", "prazo_maximo", "conteudo_obrigatorio", "proibicao", "agregada",
+              "contagem_prazo")
 REQUIRED_PARAMS = {
     "limiar": ("threshold",),
     "procedimento_admissivel": ("procedures",),
@@ -30,9 +31,11 @@ REQUIRED_PARAMS = {
     "agregada": ("window", "group_key", "aggregate", "completeness_threshold"),
     "seletor_regime": ("selects_by", "regimes"),
     "jurisdicao": ("territory", "predicate", "effect"),
+    "contagem_prazo": ("deadline_field", "aspecto", "valor"),  # D83: how a deadline's days are counted; never a verdict of its own
 }
-STAGES = ("seletor", "jurisdicao", "simples", "agregada")
-STAGE_OF = {"seletor_regime": "seletor", "jurisdicao": "jurisdicao", "agregada": "agregada"}
+STAGES = ("seletor", "jurisdicao", "simples", "agregada", "contagem")
+STAGE_OF = {"seletor_regime": "seletor", "jurisdicao": "jurisdicao", "agregada": "agregada", "contagem_prazo": "contagem"}
+ASPECTS = ("primeiro_dia", "fins_de_semana", "termo")
 MISSING = object()
 
 
@@ -85,6 +88,36 @@ def holds(condition, facts) -> "bool | None":
         return None
 
 
+def counting_for(field, rules, facts):
+    """D83: how the days of `field` are counted, from the contagem_prazo rules in force whose conditions hold: per aspect,
+    the rule naming the field beats one for todos, and more conditions beat fewer; two rules of the same weight with
+    different values, or an aspect no rule gives, leave the count undecided. Returns (counting, why): counting is
+    {"id", "first_day_counts", "continuous", "shift_to_working_day"} or None, why the aspect that blocks it."""
+    best = {}
+    for r in rules:
+        p = r["params"]
+        if p["deadline_field"] not in (field, "todos"):
+            continue
+        ok, _ = applies(r, facts)
+        if ok is not True:
+            continue
+        weight = (p["deadline_field"] == field, len(r.get("conditions", [])))
+        cur = best.get(p["aspecto"])
+        if cur is None or weight > cur[0]:
+            best[p["aspecto"]] = (weight, p["valor"], [r["id"]])
+        elif weight == cur[0] and p["valor"] != cur[1]:
+            best[p["aspecto"]] = (weight, None, cur[2] + [r["id"]])
+        elif weight == cur[0]:
+            cur[2].append(r["id"])
+    for a in ASPECTS:
+        if a not in best:
+            return None, f"no settled counting rule gives {a} for {field}"
+        if best[a][1] is None:
+            return None, f"counting rules disagree on {a} for {field}: {best[a][2]}"
+    return {"id": ", ".join(sorted({i for a in ASPECTS for i in best[a][2]})), "first_day_counts": best["primeiro_dia"][1] == "conta",
+            "continuous": best["fins_de_semana"][1] == "continuo", "shift_to_working_day": best["termo"][1] == "transfere"}, None
+
+
 class Conflict:
     """Marker for a field whose facts disagree without a precedence rule (conflito.resolution nao_avaliado)."""
     def __init__(self, conflito_id):
@@ -92,13 +125,17 @@ class Conflict:
 
 
 def applies(rule, facts) -> tuple:
+    """(True, None) when every condition holds; (False, None) when one known fact fails a condition, whatever the others
+    lack (D82: a concurso_publico rule does not apply to an ajuste_direto that lacks publicado_joue); else (None, the
+    first condition field without a fact)."""
+    missing = None
     for c in rule.get("conditions", []):
         h = holds(c, facts)
         if h is None:
-            return None, c["field"]
-        if not h:
+            missing = missing or c["field"]
+        elif not h:
             return False, None
-    return True, None
+    return (None, missing) if missing else (True, None)
 
 
 def fields_of(rule) -> set:

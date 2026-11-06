@@ -37,6 +37,9 @@ for _k, _ws in VOC["since_0_5"]["deadline_phrases"].items():
     NEW_05["phrases"] |= set(_ws)
 VOC5["nao_tipavel_motivos"].update(VOC["since_0_5"]["nao_tipavel_motivos"])
 NEW_05["values"] |= set(VOC["since_0_5"]["nao_tipavel_motivos"])
+VOC6 = json.loads(json.dumps(VOC5))  # D83: 0.6 adds the contagem_prazo reason and the counting phrases (VOC["since_0_6"])
+VOC6["nao_tipavel_motivos"].update(VOC["since_0_6"]["nao_tipavel_motivos"])
+NEW_06 = set(VOC["since_0_6"]["nao_tipavel_motivos"])
 _STATE = {"voc": VOC}
 
 
@@ -47,7 +50,7 @@ def V():
 
 class _using:
     def __init__(self, version):
-        self.voc = VOC5 if minor(version) >= 5 else VOC
+        self.voc = VOC6 if minor(version) >= 6 else VOC5 if minor(version) >= 5 else VOC
 
     def __enter__(self):
         self.prev, _STATE["voc"] = _STATE["voc"], self.voc
@@ -67,8 +70,10 @@ VERSION = "ccp-read-rules-v3-0.4"  # 0.2: a referred number is shown whole (with
 V03 = "ccp-read-rules-v3-0.3"
 V04 = VERSION  # what a caller that names no version gets: every generator and measure written before 0.5 (D71)
 V05 = "ccp-read-rules-v3-0.5"  # D71: a round that wants 0.5 names it (round 12)
+V06 = "ccp-read-rules-v3-0.6"  # D83: contagem_prazo; references to another act by its name
 PRAZOS = ("prazo_minimo", "prazo_maximo")
 DAYS_KEY = {"prazo_minimo": "minimum_days", "prazo_maximo": "maximum_days"}
+ASPECTS = {"primeiro_dia": ["nao_conta", "conta"], "fins_de_semana": ["suspende", "continuo"], "termo": ["transfere"]}  # D83
 
 
 def minor(version):
@@ -239,6 +244,8 @@ class Law:
             if o["id"] not in self.p or o["revision"] > self.p[o["id"]]["revision"]:
                 self.p[o["id"]] = o
         self.titles = {o["id"]: o["title"] for o in store.objects.get("norma", [])}  # 0.5: an act other than the CCP is named by its own title
+        # 0.6 (D83): a code another act refers to by name («artigo 87.º do Código do Procedimento Administrativo») -> its short
+        self.code_names = {o["title"].split(" - ")[0]: o["short"] for o in store.objects.get("norma", []) if o["title"].startswith("Código")}
         self.kids = {}
         for o in self.p.values():
             self.kids.setdefault(o.get("parent"), []).append(o["id"])
@@ -337,7 +344,19 @@ def art_pid(token, ns="ccp"):
     return f"{ns}:art{m.group(1)}" + (f"-{m.group(2).lower()}" if m.group(2) else "")
 
 
-def references(law, pid, text, date):
+def act_named_after(law, text, end, last):
+    """0.6 (D83): the act an article reference names right after it («… do Código do Procedimento Administrativo», «… do
+    mesmo Código»), or None (the passage's own act)."""
+    names = sorted(getattr(law, "code_names", {}), key=len, reverse=True)
+    if not names:
+        return None
+    m = re.match(r"\s*,?\s*d[oa] (" + "|".join(map(re.escape, names)) + r"|mesmo Código)", text[end:end + 120])
+    if not m:
+        return None
+    return last.get("code") if m.group(1) == "mesmo Código" else law.code_names[m.group(1)]
+
+
+def references(law, pid, text, date, version=None):
     """(id, 'texto' | 'epigrafe') the text refers to: «n.º 3 do artigo 167.º», «alíneas b) ou c) do n.º 3 do artigo 474.º»,
     «n.º 5 do mesmo artigo», «n.º 2 do artigo anterior», «o número anterior», «os números anteriores», «a alínea
     anterior»; a whole article («artigo 131.º», «artigos anteriores») gives its heading."""
@@ -345,6 +364,16 @@ def references(law, pid, text, date):
     ns = pid.split(":", 1)[0]
     out, used, last = [], set(), None
     arts = list(ARTM.finditer(text))
+    cross = minor(version) >= 6
+    named = {}
+
+    def ns_of(a):  # 0.6 (D83): the act an article match names, else the passage's own
+        if not cross:
+            return ns
+        code = act_named_after(law, text, a.end(), named)
+        if code:
+            named["code"] = code
+        return code or ns
 
     def article_for(m_end):
         nonlocal last
@@ -359,7 +388,7 @@ def references(law, pid, text, date):
                     seq = law.arts(aid)
                     i = seq.index(aid) if aid in seq else 0
                     return seq[i - 1] if i else None
-                last = art_pid(re.findall(r"\d+\.º(?:-[A-Z])?", a.group(1))[0], ns)
+                last = art_pid(re.findall(r"\d+\.º(?:-[A-Z])?", a.group(1))[0], ns_of(a))
                 return last
         return aid
 
@@ -392,8 +421,9 @@ def references(law, pid, text, date):
             if i:
                 out.append((seq[i - 1], "epigrafe", False))
         elif a.group(1):
+            act = ns_of(a)
             for tok in re.findall(r"\d+\.º(?:-[A-Z])?", a.group(1)):
-                x = art_pid(tok, ns)
+                x = art_pid(tok, act)
                 if x != aid and law.text(x, date):
                     out.append((x, "epigrafe", False))
     num = pid if law.kind(pid) == "numero" else (law.parent(pid) if law.kind(pid) in ("alinea", "subalinea") else None)
@@ -428,7 +458,7 @@ def references(law, pid, text, date):
 
 
 # ---- context ---------------------------------------------------------------------------------------------------------
-def context(law, alvo, date, depth=3):
+def context(law, alvo, date, depth=3, version=None):
     """What the reader sees and what the checker may accept as a source. Roles: alvo, proemio (the number or alínea the
     target belongs to), remissao (referred to by the target, its proémio or a referred passage), remissao_epigrafe,
     epigrafe (the article's heading), titulo (chapter, section…), vizinho (the article's other passages)."""
@@ -475,7 +505,7 @@ def context(law, alvo, date, depth=3):
         src, d = frontier.pop(0)
         if d >= depth:
             continue
-        for target, kind, is_base in references(law, src, allowed.get(src) or law.own(src, date), date):
+        for target, kind, is_base in references(law, src, allowed.get(src) or law.own(src, date), date, version):
             if d > 0 and not is_base:
                 continue
             if target in roles and roles[target] not in ("vizinho",):
@@ -554,6 +584,9 @@ def _vocab_text(version=VERSION):
         "valor_estimado, preco_base, preco_contratual: euros, como condição de um prazo que muda com o valor do contrato (L10).",
         "Operadores: eq, ne (um valor); in, not_in (uma lista); lt, le, gt, ge (números e datas).",
         "prazo_minimo — params: minimum_days (inteiro), deadline_field, counted_from, usual_days (inteiro ou null).",
+        *(["contagem_prazo — params: deadline_field (ou todos), aspecto (" + ", ".join(ASPECTS) + "), valor (" +
+           "; ".join(f"{k}: {', '.join(vs)}" for k, vs in ASPECTS.items()) + "). Palavras da lei: " +
+           "; ".join(f"{v} («{ws[0]}»)" for a in V()["since_0_6"]["counting"].values() for v, ws in a.items()) + "."] if minor(version) >= 6 else []),
         *(["prazo_maximo — params: maximum_days (inteiro), deadline_field, counted_from."] if minor(version) >= 5 else []),
         "deadline_field: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["deadline_fields"].items()) + ".",
         "counted_from: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["counted_from"].items()) + ", nao_indicado (L9).",
@@ -625,6 +658,21 @@ STATIC_05 = STATIC
 for _a, _b in _05:
     assert STATIC_05.count(_a) == 1, _a
     STATIC_05 = STATIC_05.replace(_a, _b)
+# 0.6 (D83): the contagem_prazo type
+_06 = [("O motor dá «não cumpre» a um procedimento que fixe mais.",
+        "O motor dá «não cumpre» a um procedimento que fixe mais.\n- contagem_prazo: «quando todas as condições se verificam, na contagem do prazo <deadline_field> "
+        "(todos: de todos os prazos de que a passagem fala), <aspecto> é <valor>». Aspetos e valores: primeiro_dia — nao_conta (o dia do evento a partir do qual o "
+        "prazo corre não entra na contagem) ou conta; fins_de_semana — suspende (o prazo suspende-se nos sábados, domingos e feriados) ou continuo (não se "
+        "suspende); termo — transfere (o termo que caia em dia em que o serviço não está aberto passa para o primeiro dia útil seguinte). Uma regra por aspeto "
+        "e por prazo (L5). O motor usa estas regras para contar os dias de um prazo dado por duas datas."),
+       ("sem_vocabulario — a regra precisa de um facto",
+        "nao_e_contagem — a passagem não diz como se contam os dias de um prazo; sem_vocabulario — a regra precisa de um facto"),
+       ('"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | sem_vocabulario | texto_em_falta"',
+        '"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | nao_e_contagem | sem_vocabulario | texto_em_falta"')]
+STATIC_06 = STATIC_05
+for _a, _b in _06:
+    assert STATIC_06.count(_a) == 1, _a
+    STATIC_06 = STATIC_06.replace(_a, _b)
 
 EXAMPLE = {"regras": [{"tipo": "prazo_minimo", "condicoes": [
     {"field": "tipo_procedimento", "op": "eq", "value": "concurso_publico", "fontes": [{"texto": "Concurso público", "de": "exemplo:cap-ii"}]},
@@ -649,7 +697,7 @@ def render(ctx, rtype, version=VERSION):
 
 def _render(ctx, rtype, version=VERSION):
     mark = {"alvo": "   ◀ PASSAGEM-ALVO", "remissao": "   ◀ remetida", "proemio": "   ◀ proémio da passagem-alvo"}
-    lines = [(STATIC_05 if minor(version) >= 5 else STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in V()["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
+    lines = [(STATIC_06 if minor(version) >= 6 else STATIC_05 if minor(version) >= 5 else STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in V()["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
              f"O TEXTO (versão em vigor a {ctx['date']})",
              "Onde está: " + (" > ".join(f"[{i}] {t}" for i, t in ctx["place"]) or "—"),
              f"[{ctx['article']}] {ctx['label']} — {ctx['heading']}"]
@@ -695,6 +743,14 @@ def _schema(ctx, rtype, version=VERSION):
             "required": ["minimum_days", "deadline_field", "counted_from", "usual_days"], "additionalProperties": False}
         fontes = {"type": "object", "properties": {"minimum_days": src, "deadline_field": src, "counted_from": nullable_src, "usual_days": nullable_src},
                   "required": ["minimum_days", "deadline_field", "counted_from", "usual_days"], "additionalProperties": False}
+    elif rtype == "contagem_prazo":  # 0.6 (D83)
+        params = {"type": "object", "properties": {
+            "deadline_field": {"type": "string", "enum": list(V()["deadline_fields"]) + ["todos"]},
+            "aspecto": {"type": "string", "enum": list(ASPECTS)},
+            "valor": {"type": "string", "enum": sorted({v for vs in ASPECTS.values() for v in vs})}},
+            "required": ["deadline_field", "aspecto", "valor"], "additionalProperties": False}
+        fontes = {"type": "object", "properties": {"aspecto": src, "deadline_field": nullable_src},
+                  "required": ["aspecto", "deadline_field"], "additionalProperties": False}
     elif rtype == "prazo_maximo":  # 0.5 (D71)
         params = {"type": "object", "properties": {
             "maximum_days": {"type": "integer", "minimum": 1},
@@ -823,7 +879,24 @@ def _check(reading, ctx, rtype, version=VERSION):
                 if not any(contains(t, ph) for ph in spec["phrases"]) or v not in euros_in(t) or op not in comparators_in(t):
                     errs.append(f"{cw}: as fontes não dizem {f} {op} {v} (L10)")
         p, pf = r.get("params", {}), r.get("fontes", {})
-        if rtype in PRAZOS:
+        if rtype == "contagem_prazo":  # 0.6 (D83): the aspect's value in the law's own words; the deadline named, or todos without a source
+            a, val = p.get("aspecto"), p.get("valor")
+            if val not in ASPECTS.get(a, []):
+                errs.append(f"{w}: {a} não tem o valor {val}")
+            t = _sources(ctx, pf.get("aspecto"), PARAM_ROLES | {"remissao_epigrafe"}, f"{w}, aspecto", errs)
+            if a in ASPECTS and not any(contains(t, ph) for ph in V()["since_0_6"]["counting"].get(a, {}).get(val, [])):
+                errs.append(f"{w}: as fontes de aspecto não dizem {a} {val} (palavras da lei no vocabulário)")
+            if p.get("deadline_field") == "todos":  # every deadline the passage speaks of: no source, or words of deadlines in general
+                if pf.get("deadline_field"):
+                    t = _sources(ctx, pf.get("deadline_field"), PARAM_ROLES, f"{w}, deadline_field", errs)
+                    if _named(t, V()["deadline_fields"]) or not re.search(r"(?<!\w)prazos(?!\w)", norm(t)):
+                        errs.append(f"{w}: deadline_field todos e as fontes nomeiam um prazo ou não falam de prazos em geral")
+            else:
+                t = _sources(ctx, pf.get("deadline_field"), PARAM_ROLES, f"{w}, deadline_field", errs)
+                got = _named(t, V()["deadline_fields"])
+                if p.get("deadline_field") not in got:
+                    errs.append(f"{w}: deadline_field {p.get('deadline_field')} e as fontes dizem {sorted(got) or 'nada'} (L9)")
+        elif rtype in PRAZOS:
             dk = DAYS_KEY[rtype]
             t = _sources(ctx, pf.get(dk), PARAM_ROLES, f"{w}, {dk}", errs)
             nums = numbers_in(t)

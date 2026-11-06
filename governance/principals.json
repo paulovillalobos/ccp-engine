@@ -967,7 +967,8 @@
       "versao": 6,
       "code": "tools/make_fixtures.py",
       "hash": "5c1a2767a42a5051e0bd9614ec192f8e045f603063dca6b4b29d16fbd9818030",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-11-06T01:35:52Z"
     },
     {
       "id": "ferramenta:verify@22",
@@ -2890,8 +2891,9 @@
       "versao": 9,
       "code": "tools/read_rules_v3.py",
       "hash": "bad74ce1515742c6f6a8bef27e74b048ff31ef2e4643b3ff3d857f21405e6224",
-      "retired": false,
-      "nota": "D71: VOC stays 0.4 for every tool written before 0.5; VOC5 (the merged copy) is read inside a 0.5 call"
+      "retired": true,
+      "nota": "D71: VOC stays 0.4 for every tool written before 0.5; VOC5 (the merged copy) is read inside a 0.5 call",
+      "retired_at": "2026-11-06T00:57:49Z"
     },
     {
       "id": "ferramenta:rule-factory@27",
@@ -3111,8 +3113,9 @@
       "versao": 32,
       "code": "tools/rule_factory.py",
       "hash": "f42ea5f8d1eb3218d437d96df42437da2ab5b802096c4552fe35a834c672592c",
-      "retired": false,
-      "nota": "D77: «não tipável» with any reason replicates (recheck-nt, exam concordancia_d77)"
+      "retired": true,
+      "nota": "D77: «não tipável» with any reason replicates (recheck-nt, exam concordancia_d77)",
+      "retired_at": "2026-11-06T00:57:48Z"
     },
     {
       "id": "ferramenta:verify@57",
@@ -3125,6 +3128,55 @@
       "hash": "ef346d8781a686a712983a50a5404f94f355d40dd2741d522ee2f0e85ca4ea3b",
       "retired": false,
       "nota": "D77: V3 accepts an uphold naming product_rule:nao-tipavel-qualquer-motivo"
+    },
+    {
+      "id": "ferramenta:rule-factory@33",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 33,
+      "code": "tools/rule_factory.py",
+      "hash": "f599802f7301436825913a4019a9b769c99d05868b1f7e3c0cd121aa63eced58",
+      "retired": false,
+      "nota": "D83: round 17 (contagem_prazo, protocol 0.6); context follows references to another act"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@10",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 10,
+      "code": "tools/read_rules_v3.py",
+      "hash": "60c95fb15e5e8a601065ff29730c2e9799c488f0388103e8a1782a89ec167269",
+      "retired": true,
+      "nota": "D83: protocol 0.6 (contagem_prazo; references to another act by name)",
+      "retired_at": "2026-11-06T01:00:49Z"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@11",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 11,
+      "code": "tools/read_rules_v3.py",
+      "hash": "265aae35d2aed5cfb48e29cde89c360d18e61daf286445d42a6fbd636f42b987",
+      "retired": false,
+      "nota": "D83: protocol 0.6; todos may quote words of deadlines in general"
+    },
+    {
+      "id": "ferramenta:make-fixtures@7",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 7,
+      "code": "tools/make_fixtures.py",
+      "hash": "739615bd5a93cd19d7e2853dff90c5a8e860404466d5e45dcabbba0c64d12459",
+      "retired": false,
+      "nota": "D82–D83: prazo_maximo and contagem_prazo fixtures"
     }
   ]
 }

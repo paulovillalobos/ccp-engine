@@ -85,8 +85,8 @@
     },
     "rule_type": {
       "type": "string",
-      "enum": ["limiar", "procedimento_admissivel", "prazo_minimo", "prazo_maximo", "conteudo_obrigatorio", "proibicao", "agregada", "seletor_regime", "jurisdicao"],
-      "description": "The eight rule types of ARQUITECTURA.md section 5."
+      "enum": ["limiar", "procedimento_admissivel", "prazo_minimo", "prazo_maximo", "conteudo_obrigatorio", "proibicao", "agregada", "seletor_regime", "jurisdicao", "contagem_prazo"],
+      "description": "The rule types of ARQUITECTURA.md section 5, prazo_maximo (D71) and contagem_prazo (D83)."
     },
     "assertion_state": {"type": "string", "enum": ["proposed", "ai_reviewed", "settled", "rejected", "stale"], "description": "Derived by replaying the governance log; stored copies are the replay, never the source."},
     "link_state": {"type": "string", "enum": ["proposed", "settled", "stale"]},

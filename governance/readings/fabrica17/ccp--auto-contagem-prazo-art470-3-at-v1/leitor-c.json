@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-06T01:46:11Z",
+ "sha256": "a87a199ecaa022279e7537ff03674103156db2af5c5388504d054bf561e9683f",
+ "answer": "{\"regras\": [{\"tipo\": \"contagem_prazo\", \"condicoes\": [], \"params\": {\"deadline_field\": \"prazo_propostas_dias\", \"aspecto\": \"fins_de_semana\", \"valor\": \"continuo\"}, \"fontes\": {\"aspecto\": [{\"texto\": \"Os prazos fixados para a apresentação das propostas, das candidaturas e das soluções\", \"de\": \"ccp:art470.3\"}], \"deadline_field\": [{\"texto\": \"Os prazos fixados para a apresentação das propostas, das candidaturas e das soluções\", \"de\": \"ccp:art470.3\"}]}}], \"nao_tipavel\": null}"
+}

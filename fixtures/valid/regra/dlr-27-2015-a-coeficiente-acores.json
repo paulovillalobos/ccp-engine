@@ -41,22 +41,22 @@
     {
       "principal": "leitor:a",
       "family": "A",
-      "at": "2026-10-24T19:15:00Z",
+      "at": "2026-10-24T19:19:00Z",
       "chosen_passages": [
         "dlr-27-2015-a:art3.1"
       ],
       "blind": false,
-      "evento": "evento:15"
+      "evento": "evento:19"
     },
     {
       "principal": "leitor:b",
       "family": "B",
-      "at": "2026-10-24T19:16:00Z",
+      "at": "2026-10-24T19:20:00Z",
       "chosen_passages": [
         "dlr-27-2015-a:art3.1"
       ],
       "blind": true,
-      "evento": "evento:16"
+      "evento": "evento:20"
     }
   ],
   "state": "settled"

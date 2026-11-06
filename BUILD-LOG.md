@@ -2351,3 +2351,25 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Found reading the law for D80's two readings: CCP art. 470.º (formation deadlines counted by CPA art. 87.º; the
   urgent tender's proposals deadline without its alínea b); n.º 3: proposals, applications and solutions continuous);
   CPA art. 87.º b) and f); CCP art. 36.º n.º 1 (the procedure starts with the decisão de contratar, a date no source holds).
+
+## 2026-11-06 — D82–D83: real verdicts, the start window, the counting rules
+- First real verdicts over Supabase (5 000 random procedures, window 0/90/365): the consulta prévia limit for obras gives
+  cumpre (e.g. proc:base:idproc-7163686, preco_base 55 000 < 150 000) and não cumpre (proc:base:idproc-6729801, preco_base
+  216 000 ≥ 150 000, CCP art. 19.º c), 2018–2026 version). The windows give the same results; the deadline rules wait for
+  the counting rules and for publicado_joue / sending dates.
+- Fixed on the way: engine/rules.applies (a failed known condition now excludes the rule; 14 338 «facto ausente» on
+  1 000 procedures became 3 535); evaluate rules_at (an earlier start date hid the facts recorded later); the rule schema
+  refused maximum_days; 2 tests still counted 8 rule types.
+- Protocol 0.6, the contagem_prazo type in the engine (stage contagem, rules.counting_for, deadline_days with
+  engine/calendario), tests (test_deadline_dates: 12; Good Friday 2026 moves a 30-day term to 33 days). Round 17: 5
+  prompts (CPA 87.º b, c, f; CCP 470.º 2, 3).
+- Round 17 read blind (nothing recorded: no two families agree): leitor:b (Reader B) 5 of 5 valid and right on the words
+  (470.º 2: concurso_publico_urgente, propostas, primeiro_dia conta; 470.º 3: propostas and candidaturas continuo; 87.º b)
+  todos nao_conta; c) todos suspende; f) todos transfere). leitor:a18 (v16, never trained on contagem_prazo): «não
+  tipável» on 470.º 2, 3 and 87.º f), the wrong deadline on 87.º b), c). Mistral Small 4 (readers/leitor_c_modal.py, two
+  H100): 0 of 5 valid, conditions the text does not state (territorio, tipo_contrato, publicado_joue). Spend USD 6.51
+  (Mistral 6.43: the model's load alone ≈ 30 min; AMALIA 0.08). The counting rules settle once family A reads the type.
+- The checker's «todos» accepts words of deadlines in general («À contagem dos prazos», Reader B's source for 87.º b, c).
+- db/run_engine.py 0.3: the counting rules (CCP and, by CCP art. 470.º n.º 1, CPA) and the holidays of CT art. 234.º in
+  force; 500 procedures: 33 deadline verdicts regra_ausente (the counting), the concurso rules facto_ausente on
+  publicado_joue (BASE does not say it; TED covers 43 661 procedures).

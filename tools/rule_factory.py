@@ -50,8 +50,8 @@ from engine.governance import Log  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-rule-factory-0.9"
-TOOL = "ferramenta:rule-factory@32"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+VERSION = "ccp-rule-factory-0.10"
+TOOL = "ferramenta:rule-factory@33"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -139,6 +139,11 @@ CURRENT = ("leitor:a18", "leitor-a18.json")  # D75: who proposes in a refresh ro
 for _k, _f in enumerate(sorted(rr.READINGS.glob("refresh-*/pick.json"))):  # D75: the daily refresh rounds, one folder each
     FROUNDS[1001 + _k] = {**FROUNDS[12], "round": _f.parent.name, "dir": _f.parent, "decision": "D75", "proposer": CURRENT,
                           "pick": [tuple(x) for x in json.loads(_f.read_text(encoding="utf-8"))["pick"]]}
+# D83: round 17, how the days of a deadline are counted: CPA art. 87.º b), c), f) (the CCP's formation deadlines count by it,
+# CCP art. 470.º n.º 1) and CCP art. 470.º n.ºs 2 and 3, read with protocol 0.6 by the latest family-A reader and leitor:b
+FROUNDS[17] = {**{k: v for k, v in FROUNDS[12].items() if k != "pick"}, "round": "fabrica-17", "dir": rr.READINGS / "fabrica17", "decision": "D83",
+               "v3_version": v3.V06, "proposer": ("leitor:a18", "leitor-a18.json"),
+               "pick": [(pid, "2026-10-01", "contagem_prazo", "contagem") for pid in ("cpa:art87.b", "cpa:art87.c", "cpa:art87.f", "ccp:art470.2", "ccp:art470.3")]}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 NT_RULE = "product_rule:nao-tipavel-qualquer-motivo"  # D77: two blind «não tipável» readings replicate whatever their reasons
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
@@ -155,9 +160,11 @@ QUESTION = {
               "comparação? Dê as condições e o limiar.",
     "prazo_maximo": "Que prazo máximo fixa a passagem {pid}: em que procedimento e condições, quantos dias, para que prazo e a contar "
                     "de quando? Dê as condições, os dias, o campo do prazo e de onde se conta.",
+    "contagem_prazo": "Como manda contar os dias de um prazo a passagem {pid}: em que condições, para que prazo, que aspeto da contagem "
+                      "e com que valor?",
 }
 TITLE = {"prazo_minimo": "Prazo mínimo fixado em {pid} (fábrica de regras, ronda {n})", "limiar": "Limiar de valor fixado em {pid} (fábrica de regras, ronda {n})",
-         "prazo_maximo": "Prazo máximo fixado em {pid} (fábrica de regras, ronda {n})"}
+         "prazo_maximo": "Prazo máximo fixado em {pid} (fábrica de regras, ronda {n})", "contagem_prazo": "Contagem de prazos fixada em {pid} (fábrica de regras, ronda {n})"}
 # D59: what the rule vocabulary cannot hold. Words of the passage, or of its article's heading, that name a deadline, an
 # anchor, a procedure or a circumstance the schema has no value for. Two readers forced onto the nearest value can replicate
 # each other and both be wrong (round 1: 4 of 4 settled readings were). Checked by code from the text; never by a model.
@@ -346,8 +353,8 @@ def cmd_prompts(store, n=1):
                 continue
             print(f"{t['rule']}: the prompt is not round {R['carry_b']}'s (protocol {v3.VERSION}); leitor:b answers it again")
         if R.get("v3"):  # D66: the context is kept beside the prompt, so the checker reads an answer against the text its reader saw
-            ctx = v3.context(law, t["source_passage"], t["date"])
             ver = R.get("v3_version", v3.VERSION)  # D71: a round names the protocol it renders with; 0.4 for rounds 9-11
+            ctx = v3.context(law, t["source_passage"], t["date"], version=ver)  # D83: 0.6 follows a reference to another act
             body = {"rule": t["rule"], "type": t["type"], "date": t["date"], "candidates": sorted(ctx["roles"]), "prompt": v3.render(ctx, t["type"], ver),
                     "schema": v3.schema(ctx, t["type"], ver), "round": R["round"], "source_passage": t["source_passage"], "protocol": "v3",
                     "protocol_version": ver, "context": v3.context_record(ctx)}

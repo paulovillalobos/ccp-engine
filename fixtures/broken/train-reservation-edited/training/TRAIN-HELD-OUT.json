@@ -12,10 +12,12 @@
    "rule": "every article the 18 B3 rules cite (rules/ citations and exceptions) or offer as candidates (governance/readings/<rule>/prompt.json), reserved whole",
    "articles": [
     "ccp:art113.2",
+    "ccp:art123.9",
     "ccp:art131.1",
     "ccp:art136.1",
     "ccp:art16.1",
     "ccp:art20",
+    "ccp:art470.3",
     "ccp:art48.1",
     "dl-177-2026:art7.1",
     "dlr-27-2015-a:art3.1"
@@ -25,18 +27,20 @@
   "held_out_when": "by_hash OR by_b3",
   "rule": "no example in any train.jsonl touches a reserved article (target, candidate or any source id); an example whose target is in a reserved article goes to held_out.jsonl"
  },
- "sha256": "2459c8a043957bf52d7e4d7ee0ed4e6f10765efe5667ba15008bf8493cc8bf62",
+ "sha256": "cf93bef3d3dfb050c41299c224b3e6a5cd0ea28ada7ddafb44eba07d15d99d77",
  "counts": {
-  "units": 8,
-  "by_hash": 1,
-  "by_b3": 8,
-  "reserved": 8
+  "units": 10,
+  "by_hash": 2,
+  "by_b3": 10,
+  "reserved": 10
  },
  "reserved_articles": [
+  "ccp:art123.9",
   "ccp:art131.1",
   "ccp:art136.1",
   "ccp:art16.1",
   "ccp:art20",
+  "ccp:art470.3",
   "ccp:art48.1",
   "dl-177-2026:art7.1",
   "dlr-27-2015-a:art3.1"

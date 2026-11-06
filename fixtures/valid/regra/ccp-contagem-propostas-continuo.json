@@ -1,0 +1,55 @@
+{
+  "id": "regra:ccp:contagem-propostas-continuo@v1",
+  "revision": 1,
+  "recorded_at": "2026-10-24T20:00:00Z",
+  "type": "contagem_prazo",
+  "title": "Os prazos das propostas são contínuos (fixture)",
+  "norma": "norma:ccp",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2026-10-01",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "ccp:art470.3",
+      "version": "2026-10-01",
+      "quote": "são contínuos",
+      "offsets": {
+        "start": 56,
+        "end": 69
+      }
+    }
+  ],
+  "params": {
+    "deadline_field": "prazo_propostas_dias",
+    "aspecto": "fins_de_semana",
+    "valor": "continuo"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a",
+      "family": "A",
+      "at": "2026-10-24T19:10:00Z",
+      "chosen_passages": [
+        "ccp:art470.3"
+      ],
+      "blind": false,
+      "evento": "evento:10"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-10-24T19:11:00Z",
+      "chosen_passages": [
+        "ccp:art470.3"
+      ],
+      "blind": true,
+      "evento": "evento:11"
+    }
+  ],
+  "state": "settled"
+}

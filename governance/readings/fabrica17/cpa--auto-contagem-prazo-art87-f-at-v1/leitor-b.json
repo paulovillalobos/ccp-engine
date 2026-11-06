@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-06T01:00:25Z",
+ "sha256": "f0b7eb6f5f906cc876ff12ec7aa716aaa2b4afaba053645992436e72076b70be",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"todos\",\"aspecto\":\"termo\",\"valor\":\"transfere\"},\"fontes\":{\"aspecto\":[{\"texto\":\"O termo do prazo que coincida com dia em que o serviço perante o qual deva ser praticado o ato não esteja aberto ao público, ou não funcione durante o período normal, transfere-se para o primeiro dia útil seguinte\",\"de\":\"cpa:art87.f\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
+}

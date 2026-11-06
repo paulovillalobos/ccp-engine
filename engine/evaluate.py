@@ -79,30 +79,52 @@ def _verdict(rule, unit, result, reason, detail, citation, facts_used, assertion
 DEADLINE_END = {"prazo_propostas_dias": "data_limite_propostas", "prazo_candidaturas_dias": "data_limite_candidaturas"}
 
 
-def deadline_days(p, values, counting):
-    """(days, fields used, None) or (None, fields, (reason, detail)) for a prazo_minimo / prazo_maximo rule's params."""
+def deadline_days(p, values, counting, calendar=None, counting_rules=()):
+    """(days, fields used, None) or (None, fields, (reason, detail)) for a prazo_minimo / prazo_maximo rule's params.
+    counting: an explicit count ({"id", "first_day_counts"} and, D83, "continuous", "shift_to_working_day"); else the
+    settled contagem_prazo rules in force decide it (rules.counting_for). calendar(year) gives the text of the holidays
+    article in force (engine/calendario.py), needed when the count skips non-working days or moves the term."""
     field, start, end = p["deadline_field"], p.get("counted_from"), DEADLINE_END.get(p["deadline_field"])
     if values.get(field, MISSING) is not MISSING:
-        return values[field], [field], None
+        return values[field], [field], None, None
     if not end or start in (None, "nao_indicado"):
-        return None, [field], ("facto_ausente", f"{p.get('type', 'prazo')} needs {field}")
+        return None, [field], ("facto_ausente", f"{p.get('type', 'prazo')} needs {field}"), None
     for f in (end, start):
         v = values.get(f, MISSING)
         if v is MISSING or isinstance(v, Conflict):
             return None, [field, f], ("conflito" if isinstance(v, Conflict) else "facto_ausente",
-                                       f"{field} needs {f}" + (f" (in conflict: {v.conflito_id})" if isinstance(v, Conflict) else ""))
+                                       f"{field} needs {f}" + (f" (in conflict: {v.conflito_id})" if isinstance(v, Conflict) else "")), None
+    why = None
     if counting is None:
-        return None, [end, start], ("regra_ausente", f"{field}: the days from {start} to {end} need a settled counting rule")
+        counting, why = rules_mod.counting_for(field, counting_rules, values)
+    if counting is None:
+        return None, [end, start], ("regra_ausente", f"{field}: the days from {start} to {end} need a settled counting rule ({why})"), None
     import datetime
+    from engine import calendario
     try:
         a, b = datetime.date.fromisoformat(values[start][:10]), datetime.date.fromisoformat(values[end][:10])
     except (TypeError, ValueError):
-        return None, [end, start], ("facto_ausente", f"{field}: {start} or {end} is not a date")
-    return (b - a).days + (1 if counting["first_day_counts"] else 0), [end, start], None
+        return None, [end, start], ("facto_ausente", f"{field}: {start} or {end} is not a date"), None
+    continuous, shift = counting.get("continuous", True), counting.get("shift_to_working_day", False)
+    if (shift or not continuous) and calendar is None:
+        return None, [end, start], ("regra_ausente", f"{field}: the count needs the holidays in force (no calendar given)"), None
+    try:
+        if shift:
+            b = calendario.next_working_day(b, calendar)
+        if continuous:
+            days = (b - a).days + (1 if counting["first_day_counts"] else 0)
+        else:
+            first = a if counting["first_day_counts"] else a + datetime.timedelta(days=1)
+            days = sum(1 for k in range((b - first).days + 1) if calendario.working_day(first + datetime.timedelta(days=k), calendar))
+    except calendario.Unreadable as e:
+        return None, [end, start], ("facto_ausente", f"{field}: the holidays text cannot be read ({e})"), None
+    return days, [end, start], None, counting["id"]
 
 
 def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), assertions=(), entities=(), documents=(), coverage=None, aggregates=None,
-             counting=None, engine_version=VERSION):
+             counting=None, rules_at=None, calendar=None, engine_version=VERSION):
+    """rules_at (D82): the date the rules in force are chosen at, when it is not the facts' valid_at (a procedure whose
+    start is not dated is evaluated on each date it may have started, with every fact known by valid_at)."""
     missing = manifest_mod.is_complete(manifest)
     if missing:
         raise EvaluateError(f"incomplete manifest: {missing}")
@@ -122,7 +144,7 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
 
     verdicts = []
     # 1. regime selector
-    regime_date = valid_at
+    regime_date = rules_at or valid_at
     selectors = staged["seletor"]
     if selectors:
         field = selectors[0]["params"]["selects_by"]
@@ -170,7 +192,8 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             verdicts.append(done(r, result, f"{p['aggregate']['op']}({p['aggregate']['field']})={value} {p['aggregate']['comparator']} {p['aggregate']['value']}", used_for(cond_fields)))
             continue
         if t in ("prazo_minimo", "prazo_maximo"):  # D80: stated as days, or as two dates and a settled counting rule
-            days, needed, why = deadline_days({**p, "type": t}, values, counting)
+            days, needed, why, counted_by = deadline_days({**p, "type": t}, values, counting, calendar,
+                                               [x for x in staged["contagem"] if rules_mod.valid_at(x, regime_date)])
             if why:
                 verdicts.append(na(r, why[0], why[1], used_for(cond_fields + needed)))
                 continue
@@ -178,7 +201,7 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             if not isinstance(days, (int, float)):
                 verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
                 continue
-            how = "" if needed == [p["deadline_field"]] else f" ({needed[1]} to {needed[0]}, counting rule {counting['id']})"
+            how = "" if counted_by is None else f" ({needed[1]} to {needed[0]}, counting rule {counted_by})"
             if t == "prazo_minimo":
                 detail = (f"{p['deadline_field']}={days:g} >= {p['minimum_days']}" if days >= p["minimum_days"] else f"{p['deadline_field']}={days:g} < {p['minimum_days']}") + how
                 if days >= p["minimum_days"] and p.get("usual_days") and days < p["usual_days"]:  # D62: under the «em regra» days, not under the floor

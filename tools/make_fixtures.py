@@ -59,6 +59,8 @@ LAW_LINES = [
     "1 - O presente decreto-lei aplica-se aos procedimentos iniciados a partir de 2026-10-01.",
     "Decreto Legislativo Regional n.º 27/2015/A, Artigo 3.º",
     "1 - Os limiares previstos no Código aplicam-se na Região com o coeficiente de 1,45.",
+    "1 - Os concorrentes pronunciam-se sobre o projeto de decisão no prazo máximo de cinco dias.",
+    "3 - Os prazos fixados para a apresentação das propostas são contínuos.",
 ]
 LAW_TEXT = "\n".join(LAW_LINES) + "\n"
 def span(line):
@@ -109,6 +111,8 @@ for id_, norma, parent, kind, label, line in [
     ("ccp:art16.1", "norma:ccp", None, "numero", "1", LAW_LINES[13]),
     ("dl-177-2026:art7.1", "norma:dl-177-2026", None, "numero", "1", LAW_LINES[16]),
     ("dlr-27-2015-a:art3.1", "norma:dlr-27-2015-a", None, "numero", "1", LAW_LINES[18]),
+    ("ccp:art123.9", "norma:ccp", None, "numero", "1", LAW_LINES[19]),  # D71's prazo_maximo, so every rule type has a fixture
+    ("ccp:art470.3", "norma:ccp", None, "numero", "3", LAW_LINES[20]),  # D83's contagem_prazo
 ]:
     P[id_] = passage(id_, norma, parent, kind, label, line)
 
@@ -193,6 +197,12 @@ R_PRA = rule("prazo-minimo-propostas-6-dias", "prazo_minimo", "Prazo mínimo de 
     [{"field": "publicado_joue", "op": "eq", "value": False}], [],
     [cite("ccp:art136.1", "O prazo mínimo para a apresentação das propostas é de seis dias")],
     {"minimum_days": 6, "deadline_field": "prazo_propostas_dias", "counted_from": "data_publicacao_anuncio"})
+R_MAX = rule("prazo-maximo-pronuncia-5-dias", "prazo_maximo", "Prazo máximo de cinco dias para a pronúncia (fixture)", "norma:ccp", "PT", ["proc"],
+    [], [], [cite("ccp:art123.9", "no prazo máximo de cinco dias")],
+    {"maximum_days": 5, "deadline_field": "prazo_pronuncia_dias", "counted_from": "nao_indicado"})
+R_CTG = rule("contagem-propostas-continuo", "contagem_prazo", "Os prazos das propostas são contínuos (fixture)", "norma:ccp", "PT", ["proc"],
+    [], [], [cite("ccp:art470.3", "são contínuos")],
+    {"deadline_field": "prazo_propostas_dias", "aspecto": "fins_de_semana", "valor": "continuo"})
 R_PROC = rule("procedimentos-admissiveis", "procedimento_admissivel", "Procedimentos para a formação de contratos (art. 16.º n.º 1)", "norma:ccp", "PT", ["proc"],
     [], [], [cite("ccp:art16.1", "adotam o concurso público, o concurso limitado por prévia qualificação, a consulta prévia ou o ajuste direto")],
     {"procedures": ["concurso_publico", "concurso_limitado_previa_qualificacao", "consulta_previa", "ajuste_direto"]})

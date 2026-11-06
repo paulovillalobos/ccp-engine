@@ -5,8 +5,8 @@ from engine import rules
 from tests.helpers import load_all, one
 
 
-def test_eight_types_with_required_params():
-    assert len(rules.RULE_TYPES) == 8 and set(rules.RULE_TYPES) == set(rules.REQUIRED_PARAMS)
+def test_ten_types_with_required_params():  # D71 prazo_maximo, D83 contagem_prazo
+    assert len(rules.RULE_TYPES) == 10 and set(rules.RULE_TYPES) == set(rules.REQUIRED_PARAMS)
     for r in load_all("regra"):
         rules.check(r)
 
@@ -26,7 +26,7 @@ def test_order_selector_then_jurisdiction_then_simple_then_aggregate():
     assert [r["type"] for r in staged["seletor"]] == ["seletor_regime"]
     assert [r["type"] for r in staged["jurisdicao"]] == ["jurisdicao"]
     assert [r["type"] for r in staged["agregada"]] == ["agregada"]
-    assert len(staged["simples"]) == 5
+    assert len(staged["simples"]) == 6  # D71: the prazo_maximo fixture
 
 
 def test_applies_distinguishes_false_from_unreadable():

@@ -36,22 +36,22 @@
     {
       "principal": "leitor:a",
       "family": "A",
-      "at": "2026-10-24T19:08:00Z",
+      "at": "2026-10-24T19:12:00Z",
       "chosen_passages": [
         "ccp:art16.1"
       ],
       "blind": false,
-      "evento": "evento:8"
+      "evento": "evento:12"
     },
     {
       "principal": "leitor:b",
       "family": "B",
-      "at": "2026-10-24T19:09:00Z",
+      "at": "2026-10-24T19:13:00Z",
       "chosen_passages": [
         "ccp:art16.1"
       ],
       "blind": true,
-      "evento": "evento:9"
+      "evento": "evento:13"
     }
   ],
   "state": "settled"

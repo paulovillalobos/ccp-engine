@@ -1,0 +1,5 @@
+{
+ "at": "2026-11-06T01:46:11Z",
+ "sha256": "f7ad69030c84b2aec13ba52d855bf42147fc2f0e49ee98019fca9b64591d095c",
+ "answer": "{\"regras\": [{\"tipo\": \"contagem_prazo\", \"condicoes\": [{\"field\": \"territorio\", \"op\": \"eq\", \"value\": \"PT\", \"fontes\": [{\"texto\": \"Onde está: [cpa:parte-iii]\", \"de\": \"cpa:art87\"}]}, {\"field\": \"territorio\", \"op\": \"eq\", \"value\": \"PT-AC\", \"fontes\": [{\"texto\": \"Onde está: [cpa:parte-iii]\", \"de\": \"cpa:art87\"}]}, {\"field\": \"territorio\", \"op\": \"eq\", \"value\": \"PT-MA\", \"fontes\": [{\"texto\": \"Onde está: [cpa:parte-iii]\", \"de\": \"cpa:art87\"}]}], \"params\": {\"deadline_field\": \"prazo_pronuncia_dias\", \"aspecto\": \"termo\", \"valor\": \"transfere\"}, \"fontes\": {\"aspecto\": [{\"texto\": \"termo do prazo\", \"de\": \"cpa:art87.f\"}], \"deadline_field\": [{\"texto\": \"Onde está: [cpa:parte-iii.titulo-i.capitulo-v] Capítulo V — Dos prazos\", \"de\": \"cpa:art87\"}]}}], \"nao_tipavel\": null}"
+}

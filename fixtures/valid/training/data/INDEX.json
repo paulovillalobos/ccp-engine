@@ -2,8 +2,8 @@
  "examples": 0,
  "files": {
   "ARTICLE-OF.json": {
-   "lines": 12,
-   "sha256": "c63bab017cfd38191e37a8c6db70fa4e25374cceed31f8c6b16ab2321b3145e2"
+   "lines": 14,
+   "sha256": "41a818e1b8e699e2f33fd70c99afe5ff56268c75d415ee9a302c9a95324fa268"
   },
   "escolha_passagem/held_out.jsonl": {
    "lines": 0,
@@ -59,7 +59,7 @@
   "per_passage_and_task": 3
  },
  "passages_covered": 0,
- "passages_total": 10,
+ "passages_total": 12,
  "tasks": {
   "escolha_passagem": {
    "held_out": 0,
@@ -82,6 +82,6 @@
    "train": 0
   }
  },
- "train_held_out_definition_sha256": "2459c8a043957bf52d7e4d7ee0ed4e6f10765efe5667ba15008bf8493cc8bf62",
+ "train_held_out_definition_sha256": "cf93bef3d3dfb050c41299c224b3e6a5cd0ea28ada7ddafb44eba07d15d99d77",
  "version": "ccp-make-training-0.2"
 }

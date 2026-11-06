@@ -705,5 +705,37 @@
    "no prazo de",
    "até"
   ]
+ },
+ "since_0_6": {
+  "about": "D83 (protocol 0.6): the contagem_prazo type, how the days of a deadline are counted, each aspect by the law's own words; and article references that name another act («do Código do Procedimento Administrativo») go to that act. A prompt of 0.5 or earlier reads the tables above unchanged.",
+  "counting": {
+   "primeiro_dia": {
+    "nao_conta": [
+     "não se inclui na contagem o dia",
+     "não se inclui na contagem do prazo o dia"
+    ],
+    "conta": [
+     "não é aplicável o disposto na alínea b)"
+    ]
+   },
+   "fins_de_semana": {
+    "suspende": [
+     "suspende-se nos sábados, domingos e feriados"
+    ],
+    "continuo": [
+     "são contínuos",
+     "não se suspendendo nos sábados, domingos e feriados"
+    ]
+   },
+   "termo": {
+    "transfere": [
+     "transfere-se para o primeiro dia útil seguinte",
+     "transfere-se para o 1.º dia útil seguinte"
+    ]
+   }
+  },
+  "nao_tipavel_motivos": {
+   "nao_e_contagem": "a passagem não diz como se contam os dias de um prazo (o dia do evento, os sábados, domingos e feriados, ou o termo em dia em que o serviço não está aberto)"
+  }
  }
 }

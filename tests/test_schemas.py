@@ -48,10 +48,10 @@ def test_verdict_reason_enumeration_is_closed(type_, bad):
     assert schema.validate(type_, obj) != []
 
 
-def test_rule_type_enumeration_has_eight_members_and_fixtures_cover_them():
+def test_rule_type_enumeration_has_ten_members_and_fixtures_cover_them():  # D71 prazo_maximo, D83 contagem_prazo
     defs = json.loads((schema.SCHEMAS / "defs.schema.json").read_text(encoding="utf-8"))
     types = defs["$defs"]["rule_type"]["enum"]
-    assert len(types) == 8
+    assert len(types) == 10
     seen = {json.loads(f.read_text(encoding="utf-8"))["type"] for f in (VALID / "regra").glob("*.json")}
     assert seen == set(types)
 
