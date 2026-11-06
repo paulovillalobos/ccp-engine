@@ -2399,3 +2399,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   committed, so a first full run and the first DR load reported inserts that rolled back (0 rows). Both commit now; the
   DR facts reloaded and counted (data_envio_anuncio 1 781 → 12 860). The stored verdicts' manifests name 4cae17a62: the
   run's code adds only the commit and the decided-only filter to it, committed here.
+
+## 2026-11-06 — D88: verdicts that respect the declared legal basis
+- The 851 «não cumpre» of D87 checked against each contract's declared fundamentação (BASE contratos on the volume): 415
+  Madeira (DLR 34/2008/M), ~140 material criteria (CCP arts. 21.º–27.º-A), ~15 special regimes, 246 art. 19.º c) alone.
+- db/fundamento.py (the declared basis as passage ids; an act it cannot name gives «?:…»), db/modal_fundamento.py
+  (1 343 626 procedures, one year at a time: parallel years deadlocked on ccp.nome), engine/rules.basis_allows and its
+  use in evaluate (tests: test_deadline_dates, 2 more).
+- Migration 20261106000000_ccp_corrida: ccp.corrida, ccp.corrida_veredicto, view ccp.veredicto_atual.
+- Run corrida:20261106T202345Z (commit d1dfa2b32), counted in ccp.veredicto_atual: 32 578 cumpre, 240 não cumpre.
+  Madeira's procedures get no verdict from the CCP's limits until DLR 34/2008/M is read.
