@@ -175,6 +175,8 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
         if not ok:
             continue
         p, t = r["params"], r["type"]
+        if t == "limiar" and not rules_mod.basis_allows(r, values.get("fundamento_passagens") if isinstance(values.get("fundamento_passagens"), list) else None):
+            continue  # D88: the entity declared another legal basis (material criteria, a special or regional regime): this limit does not judge it
         if t == "agregada":
             period = valid_at[:7]
             ratios = [coverage.get((a, period)) for a in manifest["adapters"]]

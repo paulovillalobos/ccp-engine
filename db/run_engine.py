@@ -39,7 +39,7 @@ from engine import manifest as manifest_mod  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine.governance import Log, head  # noqa: E402
 
-VERSION = "ccp-run-engine-0.5"
+VERSION = "ccp-run-engine-0.6"
 START = "data_inicio_procedimento"
 BOUNDS = ("data_envio_anuncio", "data_publicacao_anuncio", "data_envio_joue")  # the procedure's own dated acts
 CHILD_BOUNDS = ("data_celebracao_contrato", "data_publicacao_contrato")  # its contracts'
@@ -199,10 +199,24 @@ def load_rules():
 _W = {}
 
 
-def _init(write, commit=None):
-    """D84: a worker process loads the store, the rules and a connection once (D86: on Modal the commit is given: no .git)."""
+def _init(write, commit=None, corrida=None):
+    """D84: a worker process loads the store, the rules and a connection once (D86: on Modal the commit is given: no .git;
+    D88: the run's id, which every verdict written is linked to)."""
     serve.load(("law", "rules", "governance"), commit=commit)
-    _W.update(rules=load_rules(), conn=pg.connect(), write=write, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    _W.update(rules=load_rules(), conn=pg.connect(), write=write, corrida=corrida, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+
+
+def link(conn, corrida, verdicts):
+    """D88: the run gave these verdicts (ccp.corrida_veredicto; a verdict already stored by an earlier run is linked too)."""
+    with conn.cursor().copy("copy ccp.corrida_veredicto (corrida, veredicto, revision) from stdin") as cp:
+        for v in {(v["id"], v["revision"]) for v in verdicts}:
+            cp.write_row([corrida, v[0], v[1]])
+
+
+def close_run(conn, corrida, doc):
+    """D88: the run's record, written last (with its totals): readers take the verdicts of the latest closed run."""
+    conn.execute("insert into ccp.corrida (id, at, doc) values (%s, now(), %s)", (corrida, json.dumps(doc, ensure_ascii=False)))
+    conn.commit()
 
 
 def _chunk(job):
@@ -228,6 +242,8 @@ def _chunk(job):
         if _W["write"] and decided:
             for k, n in pg.load_objects(conn, {"veredicto": decided}).get("veredicto", {}).items():
                 written[k] += n
+            if _W.get("corrida"):
+                link(conn, _W["corrida"], decided)
             conn.commit()  # D87: the connection is not autocommit; without this a worker's inserts roll back when it ends
     return out, written, len(units)
 

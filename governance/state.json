@@ -7846,6 +7846,16 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:limiar-segundo-fundamento-declarado": {
+      "events": [
+        1800
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:nao-tipavel-qualquer-motivo": {
       "events": [
         1723
@@ -9883,6 +9893,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 1799,
-  "head": "2f1a981bd201169fe266142825eb8757143a0af47ec41af4965e4355e1eba676"
+  "events": 1800,
+  "head": "d0b90622e486bed8996ca42a9778e49af4822ed4ee80693edb660569d1b0baf5"
 }

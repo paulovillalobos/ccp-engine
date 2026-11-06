@@ -31,13 +31,14 @@ image = image.add_local_file(ROOT / "verify.py", "/root/ccp/verify.py")  # tools
 class Engine:
     write: bool = modal.parameter(default=False)
     commit: str = modal.parameter(default="0000000")  # the repository commit the manifests name (the container has no .git)
+    corrida: str = modal.parameter(default="")  # D88: the run every verdict written is linked to
 
     @modal.enter()
     def load(self):
         sys.path[:0] = ["/root/ccp/db", "/root/ccp", "/root/ccp/tools"]  # db first: tools/ has a run_engine.py of its own
         import run_engine
         self.re = run_engine
-        run_engine._init(self.write, self.commit)
+        run_engine._init(self.write, self.commit, self.corrida or None)
 
     @modal.method()
     def chunk(self, units: list, windows: list):
@@ -68,7 +69,8 @@ def main(cmd: str = "report", limit: int = 2000000, window: str = ""):
     written, done, t0 = collections.Counter(), 0, time.time()
     import subprocess
     commit = subprocess.run(["git", "rev-parse", "--short=9", "HEAD"], capture_output=True, text=True, cwd=ROOT).stdout.strip() or "0000000"
-    for out, wr, n in Engine(write=cmd == "write", commit=commit).chunk.map(jobs, kwargs={"windows": windows}, order_outputs=False):
+    corrida = f"corrida:{time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}" if cmd == "write" else ""
+    for out, wr, n in Engine(write=cmd == "write", commit=commit, corrida=corrida).chunk.map(jobs, kwargs={"windows": windows}, order_outputs=False):
         for w, (t, wn, _) in out.items():
             tally[w].update({tuple(json.loads(json.dumps(k))) if isinstance(k, list) else k: v for k, v in t.items()})
             why_none[w].update(wn)
@@ -86,3 +88,7 @@ def main(cmd: str = "report", limit: int = 2000000, window: str = ""):
         print(json.dumps({"window_days": w, "procedures": done, "seconds": round(time.time() - t0), "by_result": dict(res),
                           "without_verdicts": dict(why_none[w]), "decided_by_rule": {f"{a}|{b}": n for (a, b), n in sorted(per.items())},
                           **({"written": dict(written)} if cmd == "write" else {})}, ensure_ascii=False, indent=1))
+        if cmd == "write":
+            run_engine.close_run(conn, corrida, {"window_days": w, "commit": commit, "procedures": done, "by_result": dict(res),
+                                                 "decided_by_rule": {f"{a}|{b}": n for (a, b), n in sorted(per.items())}, "written": dict(written)})
+            print(f"run {corrida} closed")

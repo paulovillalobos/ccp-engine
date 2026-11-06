@@ -108,3 +108,27 @@ def test_other_deadlines_skip_weekends_and_holidays():
 def test_an_aspect_no_rule_gives_blocks_the_count():
     v = run_law([thirty()] + LAW[:2] + LAW[3:], **DATES)["regra:teste:trinta@v1"]
     assert v["reason"] == "regra_ausente" and "termo" in v["detail"]
+
+
+# D88: a value limit judges only a procedure whose declared legal basis is the limit's own article, or none
+from tests.test_most_specific import limiar  # noqa: E402
+
+
+def lim19c():
+    r = rule(limiar(), "regra:teste:lim19c@v1", [{"field": "tipo_procedimento", "op": "eq", "value": "consulta_previa"}],
+             threshold={"field": "preco_base", "comparator": "lt", "value": 150000, "currency": "EUR"})
+    r["passages"] = [{**r["passages"][0], "passage": "ccp:art19.c"}]
+    return r
+
+
+def test_a_limit_judges_its_own_basis_or_none():
+    base = dict(tipo_procedimento="consulta_previa", preco_base=200000)
+    assert run([lim19c()], **base)["regra:teste:lim19c@v1"]["result"] == "nao_cumpre"
+    assert run([lim19c()], fundamento_passagens=["ccp:art19.c"], **base)["regra:teste:lim19c@v1"]["result"] == "nao_cumpre"
+    assert run([lim19c()], fundamento_passagens=["ccp:art19"], **base)["regra:teste:lim19c@v1"]["result"] == "nao_cumpre"
+
+
+def test_another_declared_basis_is_not_judged_by_the_limit():
+    base = dict(tipo_procedimento="consulta_previa", preco_base=200000)
+    for declared in (["ccp:art24.1.c"], ["ccp:art19.c", "dlr-34-2008-m:art4.1"], ["lei-30-2021:art7.1"], ["?:Artigo n.º 36.º"]):
+        assert "regra:teste:lim19c@v1" not in run([lim19c()], fundamento_passagens=declared, **base), declared

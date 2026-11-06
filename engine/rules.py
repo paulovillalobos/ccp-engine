@@ -118,6 +118,17 @@ def counting_for(field, rules, facts):
             "continuous": best["fins_de_semana"][1] == "continuo", "shift_to_working_day": best["termo"][1] == "transfere"}, None
 
 
+def basis_allows(rule, declared) -> bool:
+    """D88 (product_rule:limiar-segundo-fundamento-declarado): a limiar rule judges a procedure whose declared legal basis
+    names no passage other than the rule's own (a passage it cites, or one of their parts or wholes), or names none."""
+    if not declared:
+        return True
+    cited = [c["passage"] for c in rule.get("passages", [])]
+    def fits(d):
+        return any(d == c or c.startswith(d + ".") or d.startswith(c + ".") for c in cited)
+    return all(fits(d) for d in declared)
+
+
 class Conflict:
     """Marker for a field whose facts disagree without a precedence rule (conflito.resolution nao_avaliado)."""
     def __init__(self, conflito_id):

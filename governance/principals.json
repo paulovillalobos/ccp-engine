@@ -3269,6 +3269,31 @@
       "hash": "977c5dd254a2b435c5d522a5a8d142807c134d8fc0ffdd5fc3007d25ec644a5e",
       "retired": false,
       "nota": "D85: TRAIN checks data-v17"
+    },
+    {
+      "id": "ferramenta:modal-fundamento@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "db/modal_fundamento.py",
+      "hash": "7299498482bfab295de825df1747d11bfd3124ff1f074be0873a673423c02870",
+      "retired": true,
+      "nota": "D88: the declared legal basis of BASE contracts as facts of their procedures",
+      "retired_at": "2026-11-06T20:06:25Z"
+    },
+    {
+      "id": "ferramenta:modal-fundamento@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "db/modal_fundamento.py",
+      "hash": "270920c3201a330844edafe8e01b0a7e39f180c4bc5b6ba07442a3d71674d7de",
+      "retired": false,
+      "nota": "D88: one year at a time"
     }
   ]
 }
