@@ -2409,3 +2409,11 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Migration 20261106000000_ccp_corrida: ccp.corrida, ccp.corrida_veredicto, view ccp.veredicto_atual.
 - Run corrida:20261106T202345Z (commit d1dfa2b32), counted in ccp.veredicto_atual: 32 578 cumpre, 240 não cumpre.
   Madeira's procedures get no verdict from the CCP's limits until DLR 34/2008/M is read.
+
+## 2026-11-06 — D89: the alínea reference; v18; counting still withheld
+- tools/read_rules_v3.py: ALART (0.6 only); 470.º n.º 2's prompt now shows CPA 87.º b) as remissão. Earlier answers kept as
+  *.attempt3.json. v17 then: 470.º 2 primeiro_dia nao_conta (copied b), 470.º 3 an urgent-tender condition again.
+- data-v18 (tools/make_rule_readings_v18.py) and v18 (training/runs/v18: 80 steps, 1 393 examples, adapter 1eb917a3c89b;
+  the manifest written from the function call's result fc-01M6SANTY6Q7GQZ5A95SNF5F6H, the launching session having ended).
+- v18 (leitor:a20): 87.º b), c), f) = leitor:b; 470.º 3 the same two rules as leitor:b but the candidaturas rule quotes
+  «apresentação das propostas» (refused, L9); 470.º 2 fins_de_semana continuo. Nothing recorded; counting withheld.

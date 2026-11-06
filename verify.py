@@ -819,6 +819,7 @@ def check_store(roots):
         check_training_v2(store, out, tdir, held, sub="data-v15", module="make_rule_readings_v15")  # D73: generated from the store as it is (the directives in it)
         check_training_v2(store, out, tdir, held, sub="data-v16", module="make_rule_readings_v16")  # D76
         check_training_v2(store, out, tdir, held, sub="data-v17", module="make_rule_readings_v17")  # D85
+        check_training_v2(store, out, tdir, held, sub="data-v18", module="make_rule_readings_v18")  # D89
     return store, out
 
 

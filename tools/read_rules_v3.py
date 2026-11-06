@@ -337,6 +337,7 @@ SEG = re.compile(r"(?:(?:sub)?al[íi]neas? ((?:[a-z]|[ivx]+)\)(?:\s*(?:,|e|ou)\s
 ARTM = re.compile(r"(?<!\w)artigos?\s+((?:\d+\.º(?:-[A-Z])?)(?:\s*(?:,|e|ou)\s*\d+\.º(?:-[A-Z])?)*)|(?<!\w)mesmo artigo|(?<!\w)artigos? anterior(?:es)?")
 NUMREL = re.compile(r"(?<!\w)n[úu]meros? anterior(?:es)?|(?<!\w)(?:aquele|esse|o mesmo) prazo")
 ALREL = re.compile(r"(?<!\w)al[íi]nea anterior")
+ALART = re.compile(r"(?<!\w)al[íi]neas?\s+((?:[a-z]\)(?:\s*(?:,|e|ou)\s*[a-z]\))*))\s+do\s+artigo\s+(\d+\.º(?:-[A-Z])?)")  # 0.6 (D89)
 
 
 def art_pid(token, ns="ccp"):
@@ -406,6 +407,14 @@ def references(law, pid, text, date, version=None):
             for target in ([f"{art}.{n}.{a}" for a in als] if als else [f"{art}.{n}"]):
                 if target != pid and law.text(target, date):
                     out.append((target, "texto", base(m.start())))
+    if cross:  # 0.6 (D89): «alínea b) do artigo 87.º do Código do Procedimento Administrativo» — an alínea of an article named without its n.º
+        for m in ALART.finditer(text):
+            act = act_named_after(law, text, m.end(), named) or ns
+            art = art_pid(m.group(2), act)
+            for al in re.findall(r"([a-z])\)", m.group(1)):
+                if law.text(f"{art}.{al}", date):
+                    out.append((f"{art}.{al}", "texto", base(m.start())))
+            used.update(x.start() for x in arts if m.start() <= x.start() < m.end())
     for a in arts:
         if a.start() in used:
             continue

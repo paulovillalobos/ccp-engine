@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T21:47:15Z",
+ "sha256": "d4babbfbc0123828d4a4e51efeda34d7a176bb45786d992ef33c7420e086e483",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"continuo\",\"aspecto\":\"fins_de_semana\",\"deadline_field\":\"prazo_propostas_dias\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não se suspendendo nos sábados, domingos e feriados\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.3\"}]}},{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"continuo\",\"aspecto\":\"fins_de_semana\",\"deadline_field\":\"prazo_candidaturas_dias\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não se suspendendo nos sábados, domingos e feriados\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.3\"}]}},{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"continuo\",\"aspecto\":\"fins_de_semana\",\"deadline_field\":\"prazo_solucoes_dias\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não se suspendendo nos sábados, domingos e feriados\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.3\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

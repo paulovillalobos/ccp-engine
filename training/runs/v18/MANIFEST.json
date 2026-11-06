@@ -1,0 +1,131 @@
+{
+ "adapter": "amalia-ccp-lei-v18",
+ "volume": "amalia-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "init": "amalia-ccp-lei-v17",
+ "training_index_sha256": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+ "data_index_sha256": {
+  "training/data-v18": "c11e1ffa5b1ddcb63c53f262adc015d15f3f546c49a2a872bfc732371498bf5a"
+ },
+ "repeat": {},
+ "mixture": {
+  "escolha_passagem": 0,
+  "regra_lida": 1393
+ },
+ "examples_in_mix": 1393,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 1,
+  "lr": 0.0001,
+  "warmup_steps": 10,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 12288,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "28d584d18467552f9afbf9121623336f9fc40fc8",
+ "repo_dirty_training_or_law": true,
+ "started": "2026-11-06T21:01:42Z",
+ "finished": "2026-11-06T21:43:51Z",
+ "modal_app": "ap-zgDbn2KfgltuTEae1AD4Sq",
+ "modal_function_call": "fc-01M6SANTY6Q7GQZ5A95SNF5F6H",
+ "result": {
+  "examples": 1393,
+  "dropped": 0,
+  "tokens": 9253234,
+  "trainable_params": 50921472,
+  "steps": 80,
+  "seconds": 2396.2,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 0.0346,
+    "seen": 16,
+    "seconds": 30.4
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.0065,
+    "seen": 176,
+    "seconds": 314.1
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.0046,
+    "seen": 349,
+    "seconds": 610.0
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.0052,
+    "seen": 527,
+    "seconds": 906.1
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.0132,
+    "seen": 700,
+    "seconds": 1206.5
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0004,
+    "seen": 870,
+    "seconds": 1494.4
+   },
+   {
+    "step": 60,
+    "epoch": 1,
+    "loss": 0.0065,
+    "seen": 1046,
+    "seconds": 1796.2
+   },
+   {
+    "step": 70,
+    "epoch": 1,
+    "loss": 0.0017,
+    "seen": 1221,
+    "seconds": 2088.8
+   },
+   {
+    "step": 80,
+    "epoch": 1,
+    "loss": 0.0006,
+    "seen": 1393,
+    "seconds": 2374.4
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "b790f3e45d41f9d344e7a78bc808f2ea02f636a5b20d33ab749cb514913b5df7",
+   "adapter_model.safetensors": "1eb917a3c89b1efcb65a10cc129c696c0cd24b34b35621212a4e02dab386cc55"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)",
+ "note": "D89: written from the function call's result after the launching session ended (the call ran detached)"
+}

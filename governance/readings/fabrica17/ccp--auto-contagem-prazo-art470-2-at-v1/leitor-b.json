@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T12:56:51Z",
+ "at": "2026-11-06T20:54:54Z",
  "sha256": "e197f383e9815b86712a00c87134154a553d389e2dc154a6e129503239adfbae",
  "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico_urgente\",\"fontes\":[{\"texto\":\"concurso público urgente\",\"de\":\"ccp:art470.2\"}]}],\"params\":{\"valor\":\"conta\",\"aspecto\":\"primeiro_dia\",\"deadline_field\":\"prazo_propostas_dias\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não é aplicável o disposto na alínea b)\",\"de\":\"ccp:art470.2\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.2\"}]}}],\"nao_tipavel\":null}"
 }

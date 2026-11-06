@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T21:47:15Z",
+ "sha256": "32443b9b81560d688e65de0987cbd1f4a50664faa1b5bd51c86b6829ab800feb",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"nao_conta\",\"aspecto\":\"primeiro_dia\",\"deadline_field\":\"todos\"},\"fontes\":{\"aspecto\":[{\"texto\":\"Não se inclui na contagem o dia\",\"de\":\"cpa:art87.b\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

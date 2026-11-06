@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T12:59:08Z",
+ "at": "2026-11-06T20:57:54Z",
  "sha256": "e1c2f6058b392651a5e64aeb8ebbc8482d1fef0bb9babf58aac85720484f04ae",
  "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico_urgente\",\"fontes\":[{\"texto\":\"contratos\",\"de\":\"ccp:art470\"}]}],\"params\":{\"valor\":\"continuo\",\"aspecto\":\"fins_de_semana\",\"deadline_field\":\"prazo_propostas_dias\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não se suspendendo nos sábados, domingos e feriados\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.3\"}]}}],\"nao_tipavel\":null}",
  "quotes": "text"

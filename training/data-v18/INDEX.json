@@ -1,0 +1,29 @@
+{
+ "tool": "ccp-make-rule-readings-v18-0.1",
+ "protocol": "ccp-read-rules-v3-0.6",
+ "written_rows": 359,
+ "written_by_style": {
+  "w18-excecao": 179,
+  "w18-continuo": 180
+ },
+ "v17_rows": 1034,
+ "rejected": 1,
+ "exam_left_out": [
+  "cpa:art87.b",
+  "cpa:art87.c",
+  "cpa:art87.f",
+  "ccp:art470.2",
+  "ccp:art470.3"
+ ],
+ "files": {
+  "REJECTED.json": {
+   "rows": 3,
+   "sha256": "8cbada7cc5eb3eeac62375969d7d1581a7df7ca21a5a50c388bd4efac088b36b"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 1393,
+   "sha256": "91fe9f3138a753bd1481c95929b71a864505e177402290a4a958c1753acb84ae"
+  }
+ },
+ "note": "D89: the exception to the first-day rule and two continuous deadlines beside one procedure, on invented articles; and data-v17"
+}

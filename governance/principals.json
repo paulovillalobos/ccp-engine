@@ -3231,8 +3231,9 @@
       "versao": 13,
       "code": "tools/read_rules_v3.py",
       "hash": "29267dcfc5a59591582a2724bc50e5b62bca57e4f1d894499ae086405e3f0ad2",
-      "retired": false,
-      "nota": "D85: contagem_prazo answers the value before the aspect"
+      "retired": true,
+      "nota": "D85: contagem_prazo answers the value before the aspect",
+      "retired_at": "2026-11-06T20:54:44Z"
     },
     {
       "id": "ferramenta:rule-factory@34",
@@ -3243,8 +3244,9 @@
       "versao": 34,
       "code": "tools/rule_factory.py",
       "hash": "1cc6424b76424a96db73731a0d246246645f5907669b39cec166520cfdaa91a9",
-      "retired": false,
-      "nota": "D85: round 17 proposed by leitor:a19"
+      "retired": true,
+      "nota": "D85: round 17 proposed by leitor:a19",
+      "retired_at": "2026-11-06T21:47:51Z"
     },
     {
       "id": "ferramenta:make-rule-readings-v17@2",
@@ -3267,8 +3269,9 @@
       "versao": 58,
       "code": "verify.py",
       "hash": "977c5dd254a2b435c5d522a5a8d142807c134d8fc0ffdd5fc3007d25ec644a5e",
-      "retired": false,
-      "nota": "D85: TRAIN checks data-v17"
+      "retired": true,
+      "nota": "D85: TRAIN checks data-v17",
+      "retired_at": "2026-11-06T21:01:40Z"
     },
     {
       "id": "ferramenta:modal-fundamento@1",
@@ -3294,6 +3297,82 @@
       "hash": "270920c3201a330844edafe8e01b0a7e39f180c4bc5b6ba07442a3d71674d7de",
       "retired": false,
       "nota": "D88: one year at a time"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@14",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 14,
+      "code": "tools/read_rules_v3.py",
+      "hash": "47b578c2665f8da9ef978a80fb5acf3e76edb3852d35b48b1b39bbadf5598536",
+      "retired": false,
+      "nota": "D89: 0.6 resolves «alínea x) do artigo N.º» references"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v18@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v18.py",
+      "hash": "ea10b80d47b1182ff98f8188d47d866a417f93667a4e7e72064a1482f15a54ab",
+      "retired": false,
+      "nota": "D89: data-v18"
+    },
+    {
+      "id": "ferramenta:verify@59",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 59,
+      "code": "verify.py",
+      "hash": "9b7fce6e139e001c02bb609b92e250cc8ad81f008ac00c3481e0841aeffa4885",
+      "retired": false,
+      "nota": "D89: TRAIN checks data-v18"
+    },
+    {
+      "id": "leitor:a20",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v18",
+        "versao": "1eb917a3c89b"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
+      "retired": false,
+      "nota": "phase 21 (D89): the base of leitor:a plus amalia-ccp-lei-v18 (rank 16), trained from amalia-ccp-lei-v17 one epoch on training/data-v18 (359 invented articles: the exception to the first-day rule, two continuous deadlines beside one procedure; and data-v17); --quotes text; training/runs/v18/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:rule-factory@35",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 35,
+      "code": "tools/rule_factory.py",
+      "hash": "f585f715433106b21f85d6ff3e0e905d7cbab84118b233efa531f365cf86f7bb",
+      "retired": true,
+      "nota": "D89: round 17 proposed by leitor:a20",
+      "retired_at": "2026-11-06T21:47:51Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@36",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 36,
+      "code": "tools/rule_factory.py",
+      "hash": "49a4e2b8e286d1db5ad64803546bedfefd9e878f9b0208ae9ed3f46836afc0cb",
+      "retired": false,
+      "nota": "D89: round 17 proposed by leitor:a20"
     }
   ]
 }

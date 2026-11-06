@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T21:47:15Z",
+ "sha256": "6c219e62f76bc7666878fe14c982ebe6c3082acf9852c8c084dd72aaddb6e070",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"suspende\",\"aspecto\":\"fins_de_semana\",\"deadline_field\":\"todos\"},\"fontes\":{\"aspecto\":[{\"texto\":\"suspende-se nos sábados, domingos e feriados\",\"de\":\"cpa:art87.c\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}
