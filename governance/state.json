@@ -7816,6 +7816,16 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:janela-inicio-procedimento": {
+      "events": [
+        1799
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:leituras-assentes-como-pratica": {
       "events": [
         276
@@ -9873,6 +9883,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 1798,
-  "head": "a5c897d19119e7c36052f5413a63633cb097a976f11704964c8b354703e6794d"
+  "events": 1799,
+  "head": "2f1a981bd201169fe266142825eb8757143a0af47ec41af4965e4355e1eba676"
 }

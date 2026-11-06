@@ -42,7 +42,10 @@ def main():
     print(json.dumps({"tool": VERSION, "objects": {k: len(v) for k, v in objects.items()}, "facts_by_field": fields}, ensure_ascii=False, indent=1), flush=True)
     if a.dry_run:
         return
-    print(json.dumps(pg.load_objects(pg.connect(), history.checked(objects)), ensure_ascii=False, indent=1))
+    conn = pg.connect()
+    counts = pg.load_objects(conn, history.checked(objects))
+    conn.commit()  # the connection is not autocommit: without this every insert rolls back when the script ends
+    print(json.dumps(counts, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":

@@ -2388,3 +2388,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   CPA 87.º b), c), f) → 3 settled. 470.º 2 (v17: fins_de_semana continuo for the urgent tender) and 470.º 3 (an urgent
   tender condition the text does not state) refused by the checker. Counting withheld until they settle.
 - db/modal_engine.py (D86) and db/run_engine.all_procedures. verify ok.
+
+## 2026-11-06 — D87: the first verdicts stored for every procedure
+- Product rule product_rule:janela-inicio-procedimento (evento:1799, 365 days, Paulo's «365 days»).
+- db/modal_engine.py write --window 365 over the 1 487 525 procedures: 481 s on Modal CPU (12 containers). Stored in
+  ccp.veredicto (counted in the database after the run): 35 355 cumpre, 851 não cumpre — all CCP art. 19.º c) (the
+  consulta prévia limit for obras, version of 2018-01-01; 159 under the version of 2026-10-01). 4 760 013 «não avaliado»
+  counted and not stored (D87: ≈ 6 GB with their manifests; the API computes them live). 64 procedures without any date.
+- Found and fixed: db/run_engine and db/load_dr_history inserted on a connection that is not autocommit and never
+  committed, so a first full run and the first DR load reported inserts that rolled back (0 rows). Both commit now; the
+  DR facts reloaded and counted (data_envio_anuncio 1 781 → 12 860). The stored verdicts' manifests name 4cae17a62: the
+  run's code adds only the commit and the decided-only filter to it, committed here.

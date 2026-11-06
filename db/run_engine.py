@@ -224,9 +224,11 @@ def _chunk(job):
             for v in verdicts:
                 tally[(v["rule"]["id"], v["result"], v["reason"])] += 1
             page.extend(verdicts)
-        if _W["write"] and page:
-            for k, n in pg.load_objects(conn, {"veredicto": page}).get("veredicto", {}).items():
+        decided = [v for v in page if v["result"] != "nao_avaliado"]  # D87: only verdicts are stored; «não avaliado» is counted here and computed live by the API
+        if _W["write"] and decided:
+            for k, n in pg.load_objects(conn, {"veredicto": decided}).get("veredicto", {}).items():
                 written[k] += n
+            conn.commit()  # D87: the connection is not autocommit; without this a worker's inserts roll back when it ends
     return out, written, len(units)
 
 
