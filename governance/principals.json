@@ -3371,6 +3371,19 @@
       "versao": 36,
       "code": "tools/rule_factory.py",
       "hash": "49a4e2b8e286d1db5ad64803546bedfefd9e878f9b0208ae9ed3f46836afc0cb",
+      "retired": true,
+      "nota": "D89: round 17 proposed by leitor:a20",
+      "retired_at": "2026-11-06T21:48:28Z"
+    },
+    {
+      "id": "ferramenta:rule-factory@37",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 37,
+      "code": "tools/rule_factory.py",
+      "hash": "164e089bebd7b744c04b027498786204fc4b3ccadf12036166e6f4e160557880",
       "retired": false,
       "nota": "D89: round 17 proposed by leitor:a20"
     }

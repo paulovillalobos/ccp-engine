@@ -51,7 +51,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.10"
-TOOL = "ferramenta:rule-factory@35"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+TOOL = "ferramenta:rule-factory@37"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
