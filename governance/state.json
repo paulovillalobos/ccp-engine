@@ -9417,6 +9417,60 @@
       "revision": 1,
       "state": "proposed"
     },
+    "regra|regra:cpa:auto-contagem-prazo-art87-b@v1": {
+      "events": [
+        1793,
+        1794
+      ],
+      "family": "A",
+      "proposer": "leitor:a19",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "regra|regra:cpa:auto-contagem-prazo-art87-c@v1": {
+      "events": [
+        1795,
+        1796
+      ],
+      "family": "A",
+      "proposer": "leitor:a19",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
+    "regra|regra:cpa:auto-contagem-prazo-art87-f@v1": {
+      "events": [
+        1797,
+        1798
+      ],
+      "family": "A",
+      "proposer": "leitor:a19",
+      "reviews": [
+        {
+          "by": "leitor:b",
+          "family": "B",
+          "independence": "blind",
+          "verdict": "uphold"
+        }
+      ],
+      "revision": 1,
+      "state": "settled"
+    },
     "regra|regra:dl-177-2026:seletor-regime@v1": {
       "events": [
         34,
@@ -9819,6 +9873,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 1792,
-  "head": "f80449a46b6aa8f8d3bb2ff65fec784a317d125324899007305ce90733f218fc"
+  "events": 1798,
+  "head": "a5c897d19119e7c36052f5413a63633cb097a976f11704964c8b354703e6794d"
 }

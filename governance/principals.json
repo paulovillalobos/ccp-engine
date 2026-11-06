@@ -3126,8 +3126,9 @@
       "versao": 57,
       "code": "verify.py",
       "hash": "ef346d8781a686a712983a50a5404f94f355d40dd2741d522ee2f0e85ca4ea3b",
-      "retired": false,
-      "nota": "D77: V3 accepts an uphold naming product_rule:nao-tipavel-qualquer-motivo"
+      "retired": true,
+      "nota": "D77: V3 accepts an uphold naming product_rule:nao-tipavel-qualquer-motivo",
+      "retired_at": "2026-11-06T13:30:59Z"
     },
     {
       "id": "ferramenta:rule-factory@33",
@@ -3138,8 +3139,9 @@
       "versao": 33,
       "code": "tools/rule_factory.py",
       "hash": "f599802f7301436825913a4019a9b769c99d05868b1f7e3c0cd121aa63eced58",
-      "retired": false,
-      "nota": "D83: round 17 (contagem_prazo, protocol 0.6); context follows references to another act"
+      "retired": true,
+      "nota": "D83: round 17 (contagem_prazo, protocol 0.6); context follows references to another act",
+      "retired_at": "2026-11-06T12:59:35Z"
     },
     {
       "id": "ferramenta:read-rules-v3@10",
@@ -3188,8 +3190,85 @@
       "versao": 12,
       "code": "tools/read_rules_v3.py",
       "hash": "2800c9b7447897c12a805d29b51fc69d0c7c6128fc6611fd881ddecbed5121dd",
+      "retired": true,
+      "nota": "D83: the 0.6 prompt shows a contagem_prazo example",
+      "retired_at": "2026-11-06T12:59:34Z"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v17@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v17.py",
+      "hash": "b524c216e7b4f70e1dc73a69bcabf9b9ce5dfded13b9e1777d8030838fdbd1e2",
+      "retired": true,
+      "nota": "D85: data-v17, contagem_prazo on invented articles",
+      "retired_at": "2026-11-06T13:30:58Z"
+    },
+    {
+      "id": "leitor:a19",
+      "kind": "automatizado",
+      "papel": "leitor",
+      "familia": "A",
+      "motor": {
+        "id": "amalia-9b-0626-dpo+ccp-lei-v17",
+        "versao": "bbd154ba1564"
+      },
+      "versao": null,
+      "code": null,
+      "hash": null,
       "retired": false,
-      "nota": "D83: the 0.6 prompt shows a contagem_prazo example"
+      "nota": "phase 20 (D85): the base of leitor:a plus the LoRA adapter amalia-ccp-lei-v17 (rank 16), trained from amalia-ccp-lei-v16 one epoch on training/data-v17 (434 invented contagem_prazo articles, protocol 0.6, nothing of round 17; 600 rows of data-v16); --quotes text; training/runs/v17/MANIFEST.json"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@13",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 13,
+      "code": "tools/read_rules_v3.py",
+      "hash": "29267dcfc5a59591582a2724bc50e5b62bca57e4f1d894499ae086405e3f0ad2",
+      "retired": false,
+      "nota": "D85: contagem_prazo answers the value before the aspect"
+    },
+    {
+      "id": "ferramenta:rule-factory@34",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 34,
+      "code": "tools/rule_factory.py",
+      "hash": "1cc6424b76424a96db73731a0d246246645f5907669b39cec166520cfdaa91a9",
+      "retired": false,
+      "nota": "D85: round 17 proposed by leitor:a19"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v17@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/make_rule_readings_v17.py",
+      "hash": "b56ac00b416e8b4f51d897fe2cb884fa0387c75f2ad06a3c712bca1227ff6711",
+      "retired": false,
+      "nota": "D85: keeps the schema v17 was trained with; remind rows cite as data-v16's"
+    },
+    {
+      "id": "ferramenta:verify@58",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 58,
+      "code": "verify.py",
+      "hash": "977c5dd254a2b435c5d522a5a8d142807c134d8fc0ffdd5fc3007d25ec644a5e",
+      "retired": false,
+      "nota": "D85: TRAIN checks data-v17"
     }
   ]
 }

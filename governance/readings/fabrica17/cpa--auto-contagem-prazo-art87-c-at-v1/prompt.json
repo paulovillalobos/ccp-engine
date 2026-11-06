@@ -202,48 +202,124 @@
        }
       },
       "params": {
-       "type": "object",
-       "properties": {
-        "deadline_field": {
-         "type": "string",
-         "enum": [
-          "prazo_propostas_dias",
-          "prazo_candidaturas_dias",
-          "prazo_trabalhos_concecao_dias",
-          "prazo_solucoes_dias",
-          "prazo_esclarecimentos_dias",
-          "prazo_pronuncia_dias",
-          "prazo_reclamacao_dias",
-          "prazo_caucao_dias",
-          "prazo_habilitacao_dias",
-          "todos"
-         ]
+       "anyOf": [
+        {
+         "type": "object",
+         "properties": {
+          "valor": {
+           "type": "string",
+           "enum": [
+            "nao_conta",
+            "conta"
+           ]
+          },
+          "aspecto": {
+           "type": "string",
+           "enum": [
+            "primeiro_dia"
+           ]
+          },
+          "deadline_field": {
+           "type": "string",
+           "enum": [
+            "prazo_propostas_dias",
+            "prazo_candidaturas_dias",
+            "prazo_trabalhos_concecao_dias",
+            "prazo_solucoes_dias",
+            "prazo_esclarecimentos_dias",
+            "prazo_pronuncia_dias",
+            "prazo_reclamacao_dias",
+            "prazo_caucao_dias",
+            "prazo_habilitacao_dias",
+            "todos"
+           ]
+          }
+         },
+         "required": [
+          "valor",
+          "aspecto",
+          "deadline_field"
+         ],
+         "additionalProperties": false
         },
-        "aspecto": {
-         "type": "string",
-         "enum": [
-          "primeiro_dia",
-          "fins_de_semana",
-          "termo"
-         ]
+        {
+         "type": "object",
+         "properties": {
+          "valor": {
+           "type": "string",
+           "enum": [
+            "suspende",
+            "continuo"
+           ]
+          },
+          "aspecto": {
+           "type": "string",
+           "enum": [
+            "fins_de_semana"
+           ]
+          },
+          "deadline_field": {
+           "type": "string",
+           "enum": [
+            "prazo_propostas_dias",
+            "prazo_candidaturas_dias",
+            "prazo_trabalhos_concecao_dias",
+            "prazo_solucoes_dias",
+            "prazo_esclarecimentos_dias",
+            "prazo_pronuncia_dias",
+            "prazo_reclamacao_dias",
+            "prazo_caucao_dias",
+            "prazo_habilitacao_dias",
+            "todos"
+           ]
+          }
+         },
+         "required": [
+          "valor",
+          "aspecto",
+          "deadline_field"
+         ],
+         "additionalProperties": false
         },
-        "valor": {
-         "type": "string",
-         "enum": [
-          "conta",
-          "continuo",
-          "nao_conta",
-          "suspende",
-          "transfere"
-         ]
+        {
+         "type": "object",
+         "properties": {
+          "valor": {
+           "type": "string",
+           "enum": [
+            "transfere"
+           ]
+          },
+          "aspecto": {
+           "type": "string",
+           "enum": [
+            "termo"
+           ]
+          },
+          "deadline_field": {
+           "type": "string",
+           "enum": [
+            "prazo_propostas_dias",
+            "prazo_candidaturas_dias",
+            "prazo_trabalhos_concecao_dias",
+            "prazo_solucoes_dias",
+            "prazo_esclarecimentos_dias",
+            "prazo_pronuncia_dias",
+            "prazo_reclamacao_dias",
+            "prazo_caucao_dias",
+            "prazo_habilitacao_dias",
+            "todos"
+           ]
+          }
+         },
+         "required": [
+          "valor",
+          "aspecto",
+          "deadline_field"
+         ],
+         "additionalProperties": false
         }
-       },
-       "required": [
-        "deadline_field",
-        "aspecto",
-        "valor"
-       ],
-       "additionalProperties": false
+       ]
       },
       "fontes": {
        "type": "object",

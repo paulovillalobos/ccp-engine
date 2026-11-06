@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T12:53:41Z",
+ "sha256": "4938eec0814c88340ebe4784acbc9e2f2438ed54c5b6f665b2f18ab91bcc7735",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[{\"field\":\"tipo_procedimento\",\"op\":\"eq\",\"value\":\"concurso_publico_urgente\",\"fontes\":[{\"texto\":\"contratos\",\"de\":\"ccp:art470\"}]}],\"params\":{\"deadline_field\":\"prazo_propostas_dias\",\"aspecto\":\"fins_de_semana\",\"valor\":\"continuo\"},\"fontes\":{\"aspecto\":[{\"texto\":\"não se suspendendo nos sábados, domingos e feriados\",\"de\":\"ccp:art470.3\"}],\"deadline_field\":[{\"texto\":\"apresentação das propostas\",\"de\":\"ccp:art470.3\"}]}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T11:19:22Z",
- "sha256": "0c537b6f5d9348f3061cd2f9f20ef4b42c1780dc4c93e1e818cc48ed883b12ce",
- "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"todos\",\"aspecto\":\"primeiro_dia\",\"valor\":\"nao_conta\"},\"fontes\":{\"aspecto\":[{\"texto\":\"Não se inclui na contagem o dia\",\"de\":\"cpa:art87.b\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
+ "at": "2026-11-06T12:57:10Z",
+ "sha256": "32443b9b81560d688e65de0987cbd1f4a50664faa1b5bd51c86b6829ab800feb",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"nao_conta\",\"aspecto\":\"primeiro_dia\",\"deadline_field\":\"todos\"},\"fontes\":{\"aspecto\":[{\"texto\":\"Não se inclui na contagem o dia\",\"de\":\"cpa:art87.b\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
 }

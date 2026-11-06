@@ -753,11 +753,11 @@ def _schema(ctx, rtype, version=VERSION):
         fontes = {"type": "object", "properties": {"minimum_days": src, "deadline_field": src, "counted_from": nullable_src, "usual_days": nullable_src},
                   "required": ["minimum_days", "deadline_field", "counted_from", "usual_days"], "additionalProperties": False}
     elif rtype == "contagem_prazo":  # 0.6 (D83)
-        params = {"type": "object", "properties": {
-            "deadline_field": {"type": "string", "enum": list(V()["deadline_fields"]) + ["todos"]},
-            "aspecto": {"type": "string", "enum": list(ASPECTS)},
-            "valor": {"type": "string", "enum": sorted({v for vs in ASPECTS.values() for v in vs})}},
-            "required": ["deadline_field", "aspecto", "valor"], "additionalProperties": False}
+        # the value first: each value belongs to one aspect, so the aspect that follows can only be its own (D85)
+        params = {"anyOf": [{"type": "object", "properties": {
+            "valor": {"type": "string", "enum": vs}, "aspecto": {"type": "string", "enum": [asp]},
+            "deadline_field": {"type": "string", "enum": list(V()["deadline_fields"]) + ["todos"]}},
+            "required": ["valor", "aspecto", "deadline_field"], "additionalProperties": False} for asp, vs in ASPECTS.items()]}
         fontes = {"type": "object", "properties": {"aspecto": src, "deadline_field": nullable_src},
                   "required": ["aspecto", "deadline_field"], "additionalProperties": False}
     elif rtype == "prazo_maximo":  # 0.5 (D71)

@@ -1,0 +1,6 @@
+{
+ "at": "2026-11-06T12:59:08Z",
+ "sha256": "0e103d5943c7d7d428f6ad613ddf6e57a39b2c13ad2334984068fe04a4456cb0",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"transfere\",\"aspecto\":\"termo\",\"deadline_field\":\"todos\"},\"fontes\":{\"aspecto\":[{\"texto\":\"transfere-se para o primeiro dia útil seguinte\",\"de\":\"cpa:art87.f\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}",
+ "quotes": "text"
+}

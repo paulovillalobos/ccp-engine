@@ -1,0 +1,109 @@
+{
+ "adapter": "amalia-ccp-lei-v17",
+ "volume": "amalia-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "init": "amalia-ccp-lei-v16",
+ "training_index_sha256": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+ "data_index_sha256": {
+  "training/data-v17": "f05ff924323f363c6fac102a33556a9f726994b4d5e1e9a7a669688f48482027"
+ },
+ "repeat": {},
+ "mixture": {
+  "escolha_passagem": 0,
+  "regra_lida": 1034
+ },
+ "examples_in_mix": 1034,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 1,
+  "lr": 0.0001,
+  "warmup_steps": 10,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 12288,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "f3b83cb49eb2f528fb565dbf0e7239feeb02b77e",
+ "repo_dirty_training_or_law": true,
+ "started": "2026-11-06T12:18:48Z",
+ "finished": "2026-11-06T12:50:08Z",
+ "modal_app": "ap-lBR5bsjyTelJLiQaGFCITA",
+ "modal_function_call": "fc-01M6RCR8JBJNCE1NB0MKCDGZJ3",
+ "result": {
+  "examples": 1034,
+  "dropped": 0,
+  "tokens": 6734672,
+  "trainable_params": 50921472,
+  "steps": 60,
+  "seconds": 1838.1,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 0.0025,
+    "seen": 16,
+    "seconds": 29.4
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.0151,
+    "seen": 176,
+    "seconds": 306.5
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.0016,
+    "seen": 352,
+    "seconds": 613.0
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.0097,
+    "seen": 525,
+    "seconds": 925.9
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.0008,
+    "seen": 701,
+    "seconds": 1245.2
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0006,
+    "seen": 870,
+    "seconds": 1549.7
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "631b2cb4bc64d9ad6b8be448d7f3939639816c7fafcf0027b202bc85e5719aa8",
+   "adapter_model.safetensors": "bbd154ba156414b6238bcd1bfad63535ff0ef5053f680f806bb3835e009fa990"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}

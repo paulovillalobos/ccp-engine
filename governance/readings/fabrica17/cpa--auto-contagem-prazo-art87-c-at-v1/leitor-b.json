@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T11:19:32Z",
- "sha256": "82bdcbad4aab9a19bf181a2e1bbc4eae683cc274f7b66d037887f88b6b3eb811",
- "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"todos\",\"aspecto\":\"fins_de_semana\",\"valor\":\"suspende\"},\"fontes\":{\"aspecto\":[{\"texto\":\"suspende-se nos sábados, domingos e feriados\",\"de\":\"cpa:art87.c\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
+ "at": "2026-11-06T12:57:18Z",
+ "sha256": "6c219e62f76bc7666878fe14c982ebe6c3082acf9852c8c084dd72aaddb6e070",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"suspende\",\"aspecto\":\"fins_de_semana\",\"deadline_field\":\"todos\"},\"fontes\":{\"aspecto\":[{\"texto\":\"suspende-se nos sábados, domingos e feriados\",\"de\":\"cpa:art87.c\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
 }

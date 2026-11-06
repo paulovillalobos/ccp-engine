@@ -2380,3 +2380,11 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   17 conflitos. data_envio_anuncio and publicado_joue now held for 12 860 / 12 844 procedures (was 1 781).
 - Round 17 with the example in the 0.6 prompt (first answers kept as *.attempt1.json): leitor:b 5/5 valid; leitor:a18
   «não tipável» ×5; leitor:a (base AMALIA) 0/5 valid (conditions the text does not state). Spend ≈ USD 0.20.
+
+## 2026-11-06 — D85–D86: v17 reads the counting provisions; the engine on Modal
+- data-v17 (tools/make_rule_readings_v17.py): 434 invented counting articles (46 left out as close to round 17's
+  passages) + 600 data-v16 rows; v17 trained (training/runs/v17, 60 steps, 31 min, adapter bbd154ba1564, leitor:a19).
+- Round 17, third read (value before aspect; earlier reads kept as *.attempt1/2.json): leitor:a19 and leitor:b agree on
+  CPA 87.º b), c), f) → 3 settled. 470.º 2 (v17: fins_de_semana continuo for the urgent tender) and 470.º 3 (an urgent
+  tender condition the text does not state) refused by the checker. Counting withheld until they settle.
+- db/modal_engine.py (D86) and db/run_engine.all_procedures. verify ok.

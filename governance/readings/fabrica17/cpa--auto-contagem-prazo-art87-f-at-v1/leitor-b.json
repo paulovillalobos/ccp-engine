@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T11:19:47Z",
- "sha256": "25c0a9cdb1b6c4239caa79e64bffe9efd4d1f896949abeff9967f720572af19c",
- "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"deadline_field\":\"todos\",\"aspecto\":\"termo\",\"valor\":\"transfere\"},\"fontes\":{\"aspecto\":[{\"texto\":\"transfere-se para o primeiro dia útil seguinte\",\"de\":\"cpa:art87.f\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
+ "at": "2026-11-06T12:57:25Z",
+ "sha256": "0e103d5943c7d7d428f6ad613ddf6e57a39b2c13ad2334984068fe04a4456cb0",
+ "answer": "{\"regras\":[{\"tipo\":\"contagem_prazo\",\"condicoes\":[],\"params\":{\"valor\":\"transfere\",\"aspecto\":\"termo\",\"deadline_field\":\"todos\"},\"fontes\":{\"aspecto\":[{\"texto\":\"transfere-se para o primeiro dia útil seguinte\",\"de\":\"cpa:art87.f\"}],\"deadline_field\":null}}],\"nao_tipavel\":null}"
 }

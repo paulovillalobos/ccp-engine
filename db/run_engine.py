@@ -39,7 +39,7 @@ from engine import manifest as manifest_mod  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine.governance import Log, head  # noqa: E402
 
-VERSION = "ccp-run-engine-0.4"
+VERSION = "ccp-run-engine-0.5"
 START = "data_inicio_procedimento"
 BOUNDS = ("data_envio_anuncio", "data_publicacao_anuncio", "data_envio_joue")  # the procedure's own dated acts
 CHILD_BOUNDS = ("data_celebracao_contrato", "data_publicacao_contrato")  # its contracts'
@@ -52,6 +52,12 @@ def procedures(conn, after, limit):
     q = """select n.txt from ccp.unidade_atual u join ccp.nome n on n.no = u.id
            where u.kind = ccp.n('proc') and n.txt > %s order by n.txt limit %s"""
     return [r[0] for r in conn.execute(q, (after, limit)).fetchall()]
+
+
+def all_procedures(conn):
+    """D86: every procedure id in one read, sorted here (the paged query sorts 3 M names on every page: ~30 s a page)."""
+    q = "select n.txt from ccp.unidade_atual u join ccp.nome n on n.no = u.id where u.kind = ccp.n('proc')"
+    return sorted(r[0] for r in conn.execute(q).fetchall())
 
 
 def facts_of(conn, units):
@@ -164,48 +170,16 @@ def settled_window(log):
     return int(ev["payload"]["days"])
 
 
-def load_rules():
-    current = {}
-    for r in serve.STORE.objects["regra"]:
-        if r["id"] not in current or r["revision"] > current[r["id"]]["revision"]:
-            current[r["id"]] = r
-    return sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and
-                   (r["norma"] == "norma:ccp" or (r["type"] == "contagem_prazo" and r["norma"] == "norma:cpa"))),  # D83: CPA art. 87.º counts the CCP's deadlines (CCP art. 470.º n.º 1)
-                  key=lambda r: r["id"])
-
-
-_W = {}
-
-
-def _init(write):
-    """A worker process: the store, the rules and a connection, once."""
-    serve.load(("law", "rules", "governance"))
-    _W.update(rules=load_rules(), conn=pg.connect(), write=write, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
-
-
-def _chunk(job):
-    """D84: one chunk of procedure ids → (tallies per window, written counts)."""
-    units, windows = job
-    conn, rules = _W["conn"], _W["rules"]
-    facts, dates = facts_of(conn, units), child_dates(conn, units)
-    out = {w: (collections.Counter(), collections.Counter(), collections.Counter()) for w in windows}
-    written = collections.Counter()
-    for w in windows:
-        tally, why_none, how = out[w]
-        page = []
-        for u in units:
-            verdicts, why, h = evaluate_unit(u, facts.get(u, []), dates.get(u, []), rules, w, _W["now"])
-            if why:
-                why_none[why] += 1
-            if h:
-                how[h] += 1
-            for v in verdicts:
-                tally[(v["rule"]["id"], v["result"], v["reason"])] += 1
-            page.extend(verdicts)
-        if _W["write"] and page:
-            for k, n in pg.load_objects(conn, {"veredicto": page}).get("veredicto", {}).items():
-                written[k] += n
-    return out, written, len(units)
+def counting_complete():
+    """D85: (complete, pending): the counting provisions are used only when every one the rule factory asked about
+    (its contagem_prazo targets) is settled, as rules or as «não tipável»; with one missing, a count made of the others
+    could be wrong (CPA 87.º c) suspends a deadline that CCP 470.º n.º 3 makes continuous)."""
+    import rule_factory as rf
+    from engine.governance import Log
+    log = Log(ROOT / "governance")
+    pending = [t["source_passage"] for n, R in rf.FROUNDS.items() if any(isinstance(p, tuple) and p[2] == "contagem_prazo" for p in (R.get("pick") or []))
+               for t in rf.targets(serve.STORE, n) if t["type"] == "contagem_prazo" and not rf.settled_before(log, t)]
+    return not pending, sorted(set(pending))
 
 
 def load_rules():
@@ -213,7 +187,11 @@ def load_rules():
     for r in serve.STORE.objects["regra"]:
         if r["id"] not in current or r["revision"] > current[r["id"]]["revision"]:
             current[r["id"]] = r
+    complete, pending = counting_complete()
+    if pending:
+        print(f"counting withheld: {len(pending)} counting passages not settled ({', '.join(pending)})", file=sys.stderr)
     return sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and
+                   (r["type"] != "contagem_prazo" or complete) and
                    (r["norma"] == "norma:ccp" or (r["type"] == "contagem_prazo" and r["norma"] == "norma:cpa"))),  # D83: CPA art. 87.º counts the CCP's deadlines (CCP art. 470.º n.º 1)
                   key=lambda r: r["id"])
 
@@ -221,9 +199,9 @@ def load_rules():
 _W = {}
 
 
-def _init(write):
-    """D84: a worker process loads the store, the rules and a connection once."""
-    serve.load(("law", "rules", "governance"))
+def _init(write, commit=None):
+    """D84: a worker process loads the store, the rules and a connection once (D86: on Modal the commit is given: no .git)."""
+    serve.load(("law", "rules", "governance"), commit=commit)
     _W.update(rules=load_rules(), conn=pg.connect(), write=write, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
 
 

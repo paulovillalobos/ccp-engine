@@ -51,7 +51,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.10"
-TOOL = "ferramenta:rule-factory@33"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+TOOL = "ferramenta:rule-factory@34"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -142,7 +142,7 @@ for _k, _f in enumerate(sorted(rr.READINGS.glob("refresh-*/pick.json"))):  # D75
 # D83: round 17, how the days of a deadline are counted: CPA art. 87.º b), c), f) (the CCP's formation deadlines count by it,
 # CCP art. 470.º n.º 1) and CCP art. 470.º n.ºs 2 and 3, read with protocol 0.6 by the latest family-A reader and leitor:b
 FROUNDS[17] = {**{k: v for k, v in FROUNDS[12].items() if k != "pick"}, "round": "fabrica-17", "dir": rr.READINGS / "fabrica17", "decision": "D83",
-               "v3_version": v3.V06, "proposer": ("leitor:a18", "leitor-a18.json"),
+               "v3_version": v3.V06, "proposer": ("leitor:a19", "leitor-a19.json"),  # D85: v17, trained on the type
                "pick": [(pid, "2026-10-01", "contagem_prazo", "contagem") for pid in ("cpa:art87.b", "cpa:art87.c", "cpa:art87.f", "ccp:art470.2", "ccp:art470.3")]}
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 NT_RULE = "product_rule:nao-tipavel-qualquer-motivo"  # D77: two blind «não tipável» readings replicate whatever their reasons

@@ -1,0 +1,33 @@
+{
+ "tool": "ccp-make-rule-readings-v17-0.1",
+ "protocol": "ccp-read-rules-v3-0.6",
+ "written_rows": 434,
+ "written_by_style": {
+  "w17-termo-transfere": 81,
+  "w17-primeiro_dia-conta-caso": 66,
+  "w17-primeiro_dia-nao_conta": 75,
+  "w17-fins_de_semana-continuo": 74,
+  "w17-fins_de_semana-suspende": 18,
+  "w17-nao-e-contagem": 120
+ },
+ "remind_rows": 600,
+ "rejected": 46,
+ "exam_left_out": [
+  "cpa:art87.b",
+  "cpa:art87.c",
+  "cpa:art87.f",
+  "ccp:art470.2",
+  "ccp:art470.3"
+ ],
+ "files": {
+  "REJECTED.json": {
+   "rows": 48,
+   "sha256": "0b9357b723dd702c4001835133191af984b154060e2ae85be2860a52bb747853"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 1034,
+   "sha256": "da183f623564974c0d7d8c279ac9e0e31a2dff46a095f1e9788ad10f923565f9"
+  }
+ },
+ "note": "D85: the counting of deadlines (contagem_prazo) on invented articles only, and part of data-v16"
+}
