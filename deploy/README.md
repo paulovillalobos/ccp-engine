@@ -7,9 +7,13 @@ Nothing here runs by itself: the service goes public only when the person says s
 2. Deploy to Cloud Run in the FOAAP project (always name the project: the gcloud default has changed by itself before):
 
        gcloud run deploy ccp-engine --project gen-lang-client-0698758883 --source dist/ccp-service \
-         --region europe-southwest1 --allow-unauthenticated --set-env-vars CCP_TOKEN="$(cat deploy/.ccp-token)" \
+         --region europe-southwest1 --allow-unauthenticated --set-env-vars CCP_TOKEN="$(cat deploy/.ccp-token)",CCP_COMMIT="$(git rev-parse --short=9 HEAD)" \
          --set-secrets SUPABASE_PROJECT_REF=ccp-supabase-ref:latest,SUPABASE_DB_PASSWORD=ccp-supabase-password:latest \
-         --memory 1Gi --cpu 1 --timeout 120 --concurrency 4 --max-instances 4 --quiet
+         --memory 2Gi --cpu 1 --cpu-boost --timeout 120 --concurrency 4 --max-instances 4 \
+         --startup-probe=tcpSocket.port=8080,periodSeconds=240,timeoutSeconds=240,failureThreshold=3 --quiet
+
+   The image has no git: CCP_COMMIT names the commit served. Loading the stores takes about 4 minutes on a cold start,
+   so the startup probe allows up to 12. deploy/.ccp-token must exist and be non-empty; an empty key opens the keyed routes.
 
    D90: the database credentials live in Secret Manager (ccp-supabase-ref, ccp-supabase-password, created once by the
    person from .env), never in the image or in a command line. The service opens its connections read only.
