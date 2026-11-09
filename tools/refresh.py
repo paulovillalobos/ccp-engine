@@ -32,14 +32,14 @@ from engine import extract  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store  # noqa: E402
 
-VERSION = "ccp-refresh-0.1"
+VERSION = "ccp-refresh-0.2"
 STATE = ROOT / "law/REFRESH.json"
 PY = str(ROOT / ".venv/bin/python")
 MODAL = str(Path.home() / "Downloads/foaap-core/.venv-modal/bin/modal")
 READER_B_PATH = "/usr/local/bin"
 SPARQL = "https://publications.europa.eu/webapi/rdf/sparql"
 CCP_URL = "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2008-34455475"
-LATEST_LORA = "v16"
+LATEST_LORA = "v17"  # D92: the adapter that settled the counting rules (D85)
 
 
 def run(cmd, **kw):

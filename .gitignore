@@ -23,3 +23,7 @@ data/raw/base-historico/raw_bytes/
 
 # D75: the API key of the public service
 deploy/.ccp-token
+
+# D92: the Mac readers' local state
+law/.readers-state.json
+law/.readers.lock

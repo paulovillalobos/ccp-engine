@@ -114,7 +114,8 @@
       "versao": 1,
       "code": "tools/capture_dr_consolidated.py",
       "hash": "171ec2d31939628ef0fb0cf27e6016ec6493cee46ffcedca8d78c9785f819f24",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-11-09T19:08:25Z"
     },
     {
       "id": "ferramenta:extract@1",
@@ -3023,8 +3024,9 @@
       "versao": 2,
       "code": "tools/refresh.py",
       "hash": "9aa0019c7f1e68fc19dab3c812f4c03f1d15348564906a269848a03ce9a4e311",
-      "retired": false,
-      "nota": "D76: the refresh reads with v16"
+      "retired": true,
+      "nota": "D76: the refresh reads with v16",
+      "retired_at": "2026-11-09T19:08:25Z"
     },
     {
       "id": "leitor:a18",
@@ -3386,6 +3388,30 @@
       "hash": "164e089bebd7b744c04b027498786204fc4b3ccadf12036166e6f4e160557880",
       "retired": false,
       "nota": "D89: round 17 proposed by leitor:a20"
+    },
+    {
+      "id": "ferramenta:refresh@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/refresh.py",
+      "hash": "6df37e1641c407505fc991244715a3d732c8f7107d583965ae024114a244be3a",
+      "retired": false,
+      "nota": "D92: AMALIA v17 (the adapter that settled the counting rules)"
+    },
+    {
+      "id": "ferramenta:capture-dr@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/capture_dr_consolidated.py",
+      "hash": "ad647aee9abdf6f01040265b4ac58f03cf8d289932dbb99604fd2fb7cc1e9408",
+      "retired": false,
+      "nota": "D92: Chromium in the cloud (CCP_CHROME), container flags"
     }
   ]
 }

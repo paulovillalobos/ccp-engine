@@ -9,6 +9,7 @@ record, the extractor's output is the working text (engine/sources.record_raw). 
 Copied from rjue-engine's capture tool and versioned here.
 """
 import argparse
+import os
 import subprocess
 import sys
 import tempfile
@@ -19,13 +20,14 @@ sys.path.insert(0, str(ROOT))
 from engine import extract  # noqa: E402
 from engine.sources import now_utc, record_raw  # noqa: E402
 
-VERSION = "ccp-capture-dr-0.1"
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+VERSION = "ccp-capture-dr-0.2"
+CHROME = os.environ.get("CCP_CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")  # D92: Chromium in the cloud
+CONTAINER = ["--no-sandbox", "--disable-dev-shm-usage"] if "CCP_CHROME" in os.environ else []  # a container runs as root, /dev/shm small
 
 
 def render(url, budget_ms) -> bytes:
     with tempfile.TemporaryDirectory() as profile:
-        res = subprocess.run([CHROME, "--headless=new", "--disable-gpu", f"--user-data-dir={profile}", f"--virtual-time-budget={budget_ms}", "--dump-dom", url],
+        res = subprocess.run([CHROME, "--headless=new", "--disable-gpu", *CONTAINER, f"--user-data-dir={profile}", f"--virtual-time-budget={budget_ms}", "--dump-dom", url],
                              capture_output=True, text=True, timeout=max(300, budget_ms // 1000 * 6))
     if res.returncode != 0 or not res.stdout:
         raise SystemExit(f"render failed: {res.returncode} {res.stderr[-300:]}")

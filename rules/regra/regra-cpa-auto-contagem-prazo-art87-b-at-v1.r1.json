@@ -1,0 +1,55 @@
+{
+  "id": "regra:cpa:auto-contagem-prazo-art87-b@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-06T13:02:18Z",
+  "type": "contagem_prazo",
+  "title": "Contagem de prazos fixada em cpa:art87.b (fábrica de regras, ronda 17)",
+  "norma": "norma:cpa",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2015-04-07",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "cpa:art87.b",
+      "version": "2015-04-07",
+      "quote": "b) Não se inclui na contagem o dia em que ocorra o evento a partir do qual o prazo começa a correr;",
+      "offsets": {
+        "start": 0,
+        "end": 99
+      }
+    }
+  ],
+  "params": {
+    "valor": "nao_conta",
+    "aspecto": "primeiro_dia",
+    "deadline_field": "todos"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a19",
+      "family": "A",
+      "at": "2026-11-06T12:59:08Z",
+      "chosen_passages": [
+        "cpa:art87.b"
+      ],
+      "blind": false,
+      "evento": "evento:1793"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-06T12:57:10Z",
+      "chosen_passages": [
+        "cpa:art87.b"
+      ],
+      "blind": true,
+      "evento": "evento:1794"
+    }
+  ],
+  "state": "settled"
+}

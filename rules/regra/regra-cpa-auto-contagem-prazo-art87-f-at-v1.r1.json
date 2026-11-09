@@ -1,0 +1,55 @@
+{
+  "id": "regra:cpa:auto-contagem-prazo-art87-f@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-06T13:02:19Z",
+  "type": "contagem_prazo",
+  "title": "Contagem de prazos fixada em cpa:art87.f (fábrica de regras, ronda 17)",
+  "norma": "norma:cpa",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2015-04-07",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "cpa:art87.f",
+      "version": "2015-04-07",
+      "quote": "f) O termo do prazo que coincida com dia em que o serviço perante o qual deva ser praticado o ato não esteja aberto ao público, ou não funcione durante o período normal, transfere-se para o primeiro dia útil seguinte;",
+      "offsets": {
+        "start": 0,
+        "end": 217
+      }
+    }
+  ],
+  "params": {
+    "valor": "transfere",
+    "aspecto": "termo",
+    "deadline_field": "todos"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a19",
+      "family": "A",
+      "at": "2026-11-06T12:59:08Z",
+      "chosen_passages": [
+        "cpa:art87.f"
+      ],
+      "blind": false,
+      "evento": "evento:1797"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-06T12:57:25Z",
+      "chosen_passages": [
+        "cpa:art87.f"
+      ],
+      "blind": true,
+      "evento": "evento:1798"
+    }
+  ],
+  "state": "settled"
+}

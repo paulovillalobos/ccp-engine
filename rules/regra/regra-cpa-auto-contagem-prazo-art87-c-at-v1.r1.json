@@ -1,0 +1,55 @@
+{
+  "id": "regra:cpa:auto-contagem-prazo-art87-c@v1",
+  "revision": 1,
+  "recorded_at": "2026-11-06T13:02:19Z",
+  "type": "contagem_prazo",
+  "title": "Contagem de prazos fixada em cpa:art87.c (fábrica de regras, ronda 17)",
+  "norma": "norma:cpa",
+  "jurisdiction": "PT",
+  "applies_to": [
+    "proc"
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "valid_from": "2015-04-07",
+  "valid_to": null,
+  "passages": [
+    {
+      "passage": "cpa:art87.c",
+      "version": "2015-04-07",
+      "quote": "c) O prazo fixado suspende-se nos sábados, domingos e feriados;",
+      "offsets": {
+        "start": 0,
+        "end": 63
+      }
+    }
+  ],
+  "params": {
+    "valor": "suspende",
+    "aspecto": "fins_de_semana",
+    "deadline_field": "todos"
+  },
+  "readings": [
+    {
+      "principal": "leitor:a19",
+      "family": "A",
+      "at": "2026-11-06T12:59:08Z",
+      "chosen_passages": [
+        "cpa:art87.c"
+      ],
+      "blind": false,
+      "evento": "evento:1795"
+    },
+    {
+      "principal": "leitor:b",
+      "family": "B",
+      "at": "2026-11-06T12:57:18Z",
+      "chosen_passages": [
+        "cpa:art87.c"
+      ],
+      "blind": true,
+      "evento": "evento:1796"
+    }
+  ],
+  "state": "settled"
+}

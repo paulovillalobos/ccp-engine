@@ -1,0 +1,112 @@
+{
+  "id": "pacote:ccp@2026-09-30",
+  "revision": 29,
+  "recorded_at": "2026-11-06T13:03:16Z",
+  "law_version": "lei:ccp@2026-09-30",
+  "rules": [
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art123-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-1@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art174-2@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art190-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-1@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-3@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art191-5@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art198-1@v1",
+      "revision": 7
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art198-2@v1",
+      "revision": 5
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art218@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5-b@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-b-5@v1",
+      "revision": 3
+    },
+    {
+      "id": "regra:ccp:auto-prazo-minimo-art219-j-3@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:limiar-consulta-previa-obras@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-joue@v1",
+      "revision": 4
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-bens-servicos@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:ccp:prazo-minimo-concurso-sem-joue-obras@v1",
+      "revision": 6
+    },
+    {
+      "id": "regra:cpa:auto-contagem-prazo-art87-b@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:cpa:auto-contagem-prazo-art87-c@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:cpa:auto-contagem-prazo-art87-f@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:eu-2014-24:auto-prazo-minimo-art27-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:eu-2014-24:auto-prazo-minimo-art31-1@v1",
+      "revision": 1
+    },
+    {
+      "id": "regra:eu-2014-25:auto-prazo-minimo-art45-1@v1",
+      "revision": 2
+    },
+    {
+      "id": "regra:eu-2014-25:auto-prazo-minimo-art45-3@v1",
+      "revision": 2
+    }
+  ],
+  "hash": "c8286d958d16deef1253de599f534705c16028ea69cd4ed573d1c7e5570908dd",
+  "log_head": "a5c897d19119e7c36052f5413a63633cb097a976f11704964c8b354703e6794d",
+  "built_at": "2026-11-06T13:03:16Z",
+  "supersedes": 28
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- D92: the readers' side of the law watch (db/mac_readers.py), at login and every hour while logged in. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.paulo.ccp-readers</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string><string>-lc</string>
+    <string>cd "$HOME/Downloads/ccp-engine" &amp;&amp; .venv/bin/python -I db/mac_readers.py</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>StartInterval</key><integer>3600</integer>
+  <key>StandardOutPath</key><string>~/Library/Logs/ccp-readers.log</string>
+  <key>StandardErrorPath</key><string>~/Library/Logs/ccp-readers.log</string>
+</dict>
+</plist>

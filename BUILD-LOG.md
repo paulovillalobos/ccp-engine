@@ -2425,3 +2425,14 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 - Migration 20261109000000 (adjudicante on corrida_veredicto, the view with it); run corrida:20261109T000728Z (commit
   fb0b05e04): 32 578 cumpre, 240 não cumpre, 32 815 with their adjudicante.
 - deploy/Dockerfile runs db/api.py; tools/package.sh copies db/ and smoke-tests on port 5349 (641 MB, OK).
+
+## 2026-11-09 — D91: the frontend and the verdict report
+- web/ (localhost:5345, Vite proxy to the API): home (search, three totals that filter, the table), procedure, entity,
+  report. db/api.py relatorio; the re-run matches the stored result on idproc-10068682 (não cumpre) and idproc-10004950
+  (cumpre); the ZIP built in the browser: 18 716 bytes, 10 files.
+
+## 2026-11-09 — D92: the law watch
+- First comparison (Mac, then the same render on Modal: 2.6 MB, 1 257 «Artigo» lines): 12 CCP articles differ from the
+  repository's text in force (art. 37, 45, 61, 258, 259, 339–342, 405, 406, 410): older spellings and versions, art. 61
+  missing. No settled rule cites them. Recorded pending (ccp.lei_alteracao); the first refresh on the Mac reads them.
+- touched_since after the 05:00 ingest: 30 procedures (266 facts) in 11 s.

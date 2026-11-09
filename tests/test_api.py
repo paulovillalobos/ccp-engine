@@ -62,3 +62,16 @@ def test_a_verdict_carries_its_proof(monkeypatch):
     v = api.verdict_out(DOC)
     assert (v["resultado"], v["passagem"], v["versao"]) == ("nao_cumpre", "ccp:art19.c", "2018-01-01")
     assert v["manifesto"]["commit"] == "d1dfa2b32" and v["manifesto"]["registo"] == "d0b9" and v["factos_usados"] == ["facto:a"]
+
+
+def test_report_steps_come_from_the_engine_functions():
+    rule = {"type": "limiar", "conditions": [{"field": "tipo_contrato", "op": "in", "value": "obras"}],
+            "passages": [{"passage": "ccp:art19.c"}], "params": {"threshold": {"field": "preco_base", "comparator": "lt", "value": 150000}}}
+    steps = api._steps(rule, {"tipo_contrato": "obras", "preco_base": 350000, "fundamento_passagens": ["ccp:art19.c"]}, "nao_cumpre",
+                       "preco_base=350000 lt 150000; início entre 2025-05-04 e 2026-05-04")
+    assert [s["ok"] for s in steps] == [True, True, True, False] and steps[-1]["decide"] and steps[-1]["valor"] == 350000
+    assert steps[1]["teste"].startswith("início entre")
+    other = api._steps(rule, {"tipo_contrato": "obras", "preco_base": 9, "fundamento_passagens": ["ccp:art20.1.d"]}, "cumpre", "x")
+    assert other[1]["ok"] is False  # a basis naming another passage: the limit does not count (D88)
+    with pytest.raises(serve.ApiError):
+        api.relatorio("proc:base:../x")

@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/v1/:path*", "destination": "https://ccp-engine-525474376249.europe-southwest1.run.app/v1/:path*" },
+    { "source": "/((?!v1/|assets/).*)", "destination": "/index.html" }
+  ]
+}

@@ -182,15 +182,33 @@ def counting_complete():
     return not pending, sorted(set(pending))
 
 
-def load_rules():
+def cites_pending(rule, pending):
+    """D92: a rule that cites a passage the law watch found changed (or a part or whole of one) waits for the readers."""
+    return any(c["passage"] == p or c["passage"].startswith(p + ".") or p.startswith(c["passage"] + ".")
+               for c in rule.get("passages", []) for p in pending)
+
+
+def pending_passages(conn):
+    """The articles ccp.lei_pendente holds (D92); none when the table is not there yet."""
+    try:
+        return sorted(r[0] for r in conn.execute("select passagem from ccp.lei_pendente").fetchall())
+    except Exception:  # noqa: BLE001  (a store without D92's migration)
+        conn.rollback()
+        return []
+
+
+def load_rules(pending=()):
     current = {}
     for r in serve.STORE.objects["regra"]:
         if r["id"] not in current or r["revision"] > current[r["id"]]["revision"]:
             current[r["id"]] = r
-    complete, pending = counting_complete()
-    if pending:
-        print(f"counting withheld: {len(pending)} counting passages not settled ({', '.join(pending)})", file=sys.stderr)
-    return sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and
+    complete, unsettled = counting_complete()
+    if unsettled:
+        print(f"counting withheld: {len(unsettled)} counting passages not settled ({', '.join(unsettled)})", file=sys.stderr)
+    held = sorted(r["id"] for r in current.values() if r["state"] == "settled" and cites_pending(r, pending))
+    if held:
+        print(f"held by the law watch (D92): {len(held)} rules cite a changed article ({', '.join(held)})", file=sys.stderr)
+    return sorted((r for r in current.values() if r["state"] == "settled" and "proc" in r["applies_to"] and not cites_pending(r, pending) and
                    (r["type"] != "contagem_prazo" or complete) and
                    (r["norma"] == "norma:ccp" or (r["type"] == "contagem_prazo" and r["norma"] == "norma:cpa"))),  # D83: CPA art. 87.º counts the CCP's deadlines (CCP art. 470.º n.º 1)
                   key=lambda r: r["id"])
@@ -203,7 +221,8 @@ def _init(write, commit=None, corrida=None):
     """D84: a worker process loads the store, the rules and a connection once (D86: on Modal the commit is given: no .git;
     D88: the run's id, which every verdict written is linked to)."""
     serve.load(("law", "rules", "governance"), commit=commit)
-    _W.update(rules=load_rules(), conn=pg.connect(), write=write, corrida=corrida, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    conn = pg.connect()
+    _W.update(rules=load_rules(pending_passages(conn)), conn=conn, write=write, corrida=corrida, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
 
 
 def link(conn, corrida, verdicts, adjudicante=None):
@@ -213,6 +232,39 @@ def link(conn, corrida, verdicts, adjudicante=None):
     with conn.cursor().copy("copy ccp.corrida_veredicto (corrida, veredicto, revision, adjudicante) from stdin") as cp:
         for vid, rev, unit in {(v["id"], v["revision"], v["unit"]) for v in verdicts}:
             cp.write_row([corrida, vid, rev, adjudicante.get(unit)])
+
+
+def touched_since(conn, at):
+    """D92: the procedures whose facts, or whose contracts' facts, were recorded after `at` (the previous run): the only
+    ones a daily run evaluates again when the rules did not change."""
+    q = """with t as (select distinct unit from ccp.facto_c where recorded_at > %s)
+           select n.txt from t join ccp.unidade_atual u on u.id = t.unit join ccp.nome n on n.no = u.id where u.kind = ccp.n('proc')
+           union
+           select p.txt from t join ccp.unidade_atual u on u.id = t.unit join ccp.nome p on p.no = u.parent
+           where u.kind <> ccp.n('proc') and u.parent is not null"""
+    return sorted(r[0] for r in conn.execute(q, (at,)).fetchall())
+
+
+def carry(conn, previous, corrida, touched):
+    """D92: an incremental run keeps every verdict of the previous run on a procedure it did not evaluate again."""
+    n = conn.execute("""insert into ccp.corrida_veredicto (corrida, veredicto, revision, adjudicante)
+                        select %s, cv.veredicto, cv.revision, cv.adjudicante from ccp.corrida_veredicto cv
+                        join ccp.veredicto v on v.id = cv.veredicto and v.revision = cv.revision
+                        where cv.corrida = %s and not (v.unit = any(%s))""", (corrida, previous, touched)).rowcount
+    conn.commit()
+    return n
+
+
+def run_counts(conn, corrida):
+    """The verdicts a run holds, by result (carried ones included)."""
+    q = """select v.result, count(*) from ccp.corrida_veredicto cv join ccp.veredicto v on v.id = cv.veredicto and v.revision = cv.revision
+           where cv.corrida = %s group by v.result"""
+    return dict(conn.execute(q, (corrida,)).fetchall())
+
+
+def rules_signature(rules):
+    """What a full run depends on: each rule in use at its revision (D92: a change makes the next daily run a full one)."""
+    return sorted(f"{r['id']}#{r['revision']}" for r in rules)
 
 
 def close_run(conn, corrida, doc):
@@ -261,9 +313,9 @@ def main():
         decided = settled_window(Log(ROOT / "governance"))
         if decided is None or a.window != [decided]:
             raise SystemExit(f"write needs --window {decided if decided is not None else 'N'}: {WINDOW_RULE} settled in the log with those days")
-    rules = load_rules()
-    windows = a.window or [None]
     conn = pg.connect()
+    rules = load_rules(pending_passages(conn))
+    windows = a.window or [None]
     ids, after = [], a.after
     while len(ids) < a.limit:
         page = procedures(conn, after, min(50000, a.limit - len(ids)))
