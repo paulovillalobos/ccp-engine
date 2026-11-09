@@ -206,11 +206,13 @@ def _init(write, commit=None, corrida=None):
     _W.update(rules=load_rules(), conn=pg.connect(), write=write, corrida=corrida, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
 
 
-def link(conn, corrida, verdicts):
-    """D88: the run gave these verdicts (ccp.corrida_veredicto; a verdict already stored by an earlier run is linked too)."""
-    with conn.cursor().copy("copy ccp.corrida_veredicto (corrida, veredicto, revision) from stdin") as cp:
-        for v in {(v["id"], v["revision"]) for v in verdicts}:
-            cp.write_row([corrida, v[0], v[1]])
+def link(conn, corrida, verdicts, adjudicante=None):
+    """D88: the run gave these verdicts (ccp.corrida_veredicto; a verdict already stored by an earlier run is linked too);
+    D90: with the adjudicante of each verdict's procedure, for the API's search by entity."""
+    adjudicante = adjudicante or {}
+    with conn.cursor().copy("copy ccp.corrida_veredicto (corrida, veredicto, revision, adjudicante) from stdin") as cp:
+        for vid, rev, unit in {(v["id"], v["revision"], v["unit"]) for v in verdicts}:
+            cp.write_row([corrida, vid, rev, adjudicante.get(unit)])
 
 
 def close_run(conn, corrida, doc):
@@ -243,7 +245,7 @@ def _chunk(job):
             for k, n in pg.load_objects(conn, {"veredicto": decided}).get("veredicto", {}).items():
                 written[k] += n
             if _W.get("corrida"):
-                link(conn, _W["corrida"], decided)
+                link(conn, _W["corrida"], decided, {u: next((f["value"] for f in facts.get(u, []) if f["field"] == "adjudicante"), None) for u in units})
             conn.commit()  # D87: the connection is not autocommit; without this a worker's inserts roll back when it ends
     return out, written, len(units)
 
