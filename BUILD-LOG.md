@@ -2417,3 +2417,11 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   the manifest written from the function call's result fc-01M6SANTY6Q7GQZ5A95SNF5F6H, the launching session having ended).
 - v18 (leitor:a20): 87.º b), c), f) = leitor:b; 470.º 3 the same two rules as leitor:b but the candidaturas rule quotes
   «apresentação das propostas» (refused, L9); 470.º 2 fins_de_semana continuo. Nothing recorded; counting withheld.
+
+## 2026-11-09 — D90: the API over Supabase
+- db/api.py, tests/test_api.py (3; a fake connection, no network). Local run (.local/launch.json ccp-api, port 5344):
+  /v1/entidades/502177080/veredictos 0.82 s (50), /v1/veredictos?resultado=nao_cumpre 1.40 s (200),
+  /v1/procedimentos/proc:base:idproc-10068682 0.63 s, /v1/estatisticas 0.48 s; bad ids 400, unknown 404.
+- Migration 20261109000000 (adjudicante on corrida_veredicto, the view with it); run corrida:20261109T000728Z (commit
+  fb0b05e04): 32 578 cumpre, 240 não cumpre, 32 815 with their adjudicante.
+- deploy/Dockerfile runs db/api.py; tools/package.sh copies db/ and smoke-tests on port 5349 (641 MB, OK).
