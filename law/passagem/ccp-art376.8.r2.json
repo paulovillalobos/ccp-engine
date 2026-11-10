@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art376.8",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art376",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "8 - Caso não se verifique a condição prevista no n.º 3, os trabalhos de suprimento de erros e omissões devem ser objecto de contrato celebrado na sequência de procedimento adoptado nos termos do disposto no título i da parte ii.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 5358,
+        "end": 5586
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "8 - As modificações ao plano de trabalhos referido no número anterior destinam-se estritamente a compatibilizar o plano em vigor com os trabalhos de suprimento de erros e omissões ordenados e apenas podem ter por efeito a alteração do prazo de execução da obra ou do preço contratual nos termos previstos, respectivamente, no n.º 2 do artigo 377.º e no artigo 378.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 2390,
+        "end": 2755
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 612416,
+        "end": 612581
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

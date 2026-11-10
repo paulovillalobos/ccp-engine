@@ -1,0 +1,84 @@
+{
+  "id": "ccp:art370.2.b",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art370.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Quando o contrato tenha sido celebrado na sequência de concurso público ou de concurso limitado por prévia qualificação e o anúncio do concurso tenha sido publicado no Jornal Oficial da União Europeia, no caso de o somatório do preço atribuído aos trabalhos a mais com o preço contratual ser igual ou superior ao valor referido na alínea b) do artigo 19.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 9484,
+        "end": 9843
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "b) Tendo o contrato sido celebrado na sequência de concurso público ou de concurso limitado por prévia qualificação e o somatório do preço contratual com o preço atribuído aos trabalhos a mais, incluindo o de anteriores trabalhos a mais, seja igual ou superior ao valor referido na alínea b) do artigo 19.º, o anúncio do concurso não tenha sido publicado no Jornal Oficial da União Europeia;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 5135,
+        "end": 5526
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) O preço desses trabalhos, incluindo o de anteriores trabalhos complementares igualmente decorrentes de circunstâncias não previstas, não exceda 10 % do preço contratual; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 2742,
+        "end": 2916
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) Provoque um aumento considerável de custos para o dono da obra;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 1875,
+        "end": 1941
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "b) Seja altamente inconveniente ou provoque um aumento considerável de custos para o dono da obra;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 994,
+        "end": 1092
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 601900,
+        "end": 602048
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

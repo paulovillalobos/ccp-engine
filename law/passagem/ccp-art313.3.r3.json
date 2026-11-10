@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art313.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art313",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Nos contratos com objecto passível de acto administrativo e demais contratos sobre o exercício de poderes públicos, o fundamento previsto na alínea a) do artigo anterior não pode conduzir à modificação do contrato por decisão judicial ou arbitral, quando esta interfira com o resultado do exercício da margem de livre decisão administrativa subjacente ao mesmo ou implique a formulação de valorações próprias do exercício da função administrativa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 10181,
+        "end": 10632
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - A modificação dos contratos especialmente regulados no título ii da parte iii fica sujeita aos limites aí previstos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 4329,
+        "end": 4449
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Os limites previstos no número anterior não se aplicam a:\na) Modificações de valor inferior aos limiares referidos nos n.os 2, 3 ou 4 do artigo 474.º, consoante o caso, e inferior a 10 % ou, em contratos de empreitada de obras públicas, a 15 % do preço contratual inicial;\nb) Modificações que decorram de circunstâncias que uma entidade adjudicante diligente não pudesse ter previsto, desde que a natureza duradoura do vínculo contratual e o decurso do tempo as justifique, e desde que o seu valor não ultrapasse 50 % do preço contratual inicial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 1875,
+        "end": 2425
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 292,
+        "end": 307
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

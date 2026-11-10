@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art55.1.m",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "m)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "m) Existam fortes indícios da prática de atos, da participação em acordos ou da troca de informações suscetíveis de falsear as regras de concorrência em procedimentos anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 4724,
+        "end": 4902
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

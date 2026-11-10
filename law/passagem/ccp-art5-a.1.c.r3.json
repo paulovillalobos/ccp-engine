@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5-a.1.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5-a.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Não haja participação direta de capital privado na pessoa coletiva controlada, com exceção de formas de participação de capital privado sem poderes de controlo e sem bloqueio eventualmente exigidas por disposições especiais, em conformidade com os Tratados da União Europeia, e que não exerçam influência decisiva na pessoa coletiva controlada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-a-4",
+      "offsets": {
+        "start": 7850,
+        "end": 8197
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Não haja participação direta de capital privado na pessoa coletiva controlada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-a-4",
+      "offsets": {
+        "start": 852,
+        "end": 933
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

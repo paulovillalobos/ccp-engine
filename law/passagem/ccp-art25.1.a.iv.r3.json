@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art25.1.a.iv",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art25.1.a",
+  "kind": "subalinea",
+  "label": "iv)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "iv) A possibilidade de adopção do ajuste directo tenha sido indicada no anúncio ou no programa do concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art25-4",
+      "offsets": {
+        "start": 9881,
+        "end": 9988
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "iv) O anúncio do procedimento tenha sido publicado no Jornal Oficial da União Europeia, no caso de o somatório do valor estimado do contrato relativo ao ajuste direto e do preço contratual relativo ao contrato inicial ser igual ou superior ao limiar estabelecido na alínea a) do n.º 3 do artigo 474.º; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art25-4",
+      "offsets": {
+        "start": 2740,
+        "end": 3043
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art27-a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 27.º-A",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 27.º-A\nConsulta prévia\nNas situações previstas nos artigos 24.º a 27.º, deve adotar-se o procedimento de consulta prévia sempre que o recurso a mais de uma entidade seja possível e compatível com o fundamento invocado para a adoção deste procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27-a-4",
+      "offsets": {
+        "start": 218,
+        "end": 476
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 27.º-A\nConsulta prévia",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27-a-4",
+      "offsets": {
+        "start": 43,
+        "end": 72
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

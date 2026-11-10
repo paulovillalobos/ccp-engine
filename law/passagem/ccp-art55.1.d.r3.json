@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art55.1.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Não tenham a sua situação regularizada relativamente a contribuições para a segurança social em Portugal ou, se for o caso, no Estado de que sejam nacionais ou no qual se situe o seu estabelecimento principal;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 14673,
+        "end": 14885
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art81.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - No caso de se tratar de um procedimento de formação de um contrato de locação ou de aquisição de bens móveis ou de um contrato de aquisição de serviços, o adjudicatário, para além dos documentos referidos no n.º 1, deve também apresentar o respectivo certificado de inscrição em lista oficial de fornecedores de bens móveis ou de prestadores de serviços de qualquer Estado signatário do Acordo sobre o Espaço Económico Europeu que revele a titularidade das habilitações adequadas e necessárias à execução das prestações objecto do contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 8728,
+        "end": 9283
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 4353,
+        "end": 4368
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 583,
+        "end": 598
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

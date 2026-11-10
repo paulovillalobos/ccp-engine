@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art94.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art94",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Salvo nos casos previstos no artigo seguinte, o contrato deve ser reduzido a escrito através da elaboração de um clausulado em suporte papel ou em suporte informático com a aposição de assinaturas electrónicas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art94-4",
+      "offsets": {
+        "start": 844,
+        "end": 1058
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - Salvo nos casos previstos no artigo seguinte, o contrato deve ser reduzido a escrito através da elaboração de um clausulado em suporte informático com a aposição de assinaturas eletrónicas, podendo sê-lo em suporte de papel quando não tiver sido utilizada plataforma eletrónica para a tramitação do procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art94-4",
+      "offsets": {
+        "start": 85,
+        "end": 401
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

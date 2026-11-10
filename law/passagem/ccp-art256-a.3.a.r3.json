@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art256-a.3.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256-a.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) No caso da formação de um contrato de aquisição ou locação de bens móveis ou de aquisição de serviços cujo preço contratual não seja superior a (euro) 5000, mediante uma fatura pró-forma ou um documento equivalente e uma declaração da entidade convidada de que o bem ou serviço tem as mesmas características e nível de qualidade dos bens ou serviços objeto do acordo-quadro;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a-4",
+      "offsets": {
+        "start": 4960,
+        "end": 5337
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

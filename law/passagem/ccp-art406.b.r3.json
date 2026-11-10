@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art406.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art406",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Se, havendo sido feitas uma ou mais consignações parciais, o retardamento da consignação ou consignações subsequentes acarretar a interrupção dos trabalhos por mais de 120 dias, seguidos ou interpolados;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art406-3",
+      "offsets": {
+        "start": 1806,
+        "end": 2012
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

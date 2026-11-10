@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art32.9",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art32",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "9 - O disposto nos n.os 6 e 8 é igualmente aplicável à formação de um contrato cujo objecto abranja, simultaneamente, prestações típicas de pelo menos um dos contratos enumerados no n.º 2 do artigo 16.º e de um contrato a que se referem as alíneas e) a h) do n.º 4 do artigo 5.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32-4",
+      "offsets": {
+        "start": 7343,
+        "end": 7621
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "9 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32-4",
+      "offsets": {
+        "start": 3543,
+        "end": 3558
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "9 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32-4",
+      "offsets": {
+        "start": 1746,
+        "end": 1761
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -16,8 +16,9 @@ Steps:
     4. vigencias: engine.vigente.notes_to_vigencias over the consolidated notes (one per article and date)
     5. versions (skipped with --no-history): an article or annex added once and never changed (its only vigencia is
        an "adita") keeps the consolidated text as its one version, from that date, and its parts get the same
-       vigencia; an article or annex with a history capture takes one version per date
-       of that page (D24: the newest text of a date wins); its numbers, alíneas and subalíneas are structured inside
+       vigencia; an article or annex with history captures takes one version per date
+       of its page (D24: the newest text of a date wins; D95: the newest capture when it lists every date the older
+       ones list, else the first capture, the disagreement reported in build-report.json as dr_pages_disagree); its numbers, alíneas and subalíneas are structured inside
        each version and keep one version while their text does not change; a part that a version no longer has
        closes with a version whose text is the DR note of that date (the one the article's vigencia quotes), revoked
        (D30). Every part's version that starts
@@ -43,7 +44,7 @@ from engine.canon import sha256_text  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-build-law-0.3"
+VERSION = "ccp-build-law-0.4"
 CONSOLIDATED = "raw:dr-consolidado:lei:ccp"
 TEXT_EXTRACTOR = "dr-article-history@1"
 EU_EXTRACTOR = "eurlex-html@1"
@@ -640,24 +641,43 @@ def history_blocks(text, label):
     return lines, kept
 
 
-def versions_from_page(owner, raw, text, prefix, short, dates, owner_vigencias):
-    """Step 5 for one owner: {passage id: passagem} for the owner and every part inside it, versions from one page."""
-    lines, blocks = history_blocks(text, owner["label"])
+def page_versions(raw, text, label, dates):
+    """One capture of a history page: ({raw, text, lines, starts}, {date: block}); D24: the newest block of a date wins."""
+    lines, blocks = history_blocks(text, label)
     starts, pos = [], 0
     for line in lines:
         starts.append(pos)
         pos += len(line) + 1
-    kept, seen = [], set()
+    kept = {}
     for b in blocks:  # newest first: the first block of a date is the text in force from that date (D24)
         vf = (b["note"]["valid_from"] or dates[(b["note"]["diploma"], b["note"]["published"])]) if b["note"] else INITIAL
-        if vf in seen:
-            continue
-        seen.add(vf)
-        kept.append((vf, b))
-    kept.sort(key=lambda x: x[0])  # by date: a retificação may date its text back (Anexo II: 36-A/2017 from 2008-07-30)
+        kept.setdefault(vf, b)
+    return {"raw": raw, "text": text, "lines": lines, "starts": starts}, kept
+
+
+def merge_captures(captures):
+    """D95: every capture of one history page, oldest first -> ([(date, page, block)] by date, conflict or None).
+    The newest capture is read when it lists every date an older capture lists (the DR respelled or re-cited the same
+    versions: 2026-11 AO90 spelling). When it lists fewer, the pages disagree (2026-11: art. 37.º and 405.º lost the
+    DL 177/2026 version that the act's own art. 2.º makes; DECISIONS D95): the first capture's versions are kept and the
+    disagreement is reported, never resolved by dropping a version."""
+    newest = captures[-1][1]
+    older = set().union(*(set(k) for _, k in captures[:-1])) if len(captures) > 1 else set()
+    missing = sorted(older - set(newest))
+    page, kept = captures[-1] if not missing else captures[0]
+    conflict = None if not missing else {"read": page["raw"]["id"], "newest": captures[-1][0]["raw"]["id"], "dates_missing_in_newest": missing}
+    # by date: a retificação may date its text back (Anexo II: 36-A/2017 from 2008-07-30)
+    return [(vf, page, kept[vf]) for vf in sorted(kept)], conflict
+
+
+def versions_from_page(owner, kept, short, owner_vigencias):
+    """Step 5 for one owner: {passage id: passagem} for the owner and every part inside it, from the merged versions of
+    its history captures ([(date, page, block)] by date, merge_captures); each version cites the capture it was read from."""
+    prefix = "dl." if owner["id"].split(":", 1)[1].startswith("dl.") else ""
     parts = {}  # id -> passagem
     order = []
-    for k, (vf, b) in enumerate(kept):
+    for k, (vf, pg, b) in enumerate(kept):
+        raw, text, lines, starts = pg["raw"], pg["text"], pg["lines"], pg["starts"]
         nodes = structure.parse(lines, b["first"], b["last"], prefix, annexes=owner["kind"] == "anexo")
         present = {}
         for n in nodes:
@@ -698,7 +718,13 @@ def apply_histories(store, passages, vigencias, ccp_text, ccp_raw_id):
     """Step 5 over every history capture. Returns (passages, vigencias, report)."""
     notes = [n for _, n, _, _ in note_lines(ccp_text)]
     dates = vigente.resolve_note_dates(notes, list(passages.values()))
-    pages = {r["source_id"]: store.current(r["id"]) for r in store.objects["raw"] if r["kind"] == "artigo-historico"}
+    pages = {}  # D95: every capture of a page, oldest first
+    for r in store.objects["raw"]:
+        if r["kind"] == "artigo-historico":
+            cur = store.current(r["id"])
+            pages.setdefault(cur["source_id"], []).append(cur)
+    for caps in pages.values():
+        caps.sort(key=lambda c: (c["captured_at"], c["recorded_at"], c["id"]))
     by_owner = {}
     for v in vigencias.values():
         by_owner.setdefault(v["passage"], {})[v["valid_from"]] = v
@@ -711,8 +737,8 @@ def apply_histories(store, passages, vigencias, ccp_text, ccp_raw_id):
             continue
         local = pid.split(":", 1)[1]
         key = "ccp-" + local.replace("dl.art", "dl-art")
-        raw = pages.get(key)
-        if raw is None:
+        caps = pages.get(key)
+        if caps is None:
             owner_dates = set(by_owner.get(pid, {}))
             if len(owner_dates) == 1 and by_owner[pid][next(iter(owner_dates))]["effect"] == "adita":
                 # added once and never changed: the consolidated text is its only version, from the date it was added
@@ -730,9 +756,10 @@ def apply_histories(store, passages, vigencias, ccp_text, ccp_raw_id):
                 report["owners_with_notes_without_history"].append(pid)
             continue
         report["owners_with_history"] += 1
-        text = store.raw_text(raw)
-        prefix = "dl." if local.startswith("dl.") else ""
-        parts = versions_from_page(owner, raw, text, prefix, "ccp", dates, by_owner.get(pid, {}))
+        kept, conflict = merge_captures([page_versions(c, store.raw_text(c), owner["label"], dates) for c in caps])
+        if conflict:
+            report.setdefault("dr_pages_disagree", []).append(f"{pid}: read {conflict['read']}; {conflict['newest']} lacks {', '.join(conflict['dates_missing_in_newest'])}")
+        parts = versions_from_page(owner, kept, "ccp", by_owner.get(pid, {}))
         hist_dates = {v["valid_from"] for v in parts[pid]["versions"]}
         note_dates = set(by_owner.get(pid, {}))
         report["dates_only_in_notes"] += [f"{pid}@{d}" for d in sorted(note_dates - hist_dates)]

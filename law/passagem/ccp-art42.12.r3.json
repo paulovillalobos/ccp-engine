@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art42.12",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "12",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "12 - A inclusão no caderno de encargos das condições elencadas no n.º 6 pode contemplar, nomeadamente, a fixação de quantidades mínimas de fornecimento de bens ou de prestação de serviços destinadas à promoção desses objetivos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 9542,
+        "end": 9769
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

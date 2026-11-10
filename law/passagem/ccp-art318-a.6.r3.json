@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art318-a.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318-a",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - As obrigações assumidas pelo cocontratante depois da notificação referida no n.º 4 apenas vinculam a entidade cessionária quando este assim o declare, após a cessão.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-a-4",
+      "offsets": {
+        "start": 8138,
+        "end": 8307
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

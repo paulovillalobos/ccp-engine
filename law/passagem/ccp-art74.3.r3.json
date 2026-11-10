@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art74.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A utilização da modalidade prevista na alínea b) do n.º 1 só é permitida quando as peças do procedimento definam todos os restantes elementos da execução do contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 5010,
+        "end": 5191
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Quando seja adotada a modalidade monofator e o aspeto da execução do contrato a celebrar submetido à concorrência não possua natureza quantitativa, deve ser elaborada uma grelha de avaliação das propostas com base num conjunto ordenado de diferentes atributos suscetíveis de serem propostos, sem prejuízo do disposto na alínea b) do n.º 2 do artigo 115.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 3042,
+        "end": 3400
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

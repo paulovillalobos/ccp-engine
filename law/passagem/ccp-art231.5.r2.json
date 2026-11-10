@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art231.5",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art231",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O invólucro exterior pode ser entregue directamente ou enviado por correio registado, sem indicação do remetente, devendo, em qualquer caso, a respectiva recepção ocorrer dentro do prazo e no local fixados para a apresentação dos trabalhos de concepção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art231-4",
+      "offsets": {
+        "start": 1388,
+        "end": 1645
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 439536,
+        "end": 439701
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

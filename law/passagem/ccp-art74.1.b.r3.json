@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art74.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) O do mais baixo preço.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 6074,
+        "end": 6099
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Avaliação do preço ou custo enquanto único aspeto da execução do contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 4695,
+        "end": 4783
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) Monofator, de acordo com a qual o critério de adjudicação é densificado por um fator correspondente a um único aspeto da execução do contrato a celebrar, designadamente o preço.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 2666,
+        "end": 2846
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

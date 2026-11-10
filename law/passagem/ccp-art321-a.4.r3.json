@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art321-a.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art321-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - O contraente público deve exercer o direito à compensação entre os valores pagos aos subcontratados e os valores por si devidos ao cocontratante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art321-a-4",
+      "offsets": {
+        "start": 3976,
+        "end": 4125
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art5.9",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "9 - A parte ii não é aplicável aos contratos celebrados pelo Banco Português de Fomento, S. A., quando o respetivo valor seja inferior aos limiares europeus previstos na Diretiva 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 4181,
+        "end": 4436
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

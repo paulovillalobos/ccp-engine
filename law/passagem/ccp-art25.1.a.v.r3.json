@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art25.1.a.v",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art25.1.a",
+  "kind": "subalinea",
+  "label": "v)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "v) A possibilidade de adoção do procedimento de ajuste direto tenha sido indicada no anúncio ou no programa do procedimento;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art25-4",
+      "offsets": {
+        "start": 3044,
+        "end": 3168
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

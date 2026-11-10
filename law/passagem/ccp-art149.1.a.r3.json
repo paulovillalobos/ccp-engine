@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art149.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art149.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Na formação de contratos de concessão de obras públicas ou de concessão de serviços, independentemente do valor do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149-4",
+      "offsets": {
+        "start": 1123,
+        "end": 1261
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Na formação de contratos de concessão de obras públicas ou de concessão de serviços, independentemente do valor estimado do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149-4",
+      "offsets": {
+        "start": 173,
+        "end": 320
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

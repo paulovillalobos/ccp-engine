@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art50.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os esclarecimentos a que se refere o número anterior são prestados por escrito, pelo órgão para o efeito indicado no programa do procedimento ou no convite, até ao termo do segundo terço do prazo fixado para a apresentação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50-4",
+      "offsets": {
+        "start": 6913,
+        "end": 7154
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Para efeitos do presente Código consideram-se erros e omissões das peças do procedimento os que digam respeito a:\na) Aspetos ou dados que se revelem desconformes com a realidade;\nb) Espécie ou quantidade de prestações estritamente necessárias à integral execução do objeto do contrato a celebrar;\nc) Condições técnicas de execução do objeto do contrato a celebrar que o interessado não considere exequíveis;\nd) Erros e omissões do projeto de execução que não se incluam nas alíneas anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50-4",
+      "offsets": {
+        "start": 3759,
+        "end": 4256
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

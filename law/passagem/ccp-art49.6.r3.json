@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - No caso referido no número anterior, cabe ao concorrente demonstrar, de forma adequada e suficiente, que a obra, o bem ou o serviço conforme com a norma corresponde ao desempenho ou cumpre as exigências funcionais fixadas pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 25737,
+        "end": 25989
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - Sempre que existam normas de acessibilidade obrigatórias adotadas por ato legislativo da União Europeia, as especificações técnicas devem ser definidas por referência a essas normas, no que respeita aos critérios de acessibilidade para as pessoas com deficiência ou de conceção para todos os utilizadores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 7146,
+        "end": 7455
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

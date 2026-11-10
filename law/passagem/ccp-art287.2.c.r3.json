@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art287.2.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art287.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Não impeça, restrinja ou falseie a concorrência garantida pelo disposto no presente Código relativamente à de formação do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 7094,
+        "end": 7228
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Não impeça, restrinja ou falseie a concorrência garantida pelo disposto no presente Código relativamente à formação do contrato, não podendo ser anterior:\ni) Quando tenha sido adotado o procedimento de ajuste direto, à data da decisão de contratar ou de autorização da respetiva despesa, consoante a que ocorra em último lugar; ou\nii) Quando tenha sido adotado procedimento com publicação no Jornal Oficial da União Europeia, ao termo do prazo previsto na alínea a) do n.º 1 do artigo 104.º; ou\niii) Quando tenha sido adotado qualquer outro procedimento previsto na parte ii, à data da decisão de adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 682,
+        "end": 1294
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art321-a.3.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art321-a.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "b) O cocontratante não se oponha justificadamente nos termos do número anterior, ou não liquide os valores devidos no prazo por si indicado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art321-a-4",
+      "offsets": {
+        "start": 2433,
+        "end": 2573
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

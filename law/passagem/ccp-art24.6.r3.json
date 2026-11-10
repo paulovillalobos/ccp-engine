@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art24.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - A decisão de escolha do ajuste directo ao abrigo do disposto nas alíneas a) e b) do n.º 1 e no número anterior só pode ser tomada no prazo de seis meses a contar:\na) Do termo do prazo fixado para a apresentação de candidaturas ou propostas, no caso previsto na alínea a) do n.º 1;\nb) Da decisão de exclusão de todas as propostas apresentadas, no caso previsto na alínea b) do n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 22676,
+        "end": 23062
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - Para a formação dos contratos a que se refere o número anterior e sem prejuízo do que nele se dispõe, também pode ser adoptado o ajuste directo quando as situações previstas nas alíneas a) e b) do n.º 1 tenham ocorrido em anterior procedimento de negociação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 17366,
+        "end": 17628
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "6 - Para efeitos do disposto na subalínea i) da alínea e) do n.º 1, incluem-se todos os bens, serviços ou obras conexos com a obra ou o espetáculo a adquirir, designadamente:\na) A criação, execução e interpretação de obras;\nb) Os materiais, equipamentos, transporte e processos produtivos de suporte às artes do espetáculo ou do audiovisual;\nc) A produção, realização e divulgação de artes do espetáculo ou do audiovisual, incluindo de valorização e divulgação das obras e dos artistas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 12992,
+        "end": 13478
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

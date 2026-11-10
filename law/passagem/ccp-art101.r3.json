@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art101",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-ii.capitulo-xi",
+  "kind": "artigo",
+  "label": "Artigo 101.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 101.º\nAceitação da minuta do contrato\nA minuta do contrato a celebrar e os ajustamentos propostos consideram-se aceites pelo adjudicatário quando haja aceitação expressa ou quando não haja reclamação nos cinco dias subsequentes à respectiva notificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art101-4",
+      "offsets": {
+        "start": 567,
+        "end": 827
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 101.º\nAceitação da minuta do contrato\nA minuta do contrato a celebrar e os ajustamentos propostos consideram-se aceites pelo adjudicatário quando haja aceitação expressa ou quando não haja reclamação nos cinco dias subsequentes à respetiva notificação, ou nos dois dias subsequentes no caso dos procedimentos de ajuste direto ou consulta prévia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art101-4",
+      "offsets": {
+        "start": 43,
+        "end": 395
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art361.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art361",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O plano de trabalhos destina-se, com respeito pelo prazo de execução da obra, à fixação da sequência e dos prazos parciais de execução de cada uma das espécies de trabalhos previstas e à especificação dos meios com que o empreiteiro se propõe executá-los, bem como à definição do correspondente plano de pagamentos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361-4",
+      "offsets": {
+        "start": 3476,
+        "end": 3795
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - O plano de trabalhos destina-se, com respeito pelo prazo de execução da obra, à fixação da sequência e dos prazos parciais de execução de cada uma das espécies de trabalhos previstas e à especificação dos meios com que o empreiteiro se propõe executá-los.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361-4",
+      "offsets": {
+        "start": 87,
+        "end": 346
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

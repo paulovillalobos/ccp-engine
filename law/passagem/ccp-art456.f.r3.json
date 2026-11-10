@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art456.f",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art456",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "f) A contratação de trabalhadores em violação do disposto no artigo 419.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art456-4",
+      "offsets": {
+        "start": 2517,
+        "end": 2593
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

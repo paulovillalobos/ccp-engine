@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art230",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 230.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 230.º\nFixação dos prazos para a apresentação dos documentos\nO prazo para a apresentação dos documentos destinados à qualificação, quando a modalidade escolhida for a de concurso limitado por prévia qualificação, bem como o prazo para a apresentação dos documentos que materializam os trabalhos de concepção, são fixados livremente pela entidade adjudicante, tendo em conta o tempo necessário à respectiva elaboração, em função da natureza, das características e da complexidade inerentes ao concurso em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art230-4",
+      "offsets": {
+        "start": 281,
+        "end": 797
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 230.º\nFixação dos prazos para a apresentação dos documentos",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art230-4",
+      "offsets": {
+        "start": 42,
+        "end": 108
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

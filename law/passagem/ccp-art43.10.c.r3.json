@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art43.10.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43.10",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Se, no prazo de cinco dias após notificação para, querendo, sanar a nulidade, o contraente público apresentar as razões que justificam a não exigência dos elementos previstos no n.º 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 11788,
+        "end": 11975
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Se, no prazo de cinco dias após notificação pelo tribunal para, querendo, sanar a nulidade, a entidade adjudicante apresentar as razões que justificam a não exigência dos elementos previstos no n.º 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 3084,
+        "end": 3287
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

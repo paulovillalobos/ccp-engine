@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art168.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art168",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A candidatura é constituída pelos documentos destinados à qualificação dos candidatos, bem como pela declaração do candidato elaborada em conformidade com o modelo constante do anexo v do presente Código e do qual faz parte integrante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168-4",
+      "offsets": {
+        "start": 4075,
+        "end": 4314
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - A candidatura é constituída pelos documentos destinados à qualificação dos candidatos e pela declaração conforme o modelo constante no anexo v ao presente Código, do qual faz parte integrante, a qual é substituída pelo Documento Europeu Único de Contratação Pública nos procedimentos com publicação de anúncio no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168-4",
+      "offsets": {
+        "start": 2409,
+        "end": 2759
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - A candidatura é constituída por uma declaração na qual o candidato manifesta a sua vontade de ser qualificado ou pelo Documento Europeu Único de Contratação Pública nos procedimentos com publicação de anúncio no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168-4",
+      "offsets": {
+        "start": 96,
+        "end": 345
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art257.9",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art257",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "9 - A não atualização dos documentos de habilitação no sistema eletrónico referido no n.º 7 determina a suspensão do acordo-quadro relativamente ao cocontratante em incumprimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art257-4",
+      "offsets": {
+        "start": 2239,
+        "end": 2418
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

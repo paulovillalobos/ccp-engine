@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art316",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-i.capitulo-vi",
+  "kind": "artigo",
+  "label": "Artigo 316.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 316.º\nÂmbito\nNa falta de estipulação contratual ou quando outra coisa não resultar da natureza do contrato, são admitidas a cessão da posição contratual e a subcontratação, nos termos do disposto nos artigos seguintes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art316-4",
+      "offsets": {
+        "start": 415,
+        "end": 640
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 316.º\nÂmbito\nQuando outra coisa não resultar da natureza do contrato ou de estipulação contratual, são admitidas a cessão da posição contratual e a subcontratação, nos termos do disposto nos artigos seguintes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art316-4",
+      "offsets": {
+        "start": 43,
+        "end": 259
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art186.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art186",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Cabe ao órgão competente para a decisão de contratar decidir sobre a aprovação de todas as propostas contidas no relatório final, nomeadamente para efeitos de qualificação de candidatos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art186-4",
+      "offsets": {
+        "start": 2318,
+        "end": 2508
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art49.12",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49",
+  "kind": "numero",
+  "label": "12",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "12 - É proibida a fixação de especificações técnicas que façam referência a um fabricante ou uma proveniência determinados, a um processo específico de fabrico, a marcas, patentes ou modelos e a uma dada origem ou produção, que tenha por efeito favorecer ou eliminar determinadas entidades ou determinados bens.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 27657,
+        "end": 27968
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "12 - O concorrente pode demonstrar na sua proposta, por qualquer meio adequado, incluindo os meios referidos no artigo 49.º-A, que a obra, bem móvel ou serviço em conformidade com a norma em questão corresponde ao desempenho exigido ou cumpre os requisitos funcionais da entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 10895,
+        "end": 11187
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

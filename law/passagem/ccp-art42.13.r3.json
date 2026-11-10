@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art42.13",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "13",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "13 - Os cadernos de encargos dos procedimentos de formação de contratos de concessão de obras públicas, de concessão de serviços públicos e de aquisição de serviços devem incluir uma cláusula determinando a obrigatoriedade de cumprimento do disposto no artigo 419.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 6384,
+        "end": 6652
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "13 - Os cadernos de encargos dos procedimentos de formação de contratos de concessão de obras públicas, de concessão de serviços e de aquisição de serviços devem incluir uma cláusula determinando a obrigatoriedade de cumprimento do disposto no artigo 419.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 3037,
+        "end": 3296
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

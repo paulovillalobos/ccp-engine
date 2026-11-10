@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art42.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Os parâmetros base referidos no número anterior podem dizer respeito a quaisquer aspectos da execução do contrato, tais como o preço a pagar ou a receber pela entidade adjudicante, a sua revisão, o prazo de execução das prestações objecto do contrato ou as suas características técnicas ou funcionais, e devem ser definidos através de limites mínimos ou máximos, consoante os casos, sem prejuízo dos limites resultantes das vinculações legais ou regulamentares aplicáveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 14768,
+        "end": 15244
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - Os parâmetros base referidos no número anterior podem dizer respeito a quaisquer aspetos da execução do contrato, tais como o preço a pagar ou a receber pela entidade adjudicante, a sua revisão, o prazo de execução das prestações objeto do contrato ou as suas características técnicas ou funcionais, bem como às condições da modificação do contrato, devendo ser definidos através de limites mínimos ou máximos, consoante os casos, sem prejuízo dos limites resultantes das vinculações legais ou regulamentares aplicáveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 10555,
+        "end": 11079
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

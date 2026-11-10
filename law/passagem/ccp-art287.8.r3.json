@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art287.8",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art287",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - A decisão referida no número anterior não pode afastar a ineficácia com base na ponderação do interesse económico diretamente relacionado com o contrato em causa, quando tal interesse assente, designadamente, nos custos resultantes de atraso na execução do contrato, de abertura de um novo procedimento de formação do contrato, de mudança do cocontratante ou de obrigações legais resultantes da ineficácia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 5879,
+        "end": 6289
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "8 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 3313,
+        "end": 3328
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 1832,
+        "end": 1847
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

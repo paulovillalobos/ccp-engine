@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art256.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A fixação do prazo de vigência do acordo quadro nos termos do disposto no número anterior deve ser fundamentada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-4",
+      "offsets": {
+        "start": 1574,
+        "end": 1690
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

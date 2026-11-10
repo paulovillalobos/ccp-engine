@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art57.2.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "d) Um estudo prévio, nos casos previstos no n.º 3 do artigo 43.º, competindo a elaboração do projeto de execução ao adjudicatário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-4",
+      "offsets": {
+        "start": 4590,
+        "end": 4720
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "d) Um estudo prévio, no caso previsto no artigo 43.º-A, competindo a elaboração do projeto de execução ao cocontratante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-4",
+      "offsets": {
+        "start": 1447,
+        "end": 1567
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

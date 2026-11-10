@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art285.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art285",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2015-12-01",
+      "text": "4 - Todos os contratos administrativos são susceptíveis de redução e conversão, nos termos do disposto nos artigos 292.º e 293.º do Código Civil, independentemente do respectivo desvalor jurídico.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 3185,
+        "end": 3381
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - Caso não seja possível a redução ou a conversão do contrato e o efeito anulatório se revele desproporcionado ou contrário à boa-fé, pode este ser afastado por decisão judicial ou arbitral, ponderados os interesses público e privado em presença e a gravidade do vício do contrato em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 2140,
+        "end": 2432
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

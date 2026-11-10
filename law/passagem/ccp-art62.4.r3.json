@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art62.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art62",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Os termos a que deve obedecer a apresentação e a recepção das propostas nos termos do disposto nos n.os 1 a 3 são definidos por diploma próprio.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art62-4",
+      "offsets": {
+        "start": 3378,
+        "end": 3526
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - Os termos a que deve obedecer a apresentação e a receção das propostas, conforme o disposto no n.º 1, são definidos por diploma próprio.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art62-4",
+      "offsets": {
+        "start": 1655,
+        "end": 1795
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

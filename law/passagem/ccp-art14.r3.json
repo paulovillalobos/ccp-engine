@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art14",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-i.titulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 14.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 14.º\nEmpresa associada\nPara os efeitos do disposto no artigo anterior, considera-se empresa associada qualquer pessoa colectiva cujas contas anuais sejam consolidadas com as da entidade adjudicante nos termos do disposto na Sétima Directiva n.º 83/349/CEE, do Conselho, de 13 de Junho, ou, no caso de a entidade adjudicante não se encontrar abrangida pela referida directiva:\na) Qualquer pessoa colectiva sobre a qual a entidade adjudicante possa exercer, directa ou indirectamente, uma influência dominante em virtude, nomeadamente, de deter a maioria do capital social, a maioria dos direitos de voto, o controlo de gestão ou o direito de designar, directa ou indirectamente, a maioria dos titulares de um órgão de administração, direcção ou fiscalização;\nb) Qualquer pessoa colectiva que possa exercer, directa ou indirectamente, uma influência dominante sobre a entidade adjudicante, em virtude de qualquer uma das situações referidas na alínea anterior;\nc) Qualquer pessoa colectiva que, conjuntamente com a entidade adjudicante, esteja sujeita, directa ou indirectamente, à influência dominante de uma terceira entidade, em virtude de qualquer uma das situações referidas na alínea a).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art14-4",
+      "offsets": {
+        "start": 1552,
+        "end": 2750
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 14.º\nEmpresa associada\nPara os efeitos do disposto no artigo anterior, considera-se empresa associada qualquer pessoa coletiva cujas contas anuais sejam consolidadas com as da entidade adjudicante, nos termos do disposto na Diretiva n.º 2013/34/UE, do Parlamento Europeu e do Conselho, de 26 de junho de 2013, relativa às demonstrações financeiras anuais, às demonstrações financeiras consolidadas e aos relatórios conexos de certas formas de empresas, ou, no caso de a entidade adjudicante não se encontrar abrangida pela referida diretiva:\na) Qualquer pessoa coletiva sobre a qual a entidade adjudicante possa exercer, direta ou indiretamente, uma influência dominante em virtude, nomeadamente, de deter a maioria do capital social, a maioria dos direitos de voto, o controlo de gestão ou o direito de designar, direta ou indiretamente, a maioria dos titulares de um órgão de administração, direção ou fiscalização;\nb) Qualquer pessoa coletiva que possa exercer, direta ou indiretamente, uma influência dominante sobre a entidade adjudicante, em virtude de qualquer uma das situações referidas na alínea anterior;\nc) Qualquer pessoa coletiva que, conjuntamente com a entidade adjudicante, esteja sujeita, direta ou indiretamente, à influência dominante de uma terceira entidade, em virtude de qualquer uma das situações referidas na alínea a).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art14-4",
+      "offsets": {
+        "start": 28,
+        "end": 1380
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

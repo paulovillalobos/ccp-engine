@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art327.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art327",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Nos contratos bilaterais, quando o incumprimento seja imputável ao contraente público, o co-contratante, independentemente do direito de resolução do contrato que lhe assista, nos termos do disposto no artigo 332.º, pode invocar a excepção de não cumprimento desde que a sua recusa em cumprir não implique grave prejuízo para a realização do interesse público subjacente à relação jurídica contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art327-4",
+      "offsets": {
+        "start": 1450,
+        "end": 1855
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Nos contratos bilaterais, quando o incumprimento seja imputável ao contraente público, o cocontratante, independentemente do direito de resolução do contrato que lhe assista, nos termos do disposto no artigo 332.º, pode invocar a exceção de não cumprimento, nos termos dos números seguintes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art327-4",
+      "offsets": {
+        "start": 115,
+        "end": 410
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

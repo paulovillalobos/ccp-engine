@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art57-a.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "4 - O documento previsto no n.º 1 é classificado, independentemente da apresentação de requerimento para o efeito nos termos do n.º 1 do artigo 66.º, não podendo a entidade adjudicante divulgar, direta ou indiretamente, informações nele contidas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a-4",
+      "offsets": {
+        "start": 2080,
+        "end": 2326
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - O documento é classificado, independentemente da apresentação de requerimento para o efeito nos termos do n.º 1 do artigo 66.º, não podendo a entidade adjudicante divulgar, direta ou indiretamente, informações nele contidas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a-4",
+      "offsets": {
+        "start": 754,
+        "end": 982
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

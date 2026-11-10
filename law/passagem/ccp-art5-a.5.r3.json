@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5-a.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - A parte ii também não é aplicável à formação dos contratos celebrados exclusivamente entre duas ou mais entidades adjudicantes quando se verifiquem, cumulativamente, as seguintes condições:\na) O contrato estabelece uma cooperação entre as entidades adjudicantes, no âmbito de tarefas públicas que lhes estão atribuídas e que apresentam uma conexão relevante entre si;\nb) A cooperação é regida exclusivamente por considerações de interesse público; e\nc) As entidades adjudicantes não exercem no mercado livre mais de 20 % das atividades abrangidas pelo contrato de cooperação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-a-4",
+      "offsets": {
+        "start": 9306,
+        "end": 9885
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - A parte ii também não é aplicável à formação dos contratos celebrados exclusivamente entre duas ou mais entidades adjudicantes quando se verifiquem, cumulativamente, as seguintes condições:\na) O contrato estabelece uma cooperação entre as entidades adjudicantes, no âmbito de tarefas públicas que lhes estão atribuídas e que apresentam uma conexão relevante entre si;\nb) A cooperação é regida exclusivamente por considerações de interesse público; e\nc) As entidades adjudicantes não exercem no mercado livre 20 % ou mais das atividades abrangidas pelo contrato de cooperação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-a-4",
+      "offsets": {
+        "start": 5832,
+        "end": 6411
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

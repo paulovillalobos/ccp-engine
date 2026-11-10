@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art31.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art31",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Quando razões de interesse público relevante o justifiquem, pode adoptar-se o ajuste directo para a formação de contratos de sociedade e de contratos de concessão de serviços públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 4131,
+        "end": 4319
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando razões de interesse público relevante o justifiquem, pode adotar-se o ajuste direto para a formação de contratos de sociedade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 1979,
+        "end": 2116
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Pode adotar-se o ajuste direto para a formação de contratos de sociedade quando razões de interesse público relevante o justifiquem ou se o respetivo objeto não envolver a execução de obras públicas, a exploração de serviços da competência da entidade adjudicante, a prestação de serviços ou a alienação ou locação de bens imóveis à entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 658,
+        "end": 1016
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

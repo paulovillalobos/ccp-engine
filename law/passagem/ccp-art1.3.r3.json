@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art1.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A parte ii do presente Código é igualmente aplicável, com as necessárias adaptações, aos procedimentos destinados à atribuição unilateral, pelas entidades adjudicantes referidas no artigo seguinte, de quaisquer vantagens ou benefícios, através de acto administrativo ou equiparado, em substituição da celebração de um contrato público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 5105,
+        "end": 5444
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O presente Código é igualmente aplicável, com as necessárias adaptações, aos procedimentos destinados à atribuição unilateral, pelas entidades adjudicantes referidas no artigo 2.º, de quaisquer vantagens ou benefícios, através de ato administrativo ou equiparado, em substituição da celebração de um contrato público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 1650,
+        "end": 1971
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

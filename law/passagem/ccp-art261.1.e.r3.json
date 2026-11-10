@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art261.1.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art261.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "e) Instituir catálogos eletrónicos para utilização por parte das entidades adjudicantes;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art261-4",
+      "offsets": {
+        "start": 850,
+        "end": 938
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

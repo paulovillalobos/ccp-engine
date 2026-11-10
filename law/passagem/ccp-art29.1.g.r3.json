@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art29.1.g",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art29.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "g) Em anterior concurso limitado por prévia qualificação, todas as candidaturas tenham sido excluídas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29-4",
+      "offsets": {
+        "start": 1094,
+        "end": 1196
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

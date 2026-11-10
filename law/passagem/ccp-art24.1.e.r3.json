@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art24.1.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) Por motivos técnicos, artísticos ou relacionados com a protecção de direitos exclusivos, a prestação objecto do contrato só possa ser confiada a uma entidade determinada;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 20257,
+        "end": 20430
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "e) As prestações que constituem o objeto do contrato só possam ser confiadas a determinada entidade por uma das seguintes razões:\ni) O objeto do procedimento seja a criação ou aquisição de uma obra de arte ou de um espetáculo artístico;\nii) Não exista concorrência por motivos técnicos;\niii) Seja necessário proteger direitos exclusivos, incluindo direitos de propriedade intelectual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 15241,
+        "end": 15625
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

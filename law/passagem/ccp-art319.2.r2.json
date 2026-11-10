@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art319.2",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art319",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para efeitos da autorização do contraente público, o co-contratante deve apresentar uma proposta fundamentada e instruída com todos os documentos comprovativos da verificação dos requisitos que seriam exigíveis para a autorização da cessão e da subcontratação no próprio contrato, nos termos do disposto no n.º 2, na alínea a) e na primeira parte da alínea b) do n.º 3 e no n.º 4 do artigo anterior, respectivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art319-4",
+      "offsets": {
+        "start": 1525,
+        "end": 1945
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Para efeitos da autorização referida no número anterior, o cocontratante deve apresentar uma proposta fundamentada e instruída com todos os documentos comprovativos da verificação dos requisitos que seriam exigíveis para a autorização da subcontratação no próprio contrato, nos termos do disposto no artigo 318.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art319-4",
+      "offsets": {
+        "start": 470,
+        "end": 786
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 553020,
+        "end": 553168
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

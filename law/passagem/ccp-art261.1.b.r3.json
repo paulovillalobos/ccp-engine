@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art261.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art261.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Locar ou adquirir bens móveis ou adquirir serviços destinados a entidades adjudicantes, nomeadamente por forma a promover o agrupamento de encomendas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art261-4",
+      "offsets": {
+        "start": 1699,
+        "end": 1852
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

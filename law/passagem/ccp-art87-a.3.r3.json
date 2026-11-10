@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art87-a.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art87-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - O adjudicatário deve indemnizar a entidade adjudicante, nos termos gerais, pelos prejuízos que culposamente tenha causado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art87-a-4",
+      "offsets": {
+        "start": 2263,
+        "end": 2389
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Quando as causas de caducidade da adjudicação referidas no n.º 1 respeitem ao adjudicatário, a entidade adjudicante deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art87-a-4",
+      "offsets": {
+        "start": 1170,
+        "end": 1346
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

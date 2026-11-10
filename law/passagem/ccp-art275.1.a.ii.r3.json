@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art275.1.a.ii",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art275.1.a",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "ii) Obras de construção de hospitais, instalações desportivas, recreativas e de ocupação de tempos livres, estabelecimentos escolares e universitários e edifícios para uso administrativo;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art275-4",
+      "offsets": {
+        "start": 4496,
+        "end": 4683
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

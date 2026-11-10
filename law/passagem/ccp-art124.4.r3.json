@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art124.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art124",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Cabe ao órgão competente para a decisão de contratar decidir sobre a aprovação de todas as propostas contidas no relatório final, nomeadamente para efeitos de adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art124-4",
+      "offsets": {
+        "start": 2303,
+        "end": 2478
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

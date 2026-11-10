@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5-b.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5-b",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Os contratos com objeto passível de ato administrativo e demais contratos sobre o exercício de poderes públicos ficam sujeitos às normas constantes do Código do Procedimento Administrativo, com as necessárias adaptações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-b-4",
+      "offsets": {
+        "start": 1083,
+        "end": 1307
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-b-4",
+      "offsets": {
+        "start": 482,
+        "end": 497
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

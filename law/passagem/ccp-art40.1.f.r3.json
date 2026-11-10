@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art40.1.f",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art40.1",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "f) No diálogo concorrencial, o anúncio, o programa do procedimento, a memória descritiva, o convite à apresentação de soluções, o convite à apresentação de propostas e o caderno de encargos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art40-4",
+      "offsets": {
+        "start": 2559,
+        "end": 2749
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

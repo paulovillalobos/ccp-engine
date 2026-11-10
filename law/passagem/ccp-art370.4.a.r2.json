@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art370.4.a",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art370.4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Não possam ser técnica ou economicamente separáveis do objeto do contrato sem inconvenientes graves e impliquem um aumento considerável de custos para o dono da obra; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 3670,
+        "end": 3841
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Alterado pelo/a Artigo 21.º do/a Lei n.º 30/2021 - Diário da República n.º 99/2021, Série I de 2021-05-21, em vigor a partir de 2021-06-20",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 602208,
+        "end": 602346
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

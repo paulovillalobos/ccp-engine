@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art42.6.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42.6",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "e) A valorização da economia local e regional;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 8763,
+        "end": 8809
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "e) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 5409,
+        "end": 5423
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "e) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 2009,
+        "end": 2023
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

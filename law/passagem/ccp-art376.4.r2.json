@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art376.4",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art376",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O empreiteiro não está sujeito à obrigação prevista no n.º 1 nos casos previstos no n.º 2 do artigo 371.º, sendo aplicável, com as necessárias adaptações, o disposto no artigo 372.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 4068,
+        "end": 4253
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "4 - O limite previsto no número anterior é elevado para 10 % quando a execução dos trabalhos não implique uma modificação substancial do contrato e estejam em causa obras cuja execução seja afetada por condicionalismos naturais com especiais características de imprevisibilidade, nomeadamente as obras marítimo-portuárias e as obras complexas do ponto de vista geotécnico, em especial a construção de túneis, bem como as obras de reabilitação ou restauro de bens imóveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 994,
+        "end": 1465
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 612416,
+        "end": 612581
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art29.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art29.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Contratos de empreitada de obras públicas, contratos de locação ou de aquisição de bens móveis e contratos de aquisição de serviços, desde que, em anterior concurso público ou concurso limitado por prévia qualificação cujo anúncio tenha sido publicado no Jornal Oficial da União Europeia, ou em anterior diálogo concorrencial, todas as propostas apresentadas tenham sido excluídas com fundamento no n.º 2 do artigo 70.º, e o caderno de encargos não seja substancialmente alterado em relação ao daquele procedimento;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29-4",
+      "offsets": {
+        "start": 4561,
+        "end": 5079
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) As suas necessidades não possam ser satisfeitas sem a adaptação de soluções facilmente disponíveis;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29-4",
+      "offsets": {
+        "start": 3588,
+        "end": 3690
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

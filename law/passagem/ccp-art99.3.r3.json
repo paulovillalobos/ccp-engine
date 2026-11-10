@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art99.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art99",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - Os ajustamentos propostos nos termos do n.º 1 podem abranger a exclusão de termos ou condições constantes da proposta adjudicada que se reportem a aspetos da execução do contrato não regulados pelo caderno de encargos e que não sejam considerados necessários a essa execução ou sejam considerados desproporcionados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art99-4",
+      "offsets": {
+        "start": 853,
+        "end": 1172
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

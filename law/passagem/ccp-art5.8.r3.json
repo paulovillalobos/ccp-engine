@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5.8",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - A parte ii não é aplicável aos contratos celebrados pelas entidades referidas no n.º 2 do artigo 2.º, e pelo Banco de Portugal, que não abranjam prestações típicas da empreitada de obras públicas, concessão de obras públicas, concessão de serviços públicos, locação e aquisição de bens móveis ou aquisição de serviços.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 11719,
+        "end": 12041
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - A parte ii não é aplicável aos contratos celebrados pelas entidades referidas no n.º 2 do artigo 2.º, e pelo Banco de Portugal, que não abranjam prestações típicas da empreitada de obras públicas, concessão de obras públicas, concessão de serviços, locação e aquisição de bens móveis ou aquisição de serviços.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 3867,
+        "end": 4180
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

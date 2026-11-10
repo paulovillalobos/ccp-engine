@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art208.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art208",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Ao anúncio referido no número anterior é aplicável, com as necessárias adaptações, o disposto nos n.os 4 a 8 do artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art208-4",
+      "offsets": {
+        "start": 2453,
+        "end": 2581
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Ao anúncio referido no número anterior é aplicável, com as necessárias adaptações, o disposto nos n.os 5 a 7 do artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art208-4",
+      "offsets": {
+        "start": 1555,
+        "end": 1683
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Ao anúncio referido no número anterior é aplicável, com as necessárias adaptações, o disposto nos n.ºs 5 a 7 do artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art208-4",
+      "offsets": {
+        "start": 647,
+        "end": 775
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

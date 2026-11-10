@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art370.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art370",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - São trabalhos a mais aqueles cuja espécie ou quantidade não esteja prevista no contrato e que:\na) Se tenham tornado necessários à execução da mesma obra na sequência de uma circunstância imprevista; e\nb) Não possam ser técnica ou economicamente separáveis do objecto do contrato sem inconvenientes graves para o dono da obra ou, embora separáveis, sejam estritamente necessários à conclusão da obra.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 8713,
+        "end": 9116
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - São trabalhos complementares aqueles cuja espécie ou quantidade não esteja prevista no contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 2300,
+        "end": 2400
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "1 - São trabalhos complementares aqueles cuja espécie ou quantidade não esteja prevista no contrato e cuja realização se revele necessária para a sua execução.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 512,
+        "end": 671
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - São trabalhos complementares os trabalhos executados ao abrigo de uma modificação do contrato de empreitada, nos termos da alínea c) do n.º 1 do artigo 312.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 93,
+        "end": 254
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

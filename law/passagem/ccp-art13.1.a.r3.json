@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art13.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art13.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) A executar num país terceiro, desde que tal execução não implique a exploração física de uma rede pública ou de uma área geográfica no interior do território da União Europeia;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13-4",
+      "offsets": {
+        "start": 12011,
+        "end": 12190
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

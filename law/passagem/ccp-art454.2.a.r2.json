@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art454.2.a",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art454.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) O contrato tenha sido celebrado na sequência de ajuste directo adoptado ao abrigo do disposto no artigo 24.º ou no n.º 1 do artigo 27.º, de procedimento de negociação adoptado ao abrigo do disposto no artigo 29.º, de diálogo concorrencial, de concurso público ou de concurso limitado por prévia qualificação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 5674,
+        "end": 5985
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "a) Tendo o contrato sido celebrado na sequência de procedimento de ajuste direto ao abrigo do disposto na alínea a) do n.º 1 do artigo 20.º, o somatório do preço contratual com o preço atribuído aos serviços a mais, incluindo o de anteriores serviços a mais, seja igual ou superior ao valor referido naquela alínea;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 3215,
+        "end": 3530
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) Não possam ser técnica ou economicamente separáveis do objeto do contrato sem inconvenientes graves e impliquem um aumento considerável de custos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 724,
+        "end": 873
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Alterado pelo/a Artigo 21.º do/a Lei n.º 30/2021 - Diário da República n.º 99/2021, Série I de 2021-05-21, em vigor a partir de 2021-06-20",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 686216,
+        "end": 686354
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art96.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) A identificação das partes e dos respectivos representantes, assim como do título a que intervêm, com indicação dos actos que os habilitem para esse efeito;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96-4",
+      "offsets": {
+        "start": 6637,
+        "end": 6796
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

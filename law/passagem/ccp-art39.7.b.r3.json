@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art39.7.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art39.7",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) A organização interna do procedimento de contratação, nomeadamente a sua gestão, a distribuição das obras, fornecimentos ou serviços a adjudicar e a celebração dos contratos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39-4",
+      "offsets": {
+        "start": 6225,
+        "end": 6402
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

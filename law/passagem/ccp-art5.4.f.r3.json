@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5.4.f",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5.4",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "f) Contratos de aquisição de serviços que tenham por objecto os serviços de saúde e de carácter social mencionados no anexo ii-B da Directiva n.º 2004/18/CE, do Parlamento Europeu e do Conselho, de 31 de Março, bem como os contratos de aquisição de serviços que tenham por objecto os serviços de educação e formação profissional mencionados no referido anexo, que confiram certificação escolar ou certificação profissional;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 25219,
+        "end": 25642
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "f) Contratos de aquisição de serviços financeiros de emissão e gestão de dívida pública e de gestão da tesouraria do Estado;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 10407,
+        "end": 10531
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art225.5",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art225",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O anúncio referido no n.º 1 deve ser enviado ao Serviço das Publicações Oficiais das Comunidades Europeias através de meios electrónicos, conforme formato e modalidades de transmissão indicados no portal da Internet http://simap.eu.int ou através de qualquer outro meio, caso em que o respectivo conteúdo deve limitar-se a cerca de 650 palavras.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art225-4",
+      "offsets": {
+        "start": 2620,
+        "end": 2969
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 438074,
+        "end": 438239
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

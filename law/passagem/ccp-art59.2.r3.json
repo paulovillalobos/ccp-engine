@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art59.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art59",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Nos casos em que o programa do procedimento permita a apresentação de propostas variantes, os concorrentes são obrigados a apresentar proposta base.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art59-4",
+      "offsets": {
+        "start": 5150,
+        "end": 5302
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Nos casos previstos no número anterior, é sempre permitida a apresentação de propostas variantes, salvo quando o programa do procedimento não o permita expressamente, sendo que a apresentação de propostas variantes implica a apresentação de proposta base.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art59-4",
+      "offsets": {
+        "start": 3451,
+        "end": 3710
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Nos casos em que o programa do procedimento permita a apresentação de propostas variantes, os concorrentes são obrigados a apresentar proposta base.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art59-4",
+      "offsets": {
+        "start": 1885,
+        "end": 2037
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

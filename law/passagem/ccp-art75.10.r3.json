@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.10",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "10 - Caso seja obrigatória, por força do Direito da União Europeia, a utilização de uma metodologia comum para o cálculo dos custos do ciclo de vida, a mesma deve ser aplicada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75-4",
+      "offsets": {
+        "start": 19628,
+        "end": 19804
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

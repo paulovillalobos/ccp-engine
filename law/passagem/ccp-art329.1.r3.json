@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art329.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art329",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Nos termos previstos no presente Código, o contraente público pode, a título sancionatório, resolver o contrato e aplicar as sanções previstas no contrato ou na lei em caso de incumprimento pelo co-contratante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art329-4",
+      "offsets": {
+        "start": 2638,
+        "end": 2852
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

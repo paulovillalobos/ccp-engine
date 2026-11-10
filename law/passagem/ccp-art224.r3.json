@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art224",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 224.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 224.º\nAnúncio do concurso de concepção\n1 - O concurso de concepção é publicitado no Diário da República através de anúncio conforme modelo aprovado por portaria dos ministros responsáveis pela edição do Diário da República e pelas áreas das finanças e das obras públicas.\n2 - O anúncio referido no número anterior ou um resumo dos seus elementos mais importantes pode ser posteriormente divulgado por qualquer outro meio considerado conveniente, nomeadamente através da sua publicação em plataforma electrónica utilizada pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art224-4",
+      "offsets": {
+        "start": 260,
+        "end": 814
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 224.º\nAnúncio do concurso de concepção",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art224-4",
+      "offsets": {
+        "start": 42,
+        "end": 87
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

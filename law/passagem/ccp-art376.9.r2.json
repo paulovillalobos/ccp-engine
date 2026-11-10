@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art376.9",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art376",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2012-08-11",
+      "text": "9 - Caso não se verifique a condição prevista no n.º 3, os trabalhos de suprimento de erros e omissões devem ser objecto de contrato celebrado na sequência de procedimento adoptado nos termos do disposto no título i da parte ii.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 2756,
+        "end": 2984
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 612416,
+        "end": 612581
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art84.2",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art84",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Sem prejuízo do disposto na alínea b) do número anterior, no caso de se tratar de um procedimento de formação de um contrato de empreitada ou de concessão de obras públicas, todos os membros do agrupamento concorrente que exerçam a actividade da construção devem apresentar o respectivo alvará ou título de registo emitido pelo Instituto da Construção e do Imobiliário, I. P.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art84-4",
+      "offsets": {
+        "start": 1000,
+        "end": 1379
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 260561,
+        "end": 260726
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

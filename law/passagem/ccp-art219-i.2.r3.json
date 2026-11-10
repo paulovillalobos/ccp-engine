@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-i.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-i",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Da decisão de seleção deve também constar a atribuição dos prémios de consagração aos concorrentes selecionados, bem como a atribuição dos eventuais prémios de participação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-i-4",
+      "offsets": {
+        "start": 363,
+        "end": 540
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art81.10",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "10 - O adjudicatário não tem de apresentar os documentos previstos na alínea b) do n.º 1 se estiver registado no Portal Nacional de Fornecedores do Estado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 3392,
+        "end": 3547
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "10 - As entidades adjudicantes devem obter oficiosamente as informações e documentos necessários à comprovação da habilitação do adjudicatário através de sistemas de interoperabilidade com outras autoridades públicas, nomeadamente os referidos no n.º 1, apenas podendo solicitar a apresentação de documentos cuja obtenção oficiosa não seja possível.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 1406,
+        "end": 1755
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

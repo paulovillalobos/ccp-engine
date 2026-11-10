@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art283-a.2.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art283-a.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2011-01-13",
+      "text": "c) A outorga do contrato não tenha ocorrido antes de decorridos 10 dias após a data da referida publicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a-4",
+      "offsets": {
+        "start": 6419,
+        "end": 6526
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 505098,
+        "end": 505263
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": true
+    },
+    {
+      "version": "2021-06-20",
+      "text": "c) A outorga do contrato não tenha ocorrido antes de 10 dias após a data da referida publicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a-4",
+      "offsets": {
+        "start": 2600,
+        "end": 2696
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

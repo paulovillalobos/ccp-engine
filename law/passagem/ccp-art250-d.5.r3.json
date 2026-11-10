@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-d.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - Consideram-se preenchidos os requisitos previstos no n.º 2 quando as organizações ali indicadas sejam constituídas ou participadas, nos termos legalmente admitidos, por entidades que preencham, individualmente ou em conjunto, os referidos requisitos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d-4",
+      "offsets": {
+        "start": 3965,
+        "end": 4219
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

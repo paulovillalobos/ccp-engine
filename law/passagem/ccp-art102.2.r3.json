@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art102.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art102",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No prazo de 10 dias a contar da recepção da reclamação, o órgão que aprovou a minuta do contrato notifica o adjudicatário da sua decisão, equivalendo o silêncio à rejeição da reclamação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art102-4",
+      "offsets": {
+        "start": 1536,
+        "end": 1726
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

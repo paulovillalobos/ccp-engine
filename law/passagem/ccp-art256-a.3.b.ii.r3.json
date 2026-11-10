@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art256-a.3.b.ii",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256-a.3.b",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "ii) Documento que contenha versão simplificada dos atributos da proposta, de acordo com os quais a entidade convidada se dispõe a contratar, incluindo os aspetos da execução do contrato aos quais a entidade adjudicante pretende que a entidade convidada se vincule;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a-4",
+      "offsets": {
+        "start": 5745,
+        "end": 6009
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art55.1.g",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "g) Tenham sido objecto de aplicação, há menos de dois anos, de sanção administrativa ou judicial pela utilização ao seu serviço de mão-de-obra legalmente sujeita ao pagamento de impostos e contribuições para a segurança social, não declarada nos termos das normas que imponham essa obrigação, em Portugal ou no Estado de que sejam nacionais ou no qual se situe o seu estabelecimento principal;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 15429,
+        "end": 15822
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "g) Tenham sido objeto de aplicação, há menos de dois anos, de sanção administrativa ou judicial pela utilização ao seu serviço de mão-de-obra legalmente sujeita ao pagamento de impostos e contribuições para a segurança social, não declarada nos termos das normas que imponham essa obrigação, em Portugal ou no Estado de que sejam nacionais ou no qual se situe o seu estabelecimento principal;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 9188,
+        "end": 9580
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "g) Tenham sido objeto de aplicação de sanção administrativa ou judicial pela utilização ao seu serviço, há menos de três anos, de mão-de-obra legalmente sujeita ao pagamento de impostos e contribuições para a segurança social, não declarada nos termos das normas que imponham essa obrigação, em Portugal ou no Estado de que sejam nacionais ou no qual se situe o seu estabelecimento principal;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 1576,
+        "end": 1968
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

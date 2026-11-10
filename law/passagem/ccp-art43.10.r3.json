@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art43.10",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "10 - Para efeitos do disposto no número anterior, considera-se sanada a nulidade nas seguintes situações:\na) Se, verificado o vício antes de decorrido o prazo para apresentação de propostas, a entidade adjudicante proceder à junção dos elementos em falta, no prazo de cinco dias, sendo prorrogado o prazo para apresentação de propostas, nos termos do artigo 64.º;\nb) Se, no prazo de cinco dias após notificação para, querendo, sanar a nulidade, o contraente público proceder à junção dos elementos em falta, desde que não alterem os pressupostos em que assentou a elaboração da proposta do adjudicatário;\nc) Se, no prazo de cinco dias após notificação para, querendo, sanar a nulidade, o contraente público apresentar as razões que justificam a não exigência dos elementos previstos no n.º 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 11183,
+        "end": 11975
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "10 - Considera-se sanada a nulidade:\na) Se, verificado o vício antes de decorrido o prazo para apresentação de propostas, a entidade adjudicante proceder à junção dos elementos em falta, no prazo de cinco dias, sendo prorrogado o prazo para apresentação de propostas, nos termos do artigo 64.º;\nb) Se, no prazo de cinco dias após notificação pelo tribunal para, querendo, sanar a nulidade, a entidade adjudicante proceder à junção dos elementos em falta, desde que não alterem os pressupostos em que assentou a elaboração da proposta do concorrente;\nc) Se, no prazo de cinco dias após notificação pelo tribunal para, querendo, sanar a nulidade, a entidade adjudicante apresentar as razões que justificam a não exigência dos elementos previstos no n.º 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 2534,
+        "end": 3287
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

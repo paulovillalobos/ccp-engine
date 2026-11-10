@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art55.1.f",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "f) Tenham sido objeto de aplicação de sanção acessória de proibição de participação em concursos públicos prevista em legislação especial, nomeadamente nos regimes contraordenacionais em matéria laboral, de concorrência e de igualdade e não-discriminação, bem como da sanção prevista no artigo 460.º, durante o período fixado na decisão condenatória;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 15078,
+        "end": 15428
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "f) Tenham sido objeto de aplicação de sanção acessória de proibição de participação em procedimentos de contratação pública previstos em legislação especial, nomeadamente nos regimes contraordenacionais em matéria laboral, de concorrência e igualdade e não discriminação, bem como da sanção prevista no artigo 460.º, durante o período fixado na decisão condenatória;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 8821,
+        "end": 9187
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "f) Tenham sido objeto de aplicação de sanção acessória de proibição de participação em procedimentos de contratação pública prevista em legislação especial, nomeadamente nos regimes contraordenacionais em matéria laboral, de concorrência e igualdade e não discriminação, bem como da sanção prevista no artigo 460.º, durante o período fixado na decisão condenatória;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 1210,
+        "end": 1575
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

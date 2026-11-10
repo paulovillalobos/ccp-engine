@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art231.1",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art231",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Quando a modalidade escolhida for a de concurso público, os documentos que materializam cada um dos trabalhos de concepção devem ser encerrados em invólucro opaco e fechado, no rosto do qual deve ser escrita apenas a palavra «Trabalho» e a designação do concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art231-4",
+      "offsets": {
+        "start": 294,
+        "end": 561
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 439536,
+        "end": 439701
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art182.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art182",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Salvo se o programa do concurso dispuser diferentemente e sem prejuízo do disposto no número seguinte, no caso de o candidato ser um agrupamento, considera-se que preenche os requisitos mínimos de capacidade técnica e de capacidade financeira, desde que, relativamente a cada requisito:\na) Algum dos membros que o integram o preencha individualmente; ou\nb) Alguns dos membros que o integram o preencham conjuntamente, quando tal seja possível em função da natureza do requisito exigido.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art182-4",
+      "offsets": {
+        "start": 135,
+        "end": 625
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

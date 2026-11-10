@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art39.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art39.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Um contrato cuja execução seja do interesse de todas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39-4",
+      "offsets": {
+        "start": 7499,
+        "end": 7555
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) Formação de contratos cuja execução seja do interesse de todas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art39-4",
+      "offsets": {
+        "start": 3964,
+        "end": 4030
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

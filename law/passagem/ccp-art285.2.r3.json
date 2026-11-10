@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art285.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art285",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Aos demais contratos administrativos é aplicável o regime de invalidade consagrado no direito civil.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 3797,
+        "end": 3901
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2015-12-01",
+      "revoked": false
+    },
+    {
+      "version": "2015-12-01",
+      "text": "2 - A anulabilidade, total ou parcial, dos demais contratos pode ser arguida no prazo de seis meses, contado desde a data da celebração do contrato ou, quanto a terceiros, do conhecimento do seu clausulado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 2820,
+        "end": 3026
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Aos demais contratos públicos aplica-se o regime de invalidade do presente Código e o previsto na legislação administrativa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 1823,
+        "end": 1951
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - No que respeita à falta e vícios da vontade das partes dos contratos públicos, aplicam-se as disposições pertinentes do Código Civil.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 231,
+        "end": 368
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

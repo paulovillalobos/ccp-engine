@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art5.4.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5.4",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "i) Contratos abrangidos pelo disposto na alínea b) do n.º 1 e no n.º 2 do artigo 296.º do Tratado da Comunidade Europeia, desde que a respectiva formação seja regulada por lei especial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 26168,
+        "end": 26353
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "i) Os contratos diretamente abrangidos pelo disposto no artigo 346.º do Tratado sobre o Funcionamento da União Europeia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 15670,
+        "end": 15790
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "i) Contratos que, nos termos da lei, sejam declarados secretos ou cuja execução deva ser acompanhada de medidas especiais de segurança, bem como quando os interesses essenciais de defesa e segurança do Estado o exigirem;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 10857,
+        "end": 11077
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

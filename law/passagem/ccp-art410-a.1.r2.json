@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art410-a.1",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art410-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - O valor de um contrato de concessão corresponde ao total do volume de negócios do concessionário gerado ao longo da duração do contrato, sem IVA, conforme estipulado no contrato, em contrapartida das obras e dos serviços que foram objeto da concessão, bem como dos fornecimentos relacionados com tais obras e serviços.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art410-a-4",
+      "offsets": {
+        "start": 300,
+        "end": 622
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 651884,
+        "end": 652032
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

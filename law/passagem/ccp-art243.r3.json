@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art243",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 243.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 243.º\nConvite\n1 - O procedimento de formação do contrato a celebrar ao abrigo de um sistema de aquisição dinâmico inicia-se com o envio, em simultâneo, a todos os concorrentes cujas versões iniciais de proposta foram aceites, de um convite a apresentar uma versão definitiva de proposta para o contrato a celebrar.\n2 - No convite, a entidade adjudicante deve indicar:\na) O prazo para a apresentação das versões definitivas das propostas, que não pode ser inferior a cinco dias a contar da data do envio do convite;\nb) O modelo de avaliação das propostas, caso não conste do programa do procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art243-4",
+      "offsets": {
+        "start": 236,
+        "end": 842
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 243.º\nConvite",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art243-4",
+      "offsets": {
+        "start": 43,
+        "end": 63
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

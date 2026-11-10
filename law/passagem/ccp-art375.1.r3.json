@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art375.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art375",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Definidos todos os termos e condições a que deve obedecer a execução dos trabalhos complementares, o dono da obra e o empreiteiro devem proceder à respetiva formalização por escrito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art375-4",
+      "offsets": {
+        "start": 110,
+        "end": 296
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

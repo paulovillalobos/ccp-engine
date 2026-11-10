@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art1-a.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Na formação e na execução dos contratos públicos devem ser respeitados os princípios gerais decorrentes da Constituição, dos Tratados da União Europeia e do Código do Procedimento Administrativo, em especial os princípios da legalidade, da prossecução do interesse público, da imparcialidade, da proporcionalidade, da boa-fé, da tutela da confiança, da sustentabilidade e da responsabilidade, bem como os princípios da concorrência, da publicidade e da transparência, da igualdade de tratamento e da não-discriminação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-a-4",
+      "offsets": {
+        "start": 3710,
+        "end": 4232
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Na formação e na execução dos contratos públicos devem ser respeitados os princípios gerais da atividade administrativa decorrentes da Constituição, dos Tratados da União Europeia e do Código do Procedimento Administrativo, designadamente os princípios da legalidade, da prossecução do interesse público, da imparcialidade, da proporcionalidade, da razoabilidade e da boa-fé.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-a-4",
+      "offsets": {
+        "start": 86,
+        "end": 465
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

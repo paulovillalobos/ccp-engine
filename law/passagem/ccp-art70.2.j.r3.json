@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.2.j",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "j)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "j) Que não observem as formalidades do modo de apresentação das propostas fixadas nos termos do disposto no artigo 62.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 1391,
+        "end": 1511
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

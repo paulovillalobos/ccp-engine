@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art299",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-i.capitulo-iii",
+  "kind": "artigo",
+  "label": "Artigo 299.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 299.º\nPrazo de pagamento\n1 - Os pagamentos devidos pelo contraente público devem ser efectuados no prazo de 30 dias após a entrega das respectivas facturas, as quais só podem ser emitidas após o vencimento da obrigação a que se referem.\n2 - O contrato pode estabelecer prazo diverso do fixado no número anterior, não devendo este exceder, em qualquer caso, 60 dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art299-4",
+      "offsets": {
+        "start": 1671,
+        "end": 2043
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2010-09-01",
+      "revoked": false
+    },
+    {
+      "version": "2010-09-01",
+      "text": "Artigo 299.º\nPrazo de pagamento\n1 - Sempre que do contrato não conste data ou prazo de pagamento, a obrigação pecuniária vence-se, sem necessidade de novo aviso:\na) 30 dias após a data em que o contraente público tiver recebido a factura ou documento equivalente;\nb) 30 dias após a data de recepção efectiva dos bens ou da prestação dos serviços quando a data de recepção da factura ou de documento equivalente seja incerta;\nc) 30 dias após a data de recepção efectiva dos bens ou da prestação dos serviços quando o contraente público receba a factura ou documento equivalente antes do fornecimento dos bens ou da prestação dos serviços;\nd) 30 dias após a data de aceitação ou verificação quando esteja previsto um processo mediante o qual deva ser determinada a conformidade dos bens ou serviços e o contraente público receba a factura ou documento equivalente em data anterior.\n2 - O período máximo de duração do procedimento de aceitação ou verificação referido na alínea d) do número anterior não pode exceder os 30 dias, salvo disposição em contrário devidamente justificada no contrato.\n3 - Constando do contrato data ou prazo de pagamento, os pagamentos devidos pelo contraente público devem ser efectuados no prazo de 30 dias após a entrega das respectivas facturas, as quais só podem ser emitidas após o vencimento da obrigação a que se referem.\n4 - O contrato pode estabelecer prazo diverso do fixado no número anterior, não devendo este exceder, em qualquer caso, 60 dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art299-4",
+      "offsets": {
+        "start": 44,
+        "end": 1527
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

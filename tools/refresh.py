@@ -32,7 +32,7 @@ from engine import extract  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store  # noqa: E402
 
-VERSION = "ccp-refresh-0.2"
+VERSION = "ccp-refresh-0.3"
 STATE = ROOT / "law/REFRESH.json"
 PY = str(ROOT / ".venv/bin/python")
 MODAL = str(Path.home() / "Downloads/foaap-core/.venv-modal/bin/modal")
@@ -78,10 +78,18 @@ def ccp_changed(store, raw=None):
     import capture_dr_consolidated as cap  # noqa: E402
     import read_rules_v3 as v3  # noqa: E402
     from engine import structure  # noqa: E402
-    text = extract.EXTRACTORS["dr-consolidated-fragments@1"](raw or cap.render(CCP_URL, 30000))
+    raw = raw or cap.render(CCP_URL, 30000)
+    text = extract.EXTRACTORS["dr-consolidated-fragments@1"](raw)
     marks = [m.start() for m in re.finditer(r"^(?:Anexo|ANEXO)$", text, re.M)]
     if not marks:
         raise SystemExit("refresh stopped: the consolidated page has no «Anexo» line (the page changed shape)")
+    revoked_on_page = set()  # D95: the DR prints a revoked article's last text under a «REVOGADO» note (art. 61)
+    noted = extract.EXTRACTORS["dr-article-history@1"](raw)
+    anexo = [m.start() for m in re.finditer(r"^(?:Anexo|ANEXO)$", noted, re.M)]
+    for m in re.finditer(r"^Artigo (\d+(?:\.º)?(?:-[A-Z])?)\n(.+?)(?=^Artigo \d|\Z)", noted[anexo[0]:] if anexo else "", re.M | re.S):
+        first = next((l for l in m.group(2).split("\n") if l.startswith("NOTA: ")), "")
+        if first.startswith("NOTA: REVOGADO"):
+            revoked_on_page.add("ccp:art" + m.group(1).replace(".º", "").lower())
     law, today, changed = v3.Law(store), now_utc()[:10], []
     for m in re.finditer(r"^Artigo (\d+(?:\.º)?(?:-[A-Z])?)\n(.+?)(?=^Artigo \d|\Z)", text[marks[0]:], re.M | re.S):  # «Artigo 410-A» has no º
         pid = "ccp:art" + m.group(1).replace(".º", "").lower()
@@ -94,7 +102,7 @@ def ccp_changed(store, raw=None):
         same = lambda x: re.sub(r"^Artigo (\d+)(?:\.º)?", r"Artigo \1", " ".join(x.split()))  # noqa: E731  (the DR prints «Artigo 410» and «Artigo 410.º»)
         page, mine = same(" ".join(lines)), law.text(pid, today)
         if mine is None:
-            if len(lines) > 2 and not re.search(r"Revogad", page):
+            if len(lines) > 2 and not re.search(r"Revogad", page) and pid not in revoked_on_page:
                 changed.append(pid)
         elif page != same(mine):
             changed.append(pid)

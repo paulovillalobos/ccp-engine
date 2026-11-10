@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art425.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art425",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Sem prejuízo do disposto no n.º 1 do artigo 417.º, os direitos de propriedade intelectual sobre os estudos e projectos elaborados para os fins específicos das actividades integradas na concessão, bem como os projectos, planos, plantas, documentos e outros elementos referidos no mesmo artigo, são transmitidos gratuitamente e em regime de exclusividade ao concedente no termo do prazo de vigência do contrato, cabendo ao concessionário adoptar todas as medidas para o efeito necessárias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art425-4",
+      "offsets": {
+        "start": 1841,
+        "end": 2332
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Os direitos de propriedade intelectual sobre os estudos e projetos elaborados para os fins específicos das atividades integradas na concessão, bem como os projetos, planos, plantas, documentos e outros elementos referidos no artigo 417.º, são transmitidos gratuitamente e em regime de exclusividade ao concedente no termo do prazo de vigência do contrato, cabendo ao concessionário adotar todas as medidas para o efeito necessárias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art425-4",
+      "offsets": {
+        "start": 347,
+        "end": 783
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

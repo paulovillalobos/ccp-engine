@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art174.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art174",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando tenha sido publicado o anúncio periódico indicativo com as indicações referidas no n.º 3 do artigo 167.º, não pode ser fixado um prazo para a apresentação das candidaturas inferior a 37 dias a contar da data do envio do convite previsto no n.º 5 do mesmo artigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art174-4",
+      "offsets": {
+        "start": 3453,
+        "end": 3726
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O prazo mínimo previsto no número anterior pode ser reduzido para 15 dias nos casos em que uma situação de urgência devidamente fundamentada pela entidade adjudicante inviabilize o cumprimento do prazo mínimo de 30 dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art174-4",
+      "offsets": {
+        "start": 2049,
+        "end": 2273
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art109.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art109",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - As competências atribuídas pelo artigo 37.º ao ministro ou ao membro do Governo Regional responsável pela área das finanças e ao ministro ou ao membro do Governo Regional da tutela sectorial só podem ser delegadas em membros do Governo ou do Governo Regional, consoante o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art109-4",
+      "offsets": {
+        "start": 2404,
+        "end": 2685
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2019-12-05",
+      "revoked": false
+    },
+    {
+      "version": "2019-12-05",
+      "text": "2 - As competências atribuídas pelo artigo 37.º ao membro do Governo Regional responsável pela área das finanças e ao membro do Governo Regional da tutela setorial só podem ser delegadas em membros do Governo Regional.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art109-4",
+      "offsets": {
+        "start": 1372,
+        "end": 1590
+      },
+      "valid_from": "2019-12-05",
+      "valid_to": "2020-03-19",
+      "revoked": false
+    },
+    {
+      "version": "2020-03-19",
+      "text": "2 - As competências atribuídas pelo artigo 37.º ao ministro ou ao membro do Governo Regional responsável pela área das finanças e ao ministro ou ao membro do Governo Regional da tutela sectorial só podem ser delegadas em membros do Governo ou do Governo Regional, consoante o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art109-4",
+      "offsets": {
+        "start": 270,
+        "end": 551
+      },
+      "valid_from": "2020-03-19",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

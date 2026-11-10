@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art454.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art454",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Só pode ser ordenada a execução de serviços a mais quando se verifiquem as seguintes condições:\na) O contrato tenha sido celebrado na sequência de ajuste directo adoptado ao abrigo do disposto no artigo 24.º ou no n.º 1 do artigo 27.º, de procedimento de negociação adoptado ao abrigo do disposto no artigo 29.º, de diálogo concorrencial, de concurso público ou de concurso limitado por prévia qualificação;\nb) Quando o contrato tenha sido celebrado na sequência de concurso público ou de concurso limitado por prévia qualificação e o anúncio do concurso tenha sido publicado no Jornal Oficial da União Europeia, no caso de o somatório do preço atribuído aos serviços a mais nos termos do disposto no artigo 373.º com o preço contratual ser igual ou superior ao valor referido na alínea b) do n.º 1 do artigo 20.º;\nc) O preço atribuído aos serviços a mais nos termos do disposto no artigo 373.º somado ao preço de anteriores serviços a mais e deduzido do preço dos serviços a menos não exceder 5 % do preço contratual; e\nd) O somatório do preço atribuído aos serviços a mais nos termos do disposto no artigo 373.º com o preço de anteriores serviços a mais e de anteriores serviços de suprimento de erros e omissões não exceder 50 % do preço contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 5574,
+        "end": 6830
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "2 - Não pode ser ordenada a execução de serviços a mais quando:\na) Tendo o contrato sido celebrado na sequência de procedimento de ajuste direto ao abrigo do disposto na alínea a) do n.º 1 do artigo 20.º, o somatório do preço contratual com o preço atribuído aos serviços a mais, incluindo o de anteriores serviços a mais, seja igual ou superior ao valor referido naquela alínea;\nb) Tendo o contrato sido celebrado na sequência de concurso público ou de concurso limitado por prévia qualificação e o somatório do preço contratual com o preço atribuído aos serviços a mais, incluindo o de anteriores serviços a mais, seja igual ou superior ao valor referido na alínea b) do n.º 1 do artigo 20.º, o anúncio do concurso não tenha sido publicado no Jornal Oficial da União Europeia;\nc) O preço atribuído aos serviços a mais, incluindo o de anteriores serviços a mais, ultrapasse 40 % do preço contratual.\nd) d) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 3151,
+        "end": 4069
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando os serviços complementares resultem de circunstâncias não previstas, pode o contraente público ordenar a sua execução ao cocontratante desde que:\na) Não possam ser técnica ou economicamente separáveis do objeto do contrato sem inconvenientes graves e impliquem um aumento considerável de custos;\nb) O preço desses serviços, incluindo o de anteriores serviços complementares igualmente decorrentes de circunstâncias não previstas, não exceda 10 % do preço contratual; e\nc) O somatório do preço contratual com o preço atribuído aos serviços complementares não exceda os limites previstos na alínea b) do n.º 1 do artigo 20.º, quando o procedimento adotado tenha sido o concurso público ou limitado por prévia qualificação sem publicação de anúncio no Jornal Oficial da União Europeia, na alínea c) do n.º 1 do mesmo artigo, quando o procedimento adotado tenha sido a consulta prévia, ou na alínea d) do n.º 1 do mesmo artigo, quando o procedimento adotado tenha sido o ajuste direto;\nd) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 567,
+        "end": 1574
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 205,
+        "end": 220
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

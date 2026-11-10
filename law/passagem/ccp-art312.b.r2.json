@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art312.b",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art312",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Por razões de interesse público decorrentes de necessidades novas ou de uma nova ponderação das circunstâncias existentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312-4",
+      "offsets": {
+        "start": 4409,
+        "end": 4534
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) A alteração anormal e imprevisível das circunstâncias em que as partes tenham fundado a decisão de contratar, desde que a exigência das obrigações por si assumidas afete gravemente os princípios da boa-fé e não esteja coberta pelos riscos próprios do contrato;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312-4",
+      "offsets": {
+        "start": 2791,
+        "end": 3054
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 541758,
+        "end": 541906
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

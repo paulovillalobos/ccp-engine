@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art19.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art19",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Ajuste direto, quando o valor do contrato for inferior a (euro) 30 000.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art19-4",
+      "offsets": {
+        "start": 1698,
+        "end": 1772
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "d) Ajuste direto, quando o valor estimado do contrato for inferior a 150 000 €.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art19-4",
+      "offsets": {
+        "start": 744,
+        "end": 823
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

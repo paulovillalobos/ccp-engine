@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art2.2.a.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2.2.a",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "i) Tenham sido criadas especificamente para satisfazer necessidades de interesse geral, sem carácter industrial ou comercial; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 9449,
+        "end": 9576
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "i) Tenham sido criadas especificamente para satisfazer necessidades de interesse geral, sem carácter industrial ou comercial, entendendo-se como tal aquelas cuja atividade económica se não submeta à lógica do mercado e da livre concorrência; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 5078,
+        "end": 5321
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "i) Tenham sido criadas especificamente para satisfazer necessidades de interesse geral, sem caráter industrial ou comercial, entendendo-se como tais aquelas cuja atividade económica se não submeta à lógica concorrencial de mercado, designadamente por não terem fins lucrativos ou por não assumirem os prejuízos resultantes da sua atividade; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 2922,
+        "end": 3264
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

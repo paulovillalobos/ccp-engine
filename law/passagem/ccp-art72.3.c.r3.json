@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art72.3.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art72.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "c) A falta ou insuficiência da assinatura, incluindo a assinatura eletrónica, de quaisquer documentos que constituam a candidatura ou a proposta, as quais podem ser supridas através da junção de declaração de ratificação devidamente assinada e limitada aos documentos já submetidos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 3749,
+        "end": 4031
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

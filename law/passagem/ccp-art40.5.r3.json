@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art40.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art40",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - As peças do procedimento prevalecem sobre as indicações constantes da plataforma eletrónica de contratação, em caso de divergência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art40-4",
+      "offsets": {
+        "start": 3412,
+        "end": 3547
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

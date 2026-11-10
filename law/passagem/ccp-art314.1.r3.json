@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art314.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art314",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O co-contratante tem direito à reposição do equilíbrio financeiro, segundo os critérios estabelecidos no presente Código, sempre que o fundamento para a modificação do contrato seja:\na) A alteração anormal e imprevisível das circunstâncias imputável a decisão do contraente público, adoptada fora do exercício dos seus poderes de conformação da relação contratual, que se repercuta de modo específico na situação contratual do co-contratante; ou\nb) Razões de interesse público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314-4",
+      "offsets": {
+        "start": 2645,
+        "end": 3126
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - O cocontratante tem direito à reposição do equilíbrio financeiro, sempre que o fundamento para a modificação do contrato seja, para além de outras especialmente previstas na lei:\na) A alteração anormal e imprevisível das circunstâncias imputável a decisão do contraente público, adoptada fora do exercício dos seus poderes de conformação da relação contratual, que se repercuta de modo específico na situação contratual do co-contratante; ou\nb) Razões de interesse público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314-4",
+      "offsets": {
+        "start": 1315,
+        "end": 1792
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - O cocontratante tem direito à reposição do equilíbrio financeiro, nos termos do artigo 282.º, quando:\na) A alteração anormal e imprevisível das circunstâncias a que se refere a alínea b) do artigo 312.º seja imputável a decisão do contraente público, adotada fora do exercício dos seus poderes de conformação da relação contratual, que se repercuta de modo específico na situação contratual do cocontratante; ou\nb) O contrato seja modificado por razões de interesse público, nos termos da alínea c) do artigo 312.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314-4",
+      "offsets": {
+        "start": 426,
+        "end": 944
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - A modificação gera, para o cocontratante, o direito à reposição do equilíbrio financeiro do contrato, nos termos previstos no artigo 282.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art314-4",
+      "offsets": {
+        "start": 69,
+        "end": 211
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

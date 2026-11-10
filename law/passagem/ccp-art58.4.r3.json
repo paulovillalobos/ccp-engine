@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art58.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art58",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2009-10-07",
+      "text": "4 - Na celebração de contratos de empreitada de obras públicas, de locação ou aquisição de bens móveis e de aquisição de serviços pelas entidades mencionadas no n.º 3 do artigo 5.º, pode o programa do procedimento concursal permitir que os documentos que constituem a proposta e os documentos de habilitação a entregar sejam redigidos em língua estrangeira, indicando quais os idiomas admitidos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art58-4",
+      "offsets": {
+        "start": 2173,
+        "end": 2568
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "4 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art58-4",
+      "offsets": {
+        "start": 1403,
+        "end": 1418
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art58-4",
+      "offsets": {
+        "start": 632,
+        "end": 647
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art57-a.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "5 - Os termos de elaboração do documento previsto no n.º 1 são regulamentados por portaria dos membros do Governo responsáveis pelas áreas da administração pública e do trabalho.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a-4",
+      "offsets": {
+        "start": 2327,
+        "end": 2505
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a-4",
+      "offsets": {
+        "start": 983,
+        "end": 998
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

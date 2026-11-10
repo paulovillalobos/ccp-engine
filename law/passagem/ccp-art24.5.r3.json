@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art24.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Para a formação dos contratos a que se refere o número anterior e sem prejuízo do que nele se dispõe, também pode ser adoptado o ajuste directo quando as situações previstas nas alíneas a) e b) do n.º 1 tenham ocorrido em anterior procedimento de negociação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 22413,
+        "end": 22675
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - Para a formação de contratos que digam directa e principalmente respeito a uma ou a várias das actividades exercidas nos sectores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o ajuste directo só pode ser adoptado ao abrigo do disposto na alínea b) do n.º 1 do presente artigo, desde que as propostas tenham sido excluídas com fundamento diferente dos previstos no n.º 2 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 16899,
+        "end": 17365
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - O disposto nas alíneas a) e b) do n.º 1 é também aplicável nos casos em que a falta de apresentação de candidaturas ou propostas ou a exclusão de todas as propostas apresentadas, consoante o caso, se verifique em relação a algum dos lotes em que se houvesse desdobrado o anterior concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 12698,
+        "end": 12991
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "5 - O disposto nas alíneas a) e b) do n.º 1 é também aplicável nos casos em que a falta de apresentação ou a exclusão de todas as candidaturas ou propostas se verifique em relação a algum dos lotes em que se houvesse desdobrado o anterior concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 8252,
+        "end": 8500
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

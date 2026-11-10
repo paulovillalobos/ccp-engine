@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art475.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art475",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - O Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., é responsável por manter atualizada a informação da base de dados e-Certis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art475-4",
+      "offsets": {
+        "start": 1347,
+        "end": 1500
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

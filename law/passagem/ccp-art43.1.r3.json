@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art43.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O caderno de encargos do procedimento de formação de contratos de empreitada de obras públicas deve ser integrado pelos seguintes elementos da solução da obra a realizar:\na) Programa;\nb) Projecto de execução.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 15793,
+        "end": 16005
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "1 - Sem prejuízo do disposto no n.º 2 do artigo anterior, o caderno de encargos do procedimento de formação de contratos de empreitada de obras públicas deve incluir um projeto de execução.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 12364,
+        "end": 12553
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2025-10-28",
+      "revoked": false
+    },
+    {
+      "version": "2025-10-28",
+      "text": "1 - Sem prejuízo do disposto no n.º 2 do artigo anterior e no n.º 3 do presente artigo, o caderno de encargos do procedimento de formação de contratos de empreitada de obras públicas deve incluir um projeto de execução.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 3547,
+        "end": 3766
+      },
+      "valid_from": "2025-10-28",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Nos casos em que a conceção da empreitada não configure uma prestação do contrato a celebrar, o caderno de encargos do procedimento de formação de contratos de empreitada de obras públicas deve incluir um projeto de execução.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 131,
+        "end": 360
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

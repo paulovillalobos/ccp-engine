@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art2.1.f",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2.1",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "f) As associações públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 8932,
+        "end": 8959
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "f) O Banco de Portugal;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 2296,
+        "end": 2319
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

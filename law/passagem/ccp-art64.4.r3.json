@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art64.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art64",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - As decisões de prorrogação nos termos do disposto nos números anteriores cabem ao órgão competente para a decisão de contratar e devem ser juntas às peças do procedimento e notificadas a todos os interessados que as tenham adquirido, publicando-se imediatamente aviso daquelas decisões, nos termos do disposto no n.º 1 do artigo 130.º, nos n.os 1 a 3 do artigo 131.º, no n.º 1 do artigo 167.º, no artigo 197.º e no artigo 208.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art64-4",
+      "offsets": {
+        "start": 6574,
+        "end": 7005
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - A pedido fundamentado de qualquer interessado que tenha adquirido as peças do procedimento, o prazo fixado para a apresentação das propostas pode ser prorrogado pelo período considerado adequado, o qual aproveita a todos os interessados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art64-4",
+      "offsets": {
+        "start": 2952,
+        "end": 3193
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - A pedido fundamentado de qualquer interessado, o prazo fixado para a apresentação das propostas pode ser prorrogado pelo período considerado adequado, o qual aproveita a todos os interessados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art64-4",
+      "offsets": {
+        "start": 1136,
+        "end": 1332
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

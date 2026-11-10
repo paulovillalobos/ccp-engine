@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art5.4.j.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5.4.j",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) Os resultados obtidos com os respetivos serviços não revertam exclusivamente a favor da entidade adjudicante, para utilização no exercício da sua própria atividade;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 11318,
+        "end": 11485
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2018-05-16",
+      "revoked": false
+    },
+    {
+      "version": "2018-05-16",
+      "text": "i) Os resultados destinam-se exclusivamente à entidade adjudicante, para utilização no exercício da sua própria atividade;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 7607,
+        "end": 7729
+      },
+      "valid_from": "2018-05-16",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

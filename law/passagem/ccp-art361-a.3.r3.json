@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art361-a.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art361-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "3 - Em quaisquer situações em que se verifique a necessidade de o plano de trabalhos em vigor ser alterado, por facto não imputável ao empreiteiro e que se mostre devidamente justificado, deve este apresentar um plano de pagamentos adaptado ao novo plano de trabalhos, devendo o dono da obra pronunciar-se sobre a revisão do plano de pagamentos no prazo indicado no n.º 5 do artigo anterior, equivalendo o silêncio a aceitação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art361-a-4",
+      "offsets": {
+        "start": 1963,
+        "end": 2390
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art474.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - Os montantes dos limiares referidos nos números anteriores são revistos de dois em dois anos pela Comissão Europeia, constando de regulamento a publicar no Jornal Oficial da União Europeia, sendo posteriormente divulgados no portal dos contratos públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 5874,
+        "end": 6133
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - A revisão dos montantes dos limiares referidos nos números anteriores por ato delegado da Comissão Europeia determina a modificação do presente artigo e é divulgada no portal dos contratos públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 3829,
+        "end": 4031
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

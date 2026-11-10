@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art424.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art424",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O concedente responde ainda por facto que não lhe seja imputável, mas neste caso só depois de exercidos quaisquer direitos resultantes de contrato de seguro que no caso caibam e de excutidos os bens do património do concessionário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art424-4",
+      "offsets": {
+        "start": 879,
+        "end": 1114
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

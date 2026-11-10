@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art357.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art357",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O contrato pode prever a elaboração pelo dono da obra de um plano final de consignação que densifique e concretiza o plano inicialmente apresentado para efeitos de elaboração da proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art357-4",
+      "offsets": {
+        "start": 516,
+        "end": 707
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

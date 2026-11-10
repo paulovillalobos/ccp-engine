@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art81.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Independentemente do objecto do contrato a celebrar, o adjudicatário deve ainda apresentar os documentos de habilitação que o programa do procedimento exija, nomeadamente, no caso de se tratar de um procedimento de formação de um contrato de aquisição de serviços, quaisquer documentos comprovativos da titularidade das habilitações legalmente exigidas para a prestação dos serviços em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 10939,
+        "end": 11335
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 4385,
+        "end": 4400
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 615,
+        "end": 630
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

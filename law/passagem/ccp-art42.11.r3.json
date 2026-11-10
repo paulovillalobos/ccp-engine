@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art42.11",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "11",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "11 - Para efeitos do disposto nos n.os 3 e 5, consideram-se aspetos submetidos à concorrência todos aqueles que são objeto de avaliação de acordo com o critério de adjudicação, e aspetos não submetidos à concorrência todos aqueles que, sendo apreciados, não são objeto de avaliação e classificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 11928,
+        "end": 12226
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "11 - Para efeito do disposto nos n.os 3 e 5, consideram-se aspetos submetidos à concorrência aqueles que correspondam a fatores ou subfatores que densificam o critério de adjudicação, e aspetos não submetidos à concorrência todos os demais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 9301,
+        "end": 9541
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "11 - Para efeito do disposto nos n.ºs 3 e 5, consideram-se aspetos da execução do contrato submetidos à concorrência aqueles que correspondam a fatores ou subfatores que densificam o critério de adjudicação, e aspetos não submetidos à concorrência todos os demais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 2544,
+        "end": 2808
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

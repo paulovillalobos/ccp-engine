@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art36.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Quando o tipo de procedimento utilizado seja a parceria para a inovação, o limiar referido no número anterior é de (euro) 2 500 000.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36-4",
+      "offsets": {
+        "start": 5653,
+        "end": 5789
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - O disposto no número anterior não é aplicável aos procedimentos de formação de contratos que se destinem à execução de projetos financiados ou cofinanciados por fundos europeus, à promoção da habitação pública ou de custos controlados, ou que tenham por objeto a conservação, manutenção e reabilitação de imóveis, infraestruturas e equipamentos ou a aquisição de bens ou serviços essenciais de uso corrente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36-4",
+      "offsets": {
+        "start": 3636,
+        "end": 4047
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Quando o valor estimado do contrato for igual ou superior a 5 000 000 € ou, no caso de parceria para a inovação, a 2 500 000 €, a fundamentação prevista no n.º 1 deve basear-se numa avaliação de custo-benefício e deve conter, quando aplicável:\na) A identificação do tipo de beneficiários do contrato a celebrar;\nb) A taxa prevista de utilização da infraestrutura, serviço ou bem;\nc) A análise da rentabilidade;\nd) Os custos de manutenção;\ne) A avaliação dos riscos potenciais e formas de mitigação dos mesmos;\nf) O impacto previsível para a melhoria da organização;\ng) O impacto previsível no desenvolvimento ou na reconversão do país ou da região coberta pelo investimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36-4",
+      "offsets": {
+        "start": 885,
+        "end": 1563
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

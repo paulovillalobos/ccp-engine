@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art17.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - No caso das parcerias para a inovação, o valor a tomar em consideração é o valor das atividades de investigação e desenvolvimento que tenham lugar em todas as etapas da parceria prevista, bem como dos bens, dos serviços ou das obras a serem desenvolvidos e adquiridos no final da parceria.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17-4",
+      "offsets": {
+        "start": 4770,
+        "end": 5063
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - No caso das parcerias para a inovação, o valor do contrato corresponde ao valor das atividades de investigação e desenvolvimento que tenham lugar em todas as etapas da parceria prevista, bem como dos bens, dos serviços ou das obras a serem desenvolvidos e adquiridos no final da parceria.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17-4",
+      "offsets": {
+        "start": 2355,
+        "end": 2647
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17-4",
+      "offsets": {
+        "start": 771,
+        "end": 786
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art181.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art181",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O critério de qualificação da maior capacidade técnica e financeira implica a utilização de um modelo de avaliação ao qual é aplicável, com as necessárias adaptações, o disposto no artigo 139.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art181-4",
+      "offsets": {
+        "start": 1411,
+        "end": 1608
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

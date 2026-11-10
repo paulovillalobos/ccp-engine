@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art36.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - As peças do procedimento devem identificar todos os pareceres prévios, licenciamentos e autorizações necessárias que possam condicionar o procedimento e a execução do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36-4",
+      "offsets": {
+        "start": 5790,
+        "end": 5970
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - O disposto no número anterior não é aplicável aos procedimentos de formação de contratos que se destinem à execução de projetos financiados ou cofinanciados por fundos europeus, à promoção da habitação pública ou de custos controlados, ou que tenham por objeto a conservação, manutenção e reabilitação de imóveis, infraestruturas e equipamentos ou a aquisição de bens ou serviços essenciais de uso corrente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36-4",
+      "offsets": {
+        "start": 1564,
+        "end": 1975
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

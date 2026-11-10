@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art420",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 420.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 420.º\nDireitos do concedente\nConstituem direitos do concedente, a exercer nos termos e condições do contrato ou da lei e com os efeitos que destes resultem:\na) Estabelecer as tarifas mínimas e máximas pela utilização das obras públicas ou dos serviços públicos;\nb) Sequestrar a concessão;\nc) Resgatar a concessão;\nd) Exigir a partilha equitativa do acréscimo de benefícios financeiros, nos termos do disposto no artigo 341.º;\ne) Quaisquer outros previstos na lei ou no contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art420-4",
+      "offsets": {
+        "start": 698,
+        "end": 1183
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 420.º\nDireitos do concedente\nConstituem direitos do concedente, a exercer nos termos e condições do contrato ou da lei e com os efeitos que destes resultem:\na) Estabelecer as tarifas mínimas e máximas pela utilização das obras públicas ou dos serviços concedidos;\nb) Sequestrar a concessão;\nc) Resgatar a concessão;\nd) Exigir a partilha equitativa do acréscimo de benefícios financeiros, nos termos do disposto no artigo 341.º;\ne) Quaisquer outros previstos na lei ou no contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art420-4",
+      "offsets": {
+        "start": 55,
+        "end": 542
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

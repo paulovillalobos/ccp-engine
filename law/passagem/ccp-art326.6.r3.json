@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art326.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art326",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2010-09-01",
+      "text": "6 - Na falta de disposição contratual, o atraso em um ou mais pagamentos não determina o vencimento das restantes obrigações de pagamento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art326-4",
+      "offsets": {
+        "start": 1250,
+        "end": 1388
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

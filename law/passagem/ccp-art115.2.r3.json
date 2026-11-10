@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art115.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art115",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando for convidada a apresentar proposta mais de uma entidade, o convite deve também indicar:\na) Se as propostas apresentadas serão objecto de negociação e, em caso afirmativo:\ni) Quais os aspectos da execução do contrato a celebrar que a entidade adjudicante não está disposta a negociar;\nii) Se a negociação decorrerá, parcial ou totalmente, por via electrónica e os respectivos termos;\nb) O critério de adjudicação e os eventuais factores e subfactores que o densificam, não sendo, porém, necessário um modelo de avaliação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 12508,
+        "end": 13054
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Tratando-se de procedimento de consulta prévia, o convite deve também indicar:\na) Se as propostas apresentadas serão objecto de negociação e, em caso afirmativo:\ni) Quais os aspectos da execução do contrato a celebrar que a entidade adjudicante não está disposta a negociar;\nii) Se a negociação decorrerá, parcial ou totalmente, por via electrónica e os respectivos termos;\nb) O critério de adjudicação e os eventuais factores e subfactores que o densificam, não sendo, porém, necessário um modelo de avaliação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 7037,
+        "end": 7566
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Tratando-se de procedimento de consulta prévia, o convite deve também indicar:\na) Se as propostas apresentadas serão objecto de negociação e, em caso afirmativo:\ni) Quais os aspectos da execução do contrato a celebrar que a entidade adjudicante não está disposta a negociar;\nii) Se a negociação decorrerá, parcial ou totalmente, por via electrónica e os respectivos termos;\nb) A modalidade do critério de adjudicação e os eventuais fatores e subfatores que o densificam, não sendo, porém, necessário um modelo ou uma grelha de avaliação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 4449,
+        "end": 5004
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

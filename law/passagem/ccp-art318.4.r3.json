@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art318.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O contrato pode proibir a subcontratação de determinadas prestações contratuais ou de prestações cujo valor acumulado exceda uma percentagem do preço contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-4",
+      "offsets": {
+        "start": 8556,
+        "end": 8721
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2025-04-15",
+      "revoked": false
+    },
+    {
+      "version": "2025-04-15",
+      "text": "4 - O contrato pode exigir que determinadas prestações contratuais críticas, tendo em conta o objeto do contrato a celebrar, sejam executadas diretamente pelo cocontratante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-4",
+      "offsets": {
+        "start": 3371,
+        "end": 3544
+      },
+      "valid_from": "2025-04-15",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-4",
+      "offsets": {
+        "start": 1249,
+        "end": 1264
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

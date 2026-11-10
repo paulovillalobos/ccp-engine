@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art21.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art21.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) A escolha do concurso público ou do concurso limitado por prévia qualificação permite a celebração de contratos de qualquer valor.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art21-4",
+      "offsets": {
+        "start": 4833,
+        "end": 4966
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor do contrato seja inferior a (euro) 100 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art21-4",
+      "offsets": {
+        "start": 1715,
+        "end": 1836
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Consulta prévia, com convite a, pelo menos, três entidades, quando o valor estimado do contrato seja inferior a 130 000 €;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art21-4",
+      "offsets": {
+        "start": 600,
+        "end": 725
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

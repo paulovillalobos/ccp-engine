@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art295.10",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art295",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "10 - A mora na liberação, total ou parcial, da caução confere ao co-contratante o direito de indemnização, designadamente pelos custos adicionais por este incorridos com a manutenção da caução prestada por período superior ao que seria devido.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art295-4",
+      "offsets": {
+        "start": 15065,
+        "end": 15308
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

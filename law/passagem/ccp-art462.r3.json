@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art462",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iv.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 462.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 462.º\nCobrança das coimas\n1 - O produto das coimas reverte em 60 % para os cofres do Estado, em 30 % para o Instituto da Construção e do Imobiliário, I. P., ou em 20 % para a Autoridade de Segurança Alimentar e Económica e 10 % para a Comissão de Aplicação de Coimas em Matéria Económica e de Publicidade, consoante o caso, e em 10 % para as entidades adjudicantes que tenham participado os factos que determinaram a aplicação da coima.\n2 - Quando não pagas, as coimas aplicadas em processos de contra-ordenação são cobradas coercivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art462-4",
+      "offsets": {
+        "start": 594,
+        "end": 1140
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 462.º\nCobrança das coimas\n1 - O produto das coimas reverte em 60 % para o Estado, em 30 % para o Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P., e em 10 % para as entidades adjudicantes que tenham participado os factos que determinaram a aplicação da coima.\n2 - Quando não pagas, as coimas aplicadas em processos de contra-ordenação são cobradas coercivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art462-4",
+      "offsets": {
+        "start": 31,
+        "end": 422
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

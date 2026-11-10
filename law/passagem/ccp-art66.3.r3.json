@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art66.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art66",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Considera-se não escrita ou não declarada a classificação de um documento que não tenha sido expressamente autorizada nos termos do disposto nos números anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art66-4",
+      "offsets": {
+        "start": 2760,
+        "end": 2928
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

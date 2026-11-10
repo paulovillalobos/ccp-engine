@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art410",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 410.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 410.º\nPrazo\n1 - O prazo de vigência do contrato é fixado em função do período de tempo necessário para amortização e remuneração, em normais condições de rendibilidade da exploração, do capital investido pelo concessionário.\n2 - Na falta de estipulação contratual, o prazo a que se refere o número anterior é de 30 anos, nele se incluindo a duração de qualquer prorrogação contratualmente prevista.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art410-4",
+      "offsets": {
+        "start": 1004,
+        "end": 1409
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 410\nPrazo\n1 - O prazo de vigência do contrato é fixado em função do período de tempo necessário para amortização e remuneração, em normais condições de rendibilidade da exploração, do capital investido pelo concessionário.\n2 - Na falta de estipulação contratual, o prazo a que se refere o número anterior é 30 anos, nele se incluindo a duração de qualquer prorrogação contratualmente prevista, sem prejuízo de lei especial que fixe prazo supletivo diferente, ou prazo máximo.\n3 - Sem prejuízo do disposto no n.º 1, o prazo inicial da concessão pode ser prorrogado com fundamento na necessidade de assegurar a amortização e remuneração, em normais condições de rendibilidade da exploração, do capital investido pelo concessionário, nos termos previstos no artigo 282.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art410-4",
+      "offsets": {
+        "start": 57,
+        "end": 831
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art283-a.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art283-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2011-01-13",
+      "text": "4 - A decisão judicial ou arbitral referida no número anterior não pode afastar o efeito anulatório com base na ponderação do interesse económico directamente relacionado com o contrato em causa, quando tal interesse assente, designadamente, nos custos resultantes de atraso na execução do contrato, de abertura de um novo procedimento de formação do contrato, de mudança do co-contratante ou de obrigações legais resultantes do efeito anulatório.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a-4",
+      "offsets": {
+        "start": 6820,
+        "end": 7267
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 505098,
+        "end": 505263
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": true
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - A decisão referida no número anterior não pode afastar o efeito anulatório com base na ponderação do interesse económico diretamente relacionado com o contrato em causa, quando tal interesse assente, designadamente, nos custos resultantes de atraso na execução do contrato, de abertura de um novo procedimento de formação do contrato, de mudança do cocontratante ou de obrigações legais resultantes da anulação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a-4",
+      "offsets": {
+        "start": 2996,
+        "end": 3411
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Não constitui razão de interesse geral o interesse económico diretamente relacionado com o contrato em causa, quando tal interesse assente, designadamente, nos custos resultantes de atraso na execução do contrato, de abertura de um novo procedimento de formação do contrato, de mudança do cocontratante ou de obrigações legais resultantes da anulação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-a-4",
+      "offsets": {
+        "start": 1311,
+        "end": 1666
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

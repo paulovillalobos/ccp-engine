@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art34.8",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art34",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - O cálculo dos preços contratuais estimados referidos nos n.os 1 a 3 deve ser efetuado de acordo com as regras previstas no artigo 5.º da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34-4",
+      "offsets": {
+        "start": 8994,
+        "end": 9224
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - O cálculo dos preços contratuais estimados referidos nos n.ºs 1 a 3 deve ser efetuado de acordo com as regras previstas no artigo 5.º da Diretiva n.º 2014/24/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34-4",
+      "offsets": {
+        "start": 2582,
+        "end": 2812
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

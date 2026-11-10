@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art259.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art259",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - O convite deve indicar o prazo e o modo de apresentação das propostas, os termos ou aspetos referidos no número anterior e o critério de adjudicação de acordo com as regras para o efeito definidas no caderno de encargos de formação do acordo-quadro, não sendo necessária a elaboração de um caderno de encargos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art259-4",
+      "offsets": {
+        "start": 1471,
+        "end": 1785
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

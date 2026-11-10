@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art335.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art335",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O contraente público tem o direito de resolver o contrato com fundamento na alteração anormal e imprevisível das circunstâncias, nos termos do disposto na alínea a) do artigo 312.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art335-4",
+      "offsets": {
+        "start": 1568,
+        "end": 1752
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "1 - O contraente público tem o direito de resolver o contrato com fundamento na alteração anormal e imprevisível das circunstâncias, nos termos do disposto na alínea b) do artigo 312.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art335-4",
+      "offsets": {
+        "start": 834,
+        "end": 1018
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - O contraente público tem o direito de resolver o contrato com fundamento na alteração anormal e imprevisível das circunstâncias que fundaram a decisão de contratar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art335-4",
+      "offsets": {
+        "start": 114,
+        "end": 282
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

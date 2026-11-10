@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art96.1.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) O prazo de execução das principais prestações objecto do contrato;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96-4",
+      "offsets": {
+        "start": 7073,
+        "end": 7142
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

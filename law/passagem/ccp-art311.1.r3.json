@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art311.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art311",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O contrato pode ser modificado com os fundamentos previstos no artigo seguinte:\na) Por acordo entre as partes, que não pode revestir forma menos solene do que a do contrato;\nb) Por decisão judicial ou arbitral.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311-4",
+      "offsets": {
+        "start": 1419,
+        "end": 1633
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - O contrato pode ser modificado por:\na) Acordo das partes, que não pode revestir forma menos solene do que a do contrato;\nb) Decisão judicial ou arbitral, exceto nos casos em que a modificação interfira com o resultado do exercício da margem de livre decisão administrativa subjacente ao mesmo ou implique a formulação de valorações próprias do exercício da função administrativa;\nc) Ato administrativo do contraente público, nos casos previstos na alínea c) do artigo seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311-4",
+      "offsets": {
+        "start": 729,
+        "end": 1210
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - O contrato pode ser modificado por:\na) Acordo das partes, que não pode revestir forma menos solene do que a do contrato;\nb) Decisão judicial ou arbitral, exceto nos casos em que a modificação interfira com o resultado do exercício da margem de livre decisão administrativa subjacente ao mesmo ou implique a formulação de valorações próprias do exercício da função administrativa;\nc) Ato administrativo do contraente público, conforme o disposto na alínea c) do artigo 302.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311-4",
+      "offsets": {
+        "start": 61,
+        "end": 538
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

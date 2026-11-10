@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art72.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art72",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - O júri procede à retificação oficiosa de erros de escrita ou de cálculo contidos nas candidaturas ou propostas, desde que seja evidente para qualquer destinatário a existência do erro e os termos em que o mesmo deve ser corrigido.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 5780,
+        "end": 6014
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

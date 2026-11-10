@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art287.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art287",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "7 - A ineficácia prevista no n.º 1 pode ser afastada com os fundamentos previstos no n.º 4 do artigo 283.º, devendo a decisão judicial ou arbitral obrigatoriamente determinar uma das seguintes sanções alternativas:\na) Redução da duração do contrato; ou\nb) Sanção pecuniária de montante inferior ou igual ao preço contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 5554,
+        "end": 5878
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "7 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 3297,
+        "end": 3312
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art287-4",
+      "offsets": {
+        "start": 1816,
+        "end": 1831
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

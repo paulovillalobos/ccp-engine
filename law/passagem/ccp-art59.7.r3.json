@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art59.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art59",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - Nos casos em que o programa do procedimento não permita a apresentação de propostas variantes, cada concorrente só pode apresentar uma única proposta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art59-4",
+      "offsets": {
+        "start": 6139,
+        "end": 6293
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art70.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - A exclusão de quaisquer propostas com fundamento no disposto na alínea e) do n.º 2 deve ser comunicada à Comissão Europeia, desde que o anúncio do respectivo procedimento tenha sido publicado no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 18555,
+        "end": 18787
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - A exclusão de quaisquer propostas com fundamento no disposto na alínea g) do n.º 2, bem como a existência de indícios de práticas restritivas da concorrência, ainda que não tenham dado origem à exclusão da proposta, devem ser comunicadas à Autoridade da Concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 13582,
+        "end": 13853
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - A exclusão de quaisquer propostas com fundamento no disposto na alínea e) do número anterior, bem como a existência de indícios de práticas restritivas do comércio, ainda que não tenham dado origem à exclusão da proposta, devem ser comunicadas à Autoridade de Segurança Alimentar e Económica.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 3642,
+        "end": 3938
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

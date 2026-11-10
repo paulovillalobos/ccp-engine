@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art20.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art20",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - À formação dos contratos referidos nas alíneas do número anterior é aplicável o disposto na alínea b) do n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art20-4",
+      "offsets": {
+        "start": 8783,
+        "end": 8898
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art20-4",
+      "offsets": {
+        "start": 2051,
+        "end": 2066
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art20-4",
+      "offsets": {
+        "start": 946,
+        "end": 961
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

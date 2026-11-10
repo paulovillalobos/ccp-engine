@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art18",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-i.capitulo-ii",
+  "kind": "artigo",
+  "label": "Artigo 18.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 18.º\nEscolha do procedimento\nSem prejuízo do disposto nos capítulos iii e iv do presente título, a escolha dos procedimentos de ajuste directo, de concurso público ou de concurso limitado por prévia qualificação condiciona o valor do contrato a celebrar nos termos do disposto nos artigos seguintes do presente capítulo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art18-4",
+      "offsets": {
+        "start": 1111,
+        "end": 1438
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 18.º\nEscolha do procedimento\nSem prejuízo do disposto nos capítulos iii e iv do presente título, a escolha dos procedimentos de ajuste direto, de consulta prévia, de concurso público ou de concurso limitado por prévia qualificação deve ser feita tendo por base o valor do contrato a celebrar, nos termos do disposto nos artigos seguintes do presente capítulo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art18-4",
+      "offsets": {
+        "start": 573,
+        "end": 939
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 18.º\nEscolha do procedimento\nSem prejuízo do disposto nos capítulos iii e iv do presente título, a escolha dos procedimentos de ajuste direto, de consulta prévia, de concurso público ou de concurso limitado por prévia qualificação deve ser feita tendo por base o valor estimado do contrato a celebrar, nos termos do disposto nos artigos seguintes do presente capítulo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art18-4",
+      "offsets": {
+        "start": 42,
+        "end": 417
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

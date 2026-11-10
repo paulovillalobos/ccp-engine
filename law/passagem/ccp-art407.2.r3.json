@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art407.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art407",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Entende-se por concessão de serviços públicos o contrato pelo qual o co-contratante se obriga a gerir, em nome próprio e sob sua responsabilidade, uma actividade de serviço público, durante um determinado período, sendo remunerado pelos resultados financeiros dessa gestão ou, directamente, pelo contraente público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art407-4",
+      "offsets": {
+        "start": 1330,
+        "end": 1649
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Entende-se por concessão de serviços o contrato pelo qual um contraente público encarrega um cocontratante da gestão e exploração de um serviço, cuja contrapartida consiste no direito de gestão e exploração do serviço que constitui o objeto do contrato ou nesse direito acompanhado do pagamento de um preço.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art407-4",
+      "offsets": {
+        "start": 399,
+        "end": 710
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

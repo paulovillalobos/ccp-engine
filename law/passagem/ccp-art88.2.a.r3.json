@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art88.2.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art88.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Quando o preço contratual for inferior a (euro) 200 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art88-4",
+      "offsets": {
+        "start": 3846,
+        "end": 3905
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "a) Quando o preço contratual for inferior a (euro) 500 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art88-4",
+      "offsets": {
+        "start": 2138,
+        "end": 2197
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Quando o preço contratual for inferior a 1 000 000 €;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art88-4",
+      "offsets": {
+        "start": 423,
+        "end": 479
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art26.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art26.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Se trate de bens produzidos ou a produzir apenas para fins de investigação, de experimentação, de estudo ou de desenvolvimento, desde que tais bens não sejam produzidos em quantidade destinada a assegurar a viabilidade comercial dos mesmos ou a amortizar os custos daquelas actividades;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art26-4",
+      "offsets": {
+        "start": 10737,
+        "end": 11026
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Se trate de bens produzidos ou a produzir para fins de investigação, de experimentação, de estudo ou desenvolvimento, desde que tais bens não sejam produzidos com finalidade comercial, ou com vista a amortizar o custo dessas atividades, e o valor estimado do contrato seja inferior aos limiares estabelecidos nas alíneas b) ou c) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art26-4",
+      "offsets": {
+        "start": 7356,
+        "end": 7714
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2018-05-16",
+      "revoked": false
+    },
+    {
+      "version": "2018-05-16",
+      "text": "b) Se trate de bens a utilizar para fins de investigação, de experimentação, de estudo ou desenvolvimento, desde que tais bens não sejam utilizados com finalidade comercial, ou com vista a amortizar o custo dessa atividade, e o valor estimado do contrato seja inferior aos limiares estabelecidos nas alíneas b) e c) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art26-4",
+      "offsets": {
+        "start": 4009,
+        "end": 4350
+      },
+      "valid_from": "2018-05-16",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Se trate de bens a utilizar para fins de investigação, de experimentação, de estudo ou desenvolvimento, desde que o valor estimado do contrato seja inferior aos limiares referidos nas alíneas b) e c) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art26-4",
+      "offsets": {
+        "start": 800,
+        "end": 1028
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art54-a.1.b.ii",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art54-a.1.b",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "ii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 4655,
+        "end": 4793
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "ii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 818,
+        "end": 965
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

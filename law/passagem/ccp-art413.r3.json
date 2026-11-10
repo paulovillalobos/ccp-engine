@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art413",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 413.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 413.º\nPartilha de riscos\nO contrato deve implicar uma significativa e efectiva transferência do risco para o concessionário.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art413-4",
+      "offsets": {
+        "start": 1205,
+        "end": 1336
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 413.º\nPartilha de riscos\n1 - O contrato deve implicar uma significativa e efetiva transferência para o concessionário do risco de exploração dessas obras ou serviços, que se traduz no risco ligado à procura ou à oferta, ou a ambos.\n2 - Para efeitos do disposto no número anterior, considera-se que o concessionário assume o risco de exploração quando:\na) Em condições normais de exploração, não há garantia de que recupere os investimentos efetuados ou as despesas suportadas no âmbito da exploração das obras ou dos serviços que são objeto da concessão; ou\nb) A parte do risco transferido para o concessionário envolve uma exposição real à imprevisibilidade do mercado, o que implica que quaisquer perdas potenciais por ele incorridas não sejam meramente nominais ou insignificantes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art413-4",
+      "offsets": {
+        "start": 242,
+        "end": 1033
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 413.º\nPartilha de riscos",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art413-4",
+      "offsets": {
+        "start": 55,
+        "end": 86
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

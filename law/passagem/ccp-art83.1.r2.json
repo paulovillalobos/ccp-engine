@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art83.1",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art83",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - O adjudicatário deve apresentar reprodução dos documentos de habilitação referidos no artigo 81.º através de correio electrónico ou de outro meio de transmissão escrita e electrónica de dados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-4",
+      "offsets": {
+        "start": 2372,
+        "end": 2568
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "1 - O adjudicatário deve apresentar reprodução dos documentos de habilitação referidos no artigo 81.º através da plataforma electrónica utilizada pela entidade adjudicante ou, no caso de a mesma se encontrar indisponível, através de correio electrónico ou de outro meio de transmissão escrita e electrónica de dados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-4",
+      "offsets": {
+        "start": 343,
+        "end": 659
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 258128,
+        "end": 258293
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

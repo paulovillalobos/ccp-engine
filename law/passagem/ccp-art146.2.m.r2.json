@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art146.2.m",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art146.2",
+  "kind": "alinea",
+  "label": "m)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "m) Que sejam constituídas por documentos falsos ou nas quais os concorrentes prestem culposamente falsas declarações;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art146-4",
+      "offsets": {
+        "start": 17052,
+        "end": 17169
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 342144,
+        "end": 342292
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

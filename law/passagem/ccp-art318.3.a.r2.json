@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art318.3.a",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Da prévia apresentação dos documentos de habilitação relativos ao potencial subcontratado que sejam exigidos ao subcontratante na fase de formação do contrato em causa;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-4",
+      "offsets": {
+        "start": 7859,
+        "end": 8030
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 549819,
+        "end": 549967
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art257.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art257",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - A celebração de contratos ao abrigo de acordo-quadro pode ser realizada mediante catálogos eletrónicos desde que tal possibilidade, bem como as regras sobre o seu funcionamento e utilização, sejam expressamente previstas naquele acordo-quadro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art257-4",
+      "offsets": {
+        "start": 1163,
+        "end": 1410
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

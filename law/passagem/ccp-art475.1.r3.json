@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art475.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art475",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Com vista a facilitar a apresentação de propostas transfronteiriças, as entidades adjudicantes devem recorrer ao e-Certis e solicitar os tipos de certificados ou provas documentais abrangidos por este sistema.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art475-4",
+      "offsets": {
+        "start": 1015,
+        "end": 1228
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

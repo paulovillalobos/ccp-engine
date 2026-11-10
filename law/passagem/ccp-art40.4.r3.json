@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art40.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art40",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - As indicações constantes do programa do procedimento, do caderno de encargos e da memória descritiva prevalecem sobre as indicações do anúncio em caso de divergência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art40-4",
+      "offsets": {
+        "start": 3241,
+        "end": 3411
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

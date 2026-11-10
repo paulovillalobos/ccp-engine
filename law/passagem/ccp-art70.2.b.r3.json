@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art70.2.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Que apresentam atributos que violem os parâmetros base fixados no caderno de encargos ou que apresentem quaisquer termos ou condições que violem aspectos da execução do contrato a celebrar por aquele não submetidos à concorrência, sem prejuízo do disposto nos n.os 4 a 6 e 8 a 11 do artigo 49.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 17371,
+        "end": 17669
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "b) Que apresentam algum dos atributos que violem os parâmetros base fixados no caderno de encargos ou que apresentem quaisquer termos ou condições que violem aspetos da execução do contrato a celebrar por aquele não submetidos à concorrência, sem prejuízo do disposto nos n.os 10 a 12 do artigo 49.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 8946,
+        "end": 9246
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Que sejam apresentadas por concorrentes em violação do disposto no n.º 2 do artigo 54.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 408,
+        "end": 499
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

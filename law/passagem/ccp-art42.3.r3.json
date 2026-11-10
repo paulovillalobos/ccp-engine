@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art42.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As cláusulas do caderno de encargos relativas aos aspectos da execução do contrato submetidos à concorrência podem fixar os respectivos parâmetros base a que as propostas estão vinculadas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 14575,
+        "end": 14767
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art146.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art146.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) Referência aos esclarecimentos prestados pelos concorrentes nos termos do disposto no artigo 72.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art146-4",
+      "offsets": {
+        "start": 282,
+        "end": 383
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

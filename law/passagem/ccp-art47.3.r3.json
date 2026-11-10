@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art47.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art47",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Nas situações previstas no número anterior, quando o procedimento adoptado seja o ajuste directo ao abrigo do disposto nas alíneas a) e b) do n.º 1 do artigo 25.º e na alínea a) do n.º 1 do artigo 27.º, considera-se que existe preço base, o qual é igual aos valores referidos, consoante o caso, na alínea b) do artigo 19.º, na alínea b) do n.º 1 e no n.º 2 do artigo 20.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 3734,
+        "end": 4109
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - A fixação do preço base deve ser fundamentada com base em critérios objetivos, tais como os preços atualizados do mercado obtidos através da consulta preliminar prevista no artigo 35.º-A, ou os custos médios unitários, resultantes de anteriores procedimentos, para prestações do mesmo tipo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 1341,
+        "end": 1635
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 626,
+        "end": 641
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

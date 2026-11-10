@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art5-a.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5-a.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) A entidade controlada desenvolva mais de 80 % da sua atividade no desempenho de funções que lhe foram confiadas pela entidade adjudicante ou entidades adjudicantes que a controlam, ou por outra ou outras entidades controladas por aquela ou aquelas entidades adjudicantes, consoante se trate de controlo isolado ou conjunto;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-a-4",
+      "offsets": {
+        "start": 7523,
+        "end": 7849
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

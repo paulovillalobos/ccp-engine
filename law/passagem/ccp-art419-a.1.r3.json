@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art419-a.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art419-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "1 - Os trabalhadores afetos a concessões cujo prazo seja superior a um ano prestam a sua atividade em regime de contrato de trabalho sem termo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art419-a-4",
+      "offsets": {
+        "start": 1104,
+        "end": 1247
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

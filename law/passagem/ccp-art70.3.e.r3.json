@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.3.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.3",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "e) Um preço ou custo anormalmente baixo, cujos esclarecimentos justificativos não tenham sido apresentados ou não tenham sido considerados nos termos do disposto no artigo seguinte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 2977,
+        "end": 3158
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

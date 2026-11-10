@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art85.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art85",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os documentos de habilitação apresentados pelo adjudicatário devem ser disponibilizados, para consulta de todos os concorrentes, em plataforma electrónica utilizada pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art85-4",
+      "offsets": {
+        "start": 2144,
+        "end": 2339
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - O prazo fixado para a apresentação dos documentos de habilitação pode ser prorrogado, por uma única vez, por solicitação do adjudicatário formulada ao órgão competente para a decisão de contratar, por um período não superior a cinco dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art85-4",
+      "offsets": {
+        "start": 1278,
+        "end": 1520
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - O prazo fixado para a apresentação dos documentos de habilitação pode ser prorrogado, por solicitação do adjudicatário formulada ao órgão competente para a decisão de contratar, por um período não superior a cinco dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art85-4",
+      "offsets": {
+        "start": 412,
+        "end": 635
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

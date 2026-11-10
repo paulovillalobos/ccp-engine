@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art2.1.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) As fundações públicas, com excepção das previstas na Lei n.º 62/2007, de 10 de Setembro;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 8840,
+        "end": 8931
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "e) As fundações públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 4536,
+        "end": 4561
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "e) As entidades administrativas independentes;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 2249,
+        "end": 2295
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

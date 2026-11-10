@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art299.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Os pagamentos devidos pelo contraente público devem ser efectuados no prazo de 30 dias após a entrega das respectivas facturas, as quais só podem ser emitidas após o vencimento da obrigação a que se referem.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art299-4",
+      "offsets": {
+        "start": 1703,
+        "end": 1914
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2010-09-01",
+      "revoked": false
+    },
+    {
+      "version": "2010-09-01",
+      "text": "1 - Sempre que do contrato não conste data ou prazo de pagamento, a obrigação pecuniária vence-se, sem necessidade de novo aviso:\na) 30 dias após a data em que o contraente público tiver recebido a factura ou documento equivalente;\nb) 30 dias após a data de recepção efectiva dos bens ou da prestação dos serviços quando a data de recepção da factura ou de documento equivalente seja incerta;\nc) 30 dias após a data de recepção efectiva dos bens ou da prestação dos serviços quando o contraente público receba a factura ou documento equivalente antes do fornecimento dos bens ou da prestação dos serviços;\nd) 30 dias após a data de aceitação ou verificação quando esteja previsto um processo mediante o qual deva ser determinada a conformidade dos bens ou serviços e o contraente público receba a factura ou documento equivalente em data anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art299-4",
+      "offsets": {
+        "start": 76,
+        "end": 923
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

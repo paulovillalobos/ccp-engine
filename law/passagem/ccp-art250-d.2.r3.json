@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art250-d.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Podem ser candidatos ou concorrentes aos procedimentos referidos no número anterior quaisquer organizações que preencham, de forma cumulativa, os seguintes requisitos:\na) Terem por objeto a prossecução de uma missão de serviço público ligada à prestação dos serviços a que se refere o número anterior;\nb) Reinvestirem os seus lucros com vista à consecução do objetivo da organização ou, caso sejam distribuídos ou redistribuídos, fazê-lo com base em considerações de natureza participativa;\nc) Contarem com a participação dos trabalhadores no capital social da organização que executa o contrato ou basearem a sua estrutura de gestão em princípios participativos que requerem o envolvimento ativo dos trabalhadores, utilizadores ou partes interessadas;\nd) Não terem celebrado nos últimos três anos, com a mesma entidade adjudicante, qualquer contrato abrangido pela presente secção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d-4",
+      "offsets": {
+        "start": 2877,
+        "end": 3763
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Podem ser candidatos ou concorrentes aos procedimentos referidos no número anterior quaisquer organizações que preencham, de forma cumulativa, os seguintes requisitos:\na) Terem por objeto a prossecução de uma missão de serviço público ligada à prestação dos serviços a que se refere o número anterior;\nb) Reinvestirem os seus lucros com vista à consecução do objetivo da organização ou, caso sejam distribuídos ou redistribuídos, fazê-lo com base em considerações de natureza participativa;\nc) Contarem com a participação dos trabalhadores no capital social da organização que executa o contrato ou basearem a sua estrutura de gestão em princípios participativos que requerem o envolvimento ativo dos trabalhadores, utilizadores ou partes interessadas;\nd) Não terem celebrado nos últimos três anos, com a mesma entidade adjudicante, qualquer contrato abrangido pelo presente artigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d-4",
+      "offsets": {
+        "start": 391,
+        "end": 1277
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

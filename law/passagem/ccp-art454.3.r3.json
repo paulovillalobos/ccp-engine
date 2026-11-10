@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art454.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art454",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Sempre que o contraente público for o Estado, só pode ser ordenada a execução de serviços a mais quando o somatório referido na alínea b) do número anterior for igual ou superior ao valor referido no n.º 2 do artigo 20.º ou, quando se tratar de um dos contratos mencionados na alínea b) do mesmo n.º 2, ao valor referido na alínea b) do n.º 1 do mesmo artigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 6831,
+        "end": 7194
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando os serviços complementares resultem de circunstâncias imprevisíveis, ou que uma entidade adjudicante diligente não pudesse ter previsto, pode o contraente público ordenar a sua execução ao cocontratante desde que:\na) Não possam ser técnica ou economicamente separáveis do objeto do contrato sem inconvenientes graves e impliquem um aumento considerável de custos; e\nb) O preço desses serviços, incluindo o de anteriores serviços complementares igualmente decorrentes de circunstâncias imprevisíveis, não exceda 40 % do preço contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 1575,
+        "end": 2122
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art454-4",
+      "offsets": {
+        "start": 221,
+        "end": 236
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

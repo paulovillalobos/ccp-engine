@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art81.8",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art81",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "8 - O órgão competente para a decisão de contratar pode sempre solicitar ao adjudicatário, ainda que tal não conste do programa do procedimento, a apresentação de quaisquer documentos comprovativos da titularidade das habilitações legalmente exigidas para a execução das prestações objecto do contrato a celebrar, fixando-lhe prazo para o efeito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 11867,
+        "end": 12213
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "8 - O órgão competente para a decisão de contratar pode sempre solicitar ao adjudicatário, ainda que tal não conste do convite ou do programa do procedimento, a apresentação de quaisquer documentos comprovativos da titularidade das habilitações legalmente exigidas para a execução das prestações objeto do contrato a celebrar, fixando-lhe prazo para o efeito.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art81-4",
+      "offsets": {
+        "start": 2633,
+        "end": 2992
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

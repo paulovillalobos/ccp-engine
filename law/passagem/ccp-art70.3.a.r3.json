@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.3.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) Que desrespeitam manifestamente o objeto do contrato a celebrar, ou que não apresentam algum dos atributos ou algum dos termos ou condições, nos termos, respetivamente, do disposto nas alíneas b) e c) do n.º 1 do artigo 57.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 2225,
+        "end": 2453
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

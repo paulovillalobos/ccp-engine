@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art49.7.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art49.7",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Os requisitos do rótulo sejam elaborados com base numa informação científica;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 26479,
+        "end": 26559
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) Por referência a especificações técnicas definidas e, por ordem de preferência, a normas nacionais que transponham normas europeias, a homologações técnicas europeias, a especificações técnicas comuns, a normas internacionais e a outros sistemas técnicos de referência estabelecidos pelos organismos europeus de normalização ou, quando estes não existam, a normas nacionais, a homologações técnicas nacionais ou a especificações técnicas nacionais em matéria de conceção, cálculo e execução das obras e de utilização dos fornecimentos, devendo cada referência ser acompanhada da menção 'ou equivalente';",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 7951,
+        "end": 8557
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Por referência a especificações técnicas definidas e, por ordem de preferência, a normas nacionais que transponham normas europeias, a homologações técnicas europeias, a especificações técnicas comuns, a normas internacionais e a outros sistemas técnicos de referência estabelecidos pelos organismos europeus de normalização ou, quando estes não existam, a normas nacionais, a homologações técnicas nacionais ou a especificações técnicas nacionais em matéria de conceção, cálculo e execução das obras e de utilização dos fornecimentos, devendo cada referência ser acompanhada da menção «ou equivalente»;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art49-4",
+      "offsets": {
+        "start": 2280,
+        "end": 2886
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

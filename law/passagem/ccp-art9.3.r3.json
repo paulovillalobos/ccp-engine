@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art9.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art9",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - As actividades referidas nas alíneas e) a i) do n.º 1 só são consideradas para os efeitos nele previstos desde que os respectivos serviços sejam prestados por uma entidade que preste igualmente, em condições não expostas à concorrência em mercado de acesso não limitado, os serviços referidos na alínea d) do mesmo número.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art9-4",
+      "offsets": {
+        "start": 5104,
+        "end": 5430
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Para efeitos do presente Código consideram-se atividades do setor dos serviços de transporte:\na) As que tenham por objetivo a disponibilização ou exploração de redes destinadas à prestação de serviços ao público no domínio dos transportes por caminho-de-ferro, sistemas automáticos, carros elétricos, tróleis, autocarros ou cabo e por vias navegáveis entre terminais marítimos ou fluviais;\nb) As que tenham por objetivo a exploração de uma área geográfica para disponibilizar aeroportos e portos marítimos ou fluviais ou outros terminais de transportes às empresas de transporte aéreo, marítimo ou fluvial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art9-4",
+      "offsets": {
+        "start": 1102,
+        "end": 1712
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

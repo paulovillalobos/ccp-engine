@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art381",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-i.seccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 381.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 381.º\nIndemnização por redução do preço contratual\n1 - Quando, por virtude da ordem de suspensão de trabalhos ou de outros actos ou factos imputáveis ao dono da obra, os trabalhos executados pelo empreiteiro tenham um valor inferior em mais de 20 % ao preço contratual, este tem direito a uma indemnização correspondente a 10 % do valor da diferença verificada.\n2 - A indemnização prevista no número anterior é liquidada na conta final da empreitada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art381-4",
+      "offsets": {
+        "start": 1901,
+        "end": 2358
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "Artigo 381.º\nIndemnização por supressão de trabalhos\n1 - Quando, por virtude da ordem de supressão de trabalhos ou de outros actos ou factos imputáveis ao dono da obra, os trabalhos executados pelo empreiteiro tenham um valor inferior em mais de 20 % ao preço contratual, este tem direito a uma indemnização correspondente a 10 % do valor da diferença verificada.\n2 - A indemnização prevista no número anterior é liquidada na conta final da empreitada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art381-4",
+      "offsets": {
+        "start": 1294,
+        "end": 1746
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 381.º\nIndemnização por redução do preço contratual\n1 - Quando, por virtude da ordem de supressão de trabalhos ou de outros actos ou factos imputáveis ao dono da obra, os trabalhos executados pelo empreiteiro tenham um valor inferior em mais de 20 % ao preço contratual, este tem direito a uma indemnização correspondente a 10 % do valor da diferença verificada.\n2 - A indemnização prevista no número anterior é liquidada na conta final da empreitada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art381-4",
+      "offsets": {
+        "start": 665,
+        "end": 1122
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 381.º\nIndemnização por redução do preço contratual\n1 - Quando, por virtude da ordem de supressão de trabalhos ou de outros atos ou factos imputáveis ao dono da obra, os trabalhos executados pelo empreiteiro tenham um valor inferior em mais de 20 % ao preço contratual inicial, este tem direito a uma indemnização correspondente a 10 % do valor da diferença verificada.\n2 - A indemnização prevista no número anterior é liquidada na conta final da empreitada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art381-4",
+      "offsets": {
+        "start": 55,
+        "end": 519
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art56.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art56",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - A apresentação da proposta equivale, em qualquer caso, à declaração pelo concorrente de que:\na) Tomou perfeito conhecimento das peças do procedimento;\nb) Não se encontra em nenhuma das situações previstas no n.º 1 do artigo 55.º;\nc) Se obriga a executar o referido contrato em conformidade com o conteúdo do caderno de encargos, relativamente ao qual aceita, sem reservas, todas as suas cláusulas;\nd) Se obriga a apresentar, quando a entidade adjudicante o solicite, os documentos comprovativos da habilitação para celebrar e executar o contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art56-4",
+      "offsets": {
+        "start": 450,
+        "end": 1000
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

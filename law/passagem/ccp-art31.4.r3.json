@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art31.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art31",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Caso o valor do contrato de concessão de obra ou serviço público seja inferior a (euro) 75 000 e a sua duração seja inferior a um ano, podem ser utilizados os procedimentos de consulta prévia ou ajuste direto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 2117,
+        "end": 2330
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Caso o valor estimado do contrato de concessão de obras públicas ou de serviços seja inferior a 1 000 000 € e a sua duração seja inferior a um ano, podem ser utilizados os procedimentos de consulta prévia ou ajuste direto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 1017,
+        "end": 1243
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

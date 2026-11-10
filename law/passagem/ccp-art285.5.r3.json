@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art285.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art285",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - A anulação ou declaração de nulidade do contrato implica a restituição de tudo o que tiver sido prestado ou, se a restituição em espécie não for possível, do valor correspondente, ficando a parte a quem seja imputável o vício determinante da invalidade obrigada a indemnizar a outra parte pelos prejuízos que haja sofrido em consequência da celebração do contrato, nos termos gerais da responsabilidade civil.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 844,
+        "end": 1257
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

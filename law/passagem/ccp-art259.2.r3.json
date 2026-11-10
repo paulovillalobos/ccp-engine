@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art259.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art259",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O convite deve indicar o prazo e o modo de apresentação das propostas, bem como os termos ou os aspectos referidos no número anterior e, ainda, o modelo de avaliação das propostas com base nos factores e eventuais subfactores que densificaram o critério de adjudicação previamente previsto no programa do procedimento de formação do acordo quadro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art259-4",
+      "offsets": {
+        "start": 3249,
+        "end": 3600
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O caderno de encargos do acordo-quadro deve prever as regras quanto aos cocontratantes a convidar em cada procedimento, designadamente em função do lote, se existente, ou do valor do contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art259-4",
+      "offsets": {
+        "start": 363,
+        "end": 570
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

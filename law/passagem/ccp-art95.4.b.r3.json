@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art95.4.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art95.4",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Tenha sido adoptado o procedimento de concurso público urgente;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art95-4",
+      "offsets": {
+        "start": 8650,
+        "end": 8716
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2011-01-13",
+      "revoked": false
+    },
+    {
+      "version": "2011-01-13",
+      "text": "b) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art95-4",
+      "offsets": {
+        "start": 5553,
+        "end": 5567
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art95-4",
+      "offsets": {
+        "start": 2605,
+        "end": 2619
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

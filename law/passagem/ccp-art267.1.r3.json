@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art267.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art267",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - As impugnações administrativas das decisões relativas à formação dos contratos públicos regem-se pelo disposto no presente título e, subsidiariamente, pelo disposto no Código do Procedimento Administrativo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art267-4",
+      "offsets": {
+        "start": 676,
+        "end": 886
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

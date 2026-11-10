@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-d.2.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Reinvestirem os seus lucros com vista à consecução do objetivo da organização ou, caso sejam distribuídos ou redistribuídos, fazê-lo com base em considerações de natureza participativa;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d-4",
+      "offsets": {
+        "start": 3183,
+        "end": 3371
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

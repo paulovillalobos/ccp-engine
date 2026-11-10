@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 6.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 6.º\nRestrição do âmbito de aplicação\n1 - À formação de contratos a celebrar entre quaisquer entidades adjudicantes referidas no n.º 1 do artigo 2.º, a parte ii do presente Código só é aplicável quando o objecto de tais contratos abranja prestações típicas dos seguintes contratos:\na) Empreitada de obras públicas;\nb) Concessão de obras públicas;\nc) Concessão de serviços públicos;\nd) Locação ou aquisição de bens móveis;\ne) Aquisição de serviços.\n2 - Quando a entidade adjudicante seja uma das referidas no n.º 2 do artigo 2.º ou o Banco de Portugal, a parte ii do presente Código só é aplicável à formação dos contratos cujo objecto abranja prestações típicas dos contratos enumerados no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art6-4",
+      "offsets": {
+        "start": 243,
+        "end": 955
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 6.º\nRestrição do âmbito de aplicação",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art6-4",
+      "offsets": {
+        "start": 27,
+        "end": 70
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art372.3.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art372.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Notificar o empreiteiro com, pelo menos, cinco dias de antecedência, para execução os trabalhos a mais; ou",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art372-4",
+      "offsets": {
+        "start": 5544,
+        "end": 5653
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Notificar o empreiteiro com, pelo menos, cinco dias de antecedência, para execução dos trabalhos complementares; ou",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art372-4",
+      "offsets": {
+        "start": 669,
+        "end": 787
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

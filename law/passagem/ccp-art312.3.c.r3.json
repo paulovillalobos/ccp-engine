@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art312.3.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art312.3",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "c) Alarga consideravelmente o âmbito do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312-4",
+      "offsets": {
+        "start": 2334,
+        "end": 2383
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art96.2.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96.2",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Os esclarecimentos e as rectificações relativos ao caderno de encargos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96-4",
+      "offsets": {
+        "start": 8007,
+        "end": 8081
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art11.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art11.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Esses contratos digam directa e principalmente respeito a uma ou a várias das actividades por elas exercidas nos sectores da água, da energia, dos transportes e dos serviços postais; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11-4",
+      "offsets": {
+        "start": 5067,
+        "end": 5254
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Esses contratos sejam celebrados no âmbito do exercício de uma ou de várias das atividades por elas exercidas nos setores da água, da energia, dos transportes e dos serviços postais; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11-4",
+      "offsets": {
+        "start": 287,
+        "end": 474
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

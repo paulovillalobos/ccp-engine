@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art374.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art374",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O disposto no número anterior não é aplicável quando estejam em causa trabalhos a mais cuja execução não prejudique o normal desenvolvimento do plano de trabalhos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art374-4",
+      "offsets": {
+        "start": 874,
+        "end": 1041
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - O disposto no número anterior não é aplicável quando estejam em causa trabalhos complementares cuja execução não prejudique o normal desenvolvimento do plano de trabalhos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art374-4",
+      "offsets": {
+        "start": 303,
+        "end": 478
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

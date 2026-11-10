@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art1-a.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Sem prejuízo da aplicação das garantias de imparcialidade previstas no Código do Procedimento Administrativo, as entidades adjudicantes devem adotar as medidas adequadas para impedir, identificar e resolver eficazmente os conflitos de interesses que surjam na condução dos procedimentos de formação de contratos públicos, de modo a evitar qualquer distorção da concorrência e garantir a igualdade de tratamento dos operadores económicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-a-4",
+      "offsets": {
+        "start": 4532,
+        "end": 4973
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

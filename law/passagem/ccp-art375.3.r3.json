@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art375.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art375",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - Sem prejuízo da publicitação referida no número anterior, logo que haja um eventual acordo entre o dono da obra e o empreiteiro sobre o preço e prazo para execução dos trabalhos complementares, esse acordo deve ser publicitado nos termos e para os efeitos do disposto no artigo 315.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art375-4",
+      "offsets": {
+        "start": 603,
+        "end": 890
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

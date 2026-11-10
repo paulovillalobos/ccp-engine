@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art226.1",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art226",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Nos concursos de concepção é aprovado um documento, designado termos de referência, que deve indicar:\na) A identificação do concurso, bem como a respectiva modalidade escolhida;\nb) Uma descrição, tão completa quanto possível, das características, das particularidades, das referências e de quaisquer outros requisitos de natureza estética, funcional ou técnica que os trabalhos de concepção apresentados devem observar;\nc) A entidade adjudicante;\nd) O órgão que tomou a decisão de seleccionar um ou mais trabalhos de concepção e, no caso de esta ter sido tomada no uso de delegação ou subdelegação de competência, a qualidade em que aquele decidiu, com menção das decisões de delegação ou subdelegação e do local da respectiva publicação;\ne) A identidade dos membros, efectivos e suplentes, que compõem o júri e, quando for o caso, as respectivas habilitações profissionais específicas;\nf) As habilitações profissionais específicas de que os concorrentes devem ser titulares, se for o caso;\ng) Os documentos que materializam os trabalhos de concepção apresentados;\nh) O prazo e o local para a apresentação dos documentos referidos na alínea anterior;\ni) O critério de selecção, explicitando claramente os factores e eventuais subfactores que o densificam;\nj) O montante global dos eventuais prémios de participação a atribuir aos concorrentes cujos trabalhos de concepção apresentados não sejam excluídos;\nl) O número de trabalhos de concepção apresentados a seleccionar;\nm) O valor do prémio de consagração a atribuir a cada um dos concorrentes seleccionados;\nn) A intenção de celebrar, na sequência do concurso de concepção e por ajuste directo ao abrigo do disposto na alínea g) do n.º 1 do artigo 27.º, um contrato de prestação de serviços destinado a adquirir planos, projectos ou quaisquer criações conceptuais que consistam na concretização ou no desenvolvimento do ou dos trabalhos de concepção seleccionados neste concurso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art226-4",
+      "offsets": {
+        "start": 282,
+        "end": 2218
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 438280,
+        "end": 438445
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

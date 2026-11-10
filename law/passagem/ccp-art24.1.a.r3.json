@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art24.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Em anterior concurso público ou concurso limitado por prévia qualificação, nenhum candidato se haja apresentado ou nenhum concorrente haja apresentado proposta, e desde que o caderno de encargos e, se for o caso, os requisitos mínimos de capacidade técnica e financeira não sejam substancialmente alterados em relação aos daquele concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 19155,
+        "end": 19497
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "a) Em anterior concurso público ou concurso limitado por prévia qualificação, nenhum concorrente tenha apresentado proposta, todas as propostas tenham sido excluídas com fundamento na primeira parte da alínea a) do n.º 2 do artigo 70.º, nenhum candidato se haja apresentado, ou todas as candidaturas tenham sido excluídas com fundamento nas alíneas c), j) ou l) do n.º 2 do artigo 184.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 5455,
+        "end": 5842
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Em anterior concurso público ou concurso limitado por prévia qualificação, nenhum concorrente tenha apresentado proposta, todas as propostas tenham sido excluídas com fundamento na primeira parte da alínea a) do n.º 3 do artigo 70.º, nenhum candidato se haja apresentado, ou todas as candidaturas tenham sido excluídas com fundamento nas alíneas c), j) ou l) do n.º 2 do artigo 184.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 217,
+        "end": 604
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

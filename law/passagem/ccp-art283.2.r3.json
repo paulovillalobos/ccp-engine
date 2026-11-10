@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art283.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art283",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os contratos são anuláveis se tiverem sido anulados ou se forem anuláveis os actos procedimentais em que tenha assentado a sua celebração.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-4",
+      "offsets": {
+        "start": 2406,
+        "end": 2548
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Os contratos são anuláveis se tiverem sido anulados ou se forem anuláveis os atos procedimentais em que tenha assentado a sua celebração, devendo demonstrar-se que o vício é causa adequada e suficiente da invalidade do contrato, designadamente por implicar uma modificação subjetiva do contrato celebrado ou uma alteração do seu conteúdo essencial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-4",
+      "offsets": {
+        "start": 1335,
+        "end": 1687
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Os contratos são anuláveis se os atos procedimentais em que tenha assentado a sua celebração tiverem sido judicialmente anulados ou puderem ainda sê-lo, devendo demonstrar-se que o vício é causa adequada e suficiente da invalidade do contrato, designadamente por implicar uma modificação subjetiva do contrato celebrado ou uma alteração do seu conteúdo essencial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art283-4",
+      "offsets": {
+        "start": 272,
+        "end": 639
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

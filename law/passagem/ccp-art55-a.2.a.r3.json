@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art55-a.2.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55-a.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Demonstração de que ressarciu ou tomou medidas para ressarcir eventuais danos causados pela infração penal ou falta grave;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 2336,
+        "end": 2461
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

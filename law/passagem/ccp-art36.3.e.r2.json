@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art36.3.e",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art36.3",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "e) A avaliação dos riscos potenciais e formas de mitigação dos mesmos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art36-4",
+      "offsets": {
+        "start": 5417,
+        "end": 5487
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 152416,
+        "end": 152564
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - O candidato ou concorrente que se encontre numa das situações referidas nas alíneas b), c), g), h) ou l) do n.º 1 do artigo anterior pode demonstrar que as medidas por si tomadas são suficientes para demonstrar a sua idoneidade para a execução do contrato e a não afetação dos interesses que justificam aqueles impedimentos, não obstante a existência abstrata de causa de exclusão, nomeadamente através de:\na) Demonstração de que ressarciu ou tomou medidas para ressarcir eventuais danos causados pela infração penal ou falta grave;\nb) Esclarecimento integral dos factos e circunstâncias por meio de colaboração ativa com as autoridades competentes;\nc) Adoção de medidas técnicas, organizativas e de pessoal suficientemente concretas e adequadas para evitar outras infrações penais ou faltas graves.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 1925,
+        "end": 2728
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - O candidato ou concorrente que se encontre numa das situações referidas nas alíneas b), c), g), h), l) ou m) do n.º 1 do artigo anterior pode provar, no momento da apresentação da proposta ou candidatura, ou em momento posterior, nomeadamente, no contexto da pronúncia em audiência prévia, que as medidas por si tomadas são suficientes para demonstrar a sua idoneidade para a execução do contrato e a não afetação dos interesses que justificam aqueles impedimentos, não obstante a existência abstrata de causa de exclusão, nomeadamente através de:\na) Demonstração de que ressarciu ou tomou medidas para ressarcir eventuais danos causados pela infração penal ou falta grave;\nb) Esclarecimento integral dos factos e circunstâncias por meio de colaboração ativa com as autoridades competentes;\nc) Adoção de medidas técnicas, organizativas e de pessoal suficientemente concretas e adequadas para evitar outras infrações penais ou faltas graves.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 100,
+        "end": 1044
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

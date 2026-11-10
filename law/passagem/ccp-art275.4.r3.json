@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art275.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art275",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Sem prejuízo do disposto no número anterior, à formação dos contratos aí previstos aplicam-se os princípios gerais da contratação pública, em especial, da concorrência, da imparcialidade, da igualdade, da boa administração, da transparência, da legalidade, da proporcionalidade, da boa-fé e da publicidade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art275-4",
+      "offsets": {
+        "start": 5518,
+        "end": 5828
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art275-4",
+      "offsets": {
+        "start": 1659,
+        "end": 1674
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

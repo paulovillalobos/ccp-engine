@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art318-a.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - A cessão da posição contratual opera por mero efeito de ato do contraente público, sendo eficaz a partir da data por este indicada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-a-4",
+      "offsets": {
+        "start": 7735,
+        "end": 7870
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

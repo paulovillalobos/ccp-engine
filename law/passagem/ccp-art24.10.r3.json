@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art24.10",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24",
+  "kind": "numero",
+  "label": "10",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "10 - As entidades adjudicantes devem comunicar à Comissão Europeia, a pedido desta, um relatório relativo aos contratos celebrados ao abrigo do disposto na alínea a) do n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 18634,
+        "end": 18809
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "10 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 13803,
+        "end": 13819
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "10 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 4074,
+        "end": 4090
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

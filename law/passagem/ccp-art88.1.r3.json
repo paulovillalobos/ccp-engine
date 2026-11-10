@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art88.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art88",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - No caso de contratos que impliquem o pagamento de um preço pela entidade adjudicante, deve ser exigida ao adjudicatário a prestação de uma caução destinada a garantir a sua celebração, bem como o exacto e pontual cumprimento de todas as obrigações legais e contratuais que assume com essa celebração.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art88-4",
+      "offsets": {
+        "start": 5229,
+        "end": 5533
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art313.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art313",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - As modificações que não respeitem os limites estabelecidos no presente Código determinam a adoção de um novo procedimento de formação de contrato, caso a entidade adjudicante mantenha a decisão de contratar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 4900,
+        "end": 5111
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - O disposto no presente artigo não prejudica, em relação às modificações que tenham por objeto a realização de prestações complementares, o regime especial do artigo 370.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 2624,
+        "end": 2798
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 512,
+        "end": 527
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

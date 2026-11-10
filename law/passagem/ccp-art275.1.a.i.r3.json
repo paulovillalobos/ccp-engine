@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art275.1.a.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art275.1.a",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) Atividades de construção civil enumeradas no anexo xi ao presente Código, do qual faz parte integrante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art275-4",
+      "offsets": {
+        "start": 4389,
+        "end": 4495
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

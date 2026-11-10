@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art20.1.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art20.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Consulta prévia, com convite a pelo menos três entidades, quando o valor do contrato seja inferior a (euro) 75 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art20-4",
+      "offsets": {
+        "start": 1841,
+        "end": 1959
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) Consulta prévia, quando o valor estimado do contrato seja inferior a 130 000 €;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art20-4",
+      "offsets": {
+        "start": 768,
+        "end": 850
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art420-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art420-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando a modificação do contrato se fundar em circunstâncias imprevisíveis, o valor da modificação não pode ultrapassar 50 % do valor do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art420-a-4",
+      "offsets": {
+        "start": 814,
+        "end": 964
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art420-a-4",
+      "offsets": {
+        "start": 207,
+        "end": 222
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

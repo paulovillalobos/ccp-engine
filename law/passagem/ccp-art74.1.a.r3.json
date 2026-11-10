@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art74.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) O da proposta economicamente mais vantajosa para a entidade adjudicante;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 5998,
+        "end": 6073
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) Melhor relação qualidade-preço, na qual o critério de adjudicação é composto por um conjunto de fatores, e eventuais subfatores, relacionados com diversos aspetos da execução do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 4493,
+        "end": 4694
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "a) Multifator, de acordo com a qual o critério de adjudicação é densificado por um conjunto de fatores, e eventuais subfatores, correspondentes a diversos aspetos da execução do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 2467,
+        "end": 2665
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

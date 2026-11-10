@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art474.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Os montantes dos limiares europeus, para efeitos de publicitação obrigatória de anúncio no Jornal Oficial da União Europeia, previstos no artigo 8.º da Diretiva n.º 2014/23/UE, no artigo 4.º da Diretiva n.º 2014/24/UE e no artigo 15.º da Diretiva n.º 2014/25/UE, todas do Parlamento Europeu e do Conselho, de 26 de fevereiro, à data da publicação do presente Código, são os previstos nos números seguintes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 4223,
+        "end": 4633
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "1 - Os montantes dos limiares europeus, para efeito de publicitação obrigatória de anúncio no Jornal Oficial da União Europeia, são os previstos no artigo 8.º da Diretiva 2014/23/UE, no artigo 4.º da Diretiva 2014/24/UE e no artigo 15.º da Diretiva 2014/25/UE, os quais se reproduzem nos números seguintes, na redação que lhes foi dada pelo Regulamento Delegado (UE) 2019/1827, pelo Regulamento Delegado (UE) 2019/1828 e pelo Regulamento Delegado (UE) 2019/1829.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 2134,
+        "end": 2596
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

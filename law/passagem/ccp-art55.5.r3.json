@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art55.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - As situações referidas nas alíneas b), c) e h) do n.º 1 geram impedimento quando imputadas às próprias pessoas coletivas ou aos titulares dos respetivos órgãos sociais de administração, direção ou gerência que se encontrem em efetividade de funções.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 6572,
+        "end": 6825
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

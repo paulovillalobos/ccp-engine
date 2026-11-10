@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art74.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - É vedada a utilização do critério do momento de entrega da proposta como critério de desempate.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 5301,
+        "end": 5400
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - Para efeitos do disposto no número anterior:\na) É vedada a utilização do critério do momento de entrega das propostas;\nb) Quando seja adotada a modalidade multifator devem ser preferencialmente utilizados os respetivos fatores e subfatores densificadores, por ordem decrescente de ponderação relativa, sem prejuízo de outros que, nos termos do artigo seguinte, estejam ligados ao objeto do contrato a celebrar;\nc) Quando seja adotada a modalidade monofator, ou quando seja adotada a modalidade multifator e o critério previsto na alínea anterior não permita desempatar as propostas, pode recorrer-se ao sorteio.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 3510,
+        "end": 4125
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - Para efeitos do disposto no número anterior:\na) É vedada a utilização do critério do momento de entrega das propostas;\nb) Caso não seja definido o critério de desempate no convite ou no programa do procedimento, devem ser utilizados os respetivos fatores e subfatores densificadores, por ordem decrescente de ponderação relativa;\nc) Quando o critério de desempate aplicável não permita desempatar as propostas, deve recorrer-se ao sorteio.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 1482,
+        "end": 1925
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

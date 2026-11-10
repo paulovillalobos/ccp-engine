@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art42.6.m",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42.6",
+  "kind": "alinea",
+  "label": "m)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "m) A eficiência energética.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 2451,
+        "end": 2478
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

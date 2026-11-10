@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art149.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art149",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A fase de negociação das propostas pode ser restringida aos concorrentes cujas propostas sejam ordenadas nos primeiros lugares ou aberta a todos os concorrentes cujas propostas não sejam excluídas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149-4",
+      "offsets": {
+        "start": 2133,
+        "end": 2334
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

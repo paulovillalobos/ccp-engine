@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art93.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art93",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A adjudicação caduca se o adjudicatário não confirmar os compromissos referidos no artigo anterior no prazo fixado para o efeito ou até ao termo da respectiva prorrogação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art93-4",
+      "offsets": {
+        "start": 896,
+        "end": 1071
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

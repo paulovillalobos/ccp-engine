@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art115.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art115",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O convite pode indicar, ainda que por referência ao preço base fixado no caderno de encargos, um valor a partir do qual o preço total resultante de uma proposta é considerado anormalmente baixo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 13055,
+        "end": 13253
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 7567,
+        "end": 7582
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 2432,
+        "end": 2447
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

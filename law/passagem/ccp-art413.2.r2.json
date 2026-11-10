@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art413.2",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art413",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Para efeitos do disposto no número anterior, considera-se que o concessionário assume o risco de exploração quando:\na) Em condições normais de exploração, não há garantia de que recupere os investimentos efetuados ou as despesas suportadas no âmbito da exploração das obras ou dos serviços que são objeto da concessão; ou\nb) A parte do risco transferido para o concessionário envolve uma exposição real à imprevisibilidade do mercado, o que implica que quaisquer perdas potenciais por ele incorridas não sejam meramente nominais ou insignificantes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art413-4",
+      "offsets": {
+        "start": 481,
+        "end": 1033
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 653363,
+        "end": 653511
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

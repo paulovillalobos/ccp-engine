@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art86.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art86",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2009-10-07",
+      "text": "5 - No caso de se tratar de um procedimento de formação de um contrato de empreitada ou concessão de obras públicas, a entidade adjudicante deve comunicar imediatamente ao Instituto da Construção e do Imobiliário, I. P., a caducidade da adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 8354,
+        "end": 8603
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 5168,
+        "end": 5183
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 1903,
+        "end": 1918
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

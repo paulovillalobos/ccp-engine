@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art2.1.g",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) As associações de que façam parte uma ou várias das pessoas colectivas referidas nas alíneas anteriores, desde que sejam maioritariamente financiadas por estas, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada pelas mesmas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 8960,
+        "end": 9318
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "g) As fundações públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 2320,
+        "end": 2345
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-d.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-d",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - O regime previsto no presente artigo é, ainda, aplicável às empresas sociais, constituídas nos termos legalmente previstos, desde que se encontrem cumpridos os requisitos previstos no n.º 2.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-d-4",
+      "offsets": {
+        "start": 4220,
+        "end": 4414
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

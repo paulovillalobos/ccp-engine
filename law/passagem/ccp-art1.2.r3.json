@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art1.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O regime da contratação pública estabelecido na parte ii do presente Código é aplicável à formação dos contratos públicos, entendendo-se por tal todos aqueles que, independentemente da sua designação e natureza, sejam celebrados pelas entidades adjudicantes referidas no presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 4813,
+        "end": 5104
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O regime da contratação pública estabelecido na parte ii é aplicável à formação dos contratos públicos que, independentemente da sua designação e natureza, sejam celebrados pelas entidades adjudicantes referidas no presente Código e não sejam excluídos do seu âmbito de aplicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 1365,
+        "end": 1649
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

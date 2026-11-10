@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-a.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - Antes da abertura de um procedimento de formação de contrato público, a entidade adjudicante pode realizar consultas informais ao mercado, designadamente através da solicitação de informações ou pareceres de peritos, autoridades independentes ou agentes económicos, que possam ser utilizados no planeamento da contratação, sem prejuízo do disposto na alínea i) do n.º 1 do artigo 55.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art35-a-4",
+      "offsets": {
+        "start": 1748,
+        "end": 2135
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

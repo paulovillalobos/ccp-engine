@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art9.3.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art9.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) As que tenham por objetivo a disponibilização ou exploração de redes destinadas à prestação de serviços ao público no domínio dos transportes por caminho-de-ferro, sistemas automáticos, carros elétricos, tróleis, autocarros ou cabo e por vias navegáveis entre terminais marítimos ou fluviais;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art9-4",
+      "offsets": {
+        "start": 1200,
+        "end": 1495
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

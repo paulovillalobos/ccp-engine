@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art197.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art197",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Ao procedimento de negociação é aplicável, com as necessárias adaptações, o disposto no artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art197-4",
+      "offsets": {
+        "start": 1442,
+        "end": 1546
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Ao procedimento de negociação, independentemente do preço base fixado no caderno de encargos, é aplicável, com as necessárias adaptações, o disposto no artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art197-4",
+      "offsets": {
+        "start": 852,
+        "end": 1020
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Ao procedimento de negociação é aplicável, com as necessárias adaptações, o disposto no artigo 131.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art197-4",
+      "offsets": {
+        "start": 316,
+        "end": 420
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

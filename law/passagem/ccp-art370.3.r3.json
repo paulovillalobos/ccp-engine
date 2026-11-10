@@ -1,0 +1,72 @@
+{
+  "id": "ccp:art370.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art370",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O limite previsto na alínea c) do número anterior é elevado para 25 % quando estejam em causa obras cuja execução seja afectada por condicionalismos naturais com especiais características de imprevisibilidade, nomeadamente as obras marítimas-portuárias e as obras complexas do ponto de vista geotécnico, em especial a construção de túneis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 10221,
+        "end": 10564
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "3 - O limite previsto na alínea c) do número anterior é elevado para 25 % quando estejam em causa obras cuja execução seja afectada por condicionalismos naturais com especiais características de imprevisibilidade, nomeadamente as obras marítimas-portuárias e as obras complexas do ponto de vista geotécnico, em especial a construção de túneis, bem como as obras de reabilitação ou restauro de bens imóveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 7748,
+        "end": 8154
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 5666,
+        "end": 5681
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2021-06-20",
+      "revoked": true
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 1972,
+        "end": 1987
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 271,
+        "end": 286
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -2450,3 +2450,10 @@ One entry per commit: done / next / why. Written so a model change loses nothing
 ## 2026-11-10 — D94: training sets pinned to the law they were made from
 
 The first law-watch readers run (12 CCP articles pending) stopped at verify: TRAIN on training/data (one new nota_dr example from a newly captured DR history raw) and data-v16 (ten 406.b examples whose quoted text is now the 2018 one). The refresh itself was right: the repository had held 2008 text for 45.º, 339.º, 341.º, 342.º and 406.º. verify 0.3 (ferramenta:verify@60) checks every frozen set over the law, raws included, as recorded when the set was generated; all 18 sets match. No refresh round was drawn: no rule cites the changed passages, and draw12 does not ask again a passage an earlier round asked (the 406.b reading of fabrica15 was on the 2008 text and never settled).
+
+## 2026-11-10 — D95: every DR capture read, none dropped
+
+- The DR's pages changed between the 24 Oct capture and today's. Where the newest history page lists every older date, it is read (AO90 spelling on 258.º/259.º; 372.º gains its 2018 and 2021 versions; today's texts unchanged elsewhere: 2475 passages only re-cite the newer capture).
+- Where it lists fewer, the first capture stays and the article is reported: 16.º, 37.º, 340.º, 405.º. For 37.º and 405.º the missing version is DL 177/2026, which the act's own art. 2.º makes; the DR page is wrong there, not the store.
+- refresh 0.3: 61.º was a false difference (revoked, the page prints its last text under «REVOGADO»).
+- Law watch against today's page: 37.º, 340.º, 405.º, 410.º differ (was 7). Tests: the 8 failures that remain also fail at the previous commit.

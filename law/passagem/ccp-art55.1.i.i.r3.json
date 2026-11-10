@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55.1.i.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55.1.i",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) Tenham, a qualquer título, prestado, direta ou indiretamente, assessoria ou apoio técnico na preparação e elaboração das peças do procedimento que lhes confira vantagem que falseie as condições normais de concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 17811,
+        "end": 18032
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "i) Tenham, a qualquer título, prestado, direta ou indiretamente, assessoria ou apoio técnico na preparação e elaboração das peças do procedimento que lhes confira vantagem que falseie as condições normais de concorrência;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 11581,
+        "end": 11802
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

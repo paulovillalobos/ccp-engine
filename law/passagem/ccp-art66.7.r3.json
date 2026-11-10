@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art66.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art66",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "7 - A entidade adjudicante pode impor aos concorrentes requisitos destinados a proteger as informações de natureza confidencial por ela disponibilizadas ao longo do procedimento de formação do contrato público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art66-4",
+      "offsets": {
+        "start": 1720,
+        "end": 1930
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

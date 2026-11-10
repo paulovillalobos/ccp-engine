@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art34.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art34",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - O preço contratual estimado de todos os contratos a celebrar para cuja formação as entidades adjudicantes adoptem o procedimento de ajuste directo em função de critérios materiais não é contabilizado para efeitos do preço contratual estimado de todos os contratos a celebrar previsto no n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34-4",
+      "offsets": {
+        "start": 10767,
+        "end": 11064
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - O período abrangido pelo anúncio de pré-informação não pode ser superior a 12 meses a contar da data em que o anúncio é enviado para publicação, exceto no caso dos contratos de serviços sociais e outros serviços específicos, em que o referido período pode ser superior a 12 meses.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art34-4",
+      "offsets": {
+        "start": 7766,
+        "end": 8050
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

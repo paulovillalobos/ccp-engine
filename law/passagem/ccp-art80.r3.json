@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art80",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-ii.capitulo-vii",
+  "kind": "artigo",
+  "label": "Artigo 80.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 80.º\nRevogação da decisão de contratar\n1 - A decisão de não adjudicação prevista no artigo anterior determina a revogação da decisão de contratar.\n2 - Quando as circunstâncias previstas nas alíneas c) e d) do n.º 1 do artigo anterior ocorrerem entre o início do procedimento e o termo do prazo de apresentação das propostas, a decisão de contratar também pode ser revogada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art80-4",
+      "offsets": {
+        "start": 385,
+        "end": 765
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 80.º\nRevogação da decisão de contratar\n1 - A decisão de não adjudicação prevista no artigo anterior determina a revogação da decisão de contratar.\n2 - (Revogado)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art80-4",
+      "offsets": {
+        "start": 44,
+        "end": 212
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

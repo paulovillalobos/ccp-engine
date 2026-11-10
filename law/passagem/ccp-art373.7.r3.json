@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art373.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art373",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "7 - Sem prejuízo do disposto no artigo 372.º, enquanto não houver acordo sobre todos ou alguns preços ou sobre o prazo de execução, os trabalhos respectivos são executados e pagos com base na contra-proposta do dono da obra, efectuando-se, se for caso disso, a correspondente correcção, acrescida, no que respeita aos preços, dos juros de mora devidos, logo que haja acordo ou determinação judicial ou arbitral sobre a matéria.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art373-4",
+      "offsets": {
+        "start": 2303,
+        "end": 2730
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

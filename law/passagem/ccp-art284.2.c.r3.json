@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art284.2.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art284.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "c) Na falta do ato ou dos atos em que, nos termos da lei, tenha de assentar a respetiva celebração.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art284-4",
+      "offsets": {
+        "start": 655,
+        "end": 754
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

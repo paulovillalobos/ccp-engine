@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art24.3.b",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art24.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "b) As entidades adjudicantes devem comunicar à Comissão Europeia, a pedido desta, um relatório relativo aos contratos celebrados ao seu abrigo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art24-4",
+      "offsets": {
+        "start": 11816,
+        "end": 11959
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "Alterado pelo/a Artigo 4.º do/a Decreto-Lei n.º 78/2022 - Diário da República n.º 214/2022, Série I de 2022-11-07, em vigor a partir de 2022-12-02",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 115629,
+        "end": 115775
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

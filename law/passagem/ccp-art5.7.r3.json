@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art5.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art5",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - Quando a entidade adjudicante seja uma das referidas no n.º 1 do artigo 2.º, à formação dos contratos referidos nos n.os 1 a 4 é ainda aplicável, com as necessárias adaptações, o disposto nos capítulos viii e ix do título ii da parte ii do presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 26938,
+        "end": 27198
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "7 - Quando a entidade adjudicante seja uma das referidas no n.º 1 do artigo 2.º, à formação de contratos referidos nos n.os 1, 2 e 4 é ainda aplicável, com as necessárias adaptações, o disposto no capítulo viii do título ii da parte ii do Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 16375,
+        "end": 16621
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "7 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 11703,
+        "end": 11718
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art5-4",
+      "offsets": {
+        "start": 3851,
+        "end": 3866
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

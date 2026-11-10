@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art43.9",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "9",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "9 - No caso previsto n.º 3, o contrato a celebrar não é considerado um contrato misto para os efeitos do disposto no artigo 32.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 18760,
+        "end": 18888
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "9 - A nulidade prevista no número anterior é suscetível de sanação, nos termos do disposto no n.º 2 do artigo 164.º do Código do Procedimento Administrativo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 11025,
+        "end": 11182
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "9 - A nulidade prevista no número anterior é suscetível de sanação, mediante a eliminação da disposição ou a junção do elemento cuja falta a determina, nos termos previstos no número seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 2341,
+        "end": 2533
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

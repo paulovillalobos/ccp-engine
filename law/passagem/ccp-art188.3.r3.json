@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "3 - A decisão de qualificação caduca quanto ao candidato que, no prazo fixado no programa do concurso ou na notificação a que se refere o n.º 1:\na) Não apresente qualquer um dos documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso;\nb) Não demonstre o cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso;\nc) Não apresente a confirmação dos compromissos assumidos por terceiras entidades.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188-4",
+      "offsets": {
+        "start": 749,
+        "end": 1264
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

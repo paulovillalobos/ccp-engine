@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art152.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art152",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Após a análise das versões finais das propostas e a aplicação do critério de adjudicação, o júri elabora fundamentadamente um segundo relatório preliminar, no qual deve propor a ordenação das mesmas, podendo ainda propor a exclusão de qualquer proposta se verificar, nesta fase, a ocorrência de qualquer dos motivos previstos no n.º 2 do artigo 146.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art152-4",
+      "offsets": {
+        "start": 1411,
+        "end": 1765
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Após a análise das versões finais das propostas e a aplicação do critério de adjudicação, o júri elabora fundamentadamente um segundo relatório preliminar, no qual deve propor a ordenação das mesmas, podendo ainda propor a exclusão de qualquer proposta se verificar, nesta fase, a ocorrência de qualquer dos motivos previstos nos n.os 2 e 3 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art152-4",
+      "offsets": {
+        "start": 98,
+        "end": 457
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

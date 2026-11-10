@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art242.1",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art242",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A celebração de um contrato ao abrigo de um sistema de aquisição dinâmico depende da publicação:\na) De um anúncio simplificado no Diário da República, conforme modelo aprovado por portaria dos ministros responsáveis pela edição do Diário da República e pelas áreas das finanças e das obras públicas; e\nb) De um anúncio simplificado no Jornal Oficial da União Europeia, conforme modelo constante do anexo ix do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro, quando o anúncio com indicação expressa da instituição de um sistema de aquisição dinâmico tenha sido publicado no Jornal Oficial da União Europeia.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art242-4",
+      "offsets": {
+        "start": 283,
+        "end": 908
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 449501,
+        "end": 449666
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

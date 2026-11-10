@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art62.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art62",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Os documentos que constituem a proposta são apresentados directamente em plataforma electrónica utilizada pela entidade adjudicante, através de meio de transmissão escrita e electrónica de dados, sem prejuízo do disposto na alínea g) do n.º 1 do artigo 115.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art62-4",
+      "offsets": {
+        "start": 2766,
+        "end": 3028
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Os documentos que constituem a proposta são apresentados diretamente em plataforma eletrónica utilizada pela entidade adjudicante, sem prejuízo do disposto na alínea g) do n.º 1 do artigo 115.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art62-4",
+      "offsets": {
+        "start": 1425,
+        "end": 1622
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Os documentos que constituem a proposta são apresentados diretamente em plataforma eletrónica utilizada pela entidade adjudicante, sem prejuízo do disposto na alínea h) do n.º 1 e no n.º 4 do artigo 115.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art62-4",
+      "offsets": {
+        "start": 89,
+        "end": 297
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

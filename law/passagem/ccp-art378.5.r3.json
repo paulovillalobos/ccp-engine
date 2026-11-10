@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art378.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art378",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - A responsabilidade do empreiteiro prevista no n.º 3 corresponde a metade do preço dos trabalhos de suprimento dos erros e omissões executados.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378-4",
+      "offsets": {
+        "start": 8523,
+        "end": 8669
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378-4",
+      "offsets": {
+        "start": 3797,
+        "end": 3812
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": true
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - O empreiteiro suporta ainda metade do valor dos trabalhos complementares de suprimento de erros e omissões que, não sendo exigível que tivessem sido detetados nem na fase de formação do contrato nem no prazo a que se refere o número anterior, também não tenham sido por ele identificados no prazo de 30 dias a contar da data em que lhe fosse exigível a sua deteção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378-4",
+      "offsets": {
+        "start": 1225,
+        "end": 1594
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

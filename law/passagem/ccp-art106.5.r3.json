@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art106.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art106",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - A competência prevista nos números anteriores para a representação da entidade adjudicante na outorga do contrato pode ser delegada nos termos gerais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art106-4",
+      "offsets": {
+        "start": 981,
+        "end": 1135
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art476.3",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art476",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - A resolução de litígios por meio de arbitragem em tribunais arbitrais não integrados em centros de arbitragem institucionalizados só pode ser determinada numa das seguintes situações:\na) Quando, face à elevada complexidade das questões jurídicas ou técnicas envolvidas, ao elevado valor económico das questões a resolver, ou à inexistência de centro de arbitragem institucionalizado competente na matéria, seja aconselhável a submissão de eventuais litígios à jurisdição de tribunal arbitral não integrado em centro de arbitragem institucionalizado;\nb) Quando o processo arbitral previsto nos regulamentos do respetivo centro de arbitragem institucionalizado não se conforme com o regime de urgência previsto no Código do Processo nos Tribunais Administrativos para os contratos por ele abrangidos;\nc) Quando se demonstre que a utilização de um centro de arbitragem institucionalizado teria como consequência uma resolução mais morosa do litígio;\nd) Quando se demonstre que a utilização de um centro de arbitragem institucionalizado teria como consequência um custo mais elevado para as entidades adjudicantes ou contraentes públicos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art476-4",
+      "offsets": {
+        "start": 1445,
+        "end": 2583
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 713828,
+        "end": 713976
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

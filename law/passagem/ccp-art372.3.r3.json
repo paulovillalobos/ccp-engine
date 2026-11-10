@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art372.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art372",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Quanto considere injustificada a não execução dos trabalhos a mais, o dono da obra pode:\na) Notificar o empreiteiro com, pelo menos, cinco dias de antecedência, para execução os trabalhos a mais; ou\nb) Optar pela execução dos trabalhos a mais, directamente ou por intermédio de terceiro, quando o empreiteiro tenha manifestado de forma peremptória a intenção de não os executar, sendo aplicável, com as necessárias adaptações, o disposto nos n.os 2 a 4 do artigo 325.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art372-4",
+      "offsets": {
+        "start": 5451,
+        "end": 5923
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quanto considere injustificada a não execução dos trabalhos complementares, o dono da obra pode:\na) Notificar o empreiteiro com, pelo menos, cinco dias de antecedência, para execução os trabalhos a mais; ou\nb) Optar pela execução dos trabalhos a mais, directamente ou por intermédio de terceiro, quando o empreiteiro tenha manifestado de forma peremptória a intenção de não os executar, sendo aplicável, com as necessárias adaptações, o disposto nos n.ºs 2 a 4 do artigo 325.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art372-4",
+      "offsets": {
+        "start": 3823,
+        "end": 4303
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - Quanto considere injustificada a não execução dos trabalhos a mais, o dono da obra pode:\na) Notificar o empreiteiro com, pelo menos, cinco dias de antecedência, para execução os trabalhos a mais; ou\nb) Optar pela execução dos trabalhos a mais, directamente ou por intermédio de terceiro, quando o empreiteiro tenha manifestado de forma peremptória a intenção de não os executar, sendo aplicável, com as necessárias adaptações, o disposto nos n.os 2 a 4 do artigo 325.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art372-4",
+      "offsets": {
+        "start": 2215,
+        "end": 2687
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Quanto considere injustificada a não execução dos trabalhos a mais, o dono da obra pode:\na) Notificar o empreiteiro com, pelo menos, cinco dias de antecedência, para execução dos trabalhos complementares; ou\nb) Optar pela execução dos trabalhos complementares, diretamente ou por intermédio de terceiro, quando o empreiteiro tenha manifestado de forma perentória a intenção de não os executar, sendo aplicável, com as necessárias adaptações, o disposto nos n.ºs 2 a 4 do artigo 325.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art372-4",
+      "offsets": {
+        "start": 576,
+        "end": 1063
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

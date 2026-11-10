@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art311.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art311",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O contrato pode ainda ser modificado por acto administrativo do contraente público quando o fundamento invocado sejam razões de interesse público.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311-4",
+      "offsets": {
+        "start": 1634,
+        "end": 1784
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311-4",
+      "offsets": {
+        "start": 1211,
+        "end": 1226
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art311-4",
+      "offsets": {
+        "start": 539,
+        "end": 554
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

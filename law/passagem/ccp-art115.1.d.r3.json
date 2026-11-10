@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art115.1.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art115.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "d) Os documentos referidos na alínea c) do n.º 1 do artigo 57.º, se for o caso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 11866,
+        "end": 11945
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "d) O valor estimado do contrato ou, se for o caso, o preço base;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art115-4",
+      "offsets": {
+        "start": 531,
+        "end": 595
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

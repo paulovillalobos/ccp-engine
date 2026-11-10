@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art57-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art57-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "2 - O documento referido no número anterior identifica os custos que resultem de prestações impostas por lei ou por instrumentos de regulamentação coletiva de trabalho, expressando os seus valores certos ou médios, bem como o respetivo peso relativo, indicado em percentagem.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a-4",
+      "offsets": {
+        "start": 1602,
+        "end": 1877
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - O documento identifica os custos que resultem de prestações impostas por lei ou por instrumentos de regulamentação coletiva de trabalho, expressando os seus valores certos ou médios, bem como o respetivo peso relativo, indicado em percentagem.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art57-a-4",
+      "offsets": {
+        "start": 490,
+        "end": 737
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

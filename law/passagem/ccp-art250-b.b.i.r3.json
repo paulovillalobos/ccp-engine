@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-b.b.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-b.b",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "i) As informações constantes do anexo referido na alínea anterior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-b-4",
+      "offsets": {
+        "start": 2345,
+        "end": 2411
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

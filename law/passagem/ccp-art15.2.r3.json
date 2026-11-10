@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art15.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art15",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - As entidades adjudicantes devem comunicar à Comissão Europeia, a pedido desta, os contratos celebrados ao abrigo do disposto na alínea a) do n.º 1 do artigo 13.º ou os que não digam directa e principalmente respeito a uma ou a várias das actividades exercidas por essas entidades nos sectores da água, da energia, dos transportes e dos serviços postais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art15-4",
+      "offsets": {
+        "start": 1713,
+        "end": 2070
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - As entidades adjudicantes devem comunicar à Comissão Europeia, a pedido desta, os contratos celebrados ao abrigo do disposto na alínea a) do n.º 1 do artigo 13.º ou os que não sejam celebrados no âmbito do exercício de uma ou de várias das atividades exercidas por essas entidades nos setores da água, da energia, dos transportes e dos serviços postais.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art15-4",
+      "offsets": {
+        "start": 614,
+        "end": 971
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

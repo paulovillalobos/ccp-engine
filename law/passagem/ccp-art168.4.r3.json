@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art168.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art168",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando, para efeitos do preenchimento dos requisitos mínimos de capacidade técnica, o candidato recorra a terceiros, independentemente do vínculo que com eles estabeleça, nomeadamente o de subcontratação, a respectiva candidatura é ainda constituída por uma declaração através da qual estes se comprometam, incondicionalmente, a realizar determinadas prestações objecto do contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168-4",
+      "offsets": {
+        "start": 4843,
+        "end": 5240
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Se o programa do concurso o exigir, a candidatura deve ser constituída:\na) Pelos documentos comprovativos do cumprimento, pelo candidato, dos requisitos mínimos de capacidade técnica e financeira;\nb) Quando o candidato recorra a terceiros para efeitos do preenchimento dos requisitos mínimos, por documento comprovativo de que o candidato irá efetivamente dispor dos recursos necessários disponibilizados por terceiros, que poderá ser uma declaração através da qual aqueles terceiros se comprometem, incondicionalmente, a realizar determinadas prestações objeto do contrato a celebrar.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art168-4",
+      "offsets": {
+        "start": 1026,
+        "end": 1615
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

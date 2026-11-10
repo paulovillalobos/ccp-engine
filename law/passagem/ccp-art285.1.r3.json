@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art285.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art285",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Aos contratos com objecto passível de acto administrativo e outros contratos sobre o exercício de poderes públicos é aplicável o regime de invalidade previsto para o acto com o mesmo objecto e idêntica regulamentação da situação concreta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 3554,
+        "end": 3796
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2015-12-01",
+      "revoked": false
+    },
+    {
+      "version": "2015-12-01",
+      "text": "1 - Aos contratos com objeto passível de ato administrativo é aplicável o regime de invalidade previsto para o ato com o mesmo objeto e idêntica regulamentação da situação concreta.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 2638,
+        "end": 2819
+      },
+      "valid_from": "2015-12-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Aos contratos com objeto passível de ato administrativo e outros contratos sobre o exercício de poderes públicos é aplicável o regime de invalidade previsto para o ato administrativo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 1635,
+        "end": 1822
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Aos contratos públicos aplica-se o regime de invalidade definido no presente Código, sem prejuízo do que se encontre previsto em legislação especial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art285-4",
+      "offsets": {
+        "start": 77,
+        "end": 230
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

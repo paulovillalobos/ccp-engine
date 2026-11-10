@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art474.4.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474.4",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) (euro) 1 000 000, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 5724,
+        "end": 5873
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) 1 000 000 €, para os contratos públicos relativos a serviços sociais e outros serviços específicos enumerados no anexo ix ao presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 1586,
+        "end": 1730
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

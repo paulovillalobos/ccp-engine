@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art164.1.g",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "g)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "g) O prazo para a apresentação dos documentos de habilitação pelo adjudicatário;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 18135,
+        "end": 18215
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "g) O prazo para a apresentação dos documentos de habilitação pelo adjudicatário, bem como o prazo a conceder pela entidade adjudicante para a supressão de irregularidades detectadas nos documentos apresentados que possam levar à caducidade da adjudicação nos termos do disposto no artigo 86.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 13290,
+        "end": 13583
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "g) Os documentos de habilitação, diretamente relacionados com o objeto do contrato a celebrar, a apresentar nos termos do disposto no n.º 2 do artigo 81.º, e o prazo para a respetiva apresentação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 701,
+        "end": 897
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

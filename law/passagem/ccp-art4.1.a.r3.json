@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art4.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art4.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) De convenção internacional previamente comunicada à Comissão Europeia, e concluída nos termos dos Tratados da União Europeia, entre a República Portuguesa e um ou mais Estados terceiros, respeitantes a obras, bens ou serviços destinados à realização ou exploração conjunta de um projeto pelos seus signatários;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art4-4",
+      "offsets": {
+        "start": 2694,
+        "end": 3007
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2009-01-01",
+      "text": "a) Ao abrigo de uma convenção internacional previamente comunicada à Comissão Europeia, e concluída nos termos do Tratado que institui a Comunidade Europeia, entre o Estado Português e um ou mais Estados terceiros, que tenham por objecto a realização de trabalhos destinados à execução ou à exploração em comum de uma obra pública pelos Estados signatários ou a aquisição de bens móveis ou de serviços destinados à realização ou à exploração em comum de um projecto pelos Estados signatários;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art4-4",
+      "offsets": {
+        "start": 7834,
+        "end": 8326
+      },
+      "valid_from": "2009-01-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) De convenção internacional previamente comunicada à Comissão Europeia, e concluída nos termos dos Tratados da União Europeia, entre a República Portuguesa e um ou mais Estados terceiros, respeitantes a obras, bens ou serviços destinados à realização ou exploração conjunta de um projeto pelos seus signatários;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art4-4",
+      "offsets": {
+        "start": 132,
+        "end": 445
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

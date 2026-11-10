@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art326.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art326",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2010-09-01",
+      "text": "5 - Quando as importâncias pagas nos termos previstos no número anterior forem inferiores àquelas que sejam efectivamente devidas ao co-contratante, em função da apreciação de reclamações deduzidas, tem este direito a juros de mora sobre essa diferença, nos termos do disposto no n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art326-4",
+      "offsets": {
+        "start": 963,
+        "end": 1249
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art370.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art370",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Caso não se verifique alguma das condições previstas no n.º 2, os trabalhos a mais devem ser objecto de contrato celebrado na sequência de procedimento adoptado nos termos do disposto no título i da parte ii.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 10726,
+        "end": 10938
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - Os trabalhos complementares que excedam os limites previstos no presente artigo devem ser adjudicados na sequência de novo procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 4015,
+        "end": 4155
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 2101,
+        "end": 2116
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art370-4",
+      "offsets": {
+        "start": 303,
+        "end": 318
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

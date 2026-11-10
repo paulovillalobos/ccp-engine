@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art358.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art358",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Nos casos em que a consignação total ou a primeira consignação parcial tenham lugar em data posterior à prevista no contrato ou indicada no plano final de consignação, o dono da obra comunica ao Instituto da Construção e do Imobiliário, I. P., no prazo de cinco dias, a data em que aquelas efectivamente ocorreram, apresentando uma justificação sumária da dilação verificada.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art358-4",
+      "offsets": {
+        "start": 2289,
+        "end": 2668
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - (Revogado).",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art358-4",
+      "offsets": {
+        "start": 1526,
+        "end": 1541
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art358-4",
+      "offsets": {
+        "start": 780,
+        "end": 795
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

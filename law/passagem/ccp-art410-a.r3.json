@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art410-a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-ii.seccao-i",
+  "kind": "artigo",
+  "label": "Artigo 410.º-A",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 410.º-A\nValor do contrato de concessão\n1 - O valor de um contrato de concessão corresponde ao total do volume de negócios do concessionário gerado ao longo da duração do contrato, sem IVA, conforme estipulado no contrato, em contrapartida das obras e dos serviços que foram objeto da concessão, bem como dos fornecimentos relacionados com tais obras e serviços.\n2 - O valor do contrato deve ter em conta, nomeadamente, o seguinte:\na) O valor de qualquer tipo de opção e eventuais prorrogações da duração da concessão;\nb) As receitas provenientes do pagamento de taxas pelos utilizadores das obras ou dos serviços distintas das cobradas em nome da entidade adjudicante;\nc) Os pagamentos ou qualquer vantagem financeira, independentemente da forma, que a entidade adjudicante ou qualquer outra autoridade pública proporcione ao concessionário, incluindo a compensação pelo cumprimento de uma obrigação de serviço público e os subsídios ao investimento público;\nd) O valor das subvenções ou de quaisquer outras vantagens financeiras, independentemente da forma, provenientes de terceiros pela execução da concessão;\ne) A receita da venda de ativos que façam parte do estabelecimento da concessão;\nf) O valor de todos os fornecimentos e serviços postos à disposição do concessionário pelas entidades adjudicantes, desde que sejam necessários à execução das obras ou à prestação dos serviços;\ng) Os prémios ou pagamentos a candidatos ou proponentes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art410-a-4",
+      "offsets": {
+        "start": 254,
+        "end": 1705
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 410-A\nValor do contrato de concessão",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art410-a-4",
+      "offsets": {
+        "start": 55,
+        "end": 98
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

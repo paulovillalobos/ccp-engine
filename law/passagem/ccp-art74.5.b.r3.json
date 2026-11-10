@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art74.5.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art74.5",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "b) Quando seja adotada a modalidade multifator devem ser preferencialmente utilizados os respetivos fatores e subfatores densificadores, por ordem decrescente de ponderação relativa, sem prejuízo de outros que, nos termos do artigo seguinte, estejam ligados ao objeto do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 3633,
+        "end": 3924
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Caso não seja definido o critério de desempate no convite ou no programa do procedimento, devem ser utilizados os respetivos fatores e subfatores densificadores, por ordem decrescente de ponderação relativa;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art74-4",
+      "offsets": {
+        "start": 1605,
+        "end": 1815
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

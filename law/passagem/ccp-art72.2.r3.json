@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art72.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art72",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os esclarecimentos prestados pelos respectivos concorrentes fazem parte integrante das mesmas, desde que não contrariem os elementos constantes dos documentos que as constituem, não alterem ou completem os respectivos atributos, nem visem suprir omissões que determinam a sua exclusão nos termos do disposto na alínea a) do n.º 2 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 6692,
+        "end": 7040
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Os esclarecimentos prestados pelos concorrentes fazem parte integrante das propostas, desde que não contrariem os elementos constantes dos documentos que as constituem, não alterem ou completem os respetivos atributos, nem visem suprir omissões que determinam a sua exclusão nos termos do disposto na alínea a) do n.º 3 do artigo 70.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 302,
+        "end": 640
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

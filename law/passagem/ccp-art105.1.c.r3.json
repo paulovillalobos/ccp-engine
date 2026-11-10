@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art105.1.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art105.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "c) Se, no caso de o adjudicatário ser um agrupamento, os seus membros não se tiverem associado nos termos previstos no n.º 4 do artigo 54.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art105-4",
+      "offsets": {
+        "start": 428,
+        "end": 567
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

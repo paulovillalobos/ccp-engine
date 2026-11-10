@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art43.11",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art43",
+  "kind": "numero",
+  "label": "11",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "11 - No caso previsto n.º 3, o contrato a celebrar não é considerado um contrato misto para os efeitos do disposto no artigo 32.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 11976,
+        "end": 12105
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "11 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art43-4",
+      "offsets": {
+        "start": 3288,
+        "end": 3304
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

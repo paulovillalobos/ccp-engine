@@ -3401,8 +3401,9 @@
       "versao": 3,
       "code": "tools/refresh.py",
       "hash": "6df37e1641c407505fc991244715a3d732c8f7107d583965ae024114a244be3a",
-      "retired": false,
-      "nota": "D92: AMALIA v17 (the adapter that settled the counting rules)"
+      "retired": true,
+      "nota": "D92: AMALIA v17 (the adapter that settled the counting rules)",
+      "retired_at": "2026-11-10T15:47:14Z"
     },
     {
       "id": "ferramenta:capture-dr@2",
@@ -3437,8 +3438,9 @@
       "versao": 8,
       "code": "tools/build_law.py",
       "hash": "c1c5636eb62a54100ed48acd1ca4b680cf1697eafe270fb7a4aaf5ae925806c1",
-      "retired": false,
-      "nota": "skips a repealed act's last consolidated version"
+      "retired": true,
+      "nota": "skips a repealed act's last consolidated version",
+      "retired_at": "2026-11-10T15:47:14Z"
     },
     {
       "id": "ferramenta:verify@60",
@@ -3451,6 +3453,30 @@
       "hash": "5c928ef4f956e198a2856498356e5a01a022db9a236247395231a41df1d6ae29",
       "retired": false,
       "nota": "D94: frozen training sets checked over the law (raws included) as recorded when each was generated"
+    },
+    {
+      "id": "ferramenta:build-law@9",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 9,
+      "code": "tools/build_law.py",
+      "hash": "01d7c359d04d566cd1bef2caaa2b61c7dc2422a7a60caa945120526d3a5ca43b",
+      "retired": false,
+      "nota": "0.4 D95: every DR capture of a history page; the newest when it lists every older date, else the first, the disagreement reported"
+    },
+    {
+      "id": "ferramenta:refresh@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/refresh.py",
+      "hash": "ff6baf51129086c43b1bb16fcf574f494b0df4d1b112c278ca0ecd6eebb8ecc4",
+      "retired": false,
+      "nota": "0.3 D95: an article the page notes REVOGADO is revoked on the page (art. 61)"
     }
   ]
 }

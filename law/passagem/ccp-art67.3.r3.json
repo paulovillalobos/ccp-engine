@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art67.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art67",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - No caso de procedimentos de formação de contratos que configurem parcerias públicas-privadas, os membros do júri são nomeados, conjuntamente, pelo ministro ou pelo membro do Governo Regional responsável pela área das finanças e pelo ministro ou pelo membro do Governo Regional da tutela sectorial, consoante o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67-4",
+      "offsets": {
+        "start": 3170,
+        "end": 3489
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Tratando-se de consulta prévia ou de concurso público urgente, o órgão competente para a decisão de contratar pode decidir que os procedimentos sejam conduzidos pelos serviços da entidade adjudicante, considerando-se feitas a estes as referências feitas, no presente Código, ao júri.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67-4",
+      "offsets": {
+        "start": 1862,
+        "end": 2149
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

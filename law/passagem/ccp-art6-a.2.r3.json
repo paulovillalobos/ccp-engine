@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art6-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art6-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - À celebração dos contratos referidos no número anterior são aplicáveis, com as devidas adaptações, os princípios gerais da contratação pública previstos no artigo 1.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art6-a-4",
+      "offsets": {
+        "start": 1164,
+        "end": 1337
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art6-a-4",
+      "offsets": {
+        "start": 510,
+        "end": 525
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

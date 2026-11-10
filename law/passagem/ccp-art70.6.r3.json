@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art70.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "6 - No caso de concurso público ou concurso limitado por prévia qualificação em que todas as propostas tenham sido excluídas, o órgão competente para a decisão de contratar pode, excecionalmente e por motivos de interesse público devidamente fundamentados, adjudicar aquela que, de entre as propostas que apenas tenham sido excluídas com fundamento na alínea d) do n.º 2 e cujo preço não exceda em mais de 20 % o montante do preço base, seja ordenada em primeiro lugar, de acordo com o critério de adjudicação, desde que:\na) Essa possibilidade se encontre prevista no programa do procedimento e a modalidade do critério de adjudicação seja a referida na alínea a) do n.º 1 do artigo 74.º;\nb) O preço da proposta a adjudicar respeite os limites previstos no n.º 4 do artigo 47.º;\nc) A decisão de autorização da despesa já habilite ou seja revista no sentido de habilitar a adjudicação por esse preço.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 10929,
+        "end": 11828
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - Nos casos previstos nas alíneas f) e i) do n.º 2 deve ser proposta a exclusão de todas as propostas variantes, a qual não implica a exclusão da proposta base.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 4211,
+        "end": 4373
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

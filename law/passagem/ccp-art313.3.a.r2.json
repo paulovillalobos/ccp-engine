@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art313.3.a",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art313.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "a) Modificações de valor inferior aos limiares referidos nos n.os 2, 3 ou 4 do artigo 474.º, consoante o caso, e inferior a 10 % ou, em contratos de empreitada de obras públicas, a 15 % do preço contratual inicial;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 1937,
+        "end": 2151
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 542927,
+        "end": 543075
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

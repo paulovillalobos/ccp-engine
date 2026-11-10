@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art25.1.a.ii",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art25.1.a",
+  "kind": "subalinea",
+  "label": "ii)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "ii) Aquele contrato tenha sido celebrado, há menos de três anos, na sequência de concurso público ou de concurso limitado por prévia qualificação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art25-4",
+      "offsets": {
+        "start": 9463,
+        "end": 9609
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "ii) Essas obras estejam em conformidade com um projeto base comum;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art25-4",
+      "offsets": {
+        "start": 2439,
+        "end": 2505
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art61.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art61",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - A decisão prevista no número anterior é publicitada em plataforma electrónica utilizada pela entidade adjudicante e junta às peças do procedimento que se encontrem patentes para consulta, devendo todos os interessados que as tenham adquirido ser imediatamente notificados do facto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61-4",
+      "offsets": {
+        "start": 4692,
+        "end": 4977
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "6 - O órgão competente para a decisão de contratar deve identificar os termos do suprimento de cada um dos erros ou das omissões aceites nos termos do disposto no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art61-4",
+      "offsets": {
+        "start": 2222,
+        "end": 2401
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 212980,
+        "end": 213145
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

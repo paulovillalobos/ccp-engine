@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art187.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art187",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os candidatos qualificados passam à fase seguinte em condições de igualdade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art187-4",
+      "offsets": {
+        "start": 3700,
+        "end": 3780
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Juntamente com a notificação da decisão de qualificação, o órgão competente para a decisão de contratar deve notificar os candidatos, concedendo-lhes um prazo mínimo de cinco dias para:\na) Apresentar os documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso, sempre que se revele necessário e tais requisitos tenham apenas sido declarados mediante a apresentação da declaração conforme modelo constante no anexo v ao presente Código ou do Documento Europeu Único de Contratação Pública;\nb) Confirmar, no prazo fixado para o efeito, se for o caso, os compromissos assumidos por terceiras entidades relativos aos requisitos referidos na alínea anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art187-4",
+      "offsets": {
+        "start": 1510,
+        "end": 2241
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art187-4",
+      "offsets": {
+        "start": 482,
+        "end": 497
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art240.1.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art240.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) Indicar o modo de apresentação das propostas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art240-4",
+      "offsets": {
+        "start": 1908,
+        "end": 1956
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "c) Fornecer todas as informações necessárias ao acesso dos interessados ao sistema de aquisição dinâmico, indicando o equipamento eletrónico utilizado, as modalidades e os aspetos técnicos de ligação ao sistema.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art240-4",
+      "offsets": {
+        "start": 540,
+        "end": 751
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

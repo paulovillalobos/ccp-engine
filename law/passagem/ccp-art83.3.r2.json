@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art83.3",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art83",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Quando o adjudicatário tenha prestado consentimento, nos termos da lei, para que a entidade adjudicante consulte a informação relativa a qualquer dos documentos referidos na alínea b) do n.º 1 ou nos n.os 2 a 4 do artigo 81.º, é dispensada a sua apresentação nos termos do n.º 1 ou a indicação prevista no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-4",
+      "offsets": {
+        "start": 3009,
+        "end": 3335
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "3 - Quando os documentos a que se referem a alínea b) do n.º 1 e os n.os 2 a 4 do artigo 81.º se encontrem disponíveis na Internet, o adjudicatário pode, em substituição da apresentação da sua reprodução, indicar à entidade adjudicante o endereço do sítio onde aqueles podem ser consultados, bem como a informação necessária a essa consulta, desde que os referidos sítio e documentos dele constantes estejam redigidos em língua portuguesa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-4",
+      "offsets": {
+        "start": 997,
+        "end": 1436
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 258128,
+        "end": 258293
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

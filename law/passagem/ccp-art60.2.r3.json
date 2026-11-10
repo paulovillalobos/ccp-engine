@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art60.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art60",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando os preços constantes da proposta forem também indicados por extenso, em caso de divergência, estes prevalecem, para todos os efeitos, sobre os indicados em algarismos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art60-4",
+      "offsets": {
+        "start": 2195,
+        "end": 2373
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

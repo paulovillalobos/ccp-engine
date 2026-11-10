@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art474.4.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art474.4",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) (euro) 5 225 000, para os contratos de empreitada de obras públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 5527,
+        "end": 5598
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "a) (euro) 5 350 000, para os contratos de empreitada de obras públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 3486,
+        "end": 3557
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) 5 404 000 €, para os contratos de empreitada de obras públicas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art474-4",
+      "offsets": {
+        "start": 1396,
+        "end": 1462
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

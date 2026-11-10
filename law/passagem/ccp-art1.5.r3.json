@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art1.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art1",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - O regime substantivo dos contratos públicos estabelecido na parte iii do presente Código é aplicável aos que revistam a natureza de contrato administrativo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 5564,
+        "end": 5724
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "5 - A parte iii do presente Código contém o regime substantivo aplicável à execução, modificação e extinção das relações contratuais administrativas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 1988,
+        "end": 2137
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "5 - A parte iii do presente Código contém o regime substantivo aplicável à execução, modificação e extinção dos contratos administrativos, nos termos do artigo 280.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art1-4",
+      "offsets": {
+        "start": 844,
+        "end": 1009
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

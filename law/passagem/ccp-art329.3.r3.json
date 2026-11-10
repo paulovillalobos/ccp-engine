@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art329.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art329",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Nos casos em que seja atingido o limite previsto no número anterior e o contraente público decida não proceder à resolução do contrato, por dela resultar grave dano para o interesse público, aquele limite é elevado para 30 %.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art329-4",
+      "offsets": {
+        "start": 3089,
+        "end": 3318
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art136.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art136",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "5 - Na situação prevista no n.º 2 do artigo 133.º, os prazos mínimos referidos nos n.os 1 e 2 do presente artigo são prorrogados por cinco dias.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art136-4",
+      "offsets": {
+        "start": 1318,
+        "end": 1462
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

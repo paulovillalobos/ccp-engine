@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art295.5.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art295.5",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "e) No final do quinto ano, os 10 % restantes.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art295-4",
+      "offsets": {
+        "start": 5500,
+        "end": 5545
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

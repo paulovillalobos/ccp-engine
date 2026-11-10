@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art93",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-ii.capitulo-x",
+  "kind": "artigo",
+  "label": "Artigo 93.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 93.º\nNão confirmação de compromissos\n1 - A adjudicação caduca se o adjudicatário não confirmar os compromissos referidos no artigo anterior no prazo fixado para o efeito ou até ao termo da respectiva prorrogação.\n2 - No caso previsto no número anterior, o órgão competente para a decisão de contratar deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art93-4",
+      "offsets": {
+        "start": 852,
+        "end": 1216
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 93.º\nNão confirmação de compromissos\n1 - A adjudicação caduca se o adjudicatário não confirmar os compromissos referidos no artigo anterior no prazo fixado para o efeito ou até ao termo da respectiva prorrogação.\n2 - Para efeitos do disposto no número anterior, o órgão competente para a decisão de contratar deve notificar o adjudicatário, fixando-lhe um prazo, não superior a cinco dias, para que se pronuncie, por escrito, ao abrigo do direito de audiência prévia.\n3 - Sem prejuízo do disposto no número anterior, no caso previsto no n.º 1, o órgão competente para a decisão de contratar deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art93-4",
+      "offsets": {
+        "start": 42,
+        "end": 696
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

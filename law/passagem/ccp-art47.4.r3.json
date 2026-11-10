@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art47.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art47",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - O disposto no número anterior é igualmente aplicável quando o ajuste directo seja adoptado ao abrigo do disposto na alínea b) do n.º 1 do artigo 24.º e na alínea b) do n.º 1 do artigo 27.º e se verifiquem as situações previstas, respectivamente, nos n.os 2 e 3 dos mesmos artigos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 4110,
+        "end": 4394
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - O preço base deve respeitar os limites de valor até aos quais pode ser utilizado o tipo de procedimento em causa e os limites máximos de autorização de despesa do órgão competente para a decisão de contratar, se aplicáveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 1636,
+        "end": 1863
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 642,
+        "end": 657
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

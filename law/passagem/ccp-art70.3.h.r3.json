@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art70.3.h",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art70.3",
+  "kind": "alinea",
+  "label": "h)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "h) Que o concorrente não preenche os requisitos mínimos de capacidade exigidos, nos casos previstos no artigo 161.º-D;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art70-4",
+      "offsets": {
+        "start": 3401,
+        "end": 3519
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

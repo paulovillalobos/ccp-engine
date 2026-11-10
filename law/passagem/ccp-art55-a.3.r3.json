@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55-a.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55-a",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Tendo por base os elementos referidos no número anterior, bem como a gravidade e as circunstâncias específicas da infração ou falta cometida, a entidade adjudicante pode tomar a decisão de não relevar o impedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 2729,
+        "end": 2948
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Tendo por base os elementos referidos no número anterior, bem como a gravidade e as circunstâncias específicas da infração ou falta cometida, a entidade adjudicante decide sobre a relevação do impedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 1045,
+        "end": 1254
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

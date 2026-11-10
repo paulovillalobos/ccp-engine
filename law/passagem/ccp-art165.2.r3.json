@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art165.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art165",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - A capacidade financeira baseia-se, pelo menos, no requisito mínimo traduzido pela expressão matemática constante do anexo iv do presente Código e do qual faz parte integrante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165-4",
+      "offsets": {
+        "start": 6044,
+        "end": 6223
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165-4",
+      "offsets": {
+        "start": 3877,
+        "end": 3892
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165-4",
+      "offsets": {
+        "start": 910,
+        "end": 925
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

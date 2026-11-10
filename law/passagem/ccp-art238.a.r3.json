@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art238.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art238",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Instituição do sistema;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art238-4",
+      "offsets": {
+        "start": 812,
+        "end": 838
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "a) Instituição do sistema, divulgado através da publicação de anúncio no Diário da República e no Jornal Oficial da União Europeia, quando obrigatório, nos termos das alíneas b) ou c) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art238-4",
+      "offsets": {
+        "start": 136,
+        "end": 345
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art290-a.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art290-a",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "4 - Ao gestor do contrato podem ser delegados poderes para a adoção das medidas a que se refere o número anterior, exceto em matéria de modificação e cessação do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art290-a-4",
+      "offsets": {
+        "start": 4370,
+        "end": 4541
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - Caso o gestor ou os gestores detetem desvios, defeitos ou outras anomalias na execução do contrato, devem comunicá-los de imediato ao órgão competente, propondo, em relatório fundamentado, as medidas corretivas que, em cada caso, se revelem adequadas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art290-a-4",
+      "offsets": {
+        "start": 2631,
+        "end": 2886
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

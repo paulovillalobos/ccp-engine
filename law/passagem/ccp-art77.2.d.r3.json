@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art77.2.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art77.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Se pronunciar sobre a minuta de contrato, quando este for reduzido a escrito;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77-4",
+      "offsets": {
+        "start": 2175,
+        "end": 2255
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

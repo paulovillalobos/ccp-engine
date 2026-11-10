@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art2.2.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art2.2",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "c) As associações de direito privado que prossigam finalidades a título principal de natureza científica e tecnológica, desde que sejam maioritariamente financiadas pelas entidades referidas no número anterior, estejam sujeitas ao seu controlo de gestão ou tenham um órgão de administração, de direcção ou de fiscalização cuja maioria dos titulares seja, directa ou indirectamente, designada pelas mesmas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 10072,
+        "end": 10477
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "c) (Revogada);",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 7834,
+        "end": 7848
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "c) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art2-4",
+      "offsets": {
+        "start": 1562,
+        "end": 1576
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

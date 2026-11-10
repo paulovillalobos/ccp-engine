@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art280.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art280",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Em tudo quanto não estiver regulado no presente Código ou em lei especial e não for suficientemente disciplinado por aplicação dos princípios gerais de direito administrativo, são subsidiariamente aplicáveis às relações contratuais jurídicas administrativas, com as necessárias adaptações, as restantes normas de direito administrativo e, na falta destas, o direito civil.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 11886,
+        "end": 12262
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - As disposições do presente título que têm por objetivo a defesa dos princípios gerais da contratação pública e dos princípios da concorrência e da igualdade de tratamento e não-discriminação, e em concreto as disposições relativas aos regimes de invalidade, limites à modificação objetiva, cessão da posição contratual e subcontratação são aplicáveis, com as devidas adaptações, aos contratos sujeitos à parte II, ainda que estes não configurem relações jurídicas contratuais administrativas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 5478,
+        "end": 5974
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "3 - As disposições do presente título relativas à invalidade, limites à modificação objetiva, cessão da posição contratual e subcontratação são aplicáveis, com as devidas adaptações e sem prejuízo do disposto em lei especial, a todos os contratos públicos, independentemente da sua qualificação como contratos administrativos nos termos do n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 3237,
+        "end": 3583
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - As disposições do presente título relativas à invalidade, limites à modificação objetiva, cessão da posição contratual e subcontratação são aplicáveis, com as devidas adaptações e sem prejuízo do disposto em lei especial, a todos os contratos públicos a cuja formação seja aplicável a parte ii do presente Código, independentemente da sua qualificação como contratos administrativos nos termos do n.º 1.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 1220,
+        "end": 1627
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

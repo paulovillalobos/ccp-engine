@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art280.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art280",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - As disposições do presente título são subsidiariamente aplicáveis às relações contratuais jurídicas administrativas reguladas em especial no presente Código ou em outra lei, sempre que os tipos dos contratos não afastem as razões justificativas da disciplina em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 11613,
+        "end": 11885
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - As demais relações contratuais administrativas, incluindo as estabelecidas entre contraentes públicos, são regidas pela legislação especialmente aplicável, sem prejuízo da aplicação subsidiária do regime da parte iii, quando os tipos dos contratos não afastem as razões justificativas da disciplina em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 5165,
+        "end": 5477
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Sem prejuízo do disposto no número seguinte, as disposições do presente título só se aplicam quando o tipo contratual em questão não afaste, pela sua natureza, as razões justificativas da disciplina em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art280-4",
+      "offsets": {
+        "start": 3024,
+        "end": 3236
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art312.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art312.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "a) Se o respetivo valor for inferior aos limiares referidos nos n.ºs 2, 3 e 4 do artigo 474.º, consoante o caso, e inferior a 10 % ou, em contratos de empreitada de obras públicas, a 15 % do preço contratual inicial;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art312-4",
+      "offsets": {
+        "start": 157,
+        "end": 373
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

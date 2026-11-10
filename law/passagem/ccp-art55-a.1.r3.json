@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55-a.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55-a",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "1 - O disposto nas alíneas d) e e) do n.º 1 do artigo anterior aplica-se sem prejuízo dos regimes de regularização de dívidas fiscais e dívidas à Segurança Social em vigor.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 1752,
+        "end": 1924
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-a-4",
+      "offsets": {
+        "start": 84,
+        "end": 99
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

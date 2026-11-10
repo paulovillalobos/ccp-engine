@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art62.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art62",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Quando, pela sua natureza, qualquer documento dos que constituem a proposta não possa ser apresentado nos termos do disposto no n.º 1, deve ser encerrado em invólucro opaco e fechado:\na) No rosto do qual se deve indicar a designação do procedimento e da entidade adjudicante;\nb) Que deve ser entregue directamente ou enviado por correio registado à entidade adjudicante, devendo, em qualquer caso, a respectiva recepção ocorrer dentro do prazo fixado para a apresentação das propostas;\nc) Cuja recepção deve ser registada por referência à respectiva data e hora.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art62-4",
+      "offsets": {
+        "start": 3527,
+        "end": 4093
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art72.3.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art72.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "a) A não apresentação ou a incorreta apresentação de documentos que se limitem a comprovar factos ou qualidades anteriores à data de apresentação da candidatura ou da proposta, incluindo as declarações dos anexos i e v ao presente Código ou o Documento Europeu Único de Contratação Pública;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 3359,
+        "end": 3649
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art67.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art67",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Os titulares do órgão competente para a decisão de contratar podem ser designados membros do júri.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art67-4",
+      "offsets": {
+        "start": 3067,
+        "end": 3169
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

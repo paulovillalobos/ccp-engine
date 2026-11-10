@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art42.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - O caderno de encargos do procedimento de formação de contratos de valor igual ou superior a (euro) 25 000 000 deve prever a obrigação de o adjudicatário elaborar um ou vários projectos de investigação e desenvolvimento directamente relacionados com as prestações que constituem o objecto desse contrato, a concretizar em território nacional, pelo adjudicatário ou por terceiras entidades, de valor correspondente a, pelo menos, 1 % do preço contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 15640,
+        "end": 16096
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "7 - (Revogado.)\n8 -(Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 13910,
+        "end": 13940
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 2479,
+        "end": 2494
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

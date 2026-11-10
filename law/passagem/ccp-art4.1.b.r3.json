@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art4.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art4.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) De procedimento específico de uma organização internacional de que a República Portuguesa seja parte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art4-4",
+      "offsets": {
+        "start": 3008,
+        "end": 3112
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2009-01-01",
+      "text": "b) Com entidades nacionais de outro Estado membro ou de um Estado terceiro, nos termos de uma convenção internacional relativa ao estacionamento de tropas;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art4-4",
+      "offsets": {
+        "start": 8327,
+        "end": 8482
+      },
+      "valid_from": "2009-01-01",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) De procedimento específico de uma organização internacional de que a República Portuguesa seja parte;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art4-4",
+      "offsets": {
+        "start": 446,
+        "end": 550
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

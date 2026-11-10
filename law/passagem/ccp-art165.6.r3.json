@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art165.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art165",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "6 - Quando for exigida a apresentação de certificados emitidos por organismos independentes, nacionais ou estabelecidos noutros Estados membros da União Europeia, que atestem que o interessado respeita determinadas normas de garantia de qualidade ou normas de gestão ambiental, deve referir-se, respetivamente, aos sistemas de garantia de qualidade ou aos sistemas de gestão ambiental baseados no Sistema Comunitário de Ecogestão e Auditoria (EMAS) ou no conjunto de normas europeias, e certificados por organismos conformes com as séries de normas europeias respeitantes à certificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art165-4",
+      "offsets": {
+        "start": 1421,
+        "end": 2008
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

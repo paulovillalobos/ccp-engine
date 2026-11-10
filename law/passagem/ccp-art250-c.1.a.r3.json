@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art250-c.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art250-c.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) Garantia de uma elevada qualidade, continuidade, acessibilidade, disponibilidade e exaustividade dos serviços a adquirir;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art250-c-4",
+      "offsets": {
+        "start": 1772,
+        "end": 1896
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

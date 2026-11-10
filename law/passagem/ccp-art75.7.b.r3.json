@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art75.7.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75.7",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Custos de utilização, tais como consumo de energia, de consumíveis e de outros recursos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75-4",
+      "offsets": {
+        "start": 18537,
+        "end": 18628
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

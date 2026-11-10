@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art13.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art13",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - Quando as obras, os bens móveis ou os serviços sejam, respectivamente, realizadas, fornecidos ou prestados à entidade adjudicante por mais do que uma empresa associada, a percentagem referida no número anterior é calculada tendo em conta o volume total de negócios, em matéria de obras, de bens móveis ou de serviços, de todas as empresas associadas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13-4",
+      "offsets": {
+        "start": 14544,
+        "end": 14898
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "4 - Para efeitos do apuramento da percentagem prevista no número anterior, deve ser tido em conta o volume médio de negócios ou os custos suportados pela pessoa coletiva em causa no que diz respeito a serviços, fornecimentos ou obras, nos três anos anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13-4",
+      "offsets": {
+        "start": 10771,
+        "end": 11031
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "4 - Para efeitos do apuramento da percentagem prevista no número anterior, deve ser tido em conta o volume médio total de negócios, ou uma medida alternativa adequada baseada na atividade, tais como os custos suportados pela pessoa coletiva em causa no que diz respeito a serviços, fornecimentos ou obras, nos três anos anteriores.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art13-4",
+      "offsets": {
+        "start": 6808,
+        "end": 7139
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

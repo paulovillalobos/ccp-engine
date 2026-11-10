@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art11.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art11.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) O objecto desses contratos abranja prestações típicas dos seguintes contratos:\ni) Empreitada de obras públicas cujo valor seja igual ou superior ao referido na alínea b) do artigo 16.º da Directiva n.º 2004/17/CE, do Parlamento Europeu e do Conselho, de 31 de Março;\nii) Concessão de obras públicas;\niii) Concessão de serviços públicos;\niv) Locação ou aquisição de bens móveis cujo valor seja igual ou superior ao referido na alínea a) do artigo 16.º da Directiva n.º 2004/17/CE, do Parlamento Europeu e do Conselho, de 31 de Março;\nv) Aquisição de serviços cujo valor seja igual ou superior ao referido na alínea a) do artigo 16.º da Directiva n.º 2004/17/CE, do Parlamento Europeu e do Conselho, de 31 de Março.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11-4",
+      "offsets": {
+        "start": 5255,
+        "end": 5971
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "b) O objecto desses contratos abranja prestações típicas dos seguintes contratos:\ni) Empreitada de obras públicas cujo valor seja igual ou superior ao limiar referido na alínea a) do n.º 4 do artigo 474.º;\nii) Concessão de obras públicas;\niii) Concessão de serviços públicos;\niv) Locação ou aquisição de bens móveis e aquisição de serviços cujo valor seja igual ou superior ao limiar referido na alínea b) do n.º 4 do artigo 474.º;\nv) Aquisição de serviços sociais ou outros específicos enumerados no anexo ix ao presente Código, cujo valor seja igual ou superior ao limiar referido na alínea c) do n.º 4 do artigo 474.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11-4",
+      "offsets": {
+        "start": 2849,
+        "end": 3469
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) O objecto desses contratos abranja prestações típicas dos seguintes contratos:\ni) Empreitada de obras públicas cujo valor seja igual ou superior ao limiar referido na alínea a) do n.º 4 do artigo 474.º;\nii) Concessão de obras públicas;\niii) Concessão de serviços;\niv) Locação ou aquisição de bens móveis e aquisição de serviços cujo valor seja igual ou superior ao limiar referido na alínea b) do n.º 4 do artigo 474.º;\nv) Aquisição de serviços sociais ou outros específicos enumerados no anexo ix ao presente Código, cujo valor seja igual ou superior ao limiar referido na alínea c) do n.º 4 do artigo 474.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art11-4",
+      "offsets": {
+        "start": 475,
+        "end": 1086
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

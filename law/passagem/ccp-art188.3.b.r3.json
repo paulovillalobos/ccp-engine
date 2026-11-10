@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.3.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "b) Não demonstre o cumprimento dos requisitos mínimos de capacidade técnica e financeira exigidos no programa do concurso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188-4",
+      "offsets": {
+        "start": 1059,
+        "end": 1181
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

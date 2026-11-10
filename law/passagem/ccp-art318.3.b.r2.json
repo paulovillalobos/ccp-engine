@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art318.3.b",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318.3",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "b) Do preenchimento, por parte do potencial subcontratado, de requisitos mínimos de capacidade técnica ou de capacidade financeira, quando o contrato subordinar expressamente a subcontratação à avaliação dessas capacidades ou de uma delas, ou do preenchimento, por parte do potencial subcontratado, dos requisitos mínimos de capacidade técnica relativos às prestações a subcontratar, sempre que o co-contratante recorra à capacidade de potenciais subcontratados, para efeitos de qualificação na fase de formação do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-4",
+      "offsets": {
+        "start": 8031,
+        "end": 8555
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Alterado pelo/a Artigo 2.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 549819,
+        "end": 549967
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

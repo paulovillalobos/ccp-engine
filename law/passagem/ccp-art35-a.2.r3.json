@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - A consulta preliminar prevista no número anterior não pode ter por efeito distorcer a concorrência, nem resultar em qualquer violação dos princípios da não discriminação e da transparência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art35-a-4",
+      "offsets": {
+        "start": 2136,
+        "end": 2329
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

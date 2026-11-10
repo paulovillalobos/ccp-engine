@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "5 - Os candidatos qualificados passam à fase seguinte em condições de igualdade.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188-4",
+      "offsets": {
+        "start": 1708,
+        "end": 1788
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art234",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 234.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 234.º\nCaducidade da decisão de selecção\n1 - Quando os termos de referência do concurso de concepção exigirem aos concorrentes a titularidade de habilitações profissionais específicas, os concorrentes seleccionados devem apresentar documentos comprovativos das mesmas no prazo de cinco dias a contar da notificação da decisão de selecção.\n2 - A decisão de selecção caduca se o concorrente seleccionado não apresentar os documentos referidos no número anterior no prazo nele fixado.\n3 - No caso previsto no número anterior, o órgão competente para a decisão prevista no artigo 221.º deve seleccionar o trabalho de concepção ordenado em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art234-4",
+      "offsets": {
+        "start": 261,
+        "end": 920
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 234.º\nCaducidade da decisão de selecção",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art234-4",
+      "offsets": {
+        "start": 42,
+        "end": 88
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

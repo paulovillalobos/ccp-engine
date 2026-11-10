@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art373.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art373",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "6 - Se o dono da obra não efectuar nenhuma comunicação ao empreiteiro dentro do prazo previsto no número anterior, considera-se que a proposta deste foi aceite.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art373-4",
+      "offsets": {
+        "start": 2142,
+        "end": 2302
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

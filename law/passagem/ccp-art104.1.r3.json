@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art104.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art104",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - A outorga do contrato deve ter lugar no prazo de 30 dias contados da data da aceitação da minuta ou da decisão sobre a reclamação, mas nunca antes de:\na) Decorridos 10 dias contados da data da notificação da decisão de adjudicação;\nb) Apresentados todos os documentos de habilitação exigidos;\nc) Comprovada a prestação da caução, quando esta for devida, nos termos do disposto no n.º 1 do artigo 90.º;\nd) Confirmados os compromissos referidos na alínea c) do n.º 2 do artigo 77.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104-4",
+      "offsets": {
+        "start": 5243,
+        "end": 5726
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2011-01-13",
+      "revoked": false
+    },
+    {
+      "version": "2011-01-13",
+      "text": "1 - A outorga do contrato deve ter lugar no prazo de 30 dias contados da data da aceitação da minuta ou da decisão sobre a reclamação, mas nunca antes de:\na) Decorridos 10 dias contados da data da notificação da decisão de adjudicação a todos os concorrentes;\nb) Apresentados todos os documentos de habilitação exigidos;\nc) Comprovada a prestação da caução, quando esta for devida, nos termos do disposto no n.º 1 do artigo 90.º;\nd) Confirmados os compromissos referidos na alínea c) do n.º 2 do artigo 77.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104-4",
+      "offsets": {
+        "start": 3984,
+        "end": 4491
+      },
+      "valid_from": "2011-01-13",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

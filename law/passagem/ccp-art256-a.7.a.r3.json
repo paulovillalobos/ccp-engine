@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art256-a.7.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256-a.7",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) A decisão de contratar ao abrigo do acordo-quadro deve ser tomada em simultâneo com a de remeter convite à entidade ou às entidades para efeitos do disposto no presente artigo; e",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a-4",
+      "offsets": {
+        "start": 7517,
+        "end": 7698
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

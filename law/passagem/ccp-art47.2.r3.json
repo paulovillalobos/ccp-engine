@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art47.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art47",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Quando não sejam aplicáveis as alíneas a) e b) do número anterior, não existe preço base sempre que:\na) O órgão que tenha autorizado a despesa inerente ao contrato a celebrar tenha competência para autorizar despesa sem limite de valor; ou\nb) A entidade adjudicante não esteja abrangida pelo regime da autorização das despesas.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 3402,
+        "end": 3733
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando o contrato a celebrar não implique o pagamento de um preço pela entidade adjudicante, o preço base corresponde ao montante previsível a receber pelas prestações que constituem o objeto do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 1132,
+        "end": 1340
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Quando o contrato a celebrar implique um preço a receber pela entidade adjudicante, o preço base corresponde ao montante mínimo que aquela entidade se dispõe a receber pela execução de todas as prestações que constituem o objeto do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art47-4",
+      "offsets": {
+        "start": 380,
+        "end": 625
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

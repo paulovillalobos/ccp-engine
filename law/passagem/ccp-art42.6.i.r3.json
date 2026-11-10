@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art42.6.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art42.6",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "i) A contribuição para a promoção da inovação ou de emprego científico ou qualificado;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art42-4",
+      "offsets": {
+        "start": 8995,
+        "end": 9081
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art228",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iv.capitulo-i",
+  "kind": "artigo",
+  "label": "Artigo 228.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 228.º\nAnonimato\n1 - No concurso de concepção, qualquer que seja a modalidade adoptada, a identidade dos concorrentes autores dos trabalhos de concepção apresentados só pode ser conhecida e revelada depois de elaborado o relatório final do concurso.\n2 - A entidade adjudicante, o júri do concurso e os concorrentes devem praticar, ou abster-se de praticar, se for o caso, todos os actos necessários ao cumprimento do disposto no número anterior, nomeadamente no que respeita ao acesso aos documentos complementares referidos no n.º 3 do artigo 226.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art228-4",
+      "offsets": {
+        "start": 237,
+        "end": 792
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 228.º\nAnonimato",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art228-4",
+      "offsets": {
+        "start": 42,
+        "end": 64
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

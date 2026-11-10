@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art131.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art131",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - No caso de se tratar de um contrato de concessão de obras públicas, independentemente do preço base fixado no caderno de encargos, deve ser sempre publicado no Jornal Oficial da União Europeia um anúncio do concurso público, conforme modelo constante do anexo x do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131-4",
+      "offsets": {
+        "start": 3701,
+        "end": 4032
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - No caso de se tratar de um contrato de concessão de obras públicas, independentemente do preço base fixado no caderno de encargos, deve ser sempre publicado no Jornal Oficial da União Europeia um anúncio do concurso público, contendo a informação constante do anexo v da Diretiva n.º 2014/23/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131-4",
+      "offsets": {
+        "start": 1998,
+        "end": 2362
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - No caso de se tratar de um contrato de concessão de obras públicas ou de serviços, o anúncio a que se refere o número anterior deve conter a informação constante do anexo v da Diretiva 2014/23/UE, do Parlamento Europeu e do Conselho, de 26 de fevereiro de 2014.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art131-4",
+      "offsets": {
+        "start": 397,
+        "end": 662
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art31.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art31",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - Sem prejuízo do disposto nas alíneas d) e f) do n.º 1 do artigo 24.º e no artigo anterior, para a formação de contratos de concessão de obras públicas e de concessão de serviços públicos, bem como de contratos de sociedade, qualquer que seja o valor do contrato a celebrar, deve ser adoptado, em alternativa, o concurso público, o concurso limitado por prévia qualificação ou o procedimento de negociação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 3539,
+        "end": 3948
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "1 - Sem prejuízo do disposto no artigo 24.º e no artigo anterior, para a formação de contratos de concessão de obras públicas e de concessão de serviços públicos, bem como de contratos de sociedade, qualquer que seja o valor do contrato a celebrar, deve ser adotado, em alternativa, o concurso público, o concurso limitado por prévia qualificação ou o procedimento de negociação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 2568,
+        "end": 2947
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - Sem prejuízo do disposto nos artigos 24.º e 30.º-A, para a formação de contratos de concessão de obras públicas e de serviços públicos, bem como de contratos de sociedade, deve ser adotado, em alternativa, o concurso público, o concurso limitado por prévia qualificação, o procedimento de negociação ou o diálogo concorrencial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 1465,
+        "end": 1796
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "1 - Sem prejuízo do disposto nos artigos 24.º e 30.º-A, para a formação de contratos de concessão de obras públicas e de serviços, bem como de contratos de sociedade, pode ser adotado, em alternativa, o concurso público, o concurso limitado por prévia qualificação, o procedimento de negociação ou o diálogo concorrencial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art31-4",
+      "offsets": {
+        "start": 108,
+        "end": 430
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

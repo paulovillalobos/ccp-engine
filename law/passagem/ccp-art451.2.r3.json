@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art451.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art451",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2022-12-02",
+      "text": "2 - É ainda aplicável aos contratos de aquisição de serviços o disposto no artigo 419.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art451-4",
+      "offsets": {
+        "start": 278,
+        "end": 368
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

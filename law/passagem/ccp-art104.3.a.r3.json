@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art104.3.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art104.3",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) No caso de assinatura presencial do contrato, a data, a hora e o local em que ocorrerá a respetiva outorga, com a antecedência mínima de cinco dias;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art104-4",
+      "offsets": {
+        "start": 3471,
+        "end": 3622
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

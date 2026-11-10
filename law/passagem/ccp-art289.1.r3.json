@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art289.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art289",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "1 - Na execução dos contratos e nas relações entre si, as partes devem pautar-se pelo princípio da boa-fé e da confiança mútua.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art289-4",
+      "offsets": {
+        "start": 79,
+        "end": 206
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

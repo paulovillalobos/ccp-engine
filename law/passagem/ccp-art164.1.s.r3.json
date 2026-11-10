@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art164.1.s",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "s)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "s) O prazo para apresentação dos documentos comprovativos do cumprimento dos requisitos mínimos de capacidade técnica e financeira após a decisão de qualificação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 10461,
+        "end": 10623
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "s) A possibilidade de adopção de um ajuste directo nos termos do disposto na alínea a) do n.º 1 do artigo 25.º ou na alínea a) do n.º 1 do artigo 27.º, quando for o caso;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 2346,
+        "end": 2516
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

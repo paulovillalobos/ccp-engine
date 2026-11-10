@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art149.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art149.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Na formação de contratos de empreitadas de obras públicas cujo valor seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149-4",
+      "offsets": {
+        "start": 1262,
+        "end": 1405
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Na formação de contratos de empreitadas de obras públicas cujo valor estimado seja inferior ao limiar referido na alínea a) do n.º 3 do artigo 474.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art149-4",
+      "offsets": {
+        "start": 321,
+        "end": 473
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

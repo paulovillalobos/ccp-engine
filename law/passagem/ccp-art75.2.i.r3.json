@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art75.2.i",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art75.2",
+  "kind": "alinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "i) Promoção do cumprimento do disposto no Código do Trabalho e convenções coletivas de trabalho, quando aplicáveis.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75-4",
+      "offsets": {
+        "start": 12252,
+        "end": 12367
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "i) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art75-4",
+      "offsets": {
+        "start": 2016,
+        "end": 2030
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

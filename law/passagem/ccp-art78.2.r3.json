@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art78.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art78",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - O disposto no número anterior é também aplicável quando a adjudicação tenha sido decidida na sequência de ajuste directo adoptado ao abrigo do disposto nas alíneas a) a c) e e) do n.º 1 do artigo 24.º, nas alíneas a) e b) do n.º 1 do artigo 25.º, nas alíneas a) a d) do n.º 1 e no n.º 2 do artigo 26.º e nas alíneas a), b) e g) do n.º 1 do artigo 27.º, sempre que o preço contratual seja igual ou superior:\na) Ao referido na alínea b) do artigo 19.º, no caso de se tratar de um contrato de empreitada de obras públicas;\nb) Ao referido na alínea b) do n.º 1 do artigo 20.º, no caso de se tratar de um contrato de locação ou de aquisição de bens móveis ou de um contrato de aquisição de serviços;\nc) Ao referido no n.º 2 do artigo 20.º, no caso de se tratar de um contrato de locação ou de aquisição de bens móveis ou de um contrato de aquisição de serviços, quando a entidade adjudicante seja o Estado, excepto se se tratar de um dos contratos mencionados nas alíneas a) e b) do n.º 2 do artigo 20.º, caso em que é aplicável o disposto na alínea anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78-4",
+      "offsets": {
+        "start": 10555,
+        "end": 11613
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - O disposto no número anterior é também aplicável quando a adjudicação tenha sido decidida na sequência de ajuste direto adotado ao abrigo do disposto nas alíneas a) a c) e e) do n.º 1 do artigo 24.º, nas alíneas a) e b) do n.º 1 do artigo 25.º, nas alíneas a) a d) do n.º 1 e no n.º 2 do artigo 26.º e nas alíneas a), c) e d) do n.º 1 do artigo 27.º, sempre que o preço contratual seja igual ou superior:\na) Ao referido na alínea a) do n.º 3 do artigo 474.º, no caso de se tratar de um contrato de empreitada de obras públicas;\nb) Ao referido na alínea c) do n.º 3 do artigo 474.º, no caso de se tratar de um contrato de locação ou de aquisição de bens móveis ou de um contrato de aquisição de serviços;\nc) Ao referido na alínea b) do n.º 3 do artigo 474.º no caso de se tratar de um contrato de locação ou de aquisição de bens móveis ou de um contrato de aquisição de serviços, quando a entidade adjudicante seja o Estado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art78-4",
+      "offsets": {
+        "start": 7458,
+        "end": 8385
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art72.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art72",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "5 - Os pedidos do júri formulados nos termos dos n.os 1 e 3, bem como as respetivas respostas, devem ser disponibilizados em plataforma eletrónica utilizada pela entidade adjudicante, devendo todos os candidatos e concorrentes ser imediatamente notificados desse facto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 6015,
+        "end": 6284
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - Os pedidos do júri formulados nos termos dos n.ºs 1 e 3, bem como as respetivas respostas, devem ser disponibilizados em plataforma eletrónica utilizada pela entidade adjudicante, devendo todos os candidatos e concorrentes ser imediatamente notificados desse facto.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art72-4",
+      "offsets": {
+        "start": 1938,
+        "end": 2207
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art378.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art378",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Sem prejuízo do disposto nos números anteriores, caso os erros ou omissões decorram do incumprimento de obrigações de concepção assumidas por terceiros perante o dono da obra:\na) Deve o dono da obra exercer obrigatoriamente o direito que lhe assista de ser indemnizado por parte destes terceiros;\nb) Fica o empreiteiro sub-rogado no direito de indemnização que assista ao dono da obra perante esses terceiros até ao limite do montante que deva ser por si suportado em virtude do disposto nos n.os 3 a 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378-4",
+      "offsets": {
+        "start": 8670,
+        "end": 9177
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "6 - Sem prejuízo do disposto nos números anteriores, caso os erros ou omissões decorram do incumprimento de obrigações de concepção assumidas por terceiros perante o dono da obra:\na) Deve o dono da obra exercer obrigatoriamente o direito que lhe assista de ser indemnizado por parte destes terceiros;\nb) Fica o empreiteiro sub-rogado no direito de indemnização que assiste ao dono da obra perante esses terceiros até ao limite do montante que deva ser por si suportado em virtude do disposto nos n.os 3 e 4.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378-4",
+      "offsets": {
+        "start": 3813,
+        "end": 4320
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "6 - Sem prejuízo do disposto nos números anteriores, caso os erros ou omissões decorram do incumprimento de obrigações de concepção assumidas por terceiros perante o dono da obra:\na) Deve o dono da obra exercer obrigatoriamente o direito que lhe assista de ser indemnizado por parte destes terceiros;\nb) Fica o empreiteiro sub-rogado no direito de indemnização que assiste ao dono da obra perante esses terceiros até ao limite do montante que deva ser por si suportado em virtude do disposto nos n.os 3, 4 e 5.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art378-4",
+      "offsets": {
+        "start": 1595,
+        "end": 2105
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

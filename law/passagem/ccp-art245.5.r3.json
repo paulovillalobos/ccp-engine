@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art245.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art245",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "5 - Quando o sistema de qualificação tiver uma duração superior a três anos, os anúncios previstos nos n.os 2 e 4 devem ser republicados anualmente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art245-4",
+      "offsets": {
+        "start": 5055,
+        "end": 5203
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "5 - Quando o sistema de qualificação tiver uma duração superior a três anos, os anúncios previstos nos n.ºs 2 e 4 devem ser republicados anualmente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art245-4",
+      "offsets": {
+        "start": 1418,
+        "end": 1566
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

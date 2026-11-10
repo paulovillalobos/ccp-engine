@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art50.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art50",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "7 - Independentemente do disposto nos números anteriores, o órgão competente para a decisão de contratar pode, oficiosamente, proceder à retificação de erros ou omissões das peças do procedimento, bem como prestar esclarecimentos, no mesmo prazo referido no n.º 5, ou até ao final do prazo de entrega de candidaturas ou propostas, devendo, neste caso, atender-se ao disposto no artigo 64.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art50-4",
+      "offsets": {
+        "start": 5525,
+        "end": 5914
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

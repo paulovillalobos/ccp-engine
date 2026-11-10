@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art21.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art21",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para a formação de contratos sem valor, excepto se se tratar de um dos contratos mencionados no número anterior, pode ser adoptado qualquer um dos procedimentos nele referidos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art21-4",
+      "offsets": {
+        "start": 4967,
+        "end": 5147
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Para a formação de contratos cuja execução não gere qualquer contrapartida ou vantagem direta para o cocontratante pode ser adotado qualquer um dos procedimentos referidos no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art21-4",
+      "offsets": {
+        "start": 806,
+        "end": 1001
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

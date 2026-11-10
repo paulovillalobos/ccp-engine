@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art54-a.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art54-a.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "b) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 ou b) do n.º 4 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 4335,
+        "end": 4793
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2022-12-02",
+      "revoked": false
+    },
+    {
+      "version": "2022-12-02",
+      "text": "b) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada de obras públicas ou de concessão de serviços públicos e de obras públicas de valor inferior a (euro) 500 000;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 2620,
+        "end": 3063
+      },
+      "valid_from": "2022-12-02",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "b) Micro, pequenas ou médias empresas devidamente certificadas nos termos da lei, em procedimentos para a formação de:\ni) Contratos de locação ou aquisição de bens móveis ou de aquisição de serviços de valor inferior aos limiares referidos nas alíneas b) ou c) do n.º 3 do artigo 474.º, consoante o caso;\nii) Contratos de empreitada e de concessão de obras públicas e de concessão de serviços e de obras públicas de valor estimado inferior a 500 000 €;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 513,
+        "end": 965
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

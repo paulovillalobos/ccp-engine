@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art290-a.5",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art290-a",
+  "kind": "numero",
+  "label": "5",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "5 - Ao gestor do contrato podem ser delegados poderes para a adoção das medidas a que se refere o número anterior, exceto em matéria de modificação e cessação do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art290-a-4",
+      "offsets": {
+        "start": 2887,
+        "end": 3058
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

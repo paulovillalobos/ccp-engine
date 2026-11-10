@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art86.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art86",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "6 - Nos casos previstos nos números anteriores, o órgão competente para a decisão de contratar deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 1919,
+        "end": 2070
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

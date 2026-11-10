@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art191.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art191",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Quando o contrato a celebrar diga directa e principalmente respeito a uma ou a várias das actividades exercidas nos sectores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das propostas previsto no n.º 1 é de 19 dias a contar da data do envio do convite.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art191-4",
+      "offsets": {
+        "start": 4891,
+        "end": 5260
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando o contrato a celebrar diga direta e principalmente respeito a uma ou a várias das atividades exercidas nos setores da água, da energia, dos transportes e dos serviços postais pelas entidades adjudicantes referidas no n.º 1 do artigo 7.º, o prazo mínimo para a apresentação das propostas previsto no n.º 1 é de 10 dias a contar da data do envio do convite.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art191-4",
+      "offsets": {
+        "start": 2987,
+        "end": 3353
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

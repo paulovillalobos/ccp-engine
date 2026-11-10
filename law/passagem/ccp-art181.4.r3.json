@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art181.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art181",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - No caso previsto na parte final do número anterior, são qualificados todos os candidatos que preencham os requisitos mínimos de capacidade técnica e de capacidade financeira.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art181-4",
+      "offsets": {
+        "start": 2055,
+        "end": 2233
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

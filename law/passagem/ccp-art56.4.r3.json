@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art56.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art56",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - A apresentação de proposta por concorrente que se encontre numa das situações previstas no n.º 1 do artigo 55.º constitui prestação de falsas declarações para os efeitos previstos no artigo 456.º, salvo se tiver dado a conhecer tais situações à entidade adjudicante, designadamente para apuramento, por esta, da existência do impedimento ou para efeitos de relevação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art56-4",
+      "offsets": {
+        "start": 1001,
+        "end": 1372
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

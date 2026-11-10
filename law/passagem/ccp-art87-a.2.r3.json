@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art87-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art87-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Quando as causas de caducidade da adjudicação referidas no número anterior respeitem ao adjudicatário, a entidade adjudicante deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art87-a-4",
+      "offsets": {
+        "start": 2076,
+        "end": 2262
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - A caducidade da adjudicação com fundamento no facto de o adjudicatário se encontrar em alguma das situações previstas no artigo 55.º, no n.º 6 do artigo 113.º ou nos n.ºs 2 e 3 do artigo 114.º não deve ser declarada antes de o órgão competente para a decisão de contratar notificar o adjudicatário, fixando-lhe um prazo, não superior a cinco dias, para que se pronuncie, por escrito, ao abrigo do direito de audiência prévia, podendo aplicar-se, se for o caso, o regime da relevação de impedimentos previsto no artigo 55.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art87-a-4",
+      "offsets": {
+        "start": 640,
+        "end": 1169
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

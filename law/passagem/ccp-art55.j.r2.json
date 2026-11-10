@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art55.j",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55",
+  "kind": "alinea",
+  "label": "j)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "j) Tenham, a qualquer título, prestado, directa ou indirectamente, assessoria ou apoio técnico na preparação e elaboração das peças do procedimento.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 31348,
+        "end": 31496
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "j) Tenham, a qualquer título, prestado, direta ou indiretamente, assessoria ou apoio técnico na preparação e elaboração das peças do procedimento que lhes confira vantagem que falseie as condições normais de concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 23226,
+        "end": 23447
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Alterado pelo/a Artigo 3.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 197788,
+        "end": 197952
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

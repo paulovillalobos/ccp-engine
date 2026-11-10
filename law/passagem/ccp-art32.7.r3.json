@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art32.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art32",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "7 - Quando, por força da aplicação do disposto na alínea b) do n.º 2, na alínea b) do n.º 3 e no número anterior, se obtenha, nos termos do disposto no artigo 24.º, mais do que um valor até ao qual é permitida a celebração do contrato, prevalece o valor mais baixo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32-4",
+      "offsets": {
+        "start": 6598,
+        "end": 6863
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "7 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32-4",
+      "offsets": {
+        "start": 3511,
+        "end": 3526
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "7 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art32-4",
+      "offsets": {
+        "start": 1714,
+        "end": 1729
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art219-c.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-c",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "3 - Quando o anúncio do concurso de conceção tenha sido publicado no Jornal Oficial da União Europeia, a entidade adjudicante deve enviar ao Serviço das Publicações da União Europeia, no prazo de 30 dias após a decisão de seleção, um anúncio conforme modelo constante do anexo x ao Regulamento de Execução (UE) n.º 2015/1986, da Comissão, de 11 de novembro de 2015.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-c-4",
+      "offsets": {
+        "start": 2557,
+        "end": 2922
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Quando o anúncio do concurso de conceção tenha sido publicado no Jornal Oficial da União Europeia, a entidade adjudicante deve enviar ao Serviço das Publicações da União Europeia, no prazo de 30 dias após a decisão de seleção, um anúncio conforme formulário-tipo «Resultado» constante do Regulamento de Execução (UE) 2019/1780 da Comissão, de 23 de setembro de 2019.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-c-4",
+      "offsets": {
+        "start": 958,
+        "end": 1328
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

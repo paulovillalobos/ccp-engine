@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art98.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art98",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - A aprovação da minuta do contrato a celebrar tem por objectivo verificar se o seu conteúdo está conforme à decisão de contratar e a todos os documentos que o integram nos termos do disposto nos n.os 2 e 5 do artigo 96.º, sem prejuízo de serem propostos ajustamentos nos termos do disposto no artigo seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art98-4",
+      "offsets": {
+        "start": 2191,
+        "end": 2503
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - A aprovação da minuta do contrato a celebrar tem por objectivo verificar se o seu conteúdo está conforme à decisão de contratar e a todos os documentos que o integram nos termos do disposto nos n.ºs 2 e 5 do artigo 96.º, sem prejuízo de serem propostos ajustamentos nos termos do disposto no artigo seguinte.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art98-4",
+      "offsets": {
+        "start": 307,
+        "end": 619
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

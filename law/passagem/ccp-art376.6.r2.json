@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art376.6",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art376",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "6 - Quando estejam em causa erros e omissões que prejudiquem o normal desenvolvimento do plano de trabalhos, o empreiteiro propõe ao dono da obra as modificações necessárias ao mesmo, devendo este pronunciar-se sobre o plano de trabalhos modificado e comunicar a sua posição ao empreiteiro, até 15 dias após a notificação da proposta do empreiteiro, equivalendo o silêncio a aceitação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 4606,
+        "end": 4991
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "6 - Sempre que o dono da obra ordene a execução de trabalhos de suprimento de erros e omissões que, apesar de terem sido detectados na fase de formação do contrato, não tenham sido por si expressamente aceites, deve o mesmo justificar a razão pela qual os considera essenciais à conclusão da obra e fazer constar esse facto no relatório final da obra.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art376-4",
+      "offsets": {
+        "start": 1652,
+        "end": 2003
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 612416,
+        "end": 612581
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

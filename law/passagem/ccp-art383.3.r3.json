@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art383.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art383",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "3 - Não é aplicável o disposto no número anterior relativamente à fase de formação do contrato sempre que da limitação aí fixada decorram os efeitos previstos no n.º 5 do artigo 318.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art383-4",
+      "offsets": {
+        "start": 2563,
+        "end": 2746
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2023-07-15",
+      "revoked": false
+    },
+    {
+      "version": "2023-07-15",
+      "text": "3 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art383-4",
+      "offsets": {
+        "start": 976,
+        "end": 991
+      },
+      "valid_from": "2023-07-15",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

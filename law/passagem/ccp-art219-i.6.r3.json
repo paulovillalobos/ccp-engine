@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art219-i.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art219-i",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - A decisão de seleção caduca se o concorrente selecionado não apresentar os documentos referidos no número anterior no prazo nele fixado, devendo, nesse caso, selecionar-se o trabalho de conceção ordenado em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art219-i-4",
+      "offsets": {
+        "start": 1237,
+        "end": 1466
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

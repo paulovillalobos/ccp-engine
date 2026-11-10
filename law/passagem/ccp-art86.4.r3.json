@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art86.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art86",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "4 - No caso de se tratar de um procedimento de formação de um contrato de empreitada ou concessão de obras públicas, a entidade adjudicante deve comunicar imediatamente ao Instituto da Construção e do Imobiliário, I. P., a caducidade da adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 9698,
+        "end": 9947
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2009-10-07",
+      "revoked": false
+    },
+    {
+      "version": "2009-10-07",
+      "text": "4 - Nos casos previstos nos números anteriores, o órgão competente para a decisão de contratar deve adjudicar a proposta ordenada em lugar subsequente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 8202,
+        "end": 8353
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "4 - Quando as situações previstas no n.º 2 se verifiquem por facto que não seja imputável ao adjudicatário, o órgão competente para a decisão de contratar deve conceder-lhe, em função das razões invocadas, um prazo adicional para a apresentação dos documentos em falta, sob pena de caducidade da adjudicação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art86-4",
+      "offsets": {
+        "start": 1594,
+        "end": 1902
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

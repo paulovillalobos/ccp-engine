@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art414.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art414",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "d) Quaisquer outras previstas na lei ou no contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art414-4",
+      "offsets": {
+        "start": 1576,
+        "end": 1628
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

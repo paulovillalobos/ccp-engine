@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art256-a.2.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art256-a.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "a) O preço obtido na última aquisição realizada ao seu abrigo, nos acordos-quadro correspondentes à modalidade prevista na alínea a) do n.º 1 do artigo 252.º; ou",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art256-a-4",
+      "offsets": {
+        "start": 4555,
+        "end": 4716
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

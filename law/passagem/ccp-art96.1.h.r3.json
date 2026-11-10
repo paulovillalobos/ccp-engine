@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art96.1.h",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96.1",
+  "kind": "alinea",
+  "label": "h)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "h) Se for o caso, a classificação orçamental da dotação por onde será satisfeita a despesa inerente ao contrato, a realizar no ano económico da celebração do mesmo ou, no caso de tal despesa se realizar em mais de um ano económico, a indicação da disposição legal habilitante ou do plano plurianual legalmente aprovado de que o contrato em causa constitui execução ou ainda do instrumento, legalmente previsto, que autoriza aquela repartição de despesa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96-4",
+      "offsets": {
+        "start": 7244,
+        "end": 7697
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "h) Se for o caso, a classificação orçamental da dotação por onde será satisfeita a despesa inerente ao contrato, a realizar no ano económico da celebração do mesmo ou, no caso de tal despesa se realizar em mais de um ano económico, a indicação da disposição legal habilitante ou do plano plurianual legalmente aprovado de que o contrato em causa constitui execução ou ainda do instrumento, legalmente previsto, que autoriza aquela repartição de despesa;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96-4",
+      "offsets": {
+        "start": 811,
+        "end": 1264
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

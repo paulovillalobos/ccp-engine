@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art299.1.c",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art299.1",
+  "kind": "alinea",
+  "label": "c)",
+  "versions": [
+    {
+      "version": "2010-09-01",
+      "text": "c) 30 dias após a data de recepção efectiva dos bens ou da prestação dos serviços quando o contraente público receba a factura ou documento equivalente antes do fornecimento dos bens ou da prestação dos serviços;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art299-4",
+      "offsets": {
+        "start": 469,
+        "end": 681
+      },
+      "valid_from": "2010-09-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art83-a.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art83-a",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2009-10-07",
+      "text": "2 - As entidades adjudicantes devem aceitar como prova bastante de que o adjudicatário não se encontra abrangido por nenhum dos casos referidos nas alíneas d) e e) do artigo 55.º um certificado emitido pela entidade competente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-a-4",
+      "offsets": {
+        "start": 3520,
+        "end": 3747
+      },
+      "valid_from": "2009-10-07",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - As entidades adjudicantes devem aceitar como prova bastante de que o adjudicatário não se encontra abrangido por nenhum dos casos referidos nas alíneas d) e e) do n.º 1 do artigo 55.º um certificado emitido pela entidade competente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-a-4",
+      "offsets": {
+        "start": 2255,
+        "end": 2491
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - As entidades adjudicantes devem aceitar como prova bastante de que o adjudicatário não se encontra abrangido por nenhuma das situações referidas nas alíneas d) e e) do n.º 1 do artigo 55.º um certificado emitido pela entidade competente ou informação obtida através de ferramentas de interoperabilidade do Estado, incluindo soluções que permitam a agregação e consulta centralizada de documentos, nomeadamente carteiras digitais, que evidencie que o adjudicatário não se encontra em nenhuma daquelas situações.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art83-a-4",
+      "offsets": {
+        "start": 697,
+        "end": 1211
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

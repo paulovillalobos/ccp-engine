@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art85.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art85",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "3 - Os documentos de habilitação apresentados pelo adjudicatário devem ser disponibilizados, para consulta de todos os concorrentes, em plataforma electrónica utilizada pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art85-4",
+      "offsets": {
+        "start": 1521,
+        "end": 1716
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Os documentos de habilitação devem ser disponibilizados, para consulta de todos os concorrentes cujas propostas não tenham sido excluídas, em plataforma eletrónica utilizada pela entidade adjudicante.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art85-4",
+      "offsets": {
+        "start": 636,
+        "end": 840
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

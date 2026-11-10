@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art6-a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-i.titulo-i",
+  "kind": "artigo",
+  "label": "Artigo 6.º-A",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 6.º-A\nContratos de serviços sociais e de outros serviços específicos\n1 - A parte II não é aplicável à formação dos contratos públicos que tenham por objeto a aquisição de serviços sociais e de outros serviços específicos referidos no anexo IX ao presente Código, que dele faz parte integrante, salvo quando o valor de cada contrato for igual ou superior ao limiar previsto na alínea d) do n.º 3 do artigo 474.º, caso em que se aplica o disposto nos artigos 250.º-A a 250.º-C.\n2 - À celebração dos contratos referidos no número anterior são aplicáveis, com as devidas adaptações, os princípios gerais da contratação pública previstos no artigo 1.º-A.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art6-a-4",
+      "offsets": {
+        "start": 681,
+        "end": 1337
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 6.º-A\nContratos de serviços sociais e de outros serviços específicos\n1 - A parte II não é aplicável à formação dos contratos públicos que tenham por objeto a aquisição de serviços sociais e de outros serviços específicos referidos no anexo IX ao presente Código, que dele faz parte integrante, salvo quando o valor de cada contrato for igual ou superior ao limiar previsto na alínea d) do n.º 3 do artigo 474.º, caso em que se aplica o disposto nos artigos 250.º-A a 250.º-C.\n2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art6-a-4",
+      "offsets": {
+        "start": 27,
+        "end": 525
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

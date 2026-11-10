@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art17.8",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art17",
+  "kind": "numero",
+  "label": "8",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "8 - O valor do contrato não pode ser fracionado com o intuito de o excluir do cumprimento de quaisquer exigências legais, designadamente das constantes do presente Código.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17-4",
+      "offsets": {
+        "start": 5646,
+        "end": 5817
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "8 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art17-4",
+      "offsets": {
+        "start": 1092,
+        "end": 1107
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art69.1.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art69.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "d) Elaborar os relatórios de análise das candidaturas, das propostas e das soluções e projetos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art69-4",
+      "offsets": {
+        "start": 934,
+        "end": 1029
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

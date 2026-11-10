@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art55.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art55",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "2 - Para efeitos do disposto na alínea k) do número anterior, podem ser ponderadas, como medidas menos gravosas que a exclusão, designadamente, a substituição de membros do júri ou de peritos que prestem apoio ao júri, a instituição de sistemas de reconfirmação de análises, apreciações ou aferições técnicas, ou a proibição de o concorrente recorrer a um determinado subcontratado.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 18935,
+        "end": 19317
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - Para efeitos do disposto nas alíneas d) e e) do n.º 1, considera-se que têm a situação contributiva ou tributária regularizada os candidatos ou concorrentes que, tendo dívidas relativas a contribuições para a segurança social ou relativas a impostos, se encontrem em alguma das situações previstas no n.º 2 do artigo 208.º do Código dos Regimes Contributivos do Sistema Previdencial de Segurança Social, aprovado pela Lei n.º 110/2009, de 16 de setembro, ou nas alíneas b) a d) do n.º 1 do artigo 177.º-A do Código de Procedimento e de Processo Tributário, aprovado pelo Decreto-Lei n.º 433/99, de 26 de outubro, consoante o caso.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art55-4",
+      "offsets": {
+        "start": 4903,
+        "end": 5537
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

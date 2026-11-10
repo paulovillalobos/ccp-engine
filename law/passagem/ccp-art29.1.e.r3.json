@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art29.1.e",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art29.1",
+  "kind": "alinea",
+  "label": "e)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "e) Contratos para cuja celebração pode ser adoptado, ao abrigo do disposto no artigo anterior, o concurso público ou o concurso limitado por prévia qualificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29-4",
+      "offsets": {
+        "start": 6400,
+        "end": 6561
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "e) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29-4",
+      "offsets": {
+        "start": 4185,
+        "end": 4199
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "e) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art29-4",
+      "offsets": {
+        "start": 820,
+        "end": 834
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

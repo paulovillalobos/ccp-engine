@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art276.2",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art276",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Deve ainda ser publicado no Jornal Oficial da União Europeia um anúncio da intenção referida no n.º 1, conforme modelo constante do anexo xi do Regulamento (CE) n.º 1564/2005, da Comissão, de 7 de Setembro.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art276-4",
+      "offsets": {
+        "start": 10738,
+        "end": 10948
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Deve ainda ser publicado no Jornal Oficial da União Europeia um anúncio da intenção referida no n.º 1, conforme modelo constante do anexo II do Regulamento de Execução (UE) n.º 2015/1986, da Comissão, de 11 de novembro de 2015.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art276-4",
+      "offsets": {
+        "start": 3349,
+        "end": 3580
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "REVOGADO pelo/a Artigo 8.º do/a Decreto-Lei n.º 177/2026 - Diário da República n.º 172/2026, Série I de 2026-09-04, em vigor a partir de 2026-10-01.",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 494770,
+        "end": 494918
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art89.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art89",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "6 - Na falta de fixação, o valor da caução previsto nos n.os 1 e 2 é de 5 % ou de 10 % do preço contratual, respetivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art89-4",
+      "offsets": {
+        "start": 4200,
+        "end": 4323
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "6 - Na falta de fixação, o valor da caução previsto nos n.ºs 1 e 2 é de 5 % ou de 10 % do preço contratual, respetivamente.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art89-4",
+      "offsets": {
+        "start": 1277,
+        "end": 1400
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

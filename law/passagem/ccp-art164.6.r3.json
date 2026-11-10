@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art164.6",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164",
+  "kind": "numero",
+  "label": "6",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "6 - O programa do concurso pode ainda conter regras destinadas a proteger o caráter confidencial das informações contidas nas peças do procedimento, bem como quaisquer regras específicas sobre o procedimento de concursos públicos consideradas convenientes pela entidade adjudicante, desde que não tenham por efeito impedir, restringir ou falsear a concorrência.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 2710,
+        "end": 3071
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

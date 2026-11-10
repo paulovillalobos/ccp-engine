@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art164.1.m",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art164.1",
+  "kind": "alinea",
+  "label": "m)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "m) No caso de a qualificação assentar no sistema de selecção:\ni) O modelo de avaliação dos candidatos, explicitando claramente os factores e eventuais subfactores que densificam o critério de qualificação, os valores dos respectivos coeficientes de ponderação e, relativamente a cada um dos factores ou subfactores elementares, a respectiva escala de pontuação, bem como a expressão matemática ou o conjunto ordenado de diferentes níveis de capacidade susceptíveis de serem apresentados pelos candidatos que permita a atribuição das pontuações parciais;\nii) O número de candidatos a qualificar, não inferior a cinco;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 18662,
+        "end": 19278
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "m) No caso de a qualificação assentar no sistema de selecção:\ni) O modelo de avaliação dos candidatos, nos termos do artigo 139.º, aplicável com as necessárias adaptações;\nii) O número de candidatos a qualificar, não inferior a cinco;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 4555,
+        "end": 4789
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "m) Os documentos que constituem a candidatura que podem ser redigidos em língua estrangeira, nos termos do disposto no n.º 3 do artigo 169.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art164-4",
+      "offsets": {
+        "start": 1541,
+        "end": 1682
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

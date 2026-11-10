@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art114.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art114",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "3 - No caso de o ajuste direto ser adotado ao abrigo do disposto na alínea g) do n.º 1 do artigo 27.º, a entidade adjudicante deve convidar a apresentar propostas para a concretização ou o desenvolvimento dos trabalhos de conceção todos os selecionados no concurso de conceção.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114-4",
+      "offsets": {
+        "start": 1802,
+        "end": 2079
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "3 - Não podem também ser convidadas a apresentar propostas entidades criadas ou utilizadas com o propósito ou com o resultado de se defraudar o disposto no número anterior.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art114-4",
+      "offsets": {
+        "start": 661,
+        "end": 833
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

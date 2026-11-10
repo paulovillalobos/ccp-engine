@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art466",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-v",
+  "kind": "artigo",
+  "label": "Artigo 466.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 466.º\nObservatório das obras públicas\n1 - O observatório das obras públicas é um sistema de informação, a constituir por diploma próprio, que procede à organização de uma base de dados, ao tratamento e à divulgação dos respectivos dados estatísticos no domínio das empreitadas de obras públicas, cabendo-lhe monitorizar:\na) A fase de formação dos contratos de empreitada e de concessão de obras públicas;\nb) A fase de execução dos contratos de empreitada de obras públicas;\nc) As empreitadas de obras públicas integradas em concessões.\n2 - Para efeitos do estabelecido no número anterior, devem ser comunicados ao Instituto da Construção e do Imobiliário, I. P.:\na) Os factos que constituam contra-ordenação prevista e os factos passíveis de registo, de acordo com os artigos 23.º e seguintes do Decreto-Lei n.º 12/2004, de 9 de Janeiro, logo que a entidade adjudicante, o dono da obra ou o concessionário deles tome conhecimento;\nb) O relatório de contratação;\nc) O relatório final da obra;\nd) Os demais elementos previstos no capítulo i do título ii da parte iii do presente Código e outros a definir em legislação especial.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art466-4",
+      "offsets": {
+        "start": 233,
+        "end": 1366
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "Artigo 466.º\nObservatório das obras públicas",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art466-4",
+      "offsets": {
+        "start": 16,
+        "end": 60
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

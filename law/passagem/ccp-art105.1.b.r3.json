@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art105.1.b",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art105.1",
+  "kind": "alinea",
+  "label": "b)",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "b) Se, por facto que lhe seja imputável, o adjudicatário não remeter o contrato assinado eletronicamente, no prazo fixado pelo órgão competente para a decisão de contratar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art105-4",
+      "offsets": {
+        "start": 255,
+        "end": 427
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art188.4",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art188",
+  "kind": "numero",
+  "label": "4",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "4 - Sempre que se verifique um facto que determine a caducidade da qualificação nos termos do número anterior, o órgão competente para a decisão de contratar deve notificar o candidato relativamente ao qual o facto ocorreu, fixando-lhe um prazo, não superior a cinco dias, para que se pronuncie, por escrito, ao abrigo do direito de audiência prévia, sendo aplicável, com as necessárias adaptações, o disposto nos n.ºs 1, 4 e 6 do artigo 86.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art188-4",
+      "offsets": {
+        "start": 1265,
+        "end": 1707
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

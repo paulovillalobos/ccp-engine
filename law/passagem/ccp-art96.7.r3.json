@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art96.7",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art96",
+  "kind": "numero",
+  "label": "7",
+  "versions": [
+    {
+      "version": "2018-01-01",
+      "text": "7 - São nulos os contratos a que falte algum dos elementos essenciais referidos nas alíneas a) a i) do n.º 1, salvo se os mesmos constarem dos documentos identificados no n.º 2.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art96-4",
+      "offsets": {
+        "start": 6096,
+        "end": 6273
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

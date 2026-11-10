@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art383.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art383",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Sem prejuízo do disposto no número anterior, não pode o empreiteiro subcontratar prestações objecto do contrato de valor total superior a 75 % do preço contratual, acrescido ou deduzido dos preços correspondentes aos trabalhos a mais ou a menos, aos trabalhos de suprimento de erros e omissões e à reposição do equilíbrio financeiro a que haja lugar no âmbito do contrato em causa.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art383-4",
+      "offsets": {
+        "start": 2177,
+        "end": 2562
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2023-07-15",
+      "revoked": false
+    },
+    {
+      "version": "2023-07-15",
+      "text": "2 - (Revogado.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art383-4",
+      "offsets": {
+        "start": 960,
+        "end": 975
+      },
+      "valid_from": "2023-07-15",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art35.3",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art35",
+  "kind": "numero",
+  "label": "3",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "3 - O anúncio periódico indicativo não pode ser publicado num perfil de adquirente antes do envio ao Serviço das Publicações da União Europeia do anúncio da sua publicação sob essa forma, devendo constar expressamente do primeiro anúncio a data de envio do segundo.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art35-4",
+      "offsets": {
+        "start": 940,
+        "end": 1205
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

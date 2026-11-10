@@ -1,0 +1,48 @@
+{
+  "id": "ccp:art27.1.f",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art27.1",
+  "kind": "alinea",
+  "label": "f)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "f) Se trate de serviços informáticos de desenvolvimento de software e de manutenção ou assistência técnica de equipamentos;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27-4",
+      "offsets": {
+        "start": 21535,
+        "end": 21658
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2012-08-11",
+      "revoked": false
+    },
+    {
+      "version": "2012-08-11",
+      "text": "f) (Revogada.)",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27-4",
+      "offsets": {
+        "start": 16542,
+        "end": 16556
+      },
+      "valid_from": "2012-08-11",
+      "valid_to": "2026-10-01",
+      "revoked": true
+    },
+    {
+      "version": "2026-10-01",
+      "text": "f) [Revogada.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art27-4",
+      "offsets": {
+        "start": 2453,
+        "end": 2467
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

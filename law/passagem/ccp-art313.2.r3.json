@@ -1,0 +1,60 @@
+{
+  "id": "ccp:art313.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art313",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Para efeitos do disposto no número anterior, salvo quando a natureza duradoura do vínculo contratual e o decurso do tempo o justifiquem, a modificação só é permitida quando seja objectivamente demonstrável que a ordenação das propostas avaliadas no procedimento de formação do contrato não seria alterada se o caderno de encargos tivesse contemplado essa modificação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 9809,
+        "end": 10180
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "2 - Não estão sujeitas às alíneas b) e c) do número anterior as modificações que resultem da natureza duradoura do vínculo contratual, desde que o decurso do tempo as justifique.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 4150,
+        "end": 4328
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - A modificação fundada em razões de interesse público não pode ter lugar quando implicar uma modificação substancial do contrato ou configurar uma forma de impedir, restringir ou falsear a concorrência, designadamente por:\na) Introduzir alterações que, se inicialmente previstas no caderno de encargos, teriam ocasionado no procedimento pré-contratual, de forma objetivamente demonstrável, a alteração da qualificação dos candidatos, a alteração da ordenação das propostas avaliadas, a não exclusão ou a apresentação de outras candidaturas ou propostas;\nb) Alterar o equilíbrio económico do contrato a favor do cocontratante de modo a que este seja colocado numa situação mais favorável do que a resultante do equilíbrio inicialmente estabelecido;\nc) Alargar consideravelmente o âmbito do contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 1073,
+        "end": 1874
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "2 - [Revogado.]",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art313-4",
+      "offsets": {
+        "start": 276,
+        "end": 291
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 2
+}

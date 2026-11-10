@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art77.2.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art77.2",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "a) Apresentar os documentos de habilitação exigidos nos termos do disposto no artigo 81.º;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77-4",
+      "offsets": {
+        "start": 4111,
+        "end": 4201
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Apresentar os documentos de habilitação previstos no artigo 81.º cuja obtenção oficiosa não seja possível nos termos do seu n.º 10;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art77-4",
+      "offsets": {
+        "start": 464,
+        "end": 598
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

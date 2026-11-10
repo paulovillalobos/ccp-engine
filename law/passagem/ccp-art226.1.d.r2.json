@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art226.1.d",
+  "revision": 2,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art226.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "d) O órgão que tomou a decisão de seleccionar um ou mais trabalhos de concepção e, no caso de esta ter sido tomada no uso de delegação ou subdelegação de competência, a qualidade em que aquele decidiu, com menção das decisões de delegação ou subdelegação e do local da respectiva publicação;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art226-4",
+      "offsets": {
+        "start": 733,
+        "end": 1024
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "REVOGADO pelo/a Artigo 10.º do/a Decreto-Lei n.º 111-B/2017 - Diário da República n.º 168/2017, 2º Suplemento, Série I de 2017-08-31, em vigor a partir de 2018-01-01",
+      "raw": "raw:dr-consolidado:lei:ccp",
+      "offsets": {
+        "start": 438280,
+        "end": 438445
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": true
+    }
+  ],
+  "supersedes": 1
+}

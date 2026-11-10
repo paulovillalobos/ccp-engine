@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art56.3.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art56.3",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "d) Se obriga a apresentar, quando a entidade adjudicante o solicite, os documentos comprovativos da habilitação para celebrar e executar o contrato.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art56-4",
+      "offsets": {
+        "start": 852,
+        "end": 1000
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

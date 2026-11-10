@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art54-a.1.a",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art54-a.1",
+  "kind": "alinea",
+  "label": "a)",
+  "versions": [
+    {
+      "version": "2021-06-20",
+      "text": "a) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30 % dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 4010,
+        "end": 4334
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "a) Entidades cujo objeto principal seja a integração social e profissional de pessoas com deficiência ou desfavorecidas, desde que pelo menos 30/prct. dos respetivos trabalhadores tenham deficiência devidamente reconhecida nos termos da lei ou sejam desfavorecidos, independentemente do objeto e do valor estimado do contrato a celebrar;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art54-a-4",
+      "offsets": {
+        "start": 175,
+        "end": 512
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

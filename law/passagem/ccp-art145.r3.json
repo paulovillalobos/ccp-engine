@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art145",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-ii.titulo-iii.capitulo-ii.seccao-iv",
+  "kind": "artigo",
+  "label": "Artigo 145.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 145.º\nModos de encerramento do leilão electrónico\n1 - A entidade adjudicante pode encerrar o leilão electrónico:\na) Na data e hora previamente fixadas no convite para participação no leilão electrónico; ou\nb) Quando, decorrido o prazo máximo contado da recepção da última licitação, não receber novos valores correspondentes às diferenças mínimas exigidas entre licitações.\n2 - O prazo máximo referido na alínea b) do número anterior deve ser fixado no convite para participação no leilão electrónico.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art145-4",
+      "offsets": {
+        "start": 868,
+        "end": 1376
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "Artigo 145.º\nModos de encerramento do leilão electrónico\n1 - A entidade adjudicante pode encerrar o leilão electrónico:\na) Na data e hora previamente fixadas no convite para participação no leilão electrónico; ou\nb) Quando, decorrido o prazo máximo contado da recepção da última licitação, não receber novos valores correspondentes às diferenças mínimas exigidas entre licitações;\nc) Quando tiver sido atingido o número de fases previamente definido no convite para participação no leilão, o qual deve indicar o calendário para cada fase.\n2 - O prazo máximo referido na alínea b) do número anterior deve ser fixado no convite para participação no leilão electrónico.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art145-4",
+      "offsets": {
+        "start": 56,
+        "end": 722
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

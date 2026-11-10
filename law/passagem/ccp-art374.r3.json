@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art374",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:parte-iii.titulo-ii.capitulo-i.seccao-vi",
+  "kind": "artigo",
+  "label": "Artigo 374.º",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "Artigo 374.º\nProrrogação do prazo de execução da obra\n1 - Quando haja lugar à execução de trabalhos a mais, o prazo de execução da obra é proporcionalmente prorrogado de acordo com os prazos definidos nos termos do disposto no artigo 373.º\n2 - O disposto no número anterior não é aplicável quando estejam em causa trabalhos a mais cuja execução não prejudique o normal desenvolvimento do plano de trabalhos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art374-4",
+      "offsets": {
+        "start": 634,
+        "end": 1041
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "Artigo 374.º\nProrrogação do prazo de execução da obra\n1 - Quando haja lugar à execução de trabalhos complementares, o prazo de execução da obra é proporcionalmente prorrogado de acordo com os prazos definidos nos termos do disposto no artigo 373.º\n2 - O disposto no número anterior não é aplicável quando estejam em causa trabalhos complementares cuja execução não prejudique o normal desenvolvimento do plano de trabalhos.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art374-4",
+      "offsets": {
+        "start": 55,
+        "end": 478
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

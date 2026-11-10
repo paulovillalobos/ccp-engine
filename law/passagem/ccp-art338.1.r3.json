@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art338.1",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art338",
+  "kind": "numero",
+  "label": "1",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "1 - As disposições da parte iii do presente Código não são directamente aplicáveis aos contraentes públicos que contratam entre si num plano de igualdade jurídica, segundo uma óptica de harmonização do desempenho das respectivas atribuições.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art338-4",
+      "offsets": {
+        "start": 809,
+        "end": 1050
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2018-01-01",
+      "revoked": false
+    },
+    {
+      "version": "2018-01-01",
+      "text": "1 - A parte iii é aplicável aos contratos celebrados entre contraentes públicos, sem prejuízo das necessárias adaptações quando os mesmos sejam celebrados num plano de igualdade jurídica, designadamente no que respeita ao exercício dos poderes de conformação da relação contratual.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art338-4",
+      "offsets": {
+        "start": 105,
+        "end": 386
+      },
+      "valid_from": "2018-01-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

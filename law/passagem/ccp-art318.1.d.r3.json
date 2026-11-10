@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art318.1.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art318.1",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2026-10-01",
+      "text": "d) No quadro da aplicação da alínea b) do n.º 3 do artigo 322.º",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art318-4",
+      "offsets": {
+        "start": 665,
+        "end": 728
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

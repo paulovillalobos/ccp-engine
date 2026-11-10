@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art184.2.d",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art184.2",
+  "kind": "alinea",
+  "label": "d)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "d) Que sejam apresentadas por candidatos que não preencham os requisitos referidos no n.º 4 do artigo 164.º, desde que o programa do concurso assim o preveja expressamente;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art184-4",
+      "offsets": {
+        "start": 6420,
+        "end": 6592
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2026-10-01",
+      "revoked": false
+    },
+    {
+      "version": "2026-10-01",
+      "text": "d) Que sejam apresentadas por candidatos que não preencham os requisitos referidos no n.º 8 do artigo 165.º, desde que o programa do concurso assim o preveja expressamente;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art184-4",
+      "offsets": {
+        "start": 854,
+        "end": 1026
+      },
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}

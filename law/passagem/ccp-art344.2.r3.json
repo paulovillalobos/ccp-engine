@@ -1,0 +1,36 @@
+{
+  "id": "ccp:art344.2",
+  "revision": 3,
+  "recorded_at": "2026-11-10T15:08:11Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art344",
+  "kind": "numero",
+  "label": "2",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "2 - Durante a execução do contrato, o dono da obra é representado pelo director de fiscalização da obra e o empreiteiro por um director de obra, salvo nas matérias em que, em virtude da lei ou de estipulação contratual, se estabeleça diferente mecanismo de representação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art344-4",
+      "offsets": {
+        "start": 1439,
+        "end": 1710
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": "2021-06-20",
+      "revoked": false
+    },
+    {
+      "version": "2021-06-20",
+      "text": "2 - Durante a execução do contrato, o dono da obra é representado pelo diretor de fiscalização da obra, em todos os aspetos relacionados com a obra, e pelo gestor do contrato, em todos os outros aspetos da execução do contrato, e o empreiteiro por um diretor de obra, salvo nas matérias em que, em virtude da lei ou de estipulação contratual, se estabeleça diferente mecanismo de representação.",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art344-4",
+      "offsets": {
+        "start": 165,
+        "end": 559
+      },
+      "valid_from": "2021-06-20",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 2
+}
