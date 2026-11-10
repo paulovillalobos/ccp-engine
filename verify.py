@@ -76,7 +76,7 @@ from engine import extract, governance, manifest, schema  # noqa: E402
 from engine.canon import canonical as canonical_json, content_hash  # noqa: E402
 from engine.store import Store, facts_of  # noqa: E402
 
-VERSION = "ccp-verify-0.2"
+VERSION = "ccp-verify-0.3"
 STORES = {
     "fixtures": [ROOT / "fixtures/valid"],
     "repo": [ROOT / "law", ROOT / "rules", ROOT / "governance"],
@@ -801,7 +801,10 @@ def check_store(roots):
     for tdir, held in training_dirs(roots):
         sys.path.insert(0, str(ROOT / "tools"))
         import make_training  # noqa: E402
-        tstore = store.as_recorded(make_training.LAW_RECORDED_BY)  # D70: the law the training data was generated from
+        # D70: the law the training data was generated from; D94: its raws too (a raw captured later, a DR article history,
+        # gave training/data a nota_dr example it was never generated with)
+        LAW = ("norma", "passagem", "vigencia", "raw")
+        tstore = store.as_recorded(make_training.LAW_RECORDED_BY, types=LAW)
         check_training(tstore, out, tdir, held)
         check_training_v2(tstore, out, tdir, held)
         check_training_v2(tstore, out, tdir, held, sub="data-v3", module="make_regimes")
@@ -816,10 +819,13 @@ def check_store(roots):
         check_training_v2(tstore, out, tdir, held, sub="data-v12", module="make_rule_readings_v12")
         check_training_v2(tstore, out, tdir, held, sub="data-v13", module="make_rule_readings_v13")
         check_training_v2(tstore, out, tdir, held, sub="data-v14", module="make_rule_readings_v14")
-        check_training_v2(store, out, tdir, held, sub="data-v15", module="make_rule_readings_v15")  # D73: generated from the store as it is (the directives in it)
-        check_training_v2(store, out, tdir, held, sub="data-v16", module="make_rule_readings_v16")  # D76
-        check_training_v2(store, out, tdir, held, sub="data-v17", module="make_rule_readings_v17")  # D85
-        check_training_v2(store, out, tdir, held, sub="data-v18", module="make_rule_readings_v18")  # D89
+        # D73 (the directives in it) to D89: each set over the law as recorded when it was generated (D94: the set an adapter
+        # was trained on stays that set when the law is captured again; the 2026-11-10 refresh gave 406.º its 2018 text)
+        for sub, module, at in (("data-v15", "make_rule_readings_v15", "2026-11-05T00:17:34Z"),   # D73
+                                ("data-v16", "make_rule_readings_v16", "2026-11-05T03:45:11Z"),   # D76
+                                ("data-v17", "make_rule_readings_v17", "2026-11-06T13:52:27Z"),   # D85
+                                ("data-v18", "make_rule_readings_v18", "2026-11-06T21:48:15Z")):  # D89
+            check_training_v2(store.as_recorded(at, types=LAW), out, tdir, held, sub=sub, module=module)
     return store, out
 
 

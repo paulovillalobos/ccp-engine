@@ -2446,3 +2446,7 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   so the startup probe allows 12. deploy/.ccp-token had gone missing: a new key, set on the service.
 - Law build: the last consolidated versions of directives 2004/17 and 2004/18 (2016-04-18) are the title and «revogado por»
   only; extract.RepealedVersion, skipped by build_law (extract@6, build-law@8).
+
+## 2026-11-10 — D94: training sets pinned to the law they were made from
+
+The first law-watch readers run (12 CCP articles pending) stopped at verify: TRAIN on training/data (one new nota_dr example from a newly captured DR history raw) and data-v16 (ten 406.b examples whose quoted text is now the 2018 one). The refresh itself was right: the repository had held 2008 text for 45.º, 339.º, 341.º, 342.º and 406.º. verify 0.3 (ferramenta:verify@60) checks every frozen set over the law, raws included, as recorded when the set was generated; all 18 sets match. No refresh round was drawn: no rule cites the changed passages, and draw12 does not ask again a passage an earlier round asked (the 406.b reading of fabrica15 was on the 2008 text and never settled).

@@ -3335,8 +3335,9 @@
       "versao": 59,
       "code": "verify.py",
       "hash": "9b7fce6e139e001c02bb609b92e250cc8ad81f008ac00c3481e0841aeffa4885",
-      "retired": false,
-      "nota": "D89: TRAIN checks data-v18"
+      "retired": true,
+      "nota": "D89: TRAIN checks data-v18",
+      "retired_at": "2026-11-10T04:26:30Z"
     },
     {
       "id": "leitor:a20",
@@ -3438,6 +3439,18 @@
       "hash": "c1c5636eb62a54100ed48acd1ca4b680cf1697eafe270fb7a4aaf5ae925806c1",
       "retired": false,
       "nota": "skips a repealed act's last consolidated version"
+    },
+    {
+      "id": "ferramenta:verify@60",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 60,
+      "code": "verify.py",
+      "hash": "5c928ef4f956e198a2856498356e5a01a022db9a236247395231a41df1d6ae29",
+      "retired": false,
+      "nota": "D94: frozen training sets checked over the law (raws included) as recorded when each was generated"
     }
   ]
 }
