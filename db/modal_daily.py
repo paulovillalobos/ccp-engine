@@ -35,6 +35,22 @@ def daily(only: str = "base,dr,ted", dr_limit: int = 300, ted_limit: int = 10) -
     return {"ingesta": result, "after_load": call.object_id}
 
 
+@app.function(image=image, volumes={"/vol": volume}, secrets=[modal.Secret.from_name("ccp-db")], timeout=3 * 3600, cpu=2, memory=8192)
+def base_detail() -> dict:
+    """D93, the first fill of ccp.base_contrato: every year's contratos dump on the volume (the last one read)."""
+    import json
+    import sys
+    sys.path.insert(0, "/root/ccp")
+    from db import base_detail as bd, pg
+    seen = json.loads(Path("/vol/daily/state.json").read_text(encoding="utf-8"))["base_seen"]
+    conn = pg.connect()
+    out = {}
+    for name in sorted((n for n in seen if n.startswith("contratos")), reverse=True):  # newest first: a record kept once, its earliest year
+        out[name] = bd.load(conn, (Path("/vol/daily/base") / seen[name]["sha256"]).read_bytes(), int(name[-4:]))
+        print(name, out[name], flush=True)
+    return out
+
+
 @app.local_entrypoint()
 def main(only: str = "base,dr,ted", dr_limit: int = 300, ted_limit: int = 10):
     print(daily.remote(only, dr_limit, ted_limit))

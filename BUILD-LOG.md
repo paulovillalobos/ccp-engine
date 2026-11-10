@@ -2436,3 +2436,13 @@ One entry per commit: done / next / why. Written so a model change loses nothing
   repository's text in force (art. 37, 45, 61, 258, 259, 339–342, 405, 406, 410): older spellings and versions, art. 61
   missing. No settled rule cites them. Recorded pending (ccp.lei_alteracao); the first refresh on the Mac reads them.
 - touched_since after the 05:00 ingest: 30 procedures (266 facts) in 11 s.
+
+## 2026-11-10 — D93: the contract as BASE publishes it
+- ccp.base_contrato: 2026 dump (read 2026-11-10) 208 344 contracts, 580 bytes a row against the dictionary (750 without it,
+  1 375 as jsonb). The newer dumps write entities as objects (nifEntContrato, descEntContrato, NUTsDesc, adjudicatarioPME),
+  dates as AAAA-MM-DD and CPV as objects (cpvID, cpvdescricao, cpvValor); the older as «NIF - Nome», dd/mm/aaaa and «código -
+  descrição»: the page reads both.
+- Cloud Run deploy (same day): the image has no git, so CCP_COMMIT is passed; a cold start loads the stores in about 4 minutes,
+  so the startup probe allows 12. deploy/.ccp-token had gone missing: a new key, set on the service.
+- Law build: the last consolidated versions of directives 2004/17 and 2004/18 (2016-04-18) are the title and «revogado por»
+  only; extract.RepealedVersion, skipped by build_law (extract@6, build-law@8).

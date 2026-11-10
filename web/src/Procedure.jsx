@@ -3,6 +3,7 @@ import { AnchorButton, Button, Collapse, Icon, NonIdealState, Spinner, Tag } fro
 import { api, euro, plain, shortId } from "./api.js";
 import { go } from "./App.jsx";
 import Panel from "./Panel.jsx";
+import Contrato from "./Contrato.jsx";
 
 const LABEL = {
   adjudicante: "Entidade (NIF)",
@@ -70,6 +71,7 @@ export default function Procedure({ unit }) {
         <div className="object-title">
           <div className="eyebrow">Procedimento BASE</div>
           <h1 className="mono">{shortId(d.procedimento)}</h1>
+          {d.contratos?.[0]?.objectoContrato && <div className="object-sub">{d.contratos[0].objectoContrato}</div>}
         </div>
         {worst && <Tag large intent={worst === "nao_cumpre" ? "danger" : "success"} icon={worst === "nao_cumpre" ? "error" : "tick-circle"}>{worst === "nao_cumpre" ? "Não cumpre" : "Cumpre"}</Tag>}
       </div>
@@ -85,9 +87,10 @@ export default function Procedure({ unit }) {
             <Panel icon="help" title="Veredicto"><p>Ainda não há uma regra que se aplique a este procedimento, ou faltam dados.</p></Panel>
           )}
           {d.veredictos.map((v) => <Verdict key={v.regra.id} v={v} />)}
+          {(d.contratos || []).map((c) => <Contrato key={c.id} c={c} many={d.contratos.length > 1} />)}
         </div>
         <div>
-          <Panel icon="properties" title="Dados do contrato" flush>
+          <Panel icon="properties" title="Dados usados na verificação" flush>
             <dl className="facts">
               {d.factos.map((f) => (
                 <div key={f.id}><dt>{LABEL[f.campo] || f.campo}</dt><dd>{show(f)}</dd></div>

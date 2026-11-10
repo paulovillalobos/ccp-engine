@@ -35,7 +35,7 @@ from types import SimpleNamespace
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from db import history, pg  # noqa: E402
+from db import base_detail, history, pg  # noqa: E402
 from engine.canon import sha256_bytes  # noqa: E402
 
 UA = "ccp-engine research (passive read)"
@@ -116,6 +116,8 @@ def run_base(conn, work, recorded_at, state, dr_inputs):
     c = history.load_contratos(conn, {y: dumps[f"contratos{y}"] for y in years}, dumps[f"modificacoes{this}"], by_sha, recorded_at, unchanged=unchanged)
     rep["contratos"] = {"refused": c["refused"], "procs_new": c["procs_new"], "procedures": c["procedures"]["load"],
                         "modificacoes": c["modificacoes"]["load"], "years": {y: v["load"] for y, v in c["years"].items()}}
+    # D93: what the portal shows of each contract, for the years whose dump changed (db/base_detail.py)
+    rep["base_contrato"] = {y: base_detail.load(conn, by_sha(dumps[f"contratos{y}"], None), y) for y in years if y not in unchanged}
     for y in years:
         loaded[f"contratos{y}"] = dumps[f"contratos{y}"]["sha256"]
     loaded[f"modificacoes{this}"] = dumps[f"modificacoes{this}"]["sha256"]

@@ -27,10 +27,11 @@ from urllib.parse import parse_qs, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path[:0] = [str(ROOT / "db"), str(ROOT), str(ROOT / "tools")]
+import base_detail  # noqa: E402
 import pg  # noqa: E402
 import serve  # noqa: E402
 
-VERSION = "ccp-api-0.1"
+VERSION = "ccp-api-0.2"
 UNIT = re.compile(r"^proc:base:[A-Za-z0-9._-]{1,80}$")
 NIF = re.compile(r"^\d{9}$")
 PAGE_MAX = 200
@@ -81,6 +82,7 @@ def procedimento(unit):
             "factos": sorted(({"campo": f["field"], "valor": f.get("value"), "valido_em": f.get("valid_at"), "origem": f.get("origin"),
                                "adaptador": f.get("adapter"), "id": f["id"]} for f in facts), key=lambda x: x["campo"]),
             "veredictos": [verdict_out(d) for d in sorted(verdicts, key=lambda d: d["rule"]["id"])],
+            "contratos": base_detail.for_unit(db(), unit),  # D93: what BASE publishes of each contract, as published
             "nota": "Só os veredictos (cumpre, não cumpre) da última corrida; um «não avaliado» calcula-se em POST /v1/verificar."}
 
 
