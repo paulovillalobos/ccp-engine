@@ -2753,8 +2753,9 @@
       "versao": 5,
       "code": "engine/extract.py",
       "hash": "b8cf8279815bb516e6bf505b573c2c270623e1e7bdc704bc7cd4a7a715aa4648",
-      "retired": false,
-      "nota": "D70: eurlex-consolidated@1, an EU directive in the Publications Office's XHTML (consolidated versions and the OJ text as adopted)"
+      "retired": true,
+      "nota": "D70: eurlex-consolidated@1, an EU directive in the Publications Office's XHTML (consolidated versions and the OJ text as adopted)",
+      "retired_at": "2026-11-10T00:19:32Z"
     },
     {
       "id": "ferramenta:build-law@6",
@@ -2778,8 +2779,9 @@
       "versao": 7,
       "code": "tools/build_law.py",
       "hash": "05a69936e9872b5ab3ce63e5e8c7e419e136cf0383dc6ad70bbf31f4b45df3a5",
-      "retired": false,
-      "nota": "D70: a repeal read in either order («A Diretiva 2004/18/CE é revogada com efeitos a partir de …»)"
+      "retired": true,
+      "nota": "D70: a repeal read in either order («A Diretiva 2004/18/CE é revogada com efeitos a partir de …»)",
+      "retired_at": "2026-11-10T00:19:33Z"
     },
     {
       "id": "ferramenta:read-rules-v3@7",
@@ -3412,6 +3414,30 @@
       "hash": "ad647aee9abdf6f01040265b4ac58f03cf8d289932dbb99604fd2fb7cc1e9408",
       "retired": false,
       "nota": "D92: Chromium in the cloud (CCP_CHROME), container flags"
+    },
+    {
+      "id": "ferramenta:extract@6",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 6,
+      "code": "engine/extract.py",
+      "hash": "077c31bc1c87374e09033bd47ef219d21c4af11cf5956f734131aa56f3ca1386",
+      "retired": false,
+      "nota": "RepealedVersion: a repealed act's last consolidated version is recognised, not a text"
+    },
+    {
+      "id": "ferramenta:build-law@8",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 8,
+      "code": "tools/build_law.py",
+      "hash": "c1c5636eb62a54100ed48acd1ca4b680cf1697eafe270fb7a4aaf5ae925806c1",
+      "retired": false,
+      "nota": "skips a repealed act's last consolidated version"
     }
   ]
 }

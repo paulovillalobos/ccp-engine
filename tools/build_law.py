@@ -43,7 +43,7 @@ from engine.canon import sha256_text  # noqa: E402
 from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
-VERSION = "ccp-build-law-0.2"
+VERSION = "ccp-build-law-0.3"
 CONSOLIDATED = "raw:dr-consolidado:lei:ccp"
 TEXT_EXTRACTOR = "dr-article-history@1"
 EU_EXTRACTOR = "eurlex-html@1"
@@ -314,6 +314,8 @@ def directive_pages(store):
     out = {}
     for r in sorted({r["id"] for r in store.objects["raw"] if (r["source"], r["kind"]) == ("eur-lex", "diretiva")}):
         raw = store.current(r)
+        if not raw["text"]:  # a repealed act's last consolidated version (extract.RepealedVersion): no article to read
+            continue
         short, d = raw["source_id"].rsplit("-", 1)
         out.setdefault(short, []).append((f"{d[:4]}-{d[4:6]}-{d[6:]}", raw))
     return {k: sorted(v, key=lambda x: x[0]) for k, v in out.items()}
@@ -789,7 +791,10 @@ def main():
     writer = Writer(root, store)  # D70: one load for every EU page (66 directive versions); the writer keeps the store current
     for r in sorted({r["id"] for r in store.objects["raw"] if r["source"] == "eur-lex"}):
         extractor = EU_CONSOLIDATED if store.current(r)["kind"] == "diretiva" else EU_EXTRACTOR  # D70: a consolidated text
-        ensure_text(root, store, writer, r, extractor, False)  # D29 pattern: a revision with the new text
+        try:
+            ensure_text(root, store, writer, r, extractor, False)  # D29 pattern: a revision with the new text
+        except extract.RepealedVersion:
+            print(f"{r}: a repealed act's last consolidated version, no text; skipped (the repeal is read from the repealing act)")
     store = Store([root]).load()
     writer = Writer(root, store)
     ccp_raw = store.current(CONSOLIDATED)

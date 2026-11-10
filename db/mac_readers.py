@@ -37,7 +37,7 @@ def sh(cmd, **kw):
     print("$", " ".join(cmd), flush=True)
     res = subprocess.run(cmd, cwd=ROOT, **kw)
     if res.returncode != 0:
-        raise RuntimeError(f"{Path(cmd[1] if cmd[0] in (PY, MODAL) and len(cmd) > 1 else cmd[0]).name} salió con {res.returncode}")
+        raise RuntimeError(f"{next((Path(c).name for c in cmd[1:] if not c.startswith("-")), Path(cmd[0]).name)} salió con {res.returncode}")
     return res
 
 

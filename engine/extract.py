@@ -13,7 +13,7 @@ Copied from rjue-engine's extract module and versioned here.
 import re
 from html.parser import HTMLParser
 
-VERSION = "ccp-extract-0.1"
+VERSION = "ccp-extract-0.2"
 FRAGMENT_CLASSES = ("Fragmento_Titulo", "Fragmento_Epigrafe", "Fragmento_Texto")
 LINE_BREAK_TAGS = {"div", "p", "br", "li", "tr"}
 VOID = {"br", "img", "input", "meta", "link", "hr", "source"}
@@ -337,11 +337,19 @@ class _EurLexConsolidated(HTMLParser):
         self.buf.append("º" if self.sup and data.strip() == "o" else data)
 
 
+class RepealedVersion(ValueError):
+    """A repealed act's last consolidated version: the title, the Official Journal reference and «revogado por», no
+    article. Not a text of the law; the repeal itself is read from the repealing act (build_law.directive_repeals)."""
+
+
 def eurlex_consolidated(raw: bytes) -> str:
     parser = _EurLexConsolidated()
-    parser.feed(raw.decode("utf-8"))
+    html = raw.decode("utf-8")
+    parser.feed(html)
     parser._flush()
     if not any(re.match(r"^Artigo [0-9]+\.º$", line) for line in parser.lines):
+        if re.search(r"revogad[oa] por", html, re.I):
+            raise RepealedVersion("a repealed act's last consolidated version: «revogado por», no article")
         raise ValueError("no article in the enacting terms: not a consolidated text of the Publications Office")
     return "\n".join(parser.lines) + "\n"
 
