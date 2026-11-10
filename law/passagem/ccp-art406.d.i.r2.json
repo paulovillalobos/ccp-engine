@@ -1,0 +1,24 @@
+{
+  "id": "ccp:art406.d.i",
+  "revision": 2,
+  "recorded_at": "2026-11-10T03:59:37Z",
+  "norma": "norma:ccp",
+  "parent": "ccp:art406.d",
+  "kind": "subalinea",
+  "label": "i)",
+  "versions": [
+    {
+      "version": "2008-07-30",
+      "text": "i) Por período superior a um quinto do prazo de execução da obra, quando resulte de caso de força maior;",
+      "raw": "raw:dr-consolidado:artigo-historico:ccp-art406",
+      "offsets": {
+        "start": 2310,
+        "end": 2414
+      },
+      "valid_from": "2008-07-30",
+      "valid_to": null,
+      "revoked": false
+    }
+  ],
+  "supersedes": 1
+}
