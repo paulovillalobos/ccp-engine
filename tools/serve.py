@@ -239,12 +239,13 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):  # method, path, status: never a body
         sys.stderr.write("%s %s\n" % (time.strftime("%Y-%m-%dT%H:%M:%S"), fmt % args))
 
-    def send_json(self, status, body):
+    def send_json(self, status, body, cache=None):
+        """cache: a Cache-Control value for a public read that only changes with the daily run; default no-store."""
         data = json.dumps(body, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))
-        self.send_header("Cache-Control", "no-store")
+        self.send_header("Cache-Control", cache if cache and status == 200 else "no-store")
         self.send_header("X-Content-Type-Options", "nosniff")
         self.end_headers()
         self.wfile.write(data)

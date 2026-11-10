@@ -2457,3 +2457,8 @@ The first law-watch readers run (12 CCP articles pending) stopped at verify: TRA
 - Where it lists fewer, the first capture stays and the article is reported: 16.º, 37.º, 340.º, 405.º. For 37.º and 405.º the missing version is DL 177/2026, which the act's own art. 2.º makes; the DR page is wrong there, not the store.
 - refresh 0.3: 61.º was a false difference (revoked, the page prints its last text under «REVOGADO»).
 - Law watch against today's page: 37.º, 340.º, 405.º, 410.º differ (was 7). Tests: the 8 failures that remain also fail at the previous commit.
+
+## 2026-11-10 — the site loads in under 4 s
+
+- The page loaded in 0.2 s but its two API calls took 90–390 s: Cloud Run kept no instance warm and a new one loads the stores for about 90 s before it answers; warm, each request opened a new TLS connection to Supabase (ThreadingHTTPServer: a thread per request, so a connection per thread was one per request).
+- ccp-api 0.3: one shared read-only connection; the public reads (/v1/veredictos, /v1/estatisticas, /v1/entidades/*, /v1/procedimentos/*) send `Cache-Control: public, max-age=60, s-maxage=600, stale-while-revalidate=86400`, so Vercel's CDN answers them; every other route stays no-store. Cloud Run: --min-instances 1.

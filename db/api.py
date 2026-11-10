@@ -31,23 +31,57 @@ import base_detail  # noqa: E402
 import pg  # noqa: E402
 import serve  # noqa: E402
 
-VERSION = "ccp-api-0.2"
+VERSION = "ccp-api-0.3"
 UNIT = re.compile(r"^proc:base:[A-Za-z0-9._-]{1,80}$")
 NIF = re.compile(r"^\d{9}$")
 PAGE_MAX = 200
-_local = threading.local()
+# The daily run changes these reads once a day: the CDN may serve them for 10 minutes and a stale copy while it refetches.
+CACHE = "public, max-age=60, s-maxage=600, stale-while-revalidate=86400"
+
+
+class _Shared:
+    """One read-only connection for the whole server, reopened when it breaks. ThreadingHTTPServer starts a thread per
+    request, so a connection per thread was a new TLS connection to Supabase on every request (about 2 s)."""
+    lock = threading.Lock()
+    conn = None
+
+    def execute(self, *args):
+        with self.lock:
+            for attempt in (0, 1):
+                c = self.conn
+                if c is None or c.closed:
+                    c = pg.connect()
+                    c.autocommit = True
+                    c.execute("set default_transaction_read_only = on")
+                    c.execute("set statement_timeout = '20s'")
+                    _Shared.conn = c
+                try:
+                    return _Rows(c.execute(*args).fetchall())
+                except pg.psycopg.OperationalError:
+                    _Shared.conn = None
+                    if attempt:
+                        raise
+
+    def rollback(self):  # autocommit: a failed statement leaves no transaction to roll back
+        pass
+
+
+class _Rows:
+    def __init__(self, rows):
+        self.rows = rows
+
+    def fetchall(self):
+        return self.rows
+
+    def fetchone(self):
+        return self.rows[0] if self.rows else None
+
+
+_SHARED = _Shared()
 
 
 def db():
-    """One read-only connection per server thread, reopened when it breaks."""
-    c = getattr(_local, "conn", None)
-    if c is None or c.closed:
-        c = pg.connect()
-        c.autocommit = True
-        c.execute("set default_transaction_read_only = on")
-        c.execute("set statement_timeout = '20s'")
-        _local.conn = c
-    return c
+    return _SHARED
 
 
 def rule_info(rid):
@@ -232,16 +266,16 @@ class Handler(serve.Handler):
         path = unquote(self.path.split("?", 1)[0])
         try:
             if method == "GET" and path.startswith("/v1/procedimentos/") and path.endswith("/relatorio"):
-                return self.send_json(200, relatorio(path[len("/v1/procedimentos/"):-len("/relatorio")]))
+                return self.send_json(200, relatorio(path[len("/v1/procedimentos/"):-len("/relatorio")]), CACHE)
             if method == "GET" and path.startswith("/v1/procedimentos/"):
-                return self.send_json(200, procedimento(path[len("/v1/procedimentos/"):]))
+                return self.send_json(200, procedimento(path[len("/v1/procedimentos/"):]), CACHE)
             query = parse_qs(urlsplit(self.path).query)
             if method == "GET" and path == "/v1/veredictos":
-                return self.send_json(200, veredictos(query))
+                return self.send_json(200, veredictos(query), CACHE)
             if method == "GET" and path.startswith("/v1/entidades/") and path.endswith("/veredictos"):
-                return self.send_json(200, entidade_veredictos(path[len("/v1/entidades/"):-len("/veredictos")], query))
+                return self.send_json(200, entidade_veredictos(path[len("/v1/entidades/"):-len("/veredictos")], query), CACHE)
             if method == "GET" and path == "/v1/estatisticas":
-                return self.send_json(200, estatisticas())
+                return self.send_json(200, estatisticas(), CACHE)
         except serve.ApiError as exc:
             return self.send_json(exc.status, {"erro": exc.message})
         except Exception:  # never a trace to the caller
