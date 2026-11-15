@@ -1,0 +1,151 @@
+{
+ "adapter": "amalia-ccp-lei-v19",
+ "volume": "amalia-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "init": "amalia-ccp-lei-v18",
+ "training_index_sha256": "351d41a07431af648beb4b555d7aa90490803831360a5754f1e3d74a22dd349d",
+ "data_index_sha256": {
+  "training/data-v19": "3b056cbc43b84bbcb73736295c020f6d79f64b912b874c7e481b4a98ea32eae3"
+ },
+ "repeat": {},
+ "mixture": {
+  "escolha_passagem": 0,
+  "regra_lida": 1873
+ },
+ "examples_in_mix": 1873,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 1,
+  "lr": 0.0001,
+  "warmup_steps": 10,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 12288,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "07e8ecda83a12dad43c6bab2873a3491cf067f78",
+ "repo_dirty_training_or_law": true,
+ "started": "2026-11-15T12:41:14Z",
+ "finished": "2026-11-15T13:41:19Z",
+ "modal_app": "ap-uFuGnQVKNGsxBYjNdICZLE",
+ "modal_function_call": "fc-01M7FKKWGET53YHX426XVGQEVH",
+ "result": {
+  "examples": 1873,
+  "dropped": 0,
+  "tokens": 13673017,
+  "trainable_params": 50921472,
+  "steps": 111,
+  "seconds": 3558.0,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 0.014,
+    "seen": 16,
+    "seconds": 35.0
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.0036,
+    "seen": 168,
+    "seconds": 340.1
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.0091,
+    "seen": 331,
+    "seconds": 652.9
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.0013,
+    "seen": 499,
+    "seconds": 970.3
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.0022,
+    "seen": 670,
+    "seconds": 1282.7
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0035,
+    "seen": 840,
+    "seconds": 1605.6
+   },
+   {
+    "step": 60,
+    "epoch": 1,
+    "loss": 0.0012,
+    "seen": 1007,
+    "seconds": 1908.4
+   },
+   {
+    "step": 70,
+    "epoch": 1,
+    "loss": 0.002,
+    "seen": 1173,
+    "seconds": 2234.8
+   },
+   {
+    "step": 80,
+    "epoch": 1,
+    "loss": 0.0007,
+    "seen": 1345,
+    "seconds": 2559.5
+   },
+   {
+    "step": 90,
+    "epoch": 1,
+    "loss": 0.0019,
+    "seen": 1517,
+    "seconds": 2882.9
+   },
+   {
+    "step": 100,
+    "epoch": 1,
+    "loss": 0.0038,
+    "seen": 1685,
+    "seconds": 3203.3
+   },
+   {
+    "step": 110,
+    "epoch": 1,
+    "loss": 0.0031,
+    "seen": 1858,
+    "seconds": 3521.4
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "f218ce01c5d559658d8c3706d6f32b81f9e6f705d7b66dc05acd418b0657e655",
+   "adapter_model.safetensors": "827d23b5bc521038aeb05af053fdd68d40e98e654213db10343e63275ab947f3"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}
