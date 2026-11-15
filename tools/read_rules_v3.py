@@ -40,6 +40,8 @@ NEW_05["values"] |= set(VOC["since_0_5"]["nao_tipavel_motivos"])
 VOC6 = json.loads(json.dumps(VOC5))  # D83: 0.6 adds the contagem_prazo reason and the counting phrases (VOC["since_0_6"])
 VOC6["nao_tipavel_motivos"].update(VOC["since_0_6"]["nao_tipavel_motivos"])
 NEW_06 = set(VOC["since_0_6"]["nao_tipavel_motivos"])
+VOC7 = json.loads(json.dumps(VOC6))  # D96: 0.7 adds the agregada type and its reason (VOC["since_0_7"])
+VOC7["nao_tipavel_motivos"].update(VOC["since_0_7"]["nao_tipavel_motivos"])
 _STATE = {"voc": VOC}
 
 
@@ -50,7 +52,7 @@ def V():
 
 class _using:
     def __init__(self, version):
-        self.voc = VOC6 if minor(version) >= 6 else VOC5 if minor(version) >= 5 else VOC
+        self.voc = VOC7 if minor(version) >= 7 else VOC6 if minor(version) >= 6 else VOC5 if minor(version) >= 5 else VOC
 
     def __enter__(self):
         self.prev, _STATE["voc"] = _STATE["voc"], self.voc
@@ -71,6 +73,7 @@ V03 = "ccp-read-rules-v3-0.3"
 V04 = VERSION  # what a caller that names no version gets: every generator and measure written before 0.5 (D71)
 V05 = "ccp-read-rules-v3-0.5"  # D71: a round that wants 0.5 names it (round 12)
 V06 = "ccp-read-rules-v3-0.6"  # D83: contagem_prazo; references to another act by its name
+V07 = "ccp-read-rules-v3-0.7"  # D96: agregada (a limit on the sum of contracts already adjudicated to the same group)
 PRAZOS = ("prazo_minimo", "prazo_maximo")
 DAYS_KEY = {"prazo_minimo": "minimum_days", "prazo_maximo": "maximum_days"}
 ASPECTS = {"primeiro_dia": ["nao_conta", "conta"], "fins_de_semana": ["suspende", "continuo"], "termo": ["transfere"]}  # D83
@@ -597,6 +600,12 @@ def _vocab_text(version=VERSION):
            "; ".join(f"{k}: {', '.join(vs)}" for k, vs in ASPECTS.items()) + "). Palavras da lei: " +
            "; ".join(f"{v} («{ws[0]}»)" for a in V()["since_0_6"]["counting"].values() for v, ws in a.items()) + "."] if minor(version) >= 6 else []),
         *(["prazo_maximo — params: maximum_days (inteiro), deadline_field, counted_from."] if minor(version) >= 5 else []),
+        *(["agregada — params: window = {length: anos (o em curso conta), unit: anos_economicos («ano económico»), anchor: "
+           + ", ".join(f"{k} ({quoted(ws, 1)})" for k, ws in V()["since_0_7"]["anchors"].items())
+           + "}; group_key: " + ", ".join(f"{k} ({quoted(ws, 1)})" for k, ws in V()["since_0_7"]["group_fields"].items())
+           + "; counts = {fundamento_em: [ids das passagens remetidas ao abrigo das quais os contratos anteriores contam]}; aggregate = {field: "
+           + " | ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["threshold_fields"].items())
+           + ", op: sum («acumulado»), comparator: lt | le | gt | ge (o lado proibido, como o texto o diz), value: euros}."] if minor(version) >= 7 else []),
         "deadline_field: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["deadline_fields"].items()) + ".",
         "counted_from: " + ", ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["counted_from"].items()) + ", nao_indicado (L9).",
         "limiar — params: threshold = {field: " + " | ".join(f"{k} ({quoted(v, 1)})" for k, v in V()["threshold_fields"].items())
@@ -692,6 +701,53 @@ for _a, _b in _06:
     assert STATIC_06.count(_a) == 1, _a
     STATIC_06 = STATIC_06.replace(_a, _b)
 
+# 0.7 (D96): the agregada type, with an example of its own (an invented article: nothing of the CCP's art. 113.º)
+EXAMPLE_07 = {"regras": [{"tipo": "agregada", "condicoes": [
+    {"field": "tipo_procedimento", "op": "eq", "value": "ajuste_direto", "fontes": [{"texto": "Ajuste direto", "de": "exemplo:art903.b"}]},
+    {"field": "tipo_contrato", "op": "eq", "value": "servicos", "fontes": [{"texto": "aquisição de serviços", "de": "exemplo:art903"}]}],
+    "params": {"window": {"length": 2, "unit": "anos_economicos", "anchor": "data_envio_convite"}, "group_key": ["adjudicante", "adjudicatario"],
+               "counts": {"fundamento_em": ["exemplo:art903.b"]},
+               "aggregate": {"field": "preco_contratual", "op": "sum", "comparator": "gt", "value": 10000}},
+    "fontes": {"window": [{"texto": "no ano económico em curso e no ano económico anterior", "de": "exemplo:art902.1"}],
+               "anchor": [{"texto": "Não podem ser convidadas", "de": "exemplo:art902.1"}],
+               "group_key": [{"texto": "a entidade adjudicante", "de": "exemplo:art902.1"}, {"texto": "entidades com as quais", "de": "exemplo:art902.1"}],
+               "counts": [{"texto": "ao abrigo da alínea b) do artigo 903.º", "de": "exemplo:art902.1"}],
+               "field": [{"texto": "preço contratual acumulado", "de": "exemplo:art902.1"}],
+               "op": [{"texto": "acumulado", "de": "exemplo:art902.1"}],
+               "comparator": [{"texto": "superior ao", "de": "exemplo:art902.1"}],
+               "value": [{"texto": "inferior a 10 000 €", "de": "exemplo:art903.b"}]}}], "nao_tipavel": None}
+EXAMPLE_07_TEXT = ("[exemplo:art902] Artigo 902.º — Limites aos convites\n"
+                   "[exemplo:art902.1] 1 - Não podem ser convidadas entidades com as quais a entidade adjudicante tenha celebrado, no ano económico em curso e no ano "
+                   "económico anterior, contratos ao abrigo da alínea b) do artigo 903.º cujo preço contratual acumulado seja superior ao limite referido nessa alínea.   ◀ PASSAGEM-ALVO\n"
+                   "Remissões:\n[exemplo:art903] (Artigo 903.º — Escolha do procedimento) Para a aquisição de serviços pode adotar-se:   ◀ remetida\n"
+                   "[exemplo:art903.b] b) Ajuste direto, quando o valor do contrato for inferior a 10 000 €.   ◀ remetida")
+EXAMPLE_07_CTX = {"alvo": "exemplo:art902.1", "article": "exemplo:art902",
+                  "roles": {"exemplo:art902.1": "alvo", "exemplo:art902": "epigrafe", "exemplo:art903": "remissao", "exemplo:art903.b": "remissao"},
+                  "allowed": {"exemplo:art902.1": "1 - Não podem ser convidadas entidades com as quais a entidade adjudicante tenha celebrado, no ano económico em curso e no ano económico anterior, contratos ao abrigo da alínea b) do artigo 903.º cujo preço contratual acumulado seja superior ao limite referido nessa alínea.",
+                              "exemplo:art902": "Limites aos convites", "exemplo:art903": "Para a aquisição de serviços pode adotar-se:",
+                              "exemplo:art903.b": "b) Ajuste direto, quando o valor do contrato for inferior a 10 000 €."}}
+_07 = [("O motor usa estas regras para contar os dias de um prazo dado por duas datas.",
+        "O motor usa estas regras para contar os dias de um prazo dado por duas datas.\n- agregada: «quando todas as condições se verificam (o procedimento "
+        "para que se convida), a soma de <field> dos contratos que a entidade adjudicante já adjudicou ao mesmo <group_key>, adotados ao abrigo das passagens "
+        "<fundamento_em>, nos <length> anos económicos até à data <anchor> (o ano em curso e os anteriores), não pode ser <comparator> <value> euros». O motor "
+        "soma os contratos que o portal BASE publica, cada um nomeado, e dá «não cumpre» quando a soma fica do lado proibido. comparator é o do lado proibido, "
+        "como o texto o diz, com as palavras de L8 («igual ou superior a» → ge). Um valor dado por remissão («aos limites referidos naquelas alíneas, consoante o caso») é um caso por "
+        "valor remetido (L5, L10), cada um com as condições que a passagem remetida lhe põe; fundamento_em diz, em cada caso, que contratos anteriores contam."),
+       ("nao_e_contagem — a passagem não diz como se contam os dias de um prazo;",
+        "nao_e_contagem — a passagem não diz como se contam os dias de um prazo; nao_e_agregada — a passagem não limita a soma dos contratos já adjudicados a uma mesma entidade num período;"),
+       ('"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | nao_e_contagem | sem_vocabulario | texto_em_falta"',
+        '"nao_e_limiar | nao_e_prazo_minimo | nao_e_prazo_maximo | nao_e_contagem | nao_e_agregada | sem_vocabulario | texto_em_falta"'),
+       ("aspecto e deadline_field, na contagem_prazo",
+        "window, anchor, group_key, counts, field, op, comparator e value, na agregada; aspecto e deadline_field, na contagem_prazo"),
+       ("As duas juntas:\n",
+        "As duas juntas:\n")]
+STATIC_07 = STATIC_06
+for _a, _b in _07:
+    assert STATIC_07.count(_a) == 1, _a
+    STATIC_07 = STATIC_07.replace(_a, _b)
+STATIC_07 += ("\n\nOutro exemplo, de agregada (artigo inventado):\n" + EXAMPLE_07_TEXT +
+              "\nPergunta sobre exemplo:art902.1 → uma regra (um só valor remetido):\nResposta: " + json.dumps(EXAMPLE_07, ensure_ascii=False))
+
 EXAMPLE = {"regras": [{"tipo": "prazo_minimo", "condicoes": [
     {"field": "tipo_procedimento", "op": "eq", "value": "concurso_publico", "fontes": [{"texto": "Concurso público", "de": "exemplo:cap-ii"}]},
     {"field": "publicado_joue", "op": "eq", "value": True, "fontes": [{"texto": "Quando o anúncio seja publicado no Jornal Oficial da União Europeia", "de": "exemplo:art900.1"}]},
@@ -715,7 +771,7 @@ def render(ctx, rtype, version=VERSION):
 
 def _render(ctx, rtype, version=VERSION):
     mark = {"alvo": "   ◀ PASSAGEM-ALVO", "remissao": "   ◀ remetida", "proemio": "   ◀ proémio da passagem-alvo"}
-    lines = [(STATIC_06 if minor(version) >= 6 else STATIC_05 if minor(version) >= 5 else STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in V()["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
+    lines = [(STATIC_07 if minor(version) >= 7 else STATIC_06 if minor(version) >= 6 else STATIC_05 if minor(version) >= 5 else STATIC if minor(version) >= 4 else STATIC_03).replace("{VOCAB}", vocab_text(version)).replace("{INSTR}", ", ".join("«" + w + "»" for w in V()["instrumentos_sem_valor"][::2])).replace("{EXAMPLE}", json.dumps(EXAMPLE, ensure_ascii=False)), "",
              f"O TEXTO (versão em vigor a {ctx['date']})",
              "Onde está: " + (" > ".join(f"[{i}] {t}" for i, t in ctx["place"]) or "—"),
              f"[{ctx['article']}] {ctx['label']} — {ctx['heading']}"]
@@ -769,6 +825,25 @@ def _schema(ctx, rtype, version=VERSION):
             "required": ["valor", "aspecto", "deadline_field"], "additionalProperties": False} for asp, vs in ASPECTS.items()]}
         fontes = {"type": "object", "properties": {"aspecto": src, "deadline_field": nullable_src},
                   "required": ["aspecto", "deadline_field"], "additionalProperties": False}
+    elif rtype == "agregada":  # 0.7 (D96)
+        s7 = V()["since_0_7"]
+        remitted = sorted(i for i, r in ctx["roles"].items() if r == "remissao") or ids
+        params = {"type": "object", "properties": {
+            "window": {"type": "object", "properties": {"length": {"type": "integer", "minimum": 1},
+                                                        "unit": {"type": "string", "enum": list(s7["window_units"])},
+                                                        "anchor": {"type": "string", "enum": list(s7["anchors"])}},
+                       "required": ["length", "unit", "anchor"], "additionalProperties": False},
+            "group_key": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": list(s7["group_fields"])}},
+            "counts": {"type": "object", "properties": {"fundamento_em": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": remitted}}},
+                       "required": ["fundamento_em"], "additionalProperties": False},
+            "aggregate": {"type": "object", "properties": {"field": {"type": "string", "enum": list(V()["threshold_fields"])},
+                                                           "op": {"type": "string", "enum": list(s7["aggregate_ops"])},
+                                                           "comparator": {"type": "string", "enum": ["lt", "le", "gt", "ge"]},
+                                                           "value": {"type": "number"}},
+                          "required": ["field", "op", "comparator", "value"], "additionalProperties": False}},
+            "required": ["window", "group_key", "counts", "aggregate"], "additionalProperties": False}
+        keys = ["window", "anchor", "group_key", "counts", "field", "op", "comparator", "value"]
+        fontes = {"type": "object", "properties": {k: src for k in keys}, "required": keys, "additionalProperties": False}
     elif rtype == "prazo_maximo":  # 0.5 (D71)
         params = {"type": "object", "properties": {
             "maximum_days": {"type": "integer", "minimum": 1},
@@ -914,6 +989,8 @@ def _check(reading, ctx, rtype, version=VERSION):
                 got = _named(t, V()["deadline_fields"])
                 if p.get("deadline_field") not in got:
                     errs.append(f"{w}: deadline_field {p.get('deadline_field')} e as fontes dizem {sorted(got) or 'nada'} (L9)")
+        elif rtype == "agregada":  # 0.7 (D96)
+            _check_agregada(ctx, r, p, pf, w, errs)
         elif rtype in PRAZOS:
             dk = DAYS_KEY[rtype]
             t = _sources(ctx, pf.get(dk), PARAM_ROLES, f"{w}, {dk}", errs)
@@ -965,6 +1042,54 @@ def _check(reading, ctx, rtype, version=VERSION):
     return errs
 
 
+def window_lengths(text):
+    """0.7 (D96): the window lengths a quote can say, in years with the current one counted: «no ano económico em curso e
+    nos dois anos económicos anteriores» → 3; «em curso e no ano económico anterior» → 2; «nos três anos» → 3."""
+    s7 = V()["since_0_7"]
+    current = 1 if any(contains(text, w) for w in s7["window_current"]) else 0
+    ns = set(numbers_in(text)) | ({1} if any(contains(text, w) for w in s7["window_previous_one"]) else set())
+    return {current + n for n in ns} | ({1} if current and not ns else set())
+
+
+def _check_agregada(ctx, r, p, pf, w, errs):
+    s7 = V()["since_0_7"]
+    win = p.get("window") or {}
+    t = _sources(ctx, pf.get("window"), PARAM_ROLES, f"{w}, window", errs)
+    if win.get("length") not in window_lengths(t):
+        errs.append(f"{w}: window length {win.get('length')} e as fontes dizem {sorted(window_lengths(t)) or 'nada'}")
+    if win.get("unit") not in _named(t, s7["window_units"]):
+        errs.append(f"{w}: window unit {win.get('unit')} e as fontes não o dizem")
+    t = _sources(ctx, pf.get("anchor"), PARAM_ROLES, f"{w}, anchor", errs)
+    if win.get("anchor") not in _named(t, s7["anchors"]):
+        errs.append(f"{w}: anchor {win.get('anchor')} e as fontes não o dizem")
+    t = _sources(ctx, pf.get("group_key"), PARAM_ROLES, f"{w}, group_key", errs)
+    got = _named(t, s7["group_fields"])
+    if set(p.get("group_key") or []) != got:
+        errs.append(f"{w}: group_key {sorted(p.get('group_key') or [])} e as fontes dizem {sorted(got) or 'nada'}")
+    t = _sources(ctx, pf.get("counts"), PARAM_ROLES, f"{w}, counts", errs)
+    for pid in (p.get("counts") or {}).get("fundamento_em") or []:
+        if ctx["roles"].get(pid) != "remissao":
+            errs.append(f"{w}: counts {pid} não é uma passagem remetida")
+            continue
+        m = re.match(r"^[\w-]+:art(\d+)(?:-[a-z])?(?:\.(\d+))?(?:\.([a-z]))?$", pid)
+        n = norm(t)
+        if not m or f"{m.group(1)}.º" not in n or (m.group(3) and not re.search(rf"(?<!\w){m.group(3)}\)", n)):  # the article and the alínea named
+            errs.append(f"{w}: as fontes de counts não nomeiam {pid}")
+    agg = p.get("aggregate") or {}
+    t = _sources(ctx, pf.get("field"), PARAM_ROLES, f"{w}, field", errs)
+    if _named(t, V()["threshold_fields"]) != {agg.get("field")}:
+        errs.append(f"{w}: field {agg.get('field')} e as fontes nomeiam {sorted(_named(t, V()['threshold_fields'])) or 'nada'}")
+    t = _sources(ctx, pf.get("op"), PARAM_ROLES, f"{w}, op", errs)
+    if agg.get("op") not in _named(t, s7["aggregate_ops"]):
+        errs.append(f"{w}: op {agg.get('op')} e as fontes não o dizem")
+    t = _sources(ctx, pf.get("comparator"), PARAM_ROLES, f"{w}, comparator", errs)
+    if comparators_in(t) != {agg.get("comparator")}:
+        errs.append(f"{w}: comparator {agg.get('comparator')} e as fontes dizem {sorted(comparators_in(t)) or 'nada'} (L8)")
+    t = _sources(ctx, pf.get("value"), PARAM_ROLES, f"{w}, value", errs)
+    if agg.get("value") not in euros_in(t):
+        errs.append(f"{w}: value {agg.get('value')} não está nas fontes (L10)")
+
+
 def complement(field, text, rules, i, value=False):
     """A case of one passage completes another (L5): «30 dias, ou 15 dias se a urgência…» gives false to the 30-day rule
     when another rule of the same answer has the fact true, and «25 dias ou, quando o anúncio não seja publicado…, 15 dias»
@@ -990,7 +1115,14 @@ def canonical_rule(r):
         if isinstance(v, bool) and op == "ne":
             op, v = "eq", not v
         conds.append({"field": f, "op": op, "value": v})
-    return {"tipo": r.get("tipo"), "condicoes": sorted(conds, key=lambda c: json.dumps(c, sort_keys=True, ensure_ascii=False)), "params": r.get("params")}
+    params = r.get("params")
+    if r.get("tipo") == "agregada" and isinstance(params, dict):  # 0.7 (D96): lists as sets
+        params = json.loads(json.dumps(params))
+        if isinstance(params.get("group_key"), list):
+            params["group_key"] = sorted(set(params["group_key"]))
+        if isinstance((params.get("counts") or {}).get("fundamento_em"), list):
+            params["counts"]["fundamento_em"] = sorted(set(params["counts"]["fundamento_em"]))
+    return {"tipo": r.get("tipo"), "condicoes": sorted(conds, key=lambda c: json.dumps(c, sort_keys=True, ensure_ascii=False)), "params": params}
 
 
 def canonical(reading):
@@ -1073,6 +1205,23 @@ def support(rule, ctx, rtype, rules=()):
         if th.get("field") not in named:
             errs.append(f"field {th.get('field')}: o texto nomeia {sorted(named) or 'nada'} (L10)")
     return errs
+
+
+def selftest_07():
+    """0.7 (D96): the agregada example passes; broken copies of it fail."""
+    import copy
+    ok = not check(EXAMPLE_07, EXAMPLE_07_CTX, "agregada", V07)
+    bad = []
+    for fn in (lambda r: r["params"]["window"].__setitem__("length", 3),
+               lambda r: r["params"]["aggregate"].__setitem__("value", 20000),
+               lambda r: r["params"]["aggregate"].__setitem__("comparator", "ge"),
+               lambda r: r["params"].__setitem__("group_key", ["adjudicante"]),
+               lambda r: r["params"]["counts"].__setitem__("fundamento_em", ["exemplo:art902"]),
+               lambda r: r["fontes"].__setitem__("op", [{"texto": "contratos", "de": "exemplo:art902.1"}])):
+        x = copy.deepcopy(EXAMPLE_07)
+        fn(x["regras"][0])
+        bad.append(bool(check(x, EXAMPLE_07_CTX, "agregada", V07)))
+    return ok and all(bad)
 
 
 def selftest():

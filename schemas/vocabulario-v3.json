@@ -737,5 +737,55 @@
   "nao_tipavel_motivos": {
    "nao_e_contagem": "a passagem não diz como se contam os dias de um prazo (o dia do evento, os sábados, domingos e feriados, ou o termo em dia em que o serviço não está aberto)"
   }
+ },
+ "since_0_7": {
+  "about": "D96 (protocol 0.7): the agregada type, a limit on the sum of the contracts already adjudicated to the same group in a window of economic years. A prompt of 0.6 or earlier reads the tables above unchanged.",
+  "window_units": {
+   "anos_economicos": [
+    "ano económico",
+    "anos económicos"
+   ]
+  },
+  "window_current": [
+   "em curso"
+  ],
+  "window_previous_one": [
+   "ano económico anterior",
+   "no anterior"
+  ],
+  "anchors": {
+   "data_envio_convite": [
+    "convidadas",
+    "convidada",
+    "convidados",
+    "convidar",
+    "convite"
+   ]
+  },
+  "group_fields": {
+   "adjudicante": [
+    "entidade adjudicante"
+   ],
+   "adjudicatario": [
+    "entidades às quais",
+    "entidades com as quais",
+    "entidade à qual",
+    "entidade com a qual",
+    "adjudicatário",
+    "adjudicatários"
+   ]
+  },
+  "aggregate_ops": {
+   "sum": [
+    "acumulado",
+    "acumulada",
+    "acumulados",
+    "somados",
+    "soma"
+   ]
+  },
+  "nao_tipavel_motivos": {
+   "nao_e_agregada": "a passagem não limita a soma dos contratos já adjudicados a uma mesma entidade num período"
+  }
  }
 }

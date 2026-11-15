@@ -15,6 +15,7 @@
     "result": {"$ref": "defs.schema.json#/$defs/result"},
     "reason": {},
     "detail": {"type": "string", "description": "Which field was missing, which coverage ratio fell short: data for the reader, never a legal opinion."},
+    "aggregate": {"type": "object", "description": "D96: an agregada verdict's inputs: the group, the window and anchor, sum_min (the contracts that surely count) and sum_max (with the uncertain ones), each contract with its BASE id, record, date, price and declared basis.", "properties": {"group": {"type": "object"}, "window": {"type": "array", "items": {"type": "string"}}, "anchor": {"type": "string"}, "sum_min": {"type": "number"}, "sum_max": {"type": ["number", "null"], "description": "null when an uncertain contract has no price"}, "sure": {"type": "array"}, "maybe": {"type": "array"}}, "required": ["group", "window", "anchor", "sum_min", "sum_max", "sure", "maybe"]},
     "citation": {"oneOf": [{"$ref": "defs.schema.json#/$defs/citation"}, {"type": "null"}]},
     "facts_used": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_facto"}},
     "assertions_compared": {"type": "array", "items": {"type": "object", "properties": {"afirmacao": {"$ref": "defs.schema.json#/$defs/id_afirmacao"}, "declared_passages": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_passagem"}}, "agrees": {"type": ["boolean", "null"]}}, "required": ["afirmacao", "declared_passages", "agrees"], "additionalProperties": false}},

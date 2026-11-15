@@ -39,11 +39,13 @@ from engine import manifest as manifest_mod  # noqa: E402
 from engine import rules as rules_mod  # noqa: E402
 from engine.governance import Log, head  # noqa: E402
 
-VERSION = "ccp-run-engine-0.6"
+VERSION = "ccp-run-engine-0.7"  # D96: agregada rules over BASE's records; the declared regime and sector facts
 START = "data_inicio_procedimento"
 BOUNDS = ("data_envio_anuncio", "data_publicacao_anuncio", "data_envio_joue")  # the procedure's own dated acts
 CHILD_BOUNDS = ("data_celebracao_contrato", "data_publicacao_contrato")  # its contracts'
 WINDOW_RULE = "product_rule:janela-inicio-procedimento"
+REGIME_RULE = "product_rule:regime-especial-declarado"  # D96: write waits for the person's decision on the abstention
+DOCS_RULE = "product_rule:fundamento-verificado-nos-documentos"  # D97: an abstention on what the documents say is stored too
 PAGE = 500
 
 
@@ -106,8 +108,52 @@ def check_dates(rules, upper, window):
 def key_of(rules_by_id, v):
     r = rules_by_id[v["rule"]["id"]]
     p = r["params"]
-    field = p.get("deadline_field") or (p.get("threshold") or {}).get("field") or r["id"]
+    field = p.get("deadline_field") or (p.get("threshold") or {}).get("field") or (p.get("aggregate") or {}).get("field") or r["id"]
+    if r["type"] == "agregada":
+        field = r["id"]  # D96: each aggregate rule is its own key (its cases differ by conditions, not by field)
     return (r["type"], field)
+
+
+def invitation_days(lo, hi):
+    """D96: the dates an aggregate can change on between lo and hi (both included): the ends, and each 1 January with the
+    day before it (the economic year turns; within a year a sum only grows with the date)."""
+    days = {lo, hi}
+    for y in range(lo.year + 1, hi.year + 1):
+        j = datetime.date(y, 1, 1)
+        days |= {j, j - datetime.timedelta(days=1)}
+    return sorted(d for d in days if lo <= d <= hi)
+
+
+def aggregates_for(unit_id, facts, rules, lo, hi):
+    """D96: {rule id: the group's sums} for the agregada rules, over every date the invitation may have been sent on
+    ([lo, hi]: the earliest start the window allows, or the stated start, to the earliest dated act). The same result on
+    every date: that result, shown at the date that proves it least strongly; different results: «não avaliado»."""
+    from engine import aggregate as agg_mod
+    idx = _W.get("index")
+    out = {}
+    if idx is None:
+        return out
+    proc = unit_id.split("idproc-", 1)[-1]
+    adj = next((f["value"] for f in facts if f["field"] == "adjudicante"), None)
+    values = {f["field"]: f["value"] for f in sorted(facts, key=lambda f: (f.get("valid_at") or "", f["known_at"]))}
+    for r in rules:
+        if r["type"] != "agregada" or r["params"]["completeness_threshold"]["measured_over"] != "janela":
+            continue
+        if rules_mod.applies(r, values)[0] is False or not any(rules_mod.valid_at(r, d.isoformat()) for d in (lo, hi)):
+            continue  # its conditions fail on a known fact, or it is not in force: the engine gives it no verdict anyway
+        per = [(d, agg_mod.group_sums(r, idx, proc, adj, d.isoformat())) for d in invitation_days(lo, hi)]
+        if any(g.get("why") for _, g in per):
+            out[r["id"]] = next(g for _, g in per if g.get("why"))
+            continue
+        res = {d: rules_mod.aggregate_result(r["params"], g) for d, g in per}
+        if len(set(res.values())) > 1:
+            out[r["id"]] = {"why": ("facto_ausente", f"data_envio_convite: a soma decide de outra forma consoante o convite seja de {lo} ou de {hi} "
+                                    f"({', '.join(f'{d}: {x or chr(63)}' for d, x in res.items())})")}
+            continue
+        only = next(iter(res.values()))
+        pick = (min if only == "nao_cumpre" else max)(per, key=lambda x: (x[1]["sum_min"] if only == "nao_cumpre" else x[1]["sum_max"]))[1]
+        out[r["id"]] = {**pick, "window_text": pick["window_text"] + f"; convite entre {lo} e {hi}: o mesmo resultado em {len(per)} datas"}
+    return out
 
 
 def evaluate_unit(unit_id, facts, dates, rules, window, now):
@@ -124,18 +170,23 @@ def evaluate_unit(unit_id, facts, dates, rules, window, now):
         manifest = manifest_mod.build(f"lei:ccp@{day}", package["id"], sorted({f["adapter"] for f in facts}) or ["adaptador:ccp@1"], snaps,
                                       {"repository": serve.REPOSITORY, "commit": serve.COMMIT, "engine_version": evaluate_mod.VERSION},
                                       head(serve.STORE.events), known_at)
-        return evaluate_mod.evaluate(unit, rules, facts, known_at, facts_at, manifest=manifest, rules_at=day, calendar=holidays_text)
+        return evaluate_mod.evaluate(unit, rules, facts, known_at, facts_at, manifest=manifest, rules_at=day, calendar=holidays_text,
+                                     aggregates=aggs)
 
     upper = upper_bound(facts, dates)
+    aggs = {}
     # every fact counts as of the latest date it is valid (the start only chooses the rules)
     facts_at = max([f["valid_at"] for f in facts if f.get("valid_at")] + ([upper.isoformat()] if upper else []), default=now[:10])
     start = next((f["value"] for f in facts if f["field"] == START), None)
     if isinstance(start, str) and serve.DATE.match(start):
+        if upper:  # D96: the invitation falls between the start and the earliest dated act
+            aggs.update(aggregates_for(unit_id, facts, rules, min(iso(start), upper), upper))
         return run(start), None, "data_inicio_procedimento"
     if upper is None:
         return [], "sem data nenhuma", None
     if window is None:
         return [], "janela por decidir", None
+    aggs.update(aggregates_for(unit_id, facts, rules, upper - datetime.timedelta(days=window), upper))
     days = check_dates(rules, upper, window)
     runs = {d: run(d.isoformat()) for d in days}
     seen = [{key_of(by_id, v): (v["result"], v["reason"]) for v in out} for out in runs.values()]
@@ -217,12 +268,24 @@ def load_rules(pending=()):
 _W = {}
 
 
-def _init(write, commit=None, corrida=None):
+def _init(write, commit=None, corrida=None, base_cache=None, declared=False, sectors=None):
     """D84: a worker process loads the store, the rules and a connection once (D86: on Modal the commit is given: no .git;
-    D88: the run's id, which every verdict written is linked to)."""
+    D88: the run's id, which every verdict written is linked to). D96: base_cache, BASE's contract records
+    (db/declared.py cache) for the agregada rules; declared, the declared facts computed from them for a report (never
+    for write: a write reads only facts stored in ccp.facto)."""
     serve.load(("law", "rules", "governance"), commit=commit)
     conn = pg.connect()
     _W.update(rules=load_rules(pending_passages(conn)), conn=conn, write=write, corrida=corrida, now=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    if base_cache and (declared or any(r["type"] == "agregada" for r in _W["rules"])):  # the index only when a rule sums contracts
+        import declared as declared_mod
+        from engine import aggregate as agg_mod
+        recs = declared_mod.records(base_cache)
+        _W["index"] = agg_mod.contracts_of([r for r in recs if declared_mod.may_count(r)])
+        if declared:
+            _W["declared"] = {}
+            by_nif = json.loads(Path(sectors).read_text(encoding="utf-8"))["by_nif"] if sectors else None
+            for f in declared_mod.facts(recs, _W["now"], by_nif):
+                _W["declared"].setdefault(f["unit"], []).append(f)
 
 
 def link(conn, corrida, verdicts, adjudicante=None):
@@ -284,15 +347,24 @@ def _chunk(job):
         tally, why_none, how = out[w]
         page = []
         for u in units:
-            verdicts, why, h = evaluate_unit(u, facts.get(u, []), dates.get(u, []), rules, w, _W["now"])
+            fs = facts.get(u, [])
+            if _W.get("declared") is not None:  # D96 (report only): the declared facts not yet stored
+                have = {f["field"] for f in fs}
+                fs = fs + [f for f in _W["declared"].get(u, []) if f["field"] not in have]
+            verdicts, why, h = evaluate_unit(u, fs, dates.get(u, []), rules, w, _W["now"])
             if why:
                 why_none[why] += 1
             if h:
                 how[h] += 1
             for v in verdicts:
                 tally[(v["rule"]["id"], v["result"], v["reason"])] += 1
+                if _W.get("out"):
+                    _W["out"].write(json.dumps({k: v[k] for k in v if k != "manifest"} | {"manifest_log_head": v["manifest"]["log_head"]},
+                                               ensure_ascii=False, default=str) + "\n")
             page.extend(verdicts)
-        decided = [v for v in page if v["result"] != "nao_avaliado"]  # D87: only verdicts are stored; «não avaliado» is counted here and computed live by the API
+        # D87: only verdicts are stored; «não avaliado» is counted here and computed live by the API. D96: except an abstention
+        # on a declared special regime or a special-sector buyer, which the procedure page must show with its reason
+        decided = [v for v in page if v["result"] != "nao_avaliado" or REGIME_RULE in (v.get("detail") or "") or DOCS_RULE in (v.get("detail") or "")]
         if _W["write"] and decided:
             for k, n in pg.load_objects(conn, {"veredicto": decided}).get("veredicto", {}).items():
                 written[k] += n
@@ -307,17 +379,31 @@ def main():
     ap.add_argument("--limit", type=int, default=1000); ap.add_argument("--after", default="")
     ap.add_argument("--window", type=int, nargs="*", default=[])
     ap.add_argument("--workers", type=int, default=1, help="D84: processes, each with its own store and connection")
+    ap.add_argument("--units", help="D96: a file of procedure ids (one a line) to evaluate instead of the paged list")
+    ap.add_argument("--base-cache", help="D96: BASE's contract records (db/declared.py cache) for the agregada rules")
+    ap.add_argument("--declared", action="store_true", help="D96, report only: add the declared facts computed from --base-cache")
+    ap.add_argument("--sectors", help="D96, report only: db/ted_sectors.py OUT.json for the declared facts")
+    ap.add_argument("--out", help="report only: every verdict given, as JSON lines")
+    ap.add_argument("--preview-rules", help="D96, report only: a JSON list of rules not settled (a reading's draft) evaluated beside the settled ones")
     a = ap.parse_args()
     serve.load(("law", "rules", "governance"))
     if a.cmd == "write":
-        decided = settled_window(Log(ROOT / "governance"))
+        log = Log(ROOT / "governance")
+        decided = settled_window(log)
         if decided is None or a.window != [decided]:
             raise SystemExit(f"write needs --window {decided if decided is not None else 'N'}: {WINDOW_RULE} settled in the log with those days")
+        if log.replay().state_of("product_rule", REGIME_RULE) != "settled":
+            raise SystemExit(f"write needs {REGIME_RULE} settled in the log: the engine abstains on declared special regimes by the person's decision (D96)")
+        if a.declared or a.out or a.preview_rules:
+            raise SystemExit("write reads only the facts stored in ccp.facto (db/declared.py facts --write) and only settled rules")
     conn = pg.connect()
     rules = load_rules(pending_passages(conn))
     windows = a.window or [None]
     ids, after = [], a.after
-    while len(ids) < a.limit:
+    if a.units:
+        ids = sorted({l.strip() for l in open(a.units, encoding="utf-8") if l.strip()})
+        a.limit = len(ids)
+    while not a.units and len(ids) < a.limit:
         page = procedures(conn, after, min(50000, a.limit - len(ids)))
         if not page:
             break
@@ -330,10 +416,15 @@ def main():
     written, done, t0 = collections.Counter(), 0, time.time()
     if a.workers > 1:
         import multiprocessing as mp
-        pool = mp.get_context("spawn").Pool(a.workers, initializer=_init, initargs=(a.cmd == "write",))
+        pool = mp.get_context("spawn").Pool(a.workers, initializer=_init, initargs=(a.cmd == "write", None, None, a.base_cache, a.declared, a.sectors))
         results = pool.imap_unordered(_chunk, jobs)
     else:
-        _init(a.cmd == "write")
+        _init(a.cmd == "write", base_cache=a.base_cache, declared=a.declared, sectors=a.sectors)
+        _W["out"] = open(a.out, "w", encoding="utf-8") if a.out else None
+        if a.preview_rules:  # D96: PREVIEW, never written; the report says so
+            extra = json.loads(Path(a.preview_rules).read_text(encoding="utf-8"))
+            _W["rules"] = sorted(_W["rules"] + extra, key=lambda r: r["id"])
+            print(f"PREVIEW: {len(extra)} rules not settled evaluated ({', '.join(r['id'] for r in extra)})", file=sys.stderr)
         results = map(_chunk, jobs)
     for out, wr, n in results:
         for w, (tl, wn, hw) in out.items():

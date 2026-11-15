@@ -129,6 +129,74 @@ def basis_allows(rule, declared) -> bool:
     return all(fits(d) for d in declared)
 
 
+REGIME_FIELD = "regime_declarado"          # D96: the acts the entity declared as the procedure's regime (BASE «regime»)
+SECTOR_FIELD = "atividade_setor_especial"  # D96: the activity of the special sectors the buyer declared (BASE, eForms entity-activity)
+
+
+def regime_blocks(rule, values):
+    """D96 (product_rule:regime-especial-declarado): None when a rule of the general regime may judge the procedure;
+    otherwise (reason, detail) of the «não avaliado» it gets instead. Two declared facts stop it:
+      regime_declarado names acts and not the rule's own («Medidas Especiais de Contratação Pública (Lei n.º 30/2021)»,
+      «Decreto-Lei n.º 10-A/2020»): no settled rule of that regime covers the case -> regra_ausente. An act named beside
+      the Code («Código dos Contratos Públicos (DL111-B/2017) e Lei n.º 30/2021», BASE's label on 42 % of its contracts)
+      leaves the Code's rules to judge, with the declared basis (D88);
+      the buyer declared, in the EU's Official Journal under Directive 2014/25/EU, an activity of the special sectors
+      (water, energy, transport, postal; db/ted_sectors.py): whether this contract concerns it is the fact
+      setores_especiais, which no source gives -> facto_ausente.
+    Only limiar and agregada rules (the choice of a procedure by value and the cumulative limit) are stopped by the
+    second; every rule of the general regime by the first. A rule whose conditions name setores_especiais decides itself."""
+    own = rule.get("norma", "").split(":", 1)[-1]
+    declared = values.get(REGIME_FIELD)
+    if isinstance(declared, list) and declared and own not in declared:  # a regime of its own, without the rule's act
+        return "regra_ausente", (f"a entidade declarou o regime de {', '.join(sorted(declared))}, não o do {own}: nenhuma regra assente desse "
+                                 f"regime cobre o caso (product_rule:regime-especial-declarado)")
+    activity = values.get(SECTOR_FIELD)
+    if (isinstance(activity, str) and activity and rule["type"] in ("limiar", "agregada")
+            and not any(c["field"] == "setores_especiais" for c in rule.get("conditions", []))):
+        return "facto_ausente", (f"a entidade adjudicante declarou a atividade «{activity}» dos setores especiais: se o contrato lhe diz "
+                                 f"respeito, a escolha do procedimento é a desses setores; o facto setores_especiais não está nas fontes "
+                                 f"(product_rule:regime-especial-declarado)")
+    return None
+
+
+DOCS_FIELD = "fundamento_nos_documentos"  # D97: what the procedure's own documents state as its basis (check_regime.py)
+DOCS_RULE = "product_rule:fundamento-verificado-nos-documentos"
+
+
+def documents_block(rule, values):
+    """D97 (product_rule:fundamento-verificado-nos-documentos), for limiar and agregada rules of a procedure whose
+    documents were read: None (judge it; the verdict carries the quote) when they state the rule's own basis or were not
+    read; "skip" (no verdict, as D88) when they state another basis; (reason, detail) of a «não avaliado» when they name
+    the special measures or state no basis."""
+    doc = values.get(DOCS_FIELD)
+    if rule["type"] not in ("limiar", "agregada") or not isinstance(doc, dict):
+        return None
+    where = f"{doc.get('documento')}" + (f", p. {doc.get('pagina')}" if doc.get("pagina") not in (None, "") else "")
+    estado = doc.get("estado")
+    if estado == "outra_base":
+        return "skip"
+    if estado == "medidas_especiais":
+        return "regra_ausente", (f"os documentos do procedimento dizem que foi adotado ao abrigo das medidas especiais de contratação pública "
+                                 f"(«{doc.get('citacao', '')[:200]}», {where}): nenhuma regra assente desse regime cobre o caso ({DOCS_RULE})")
+    if estado == "nao_identificado":
+        return "facto_ausente", (f"não decidível: fundamento não identificado nos documentos (lidos: {doc.get('lidos', '?')}) ({DOCS_RULE})")
+    return None
+
+
+def aggregate_result(p, agg):
+    """D96: an agregada rule on a group's sums. agg: {"sum_min", "sum_max", ...}: sum_min counts only the contracts that
+    surely count (dated before the anchor, in the window, with the declared basis the rule counts, this pair alone),
+    sum_max every contract that may count. comparator/value say when the rule is complied with (cumpre). Returns
+    "cumpre" when even sum_max complies, "nao_cumpre" when even sum_min does not, None when the uncertain contracts decide."""
+    ok_min = holds({"field": "_v", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_v": agg["sum_min"]})
+    ok_max = holds({"field": "_v", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_v": agg["sum_max"]})
+    if ok_max:
+        return "cumpre"
+    if not ok_min:
+        return "nao_cumpre"
+    return None
+
+
 class Conflict:
     """Marker for a field whose facts disagree without a precedence rule (conflito.resolution nao_avaliado)."""
     def __init__(self, conflito_id):
@@ -160,6 +228,8 @@ def fields_of(rule) -> set:
             f.add(p[k])
     if "window" in p:
         f.add(p["window"]["anchor"])
+    if "counts" in p:  # D96: which earlier contracts the aggregate counts
+        f.add("fundamento_passagens")
     for k in ("forbidden", "predicate"):
         for c in p.get(k, []):
             f.add(c["field"])

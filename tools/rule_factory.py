@@ -51,7 +51,7 @@ from engine.sources import now_utc  # noqa: E402
 from engine.store import Store, Writer  # noqa: E402
 
 VERSION = "ccp-rule-factory-0.10"
-TOOL = "ferramenta:rule-factory@37"  # D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
+TOOL = "ferramenta:rule-factory@38"  # D96 round 18 (agregada, protocol 0.7), D77 «não tipável» with any reason, D59 gap check, D60 round 2 and its three new gaps, D62 round 3, D63 round 4, D64 recheck, D65 round 5, D66 round 6 (v3), D67 round 9 (0.4), D68 round 10, D69 round 11 (and a rule leitor:b reads none of), D72 round 12
 FROUNDS = {1: {"round": "fabrica-1", "dir": rr.READINGS / "fabrica1", "rnd": 6, "closed": set(), "decision": "D58"},
            2: {"round": "fabrica-2", "dir": rr.READINGS / "fabrica2", "rnd": 8, "closed": {"candidaturas", "convite"}, "decision": "D60"},
            # D62: the person's vocabulary closes every gap the check knows; 190.º n.º 1 comes back for its two rules
@@ -144,6 +144,13 @@ for _k, _f in enumerate(sorted(rr.READINGS.glob("refresh-*/pick.json"))):  # D75
 FROUNDS[17] = {**{k: v for k, v in FROUNDS[12].items() if k != "pick"}, "round": "fabrica-17", "dir": rr.READINGS / "fabrica17", "decision": "D83",
                "v3_version": v3.V06, "proposer": ("leitor:a20", "leitor-a20.json"),  # D89: v18 (D85: v17 settled 87.º b, c, f)
                "pick": [(pid, "2026-10-01", "contagem_prazo", "contagem") for pid in ("cpa:art87.b", "cpa:art87.c", "cpa:art87.f", "ccp:art470.2", "ccp:art470.3")]}
+# D96: round 18, the cumulative limit of CCP art. 113.º n.º 2 (consulta prévia and ajuste direto), read with protocol 0.7 by the
+# latest family-A reader and leitor:b, in the two texts the limits it refers to have had since 2018 (art. 19.º and 20.º n.º 1:
+# 2018-01-01 to 2026-09-30, and from 2026-10-01). A reading is recorded only once the person's product rule on how complete
+# an aggregate must be is settled (AGG_RULE): the rule names that decision (completeness_threshold.decided_by, invariant 12).
+FROUNDS[18] = {**{k: v for k, v in FROUNDS[17].items() if k != "pick"}, "round": "fabrica-18", "dir": rr.READINGS / "fabrica18", "decision": "D96",
+               "v3_version": v3.V07, "pick": [("ccp:art113.2", "2018-01-01", "agregada", "agregada"), ("ccp:art113.2", "2026-10-01", "agregada", "agregada")]}
+AGG_RULE = "product_rule:limite-acumulado-completude"
 V3_RULE = "product_rule:fontes-verificadas-e-nao-tipavel"
 NT_RULE = "product_rule:nao-tipavel-qualquer-motivo"  # D77: two blind «não tipável» readings replicate whatever their reasons
 PROPOSER, PROPOSER_FILE = "leitor:a8", "leitor-a8.json"  # AMALIA + adapter v7 (D53), the best family-A reader when round 1 began
@@ -162,9 +169,12 @@ QUESTION = {
                     "de quando? Dê as condições, os dias, o campo do prazo e de onde se conta.",
     "contagem_prazo": "Como manda contar os dias de um prazo a passagem {pid}: em que condições, para que prazo, que aspeto da contagem "
                       "e com que valor?",
+    "agregada": "Que limite à soma dos contratos já adjudicados fixa a passagem {pid}: em que procedimento, a que grupo, em que período, "
+                "que contratos contam e com que valor?",  # D96
 }
 TITLE = {"prazo_minimo": "Prazo mínimo fixado em {pid} (fábrica de regras, ronda {n})", "limiar": "Limiar de valor fixado em {pid} (fábrica de regras, ronda {n})",
-         "prazo_maximo": "Prazo máximo fixado em {pid} (fábrica de regras, ronda {n})", "contagem_prazo": "Contagem de prazos fixada em {pid} (fábrica de regras, ronda {n})"}
+         "prazo_maximo": "Prazo máximo fixado em {pid} (fábrica de regras, ronda {n})", "contagem_prazo": "Contagem de prazos fixada em {pid} (fábrica de regras, ronda {n})",
+         "agregada": "Limite acumulado fixado em {pid} (fábrica de regras, ronda {n})"}
 # D59: what the rule vocabulary cannot hold. Words of the passage, or of its article's heading, that name a deadline, an
 # anchor, a procedure or a circumstance the schema has no value for. Two readers forced onto the nearest value can replicate
 # each other and both be wrong (round 1: 4 of 4 settled readings were). Checked by code from the text; never by a model.
@@ -491,6 +501,23 @@ def cmd_exam(rounds):
     return tally
 
 
+COMPLIES = {"ge": "lt", "gt": "le", "le": "gt", "lt": "ge"}  # D96: the reading gives the forbidden side, the rule the side that complies
+
+
+def agg_decision(log):
+    """D96: the evento that settled AGG_RULE (the person's approve, or proposal, of how complete an aggregate must be), or None."""
+    rp = log.replay()
+    if rp.state_of("product_rule", AGG_RULE) != "settled":
+        return None
+    return next(ev["id"] for _, ev in reversed(log.events) if ev.get("assertion") == AGG_RULE and ev["action"] in ("propose", "approve", "correct"))
+
+
+def agg_params(p, decided):
+    agg = dict(p["aggregate"], comparator=COMPLIES[p["aggregate"]["comparator"]])
+    return {"window": p["window"], "group_key": sorted(p["group_key"]), "counts": {"fundamento_em": sorted(p["counts"]["fundamento_em"])}, "aggregate": agg,
+            "completeness_threshold": {"ratio": 1.0, "measured_over": "janela", "decided_by": decided}}
+
+
 def cmd_record_v3(n):
     """D66: record a v3 round. A reading the checker refuses is not recorded; a «não tipável» proposal is an assertion of
     type nao_tipavel, settled by leitor:b's blind uphold with the same reason, and then the target's proposed rules are
@@ -552,6 +579,11 @@ def cmd_record_v3(n):
             if recorded_in(store, rid, R["round"]):
                 states.append(log.replay().state_of("regra", rid)); continue
             a = {**a, "conditions": canonA[i]["condicoes"]}
+            if rtype == "agregada":  # D96: the engine's params from the reading (the comparator that complies) and the person's completeness
+                decided = agg_decision(log)
+                if decided is None:
+                    states.append(f"à espera de {AGG_RULE}"); continue
+                a = {**a, "params": agg_params(a["params"], decided)}
             known = log.replay().assertions.get(("regra", rid))
             pay = {"chosen_passages": a["passages"], "conditions": a["conditions"], "params": a["params"], "fontes": {
                        "condicoes": [c["fontes"] for c in A["regras"][i]["condicoes"]], "params": A["regras"][i]["fontes"]},

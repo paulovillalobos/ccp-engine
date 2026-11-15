@@ -16,7 +16,10 @@ Inputs
     entities    entidade objects involved: listed on each verdict without the name of a pessoa_singular (invariant 11)
     documents   documento objects of the unit (for conteudo_obrigatorio)
     coverage    {(adapter_id, "YYYY-MM"): ratio | None} measured source coverage, for aggregate rules
-    aggregates  {rule_id: number} precomputed aggregate values over the group (the window query is B4's; absent -> facto_ausente)
+    aggregates  {rule_id: number} precomputed aggregate values over the group (the window query is B4's; absent -> facto_ausente);
+                D96: for a rule whose completeness is measured over its own window ("janela"), {rule_id: {"sum_min", "sum_max",
+                "sure": [contracts that count], "maybe": [contracts that may], "window", "anchor", "group", "window_text"}}
+                or {"why": (reason, detail)}; the verdict carries them as "aggregate" (rules.aggregate_result decides)
 
 Order (ARQUITECTURA.md §4 layer 6): 1 seletor_regime fixes the regime from the fact it selects by; without that fact every
 other rule is nao_avaliado / facto_ausente. 2 jurisdicao rules whose predicate holds adjust thresholds. 3 simple rules
@@ -157,6 +160,7 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
             return verdicts
         regime_date = value
     applicable = [r for stage in ("jurisdicao", "simples", "agregada") for r in staged[stage] if rules_mod.valid_at(r, regime_date)]
+    by_id = {r["id"]: r for r in applicable}
 
     # 2. jurisdiction effects
     multiplier = 1.0
@@ -175,8 +179,41 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
         if not ok:
             continue
         p, t = r["params"], r["type"]
-        if t == "limiar" and not rules_mod.basis_allows(r, values.get("fundamento_passagens") if isinstance(values.get("fundamento_passagens"), list) else None):
-            continue  # D88: the entity declared another legal basis (material criteria, a special or regional regime): this limit does not judge it
+        if t in ("limiar", "agregada") and not rules_mod.basis_allows(r, values.get("fundamento_passagens") if isinstance(values.get("fundamento_passagens"), list) else None):
+            continue  # D88: the entity declared another legal basis (material criteria, a special or regional regime): this limit does not judge it (D96: nor the cumulative one)
+        by_docs = rules_mod.documents_block(r, values)
+        if by_docs == "skip":
+            continue  # D97: the procedure's own documents state another basis: this limit does not judge it
+        if by_docs:
+            verdicts.append(na(r, by_docs[0], by_docs[1], used_for(cond_fields + [rules_mod.DOCS_FIELD])))
+            continue
+        blocked_by = rules_mod.regime_blocks(r, values)
+        if blocked_by:  # D96: a declared special regime or a special-sector buyer: «não avaliado», with the reason
+            extra = [f for f in (rules_mod.REGIME_FIELD, rules_mod.SECTOR_FIELD) if values.get(f) not in (None, MISSING)]
+            verdicts.append(na(r, blocked_by[0], blocked_by[1], used_for(cond_fields + extra)))
+            continue
+        if t == "agregada" and p["completeness_threshold"]["measured_over"] == "janela":  # D96: the group's sums, the contracts named
+            agg = aggregates.get(r["id"])
+            if not isinstance(agg, dict):
+                verdicts.append(na(r, "facto_ausente", f"the contracts of {p['group_key']} in the window were not given", used_for(cond_fields)))
+                continue
+            if agg.get("why"):
+                verdicts.append(na(r, agg["why"][0], agg["why"][1], used_for(cond_fields)))
+                continue
+            result = rules_mod.aggregate_result(p, agg)
+            a = p["aggregate"]
+            told = (f"{a['op']}({a['field']}) de {len(agg['sure'])} contrato(s) que contam = {agg['sum_min']:.2f}"
+                    + (f" (até {'sem limite' if agg['sum_max'] == float('inf') else format(agg['sum_max'], '.2f')} com {len(agg['maybe'])} incerto(s))" if agg["maybe"] else "")
+                    + f"; cumpre se {a['comparator']} {a['value']:g}; {agg['window_text']}")
+            if result is None:
+                verdicts.append(na(r, "cobertura_insuficiente", told + "; os contratos incertos decidem", used_for(cond_fields)))
+                continue
+            v = done(r, result, told, used_for(cond_fields + list(agg.get("fields", []))))
+            v["aggregate"] = {k: agg[k] for k in ("sum_min", "sum_max", "sure", "maybe", "window", "anchor", "group") if k in agg}
+            if v["aggregate"].get("sum_max") == float("inf"):
+                v["aggregate"]["sum_max"] = None  # an uncertain contract without a price: no upper bound (JSON has no infinity)
+            verdicts.append(v)
+            continue
         if t == "agregada":
             period = valid_at[:7]
             ratios = [coverage.get((a, period)) for a in manifest["adapters"]]
@@ -245,6 +282,12 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
                 verdicts.append(na(r, "facto_ausente", f"elements not extracted: {sorted(set(p['required_elements']) - set(present))}", used))
                 continue
             verdicts.append(done(r, "cumpre", f"elements present: {present}", used + used_for(present)))
+    doc = values.get(rules_mod.DOCS_FIELD)
+    if isinstance(doc, dict) and doc.get("estado") == "verificado":  # D97: the quote of the procedure's own document beside its verdicts
+        for v in verdicts:
+            if v["result"] != "nao_avaliado" and by_id.get(v["rule"]["id"], {}).get("type") in ("limiar", "agregada"):
+                v["prova_documental"] = {k: doc[k] for k in ("citacao", "documento", "pagina", "url") if k in doc}
+                v["facts_used"] = list(dict.fromkeys(v["facts_used"] + used_for([rules_mod.DOCS_FIELD])))
     return most_specific(applicable, verdicts, na)
 
 

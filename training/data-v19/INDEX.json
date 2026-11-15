@@ -1,0 +1,26 @@
+{
+ "tool": "ccp-make-rule-readings-v19-0.1",
+ "protocol": "ccp-read-rules-v3-0.7",
+ "written_rows": 480,
+ "written_by_style": {
+  "w19-agregada": 219,
+  "w19-agregada-mesma": 141,
+  "w19-nega": 120
+ },
+ "v18_rows": 1393,
+ "rejected": 0,
+ "exam_left_out": [
+  "ccp:art113.2"
+ ],
+ "files": {
+  "REJECTED.json": {
+   "rows": 1,
+   "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "regra_lida/train.jsonl": {
+   "rows": 1873,
+   "sha256": "42d3930d709c19a276074728a6911abb7d3688cbe45c44994b67c7e09944fae1"
+  }
+ },
+ "note": "D96: the agregada type on invented articles, each saying in its own words which earlier contracts count; never «consoante o caso»; and data-v18"
+}

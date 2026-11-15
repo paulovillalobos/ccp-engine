@@ -25,6 +25,7 @@ regra.json           a regra que o sistema aplicou e os leitores que a fixaram
 calculo.json         cada passo do motor
 veredicto.json       o resultado guardado, com o manifesto (lei, pacote, commit, registo)
 reproducao.json      o motor corrido de novo sobre os mesmos factos, e se deu o mesmo resultado
+contratos-somados.json  (limite acumulado) cada contrato somado, com o id e a ligação do registo BASE
 reproduzir.sh        como correr o motor no seu computador
 relatorio.json       tudo junto
 `,
@@ -35,6 +36,7 @@ relatorio.json       tudo junto
     "calculo.json": json(v.map((x) => ({ regra: x.regra.id, passos: x.passos }))),
     "veredicto.json": json(v.map(({ passos, regra_completa, leitores, codigo, reproducao, ...rest }) => rest)),
     "reproducao.json": json(v.map((x) => ({ regra: x.regra.id, guardado: x.resultado, ...x.reproducao }))),
+    ...(v.some((x) => x.agregado) ? { "contratos-somados.json": json(v.filter((x) => x.agregado).map((x) => ({ regra: x.regra.id, ...x.agregado }))) } : {}),
     "reproduzir.sh": `#!/bin/sh
 # Corre o motor do CCP Engine sobre o procedimento ${r.procedimento} e mostra o relatório.
 # Precisa de acesso de leitura à base de dados (variáveis em .env, ver deploy/README.md).
@@ -66,7 +68,7 @@ function Step({ s }) {
   return (
     <div className={`trace-row trace-${tone} ${s.decide ? "trace-decide" : ""}`}>
       <Icon icon={s.ok ? "tick" : "cross"} className={s.ok ? "c-ok" : "c-bad"} />
-      <code className="mono">{s.teste}{s.valor != null && <span> · valor: {val(s.valor)}</span>}</code>
+      <code className="mono">{s.url ? <a href={s.url} target="_blank" rel="noopener noreferrer">{s.teste}</a> : s.teste}{s.valor != null && <span> · valor: {val(s.valor)}</span>}</code>
       <span className="trace-effect">{s.efeito}</span>
     </div>
   );

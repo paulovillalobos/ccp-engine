@@ -17,8 +17,54 @@ const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
 const article = (p) => p.replace(/^ccp:art(\d+)\.([a-z])$/, "CCP, art. $1.º, alínea $2)").replace(/^ccp:art(\d+)\.(\d+)$/, "CCP, art. $1.º, n.º $2");
 const show = (f) => (f.campo === "preco_base" ? euro(f.valor) : Array.isArray(f.valor) ? f.valor.map(article).join("; ") : cap(WORDS[f.valor] || String(f.valor).replace(/_/g, " ")));
 
+// D96: the contracts a cumulative limit summed, each one as BASE publishes it.
+function Summed({ a }) {
+  return (
+    <div className="summed">
+      <div className="summed-head">
+        Contratos somados (entidade {a.group.adjudicante}, adjudicatário {a.group.adjudicatario}, de {a.window[0]} até antes de {a.window[1]})
+      </div>
+      <table className="summed-table">
+        <tbody>
+          {a.sure.map((c) => (
+            <tr key={c.id}>
+              <td className="mono"><a href={c.url} target="_blank" rel="noopener noreferrer">BASE {c.id}</a></td>
+              <td className="mono">{c.data_adjudicacao || c.data_celebracao}</td>
+              <td>{c.fundamento}</td>
+              <td className="mono num">{euro(c.preco_contratual)}</td>
+            </tr>
+          ))}
+          <tr className="summed-total"><td colSpan={3}>Soma</td><td className="mono num">{euro(a.sum_min)}</td></tr>
+        </tbody>
+      </table>
+      {a.maybe.length > 0 && <p className="summed-note">{a.maybe.length} contrato(s) incerto(s) não somados (sem NIF, sem fundamento ou sem data de adjudicação).</p>}
+    </div>
+  );
+}
+
+// D96: the engine abstains (a declared special regime, a special-sector buyer): no verdict, the reason instead.
+function Abstained({ v }) {
+  return (
+    <Panel icon="take-action" title="Veredicto" className="edge-neutral">
+      <div className="verdict-top">
+        <Icon icon="disable" size={28} />
+        <div>
+          <h2>Não decidível</h2>
+          <p className="answer-text">{(v.detalhe || "").replace(/ \(product_rule:[^)]*\)/, "").split("; início entre")[0]}</p>
+        </div>
+      </div>
+      <dl className="proof">
+        <dt>Regra</dt><dd className="mono">{v.regra.id}</dd>
+        <dt>Motivo</dt><dd className="mono">{v.motivo}</dd>
+        <dt>Registo</dt><dd className="mono hash">{v.manifesto.registo}</dd>
+      </dl>
+    </Panel>
+  );
+}
+
 function Verdict({ v }) {
   const [open, setOpen] = useState(false);
+  if (v.resultado === "nao_avaliado") return <Abstained v={v} />;
   const bad = v.resultado === "nao_cumpre";
   return (
     <Panel icon="take-action" title="Veredicto" className={bad ? "edge-bad" : "edge-ok"}>
@@ -33,6 +79,14 @@ function Verdict({ v }) {
         «{v.citacao}»
         <cite><Icon icon="book" size={12} /> {article(v.passagem).replace(/^CCP/, "Código dos Contratos Públicos")}</cite>
       </blockquote>
+      {v.prova_documental && (
+        <blockquote className="law doc-proof">
+          «…{v.prova_documental.citacao}…»
+          <cite><Icon icon="document" size={12} /> {v.prova_documental.documento}{v.prova_documental.pagina ? `, p. ${v.prova_documental.pagina}` : ""}
+            {v.prova_documental.url && <> · <a href={v.prova_documental.url} target="_blank" rel="noopener noreferrer">documento</a></>}</cite>
+        </blockquote>
+      )}
+      {v.agregado && <Summed a={v.agregado} />}
       <Button minimal small icon={open ? "chevron-down" : "chevron-right"} text="Ver a prova" onClick={() => setOpen(!open)} className="proof-toggle" />
       <Collapse isOpen={open}>
         <dl className="proof">
@@ -62,7 +116,7 @@ export default function Procedure({ unit }) {
   const fact = (k) => d.factos.find((f) => f.campo === k);
   const nif = fact("adjudicante")?.valor;
   const raw = d.factos[0]?.origem?.raw?.split(":").pop();
-  const worst = d.veredictos.some((v) => v.resultado === "nao_cumpre") ? "nao_cumpre" : d.veredictos.length ? "cumpre" : null;
+  const worst = d.veredictos.some((v) => v.resultado === "nao_cumpre") ? "nao_cumpre" : d.veredictos.some((v) => v.resultado === "cumpre") ? "cumpre" : null;
 
   return (
     <>

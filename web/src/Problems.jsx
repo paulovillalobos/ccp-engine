@@ -18,7 +18,7 @@ export default function Problems({ items }) {
               <td>{v.regra.titulo || v.regra.id}</td>
               <td className="num mono">{p.price || "—"}</td>
               <td className="num mono">{p.limit || "—"}</td>
-              <td><Tag minimal intent={v.resultado === "nao_cumpre" ? "danger" : "success"}>{v.resultado === "nao_cumpre" ? "Não cumpre" : "Cumpre"}</Tag></td>
+              <td><Tag minimal intent={v.resultado === "nao_cumpre" ? "danger" : v.resultado === "cumpre" ? "success" : "none"}>{v.resultado === "nao_cumpre" ? "Não cumpre" : v.resultado === "cumpre" ? "Cumpre" : "Não decidível"}</Tag></td>
             </tr>
           );
         })}

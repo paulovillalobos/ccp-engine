@@ -95,6 +95,8 @@ def verdict_out(doc):
     return {"regra": {**rule_info(doc["rule"]["id"]), "revision": doc["rule"]["revision"]}, "resultado": doc["result"], "motivo": doc.get("reason"),
             "detalhe": doc.get("detail"), "passagem": c.get("passage"), "versao": c.get("version"), "citacao": c.get("quote"),
             "factos_usados": doc.get("facts_used", []), "valido_em": doc.get("valid_at"), "conhecido_em": doc.get("known_at"),
+            **({"agregado": doc["aggregate"]} if doc.get("aggregate") else {}),  # D96: the contracts summed, each with its BASE id
+            **({"prova_documental": doc["prova_documental"]} if doc.get("prova_documental") else {}),  # D97: the procedure's own document
             "manifesto": {"lei": m.get("law_version"), "pacote": m.get("package"), "commit": (m.get("code") or {}).get("commit"),
                           "motor": (m.get("code") or {}).get("engine_version"), "registo": m.get("log_head")}}
 
@@ -143,7 +145,7 @@ def _source(path):
     return inspect.getsource(getattr(rules_mod, path))
 
 
-def _steps(rule, values, result, detail):
+def _steps(rule, values, result, detail, aggregate=None):
     """The calculation as steps, decided by the engine's own functions on the facts the verdict read (rules.holds,
     rules.basis_allows, the limiar comparison of engine/evaluate.py)."""
     import engine.rules as rules_mod
@@ -160,12 +162,55 @@ def _steps(rule, values, result, detail):
         t = p["threshold"]
         steps.append({"teste": f"{t['field']} {t['comparator']} {t['value']:g}", "valor": values.get(t["field"]), "ok": result == "cumpre",
                       "efeito": "cumpre" if result == "cumpre" else "não cumpre", "decide": True})
+    elif rule["type"] == "agregada" and aggregate:  # D96: each contract that counts, then the sum against the limit
+        declared = values.get("fundamento_passagens") if isinstance(values.get("fundamento_passagens"), list) else None
+        steps.append({"teste": "fundamento declarado compatível com " + ", ".join(x["passage"] for x in rule.get("passages", [])),
+                      "valor": declared, "ok": rules_mod.basis_allows(rule, declared), "efeito": "este limite conta"})
+        g = aggregate.get("group") or {}
+        steps.append({"teste": f"contratos da entidade {g.get('adjudicante')} com o adjudicatário {g.get('adjudicatario')}, adjudicados de "
+                               f"{aggregate['window'][0]} até antes de {aggregate['window'][1]}, ao abrigo de "
+                               + ", ".join(p.get("counts", {}).get("fundamento_em", [])), "valor": len(aggregate.get("sure", [])), "ok": True, "efeito": "contam"})
+        for c in aggregate.get("sure", []):
+            steps.append({"teste": f"BASE {c['id']} · {c.get('data_adjudicacao') or c.get('data_celebracao')} · {c.get('fundamento')}",
+                          "valor": c.get("preco_contratual"), "ok": True, "efeito": "soma-se", "url": c.get("url")})
+        a = p["aggregate"]
+        steps.append({"teste": f"soma {aggregate['sum_min']:.2f} {a['comparator']} {a['value']:g}", "valor": aggregate["sum_min"], "ok": result == "cumpre",
+                      "efeito": "cumpre" if result == "cumpre" else "não cumpre", "decide": True})
     else:
         steps.append({"teste": (detail or "").split(";")[0], "valor": None, "ok": result == "cumpre", "efeito": result, "decide": True})
-    window = (detail or "").split("; ", 1)
+    window = (detail or "").split("; ", 1) if rule["type"] != "agregada" else []
     if len(window) == 2:
         steps.insert(len(rule.get("conditions", [])), {"teste": window[1], "valor": None, "ok": True, "efeito": "mesma lei em todas as datas possíveis"})
     return steps
+
+
+def resum(conn, v, again):
+    """D96: the stored aggregate checked against ccp.base_contrato: each contract it sums read again by its BASE id
+    (adjudicante, adjudicatário, preço contratual, fundamentação), the sum recomputed and compared with the limit. The
+    full re-run needs every BASE record of the adjudicante (db/declared.py cache), which the API does not hold."""
+    agg, rule = v["aggregate"], _rule_doc(v["rule"]["id"], v["rule"]["revision"]) or {}
+    ids = [int(c["id"]) for c in agg.get("sure", [])]
+    rows = dict(conn.execute("select id, doc from ccp.base_contrato where id = any(%s)", (ids,)).fetchall()) if ids else {}
+    import declared as declared_mod
+    import fundamento
+    total, wrong = 0.0, []
+    for c in agg.get("sure", []):
+        doc = rows.get(int(c["id"]))
+        if doc is None:
+            wrong.append(f"{c['id']}: não está em ccp.base_contrato")
+            continue
+        r = declared_mod.reduce(int(c["id"]), None, None, base_detail.unpack(bytes(doc)))
+        fp = set(fundamento.passages(r["fund"] or ""))
+        ok = (r["preco"] == c["preco_contratual"] and agg["group"]["adjudicante"] in r["adjudicante"]
+              and r["adjudicatarios"] == [agg["group"]["adjudicatario"]] and fp <= set((rule.get("params") or {}).get("counts", {}).get("fundamento_em", [])))
+        if not ok:
+            wrong.append(f"{c['id']}: o registo BASE não diz o que o veredicto soma")
+        total += r["preco"] or 0
+    import engine.rules as rules_mod
+    res = rules_mod.aggregate_result(rule["params"], {"sum_min": round(total, 2), "sum_max": float("inf") if agg.get("sum_max") is None else agg["sum_max"]}) if rule else None
+    same = not wrong and abs(round(total, 2) - agg["sum_min"]) < 0.005 and res == v["result"]
+    return {"result": v["result"] if same else (again or {}).get("result"), "detail": f"soma recalculada dos {len(ids)} registos BASE: {total:.2f}"
+            + (f"; {'; '.join(wrong)}" if wrong else ""), "how": "agregada: registos BASE relidos"}
 
 
 def relatorio(unit):
@@ -189,6 +234,9 @@ def relatorio(unit):
     now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     rerun, why, how = e["mod"].evaluate_unit(unit, facts, dates, e["rules"], e["window"], now)
     rerun_by = {v["rule"]["id"]: v for v in rerun}
+    for v in stored:  # D96: an aggregate is re-derived from BASE's stored record of each contract it names
+        if v.get("aggregate"):
+            rerun_by[v["rule"]["id"]] = resum(conn, v, rerun_by.get(v["rule"]["id"]))
 
     out = []
     for v in sorted(stored, key=lambda d: d["rule"]["id"]):
@@ -198,7 +246,7 @@ def relatorio(unit):
                     "regra_completa": {k: rule.get(k) for k in ("id", "revision", "type", "title", "conditions", "exceptions", "params", "valid_from", "valid_to", "passages")},
                     "leitores": [{"leitor": r.get("principal"), "familia": r.get("family"), "em": r.get("at"), "evento": r.get("evento"),
                                   "passagens": r.get("chosen_passages")} for r in rule.get("readings", [])],
-                    "passos": _steps(rule, values, v["result"], v.get("detail")),
+                    "passos": _steps(rule, values, v["result"], v.get("detail"), v.get("aggregate")),
                     "codigo": {"commit": serve.COMMIT, "repositorio": serve.REPOSITORY,
                                "ficheiros": ["engine/rules.py", "engine/evaluate.py", "db/run_engine.py"],
                                "funcoes": {n: _source(n) for n in ("applies", "holds", "basis_allows")}},
@@ -217,8 +265,8 @@ def page(query):
     def one(k, default=None):
         return (query.get(k) or [default])[0]
     res = one("resultado")
-    if res not in (None, "cumpre", "nao_cumpre"):
-        raise serve.ApiError(400, "resultado: cumpre ou nao_cumpre")
+    if res not in (None, "cumpre", "nao_cumpre", "nao_avaliado"):
+        raise serve.ApiError(400, "resultado: cumpre, nao_cumpre ou nao_avaliado")
     regra = one("regra")
     if regra is not None and not re.match(r"^regra:[A-Za-z0-9:@._-]{1,160}$", regra):
         raise serve.ApiError(400, "regra: um id de regra")
@@ -237,6 +285,8 @@ def veredictos(query, nif=None):
     where, args = ["v.unit > %s"], [after]
     if res:
         where.append("v.result = %s"); args.append(res)
+    else:  # D96: the stored abstentions (a declared special regime) are listed only when asked for
+        where.append("v.result <> 'nao_avaliado'")
     if regra:
         where.append("v.rule = %s"); args.append(regra)
     if nif:  # D90: the run recorded each verdict's adjudicante

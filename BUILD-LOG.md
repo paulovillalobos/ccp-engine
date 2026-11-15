@@ -2462,3 +2462,25 @@ The first law-watch readers run (12 CCP articles pending) stopped at verify: TRA
 
 - The page loaded in 0.2 s but its two API calls took 90–390 s: Cloud Run kept no instance warm and a new one loads the stores for about 90 s before it answers; warm, each request opened a new TLS connection to Supabase (ThreadingHTTPServer: a thread per request, so a connection per thread was one per request).
 - ccp-api 0.3: one shared read-only connection; the public reads (/v1/veredictos, /v1/estatisticas, /v1/entidades/*, /v1/procedimentos/*) send `Cache-Control: public, max-age=60, s-maxage=600, stale-while-revalidate=86400`, so Vercel's CDN answers them; every other route stays no-store. Cloud Run: --min-instances 1.
+
+## 2026-11-13 — D96: the cumulative limit, declared regimes and special sectors
+- Of the 240 «não cumpre» of corrida:20261113T050644Z, re-run in report mode with the declared facts (db/run_engine.py report --units … --base-cache … --declared --sectors …): 104 stay «não cumpre» (64 at exactly 150 000 €), 136 become «não avaliado» with the reason: the buyer declared a Directive 2014/25/EU activity in its TED notices (Infraestruturas de Portugal 99, Águas de Santarém 9, EEM 7, APS 5, NAV 4, Barreiro 3, Vila Franca de Xira 3, Metropolitano 2, EPAL 1, and three that look mis-declared: Mafra, ISCTE, Ordem dos Contabilistas). The baseline run reproduces the 240.
+- db/declared.py (BASE's records: cache, the regime fact), db/ted_sectors.py (98 952 Portuguese TED notices, 123 buyers with a coded utilities activity), engine/aggregate.py, engine/rules.regime_blocks and aggregate_result, run_engine 0.7 (aggregates over the invitation dates, --units, --preview-rules for reports only), api (the summed contracts, re-read from ccp.base_contrato), web (Summed, Abstained).
+- Round 18 (protocol 0.7, rule-factory@38): art. 113.º n.º 2 at 2018-01-01 and 2026-10-01. First prompts told readers «igual ou superior» → ge while the checker reads «igual ou superior a»: kept as *.attempt1.json, re-asked. leitor:b: four cases each, each counting its own alínea; leitor:a20: «não tipável» (nao_e_agregada) both times. Nothing replicates; nothing recorded.
+- Preview of leitor:b's reading (not settled): 3 «não cumpre» among the 240; of the 227 «over» rows of the art. 113.º demo pages (clients/closer-demo), 13 have earlier contracts that alone reach the demo's limit and the engine confirms 2.
+
+## 2026-11-14/15 — D97: every remaining alert checked in the buyer's own documents
+- adapters/plataformas/check_regime.py read, for the 104 «não cumpre» left by D96, the contract BASE publishes (OCR for scans)
+  and the pieces on acinGov and Vortal: 28 state art. 19.º c) (24 at exactly 150 000 €), 13 the special measures of Lei n.º
+  30/2021 (all labelled «CCP e Lei 30/2021» in BASE; 15 others with that label are general regime), 8 another basis (material
+  criteria, DL 135-A/2017, a concurso público), 55 no basis written. Facts fundamento_nos_documentos (db/declared.py documents),
+  engine/rules.documents_block. 200 documents kept as raws (data/raw/pecas/raw/pecas-check.jsonl; bytes gitignored); BASE's
+  detail responses (a POST) are an index outside the raws (I10). Texts cached in data/pecas-texto/ (gitignored).
+- Product rules settled 2026-11-15 on the person's words: evento:1801 regime-especial-declarado («Estrecha»), evento:1802
+  fundamento-verificado-nos-documentos («Não decidível»), evento:1803 limite-acumulado-completude («Contract by contract»).
+- Facts loaded: the 104 document facts with their raws; regime_declarado only where the declared regime lacks the Code (73 173;
+  the 1.3 M others change no verdict) and atividade_setor_especial (89 826, from 98 952 TED notices).
+- v19 (leitor:a21): data-v19 (tools/make_rule_readings_v19.py: 360 invented agregada articles, each saying in its own words which
+  earlier contracts count, never «consoante o caso»; 120 negatives; and data-v18), trained from v18.
+- The run's record carries nao_decidivel (the stored abstentions) and por_avaliar; the home page shows «Não decidíveis».
+

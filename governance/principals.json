@@ -2012,8 +2012,9 @@
       "versao": 3,
       "code": "tools/serve.py",
       "hash": "29a63371d9464e391d162fd6db690d53fe789038338977e5ba111b4322a65df1",
-      "retired": false,
-      "nota": "D62: accepts the five new facts"
+      "retired": true,
+      "nota": "D62: accepts the five new facts",
+      "retired_at": "2026-11-15T12:45:40Z"
     },
     {
       "id": "ferramenta:rule-factory@5",
@@ -3311,8 +3312,9 @@
       "versao": 14,
       "code": "tools/read_rules_v3.py",
       "hash": "47b578c2665f8da9ef978a80fb5acf3e76edb3852d35b48b1b39bbadf5598536",
-      "retired": false,
-      "nota": "D89: 0.6 resolves «alínea x) do artigo N.º» references"
+      "retired": true,
+      "nota": "D89: 0.6 resolves «alínea x) do artigo N.º» references",
+      "retired_at": "2026-11-13T22:43:52Z"
     },
     {
       "id": "ferramenta:make-rule-readings-v18@1",
@@ -3389,8 +3391,9 @@
       "versao": 37,
       "code": "tools/rule_factory.py",
       "hash": "164e089bebd7b744c04b027498786204fc4b3ccadf12036166e6f4e160557880",
-      "retired": false,
-      "nota": "D89: round 17 proposed by leitor:a20"
+      "retired": true,
+      "nota": "D89: round 17 proposed by leitor:a20",
+      "retired_at": "2026-11-13T22:07:59Z"
     },
     {
       "id": "ferramenta:refresh@3",
@@ -3477,6 +3480,54 @@
       "hash": "ff6baf51129086c43b1bb16fcf574f494b0df4d1b112c278ca0ecd6eebb8ecc4",
       "retired": false,
       "nota": "0.3 D95: an article the page notes REVOGADO is revoked on the page (art. 61)"
+    },
+    {
+      "id": "ferramenta:rule-factory@38",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 38,
+      "code": "tools/rule_factory.py",
+      "hash": "ce27b68312cbcd3ac6c3dcd1769770f9632134eb54bd926739be39f4b3929677",
+      "retired": false,
+      "nota": "D96: round 18, the agregada type (protocol 0.7); records only once product_rule:limite-acumulado-completude is settled"
+    },
+    {
+      "id": "ferramenta:read-rules-v3@15",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 15,
+      "code": "tools/read_rules_v3.py",
+      "hash": "0e89b4943c791bef7dd0378de75a1c493e96fc913db3c2a130b5c9cc065205b2",
+      "retired": false,
+      "nota": "D96: protocol 0.7, the agregada type (schema, prompt, checker); earlier versions render as before"
+    },
+    {
+      "id": "ferramenta:make-rule-readings-v19@1",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 1,
+      "code": "tools/make_rule_readings_v19.py",
+      "hash": "9de74351e16f320a976bd78fb8f7039c993b6fedd71b993b890a8b169ac103ab",
+      "retired": false,
+      "nota": "D96: data-v19, the agregada type (protocol 0.7) on invented articles; never «consoante o caso»; and data-v18"
+    },
+    {
+      "id": "ferramenta:serve@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/serve.py",
+      "hash": "139039bb0b95f3e8200cb7a9bbc9d452ab4c343486a602907449f003c95c33b1",
+      "retired": false,
+      "nota": "the hash registered as serve@3 no longer matched tools/serve.py at HEAD 07e8ecda8; registered again, code unchanged by D96"
     }
   ]
 }

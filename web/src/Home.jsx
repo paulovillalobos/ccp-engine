@@ -9,6 +9,7 @@ import Panel from "./Panel.jsx";
 const VIEW = {
   nao_cumpre: { title: "Contratos que não cumprem", icon: "warning-sign", intent: "danger" },
   cumpre: { title: "Contratos que cumprem", icon: "tick-circle", intent: "success" },
+  nao_avaliado: { title: "Contratos não decidíveis (com o motivo)", icon: "disable", intent: "none" },
   "": { title: "Todos os contratos com veredicto", icon: "database", intent: "none" },
 };
 
@@ -28,7 +29,7 @@ export default function Home({ run }) {
   useEffect(() => { setItems([]); load(null); }, [filter]);
 
   const decided = run ? run.by_result.cumpre + run.by_result.nao_cumpre : 0;
-  const count = run ? { nao_cumpre: run.by_result.nao_cumpre, cumpre: run.by_result.cumpre, "": decided }[filter] : null;
+  const count = run ? { nao_cumpre: run.by_result.nao_cumpre, cumpre: run.by_result.cumpre, nao_avaliado: run.by_result.nao_decidivel, "": decided }[filter] : null;
   const view = VIEW[filter];
 
   return (
@@ -45,6 +46,7 @@ export default function Home({ run }) {
           { key: "", icon: "database", label: "Procedimentos lidos", value: num(run.procedures), onClick: () => setFilter("") },
           { key: "cumpre", icon: "tick-circle", label: "Cumprem", value: num(run.by_result.cumpre), tone: "ok", onClick: () => setFilter("cumpre") },
           { key: "nao_cumpre", icon: "error", label: "Não cumprem", value: num(run.by_result.nao_cumpre), tone: "bad", onClick: () => setFilter("nao_cumpre") },
+          ...(run.by_result.nao_decidivel != null ? [{ key: "nao_avaliado", icon: "disable", label: "Não decidíveis", value: num(run.by_result.nao_decidivel), onClick: () => setFilter("nao_avaliado") }] : []),
         ]} />
       )}
 

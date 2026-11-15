@@ -6,7 +6,7 @@
 
 The container gets the code and the law, the rules and the log of the repository (no raw bytes, no readings: the
 engine reads neither) and the secret ccp-db. The procedure ids are read here, in chunks of CHUNK; each container loads
-the store once (run_engine._init) and evaluates the chunks it is given (run_engine._chunk), at most MAX_CONTAINERS at
+the store once (run_engine._init; D96: with BASE's contract records from the volume, when a settled rule sums contracts) and evaluates the chunks it is given (run_engine._chunk), at most MAX_CONTAINERS at
 a time so Supabase's connection pool is not exhausted. write refuses as run_engine does: the window must be the
 settled product_rule:janela-inicio-procedimento.
 
@@ -45,9 +45,11 @@ for d, ignore in (("engine", []), ("db", []), ("tools", []), ("schemas", []), ("
     image = image.add_local_dir(ROOT / d, f"/root/ccp/{d}", ignore=["**/__pycache__", "**/*.pyc", "**/.env*", *ignore])
 image = image.add_local_file(ROOT / "verify.py", "/root/ccp/verify.py")  # tools/serve.py reads the store through verify's readers
 SECRETS = [modal.Secret.from_name("ccp-db")]
+VOL = modal.Volume.from_name("ccp-raw-bytes")
+BASE_CACHE = "/vol/declared/base_cache.jsonl"  # D96: BASE's contract records (db/declared.py cache) for the agregada rules
 
 
-@app.cls(image=image, secrets=SECRETS, cpu=2, memory=6144, timeout=3600, max_containers=MAX_CONTAINERS)
+@app.cls(image=image, secrets=SECRETS, cpu=2, memory=8192, timeout=3600, max_containers=MAX_CONTAINERS, volumes={"/vol": VOL})
 class Engine:
     write: bool = modal.parameter(default=False)
     commit: str = modal.parameter(default="0000000")  # the repository commit the manifests name (the container has no .git)
@@ -58,7 +60,7 @@ class Engine:
         sys.path[:0] = ["/root/ccp/db", "/root/ccp", "/root/ccp/tools"]  # db first: tools/ has a run_engine.py of its own
         import run_engine
         self.re = run_engine
-        run_engine._init(self.write, self.commit, self.corrida or None)
+        run_engine._init(self.write, self.commit, self.corrida or None, base_cache=BASE_CACHE if os.path.exists(BASE_CACHE) else None)
 
     @modal.method()
     def chunk(self, units: list, windows: list):
@@ -128,7 +130,11 @@ def after_load(full: bool = False, watch: bool = True) -> dict:
     total = conn.execute("select count(*) from ccp.unidade_atual where kind = ccp.n('proc')").fetchone()[0]
     doc = {"window_days": window, "commit": os.environ.get("CCP_COMMIT"), "procedures": total, "modo": report["modo"],
            "avaliados": done, "herdados": carried, "base": None if full else prev[0], "regras": signature, "pendentes": pending,
-           "by_result": {**counts, "nao_avaliado": res.get("nao_avaliado") if full else None}, "decided_by_rule": per, "written": dict(written)}
+           "by_result": {**counts, "nao_avaliado": res.get("nao_avaliado") if full else None,
+                         # D96/D97: the stored abstentions (each with its reason) and the rest of «não avaliado», computed live
+                         "nao_decidivel": counts.get("nao_avaliado", 0),
+                         "por_avaliar": (res.get("nao_avaliado", 0) - counts.get("nao_avaliado", 0)) if full else None},
+           "decided_by_rule": per, "written": dict(written)}
     run_engine.close_run(conn, corrida, doc)
     report.update(corrida=corrida, herdados=carried, by_result=counts)
     print(json.dumps(report, ensure_ascii=False, default=str))
@@ -163,6 +169,8 @@ def main(cmd: str = "report", limit: int = 2000000, window: str = "", full: bool
                           **({"written": dict(written)} if cmd == "write" else {})}, ensure_ascii=False, indent=1))
         if cmd == "write":
             serve_rules = run_engine.load_rules(run_engine.pending_passages(conn))
+            stored = run_engine.run_counts(conn, corrida)
+            res = {**res, "nao_decidivel": stored.get("nao_avaliado", 0), "por_avaliar": res.get("nao_avaliado", 0) - stored.get("nao_avaliado", 0)}
             run_engine.close_run(conn, corrida, {"window_days": w, "commit": commit, "procedures": done, "modo": "completa", "by_result": res,
                                                  "regras": run_engine.rules_signature(serve_rules), "decided_by_rule": per, "written": dict(written)})
             print(f"run {corrida} closed")

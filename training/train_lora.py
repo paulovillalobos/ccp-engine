@@ -93,7 +93,9 @@ RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repea
         "v17": {"adapter": "amalia-ccp-lei-v17", "init": "amalia-ccp-lei-v16",  # D85: contagem_prazo only, on invented articles, plus part of data-v16
                 "data": ["training/data-v17"], "repeat": {}, "sample": {"regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}},
         "v18": {"adapter": "amalia-ccp-lei-v18", "init": "amalia-ccp-lei-v17",  # D89: the two misreadings of round 17's third read
-                "data": ["training/data-v18"], "repeat": {}, "sample": {"regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}}}
+                "data": ["training/data-v18"], "repeat": {}, "sample": {"regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}},
+        "v19": {"adapter": "amalia-ccp-lei-v19", "init": "amalia-ccp-lei-v18",  # D96: the agregada type (protocol 0.7) on invented articles, plus data-v18
+                "data": ["training/data-v19"], "repeat": {}, "sample": {"regra_lida": 1.0}, "hp": {"max_len": 12288, "epochs": 1, "warmup_steps": 10}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,

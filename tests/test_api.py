@@ -75,3 +75,21 @@ def test_report_steps_come_from_the_engine_functions():
     assert other[1]["ok"] is False  # a basis naming another passage: the limit does not count (D88)
     with pytest.raises(serve.ApiError):
         api.relatorio("proc:base:../x")
+
+
+def test_an_aggregate_verdict_shows_and_steps_through_each_contract(monkeypatch):
+    """D96: the contracts a cumulative limit summed reach the API and the report's steps, each with its BASE link."""
+    monkeypatch.setattr(serve, "STORE", FakeStore())
+    agg = {"group": {"adjudicante": "500000001", "adjudicatario": "509000001"}, "window": ["2023-01-01", "2025-05-01"], "anchor": "2025-05-01",
+           "sum_min": 160000.0, "sum_max": 160000.0, "maybe": [],
+           "sure": [{"id": "1", "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=1", "data_adjudicacao": "2023-02-01",
+                     "fundamento": "Artigo 19.º, alínea c)", "preco_contratual": 100000.0},
+                    {"id": "2", "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=2", "data_adjudicacao": "2025-01-10",
+                     "fundamento": "Artigo 19.º, alínea c)", "preco_contratual": 60000.0}]}
+    out = api.verdict_out({**DOC, "aggregate": agg})
+    assert out["agregado"]["sum_min"] == 160000.0 and len(out["agregado"]["sure"]) == 2
+    rule = {"id": "regra:x@v1", "type": "agregada", "conditions": [], "passages": [{"passage": "ccp:art113.2"}, {"passage": "ccp:art19.c"}],
+            "params": {"counts": {"fundamento_em": ["ccp:art19.c"]}, "aggregate": {"field": "preco_contratual", "op": "sum", "comparator": "lt", "value": 150000}}}
+    steps = api._steps(rule, {"fundamento_passagens": ["ccp:art19.c"]}, "nao_cumpre", "x", agg)
+    assert [s.get("url") for s in steps if s.get("url")] == [c["url"] for c in agg["sure"]]
+    assert steps[-1]["decide"] and steps[-1]["valor"] == 160000.0 and not steps[-1]["ok"]

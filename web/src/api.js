@@ -38,6 +38,17 @@ export const num = (n) => Number(n).toLocaleString("pt-PT");
 
 // The verdict in one plain sentence. A limiar detail reads «preco_base=350000 lt 150000; …».
 export function plain(v) {
+  if (v.resultado === "nao_avaliado") // D96/D97: an abstention, in its own words
+    return { text: (v.detalhe || "").replace(/ \(product_rule:[^)]*\)/, "").split("; início entre")[0] };
+  const a = v.agregado; // D96: a cumulative limit (CCP art. 113.º n.º 2): the contracts already adjudicated to the same entity
+  if (a) {
+    const lim = /cumpre se \w+ ([\d.]+)/.exec(v.detalhe || "");
+    const limit = lim ? euro(lim[1]) : "o limite";
+    const n = a.sure.length;
+    return v.resultado === "nao_cumpre"
+      ? { text: `A entidade já tinha adjudicado ${euro(a.sum_min)} ao mesmo adjudicatário em ${n} contrato${n === 1 ? "" : "s"} (de ${a.window[0]} a ${a.window[1]}). A lei não deixa convidá-lo a partir de ${limit}.` }
+      : { text: `Ao mesmo adjudicatário, ${euro(a.sum_min)} em ${n} contrato${n === 1 ? "" : "s"} anteriores: abaixo de ${limit}.` };
+  }
   const m = /^preco_base=([\d.]+) lt ([\d.]+)/.exec(v.detalhe || "");
   if (m) {
     const [price, limit] = [euro(m[1]), euro(m[2])];

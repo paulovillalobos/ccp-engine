@@ -7816,6 +7816,16 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:fundamento-verificado-nos-documentos": {
+      "events": [
+        1802
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:janela-inicio-procedimento": {
       "events": [
         1799
@@ -7856,6 +7866,16 @@
       "revision": 1,
       "state": "settled"
     },
+    "product_rule|product_rule:limite-acumulado-completude": {
+      "events": [
+        1803
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
     "product_rule|product_rule:nao-tipavel-qualquer-motivo": {
       "events": [
         1723
@@ -7869,6 +7889,16 @@
     "product_rule|product_rule:principais-do-log": {
       "events": [
         1
+      ],
+      "family": null,
+      "proposer": "pessoa:paulo",
+      "reviews": [],
+      "revision": 1,
+      "state": "settled"
+    },
+    "product_rule|product_rule:regime-especial-declarado": {
+      "events": [
+        1801
       ],
       "family": null,
       "proposer": "pessoa:paulo",
@@ -9893,6 +9923,6 @@
   },
   "disputes": {},
   "errors": [],
-  "events": 1800,
-  "head": "d0b90622e486bed8996ca42a9778e49af4822ed4ee80693edb660569d1b0baf5"
+  "events": 1803,
+  "head": "5cd57ffd4fc31b4cb05a3cf0093fcc8c6a6745c435e168303da580e7fbc48fef"
 }

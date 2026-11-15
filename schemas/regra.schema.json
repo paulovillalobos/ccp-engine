@@ -52,13 +52,14 @@
         "required_elements": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
         "document_piece": {"type": "string", "enum": ["programa_procedimento", "caderno_encargos", "convite", "anuncio", "outro"]},
         "forbidden": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/condition"}, "minItems": 1, "description": "If all hold, the rule is breached."},
-        "window": {"type": "object", "properties": {"length": {"type": "integer", "minimum": 1}, "unit": {"type": "string", "enum": ["anos", "meses", "dias"]}, "anchor": {"$ref": "defs.schema.json#/$defs/canonical_field"}}, "required": ["length", "unit", "anchor"], "additionalProperties": false},
+        "window": {"type": "object", "properties": {"length": {"type": "integer", "minimum": 1}, "unit": {"type": "string", "enum": ["anos", "meses", "dias", "anos_economicos"], "description": "D96: anos_economicos, the calendar year of the anchor and length-1 years before it"}, "anchor": {"$ref": "defs.schema.json#/$defs/canonical_field"}}, "required": ["length", "unit", "anchor"], "additionalProperties": false},
         "group_key": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "minItems": 1},
+        "counts": {"type": "object", "description": "D96: the earlier contracts an agregada rule counts: those whose declared basis names these passages and no other", "properties": {"fundamento_em": {"type": "array", "items": {"$ref": "defs.schema.json#/$defs/id_passagem"}, "minItems": 1}}, "required": ["fundamento_em"], "additionalProperties": false},
         "aggregate": {"type": "object", "properties": {"field": {"$ref": "defs.schema.json#/$defs/canonical_field"}, "op": {"type": "string", "enum": ["sum", "count"]}, "comparator": {"type": "string", "enum": ["lt", "le", "gt", "ge"]}, "value": {"type": "number"}}, "required": ["field", "op", "comparator", "value"], "additionalProperties": false},
         "completeness_threshold": {
           "type": "object",
           "description": "Invariant 12: a product rule, decided by a person in the log. Below it the aggregate rule answers cobertura_insuficiente.",
-          "properties": {"ratio": {"type": "number", "minimum": 0, "maximum": 1}, "measured_over": {"type": "string", "enum": ["mes", "trimestre", "ano"]}, "decided_by": {"$ref": "defs.schema.json#/$defs/id_evento"}},
+          "properties": {"ratio": {"type": "number", "minimum": 0, "maximum": 1}, "measured_over": {"type": "string", "enum": ["mes", "trimestre", "ano", "janela"], "description": "D96: janela, completeness judged contract by contract in the group's own window (engine/aggregate.py: sum_min and sum_max), ratio 1"}, "decided_by": {"$ref": "defs.schema.json#/$defs/id_evento"}},
           "required": ["ratio", "measured_over", "decided_by"],
           "additionalProperties": false
         },
