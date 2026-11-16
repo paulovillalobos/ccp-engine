@@ -104,7 +104,8 @@ def load(conn, data, year=None):
         if cid in rows and rows[cid][0] <= y:
             continue
         rows[cid] = (y, pack(detail(rec)))
-    with conn.cursor() as cur:
+    # One transaction: the daily run's connection is in autocommit, where "on commit drop" would drop _bc right after create.
+    with conn.transaction(), conn.cursor() as cur:
         cur.execute("create temp table if not exists _bc (id bigint, ano smallint, raw text, doc bytea) on commit drop")
         with cur.copy("copy _bc (id, ano, raw, doc) from stdin") as cp:
             for cid, (y, doc) in rows.items():
@@ -115,7 +116,8 @@ def load(conn, data, year=None):
                          doc = excluded.doc, recorded_at = now()
                        where ccp.base_contrato.doc is distinct from excluded.doc and excluded.ano <= ccp.base_contrato.ano""")
         n = cur.rowcount
-    conn.commit()
+    if not conn.autocommit:
+        conn.commit()
     return {"records": len(rows), "written": n}
 
 
