@@ -32,6 +32,11 @@ def daily(only: str = "base,dr,ted", dr_limit: int = 300, ted_limit: int = 10) -
         volume.commit()
     # D92: then the law watch and the day's engine run (db/modal_engine.py after_load, deployed as ccp-engine-run)
     call = modal.Function.from_name("ccp-engine-run", "after_load").spawn()
+    # A source that failed fails the run (after the other sources and the engine run went ahead), so Modal shows it red:
+    # from 2026-11-04 to 11-16 the BASE step failed every day inside a run Modal showed as succeeded.
+    failed = sorted(s for s, st in result.items() if st == "error")
+    if failed:
+        raise RuntimeError(f"ccp daily: {', '.join(failed)} failed (ccp.ingesta has the trace); after_load {call.object_id} still ran")
     return {"ingesta": result, "after_load": call.object_id}
 
 

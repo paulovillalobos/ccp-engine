@@ -33,13 +33,25 @@ sys.path.insert(0, str(ROOT))
 from engine import schema  # noqa: E402
 from engine.canon import canonical, content_hash, sha256_bytes  # noqa: E402
 
-VERSION = "base-contratos-adapter-0.1"
+VERSION = "base-contratos-adapter-0.2"
 SOURCE, SOURCE_MOD, SOURCE_ENT = "base-contratos", "base-modificacoes", "base-entidades"
 TOOL = "adapter-base-contratos"
 MEMBER = "Contratos2026.json"
 MAPPING = json.loads((HERE / "mapping.json").read_text(encoding="utf-8"))
 ROWS = {m["canonical_field"]: m for m in MAPPING["adaptador"]["mapping"]}
 NIF_NAME = re.compile(r"([0-9]{9}) - .+")
+NIF = re.compile(r"[0-9]{9}")
+
+
+def entity_nif(x):
+    """The NIF of one entity of a BASE record, or None. Dumps up to 2026-11-03 give "NIF - name"; from 2026-11-04 an object
+    {nifEntContrato, descEntContrato, codPaisEntContrato, ...}. Both shapes give the same answer: nine digits, else None
+    (a foreign or unknown NIF is "-" in both)."""
+    if isinstance(x, dict):
+        n = str(x.get("nifEntContrato") or "").strip()
+        return n if NIF.fullmatch(n) else None
+    m = NIF_NAME.fullmatch(x) if isinstance(x, str) else None
+    return m.group(1) if m else None
 
 
 def records(text):
@@ -119,8 +131,8 @@ def contract_values(rec):
     v = money(rec.get("precoBaseProcedimento"))
     (got.__setitem__("preco_base", (v, "precoBaseProcedimento")) if v is not None else why.__setitem__("preco_base", "0 or absent"))
     adj = rec.get("adjudicante") or []
-    mm = NIF_NAME.fullmatch(adj[0]) if len(adj) == 1 else None
-    (got.__setitem__("adjudicante", (mm.group(1), "adjudicante")) if mm else why.__setitem__("adjudicante", "not one 'NIF - name'"))
+    nif = entity_nif(adj[0]) if len(adj) == 1 else None
+    (got.__setitem__("adjudicante", (nif, "adjudicante")) if nif else why.__setitem__("adjudicante", "not one 'NIF - name'"))
     tipos, tm = rec.get("tipoContrato") or [], ROWS["tipo_contrato"]["enum_map"]
     if len(tipos) == 1 and tipos[0] in tm:
         got["tipo_contrato"] = (tm[tipos[0]], "tipoContrato")
@@ -133,9 +145,9 @@ def contract_values(rec):
     d = date_pt(rec.get("dataPublicacao"))
     (got.__setitem__("data_publicacao_contrato", (d, "dataPublicacao")) if d else why.__setitem__("data_publicacao_contrato", "not a date"))
     adjs = rec.get("adjudicatarios") or []
-    nifs = [NIF_NAME.fullmatch(a) for a in adjs]
+    nifs = [entity_nif(a) for a in adjs]
     if adjs and all(nifs):
-        got["adjudicatario"] = ([x.group(1) for x in nifs], "adjudicatarios")
+        got["adjudicatario"] = (nifs, "adjudicatarios")
     else:
         why["adjudicatario"] = "an adjudicatário without NIF ('-')" if adjs else "empty list"
     return got, why

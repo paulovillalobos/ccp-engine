@@ -1704,8 +1704,9 @@
       "versao": 1,
       "code": "adapters/base-contratos/adapter.py",
       "hash": "0f4a52c364e30d7368446bc4408781d9c55be9949bd2e03d23fc5e093d3e7eec",
-      "retired": false,
-      "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)"
+      "retired": true,
+      "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)",
+      "retired_at": "2026-11-16T22:58:38Z"
     },
     {
       "id": "ferramenta:adapter-base-anuncios@3",
@@ -3528,6 +3529,18 @@
       "hash": "139039bb0b95f3e8200cb7a9bbc9d452ab4c343486a602907449f003c95c33b1",
       "retired": false,
       "nota": "the hash registered as serve@3 no longer matched tools/serve.py at HEAD 07e8ecda8; registered again, code unchanged by D96"
+    },
+    {
+      "id": "ferramenta:adapter-base-contratos@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "adapters/base-contratos/adapter.py",
+      "hash": "cf1a98ce172005330124fa1c6da81eb18201384b437eb8b3743249d43681d03b",
+      "retired": false,
+      "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)"
     }
   ]
 }
