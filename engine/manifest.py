@@ -14,6 +14,7 @@ VERSION = "ccp-manifest-0.1"
 FIELDS = ("law_version", "package", "adapters", "source_snapshots", "code", "log_head", "produced_at")
 LISTS = ("adapters", "source_snapshots")
 CODE_KEYS = ("repository", "commit", "engine_version")
+PLACEHOLDER = "0" * 64  # D98: not the hash of anything read; a manifest carrying it is incomplete
 
 
 def is_complete(manifest) -> list:
@@ -24,6 +25,13 @@ def is_complete(manifest) -> list:
     code = manifest.get("code")
     if isinstance(code, dict):
         missing += [f"code.{k}" for k in CODE_KEYS if not code.get(k)]
+    for i, s in enumerate(manifest.get("source_snapshots") or []):  # D98: a snapshot names a source and the hash of what was read
+        if not isinstance(s, dict):
+            missing.append(f"source_snapshots[{i}]")
+            continue
+        h = s.get("sha256")
+        if not s.get("source") or not s.get("captured_at") or not (isinstance(h, str) and len(h) == 64 and all(c in "0123456789abcdef" for c in h)) or h == PLACEHOLDER:
+            missing.append(f"source_snapshots[{i}]")
     return missing
 
 

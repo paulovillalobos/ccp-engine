@@ -156,11 +156,42 @@ def aggregates_for(unit_id, facts, rules, lo, hi):
     return out
 
 
-def evaluate_unit(unit_id, facts, dates, rules, window, now):
-    """(verdicts, why none, how): the engine on each date the start may fall on; one result per (type, field) or none."""
+def raws_of(conn, raw_ids):
+    """D98: {raw id: (source, sha256, captured_at)} of the official records the facts were read from (ccp.raw)."""
+    if not raw_ids:
+        return {}
+    return {i: (s, h, c.strftime("%Y-%m-%dT%H:%M:%SZ") if hasattr(c, "strftime") else str(c))
+            for i, s, h, c in conn.execute("select id, source, sha256, captured_at from ccp.raw where id = any(%s)", (list(raw_ids),)).fetchall()}
+
+
+def snapshots(facts, raws):
+    """D98: one snapshot per official record a fact was read from, with the record's own hash and capture time. A fact
+    whose record is unknown, or a record without a real hash, leaves the manifest incomplete: (None, why)."""
+    ids = sorted({f["origin"]["raw"] for f in facts if (f.get("origin") or {}).get("raw")})
+    if not ids:
+        return None, "sem registo oficial: nenhum facto aponta para um raw"
+    lost = [i for i in ids if i not in raws or not raws[i][1] or raws[i][1] == manifest_mod.PLACEHOLDER]
+    if lost:
+        return None, f"registo sem hash real: {', '.join(lost[:3])}" + (f" (+{len(lost) - 3})" if len(lost) > 3 else "")
+    return [{"source": raws[i][0], "sha256": raws[i][1], "captured_at": raws[i][2], "raw": i} for i in ids], None
+
+
+def evaluate_unit(unit_id, facts, dates, rules, window, now, raws=None):
+    """(verdicts, why none, how): the engine on each date the start may fall on; one result per (type, field) or none.
+    D98: raws = raws_of(...) for the facts' records; the manifest names every one with its real hash; a bad date or an
+    unknown record gives no verdict and a reason, never a crash."""
+    try:
+        return _evaluate_unit(unit_id, facts, dates, rules, window, now, raws or {})
+    except evaluate_mod.EvaluateError as e:
+        return [], f"entrada inválida: {e}", None
+
+
+def _evaluate_unit(unit_id, facts, dates, rules, window, now, raws):
     known_at = max((f["known_at"] for f in facts), default=now)
-    raws = sorted({f["origin"]["raw"] for f in facts if (f.get("origin") or {}).get("raw")})
-    snaps = [{"source": r.split(":")[1], "sha256": "0" * 64, "captured_at": known_at} for r in raws[:1]] or [{"source": "ccp", "sha256": "0" * 64, "captured_at": known_at}]
+    snaps, why = snapshots(facts, raws)
+    if snaps is None:
+        return [], why, None
+    snaps = [{k: s[k] for k in ("source", "sha256", "captured_at")} for s in snaps]
     unit = {"id": unit_id, "revision": 1, "kind": "proc"}
     by_id = {r["id"]: r for r in rules}
 
@@ -177,8 +208,13 @@ def evaluate_unit(unit_id, facts, dates, rules, window, now):
     aggs = {}
     # every fact counts as of the latest date it is valid (the start only chooses the rules)
     facts_at = max([f["valid_at"] for f in facts if f.get("valid_at")] + ([upper.isoformat()] if upper else []), default=now[:10])
+    facts_at = min(facts_at, now[:10])  # D98: a fact valid after today is not read; nothing from the future judges a procedure
     start = next((f["value"] for f in facts if f["field"] == START), None)
-    if isinstance(start, str) and serve.DATE.match(start):
+    if start is not None and (not isinstance(start, str) or not serve.DATE.match(start) or iso(start) is None):
+        return [], f"{START} ilegível: {start!r}", None  # D98: "2026-13-45" matches the pattern but is no date
+    if start is not None and upper and iso(start) > upper:
+        return [], f"{START} {start} depois do primeiro ato datado ({upper}): impossível", None
+    if isinstance(start, str):
         if upper:  # D96: the invitation falls between the start and the earliest dated act
             aggs.update(aggregates_for(unit_id, facts, rules, min(iso(start), upper), upper))
         return run(start), None, "data_inicio_procedimento"
@@ -341,6 +377,7 @@ def _chunk(job):
     units, windows = job
     conn, rules = _W["conn"], _W["rules"]
     facts, dates = facts_of(conn, units), child_dates(conn, units)
+    raws = raws_of(conn, {(f.get("origin") or {}).get("raw") for fs in facts.values() for f in fs} - {None})  # D98
     out = {w: (collections.Counter(), collections.Counter(), collections.Counter()) for w in windows}
     written = collections.Counter()
     for w in windows:
@@ -351,7 +388,11 @@ def _chunk(job):
             if _W.get("declared") is not None:  # D96 (report only): the declared facts not yet stored
                 have = {f["field"] for f in fs}
                 fs = fs + [f for f in _W["declared"].get(u, []) if f["field"] not in have]
-            verdicts, why, h = evaluate_unit(u, fs, dates.get(u, []), rules, w, _W["now"])
+            try:
+                verdicts, why, h = evaluate_unit(u, fs, dates.get(u, []), rules, w, _W["now"], raws)
+            except Exception as e:  # noqa: BLE001  D98: one procedure's bad data never stops the run; it is counted
+                verdicts, why, h = [], f"erro: {type(e).__name__}", None
+                print(f"{u}: {type(e).__name__}: {e}", file=sys.stderr)
             if why:
                 why_none[why] += 1
             if h:

@@ -2484,3 +2484,24 @@ The first law-watch readers run (12 CCP articles pending) stopped at verify: TRA
   earlier contracts count, never «consoante o caso»; 120 negatives; and data-v18), trained from v18.
 - The run's record carries nao_decidivel (the stored abstentions) and por_avaliar; the home page shows «Não decidíveis».
 
+
+## 2026-11-17 — D98: bad input abstains, sources that disagree conflict, the manifest names what was read
+- Break test (foaap-core clients/CCP-ENGINE-BREAK-2026-11-17.md): 15 failures; this entry fixes 1–7.
+- engine/rules: `in` against a string is membership in a one-value list (R1/R2's «in "obras"» matched "" and "o"); order
+  comparisons refuse bools, NaN and infinity (`comparable`); `amount` = a finite number >= 0, not a bool; aggregate_result
+  decides nothing on an unreadable sum.
+- engine/evaluate: a limiar value that is not an amount (text, None, bool, negative, NaN, inf) is nao_avaliado /
+  facto_ausente, never nao_cumpre; a proibicao condition that cannot be read is nao_avaliado, never cumpre; prazo days
+  must be an amount; valid_at and rules_at must be ISO dates (a non-ISO date picked the wrong rules silently).
+- engine/evaluate.read_facts: the latest fact of each adapter is that source's value; sources whose latest values differ,
+  or one source with two values at the same instant, read as Conflict (conflito:auto:<field>) unless `conflicts`
+  resolves them. On the store of 2026-11-17 no unit-field has two current values, so no stored verdict changes.
+- engine/manifest.is_complete refuses a snapshot that is not an object, lacks source or captured_at, or carries a hash that
+  is not 64 hex digits or is the all-zero placeholder.
+- db/run_engine: raws_of + snapshots: one snapshot per official record the facts came from, with ccp.raw's sha256 and
+  captured_at (was: the first record only, hash 0…0, captured_at = the fact's known_at); a unit with a record unknown or
+  without a hash gets no verdict and the reason. facts_at is capped at the run's date. data_inicio_procedimento that is
+  no date, or after the first dated act, gives no verdict and the reason. One unit's error never stops a chunk.
+  db/api.relatorio passes the raws to the re-run. tools/measure and tools/serve hash the facts they read instead of 0…0.
+- Report mode on the 28 stored alerts: the same 28 nao_cumpre; their manifests now carry the records' real hashes. The
+  stored verdicts keep their old manifests until a governed rewrite (new revisions).

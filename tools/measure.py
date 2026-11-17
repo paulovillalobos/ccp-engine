@@ -178,10 +178,11 @@ def wilson(k, n, z=1.959964):
 
 def engine_result(store, unit, rule, vals):
     start = vals.get("data_inicio_procedimento", KNOWN_AT[:10])
+    facts = facts_of(store, unit["id"], known_at=KNOWN_AT)
     manifest = manifest_mod.build("lei:ccp@measure", "pacote:ccp@measure", ["adaptador:fixture-measure@1"],
-                                  [{"source": "fixture-measure", "sha256": "0" * 64, "captured_at": KNOWN_AT}],
+                                  [{"source": "fixture-measure", "sha256": sha256_text(canonical(facts)), "captured_at": KNOWN_AT}],  # D98: the hash of the facts read
                                   {"repository": "measure", "commit": "0000000", "engine_version": evaluate_mod.VERSION}, "0" * 64, KNOWN_AT)
-    out = evaluate_mod.evaluate(unit, [rule], facts_of(store, unit["id"], known_at=KNOWN_AT), KNOWN_AT, start, manifest=manifest)
+    out = evaluate_mod.evaluate(unit, [rule], facts, KNOWN_AT, start, manifest=manifest)
     v = next((x for x in out if x["rule"]["id"] == rule["id"]), None)
     return v["result"] if v else "nao_aplica"
 

@@ -179,7 +179,7 @@ def verificar(body):
         return {"procedimento": unit["id"], "regime": {"data_inicio": start, "como": how}, "veredictos": [], "nota": how}
     rules, _ = verify.package_rules(STORE, package)
     rules = [r for r in rules if "proc" in r["applies_to"]]
-    manifest = manifest_mod.build(law_version, package, adapters or ["adaptador:pedido@1"], snaps or [{"source": "pedido", "sha256": "0" * 64, "captured_at": now}],
+    manifest = manifest_mod.build(law_version, package, adapters or ["adaptador:pedido@1"], snaps or [{"source": "pedido", "sha256": sha256_text(canonical(facts)), "captured_at": now}],  # D98: the facts read, never a placeholder
                                   {"repository": REPOSITORY, "commit": COMMIT, "engine_version": evaluate_mod.VERSION}, head(STORE.events), known_at)
     out = evaluate_mod.evaluate(unit, rules, facts, known_at, start, manifest=manifest, assertions=assertions)
     by_id = {r["id"]: r for r in rules}

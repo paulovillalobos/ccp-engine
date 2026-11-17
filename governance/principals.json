@@ -1052,7 +1052,8 @@
       "versao": 6,
       "code": "tools/measure.py",
       "hash": "81270778f59c7012bc2a1c965e26f36dbf845ad5f7c52d280a3ff570e4fd342d",
-      "retired": false
+      "retired": true,
+      "retired_at": "2026-11-17T10:38:31Z"
     },
     {
       "id": "ferramenta:read-rules@8",
@@ -3528,8 +3529,9 @@
       "versao": 4,
       "code": "tools/serve.py",
       "hash": "139039bb0b95f3e8200cb7a9bbc9d452ab4c343486a602907449f003c95c33b1",
-      "retired": false,
-      "nota": "the hash registered as serve@3 no longer matched tools/serve.py at HEAD 07e8ecda8; registered again, code unchanged by D96"
+      "retired": true,
+      "nota": "the hash registered as serve@3 no longer matched tools/serve.py at HEAD 07e8ecda8; registered again, code unchanged by D96",
+      "retired_at": "2026-11-17T10:38:31Z"
     },
     {
       "id": "ferramenta:adapter-base-contratos@2",
@@ -3567,6 +3569,30 @@
       "hash": "52d45bce269c452e5a894f807c9fe7c2a79a3eb9456cddfdcc9cb7cf6a42ad4f",
       "retired": false,
       "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
+    },
+    {
+      "id": "ferramenta:serve@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/serve.py",
+      "hash": "884cb7899cc14117bbb072bec28eac9a3db5aec487768cd4f2de1a01ee8d791c",
+      "retired": false,
+      "nota": "D98: hashes the facts it reads instead of a placeholder"
+    },
+    {
+      "id": "ferramenta:measure@7",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 7,
+      "code": "tools/measure.py",
+      "hash": "477b095a7dc33d45dc3cb5a25180d9d08cfbbfc8cccf2171d2f5ad3bf56cce3c",
+      "retired": false,
+      "nota": "D98: hashes the facts it reads instead of a placeholder"
     }
   ]
 }

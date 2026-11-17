@@ -232,7 +232,8 @@ def relatorio(unit):
     e = _engine()
     dates = e["mod"].child_dates(conn, [unit]).get(unit, [])
     now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    rerun, why, how = e["mod"].evaluate_unit(unit, facts, dates, e["rules"], e["window"], now)
+    rerun, why, how = e["mod"].evaluate_unit(unit, facts, dates, e["rules"], e["window"], now,
+                                             {r["id"]: (r.get("source"), r.get("sha256"), r.get("captured_at")) for r in raws})  # D98: real hashes
     rerun_by = {v["rule"]["id"]: v for v in rerun}
     for v in stored:  # D96: an aggregate is re-derived from BASE's stored record of each contract it names
         if v.get("aggregate"):

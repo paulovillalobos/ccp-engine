@@ -71,6 +71,20 @@ def valid_at(rule, date: str) -> bool:
     return rule["valid_from"] <= date and (rule["valid_to"] is None or date < rule["valid_to"])
 
 
+def comparable(x) -> bool:
+    """D98: a value an order comparison may read: a finite int or float that is not a bool, or a string (dates)."""
+    if isinstance(x, bool):
+        return False
+    if isinstance(x, (int, float)):
+        return x == x and x not in (float("inf"), float("-inf"))
+    return isinstance(x, str)
+
+
+def amount(x) -> bool:
+    """D98: a money value or a number of days a limiar or prazo rule may judge: a finite number >= 0 that is not a bool."""
+    return isinstance(x, (int, float)) and comparable(x) and x >= 0
+
+
 def holds(condition, facts) -> "bool | None":
     """facts: {field: value}; a field whose value is MISSING (absent) or a Conflict yields None."""
     value = facts.get(condition["field"], MISSING)
@@ -81,6 +95,10 @@ def holds(condition, facts) -> "bool | None":
         return True
     if op == "absent":
         return False
+    if op in ("in", "not_in") and isinstance(ref, str):
+        ref = [ref]  # D98: «in "obras"» is membership in a one-value list, never a substring test ("" and "o" are not "obras")
+    if op in ("lt", "le", "gt", "ge") and not (comparable(value) and comparable(ref)):
+        return None  # D98: a bool, NaN or infinity is not an amount, a count or a date: the rule cannot read it
     try:
         return {"eq": lambda: value == ref, "ne": lambda: value != ref, "lt": lambda: value < ref, "le": lambda: value <= ref,
                 "gt": lambda: value > ref, "ge": lambda: value >= ref, "in": lambda: value in ref, "not_in": lambda: value not in ref}[op]()
@@ -189,7 +207,11 @@ def aggregate_result(p, agg):
     sum_max every contract that may count. comparator/value say when the rule is complied with (cumpre). Returns
     "cumpre" when even sum_max complies, "nao_cumpre" when even sum_min does not, None when the uncertain contracts decide."""
     ok_min = holds({"field": "_v", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_v": agg["sum_min"]})
-    ok_max = holds({"field": "_v", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_v": agg["sum_max"]})
+    ok_max = True if agg["sum_max"] == float("inf") and p["aggregate"]["comparator"] in ("gt", "ge") else \
+        False if agg["sum_max"] == float("inf") else \
+        holds({"field": "_v", "op": p["aggregate"]["comparator"], "value": p["aggregate"]["value"]}, {"_v": agg["sum_max"]})
+    if ok_min is None or ok_max is None:
+        return None  # D98: a sum the comparison cannot read decides nothing
     if ok_max:
         return "cumpre"
     if not ok_min:

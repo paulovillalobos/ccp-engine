@@ -46,13 +46,32 @@ def _ident(x: str) -> str:
     return x.replace(":", "-")
 
 
+def _iso_date(d) -> bool:
+    import datetime
+    try:
+        return isinstance(d, str) and len(d) >= 10 and d[4] == "-" and d[7] == "-" and bool(datetime.date.fromisoformat(d[:10]))
+    except ValueError:
+        return False
+
+
 def read_facts(facts, known_at, valid_at, conflicts=()):
     """Latest value per field among facts known by known_at and valid by valid_at; a conflicted field reads as Conflict.
-    Returns ({field: value}, {field: facto id})."""
-    chosen, ids = {}, {}
+    D98: the latest fact of each source (adapter) is that source's value; when the sources' latest values differ, or one
+    source gives two values at the same instant, the field reads as Conflict (conflito:auto:<field>) unless `conflicts`
+    resolves it: no source silently overrides another. Returns ({field: value}, {field: facto id})."""
+    chosen, ids, per_source = {}, {}, {}
     for f in sorted(facts, key=lambda f: (f["valid_at"], f["known_at"], f["id"])):
         if f["known_at"] <= known_at and f["valid_at"] <= valid_at:
             chosen[f["field"]], ids[f["field"]] = f["value"], f["id"]
+            src = per_source.setdefault(f["field"], {})
+            prev = src.get(f.get("adapter"))
+            same_instant = prev is not None and (prev["valid_at"], prev["known_at"]) == (f["valid_at"], f["known_at"])
+            src[f.get("adapter")] = {**f, "_also": (prev["_also"] if same_instant else []) + ([canonical(prev["value"])] if same_instant else [])}
+    resolved = {c["field"] for c in conflicts}
+    for field, src in per_source.items():
+        seen = {canonical(f["value"]) for f in src.values()} | {v for f in src.values() for v in f["_also"]}
+        if len(seen) > 1 and field not in resolved:
+            chosen[field], ids[field] = Conflict(f"conflito:auto:{field}"), None
     for c in conflicts:
         if c["resolution"]["kind"] == "nao_avaliado":
             chosen[c["field"]] = Conflict(c["id"])
@@ -131,6 +150,9 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
     missing = manifest_mod.is_complete(manifest)
     if missing:
         raise EvaluateError(f"incomplete manifest: {missing}")
+    for d in (valid_at, rules_at):  # D98: dates are compared as text; a non-ISO date would pick the wrong rules silently
+        if d is not None and not _iso_date(d):
+            raise EvaluateError(f"not an ISO date (YYYY-MM-DD): {d!r}")
     staged = rules_mod.order(rules)
     values, fact_ids = read_facts(facts, known_at, valid_at, conflicts)
     coverage = coverage or {}
@@ -237,8 +259,8 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
                 verdicts.append(na(r, why[0], why[1], used_for(cond_fields + needed)))
                 continue
             used = used_for(needed + cond_fields)
-            if not isinstance(days, (int, float)):
-                verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']} is not a number of days", used))
+            if not rules_mod.amount(days):  # D98: a bool, a negative, NaN or infinity is not a number of days
+                verdicts.append(na(r, "facto_ausente", f"{p['deadline_field']}={days!r} is not a readable number of days (finite, >= 0)", used))
                 continue
             how = "" if counted_by is None else f" ({needed[1]} to {needed[0]}, counting rule {counted_by})"
             if t == "prazo_minimo":
@@ -261,13 +283,20 @@ def evaluate(unit, rules, facts, known_at, valid_at, *, manifest, conflicts=(), 
         if t == "limiar":
             limit = p["threshold"]["value"] * multiplier
             value = values[p["threshold"]["field"]]
-            ok2 = rules_mod.holds({"field": "_v", "op": p["threshold"]["comparator"], "value": limit}, {"_v": value})  # D66: lt, le, gt, ge
+            ok2 = rules_mod.holds({"field": "_v", "op": p["threshold"]["comparator"], "value": limit}, {"_v": value}) if rules_mod.amount(value) else None  # D66: lt, le, gt, ge
+            if ok2 is None:  # D98: text, None, a bool, a negative, NaN or infinity: unreadable, never a breach and never compliance
+                verdicts.append(na(r, "facto_ausente", f"{p['threshold']['field']}={value!r} is not a readable amount (finite number >= 0)", used))
+                continue
             verdicts.append(done(r, "cumpre" if ok2 else "nao_cumpre", f"{p['threshold']['field']}={value} {p['threshold']['comparator']} {limit:g}", used))
         elif t == "procedimento_admissivel":
             proc = values["tipo_procedimento"]
             verdicts.append(done(r, "cumpre" if proc in p["procedures"] else "nao_cumpre", f"tipo_procedimento={proc} in {p['procedures']}", used))
         elif t == "proibicao":
-            all_hold = all(rules_mod.holds(c, values) for c in p["forbidden"])
+            each = [rules_mod.holds(c, values) for c in p["forbidden"]]
+            if any(h is None for h in each) and not any(h is False for h in each):  # D98: an unreadable condition decides nothing
+                verdicts.append(na(r, "facto_ausente", "a forbidden condition cannot be read", used))
+                continue
+            all_hold = all(each)
             verdicts.append(done(r, "nao_cumpre" if all_hold else "cumpre", "forbidden conditions " + ("hold" if all_hold else "do not all hold"), used))
         elif t == "conteudo_obrigatorio":
             docs = [d for d in documents if d["origin"]["piece"] == p["document_piece"] and d["origin"]["unit"] == unit["id"]]
