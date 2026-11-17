@@ -1568,8 +1568,9 @@
       "versao": 2,
       "code": "tools/measure_written.py",
       "hash": "19826d6ff87610dd02599d65a42fc46a608d0d60b143a97764cba7644d5826ab",
-      "retired": false,
-      "nota": "D53: leitor-b (Reader B ceiling); a null field is an absent one"
+      "retired": true,
+      "nota": "D53: leitor-b (Reader B ceiling); a null field is an absent one",
+      "retired_at": "2026-11-17T11:08:34Z"
     },
     {
       "id": "ferramenta:fact-guard@2",
@@ -1593,8 +1594,9 @@
       "versao": 1,
       "code": "tools/measure_written_v7.py",
       "hash": "2cd0f542b88c29f24acad36f09e43d3c835068ba37b6c68ba2354504dc1d8ecb",
-      "retired": false,
-      "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles"
+      "retired": true,
+      "nota": "D53/D54: guard 0.2, v7 measurement with real questions, label audit, 20 styles",
+      "retired_at": "2026-11-17T11:08:34Z"
     },
     {
       "id": "ferramenta:make-real-questions@1",
@@ -2118,8 +2120,9 @@
       "versao": 1,
       "code": "tools/measure_rule_readings.py",
       "hash": "544a9b8802a0b1f528db3d7a8a28b8ffcb39cea8fa29a938fd9302132f2fdaf4",
-      "retired": false,
-      "nota": "phase 13 (D63): v9, v10 and Reader B on the 82 held-out rule readings of data-v10; no model"
+      "retired": true,
+      "nota": "phase 13 (D63): v9, v10 and Reader B on the 82 held-out rule readings of data-v10; no model",
+      "retired_at": "2026-11-17T11:08:33Z"
     },
     {
       "id": "ferramenta:read-rules@17",
@@ -2207,8 +2210,9 @@
       "versao": 1,
       "code": "tools/measure_rule_readings_v11.py",
       "hash": "9e64cf00f936c5f487bf7b1be4e29240d5c0e10a0a83a3e5fdf23f2a8c4dff9e",
-      "retired": false,
-      "nota": "phase 14 (D65): v10, v11 and Reader B on data-v11 dev and sealed and data-v10's held out; D64 replication; dev errors sorted by kind; no model"
+      "retired": true,
+      "nota": "phase 14 (D65): v10, v11 and Reader B on data-v11 dev and sealed and data-v10's held out; D64 replication; dev errors sorted by kind; no model",
+      "retired_at": "2026-11-17T11:08:33Z"
     },
     {
       "id": "ferramenta:verify@44",
@@ -2543,8 +2547,9 @@
       "versao": 3,
       "code": "tools/measure_rule_readings_v12.py",
       "hash": "47784308bbae564efedf995b46a62c1ee1da246ee102a643659dd7b2f13e5372",
-      "retired": false,
-      "nota": "D67: checks v12's answers, and names the protocol in its report, as their prompts had it (0.3)"
+      "retired": true,
+      "nota": "D67: checks v12's answers, and names the protocol in its report, as their prompts had it (0.3)",
+      "retired_at": "2026-11-17T11:08:33Z"
     },
     {
       "id": "ferramenta:make-rule-readings-v13@1",
@@ -2592,8 +2597,9 @@
       "versao": 1,
       "code": "tools/measure_rule_readings_v13.py",
       "hash": "73b424fe449d56749f670c37b0d74dd7ae2ade8e97c1f1ad14b41f1ff113069e",
-      "retired": false,
-      "nota": "D67: the readers on data-v13's measured sets, read with the protocol 0.4 (the checker against the article's context, then the canonical content against the gold); counts the answers decoded under the quote grammar; no model"
+      "retired": true,
+      "nota": "D67: the readers on data-v13's measured sets, read with the protocol 0.4 (the checker against the article's context, then the canonical content against the gold); counts the answers decoded under the quote grammar; no model",
+      "retired_at": "2026-11-17T11:08:33Z"
     },
     {
       "id": "ferramenta:verify@51",
@@ -2668,8 +2674,9 @@
       "versao": 1,
       "code": "tools/measure_rule_readings_v14.py",
       "hash": "3d44851e73b492e30bcbcfcc3387186ebf119d001bce379da6a96fd2f9e52c8b",
-      "retired": false,
-      "nota": "D68: v14 beside v13 and leitor:b on data-v13's measured sets, protocol 0.4"
+      "retired": true,
+      "nota": "D68: v14 beside v13 and leitor:b on data-v13's measured sets, protocol 0.4",
+      "retired_at": "2026-11-17T11:08:33Z"
     },
     {
       "id": "ferramenta:verify@52",
@@ -3186,8 +3193,9 @@
       "versao": 7,
       "code": "tools/make_fixtures.py",
       "hash": "739615bd5a93cd19d7e2853dff90c5a8e860404466d5e45dcabbba0c64d12459",
-      "retired": false,
-      "nota": "D82–D83: prazo_maximo and contagem_prazo fixtures"
+      "retired": true,
+      "nota": "D82–D83: prazo_maximo and contagem_prazo fixtures",
+      "retired_at": "2026-11-17T11:08:33Z"
     },
     {
       "id": "ferramenta:read-rules-v3@12",
@@ -3481,8 +3489,9 @@
       "versao": 4,
       "code": "tools/refresh.py",
       "hash": "ff6baf51129086c43b1bb16fcf574f494b0df4d1b112c278ca0ecd6eebb8ecc4",
-      "retired": false,
-      "nota": "0.3 D95: an article the page notes REVOGADO is revoked on the page (art. 61)"
+      "retired": true,
+      "nota": "0.3 D95: an article the page notes REVOGADO is revoked on the page (art. 61)",
+      "retired_at": "2026-11-17T11:08:34Z"
     },
     {
       "id": "ferramenta:rule-factory@38",
@@ -3593,6 +3602,114 @@
       "hash": "477b095a7dc33d45dc3cb5a25180d9d08cfbbfc8cccf2171d2f5ad3bf56cce3c",
       "retired": false,
       "nota": "D98: hashes the facts it reads instead of a placeholder"
+    },
+    {
+      "id": "ferramenta:make-fixtures@8",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 8,
+      "code": "tools/make_fixtures.py",
+      "hash": "252dfccc545ee76f7633b6c00643873c64ddbda49fac79a141a1345537e56ae3",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_rule_readings.py",
+      "hash": "84b334de31eb0dff2e16b7ef7e1b5dfa5a9e6770b943b62e21363e1b4ba2489c",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v11@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_rule_readings_v11.py",
+      "hash": "387e0674a910f01b9ddf0fc5fab019c89b07292fd71e09e296660d4092d545d9",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v12@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "tools/measure_rule_readings_v12.py",
+      "hash": "c3c90a6e7bac0df2f3a7ff7ee90de9a5254f63c31ac31d3de7771cc402397314",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v13@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_rule_readings_v13.py",
+      "hash": "7aae9c5d0568acd4539ddfebd9f980a7db08a2a8864ae4ddde2a1fefd4004d15",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-rule-readings-v14@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_rule_readings_v14.py",
+      "hash": "6e567a8e287fdf1b3242f30872f3cf149c14635de15f1567ddcfc888d5fe17d7",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-written@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "tools/measure_written.py",
+      "hash": "2ba9778e47c26206952ed558c29d25d0162e629469cd353856f71b9880843339",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:measure-written-v7@2",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 2,
+      "code": "tools/measure_written_v7.py",
+      "hash": "af69279f693d90b884cddd74bfbe0888aa0169f31fdb5eaeb079e7439bd591df",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
+    },
+    {
+      "id": "ferramenta:refresh@5",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 5,
+      "code": "tools/refresh.py",
+      "hash": "3f089eb5596fbbf56b27fe6ac9260593ab352322251caafbf1ff47c1ab00a72f",
+      "retired": false,
+      "nota": "public copy: the same code with neutral reader names"
     }
   ]
 }
