@@ -114,6 +114,11 @@ def run_base(conn, work, recorded_at, state, dr_inputs):
     loaded[f"anuncios{this}"] = dumps[f"anuncios{this}"]["sha256"]
     unchanged = [y for y in years if loaded.get(f"contratos{y}") == dumps[f"contratos{y}"]["sha256"]]
     c = history.load_contratos(conn, {y: dumps[f"contratos{y}"] for y in years}, dumps[f"modificacoes{this}"], by_sha, recorded_at, unchanged=unchanged)
+    # A dump the adapter cannot read must fail, not pass as "ok" with every record refused (2026-11-16: ISO dates, 1.69 M refused)
+    seen_n = sum(v.get("records", 0) for v in c["years"].values())
+    no_date = c["refused"].get("no publication date: no valid_at", 0)
+    if seen_n and no_date > seen_n / 2:
+        raise RuntimeError(f"BASE contratos: {no_date} of {seen_n} records refused for an unreadable publication date (format change?)")
     rep["contratos"] = {"refused": c["refused"], "procs_new": c["procs_new"], "procedures": c["procedures"]["load"],
                         "modificacoes": c["modificacoes"]["load"], "years": {y: v["load"] for y, v in c["years"].items()}}
     # D93: what the portal shows of each contract, for the years whose dump changed (db/base_detail.py)

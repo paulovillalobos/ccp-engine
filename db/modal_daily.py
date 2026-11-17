@@ -20,7 +20,7 @@ for d in ("engine", "adapters", "db", "schemas"):
     image = image.add_local_dir(ROOT / d, f"/root/ccp/{d}", ignore=["**/__pycache__", "**/*.pyc", "**/.env*"])
 
 
-@app.function(image=image, volumes={"/vol": volume}, secrets=[modal.Secret.from_name("ccp-db")], schedule=modal.Cron("0 5 * * *"),
+@app.function(image=image, volumes={"/vol": volume}, secrets=[modal.Secret.from_name("ccp-db"), modal.Secret.from_name("ccp-ntfy")], schedule=modal.Cron("0 5 * * *"),
               timeout=6 * 3600, cpu=2, memory=8192)
 def daily(only: str = "base,dr,ted", dr_limit: int = 300, ted_limit: int = 10) -> dict:
     import sys
@@ -36,6 +36,9 @@ def daily(only: str = "base,dr,ted", dr_limit: int = 300, ted_limit: int = 10) -
     # from 2026-11-04 to 11-16 the BASE step failed every day inside a run Modal showed as succeeded.
     failed = sorted(s for s, st in result.items() if st == "error")
     if failed:
+        from db import law_watch
+        law_watch.alert("ccp daily: " + ", ".join(failed) + " failed", "The daily BASE/DR/TED load failed for: " + ", ".join(failed)
+                        + ". New procedures from that source are not coming in. ccp.ingesta has the trace.", priority="high", tags=("warning",))
         raise RuntimeError(f"ccp daily: {', '.join(failed)} failed (ccp.ingesta has the trace); after_load {call.object_id} still ran")
     return {"ingesta": result, "after_load": call.object_id}
 

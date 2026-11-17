@@ -33,7 +33,7 @@ sys.path.insert(0, str(ROOT))
 from engine import schema  # noqa: E402
 from engine.canon import canonical, content_hash, sha256_bytes  # noqa: E402
 
-VERSION = "base-contratos-adapter-0.2"
+VERSION = "base-contratos-adapter-0.3"
 SOURCE, SOURCE_MOD, SOURCE_ENT = "base-contratos", "base-modificacoes", "base-entidades"
 TOOL = "adapter-base-contratos"
 MEMBER = "Contratos2026.json"
@@ -75,11 +75,14 @@ def records(text):
 
 
 def date_pt(v):
+    """dd/mm/yyyy[ hh:mm:ss] (dumps up to 2026-11-03, and modificações still) or yyyy-mm-dd (contratos from 2026-11-04)."""
     m = re.fullmatch(r"([0-9]{2})/([0-9]{2})/([0-9]{4})( [0-9:]{8})?", v or "")
-    if not m:
+    iso = re.fullmatch(r"([0-9]{4})-([0-9]{2})-([0-9]{2})", v or "") if not m else None
+    if not m and not iso:
         return None
+    y, mo, d = (iso.group(1), iso.group(2), iso.group(3)) if iso else (m.group(3), m.group(2), m.group(1))
     try:
-        return datetime.date(int(m.group(3)), int(m.group(2)), int(m.group(1))).isoformat()
+        return datetime.date(int(y), int(mo), int(d)).isoformat()
     except ValueError:
         return None
 

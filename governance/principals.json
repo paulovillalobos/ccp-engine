@@ -1717,8 +1717,9 @@
       "versao": 3,
       "code": "adapters/base-anuncios/adapter.py",
       "hash": "5c8328fdc8182270718f2bc14a00d8b593ee878cf92fab7c0608a093c1ae6194",
-      "retired": false,
-      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
+      "retired": true,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)",
+      "retired_at": "2026-11-17T00:13:46Z"
     },
     {
       "id": "ferramenta:verify@35",
@@ -3539,8 +3540,33 @@
       "versao": 2,
       "code": "adapters/base-contratos/adapter.py",
       "hash": "cf1a98ce172005330124fa1c6da81eb18201384b437eb8b3743249d43681d03b",
+      "retired": true,
+      "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)",
+      "retired_at": "2026-11-17T00:13:46Z"
+    },
+    {
+      "id": "ferramenta:adapter-base-contratos@3",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 3,
+      "code": "adapters/base-contratos/adapter.py",
+      "hash": "2a8c594dd576713993cddf03c2ba13bbad1c3898fdc586ee1cb4128d4cc297f3",
       "retired": false,
       "nota": "BASE contratos / modificações / entidades sample -> units, facts (extractor, sample M)"
+    },
+    {
+      "id": "ferramenta:adapter-base-anuncios@4",
+      "kind": "codigo",
+      "papel": "ferramenta",
+      "familia": null,
+      "motor": null,
+      "versao": 4,
+      "code": "adapters/base-anuncios/adapter.py",
+      "hash": "52d45bce269c452e5a894f807c9fe7c2a79a3eb9456cddfdcc9cb7cf6a42ad4f",
+      "retired": false,
+      "nota": "BASE anúncios dump -> raw, proc units, facts, adjudicante entities (extractor E1)"
     }
   ]
 }

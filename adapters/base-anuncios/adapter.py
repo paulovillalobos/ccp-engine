@@ -35,13 +35,14 @@ from engine import schema  # noqa: E402
 from engine.canon import canonical, content_hash, sha256_bytes  # noqa: E402
 from engine.entities import nif_id  # noqa: E402
 
-VERSION = "base-anuncios-adapter-0.1"
+VERSION = "base-anuncios-adapter-0.2"
 SOURCE = "base-anuncios"
 TOOL = "adapter-base-anuncios"
 MAPPING = json.loads((HERE / "mapping.json").read_text(encoding="utf-8"))
 CANONICAL_ASKED = ["data_inicio_procedimento", "tipo_procedimento", "tipo_contrato", "preco_base", "publicado_joue",
                    "prazo_propostas_dias", "data_envio_anuncio", "territorio", "tipo_entidade", "adjudicante"]
 DATE_PT = re.compile(r"([0-9]{2})/([0-9]{2})/([0-9]{4})")
+DATE_ISO = re.compile(r"([0-9]{4})-([0-9]{2})-([0-9]{2})")
 PRICE = re.compile(r"[0-9]+\.[0-9]{2}")
 
 
@@ -78,10 +79,12 @@ def key_of(rec):
 
 
 def date_pt(value):
+    """dd/mm/yyyy (dumps up to 2026-11-03) or yyyy-mm-dd (from 2026-11-04)."""
     m = DATE_PT.fullmatch(value or "")
-    if not m:
+    iso = DATE_ISO.fullmatch(value or "") if not m else None
+    if not m and not iso:
         return None
-    d, mo, y = m.groups()
+    d, mo, y = m.groups() if m else iso.groups()[::-1]
     try:
         return datetime.date(int(y), int(mo), int(d)).isoformat()
     except ValueError:

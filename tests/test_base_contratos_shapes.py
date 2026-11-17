@@ -40,5 +40,26 @@ class Shapes(unittest.TestCase):
             self.assertIn("adjudicante", why)
 
 
+class Dates(unittest.TestCase):
+    """The same dumps moved dates from dd/mm/yyyy to yyyy-mm-dd; modificações kept dd/mm/yyyy hh:mm:ss."""
+
+    def test_contratos_reads_both_date_forms(self):
+        old = {**OLD, "dataPublicacao": "08/03/2021", "dataCelebracaoContrato": "12/01/2021"}
+        new = {**NEW, "dataPublicacao": "2021-03-08", "dataCelebracaoContrato": "2021-01-12"}
+        self.assertEqual(ad.contract_values(old), ad.contract_values(new))
+        self.assertEqual(ad.contract_values(new)[0]["data_publicacao_contrato"], ("2021-03-08", "dataPublicacao"))
+        self.assertEqual(ad.date_pt("04/11/2026 10:00:00"), "2026-11-04")
+        for bad in ("2026-13-01", "2026-02-30", "8/3/2021", "", None, "2021-03-08T00:00:00"):
+            self.assertIsNone(ad.date_pt(bad), bad)
+
+    def test_anuncios_reads_both_date_forms(self):
+        s = importlib.util.spec_from_file_location("base_anuncios_adapter", ROOT / "adapters/base-anuncios/adapter.py")
+        an = importlib.util.module_from_spec(s)
+        s.loader.exec_module(an)
+        self.assertEqual(an.date_pt("2026-11-04"), an.date_pt("04/11/2026"))
+        self.assertEqual(an.date_pt("2026-11-04"), "2026-11-04")
+        self.assertIsNone(an.date_pt("2026-02-30"))
+
+
 if __name__ == "__main__":
     unittest.main()
